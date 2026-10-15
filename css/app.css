@@ -75,12 +75,13 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .edges { position: absolute; left: 0; top: 0; pointer-events: none; }
 .edges path { fill: none; stroke: var(--edge); stroke-width: 1.2; }
 .edges path.or { stroke-dasharray: 3 3; }
+.edges marker path { fill: var(--edge); stroke: none; }
 .edges path.hot { stroke: var(--edge-hot); stroke-width: 2; }
 .boxes { position: absolute; left: 0; top: 0; }
 .box {
   position: absolute; display: flex; flex-direction: column; justify-content: center;
   padding: 0 6px; border-radius: 6px; border: 1.5px solid var(--line);
-  background: var(--locked-bg); color: var(--locked-fg); text-align: left; cursor: pointer;
+  background: var(--locked-bg); color: var(--locked-fg); text-align: center; align-items: center; cursor: pointer;
   overflow: hidden; transition: background-color .15s, border-color .15s, color .15s;
   touch-action: manipulation;
 }
@@ -125,6 +126,30 @@ dialog select { font: inherit; padding: 6px 8px; border-radius: 8px; border: 1px
 dialog .row { display: flex; justify-content: space-between; margin-top: 4px; }
 dialog .ok { background: var(--green); color: #fff; border: 0; border-radius: 8px; padding: 8px 18px; font-weight: 600; cursor: pointer; }
 dialog .ghost { background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; color: var(--muted); cursor: pointer; }
+dialog .wide { width: 100%; }
+
+/* import audit */
+dialog.imp { width: min(380px, calc(100vw - 32px)); }
+.imp-head { position: relative; display: flex; align-items: center; gap: 6px; font-size: 14px; }
+.tip { width: 20px; height: 20px; border-radius: 50%; border: 1px solid var(--line); background: none; color: var(--muted); font-size: 11px; font-weight: 700; padding: 0; cursor: pointer; }
+.tiptext { position: absolute; left: 0; top: 26px; z-index: 2; margin: 0; padding: 6px 10px; border-radius: 8px; background: var(--fg); color: var(--panel); font-size: 12px; white-space: nowrap; }
+.imp-body { height: 300px; display: flex; flex-direction: column; gap: 8px; min-height: 0; }
+.imp-body[hidden] { display: none; }
+.imp textarea { flex: 1; min-height: 0; resize: none; font: 12px/1.35 ui-monospace, Menlo, Consolas, monospace; padding: 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+.imp .file { position: relative; text-align: center; font-weight: 600; justify-content: center; }
+.imp .file input { position: absolute; inset: 0; opacity: 0; cursor: pointer; }
+.imp-sum { flex: none; display: flex; align-items: baseline; justify-content: space-between; gap: 8px; }
+.imp-sum b { color: var(--green); }
+.imp-sum span { color: var(--muted); font-size: 11px; white-space: nowrap; }
+.imp-list { flex: 1; min-height: 0; overflow: auto; list-style: none; margin: 0; padding: 0; overscroll-behavior: contain; }
+.imp-list label { display: flex; align-items: center; justify-content: flex-start; gap: 8px; font-weight: 400; padding: 3px 0; }
+.imp-list span { font-weight: 600; white-space: nowrap; }
+.imp-list i { font-style: normal; color: var(--muted); font-size: 11px; flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.imp-list em { font-style: normal; font-size: 10px; font-weight: 700; color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 0 4px; }
+.imp-list li.off { opacity: .45; }
+.imp-list input { accent-color: var(--green); margin: 0; }
+.imp button:disabled { opacity: .5; cursor: default; }
+
 input[role="switch"] { appearance: none; -webkit-appearance: none; width: 40px; height: 24px; border-radius: 12px; background: var(--line); position: relative; cursor: pointer; transition: background .15s; margin: 0; }
 input[role="switch"]::after { content: ""; position: absolute; left: 3px; top: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .15s; }
 input[role="switch"]:checked { background: var(--green); }

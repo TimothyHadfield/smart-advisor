@@ -1,4 +1,6 @@
 import { buildModel, makePlan, flowNodes, flowEdges, evalReq, unitDone, defaultStartTerm, nextTerm, termLabel } from './planner.js';
+import { layoutGraph, foldLabs } from './layout.js';
+import { parseAudit, matchAudit } from './audit.js';
 
 const $ = (id) => document.getElementById(id);
 const PROGRAM = new URLSearchParams(location.search).get('p') || 'ee-bs';
@@ -17,7 +19,7 @@ state.done ??= {};
 const doneSet = () => new Set(state.done[PROGRAM] || []);
 function setDone(set) { state.done[PROGRAM] = [...set]; save(); }
 
-let model, nodes, edges, layoutCache = null;
+let model, nodes, edges, graph, layoutCache = null;
 
 // ---------- boot ----------
 async function boot() {
@@ -26,47 +28,21 @@ async function boot() {
   const program = await res.json();
   $('progName').textContent = program.name;
   model = buildModel(program);
-  nodes = flowNodes(model);
-  edges = flowEdges(model);
+  // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
+  ({ nodes, edges } = foldLabs(flowNodes(model), flowEdges(model)));
+  graph = layoutGraph(nodes, edges);
   buildBoxes();
   layout();
   refresh();
   new ResizeObserver(() => layout()).observe($('chart'));
   wireTabs();
   wireSettings();
+  wireImport();
 }
 
 // ---------- flowchart ----------
-function columns() {
-  const linked = new Set(edges.flatMap((e) => [e.from, e.to]));
-  const coreqPartner = (n) => nodes.find((m) => m !== n && ((n.coreqs || []).includes(m.code) || (m.coreqs || []).includes(n.code)));
-  // a box with no arrows at all goes in the first column ("take any time")
-  const isolated = (n) => !linked.has(n.id) && !(coreqPartner(n) && linked.has(coreqPartner(n).id));
-  const hasIso = nodes.some(isolated);
-  const cols = [];
-  for (const n of nodes) {
-    const c = isolated(n) ? 0 : n.depth + (hasIso ? 1 : 0);
-    (cols[c] ??= []).push(n);
-  }
-  const pos = new Map();
-  const into = (n) => edges.filter((e) => e.to === n.id).map((e) => pos.get(e.from)).filter((v) => v !== undefined);
-  cols.forEach((col, ci) => {
-    if (!col) { cols[ci] = []; return; }
-    if (ci > 0 || !hasIso) {
-      const key = new Map(col.map((n) => { const p = into(n); return [n.id, p.length ? p.reduce((a, b) => a + b, 0) / p.length : -1 + n.order / 1000]; }));
-      col.sort((a, b) => key.get(a.id) - key.get(b.id) || a.order - b.order);
-    }
-    // keep a lab (fewer credits) right under its lecture
-    for (const n of col.slice()) {
-      const p = coreqPartner(n);
-      if (!p || !col.includes(p) || n.credits < p.credits || (n.credits === p.credits && n.order > p.order)) continue;
-      col.splice(col.indexOf(p), 1);
-      col.splice(col.indexOf(n) + 1, 0, p);
-    }
-    col.forEach((n, i) => pos.set(n.id, i - col.length / 2));
-  });
-  return cols;
-}
+// Box positions come from js/layout.js (layered layout with few crossings), computed once per program;
+// layout() only scales them to the chart size.
 
 function buildBoxes() {
   const host = $('boxes');
@@ -76,9 +52,10 @@ function buildBoxes() {
     b.className = 'box' + (n.kind === 'placeholder' || n.kind === 'choice' ? ' ph flex' : n.kind === 'option' ? ' flex' : '');
     b.dataset.id = n.id;
     const credits = n.kind === 'choice' ? (n.pick?.credits ?? n.credits) : n.credits;
-    b.title = [n.label, n.title, `${credits} cr`].filter(Boolean).join(' · ');
-    if (n.kind === 'placeholder' || n.kind === 'choice') b.innerHTML = `<b>${esc(n.label)}</b>`;
-    else b.innerHTML = `<b>${esc(n.label)}</b><i>${esc(n.title)}</i>`;
+    const labs = n.labs || [];
+    b.title = [n.label, n.title, ...labs.map((l) => `${l.label} ${l.title}`), `${credits + labs.reduce((s, l) => s + l.credits, 0)} cr`].filter(Boolean).join(' · ');
+    // course code only, like Tim's chart; the title is in the tooltip
+    b.innerHTML = `<b>${esc(n.label)}</b>` + (labs.length ? '<i>+Lab</i>' : '');
     b.addEventListener('click', () => toggle(n));
     host.appendChild(b);
   }
@@ -88,46 +65,71 @@ function layout() {
   const chart = $('chart');
   const W = chart.clientWidth, H = chart.clientHeight;
   if (!W || !H) return;
-  const cols = columns();
-  const maxRows = Math.max(...cols.map((c) => c.length));
+  const g = graph;
   const pad = 10;
-  const rowH = Math.max(34, Math.min(56, Math.floor((H - pad * 2) / maxRows)));
+  const rowH = Math.max(34, Math.min(56, Math.floor((H - pad * 2) / g.height)));
   const boxH = rowH - Math.max(5, Math.round(rowH * 0.18));
-  const colW = Math.max(110, Math.min(160, Math.floor((W - pad * 2) / cols.length)));
-  const boxW = colW - Math.max(18, Math.round(colW * 0.2));
-  const totalH = Math.max(H, maxRows * rowH + pad * 2);
-  const totalW = Math.max(W, cols.length * colW + pad * 2 - (colW - boxW));
-  const at = new Map();
-  cols.forEach((col, ci) => {
-    const top = Math.round((totalH - col.length * rowH) / 2);
-    col.forEach((n, ri) => at.set(n.id, { x: pad + ci * colW, y: top + ri * rowH }));
-  });
+  const colW = Math.max(110, Math.min(150, Math.floor((W - pad * 2) / g.columns)));
+  const boxW = Math.max(80, Math.min(96, Math.round(colW * 0.64)));
+  const totalH = Math.max(H, Math.ceil(g.height * rowH) + pad * 2);
+  const totalW = Math.max(W, g.columns * colW + pad * 2 - (colW - boxW));
+  const top = Math.round((totalH - g.height * rowH) / 2);
+  const X = (col) => pad + col * colW;
+  const Y = (y) => Math.round(top + y * rowH); // box centre
   for (const el of $('boxes').children) {
-    const p = at.get(el.dataset.id);
-    el.style.cssText = `left:${p.x}px;top:${p.y}px;width:${boxW}px;height:${boxH}px`;
+    const p = g.pos.get(el.dataset.id);
+    el.style.cssText = `left:${X(p.col)}px;top:${Y(p.y) - boxH / 2}px;width:${boxW}px;height:${boxH}px`;
   }
   const svg = $('edges');
   svg.setAttribute('width', totalW); svg.setAttribute('height', totalH);
   $('boxes').style.cssText = `width:${totalW}px;height:${totalH}px`;
-  svg.innerHTML = edges.map((e) => {
-    const a = at.get(e.from), b = at.get(e.to);
-    const x1 = a.x + boxW, y1 = a.y + boxH / 2, x2 = b.x, y2 = b.y + boxH / 2;
-    const dx = Math.max(12, (x2 - x1) / 2);
-    return `<path data-from="${e.from}" data-to="${e.to}"${e.or ? ' class="or"' : ''} d="M${x1},${y1} C${x1 + dx},${y1} ${x2 - dx},${y2} ${x2},${y2}"/>`;
-  }).join('');
+  // Elbow connectors like Tim's chart: an arrow leaves the right side of its box, runs level (through
+  // the columns it passes, between boxes), and turns at right angles in the gaps. Each gap gives every
+  // bend its own vertical track; arrows from the same box share one. Downward bends from lower boxes go
+  // further left (and upward bends from higher boxes), which keeps the tracks from crossing each other.
+  const segs = [];
+  g.paths.forEach((e, pi) => e.pts.slice(1).forEach((b, k) => {
+    const a = e.pts[k];
+    segs.push({ pi, k, gap: a.col, y1: Y(a.y), y2: Y(b.y), x1: X(a.col) + boxW, x2: X(b.col) });
+  }));
+  const byGap = new Map();
+  for (const s of segs) if (Math.abs(s.y1 - s.y2) >= 1) (byGap.get(s.gap) ?? byGap.set(s.gap, []).get(s.gap)).push(s);
+  for (const list of byGap.values()) {
+    const groups = new Map();
+    for (const s of list) { const key = `${s.y1}${s.y2 > s.y1 ? 'd' : 'u'}`; (groups.get(key) ?? groups.set(key, []).get(key)).push(s); }
+    const keys = [...groups.keys()].sort((a, b) => {
+      const da = a.endsWith('d'), db = b.endsWith('d'), ya = parseFloat(a), yb = parseFloat(b);
+      return da !== db ? (da ? -1 : 1) : da ? yb - ya : ya - yb;
+    });
+    const { x1, x2 } = list[0], m = Math.min(8, (x2 - x1) / 4);
+    keys.forEach((key, i) => { const tx = Math.round(x1 + m + ((x2 - x1 - 2 * m) * (i + 0.5)) / keys.length); for (const s of groups.get(key)) s.tx = tx; });
+  }
+  const path = new Map();
+  for (const s of segs) {
+    let d = path.get(s.pi) ?? `M${s.x1},${s.y1}`;
+    if (s.k > 0) d += ` H${s.x1}`; // run level through the column of a passing point
+    d += s.tx === undefined ? ` H${s.x2}` : ` H${s.tx} V${s.y2} H${s.x2}`;
+    path.set(s.pi, d);
+  }
+  svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker></defs>'
+    + g.paths.map((e, pi) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${path.get(pi)}"/>`).join('');
   layoutCache = { W, H };
 }
 
 function nodeDone(n, completed) {
-  if (n.kind === 'option') return n.codes.every((c) => completed.has(c));
-  return unitDone(n, completed);
+  const labsDone = (n.labs || []).every((l) => unitDone(l, completed));
+  if (n.kind === 'option') return labsDone && n.codes.every((c) => completed.has(c));
+  return labsDone && unitDone(n, completed);
 }
 function toggle(n) {
   const s = doneSet();
   const on = nodeDone(n, s);
   if (n.kind === 'course') {
-    if (on) n.codes.forEach((c) => s.delete(c)); // un-take, including an "or" alternative
-    else s.add(n.code);
+    // one tap marks (or clears) the lecture and its folded lab together
+    for (const u of [n, ...(n.labs || [])]) {
+      if (on) u.codes.forEach((c) => s.delete(c)); // un-take, including an "or" alternative
+      else if (!unitDone(u, s)) s.add(u.code);
+    }
   } else if (n.kind === 'option') {
     n.codes.forEach((c) => (on ? s.delete(c) : s.add(c)));
   } else if (on) s.delete(n.id);
@@ -148,7 +150,7 @@ function refresh() {
   for (const el of $('boxes').children) {
     const n = nodes.find((x) => x.id === el.dataset.id);
     const done = nodeDone(n, completed);
-    const ready = !done && prereqOk(n) && coreqOk(n);
+    const ready = !done && prereqOk(n) && coreqOk(n) && (n.labs || []).every(prereqOk);
     el.classList.toggle('done', done);
     el.classList.toggle('ready', ready);
     el.setAttribute('aria-pressed', done);
@@ -200,6 +202,68 @@ function wireSettings() {
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
   $('clearDone').addEventListener('click', () => { setDone(new Set()); refresh(); });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+}
+
+// ---------- import a Wolverine Track audit (pasted text or its PDF), read on this device only ----------
+function wireImport() {
+  const dlg = $('importDlg');
+  let found = null;
+  const step = (n) => {
+    $('impStep1').hidden = n !== 1; $('impStep2').hidden = n !== 2;
+    $('impBack').textContent = n === 1 ? 'Cancel' : 'Back';
+    $('impGo').textContent = n === 1 ? 'Read' : 'Apply';
+    $('impGo').disabled = false;
+    dlg.dataset.step = n;
+  };
+  const read = (text) => {
+    const parsed = parseAudit(text);
+    found = matchAudit(parsed, model);
+    const t = found.rows.filter((r) => r.status === 'taken').length, ip = found.rows.length - t;
+    $('impSum').innerHTML = `<b>Found ${t} taken, ${ip} in progress</b>` + (parsed.catalogYear ? `<span>Catalog ${esc(parsed.catalogYear)}</span>` : '');
+    const done = doneSet();
+    $('impList').innerHTML = found.rows.map((r, i) => `<li><label><input type="checkbox" data-i="${i}" data-ip="${r.status === 'ip' ? 1 : 0}"${done.has(r.key) ? ' disabled' : ''} checked>`
+      + `<span>${esc(r.label)}</span><i>${esc(r.title)}</i>${r.status === 'ip' ? '<em>IP</em>' : ''}</label></li>`).join('');
+    syncIP();
+    if (parsed.catalogYear) { state.audit ??= {}; state.audit[PROGRAM] = { catalogYear: parsed.catalogYear }; save(); }
+    $('impGo').disabled = !found.rows.length;
+    step(2);
+    $('impGo').disabled = !found.rows.length;
+  };
+  const syncIP = () => {
+    const on = $('impIP').checked;
+    for (const cb of $('impList').querySelectorAll('input[data-ip="1"]')) { if (!on) cb.checked = false; else if (!cb.disabled) cb.checked = true; cb.closest('li').classList.toggle('off', !on); }
+  };
+  $('importBtn').addEventListener('click', () => { $('settings').close(); $('impText').value = ''; $('impFile').value = ''; step(1); dlg.showModal(); });
+  $('impIP').addEventListener('change', syncIP);
+  $('impBack').addEventListener('click', () => (dlg.dataset.step === '2' ? step(1) : dlg.close()));
+  $('impGo').addEventListener('click', () => {
+    if (dlg.dataset.step === '1') { if ($('impText').value.trim()) read($('impText').value); return; }
+    const s = doneSet();
+    const ipOn = $('impIP').checked;
+    for (const cb of $('impList').querySelectorAll('input:checked:not(:disabled)')) {
+      const r = found.rows[+cb.dataset.i];
+      if (r.status === 'ip' && !ipOn) continue;
+      s.add(r.key);
+    }
+    setDone(s); refresh(); dlg.close();
+  });
+  $('impFile').addEventListener('change', async () => {
+    const f = $('impFile').files[0];
+    if (!f) return;
+    $('impGo').disabled = true; $('impGo').textContent = 'Reading…';
+    try {
+      const { pdfToText } = await import('./pdftext.js');
+      const text = await pdfToText(await f.arrayBuffer());
+      $('impText').value = text;
+      read(text);
+    } catch (err) {
+      $('impGo').disabled = false; $('impGo').textContent = 'Read';
+      $('impText').value = '';
+      $('impText').placeholder = 'Could not read that PDF. Paste the text instead.';
+    }
+  });
+  $('impTip').addEventListener('click', () => { $('impTipText').hidden = !$('impTipText').hidden; });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
