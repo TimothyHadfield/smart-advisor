@@ -29,7 +29,24 @@
     <label>Start <select id="setStart"></select></label>
     <label>Max credits <select id="setMax"></select></label>
     <label class="sw-row">Summers <input type="checkbox" id="setSummer" role="switch"></label>
+    <button type="button" id="importBtn" class="ghost wide">Import audit</button>
     <div class="row"><button type="button" id="clearDone" class="ghost">Clear taken</button><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<dialog id="importDlg" class="imp">
+  <form method="dialog">
+    <div class="imp-head"><b>Import audit</b><button type="button" class="tip" id="impTip" aria-label="Why">?</button>
+      <p class="tiptext" id="impTipText" hidden>Read on this device only. Nothing is uploaded.</p></div>
+    <div class="imp-body" id="impStep1">
+      <textarea id="impText" placeholder="Paste Wolverine Track audit" spellcheck="false"></textarea>
+      <label class="ghost file">Choose PDF<input type="file" id="impFile" accept="application/pdf,.pdf"></label>
+    </div>
+    <div class="imp-body" id="impStep2" hidden>
+      <div class="imp-sum" id="impSum"></div>
+      <ul class="imp-list" id="impList"></ul>
+      <label class="sw-row">Count in progress <input type="checkbox" id="impIP" role="switch" checked></label>
+    </div>
+    <div class="row"><button type="button" id="impBack" class="ghost">Cancel</button><button type="button" id="impGo" class="ok">Read</button></div>
   </form>
 </dialog>
 <script type="module" src="js/app.js"></script>
