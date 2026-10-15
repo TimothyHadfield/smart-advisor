@@ -186,7 +186,13 @@ export function fillCredits(items, courses) {
         const sum = (xs) => xs.reduce((a, b) => a + b, 0);
         let out = null;
         const unknown = crs.filter((x) => x == null).length;
+        const rep = it.pairRepeat;
         if (!unknown && sum(crs) === H) out = crs;
+        // "A & B (Take twice) | 6" = both courses repeated: 2x2 + 2x1
+        else if (!unknown && rep && sum(crs) * rep === H) {
+          out = crs.map((x) => x * rep);
+          for (let k = 0; k < n && items[i + k]?.code === pair[k]; k++) items[i + k].repeat = rep;
+        }
         // one code with no catalog entry (a lab): it takes what the row's hours leave
         else if (unknown === 1 && H - sum(crs.filter((x) => x != null)) > 0) out = crs.map((x) => x ?? H - sum(crs.filter((y) => y != null)));
         // catalog numbers that don't add up to the row: the first (main) course keeps its own credits, the
@@ -194,7 +200,7 @@ export function fillCredits(items, courses) {
         else if (!unknown && n === 2 && H - crs[0] > 0) out = [crs[0], H - crs[0]];
         else if (!unknown) { const rest = sum(crs.slice(1)); out = [H - rest > 0 ? H - rest : crs[0], ...crs.slice(1)]; }
         if (out) for (let k = 0; k < n && items[i + k]?.code === pair[k]; k++) items[i + k].credits = out[k];
-        delete it.pairHours; delete it.pair;
+        delete it.pairHours; delete it.pair; delete it.pairRepeat;
       }
       if (it.credits == null) it.credits = cr(it.code);
       if (!it.crMax && crMax(it.code) && it.credits === cr(it.code)) it.crMax = crMax(it.code);

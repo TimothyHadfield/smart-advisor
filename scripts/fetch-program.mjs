@@ -300,7 +300,7 @@ export function parseTable(tbl) {
     endGroup();
     if (codes.length > 1) {
       // "A & B | 4": both required; the row's hours cover the pair (split by catalog credits in fillCredits)
-      codes.forEach((c, k) => items.push({ type: 'course', area, code: c, alts: k === 0 ? [...inCellAlts, ...xalts] : [], credits: null, ...(k === 0 && lo != null ? { pairHours: lo, pair: codes } : {}) }));
+      codes.forEach((c, k) => items.push({ type: 'course', area, code: c, alts: k === 0 ? [...inCellAlts, ...xalts] : [], credits: null, ...(k === 0 && lo != null ? { pairHours: lo, pair: codes, ...(rep ? { pairRepeat: rep } : {}) } : {}) }));
       continue;
     }
     items.push({ type: 'course', area, code: codes[0], alts: [...inCellAlts, ...xalts], ...extra });

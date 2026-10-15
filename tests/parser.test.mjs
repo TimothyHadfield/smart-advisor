@@ -46,6 +46,13 @@ const choices = (p) => p.requirements.filter((r) => r.type === 'choice');
 const reqCodes = (p) => p.requirements.filter((r) => r.type === 'course').map((r) => r.code);
 
 // ---------- bugs ----------
+test('pair: "A & B (Take twice) | 6" repeats both courses (2x2 + 2x1), not one 4-credit lab', async () => {
+  const p = await build(page([R.total(6), R.course(a('ABC 4210R') + amp('ABC 4220R'), 'Writing III and Writing III Lab (Take twice)', 6)]),
+    { 'ABC 4210R': C(2), 'ABC 4220R': C(1) });
+  const [x, y] = p.requirements.filter((r) => r.type === 'course');
+  assert.deepEqual([x.code, x.credits, x.repeat, y.code, y.credits, y.repeat], ['ABC 4210R', 4, 2, 'ABC 4220R', 2, 2]);
+});
+
 test('1: a list is never named by credits alone; required count-picks keep a plain name', async () => {
   const p = await build(page([
     R.total(9), R.area('Discipline Core Requirements', '9 Credits'),
