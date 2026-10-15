@@ -1,0 +1,304 @@
+{
+ "id": "american-indian-studies-minor",
+ "name": "American Indian Studies, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/history-political-science/american-indian-studies-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AIST 1800G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AIST 4600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "AIST Elective",
+   "pick": {
+    "count": 4
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "AIST 4900R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3570G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AIST 3270G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AIST 3810"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3820G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AIST 3830"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3840G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AIST 3580G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AIST 3600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete four of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "AIST 1800G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "AIST Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "AIST Elective",
+     "credits": 3
+    },
+    {
+     "label": "AIST Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "AIST 4600",
+     "credits": 3
+    },
+    {
+     "label": "AIST Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AIST 1800G": {
+   "title": "Introduction to American Indian Studies",
+   "credits": 3
+  },
+  "AIST 3270G": {
+   "title": "Indians of Utah",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AIST 3580G": {
+   "title": "American Indian Health Policy",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , University Advanced Standing, and one of the following: POLS 1000 , POLS 1100 , HIST 1700 , HIST 1740 , HIST 2700 , HIST 2710",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "POLS 1000",
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 1740",
+     "HIST 2700",
+     "HIST 2710"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AIST 3600": {
+   "title": "American Indian Policy and Tribal Government",
+   "credits": 3,
+   "prereqText": "ENGL 2010 or instructor approval and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "AIST 3810": {
+   "title": "Precolumbian America",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and AIST 1800G and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     },
+     "AIST 1800G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AIST 3830": {
+   "title": "Indians of the Great Plains",
+   "credits": 3,
+   "prereqText": "( HIST 1700 or HIST 2700 or HIST 2710 or AIST 1800G ) and ( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "HIST 1700",
+       "HIST 2700",
+       "HIST 2710",
+       "AIST 1800G"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AIST 4600": {
+   "title": "Contemporary American Indian Political and Social Issues",
+   "credits": 3,
+   "prereqText": "( AIST 3580G or AIST 3600 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "AIST 3580G",
+     "AIST 3600"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AIST 4900R": {
+   "title": "Special Topics in American Indian Studies",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and [ POLS 1000 or POLS 1100 or HIST 1700 or HIST 1740 or ( HIST 2700 and HIST 2710 )] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "POLS 1000",
+       "POLS 1100",
+       "HIST 1700",
+       "HIST 1740",
+       {
+        "and": [
+         "HIST 2700",
+         "HIST 2710"
+        ]
+       }
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ANTH 3300": {
+   "title": "Culture Development and International Aid",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3450": {
+   "title": "Shamanism and Indigenous Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 3570G": {
+   "title": "Native American Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HIST 3820G": {
+   "title": "American Indian History to 1890",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HIST 3840G": {
+   "title": "American Indian History since 1890",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

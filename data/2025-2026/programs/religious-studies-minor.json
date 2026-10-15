@@ -1,0 +1,309 @@
+{
+ "id": "religious-studies-minor",
+ "name": "Religious Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/religious-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 1610",
+   "alts": [
+    "PHIL 1620",
+    "ANTH 3450"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RLST 3650",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RLST 3660R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "RLST Elective",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "ANTH 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3780"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3740G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3780"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3400"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits of electives from the list below or as approved by advisor:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete one of following:",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 1610",
+     "credits": null
+    },
+    {
+     "code": "PHIL 1620",
+     "credits": null
+    },
+    {
+     "code": "ANTH 3450",
+     "credits": null
+    },
+    {
+     "label": "RLST Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "PHIL 3600",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 3660R",
+     "alts": [
+      "RLST 3660R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PHIL 3650",
+     "alts": [
+      "RLST 3650"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "RLST Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "RLST Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 3400": {
+   "title": "Myth Magic and Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3450": {
+   "title": "Shamanism and Indigenous Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3460": {
+   "title": "Anthropology of Mormonism",
+   "credits": 3,
+   "prereqText": "University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 3780": {
+   "title": "Mormons Media and Culture",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 3740G": {
+   "title": "Literature of the Sacred",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 3780": {
+   "title": "Mormon Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "PHIL 1610": {
+   "title": "Introduction to Western Religions",
+   "credits": 3
+  },
+  "PHIL 1620": {
+   "title": "Introduction to Eastern Religions",
+   "credits": 3
+  },
+  "PHIL 3600": {
+   "title": "Philosophy of Religion",
+   "credits": 3,
+   "prereqText": "( PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or PHIL 2110 or PHIL 2150 or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G",
+     "PHIL 2110",
+     "PHIL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3610": {
+   "title": "Introduction to Christian Theology",
+   "credits": 3,
+   "prereqText": "PHIL 1610 and University Advanced Standing",
+   "prereqs": "PHIL 1610",
+   "prereqNonCourse": true
+  },
+  "PHIL 3650": {
+   "title": "Approaches to Religious Studies",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3660R": {
+   "title": "Issues in Religious Studies",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "RLST 3650": {
+   "title": "Approaches to Religious Studies",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "RLST 3660R": {
+   "title": "Issues in Religious Studies",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3400": {
+   "title": "Sociology of Religion",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

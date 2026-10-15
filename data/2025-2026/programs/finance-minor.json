@@ -1,0 +1,312 @@
+{
+ "id": "finance-minor",
+ "name": "Finance, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/finance-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2340",
+   "alts": [
+    "STAT 2040"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose nine hours of the following:",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "MGMT 3345"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4180"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4190"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5130"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete nine hours from the following courses:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 2340",
+     "alts": [
+      "STAT 2040"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "FIN 3100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Choose nine hours of the following:",
+     "credits": 9
+    },
+    {
+     "code": "FIN 3150",
+     "credits": null
+    },
+    {
+     "code": "FIN 3400",
+     "credits": null
+    },
+    {
+     "code": "FIN 4100",
+     "credits": null
+    },
+    {
+     "code": "FIN 4160",
+     "credits": null
+    },
+    {
+     "code": "FIN 4170",
+     "credits": null
+    },
+    {
+     "code": "FIN 4180",
+     "credits": null
+    },
+    {
+     "code": "FIN 4190",
+     "credits": null
+    },
+    {
+     "code": "FIN 5130",
+     "credits": null
+    },
+    {
+     "code": "MGMT 3345",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 3100": {
+   "title": "Principles of Finance",
+   "credits": 3,
+   "prereqText": "( MGMT 2340 or STAT 2040 or STAT 2050 ) and ( ACC 2110 or ACC 3000 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MGMT 2340",
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     {
+      "or": [
+       "ACC 2110",
+       "ACC 3000"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 3150": {
+   "title": "Financial Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 3400": {
+   "title": "Investment Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4100": {
+   "title": "Management of Financial Institutions",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4160": {
+   "title": "Portfolio Management",
+   "credits": 3,
+   "prereqText": "FIN 3400 and University Advanced Standing",
+   "prereqs": "FIN 3400",
+   "prereqNonCourse": true,
+   "precoreqText": "MGMT 3345",
+   "precoreqs": "MGMT 3345"
+  },
+  "FIN 4170": {
+   "title": "Derivative Securities",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true,
+   "precoreqText": "MGMT 3345",
+   "precoreqs": "MGMT 3345"
+  },
+  "FIN 4180": {
+   "title": "International Finance Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4190": {
+   "title": "Applied Asset Diversification and Management",
+   "credits": 3,
+   "prereqText": "FIN 3400 and University Advanced Standing",
+   "prereqs": "FIN 3400",
+   "prereqNonCourse": true
+  },
+  "FIN 5130": {
+   "title": "Financial Statement Analysis and Modeling",
+   "credits": 3,
+   "prereqText": "FIN 3100",
+   "prereqs": "FIN 3100"
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3345": {
+   "title": "Business Statistics II",
+   "credits": 3,
+   "prereqText": "MGMT 2340 or STAT 2040 or appropriate test scores and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 2040"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

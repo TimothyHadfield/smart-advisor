@@ -1,0 +1,310 @@
+{
+ "id": "entrepreneurship-certificate-proficiency",
+ "name": "Entrepreneurship, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/entrepreneurship-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENGL 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HIST 2700",
+   "alts": [
+    "HIST 2710",
+    "HIST 1700",
+    "HIST 1740",
+    "POLS 1000",
+    "POLS 1100"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENTR 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENTR 3170",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENTR 3180",
+   "alts": [
+    "ENTR 4450"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Choose one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENTR 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2950R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MGMT 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3320G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose one of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "code": "ENTR 2500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HIST 1700",
+     "credits": 3
+    },
+    {
+     "code": "ENTR 3170",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENTR 3180",
+     "alts": [
+      "ENTR 4450"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Elective course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENTR 2500": {
+   "title": "Creativity and Entrepreneurial Thinking",
+   "credits": 3
+  },
+  "ENTR 3170": {
+   "title": "Entrepreneurship - Feasibility Analysis",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 3180": {
+   "title": "Entrepreneurship - Launching a New Venture - For Non-Business Majors",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ENTR 2500",
+   "precoreqs": "ENTR 2500"
+  },
+  "ENTR 4200": {
+   "title": "Innovative Opportunity Development",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4210": {
+   "title": "Career Development for Entrepreneurs",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4300": {
+   "title": "The Art of the Pitch",
+   "credits": 3,
+   "prereqText": "( ENTR 2500 or ENTR 3170 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENTR 2500",
+     "ENTR 3170"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 4400": {
+   "title": "New Venture Financing",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4450": {
+   "title": "Entrepreneurship - Enterprise Formation",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MGMT 1400": {
+   "title": "Introduction to Data Analytics",
+   "credits": 3
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 2950R": {
+   "title": "Executive Lecture Series",
+   "credits": 1
+  },
+  "MGMT 3020": {
+   "title": "Ethical Decision-Making in Organizations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

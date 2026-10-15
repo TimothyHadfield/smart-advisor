@@ -1,0 +1,216 @@
+{
+ "id": "information-systems-technology-undergraduate-certificate",
+ "name": "Information Systems and Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/information-systems-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 1050",
+   "alts": [
+    "MATH 1055"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Domain Requirements",
+   "label": "Complete 6 credits from one domain",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "INFO 1200"
+     ],
+     "credits": 3,
+     "alts": [
+      "CS 1400"
+     ],
+     "section": "Information Systems Domain"
+    },
+    {
+     "codes": [
+      "INFO 2420"
+     ],
+     "credits": 3,
+     "section": "Information Systems Domain"
+    },
+    {
+     "codes": [
+      "IT 1510"
+     ],
+     "credits": 3,
+     "section": "Information Technology Domain"
+    },
+    {
+     "codes": [
+      "IT 1600"
+     ],
+     "credits": 3,
+     "section": "Information Technology Domain"
+    }
+   ],
+   "text": "Complete 6 credits from one domain:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "alts": [
+      "MATH 1055"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "INFO 1120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete 6 credits from one domain",
+     "credits": 6
+    },
+    {
+     "label": "Information Systems Domain:",
+     "credits": null
+    },
+    {
+     "code": "INFO 1200",
+     "alts": [
+      "CS 1400"
+     ],
+     "credits": null
+    },
+    {
+     "code": "INFO 2420",
+     "credits": null
+    },
+    {
+     "label": "Information Technology Domain:",
+     "credits": null
+    },
+    {
+     "code": "IT 1510",
+     "credits": null
+    },
+    {
+     "code": "IT 1600",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 1120": {
+   "title": "Information Systems and Technology Fundamentals",
+   "credits": 3,
+   "prereqText": "IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 1600": {
+   "title": "Computer Architecture and Systems Software",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,190 @@
+{
+ "id": "secondary-education-mat",
+ "name": "Secondary Education, M.A.T.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/secondary-education-mat/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6202",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6311",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6203R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6663",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6204R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6321",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Master of Education Requirements",
+   "code": "EDUC 6415",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EDUC 6311",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6321",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6663",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDUC 6202",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6410",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6330",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDUC 6415",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6204R",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6203R",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDUC 6202": {
+   "title": "Creating and Managing a Learning Environment",
+   "credits": 3,
+   "prereqText": "Admission to School of Education Graduate Program or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6203R": {
+   "title": "Student Teaching Graduate Licensure",
+   "credits": 3,
+   "creditsMax": 6,
+   "prereqText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6204R": {
+   "title": "Capstone Project",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6311": {
+   "title": "Introduction to Special Education",
+   "credits": 3,
+   "prereqText": "Admission to School of Education Graduate Program or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6321": {
+   "title": "Instruction Technology Assessment Planning",
+   "credits": 3
+  },
+  "EDUC 6330": {
+   "title": "Strategies for Working with Diverse Learners",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program at UVU or an approval from a graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6410": {
+   "title": "Contemporary Issues",
+   "credits": 3,
+   "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6415": {
+   "title": "Global Issues in Teaching and Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master's of Education program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6663": {
+   "title": "Literacy in the Content Area",
+   "credits": 3,
+   "prereqText": "Admission to Graduate Status, Admission to the School of Education Masters Degree Program, Or permission of the Program Director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

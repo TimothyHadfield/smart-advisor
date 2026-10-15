@@ -1,0 +1,162 @@
+{
+ "id": "nutrition-undergraduate-certificate",
+ "name": "Nutrition, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/health-science/nutrition-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Choose 9 credits from the following:",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "NUTR 2000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 4900R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLSC 1300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CA 1000"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose 9 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NUTR 1020",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 2020",
+     "credits": 3
+    },
+    {
+     "label": "Electives from list",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NUTR 3000",
+     "credits": 3
+    },
+    {
+     "label": "Electives from list",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CA 1000": {
+   "title": "Culinary Basics",
+   "credits": 3
+  },
+  "HLSC 1300": {
+   "title": "Medical Terminology and Functional Anatomy",
+   "credits": 3
+  },
+  "NUTR 1020": {
+   "title": "Foundations of Human Nutrition",
+   "credits": 3
+  },
+  "NUTR 2000": {
+   "title": "Body Image and Mindful Eating",
+   "credits": 3
+  },
+  "NUTR 2020": {
+   "title": "Nutrition Through the Life Cycle",
+   "credits": 3
+  },
+  "NUTR 3000": {
+   "title": "Nutrition and Disease",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "NUTR 3100": {
+   "title": "Community Nutrition",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "NUTR 3200": {
+   "title": "Nutrition and Culture",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "NUTR 4900R": {
+   "title": "Special Topics in Advanced Nutrition",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

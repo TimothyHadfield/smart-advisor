@@ -1,0 +1,546 @@
+{
+ "id": "computer-science-computer-engineering-emphasis-aas",
+ "name": "Computer Science - Computer Engineering Emphasis, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-computer-engineering-emphasis-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 65,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Core Requirements: General Education Requirements:",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Core Requirements: General Education Requirements:",
+   "code": "MATH 1210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "placeholder",
+   "area": "Core Requirements: General Education Requirements:",
+   "label": "Choose one of the following:",
+   "credits": 3,
+   "text": "Choose one of the following:",
+   "notes": [
+    "Arts",
+    "Humanities"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Core Requirements: General Education Requirements:",
+   "label": "Choose one of the following:",
+   "credits": 3,
+   "text": "Choose one of the following:",
+   "notes": [
+    "Life Sciences",
+    "Physical Sciences",
+    "Personal, Professional, and Civic Growth"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Core Requirements: General Education Requirements:",
+   "label": "Social & Behavioral Sciences",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CS 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CS 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CS 2810",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ECE 1000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ECE 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ECE 2255",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ECE 2700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ECE 2705",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "IT 1510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "CS 1410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "CS 2370",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "CS 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "PHYS 2210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "PHYS 2215",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Emphasis Requirements",
+   "label": "Emphasis Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "CS 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 2450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 2550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 1220"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Complete 6 credits from the following courses (minimum grade of C- required):"
+  },
+  {
+   "type": "placeholder",
+   "area": "Emphasis Requirements",
+   "label": "Complete 6 credits of any CS or ECE course 1000 or higher.",
+   "credits": 6,
+   "text": "Complete 6 credits of any CS or ECE course 1000 or higher."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MATH 1210",
+     "credits": 4
+    },
+    {
+     "code": "CS 1400",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CS 1410",
+     "credits": 3
+    },
+    {
+     "code": "CS 2810",
+     "credits": 3
+    },
+    {
+     "code": "ECE 1000",
+     "credits": 3
+    },
+    {
+     "code": "PHYS 2210",
+     "alts": [
+      "PHYS 2215"
+     ],
+     "credits": 5
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CS 2370",
+     "credits": 3
+    },
+    {
+     "code": "CS 2420",
+     "credits": 3
+    },
+    {
+     "code": "CS 2600",
+     "credits": 3
+    },
+    {
+     "code": "ECE 2700",
+     "credits": 3
+    },
+    {
+     "code": "ECE 2705",
+     "credits": 1
+    },
+    {
+     "label": "CS/ ECE Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ECE 2250",
+     "credits": 3
+    },
+    {
+     "code": "ECE 2255",
+     "credits": 1
+    },
+    {
+     "code": "IT 1510",
+     "credits": 3
+    },
+    {
+     "label": "CS/ECE Elective",
+     "credits": 3
+    },
+    {
+     "label": "Emphasis Elective",
+     "credits": 3
+    },
+    {
+     "label": "Emphasis Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1410": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereqText": "CS 1400 and Math equivalent to at least college algebra",
+   "prereqs": "CS 1400",
+   "prereqNonCourse": true
+  },
+  "CS 2300": {
+   "title": "Discrete Mathematical Structures I",
+   "credits": 3,
+   "prereqText": "( CS 1410 or INFO 2200 ) and MATH 1050 or higher",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "CS 1410",
+       "INFO 2200"
+      ]
+     },
+     "MATH 1050"
+    ]
+   }
+  },
+  "CS 2370": {
+   "title": "C Plus Plus Programming",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "CS 2420": {
+   "title": "Introduction to Algorithms and Data Structures",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "CS 2450": {
+   "title": "Software Engineering",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420"
+    ]
+   }
+  },
+  "CS 2550": {
+   "title": "Web Programming I",
+   "credits": 3,
+   "prereqText": "CS 1410 or DWDD 2720 or INFO 1200",
+   "prereqs": {
+    "or": [
+     "CS 1410",
+     "DWDD 2720",
+     "INFO 1200"
+    ]
+   }
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CS 2810": {
+   "title": "Computer Organization and Architecture",
+   "credits": 3,
+   "prereqText": "CS 1400 or CS 1420",
+   "prereqs": {
+    "or": [
+     "CS 1400",
+     "CS 1420"
+    ]
+   }
+  },
+  "ECE 1000": {
+   "title": "Introduction to Electrical and Computer Engineering",
+   "credits": 3,
+   "prereqText": "MATH 1060 or higher",
+   "prereqs": "MATH 1060"
+  },
+  "ECE 2250": {
+   "title": "Circuit Theory",
+   "credits": 3,
+   "prereqText": "MATH 1210 , PHYS 2220 , ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "PHYS 2220",
+     "ECE 1000"
+    ]
+   }
+  },
+  "ECE 2255": {
+   "title": "Circuit Theory Lab",
+   "credits": 1,
+   "prereqText": "MATH 1210 , PHYS 2220 , ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "PHYS 2220",
+     "ECE 1000"
+    ]
+   },
+   "coreqText": "ECE 2250",
+   "coreqs": [
+    "ECE 2250"
+   ]
+  },
+  "ECE 2700": {
+   "title": "Digital Design I",
+   "credits": 3,
+   "prereqText": "MATH 1210 and ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "ECE 1000"
+    ]
+   },
+   "coreqText": "ECE 2705",
+   "coreqs": [
+    "ECE 2705"
+   ]
+  },
+  "ECE 2705": {
+   "title": "Digital Design I Lab",
+   "credits": 1,
+   "prereqText": "MATH 1050 or MATH 1055",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "coreqText": "ECE 2700",
+   "coreqs": [
+    "ECE 2700"
+   ]
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1220": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "PHYS 2210": {
+   "title": "Physics for Scientists and Engineers I",
+   "credits": 4,
+   "prereqText": "MATH 1210 or PHYS 1100",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "PHYS 1100"
+    ]
+   },
+   "coreqText": "PHYS 2215",
+   "coreqs": [
+    "PHYS 2215"
+   ]
+  },
+  "PHYS 2215": {
+   "title": "Physics for Scientists and Engineers I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2210",
+   "coreqs": [
+    "PHYS 2210"
+   ]
+  }
+ }
+}

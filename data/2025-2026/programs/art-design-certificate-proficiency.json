@@ -1,0 +1,159 @@
+{
+ "id": "art-design-certificate-proficiency",
+ "name": "Design, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/art-design-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MAT 1030",
+   "alts": [
+    "MATH 1050"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "BIOL 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "BIOL 1015",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ART 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ART 1400",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MATH 1050"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "ART 1120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ART 1400",
+     "credits": 3
+    },
+    {
+     "code": "BIOL 1010",
+     "credits": 3
+    },
+    {
+     "code": "BIOL 1015",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1120": {
+   "title": "2D Design",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "BIOL 1010": {
+   "title": "General Biology",
+   "credits": 3
+  },
+  "BIOL 1015": {
+   "title": "General Biology Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1010",
+   "precoreqs": "BIOL 1010"
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

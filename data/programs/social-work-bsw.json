@@ -1,0 +1,914 @@
+{
+ "id": "social-work-bsw",
+ "name": "Social Work, B.S.W.",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/social-work-bsw/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Quantitative Literacy",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete One of the Following"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Behavioral/Social Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PSY 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 4020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 2200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3710G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 4820",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 4830",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SW 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "PSY 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 3750"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 3510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 3860"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 4700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 4750R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SW 4890R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SW 4900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Complete 24 additional credits of any courses 1000 to 4000 level.",
+   "credits": 24
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "PSY 1010",
+     "credits": 3
+    },
+    {
+     "label": "Quantitative Literacy",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "SW 1010",
+     "credits": 3
+    },
+    {
+     "label": "Humanities",
+     "credits": 3
+    },
+    {
+     "label": "Biological Science",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Physical Science",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Behavioral/Social Science",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "SW 3020",
+     "credits": 3
+    },
+    {
+     "code": "SW 2100",
+     "credits": 3
+    },
+    {
+     "code": "SW 3600",
+     "credits": 3
+    },
+    {
+     "code": "SW 2200",
+     "credits": 3
+    },
+    {
+     "code": "SW 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "SW 3400",
+     "credits": 3
+    },
+    {
+     "code": "SW 3710G",
+     "credits": 3
+    },
+    {
+     "code": "SW 3500",
+     "credits": 3
+    },
+    {
+     "code": "SW 4020",
+     "credits": 3
+    },
+    {
+     "code": "SW 3100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "SW 3120",
+     "credits": 3
+    },
+    {
+     "code": "SW 4820",
+     "credits": 6
+    },
+    {
+     "label": "SW Elective",
+     "credits": 3
+    },
+    {
+     "label": "SW Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "SW 3200",
+     "credits": 3
+    },
+    {
+     "label": "SW Elective",
+     "credits": 3
+    },
+    {
+     "code": "SW 4830",
+     "credits": 6
+    },
+    {
+     "label": "SW Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 2300": {
+   "title": "Abnormal Psychology",
+   "credits": 3,
+   "prereqText": "PSY 1010 (with C- grade or higher) and ( ENGL 1010 or ENGL 1005 with a C- grade or higher)",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4020": {
+   "title": "Survey Research Design in the Social Sciences",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SW 1010": {
+   "title": "Introduction to Social Work",
+   "credits": 3
+  },
+  "SW 2100": {
+   "title": "Human Behavior and the Social Environment I",
+   "credits": 3,
+   "prereqText": "Admission into the BSW program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 2200": {
+   "title": "Professional Skills for Social Work Majors",
+   "credits": 3,
+   "prereqText": "Admission to the BSW program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3000": {
+   "title": "Social Work Practice I Individuals",
+   "credits": 3,
+   "prereqText": "Admission to the BSW program or declared major in Family Science and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3020": {
+   "title": "Research Methods for Social Work",
+   "credits": 3,
+   "prereqText": "Admission to the BSW program; University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3100": {
+   "title": "Social Work Practice II Groups",
+   "credits": 3,
+   "prereqText": "SW 3000 , Admission to the BSW program, and University Advanced Standing",
+   "prereqs": "SW 3000",
+   "prereqNonCourse": true
+  },
+  "SW 3120": {
+   "title": "Social Work Practice III Families",
+   "credits": 3,
+   "prereqText": "Admission to the BSW program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3200": {
+   "title": "Social Work Practice IV Macro",
+   "credits": 3,
+   "prereqText": "SW 3000 , SW 3100 , Admission into the BSW program, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SW 3000",
+     "SW 3100"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "SW 4830",
+   "coreqs": [
+    "SW 4830"
+   ]
+  },
+  "SW 3400": {
+   "title": "Human Behavior and the Social Environment II",
+   "credits": 3,
+   "prereqText": "SW 2100 , Admission into the BSW program, and University Advanced Standing",
+   "prereqs": "SW 2100",
+   "prereqNonCourse": true
+  },
+  "SW 3500": {
+   "title": "Social Welfare Policies and Services",
+   "credits": 3,
+   "prereqText": "Admission into the BSW program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3510G": {
+   "title": "Global Social Work",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ grade or higher, SW 1010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SW 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SW 3600": {
+   "title": "Ethics and Values in Social Work Practice",
+   "credits": 3,
+   "prereqText": "Admission into the BSW program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3710G": {
+   "title": "Diversity Issues in Social Work Practice",
+   "credits": 3,
+   "prereqText": "Admission into the BSW program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SW 3750": {
+   "title": "Child Abuse Neglect and Domestic Violence",
+   "credits": 3,
+   "prereqText": "SW 1010 and University Advanced Standing",
+   "prereqs": "SW 1010",
+   "prereqNonCourse": true
+  },
+  "SW 3860": {
+   "title": "Interviewing Skills",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with C+ or better and University Advanced Standing; PSY 2300 with a C- grade or higher recommended",
+   "prereqs": null
+  },
+  "SW 4020": {
+   "title": "Statistics for Social Work",
+   "credits": 3,
+   "prereqText": "SW 3020 ; Admission to the BSW Program; University Advanced Standing",
+   "prereqs": "SW 3020",
+   "prereqNonCourse": true
+  },
+  "SW 4500": {
+   "title": "Crisis Intervention",
+   "credits": 3,
+   "prereqText": "[ SW 1010 and ( ENGL 2010 with a minimum C+ grade) or instructor approval] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SW 1010",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SW 4700": {
+   "title": "Case Management in Social Work Practice",
+   "credits": 3,
+   "prereqText": "SW 1010 and University Advanced Standing",
+   "prereqs": "SW 1010",
+   "prereqNonCourse": true
+  },
+  "SW 4750R": {
+   "title": "Current Topics in Social Work",
+   "credits": 3,
+   "prereqText": "SW 1010 and ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SW 1010",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SW 4820": {
+   "title": "Field I Practicum",
+   "credits": 6,
+   "prereqText": "SW 2200 ; SW 3600 ; SW 3710G ; SW 3000 ; SW 3100 ; Admission to the BSW program; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SW 2200",
+     "SW 3600",
+     "SW 3710G",
+     "SW 3000",
+     "SW 3100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SW 4830": {
+   "title": "Field II Practicum",
+   "credits": 6,
+   "prereqText": "SW 4820 Admission to the BSW program; University Advanced Standing",
+   "prereqs": "SW 4820",
+   "prereqNonCourse": true,
+   "coreqText": "SW 3200",
+   "coreqs": [
+    "SW 3200"
+   ]
+  },
+  "SW 4890R": {
+   "title": "Advanced Research in Social Work",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "SW 1010 with a C grade or higher; ENGL 2010 with C+ grade or higher; University Advanced Standing; Instructor approval",
+   "prereqs": {
+    "and": [
+     "SW 1010",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SW 4900R": {
+   "title": "Independent Studies",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Instructor approval and University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

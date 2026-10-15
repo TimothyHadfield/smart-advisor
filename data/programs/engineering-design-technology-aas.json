@@ -1,0 +1,649 @@
+{
+ "id": "engineering-design-technology-aas",
+ "name": "Engineering Design Technology, A.A.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/engineering-design-technology-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 65,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005",
+    "MKTG 2200G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "EGDT 1600",
+   "alts": [
+    "MATH 1050",
+    "MATH 1055"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "EGDT 1610",
+   "alts": [
+    "MATH 1060"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Social Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "PHYS 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1070",
+   "alts": [
+    "EGDT 1071"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2040",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2850R",
+   "alts": [],
+   "credits": 0.5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2860",
+   "alts": [],
+   "credits": 0.5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2870",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose a minimum of three courses from the following list for a minimum of 9 credits",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "EGDT 2010"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "EGDT 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2810R"
+     ],
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "credits": 1,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "EGDT 1600",
+     "credits": null
+    },
+    {
+     "code": "EGDT 1020",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1070",
+     "alts": [
+      "EGDT 1071"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1400",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2850R",
+     "credits": 0.5
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": null
+    },
+    {
+     "code": "ENGL 1005",
+     "credits": null
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": null
+    },
+    {
+     "code": "EGDT 1010",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1100",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1200",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1610",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2860",
+     "credits": 0.5
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3
+    },
+    {
+     "code": "PHYS 1010",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1300",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2020",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2040",
+     "credits": 2
+    },
+    {
+     "code": "EGDT 2600",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2870",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "EGDT 2610",
+     "credits": 3
+    },
+    {
+     "label": "Humanities, Fine Arts, or Foreign Language",
+     "credits": 3
+    },
+    {
+     "label": "EGDT Elective",
+     "credits": 3
+    },
+    {
+     "label": "EGDT Elective",
+     "credits": 3
+    },
+    {
+     "label": "EGDT Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EGDT 1010": {
+   "title": "Electrical Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1040 with a grade of C- or higher",
+   "prereqs": "EGDT 1040"
+  },
+  "EGDT 1020": {
+   "title": "3D Architectural Modeling",
+   "credits": 3
+  },
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1070": {
+   "title": "3 Dimensional Modeling Inventor",
+   "credits": 3
+  },
+  "EGDT 1071": {
+   "title": "3 Dimensional Modeling--Solidworks",
+   "credits": 3
+  },
+  "EGDT 1100": {
+   "title": "Residential Architecture Documentation and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1020 with a grade of B- or higher",
+   "prereqs": "EGDT 1020"
+  },
+  "EGDT 1200": {
+   "title": "Mechanical Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1070 or EGDT 1071 or EGDT 1040 , with a grade of C- or higher",
+   "prereqs": {
+    "or": [
+     "EGDT 1070",
+     "EGDT 1071",
+     "EGDT 1040"
+    ]
+   }
+  },
+  "EGDT 1300": {
+   "title": "Structural Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1040 with a grade of C- or higher",
+   "prereqs": "EGDT 1040"
+  },
+  "EGDT 1400": {
+   "title": "Surveying Applications and Field Techniques I",
+   "credits": 3
+  },
+  "EGDT 1600": {
+   "title": "Technical Math Algebra",
+   "credits": 3,
+   "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
+   "prereqs": "MAT 0920",
+   "prereqNonCourse": true
+  },
+  "EGDT 1610": {
+   "title": "Technical Math Geometry Trig",
+   "credits": 3,
+   "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
+   "prereqs": "EGDT 1600",
+   "prereqNonCourse": true
+  },
+  "EGDT 2010": {
+   "title": "Advanced Electrical CAD",
+   "credits": 2,
+   "prereqText": "EGDT 1010 and EGDT 1040 , with \"C-\" grade or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1010",
+     "EGDT 1040"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EGDT 2020": {
+   "title": "Descriptive Geometry",
+   "credits": 3,
+   "prereqText": "EGDT 1040 with a grade of C- or higher",
+   "prereqs": "EGDT 1040"
+  },
+  "EGDT 2040": {
+   "title": "Piping Drafting",
+   "credits": 2,
+   "prereqText": "EGDT 1040 with a grade of C- or higher",
+   "prereqs": "EGDT 1040"
+  },
+  "EGDT 2100": {
+   "title": "Commercial Architecture Documentation and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1020 and EGDT 1100 with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1020",
+     "EGDT 1100"
+    ]
+   }
+  },
+  "EGDT 2200": {
+   "title": "Advanced Mechanical",
+   "credits": 3,
+   "prereqText": "EGDT 1200 and ( EGDT 1070 or EGDT 1071 ) all with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1200",
+     {
+      "or": [
+       "EGDT 1070",
+       "EGDT 1071"
+      ]
+     }
+    ]
+   }
+  },
+  "EGDT 2300": {
+   "title": "Advanced Structural CAD",
+   "credits": 3,
+   "prereqText": "EGDT 1300 and ( MATH 1060 or EGDT 1610 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1300",
+     {
+      "or": [
+       "MATH 1060",
+       "EGDT 1610"
+      ]
+     }
+    ]
+   }
+  },
+  "EGDT 2400": {
+   "title": "Surveying Applications and Field Techniques II",
+   "credits": 3,
+   "prereqText": "EGDT 1040 or equivalent, EGDT 1400 and ( EGDT 1600 or MATH 1060 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1600",
+       "MATH 1060"
+      ]
+     }
+    ]
+   },
+   "uncertain": true
+  },
+  "EGDT 2500": {
+   "title": "3 Dimensional Modeling--Civil 3D",
+   "credits": 3,
+   "prereqText": "EGDT 1040 , EGDT 1400",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1400"
+    ]
+   }
+  },
+  "EGDT 2600": {
+   "title": "Applied Structures I - Statics",
+   "credits": 3,
+   "prereqText": "MATH 1050 or MATH 1055 or ( EGDT 1600 and 1610 )",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "EGDT 1600"
+    ]
+   }
+  },
+  "EGDT 2610": {
+   "title": "Applied Structures II - Strength of Materials",
+   "credits": 3,
+   "prereqText": "EGDT 2600 with a grade of B- or higher",
+   "prereqs": "EGDT 2600"
+  },
+  "EGDT 2810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Department approval and completion of: EGDT 1010 , EGDT 1040 , EGDT 1070 or EGDT 1071 , EGDT 1020 , EGDT 1100 , EGDT 1200 , EGDT 1300 , and EGDT 1400 , all with a C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1010",
+     "EGDT 1040",
+     {
+      "or": [
+       "EGDT 1070",
+       "EGDT 1071"
+      ]
+     },
+     "EGDT 1020",
+     "EGDT 1100",
+     "EGDT 1200",
+     "EGDT 1300",
+     "EGDT 1400"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "EGDT 2850R": {
+   "title": "AEC Design Lecture Series",
+   "credits": 0.5
+  },
+  "EGDT 2860": {
+   "title": "Cooperative Correlated Instruction Skills USA",
+   "credits": 0.5
+  },
+  "EGDT 2870": {
+   "title": "Portfolio and Career Preparation",
+   "credits": 1
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1060": {
+   "title": "Trigonometry",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "PHYS 1010": {
+   "title": "Elementary Physics",
+   "credits": 3
+  }
+ }
+}

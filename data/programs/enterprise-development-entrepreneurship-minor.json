@@ -1,0 +1,368 @@
+{
+ "id": "enterprise-development-entrepreneurship-minor",
+ "name": "Enterprise Development and Entrepreneurship, Minor",
+ "url": "https://catalog.uvu.edu/business/strategic-management-operations/enterprise-development-entrepreneurship-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENTR 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENTR 3170",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENTR 3180R",
+   "alts": [
+    "ENTR 4450"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENTR 4400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 6 credits from the following:",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "AET 2010",
+      "AET 2015"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DGM 1110"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "DWDD 2520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 3220"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4455"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3420R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3320G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose 6 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENTR 2500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENTR 3170",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Entrepreneurship Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Entrepreneurship Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENTR 4400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENTR 3180R",
+     "alts": [
+      "ENTR 4450"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AET 2010": {
+   "title": "Manufacturing Technology",
+   "credits": 1,
+   "coreqText": "AET 2015",
+   "coreqs": [
+    "AET 2015"
+   ]
+  },
+  "AET 2015": {
+   "title": "Manufacturing Technology Lab",
+   "credits": 2,
+   "coreqText": "AET 2010",
+   "coreqs": [
+    "AET 2010"
+   ]
+  },
+  "COMM 3140": {
+   "title": "Social Media Content Creation Strategy",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 3410": {
+   "title": "Fundamentals of Mediation and Negotiation",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "DWDD 2520": {
+   "title": "Digital Product Experiences I",
+   "credits": 3,
+   "prereqText": "DWDD 1410",
+   "prereqs": "DWDD 1410"
+  },
+  "ENTR 2500": {
+   "title": "Creativity and Entrepreneurial Thinking",
+   "credits": 3
+  },
+  "ENTR 3170": {
+   "title": "Entrepreneurship - Feasibility Analysis",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENTR 3180R": {
+   "title": "Launching a New Venture - For Non-Business Majors",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENTR 3220": {
+   "title": "Entrepreneurship Law",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 4200": {
+   "title": "Innovative Opportunity Development",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4300": {
+   "title": "The Art of the Pitch",
+   "credits": 3,
+   "prereqText": "( ENTR 2500 or ENTR 3170 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENTR 2500",
+     "ENTR 3170"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 4400": {
+   "title": "New Venture Financing",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4450": {
+   "title": "Entrepreneurship - Enterprise Formation",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "ENTR 4455": {
+   "title": "New Venture Consulting",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "FIN 3410": {
+   "title": "Introduction to Venture Capital Skills",
+   "credits": 3,
+   "prereqText": "University Advanced Standing, FIN 3100 strongly recommended.",
+   "prereqs": null
+  },
+  "FIN 3420R": {
+   "title": "Wolverine Fund",
+   "credits": 3,
+   "prereqText": "FIN 3410 , Instructor Approval and University Advanced Standing, FIN 3100 strongly recommended.",
+   "prereqs": null
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 3170": {
+   "title": "Digital Advertising",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
+   "prereqs": null
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

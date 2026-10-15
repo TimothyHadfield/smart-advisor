@@ -1,0 +1,724 @@
+{
+ "id": "physics-minor",
+ "name": "Physics, Minor",
+ "url": "https://catalog.uvu.edu/science/physics/physics-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2215",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2220",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 3110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 3115",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Complete a minimum of 5 Credits from the following courses:",
+   "pick": {
+    "credits": 5
+   },
+   "credits": 5,
+   "options": [
+    {
+     "codes": [
+      "ASTR 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ASTR 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 2500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3830"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3125"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "PHYS 3230"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3330"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 4900R"
+     ],
+     "credits": 0.5
+    },
+    {
+     "codes": [
+      "METO 3100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete a minimum of 5 credits from the following courses:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "PHYS 2210",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2215",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "PHYS 2220",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2225",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PHYS 3110",
+     "credits": 3
+    },
+    {
+     "code": "PHYS 3115",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Complete a minimum of 5 Credits from the following courses:",
+     "credits": 5
+    },
+    {
+     "code": "ASTR 3050",
+     "credits": null
+    },
+    {
+     "code": "ASTR 3060",
+     "credits": null
+    },
+    {
+     "code": "PHYS 2500",
+     "credits": null
+    },
+    {
+     "code": "PHYS 2800",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3120",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3125",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3230",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3300",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3310",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3330",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3400",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3500",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3600",
+     "credits": null
+    },
+    {
+     "code": "PHYS 3800",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4210",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4250",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4410",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4420",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4510",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4520",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4700",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4800",
+     "credits": null
+    },
+    {
+     "code": "PHYS 4900R",
+     "credits": null
+    },
+    {
+     "code": "METO 3100",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ASTR 3050": {
+   "title": "Astrophysics I",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , MATH 1220 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 2220",
+     "MATH 1220"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ASTR 3060": {
+   "title": "Astrophysics II",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , MATH 1220 , ASTR 3050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 2220",
+     "MATH 1220",
+     "ASTR 3050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "METO 3100": {
+   "title": "Climate and the Earth System",
+   "credits": 3,
+   "prereqText": "( CHEM 1110 or CHEM 1210 ), ( MATH 1050 or MATH 1055 ), ( PHYS 2010 or PHYS 2210 ), METO 1010 , GEO 1010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     },
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     {
+      "or": [
+       "PHYS 2010",
+       "PHYS 2210"
+      ]
+     },
+     "METO 1010",
+     "GEO 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 2210": {
+   "title": "Physics for Scientists and Engineers I",
+   "credits": 4,
+   "prereqText": "MATH 1210 or PHYS 1100",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "PHYS 1100"
+    ]
+   },
+   "coreqText": "PHYS 2215",
+   "coreqs": [
+    "PHYS 2215"
+   ]
+  },
+  "PHYS 2215": {
+   "title": "Physics for Scientists and Engineers I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2210",
+   "coreqs": [
+    "PHYS 2210"
+   ]
+  },
+  "PHYS 2220": {
+   "title": "Physics for Scientists and Engineers II",
+   "credits": 4,
+   "prereqText": "PHYS 2210",
+   "prereqs": "PHYS 2210",
+   "coreqText": "PHYS 2225",
+   "coreqs": [
+    "PHYS 2225"
+   ]
+  },
+  "PHYS 2225": {
+   "title": "Physics for Scientists and Engineers II Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2220",
+   "coreqs": [
+    "PHYS 2220"
+   ]
+  },
+  "PHYS 2500": {
+   "title": "Elementary Fluids and Thermal Physics",
+   "credits": 3,
+   "prereqText": "PHYS 2220",
+   "prereqs": "PHYS 2220",
+   "coreqText": "MATH 2210",
+   "coreqs": [
+    "MATH 2210"
+   ]
+  },
+  "PHYS 2800": {
+   "title": "Introduction to Materials Physics",
+   "credits": 3,
+   "prereqText": "PHYS 2220",
+   "prereqs": "PHYS 2220"
+  },
+  "PHYS 3110": {
+   "title": "Modern Physics I",
+   "credits": 3,
+   "prereqText": "PHYS 2220 and University Advanced Standing",
+   "prereqs": "PHYS 2220",
+   "prereqNonCourse": true,
+   "coreqText": "PHYS 3115",
+   "coreqs": [
+    "PHYS 3115"
+   ]
+  },
+  "PHYS 3115": {
+   "title": "Introduction to Experimental Physics I",
+   "credits": 2,
+   "prereqText": "PHYS 2220 and University Advanced Standing",
+   "prereqs": "PHYS 2220",
+   "prereqNonCourse": true,
+   "coreqText": "PHYS 3110",
+   "coreqs": [
+    "PHYS 3110"
+   ]
+  },
+  "PHYS 3120": {
+   "title": "Modern Physics II",
+   "credits": 3,
+   "prereqText": "PHYS 3110 and University Advanced Standing",
+   "prereqs": "PHYS 3110",
+   "prereqNonCourse": true,
+   "coreqText": "PHYS 3125",
+   "coreqs": [
+    "PHYS 3125"
+   ]
+  },
+  "PHYS 3125": {
+   "title": "Introduction to Experimental Physics II",
+   "credits": 2,
+   "prereqText": "PHYS 3110 , PHYS 3115 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3110",
+     "PHYS 3115"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "PHYS 3120",
+   "precoreqs": "PHYS 3120"
+  },
+  "PHYS 3230": {
+   "title": "Principles of Electronics for the Physical Sciences",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , and University Advanced Standing",
+   "prereqs": "PHYS 2220",
+   "prereqNonCourse": true
+  },
+  "PHYS 3300": {
+   "title": "Mathematical and Computational Physics I",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , and University Advanced Standing",
+   "prereqs": "PHYS 2220",
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 2210 or instructor consent. MATH 2280 is strongly advised as a pre- or corequisite.",
+   "precoreqs": {
+    "or": [
+     "MATH 2210",
+     "MATH 2280"
+    ]
+   }
+  },
+  "PHYS 3310": {
+   "title": "Advanced Mathematical Physics",
+   "credits": 3,
+   "prereqText": "PHYS 3300 and University Advanced Standing",
+   "prereqs": "PHYS 3300",
+   "prereqNonCourse": true
+  },
+  "PHYS 3330": {
+   "title": "Mathematical and Computational Physics II",
+   "credits": 3,
+   "prereqText": "PHYS 3300 and University Advanced Standing",
+   "prereqs": "PHYS 3300",
+   "prereqNonCourse": true
+  },
+  "PHYS 3400": {
+   "title": "Classical Mechanics",
+   "credits": 3,
+   "prereqText": "PHYS 2220 and University Advanced Standing",
+   "prereqs": "PHYS 2220",
+   "prereqNonCourse": true,
+   "precoreqText": "PHYS 3300 recommended",
+   "precoreqs": null
+  },
+  "PHYS 3500": {
+   "title": "Thermodynamics",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , MATH 2210 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 2220",
+     "MATH 2210"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 3600": {
+   "title": "Optics",
+   "credits": 3,
+   "prereqText": "PHYS 3300 , PHYS 3110 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3300",
+     "PHYS 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 3800": {
+   "title": "Energy Use on Earth",
+   "credits": 3,
+   "prereqText": "( PHYS 1010 or PHSC 1000 or GEO 1010 or GEO 2040 or METO 1010 ) and ( MATH 1050 or MATH 1055 ) and CHEM 1010 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "PHYS 1010",
+       "PHSC 1000",
+       "GEO 1010",
+       "GEO 2040",
+       "METO 1010"
+      ]
+     },
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "CHEM 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 3830": {
+   "title": "Biophysics",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , PHYS 2225 , and BIOL 1010 or BIOL 1610 ; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 2220",
+     "PHYS 2225",
+     {
+      "or": [
+       "BIOL 1010",
+       "BIOL 1610"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PHYS 4210": {
+   "title": "Advanced Experimental Techniques",
+   "credits": 3,
+   "prereqText": "( PHYS 3125 , PHYS 3230 , or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHYS 3125",
+     "PHYS 3230"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 4250": {
+   "title": "Nuclear Physics",
+   "credits": 3,
+   "prereqText": "PHYS 3110",
+   "prereqs": "PHYS 3110"
+  },
+  "PHYS 4410": {
+   "title": "Electrostatics and Magnetism",
+   "credits": 3,
+   "prereqText": "PHYS 3110 , PHYS 3115 , PHYS 3300 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3110",
+     "PHYS 3115",
+     "PHYS 3300"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 4420": {
+   "title": "Electrodynamics",
+   "credits": 3,
+   "prereqText": "PHYS 4410 and University Advanced Standing",
+   "prereqs": "PHYS 4410",
+   "prereqNonCourse": true
+  },
+  "PHYS 4510": {
+   "title": "Quantum Mechanics I",
+   "credits": 3,
+   "prereqText": "PHYS 3110 , PHYS 3115 , PHYS 3300 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3110",
+     "PHYS 3115",
+     "PHYS 3300"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 4520": {
+   "title": "Quantum Mechanics II",
+   "credits": 3,
+   "prereqText": "PHYS 4510 and University Advanced Standing",
+   "prereqs": "PHYS 4510",
+   "prereqNonCourse": true
+  },
+  "PHYS 4700": {
+   "title": "Acoustics",
+   "credits": 3,
+   "prereqText": "PHYS 3110 , PHYS 3115 , PHYS 3300 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3110",
+     "PHYS 3115",
+     "PHYS 3300"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 4800": {
+   "title": "Solid State Physics",
+   "credits": 3,
+   "prereqText": "PHYS 3120 , 3125 , PHYS 4510 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PHYS 3120",
+     "PHYS 4510"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 4900R": {
+   "title": "Seminar",
+   "credits": 0.5,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

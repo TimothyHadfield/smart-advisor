@@ -1,0 +1,461 @@
+{
+ "id": "facilities-management-aas",
+ "name": "Facilities Management, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/facilities-management-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 64,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biol/ Physical Science",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "EGDT 1600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Biology or Physical Science Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "TECH 2000G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 1150",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1820",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 1645",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIT 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 1190",
+   "alts": [
+    "CMGT 2810R"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 1220",
+   "alts": [
+    "CMGT 2810R"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2035",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2080",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FAC 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Elective",
+   "credits": 3,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "BIT 1010",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 1010",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 1190",
+     "alts": [
+      "CMGT 2810R"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "CMGT 1150",
+     "credits": 2
+    },
+    {
+     "code": "EGDT 1600",
+     "alts": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CMGT 1220",
+     "alts": [
+      "CMGT 2810R"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "FAC 1010",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1020",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 1020",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Biol/ Physical Science",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2035",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2010",
+     "credits": 3
+    },
+    {
+     "code": "DGM 1645",
+     "credits": 2
+    },
+    {
+     "code": "ART 1820",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2000G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2080",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1050",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ART 1820": {
+   "title": "Interior Space Design",
+   "credits": 3
+  },
+  "BIT 1010": {
+   "title": "Building Codes",
+   "credits": 3
+  },
+  "CMGT 1010": {
+   "title": "Introduction to Construction Management",
+   "credits": 3
+  },
+  "CMGT 1020": {
+   "title": "Construction Materials and Methods I",
+   "credits": 3,
+   "prereqText": "MAT 0950 or higher or appropriate test scores",
+   "prereqs": "MAT 0950",
+   "prereqNonCourse": true
+  },
+  "CMGT 1150": {
+   "title": "Construction Safety",
+   "credits": 2
+  },
+  "CMGT 1190": {
+   "title": "Concrete and Framing Lab",
+   "credits": 3
+  },
+  "CMGT 1220": {
+   "title": "Finishing Lab",
+   "credits": 3
+  },
+  "CMGT 2010": {
+   "title": "Construction Materials and Methods II",
+   "credits": 3
+  },
+  "CMGT 2035": {
+   "title": "Construction Computer Applications",
+   "credits": 3,
+   "precoreqText": "CMGT 1010 , and ( CMGT 1020 or CMGT 2010 ), or department approval.",
+   "precoreqs": {
+    "and": [
+     "CMGT 1010",
+     {
+      "or": [
+       "CMGT 1020",
+       "CMGT 2010"
+      ]
+     }
+    ]
+   },
+   "uncertain": true
+  },
+  "CMGT 2080": {
+   "title": "Principles of Construction Scheduling",
+   "credits": 3,
+   "prereqText": "CMGT 2010",
+   "prereqs": "CMGT 2010"
+  },
+  "CMGT 2810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DGM 1645": {
+   "title": "Mixed Reality Essentials",
+   "credits": 2
+  },
+  "EGDT 1020": {
+   "title": "3D Architectural Modeling",
+   "credits": 3
+  },
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1050": {
+   "title": "Intro to 3D Printing and Fabrication",
+   "credits": 3
+  },
+  "EGDT 1600": {
+   "title": "Technical Math Algebra",
+   "credits": 3,
+   "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
+   "prereqs": "MAT 0920",
+   "prereqNonCourse": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FAC 1010": {
+   "title": "Survey of Facilities Management",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "TECH 2000G": {
+   "title": "Technology and Human Life",
+   "credits": 3
+  }
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "business-management-minor",
+ "name": "Business Management, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-management-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Business elective",
+   "pick": {
+    "count": 2
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "MGMT 3300G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete two of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Business elective",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "label": "Business elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HR 3430": {
+   "title": "Introduction to Human Resource Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3300G": {
+   "title": "Survey of International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or MKTG 2200G ), ECON 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 2010",
+       "MKTG 2200G"
+      ]
+     },
+     "ECON 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

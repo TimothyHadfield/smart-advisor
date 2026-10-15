@@ -1,0 +1,225 @@
+{
+ "id": "human-resource-management-minor",
+ "name": "Human Resource Management, Minor",
+ "url": "https://catalog.uvu.edu/business/organizational-leadership/human-resource-management-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HR 3430",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 15 credits",
+   "pick": {
+    "credits": 15
+   },
+   "credits": 15,
+   "options": [
+    {
+     "codes": [
+      "HR 3530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3570"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4700G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4950R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 15 credits from the following courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HR 3430",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "HR Electives",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "HR Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "HR Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "HR Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HR 3430": {
+   "title": "Introduction to Human Resource Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HR 3530": {
+   "title": "Employment and Labor Law",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HR 3550": {
+   "title": "Organization Development and Change Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 highly recommended",
+   "prereqs": null
+  },
+  "HR 3570": {
+   "title": "Training and Development",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 recommended",
+   "prereqs": null
+  },
+  "HR 4000": {
+   "title": "Total Rewards",
+   "credits": 3,
+   "prereqText": "HR 3430 and University Advanced Standing",
+   "prereqs": "HR 3430",
+   "prereqNonCourse": true
+  },
+  "HR 4050": {
+   "title": "Human Resource Information Systems",
+   "credits": 3,
+   "prereqText": "HR 3430 and University Advanced Standing",
+   "prereqs": "HR 3430",
+   "prereqNonCourse": true
+  },
+  "HR 4060": {
+   "title": "HR Analytics",
+   "credits": 3,
+   "prereqText": "MGMT 2400 , HR 3430 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2400",
+     "HR 3430"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HR 4610": {
+   "title": "Talent Acquisition",
+   "credits": 3,
+   "prereqText": "HR 3430 and University Advanced Standing",
+   "prereqs": "HR 3430",
+   "prereqNonCourse": true
+  },
+  "HR 4700G": {
+   "title": "International Human Resource Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HR 4800": {
+   "title": "Strategic Human Resource Management",
+   "credits": 3,
+   "prereqText": "HR 3430 , HR 4050 , HR 4060 , Matriculation into the Woodbury School of Business, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "HR 3430",
+     "HR 4050",
+     "HR 4060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HR 4950R": {
+   "title": "Advanced Topics in Strategic Human Resource Management",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Department chair approval and University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

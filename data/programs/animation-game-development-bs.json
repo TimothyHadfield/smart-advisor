@@ -1,0 +1,1405 @@
+{
+ "id": "animation-game-development-bs",
+ "name": "Animation and Game Development, B.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/digital-media/animation-game-development-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Math Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 1110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAGV 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 3120G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAGV 3470",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAGV 3480",
+   "alts": [
+    "DGM 3110"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAGV 4900R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "choice",
+   "area": "Animation and Game Development Tracks",
+   "label": "Students must complete one of the following tracks",
+   "pick": {
+    "credits": 68,
+    "tracks": 1
+   },
+   "credits": 68,
+   "options": [
+    {
+     "codes": [
+      "DAGV 1300"
+     ],
+     "credits": 2,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1300L"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1500"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1600"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2210"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2230"
+     ],
+     "credits": 2,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2230L"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2240"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2330"
+     ],
+     "credits": 2,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2330L"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2340"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2480"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3310"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3350"
+     ],
+     "credits": 2,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3350L"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3360"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3450"
+     ],
+     "credits": 2,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3450L"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 4350"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 4450"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 4550"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1100"
+     ],
+     "credits": 3,
+     "alts": [
+      "DAGV 1300"
+     ],
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1700"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2610"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2612"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2671"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2640"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2642"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2672"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2830"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3000R"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3671"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3672"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3701"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3702"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3830"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 4600R"
+     ],
+     "credits": 6,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1100"
+     ],
+     "credits": 3,
+     "alts": [
+      "DAGV 1300"
+     ],
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1700"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2610"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2612"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2640"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2642"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2460"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2470"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 2830"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3000R"
+     ],
+     "credits": 1,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DWDD 3261"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3460"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3461"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3801"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3802"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 3830"
+     ],
+     "credits": 3,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 4600R"
+     ],
+     "credits": 6,
+     "section": "Take the following courses:"
+    },
+    {
+     "codes": [
+      "DAGV 1200R"
+     ],
+     "credits": 3,
+     "section": "--Approved Electives"
+    },
+    {
+     "codes": [
+      "DGM 1645"
+     ],
+     "credits": 3,
+     "section": "--Approved Electives"
+    },
+    {
+     "codes": [
+      "DAGV 2200R"
+     ],
+     "credits": 3,
+     "section": "--Approved Electives"
+    },
+    {
+     "codes": [
+      "DAGV 2101"
+     ],
+     "credits": 3,
+     "section": "--Approved Electives"
+    },
+    {
+     "codes": [
+      "DAGV 2102"
+     ],
+     "credits": 3,
+     "section": "--Approved Electives"
+    }
+   ],
+   "text": "Students must complete one of the following tracks",
+   "notes": [
+    "Includes 36 credits of upper-division: Complete 20 additional advisor-approved credits (4 credits must be upper-division)",
+    "Includes 40 credits of upper-division: Complete 14 advisor-approved approved credits.",
+    "Includes 40 credits of upper-division: Complete 14 additional advisor-approved credits."
+   ],
+   "tracks": [
+    "Take the following courses:",
+    "--Approved Electives"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DAGV 1200",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Math Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DGM 1110",
+     "credits": 4
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 2
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "DAGV 3480",
+     "alts": [
+      "DGM 3110"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "DAGV 3470",
+     "credits": 3
+    },
+    {
+     "code": "DGM 3120G",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "DAGV 4900R",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "code": "DGM 3110",
+     "alts": [
+      "DAGV 3480"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "DAGV 4900R",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAGV Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DAGV 1100": {
+   "title": "3D Animation Essentials",
+   "credits": 3
+  },
+  "DAGV 1200": {
+   "title": "3D Modeling Essentials",
+   "credits": 3
+  },
+  "DAGV 1200R": {
+   "title": "Current Topics in Animation and Game Development",
+   "credits": 1,
+   "creditsMax": 3
+  },
+  "DAGV 1300": {
+   "title": "Animation Essentials",
+   "credits": 2,
+   "coreqText": "DAGV 1300L",
+   "coreqs": [
+    "DAGV 1300L"
+   ]
+  },
+  "DAGV 1300L": {
+   "title": "Animation Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAGV 1300",
+   "coreqs": [
+    "DAGV 1300"
+   ]
+  },
+  "DAGV 1500": {
+   "title": "Concept Essentials",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 1600": {
+   "title": "Studio Technology Essentials",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 1700": {
+   "title": "Scripting Essentials",
+   "credits": 3
+  },
+  "DAGV 2101": {
+   "title": "Motion Graphics for Digital Media I",
+   "credits": 3,
+   "prereqText": "DGM 1110 , or DGM 1061, or ART 1120",
+   "prereqs": {
+    "or": [
+     "DGM 1110",
+     "DGM 1061",
+     "ART 1120"
+    ]
+   }
+  },
+  "DAGV 2102": {
+   "title": "Motion Graphics for Digital Media II",
+   "credits": 3,
+   "prereqText": "DAGV 2101",
+   "prereqs": "DAGV 2101"
+  },
+  "DAGV 2200R": {
+   "title": "Special Topics in Animation and Game Development",
+   "credits": 1,
+   "creditsMax": 3
+  },
+  "DAGV 2210": {
+   "title": "3D Modeling and Animation",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2230": {
+   "title": "Animation I",
+   "credits": 2,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 2230L",
+   "coreqs": [
+    "DAGV 2230L"
+   ]
+  },
+  "DAGV 2230L": {
+   "title": "Animation I Lab",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 2230",
+   "coreqs": [
+    "DAGV 2230"
+   ]
+  },
+  "DAGV 2240": {
+   "title": "2D Character Development I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2330": {
+   "title": "Introduction to Rigging",
+   "credits": 2,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 2330L",
+   "coreqs": [
+    "DAGV 2330L"
+   ]
+  },
+  "DAGV 2330L": {
+   "title": "Introduction To Rigging Lab",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 2330",
+   "coreqs": [
+    "DAGV 2330"
+   ]
+  },
+  "DAGV 2340": {
+   "title": "Digital Storyboarding",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2460": {
+   "title": "Game Development I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2470": {
+   "title": "Game Development II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2480": {
+   "title": "Introduction to Compositing",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2610": {
+   "title": "3D Modeling and Surfacing",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2612": {
+   "title": "3D Modeling and Surfacing II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2640": {
+   "title": "3D Character Development",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2642": {
+   "title": "3D Character Development II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2671": {
+   "title": "3D Animation Project I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2672": {
+   "title": "3D Animation Project II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 2830": {
+   "title": "3D Rigging I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3000R": {
+   "title": "Animation and Game Group Project",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3310": {
+   "title": "Technical Design and Direction",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3350": {
+   "title": "Animation and Game Production I",
+   "credits": 2,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 3350L",
+   "coreqs": [
+    "DAGV 3350L"
+   ]
+  },
+  "DAGV 3350L": {
+   "title": "Animation and Game Lab I",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 3350",
+   "coreqs": [
+    "DAGV 3350"
+   ]
+  },
+  "DAGV 3360": {
+   "title": "Advanced Character Rigging",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3450": {
+   "title": "Animation and Game Production II",
+   "credits": 2,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 3450L",
+   "coreqs": [
+    "DAGV 3450L"
+   ]
+  },
+  "DAGV 3450L": {
+   "title": "Animation and Game Lab II",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "DAGV 3450",
+   "coreqs": [
+    "DAGV 3450"
+   ]
+  },
+  "DAGV 3460": {
+   "title": "Game Development III",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3461": {
+   "title": "Game Development IV",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3470": {
+   "title": "Animation Story Development",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3480": {
+   "title": "Writing for Technical Directors",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3671": {
+   "title": "3D Animation Project III",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3672": {
+   "title": "3D Animation Project IV",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3701": {
+   "title": "3D Visual Effects I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3702": {
+   "title": "3D Visual Effects II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3801": {
+   "title": "Game Engine I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3802": {
+   "title": "Game Engine II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 3830": {
+   "title": "3D Rigging II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 4350": {
+   "title": "Advanced Technical Direction I",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 4450": {
+   "title": "Advanced Technical Direction II",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 4550": {
+   "title": "Performance Animation",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 4600R": {
+   "title": "Portfolio Development",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAGV 4900R": {
+   "title": "Senior Capstone",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "DGM 1645": {
+   "title": "Mixed Reality Essentials",
+   "credits": 3
+  },
+  "DGM 3110": {
+   "title": "Corporate Issues in Digital Media",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DGM 3120G": {
+   "title": "Digital Media for Intercultural Communication",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DWDD 3261": {
+   "title": "Mixed Reality Experiences",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

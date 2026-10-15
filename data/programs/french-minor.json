@@ -1,0 +1,263 @@
+{
+ "id": "french-minor",
+ "name": "French, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/french-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FREN 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "FREN Elective",
+   "pick": {
+    "credits": 15
+   },
+   "credits": 15,
+   "options": [
+    {
+     "codes": [
+      "FREN 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3520G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FREN 4900R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "LANG 3000"
+     ],
+     "credits": 3,
+     "alts": [
+      "LANG 4810R",
+      "LANG 4200",
+      "LANG 4900R"
+     ]
+    }
+   ],
+   "text": "Complete 15 credits from among the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FREN 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "FREN Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "FREN Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "FREN Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "FREN Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "FREN Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FREN 3030": {
+   "title": "French Composition and Conversation",
+   "credits": 3,
+   "prereqText": "( FREN 2020G or instructor approval) and University Advanced Standing",
+   "prereqs": "FREN 2020G",
+   "prereqNonCourse": true
+  },
+  "FREN 3040": {
+   "title": "Introduction to Literary Genres in French",
+   "credits": 3,
+   "prereqText": "( FREN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "FREN 2020G",
+   "prereqNonCourse": true
+  },
+  "FREN 3050": {
+   "title": "Advanced French",
+   "credits": 3,
+   "prereqText": "It is recommended that students take FR 2020G prior to enrolling in FR 3050. If you have advanced study of French, you may also contact the French Program Director for a placement test.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FREN 3200": {
+   "title": "Business French",
+   "credits": 3,
+   "prereqText": "( FREN 3050 or equivalent knowledge) and University Advanced Standing",
+   "prereqs": "FREN 3050",
+   "prereqNonCourse": true
+  },
+  "FREN 3510G": {
+   "title": "Culture and Civilization to 1700",
+   "credits": 3,
+   "prereqText": "FREN 3050 and University Advanced Standing",
+   "prereqs": "FREN 3050",
+   "prereqNonCourse": true
+  },
+  "FREN 3520G": {
+   "title": "Culture and Civilization from 1700",
+   "credits": 3,
+   "prereqText": "FREN 3050 and University Advanced Standing",
+   "prereqs": "FREN 3050",
+   "prereqNonCourse": true
+  },
+  "FREN 3610": {
+   "title": "French Literature to 1700",
+   "credits": 3,
+   "prereqText": "( FREN 3050 or equivalent knowledge) and University Advanced Standing",
+   "prereqs": "FREN 3050",
+   "prereqNonCourse": true
+  },
+  "FREN 3620": {
+   "title": "French Literature from 1700",
+   "credits": 3,
+   "prereqText": "( FREN 3050 or equivalent knowledge) or department approval; University Advanced Standing",
+   "prereqs": "FREN 3050",
+   "prereqNonCourse": true
+  },
+  "FREN 4200": {
+   "title": "Advanced Business French",
+   "credits": 3,
+   "prereqText": "( FREN 3200 or equivalent knowledge) and University Advanced Standing",
+   "prereqs": "FREN 3200",
+   "prereqNonCourse": true
+  },
+  "FREN 4900R": {
+   "title": "Special Topics in French",
+   "credits": 3,
+   "prereqText": "( FREN 2020G or instructor approval) and University Advanced Standing",
+   "prereqs": "FREN 2020G",
+   "prereqNonCourse": true
+  },
+  "LANG 3000": {
+   "title": "Language and Culture",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005 , ( ANTH 1010G or any foreign language 2010 course), Sophomore status, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     },
+     "ANTH 1010G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "LANG 4200": {
+   "title": "Methods of Teaching a Foreign Language",
+   "credits": 3,
+   "prereqText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "LANG 4810R": {
+   "title": "Language Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Departmental Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "LANG 4900R": {
+   "title": "Special Topics in Languages",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Department Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

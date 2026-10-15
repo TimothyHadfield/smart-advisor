@@ -1,0 +1,419 @@
+{
+ "id": "music-minor",
+ "name": "Music, Minor",
+ "url": "https://catalog.uvu.edu/arts/music/music-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1130",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Large Ensemble",
+   "pick": {
+    "credits": 4
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "MUSC 1450R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 2450R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 2500R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 4 credits from the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Six additional credit hours of music courses",
+   "credits": 6
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 4 credits",
+   "pick": {
+    "credits": 4
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "MUSC 1240R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 1250R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3060R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3220R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3270R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3280R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3300R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3310R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3320R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3330R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3340R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3700R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3720R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3730R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 4230R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 4 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MUSC 1110",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1130",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": null
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": null
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MUSC 1450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": null
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": null
+    },
+    {
+     "label": "MUSC Elective",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MUSC 1450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": null
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": null
+    },
+    {
+     "label": "MUSC Elective",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MUSC 1450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": null
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": null
+    },
+    {
+     "label": "MUSC Elective",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MUSC 1110": {
+   "title": "Music Theory I",
+   "credits": 3,
+   "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
+   "prereqs": {
+    "or": [
+     "MUSC 1105",
+     "MUSC 1110"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 1130",
+   "coreqs": [
+    "MUSC 1130"
+   ]
+  },
+  "MUSC 1130": {
+   "title": "Aural Skills I",
+   "credits": 1,
+   "coreqText": "MUSC 1110",
+   "coreqs": [
+    "MUSC 1110"
+   ]
+  },
+  "MUSC 1240R": {
+   "title": "UVU Concert Choir",
+   "credits": 1
+  },
+  "MUSC 1250R": {
+   "title": "University Band",
+   "credits": 1
+  },
+  "MUSC 1450R": {
+   "title": "Private Lessons I",
+   "credits": 1
+  },
+  "MUSC 2450R": {
+   "title": "Private Lessons II",
+   "credits": 1
+  },
+  "MUSC 2500R": {
+   "title": "Private Lessons for Music Majors",
+   "credits": 1,
+   "prereqText": "Music major entrance audition required.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 2510R",
+   "coreqs": [
+    "MUSC 2510R"
+   ]
+  },
+  "MUSC 3060R": {
+   "title": "Advanced Keyboard Skills",
+   "credits": 1,
+   "coreqText": "MUSC 2500R or MUSC 4500R or MUSC 4550R",
+   "coreqs": [
+    "MUSC 2500R",
+    "MUSC 4500R",
+    "MUSC 4550R"
+   ]
+  },
+  "MUSC 3220R": {
+   "title": "Chamber Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3270R": {
+   "title": "Deep Green-Tenor/Bass Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3280R": {
+   "title": "Emerald Singers-Soprano/Alto Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3300R": {
+   "title": "Wind Symphony",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3310R": {
+   "title": "Percussion Ensemble",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3320R": {
+   "title": "Jazz Orchestra",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3330R": {
+   "title": "Small Jazz and Commercial Ensembles",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3340R": {
+   "title": "Pep Band",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3700R": {
+   "title": "Symphony Orchestra",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3720R": {
+   "title": "Chamber Orchestra",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3730R": {
+   "title": "Advanced Small Ensembles",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 4230R": {
+   "title": "Opera Workshop",
+   "credits": 1,
+   "coreqText": "MUSC 2500R or MUSC 4500R",
+   "coreqs": [
+    "MUSC 2500R",
+    "MUSC 4500R"
+   ],
+   "precoreqText": "MUSC 4550R",
+   "precoreqs": "MUSC 4550R"
+  }
+ }
+}

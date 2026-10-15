@@ -1,0 +1,456 @@
+{
+ "id": "zoology-minor",
+ "name": "Zoology, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/zoology-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1615",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1625",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Core Elective",
+   "pick": {
+    "count": 1
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "ZOOL 3100",
+      "ZOOL 3105"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 3200",
+      "ZOOL 3205"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Complete one of the following with a grade of C- or better:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 11 credits",
+   "pick": {
+    "credits": 11
+   },
+   "credits": 11,
+   "options": [
+    {
+     "codes": [
+      "ZOOL 3100",
+      "ZOOL 3105"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 3200",
+      "ZOOL 3205"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 3300",
+      "ZOOL 3305"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 3430",
+      "ZOOL 3435"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 3500",
+      "ZOOL 3505"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 4000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ZOOL 4100"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 4300"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 4400"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 4500",
+      "ZOOL 4505"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 4600"
+     ],
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "BIOL 1610",
+     "alts": [
+      "BIOL 1615"
+     ],
+     "credits": 5
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "BIOL 1620",
+     "alts": [
+      "BIOL 1625"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Core Elective",
+     "credits": 4
+    },
+    {
+     "label": "Upper Division Electives",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Upper Division Electivies",
+     "credits": 7
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGH 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1610",
+   "coreqs": [
+    "BIOL 1610"
+   ]
+  },
+  "BIOL 1620": {
+   "title": "College Biology II",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and BIOL 1615 with a C- or higher in each.",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "BIOL 1615"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "BIOL 1625",
+   "coreqs": [
+    "BIOL 1625"
+   ]
+  },
+  "BIOL 1625": {
+   "title": "College Biology II Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1620",
+   "coreqs": [
+    "BIOL 1620"
+   ]
+  },
+  "ZOOL 3100": {
+   "title": "Vertebrate Zoology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 with a C- or higher and University Advanced Standing",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3105",
+   "coreqs": [
+    "ZOOL 3105"
+   ]
+  },
+  "ZOOL 3105": {
+   "title": "Vertebrate Zoology Laboratory",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3100",
+   "coreqs": [
+    "ZOOL 3100"
+   ]
+  },
+  "ZOOL 3200": {
+   "title": "Invertebrate Zoology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 with a C- or higher and University Advanced Standing",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3205",
+   "coreqs": [
+    "ZOOL 3205"
+   ]
+  },
+  "ZOOL 3205": {
+   "title": "Invertebrate Zoology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1620 with a C- or higher and University Advanced Standing",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3200 Invertebrate Zoology",
+   "coreqs": [
+    "ZOOL 3200"
+   ]
+  },
+  "ZOOL 3300": {
+   "title": "Herpetology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 with minimum grade of C-, and University Advanced Standing",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3305 Herpetology Laboratory",
+   "coreqs": [
+    "ZOOL 3305"
+   ]
+  },
+  "ZOOL 3305": {
+   "title": "Herpetology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1620 with minimum grade of C-, and University Advanced Standing",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3300 Herpetology",
+   "coreqs": [
+    "ZOOL 3300"
+   ]
+  },
+  "ZOOL 3430": {
+   "title": "Entomology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 and BIOL 1625 with a minimum grade of C- in each, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 1620",
+     "BIOL 1625"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3435",
+   "coreqs": [
+    "ZOOL 3435"
+   ]
+  },
+  "ZOOL 3435": {
+   "title": "Entomology Laboratory",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3430",
+   "coreqs": [
+    "ZOOL 3430"
+   ]
+  },
+  "ZOOL 3500": {
+   "title": "Mammalogy",
+   "credits": 3,
+   "prereqText": "BIOL 1620 with a minimum grade of C-, and University Advanced Standing; ZOOL 3100 and ZOOL 3105 strongly recommended",
+   "prereqs": null,
+   "coreqText": "ZOOL 3505",
+   "coreqs": [
+    "ZOOL 3505"
+   ]
+  },
+  "ZOOL 3505": {
+   "title": "Mammalogy Laboratory",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3500",
+   "coreqs": [
+    "ZOOL 3500"
+   ]
+  },
+  "ZOOL 4000": {
+   "title": "Animal Behavior",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and University Advanced Standing",
+   "prereqs": "BIOL 1610",
+   "prereqNonCourse": true
+  },
+  "ZOOL 4100": {
+   "title": "Parasitology",
+   "credits": 4,
+   "prereqText": "( BIOL 1620 or MICR 2060 ) with a C- or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1620",
+     "MICR 2060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ZOOL 4300": {
+   "title": "Histology",
+   "credits": 4,
+   "prereqText": "[( ZOOL 2320 or ZOOL 2320H or ZOOL 2420 ) with a C- or higher] and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ZOOL 2320",
+     "ZOOL 2320H",
+     "ZOOL 2420"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ZOOL 4400": {
+   "title": "Pathophysiology",
+   "credits": 4,
+   "prereqText": "ZOOL 2320 , ZOOL 2420 , and MICR 2060 or MICR 3450 each with a minimum grade C-, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2420",
+     {
+      "or": [
+       "MICR 2060",
+       "MICR 3450"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ZOOL 4500": {
+   "title": "Comparative Vertebrate Zoology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 and ( ZOOL 1090 , ZOOL 2320 , or ZOOL 3100 ) with a grade of C- or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 1620",
+     {
+      "or": [
+       "ZOOL 1090",
+       "ZOOL 2320",
+       "ZOOL 3100"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 4505",
+   "coreqs": [
+    "ZOOL 4505"
+   ]
+  },
+  "ZOOL 4505": {
+   "title": "Comparative Vertebrate Zoology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1620 and ( ZOOL 1090 , ZOOL 2320 , or ZOOL 3100 ) with a grade of C- or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 1620",
+     {
+      "or": [
+       "ZOOL 1090",
+       "ZOOL 2320",
+       "ZOOL 3100"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 4500",
+   "coreqs": [
+    "ZOOL 4500"
+   ]
+  },
+  "ZOOL 4600": {
+   "title": "Ornithology",
+   "credits": 4,
+   "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
+   "prereqs": null
+  }
+ }
+}

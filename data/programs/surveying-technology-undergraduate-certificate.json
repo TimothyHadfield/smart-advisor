@@ -1,0 +1,313 @@
+{
+ "id": "surveying-technology-undergraduate-certificate",
+ "name": "Surveying Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/surveying-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 28,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "EGDT 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 1030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 1220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 1340",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 2310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Course Requirements",
+   "code": "SURV 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective",
+   "label": "Select one of the following recommended elective courses or one with a SURV or GIS prefix:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SURV 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SURV 1850"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GIS 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SURV 2240"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SURV 2350"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Select one of the following recommended elective courses or one with a SURV or GIS prefix:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 1060",
+     "credits": null
+    },
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SURV 1030",
+     "credits": 3
+    },
+    {
+     "code": "SURV 1220",
+     "credits": 3
+    },
+    {
+     "code": "SURV 1340",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "SURV 2310",
+     "credits": 3
+    },
+    {
+     "code": "SURV 2320",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "SURV 2100",
+     "credits": 3
+    },
+    {
+     "label": "Select one of the recommended elective courses listed or one with a SURV or GIS prefix:",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1400": {
+   "title": "Surveying Applications and Field Techniques I",
+   "credits": 3
+  },
+  "GIS 2800": {
+   "title": "Geographic Information Systems",
+   "credits": 3
+  },
+  "MATH 1060": {
+   "title": "Trigonometry",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SURV 1030": {
+   "title": "Fundamentals of Geodesy and Control Surveys",
+   "credits": 3,
+   "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SURV 1220": {
+   "title": "Remote Sensing and Photogrammetry",
+   "credits": 3,
+   "prereqText": "MAT 1010 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "SURV 1340": {
+   "title": "Fundamentals of Boundary Law",
+   "credits": 4
+  },
+  "SURV 1700": {
+   "title": "Fundamentals of Surveying Exam Prep I",
+   "credits": 3,
+   "prereqText": "( EGDT 1600 and EGDT 1610 ) or MATH 1060 or equivalent.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "EGDT 1600",
+       "EGDT 1610"
+      ]
+     },
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SURV 1850": {
+   "title": "Emerging Technologies in Surveying and Mapping",
+   "credits": 3,
+   "prereqText": "EGDT 1400 and EGDT 1040",
+   "prereqs": {
+    "and": [
+     "EGDT 1400",
+     "EGDT 1040"
+    ]
+   }
+  },
+  "SURV 2100": {
+   "title": "Mapping From Field to Finish",
+   "credits": 3,
+   "prereqText": "EGDT 1400 , EGDT 1040 , and EGDT 1600 or MATH 1060 or equivalent, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
+   "prereqs": {
+    "and": [
+     "EGDT 1400",
+     "EGDT 1040",
+     {
+      "or": [
+       "EGDT 1600",
+       "MATH 1060"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SURV 2240": {
+   "title": "Fundamentals of Adjustments and Computations",
+   "credits": 3,
+   "prereqText": "EGDT 1400 , EGDT 1610 or MATH 1060 or equivalent.",
+   "prereqs": {
+    "or": [
+     "EGDT 1400",
+     "EGDT 1610",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SURV 2310": {
+   "title": "Surveying US Public Lands",
+   "credits": 3,
+   "prereqText": "EGDT 1400 , MATH 1060 or EGDT 1600 and 1610 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
+   "prereqs": {
+    "and": [
+     "EGDT 1400",
+     {
+      "or": [
+       "MATH 1060",
+       "EGDT 1600"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SURV 2320": {
+   "title": "Property Descriptions and Public Land Records",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and EGDT 1400 , Completed and Approved Matriculation into any Surveying and Mapping degree program.",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     },
+     "EGDT 1400"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SURV 2350": {
+   "title": "Ethics and Liabilities for Surveyors",
+   "credits": 3
+  }
+ }
+}

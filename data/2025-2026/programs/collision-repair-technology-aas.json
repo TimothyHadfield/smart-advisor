@@ -1,0 +1,847 @@
+{
+ "id": "collision-repair-technology-aas",
+ "name": "Collision Repair Technology, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/transportation-technologies/collision-repair-technology-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 64,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements:",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements:",
+   "label": "Behaviorial Science, Social, or Political Science",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3,
+     "alts": [
+      "MAT 1035",
+      "MATH 1050",
+      "MATH 1055"
+     ]
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Any higher MAT or MATH course"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements:",
+   "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements:",
+   "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements:",
+   "label": "Any approved Biology or Physical Science Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "AUT 1160",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "AUT 1165",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "AUT 2240",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "AUT 2245",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1110",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1115",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1120",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1125",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1130",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1135",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1140",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1145",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1215",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1230",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 1235",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2810R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2850R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2990R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2310",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2315",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2320",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2330",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2335",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2340",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2345",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2400",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2405",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2440",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2445",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2450",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2455",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2630",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "CRT 2635",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements:",
+   "label": "Elective",
+   "credits": 1,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CRT 1110",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1115",
+     "credits": 1
+    },
+    {
+     "code": "CRT 1120",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1125",
+     "credits": 1
+    },
+    {
+     "code": "CRT 1230",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1235",
+     "credits": 1
+    },
+    {
+     "code": "CRT 1140",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1145",
+     "credits": 1
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CRT 1210",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1215",
+     "credits": 1
+    },
+    {
+     "code": "CRT 1130",
+     "credits": 2
+    },
+    {
+     "code": "CRT 1135",
+     "credits": 1
+    },
+    {
+     "code": "AUT 1160",
+     "credits": 2
+    },
+    {
+     "code": "AUT 1165",
+     "credits": 1
+    },
+    {
+     "code": "AUT 2240",
+     "credits": 2
+    },
+    {
+     "code": "AUT 2245",
+     "credits": 1
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Behaviorial Science, Social, or Political Science",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CRT 2310",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2315",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2320",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2325",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2330",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2335",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2340",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2345",
+     "credits": 1
+    },
+    {
+     "label": "Humanities/Fine Arts/ ovr Foreign Language",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CRT 2400",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2405",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2440",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2445",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2450",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2455",
+     "credits": 1
+    },
+    {
+     "code": "CRT 2630",
+     "credits": 2
+    },
+    {
+     "code": "CRT 2635",
+     "credits": 1
+    },
+    {
+     "label": "Biology or Physical Science",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AUT 1160": {
+   "title": "Automotive Electrical Systems",
+   "credits": 2,
+   "coreqText": "AUT 1165 Lab Recommended",
+   "coreqs": [
+    "AUT 1165"
+   ]
+  },
+  "AUT 1165": {
+   "title": "Automotive Electrical Systems Lab",
+   "credits": 1,
+   "precoreqText": "AUT 1160",
+   "precoreqs": "AUT 1160"
+  },
+  "AUT 2240": {
+   "title": "Transportation Heating Ventilation Air Conditioning and Refrigeration Theory",
+   "credits": 2,
+   "prereqText": "AUT 1010 , AUT 1160 , AUT 1020",
+   "prereqs": {
+    "and": [
+     "AUT 1010",
+     "AUT 1160",
+     "AUT 1020"
+    ]
+   },
+   "coreqText": "AUT 2245",
+   "coreqs": [
+    "AUT 2245"
+   ]
+  },
+  "AUT 2245": {
+   "title": "Transportation Heating Ventilation Air Conditioning and Refrigeration Lab",
+   "credits": 1,
+   "prereqText": "AUT 1010 , AUT 1160 , AUT 1020",
+   "prereqs": {
+    "and": [
+     "AUT 1010",
+     "AUT 1160",
+     "AUT 1020"
+    ]
+   },
+   "coreqText": "AUT 2240",
+   "coreqs": [
+    "AUT 2240"
+   ]
+  },
+  "CRT 1110": {
+   "title": "Surface Preparation",
+   "credits": 2
+  },
+  "CRT 1115": {
+   "title": "Surface Preparation Lab",
+   "credits": 1,
+   "coreqText": "CRT 1110",
+   "coreqs": [
+    "CRT 1110"
+   ]
+  },
+  "CRT 1120": {
+   "title": "Nonstructural Repair",
+   "credits": 2
+  },
+  "CRT 1125": {
+   "title": "Nonstructural Repair Lab",
+   "credits": 1,
+   "coreqText": "CRT 1120",
+   "coreqs": [
+    "CRT 1120"
+   ]
+  },
+  "CRT 1130": {
+   "title": "Overall Refinishing and Problem Solving",
+   "credits": 2
+  },
+  "CRT 1135": {
+   "title": "Overall Refinishing and Problem Solving Lab",
+   "credits": 1,
+   "coreqText": "CRT 1130",
+   "coreqs": [
+    "CRT 1130"
+   ]
+  },
+  "CRT 1140": {
+   "title": "Panel Replacement and Adjustment",
+   "credits": 2
+  },
+  "CRT 1145": {
+   "title": "Panel Replacement and Adjustment Lab",
+   "credits": 1,
+   "coreqText": "CRT 1140",
+   "coreqs": [
+    "CRT 1140"
+   ]
+  },
+  "CRT 1210": {
+   "title": "Blending Tinting and Detailing",
+   "credits": 2
+  },
+  "CRT 1215": {
+   "title": "Blending Tinting and Detailing Lab",
+   "credits": 1,
+   "coreqText": "CRT 1210",
+   "coreqs": [
+    "CRT 1210"
+   ]
+  },
+  "CRT 1230": {
+   "title": "Welding and Cutting",
+   "credits": 2
+  },
+  "CRT 1235": {
+   "title": "Welding and Cutting Lab",
+   "credits": 1,
+   "coreqText": "CRT 1230",
+   "coreqs": [
+    "CRT 1230"
+   ]
+  },
+  "CRT 2310": {
+   "title": "Collision Damage Reporting",
+   "credits": 2,
+   "prereqText": "CRT 1120 , CRT 1130 , CRT 1230 , recommended",
+   "prereqs": null
+  },
+  "CRT 2315": {
+   "title": "Collision Damage Reporting Lab",
+   "credits": 1,
+   "prereqText": "CRT 1125 , CRT 1135 , CRT 1235 , all recommended",
+   "prereqs": null,
+   "coreqText": "CRT 2310",
+   "coreqs": [
+    "CRT 2310"
+   ]
+  },
+  "CRT 2320": {
+   "title": "Structural Damage Analysis",
+   "credits": 2,
+   "prereqText": "CRT 1230",
+   "prereqs": "CRT 1230"
+  },
+  "CRT 2325": {
+   "title": "Structural Damage Analysis Lab",
+   "credits": 1,
+   "prereqText": "CRT 1235",
+   "prereqs": "CRT 1235",
+   "coreqText": "CRT 2320",
+   "coreqs": [
+    "CRT 2320"
+   ]
+  },
+  "CRT 2330": {
+   "title": "Structural Repair",
+   "credits": 2,
+   "prereqText": "CRT 1230",
+   "prereqs": "CRT 1230"
+  },
+  "CRT 2335": {
+   "title": "Structural Repair Lab",
+   "credits": 1,
+   "prereqText": "CRT 1235",
+   "prereqs": "CRT 1235",
+   "coreqText": "CRT 2330",
+   "coreqs": [
+    "CRT 2330"
+   ]
+  },
+  "CRT 2340": {
+   "title": "Full and Partial Panel Replacement",
+   "credits": 2,
+   "prereqText": "CRT 1140 , CRT 1230",
+   "prereqs": {
+    "and": [
+     "CRT 1140",
+     "CRT 1230"
+    ]
+   }
+  },
+  "CRT 2345": {
+   "title": "Full and Partial Panel Replacement Lab",
+   "credits": 1,
+   "prereqText": "CRT 1145 , CRT 1235",
+   "prereqs": {
+    "and": [
+     "CRT 1145",
+     "CRT 1235"
+    ]
+   },
+   "coreqText": "CRT 2340",
+   "coreqs": [
+    "CRT 2340"
+   ]
+  },
+  "CRT 2400": {
+   "title": "Plastic Paintless Dent Repair",
+   "credits": 2,
+   "prereqText": "CRT 1110 , CRT 1120",
+   "prereqs": {
+    "and": [
+     "CRT 1110",
+     "CRT 1120"
+    ]
+   }
+  },
+  "CRT 2405": {
+   "title": "Plastic Paintless Dent Repair Lab",
+   "credits": 1,
+   "prereqText": "CRT 1115 , CRT 1125",
+   "prereqs": {
+    "and": [
+     "CRT 1115",
+     "CRT 1125"
+    ]
+   },
+   "coreqText": "CRT 2400",
+   "coreqs": [
+    "CRT 2400"
+   ]
+  },
+  "CRT 2440": {
+   "title": "Mechanical Advanced Vehicle Systems",
+   "credits": 2
+  },
+  "CRT 2445": {
+   "title": "Mechanical Advanced Vehicle Systems Lab",
+   "credits": 1,
+   "coreqText": "CRT 2440",
+   "coreqs": [
+    "CRT 2440"
+   ]
+  },
+  "CRT 2450": {
+   "title": "Bags Brakes Steering",
+   "credits": 2
+  },
+  "CRT 2455": {
+   "title": "Bags Brakes Steering Lab",
+   "credits": 1,
+   "coreqText": "CRT 2450",
+   "coreqs": [
+    "CRT 2450"
+   ]
+  },
+  "CRT 2630": {
+   "title": "Detailing and Custom Painting",
+   "credits": 2,
+   "prereqText": "CRT 1110 , CRT 1120 , CRT 1130 , CRT 1140 , CRT 1210",
+   "prereqs": {
+    "and": [
+     "CRT 1110",
+     "CRT 1120",
+     "CRT 1130",
+     "CRT 1140",
+     "CRT 1210"
+    ]
+   }
+  },
+  "CRT 2635": {
+   "title": "Detailing and Custom Painting Lab",
+   "credits": 1,
+   "coreqText": "CRT 2630",
+   "coreqs": [
+    "CRT 2630"
+   ]
+  },
+  "CRT 2810R": {
+   "title": "Cooperative Work Experience - Internship",
+   "credits": 1,
+   "creditsMax": 4,
+   "coreqText": "CRT 2850R",
+   "coreqs": [
+    "CRT 2850R"
+   ]
+  },
+  "CRT 2850R": {
+   "title": "Cooperative Correlated Class - Internship",
+   "credits": 1,
+   "creditsMax": 4,
+   "coreqText": "CRT 2810R",
+   "coreqs": [
+    "CRT 2810R"
+   ]
+  },
+  "CRT 2990R": {
+   "title": "Skills USA",
+   "credits": 1
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

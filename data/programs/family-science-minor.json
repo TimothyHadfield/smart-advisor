@@ -1,0 +1,339 @@
+{
+ "id": "family-science-minor",
+ "name": "Family Science, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/family-science-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FAMS 2400G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 15 credits",
+   "pick": {
+    "credits": 15
+   },
+   "credits": 15,
+   "options": [
+    {
+     "codes": [
+      "FAMS 1150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 1500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3850"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 4660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 4670"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 15 credits from the following (with at least 9 credits being upper-division courses):"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FAMS 2400G",
+     "credits": 3
+    },
+    {
+     "label": "Complete any two of the following:",
+     "credits": 6
+    },
+    {
+     "code": "FAMS 1150",
+     "credits": null
+    },
+    {
+     "code": "FAMS 1500",
+     "credits": null
+    },
+    {
+     "code": "FAMS 2700",
+     "credits": null
+    },
+    {
+     "code": "FAMS 2800",
+     "credits": null
+    },
+    {
+     "code": "FAMS 3050",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete any three of the following:",
+     "credits": 9
+    },
+    {
+     "code": "FAMS 3250",
+     "credits": null
+    },
+    {
+     "code": "FAMS 3300",
+     "credits": null
+    },
+    {
+     "code": "FAMS 3500",
+     "credits": null
+    },
+    {
+     "code": "FAMS 3800",
+     "credits": null
+    },
+    {
+     "code": "FAMS 3850",
+     "credits": null
+    },
+    {
+     "code": "FAMS 4660",
+     "credits": null
+    },
+    {
+     "code": "FAMS 4400",
+     "credits": null
+    },
+    {
+     "code": "FAMS 4500",
+     "credits": null
+    },
+    {
+     "code": "FAMS 4670",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FAMS 1150": {
+   "title": "Marriage and Relationship Skills",
+   "credits": 3
+  },
+  "FAMS 1500": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  },
+  "FAMS 2400G": {
+   "title": "Contemporary Family Relation",
+   "credits": 3
+  },
+  "FAMS 2700": {
+   "title": "Mental Health and the Family",
+   "credits": 3
+  },
+  "FAMS 2800": {
+   "title": "Teaching Human Sexuality",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 , ENGL 1010H , or ENGL 1005 with a C or higher)",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 3050": {
+   "title": "Clinical Practice for Helping Professions",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FAMS 3250": {
+   "title": "Applied Parenting",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or ENGL 2010H with a C grade or higher) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "ENGL 2010H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 3300": {
+   "title": "Trauma-Informed Care",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FAMS 3500": {
+   "title": "Family Demography",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FAMS 3800": {
+   "title": "Early Development in Families",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or ENGL 2010H with a C or higher) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "ENGL 2010H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 3850": {
+   "title": "Adult Development and Aging",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or ENGL 2010H with C or higher) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "ENGL 2010H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 4400": {
+   "title": "Family Policy and Advocacy",
+   "credits": 3,
+   "prereqText": "( FAMS 2400G or PSY 1010 or FAMS 1500 or PSY 1100 ) and ( ENGL 2010 or ENGL 2010H with a C grade or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "FAMS 2400G",
+       "PSY 1010",
+       "FAMS 1500",
+       "PSY 1100"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 2010",
+       "ENGL 2010H"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 4500": {
+   "title": "Family Life Education Methodology",
+   "credits": 3,
+   "prereqText": "( FAMS 2400G ) and ( ENGL 2010 or ENGL 2010H with a C grade or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FAMS 2400G",
+     {
+      "or": [
+       "ENGL 2010",
+       "ENGL 2010H"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 4660": {
+   "title": "Family Resource Management",
+   "credits": 3,
+   "prereqText": "FAMS 2400G strongly recommended; University Advanced Standing",
+   "prereqs": null
+  },
+  "FAMS 4670": {
+   "title": "Family Dynamics and Systems",
+   "credits": 3,
+   "prereqText": "( FAMS 2400G ) and ( ENGL 2010 or ENGL 2010H with a C grade or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FAMS 2400G",
+     {
+      "or": [
+       "ENGL 2010",
+       "ENGL 2010H"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

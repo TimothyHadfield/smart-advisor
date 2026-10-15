@@ -1,0 +1,76 @@
+{
+ "id": "emergency-medical-services-undergraduate-certificate",
+ "name": "Emergency Medical Services, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/emergency-services/emergency-medical-services-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Choose six (6) credits from the following areas",
+   "credits": 6,
+   "text": "Choose six (6) credits from the following areas",
+   "notes": [
+    "English Composition GE",
+    "Quantitative Literacy GE",
+    "American Institutions GE",
+    "Biology GE",
+    "Physical Science GE",
+    "Personal, Professional, and Civic Growth GE",
+    "Humanities GE",
+    "Fine Arts GE",
+    "Social/Behavioral Science GE"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "ES Discipline Requirements",
+   "code": "ESFF 1000",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "ES Discipline Requirements",
+   "code": "ESEC 1140",
+   "alts": [],
+   "credits": 9
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "General Education",
+     "credits": 6
+    },
+    {
+     "code": "ESFF 1000",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ESEC 1140",
+     "credits": 9
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ESEC 1140": {
+   "title": "Emergency Medical Technician Basic",
+   "credits": 9
+  },
+  "ESFF 1000": {
+   "title": "Introduction to Emergency Services",
+   "credits": 4
+  }
+ }
+}

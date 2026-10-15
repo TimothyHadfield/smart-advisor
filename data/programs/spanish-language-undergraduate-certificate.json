@@ -1,0 +1,120 @@
+{
+ "id": "spanish-language-undergraduate-certificate",
+ "name": "Spanish Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/spanish-language-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "SPAN 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "SPAN 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "SPAN 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "SPAN 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any SPAN 3XXX or 4XXX course",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SPAN 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SPAN 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "SPAN 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "SPAN 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Any SPAN 3XXX or 4XXX course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "SPAN 1020": {
+   "title": "Beginning Spanish II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of SPAN 1010",
+   "prereqs": "SPAN 1010",
+   "prereqNonCourse": true
+  },
+  "SPAN 2010": {
+   "title": "Intermediate Spanish I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of SPAN 1020",
+   "prereqs": "SPAN 1020",
+   "prereqNonCourse": true
+  },
+  "SPAN 2020G": {
+   "title": "Intermediate Spanish II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of SPAN 2010",
+   "prereqs": "SPAN 2010",
+   "prereqNonCourse": true
+  },
+  "SPAN 3050": {
+   "title": "Advanced Spanish",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed SPAN 2020G , have had one year residency in a Spanish-speaking country, or instructor approval",
+   "prereqs": null
+  }
+ }
+}

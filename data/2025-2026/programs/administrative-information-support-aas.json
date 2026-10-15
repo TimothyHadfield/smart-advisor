@@ -1,0 +1,505 @@
+{
+ "id": "administrative-information-support-aas",
+ "name": "Administrative Information Support, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/administrative-information-support-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 63,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Complete one of following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "MAT 1010"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Humanities/Fine Arts/Foreign Language Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Social and Behavioral Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Biology or Physical Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "IM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "IM 2010",
+   "alts": [
+    "IM 2600"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "IM 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "IM 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "IM 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "INFO 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "INFO 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "FIN 1060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "COMM 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 12 credits",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "IM 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2240"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 credits from the following department pre-approved electives:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "credits": 2,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Complete one of following:",
+     "credits": 4
+    },
+    {
+     "code": "MAT 1010",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "IM 1010",
+     "credits": 3
+    },
+    {
+     "code": "INFO 2420",
+     "credits": 3
+    },
+    {
+     "label": "Humanities or Fine Arts",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "INFO 1200",
+     "credits": 3
+    },
+    {
+     "code": "IM 2010",
+     "alts": [
+      "IM 2600"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Social/ Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Biology or Physical Science",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "IM 2300",
+     "credits": 3
+    },
+    {
+     "code": "IM 2500",
+     "credits": 3
+    },
+    {
+     "code": "IM 2100",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "COMM 2110",
+     "credits": 3
+    },
+    {
+     "code": "FIN 1060",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "COMM 2110": {
+   "title": "Interpersonal Communication",
+   "credits": 3
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 1060": {
+   "title": "Personal Finance",
+   "credits": 3
+  },
+  "IM 1000": {
+   "title": "E-Commerce Techniques for Small Business",
+   "credits": 3,
+   "coreqText": "Basic Computer Proficiency or IM 1010 strongly recommended",
+   "coreqs": [
+    "IM 1010"
+   ]
+  },
+  "IM 1010": {
+   "title": "Basic Computer Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skill",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3,
+   "prereqText": "( IM 1010 recommended) or (Basic Computer Applications Challenge Exam with a minimum score of 80% recommended)",
+   "prereqs": null
+  },
+  "IM 2100": {
+   "title": "Document Processing Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2300": {
+   "title": "Information Management Principles",
+   "credits": 3
+  },
+  "IM 2500": {
+   "title": "Graphic Applications",
+   "credits": 3
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3,
+   "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2100": {
+   "title": "Computer Proficiency for Technology Professionals",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 , ENGH 1005 , or higher) and ( MAT 1030 or higher)",
+   "prereqs": {
+    "and": [
+     "ENGL 1010",
+     "ENGH 1005",
+     "MAT 1030"
+    ]
+   }
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  },
+  "MAT 1010": {
+   "title": "Intermediate Algebra",
+   "credits": 4,
+   "prereqText": "One of the following (within two years): MAT 0980 or MAT 0990 with a grade of C- or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0980",
+     "MAT 0990"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2030": {
+   "title": "Inclusive Leadership",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  }
+ }
+}

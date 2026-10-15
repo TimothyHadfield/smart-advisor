@@ -1,0 +1,325 @@
+{
+ "id": "national-security-and-geospatial-int-cert",
+ "name": "National Security and Geospatial Intelligence, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/national-security-and-geospatial-int-cert/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "GEOG 3600",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "NSS 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "GEOG 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "NSS 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "GIS 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEOG 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GIS 3630"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 3 credits from the following:",
+   "notes": [
+    "GEOG 3650",
+    "Or any other courses with the following prefix: GEOG, SURV, GIS, EGDT, subject to program approval"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "NSS 3010R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4800"
+     ],
+     "credits": 3
+    }
+   ],
+   "notes": [
+    "Or any courses with the NSS or INTS prefixes, subject to program approval."
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Research Requirements",
+   "code": "GEOG 4890R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Research Requirements",
+   "code": "NSS 4910R",
+   "alts": [],
+   "credits": 1
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NSS 2010",
+     "credits": 3
+    },
+    {
+     "code": "GEOG 3600",
+     "credits": 4
+    },
+    {
+     "code": "GIS 3620",
+     "credits": 3
+    },
+    {
+     "code": "NSS 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "GEOG 3400",
+     "credits": 3
+    },
+    {
+     "code": "NSS 3010R",
+     "credits": 3
+    },
+    {
+     "code": "GEOG 4890R",
+     "credits": 1
+    },
+    {
+     "code": "NSS 4910R",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EGDT 2400": {
+   "title": "Surveying Applications and Field Techniques II",
+   "credits": 3,
+   "prereqText": "EGDT 1040 or equivalent, EGDT 1400 and ( EGDT 1600 or MATH 1060 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1600",
+       "MATH 1060"
+      ]
+     }
+    ]
+   },
+   "uncertain": true
+  },
+  "GEOG 3400": {
+   "title": "Environmental Remote Sensing",
+   "credits": 4,
+   "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
+   "prereqs": null
+  },
+  "GEOG 3600": {
+   "title": "Introduction to Geographic Information Systems",
+   "credits": 4,
+   "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
+   "prereqs": null
+  },
+  "GEOG 4100": {
+   "title": "Geospatial Field Methods",
+   "credits": 4,
+   "prereqText": "GEOG 3600 and MATH 1060 ; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "GEOG 3600",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "GEOG 4890R": {
+   "title": "Student Research in Geography",
+   "credits": 1,
+   "creditsMax": 4,
+   "prereqText": "Junior or Senior standing, instructor approval, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "GIS 3620": {
+   "title": "Advanced Geographic Information Systems",
+   "credits": 3,
+   "prereqText": "GIS 2800 and University Advanced Standing",
+   "prereqs": "GIS 2800",
+   "prereqNonCourse": true
+  },
+  "GIS 3630": {
+   "title": "Geographic Information Systems Application Development",
+   "credits": 3,
+   "prereqText": "GIS 2800 or GEOG 3600 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "GIS 2800",
+     "GEOG 3600"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGL 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "NSS 3010R": {
+   "title": "National Security Area Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , or HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 3050": {
+   "title": "US Intelligence Community",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "NSS 4300": {
+   "title": "Intelligence Cycle and Collections",
+   "credits": 3,
+   "prereqText": "NSS 2010 , NSS 3050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "NSS 2010",
+     "NSS 3050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NSS 4400": {
+   "title": "Statecraft and Strategy",
+   "credits": 3,
+   "prereqText": "NSS 2010",
+   "prereqs": "NSS 2010"
+  },
+  "NSS 4800": {
+   "title": "Intelligence Analysis and Tradecraft",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "NSS 4910R": {
+   "title": "Directed Readings and Special Projects in National Security",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,246 @@
+{
+ "id": "international-business-minor",
+ "name": "International Business, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/international-business-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3300G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3320G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 3",
+   "pick": {
+    "count": 3
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "MKTG 3350G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 4700G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HM 3200G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 4870"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4180"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4185"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3120G"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete any three of the following courses (9 credit hours):",
+   "notes": [
+    "Foreign Language 3200",
+    "Foreign Language 4200"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 3320G",
+     "credits": 3
+    },
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 3300G",
+     "credits": 3
+    },
+    {
+     "label": "International Business elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Two International Business elective courses",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 3120G": {
+   "title": "International Internal Auditing",
+   "credits": 3,
+   "prereqText": "ACC 2110 and ACC 2120 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 3050G": {
+   "title": "International Economics",
+   "credits": 3,
+   "prereqText": "ECON 2010 and University Advanced Standing",
+   "prereqs": "ECON 2010",
+   "prereqNonCourse": true
+  },
+  "FIN 4180": {
+   "title": "International Finance Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4185": {
+   "title": "International Trade and Finance",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "HM 3200G": {
+   "title": "Global Tourism",
+   "credits": 3,
+   "prereqText": "( MKTG 2200G or ENGL 2010 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HR 4700G": {
+   "title": "International Human Resource Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 3300G": {
+   "title": "Survey of International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or MKTG 2200G ), ECON 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 2010",
+       "MKTG 2200G"
+      ]
+     },
+     "ECON 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 4870": {
+   "title": "International Management",
+   "credits": 3,
+   "prereqText": "MGMT 3000 , MKTG 3600 , Matriculation into the Woodbury School of Business, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 3000",
+     "MKTG 3600"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 3350G": {
+   "title": "International Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  }
+ }
+}

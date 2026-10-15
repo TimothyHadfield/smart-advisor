@@ -19,8 +19,8 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 | Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
 | All majors | data builder running (branch all-programs) | then a major/minor picker + audit auto-picks program/catalog year |
 | Google sign-in (Firebase) | live (8a3bcfb) | `js/account.js` (Firebase 10.14.1) + `js/sync.js` merge; profile icon → Continue with Google (popup); users/{uid} field-checked rules deployed; sign-out clears device; delete account two-tap. e2e: `python -m http.server 8137` + `node tests/accounts.e2e.mjs` (emulators, Playwright from ~/.claude/tools); rules: `tests/rules.test.mjs` via emulator. Real Google popup untested |
-| Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
-| Rate My Professors | not started | unofficial GraphQL; needs a CORS-free path (fetch at build time via script) |
+| Section schedules + builder | DATA LIVE (e6baba0): data/sections/{202640,202720}.json (8,192 / 7,296 sections), weekly Action `refresh-data.yml` verified run 38800499895 success → commit 5781782. Schedule-builder UI not built (waits for picker) | SOURCE FOUND: public Banner 9 `https://userve.uvu.edu/StudentRegistrationSsb/ssb/` (no login, cookie session, no CORS → Node prefetch; ~7,300 sections/term; 202640, 202720, 202730). Weekly GitHub Action refresh. UI next |
+| Rate My Professors | DATA LIVE: data/rmp.json keyed by section `instr` ("Last, First M."), {r,d,n,wta,id}; 1,146 matched (87.6% of instructors with an RMP profile; 57% Fall / 70% Spring staffed sections show a rating) | GraphQL from Node works (school U2Nob29sLTE4NDU4 / 18458, Basic dGVzdDp0ZXN0), no CORS; 4,128 teachers; ~92% name match; store overall rating + link only, no reviews |
 
 ## Authorized next steps
 - 2026-10-15 · Build phase 1 (EE first), then all majors. Tim: "Yes, build phase 1".

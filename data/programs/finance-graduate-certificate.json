@@ -1,0 +1,84 @@
+{
+ "id": "finance-graduate-certificate",
+ "name": "Finance, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/business-graduate-programs/finance-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "FIN 6130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "FIN 6160",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "FIN 6170",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FIN 6130",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FIN 6160",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "FIN 6170",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FIN 6130": {
+   "title": "Financial Statement Analysis and Modeling",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6160": {
+   "title": "International Financial Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6170": {
+   "title": "Investment Analysis and Portfolio Analysis",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ },
+ "totalFrom": "area headers"
+}

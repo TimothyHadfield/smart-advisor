@@ -1,0 +1,145 @@
+{
+ "id": "financial-planning-grad-cert",
+ "name": "Financial Planning, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/finance-economics/financial-planning-grad-cert/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6170",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 6800",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FIN 6060",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6300",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FIN 6170",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6210",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6260",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "FIN 6800",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FIN 6060": {
+   "title": "Financial Planning for Professionals",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6170": {
+   "title": "Investment Analysis and Portfolio Analysis",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6210": {
+   "title": "Retirement Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6260": {
+   "title": "Estate Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6300": {
+   "title": "Income Tax Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6800": {
+   "title": "Wealth Management and Financial Planning Capstone",
+   "credits": 3,
+   "prereqText": "FIN 6060 , FIN 6170 , FIN 6210 , FIN 6300",
+   "prereqs": {
+    "and": [
+     "FIN 6060",
+     "FIN 6170",
+     "FIN 6210",
+     "FIN 6300"
+    ]
+   },
+   "precoreqText": "FIN 6260",
+   "precoreqs": "FIN 6260"
+  }
+ }
+}

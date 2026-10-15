@@ -1,0 +1,24 @@
+{
+ "years": {
+  "2026-2027": {
+   "dir": "data/",
+   "programs": "data/programs/",
+   "manifest": "data/programs/_year.json",
+   "courses": "data/courses.json",
+   "count": 413
+  },
+  "2025-2026": {
+   "dir": "data/2025-2026/",
+   "programs": "data/2025-2026/programs/",
+   "manifest": "data/2025-2026/programs/_year.json",
+   "courses": "data/2025-2026/courses.json",
+   "count": 452
+  }
+ },
+ "current": "2026-2027",
+ "webArchives": [
+  "2025-2026",
+  "2024-2025"
+ ],
+ "pdfOnly": "2023-2024 and older (https://catalog.uvu.edu/archives/)"
+}

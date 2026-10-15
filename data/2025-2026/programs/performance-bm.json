@@ -1,0 +1,1337 @@
+{
+ "id": "performance-bm",
+ "name": "Performance, B.M.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/performance-bm/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Choose one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "PHYS 1750"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1130",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1140",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1150",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1160",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2125",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2130",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2140",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2150",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2160",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2350",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3490G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3451",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1115",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1390",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3412",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose two credits from the following:",
+   "pick": {
+    "credits": 2
+   },
+   "credits": 2,
+   "options": [
+    {
+     "codes": [
+      "MUSC 1402"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 1810"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MUSC 2400"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 2402"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 3025"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 3790R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 4700R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose two credits from the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2500R",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2510R",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 4550R",
+   "alts": [],
+   "credits": 8
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 4510R",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3800",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 4800",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Large Ensemble",
+   "pick": {
+    "credits": 8
+   },
+   "credits": 8,
+   "options": [
+    {
+     "codes": [
+      "MUSC 3220R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3270R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3280R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3300R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3320R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3700R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 8 credits from the following on your major instrument:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose from one of the following performance areas",
+   "pick": {
+    "credits": 24
+   },
+   "credits": 24,
+   "options": [
+    {
+     "codes": [
+      "MUSC 3060R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 3415"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 3416"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MUSC 3730R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MUSC 2001"
+     ],
+     "credits": 1,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "MUSC 2002"
+     ],
+     "credits": 1,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "MUSC 3005"
+     ],
+     "credits": 1,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "MUSC 3006"
+     ],
+     "credits": 1,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "MUSC 4230R"
+     ],
+     "credits": 1,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "MUSC 4240"
+     ],
+     "credits": 2,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "FREN 1010"
+     ],
+     "credits": 4,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "GER 1010"
+     ],
+     "credits": 4,
+     "section": "Vocal Performance"
+    },
+    {
+     "codes": [
+      "FREN 1020"
+     ],
+     "credits": 4,
+     "alts": [
+      "GER 1020"
+     ],
+     "section": "Vocal Performance"
+    }
+   ],
+   "notes": [
+    "12 credits of music electives for Piano Performance area and 16 credits of music electives for Instrumental Performance area.",
+    "Vocal Performance: 2 credits of music electives for Vocal Performance"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Any elective course 1000-level or higher",
+   "credits": 1
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1110",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1130",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1150",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2510R",
+     "credits": 1
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1115",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1120",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1140",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1160",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1390",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2510R",
+     "credits": 1
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional and Civic Growth",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 2110",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 2130",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2150",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2350",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2510R",
+     "credits": 1
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PHYS 1750",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 2125",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 2140",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2160",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2500R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2510R",
+     "credits": 1
+    },
+    {
+     "label": "MUSC Elective",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "MUSC 3450",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 4510R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 4550R",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Performance Area (Instrumental, Piano, or Vocal)",
+     "credits": 5
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    },
+    {
+     "label": "Any elective course 1000-level or higher",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 3451",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 3800",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 4510R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 4550R",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Performance Area (Instrumental, Piano, or Vocal)",
+     "credits": 4
+    },
+    {
+     "label": "Concert Attendance",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "MUSC 3412",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 4510R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 4550R",
+     "credits": 2
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Performance Area (Instrumental, Piano, or Vocal)",
+     "credits": 8
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "MUSC 3490G",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 4510R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 4550R",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 4800",
+     "credits": 1
+    },
+    {
+     "label": "Large Ensemble",
+     "credits": 1
+    },
+    {
+     "label": "Performance Area (Instrumental, Piano, or Vocal)",
+     "credits": 7
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FREN 1010": {
+   "title": "Beginning French I",
+   "credits": 4
+  },
+  "FREN 1020": {
+   "title": "Beginning French II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of FREN 1010",
+   "prereqs": "FREN 1010",
+   "prereqNonCourse": true
+  },
+  "GER 1010": {
+   "title": "Beginning German I",
+   "credits": 4
+  },
+  "GER 1020": {
+   "title": "Beginning German II",
+   "credits": 4,
+   "prereqText": "Student should have equivalent knowledge of GER 1010",
+   "prereqs": "GER 1010",
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MUSC 1110": {
+   "title": "Music Theory I",
+   "credits": 3,
+   "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
+   "prereqs": {
+    "or": [
+     "MUSC 1105",
+     "MUSC 1110"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 1130",
+   "coreqs": [
+    "MUSC 1130"
+   ]
+  },
+  "MUSC 1115": {
+   "title": "Music Notation and Score Preparation",
+   "credits": 1,
+   "prereqText": "Music major or minor only.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 1120": {
+   "title": "Music Theory II",
+   "credits": 3,
+   "prereqText": "MUSC 1110",
+   "prereqs": "MUSC 1110",
+   "coreqText": "MUSC 1140",
+   "coreqs": [
+    "MUSC 1140"
+   ]
+  },
+  "MUSC 1130": {
+   "title": "Aural Skills I",
+   "credits": 1,
+   "coreqText": "MUSC 1110",
+   "coreqs": [
+    "MUSC 1110"
+   ]
+  },
+  "MUSC 1140": {
+   "title": "Aural Skills II",
+   "credits": 1,
+   "prereqText": "MUSC 1130",
+   "prereqs": "MUSC 1130",
+   "coreqText": "MUSC 1120",
+   "coreqs": [
+    "MUSC 1120"
+   ]
+  },
+  "MUSC 1150": {
+   "title": "Group Piano I",
+   "credits": 1,
+   "coreqText": "MUSC 1110 recommended",
+   "coreqs": [
+    "MUSC 1110"
+   ]
+  },
+  "MUSC 1160": {
+   "title": "Group Piano II",
+   "credits": 1,
+   "prereqText": "MUSC 1150 or equivalent proficiency examination",
+   "prereqs": "MUSC 1150",
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 1120 recommended",
+   "coreqs": [
+    "MUSC 1120"
+   ]
+  },
+  "MUSC 1390": {
+   "title": "Survey of Recording Techniques",
+   "credits": 1,
+   "prereqText": "Music majors or minors only. Not applicable for BM Commercial Music students.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 1402": {
+   "title": "Music Technology II",
+   "credits": 2,
+   "prereqText": "MUSC 1400",
+   "prereqs": "MUSC 1400"
+  },
+  "MUSC 1810": {
+   "title": "Contemporary Theory and Improvisation I",
+   "credits": 3
+  },
+  "MUSC 2001": {
+   "title": "Diction for Singers I",
+   "credits": 1
+  },
+  "MUSC 2002": {
+   "title": "Diction for Singers II",
+   "credits": 1
+  },
+  "MUSC 2110": {
+   "title": "Music Theory III",
+   "credits": 3,
+   "prereqText": "MUSC 1120",
+   "prereqs": "MUSC 1120"
+  },
+  "MUSC 2125": {
+   "title": "Music Theory IV",
+   "credits": 3,
+   "prereqText": "MUSC 2110",
+   "prereqs": "MUSC 2110"
+  },
+  "MUSC 2130": {
+   "title": "Aural Skills III",
+   "credits": 1,
+   "prereqText": "MUSC 1140",
+   "prereqs": "MUSC 1140",
+   "coreqText": "MUSC 2110",
+   "coreqs": [
+    "MUSC 2110"
+   ]
+  },
+  "MUSC 2140": {
+   "title": "Aural Skills IV",
+   "credits": 1,
+   "prereqText": "MUSC 2130",
+   "prereqs": "MUSC 2130"
+  },
+  "MUSC 2150": {
+   "title": "Group Piano III",
+   "credits": 1,
+   "prereqText": "MUSC 1160 or equivalent proficiency examination",
+   "prereqs": "MUSC 1160",
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 2110 recommended",
+   "coreqs": [
+    "MUSC 2110"
+   ]
+  },
+  "MUSC 2160": {
+   "title": "Group Piano IV",
+   "credits": 1,
+   "prereqText": "MUSC 2150 or equivalent proficiency examination",
+   "prereqs": "MUSC 2150",
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 2125 recommended",
+   "coreqs": [
+    "MUSC 2125"
+   ]
+  },
+  "MUSC 2350": {
+   "title": "Fundamentals of Conducting",
+   "credits": 2,
+   "prereqText": "MUSC 1120",
+   "prereqs": "MUSC 1120"
+  },
+  "MUSC 2400": {
+   "title": "Music Technology III",
+   "credits": 2,
+   "prereqText": "( MUSC 1400 and MUSC 1402 ) or departmental approval",
+   "prereqs": {
+    "and": [
+     "MUSC 1400",
+     "MUSC 1402"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MUSC 2402": {
+   "title": "Music Technology IV",
+   "credits": 2,
+   "prereqText": "MUSC 2400",
+   "prereqs": "MUSC 2400"
+  },
+  "MUSC 2500R": {
+   "title": "Private Lessons for Music Majors",
+   "credits": 1,
+   "prereqText": "Music major entrance audition required.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 2510R",
+   "coreqs": [
+    "MUSC 2510R"
+   ]
+  },
+  "MUSC 2510R": {
+   "title": "Performance Class",
+   "credits": 1,
+   "coreqText": "MUSC 2500R",
+   "coreqs": [
+    "MUSC 2500R"
+   ]
+  },
+  "MUSC 3005": {
+   "title": "Vocal Literature I",
+   "credits": 1,
+   "prereqText": "( MUSC 1120 or department audition) and University Advanced Standing",
+   "prereqs": "MUSC 1120",
+   "prereqNonCourse": true
+  },
+  "MUSC 3006": {
+   "title": "Vocal Literature II",
+   "credits": 1,
+   "prereqText": "MUSC 3005 and University Advanced Standing",
+   "prereqs": "MUSC 3005",
+   "prereqNonCourse": true
+  },
+  "MUSC 3025": {
+   "title": "Songwriting I",
+   "credits": 2,
+   "prereqText": "MUSC 1400 and University Advanced Standing",
+   "prereqs": "MUSC 1400",
+   "prereqNonCourse": true
+  },
+  "MUSC 3060R": {
+   "title": "Advanced Keyboard Skills",
+   "credits": 1,
+   "coreqText": "MUSC 2500R or MUSC 4500R or MUSC 4550R",
+   "coreqs": [
+    "MUSC 2500R",
+    "MUSC 4500R",
+    "MUSC 4550R"
+   ]
+  },
+  "MUSC 3220R": {
+   "title": "Chamber Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3270R": {
+   "title": "Deep Green-Tenor/Bass Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3280R": {
+   "title": "Emerald Singers-Soprano/Alto Choir",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3300R": {
+   "title": "Wind Symphony",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3320R": {
+   "title": "Jazz Orchestra",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3412": {
+   "title": "Music Career Development",
+   "credits": 3,
+   "prereqText": "MUSC 2110 and University Advanced Standing",
+   "prereqs": "MUSC 2110",
+   "prereqNonCourse": true
+  },
+  "MUSC 3415": {
+   "title": "Instrumental Pedagogy and Literature I",
+   "credits": 2,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "MUSC 2110 or department audition",
+   "precoreqs": "MUSC 2110"
+  },
+  "MUSC 3416": {
+   "title": "Instrumental Pedagogy and Literature II",
+   "credits": 2,
+   "prereqText": "MUSC 3415 and University Advanced Standing",
+   "prereqs": "MUSC 3415",
+   "prereqNonCourse": true
+  },
+  "MUSC 3450": {
+   "title": "Music History and Literature I",
+   "credits": 3,
+   "prereqText": "MUSC 2125 and University Advanced Standing",
+   "prereqs": "MUSC 2125",
+   "prereqNonCourse": true
+  },
+  "MUSC 3451": {
+   "title": "Music History and Literature II",
+   "credits": 3,
+   "prereqText": "MUSC 3450 and University Advanced Standing",
+   "prereqs": "MUSC 3450",
+   "prereqNonCourse": true
+  },
+  "MUSC 3490G": {
+   "title": "Global Musical Styles and Ideas",
+   "credits": 3,
+   "prereqText": "MUSC 1110 and University Advanced Standing",
+   "prereqs": "MUSC 1110",
+   "prereqNonCourse": true
+  },
+  "MUSC 3700R": {
+   "title": "Symphony Orchestra",
+   "credits": 1,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3730R": {
+   "title": "Advanced Small Ensembles",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3790R": {
+   "title": "Studio Recording Workshop",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "MUSC 1400",
+   "precoreqs": "MUSC 1400"
+  },
+  "MUSC 3800": {
+   "title": "Junior Recital",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 4500R or MUSC 4550R",
+   "coreqs": [
+    "MUSC 4500R",
+    "MUSC 4550R"
+   ]
+  },
+  "MUSC 4230R": {
+   "title": "Opera Workshop",
+   "credits": 1,
+   "coreqText": "MUSC 2500R or MUSC 4500R",
+   "coreqs": [
+    "MUSC 2500R",
+    "MUSC 4500R"
+   ],
+   "precoreqText": "MUSC 4550R",
+   "precoreqs": "MUSC 4550R"
+  },
+  "MUSC 4240": {
+   "title": "Vocal Pedagogy",
+   "credits": 2,
+   "prereqText": "MUSC 2002 and University Advanced Standing",
+   "prereqs": "MUSC 2002",
+   "prereqNonCourse": true
+  },
+  "MUSC 4510R": {
+   "title": "Performance Class",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 4500R or MUSC 4550R",
+   "coreqs": [
+    "MUSC 4500R",
+    "MUSC 4550R"
+   ]
+  },
+  "MUSC 4550R": {
+   "title": "Private Lessons for Music Performance Majors",
+   "credits": 2,
+   "prereqText": "BM in Performance major, Sophomore Review, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 4510R",
+   "coreqs": [
+    "MUSC 4510R"
+   ]
+  },
+  "MUSC 4700R": {
+   "title": "Studio Arranging and Producing",
+   "credits": 3,
+   "prereqText": "MUSC 2400 , MUSC 3120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MUSC 2400",
+     "MUSC 3120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MUSC 4800": {
+   "title": "Senior Recital",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 4500R or MUSC 4550R",
+   "coreqs": [
+    "MUSC 4500R",
+    "MUSC 4550R"
+   ]
+  },
+  "PHYS 1750": {
+   "title": "The Acoustics of Music",
+   "credits": 3,
+   "prereqText": "MAT 1010 or higher",
+   "prereqs": "MAT 1010"
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

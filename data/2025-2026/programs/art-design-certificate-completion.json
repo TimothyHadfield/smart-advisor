@@ -1,0 +1,167 @@
+{
+ "id": "art-design-certificate-completion",
+ "name": "Art and Design, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/art-design-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1050",
+   "alts": [
+    "ART 1750"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARTH 2710",
+   "alts": [
+    "ARTH 2720"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any ART course not already taken (See Department Advisor).",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ART 1120",
+     "credits": 3
+    },
+    {
+     "code": "ART 1110",
+     "credits": 3
+    },
+    {
+     "code": "ART 1400",
+     "credits": 3
+    },
+    {
+     "code": "ARTH 2710",
+     "alts": [
+      "ARTH 2720"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ART 1050",
+     "credits": 3
+    },
+    {
+     "code": "ART 1130",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1050": {
+   "title": "Photography I",
+   "credits": 3
+  },
+  "ART 1110": {
+   "title": "Drawing I",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Art Education",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1120": {
+   "title": "2D Design",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1130": {
+   "title": "3D Design",
+   "credits": 3,
+   "prereqText": "ART 1120",
+   "prereqs": "ART 1120"
+  },
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "ART 1750": {
+   "title": "Intro to Digital Imaging",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Art Education",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 2720": {
+   "title": "Renaissance Through Contemporary Art History",
+   "credits": 3
+  }
+ }
+}

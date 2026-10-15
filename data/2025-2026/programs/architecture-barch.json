@@ -1,0 +1,1510 @@
+{
+ "id": "architecture-barch",
+ "name": "Architecture, B.Arch",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/architecture-barch/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 150,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "MATH 1050",
+   "alts": [
+    "MATH 1055"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "PHYS 1010",
+   "alts": [
+    "PHYS 2010"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology (Recommend BIOL 1010 General Biology)",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities (Recommend ENGL 2030 Writing for Social Change)",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavorial Science (Recommend COMM 1050 Introduction to Speech Communication)",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts (Recommend EGDT 1720 Architectural Rendering)",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2850R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 2110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 2210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 2220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3110",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3210",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 3230",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4110",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4210",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4230",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4510",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4520",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4530",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4540",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARC 4610",
+   "alts": [],
+   "credits": 7
+  },
+  {
+   "type": "choice",
+   "area": "Architecture Elective Requirements",
+   "label": "Choose 16 credits from the following: (Some courses may have additional prereqs.)",
+   "pick": {
+    "credits": 16
+   },
+   "credits": 16,
+   "options": [
+    {
+     "codes": [
+      "ARC 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARC 3550R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARC 4590R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "ARC 4810R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "EGDT 1050"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "EGDT 1070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1071"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1720"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1810"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1820"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1830"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 2815"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 2825"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 4050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 2710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 2720"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3015"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3080"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CAW 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 1190"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 1220"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 1020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 2080"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 3140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 3160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CMGT 4010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DWDD 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 1300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 2210"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose 16 credits from the following: (Some courses may have additional prereqs.)"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EGDT 1020",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": 4
+    },
+    {
+     "code": "EGDT 1720",
+     "credits": 3
+    },
+    {
+     "code": "HIST 1700",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2850R",
+     "credits": 0.5
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ARC 1010",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1100",
+     "credits": 3
+    },
+    {
+     "code": "PHYS 1010",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2850R",
+     "credits": 0.5
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ARC 2110",
+     "credits": 4
+    },
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "COMM 1050",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ARC 2210",
+     "credits": 4
+    },
+    {
+     "code": "ARC 2220",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2030",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ARC 3110",
+     "credits": 6
+    },
+    {
+     "code": "ARC 3120",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2610",
+     "credits": 3
+    },
+    {
+     "code": "ARC 4810R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ARC 3210",
+     "credits": 6
+    },
+    {
+     "code": "ARC 3220",
+     "credits": 3
+    },
+    {
+     "code": "ARC 3230",
+     "credits": 3
+    },
+    {
+     "code": "ARC 3130",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ARC 4110",
+     "credits": 6
+    },
+    {
+     "code": "ARC 4120",
+     "credits": 3
+    },
+    {
+     "code": "ARC 4130",
+     "credits": 3
+    },
+    {
+     "code": "ARC 4520",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ARC 4210",
+     "credits": 6
+    },
+    {
+     "code": "ARC 4220",
+     "credits": 3
+    },
+    {
+     "code": "ARC 4530",
+     "credits": 3
+    },
+    {
+     "label": "Architecture Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ARC 4510",
+     "credits": 6
+    },
+    {
+     "code": "ARC 4230",
+     "credits": 3
+    },
+    {
+     "code": "ARC 4540",
+     "credits": 3
+    },
+    {
+     "label": "Architecture Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ARC 4610",
+     "credits": 7
+    },
+    {
+     "code": "ARC 4590R",
+     "credits": 3
+    },
+    {
+     "label": "Architecture Elective",
+     "credits": 3
+    },
+    {
+     "label": "Architecture Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ARC 1010": {
+   "title": "Classical Architecture Workshop",
+   "credits": 3
+  },
+  "ARC 2110": {
+   "title": "Architecture Studio I",
+   "credits": 4,
+   "prereqText": "EGDT 1020 and ARC 1010 with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1020",
+     "ARC 1010"
+    ]
+   }
+  },
+  "ARC 2210": {
+   "title": "Architecture Studio II",
+   "credits": 4,
+   "prereqText": "EGDT 1020 , ARC 1010 , and ARC 2110 with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1020",
+     "ARC 1010",
+     "ARC 2110"
+    ]
+   }
+  },
+  "ARC 2220": {
+   "title": "Construction Documents and Specifications",
+   "credits": 3,
+   "prereqText": "EGDT 1020 and EGDT 1100 with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1020",
+     "EGDT 1100"
+    ]
+   }
+  },
+  "ARC 3110": {
+   "title": "Architecture Studio III",
+   "credits": 6,
+   "prereqText": "Matriculation to the B-Arch Program and University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 3120": {
+   "title": "Architectural Graphic Communication",
+   "credits": 3,
+   "prereqText": "Matriculation to the B-Arch Program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 3130": {
+   "title": "Codes and Construction Law",
+   "credits": 3,
+   "prereqText": "EGDT 2100 , EGDT 2610 both with a grade of C- or higher and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "EGDT 2100",
+     "EGDT 2610"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARC 3210": {
+   "title": "Architecture Studio IV",
+   "credits": 6,
+   "prereqText": "ARC 3110 with a grade of C- or higher and University Advanced Standing.",
+   "prereqs": "ARC 3110",
+   "prereqNonCourse": true
+  },
+  "ARC 3220": {
+   "title": "Passive Environmental Systems",
+   "credits": 3,
+   "prereqText": "Matriculation to the B-Arch degree program, University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 3230": {
+   "title": "Global History of Architecture to 1700",
+   "credits": 3,
+   "prereqText": "Matriculation to the B-Arch degree program, University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 3300": {
+   "title": "Geometry and Ornament in Architecture",
+   "credits": 3,
+   "prereqText": "ARC 1010 and University Advanced Standing",
+   "prereqs": "ARC 1010",
+   "prereqNonCourse": true
+  },
+  "ARC 3550R": {
+   "title": "Architectural Explorations through Study Abroad",
+   "credits": 3,
+   "creditsMax": 6,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 4110": {
+   "title": "Architecture Studio V",
+   "credits": 6,
+   "prereqText": "ARC 3210 with a grade of C- or higher and University Advanced Standing.",
+   "prereqs": "ARC 3210",
+   "prereqNonCourse": true
+  },
+  "ARC 4120": {
+   "title": "Active Environmental Systems",
+   "credits": 3,
+   "prereqText": "ARC 3220 and University Advanced Standing",
+   "prereqs": "ARC 3220",
+   "prereqNonCourse": true
+  },
+  "ARC 4130": {
+   "title": "Global History of Architecture Since 1700",
+   "credits": 3,
+   "prereqText": "ARC 3230 with a grade of C- or higher. Matriculation to the B-Arch degree program, and University Advanced Standing",
+   "prereqs": "ARC 3230",
+   "prereqNonCourse": true
+  },
+  "ARC 4210": {
+   "title": "Architecture Studio VI",
+   "credits": 6,
+   "prereqText": "ARC 4110 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ARC 4110",
+   "prereqNonCourse": true
+  },
+  "ARC 4220": {
+   "title": "Building Envelope and Science",
+   "credits": 3,
+   "prereqText": "ARC 4120 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ARC 4120",
+   "prereqNonCourse": true
+  },
+  "ARC 4230": {
+   "title": "Capstone Project Research",
+   "credits": 3,
+   "prereqText": "ARC 4210 with a grade of C-or higher and University Advanced Standing",
+   "prereqs": "ARC 4210",
+   "prereqNonCourse": true,
+   "coreqText": "ARC 4510 , ARC 4540",
+   "coreqs": [
+    "ARC 4510",
+    "ARC 4540"
+   ]
+  },
+  "ARC 4510": {
+   "title": "Architecture Studio VII",
+   "credits": 6,
+   "prereqText": "ARC 4210 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ARC 4210",
+   "prereqNonCourse": true
+  },
+  "ARC 4520": {
+   "title": "Architectural Theory",
+   "credits": 3,
+   "prereqText": "ARC 3210 , with a grade of C- or better and University Advanced Standing",
+   "prereqs": "ARC 3210",
+   "prereqNonCourse": true
+  },
+  "ARC 4530": {
+   "title": "Culture and Behavior in Architecture",
+   "credits": 3,
+   "prereqText": "ARC 4110 with a grade of C- or better and University Advanced Standing",
+   "prereqs": "ARC 4110",
+   "prereqNonCourse": true
+  },
+  "ARC 4540": {
+   "title": "Architecture Professional Practice",
+   "credits": 3,
+   "prereqText": "ARC 4210 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ARC 4210",
+   "prereqNonCourse": true,
+   "precoreqText": "ARC 4510 , ARC 4230",
+   "precoreqs": {
+    "and": [
+     "ARC 4510",
+     "ARC 4230"
+    ]
+   }
+  },
+  "ARC 4590R": {
+   "title": "Special Topics in Architecture",
+   "credits": 3,
+   "prereqText": "Matriculation to the B-Arch degree program and University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARC 4610": {
+   "title": "Architecture Studio VIII",
+   "credits": 7,
+   "prereqText": "ARC 4510 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ARC 4510",
+   "prereqNonCourse": true
+  },
+  "ARC 4810R": {
+   "title": "Architecture Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "Matriculation into the Architecture B-Arch degree, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1810": {
+   "title": "Introduction to Interior Design",
+   "credits": 3
+  },
+  "ART 1820": {
+   "title": "Interior Space Design",
+   "credits": 3
+  },
+  "ART 1830": {
+   "title": "Residential Interior Design",
+   "credits": 3
+  },
+  "ART 2815": {
+   "title": "Historical Architecture and Interior Design",
+   "credits": 3
+  },
+  "ART 2825": {
+   "title": "Modern Architecture Interiors and Furnishings Modern Architecture Interiors and Furnishings",
+   "credits": 3,
+   "prereqText": "ART 1810",
+   "prereqs": "ART 1810"
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 2720": {
+   "title": "Renaissance Through Contemporary Art History",
+   "credits": 3
+  },
+  "ARTH 3010": {
+   "title": "History of Design and Visual Arts",
+   "credits": 3,
+   "prereqText": "ARTH 2720 or ARTH 2720H , ( ENGL 1010 or ENGH 1005 ), (Art and Design Sophomore status), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2720",
+       "ARTH 2720H"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3015": {
+   "title": "Ancient Near Eastern Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ( ENGL 1010 or ENGH 1005 ), and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3020": {
+   "title": "Ancient Greek Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3030": {
+   "title": "Medieval Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3040": {
+   "title": "Renaissance Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3050": {
+   "title": "Southern Baroque Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2720 ( ARTH 2710 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3060": {
+   "title": "Nineteenth-Century Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2720 ( ARTH 2710 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3080": {
+   "title": "History of Architecture",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720 or B-ARCH degree student with department approval), ( ENGL 1010 or ENGH 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3100": {
+   "title": "History of American Art and Architecture",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720 or B-ARCH degree student with department approval), ( ENGL 1010 or ENGH 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CAW 1100": {
+   "title": "Artistic Wood Design",
+   "credits": 2
+  },
+  "CMGT 1010": {
+   "title": "Introduction to Construction Management",
+   "credits": 3
+  },
+  "CMGT 1020": {
+   "title": "Construction Materials and Methods I",
+   "credits": 3,
+   "prereqText": "MAT 0950 or higher or appropriate test scores",
+   "prereqs": "MAT 0950",
+   "prereqNonCourse": true
+  },
+  "CMGT 1190": {
+   "title": "Concrete and Framing Lab",
+   "credits": 3
+  },
+  "CMGT 1220": {
+   "title": "Finishing Lab",
+   "credits": 3
+  },
+  "CMGT 2010": {
+   "title": "Construction Materials and Methods II",
+   "credits": 3
+  },
+  "CMGT 2080": {
+   "title": "Principles of Construction Scheduling",
+   "credits": 3,
+   "prereqText": "CMGT 2010",
+   "prereqs": "CMGT 2010"
+  },
+  "CMGT 3030": {
+   "title": "Principles of Construction Estimating",
+   "credits": 3,
+   "prereqText": "( CMGT 2035 or IM 2010 ), MAT 1010 or higher (excluding MAT 1020 ) or EGDT 1600 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "CMGT 2035",
+       "IM 2010"
+      ]
+     },
+     {
+      "or": [
+       "MAT 1010",
+       "MAT 1020",
+       "EGDT 1600"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CMGT 3140": {
+   "title": "Construction Real Estate",
+   "credits": 3,
+   "prereqText": "CMGT 3030 and Advanced University Standing",
+   "prereqs": "CMGT 3030",
+   "prereqNonCourse": true
+  },
+  "CMGT 3160": {
+   "title": "Building Information Modeling",
+   "credits": 3,
+   "prereqText": "EGDT 1020 or CMGT Instructor/Program approval for non-CMGT majors and University Advanced Standing",
+   "prereqs": "EGDT 1020",
+   "prereqNonCourse": true
+  },
+  "CMGT 4010": {
+   "title": "Construction Contracts",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , CMGT 1010 , Junior Standing, and University Advanced Standing, or CMGT Instructor/Program approval for non-CMGT majors",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "CMGT 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CMGT 4050G": {
+   "title": "Global Sustainability and the Built Environment",
+   "credits": 3,
+   "prereqText": "CMGT 2060 and Construction Management majors, or CMGT Instructor/Program approval for non-CMGT majors; and University Advanced Standing.",
+   "prereqs": "CMGT 2060",
+   "prereqNonCourse": true
+  },
+  "COMM 1050": {
+   "title": "Introduction to Communication",
+   "credits": 3
+  },
+  "DAGV 1200": {
+   "title": "3D Modeling Essentials",
+   "credits": 3
+  },
+  "DAGV 1300": {
+   "title": "Animation Essentials",
+   "credits": 2,
+   "coreqText": "DAGV 1300L",
+   "coreqs": [
+    "DAGV 1300L"
+   ]
+  },
+  "DAGV 2210": {
+   "title": "3D Modeling and Animation",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DWDD 1400": {
+   "title": "Digital Design Essentials",
+   "credits": 3
+  },
+  "EGDT 1020": {
+   "title": "3D Architectural Modeling",
+   "credits": 3
+  },
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1050": {
+   "title": "Intro to 3D Printing and Fabrication",
+   "credits": 3
+  },
+  "EGDT 1070": {
+   "title": "3 Dimensional Modeling Inventor",
+   "credits": 3
+  },
+  "EGDT 1071": {
+   "title": "3 Dimensional Modeling--Solidworks",
+   "credits": 3
+  },
+  "EGDT 1100": {
+   "title": "Architectural Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1020 with a grade of B- or higher",
+   "prereqs": "EGDT 1020"
+  },
+  "EGDT 1200": {
+   "title": "Mechanical Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1070 or EGDT 1071 or EGDT 1040 , with a grade of C- or higher",
+   "prereqs": {
+    "or": [
+     "EGDT 1070",
+     "EGDT 1071",
+     "EGDT 1040"
+    ]
+   }
+  },
+  "EGDT 1300": {
+   "title": "Structural Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1040 with a grade of C- or higher",
+   "prereqs": "EGDT 1040"
+  },
+  "EGDT 1400": {
+   "title": "Surveying Applications and Field Techniques I",
+   "credits": 3
+  },
+  "EGDT 1720": {
+   "title": "Architectural Rendering",
+   "credits": 3
+  },
+  "EGDT 2100": {
+   "title": "Architecture Materials and Methods",
+   "credits": 3,
+   "prereqText": "EGDT 1020 with a grade of C- or higher",
+   "prereqs": "EGDT 1020"
+  },
+  "EGDT 2300": {
+   "title": "Advanced Structural CAD",
+   "credits": 3,
+   "prereqText": "EGDT 1300 and ( MATH 1060 or EGDT 1610 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1300",
+     {
+      "or": [
+       "MATH 1060",
+       "EGDT 1610"
+      ]
+     }
+    ]
+   }
+  },
+  "EGDT 2310": {
+   "title": "Structural Steel Modeling",
+   "credits": 3,
+   "prereqText": "EGDT 1040 and EGDT 1300 both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1300"
+    ]
+   }
+  },
+  "EGDT 2400": {
+   "title": "Surveying Applications and Field Techniques II",
+   "credits": 3,
+   "prereqText": "EGDT 1040 or equivalent, EGDT 1400 and ( EGDT 1600 or MATH 1060 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1600",
+       "MATH 1060"
+      ]
+     }
+    ]
+   },
+   "uncertain": true
+  },
+  "EGDT 2600": {
+   "title": "Applied Structures I - Statics",
+   "credits": 3,
+   "prereqText": "MATH 1050 or MATH 1055 or ( EGDT 1600 and 1610 )",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "EGDT 1600"
+    ]
+   }
+  },
+  "EGDT 2610": {
+   "title": "Applied Structures II - Strength of Materials",
+   "credits": 3,
+   "prereqText": "EGDT 2600 with a grade of B- or higher",
+   "prereqs": "EGDT 2600"
+  },
+  "EGDT 2850R": {
+   "title": "AEC Design Lecture Series",
+   "credits": 0.5
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 2030": {
+   "title": "Writing for Social Change",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher",
+   "prereqs": "ENGL 2010"
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 1010": {
+   "title": "Elementary Physics",
+   "credits": 3
+  },
+  "PHYS 2010": {
+   "title": "College Physics I",
+   "credits": 4,
+   "prereqText": "MATH 1050 or higher",
+   "prereqs": "MATH 1050",
+   "coreqText": "PHYS 2015",
+   "coreqs": [
+    "PHYS 2015"
+   ]
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

@@ -1,0 +1,152 @@
+{
+ "id": "spanish-minor",
+ "name": "Spanish, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/spanish-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 3040",
+   "alts": [
+    "SPAN 3050"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 3510G",
+   "alts": [
+    "SPAN 3520G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 4050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 9 credits from any upper-division SPAN or LANG courses not previously taken.",
+   "credits": 9,
+   "text": "Complete 9 credits from any upper-division SPAN or LANG courses not previously taken."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SPAN 3040",
+     "alts": [
+      "SPAN 3050"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SPAN 3510G",
+     "alts": [
+      "SPAN 3520G"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Any 3000- or 4000-level SPAN or LANG course not previously taken",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SPAN 4050",
+     "credits": 3
+    },
+    {
+     "label": "Any 3000- or 4000-level SPAN or LANG course not previously taken",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Any 3000- or 4000-level SPAN or LANG course not previously taken",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "SPAN 3040": {
+   "title": "Spanish Conversation and Composition II",
+   "credits": 3,
+   "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 2020G",
+   "prereqNonCourse": true
+  },
+  "SPAN 3050": {
+   "title": "Advanced Spanish",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed SPAN 2020G , have had one year residency in a Spanish-speaking country, or instructor approval",
+   "prereqs": null
+  },
+  "SPAN 3510G": {
+   "title": "Culture and Civilization--Spain",
+   "credits": 3,
+   "prereqText": "( SPAN 3050 or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 3050",
+   "prereqNonCourse": true
+  },
+  "SPAN 3520G": {
+   "title": "Culture and Civilization--Spanish America",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4050": {
+   "title": "Topics in Grammar Usage and Style",
+   "credits": 3,
+   "prereqText": "[( SPAN 3030 and SPAN 3040 ) or SPAN 3050 ] with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

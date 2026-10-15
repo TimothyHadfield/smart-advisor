@@ -1,0 +1,121 @@
+{
+ "id": "french-language-certificate-of-prof",
+ "name": "French Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/french-language-certificate-of-prof/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "FREN 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "FREN 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "FREN 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "FREN 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any FREN 3XXX or 4XXX course",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FREN 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FREN 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "FREN 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "FREN 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Any FREN 3XXX or 4XXX course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FREN 1020": {
+   "title": "Beginning French II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of FREN 1010",
+   "prereqs": "FREN 1010",
+   "prereqNonCourse": true
+  },
+  "FREN 2010": {
+   "title": "Intermediate French I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of FREN 1020",
+   "prereqs": "FREN 1020",
+   "prereqNonCourse": true
+  },
+  "FREN 2020G": {
+   "title": "Intermediate French II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of FREN 2010",
+   "prereqs": "FREN 2010",
+   "prereqNonCourse": true
+  },
+  "FREN 3050": {
+   "title": "Advanced French",
+   "credits": 3,
+   "prereqText": "It is recommended that students take FR 2020G prior to enrolling in FR 3050. If you have advanced study of French, you may also contact the French Program Director for a placement test.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

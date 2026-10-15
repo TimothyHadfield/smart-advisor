@@ -1,0 +1,252 @@
+{
+ "id": "technology-management-minor",
+ "name": "Technology Management, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/technology-management-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3850",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 4000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 4420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "T.M. Minor Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "TECH 3010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 4050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 4970R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 6 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "TECH 3000",
+     "credits": 3
+    },
+    {
+     "label": "T.M. Minor Elective",
+     "credits": 3
+    },
+    {
+     "code": "TECH 4420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "T.M. Minor Elective",
+     "credits": 3
+    },
+    {
+     "code": "TECH 3400",
+     "credits": 3
+    },
+    {
+     "code": "TECH 3850",
+     "credits": 3
+    },
+    {
+     "code": "TECH 4000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "TECH 3000": {
+   "title": "Introduction to Technology Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3010": {
+   "title": "Creative Problem Solving",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3400": {
+   "title": "Project Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3700": {
+   "title": "Materials Management",
+   "credits": 3,
+   "prereqText": "TECH 3000 and ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 3850": {
+   "title": "Quality Management in Technology",
+   "credits": 3,
+   "prereqText": "[( TECH 3000 and ( STAT 1040 or STAT 1045 ) or advisor approval] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 4000": {
+   "title": "Reliability Management",
+   "credits": 3,
+   "prereqText": "TECH 3000 , TECH 3850 , ( STAT 1040 or STAT 1045 ), and IM 2010 each with a grade of C- or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "TECH 3850",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045"
+      ]
+     },
+     "IM 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 4050G": {
+   "title": "Global Ethical and Professional Issues in Technology",
+   "credits": 3,
+   "prereqText": "PHIL 2050 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "PHIL 2050",
+   "prereqNonCourse": true
+  },
+  "TECH 4200": {
+   "title": "Technology Marketing and Customer Relationship Management",
+   "credits": 3,
+   "prereqText": "TECH 3000 and IM 2010 both with the grade of C- or higher; and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "IM 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 4400": {
+   "title": "Advanced Project Management",
+   "credits": 3,
+   "prereqText": "TECH 3400 with a C- or higher; University Advanced Standing",
+   "prereqs": "TECH 3400",
+   "prereqNonCourse": true
+  },
+  "TECH 4420": {
+   "title": "Organization Information Technologies",
+   "credits": 3,
+   "prereqText": "TECH 3000 , IM 2010 , and ACC 3000 all with a C- or higher; and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "IM 2010",
+     "ACC 3000"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 4970R": {
+   "title": "Independent Study",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Technology Management Department Chair Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

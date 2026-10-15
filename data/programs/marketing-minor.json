@@ -1,0 +1,163 @@
+{
+ "id": "marketing-minor",
+ "name": "Marketing, Minor",
+ "url": "https://catalog.uvu.edu/business/marketing/marketing-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 4600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3650",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3660",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3700",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Major Courses and Generals",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Major Courses and Generals",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MKTG 3600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "MKTG 3650",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "MKTG 4600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "MKTG 3660",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "MKTG 3700",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 3650": {
+   "title": "Professional Selling",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 3660": {
+   "title": "Digital Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 3700": {
+   "title": "Fundamentals of Product Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 4600": {
+   "title": "Customer Experience",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  }
+ }
+}

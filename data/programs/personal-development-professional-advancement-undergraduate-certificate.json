@@ -1,0 +1,316 @@
+{
+ "id": "personal-development-professional-advancement-undergraduate-certificate",
+ "name": "Personal Development for Professional Advancement, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/education/student-leadership-success-studies/personal-development-professional-advancement-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Developing Academic Independence - Complete 3 credits from the following:",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SLSS 1050"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SLSS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 1190"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 1195"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "ENGL 1005"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Developing Academic Independence - Complete 3 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Building Self-Knowledge for Self-Leadership - Complete 9 credits from the following:",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "SLSS 1010R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SLSS 1030R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SLSS 1040R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SLSS 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 2500"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Building Self-Knowledge for Self-Leadership - Complete 9 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Learning Experientially - Complete 6 credits from the following:",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "SLSS 1120G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 2000G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 2400R"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "SLSS 2810R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "UVST 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "UVST 2890R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "UVST 2900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Learning Experientially - Complete 6 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SLSS 1000",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 1030R",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 1100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SLSS 1120G",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 1200",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 2810R",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SLSS 1000": {
+   "title": "University Student Success",
+   "credits": 3,
+   "prereqText": "Appropriate reading skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SLSS 1010R": {
+   "title": "Student Success Topics",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Appropriate reading skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SLSS 1030R": {
+   "title": "Student Leadership Development I",
+   "credits": 1,
+   "creditsMax": 4
+  },
+  "SLSS 1040R": {
+   "title": "Student Leadership Development II",
+   "credits": 1,
+   "creditsMax": 4,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SLSS 1050": {
+   "title": "Research Skills for Student Success",
+   "credits": 1
+  },
+  "SLSS 1100": {
+   "title": "Stress Management",
+   "credits": 3
+  },
+  "SLSS 1120G": {
+   "title": "Leadership and Civic Engagement",
+   "credits": 3
+  },
+  "SLSS 1190": {
+   "title": "Power Learning Strategies",
+   "credits": 3
+  },
+  "SLSS 1195": {
+   "title": "Speed Reading",
+   "credits": 2
+  },
+  "SLSS 1200": {
+   "title": "The 7 Habits of Highly Effective People",
+   "credits": 3
+  },
+  "SLSS 2000G": {
+   "title": "You and Your Community",
+   "credits": 3
+  },
+  "SLSS 2100": {
+   "title": "Major and Career Exploration",
+   "credits": 3
+  },
+  "SLSS 2300": {
+   "title": "Leadership Mentoring II",
+   "credits": 3
+  },
+  "SLSS 2400R": {
+   "title": "Mentoring Leadership Practicum",
+   "credits": 2
+  },
+  "SLSS 2500": {
+   "title": "Leader--Strengths-Based Leader/Coach",
+   "credits": 3
+  },
+  "SLSS 2810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "SLSS 2100 recommended",
+   "coreqs": [
+    "SLSS 2100"
+   ]
+  },
+  "UVST 1100": {
+   "title": "Prior Learning Assessment Portfolio",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "UVST 2890R": {
+   "title": "Undergraduate Research",
+   "credits": 1,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "UVST 2900R": {
+   "title": "Community Engagement and Applied Service Learning",
+   "credits": 1,
+   "prereqText": "UVST 2890R or Department Approval",
+   "prereqs": "UVST 2890R",
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,119 @@
+{
+ "id": "portuguese-language-undergraduate-certificate",
+ "name": "Portuguese Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/portuguese-language-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "PORT 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PORT 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PORT 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PORT 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any PORT 3XXX or 4XXX course",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "PORT 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "PORT 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PORT 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PORT 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Any PORT 3XXX or 4XXX course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "PORT 1020": {
+   "title": "Beginning Portuguese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of PORT 1010",
+   "prereqs": "PORT 1010",
+   "prereqNonCourse": true
+  },
+  "PORT 2010": {
+   "title": "Intermediate Portuguese I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of PORT 1020",
+   "prereqs": "PORT 1020",
+   "prereqNonCourse": true
+  },
+  "PORT 2020G": {
+   "title": "Intermediate Portuguese II",
+   "credits": 4,
+   "prereqText": "PORT 2010",
+   "prereqs": "PORT 2010"
+  },
+  "PORT 3050": {
+   "title": "Advanced Portuguese",
+   "credits": 3,
+   "prereqText": "It is recommended that students have either taken PORT 2020G , at least a 18 months one year residency in a Portuguese-speaking country, or instructor approval",
+   "prereqs": null
+  }
+ }
+}

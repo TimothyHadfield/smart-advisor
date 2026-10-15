@@ -1,0 +1,324 @@
+{
+ "id": "outdoor-recreation-minor",
+ "name": "Outdoor Recreation, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/exercise-science-outdoor-recreation/outdoor-recreation-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1535",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1 credits",
+   "pick": {
+    "credits": 1
+   },
+   "credits": 1,
+   "options": [
+    {
+     "codes": [
+      "REC 1500"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1527"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1550"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1580"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 1 credit from the the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "REC 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 3850G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 4000"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "REC 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 4500"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "REC 2200",
+     "credits": 3
+    },
+    {
+     "code": "REC 1535",
+     "credits": 1
+    },
+    {
+     "code": "REC 2400",
+     "credits": 3
+    },
+    {
+     "label": "REC Elective",
+     "credits": 3
+    },
+    {
+     "label": "REC Elective",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "REC 3100",
+     "credits": 3
+    },
+    {
+     "code": "REC 3400",
+     "credits": 3
+    },
+    {
+     "label": "REC Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "REC 1500": {
+   "title": "Canoeing I",
+   "credits": 1
+  },
+  "REC 1527": {
+   "title": "Rock Climbing I",
+   "credits": 1
+  },
+  "REC 1535": {
+   "title": "Backpacking",
+   "credits": 1,
+   "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1550": {
+   "title": "Mountain Biking",
+   "credits": 1,
+   "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1580": {
+   "title": "Kayak Touring",
+   "credits": 1,
+   "prereqText": "Must be able to swim 100 yards without stopping",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 2200": {
+   "title": "Foundations of Recreation",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGH 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "REC 2400": {
+   "title": "Principles of Experiential Education in Recreation",
+   "credits": 3,
+   "prereqText": "REC 2200 , ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "REC 2200",
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "precoreqText": "ENGL 2010 and MATH 1000 or higher",
+   "precoreqs": {
+    "and": [
+     "ENGL 2010",
+     "MATH 1000"
+    ]
+   }
+  },
+  "REC 3100": {
+   "title": "Recreation Program Planning",
+   "credits": 3,
+   "prereqText": "( REC 2200 or instructor approval) and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 1000 or higher",
+   "precoreqs": "MATH 1000"
+  },
+  "REC 3200": {
+   "title": "Inclusive Recreation",
+   "credits": 3,
+   "prereqText": "REC 2400 , REC 3100 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 2400",
+     "REC 3100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 3400": {
+   "title": "Risk Management",
+   "credits": 3,
+   "prereqText": "REC 2200 and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true,
+   "precoreqText": "MAT 1010",
+   "precoreqs": "MAT 1010"
+  },
+  "REC 3500": {
+   "title": "Recreation Administration",
+   "credits": 3,
+   "prereqText": "REC 3100 and University Advanced Standing",
+   "prereqs": "REC 3100",
+   "prereqNonCourse": true
+  },
+  "REC 3700": {
+   "title": "Natural Resource Interpretation",
+   "credits": 3,
+   "prereqText": "REC 2400 and University Advanced Standing",
+   "prereqs": "REC 2400",
+   "prereqNonCourse": true
+  },
+  "REC 3850G": {
+   "title": "Ethical Concerns in Recreation",
+   "credits": 3,
+   "prereqText": "REC 2400 , PHIL 2050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 2400",
+     "PHIL 2050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 4000": {
+   "title": "Outdoor Leadership",
+   "credits": 4,
+   "prereqText": "REC 1535 , REC 3300 , REC 2600 , REC 1542 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 1535",
+     "REC 3300",
+     "REC 2600",
+     "REC 1542"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 4400": {
+   "title": "Natural Resource and Protected Area Management",
+   "credits": 3,
+   "prereqText": "REC 2200 and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true
+  },
+  "REC 4500": {
+   "title": "Wildland Recreation Behavior",
+   "credits": 3,
+   "prereqText": "REC 4400 and University Advanced Standing",
+   "prereqs": "REC 4400",
+   "prereqNonCourse": true
+  }
+ }
+}

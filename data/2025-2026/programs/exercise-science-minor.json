@@ -1,0 +1,513 @@
+{
+ "id": "exercise-science-minor",
+ "name": "Exercise Science, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/exercise-science-outdoor-recreation/exercise-science-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 2700G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 3270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 3700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 3705",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2425",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "EXSC 3550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EXSC 3750"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EXSC 4000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EXSC 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EXSC 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EXSC 4550"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ZOOL 2320",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
+    },
+    {
+     "code": "ZOOL 2420",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EXSC 2700G",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 3270",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EXSC 3700",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 3705",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "EXSC 3500",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 3550",
+     "credits": null
+    },
+    {
+     "code": "EXSC 3750",
+     "credits": null
+    },
+    {
+     "code": "EXSC 4000",
+     "credits": null
+    },
+    {
+     "code": "EXSC 4100",
+     "credits": null
+    },
+    {
+     "code": "EXSC 4500",
+     "credits": null
+    },
+    {
+     "code": "EXSC 4550",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EXSC 2700G": {
+   "title": "Foundations of Exercise Science",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L) all with a C- or higher, and ( MATH 1050 or MATH 1055 )",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "ZOOL 2420",
+     "ZOOL 2425",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EXSC 3270": {
+   "title": "Exercise Testing and Prescription",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), all with a C- or higher, and ( MATH 1050 or MATH 1055 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), and EXSC 2700G",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G"
+    ]
+   }
+  },
+  "EXSC 3500": {
+   "title": "Kinesiology",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), all with a C- or higher and MATH 1050 or MATH 1055 . PETE Majors: ZOOL 1090 and PETE 2700 both with a C- or higher and MATH 1050 or MATH 1055 . REC Majors: ZOOL 1090 and REC 2200 both with a C- or higher and STAT 1040 or STAT 1045 or MATH 1050 or MATH 1055 . All: University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055",
+       "ZOOL 1090"
+      ]
+     },
+     "PETE 2700",
+     "REC 2200",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045",
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), and EXSC 2700G",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G"
+    ]
+   }
+  },
+  "EXSC 3550": {
+   "title": "Motor Learning and Control",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE Majors: ZOOL 1090 and PETE 2700 both with a C- or higher and ( MATH 1050 or MATH 1055 ). REC Majors: ZOOL 1090 and REC 2200 both with a C- or higher and ( STAT 1040 or STAT 1045 or MATH 1050 or MATH 1055 ). All: University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "ZOOL 1090",
+     "PETE 2700",
+     "REC 2200",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045",
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), EXSC 2700G",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G"
+    ]
+   }
+  },
+  "EXSC 3700": {
+   "title": "Exercise Physiology",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), and EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE Majors: PETE 2700 and ZOOL 1090 with a C- or higher and ( MATH 1050 or MATH 1055 ). All: University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "PETE 2700",
+     "ZOOL 1090"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L)",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425"
+    ]
+   }
+  },
+  "EXSC 3705": {
+   "title": "Exercise Physiology Laboratory",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "EXSC 3700",
+   "coreqs": [
+    "EXSC 3700"
+   ]
+  },
+  "EXSC 3750": {
+   "title": "Psychosocial Aspects of Human Performance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 1090 or ZOOL 2320 (or 232H) and ZOOL 2325 (or 232L)",
+   "precoreqs": {
+    "and": [
+     {
+      "or": [
+       "ZOOL 1090",
+       "ZOOL 2320"
+      ]
+     },
+     "ZOOL 2325"
+    ]
+   },
+   "uncertain": true
+  },
+  "EXSC 4000": {
+   "title": "Clinical Exercise Physiology",
+   "credits": 3,
+   "prereqText": "ZOOL 2420 (or 2420H), EXSC 2700G , and EXSC 3270 all with a C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2420",
+     "EXSC 2700G",
+     "EXSC 3270"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EXSC 4100": {
+   "title": "Physiology of Aging",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), and Pre or Co-requisite EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ), and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "EXSC 4500": {
+   "title": "Advanced Sports Nutrition",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), EXSC 2700G and Pre or Co-requisite EXSC 3700 and 3705 all with a C- or higher and ( MATH 1050 or MATH 1055 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G",
+     "EXSC 3700",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "EXSC 4550": {
+   "title": "Principles of Strength and Conditioning",
+   "credits": 3,
+   "prereqText": "EXSC 3500 and EXSC 3700 and EXSC 3705 all with a C- or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "EXSC 3500",
+     "EXSC 3700",
+     "EXSC 3705"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "coreqText": "ZOOL 2320",
+   "coreqs": [
+    "ZOOL 2320"
+   ]
+  },
+  "ZOOL 2420": {
+   "title": "Human Physiology",
+   "credits": 3,
+   "prereqText": "BIOL 1610 with a minimum grade of C- and CHEM 1110 or CHEM 1210 with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "coreqText": "ZOOL 2425",
+   "coreqs": [
+    "ZOOL 2425"
+   ]
+  },
+  "ZOOL 2425": {
+   "title": "Human Physiology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1610 and CHEM 1110",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "CHEM 1110"
+    ]
+   },
+   "coreqText": "ZOOL 2420",
+   "coreqs": [
+    "ZOOL 2420"
+   ]
+  }
+ },
+ "totalFrom": "area headers"
+}

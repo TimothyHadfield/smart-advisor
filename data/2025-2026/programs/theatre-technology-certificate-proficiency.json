@@ -1,0 +1,232 @@
+{
+ "id": "theatre-technology-certificate-proficiency",
+ "name": "Theatre Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-technology-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 27,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 1013",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 1223",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 1513",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 1514",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 1590R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2203",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2204",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2513",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2514",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2531",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "THEA 2574",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Electives",
+   "label": "Any THEA courses 1000 or higher",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "THEA 1013",
+     "credits": 3
+    },
+    {
+     "code": "THEA 1513",
+     "credits": 2
+    },
+    {
+     "code": "THEA 1514",
+     "credits": 1
+    },
+    {
+     "code": "THEA 1590R",
+     "credits": 1
+    },
+    {
+     "code": "THEA 2203",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2204",
+     "credits": 1
+    },
+    {
+     "label": "Any THEA course 1000 or higher",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "THEA 1223",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2513",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2514",
+     "credits": 1
+    },
+    {
+     "code": "THEA 2531",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2574",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "THEA 1013": {
+   "title": "Introduction to Theatre",
+   "credits": 3
+  },
+  "THEA 1223": {
+   "title": "Makeup I",
+   "credits": 3
+  },
+  "THEA 1513": {
+   "title": "Stagecraft I",
+   "credits": 2,
+   "precoreqText": "THEA 1514",
+   "precoreqs": "THEA 1514"
+  },
+  "THEA 1514": {
+   "title": "Stagecraft I Lab",
+   "credits": 1,
+   "precoreqText": "THEA 1513",
+   "precoreqs": "THEA 1513"
+  },
+  "THEA 1590R": {
+   "title": "Production Practicum for Stage and Screen I",
+   "credits": 1
+  },
+  "THEA 2203": {
+   "title": "Costume Construction I",
+   "credits": 3,
+   "precoreqText": "THEA 1513 , THEA 1514 , and THEA 2204",
+   "precoreqs": {
+    "and": [
+     "THEA 1513",
+     "THEA 1514",
+     "THEA 2204"
+    ]
+   }
+  },
+  "THEA 2204": {
+   "title": "Costume Construction I Lab",
+   "credits": 1,
+   "precoreqText": "THEA 1513 , THEA 1514 , and THEA 2203",
+   "precoreqs": {
+    "and": [
+     "THEA 1513",
+     "THEA 1514",
+     "THEA 2203"
+    ]
+   }
+  },
+  "THEA 2513": {
+   "title": "Introduction to Design for Stage and Screen",
+   "credits": 3,
+   "prereqText": "THEA 1513 and THEA 1514",
+   "prereqs": {
+    "and": [
+     "THEA 1513",
+     "THEA 1514"
+    ]
+   },
+   "precoreqText": "THEA 2514",
+   "precoreqs": "THEA 2514"
+  },
+  "THEA 2514": {
+   "title": "Introduction to Design for Stage and Screen Lab",
+   "credits": 1,
+   "prereqText": "THEA 1513",
+   "prereqs": "THEA 1513",
+   "precoreqText": "THEA 2513",
+   "precoreqs": "THEA 2513"
+  },
+  "THEA 2531": {
+   "title": "Introduction to Lighting and Sound",
+   "credits": 3
+  },
+  "THEA 2574": {
+   "title": "Drafting for Theatre Design",
+   "credits": 3
+  }
+ }
+}

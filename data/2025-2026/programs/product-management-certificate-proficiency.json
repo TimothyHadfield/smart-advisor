@@ -1,0 +1,125 @@
+{
+ "id": "product-management-certificate-proficiency",
+ "name": "Product Management, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/marketing/product-management-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 3700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 3630",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 3620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 4600",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MKTG 3700",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3620",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3630",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 4600",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 3620": {
+   "title": "Consumer Behavior",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 3630": {
+   "title": "Services Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 3700": {
+   "title": "Fundamentals of Product Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "MKTG 4600": {
+   "title": "Customer Experience",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  }
+ }
+}

@@ -1,0 +1,470 @@
+{
+ "id": "classical-studies-minor",
+ "name": "Classical Studies, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/classical-studies-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CLST 2900R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CLST 4900R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "In addition to the 9 credits of core requirements, students must complete an additional 9 hours of electives. The following list of courses has been approved for the Classical Studies IS Emphasis. If a course that is not represented on the following list has sufficient classical studies related content, the student may seek approval from the Classical Studies Coordinator to have the course count toward the IS Emphasis. Note: Latin or Greek language coursework applied toward a Student's foreign language requirement will not be applied toward Classical Studies elective requirements.",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "ANTH 3260"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 2710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 2230"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3760G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HONR 2000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 2500"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HUM 2510"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "PHIL 2130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3860R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GRK 1010"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "GRK 1020"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "GRK 2010"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "GRK 2020"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "GRK 3010R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "LATN 1010"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "LATN 1020"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "LATN 2010"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "LATN 2020"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "LATN 3010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3110"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "PHIL 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HIST 3130",
+     "alts": [
+      "HIST 3140"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CLST 2900R",
+     "credits": 3
+    },
+    {
+     "label": "Classical Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CLST 4900R",
+     "credits": 3
+    },
+    {
+     "label": "Classical Studies Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 3260": {
+   "title": "Archeological Method and Theory",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 3020": {
+   "title": "Ancient Greek Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "CLST 2900R": {
+   "title": "Themes in Classical Civilizations",
+   "credits": 3
+  },
+  "CLST 4900R": {
+   "title": "Special Topics in Classical Civilizations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 2230": {
+   "title": "Myths and Legends in Literature",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGL 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "ENGL 3610": {
+   "title": "Medieval Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3760G": {
+   "title": "World Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "GRK 1010": {
+   "title": "Beginning Ancient Greek I",
+   "credits": 4,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "GRK 1020": {
+   "title": "Beginning Ancient Greek II",
+   "credits": 4,
+   "prereqText": "GRK 1010",
+   "prereqs": "GRK 1010"
+  },
+  "GRK 2010": {
+   "title": "Intermediate Ancient Greek I",
+   "credits": 4,
+   "prereqText": "GRK 1020",
+   "prereqs": "GRK 1020"
+  },
+  "GRK 2020": {
+   "title": "Intermediate Ancient Greek II",
+   "credits": 4,
+   "prereqText": "GRK 2010",
+   "prereqs": "GRK 2010"
+  },
+  "GRK 3010R": {
+   "title": "Readings in Ancient Greek",
+   "credits": 3,
+   "prereqText": "GRK 2020 and University Advanced Standing",
+   "prereqs": "GRK 2020",
+   "prereqNonCourse": true
+  },
+  "HIST 3110": {
+   "title": "Greek History",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HIST 3130": {
+   "title": "Roman History",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HIST 3140": {
+   "title": "Roman Empire",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing.",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "HONR 2000": {
+   "title": "Ancient Legacies",
+   "credits": 3,
+   "prereqText": "Current enrollment in Utah Valley University Honors program or permission of the instructor",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 2010": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2500": {
+   "title": "Introduction to Ancient Greek I",
+   "credits": 6,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "HUM 2510": {
+   "title": "Introduction to Ancient Greek II",
+   "credits": 6,
+   "prereqText": "HUM 2500",
+   "prereqs": "HUM 2500"
+  },
+  "LATN 1010": {
+   "title": "Beginning Latin I",
+   "credits": 4
+  },
+  "LATN 1020": {
+   "title": "Beginning Latin II",
+   "credits": 4,
+   "prereqText": "LATN 1010 or equivalent",
+   "prereqs": "LATN 1010"
+  },
+  "LATN 2010": {
+   "title": "Intermediate Latin I",
+   "credits": 4,
+   "prereqText": "LATN 1020 or equivalent",
+   "prereqs": "LATN 1020"
+  },
+  "LATN 2020": {
+   "title": "Intermediate Latin II",
+   "credits": 4,
+   "prereqText": "LATN 2010 or equivalent",
+   "prereqs": "LATN 2010"
+  },
+  "LATN 3010": {
+   "title": "Readings in Latin",
+   "credits": 3,
+   "prereqText": "( LATN 2020 or equivalent) and University Advanced Standing",
+   "prereqs": "LATN 2020",
+   "prereqNonCourse": true
+  },
+  "PHIL 2110": {
+   "title": "Ancient Greek Philosophy",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1010H or ENGL 1005 or PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or permission of the instructor",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005",
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 2130": {
+   "title": "Medieval Philosophy",
+   "credits": 3,
+   "prereqText": "PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or permission of the instructor",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3860R": {
+   "title": "Topics in Ancient Philosophy",
+   "credits": 3,
+   "prereqText": "( PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or PHIL 2110 or PHIL 2150 or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G",
+     "PHIL 2110",
+     "PHIL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

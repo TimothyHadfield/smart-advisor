@@ -1,0 +1,133 @@
+{
+ "id": "digital-cinema-certificate-proficiency",
+ "name": "Digital Cinema Production, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 2 credits of any approved DCPR course",
+   "credits": 2,
+   "text": "Complete 2 credits of any approved DCPR course"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DGM 2320",
+     "credits": 3
+    },
+    {
+     "code": "DCPR 1610",
+     "credits": 3
+    },
+    {
+     "code": "DCPR 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DCPR 1800",
+     "credits": 4
+    },
+    {
+     "code": "DCPR 2410",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DCPR 1010": {
+   "title": "Film Production Analysis I",
+   "credits": 1,
+   "coreqText": "DCPR 1010L",
+   "coreqs": [
+    "DCPR 1010L"
+   ]
+  },
+  "DCPR 1610": {
+   "title": "Digital Cinema Editing I",
+   "credits": 2,
+   "coreqText": "DCPR 1610L",
+   "coreqs": [
+    "DCPR 1610L"
+   ]
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 3,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DCPR 2410": {
+   "title": "Cinematography I",
+   "credits": 1,
+   "prereqText": "DGM 2320 , DCPR 1800",
+   "prereqs": {
+    "and": [
+     "DGM 2320",
+     "DCPR 1800"
+    ]
+   },
+   "coreqText": "DCPR 2410L",
+   "coreqs": [
+    "DCPR 2410L"
+   ]
+  },
+  "DGM 2320": {
+   "title": "Digital Photography and Compositing I",
+   "credits": 3
+  }
+ }
+}

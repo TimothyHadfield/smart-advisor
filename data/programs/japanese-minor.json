@@ -1,0 +1,230 @@
+{
+ "id": "japanese-minor",
+ "name": "Japanese, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/japanese-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "JPNS 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "JPNS 3055",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "JPNS 3060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 2",
+   "pick": {
+    "count": 2
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "JPNS 2510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "JPNS 3510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "JPNS 3710"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete two of the following"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "JPNS 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "JPNS 3210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "JPNS 3520"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "JPNS 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "JPNS 3055",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following",
+     "credits": 3
+    },
+    {
+     "code": "JPNS 2510G",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3510G",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3710",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "JPNS 3060",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following",
+     "credits": 3
+    },
+    {
+     "code": "JPNS 3200",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3210",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3520",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Complete one of the following",
+     "credits": 3
+    },
+    {
+     "code": "JPNS 2510G",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3510G",
+     "credits": null
+    },
+    {
+     "code": "JPNS 3710",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "JPNS 2510G": {
+   "title": "Introduction to Japanese Culture and Society",
+   "credits": 3
+  },
+  "JPNS 3050": {
+   "title": "Advanced Japanese",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed JPNS 2020G , have had one year residency in Japan, or instructor approval",
+   "prereqs": null
+  },
+  "JPNS 3055": {
+   "title": "Japanese Conversation and Composition",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; JPNS 3050 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
+   "prereqs": null
+  },
+  "JPNS 3060": {
+   "title": "Advanced Japanese II",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; JPNS 3050 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
+   "prereqs": null
+  },
+  "JPNS 3200": {
+   "title": "Business Japanese",
+   "credits": 3,
+   "prereqText": "JPNS 3050 and University Advanced Standing",
+   "prereqs": "JPNS 3050",
+   "prereqNonCourse": true
+  },
+  "JPNS 3210": {
+   "title": "Japanese for the Professions",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; JPNS 3060 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
+   "prereqs": null
+  },
+  "JPNS 3510G": {
+   "title": "Japanese Culture and Civilization",
+   "credits": 3,
+   "prereqText": "JPNS 3050 and University Advanced Standing",
+   "prereqs": "JPNS 3050",
+   "prereqNonCourse": true
+  },
+  "JPNS 3520": {
+   "title": "Society and Business in Japan",
+   "credits": 3,
+   "prereqText": "JPNS 3050 and University Advanced Standing",
+   "prereqs": "JPNS 3050",
+   "prereqNonCourse": true
+  },
+  "JPNS 3710": {
+   "title": "Japanese Culture and Film",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; JPNS 3060 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
+   "prereqs": null
+  }
+ }
+}

@@ -1,0 +1,540 @@
+{
+ "id": "exercise-science-as",
+ "name": "Exercise Science, A.S.",
+ "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/exercise-science-as/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Quantitative Literacy",
+   "pick": {
+    "count": 1
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "CHEM 1110",
+   "alts": [
+    "CHEM 1210"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1615",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2425",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 2700G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any 1000-level course or higher",
+   "credits": 12,
+   "notes": [
+    "Must include CHEM 1215 if taking CHEM 1210 for the Physical Science GE distribution"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Quantitative Literacy",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
+    },
+    {
+     "code": "PSY 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ZOOL 2320",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 1097",
+     "credits": 3
+    },
+    {
+     "code": "CHEM 1110",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ZOOL 2420",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
+    },
+    {
+     "label": "American Institutions Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 2500",
+     "credits": 3
+    },
+    {
+     "code": "EXSC 2700G",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGL 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1610",
+   "precoreqs": "BIOL 1610"
+  },
+  "CHEM 1110": {
+   "title": "Elementary Chemistry for the Health Sciences",
+   "credits": 4,
+   "precoreqText": "MAT 1010 or MAT 2015 or STAT 1040 or STAT 1045 , or a placement score into MATH 1050 or higher.",
+   "precoreqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 2015",
+     "STAT 1040",
+     "STAT 1045",
+     "MATH 1050"
+    ]
+   }
+  },
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EXSC 1097": {
+   "title": "Fitness for Life",
+   "credits": 3
+  },
+  "EXSC 2500": {
+   "title": "Sports Medicine",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE and REC Majors: ZOOL 1090 .",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "ZOOL 1090"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE Majors: PETE 2700 with a C- or higher and ( MATH 1050 or MATH 1055 ). REC Majors: REC 2200 .",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "PETE 2700",
+     "REC 2200"
+    ]
+   }
+  },
+  "EXSC 2700G": {
+   "title": "Foundations of Exercise Science",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L) all with a C- or higher, and ( MATH 1050 or MATH 1055 )",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "ZOOL 2420",
+     "ZOOL 2425",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "precoreqText": "ZOOL 2320",
+   "precoreqs": "ZOOL 2320"
+  },
+  "ZOOL 2420": {
+   "title": "Human Physiology",
+   "credits": 3,
+   "prereqText": "BIOL 1610 with a minimum grade of C- and CHEM 1110 or CHEM 1210 with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "coreqText": "ZOOL 2425",
+   "coreqs": [
+    "ZOOL 2425"
+   ]
+  },
+  "ZOOL 2425": {
+   "title": "Human Physiology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1610 and CHEM 1110",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "CHEM 1110"
+    ]
+   },
+   "coreqText": "ZOOL 2420",
+   "coreqs": [
+    "ZOOL 2420"
+   ]
+  }
+ }
+}

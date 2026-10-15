@@ -1,0 +1,1334 @@
+{
+ "id": "digital-audio-bs",
+ "name": "Digital Audio, B.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/digital-media/digital-audio-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "History Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Social / Behavioral Science",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1000",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1031",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 1700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2001R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2010L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2020L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2080",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 3010R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 3010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 3010L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 3020L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 3110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 3120G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 4085",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 4220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 4900R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "choice",
+   "area": "Recommended Tracks",
+   "label": "Choose 18 credits",
+   "pick": {
+    "credits": 18
+   },
+   "credits": 18,
+   "options": [
+    {
+     "codes": [
+      "DAPR 2110"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 3340"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 3170"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 3171"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 2170"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 2171"
+     ],
+     "credits": 3,
+     "section": "Sound Design Track"
+    },
+    {
+     "codes": [
+      "DAPR 2250"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 2255"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 3255"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 3230"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 3280"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 3235"
+     ],
+     "credits": 3,
+     "section": "Audio Engineering Track"
+    },
+    {
+     "codes": [
+      "DAPR 2170"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    },
+    {
+     "codes": [
+      "DAPR 2171"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    },
+    {
+     "codes": [
+      "DAPR 2300"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    },
+    {
+     "codes": [
+      "DAPR 3300"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    },
+    {
+     "codes": [
+      "DAPR 3340"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    },
+    {
+     "codes": [
+      "DAPR 3345"
+     ],
+     "credits": 3,
+     "section": "Game Sound Track"
+    }
+   ],
+   "text": "Complete at least 18 credits from the following recommended tracks",
+   "tracks": [
+    "Sound Design Track",
+    "Audio Engineering Track",
+    "Game Sound Track"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 13 credits",
+   "pick": {
+    "credits": 13
+   },
+   "credits": 13,
+   "options": [
+    {
+     "codes": [
+      "DAPR 3580"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3240"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3031"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 2080R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAPR 3080R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 3660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DGM 1645"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 3000R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1410"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DAPR 1000",
+     "credits": 1
+    },
+    {
+     "code": "DAPR 2080",
+     "credits": 3
+    },
+    {
+     "label": "DAPR Elective",
+     "credits": 4
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035",
+      "MAT 1030H"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MUSC 1100",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2000",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "DAPR 2010",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2010L",
+     "credits": 1
+    },
+    {
+     "code": "DAPR 1030",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2240",
+     "credits": 3
+    },
+    {
+     "code": "PHYS 1700",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2001R",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "DAPR 2020",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2020L",
+     "credits": 1
+    },
+    {
+     "code": "DAPR 1031",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "DAPR Elective",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "DAPR 3010",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 3010L",
+     "credits": 1
+    },
+    {
+     "code": "DAPR 3010R",
+     "credits": 1
+    },
+    {
+     "code": "DGM 3110",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "DAPR 3020",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 3020L",
+     "credits": 1
+    },
+    {
+     "label": "DAPR Elective",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 3
+    },
+    {
+     "label": "History Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "DAPR 4900R",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 4220",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 4085",
+     "credits": 3
+    },
+    {
+     "label": "DAPR Elective",
+     "credits": 3
+    },
+    {
+     "label": "Social / Behavioral Science",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "DAPR 4900R",
+     "credits": 3
+    },
+    {
+     "code": "DGM 3120G",
+     "credits": 3
+    },
+    {
+     "label": "Track Elective",
+     "credits": 3
+    },
+    {
+     "label": "DAPR Elective",
+     "credits": 2
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1410": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereqText": "CS 1400 and Math equivalent to at least college algebra",
+   "prereqs": "CS 1400",
+   "prereqNonCourse": true
+  },
+  "DAGV 1700": {
+   "title": "Scripting Essentials",
+   "credits": 3
+  },
+  "DAGV 3000R": {
+   "title": "Animation and Game Group Project",
+   "credits": 1,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 1000": {
+   "title": "Intro to Digital Audio",
+   "credits": 1
+  },
+  "DAPR 1030": {
+   "title": "Digital Audio Workstation Training I",
+   "credits": 3,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000"
+  },
+  "DAPR 1031": {
+   "title": "Digital Audio Workstation Training II",
+   "credits": 3,
+   "prereqText": "DAPR 1030",
+   "prereqs": "DAPR 1030"
+  },
+  "DAPR 2000": {
+   "title": "Digital Audio Essentials",
+   "credits": 3,
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2001R": {
+   "title": "Audio Portfolio Prep",
+   "credits": 2,
+   "precoreqText": "DAPR 1000",
+   "precoreqs": "DAPR 1000"
+  },
+  "DAPR 2010": {
+   "title": "Core Recording",
+   "credits": 3,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000",
+   "coreqText": "DAPR 2010L",
+   "coreqs": [
+    "DAPR 2010L"
+   ]
+  },
+  "DAPR 2010L": {
+   "title": "Core Recording Lab",
+   "credits": 1,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000",
+   "coreqText": "DAPR 2010",
+   "coreqs": [
+    "DAPR 2010"
+   ]
+  },
+  "DAPR 2020": {
+   "title": "Core Mixing",
+   "credits": 3,
+   "prereqText": "DAPR 2010",
+   "prereqs": "DAPR 2010",
+   "coreqText": "DAPR 2020L",
+   "coreqs": [
+    "DAPR 2020L"
+   ]
+  },
+  "DAPR 2020L": {
+   "title": "Core Mixing Lab",
+   "credits": 1,
+   "prereqText": "DAPR 2010",
+   "prereqs": "DAPR 2010",
+   "coreqText": "DAPR 2020",
+   "coreqs": [
+    "DAPR 2020"
+   ]
+  },
+  "DAPR 2080": {
+   "title": "Podcast and Radio Production",
+   "credits": 3
+  },
+  "DAPR 2080R": {
+   "title": "Special Topics in Digital Audio",
+   "credits": 1,
+   "creditsMax": 4
+  },
+  "DAPR 2110": {
+   "title": "Production Sound for Cinema",
+   "credits": 3
+  },
+  "DAPR 2170": {
+   "title": "Sound Design for Visual Media I",
+   "credits": 3
+  },
+  "DAPR 2171": {
+   "title": "Sound Design for Visual Media II",
+   "credits": 3,
+   "prereqText": "DAPR 2170",
+   "prereqs": "DAPR 2170"
+  },
+  "DAPR 2240": {
+   "title": "Digital Audio Restoration",
+   "credits": 3,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000"
+  },
+  "DAPR 2250": {
+   "title": "Audio Hardware Basics",
+   "credits": 3,
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2255": {
+   "title": "Audio Hardware I",
+   "credits": 3,
+   "prereqText": "DAPR 2250",
+   "prereqs": "DAPR 2250"
+  },
+  "DAPR 2300": {
+   "title": "Sound for Games I",
+   "credits": 3
+  },
+  "DAPR 3010": {
+   "title": "Advanced Recording",
+   "credits": 3,
+   "prereqText": "DAPR 2020 , Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": "DAPR 2020",
+   "prereqNonCourse": true,
+   "coreqText": "DAPR 3010L",
+   "coreqs": [
+    "DAPR 3010L"
+   ]
+  },
+  "DAPR 3010L": {
+   "title": "Advanced Recording Lab",
+   "credits": 1,
+   "prereqText": "DAPR 2020 , Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": "DAPR 2020",
+   "prereqNonCourse": true,
+   "coreqText": "DAPR 3010",
+   "coreqs": [
+    "DAPR 3010"
+   ]
+  },
+  "DAPR 3010R": {
+   "title": "Digital Lecture Series",
+   "credits": 1,
+   "prereqText": "ENGL 2010 or ENGL 2010H and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "ENGL 2010H"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "DAPR 3020": {
+   "title": "Advanced Mixing",
+   "credits": 3,
+   "prereqText": "Grade of B- or better in DAPR 2020 and 3010 , Portfolio Review Acceptance, and University Advanced Standing.",
+   "prereqs": "DAPR 2020",
+   "prereqNonCourse": true,
+   "coreqText": "DAPR 3020L",
+   "coreqs": [
+    "DAPR 3020L"
+   ]
+  },
+  "DAPR 3020L": {
+   "title": "Advanced Mixing Lab",
+   "credits": 1,
+   "prereqText": "Grade of B- or better in DAPR 2020 and 3010 , Portfolio Review Acceptance, and University Advanced Standing.",
+   "prereqs": "DAPR 2020",
+   "prereqNonCourse": true,
+   "coreqText": "DAPR 3020",
+   "coreqs": [
+    "DAPR 3020"
+   ]
+  },
+  "DAPR 3030": {
+   "title": "Digital Audio Workstation Training III",
+   "credits": 3,
+   "prereqText": "DAPR 1031 and University Advanced Standing",
+   "prereqs": "DAPR 1031",
+   "prereqNonCourse": true
+  },
+  "DAPR 3031": {
+   "title": "Digital Audio Workstation Training IV",
+   "credits": 3,
+   "prereqText": "DAPR 3030 and University Advanced Standing",
+   "prereqs": "DAPR 3030",
+   "prereqNonCourse": true
+  },
+  "DAPR 3060": {
+   "title": "Producing Audio",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 3080R": {
+   "title": "Advanced Topics in Digital Audio",
+   "credits": 1,
+   "creditsMax": 4,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 3170": {
+   "title": "Post-Production Sound for Cinema I",
+   "credits": 3,
+   "prereqText": "DAPR 2170 and University Advanced Standing",
+   "prereqs": "DAPR 2170",
+   "prereqNonCourse": true
+  },
+  "DAPR 3171": {
+   "title": "Post-Production Sound for Cinema II",
+   "credits": 3,
+   "prereqText": "DAPR 3170 , University Advanced Standing",
+   "prereqs": "DAPR 3170",
+   "prereqNonCourse": true
+  },
+  "DAPR 3230": {
+   "title": "Audio Plugin Development I",
+   "credits": 3,
+   "prereqText": "MAT 1030 or MAT 1035 or Higher, University Advanced Standing, MATH 1050 or MATH 1055 highly recommended",
+   "prereqs": null
+  },
+  "DAPR 3235": {
+   "title": "Audio Plugin Development II",
+   "credits": 3,
+   "prereqText": "DAPR 3280 and a grade of B or better in DAPR 3230 , University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DAPR 3280",
+     "DAPR 3230"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "DAPR 3240": {
+   "title": "Advanced Audio Restoration and Forensics",
+   "credits": 3,
+   "prereqText": "DAPR 2240 and University Advanced Standing",
+   "prereqs": "DAPR 2240",
+   "prereqNonCourse": true
+  },
+  "DAPR 3255": {
+   "title": "Audio Hardware II",
+   "credits": 3,
+   "prereqText": "DAPR 2255 , University Advanced Standing",
+   "prereqs": "DAPR 2255",
+   "prereqNonCourse": true
+  },
+  "DAPR 3280": {
+   "title": "Signal Processing for Audio",
+   "credits": 3,
+   "prereqText": "MAT 1030 or MAT 1035 or Higher, University Advanced Standing, MATH 1050 or MATH 1055 highly recommended",
+   "prereqs": null
+  },
+  "DAPR 3300": {
+   "title": "Sound for Games II",
+   "credits": 3,
+   "prereqText": "DAPR 2300 , University Advanced Standing",
+   "prereqs": "DAPR 2300",
+   "prereqNonCourse": true
+  },
+  "DAPR 3340": {
+   "title": "Spatial Audio I",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 3345": {
+   "title": "Spatial Audio II",
+   "credits": 3,
+   "prereqText": "DAPR 2300 , DAPR 3340 , University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DAPR 2300",
+     "DAPR 3340"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "DAPR 3430": {
+   "title": "Recording Studio Design Principles and Practices",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 3580": {
+   "title": "Live Sound Reinforcement",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DAPR 4085": {
+   "title": "Writing for Digital Audio",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "DAPR 4220": {
+   "title": "Audio Mastering",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "DAPR 3020",
+   "precoreqs": "DAPR 3020"
+  },
+  "DAPR 4900R": {
+   "title": "Senior Capstone",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DCPR 1010": {
+   "title": "Film Production Analysis I",
+   "credits": 2,
+   "coreqText": "DCPR 1010L",
+   "coreqs": [
+    "DCPR 1010L"
+   ]
+  },
+  "DCPR 1610": {
+   "title": "Digital Cinema Editing I",
+   "credits": 2,
+   "coreqText": "DCPR 1610L",
+   "coreqs": [
+    "DCPR 1610L"
+   ]
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 2,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DCPR 3610": {
+   "title": "Digital Cinema Editing II",
+   "credits": 2,
+   "prereqText": "DCPR 1610 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": "DCPR 1610",
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3610L",
+   "coreqs": [
+    "DCPR 3610L"
+   ]
+  },
+  "DCPR 3660": {
+   "title": "Professional NLE Certification",
+   "credits": 2,
+   "prereqText": "DCPR 1610 , DCPR 2630 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DCPR 1610",
+     "DCPR 2630"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3660L",
+   "coreqs": [
+    "DCPR 3660L"
+   ]
+  },
+  "DGM 1645": {
+   "title": "Mixed Reality Essentials",
+   "credits": 3
+  },
+  "DGM 3110": {
+   "title": "Corporate Issues in Digital Media",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DGM 3120G": {
+   "title": "Digital Media for Intercultural Communication",
+   "credits": 3,
+   "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1030H": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1010 or MAT1015 with a grade of C- or higher; or appropriate placement by a placement exam.",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MUSC 1100": {
+   "title": "Fundamentals of Music",
+   "credits": 3
+  },
+  "PHYS 1700": {
+   "title": "Descriptive Acoustics",
+   "credits": 3,
+   "prereqText": "MAT 1010 or higher",
+   "prereqs": "MAT 1010"
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

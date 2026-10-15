@@ -1,0 +1,293 @@
+{
+ "id": "cognitive-neuroscience-minor",
+ "name": "Cognitive Neuroscience, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/psychology-and-counseling/cognitive-neuroscience-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "PSY 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PSY 2710",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PSY 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Choose one",
+   "pick": {
+    "credits": 4
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "PSY 3450"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PSY 3490"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Cognitive Neuroscience Electives (6 credits)",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "PSY 3425"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "PSY 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 3480"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PSY 3660"
+     ],
+     "credits": 3
+    }
+   ],
+   "notes": [
+    "PSY 3450 Behavioral Neuroscience (if not already taken as a requirement above)",
+    "PSY 3490 Sensation and Perception (if not already taken as a requirement above)"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "PSY 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PSY 2710",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "PSY 2420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Lab Requirement (one of the following)",
+     "credits": 4
+    },
+    {
+     "code": "PSY 3450",
+     "credits": null
+    },
+    {
+     "code": "PSY 3490",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "Cognitive Neuroscience Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "label": "Cognitive Neuroscience Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 2420": {
+   "title": "Cognitive Psychology",
+   "credits": 3,
+   "prereqText": "PSY 1010 with grade C- or higher and ( ENGL 1010 or ENGH 1005 with a C- grade or higher)",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PSY 2710": {
+   "title": "Introduction to Brain and Behavior",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 with a C- or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PSY 3425": {
+   "title": "Cognitive Psychology Lab",
+   "credits": 1,
+   "prereqText": "PSY 1010 (with C- grade or higher); ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "PSY 2420",
+   "precoreqs": "PSY 2420"
+  },
+  "PSY 3430": {
+   "title": "Psychopharmacology",
+   "credits": 3,
+   "prereqText": "PSY 2710 (with C- grade or higher) or ZOOL 2320 and ZOOL 2420 (with C- grade or higher in both courses) and ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "PSY 2710",
+       "ZOOL 2320"
+      ]
+     },
+     "ZOOL 2420",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 3450": {
+   "title": "Behavioral Neuroscience",
+   "credits": 4,
+   "prereqText": "PSY 2710 (with C- grade or higher) or ZOOL 2320 and ZOOL 2420 (with C- or higher in both courses) and ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "PSY 2710",
+       "ZOOL 2320"
+      ]
+     },
+     "ZOOL 2420",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 3480": {
+   "title": "Principles of Learning",
+   "credits": 4,
+   "prereqText": "PSY 1010 (with C- grade or higher) and ENGL 2010 (with a C- or higher) or PSY 2-2- (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 3490": {
+   "title": "Sensation and Perception",
+   "credits": 4,
+   "prereqText": "( PSY 1010 and PSY 2710 both with C- grade or higher), ENGL 2010 (with a C+ grade or higher), and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     "PSY 2710",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PSY 3660": {
+   "title": "Neuroscience of Emotion",
+   "credits": 3,
+   "prereqText": "PSY 2710 , University Advanced Standing and Instructor approval",
+   "prereqs": "PSY 2710",
+   "prereqNonCourse": true
+  }
+ }
+}

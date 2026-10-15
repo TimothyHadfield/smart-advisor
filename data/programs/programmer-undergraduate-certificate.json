@@ -1,0 +1,363 @@
+{
+ "id": "programmer-undergraduate-certificate",
+ "name": "Programmer, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/computer-science/programmer-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 1410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2810",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 9 credits from the following courses (Must be approved by CSE Department. See CSE adviser):",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "CS 2450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 2550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 2812R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CS 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 3250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 3260"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 3370"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 1510"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose 9 credits from the following courses (Must be approved by CSE Department. See CSE adviser):"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CS 1400",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Computer Electives",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CS 1410",
+     "credits": 3
+    },
+    {
+     "code": "CS 2810",
+     "credits": 3
+    },
+    {
+     "label": "Computer Electives",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CS 2300",
+     "credits": 3
+    },
+    {
+     "code": "CS 2420",
+     "credits": 3
+    },
+    {
+     "code": "CS 2600",
+     "credits": 3
+    },
+    {
+     "label": "Computer Electives",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1410": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereqText": "CS 1400 and Math equivalent to at least college algebra",
+   "prereqs": "CS 1400",
+   "prereqNonCourse": true
+  },
+  "CS 2300": {
+   "title": "Discrete Mathematical Structures I",
+   "credits": 3,
+   "prereqText": "( CS 1410 or INFO 2200 ) and MATH 1050 or higher",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "CS 1410",
+       "INFO 2200"
+      ]
+     },
+     "MATH 1050"
+    ]
+   }
+  },
+  "CS 2420": {
+   "title": "Introduction to Algorithms and Data Structures",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "CS 2450": {
+   "title": "Software Engineering",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420"
+    ]
+   }
+  },
+  "CS 2550": {
+   "title": "Web Programming I",
+   "credits": 3,
+   "prereqText": "CS 1410 or DWDD 2720 or INFO 2200",
+   "prereqs": {
+    "or": [
+     "CS 1410",
+     "DWDD 2720",
+     "INFO 2200"
+    ]
+   }
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CS 2810": {
+   "title": "Computer Organization and Architecture",
+   "credits": 3,
+   "prereqText": "CS 1400 or CS 1420",
+   "prereqs": {
+    "or": [
+     "CS 1400",
+     "CS 1420"
+    ]
+   }
+  },
+  "CS 2812R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3060": {
+   "title": "Operating Systems Theory",
+   "credits": 3,
+   "prereqText": "CS 2370 , CS 2420 , and University Advanced Standing. If a computer science or software engineering major, also CS 2810 and matriculation to computer science or software engineering. If a computer engineering major, also ECE 2700 and ECE 3730",
+   "prereqs": {
+    "and": [
+     "CS 2370",
+     "CS 2420",
+     "CS 2810",
+     "ECE 2700",
+     "ECE 3730"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3250": {
+   "title": "Java Software Development",
+   "credits": 3,
+   "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 3260": {
+   "title": "CsharpNET Software Development",
+   "credits": 3,
+   "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3370": {
+   "title": "C Plus Plus Software Development",
+   "credits": 3,
+   "prereqText": "CS 2370 , ( CS 2810 or ECE 4700 ), matriculation to computer science or software engineering, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2370",
+     {
+      "or": [
+       "CS 2810",
+       "ECE 4700"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3520": {
+   "title": "Database Theory",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  }
+ }
+}

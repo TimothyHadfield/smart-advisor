@@ -1,0 +1,128 @@
+{
+ "id": "japanese-language-certificate-proficiency",
+ "name": "Japanese Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/japanese-language-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "JPNS 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "JPNS 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "JPNS 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "JPNS 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "JPNS 3510G",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "JPNS 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "JPNS 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "JPNS 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "JPNS 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "JPNS 3510G",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "JPNS 1020": {
+   "title": "Beginning Japanese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of JPNS 1010",
+   "prereqs": "JPNS 1010",
+   "prereqNonCourse": true
+  },
+  "JPNS 2010": {
+   "title": "Intermediate Japanese I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of JPNS 1020",
+   "prereqs": "JPNS 1020",
+   "prereqNonCourse": true
+  },
+  "JPNS 2020G": {
+   "title": "Intermediate Japanese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of JPNS 2010",
+   "prereqs": "JPNS 2010",
+   "prereqNonCourse": true
+  },
+  "JPNS 3050": {
+   "title": "Advanced Japanese",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed JPNS 2020G , have had one year residency in Japan, or instructor approval",
+   "prereqs": null
+  },
+  "JPNS 3510G": {
+   "title": "Japanese Culture and Civilization",
+   "credits": 3,
+   "prereqText": "JPNS 3050 and University Advanced Standing",
+   "prereqs": "JPNS 3050",
+   "prereqNonCourse": true
+  }
+ }
+}

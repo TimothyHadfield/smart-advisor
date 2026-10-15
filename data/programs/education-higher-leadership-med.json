@@ -1,0 +1,233 @@
+{
+ "id": "education-higher-leadership-med",
+ "name": "Master of Education in Higher Education Leadership, M.Ed.",
+ "url": "https://catalog.uvu.edu/education/education-graduate-programs/education-higher-leadership-med/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDUC 6100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6430",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6460",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6960R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6979",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDUC 6110",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EDHE 6410",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDHE 6420",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDHE 6430",
+     "credits": 3
+    },
+    {
+     "code": "EDHE 6440",
+     "credits": 3
+    },
+    {
+     "code": "EDHE 6960R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EDHE 6960R",
+     "credits": 1
+    },
+    {
+     "code": "EDHE 6450",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDHE 6960R",
+     "credits": 1
+    },
+    {
+     "code": "EDHE 6460",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDHE 6979",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDHE 6410": {
+   "title": "Foundations and Contexts of Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6420": {
+   "title": "Humanizing Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6430": {
+   "title": "Student Success and Development",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6440": {
+   "title": "Leadership in Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6450": {
+   "title": "Law-Policy-Ethics in Higher Education",
+   "credits": 3,
+   "prereqText": "Admission to the Master of Education in Higher Education Leadership program, or permission of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6460": {
+   "title": "Planning-Budget-Organizational Effectiveness",
+   "credits": 3,
+   "prereqText": "Admission to the Master of Education in Higher Education Leadership program, or permission of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6960R": {
+   "title": "Higher Education Leadership Capstone",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Admission to Master Education Higher Education Leadership program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6979": {
+   "title": "Higher Education Leadership Capstone Project",
+   "credits": 3,
+   "prereqText": "Admission to Master of Education Higher Education Leadership program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6100": {
+   "title": "Research Methodology",
+   "credits": 3,
+   "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6110": {
+   "title": "Applied Statistics for Education",
+   "credits": 3,
+   "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

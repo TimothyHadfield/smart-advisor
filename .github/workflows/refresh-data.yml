@@ -1,0 +1,55 @@
+# Weekly refresh of class sections (UVU Banner) and Rate My Professors ratings.
+# Runs scripts/fetch-sections.mjs then scripts/fetch-rmp.mjs and commits changed data back to main.
+# Free on public repos. Manual run: Actions tab → "Refresh class data" → Run workflow.
+name: Refresh class data
+
+on:
+  schedule:
+    - cron: '17 9 * * 1' # Mondays 09:17 UTC (03:17 Utah)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-data
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Fetch class sections
+        run: node scripts/fetch-sections.mjs
+
+      - name: Fetch Rate My Professors ratings
+        # RMP is an unofficial endpoint; if it fails, still commit the new sections.
+        continue-on-error: true
+        run: node scripts/fetch-rmp.mjs
+
+      - name: Test data shape
+        run: |
+          node tests/sections.test.mjs
+          node tests/rmp-match.test.mjs
+
+      - name: Commit changed data
+        run: |
+          git add data/sections data/rmp.json
+          if git diff --cached --quiet; then
+            echo "No data changes."
+            exit 0
+          fi
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "Refresh class sections and RMP ratings ($(date -u +%Y-%m-%d))"
+          git pull --rebase origin main
+          git push origin HEAD:main

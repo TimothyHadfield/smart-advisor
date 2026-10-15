@@ -1,0 +1,293 @@
+{
+ "id": "applied-data-analytics-minor",
+ "name": "Applied Data Analytics, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/applied-data-analytics-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 3130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Minor Elective",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "INFO 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 4120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 4130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3680"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3690"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 4610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 3100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 hours of the following:",
+   "notes": [
+    "Other advisor-approved elective"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "INFO 2410",
+     "credits": 3
+    },
+    {
+     "code": "INFO 3130",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 3100": {
+   "title": "Introduction to Data Analysis for Biologists",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "INFO 3130": {
+   "title": "Introduction to Applied Data Analytics",
+   "credits": 3,
+   "prereqText": "Basic statistics course ( MGMT 2340 or STAT 1040 or STAT 1045 or STAT 2040 or STAT 2050 or PSY 3110 ), and basic knowledge of Microsoft Excel, or Departmental Approval and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 1040",
+     "STAT 1045",
+     "STAT 2040",
+     "STAT 2050",
+     "PSY 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "INFO 3410": {
+   "title": "Database Systems and Warehousing",
+   "credits": 3,
+   "prereqText": "( INFO 2410 or CS 3520 with a grade of C- or higher within the past seven years) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "INFO 2410",
+     "CS 3520"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "INFO 4120": {
+   "title": "Data Visualization",
+   "credits": 3,
+   "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
+   "prereqs": null
+  },
+  "INFO 4130": {
+   "title": "Data Science and Big Data Analytics",
+   "credits": 3,
+   "prereqText": "INFO 3130 and University Advanced Standing",
+   "prereqs": "INFO 3130",
+   "prereqNonCourse": true
+  },
+  "MKTG 3680": {
+   "title": "Marketing with Social Media",
+   "credits": 3,
+   "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
+   "prereqs": null
+  },
+  "MKTG 3690": {
+   "title": "Digital Marketing Analytics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 4610": {
+   "title": "Sales Operations",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "STAT 4100": {
+   "title": "Design of Experiment",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4200": {
+   "title": "Survey Sampling",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4400": {
+   "title": "Multivariate Analysis",
+   "credits": 3,
+   "prereqText": "[( STAT 2040 or STAT 2050 ) and MATH 2270 ] or STAT 3000 , both with a grade of C or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     {
+      "or": [
+       "MATH 2270",
+       "STAT 3000"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4500": {
+   "title": "Nonparametric Statistics",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}
