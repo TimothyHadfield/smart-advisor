@@ -7,6 +7,7 @@
 //   choice      "complete one of" / "N credits from" a list (options may be shown as their own boxes)
 //   option      a course inside a choice group (only built when the group has real prereqs)
 //   placeholder a Gen Ed distribution or free elective with no fixed course
+const MAX_OPTION_BOXES = 8;
 export function buildModel(program) {
   const units = [];
   const byCode = {};
@@ -19,19 +20,20 @@ export function buildModel(program) {
         id: r.code, kind: 'course', code: r.code, codes: [r.code, ...(r.alts || [])], alts: r.alts || [],
         label: r.code, title: c.title || '', credits: r.credits ?? c.credits ?? 3, area: r.area, order: i,
         prereqs: c.prereqs ?? null, precoreqs: c.precoreqs ?? null, coreqs: c.coreqs || [],
-        planSem: planIndex[r.code] ?? 99,
+        planSem: planIndex[r.code] ?? 99, prog: r.prog,
       };
       units.push(u);
       for (const k of u.codes) byCode[k] ??= u;
     } else if (r.type === 'placeholder') {
-      units.push({ id: `ph:${i}`, kind: 'placeholder', label: r.label, title: r.text || '', credits: r.credits || 0, area: r.area, order: i, planSem: planIndex[r.label] ?? 99 });
+      units.push({ id: r.id ?? `ph:${i}`, kind: 'placeholder', label: r.label, title: r.text || '', credits: r.credits || 0, area: r.area, order: i, planSem: planIndex[r.label] ?? 99, prog: r.prog });
     } else if (r.type === 'choice') {
-      const g = { id: `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99 };
+      const g = { id: r.id ?? `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99, prog: r.prog };
       units.push(g);
       g._raw = r.options;
     }
   });
-  // Option courses become their own boxes only when they connect to the program's prereq graph.
+  // Option courses become their own boxes only when they connect to the program's prereq graph, and only
+  // for a short list (a 40-course elective list stays one box).
   for (const g of units.filter((u) => u.kind === 'choice')) {
     const opts = g._raw.map((o, k) => {
       const code = o.codes[0];
@@ -41,12 +43,12 @@ export function buildModel(program) {
         label: o.codes.join(' + '), title: o.codes.map((x) => courses[x]?.title || '').filter(Boolean).join(' + '),
         credits: o.credits ?? c.credits ?? 3, area: g.area, order: g.order + (k + 1) / 100,
         prereqs: andAll(o.codes.map((x) => courses[x]?.prereqs ?? null)), precoreqs: null, coreqs: [],
-        planSem: 99,
+        planSem: 99, prog: g.prog,
       };
     });
     delete g._raw;
     g.options = opts;
-    g.showOptions = opts.some((o) => codesOf(o.prereqs).some((x) => byCode[x]));
+    g.showOptions = opts.length <= MAX_OPTION_BOXES && opts.some((o) => codesOf(o.prereqs).some((x) => byCode[x]));
   }
   const model = { program, units, byCode };
   computeDepths(model);

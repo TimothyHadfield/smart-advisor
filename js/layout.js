@@ -428,20 +428,34 @@ export function splitGenEd(nodes, edges) {
 
 // flowChart(nodes, edges, sizes) -> routeChart's result for both sections in one picture, plus
 // genTop (y of the Gen Ed heading, or null) and the main chart's layout (for its crossing count).
-export function flowChart(nodes, edges, sizes = {}) {
-  const { main, gen } = splitGenEd(nodes, edges);
+// sections = more sections drawn the same way, before Gen Ed: [{ key, label, test(node) }] (a minor's
+// boxes). A box goes in the first section whose test it passes, unless an arrow ties it to a box in
+// another section (then it stays in the main chart). heads = [{ key, label, top }] for each section drawn.
+export function flowChart(nodes, edges, sizes = {}, sections = []) {
+  const all = [...sections, { key: 'gen', label: 'Gen Ed', test: (n) => /general\s+education/i.test(n.area || '') }];
+  const sec = new Map(nodes.map((n) => [n.id, all.find((s) => s.test(n))?.key ?? '']));
+  for (let changed = true; changed;) {
+    changed = false;
+    for (const e of edges) if (sec.get(e.from) !== sec.get(e.to)) for (const id of [e.from, e.to]) if (sec.get(id)) { sec.set(id, ''); changed = true; }
+  }
+  const part = (key) => ({ nodes: nodes.filter((n) => sec.get(n.id) === key), edges: edges.filter((e) => sec.get(e.from) === key && sec.get(e.to) === key) });
+  const main = part('');
   const LM = layoutGraph(main.nodes, main.edges);
   const C = routeChart(LM, sizes);
-  const out = { ...C, boxes: new Map(C.boxes), edges: C.edges.slice(), genTop: null, layout: LM };
-  if (gen.nodes.length) {
-    const LG = layoutGraph(gen.nodes, gen.edges, { perRow: Math.max(4, LM.columns), inline: true });
+  const out = { ...C, boxes: new Map(C.boxes), edges: C.edges.slice(), genTop: null, heads: [], layout: LM };
+  const head = sizes.head ?? 28;
+  for (const s of all) {
+    const p = part(s.key);
+    if (!p.nodes.length) continue;
+    const LG = layoutGraph(p.nodes, p.edges, { perRow: Math.max(4, LM.columns), inline: true });
     const G = routeChart(LG, sizes);
-    const head = sizes.head ?? 28;
-    const dy = main.nodes.length ? C.height + head : head;
-    out.genTop = dy - head + 6;
+    const dy = out.boxes.size ? out.height + head : head;
+    const top = dy - head + 6;
+    out.heads.push({ key: s.key, label: s.label, top });
+    if (s.key === 'gen') out.genTop = top;
     for (const [id, r] of G.boxes) out.boxes.set(id, { ...r, y: r.y + dy });
     for (const e of G.edges) out.edges.push({ ...e, pts: e.pts.map(([x, y]) => [x, y + dy]) });
-    out.width = Math.max(C.width, G.width);
+    out.width = Math.max(out.width, G.width);
     out.height = dy + G.height;
   }
   return out;

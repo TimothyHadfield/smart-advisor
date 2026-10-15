@@ -2,10 +2,10 @@
 //
 // Local state (js/app.js, localStorage 'smart-advisor:v1'):
 //   { settings: {max, summers, start, grades}, done: {[program]: [keys]}, grades: {[program]: {key: grade}},
-//     audit: {[program]: {catalogYear}} }
+//     audit: {[program]: {catalogYear}}, plan: {programs: [major, minor...], catalogYear} }
 // One Firestore doc per student, users/{uid}:
-//   { taken: [keys], grades: {key: grade}, settings: {...}, program, catalogYear, updatedAt }
-// Taken classes are the student's, so the doc holds the program on screen; there is one major for now.
+//   { taken: [keys], grades: {key: grade}, settings: {...}, program, programs, catalogYear, updatedAt }
+// program = the major (programs[0]); taken/grades are kept under it locally. Older docs have no programs.
 
 const SETTINGS = ['max', 'summers', 'start', 'grades'];
 const isObj = (v) => !!v && typeof v === 'object' && !Array.isArray(v);
@@ -24,7 +24,8 @@ export function toDoc(state, program) {
     grades: { ...(state.grades?.[program] || {}) },
     settings: { max: 16, summers: false, start: null, grades: true, ...cleanSettings(state.settings) },
     program,
-    catalogYear: state.audit?.[program]?.catalogYear ?? null,
+    programs: strList(state.plan?.programs).length ? strList(state.plan.programs) : [program],
+    catalogYear: state.plan?.catalogYear ?? state.audit?.[program]?.catalogYear ?? null,
   };
 }
 
@@ -32,6 +33,12 @@ export function toDoc(state, program) {
 export function applyDoc(state, doc, program) {
   state.done ??= {};
   state.grades ??= {};
+  // the doc's major decides where its classes go (another device may have picked a different one)
+  const list = strList(doc?.programs).length ? strList(doc.programs) : typeof doc?.program === 'string' && doc.program ? [doc.program] : null;
+  if (list) program = list[0];
+  state.plan = { programs: list || strList(state.plan?.programs), catalogYear: state.plan?.catalogYear ?? null };
+  if (!state.plan.programs.length) state.plan.programs = [program];
+  if (doc?.catalogYear) state.plan.catalogYear = doc.catalogYear;
   state.done[program] = strList(doc?.taken);
   state.grades[program] = strMap(doc?.grades);
   state.settings = { max: 16, summers: false, start: null, grades: true, ...cleanSettings(state.settings), ...cleanSettings(doc?.settings) };
@@ -58,6 +65,8 @@ export function mergeDocs(local, remote) {
     grades,
     settings: Object.keys(rs).length ? { ...(l.settings || {}), ...rs } : { ...(l.settings || {}) },
     program: remote.program || l.program,
+    programs: strList(remote.programs).length ? strList(remote.programs)
+      : remote.program && strList(l.programs)[0] !== remote.program ? [remote.program] : strList(l.programs),
     catalogYear: remote.catalogYear || l.catalogYear || null,
   };
 }

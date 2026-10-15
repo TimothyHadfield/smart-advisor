@@ -21,7 +21,8 @@ function localState() {
 
 test('toDoc: the current program only, small, Firestore-safe (no undefined, no nested arrays)', () => {
   const d = toDoc(localState(), 'ee-bs');
-  assert.deepEqual(Object.keys(d).sort(), ['catalogYear', 'grades', 'program', 'settings', 'taken']);
+  assert.deepEqual(Object.keys(d).sort(), ['catalogYear', 'grades', 'program', 'programs', 'settings', 'taken']);
+  assert.deepEqual(d.programs, ['ee-bs']);
   assert.equal(d.program, 'ee-bs');
   assert.equal(d.catalogYear, '2025-2026');
   assert.equal(d.taken.length, 21);
@@ -47,7 +48,7 @@ test('applyDoc: writes the account into local state for this program and keeps d
   assert.deepEqual(s.grades['ee-bs'], { 'MATH 1210': 'B' });
   assert.deepEqual(s.settings, { max: 12, summers: false, start: null, grades: true });
   assert.equal(s.audit['ee-bs'].catalogYear, '2026-2027');
-  assert.ok(sameDoc(toDoc(s, 'ee-bs'), { taken: ['MATH 1210', 'ph:7'], grades: { 'MATH 1210': 'B' }, settings: s.settings, program: 'ee-bs', catalogYear: '2026-2027', updatedAt: 5 }));
+  assert.ok(sameDoc(toDoc(s, 'ee-bs'), { taken: ['MATH 1210', 'ph:7'], grades: { 'MATH 1210': 'B' }, settings: s.settings, program: 'ee-bs', programs: ['ee-bs'], catalogYear: '2026-2027', updatedAt: 5 }));
 });
 
 test('applyDoc: a doc missing fields does not wipe local settings to undefined', () => {
@@ -108,4 +109,41 @@ test('sameDoc ignores updatedAt and key order, sees real changes', () => {
   assert.ok(sameDoc(a, b));
   b.taken = b.taken.slice(1);
   assert.ok(!sameDoc(a, b));
+});
+
+// ---------- chosen programs (major + minor) and catalog year ----------
+const PLAN = { programs: ['electrical-engineering-bs', 'environmental-science-management-minor'], catalogYear: '2025-2026' };
+
+test('toDoc: the chosen programs (major first) and the chosen catalog year', () => {
+  const s = { ...localState(), plan: { ...PLAN } };
+  s.done = { 'electrical-engineering-bs': ['MATH 1210', 'environmental-science-management-minor/choice:4'] };
+  const d = toDoc(s, 'electrical-engineering-bs');
+  assert.equal(d.program, 'electrical-engineering-bs');
+  assert.deepEqual(d.programs, PLAN.programs);
+  assert.equal(d.catalogYear, '2025-2026');
+  assert.deepEqual(d.taken, ['MATH 1210', 'environmental-science-management-minor/choice:4']);
+});
+
+test('applyDoc: programs + catalog year come back; taken goes under the doc\'s major', () => {
+  const s = { settings: { max: 16, summers: false, start: null, grades: true }, done: {}, grades: {}, plan: { programs: ['nursing-bs'], catalogYear: null } };
+  applyDoc(s, { taken: ['ENVT 1110'], grades: {}, program: PLAN.programs[0], programs: PLAN.programs, catalogYear: '2025-2026' }, 'nursing-bs');
+  assert.deepEqual(s.plan, PLAN);
+  assert.deepEqual(s.done['electrical-engineering-bs'], ['ENVT 1110']);
+  assert.ok(sameDoc(toDoc(s, 'electrical-engineering-bs'), { taken: ['ENVT 1110'], grades: {}, settings: s.settings, program: PLAN.programs[0], programs: PLAN.programs, catalogYear: '2025-2026' }));
+});
+
+test('applyDoc: an older doc (program only, no programs list) keeps working', () => {
+  const s = { settings: {}, done: {}, grades: {} };
+  applyDoc(s, { taken: ['MATH 1210'], program: 'ee-bs', catalogYear: '2025-2026' }, 'ee-bs');
+  assert.deepEqual(s.plan.programs, ['ee-bs']);
+  assert.equal(s.plan.catalogYear, '2025-2026');
+  assert.deepEqual(s.done['ee-bs'], ['MATH 1210']);
+});
+
+test('mergeDocs: the account\'s programs win; a device-only choice is kept when the account has none', () => {
+  const local = toDoc({ ...localState(), plan: { ...PLAN } }, 'electrical-engineering-bs');
+  assert.deepEqual(mergeDocs(local, { taken: [], program: 'nursing-bs', programs: ['nursing-bs'] }).programs, ['nursing-bs']);
+  const m = mergeDocs(local, { taken: ['MATH 1210'] });
+  assert.deepEqual(m.programs, PLAN.programs);
+  assert.equal(m.program, 'electrical-engineering-bs');
 });

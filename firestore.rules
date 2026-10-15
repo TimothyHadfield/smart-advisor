@@ -1,7 +1,7 @@
 rules_version = '2';
 
 // Each signed-in student reads and writes only their own document:
-//   users/{uid}   {taken, grades, settings, program, catalogYear, updatedAt}
+//   users/{uid}   {taken, grades, settings, program, programs, catalogYear, updatedAt}
 // Only those fields, and small (tests/rules.test.mjs). Everything else is denied.
 service cloud.firestore {
   match /databases/{database}/documents {
@@ -9,8 +9,9 @@ service cloud.firestore {
       return request.auth != null && request.auth.uid == uid;
     }
     function validDoc(d) {
-      return d.keys().hasOnly(['taken', 'grades', 'settings', 'program', 'catalogYear', 'updatedAt'])
+      return d.keys().hasOnly(['taken', 'grades', 'settings', 'program', 'programs', 'catalogYear', 'updatedAt'])
         && (!('taken' in d) || (d.taken is list && d.taken.size() <= 500))
+        && (!('programs' in d) || (d.programs is list && d.programs.size() <= 6))
         && (!('grades' in d) || (d.grades is map && d.grades.size() <= 500))
         && (!('settings' in d) || (d.settings is map && d.settings.size() <= 20));
     }
