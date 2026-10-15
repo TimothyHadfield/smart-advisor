@@ -61,6 +61,8 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 - 2026-10-15 · All-majors choices (unconfirmed): unnamed lists → "Choose N" / "Choose N credits" / "Choose 1 track"; graduate programs admission:true; track picked by most progress then fewest credits; track courses shown as dashed "pick from list" rows; schedule Classes default In person.
 
+- 2026-10-15 · Flowchart loops: `layered()` drops loop-closing edges before layering (mutual pre-or-co pairs made nursing 63 columns, theatre 11–29); a no-prereq course whose arrows skip 3+ columns moves next to its first course. 20 charts changed, EE unchanged (8 crossings, 46 bends). Plan list: 2 columns `minmax(0,1fr)` so long elective names ellipsize instead of pushing column 2 off.
+
 ## NOT verified
 - v3: dark mode; phone legend's last label sits under the Grades switch (legend scrolls sideways); ECE 3710→3780 still has two jogs.
 - pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).

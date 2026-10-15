@@ -149,7 +149,7 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sum { flex: none; display: flex; align-items: baseline; gap: 8px; padding: 8px 16px 6px; }
 .sum b { font-size: 16px; color: var(--green); }
 .sum span { color: var(--muted); font-size: 12px; }
-.sems { flex: 1; min-height: 0; overflow: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; padding: 2px 16px 12px; align-content: start; overscroll-behavior: contain; }
+.sems { flex: 1; min-height: 0; overflow: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; padding: 2px 16px 12px; align-content: start; overscroll-behavior: contain; }
 .sem h3 { margin: 0 0 2px; font-size: 12px; display: flex; justify-content: space-between; border-bottom: 1.5px solid var(--green); padding-bottom: 2px; }
 .sem[class*=" s"] h3 { border-bottom: 3px solid var(--sb); }
 .sem[class*=" s"] h3::before { content: ""; flex: none; width: 10px; height: 10px; margin: 2px 6px 0 0; border-radius: 3px; background: var(--sf); border: 1.5px solid var(--sb); }
@@ -157,7 +157,8 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sem h3 span { color: var(--muted); font-weight: 600; }
 .sem ul { list-style: none; margin: 0; padding: 0; }
 .sem li { display: flex; justify-content: space-between; gap: 6px; font-size: 12px; line-height: 17px; }
-.sem li span:first-child { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.sem { min-width: 0; }
+.sem li span:first-child { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sem li.ph span:first-child { color: var(--muted); font-style: italic; }
 .sem li span:last-child { color: var(--muted); flex: none; }
 .warn { grid-column: 1 / -1; color: #b3261e; font-size: 11px; }
