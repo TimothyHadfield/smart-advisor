@@ -3,7 +3,7 @@ import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
-import { filterPrograms, programGroup, catalogInfo, programYears, programPath, combinePrograms, auditPrograms, shortName } from './programs.js';
+import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -79,16 +79,17 @@ function getJSON(path) {
 }
 const catalog = { list: [], info: { current: null, years: [] }, ready: null };
 function loadCatalog() {
-  catalog.ready ??= Promise.all([getJSON(`${DATA}/programs/index.json`), getJSON(`${DATA}/catalogs.json`)]).then(([index, cats]) => {
+  catalog.ready ??= getJSON(`${DATA}/programs/index.json`).then((index) => {
     catalog.list = Array.isArray(index?.programs) ? index.programs : [];
-    catalog.info = catalogInfo(index, cats);
+    catalog.info = catalogInfo(index, null);
   });
   return catalog.ready;
 }
 const entry = (id) => catalog.list.find((p) => p.id === id);
-// a program for a catalog year; a year that isn't there falls back to the current catalog
+// a program for a catalog year (one it isn't in: its newest year); a missing file falls back to the current catalog
 async function loadProgram(id, year) {
-  const want = year && year !== catalog.info.current ? year : null;
+  const y = entry(id) ? yearFor(entry(id), year, catalog.info) : year;
+  const want = y && y !== catalog.info.current ? y : null;
   const p = want ? await getJSON(programPath(id, want, catalog.info, DATA)) : null;
   if (p) return { program: p, year: want };
   const cur = await getJSON(programPath(id, null, catalog.info, DATA));
@@ -405,7 +406,8 @@ function wirePicker() {
     $('pickYearRow').hidden = years.length < 2;
   };
   const list = () => {
-    const rows = filterPrograms(catalog.list, $('pickQ').value, group);
+    // programs in the chosen catalog year; graduate programs hidden
+    const rows = filterPrograms(catalog.list, $('pickQ').value, group, { year: state.plan.catalogYear ?? catalog.info.current });
     const on = new Set(state.plan.programs);
     $('pickList').innerHTML = rows.length
       ? rows.map((p) => `<li><button type="button" data-id="${esc(p.id)}"${on.has(p.id) ? ' class="on" aria-pressed="true"' : ''}>${esc(p.name)}</button></li>`).join('')

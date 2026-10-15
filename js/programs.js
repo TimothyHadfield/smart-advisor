@@ -25,11 +25,15 @@ const words = (s) => norm(s).split(' ').filter(Boolean);
  * "env sci" -> Environmental Science and Management. Names that start with the query come first,
  * then A-Z.
  */
-export function filterPrograms(list, query = '', group = null) {
+// opts.year: only programs offered in that catalog year (entries without years always pass);
+// opts.graduate: include graduate programs (hidden by default)
+export function filterPrograms(list, query = '', group = null, opts = {}) {
   const q = words(query);
   const out = [];
   for (const p of list || []) {
     if (group && programGroup(p) !== group) continue;
+    if (!opts.graduate && /grad/i.test(p.level || '') && !/under/i.test(p.level || '')) continue;
+    if (opts.year && Array.isArray(p.years) && p.years.length && !p.years.includes(opts.year)) continue;
     if (!q.length) { out.push({ p, rank: 1 }); continue; }
     const name = words(p.name);
     const extra = [...words(p.department), ...words(p.major)];
@@ -49,7 +53,7 @@ export function filterPrograms(list, query = '', group = null) {
 // ---------- catalog years ----------
 // Years a program can be loaded for, newest first, and the current one.
 export function catalogInfo(index, catalogs) {
-  const cur = index?.catalogYear || catalogs?.current || null;
+  const cur = index?.current || index?.catalogYear || catalogs?.current || null;
   const all = new Set([...(index?.catalogYears || []), ...Object.keys(catalogs?.years || {}), ...(cur ? [cur] : [])]);
   const years = [...all].sort().reverse();
   return { current: cur || years[0] || null, years };
@@ -57,6 +61,13 @@ export function catalogInfo(index, catalogs) {
 export function programYears(entry, info) {
   const ys = entry?.years?.length ? [...entry.years] : info.years;
   return [...new Set(ys)].sort().reverse();
+}
+/** The catalog year to load a program for: the wanted one if the program has it, else its newest. */
+export function yearFor(entry, want, info) {
+  const ys = Array.isArray(entry?.years) && entry.years.length ? [...entry.years].sort().reverse() : null;
+  const w = want || info.current;
+  if (!ys || ys.includes(w)) return w;
+  return ys[0];
 }
 /** Where a program's JSON lives for a catalog year (the current year, or no year: data/programs/). */
 export function programPath(id, year, info, base = 'data') {

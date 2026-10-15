@@ -1,25 +1,24 @@
 // Run: node tests/programs.test.mjs
 // The major/minor picker's pure parts: searching the catalog's program list, reading the programs an
 // audit header names, and joining a major + minor into one plan (shared courses counted once).
-// Fixtures: tests/fixtures/programs/index.json is a copy of the all-programs scrape's index (413
-// programs); the program files are copies of real scraped programs (EE B.S., Env. Sci. & Mgmt minor, Nursing).
+// Data: the real scraped catalog in data/ (index of every program, both catalog years).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { filterPrograms, programGroup, auditPrograms, combinePrograms, catalogInfo, programYears, programPath } from '../js/programs.js';
+import { filterPrograms, programGroup, auditPrograms, combinePrograms, catalogInfo, programYears, programPath, yearFor } from '../js/programs.js';
 import { buildModel, makePlan, programCredits, evalReq, flowNodes, flowEdges } from '../js/planner.js';
 import { parseAudit } from '../js/audit.js';
 import { foldLabs, flowChart } from '../js/layout.js';
 
-const read = (p) => JSON.parse(readFileSync(fileURLToPath(new URL(`fixtures/${p}`, import.meta.url)), 'utf8'));
+const read = (p) => JSON.parse(readFileSync(fileURLToPath(new URL(`../data/${p}`, import.meta.url)), 'utf8'));
 const index = read('programs/index.json');
 const ee = read('programs/electrical-engineering-bs.json');
 const esm = read('programs/environmental-science-management-minor.json');
 const START = { season: 'Fall', year: 2026 };
 
 // ---------- picker search ----------
-test('the fixture index is real-sized', () => {
+test('the index is real-sized', () => {
   assert.ok(index.programs.length >= 400);
   const g = { major: 0, minor: 0, cert: 0 };
   for (const p of index.programs) g[programGroup(p)]++;
@@ -45,16 +44,38 @@ test('filter: every word must start a word ("env sci" -> Environmental Science..
   assert.deepEqual(filterPrograms(index.programs, 'ngineering', 'major'), [], 'starts of words only');
 });
 
+test('filter: graduate programs hidden unless asked; a catalog year shows only its programs', () => {
+  const grad = index.programs.filter((p) => p.level === 'graduate');
+  assert.ok(grad.length > 5);
+  const all = filterPrograms(index.programs, '', null);
+  assert.ok(!all.some((p) => p.level === 'graduate'));
+  assert.ok(filterPrograms(index.programs, '', null, { graduate: true }).some((p) => p.level === 'graduate'));
+  const cur = filterPrograms(index.programs, '', null, { year: '2026-2027' });
+  const old = filterPrograms(index.programs, '', null, { year: '2025-2026' });
+  assert.ok(cur.every((p) => p.years.includes('2026-2027')) && old.every((p) => p.years.includes('2025-2026')));
+  assert.ok(cur.length < all.length && old.length < all.length, `${cur.length} / ${old.length} / ${all.length}`);
+});
+
+test('yearFor: the wanted year when the program has it, else its newest', () => {
+  const info = catalogInfo(index, null);
+  assert.equal(yearFor({ years: ['2026-2027', '2025-2026'] }, '2025-2026', info), '2025-2026');
+  assert.equal(yearFor({ years: ['2026-2027', '2025-2026'] }, null, info), '2026-2027');
+  assert.equal(yearFor({ years: ['2025-2026'] }, null, info), '2025-2026');
+  assert.equal(yearFor({ years: ['2026-2027'] }, '2025-2026', info), '2026-2027');
+  assert.equal(yearFor({}, '2025-2026', info), '2025-2026');
+});
+
 test('filter: no query = the whole group A-Z; "&" types as "and"', () => {
   const all = filterPrograms(index.programs, '', 'minor');
-  assert.equal(all.length, index.programs.filter((p) => programGroup(p) === 'minor').length);
+  assert.equal(all.length, index.programs.filter((p) => programGroup(p) === 'minor' && p.level !== 'graduate').length);
   assert.ok(all.every((p, i) => i === 0 || all[i - 1].name.localeCompare(p.name) <= 0));
   assert.ok(filterPrograms(index.programs, 'science & management', 'minor').some((p) => p.id === 'environmental-science-management-minor'));
 });
 
 // ---------- catalog years ----------
 test('catalog years: index or catalogs.json; current year loads from data/programs, older from data/<year>/', () => {
-  const info = catalogInfo(index, read('catalogs.json'));
+  const info = catalogInfo(index, null);
+  assert.deepEqual(catalogInfo({ programs: [] }, read('catalogs.json')), info, 'catalogs.json says the same');
   assert.equal(info.current, '2026-2027');
   assert.deepEqual(info.years, ['2026-2027', '2025-2026']);
   assert.deepEqual(programYears({ id: 'x', years: ['2024-2025', '2026-2027'] }, info), ['2026-2027', '2024-2025']);
