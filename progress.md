@@ -21,6 +21,7 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 ## Authorized next steps
 - 2026-10-15 · Build phase 1 (EE first), then all majors. Tim: "Yes, build phase 1".
+- 2026-10-15 · Flowchart like his ("lines connecting them don't overlap or overlap as little as possible") + Wolverine Track import ("some things are automaticaly selected"): builder running, paste + PDF upload.
 
 ## Standing instructions (Tim's words / interview answers)
 - Public site for any UVU student, **with accounts (Google sign-in)**.
@@ -36,6 +37,10 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 - Builder worktrees spawn from the `Code Projects` root repo (Estimator_Quiz), not smart-advisor. Builders must clone smart-advisor inside the worktree; merge with `git fetch <path>/sa <branch>`.
 - Catalog prereqs ignore non-course gates (University Advanced Standing, formal acceptance), grade minimums and fall/spring-only offering; out-of-major prereqs (MATH 1050) assumed met by placement. ECE 2255 lacks a coreq on 2250 in catalog.
+
+- Tim's real Degree Works audit: `.claude/test/wolverine-track-audit.pdf` + `audit.txt` (gitignored; has his name/ID/advisor email). Never commit or screenshot it; fixtures must be anonymized copies.
+- **Catalog year matters:** Tim is on 2025-2026 (125 cr, requires ECE 4950 Capstone II); current catalog EE = 122 cr, no 4950. Phase 2 should load catalog archives by year (audit header gives it).
+- Tim's EE flowchart picture: `docs/reference/ee-flowchart-tim.png` — the layout bar (left→right, code-only boxes, elbow connectors, labs folded into lectures, Gen Ed set apart).
 
 ## Decisions
 - 2026-10-15 · Phase 1 UI (Claude's choices, unconfirmed by Tim): laptop = flowchart + plan side by side, no tabs; phone = Flowchart/Plan bottom tabs; gear → Start, Max credits (16), Summers switch, Clear taken; legend Taken/Ready/Locked; dashed boxes for Gen Ed/electives.
