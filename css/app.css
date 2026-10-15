@@ -64,13 +64,48 @@ main { flex: 1; min-height: 0; display: flex; }
 .panel { flex: 1; min-width: 0; min-height: 0; display: none; flex-direction: column; background: var(--panel); }
 main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 
+/* semester colours: one hue per planned semester (fill / border), same in the plan's headings */
+:root {
+  --s0f: #fde0c2; --s0b: #e07b1a;  --s1f: #d6e4fa; --s1b: #3a72d0;  --s2f: #e5dbf8; --s2b: #8152d0;
+  --s3f: #cdeeed; --s3b: #1e958f;  --s4f: #fad6e6; --s4b: #d1437c;  --s5f: #f6eab0; --s5b: #b8930a;
+  --s6f: #f8d3cf; --s6b: #cc3d33;  --s7f: #d3ecf8; --s7b: #2289bf;  --s8f: #ead9c8; --s8b: #93653a;
+  --s9f: #dde1e8; --s9b: #64748b;
+  --grade-l: 33%; --grade-t: 30%;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --s0f: #4a3018; --s0b: #f0994a;  --s1f: #1f3050; --s1b: #6a9cf0;  --s2f: #33264d; --s2b: #a786ec;
+    --s3f: #173f3d; --s3b: #3cc0b8;  --s4f: #4a2034; --s4b: #ef75a6;  --s5f: #423a14; --s5b: #dcbc3a;
+    --s6f: #4a1f1c; --s6b: #ef6d62;  --s7f: #173a4c; --s7b: #4fb3e6;  --s8f: #3e2e20; --s8b: #c0905e;
+    --s9f: #2a3039; --s9b: #94a3b8;
+    --grade-l: 36%; --grade-t: 68%;
+  }
+}
+:root[data-theme="dark"] {
+  --s0f: #4a3018; --s0b: #f0994a;  --s1f: #1f3050; --s1b: #6a9cf0;  --s2f: #33264d; --s2b: #a786ec;
+  --s3f: #173f3d; --s3b: #3cc0b8;  --s4f: #4a2034; --s4b: #ef75a6;  --s5f: #423a14; --s5b: #dcbc3a;
+  --s6f: #4a1f1c; --s6b: #ef6d62;  --s7f: #173a4c; --s7b: #4fb3e6;  --s8f: #3e2e20; --s8b: #c0905e;
+  --s9f: #2a3039; --s9b: #94a3b8;
+  --grade-l: 36%; --grade-t: 68%;
+}
+.s0 { --sf: var(--s0f); --sb: var(--s0b); } .s1 { --sf: var(--s1f); --sb: var(--s1b); }
+.s2 { --sf: var(--s2f); --sb: var(--s2b); } .s3 { --sf: var(--s3f); --sb: var(--s3b); }
+.s4 { --sf: var(--s4f); --sb: var(--s4b); } .s5 { --sf: var(--s5f); --sb: var(--s5b); }
+.s6 { --sf: var(--s6f); --sb: var(--s6b); } .s7 { --sf: var(--s7f); --sb: var(--s7b); }
+.s8 { --sf: var(--s8f); --sb: var(--s8b); } .s9 { --sf: var(--s9f); --sb: var(--s9b); }
+
 /* flowchart */
-.legend { flex: none; display: flex; align-items: center; gap: 4px; padding: 6px 16px; font-size: 11px; color: var(--muted); }
-.legend .sw { width: 12px; height: 12px; border-radius: 3px; margin-left: 8px; border: 1.5px solid var(--line); }
+.legend { flex: none; display: flex; align-items: center; gap: 10px; padding: 6px 8px 6px 16px; font-size: 11px; color: var(--muted); height: 34px; }
+.lg-items { flex: 1; min-width: 0; display: flex; align-items: center; gap: 4px; overflow-x: auto; white-space: nowrap; scrollbar-width: none; }
+.lg-items::-webkit-scrollbar { display: none; }
+.legend .sw { flex: none; width: 12px; height: 12px; border-radius: 3px; margin-left: 8px; border: 1.5px solid var(--line); }
 .legend .sw:first-child { margin-left: 0; }
 .sw.done { background: var(--done-bg); border-color: var(--done-bg); }
-.sw.ready { background: var(--ready-bg); border-color: var(--ready-line); }
-.sw.locked { background: var(--locked-bg); border-color: var(--line); }
+.sw[class*=" s"] { background: var(--sf); border-color: var(--sb); }
+.lg-grades { flex: none; display: flex; align-items: center; gap: 6px; font-weight: 600; cursor: pointer; }
+.lg-grades input[role="switch"] { width: 32px; height: 20px; border-radius: 10px; }
+.lg-grades input[role="switch"]::after { width: 14px; height: 14px; }
+.lg-grades input[role="switch"]:checked::after { transform: translateX(12px); }
 .chart { position: relative; flex: 1; min-height: 0; overflow: auto; -webkit-overflow-scrolling: touch; overscroll-behavior: contain; }
 .edges { position: absolute; left: 0; top: 0; pointer-events: none; }
 .edges path { fill: none; stroke: var(--edge); stroke-width: 1.2; }
@@ -80,20 +115,32 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .boxes { position: absolute; left: 0; top: 0; }
 .box {
   position: absolute; display: flex; flex-direction: column; justify-content: center;
-  padding: 0 6px; border-radius: 6px; border: 1.5px solid var(--line);
+  padding: 0 4px; border-radius: 6px; border: 1.5px solid var(--line);
   background: var(--locked-bg); color: var(--locked-fg); text-align: center; align-items: center; cursor: pointer;
-  overflow: hidden; transition: background-color .15s, border-color .15s, color .15s;
+  overflow: visible; transition: background-color .15s, border-color .15s, color .15s;
   touch-action: manipulation;
 }
-.box b { font-size: 11.5px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.box i { font-style: normal; font-size: 9.5px; opacity: .8; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.box b { max-width: 100%; font-size: 11.5px; line-height: 14px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.box b small { font-size: 9px; font-weight: 600; opacity: .8; margin-left: 4px; }
+.box i { max-width: 100%; font-style: normal; font-size: 10px; line-height: 12px; opacity: .85; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
 .box.ph b { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 10.5px; line-height: 1.15; }
-.box.ready { background: var(--ready-bg); border-color: var(--ready-line); color: var(--fg); }
+/* planned: the colour of its semester; can't be taken yet: the same colour, faded */
+.box.planned { background: var(--sf); border-color: var(--sb); color: var(--fg); }
+.box.locked { color: var(--muted); }
+.box.locked.planned { background: color-mix(in srgb, var(--sf) 45%, var(--panel)); border-color: color-mix(in srgb, var(--sb) 45%, var(--panel)); }
 .box.done { background: var(--done-bg); border-color: var(--done-bg); color: var(--done-fg); }
+.box.done.graded { background: hsl(var(--gh) 58% var(--grade-l)); border-color: hsl(var(--gh) 58% var(--grade-l)); }
+.box .gr { position: absolute; top: -7px; right: 5px; padding: 1px 4px; border-radius: 4px; font-style: normal; font-size: 9.5px; font-weight: 700; line-height: 1.1; background: var(--panel); color: var(--green); border: 1px solid currentColor; }
+.box .gr:empty { display: none; }
+.box.graded .gr { color: hsl(var(--gh) 60% var(--grade-t)); }
 .box.flex { border-style: dashed; }
 .box.done.flex { border-style: solid; }
 .box:active { transform: scale(.97); }
-.box.sel { box-shadow: 0 0 0 2px var(--edge-hot); }
+.box.shake { animation: shake .32s; }
+@keyframes shake { 20% { transform: translateX(-4px); } 40% { transform: translateX(4px); } 60% { transform: translateX(-3px); } 80% { transform: translateX(2px); } }
+.note { position: absolute; z-index: 3; padding: 3px 8px; border-radius: 6px; background: var(--fg); color: var(--panel); font-size: 11px; font-weight: 600; white-space: nowrap; pointer-events: none; opacity: 0; transition: opacity .15s; }
+.note.on { opacity: 1; }
+.sec { position: absolute; padding-top: 4px; border-top: 1px solid var(--line); font-size: 11px; font-weight: 700; color: var(--muted); letter-spacing: .02em; }
 
 /* plan */
 .sum { flex: none; display: flex; align-items: baseline; gap: 8px; padding: 8px 16px 6px; }
@@ -101,6 +148,9 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sum span { color: var(--muted); font-size: 12px; }
 .sems { flex: 1; min-height: 0; overflow: auto; display: grid; grid-template-columns: 1fr 1fr; gap: 8px 12px; padding: 2px 16px 12px; align-content: start; overscroll-behavior: contain; }
 .sem h3 { margin: 0 0 2px; font-size: 12px; display: flex; justify-content: space-between; border-bottom: 1.5px solid var(--green); padding-bottom: 2px; }
+.sem[class*=" s"] h3 { border-bottom: 3px solid var(--sb); }
+.sem[class*=" s"] h3::before { content: ""; flex: none; width: 10px; height: 10px; margin: 2px 6px 0 0; border-radius: 3px; background: var(--sf); border: 1.5px solid var(--sb); }
+.sem h3 span { margin-left: auto; }
 .sem h3 span { color: var(--muted); font-weight: 600; }
 .sem ul { list-style: none; margin: 0; padding: 0; }
 .sem li { display: flex; justify-content: space-between; gap: 6px; font-size: 12px; line-height: 17px; }

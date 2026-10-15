@@ -102,6 +102,49 @@ export function choiceRemaining(g, completed) {
   return Math.round((g.credits / need) * (need - doneOpts.length)) || g.credits;
 }
 
+// ---------- tapping classes taken ----------
+// Codes a student has, with every alternative of a finished course counted ("ENGL 1005" covers ENGL 1010).
+export function haveSet(model, completed) {
+  const have = new Set(completed);
+  for (const u of model.units) if (u.kind === 'course' && unitDone(u, completed)) u.codes.forEach((c) => have.add(c));
+  return have;
+}
+// Prereqs (inside the program) still missing for an expression, as short labels: "MATH 1210", "A or B".
+function missingOf(expr, have, inProgram) {
+  if (!expr) return [];
+  if (typeof expr === 'string') return have.has(expr) || !inProgram(expr) ? [] : [expr];
+  if (expr.and) return expr.and.flatMap((e) => missingOf(e, have, inProgram));
+  if (evalReq(expr, have, inProgram)) return [];
+  const alts = expr.or.map((e) => missingOf(e, have, inProgram)).filter((m) => m.length);
+  return [alts.map((m) => m.join(' + ')).join(' or ')];
+}
+// Can a flowchart box (a course with its folded labs, an option, a Gen Ed box) be marked taken now?
+// Only prereqs block; coreqs and "prereq or concurrent" courses may be taken together.
+export function tapCheck(model, node, completed) {
+  const have = haveSet(model, completed);
+  const inProgram = (c) => !!model.byCode[c];
+  const missing = [];
+  for (const u of [node, ...(node.labs || [])]) for (const m of missingOf(u.prereqs, have, inProgram)) if (!missing.includes(m)) missing.push(m);
+  return { ok: missing.length === 0, missing };
+}
+// After untaking something: also untake every taken course whose prereqs are no longer met, repeatedly.
+// Codes in keep (imported from an audit, which is the truth) always stay.
+export function cascadeUntake(model, completed, keep = new Set()) {
+  const out = new Set(completed);
+  const courses = model.program.courses || {};
+  const inProgram = (c) => !!model.byCode[c];
+  for (let changed = true; changed;) {
+    changed = false;
+    const have = haveSet(model, out);
+    for (const c of [...out]) {
+      if (keep.has(c)) continue;
+      const req = courses[c]?.prereqs ?? null;
+      if (req && !evalReq(req, have, inProgram)) { out.delete(c); changed = true; }
+    }
+  }
+  return out;
+}
+
 // ---------- flowchart depth ----------
 function computeDepths(model) {
   const { units, byCode } = model;

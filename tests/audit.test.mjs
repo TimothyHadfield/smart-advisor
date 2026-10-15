@@ -3,7 +3,7 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, existsSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { parseAudit, matchAudit, codesIn } from '../js/audit.js';
+import { parseAudit, matchAudit, codesIn, gradeInfo } from '../js/audit.js';
 import { buildModel } from '../js/planner.js';
 
 const ee = JSON.parse(readFileSync(fileURLToPath(new URL('../data/programs/ee-bs.json', import.meta.url)), 'utf8'));
@@ -210,6 +210,35 @@ test('matching to the EE program: courses, choice options and Gen Ed boxes', () 
   assert.equal(ip, 4);
 });
 
+test('grades: letter grades, transfer/pass marks and IP come through to the matched rows', () => {
+  const p = parseAudit(DEGREE_WORKS);
+  const g = Object.fromEntries(p.taken.map((r) => [r.code, r.grade]));
+  assert.equal(g['PHYS 2210'], 'A-');
+  assert.equal(g['ENGL 2010'], 'B+');
+  assert.equal(g['MATH 1220'], 'TCR');
+  assert.equal(g['CHEM 1210'], 'B');
+  const m = matchAudit(p, model);
+  const by = Object.fromEntries(m.rows.map((r) => [r.key, r.grade]));
+  assert.equal(by['PHYS 2210'], 'A-');
+  assert.equal(by['MATH 1220'], 'TCR');
+  assert.equal(by['ECE 2250'], 'IP');
+  assert.equal(by['ph:7'], 'A', 'Gen Ed box filled from the audit keeps its grade (THEA 1023 A)');
+  const t = matchAudit(parseAudit(TRANSCRIPT), model);
+  assert.equal(t.rows.find((r) => r.key === 'PHYS 2210').grade, 'C+');
+  const w = matchAudit(parseAudit(DEGREE_WORKS_WEB), model);
+  assert.equal(w.rows.find((r) => r.key === 'MATH 1220').grade, 'TB');
+});
+
+test('grade scale: A green ... C yellow ... D/E red; non-letter grades get a short tag', () => {
+  assert.equal(gradeInfo('A').kind, 'letter');
+  assert.ok(gradeInfo('A').hue > gradeInfo('B').hue && gradeInfo('B').hue > gradeInfo('C').hue && gradeInfo('C').hue > gradeInfo('D').hue);
+  assert.ok(gradeInfo('A').hue >= 120 && gradeInfo('C').hue >= 40 && gradeInfo('C').hue <= 65 && gradeInfo('D').hue <= 15);
+  assert.equal(gradeInfo('E').hue, 0);
+  assert.equal(gradeInfo('A-').text, 'A-');
+  assert.deepEqual([gradeInfo('TCR').text, gradeInfo('TB').text, gradeInfo('P').text, gradeInfo('IP').text, gradeInfo('').text], ['TR', 'TR', 'P', 'IP', '']);
+  assert.equal(gradeInfo('TCR').kind, 'mark');
+});
+
 // Tim's real audit text, if it's on this machine (it's private and never committed).
 const REAL = fileURLToPath(new URL('../.claude/test/audit.txt', import.meta.url));
 const REAL_MAIN = 'C:/Users/timha/OneDrive/Desktop/my-website/Code Projects/Smart Advisor/.claude/test/audit.txt';
@@ -222,6 +251,11 @@ test('real Wolverine Track audit (local only)', { skip: !realPath && 'no .claude
   assert.ok(taken.includes('PHYS 2220'));
   assert.ok(taken.includes('MATH 1220'), 'TCR counts as taken');
   for (const c of ['ECE 3250', 'ENVT 1200', 'GEOG 2000', 'ECE 4950']) assert.ok(!taken.includes(c) && !ip.includes(c), c);
+  const grade = Object.fromEntries(p.taken.map((r) => [r.code, r.grade]));
+  // grades are private: check their kind only, never the real letters, in this public repo
+  for (const c of ['PHYS 2210', 'ENGL 2010']) assert.equal(gradeInfo(grade[c]).kind, 'letter', c);
+  assert.equal(gradeInfo(grade['MATH 1220']).text, 'TR');
   const m = matchAudit(p, model);
+  assert.equal(m.rows.find((r) => r.key === 'ECE 2250').grade, 'IP');
   console.log(`real audit -> ${m.rows.filter((r) => r.status === 'taken').length} taken, ${m.rows.filter((r) => r.status === 'ip').length} in progress in EE`);
 });

@@ -3,7 +3,8 @@ import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { buildModel, makePlan, programCredits, codesOf, evalReq, flowNodes, flowEdges, nextTerm, defaultStartTerm } from '../js/planner.js';
+import { buildModel, makePlan, programCredits, codesOf, evalReq, flowNodes, flowEdges, nextTerm, defaultStartTerm, tapCheck, cascadeUntake } from '../js/planner.js';
+import { foldLabs } from '../js/layout.js';
 import { parseReqExpr, parseCourseXml } from '../scripts/fetch-program.mjs';
 
 const ee = JSON.parse(readFileSync(fileURLToPath(new URL('../data/programs/ee-bs.json', import.meta.url)), 'utf8'));
@@ -164,4 +165,54 @@ test('prereq text parsing (real catalog strings)', () => {
   assert.deepEqual(c.prereqs, { and: ['MATH 1210', 'ECE 1000'] });
   assert.deepEqual(c.coreqs, ['ECE 2705']);
   assert.deepEqual(codesOf(c.prereqs), ['MATH 1210', 'ECE 1000']);
+});
+
+// ---- tapping classes on the flowchart: no class without its prereqs ----
+const folded = () => {
+  const m = buildModel(ee);
+  return { m, nodes: foldLabs(flowNodes(m), flowEdges(m)).nodes };
+};
+const box = (nodes, id) => nodes.find((n) => n.id === id);
+
+test('tap: a class whose prereqs are not taken is blocked and names what it needs', () => {
+  const { m, nodes } = folded();
+  const r = tapCheck(m, box(nodes, 'MATH 1220'), new Set());
+  assert.equal(r.ok, false);
+  assert.deepEqual(r.missing, ['MATH 1210']);
+  const c = tapCheck(m, box(nodes, 'ECE 2250'), new Set(['MATH 1210']));
+  assert.equal(c.ok, false);
+  assert.deepEqual(c.missing, ['PHYS 2220', 'ECE 1000']);
+  // its folded lab has the same prereqs; the lab's coreq (the lecture) never blocks
+  assert.ok(box(nodes, 'ECE 2250').labs.some((l) => l.code === 'ECE 2255'));
+});
+
+test('tap: allowed once the prereqs are taken (and for boxes with none)', () => {
+  const { m, nodes } = folded();
+  assert.equal(tapCheck(m, box(nodes, 'MATH 1210'), new Set()).ok, true, 'out-of-program prereqs count as placement');
+  assert.equal(tapCheck(m, box(nodes, 'MATH 1220'), new Set(['MATH 1210'])).ok, true);
+  assert.equal(tapCheck(m, box(nodes, 'ECE 2250'), new Set(['MATH 1210', 'PHYS 2220', 'ECE 1000'])).ok, true);
+  assert.equal(tapCheck(m, nodes.find((n) => n.kind === 'placeholder'), new Set()).ok, true);
+  // an "or" alternative of a prereq counts (ENGL 1005 for ENGL 1010)
+  assert.equal(tapCheck(m, box(nodes, 'ENGL 2010'), new Set(['ENGL 1005'])).ok, true);
+});
+
+test('untaking a class also untakes the taken classes that needed it', () => {
+  const { m } = folded();
+  const had = new Set(['MATH 1210', 'MATH 1220', 'MATH 2210', 'ECE 1000', 'PHYS 2210', 'PHYS 2215', 'ENGL 1010']);
+  had.delete('MATH 1210');
+  const left = cascadeUntake(m, had);
+  for (const c of ['MATH 1220', 'MATH 2210', 'PHYS 2210']) assert.ok(!left.has(c), `${c} should be untaken`);
+  for (const c of ['ECE 1000', 'ENGL 1010']) assert.ok(left.has(c), `${c} stays`);
+  // nothing taken is left with unmet prereqs
+  const { nodes } = folded();
+  for (const n of nodes) if (n.kind === 'course' && left.has(n.code)) assert.ok(tapCheck(m, n, left).ok, n.code);
+});
+
+test('imported audit classes are exempt: they stay taken even when prereqs look unmet', () => {
+  const { m } = folded();
+  const had = new Set(['MATH 2210', 'ECE 2250', 'MATH 1220']); // e.g. transfer credit; MATH 1210 by placement
+  const left = cascadeUntake(m, had, new Set(['MATH 2210', 'ECE 2250', 'MATH 1220']));
+  assert.deepEqual([...left].sort(), ['ECE 2250', 'MATH 1220', 'MATH 2210']);
+  // but a tapped (not imported) class that needed an untaken one still goes
+  assert.ok(!cascadeUntake(m, had, new Set(['MATH 1220'])).has('ECE 2250'));
 });
