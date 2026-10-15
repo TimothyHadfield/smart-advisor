@@ -1,0 +1,95 @@
+{
+ "id": "leading-with-higher-education-grad-cert",
+ "name": "Leading with Higher Education, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/leading-with-higher-education-grad-cert/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDHE 6430",
+   "alts": [
+    "EDHE 6440"
+   ],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EDHE 6410",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDHE 6420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDHE 6440",
+     "alts": [
+      "EDHE 6430"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDHE 6410": {
+   "title": "Foundations and Contexts of Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6420": {
+   "title": "Diversity in Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6430": {
+   "title": "Student Success and Development",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDHE 6440": {
+   "title": "Leadership in Higher Education",
+   "credits": 3,
+   "prereqText": "Admission into any UVU graduate program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,228 @@
+{
+ "id": "autism-studies-undergraduate-certificate",
+ "name": "Autism Studies, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/education/secondary-special-education/autism-studies-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 1010"
+     ],
+     "credits": 3,
+     "alts": [
+      "ENGL 1005"
+     ]
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Writing proficiency determined by Autism Studies program director"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 2500G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 3810",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 3820G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 3850",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 4650",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 4810R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AUTS 4820R",
+   "alts": [],
+   "credits": 1
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "AUTS 2500G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "AUTS 3810",
+     "credits": 3
+    },
+    {
+     "code": "AUTS 3820G",
+     "credits": 3
+    },
+    {
+     "code": "AUTS 3850",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "AUTS 4810R",
+     "credits": 3
+    },
+    {
+     "code": "AUTS 4820R",
+     "credits": 1
+    },
+    {
+     "code": "AUTS 4650",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AUTS 2500G": {
+   "title": "Understanding the Autism Spectrum",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005 (with C or higher) or instructor approval.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AUTS 3810": {
+   "title": "Autism Across the Lifespan I Infants and Children",
+   "credits": 3,
+   "prereqText": "AUTS 2500G and University Advanced Standing",
+   "prereqs": "AUTS 2500G",
+   "prereqNonCourse": true
+  },
+  "AUTS 3820G": {
+   "title": "Autism across the Lifespan II Teens and Adults",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and AUTS 2500G",
+   "prereqs": "AUTS 2500G",
+   "prereqNonCourse": true
+  },
+  "AUTS 3850": {
+   "title": "Autism Assessment and Treatment",
+   "credits": 3,
+   "prereqText": "AUTS 2500G and University Advanced Standing",
+   "prereqs": "AUTS 2500G",
+   "prereqNonCourse": true
+  },
+  "AUTS 4650": {
+   "title": "Autism and Applied Behavior Analysis",
+   "credits": 3,
+   "prereqText": "AUTS 2500G or EDSP 3400G and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "AUTS 2500G",
+     "EDSP 3400G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "AUTS 4810R": {
+   "title": "Field Placement",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "AUTS 2500G , AUTS 3810 , AUTS 3820G AUTS 4650 , AUTS 3850 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "AUTS 2500G",
+     "AUTS 3810",
+     "AUTS 3820G",
+     "AUTS 4650",
+     "AUTS 3850"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "AUTS 4820R (Suggested to be completed during the first semester of the internship)",
+   "precoreqs": "AUTS 4820R"
+  },
+  "AUTS 4820R": {
+   "title": "Group Autism Seminar",
+   "credits": 1,
+   "prereqText": "AUTS 2500G and University Advanced Standing",
+   "prereqs": "AUTS 2500G",
+   "prereqNonCourse": true,
+   "coreqText": "AUTS 4810R",
+   "coreqs": [
+    "AUTS 4810R"
+   ],
+   "precoreqText": "AUTS 3810 or AUTS 3820G or AUTS 3850 or AUTS 4650",
+   "precoreqs": {
+    "or": [
+     "AUTS 3810",
+     "AUTS 3820G",
+     "AUTS 3850",
+     "AUTS 4650"
+    ]
+   }
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,157 @@
+{
+ "id": "enterprise-risk-management-and-insurance-undergraduate-certificate",
+ "name": "Enterprise Risk Management and Insurance, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/enterprise-risk-management-and-insurance-undergraduate-certificate/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "STAT 2040",
+   "alts": [
+    "MGMT 2340"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 5020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3030",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "STAT 2040",
+     "alts": [
+      "MGMT 2340"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FIN 3030",
+     "credits": 3
+    },
+    {
+     "code": "FIN 5020",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FIN 4040",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4050",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4060",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FIN 3030": {
+   "title": "Foundations of Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4040": {
+   "title": "Business Law for Insurance Professionals",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4050": {
+   "title": "Commercial Property Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4060": {
+   "title": "Commercial Liability Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ },
+ "missingCourses": [
+  "FIN 5020"
+ ]
+}

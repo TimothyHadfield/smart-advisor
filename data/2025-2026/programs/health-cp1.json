@@ -1,0 +1,242 @@
+{
+ "id": "health-cp1",
+ "name": "Health, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/health-cp1/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PSY 1100",
+   "alts": [
+    "PSY 1010"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Math requirement",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Math requirement",
+     "credits": 3
+    },
+    {
+     "code": "PSY 1100",
+     "alts": [
+      "PSY 1010"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NUTR 1020",
+     "credits": 3
+    },
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGH 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NUTR 1020": {
+   "title": "Foundations of Human Nutrition",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 1100": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

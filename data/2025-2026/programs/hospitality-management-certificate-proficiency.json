@@ -1,0 +1,141 @@
+{
+ "id": "hospitality-management-certificate-proficiency",
+ "name": "Hospitality Management, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/hospitality-management-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "IM 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MATH 1050",
+   "alts": [
+    "MATH 1055"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1000",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "IM 2010",
+     "credits": 3
+    },
+    {
+     "code": "HM 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 1050",
+     "alts": [
+      "MATH 1055"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "CA 1000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CA 1000": {
+   "title": "Culinary Basics",
+   "credits": 3
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HM 1010": {
+   "title": "Introduction to Hospitality Industry",
+   "credits": 3
+  },
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3,
+   "prereqText": "( IM 1010 recommended) or (Basic Computer Applications Challenge Exam with a minimum score of 80% recommended)",
+   "prereqs": null
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

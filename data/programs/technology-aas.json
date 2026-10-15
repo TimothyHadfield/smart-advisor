@@ -1,0 +1,271 @@
+{
+ "id": "technology-aas",
+ "name": "Technology, A.A.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/technology-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 62,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "STAT 1040",
+   "alts": [
+    "STAT 1045"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities/Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science ( TECH 1010 Recommended)",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science (TECH 2000G Recommended)",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 2850",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Elective Requirements",
+   "label": "Complete 9 credits any course numbered 1000 or 2000",
+   "credits": 9,
+   "text": "Complete 9 credits any course numbered 1000 or 2000"
+  },
+  {
+   "type": "placeholder",
+   "area": "Approved or articulated technical credits",
+   "label": "Complete 30 approved or articulated technical credits",
+   "credits": 30
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 1045",
+     "credits": null
+    },
+    {
+     "code": "DGM 1110",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "code": "TECH 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Humanities/Fine Arts",
+     "credits": 3
+    },
+    {
+     "code": "CS 1030",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2000G",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "TECH 2010",
+     "credits": 3
+    },
+    {
+     "code": "ENGR 1000",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2850",
+     "credits": 2
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "IM 2010",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    },
+    {
+     "label": "Approved or articulated technical credits",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1030": {
+   "title": "Foundations of Computer Science",
+   "credits": 3
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGR 1000": {
+   "title": "Introduction to Engineering",
+   "credits": 3
+  },
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 1010": {
+   "title": "Understanding Technology",
+   "credits": 3
+  },
+  "TECH 2000G": {
+   "title": "Technology and Human Life",
+   "credits": 3
+  },
+  "TECH 2010": {
+   "title": "Supervision in Technology",
+   "credits": 3
+  },
+  "TECH 2850": {
+   "title": "Applications of Generative AI",
+   "credits": 2
+  }
+ }
+}

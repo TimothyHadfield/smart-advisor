@@ -1,0 +1,362 @@
+{
+ "id": "culinary-arts-aas",
+ "name": "Culinary Arts, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/culinary-arts-institute/culinary-arts-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 63,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "MATHEMATICS QL",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "SOCIAL AND BEHAVIORAL SCIENCE",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1120",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1140",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1160",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1170",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1180",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1230",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1490",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 2120",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 2130",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 2450",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 2820R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Elective",
+   "credits": 1,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CA 1490",
+     "credits": 1
+    },
+    {
+     "code": "CA 1160",
+     "credits": 1
+    },
+    {
+     "code": "CA 1140",
+     "credits": 1
+    },
+    {
+     "code": "CA 1120",
+     "credits": 5
+    },
+    {
+     "code": "CA 1170",
+     "credits": 5
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CA 1230",
+     "credits": 5
+    },
+    {
+     "code": "CA 1180",
+     "credits": 5
+    },
+    {
+     "code": "CA 1310",
+     "credits": 3
+    },
+    {
+     "code": "FIN 1060",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CA 2120",
+     "credits": 5
+    },
+    {
+     "code": "CA 2130",
+     "credits": 5
+    },
+    {
+     "label": "Social/ Behavioral Science",
+     "credits": 3
+    },
+    {
+     "code": "CA 1150",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CA 2820R",
+     "credits": 6
+    },
+    {
+     "code": "CA 2450",
+     "credits": 2
+    },
+    {
+     "code": "CA 1320",
+     "credits": 3
+    },
+    {
+     "code": "HM 1180",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CA 1120": {
+   "title": "Cooking Skills Development",
+   "credits": 5,
+   "prereqText": "CA 1490 , Food Handlers permit or ServSafe Certification. Acceptance into the Culinary Arts Institute.",
+   "prereqs": "CA 1490",
+   "prereqNonCourse": true
+  },
+  "CA 1140": {
+   "title": "Professional Dining Room Services",
+   "credits": 1,
+   "prereqText": "Acceptance into the Culinary Arts Institute",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CA 1150": {
+   "title": "Nutrition and Food Service",
+   "credits": 3
+  },
+  "CA 1160": {
+   "title": "Culinary Math",
+   "credits": 1,
+   "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CA 1170": {
+   "title": "Pastry and Baking Skills",
+   "credits": 5,
+   "prereqText": "Food Handlers permit or ServSafe Certfication. Acceptance into the Culinary Arts Institute.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "CA 1490",
+   "precoreqs": "CA 1490"
+  },
+  "CA 1180": {
+   "title": "Professional Kitchen Garde Manger",
+   "credits": 5,
+   "prereqText": "CA 1120 , Food Handlers permit or ServSafe Certification",
+   "prereqs": "CA 1120",
+   "prereqNonCourse": true
+  },
+  "CA 1230": {
+   "title": "Professional Kitchen I Cooking",
+   "credits": 5,
+   "prereqText": "CA 1120",
+   "prereqs": "CA 1120"
+  },
+  "CA 1310": {
+   "title": "Purchasing and Storeroom Management",
+   "credits": 3,
+   "coreqText": "CA 1120 and CA 1170",
+   "coreqs": [
+    "CA 1120",
+    "CA 1170"
+   ]
+  },
+  "CA 1320": {
+   "title": "Culinary Management",
+   "credits": 3,
+   "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CA 1490": {
+   "title": "Food Service Sanitation",
+   "credits": 1
+  },
+  "CA 2120": {
+   "title": "Professional Kitchen II Restaurant",
+   "credits": 5,
+   "prereqText": "CA 1230",
+   "prereqs": "CA 1230"
+  },
+  "CA 2130": {
+   "title": "Advanced Pastry Baking",
+   "credits": 5,
+   "prereqText": "CA 1170",
+   "prereqs": "CA 1170"
+  },
+  "CA 2450": {
+   "title": "Menu Design",
+   "credits": 2,
+   "prereqText": "CA 1310",
+   "prereqs": "CA 1310"
+  },
+  "CA 2820R": {
+   "title": "Culinary Arts Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Culinary Arts Institute Director Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 1060": {
+   "title": "Personal Finance",
+   "credits": 3
+  },
+  "HM 1010": {
+   "title": "Introduction to Hospitality Industry",
+   "credits": 3
+  },
+  "HM 1180": {
+   "title": "Food and Beverage Management",
+   "credits": 3
+  }
+ }
+}

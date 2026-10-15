@@ -1,0 +1,395 @@
+{
+ "id": "electrical-engineering-minor",
+ "name": "Electrical Engineering, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/electrical-and-computer-engineering/electrical-engineering-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Program Requirements",
+   "code": "ECE 1000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Program Requirements",
+   "code": "ECE 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Program Requirements",
+   "code": "ECE 2255",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Program Requirements",
+   "code": "ECE 2700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Program Requirements",
+   "code": "ECE 2705",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Program Requirements",
+   "label": "Elective Requirements: Choose 9 Credits from the following list:",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "ECE 3250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3730"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3760"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3765"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "ECE 3770"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3780"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 3785"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "ECE 4700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 4730"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Elective Requirements: Choose 9 Credits from the following list:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ECE 1000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ECE 2700",
+     "credits": 3
+    },
+    {
+     "code": "ECE 2705",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ECE 2250",
+     "credits": 3
+    },
+    {
+     "code": "ECE 2255",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ECE 1000": {
+   "title": "Introduction to Electrical and Computer Engineering",
+   "credits": 3,
+   "prereqText": "MATH 1060 or higher",
+   "prereqs": "MATH 1060"
+  },
+  "ECE 2250": {
+   "title": "Circuit Theory",
+   "credits": 3,
+   "prereqText": "MATH 1210 , PHYS 2220 , ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "PHYS 2220",
+     "ECE 1000"
+    ]
+   }
+  },
+  "ECE 2255": {
+   "title": "Circuit Theory Lab",
+   "credits": 1,
+   "prereqText": "MATH 1210 , PHYS 2220 , ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "PHYS 2220",
+     "ECE 1000"
+    ]
+   },
+   "coreqText": "ECE 2250",
+   "coreqs": [
+    "ECE 2250"
+   ]
+  },
+  "ECE 2700": {
+   "title": "Digital Design I",
+   "credits": 3,
+   "prereqText": "MATH 1210 and ECE 1000",
+   "prereqs": {
+    "and": [
+     "MATH 1210",
+     "ECE 1000"
+    ]
+   },
+   "coreqText": "ECE 2705",
+   "coreqs": [
+    "ECE 2705"
+   ]
+  },
+  "ECE 2705": {
+   "title": "Digital Design I Lab",
+   "credits": 1,
+   "prereqText": "MATH 1050 or MATH 1055",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "coreqText": "ECE 2700",
+   "coreqs": [
+    "ECE 2700"
+   ]
+  },
+  "ECE 3250": {
+   "title": "Energy Conversion",
+   "credits": 3,
+   "prereqText": "ECE 2250 , (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval), and University Advanced Standing",
+   "prereqs": "ECE 2250",
+   "prereqNonCourse": true
+  },
+  "ECE 3350": {
+   "title": "Control Systems",
+   "credits": 3,
+   "prereqText": "ECE 2750 , ECE 3770 , University Advanced Standing, and (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)",
+   "prereqs": {
+    "and": [
+     "ECE 2750",
+     "ECE 3770"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECE 3450": {
+   "title": "Electromagnetics and Transmission Lines",
+   "credits": 3,
+   "prereqText": "PHYS 2220 , ECE 2250 , University Advanced Standing, and (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)",
+   "prereqs": {
+    "and": [
+     "PHYS 2220",
+     "ECE 2250"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECE 3730": {
+   "title": "Embedded Systems I",
+   "credits": 3,
+   "prereqText": "ECE 2700 , ECE 2250 , (Formal Acceptance into the Electrical or Computer Engineering Program, or Departmental Approval), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ECE 2700",
+     "ECE 2250"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECE 3740": {
+   "title": "Digital Design II",
+   "credits": 3,
+   "prereqText": "ECE 2700 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
+   "prereqs": "ECE 2700",
+   "prereqNonCourse": true
+  },
+  "ECE 3760": {
+   "title": "Electronic Systems",
+   "credits": 3,
+   "prereqText": "ECE 2250 , PHYS 2220 , University Advanced Standing, and (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)",
+   "prereqs": {
+    "and": [
+     "ECE 2250",
+     "PHYS 2220"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ECE 3765",
+   "coreqs": [
+    "ECE 3765"
+   ]
+  },
+  "ECE 3765": {
+   "title": "Electronic Systems Lab",
+   "credits": 1,
+   "prereqText": "ECE 2255 , PHYS 2220 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ECE 2255",
+     "PHYS 2220"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ECE 3760",
+   "coreqs": [
+    "ECE 3760"
+   ]
+  },
+  "ECE 3770": {
+   "title": "Signals and Systems",
+   "credits": 3,
+   "prereqText": "ECE 2750 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
+   "prereqs": "ECE 2750",
+   "prereqNonCourse": true
+  },
+  "ECE 3780": {
+   "title": "Communication Systems and Circuits",
+   "credits": 3,
+   "prereqText": "ECE 3770 , ECE 3710 , (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ECE 3770",
+     "ECE 3710"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECE 3785": {
+   "title": "Communication Systems and Circuits Lab",
+   "credits": 1,
+   "prereqText": "ECE 3770 , ECE 3710 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ECE 3770",
+     "ECE 3710"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ECE 3780",
+   "coreqs": [
+    "ECE 3780"
+   ]
+  },
+  "ECE 4700": {
+   "title": "Computer Architecture for Engineering Applications",
+   "credits": 3,
+   "prereqText": "ECE 3740 and University Advanced Standing",
+   "prereqs": "ECE 3740",
+   "prereqNonCourse": true
+  },
+  "ECE 4730": {
+   "title": "Embedded Systems II",
+   "credits": 3,
+   "prereqText": "ECE 3730 , ECE 3740 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ECE 3730",
+     "ECE 3740"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,440 @@
+{
+ "id": "mechatronics-engineering-technology-automation-electrical-tech-aas",
+ "name": "Mechatronics Engineering Technology - Automation and Electrical Technology Emphasis, A.A.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/mechatronics-engineering-technology-automation-electrical-tech-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "placeholder",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "label": "Complete the requirements",
+   "credits": 48
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "AET 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "AET 1060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "EGDT 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "AET 2910R",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "AET 1050",
+     "credits": 3
+    },
+    {
+     "code": "MECH 1010",
+     "credits": 3
+    },
+    {
+     "code": "MECH 1200",
+     "credits": 3
+    },
+    {
+     "code": "MECH 1205",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "AET 1060",
+     "credits": 3
+    },
+    {
+     "code": "MECH 1300",
+     "credits": 1
+    },
+    {
+     "code": "MECH 1305",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2200",
+     "credits": 3
+    },
+    {
+     "code": "MECH 2205",
+     "credits": 1
+    },
+    {
+     "code": "MECH 2300",
+     "credits": 3
+    },
+    {
+     "code": "MECH 2305",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 2100",
+     "credits": 3
+    },
+    {
+     "code": "MECH 2500",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2505",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2510",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2515",
+     "credits": 1
+    },
+    {
+     "code": "EGDT 1071",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PHYS 1010",
+     "credits": 3
+    },
+    {
+     "code": "MECH 2550",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2555",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2600",
+     "credits": 2
+    },
+    {
+     "code": "MECH 2605",
+     "credits": 1
+    },
+    {
+     "code": "AET 2910R",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1200",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AET 1050": {
+   "title": "Electrical Math I",
+   "credits": 3,
+   "prereqText": "MAT 1010 or Departmental Approval",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "AET 1060": {
+   "title": "Electrical Math II",
+   "credits": 3,
+   "prereqText": "AET 1050",
+   "prereqs": "AET 1050"
+  },
+  "AET 2910R": {
+   "title": "Special Topics in Industrial Systems",
+   "credits": 3,
+   "prereqText": "AET 2250 , AET 2255 , AET 2110 , AET 2115",
+   "prereqs": {
+    "and": [
+     "AET 2250",
+     "AET 2255",
+     "AET 2110",
+     "AET 2115"
+    ]
+   }
+  },
+  "EGDT 1071": {
+   "title": "3 Dimensional Modeling--Solidworks",
+   "credits": 3
+  },
+  "EGDT 1200": {
+   "title": "Mechanical Drafting and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1070 or EGDT 1071 or EGDT 1040 , with a grade of C- or higher",
+   "prereqs": {
+    "or": [
+     "EGDT 1070",
+     "EGDT 1071",
+     "EGDT 1040"
+    ]
+   }
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2100": {
+   "title": "Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "MECH 1010": {
+   "title": "Fundamentals of Mechatronics",
+   "credits": 3
+  },
+  "MECH 1200": {
+   "title": "Electronics in Automation Design",
+   "credits": 3,
+   "coreqText": "MECH 1205",
+   "coreqs": [
+    "MECH 1205"
+   ],
+   "precoreqText": "MAT 1010 or higher",
+   "precoreqs": "MAT 1010"
+  },
+  "MECH 1205": {
+   "title": "Electronics in Automation Design Laboratory",
+   "credits": 2,
+   "coreqText": "MECH 1200",
+   "coreqs": [
+    "MECH 1200"
+   ]
+  },
+  "MECH 1300": {
+   "title": "Industrial Wiring for Mechatronic Systems",
+   "credits": 1,
+   "coreqText": "MECH 1305",
+   "coreqs": [
+    "MECH 1305"
+   ],
+   "precoreqText": "MECH 1010",
+   "precoreqs": "MECH 1010"
+  },
+  "MECH 1305": {
+   "title": "Industrial Wiring for Mechatronic Systems Laboratory",
+   "credits": 2,
+   "coreqText": "MECH 1300",
+   "coreqs": [
+    "MECH 1300"
+   ],
+   "precoreqText": "MECH 1010",
+   "precoreqs": "MECH 1010"
+  },
+  "MECH 2200": {
+   "title": "Semiconductors in Mechatronic Systems",
+   "credits": 3,
+   "prereqText": "MECH 1200 ; MATH 1050 recommended",
+   "prereqs": null,
+   "coreqText": "MECH 2205",
+   "coreqs": [
+    "MECH 2205"
+   ]
+  },
+  "MECH 2205": {
+   "title": "Semiconductors in Mechatronic Systems Lab",
+   "credits": 1,
+   "prereqText": "MECH 1200 , MECH 1205",
+   "prereqs": {
+    "and": [
+     "MECH 1200",
+     "MECH 1205"
+    ]
+   },
+   "coreqText": "MECH 2200",
+   "coreqs": [
+    "MECH 2200"
+   ]
+  },
+  "MECH 2300": {
+   "title": "Microcontroller Architecture and Programming",
+   "credits": 3,
+   "coreqText": "MECH 2305",
+   "coreqs": [
+    "MECH 2305"
+   ],
+   "precoreqText": "MECH 2200 and MECH 2205",
+   "precoreqs": {
+    "and": [
+     "MECH 2200",
+     "MECH 2205"
+    ]
+   }
+  },
+  "MECH 2305": {
+   "title": "Microcontroller Architecture and Programming Lab",
+   "credits": 2,
+   "prereqText": "MECH 1205",
+   "prereqs": "MECH 1205",
+   "coreqText": "MECH 2300",
+   "coreqs": [
+    "MECH 2300"
+   ],
+   "precoreqText": "MECH 2200 and MECH 2205",
+   "precoreqs": {
+    "and": [
+     "MECH 2200",
+     "MECH 2205"
+    ]
+   }
+  },
+  "MECH 2500": {
+   "title": "Introduction to PLCs in Mechatronic Design",
+   "credits": 2,
+   "prereqText": "MECH 1200 , MECH 2300",
+   "prereqs": {
+    "and": [
+     "MECH 1200",
+     "MECH 2300"
+    ]
+   },
+   "coreqText": "MECH 2505",
+   "coreqs": [
+    "MECH 2505"
+   ]
+  },
+  "MECH 2505": {
+   "title": "Introduction to PLCs in Mechatronic Design Laboratory",
+   "credits": 2,
+   "prereqText": "MECH 1200 , MECH 2300",
+   "prereqs": {
+    "and": [
+     "MECH 1200",
+     "MECH 2300"
+    ]
+   },
+   "coreqText": "MECH 2500",
+   "coreqs": [
+    "MECH 2500"
+   ]
+  },
+  "MECH 2510": {
+   "title": "Fundamentals of Automation Controls",
+   "credits": 2,
+   "coreqText": "MECH 2515",
+   "coreqs": [
+    "MECH 2515"
+   ],
+   "precoreqText": "MECH 2500",
+   "precoreqs": "MECH 2500"
+  },
+  "MECH 2515": {
+   "title": "Fundamentals of Automation Controls Laboratory",
+   "credits": 1,
+   "coreqText": "MECH 2510",
+   "coreqs": [
+    "MECH 2510"
+   ],
+   "precoreqText": "MECH 2500 and MECH 2305",
+   "precoreqs": {
+    "and": [
+     "MECH 2500",
+     "MECH 2305"
+    ]
+   }
+  },
+  "MECH 2550": {
+   "title": "Advanced PLC Programming and Applications",
+   "credits": 2,
+   "prereqText": "MECH 2500",
+   "prereqs": "MECH 2500",
+   "coreqText": "MECH 2555",
+   "coreqs": [
+    "MECH 2555"
+   ]
+  },
+  "MECH 2555": {
+   "title": "Advanced PLC Programming and Applications Laboratory",
+   "credits": 2,
+   "prereqText": "MECH 2500",
+   "prereqs": "MECH 2500",
+   "coreqText": "MECH 2550",
+   "coreqs": [
+    "MECH 2550"
+   ]
+  },
+  "MECH 2600": {
+   "title": "Introduction to Fluid Power Systems",
+   "credits": 2,
+   "prereqText": "MECH 2400",
+   "prereqs": "MECH 2400",
+   "coreqText": "MECH 2605",
+   "coreqs": [
+    "MECH 2605"
+   ]
+  },
+  "MECH 2605": {
+   "title": "Introduction to Fluid Power Systems Laboratory",
+   "credits": 1,
+   "prereqText": "MECH 2400",
+   "prereqs": "MECH 2400",
+   "coreqText": "MECH 2600",
+   "coreqs": [
+    "MECH 2600"
+   ]
+  },
+  "PHYS 1010": {
+   "title": "Elementary Physics",
+   "credits": 3
+  }
+ }
+}

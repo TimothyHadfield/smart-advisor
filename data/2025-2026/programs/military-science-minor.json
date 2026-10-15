@@ -1,0 +1,225 @@
+{
+ "id": "military-science-minor",
+ "name": "Military Science, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/air-force-army-rotc/military-science-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 1200",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 1210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 2200",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 2210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 3210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 4200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Minor Core Requirements",
+   "code": "MILS 4210",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MILS 1200",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MILS 1210",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MILS 2200",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MILS 2210",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "MILS 3200",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "MILS 3210",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "MILS 4200",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "MILS 4210",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MILS 1200": {
+   "title": "Introduction to Leadership Excellence I",
+   "credits": 2,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 1210": {
+   "title": "Introduction to Leadership Excellence II",
+   "credits": 2,
+   "prereqText": "MILS 1200 or Department Approval",
+   "prereqs": "MILS 1200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 2200": {
+   "title": "Advanced Organizational Leadership I",
+   "credits": 2,
+   "prereqText": "MILS 1210 or Dept. Approval",
+   "prereqs": "MILS 1210",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 2450R",
+   "coreqs": [
+    "MILS 2450R"
+   ]
+  },
+  "MILS 2210": {
+   "title": "Advanced Organizational Leadership II",
+   "credits": 2,
+   "prereqText": "MILS 2200 or Dept. Approval",
+   "prereqs": "MILS 2200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 2450R",
+   "coreqs": [
+    "MILS 2450R"
+   ]
+  },
+  "MILS 3200": {
+   "title": "Small Unit Leadership I",
+   "credits": 3,
+   "prereqText": "MILS 2210",
+   "prereqs": "MILS 2210",
+   "coreqText": "MILS 3450R",
+   "coreqs": [
+    "MILS 3450R"
+   ]
+  },
+  "MILS 3210": {
+   "title": "Small Unit Leadership II",
+   "credits": 3,
+   "prereqText": "MILS 3200",
+   "prereqs": "MILS 3200",
+   "coreqText": "MILS 3450R",
+   "coreqs": [
+    "MILS 3450R"
+   ]
+  },
+  "MILS 4200": {
+   "title": "The Profession of Arms I",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  },
+  "MILS 4210": {
+   "title": "The Profession of Arms II",
+   "credits": 3,
+   "prereqText": "MILS 4200 or Departmental Approval",
+   "prereqs": "MILS 4200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  }
+ }
+}

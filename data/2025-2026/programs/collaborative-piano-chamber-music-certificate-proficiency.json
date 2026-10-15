@@ -1,0 +1,150 @@
+{
+ "id": "collaborative-piano-chamber-music-certificate-proficiency",
+ "name": "Collaborative Piano-Chamber Music, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/collaborative-piano-chamber-music-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2450R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3730R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2900R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3412",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3415",
+   "alts": [
+    "MUSC 3416"
+   ],
+   "credits": 2
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2900R",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 3415",
+     "alts": [
+      "MUSC 3416"
+     ],
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MUSC 2450R",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3730R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2900R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3412",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MUSC 2450R": {
+   "title": "Private Lessons II",
+   "credits": 1
+  },
+  "MUSC 2900R": {
+   "title": "Independent Study",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Instructor permission and advisor approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MUSC 3412": {
+   "title": "Music Career Development",
+   "credits": 3,
+   "prereqText": "MUSC 2110 and University Advanced Standing",
+   "prereqs": "MUSC 2110",
+   "prereqNonCourse": true
+  },
+  "MUSC 3415": {
+   "title": "Instrumental Pedagogy and Literature I",
+   "credits": 2,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "MUSC 2110 or department audition",
+   "precoreqs": "MUSC 2110"
+  },
+  "MUSC 3416": {
+   "title": "Instrumental Pedagogy and Literature II",
+   "credits": 2,
+   "prereqText": "MUSC 3415 and University Advanced Standing",
+   "prereqs": "MUSC 3415",
+   "prereqNonCourse": true
+  },
+  "MUSC 3730R": {
+   "title": "Advanced Small Ensembles",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

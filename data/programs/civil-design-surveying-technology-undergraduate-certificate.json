@@ -1,0 +1,163 @@
+{
+ "id": "civil-design-surveying-technology-undergraduate-certificate",
+ "name": "Civil Design and Surveying Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/civil-design-surveying-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose one of the following courses:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "EGDT 1600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EGDT 1610"
+     ],
+     "credits": 3,
+     "section": "and"
+    },
+    {
+     "codes": [
+      "MATH 1060"
+     ],
+     "credits": 3,
+     "section": "or"
+    }
+   ],
+   "text": "Choose one of the following courses:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Electives: Choose 6 credit hours:",
+   "credits": 6,
+   "text": "Electives: Choose 6 credit hours:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 1060",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1600",
+     "alts": [
+      "EGDT 1610"
+     ],
+     "credits": null
+    },
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EGDT 2400",
+     "credits": 3
+    },
+    {
+     "label": "Electives",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1400": {
+   "title": "Surveying Applications and Field Techniques I",
+   "credits": 3
+  },
+  "EGDT 1600": {
+   "title": "Technical Math Algebra",
+   "credits": 3,
+   "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
+   "prereqs": "MAT 0920",
+   "prereqNonCourse": true
+  },
+  "EGDT 1610": {
+   "title": "Technical Math Geometry Trig",
+   "credits": 3,
+   "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
+   "prereqs": "EGDT 1600",
+   "prereqNonCourse": true
+  },
+  "EGDT 2400": {
+   "title": "Surveying Applications and Field Techniques II",
+   "credits": 3,
+   "prereqText": "EGDT 1040 or equivalent, EGDT 1400 and ( EGDT 1600 or MATH 1060 ) both with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1040",
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1600",
+       "MATH 1060"
+      ]
+     }
+    ]
+   },
+   "uncertain": true
+  },
+  "MATH 1060": {
+   "title": "Trigonometry",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

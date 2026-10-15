@@ -1,0 +1,1331 @@
+{
+ "id": "respiratory-therapy-bs",
+ "name": "Respiratory Therapy, B.S.",
+ "url": "https://catalog.uvu.edu/health-public-service/allied-health/respiratory-therapy-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Complete one of the following: (or higher)",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 1005"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ENGL 1010H"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1700H"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 2700H",
+      "HIST 2710H"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "CHEM 1110",
+   "alts": [
+    "CHEM 1210"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "BIOL 1615",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "PSY 1100",
+   "alts": [
+    "PSY 1010"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2425",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 2060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 2065",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 1540",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2145",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2165",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2230",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2250",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2330",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2420",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2520",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2705",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2715",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 2725",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3220",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3265",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3270",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3280",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3430",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3765",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 3785",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NURS 4120",
+   "alts": [
+    "RESP 4940"
+   ],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 4610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 4640",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 4775",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 4800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RESP 4890",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Electives",
+   "label": "Choose 2 Credits from 1000 + Electives",
+   "credits": 2,
+   "text": "Choose 2 Credits from 1000 + Electives"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "RESP 1540",
+     "credits": 1
+    },
+    {
+     "label": "Complete one of the following: (or higher)",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "credits": null
+    },
+    {
+     "code": "MAT 1035",
+     "credits": null
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 1045",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "PSY 1010",
+     "alts": [
+      "PSY 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "CHEM 1110",
+     "alts": [
+      "CHEM 1210"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ZOOL 2320",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ZOOL 2420",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
+    },
+    {
+     "code": "MICR 2060",
+     "credits": 3
+    },
+    {
+     "code": "MICR 2065",
+     "credits": 1
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Spring Start ONLY",
+     "credits": null
+    },
+    {
+     "code": "RESP 2145",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2210",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2230",
+     "credits": 2
+    },
+    {
+     "code": "RESP 2250",
+     "credits": 2
+    },
+    {
+     "code": "RESP 2300",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2520",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "RESP 2165",
+     "credits": 1
+    },
+    {
+     "code": "RESP 2270",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2320",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2705",
+     "credits": 3
+    },
+    {
+     "code": "RESP 2420",
+     "credits": 2
+    },
+    {
+     "code": "RESP 2715",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "RESP 2330",
+     "credits": 1
+    },
+    {
+     "code": "RESP 2725",
+     "credits": 3
+    },
+    {
+     "code": "RESP 3210",
+     "credits": 2
+    },
+    {
+     "code": "RESP 3280",
+     "credits": 2
+    },
+    {
+     "code": "RESP 3260",
+     "credits": 3
+    },
+    {
+     "code": "RESP 3265",
+     "credits": 1
+    },
+    {
+     "code": "NURS 4120",
+     "alts": [
+      "RESP 4940"
+     ],
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "RESP 3220",
+     "credits": 2
+    },
+    {
+     "code": "RESP 3270",
+     "credits": 2
+    },
+    {
+     "code": "RESP 3320",
+     "credits": 3
+    },
+    {
+     "code": "RESP 3325",
+     "credits": 1
+    },
+    {
+     "code": "RESP 3430",
+     "credits": 3
+    },
+    {
+     "code": "RESP 3765",
+     "credits": 3
+    },
+    {
+     "code": "RESP 3785",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 9",
+   "items": [
+    {
+     "code": "RESP 4610",
+     "credits": 3
+    },
+    {
+     "code": "RESP 4775",
+     "credits": 4
+    },
+    {
+     "code": "RESP 4640",
+     "credits": 2
+    },
+    {
+     "code": "RESP 4800",
+     "credits": 3
+    },
+    {
+     "code": "RESP 4890",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGL 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1610",
+   "precoreqs": "BIOL 1610"
+  },
+  "CHEM 1110": {
+   "title": "Elementary Chemistry for the Health Sciences",
+   "credits": 4,
+   "precoreqText": "MAT 1010 or MAT 2015 or STAT 1040 or STAT 1045 , or a placement score into MATH 1050 or higher.",
+   "precoreqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 2015",
+     "STAT 1040",
+     "STAT 1045",
+     "MATH 1050"
+    ]
+   }
+  },
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010H": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1700H": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2700H": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "HIST 2710H": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MICR 2060": {
+   "title": "Microbiology for Health Professions",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and ( ENGL 1010 or ENGL 1005 ) with a C- or higher in each. CHEM 1110 or higher is highly recommended",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "MICR 2065",
+   "coreqs": [
+    "MICR 2065"
+   ]
+  },
+  "MICR 2065": {
+   "title": "Microbiology for Health Professions Laboratory",
+   "credits": 1,
+   "prereqText": "( BIOL 1010 or BIOL 1610 ) and ( ENGL 1010 or ENGL 1005 ). CHEM 1110 highly recommended",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "BIOL 1010",
+       "BIOL 1610"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "coreqText": "MICR 2060",
+   "coreqs": [
+    "MICR 2060"
+   ]
+  },
+  "NURS 4120": {
+   "title": "Rapid Response Concepts Across the Lifespan",
+   "credits": 1,
+   "prereqText": "( NURS 3330 and NURS 3340 ) or ( RESP 2320 and RESP 2165 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "NURS 3330",
+       "NURS 3340"
+      ]
+     },
+     {
+      "and": [
+       "RESP 2320",
+       "RESP 2165"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 1100": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  },
+  "RESP 1540": {
+   "title": "Survey of Respiratory Therapy",
+   "credits": 1
+  },
+  "RESP 2145": {
+   "title": "Fundamentals of Respiratory Care Lab",
+   "credits": 3,
+   "prereqText": "Acceptance into the Respiratory Therapy Program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "RESP 2300 and RESP 2520",
+   "coreqs": [
+    "RESP 2300",
+    "RESP 2520"
+   ]
+  },
+  "RESP 2165": {
+   "title": "Mechanical Ventilation Lab",
+   "credits": 1,
+   "prereqText": "RESP 2145",
+   "prereqs": "RESP 2145",
+   "coreqText": "RESP 2320",
+   "coreqs": [
+    "RESP 2320"
+   ]
+  },
+  "RESP 2210": {
+   "title": "Cardiopulmonary and Renal Anatomy and Physiology I",
+   "credits": 3,
+   "prereqText": "Acceptance into the Respiratory Therapy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "RESP 2230": {
+   "title": "Cardiopulmonary Pathophysiology I",
+   "credits": 2,
+   "prereqText": "Acceptance into the Respiratory Therapy Program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "RESP 2210",
+   "coreqs": [
+    "RESP 2210"
+   ]
+  },
+  "RESP 2250": {
+   "title": "Basic Patient Assessment",
+   "credits": 2,
+   "prereqText": "Acceptance into Respiratory Therapy Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "RESP 2270": {
+   "title": "Application of Cardiopulmonary Diagnostics",
+   "credits": 3,
+   "prereqText": "RESP 2210",
+   "prereqs": "RESP 2210"
+  },
+  "RESP 2300": {
+   "title": "Fundamentals of Respiratory Care",
+   "credits": 3,
+   "prereqText": "Acceptance into the Respiratory Therapy Program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "RESP 2145 and RESP 2520",
+   "coreqs": [
+    "RESP 2145",
+    "RESP 2520"
+   ]
+  },
+  "RESP 2320": {
+   "title": "Mechanical Ventilation I",
+   "credits": 3,
+   "prereqText": "RESP 2300",
+   "prereqs": "RESP 2300",
+   "coreqText": "RESP 2165",
+   "coreqs": [
+    "RESP 2165"
+   ]
+  },
+  "RESP 2330": {
+   "title": "Entry Level Respiratory Therapy Review",
+   "credits": 1,
+   "prereqText": "RESP 2320",
+   "prereqs": "RESP 2320"
+  },
+  "RESP 2420": {
+   "title": "Critical Thinking in Respiratory Care",
+   "credits": 2,
+   "prereqText": "RESP 2300",
+   "prereqs": "RESP 2300"
+  },
+  "RESP 2520": {
+   "title": "Principles of Pharmacology",
+   "credits": 2,
+   "coreqText": "RESP 2300 and RESP 2145",
+   "coreqs": [
+    "RESP 2300",
+    "RESP 2145"
+   ]
+  },
+  "RESP 2705": {
+   "title": "Clinical Practice I",
+   "credits": 3,
+   "prereqText": "RESP 2145",
+   "prereqs": "RESP 2145"
+  },
+  "RESP 2715": {
+   "title": "Specialty Clinical Experiences",
+   "credits": 1,
+   "prereqText": "RESP 2145",
+   "prereqs": "RESP 2145"
+  },
+  "RESP 2725": {
+   "title": "Clinical Practice II",
+   "credits": 3,
+   "prereqText": "RESP 2705",
+   "prereqs": "RESP 2705"
+  },
+  "RESP 3210": {
+   "title": "Cardiopulmonary and Renal Anatomy and Physiology II",
+   "credits": 2,
+   "prereqText": "RESP 2210 and University Advanced Standing",
+   "prereqs": "RESP 2210",
+   "prereqNonCourse": true
+  },
+  "RESP 3220": {
+   "title": "Cardiopulmonary Pathophysiology II",
+   "credits": 2,
+   "prereqText": "RESP 2230 and University Advanced Standing",
+   "prereqs": "RESP 2230",
+   "prereqNonCourse": true
+  },
+  "RESP 3260": {
+   "title": "Neonatal/Pediatric Critical Care",
+   "credits": 3,
+   "prereqText": "RESP 2320 and University Advanced Standing",
+   "prereqs": "RESP 2320",
+   "prereqNonCourse": true,
+   "coreqText": "RESP 3265",
+   "coreqs": [
+    "RESP 3265"
+   ]
+  },
+  "RESP 3265": {
+   "title": "Neonatal/Pediatric Critical Care Lab",
+   "credits": 1,
+   "prereqText": "RESP 2165 and University Advanced Standing",
+   "prereqs": "RESP 2165",
+   "prereqNonCourse": true,
+   "coreqText": "RESP 3260",
+   "coreqs": [
+    "RESP 3260"
+   ]
+  },
+  "RESP 3270": {
+   "title": "Adult Critical Care",
+   "credits": 2,
+   "prereqText": "RESP 2725 and University Advanced Standing",
+   "prereqs": "RESP 2725",
+   "prereqNonCourse": true
+  },
+  "RESP 3280": {
+   "title": "Extended Care Roles for Respiratory Therapists",
+   "credits": 2,
+   "prereqText": "RESP 2270 and University Advanced Standing",
+   "prereqs": "RESP 2270",
+   "prereqNonCourse": true
+  },
+  "RESP 3320": {
+   "title": "Mechanical Ventilation II",
+   "credits": 3,
+   "prereqText": "RESP 2320 and Advanced University Standing",
+   "prereqs": "RESP 2320",
+   "prereqNonCourse": true,
+   "coreqText": "RESP 3325",
+   "coreqs": [
+    "RESP 3325"
+   ]
+  },
+  "RESP 3325": {
+   "title": "Mechanical Ventilation II Lab",
+   "credits": 1,
+   "prereqText": "RESP 2165 and University Advanced Standing",
+   "prereqs": "RESP 2165",
+   "prereqNonCourse": true,
+   "coreqText": "RESP 3320",
+   "coreqs": [
+    "RESP 3320"
+   ]
+  },
+  "RESP 3430": {
+   "title": "Principles of Healthcare Education and Disease Management",
+   "credits": 3,
+   "prereqText": "RESP 2330 and University Advanced Standing",
+   "prereqs": "RESP 2330",
+   "prereqNonCourse": true
+  },
+  "RESP 3765": {
+   "title": "Clinical Practice III Neonatal/Pediatric Respiratory Care",
+   "credits": 3,
+   "prereqText": "RESP 3260 and University Advanced Standing",
+   "prereqs": "RESP 3260",
+   "prereqNonCourse": true
+  },
+  "RESP 3785": {
+   "title": "Extended Roles in Respiratory Therapy Clinical",
+   "credits": 2,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "RESP 3280",
+   "precoreqs": "RESP 3280"
+  },
+  "RESP 4610": {
+   "title": "Advanced Patient Assessment",
+   "credits": 3,
+   "prereqText": "RESP 3270 and University Advanced Standing",
+   "prereqs": "RESP 3270",
+   "prereqNonCourse": true
+  },
+  "RESP 4640": {
+   "title": "Respiratory Therapy Capstone",
+   "credits": 2,
+   "prereqText": "RESP 3270 and Advanced University Standing",
+   "prereqs": "RESP 3270",
+   "prereqNonCourse": true
+  },
+  "RESP 4775": {
+   "title": "Clinical Practice IV Adult Critical Care",
+   "credits": 4,
+   "prereqText": "RESP 3270 and University Advanced Standing",
+   "prereqs": "RESP 3270",
+   "prereqNonCourse": true
+  },
+  "RESP 4800": {
+   "title": "Respiratory Therapy Seminar",
+   "credits": 3,
+   "prereqText": "RESP 3270 and University Advanced Standing",
+   "prereqs": "RESP 3270",
+   "prereqNonCourse": true
+  },
+  "RESP 4890": {
+   "title": "Principles of Respiratory Care Research and Management",
+   "credits": 3,
+   "prereqText": "RESP 3270 and University Advanced standing",
+   "prereqs": "RESP 3270",
+   "prereqNonCourse": true
+  },
+  "RESP 4940": {
+   "title": "Special Topics in Respiratory Therapy",
+   "credits": 1,
+   "prereqText": "RESP 2320 and University Advanced Standing",
+   "prereqs": "RESP 2320",
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "precoreqText": "ZOOL 2320",
+   "precoreqs": "ZOOL 2320"
+  },
+  "ZOOL 2420": {
+   "title": "Human Physiology",
+   "credits": 3,
+   "prereqText": "BIOL 1610 with a minimum grade of C- and CHEM 1110 or CHEM 1210 with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "coreqText": "ZOOL 2425",
+   "coreqs": [
+    "ZOOL 2425"
+   ]
+  },
+  "ZOOL 2425": {
+   "title": "Human Physiology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1610 and CHEM 1110",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "CHEM 1110"
+    ]
+   },
+   "coreqText": "ZOOL 2420",
+   "coreqs": [
+    "ZOOL 2420"
+   ]
+  }
+ }
+}

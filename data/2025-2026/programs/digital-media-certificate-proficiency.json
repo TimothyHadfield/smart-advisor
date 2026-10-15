@@ -1,0 +1,346 @@
+{
+ "id": "digital-media-certificate-proficiency",
+ "name": "Digital Media, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-media-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Math Requirement",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following: (Course must be completed with grade 'C' or higher. )"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 1110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6 credits from one of the following categories:",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "DAGV 1200"
+     ],
+     "credits": 3,
+     "section": "--Animation and Games"
+    },
+    {
+     "codes": [
+      "DAGV 1300"
+     ],
+     "credits": 3,
+     "section": "--Animation and Games"
+    },
+    {
+     "codes": [
+      "DAGV 1700"
+     ],
+     "credits": 3,
+     "section": "--Animation and Games"
+    },
+    {
+     "codes": [
+      "DCPR 1610"
+     ],
+     "credits": 2,
+     "section": "--Digital Cinema Production"
+    },
+    {
+     "codes": [
+      "DCPR 1800"
+     ],
+     "credits": 3,
+     "section": "--Digital Cinema Production"
+    },
+    {
+     "codes": [
+      "DAPR 2000"
+     ],
+     "credits": 4,
+     "section": "--Digital Audio"
+    },
+    {
+     "codes": [
+      "DAPR 2080"
+     ],
+     "credits": 3,
+     "section": "--Digital Audio"
+    },
+    {
+     "codes": [
+      "DWDD 1600"
+     ],
+     "credits": 3,
+     "section": "--Web Development"
+    },
+    {
+     "codes": [
+      "DWDD 1400"
+     ],
+     "credits": 3,
+     "section": "--Web Development"
+    }
+   ],
+   "text": "Choose 6 credits from one of the following categories:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Math Requirement",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "DGM 1110",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "2 courses from one of the tracks",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DAGV 1200": {
+   "title": "3D Modeling Essentials",
+   "credits": 3
+  },
+  "DAGV 1300": {
+   "title": "Animation Essentials",
+   "credits": 2,
+   "coreqText": "DAGV 1300L",
+   "coreqs": [
+    "DAGV 1300L"
+   ]
+  },
+  "DAGV 1700": {
+   "title": "Scripting Essentials",
+   "credits": 3
+  },
+  "DAPR 2000": {
+   "title": "Digital Audio Essentials",
+   "credits": 3,
+   "coreqText": "DAPR 2000L",
+   "coreqs": [
+    "DAPR 2000L"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2080": {
+   "title": "Podcast and Radio Production",
+   "credits": 3
+  },
+  "DCPR 1610": {
+   "title": "Digital Cinema Editing I",
+   "credits": 2,
+   "coreqText": "DCPR 1610L",
+   "coreqs": [
+    "DCPR 1610L"
+   ]
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 3,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "DWDD 1400": {
+   "title": "Digital Design Essentials",
+   "credits": 3
+  },
+  "DWDD 1600": {
+   "title": "Web Essentials",
+   "credits": 3
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

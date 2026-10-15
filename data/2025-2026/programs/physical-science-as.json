@@ -1,0 +1,967 @@
+{
+ "id": "physical-science-as",
+ "name": "Physical Science, A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/physical-science-as/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "MATH 1050",
+   "alts": [
+    "MATH 1055"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700"
+     ],
+     "credits": 3,
+     "alts": [
+      "HIST 2710"
+     ]
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Life Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Core Discipline Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 17,
+   "options": [
+    {
+     "codes": [
+      "MATH 1210"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "MATH 1220"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "PHYS 2210"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "PHYS 2215"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "PHYS 2220"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "PHYS 2225"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in physics:"
+    },
+    {
+     "codes": [
+      "CHEM 1210"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 1215"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 1220"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 1225"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 2310"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 2315"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 2320"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 2325"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in chemistry:"
+    },
+    {
+     "codes": [
+      "CHEM 1210"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "CHEM 1215"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "CHEM 1220"
+     ],
+     "credits": 4,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "CHEM 1225"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "GEO 1010"
+     ],
+     "credits": 3,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "GEO 1015"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "GEO 1220"
+     ],
+     "credits": 3,
+     "section": "Recommended for students most interested in earth science:"
+    },
+    {
+     "codes": [
+      "GEO 1225"
+     ],
+     "credits": 1,
+     "section": "Recommended for students most interested in earth science:"
+    }
+   ],
+   "text": "Complete one of the following",
+   "notes": [
+    "Recommended for students most interested in physics:: Any 1000- or 2000-level PHYS elective (1)"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 12 credits",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "CHEM 1210"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 1215"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CHEM 1220"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 1225"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CHEM 2310"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 2315"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CHEM 2320"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 2325"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "ENVT 1110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENVT 2730"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "GEO 1010"
+     ],
+     "credits": 3,
+     "alts": [
+      "GEO 1030",
+      "GEO 1040",
+      "GEO 1050"
+     ]
+    },
+    {
+     "codes": [
+      "GEO 1080"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEO 1220"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEO 1225"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "GEO 2500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEOG 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEOG 1800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 1060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 1210"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1220"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 2210"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 2270"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 2280"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "METO 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "METO 1060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHYS 2210"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PHYS 2215"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "PHYS 2220"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PHYS 2225"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 credits from the following (not to include any course being used to fill one of the requirements above). Consult with an advisor to determine which courses best match your long-term educational and career goals."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "alts": [
+      "MATH 1055"
+     ],
+     "credits": 4
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Life Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Distribution",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "Complete 9 credits in physics, chemistry, or earth science core discipline requirements",
+     "credits": 9
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Complete 4 credits in physics, chemistry, or earth science core discipline requirements",
+     "credits": 4
+    },
+    {
+     "label": "Electives",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Electives",
+     "credits": 4
+    },
+    {
+     "label": "Complete 9 credits in physics, chemistry, or earth science core discipline requirements",
+     "credits": 9
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
+  "CHEM 1220": {
+   "title": "Principles of Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 1210 with a grade of C- or higher",
+   "prereqs": "CHEM 1210",
+   "coreqText": "CHEM 1225",
+   "coreqs": [
+    "CHEM 1225"
+   ]
+  },
+  "CHEM 1225": {
+   "title": "Principles of Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1215 with a C- or better",
+   "prereqs": "CHEM 1215",
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1220",
+   "coreqs": [
+    "CHEM 1220"
+   ]
+  },
+  "CHEM 2310": {
+   "title": "Organic Chemistry I",
+   "credits": 4,
+   "prereqText": "CHEM 1220 with a grade of C- or higher",
+   "prereqs": "CHEM 1220",
+   "coreqText": "CHEM 2315",
+   "coreqs": [
+    "CHEM 2315"
+   ]
+  },
+  "CHEM 2315": {
+   "title": "Organic Chemistry I Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1220 , CHEM 1225",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     "CHEM 1225"
+    ]
+   },
+   "coreqText": "CHEM 2310",
+   "coreqs": [
+    "CHEM 2310"
+   ]
+  },
+  "CHEM 2320": {
+   "title": "Organic Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 2310 & CHEM 2315 with a C- or higher",
+   "prereqs": {
+    "and": [
+     "CHEM 2310",
+     "CHEM 2315"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 2325",
+   "coreqs": [
+    "CHEM 2325"
+   ]
+  },
+  "CHEM 2325": {
+   "title": "Organic Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 2315",
+   "prereqs": "CHEM 2315",
+   "coreqText": "CHEM 2320",
+   "coreqs": [
+    "CHEM 2320"
+   ]
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENVT 1110": {
+   "title": "Introduction to Environmental Management",
+   "credits": 3
+  },
+  "ENVT 2730": {
+   "title": "Introduction to Soils",
+   "credits": 4,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "GEO 1010": {
+   "title": "Introduction to Geology",
+   "credits": 3
+  },
+  "GEO 1015": {
+   "title": "Introduction to Geology Laboratory",
+   "credits": 1
+  },
+  "GEO 1030": {
+   "title": "Natural Disasters and the Environment",
+   "credits": 3
+  },
+  "GEO 1040": {
+   "title": "The Dinosaurian World",
+   "credits": 3
+  },
+  "GEO 1050": {
+   "title": "Geology of National Parks",
+   "credits": 3
+  },
+  "GEO 1080": {
+   "title": "Introduction to Oceanography",
+   "credits": 3
+  },
+  "GEO 1220": {
+   "title": "Historical Geology",
+   "credits": 3,
+   "prereqText": "GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050",
+   "prereqs": {
+    "or": [
+     "GEO 1010",
+     "GEO 1030",
+     "GEO 1040",
+     "GEO 1050"
+    ]
+   }
+  },
+  "GEO 1225": {
+   "title": "Historical Geology Laboratory",
+   "credits": 1,
+   "prereqText": "GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050",
+   "prereqs": {
+    "or": [
+     "GEO 1010",
+     "GEO 1030",
+     "GEO 1040",
+     "GEO 1050"
+    ]
+   },
+   "precoreqText": "GEO 1220",
+   "precoreqs": "GEO 1220"
+  },
+  "GEO 2500": {
+   "title": "Introduction to Field Geology",
+   "credits": 3,
+   "prereqText": "GEO 1015 , GEO 1225",
+   "prereqs": {
+    "and": [
+     "GEO 1015",
+     "GEO 1225"
+    ]
+   }
+  },
+  "GEOG 1000": {
+   "title": "Introduction to Physical Geography",
+   "credits": 3
+  },
+  "GEOG 1800": {
+   "title": "Mapping the World with Geospatial Technology",
+   "credits": 3
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1060": {
+   "title": "Trigonometry",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1220": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2210": {
+   "title": "Calculus III",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2270": {
+   "title": "Linear Algebra",
+   "credits": 3,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2280": {
+   "title": "Ordinary Differential Equations",
+   "credits": 3,
+   "prereqText": "MATH 2210 or MATH 2210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 2210",
+     "MATH 2210H"
+    ]
+   }
+  },
+  "METO 1010": {
+   "title": "Introduction to Meteorology",
+   "credits": 3
+  },
+  "METO 1060": {
+   "title": "Fundamentals of Weather Forecasting",
+   "credits": 3
+  },
+  "PHYS 2210": {
+   "title": "Physics for Scientists and Engineers I",
+   "credits": 4,
+   "prereqText": "MATH 1210 or PHYS 1100",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "PHYS 1100"
+    ]
+   },
+   "coreqText": "PHYS 2215",
+   "coreqs": [
+    "PHYS 2215"
+   ]
+  },
+  "PHYS 2215": {
+   "title": "Physics for Scientists and Engineers I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2210",
+   "coreqs": [
+    "PHYS 2210"
+   ]
+  },
+  "PHYS 2220": {
+   "title": "Physics for Scientists and Engineers II",
+   "credits": 4,
+   "prereqText": "PHYS 2210",
+   "prereqs": "PHYS 2210",
+   "coreqText": "PHYS 2225",
+   "coreqs": [
+    "PHYS 2225"
+   ]
+  },
+  "PHYS 2225": {
+   "title": "Physics for Scientists and Engineers II Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2220",
+   "coreqs": [
+    "PHYS 2220"
+   ]
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

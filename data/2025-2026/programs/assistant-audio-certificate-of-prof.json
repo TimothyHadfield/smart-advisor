@@ -1,0 +1,241 @@
+{
+ "id": "assistant-audio-certificate-of-prof",
+ "name": "Audio Assistant, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/assistant-audio-certificate-of-prof/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 25,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1000",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2000L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2010L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 1700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2020L",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 1031",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DAPR 1000",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DAPR 2000",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2000L",
+     "credits": 1
+    },
+    {
+     "code": "PHYS 1700",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "DAPR 1030",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2010",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2010L",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "DAPR 2020",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2020L",
+     "credits": 1
+    },
+    {
+     "code": "DAPR 1031",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DAPR 1000": {
+   "title": "Intro to Digital Audio",
+   "credits": 1
+  },
+  "DAPR 1030": {
+   "title": "Digital Audio Workstation Training I",
+   "credits": 3,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000"
+  },
+  "DAPR 1031": {
+   "title": "Digital Audio Workstation Training II",
+   "credits": 3,
+   "prereqText": "DAPR 1030",
+   "prereqs": "DAPR 1030"
+  },
+  "DAPR 2000": {
+   "title": "Digital Audio Essentials",
+   "credits": 3,
+   "coreqText": "DAPR 2000L",
+   "coreqs": [
+    "DAPR 2000L"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2000L": {
+   "title": "Digital Audio Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAPR 2000",
+   "coreqs": [
+    "DAPR 2000"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2010": {
+   "title": "Core Recording",
+   "credits": 3,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000",
+   "coreqText": "DAPR 2010L",
+   "coreqs": [
+    "DAPR 2010L"
+   ]
+  },
+  "DAPR 2010L": {
+   "title": "Core Recording Lab",
+   "credits": 1,
+   "prereqText": "DAPR 2000",
+   "prereqs": "DAPR 2000",
+   "coreqText": "DAPR 2010",
+   "coreqs": [
+    "DAPR 2010"
+   ]
+  },
+  "DAPR 2020": {
+   "title": "Core Mixing",
+   "credits": 3,
+   "prereqText": "DAPR 2010",
+   "prereqs": "DAPR 2010",
+   "coreqText": "DAPR 2020L",
+   "coreqs": [
+    "DAPR 2020L"
+   ]
+  },
+  "DAPR 2020L": {
+   "title": "Core Mixing Lab",
+   "credits": 1,
+   "prereqText": "DAPR 2010",
+   "prereqs": "DAPR 2010",
+   "coreqText": "DAPR 2020",
+   "coreqs": [
+    "DAPR 2020"
+   ]
+  },
+  "MUSC 1100": {
+   "title": "Fundamentals of Music",
+   "credits": 3
+  },
+  "PHYS 1700": {
+   "title": "Descriptive Acoustics",
+   "credits": 3,
+   "prereqText": "MAT 1010 or higher",
+   "prereqs": "MAT 1010"
+  }
+ }
+}

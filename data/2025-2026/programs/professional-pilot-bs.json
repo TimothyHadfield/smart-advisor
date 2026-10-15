@@ -1,0 +1,904 @@
+{
+ "id": "professional-pilot-bs",
+ "name": "Professional Pilot, B.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/aviation-science/professional-pilot-bs/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1010",
+   "alts": [
+    "AVSC 1050"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2070",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2450",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2440",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3090",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3530",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 4100G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 4700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 4160",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 4800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Upper division elective credits",
+   "credits": 9
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "1000+ Electives",
+   "credits": 13
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "credits": null
+    },
+    {
+     "code": "MAT 1035",
+     "credits": null
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 1045",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "MATH 1090",
+     "credits": null
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 1010",
+     "alts": [
+      "AVSC 1050"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "AVSC 1100",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 1110",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2070",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2110",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "AVSC 1240",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 1250",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2130",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2150",
+     "credits": 3
+    },
+    {
+     "label": "LD Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "AVSC 2300",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2310",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 3030",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 3090",
+     "credits": 3
+    },
+    {
+     "label": "LD Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "AVSC 2440",
+     "credits": 1
+    },
+    {
+     "code": "AVSC 2450",
+     "credits": 1
+    },
+    {
+     "code": "AVSC 3200",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 3400",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 3530",
+     "credits": 3
+    },
+    {
+     "label": "UD Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "AVSC 3300",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 3600",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 4100G",
+     "credits": 3
+    },
+    {
+     "label": "LD Elective",
+     "credits": 4
+    },
+    {
+     "label": "LD Elective",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "AVSC 4160",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 4700",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 4800",
+     "credits": 3
+    },
+    {
+     "label": "UD Elective",
+     "credits": 3
+    },
+    {
+     "label": "UD Elective",
+     "credits": 3
+    },
+    {
+     "label": "LD Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AVSC 1010": {
+   "title": "Survey of Aviation Science",
+   "credits": 3
+  },
+  "AVSC 1050": {
+   "title": "Introduction to Aviation Management",
+   "credits": 3
+  },
+  "AVSC 1100": {
+   "title": "Ground I - Private",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "AVSC 1110": {
+   "title": "Flight I - Private",
+   "credits": 3,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "AVSC 1100",
+   "precoreqs": "AVSC 1100"
+  },
+  "AVSC 1240": {
+   "title": "Ground II - Instrument",
+   "credits": 3,
+   "prereqText": "AVSC 1100 , AVSC 1110 and Department Approval",
+   "prereqs": {
+    "and": [
+     "AVSC 1100",
+     "AVSC 1110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AVSC 1250": {
+   "title": "Flight II - Instrument II",
+   "credits": 3,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "AVSC 2070": {
+   "title": "Communications for Aviation Professionals",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "AVSC 2110": {
+   "title": "Aviation Weather",
+   "credits": 3
+  },
+  "AVSC 2130": {
+   "title": "Aviation Safety",
+   "credits": 3
+  },
+  "AVSC 2150": {
+   "title": "Air Transportation Management",
+   "credits": 3
+  },
+  "AVSC 2300": {
+   "title": "Ground IV - Commercial",
+   "credits": 3,
+   "prereqText": "AVSC 1250 and Department Approval",
+   "prereqs": "AVSC 1250",
+   "prereqNonCourse": true
+  },
+  "AVSC 2310": {
+   "title": "Flight IV - Commercial",
+   "credits": 3,
+   "prereqText": "AVSC 1250 and Department Approval",
+   "prereqs": "AVSC 1250",
+   "prereqNonCourse": true
+  },
+  "AVSC 2440": {
+   "title": "Ground III - Multi Engine",
+   "credits": 1,
+   "prereqText": "AVSC 1110 and Department Approval",
+   "prereqs": "AVSC 1110",
+   "prereqNonCourse": true
+  },
+  "AVSC 2450": {
+   "title": "Flight III - Multi Engine",
+   "credits": 1,
+   "prereqText": "AVSC 1110 and Department Approval",
+   "prereqs": "AVSC 1110",
+   "prereqNonCourse": true
+  },
+  "AVSC 3030": {
+   "title": "Air Traffic Control I",
+   "credits": 3,
+   "prereqText": "AVSC 1100 and University Advanced Standing",
+   "prereqs": "AVSC 1100",
+   "prereqNonCourse": true
+  },
+  "AVSC 3090": {
+   "title": "Airline and Dispatch Operations",
+   "credits": 3,
+   "prereqText": "AVSC 2150 , AVSC 2110 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "AVSC 2150",
+     "AVSC 2110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AVSC 3200": {
+   "title": "Flight Physiology",
+   "credits": 3,
+   "prereqText": "AVSC 1240 and University Advanced Standing",
+   "prereqs": "AVSC 1240",
+   "prereqNonCourse": true
+  },
+  "AVSC 3300": {
+   "title": "Jet Transport Systems",
+   "credits": 3,
+   "prereqText": "AVSC 1240 and University Advanced Standing",
+   "prereqs": "AVSC 1240",
+   "prereqNonCourse": true
+  },
+  "AVSC 3400": {
+   "title": "International Flight Operations",
+   "credits": 3,
+   "prereqText": "AVSC 1240 and University Advanced Standing",
+   "prereqs": "AVSC 1240",
+   "prereqNonCourse": true
+  },
+  "AVSC 3530": {
+   "title": "Flight Aerodynamics",
+   "credits": 3,
+   "prereqText": "AVSC 1240 and University Advanced Standing",
+   "prereqs": "AVSC 1240",
+   "prereqNonCourse": true
+  },
+  "AVSC 3600": {
+   "title": "Multi-piloted Operations",
+   "credits": 3,
+   "prereqText": "AVSC 1100 , AVSC 2070 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "AVSC 1100",
+     "AVSC 2070"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AVSC 4100G": {
+   "title": "Global Ethical and Professional Issues in Aviation",
+   "credits": 3,
+   "prereqText": "AVSC 2150 , PHIL 2050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "AVSC 2150",
+     "PHIL 2050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AVSC 4160": {
+   "title": "Aviation Law",
+   "credits": 3,
+   "prereqText": "AVSC 2150 , Senior Standing and University Advanced Standing.",
+   "prereqs": "AVSC 2150",
+   "prereqNonCourse": true
+  },
+  "AVSC 4700": {
+   "title": "Aviation Professional Seminars",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "AVSC 4800": {
+   "title": "Professional Pilot Capstone",
+   "credits": 3,
+   "prereqText": "AVSC 3300 , 3600 and University Advanced Standing",
+   "prereqs": "AVSC 3300",
+   "prereqNonCourse": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

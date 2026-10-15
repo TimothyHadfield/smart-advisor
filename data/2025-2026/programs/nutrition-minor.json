@@ -1,0 +1,123 @@
+{
+ "id": "nutrition-minor",
+ "name": "Nutrition, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/nutrition-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NUTR 2000",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NUTR 2000",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 1020",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NUTR 2020",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 3000",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 3100",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 3200",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "NUTR 1020": {
+   "title": "Foundations of Human Nutrition",
+   "credits": 3
+  },
+  "NUTR 2000": {
+   "title": "Body Image and Weight Management",
+   "credits": 3
+  },
+  "NUTR 2020": {
+   "title": "Nutrition Through the Life Cycle",
+   "credits": 3
+  },
+  "NUTR 3000": {
+   "title": "Nutrition and Disease",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "NUTR 3100": {
+   "title": "Public Health Nutrition",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "NUTR 3200": {
+   "title": "Cultural Aspects of Health and Nutrition",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  }
+ }
+}

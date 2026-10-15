@@ -1,0 +1,394 @@
+{
+ "id": "entertainment-design-aas",
+ "name": "Entertainment Design, A.A.S.",
+ "url": "https://catalog.uvu.edu/arts/art-design/entertainment-design-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "GE distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "3 credits of any other GE distribution course",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 1210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 1220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2280",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ART 2440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Core)",
+   "code": "ARTH 2710",
+   "alts": [
+    "ARTH 2720G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Complete courses at any level 1000+",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ART 1120",
+     "credits": 3
+    },
+    {
+     "code": "ART 1210",
+     "credits": 3
+    },
+    {
+     "code": "ART 1220",
+     "credits": 3
+    },
+    {
+     "code": "ART 1400",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ART 2220",
+     "credits": 3
+    },
+    {
+     "code": "ART 2240",
+     "credits": 3
+    },
+    {
+     "code": "ART 2250",
+     "credits": 3
+    },
+    {
+     "code": "ART 2270",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ART 2260",
+     "credits": 3
+    },
+    {
+     "code": "ART 2280",
+     "credits": 3
+    },
+    {
+     "code": "ART 2440",
+     "credits": 3
+    },
+    {
+     "code": "ARTH 2710",
+     "alts": [
+      "ARTH 2720G"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Free Elective (1000+)",
+     "credits": 3
+    },
+    {
+     "label": "Free Elective (1000+)",
+     "credits": 3
+    },
+    {
+     "label": "Free Elective (1000+)",
+     "credits": 3
+    },
+    {
+     "label": "Free Elective (1000+)",
+     "credits": 3
+    },
+    {
+     "label": "GE distribution",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1120": {
+   "title": "2D Design",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1210": {
+   "title": "Observational Drawing",
+   "credits": 3
+  },
+  "ART 1220": {
+   "title": "Perspective Drawing",
+   "credits": 3,
+   "precoreqText": "ART 1210",
+   "precoreqs": "ART 1210"
+  },
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "ART 2220": {
+   "title": "Imagination and Visual Literacy",
+   "credits": 3,
+   "prereqText": "Formal acceptance to Associate of Applied Science in Illustration or Entertainment Design (AAS) Program by portfolio review",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 2240": {
+   "title": "Illustrative Media and Techniques II",
+   "credits": 3,
+   "prereqText": "Formal acceptance to Associate of Applied Science in Illustration or Entertainment Design (AAS) Program by portfolio review",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 2250": {
+   "title": "Gestural Drawing",
+   "credits": 3,
+   "prereqText": "Formal acceptance to Associate of Applied Science in Illustration or Entertainment Design (AAS) Program by portfolio review.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 2260": {
+   "title": "Digital Painting I",
+   "credits": 3,
+   "prereqText": "ART 1400 , Formal acceptance to Associate of Applied Science in Illustration or Entertainment Design (AAS) Program by portfolio review.",
+   "prereqs": "ART 1400",
+   "prereqNonCourse": true
+  },
+  "ART 2270": {
+   "title": "Figure Drawing I",
+   "credits": 3,
+   "prereqText": "Formal acceptance to Associate of Applied Science in Illustration or Entertainment Design (AAS) Program by portfolio review.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 2280": {
+   "title": "3D Modeling",
+   "credits": 3,
+   "prereqText": "ART 1400 , Declared Graphic Design (AAS), or formal acceptance to AAS in Entertainment Design or Illustration Program by portfolio review.",
+   "prereqs": "ART 1400",
+   "prereqNonCourse": true
+  },
+  "ART 2440": {
+   "title": "Motion Graphics I",
+   "credits": 3,
+   "prereqText": "ART 1110 or ART 1210 , ART 1120 , ART 1400 , declared Entertainment Design (AAS), or formal acceptance to Associate of Applied Science in Graphic Design (AAS) Program by portfolio review, or department approval",
+   "prereqs": {
+    "or": [
+     "ART 1110",
+     "ART 1210",
+     "ART 1120",
+     "ART 1400"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 2720G": {
+   "title": "Renaissance Through Contemporary Art History",
+   "credits": 3
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

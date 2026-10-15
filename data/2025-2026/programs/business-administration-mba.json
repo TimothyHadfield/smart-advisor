@@ -1,0 +1,466 @@
+{
+ "id": "business-administration-mba",
+ "name": "Master of Business Administration, M.B.A.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/business-graduate-programs/business-administration-mba/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 36,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "ACC 6250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "ACC 6350",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "FIN 6150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MGMT 6500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MGMT 6740",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MGMT 6800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MGMT 6930",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MGMT 6940",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discpline Core Requirements",
+   "code": "MKTG 6600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Courses",
+   "label": "Select 9 Credits from the following list",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "MGMT 6310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6440"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6470"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6910"
+     ],
+     "credits": 1.5
+    },
+    {
+     "codes": [
+      "FIN 6130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 6160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 6170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 6400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 6620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 6640"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 6660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6760"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 6720"
+     ],
+     "credits": 1.5
+    },
+    {
+     "codes": [
+      "HR 6550"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Select 9 Credits from the following list"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 6250",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6150",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 6350",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 6740",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 6500",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 6800",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MKTG 6600",
+     "credits": 3
+    },
+    {
+     "label": "MBA Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 6930",
+     "credits": 3
+    },
+    {
+     "label": "MBA Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 6940",
+     "credits": 3
+    },
+    {
+     "label": "MBA Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 6250": {
+   "title": "Financial Reporting and Analysis",
+   "credits": 3,
+   "prereqText": "Admission to a Woodbury School of Business Graduate Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6350": {
+   "title": "Management Control Systems",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6130": {
+   "title": "Financial Statement Analysis and Modeling",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6150": {
+   "title": "Financial Management",
+   "credits": 3,
+   "prereqText": "Acceptance in the MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6160": {
+   "title": "International Financial Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6170": {
+   "title": "Investment Analysis and Portfolio Analysis",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HR 6550": {
+   "title": "Organization Development and Change Management",
+   "credits": 3,
+   "prereqText": "Admission into any UVU Graduate Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6300": {
+   "title": "Healthcare Systems/Finance/Operations",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6310": {
+   "title": "Healthcare Policy and Law",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6320": {
+   "title": "Healthcare Strategy",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6440": {
+   "title": "Advanced Project Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Acceptance in the MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6470": {
+   "title": "Organization Information Technologies",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6500": {
+   "title": "Managing Individuals and Groups",
+   "credits": 3,
+   "prereqText": "Acceptance in the MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6510": {
+   "title": "Information Systems and Project Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6740": {
+   "title": "Operations and Supply Chain Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6760": {
+   "title": "Applied Business Research",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6800": {
+   "title": "Global Business Strategy",
+   "credits": 3,
+   "prereqText": "Acceptance in the MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6910": {
+   "title": "Designing Business",
+   "credits": 1.5,
+   "prereqText": "Acceptance into the Woodbury School of Business MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6930": {
+   "title": "International Engagement",
+   "credits": 3,
+   "prereqText": "Acceptance into the Woodbury School of Business MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6940": {
+   "title": "MBA Consulting Project",
+   "credits": 3,
+   "prereqText": "Acceptance into the Woodbury School of Business MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "MGMT 6800",
+   "precoreqs": "MGMT 6800"
+  },
+  "MKTG 6400": {
+   "title": "Technology Marketing and Customer Experience",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 6600": {
+   "title": "Marketing Strategy",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 6620": {
+   "title": "Marketing Research and Analytics",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  },
+  "MKTG 6640": {
+   "title": "Brand/Product/Services Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  },
+  "MKTG 6660": {
+   "title": "Marketing Channels and Communications",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  },
+  "MKTG 6720": {
+   "title": "Creativity and Innovative Problem Solving",
+   "credits": 1.5,
+   "prereqText": "Acceptance into the Woodbury School of Business MBA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

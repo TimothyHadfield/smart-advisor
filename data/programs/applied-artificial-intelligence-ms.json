@@ -1,0 +1,334 @@
+{
+ "id": "applied-artificial-intelligence-ms",
+ "name": "Applied Artificial Intelligence, M.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/applied-artificial-intelligence-ms/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 6200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 6470",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6730",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6750",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 6910",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Elective",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "TECH 6000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6480"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6900R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete three credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "TECH 6100",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6200",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "INFO 6200",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "TECH 6700",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6730",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "TECH 6750",
+     "credits": 3
+    },
+    {
+     "code": "CS 6470",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "TECH 6910",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 6460": {
+   "title": "Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6470": {
+   "title": "Machine Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6480": {
+   "title": "Deep Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 6200": {
+   "title": "Python for Applied Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 6300": {
+   "title": "Cloud Computing",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6300": {
+   "title": "Healthcare Systems/Finance/Operations",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6000": {
+   "title": "Management of Technological Innovation",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6010": {
+   "title": "Intellectual Property Fundamentals",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6100": {
+   "title": "Foundations of Applied Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6200": {
+   "title": "Artificial Intelligence in Business",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6250": {
+   "title": "Ethical Legal and Social Implications of Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6400": {
+   "title": "Six Sigma Project Management",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6550": {
+   "title": "People and Culture",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6700": {
+   "title": "Data Driven Decision Making",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6730": {
+   "title": "Data Strategy and Management for Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6750": {
+   "title": "Strategic Implementation of AI Systems",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6900R": {
+   "title": "Independent Study",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6910": {
+   "title": "Applied AI Capstone Project",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

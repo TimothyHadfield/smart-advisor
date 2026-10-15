@@ -1,0 +1,391 @@
+{
+ "id": "constitutional-government-and-law-ma",
+ "name": "Constitutional Government Civics and Law, M.A.",
+ "url": "https://catalog.uvu.edu/education/education-graduate-programs/constitutional-government-and-law-ma/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6200",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6300",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6400",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CGCL 6120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "EDUC 6320"
+     ],
+     "credits": 3,
+     "section": "Teaching Track"
+    },
+    {
+     "codes": [
+      "EDUC 6410"
+     ],
+     "credits": 3,
+     "section": "Teaching Track"
+    },
+    {
+     "codes": [
+      "CGCL 6970"
+     ],
+     "credits": 3,
+     "section": "Research Track"
+    },
+    {
+     "codes": [
+      "CGCL 6980R"
+     ],
+     "credits": 3,
+     "section": "Research Track"
+    }
+   ],
+   "text": "Complete One of the Following"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Take 9 credits of the following:",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "CGCL 6160"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6180"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6190"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CGCL 6320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CGCL 6420"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6430"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6440"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CGCL 6790R"
+     ],
+     "credits": 2
+    }
+   ],
+   "text": "Complete 9 credits of electives"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CGCL 6100",
+     "credits": 3
+    },
+    {
+     "code": "CGCL 6200",
+     "credits": 2
+    },
+    {
+     "code": "CGCL 6300",
+     "credits": 2
+    },
+    {
+     "code": "CGCL 6400",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDUC 6320",
+     "alts": [
+      "CGCL 6970"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "CGCL 6110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDUC 6410",
+     "alts": [
+      "CGCL 6980R"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "CGCL 6120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Take 9 credits of the following:",
+     "credits": 9
+    },
+    {
+     "code": "CGCL 6160",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6180",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6190",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6310",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6320",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6420",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6430",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6440",
+     "credits": null
+    },
+    {
+     "code": "CGCL 6790R",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CGCL 6100": {
+   "title": "Foundations of American Constitutionalism",
+   "credits": 3,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6110": {
+   "title": "Structures of Government in American Constitutional Law",
+   "credits": 3,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6120": {
+   "title": "Rights and Liberties in American Constitutional Law",
+   "credits": 3,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6160": {
+   "title": "Roots of the American Regime",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6180": {
+   "title": "Constitutional Interpretation",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6190": {
+   "title": "Constitutional Law in Education",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6200": {
+   "title": "Foundations of American Democracy",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6300": {
+   "title": "Foundations of American Liberty",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6310": {
+   "title": "Early American Political Thought",
+   "credits": 3,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6320": {
+   "title": "Modern American Political Thought",
+   "credits": 3,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6400": {
+   "title": "American Political Development",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6420": {
+   "title": "The Presidency in American Political Development",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6430": {
+   "title": "The Supreme Court in American Political Development",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6440": {
+   "title": "Parties in American Political Development",
+   "credits": 2,
+   "prereqText": "Admission to M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6790R": {
+   "title": "Special Topics in Constitutional Government/Civics/Law",
+   "credits": 2,
+   "creditsMax": 3
+  },
+  "CGCL 6970": {
+   "title": "Masters Thesis Research",
+   "credits": 3,
+   "prereqText": "Acceptance into the M.A. in Constitutional Government, Civics, and Law program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CGCL 6980R": {
+   "title": "Masters Thesis Faculty Research Consultation",
+   "credits": 3,
+   "prereqText": "CGCL 6970 or Acceptance into the M.A. in Constitutional Government, Civics, and Law program or approval of the Program Director",
+   "prereqs": "CGCL 6970",
+   "prereqNonCourse": true
+  },
+  "EDUC 6320": {
+   "title": "21st Century Instruction and Assessment",
+   "credits": 3,
+   "prereqText": "Admission to a graduate program or a graduate program director's approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6410": {
+   "title": "Contemporary Issues in Education",
+   "credits": 3,
+   "prereqText": "Admission to a graduate program in the Department of Graduate Education or approval from a Graduate Program Director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

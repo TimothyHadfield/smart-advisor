@@ -1,0 +1,246 @@
+{
+ "id": "mathematics-graduate-certificate",
+ "name": "Mathematics, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/mathematics-graduate-certificate/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6",
+   "pick": {
+    "count": 6
+   },
+   "credits": 18,
+   "options": [
+    {
+     "codes": [
+      "MATH 6100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6330"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 6010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 6020"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete Six of the following courses for a total of 18 credits",
+   "notes": [
+    "or other approved courses"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 6210",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 6310",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 6100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 6330",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "STAT 6010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective course from any of the remaining MATH6XXX or STAT6XXX",
+     "credits": 3
+    },
+    {
+     "code": "MATH 6350",
+     "credits": null
+    },
+    {
+     "code": "MATH 6610",
+     "credits": null
+    },
+    {
+     "code": "MATH 6620",
+     "credits": null
+    },
+    {
+     "code": "MATH 6700",
+     "credits": null
+    },
+    {
+     "code": "STAT 6020",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MATH 6100": {
+   "title": "Topics in Geometry and Topology",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6210": {
+   "title": "Real Analysis",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6310": {
+   "title": "Modern Algebra",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6330": {
+   "title": "Advanced Linear Algebra",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6350": {
+   "title": "Introduction to Combinatorics",
+   "credits": 3,
+   "prereqText": "Mathematics Endorsement 4, or instructor approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6410": {
+   "title": "Topics in Ordinary Differential Equations",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6610": {
+   "title": "Numerical Methods and Modeling",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6620": {
+   "title": "Topics in Numerical Analysis",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6700": {
+   "title": "Applications of Mathematics",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "STAT 6010": {
+   "title": "Theory of Statistics I",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "STAT 6020": {
+   "title": "Theory of Statistics II",
+   "credits": 3,
+   "prereqText": "STAT 6010 with C or better",
+   "prereqs": "STAT 6010",
+   "prereqNonCourse": true
+  }
+ }
+}

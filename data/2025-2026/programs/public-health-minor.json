@@ -1,0 +1,91 @@
+{
+ "id": "public-health-minor",
+ "name": "Public Health, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/public-health/public-health-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any lower-division HLTH course",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any upper-division HLTH course",
+   "credits": 9
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HLTH 1100",
+     "credits": 3
+    },
+    {
+     "label": "HLTH Elective: Any lower-division HLTH course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HLTH 3200",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "HLTH Elective: Any upper-division HLTH course",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "HLTH Elective: Any upper-division HLTH course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HLTH 1100": {
+   "title": "Personal Health and Wellness",
+   "credits": 3
+  },
+  "HLTH 3200": {
+   "title": "Principles of Community Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

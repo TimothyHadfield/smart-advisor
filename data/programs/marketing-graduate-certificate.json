@@ -1,0 +1,101 @@
+{
+ "id": "marketing-graduate-certificate",
+ "name": "Marketing, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/business-graduate-programs/marketing-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 12,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 6600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 6620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 6640",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 6660",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MKTG 6600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MKTG 6620",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 6640",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MKTG 6660",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MKTG 6600": {
+   "title": "Marketing Strategy",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 6620": {
+   "title": "Marketing Research and Analytics",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  },
+  "MKTG 6640": {
+   "title": "Brand/Product/Services Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  },
+  "MKTG 6660": {
+   "title": "Marketing Channels and Communications",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
+   "prereqs": "MKTG 6600",
+   "prereqNonCourse": true
+  }
+ }
+}

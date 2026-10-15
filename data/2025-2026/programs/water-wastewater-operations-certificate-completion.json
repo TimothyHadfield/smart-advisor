@@ -1,0 +1,292 @@
+{
+ "id": "water-wastewater-operations-certificate-completion",
+ "name": "Water and Wastewater Operations, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/water-wastewater-operations-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 36,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 1050",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENVT 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1215",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1220",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENVT 3210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENVT 3270",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENVT 3330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHYS 2015",
+   "alts": [],
+   "credits": 1
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": 4
+    },
+    {
+     "code": "ENVT 1200",
+     "credits": 3
+    },
+    {
+     "code": "CHEM 1210",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1215",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CHEM 1220",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1225",
+     "credits": 1
+    },
+    {
+     "code": "PHYS 2010",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENVT 3210",
+     "credits": 4
+    },
+    {
+     "code": "ENVT 3270",
+     "credits": 4
+    },
+    {
+     "code": "ENVT 3330",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
+  "CHEM 1220": {
+   "title": "Principles of Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 1210 with a grade of C- or higher",
+   "prereqs": "CHEM 1210",
+   "coreqText": "CHEM 1225",
+   "coreqs": [
+    "CHEM 1225"
+   ]
+  },
+  "CHEM 1225": {
+   "title": "Principles of Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1215 with a C- or better",
+   "prereqs": "CHEM 1215",
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1220",
+   "coreqs": [
+    "CHEM 1220"
+   ]
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENVT 1200": {
+   "title": "Environmental Worker Safety",
+   "credits": 3
+  },
+  "ENVT 3210": {
+   "title": "Water Quality and Reclamation",
+   "credits": 4,
+   "prereqText": "CHEM 1210 and University Advanced Standing",
+   "prereqs": "CHEM 1210",
+   "prereqNonCourse": true
+  },
+  "ENVT 3270": {
+   "title": "Environmental Microbiology",
+   "credits": 4,
+   "prereqText": "University Advanced Standing, ( CHEM 1220 and 1225 ), and [( PHYS 2010 and 2015 ) OR ( PHYS 2210 and 2215 )]. ENVT 3300 recommended.",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     {
+      "or": [
+       "PHYS 2010",
+       "PHYS 2210"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
+   "precoreqs": "ENVT 3300"
+  },
+  "ENVT 3330": {
+   "title": "Water Resources Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHYS 2010": {
+   "title": "College Physics I",
+   "credits": 4,
+   "prereqText": "MATH 1050 or higher",
+   "prereqs": "MATH 1050",
+   "coreqText": "PHYS 2015",
+   "coreqs": [
+    "PHYS 2015"
+   ]
+  },
+  "PHYS 2015": {
+   "title": "College Physics I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2010",
+   "coreqs": [
+    "PHYS 2010"
+   ]
+  }
+ }
+}

@@ -1,0 +1,151 @@
+{
+ "id": "advanced-manufacturing-certificate-proficiency",
+ "name": "Advanced Manufacturing, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/technology-management/advanced-manufacturing-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 2050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "STAT 1040",
+   "alts": [
+    "STAT 1045"
+   ],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "TECH 1050",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2020",
+     "credits": 3
+    },
+    {
+     "code": "STAT 1040",
+     "alts": [
+      "STAT 1045"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "IM 2010",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2050",
+     "credits": 3
+    },
+    {
+     "code": "TECH 2010",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3,
+   "prereqText": "( IM 1010 recommended) or (Basic Computer Applications Challenge Exam with a minimum score of 80% recommended)",
+   "prereqs": null
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 1050": {
+   "title": "Manufacturing Processes and Systems",
+   "credits": 3
+  },
+  "TECH 2010": {
+   "title": "Supervision in Technology",
+   "credits": 3
+  },
+  "TECH 2020": {
+   "title": "Operational and Product Safety Management",
+   "credits": 3
+  },
+  "TECH 2050": {
+   "title": "Introduction to Quality Management",
+   "credits": 3,
+   "prereqText": "STAT 1040 , STAT 1045 , or EGDT 1600 with a grade of C- or higher",
+   "prereqs": {
+    "or": [
+     "STAT 1040",
+     "STAT 1045",
+     "EGDT 1600"
+    ]
+   }
+  }
+ }
+}

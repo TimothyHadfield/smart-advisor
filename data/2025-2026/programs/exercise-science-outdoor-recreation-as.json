@@ -1,0 +1,600 @@
+{
+ "id": "exercise-science-outdoor-recreation-as",
+ "name": "Exercise Science and Outdoor Recreation, A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/exercise-science-outdoor-recreation/exercise-science-outdoor-recreation-as/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 2700G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 13 credits",
+   "pick": {
+    "credits": 13
+   },
+   "credits": 13,
+   "options": [
+    {
+     "codes": [
+      "CHEM 1110"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 2320",
+      "ZOOL 2325"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ZOOL 2420",
+      "ZOOL 2425"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "STAT 2040"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "EXSC 2500"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 13 credits from the following:",
+   "notes": [
+    "Any EXSC or PETE courses approved by department (maximum of hours may be applied to graduation)"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any 1000-level course or higher",
+   "credits": 14
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Quantitative Literacy",
+     "credits": 4
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ZOOL 2320",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "code": "CHEM 1110",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ZOOL 2420",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "EXSC 2700G",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 5
+    },
+    {
+     "code": "STAT 2040",
+     "alts": [
+      "EXSC 2500"
+     ],
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHEM 1110": {
+   "title": "Elementary Chemistry for the Health Sciences",
+   "credits": 4,
+   "precoreqText": "MAT 1010 or MAT 2015 or STAT 1040 or STAT 1045 , or a placement score into MATH 1050 or higher.",
+   "precoreqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 2015",
+     "STAT 1040",
+     "STAT 1045",
+     "MATH 1050"
+    ]
+   }
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EXSC 2500": {
+   "title": "Sports Medicine",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE and REC Majors: ZOOL 1090 .",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "ZOOL 1090"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L), EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE Majors: PETE 2700 with a C- or higher and ( MATH 1050 or MATH 1055 ). REC Majors: REC 2200 .",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "PETE 2700",
+     "REC 2200"
+    ]
+   }
+  },
+  "EXSC 2700G": {
+   "title": "Foundations of Exercise Science",
+   "credits": 3,
+   "prereqText": "ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L) all with a C- or higher, and ( MATH 1050 or MATH 1055 )",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "ZOOL 2420",
+     "ZOOL 2425",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "coreqText": "ZOOL 2320",
+   "coreqs": [
+    "ZOOL 2320"
+   ]
+  },
+  "ZOOL 2420": {
+   "title": "Human Physiology",
+   "credits": 3,
+   "prereqText": "BIOL 1610 with a minimum grade of C- and CHEM 1110 or CHEM 1210 with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "coreqText": "ZOOL 2425",
+   "coreqs": [
+    "ZOOL 2425"
+   ]
+  },
+  "ZOOL 2425": {
+   "title": "Human Physiology Laboratory",
+   "credits": 1,
+   "prereqText": "BIOL 1610 and CHEM 1110",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "CHEM 1110"
+    ]
+   },
+   "coreqText": "ZOOL 2420",
+   "coreqs": [
+    "ZOOL 2420"
+   ]
+  }
+ }
+}

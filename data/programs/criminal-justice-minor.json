@@ -1,0 +1,124 @@
+{
+ "id": "criminal-justice-minor",
+ "name": "Criminal Justice, Minor",
+ "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/criminal-justice-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 1340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 1330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 2350",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.)",
+   "credits": 12,
+   "text": "Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.)"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CJ 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CJ 1340",
+     "credits": 3
+    },
+    {
+     "code": "CJ 1330",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CJ 2350",
+     "credits": 3
+    },
+    {
+     "label": "CJ Elective (Any CJ or NSS upper-division elective)",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Two CJ Electives (any CJ or NSS upper-division elective)",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "CJ Elective (Any CJ or NSS upper-division elective)",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 1010": {
+   "title": "Introduction to Criminal Justice",
+   "credits": 3
+  },
+  "CJ 1330": {
+   "title": "Criminal Law",
+   "credits": 3,
+   "prereqText": "CJ 1010",
+   "prereqs": "CJ 1010"
+  },
+  "CJ 1340": {
+   "title": "Criminal Investigations",
+   "credits": 3,
+   "prereqText": "CJ 1010 ; CJ 1390 is also strongly recommended as a pre- or co-requisite for Criminal Justice majors",
+   "prereqs": null
+  },
+  "CJ 2350": {
+   "title": "Laws of Evidence",
+   "credits": 3,
+   "prereqText": "CJ 1330",
+   "prereqs": "CJ 1330"
+  }
+ }
+}

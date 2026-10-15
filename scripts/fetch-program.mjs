@@ -24,6 +24,12 @@ export const codesIn = (html) => [...text(html).matchAll(CODE_RE)].map((m) => `$
 const NUM = { one: 1, two: 2, three: 3, four: 4, five: 5, six: 6, seven: 7, eight: 8, nine: 9, ten: 10, twelve: 12, fifteen: 15 };
 const num = (w) => (/^\d+$/.test(w) ? +w : NUM[w.toLowerCase()] ?? null);
 
+// Tab container id by its visible tab label ("Requirements", "Graduation Plan"). Some pages use other ids
+// (e.g. Dance BS: Requirements = newitemtextcontainer, Graduation Plan = requirementstextcontainer).
+export function tabId(html, label, fallback) {
+  for (const m of html.matchAll(/aria-controls="([a-z]+textcontainer)"[^>]*>([^<]*)</g)) if (text(m[2]).toLowerCase() === label.toLowerCase()) return m[1];
+  return fallback;
+}
 function container(html, id) {
   const i = html.indexOf(`id="${id}"`);
   if (i < 0) return '';
@@ -48,80 +54,160 @@ const hoursOf = (row) => {
 };
 
 // ---------- program requirements ----------
-export function parseRequirements(html) {
-  const box = container(html, 'requirementstextcontainer');
+// One sc_courselist table -> { total, items }.
+export function parseTable(tbl) {
   const items = [];
-  let total = null, area = '', group = null, pendingLabel = null;
-  for (const tbl of box.match(/<table class="sc_courselist"[\s\S]*?<\/table>/g) || []) {
-    for (const r of rows(tbl)) {
-      if (/listsum/.test(r.cls)) { total = total ?? hoursOf(r); continue; }
-      const comment = r.html.match(/<span class="courselistcomment[^"]*">([\s\S]*?)<\/span>/);
-      if (/areaheader/.test(r.cls)) { area = text(comment ? comment[1] : r.html); group = null; pendingLabel = null; continue; }
-      if (/orclass/.test(r.cls)) {
-        const alt = codesIn(r.cells[0]?.html || '');
-        const target = group && group.options.length ? group.options[group.options.length - 1] : items[items.length - 1];
-        if (target) {
-          if (target.type === 'course') target.alts.push(...alt);
-          else if (Array.isArray(target)) target.alts = [...(target.alts || []), ...alt];
-        }
+  let total = null, areaSum = null, area = '', group = null, pendingLabel = null, section = null;
+  const flushPending = () => {
+    if (!pendingLabel) return;
+    items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits, ...(pendingLabel.notes ? { notes: pendingLabel.notes } : {}) });
+    pendingLabel = null;
+  };
+  for (const r of rows(tbl)) {
+    if (/listsum/.test(r.cls)) { total = total ?? hoursOf(r); continue; }
+    // free-text rows: usually a courselistcomment span, sometimes plain text in the first cell
+    // ("Humanities Distribution | Choose from Distribution List | 3")
+    // A real course row links its code(s) in the first cell (class "bubblelink code").
+    // Comment text may itself link codes ("please note: ART 1110 is required ..."), so a comment span wins.
+    const c0 = r.cells[0]?.html || '';
+    const courseRow = /<a [^>]*class="[^"]*\bcode\b/.test(c0) && !/class="courselistcomment/.test(c0);
+    const comment = r.html.match(/<span class="courselistcomment[^"]*">([\s\S]*?)<\/span>/) ||
+      (!courseRow && r.cells.length && text(r.cells[0].html) ? [null, r.cells[0].html] : null);
+    if (/areaheader/.test(r.cls)) {
+      const ac = text(r.html).match(/(\d+)(?:\s*-\s*\d+)? Credits?\s*$/i);
+      if (ac) areaSum = (areaSum ?? 0) + +ac[1];
+      flushPending(); area = text(comment ? comment[1] : r.html).replace(/\s*\d+(?:-\d+)? Credits?$/i, ''); group = null; continue; }
+    if (/orclass/.test(r.cls)) {
+      const alt = codesIn(r.cells[0]?.html || '');
+      const target = group && group.options.length ? group.options[group.options.length - 1] : items[items.length - 1];
+      if (target) {
+        if (target.type === 'course') target.alts.push(...alt);
+        else if (Array.isArray(target)) target.alts = [...(target.alts || []), ...alt];
+      }
+      continue;
+    }
+    const codeCell = r.cells[0]?.html || '';
+    const indented = /blockindent/.test(codeCell);
+    // comment rows (free text; may mention course codes, e.g. "Any CS 3000+ course") vs. real course rows (codecol)
+    if (comment && !courseRow) {
+      const label = text(comment[1]);
+      const hrs = hoursOf(r);
+      // Inside a list, rows without credits are sub-headings ("CS Track", "Geography") or notes
+      // ("Any other course approved by ..."). They never end the list; a non-indented course row does.
+      if (group && (indented || !hrs)) {
+        if (!indented) section = label; else (group.notes ||= []).push(section ? `${section}: ${label}` : label);
         continue;
       }
-      if (comment && !codesIn(r.cells[0]?.html || '').length) {
-        const label = text(comment[1]);
-        const hrs = hoursOf(r);
-        let m;
-        if ((m = label.match(/complete (?:any )?(\w+) of the following/i))) {
-          group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { count: num(m[1]) ?? 1 }, credits: pendingLabel?.credits ?? hrs, options: [], text: label };
-          items.push(group); pendingLabel = null; continue;
-        }
-        if ((m = label.match(/complete (?:a minimum of |at least )?(\w+) (?:credits?|credit hours?|hours?) (?:from|of) the following/i))) {
-          const c = num(m[1]) ?? hrs;
-          group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { credits: c }, credits: c, options: [], text: label };
-          items.push(group); pendingLabel = null; continue;
-        }
-        group = null;
-        if (pendingLabel) { items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits }); pendingLabel = null; }
-        if (/:$/.test(label)) {
-          if (hrs) pendingLabel = { label: label.replace(/:$/, ''), credits: hrs };
-          continue; // sub-header like "Distribution Courses:"
-        }
-        if (hrs) {
-          const short = /^complete any/i.test(label) ? 'Elective' : label;
-          items.push({ type: 'placeholder', area, label: short, credits: hrs, ...(short !== label ? { text: label } : {}) });
-        }
-        continue;
+      // "Elective Requirements: | 47" followed by indented notes ("15 credits any course 3000 or higher")
+      if (pendingLabel && indented && !hrs) { (pendingLabel.notes ||= []).push(label); continue; }
+      if (!hrs && !/^(?:complete|choose|select|take)\b/i.test(label)) continue; // stray note / sub-heading
+      section = null;
+      let m;
+      if ((m = label.match(/(?:complete|choose|select|take) (?:any )?(\w+) (?:\(\d+\) )?(?:courses? |classes? )?(?:of|from) the following/i)) && num(m[1])) {
+        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { count: num(m[1]) }, credits: pendingLabel?.credits ?? hrs, options: [], text: label };
+        items.push(group); pendingLabel = null; continue;
       }
-      const codeCell = r.cells[0]?.html || '';
-      const codes = codesIn(codeCell);
-      if (!codes.length) continue;
-      if (pendingLabel) { items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits }); pendingLabel = null; }
-      const indented = /blockindent/.test(codeCell);
-      const titleCell = r.cells[1]?.html || '';
-      const inParen = text(titleCell).match(/\((\d+(?:\.\d+)?)(?:\s*-\s*(\d+))?\)\s*$/);
-      const hrs = hoursOf(r) ?? (inParen ? +inParen[1] : null);
-      if (group && indented) {
-        const opt = codes.slice(); // "A & B" => both needed
-        opt.credits = hrs;
-        group.options.push(opt);
-        continue;
+      if ((m = label.match(/(?:complete|choose|select|take) (?:a minimum of |at least |a total of )?(\w+) (?:\(\d+\) )?(?:credits?|credit hours?|hours?|semester credits?)\b/i)) && num(m[1])) {
+        const c = num(m[1]) ?? hrs;
+        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { credits: c }, credits: hrs ?? c, options: [], text: label, soft: true };
+        items.push(group); pendingLabel = null; continue;
       }
       group = null;
-      if (codes.length > 1 && /&amp;|&/.test(codeCell)) {
-        for (const c of codes) items.push({ type: 'course', area, code: c, alts: [], credits: null });
-        continue;
+      flushPending();
+      if (/:$/.test(label)) {
+        if (hrs) pendingLabel = { label: label.replace(/:$/, ''), credits: hrs };
+        continue; // sub-header like "Distribution Courses:"
       }
-      items.push({ type: 'course', area, code: codes[0], alts: [], credits: hrs });
+      if (hrs) {
+        // a labelled credit row; if indented courses follow it becomes a choice list, else it stays a placeholder
+        const short = /^complete any/i.test(label) ? 'Elective' : label;
+        group = { type: 'choice', area, label: short, pick: { credits: hrs }, credits: hrs, options: [], ...(short !== label ? { text: label } : {}), soft: true };
+        items.push(group);
+      }
+      continue;
     }
+    const codes = codesIn(codeCell);
+    if (!codes.length) continue;
+    const titleCell = r.cells[1]?.html || '';
+    const inParen = text(titleCell).match(/\((\d+(?:\.\d+)?)(?:\s*-\s*(\d+))?(?:,[\d,\s]*)?\)(?:\s*\([^)]*\))*\s*$/);
+    const hrs = hoursOf(r) ?? (inParen ? +inParen[1] : null);
+    if (indented && !group && pendingLabel) {
+      group = { type: 'choice', area, label: pendingLabel.label, pick: { credits: pendingLabel.credits }, credits: pendingLabel.credits, options: [], soft: true };
+      items.push(group); pendingLabel = null;
+    }
+    if (group && indented) {
+      const opt = codes.slice(); // "A & B" => both needed
+      opt.credits = hrs;
+      if (section) opt.section = section; // track / sub-list name inside one choice ("CS Track")
+      group.options.push(opt);
+      continue;
+    }
+    flushPending();
+    group = null; section = null;
+    if (codes.length > 1 && /&amp;|&/.test(codeCell)) {
+      for (const c of codes) items.push({ type: 'course', area, code: c, alts: [], credits: null });
+      continue;
+    }
+    items.push({ type: 'course', area, code: codes[0], alts: [], credits: hrs });
   }
-  if (pendingLabel) items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits });
-  // arrays with extra props don't survive JSON; normalise options to objects
-  for (const it of items) if (it.type === 'choice') it.options = it.options.map((o) => ({ codes: [...o], credits: o.credits ?? null, ...(o.alts ? { alts: o.alts } : {}) }));
-  return { total, items };
+  flushPending();
+  const out = [];
+  for (const it of items) {
+    if (it.type !== 'choice') { out.push(it); continue; }
+    // arrays with extra props don't survive JSON; normalise options to objects
+    it.options = it.options.map((o) => ({ codes: [...o], credits: o.credits ?? null, ...(o.alts ? { alts: o.alts } : {}), ...(o.section ? { section: o.section } : {}) }));
+    delete it.soft;
+    // "Choose one of the following Emphasis Tracks:" + sub-headings per track: the student picks a whole
+    // track, not one course. The planner understands credit picks, so pick the group's credits from the
+    // options and mark it; `section` on each option names its track.
+    const sections = new Set(it.options.map((o) => o.section).filter(Boolean));
+    if (/\btracks?\b|\bemphas[ie]s\b|\boptions?\b/i.test(it.label + ' ' + (it.text || '')) && sections.size >= 2) {
+      it.tracks = [...sections];
+      if (it.pick.count && it.credits) it.pick = { credits: it.credits, tracks: it.pick.count };
+    }
+    if (!it.options.length) {
+      // "Complete one of the following:" with no credits, followed by a plain row "CS 1400 or STAT 2040":
+      // the or-row already holds the choice, so the empty header is dropped.
+      if (it.credits == null) continue;
+      // "Complete 9 credits from any ART/ARTH courses" with no list: a free-choice slot
+      const { type, pick, options, ...rest } = it;
+      out.push({ type: 'placeholder', ...rest });
+    } else out.push(it);
+  }
+  // no "Total Credit Hours" row: fall back to the area headers ("Political Science Requirements | 120 Credits")
+  return { total: total ?? areaSum, ...(total == null && areaSum != null ? { totalFrom: 'area headers' } : {}), items: out };
+}
+
+// Requirements tab -> { total, items, tables, merged, extra }. Emphasis pages put the shared core in a
+// second table ("Complete the requirements | 30" in the first); that row is replaced by the second table.
+export function parseRequirements(html) {
+  const box = container(html, tabId(html, 'Requirements', 'requirementstextcontainer'));
+  const tables = [];
+  const re = /<table class="sc_courselist"[\s\S]*?<\/table>/g;
+  let m, last = 0;
+  while ((m = re.exec(box))) {
+    const hs = [...box.slice(last, m.index).matchAll(/<h[2-6][^>]*>([\s\S]*?)<\/h[2-6]>/g)];
+    tables.push({ heading: hs.length ? text(hs[hs.length - 1][1]) : '', ...parseTable(m[0]) });
+    last = re.lastIndex;
+  }
+  if (!tables.length) return { total: null, items: [], tables: 0 };
+  const [main, ...subs] = tables;
+  const items = main.items.slice();
+  let total = main.total;
+  const extra = [];
+  for (const sub of subs) {
+    const at = items.findIndex((it) => it.type === 'placeholder' && it.credits === sub.total &&
+      /requir|\bcore\b/i.test(it.label + ' ' + (it.text || ''))); // "Complete the requirements", "Complete core requirements", "requirments"
+    const subItems = sub.items.map((it) => ({ ...it, area: sub.heading && !it.area.includes(sub.heading) ? `${sub.heading}: ${it.area}`.replace(/: $/, '') : it.area }));
+    if (at >= 0) items.splice(at, 1, ...subItems);
+    else extra.push({ heading: sub.heading, total: sub.total, items: subItems });
+  }
+  return { total, ...(main.totalFrom ? { totalFrom: main.totalFrom } : {}), items, tables: tables.length, ...(extra.length ? { extra } : {}) };
 }
 
 // ---------- UVU sample graduation plan ----------
 export function parseGradPlan(html) {
-  const box = container(html, 'graduationplantextcontainer');
+  const box = container(html, tabId(html, 'Graduation Plan', 'graduationplantextcontainer'));
   const tbl = (box.match(/<table[^>]*class="sc_plangrid"[\s\S]*?<\/table>/) || [''])[0];
   const terms = [];
   let cur = null;
@@ -257,7 +343,7 @@ export function nameChoices(items, gradPlan) {
 
 // ---------- fetching ----------
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
-async function get(url, cacheDir, key, delay) {
+export async function get(url, cacheDir, key, delay) {
   if (cacheDir) {
     try { return await readFile(join(cacheDir, key), 'utf8'); } catch {}
   }
@@ -275,26 +361,46 @@ async function get(url, cacheDir, key, delay) {
   throw last;
 }
 
-export async function fetchProgram(url, id, { cacheDir = null, delay = 400 } = {}) {
-  const html = await get(url, cacheDir, `program-${id}.html`, delay);
-  const name = text((html.match(/<h1[^>]*class="page-title"[^>]*>([\s\S]*?)<\/h1>/) || html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [, id])[1]);
-  const req = parseRequirements(html);
-  const gradPlan = parseGradPlan(html);
+// One course from the catalog's course API. `base` is the catalog root for a catalog year
+// (archives live at /archives/<year>/ and have their own course API with that year's text).
+// `store` (optional) is a shared { code: course|null } map so each course is fetched once.
+export async function fetchCourse(code, { base = CATALOG, cacheDir = null, delay = 400, store = null } = {}) {
+  if (store && code in store) return store[code];
+  const xml = await get(`${base}/ribbit/?page=getcourse.rjs&code=${encodeURIComponent(code)}`, cacheDir, `course-${code.replace(/\s/g, '_')}.xml`, delay);
+  const c = parseCourseXml(xml);
+  if (store) store[code] = c;
+  return c;
+}
+
+// Every course code a parsed program mentions (requirements + sample plan).
+export function programCodes(items, gradPlan) {
   const codes = new Set();
-  for (const it of req.items) {
+  for (const it of items) {
     if (it.type === 'course') { codes.add(it.code); it.alts.forEach((c) => codes.add(c)); }
     if (it.type === 'choice') it.options.forEach((o) => { o.codes.forEach((c) => codes.add(c)); (o.alts || []).forEach((c) => codes.add(c)); });
   }
   for (const t of gradPlan) for (const x of t.items) if (x.code) { codes.add(x.code); (x.alts || []).forEach((c) => codes.add(c)); }
+  return codes;
+}
+
+export function programName(html, fallback = '') {
+  return text((html.match(/<h1[^>]*class="page-title"[^>]*>([\s\S]*?)<\/h1>/) || html.match(/<h1[^>]*>([\s\S]*?)<\/h1>/) || [, fallback])[1]);
+}
+
+export async function fetchProgram(url, id, { cacheDir = null, delay = 400, base = CATALOG, store = null, html = null } = {}) {
+  html = html ?? await get(url, cacheDir, `program-${id}.html`, delay);
+  const name = programName(html, id);
+  const req = parseRequirements(html);
+  const gradPlan = parseGradPlan(html);
+  const codes = programCodes(req.items, gradPlan);
   const courses = {};
   const missing = [];
   for (const code of [...codes].sort()) {
-    const xml = await get(`${CATALOG}/ribbit/?page=getcourse.rjs&code=${encodeURIComponent(code)}`, cacheDir, `course-${code.replace(/\s/g, '_')}.xml`, delay);
-    const c = parseCourseXml(xml);
+    const fresh = !(store && code in store);
+    const c = await fetchCourse(code, { base, cacheDir, delay, store });
     if (c) courses[code] = c; else missing.push(code);
-    process.stderr.write('.');
+    if (fresh) process.stderr.write('.');
   }
-  process.stderr.write('\n');
   // program-table credits win over catalog credits for required courses
   for (const it of req.items) if (it.type === 'course' && it.credits == null && courses[it.code]) it.credits = courses[it.code].credits;
   nameChoices(req.items, gradPlan);

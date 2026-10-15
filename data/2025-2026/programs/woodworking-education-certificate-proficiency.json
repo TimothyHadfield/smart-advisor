@@ -1,0 +1,113 @@
+{
+ "id": "woodworking-education-certificate-proficiency",
+ "name": "Woodworking Education, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/woodworking-education-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 17,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1400R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1170",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 2250",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CAW 1150",
+     "credits": 3
+    },
+    {
+     "code": "CAW 1170",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CAW 2250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CAW 1130",
+     "credits": 3
+    },
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CAW 1130": {
+   "title": "Residential Cabinetry",
+   "credits": 3
+  },
+  "CAW 1150": {
+   "title": "Design Drafting and Billing",
+   "credits": 3
+  },
+  "CAW 1170": {
+   "title": "Finish Technology",
+   "credits": 2
+  },
+  "CAW 1400R": {
+   "title": "Millwork Technology",
+   "credits": 3
+  },
+  "CAW 2250": {
+   "title": "Computer Aided Manufacturing for Woodworking",
+   "credits": 3
+  }
+ }
+}

@@ -1,0 +1,129 @@
+{
+ "id": "biology-minor",
+ "name": "Biology, Minor",
+ "url": "https://catalog.uvu.edu/science/biology/biology-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1615",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1625",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 12 upper-division credits from any BIOL, BOT, MICR, or ZOOL courses with a grade of C- or higher in each.",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "BIOL 1620",
+     "credits": 3
+    },
+    {
+     "code": "BIOL 1625",
+     "credits": 1
+    },
+    {
+     "label": "Upper Division Electives",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Upper Division Electives",
+     "credits": 8
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGL 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1610",
+   "precoreqs": "BIOL 1610"
+  },
+  "BIOL 1620": {
+   "title": "College Biology II",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and BIOL 1615 with a C- or higher in each.",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "BIOL 1615"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "BIOL 1625",
+   "coreqs": [
+    "BIOL 1625"
+   ]
+  },
+  "BIOL 1625": {
+   "title": "College Biology II Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1620",
+   "coreqs": [
+    "BIOL 1620"
+   ]
+  }
+ }
+}

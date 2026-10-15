@@ -1,0 +1,131 @@
+{
+ "id": "accounting-certificate-of-proficiency",
+ "name": "Accounting, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/accounting/accounting-certificate-of-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2125",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2125",
+     "credits": 1
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 2120",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2250",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2500",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ACC 2120": {
+   "title": "Principles of Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110"
+  },
+  "ACC 2125": {
+   "title": "Introduction to the Accounting Profession",
+   "credits": 1
+  },
+  "ACC 2250": {
+   "title": "Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110",
+   "precoreqText": "ACC 2120",
+   "precoreqs": "ACC 2120"
+  },
+  "ACC 2500": {
+   "title": "Data Analytics in Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110 and MGMT 2400",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "MGMT 2400"
+    ]
+   },
+   "precoreqText": "ACC 2120",
+   "precoreqs": "ACC 2120"
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  }
+ }
+}

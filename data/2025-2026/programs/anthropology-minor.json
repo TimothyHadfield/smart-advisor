@@ -1,0 +1,106 @@
+{
+ "id": "anthropology-minor",
+ "name": "Anthropology, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/anthropology-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Complete the following courses:",
+   "code": "ANTH 1010G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Complete the following courses:",
+   "code": "ANTH 2880",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Complete the following courses:",
+   "label": "Any anthropology course numbered 3000 or higher",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ANTH 1010G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ANTH 2880",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 1010G": {
+   "title": "Social Cultural Anthropology",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 with a grade of C+ or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "ANTH 2880": {
+   "title": "Introduction to Anthropological Analysis",
+   "credits": 3,
+   "prereqText": "ENGL 2010",
+   "prereqs": "ENGL 2010"
+  }
+ },
+ "totalFrom": "area headers"
+}

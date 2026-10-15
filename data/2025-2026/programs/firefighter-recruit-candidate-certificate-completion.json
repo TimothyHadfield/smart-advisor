@@ -1,0 +1,107 @@
+{
+ "id": "firefighter-recruit-candidate-certificate-completion",
+ "name": "Firefighter Recruit Candidate Academy, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/emergency-services/firefighter-recruit-candidate-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 32,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESFF 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESFF 2500A",
+   "alts": [],
+   "credits": 8
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESFF 2500B",
+   "alts": [],
+   "credits": 8
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 1140",
+   "alts": [],
+   "credits": 9
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESFF 1000",
+   "alts": [],
+   "credits": 4
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ESEC 1140",
+     "credits": 9
+    },
+    {
+     "code": "ESFF 1000",
+     "credits": 4
+    },
+    {
+     "code": "ESFF 1120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ESFF 2500A",
+     "credits": 8
+    },
+    {
+     "code": "ESFF 2500B",
+     "credits": 8
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ESEC 1140": {
+   "title": "Emergency Medical Technician Basic",
+   "credits": 9
+  },
+  "ESFF 1000": {
+   "title": "Introduction to Emergency Services",
+   "credits": 4
+  },
+  "ESFF 1120": {
+   "title": "Principles of Fire and Emergency Services Safety and Survival",
+   "credits": 3
+  },
+  "ESFF 2500A": {
+   "title": "Firefighter Recruit Candidate Academy I",
+   "credits": 8,
+   "prereqText": "Matriculated into the Recruit Candidate Academy or Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESFF 2500B": {
+   "title": "Firefighter Recruit Candidate Academy II",
+   "credits": 8,
+   "prereqText": "Matriculated into the Recruit Candidate Academy or Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESFF 2500A",
+   "precoreqs": "ESFF 2500A"
+  }
+ }
+}

@@ -1,0 +1,606 @@
+{
+ "id": "information-systems-technology-aas",
+ "name": "Information Systems and Technology, A.A.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/information-systems-technology-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Any 3-credit general education course",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Any higher Mathematics Course"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any 3-credit general education course..",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "STAT 2050",
+   "alts": [
+    "MGMT 2340"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1200",
+   "alts": [
+    "CS 1400"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 2600",
+   "alts": [
+    "CS 2600"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 2700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 18 credits from either the Information Systems group or the Information Technology group. See department advisor to select classes if plan to obtain BS in IT degree in the future.",
+   "pick": {
+    "credits": 18
+   },
+   "credits": 18,
+   "options": [
+    {
+     "codes": [
+      "IM 2600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 2200G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 1510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 1600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Choose 18 credits from either the Information Systems group or the Information Technology group. See department advisor to select classes if plan to obtain BS in IT degree in the future.",
+   "notes": [
+    "INFORMATION SYSTEMS:",
+    "Any 3-credit 1000 or 2000 level course from ACC, ECON, FIN, MGMT, HR, MKTG",
+    "INFORMATION TECHNOLOGY:",
+    "IT students need to take 6 credits of 1000 or 2000 level IT courses, CJ 1330 , or CJ 2350 . It is recommended that students take 6 credits in the domain as electives if plan to complete BS in IT degree."
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "credits": 9,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "label": "Any 3-credit general education course",
+     "credits": 3
+    },
+    {
+     "label": "Math Requirement. Complete one:",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1090",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "INFO 1120",
+     "credits": 3
+    },
+    {
+     "code": "INFO 2410",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Free Elective",
+     "credits": 3
+    },
+    {
+     "code": "INFO 1200",
+     "alts": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "IT 2600",
+     "alts": [
+      "CS 2600"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CYBR 2700",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "alts": [
+      "ENGL 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "INFO 2200",
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Free Elective",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2340",
+     "alts": [
+      "STAT 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    },
+    {
+     "label": "IS/IT Group Elective",
+     "credits": 3
+    },
+    {
+     "label": "Free Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 2800": {
+   "title": "Computer Forensic Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or IT 1600 or CS 1400 or CJ 1010",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "IT 1600",
+     "CS 1400",
+     "CJ 1010"
+    ]
+   }
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 2100": {
+   "title": "Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3
+  },
+  "INFO 1120": {
+   "title": "Information Systems and Technology Fundamentals",
+   "credits": 3,
+   "prereqText": "IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2200": {
+   "title": "Computer Programming II for IS IT",
+   "credits": 3,
+   "prereqText": "( INFO 1200 or CS 1400 with a grade of C- or better within the past seven years) or Departmental Approval",
+   "prereqs": {
+    "or": [
+     "INFO 1200",
+     "CS 1400"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 1050 or higher",
+   "precoreqs": "MATH 1050"
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 2500": {
+   "title": "Applied Artificial Intelligence Concepts in Organizations",
+   "credits": 3
+  },
+  "IT 1200": {
+   "title": "Scripting for Administrators",
+   "credits": 3,
+   "prereqText": "MAT 1010 or higher; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 1600": {
+   "title": "Computer Architecture and Systems Software",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 2400": {
+   "title": "Voice and Data Cabling Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or INFO 1200 or CS 1030 or CS 1400",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "INFO 1200",
+     "CS 1030",
+     "CS 1400"
+    ]
+   }
+  },
+  "IT 2530": {
+   "title": "",
+   "credits": 3,
+   "prereqText": "IT 1600",
+   "prereqs": "IT 1600"
+  },
+  "IT 2600": {
+   "title": "Data Communication Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IT 1600 recommended or CS 1400 recommended",
+   "prereqs": null
+  },
+  "IT 2900R": {
+   "title": "Current Topics in Information Technology",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "STAT 2050": {
+   "title": "Introduction to Statistical Methods",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

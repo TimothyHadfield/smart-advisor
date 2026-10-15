@@ -1,0 +1,287 @@
+{
+ "id": "health-communication-minor",
+ "name": "Health Communication, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/public-health/health-communication-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Core Courses",
+   "code": "COMM 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Core Courses",
+   "code": "HLTH 2510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Core Courses",
+   "code": "HLTH 3260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Core Courses",
+   "code": "HLTH 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Choose two of the following courses. At least one must be upper-division.",
+   "pick": {
+    "count": 2
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "HLTH 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2115"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3500G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 4400G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 2840"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 4115"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 4180"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3570"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose two of the following courses. At least one must be upper-division."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "COMM 1050",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HLTH 2510",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "HLTH 3260",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "HLTH 3600",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "COMM 1050": {
+   "title": "Introduction to Communication",
+   "credits": 3
+  },
+  "COMM 2115": {
+   "title": "Introduction to Health Communication",
+   "credits": 3
+  },
+  "COMM 3570": {
+   "title": "Crisis Communication",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 4115": {
+   "title": "Advanced Health Communication",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 4180": {
+   "title": "Communication and Social Behavior",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 2050": {
+   "title": "Public Mental Health",
+   "credits": 3
+  },
+  "HLTH 2510": {
+   "title": "New Media in Public Health",
+   "credits": 3
+  },
+  "HLTH 2840": {
+   "title": "Womens Health Issues",
+   "credits": 3,
+   "prereqText": "HLTH 1100 or EXSC 1097",
+   "prereqs": {
+    "or": [
+     "HLTH 1100",
+     "EXSC 1097"
+    ]
+   }
+  },
+  "HLTH 3000": {
+   "title": "Health Concepts of Death and Dying",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3200": {
+   "title": "Principles of Community Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3260": {
+   "title": "Health Behavior Theory and Practice",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3300": {
+   "title": "Health Promotion for Older Adults",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3450": {
+   "title": "Public Health and the Environment",
+   "credits": 3,
+   "prereqText": "HLTH 3200 , University Advanced Standing",
+   "prereqs": "HLTH 3200",
+   "prereqNonCourse": true
+  },
+  "HLTH 3500G": {
+   "title": "International Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3600": {
+   "title": "Social Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3800": {
+   "title": "Epidemiology",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4400G": {
+   "title": "Health and Diversity",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

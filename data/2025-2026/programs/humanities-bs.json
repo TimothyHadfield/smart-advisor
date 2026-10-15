@@ -1,0 +1,869 @@
+{
+ "id": "humanities-bs",
+ "name": "Humanities, B.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/humanities-bs/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, & Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 1010",
+   "alts": [
+    "HUM 1010G",
+    "HUM 1010H"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 2010",
+   "alts": [
+    "HUM 2010G",
+    "HUM 2010H"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 2020",
+   "alts": [
+    "HUM 2020G",
+    "HUM 2020H"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 4000R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 4810R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 4910",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 4920",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HUM 2100"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2100H"
+     ]
+    },
+    {
+     "codes": [
+      "HUM 2200"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2200H"
+     ]
+    }
+   ],
+   "text": "Complete 3 credits of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 9 credits",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "HUM 3200R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3250R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3300R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3800"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Complete two of the following:",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "HUM 4010R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 4140R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any course 1000 or higher. No more than 6 total credit hours from HUM 2810R and HUM 4810R. 16 credits must be upper-division. Students advised to meet with advisor to discuss career-oriented pathways.",
+   "credits": 49
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "credits": null
+    },
+    {
+     "code": "MAT 1035",
+     "credits": null
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 1045",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "MATH 1090",
+     "credits": null
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 1010",
+     "credits": null
+    },
+    {
+     "code": "HUM 1010G",
+     "credits": null
+    },
+    {
+     "code": "HUM 1010H",
+     "credits": null
+    },
+    {
+     "label": "Lower Elective",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 2010",
+     "credits": null
+    },
+    {
+     "code": "HUM 2010G",
+     "credits": null
+    },
+    {
+     "code": "HUM 2010H",
+     "credits": null
+    },
+    {
+     "label": "Lower Elective",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 2020",
+     "credits": null
+    },
+    {
+     "code": "HUM 2020G",
+     "credits": null
+    },
+    {
+     "code": "HUM 2020H",
+     "credits": null
+    },
+    {
+     "label": "Lower Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3
+    },
+    {
+     "code": "HUM 2200",
+     "credits": 3
+    },
+    {
+     "label": "Lower Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Complete two of the following:",
+     "credits": 6
+    },
+    {
+     "code": "HUM 3200R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3250R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3300R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3800",
+     "credits": null
+    },
+    {
+     "label": "Lower Elective",
+     "credits": 9
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "HUM 3500",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 3200R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3250R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3300R",
+     "credits": null
+    },
+    {
+     "code": "HUM 3800",
+     "credits": null
+    },
+    {
+     "label": "Upper Elective",
+     "credits": 9
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "HUM 4010R",
+     "credits": 3
+    },
+    {
+     "code": "HUM 4810R",
+     "credits": 2
+    },
+    {
+     "code": "HUM 4000R",
+     "credits": 3
+    },
+    {
+     "code": "HUM 4910",
+     "credits": 3
+    },
+    {
+     "label": "Upper Elective",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "HUM 4140R",
+     "credits": 3
+    },
+    {
+     "code": "HUM 4920",
+     "credits": 3
+    },
+    {
+     "label": "Upper Elective",
+     "credits": 9
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "HUM 1010": {
+   "title": "Humanities Through the Arts",
+   "credits": 3
+  },
+  "HUM 1010G": {
+   "title": "Humanities Through the Arts",
+   "credits": 3
+  },
+  "HUM 1010H": {
+   "title": "Humanities Through the Arts",
+   "credits": 3
+  },
+  "HUM 2010": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2010G": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2010H": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2020": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2020G": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2020H": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2100": {
+   "title": "Adventures of Ideas Through 1500",
+   "credits": 3
+  },
+  "HUM 2100H": {
+   "title": "Adventures of Ideas Through 1500",
+   "credits": 3,
+   "prereqText": "Enrollment in the UVU Honors program or approval by the instructor.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 2200": {
+   "title": "Adventures of Ideas After 1500",
+   "credits": 3
+  },
+  "HUM 2200H": {
+   "title": "Adventures of Ideas After 1500",
+   "credits": 3,
+   "prereqText": "Enrollment in the Honors Program or instructor's approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 3200R": {
+   "title": "Topics in Humanities",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3250R": {
+   "title": "Topics in Area Studies",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3300R": {
+   "title": "Topics in Period Studies",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3500": {
+   "title": "Approaches to Humanities",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 3800": {
+   "title": "Aesthetics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 4000R": {
+   "title": "Humanism and Posthumanism",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENG 2010",
+   "precoreqs": "ENG 2010"
+  },
+  "HUM 4010R": {
+   "title": "Forms and Genres Across the Arts",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  },
+  "HUM 4140R": {
+   "title": "Advanced Topics in Humanities",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  },
+  "HUM 4810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "Departmental chair approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 4910": {
+   "title": "Humanities Capstone I",
+   "credits": 3,
+   "prereqText": "Senior Standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "HUM 3500",
+   "precoreqs": "HUM 3500"
+  },
+  "HUM 4920": {
+   "title": "Humanities Capstone II",
+   "credits": 3,
+   "prereqText": "HUM 4910 , Senior Standing, and University Advanced Standing",
+   "prereqs": "HUM 4910",
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

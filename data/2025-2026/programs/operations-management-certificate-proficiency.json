@@ -1,0 +1,281 @@
+{
+ "id": "operations-management-certificate-proficiency",
+ "name": "Operations Management, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/operations-management-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Complete one of following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Or Higher math course"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2240",
+   "alts": [
+    "MATH 1100"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2340",
+   "alts": [
+    "STAT 2040"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3345",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3070",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3470",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete one of following:",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "MATH 1090",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 2240",
+     "alts": [
+      "MATH 1100"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2340",
+     "alts": [
+      "STAT 2040"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 3450",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3345",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MGMT 3070",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3470",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1100": {
+   "title": "Survey of Calculus",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3070": {
+   "title": "Total Quality Management",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  },
+  "MGMT 3345": {
+   "title": "Business Statistics II",
+   "credits": 3,
+   "prereqText": "MGMT 2340 or STAT 2040 or appropriate test scores and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 2040"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Matriculation into WSB and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 3470": {
+   "title": "Lean Management Systems",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

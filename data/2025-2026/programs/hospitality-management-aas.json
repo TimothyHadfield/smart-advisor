@@ -1,0 +1,415 @@
+{
+ "id": "hospitality-management-aas",
+ "name": "Hospitality Management, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/hospitality-management-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 61,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "MATHEMATICS",
+   "pick": {
+    "count": 1
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3,
+     "alts": [
+      "MAT 1035"
+     ]
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3,
+     "alts": [
+      "STAT 1045"
+     ]
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4,
+     "alts": [
+      "MATH 1055"
+     ]
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "HUMANITIES/FINE ARTS/FOREIGN LANGUAGE",
+   "credits": 3,
+   "notes": [
+    "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "SOCIAL BEHAVIORAL SCIENCE",
+   "credits": 3,
+   "notes": [
+    "Any approved social science course"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "BIOLOGY OR PHYSICAL SCIENCE",
+   "credits": 3,
+   "notes": [
+    "Any approved Biology or Physical Science Distribution Course"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CA 1000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 1010",
+   "alts": [
+    "ECON 2010"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 1180",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 2810R",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2390",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 17 hours of Electives numbered 1000 or higher",
+   "credits": 17,
+   "text": "Complete 17 hours of Electives numbered 1000 or higher"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "MATHEMATICS",
+     "credits": 4
+    },
+    {
+     "label": "Biology/Physical Science",
+     "credits": 3
+    },
+    {
+     "code": "HM 1010",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CA 1000",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 8
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "IM 2600",
+     "credits": 3
+    },
+    {
+     "label": "Social Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "HM 1180",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2390",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HM 2810R",
+     "credits": 4
+    },
+    {
+     "code": "ECON 1010",
+     "alts": [
+      "ECON 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "General Electives",
+     "credits": 9
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "CA 1000": {
+   "title": "Culinary Basics",
+   "credits": 3
+  },
+  "ECON 1010": {
+   "title": "Economics as a Social Science",
+   "credits": 3
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HM 1010": {
+   "title": "Introduction to Hospitality Industry",
+   "credits": 3
+  },
+  "HM 1180": {
+   "title": "Food and Beverage Management",
+   "credits": 3
+  },
+  "HM 2810R": {
+   "title": "Cooperative Work Experience",
+   "credits": 2,
+   "creditsMax": 9,
+   "prereqText": "Approval of School of Business Career and Corporate Manager",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3,
+   "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

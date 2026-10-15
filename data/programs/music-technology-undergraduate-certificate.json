@@ -1,0 +1,225 @@
+{
+ "id": "music-technology-undergraduate-certificate",
+ "name": "Music Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/arts/music/music-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1100",
+   "alts": [
+    "MUSC 1110"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1400",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1402",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1410",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 1810",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2400",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2402",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3600R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3790R",
+   "alts": [],
+   "credits": 2
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MUSC 1100",
+     "alts": [
+      "MUSC 1110"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MUSC 1400",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 1410",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 1810",
+     "credits": 3
+    },
+    {
+     "code": "MUSC 2400",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 3600R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3790R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MUSC 1402",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 2210",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 2402",
+     "credits": 2
+    },
+    {
+     "code": "MUSC 3600R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3790R",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MUSC 1100": {
+   "title": "Fundamentals of Music",
+   "credits": 3
+  },
+  "MUSC 1110": {
+   "title": "Music Theory I",
+   "credits": 3,
+   "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
+   "prereqs": {
+    "or": [
+     "MUSC 1105",
+     "MUSC 1110"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "MUSC 1130",
+   "coreqs": [
+    "MUSC 1130"
+   ]
+  },
+  "MUSC 1400": {
+   "title": "Music Technology I",
+   "credits": 2
+  },
+  "MUSC 1402": {
+   "title": "Music Technology II",
+   "credits": 2,
+   "prereqText": "MUSC 1400",
+   "prereqs": "MUSC 1400"
+  },
+  "MUSC 1410": {
+   "title": "Survey of Commercial Music Careers",
+   "credits": 1
+  },
+  "MUSC 1810": {
+   "title": "Contemporary Theory and Improvisation I",
+   "credits": 3
+  },
+  "MUSC 2210": {
+   "title": "Contemporary Theory and Improvisation II",
+   "credits": 2,
+   "prereqText": "MUSC 1810",
+   "prereqs": "MUSC 1810"
+  },
+  "MUSC 2400": {
+   "title": "Music Technology III",
+   "credits": 2,
+   "prereqText": "( MUSC 1400 and MUSC 1402 ) or departmental approval",
+   "prereqs": {
+    "and": [
+     "MUSC 1400",
+     "MUSC 1402"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MUSC 2402": {
+   "title": "Music Technology IV",
+   "credits": 2,
+   "prereqText": "MUSC 2400",
+   "prereqs": "MUSC 2400"
+  },
+  "MUSC 3600R": {
+   "title": "Commercial Music Private Lessons",
+   "credits": 1,
+   "prereqText": "Admittance into Music Technology Certificate of Proficiency or MUSC 2500R and University Advanced Standing for bachelor's students",
+   "prereqs": "MUSC 2500R",
+   "prereqNonCourse": true
+  },
+  "MUSC 3790R": {
+   "title": "Studio Recording Workshop",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "MUSC 1400",
+   "precoreqs": "MUSC 1400"
+  }
+ }
+}

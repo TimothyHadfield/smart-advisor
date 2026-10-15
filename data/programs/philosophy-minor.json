@@ -1,0 +1,132 @@
+{
+ "id": "philosophy-minor",
+ "name": "Philosophy, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/philosophy-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "PHIL 2110"
+     ],
+     "credits": 3,
+     "alts": [
+      "PHIL 2150"
+     ]
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 15 additional credit hours of philosophy courses (9 credit hours must be 3000 level or above; no more than 6 credit hours may be at the 1000 level; Philosophy 2050 does not count for this requirement.)",
+   "credits": 15
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PHIL 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Philosophy Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Philosophy Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "PHIL 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "PHIL 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "PHIL 3000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "PHIL 2110": {
+   "title": "Ancient Greek Philosophy",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1010H or ENGL 1005 or PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or permission of the instructor",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005",
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 2150": {
+   "title": "Early Modern Philosophy",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or PHIL 1000 or PHIL 2050",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "PHIL 1000",
+     "PHIL 2050"
+    ]
+   }
+  },
+  "PHIL 3000": {
+   "title": "Formal Logic II",
+   "credits": 3,
+   "prereqText": "PHIL 2000 and University Advanced Standing",
+   "prereqs": "PHIL 2000",
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,293 @@
+{
+ "id": "early-care-education-certificate-completion",
+ "name": "Early Care and Education, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/education/elementary-education/early-care-education-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PSY 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 1640",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2300",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2600",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2630",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEC 2720",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDEL 2200",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Advisor Approval",
+   "credits": 2
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "PSY 1100",
+     "credits": 3
+    },
+    {
+     "code": "EDEC 2300",
+     "credits": 2
+    },
+    {
+     "code": "EDEC 2500",
+     "credits": 3
+    },
+    {
+     "code": "EDEC 2600",
+     "credits": 2
+    },
+    {
+     "code": "EDEC 2610",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDEC 1640",
+     "credits": 2
+    },
+    {
+     "code": "EDEC 2620",
+     "credits": 3
+    },
+    {
+     "code": "EDEC 2630",
+     "credits": 3
+    },
+    {
+     "code": "EDEC 2700",
+     "credits": 3
+    },
+    {
+     "code": "EDEC 2720",
+     "credits": 2
+    },
+    {
+     "code": "EDEL 2200",
+     "credits": 2
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDEC 1640": {
+   "title": "Childrens Music and Movement",
+   "credits": 2
+  },
+  "EDEC 2300": {
+   "title": "Including Young Diverse Learners",
+   "credits": 2,
+   "prereqText": "PSY 1100 ; ACT (or equivalent) composite score of 21+, or completion of ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "PSY 1100",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "EDEC 2500": {
+   "title": "Child Development Birth to Eight Years",
+   "credits": 3,
+   "prereqText": "PSY 1100 ; ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-",
+   "prereqs": {
+    "and": [
+     "PSY 1100",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "EDEC 2600": {
+   "title": "Introduction to Early Childhood Education",
+   "credits": 2,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EDEC 2610": {
+   "title": "Child Guidance",
+   "credits": 3,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EDEC 2620": {
+   "title": "Early Childhood Curriculum",
+   "credits": 3,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-, EDEC 2600 recommended",
+   "prereqs": null
+  },
+  "EDEC 2630": {
+   "title": "Literacy and Literature for Early Childhood",
+   "credits": 3,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EDEC 2700": {
+   "title": "Early Childhood Practicum",
+   "credits": 3,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-, EDEC 2600 with a B- or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005",
+     "EDEC 2600"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "EDEC 2720",
+   "coreqs": [
+    "EDEC 2720"
+   ],
+   "precoreqText": "EDEC 2610 and EDEC 2620",
+   "precoreqs": {
+    "and": [
+     "EDEC 2610",
+     "EDEC 2620"
+    ]
+   }
+  },
+  "EDEC 2720": {
+   "title": "Early Childhood Assessment",
+   "credits": 2,
+   "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-, EDEC 2600 with a B- or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005",
+     "EDEC 2600"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "EDEC 2700",
+   "coreqs": [
+    "EDEC 2700"
+   ],
+   "precoreqText": "EDEC 2610 and EDEC 2620",
+   "precoreqs": {
+    "and": [
+     "EDEC 2610",
+     "EDEC 2620"
+    ]
+   }
+  },
+  "EDEL 2200": {
+   "title": "Introduction to Educational Technology",
+   "credits": 3
+  },
+  "PSY 1100": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  }
+ }
+}

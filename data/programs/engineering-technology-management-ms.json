@@ -1,0 +1,294 @@
+{
+ "id": "engineering-technology-management-ms",
+ "name": "Engineering and Technology Management, M.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/engineering-technology-management-ms/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6430",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6950",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "TECH 6960",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "TECH 6000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6440"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6790R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 6900R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete six credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "TECH 6400",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "TECH 6430",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6450",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "TECH 6700",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "TECH 6010",
+     "credits": 3
+    },
+    {
+     "code": "TECH 6950",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "TECH 6960",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "TECH 6000": {
+   "title": "Management of Technological Innovation",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6010": {
+   "title": "Intellectual Property Fundamentals",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6400": {
+   "title": "Six Sigma Project Management",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6420": {
+   "title": "Finance for Technical Systems",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6430": {
+   "title": "Product Management Processes",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6440": {
+   "title": "Artificial Intelligence and Society",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6450": {
+   "title": "Engineering Economics and Project Evaluation",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6500": {
+   "title": "Resource Management in Engineering and Technology",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6550": {
+   "title": "People and Culture",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6700": {
+   "title": "Data Driven Decision Making",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6710": {
+   "title": "Materials Management",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6790R": {
+   "title": "Special Topics in Engineering",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6900R": {
+   "title": "Independent Study",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6950": {
+   "title": "Engineering and Technology Projects I",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 6960": {
+   "title": "Engineering and Technology Projects II",
+   "credits": 3,
+   "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

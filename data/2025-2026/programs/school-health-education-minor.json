@@ -1,0 +1,142 @@
+{
+ "id": "school-health-education-minor",
+ "name": "School Health Education, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/school-health-education-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NUTR 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 2800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 4100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 4200",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HLSC 1200",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 2600",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 2800",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HLSC 2400",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4200",
+     "credits": 3
+    },
+    {
+     "code": "NUTR 1020",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HLSC 1200": {
+   "title": "First Aid",
+   "credits": 3
+  },
+  "HLSC 2400": {
+   "title": "Mental Health and Mindful Resilience",
+   "credits": 3
+  },
+  "HLSC 2600": {
+   "title": "Drugs Behavior and Society",
+   "credits": 3
+  },
+  "HLSC 2800": {
+   "title": "Human Sexuality",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "HLSC 4100": {
+   "title": "Health Education Curriculum for Secondary Teachers",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4200": {
+   "title": "Health Education Teaching Methods",
+   "credits": 3,
+   "prereqText": "HLSC 4100 and University Advanced Standing",
+   "prereqs": "HLSC 4100",
+   "prereqNonCourse": true
+  },
+  "NUTR 1020": {
+   "title": "Foundations of Human Nutrition",
+   "credits": 3
+  }
+ }
+}

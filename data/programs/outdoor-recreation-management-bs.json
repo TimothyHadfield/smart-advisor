@@ -1,0 +1,1433 @@
+{
+ "id": "outdoor-recreation-management-bs",
+ "name": "Outdoor Recreation Management, B.S.",
+ "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/outdoor-recreation-management-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "STAT 1040",
+   "alts": [
+    "STAT 1045",
+    "MATH 1050",
+    "MATH 1055"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 3750",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EXSC 4300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1500",
+   "alts": [
+    "REC 1580"
+   ],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1527",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1535",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1542",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 1600",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 2700",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3300",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 3850G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 4200R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 4400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 4800",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 4810R",
+   "alts": [],
+   "credits": 7
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "REC 4950",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Complete one of the following:",
+   "pick": {
+    "credits": 2
+   },
+   "credits": 2,
+   "options": [
+    {
+     "codes": [
+      "REC 1500"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1505"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1525"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1528"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1550"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 1580"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "REC 2010"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 2 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "REC 2450"
+     ],
+     "credits": 3,
+     "alts": [
+      "REC 2650"
+     ]
+    },
+    {
+     "codes": [
+      "REC 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 4000"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "REC 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "REC 4900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 6 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Directed Electives",
+   "label": "Directed Elective",
+   "pick": {
+    "credits": 18
+   },
+   "credits": 18,
+   "options": [
+    {
+     "codes": [
+      "ACC 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 2250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ASTR 1070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 2040R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 2070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 3070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 1250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 1020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DGM 1110"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ENGL 3320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 3170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENVT 3630"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ENST 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 3180R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GIS 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HM 3200G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 2200G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 3200"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 18 credits from the courses below. 6 credits must be Upper Division"
+  },
+  {
+   "type": "placeholder",
+   "area": "Electives",
+   "label": "Electives",
+   "credits": 11
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "REC 2200",
+     "credits": 3
+    },
+    {
+     "code": "STAT 1040",
+     "alts": [
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "REC 1527",
+     "credits": 1
+    },
+    {
+     "code": "REC 1535",
+     "credits": 1
+    },
+    {
+     "label": "American Institutions Distribution",
+     "credits": 3
+    },
+    {
+     "code": "REC 1500",
+     "alts": [
+      "REC 1580"
+     ],
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "REC 2400",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "REC 2600",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    },
+    {
+     "code": "REC 4800",
+     "credits": 1
+    },
+    {
+     "code": "REC 3300",
+     "credits": 1
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "REC 1600",
+     "credits": 1
+    },
+    {
+     "code": "REC 3100",
+     "credits": 3
+    },
+    {
+     "code": "REC 2700",
+     "credits": 1
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 1
+    },
+    {
+     "code": "REC 1505",
+     "credits": null
+    },
+    {
+     "code": "REC 1525",
+     "credits": null
+    },
+    {
+     "code": "REC 1528",
+     "credits": null
+    },
+    {
+     "code": "REC 1550",
+     "credits": null
+    },
+    {
+     "code": "REC 2010",
+     "credits": null
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "EXSC 4300",
+     "credits": 3
+    },
+    {
+     "code": "REC 3200",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 2
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 1
+    },
+    {
+     "code": "REC 1505",
+     "credits": null
+    },
+    {
+     "code": "REC 1516",
+     "credits": null
+    },
+    {
+     "code": "REC 1525",
+     "credits": null
+    },
+    {
+     "code": "REC 1528",
+     "credits": null
+    },
+    {
+     "code": "REC 1550",
+     "credits": null
+    },
+    {
+     "code": "REC 2010",
+     "credits": null
+    },
+    {
+     "code": "REC 4400",
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "EXSC 3750",
+     "credits": 3
+    },
+    {
+     "code": "REC 3850G",
+     "credits": 3
+    },
+    {
+     "code": "REC 3400",
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "REC 4200R",
+     "credits": 2
+    },
+    {
+     "code": "REC 3500",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    },
+    {
+     "code": "REC 3700",
+     "alts": [
+      "REC 2450"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    },
+    {
+     "label": "Directed Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "REC 4810R",
+     "credits": 7
+    },
+    {
+     "code": "REC 4950",
+     "credits": 2
+    },
+    {
+     "code": "REC 1542",
+     "credits": 2
+    },
+    {
+     "code": "REC 4500",
+     "alts": [
+      "REC 4000"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "ACC 2250": {
+   "title": "QuickBooks and Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110 or (concurrent enrollment courses: ACC 1110 and ACC 1120 )",
+   "prereqs": {
+    "or": [
+     "ACC 2110",
+     {
+      "and": [
+       "ACC 1110",
+       "ACC 1120"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ASTR 1070": {
+   "title": "Cultural Astronomy in Our Lives",
+   "credits": 3
+  },
+  "BIOL 2040R": {
+   "title": "Natural History Excursion",
+   "credits": 3
+  },
+  "BIOL 2070": {
+   "title": "Desert Natural History",
+   "credits": 3
+  },
+  "BIOL 3070": {
+   "title": "Advanced Desert Natural History",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "BIOL 3800": {
+   "title": "Conservation Biology",
+   "credits": 3,
+   "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
+   "prereqs": null
+  },
+  "BOT 2050": {
+   "title": "Field Botany",
+   "credits": 3,
+   "prereqText": "BIOL 1010 or BOT 2400 recommended",
+   "prereqs": null
+  },
+  "BOT 2100": {
+   "title": "Flora of Utah",
+   "credits": 3,
+   "prereqText": "BIOL 1010 is recommended",
+   "prereqs": null
+  },
+  "BOT 4300": {
+   "title": "Native Trees and Shrubs of Utah",
+   "credits": 3,
+   "prereqText": "BOT 2050 or BOT 2100 ; University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BOT 2050",
+     "BOT 2100"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "COMM 1020": {
+   "title": "Public Speaking",
+   "credits": 3
+  },
+  "COMM 2110": {
+   "title": "Interpersonal Communication",
+   "credits": 3
+  },
+  "COMM 2120": {
+   "title": "Small Group Communication and Decision Making",
+   "credits": 3
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3320": {
+   "title": "Grant and Proposal Writing",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENST 3520": {
+   "title": "Environmental Sociology",
+   "credits": 3,
+   "prereqText": "SOC 1010G and ENGL 2010 with a C+ grade or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SOC 1010G",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 3170": {
+   "title": "Entrepreneurship - Feasibility Analysis",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENTR 3180R": {
+   "title": "Launching a New Venture - For Non-Business Majors",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENVT 3630": {
+   "title": "Introduction to Geographic Information Systems",
+   "credits": 4,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EXSC 3750": {
+   "title": "Psychosocial Aspects of Human Performance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 1090 or ZOOL 2320 (or 232H) and ZOOL 2325 (or 232L)",
+   "precoreqs": {
+    "and": [
+     {
+      "or": [
+       "ZOOL 1090",
+       "ZOOL 2320"
+      ]
+     },
+     "ZOOL 2325"
+    ]
+   },
+   "uncertain": true
+  },
+  "EXSC 4300": {
+   "title": "Research Methods in Exercise Science and Outdoor Recreation",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2420 (or 2420H), and Pre or Co-requisite EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ). REC Majors: ZOOL 1090 and Pre or Co-requisite REC 2200 both with a C- or higher and ( STAT 1040 or STAT 1045 or MATH 1050 or MATH 1055 ). All: University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2420",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055",
+       "ZOOL 1090"
+      ]
+     },
+     "REC 2200",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045",
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "GIS 2800": {
+   "title": "Geographic Information Systems",
+   "credits": 3
+  },
+  "HM 3200G": {
+   "title": "Global Tourism",
+   "credits": 3,
+   "prereqText": "( MKTG 2200G or ENGL 2010 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HR 3430": {
+   "title": "Introduction to Human Resource Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HR 3550": {
+   "title": "Organization Development and Change Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 highly recommended",
+   "prereqs": null
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 1250": {
+   "title": "Principles of Leadership",
+   "credits": 3
+  },
+  "MGMT 2030": {
+   "title": "Inclusive Leadership",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3500": {
+   "title": "Leadership Theory and Application",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1500": {
+   "title": "Canoeing I",
+   "credits": 1
+  },
+  "REC 1505": {
+   "title": "Whitewater Kayaking I",
+   "credits": 1
+  },
+  "REC 1516": {
+   "title": "Ropes Course and Teambuilding",
+   "credits": 1
+  },
+  "REC 1525": {
+   "title": "Mountaineering",
+   "credits": 1,
+   "prereqText": "REC 1535 , REC 1527",
+   "prereqs": {
+    "and": [
+     "REC 1535",
+     "REC 1527"
+    ]
+   }
+  },
+  "REC 1527": {
+   "title": "Rock Climbing I",
+   "credits": 1
+  },
+  "REC 1528": {
+   "title": "Rock Climbing II",
+   "credits": 1,
+   "prereqText": "REC 1527 or Instructor Approval",
+   "prereqs": "REC 1527",
+   "prereqNonCourse": true
+  },
+  "REC 1535": {
+   "title": "Backpacking",
+   "credits": 1,
+   "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1542": {
+   "title": "Wilderness First Responder",
+   "credits": 2
+  },
+  "REC 1550": {
+   "title": "Mountain Biking",
+   "credits": 1,
+   "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1580": {
+   "title": "Kayak Touring",
+   "credits": 1,
+   "prereqText": "Must be able to swim 100 yards without stopping",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "REC 1600": {
+   "title": "Winter Exploration",
+   "credits": 1,
+   "prereqText": "REC 1535",
+   "prereqs": "REC 1535"
+  },
+  "REC 2010": {
+   "title": "Avalanche Awareness",
+   "credits": 1
+  },
+  "REC 2200": {
+   "title": "Foundations of Recreation",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGL 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "REC 2400": {
+   "title": "Principles of Experiential Education in Recreation",
+   "credits": 3,
+   "prereqText": "REC 2200 , ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "REC 2200",
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "precoreqText": "ENGL 2010 and MATH 1000 or higher",
+   "precoreqs": {
+    "and": [
+     "ENGL 2010",
+     "MATH 1000"
+    ]
+   }
+  },
+  "REC 2450": {
+   "title": "Rock Climbing Site Management and Facilitation",
+   "credits": 3,
+   "prereqText": "REC 1527 , REC 2400",
+   "prereqs": {
+    "and": [
+     "REC 1527",
+     "REC 2400"
+    ]
+   }
+  },
+  "REC 2600": {
+   "title": "Principles of Outdoor and Adventure Education",
+   "credits": 3,
+   "prereqText": "REC 1535 and REC 2400",
+   "prereqs": {
+    "and": [
+     "REC 1535",
+     "REC 2400"
+    ]
+   }
+  },
+  "REC 2650": {
+   "title": "Principles of Challenge Education",
+   "credits": 3,
+   "prereqText": "REC 1516 , REC 2400",
+   "prereqs": {
+    "and": [
+     "REC 1516",
+     "REC 2400"
+    ]
+   }
+  },
+  "REC 2700": {
+   "title": "Leave No Trace Trainer",
+   "credits": 1,
+   "prereqText": "REC 1535",
+   "prereqs": "REC 1535"
+  },
+  "REC 3100": {
+   "title": "Recreation Program Planning",
+   "credits": 3,
+   "prereqText": "( REC 2200 or instructor approval) and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 1000 or higher",
+   "precoreqs": "MATH 1000"
+  },
+  "REC 3200": {
+   "title": "Inclusive Recreation",
+   "credits": 3,
+   "prereqText": "REC 2400 , REC 3100 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 2400",
+     "REC 3100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 3300": {
+   "title": "Wilderness Skills",
+   "credits": 1,
+   "prereqText": "REC 1535 and University Advanced Standing",
+   "prereqs": "REC 1535",
+   "prereqNonCourse": true,
+   "precoreqText": "REC 2200",
+   "precoreqs": "REC 2200"
+  },
+  "REC 3400": {
+   "title": "Risk Management",
+   "credits": 3,
+   "prereqText": "REC 2200 and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true,
+   "precoreqText": "MAT 1010",
+   "precoreqs": "MAT 1010"
+  },
+  "REC 3500": {
+   "title": "Recreation Administration",
+   "credits": 3,
+   "prereqText": "REC 3100 and University Advanced Standing",
+   "prereqs": "REC 3100",
+   "prereqNonCourse": true
+  },
+  "REC 3700": {
+   "title": "Natural Resource Interpretation",
+   "credits": 3,
+   "prereqText": "REC 2400 and University Advanced Standing",
+   "prereqs": "REC 2400",
+   "prereqNonCourse": true
+  },
+  "REC 3850G": {
+   "title": "Ethical Concerns in Recreation",
+   "credits": 3,
+   "prereqText": "REC 2400 and University Advanced Standing",
+   "prereqs": "REC 2400",
+   "prereqNonCourse": true
+  },
+  "REC 4000": {
+   "title": "Outdoor Leadership",
+   "credits": 4,
+   "prereqText": "REC 1535 , REC 3300 , REC 2600 , REC 1542 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 1535",
+     "REC 3300",
+     "REC 2600",
+     "REC 1542"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 4200R": {
+   "title": "Outdoor Leadership and Management Practicum",
+   "credits": 2,
+   "prereqText": "REC 2400 , Instructor approval, and University Advanced Standing",
+   "prereqs": "REC 2400",
+   "prereqNonCourse": true
+  },
+  "REC 4400": {
+   "title": "Natural Resource and Protected Area Management",
+   "credits": 3,
+   "prereqText": "REC 2200 and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true
+  },
+  "REC 4500": {
+   "title": "Wildland Recreation Behavior",
+   "credits": 3,
+   "prereqText": "REC 4400 and University Advanced Standing",
+   "prereqs": "REC 4400",
+   "prereqNonCourse": true
+  },
+  "REC 4800": {
+   "title": "Professional Preparation in Recreation",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "REC 2400",
+   "precoreqs": "REC 2400"
+  },
+  "REC 4810R": {
+   "title": "Senior Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "REC 4800 , REC 4200R , 80 credit hours completed, minimum 2.5 GPA, instructor approval, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 4800",
+     "REC 4200R"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "REC 4900R": {
+   "title": "Topics in Recreation",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "( REC 2200 or Instructor Approval) and University Advanced Standing",
+   "prereqs": "REC 2200",
+   "prereqNonCourse": true
+  },
+  "REC 4950": {
+   "title": "Senior Seminar",
+   "credits": 2,
+   "prereqText": "REC 2400 , REC 3100 , REC 4800 , STAT 1040 or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "REC 2400",
+     "REC 3100",
+     "REC 4800",
+     "STAT 1040"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SLSS 3200": {
+   "title": "Leader--Teacher and Mentor",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

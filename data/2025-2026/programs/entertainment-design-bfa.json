@@ -1,0 +1,871 @@
+{
+ "id": "entertainment-design-bfa",
+ "name": "Entertainment Design, B.F.A.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/entertainment-design-bfa/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700"
+     ],
+     "credits": 3,
+     "alts": [
+      "HIST 2710"
+     ]
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 1210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 1220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 1400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2280",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ART 2440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Lower Division Core)",
+   "code": "ARTH 2710",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3280",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 3610R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4280",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4290",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Entertainment Design (Upper Division Core)",
+   "code": "ART 4440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Entertainment Design (Upper Division Core)",
+   "label": "Capstone (Repeated over two consecutive semesters)",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "ART 4990R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "credits": 12,
+   "text": "Complete any four courses 1000+"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ART 1120",
+     "credits": 3
+    },
+    {
+     "code": "ART 1210",
+     "credits": 3
+    },
+    {
+     "code": "ART 1220",
+     "credits": 3
+    },
+    {
+     "code": "ART 1400",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ART 2220",
+     "credits": 3
+    },
+    {
+     "code": "ART 2240",
+     "credits": 3
+    },
+    {
+     "code": "ART 2250",
+     "credits": 3
+    },
+    {
+     "code": "ART 2270",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ART 2260",
+     "credits": 3
+    },
+    {
+     "code": "ART 2280",
+     "credits": 3
+    },
+    {
+     "code": "ART 2440",
+     "credits": 3
+    },
+    {
+     "code": "ARTH 2710",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Upper Division Elective",
+     "credits": 3
+    },
+    {
+     "label": "Upper Division Elective",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Elective (Take any Global Intercultural Class)",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ART 3210",
+     "credits": 3
+    },
+    {
+     "code": "ART 3260",
+     "credits": 3
+    },
+    {
+     "code": "ART 3240",
+     "credits": 3
+    },
+    {
+     "code": "ART 3610R",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "ART 3280",
+     "credits": 3
+    },
+    {
+     "code": "ART 3250",
+     "credits": 3
+    },
+    {
+     "code": "ART 3440",
+     "credits": 3
+    },
+    {
+     "code": "ART 4250",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "ART 4260",
+     "credits": 3
+    },
+    {
+     "code": "ART 4270",
+     "credits": 3
+    },
+    {
+     "code": "ART 4280",
+     "credits": 3
+    },
+    {
+     "code": "ART 4990R",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "ART 4290",
+     "credits": 3
+    },
+    {
+     "code": "ART 4440",
+     "credits": 3
+    },
+    {
+     "code": "ART 4990R",
+     "credits": 3
+    },
+    {
+     "label": "History/PoliSci/American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Upper Division Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1120": {
+   "title": "2D Design",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1210": {
+   "title": "Observational Drawing",
+   "credits": 3
+  },
+  "ART 1220": {
+   "title": "Perspective Drawing",
+   "credits": 3,
+   "precoreqText": "ART 1210",
+   "precoreqs": "ART 1210"
+  },
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "ART 2220": {
+   "title": "Imagination and Visual Literacy",
+   "credits": 3,
+   "prereqText": "ART 1210 and ART 1220",
+   "prereqs": {
+    "and": [
+     "ART 1210",
+     "ART 1220"
+    ]
+   }
+  },
+  "ART 2240": {
+   "title": "Illustrative Media and Techniques II",
+   "credits": 3,
+   "prereqText": "ART 1120 , ART 1210 , ART 1220",
+   "prereqs": {
+    "and": [
+     "ART 1120",
+     "ART 1210",
+     "ART 1220"
+    ]
+   }
+  },
+  "ART 2250": {
+   "title": "Gestural Drawing",
+   "credits": 3,
+   "prereqText": "ART 1210 ART 1220",
+   "prereqs": {
+    "and": [
+     "ART 1210",
+     "ART 1220"
+    ]
+   }
+  },
+  "ART 2260": {
+   "title": "Digital Painting I",
+   "credits": 3,
+   "prereqText": "ART 1120 , ART 1210 , ART 1220 , ART 1400",
+   "prereqs": {
+    "and": [
+     "ART 1120",
+     "ART 1210",
+     "ART 1220",
+     "ART 1400"
+    ]
+   }
+  },
+  "ART 2270": {
+   "title": "Figure Drawing I",
+   "credits": 3,
+   "prereqText": "ART 1210 , ART 1220",
+   "prereqs": {
+    "and": [
+     "ART 1210",
+     "ART 1220"
+    ]
+   }
+  },
+  "ART 2280": {
+   "title": "3D Modeling",
+   "credits": 3,
+   "prereqText": "ART 1120 , ART 1400",
+   "prereqs": {
+    "and": [
+     "ART 1120",
+     "ART 1400"
+    ]
+   }
+  },
+  "ART 2440": {
+   "title": "Motion Graphics I",
+   "credits": 3,
+   "prereqText": "ART 1110 or ART 1210 , ART 1120 , ART 1400 , declared Entertainment Design (AAS), or formal acceptance to Associate of Applied Science in Graphic Design (AAS) Program by portfolio review, or department approval",
+   "prereqs": {
+    "or": [
+     "ART 1110",
+     "ART 1210",
+     "ART 1120",
+     "ART 1400"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ART 3210": {
+   "title": "Narrative Illustration",
+   "credits": 3,
+   "prereqText": "ART 2230 or ART 2240 , ART 2260 , ART 2270 , matriculation into the BFA in Art and Design Illustration emphasis or the BFA in Entertainment Design, or department approval, and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ART 2230",
+       "ART 2240"
+      ]
+     },
+     "ART 2260",
+     "ART 2270"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 3240": {
+   "title": "Head Drawing",
+   "credits": 3,
+   "prereqText": "ART 2270 , matriculation into the BFA in Art and Design Illustration emphasis or the BFA in Entertainment Design, or department approval, and University Advanced Standing.",
+   "prereqs": "ART 2270",
+   "prereqNonCourse": true
+  },
+  "ART 3250": {
+   "title": "Environment Design ",
+   "credits": 3,
+   "prereqText": "ART 2240 , ART 2260 , matriculation into the BFA in Art and Design Illustration emphasis or the BFA in Entertainment Design, or department approval, and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "ART 2240",
+     "ART 2260"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 3260": {
+   "title": "Digital Painting II",
+   "credits": 3,
+   "prereqText": "ART 2260 , matriculation into the BFA in Art and Design Illustration emphasis or the BFA in Entertainment Design, or department approval, and University Advanced Standing.",
+   "prereqs": "ART 2260",
+   "prereqNonCourse": true
+  },
+  "ART 3280": {
+   "title": "3D Texturing and Rendering",
+   "credits": 3,
+   "prereqText": "ART 2260 , ART 2280 , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval.",
+   "prereqs": {
+    "and": [
+     "ART 2260",
+     "ART 2280"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 3440": {
+   "title": "Motion Graphics II",
+   "credits": 3,
+   "prereqText": "ART 2280 , ART 2440 , and University Advanced Standing; formal acceptance to the BFA in Art and Design: graphic design emphasis or the BFA in Entertainment Design, or department approval.",
+   "prereqs": {
+    "and": [
+     "ART 2280",
+     "ART 2440"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 3610R": {
+   "title": "Figure Drawing II",
+   "credits": 3,
+   "prereqText": "ART 2270 and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval.",
+   "prereqs": "ART 2270",
+   "prereqNonCourse": true
+  },
+  "ART 4250": {
+   "title": "Character Design",
+   "credits": 3,
+   "prereqText": "ART 3240 , ART 3610R , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval.",
+   "prereqs": {
+    "and": [
+     "ART 3240",
+     "ART 3610R"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 4260": {
+   "title": "Concept Design",
+   "credits": 3,
+   "prereqText": "ART 3250 , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval",
+   "prereqs": "ART 3250",
+   "prereqNonCourse": true,
+   "precoreqText": "ART 4250",
+   "precoreqs": "ART 4250"
+  },
+  "ART 4270": {
+   "title": "Sequential Illustration",
+   "credits": 3,
+   "prereqText": "ART 3210 , ART 3260 , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval.",
+   "prereqs": {
+    "and": [
+     "ART 3210",
+     "ART 3260"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ART 4280": {
+   "title": "3D Rigging and Animation",
+   "credits": 3,
+   "prereqText": "ART 3280 , ART 3440 , ART 3610R , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval",
+   "prereqs": {
+    "and": [
+     "ART 3280",
+     "ART 3440",
+     "ART 3610R"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "ART 4250",
+   "precoreqs": "ART 4250"
+  },
+  "ART 4290": {
+   "title": "3D Sculpting",
+   "credits": 3,
+   "prereqText": "ART 3240 , ART 3280 , ART 3610R , and University Advanced Standing; formal acceptance to the BFA in Art and Design: Illustration emphasis or the BFA in Entertainment Design, or department approval",
+   "prereqs": {
+    "and": [
+     "ART 3240",
+     "ART 3280",
+     "ART 3610R"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "ART 4250",
+   "precoreqs": "ART 4250"
+  },
+  "ART 4440": {
+   "title": "Entertainment Design Studio",
+   "credits": 3,
+   "prereqText": "ART 3440 , and University Advanced Standing; formal acceptance to the BFA in Art and Design: graphic design emphasis or the BFA in Entertainment Design, or department approval",
+   "prereqs": "ART 3440",
+   "prereqNonCourse": true
+  },
+  "ART 4990R": {
+   "title": "BFA Project",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; Senior status and formal acceptance to Bachelor of Fine Arts (BFA) program by portfolio review or department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

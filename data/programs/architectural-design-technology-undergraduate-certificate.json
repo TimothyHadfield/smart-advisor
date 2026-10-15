@@ -1,0 +1,128 @@
+{
+ "id": "architectural-design-technology-undergraduate-certificate",
+ "name": "Architectural Design Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/architectural-design-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1040",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 1720",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EGDT 2100",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EGDT 1020",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EGDT 1040",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 1100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EGDT 1720",
+     "credits": 3
+    },
+    {
+     "code": "EGDT 2100",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EGDT 1020": {
+   "title": "3D Architectural Modeling",
+   "credits": 3
+  },
+  "EGDT 1040": {
+   "title": "Fundamentals of Technical Engineering Drawing",
+   "credits": 3
+  },
+  "EGDT 1050": {
+   "title": "Intro to 3D Printing and Fabrication",
+   "credits": 3
+  },
+  "EGDT 1100": {
+   "title": "Residential Architecture Documentation and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1020 with a grade of B- or higher",
+   "prereqs": "EGDT 1020"
+  },
+  "EGDT 1720": {
+   "title": "Architectural Rendering",
+   "credits": 3
+  },
+  "EGDT 2100": {
+   "title": "Commercial Architecture Documentation and Design",
+   "credits": 3,
+   "prereqText": "EGDT 1020 and EGDT 1100 with a grade of C- or higher",
+   "prereqs": {
+    "and": [
+     "EGDT 1020",
+     "EGDT 1100"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,358 @@
+{
+ "id": "spanish-english-translation-interpreting-minor",
+ "name": "Spanish-English Translation and Interpreting, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/spanish-english-translation-interpreting-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "LANG 3020",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "One Spanish for the Professions Course",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SPAN 3030",
+      "SPAN 3040"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "SPAN 3050"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SPAN 4110"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "SPAN 4120",
+      "LANG 4500"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "SPAN 3310",
+      "SPAN 4310"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Translation Track",
+    "Medical Interpreting Track",
+    "Note: LANG 4500 (Translation Technology) is also strongly recommended for Medical Interpreting Track"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Required Language Internship",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "LANG 4810R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Spanish for the Professions Courses:",
+   "label": "Choose 3 credit hours from the following:",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SPAN 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "LANG 4500"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose 3 credit hours from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "LANG 3020",
+     "credits": 1
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "SPAN 3030",
+     "alts": [
+      "SPAN 3040"
+     ],
+     "credits": null
+    },
+    {
+     "code": "SPAN 3050",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SPAN 4110",
+     "credits": 3
+    },
+    {
+     "code": "LANG 4500",
+     "alts": [
+      "SPAN 3310"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "One Spanish for the Professions Course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "SPAN 4120",
+     "alts": [
+      "SPAN 4310"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "LANG 4810R",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "LANG 3020": {
+   "title": "Language Services Industry and Languages in the Professional World",
+   "credits": 1
+  },
+  "LANG 4500": {
+   "title": "Translation Technology",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "LANG 4810R": {
+   "title": "Language Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Departmental Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SPAN 3030": {
+   "title": "Spanish Conversation and Composition I",
+   "credits": 3,
+   "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 2020G",
+   "prereqNonCourse": true
+  },
+  "SPAN 3040": {
+   "title": "Spanish Conversation and Composition II",
+   "credits": 3,
+   "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 2020G",
+   "prereqNonCourse": true
+  },
+  "SPAN 3050": {
+   "title": "Advanced Spanish",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed SPAN 2020G , have had one year residency in a Spanish-speaking country, or instructor approval",
+   "prereqs": null
+  },
+  "SPAN 3200": {
+   "title": "Business Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3050 and University Advanced Standing",
+   "prereqs": "SPAN 3050",
+   "prereqNonCourse": true
+  },
+  "SPAN 3310": {
+   "title": "Spanish for Healthcare Professionals",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 3320": {
+   "title": "Spanish for Mental Health Professionals",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 3340": {
+   "title": "Spanish for Tourism and Hospitality Management",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4110": {
+   "title": "Introduction to Translation and Interpreting English-Spanish",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 ; and it is highly recommended to take previously 6 credits from the Spanish for the Profession courses (Medical Spanish, Business Spanish, Legal Spanish, Spanish for Psychology, Spanish for Tourism, etc.)",
+   "prereqs": null
+  },
+  "SPAN 4120": {
+   "title": "Advanced Translation English-Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 4110 and University Advanced Standing",
+   "prereqs": "SPAN 4110",
+   "prereqNonCourse": true
+  },
+  "SPAN 4200": {
+   "title": "Advanced Business Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3200 and University Advanced Standing",
+   "prereqs": "SPAN 3200",
+   "prereqNonCourse": true
+  },
+  "SPAN 4310": {
+   "title": "Healthcare Interpreting English-Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3310 and University Advanced Standing",
+   "prereqs": "SPAN 3310",
+   "prereqNonCourse": true
+  }
+ }
+}

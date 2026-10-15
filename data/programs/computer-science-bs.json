@@ -1,0 +1,1723 @@
+{
+ "id": "computer-science-bs",
+ "name": "Computer Science, B.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/computer-science/computer-science-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "MATH 1210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Arts",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Life Sciences",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Sciences",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social & Behavioral Sciences",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 5,
+   "options": [
+    {
+     "codes": [
+      "BIOL 1610",
+      "BIOL 1615"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "CHEM 1210",
+      "CHEM 1215"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "PHYS 2020",
+      "PHYS 2025"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "PHYS 2010",
+      "PHYS 2015"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "PHYS 2210",
+      "PHYS 2215"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "PHYS 2220",
+      "PHYS 2225"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "GEO 1010",
+      "GEO 1015",
+      "GEO 2020R"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following course/lab combinations:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "CS 1400",
+      "CS 1410"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "CS 1420"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2370",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2550",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2810",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 2900",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3050G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3250",
+   "alts": [
+    "CS 3260",
+    "CS 3270",
+    "CS 3370",
+    "CS 3390R"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 3520",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECE 3710",
+   "alts": [
+    "STAT 2050"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Recommended Tracks",
+   "label": "CS Elective",
+   "pick": {
+    "credits": 33
+   },
+   "credits": 33,
+   "options": [
+    {
+     "codes": [
+      "CS 3450"
+     ],
+     "credits": 3,
+     "section": "CS Track"
+    },
+    {
+     "codes": [
+      "CS 4380"
+     ],
+     "credits": 3,
+     "section": "CS Track"
+    },
+    {
+     "codes": [
+      "CS 4450"
+     ],
+     "credits": 3,
+     "section": "CS Track"
+    },
+    {
+     "codes": [
+      "CS 4470"
+     ],
+     "credits": 3,
+     "section": "CS Track"
+    },
+    {
+     "codes": [
+      "CS 3380"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 3410"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 3530"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 3660"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 3680"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 4880"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "CS 4900"
+     ],
+     "credits": 3,
+     "section": "Full Stack Web Development Track"
+    },
+    {
+     "codes": [
+      "IT 1510"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "IT 3510"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CS 3110"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CS 3120"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CS 3140"
+     ],
+     "credits": 3,
+     "alts": [
+      "CYBR 4350"
+     ],
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CS 4120"
+     ],
+     "credits": 3,
+     "alts": [
+      "CYBR 3750"
+     ],
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CS 4200"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4250"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4450"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4550"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4650"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4850"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "CYBR 4800"
+     ],
+     "credits": 3,
+     "section": "Secure Computing Track"
+    },
+    {
+     "codes": [
+      "MATH 2270"
+     ],
+     "credits": 3,
+     "section": "Artificial Intelligence Track"
+    },
+    {
+     "codes": [
+      "CS 4470"
+     ],
+     "credits": 3,
+     "section": "Artificial Intelligence Track"
+    },
+    {
+     "codes": [
+      "CS 4700"
+     ],
+     "credits": 3,
+     "section": "Artificial Intelligence Track"
+    },
+    {
+     "codes": [
+      "CS 4710"
+     ],
+     "credits": 3,
+     "alts": [
+      "CS 4730",
+      "CS 4480"
+     ],
+     "section": "Artificial Intelligence Track"
+    },
+    {
+     "codes": [
+      "CS 4720R"
+     ],
+     "credits": 3,
+     "section": "Artificial Intelligence Track"
+    },
+    {
+     "codes": [
+      "CS 2700"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "CS 3530"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "CS 3540"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "CS 3800"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "CS 3820"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "CS 4770"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "MATH 1220"
+     ],
+     "credits": 4,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "MATH 2210"
+     ],
+     "credits": 4,
+     "section": "Complete 9 hours from the following:"
+    },
+    {
+     "codes": [
+      "MATH 3640"
+     ],
+     "credits": 3,
+     "section": "Complete 9 hours from the following:"
+    }
+   ],
+   "text": "Complete 33 credits from the following recommended tracks. Minimum grade of C- required in track courses.",
+   "notes": [
+    "CS Track: Complete 18 credits from CS 2700 , ECE 4850 , any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.)",
+    "CS Track: Complete 3 credits of Senior Elective Requirements; R courses are not approved for this credit.",
+    "Full Stack Web Development Track: Complete 12 credits from CS 2700 , ECE 4850 , or any CS 3000 or 4000 level course not already required.",
+    "Secure Computing Track: Complete 12 credits from the following. Minimum grade of C- required in these courses.",
+    "Secure Computing Track: Any CS 3000 0r 4000 level course not already required",
+    "Complete 9 hours from the following:: Any CS 3000+ course not already required."
+   ],
+   "tracks": [
+    "CS Track",
+    "Full Stack Web Development Track",
+    "Secure Computing Track",
+    "Artificial Intelligence Track",
+    "Complete 9 hours from the following:"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CS 1400",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1210",
+     "credits": 4
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CS 1410",
+     "credits": 3
+    },
+    {
+     "code": "CS 2810",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CS 2300",
+     "credits": 3
+    },
+    {
+     "code": "CS 2370",
+     "credits": 3
+    },
+    {
+     "code": "CS 2420",
+     "credits": 3
+    },
+    {
+     "code": "CS 2600",
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CS 2450",
+     "credits": 3
+    },
+    {
+     "code": "CS 2550",
+     "credits": 3
+    },
+    {
+     "code": "CS 2900",
+     "credits": 3
+    },
+    {
+     "label": "Core Science",
+     "credits": 4
+    },
+    {
+     "label": "Core Science Lab",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "CS 3240",
+     "credits": 3
+    },
+    {
+     "code": "CS 3310",
+     "credits": 3
+    },
+    {
+     "code": "CS 3520",
+     "credits": 3
+    },
+    {
+     "code": "CS 3250",
+     "alts": [
+      "CS 3260",
+      "CS 3270",
+      "CS 3370",
+      "CS 3380",
+      "CS 3390R"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "CS 3060",
+     "credits": 3
+    },
+    {
+     "code": "ECE 3710",
+     "alts": [
+      "STAT 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "GE",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "CS 3050G",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    },
+    {
+     "label": "CS Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGL 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1610",
+   "precoreqs": "BIOL 1610"
+  },
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1410": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereqText": "CS 1400 and Math equivalent to at least college algebra",
+   "prereqs": "CS 1400",
+   "prereqNonCourse": true
+  },
+  "CS 1420": {
+   "title": "Accelerated Introduction to Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 2300": {
+   "title": "Discrete Mathematical Structures I",
+   "credits": 3,
+   "prereqText": "( CS 1410 or INFO 2200 ) and MATH 1050 or higher",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "CS 1410",
+       "INFO 2200"
+      ]
+     },
+     "MATH 1050"
+    ]
+   }
+  },
+  "CS 2370": {
+   "title": "C Plus Plus Programming",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "CS 2420": {
+   "title": "Introduction to Algorithms and Data Structures",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "CS 2450": {
+   "title": "Software Engineering",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420"
+    ]
+   }
+  },
+  "CS 2550": {
+   "title": "Web Programming I",
+   "credits": 3,
+   "prereqText": "CS 1410 or DWDD 2720 or INFO 2200",
+   "prereqs": {
+    "or": [
+     "CS 1410",
+     "DWDD 2720",
+     "INFO 2200"
+    ]
+   }
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CS 2700": {
+   "title": "Causal Inference",
+   "credits": 3,
+   "prereqText": "STAT 2050 or ECE 3710",
+   "prereqs": {
+    "or": [
+     "STAT 2050",
+     "ECE 3710"
+    ]
+   }
+  },
+  "CS 2810": {
+   "title": "Computer Organization and Architecture",
+   "credits": 3,
+   "prereqText": "CS 1400 or CS 1420",
+   "prereqs": {
+    "or": [
+     "CS 1400",
+     "CS 1420"
+    ]
+   }
+  },
+  "CS 2900": {
+   "title": "Data Privacy and Security",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 3050G": {
+   "title": "Global Social and Ethical Issues in Computing",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( CS 1030 or CS 1400 or CS 1420 or INFO 1120 or DGM 1110 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "CS 1030",
+       "CS 1400",
+       "CS 1420",
+       "INFO 1120",
+       "DGM 1110"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3060": {
+   "title": "Operating Systems Theory",
+   "credits": 3,
+   "prereqText": "CS 2370 , CS 2420 , and University Advanced Standing. If a computer science or software engineering major, also CS 2810 and matriculation to computer science or software engineering. If a computer engineering major, also ECE 2700 and ECE 3730",
+   "prereqs": {
+    "and": [
+     "CS 2370",
+     "CS 2420",
+     "CS 2810",
+     "ECE 2700",
+     "ECE 3730"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3110": {
+   "title": "Applied Cryptography",
+   "credits": 3,
+   "prereqText": "CS 2300 and ( CYBR 2700 or CS 2900 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     {
+      "or": [
+       "CYBR 2700",
+       "CS 2900"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3120": {
+   "title": "Ethical Hacking Tools Development",
+   "credits": 3,
+   "prereqText": "CS 2900 and University Advanced Standing",
+   "prereqs": "CS 2900",
+   "prereqNonCourse": true
+  },
+  "CS 3140": {
+   "title": "Network and Cloud Security",
+   "credits": 3,
+   "prereqText": "CS 2600 , CS 2900 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2600",
+     "CS 2900"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3240": {
+   "title": "Discrete Mathematical Structures II",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420 , CS 2810 , computer engineering major or (matriculation to computer science or software engineering), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420",
+     "CS 2810"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3250": {
+   "title": "Java Software Development",
+   "credits": 3,
+   "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 3260": {
+   "title": "CsharpNET Software Development",
+   "credits": 3,
+   "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3270": {
+   "title": "Python Software Development",
+   "credits": 3,
+   "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 3310": {
+   "title": "Analysis of Algorithms",
+   "credits": 3,
+   "prereqText": "Matriculation into Computer Science or Software Engineering, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3370": {
+   "title": "C Plus Plus Software Development",
+   "credits": 3,
+   "prereqText": "CS 2370 , ( CS 2810 or ECE 4700 ), matriculation to computer science or software engineering, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2370",
+     {
+      "or": [
+       "CS 2810",
+       "ECE 4700"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3380": {
+   "title": "JavaScript Software Development",
+   "credits": 3,
+   "prereqText": "CS 2420 , ( CS 2550 or DWDD 2720 ) matriculation into the Computer Science or Software Engineering program if a Computer Science or Software Engineering major, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2420",
+     {
+      "or": [
+       "CS 2550",
+       "DWDD 2720"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3390R": {
+   "title": "Advanced Programming Language Other",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3410": {
+   "title": "Human Factors in Software Development",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3450": {
+   "title": "Principles and Patterns of Software Design",
+   "credits": 3,
+   "prereqText": "( CS 3250 or CS 3260 or CS 3270 or CS 3370 or CS 3380 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CS 3250",
+     "CS 3260",
+     "CS 3270",
+     "CS 3370",
+     "CS 3380"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3520": {
+   "title": "Database Theory",
+   "credits": 3,
+   "prereqText": "CS 2300 , CS 2420 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2300",
+     "CS 2420"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3530": {
+   "title": "Data Management For Data Sciences",
+   "credits": 3,
+   "prereqText": "CS 3520 and University Advanced Standing",
+   "prereqs": "CS 3520",
+   "prereqNonCourse": true
+  },
+  "CS 3540": {
+   "title": "Game Programming",
+   "credits": 3,
+   "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3660": {
+   "title": "Web Programming II",
+   "credits": 3,
+   "prereqText": "CS 2420 , ( CS 2550 or DWDD 2720 ), matriculation into CS or Software Engineering if a CS or SE major, and University Advanced Standing. CS 3520 and CS 3380 recommended.",
+   "prereqs": {
+    "and": [
+     "CS 2420",
+     {
+      "or": [
+       "CS 2550",
+       "DWDD 2720"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CS 3680": {
+   "title": "Mobile Device Programming",
+   "credits": 3,
+   "prereqText": "Matriculation to CS or Software Engineering if a CS or SE major and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3800": {
+   "title": "Data Science Through Statistical Reasoning",
+   "credits": 3,
+   "prereqText": "( STAT 2050 or ECE 3710 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2050",
+     "ECE 3710"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 3820": {
+   "title": "Visualization Analytics for Data Science",
+   "credits": 3,
+   "prereqText": "( STAT 2040 or STAT 2050 or ECE 3710 ), CS 2420 , University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "STAT 2040",
+       "STAT 2050",
+       "ECE 3710"
+      ]
+     },
+     "CS 2420"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 4120": {
+   "title": "Security Vulnerability Analysis",
+   "credits": 3,
+   "prereqText": "CS 2900 and University Advanced Standing",
+   "prereqs": "CS 2900",
+   "prereqNonCourse": true
+  },
+  "CS 4200": {
+   "title": "Secure Computing Capstone",
+   "credits": 3,
+   "prereqText": "CS 3110 and CS 3120 and ( CYBR 4350 or CS 3140 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 3110",
+     "CS 3120",
+     {
+      "or": [
+       "CYBR 4350",
+       "CS 3140"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 4380": {
+   "title": "Advanced High Performance Computer Architecture",
+   "credits": 3,
+   "prereqText": "CS 3060 , ( CS 3370 Recommended), and University Advanced Standing",
+   "prereqs": null
+  },
+  "CS 4450": {
+   "title": "Analysis of Programming Languages",
+   "credits": 3,
+   "prereqText": "CS 3240 , (one of CS 3250 , CS 3260 , CS 3270 or CS 3370 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 3240",
+     {
+      "or": [
+       "CS 3250",
+       "CS 3260",
+       "CS 3270",
+       "CS 3370"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 4470": {
+   "title": "Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "CS 2420 and ( CS 3250 or CS 3260 or CS 3270 or CS 3370 or CS 3380 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2420",
+     {
+      "or": [
+       "CS 3250",
+       "CS 3260",
+       "CS 3270",
+       "CS 3370",
+       "CS 3380"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CS 4480": {
+   "title": "Digital Image Processing and Computer Vision",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing. MATH 1210 and MATH 2270 strongly recommended.",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4700": {
+   "title": "Machine Learning",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4710": {
+   "title": "Machine Learning II",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4720R": {
+   "title": "AI Business and Tech Solutions",
+   "credits": 3,
+   "prereqText": "University Advanced Standing, CS 2420 if a Computer Science, Software Engineering, Computational Data Science or BAS Software Development major.",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4730": {
+   "title": "Natural Language Programming Foundations and Applications",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing. Some experience with Python, machine learning, probability and linear algebra is recommended.",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4770": {
+   "title": "Software Development for Robotics",
+   "credits": 3,
+   "prereqText": "CS 3370 and University Advanced Standing; CS 4470 recommended",
+   "prereqs": null
+  },
+  "CS 4880": {
+   "title": "Cloud Computing",
+   "credits": 3,
+   "prereqText": "Matriculation into the Computer Science or Software Engineering program, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 4900": {
+   "title": "Full Stack Web Senior Capstone",
+   "credits": 3,
+   "prereqText": "CS 3410 , CS 3520 , CS 3660 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 3410",
+     "CS 3520",
+     "CS 3660"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 3750": {
+   "title": "Malware Reverse Engineering",
+   "credits": 3,
+   "prereqText": "[( CS 2370 and CS 2900 ) or ( CYBR 2700 )] and University Advanced Standing.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "CS 2370",
+       "CS 2900"
+      ]
+     },
+     "CYBR 2700"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CYBR 4250": {
+   "title": "Database Security and Auditing",
+   "credits": 3,
+   "prereqText": "( INFO 3410 or CYBR 3700 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "INFO 3410",
+     "CYBR 3700"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 4350": {
+   "title": "Web and Application Security",
+   "credits": 3,
+   "prereqText": "( CYBR 2700 or CS 2550 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CYBR 2700",
+     "CS 2550"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "INFO 3300 or CS 3520",
+   "precoreqs": {
+    "or": [
+     "INFO 3300",
+     "CS 3520"
+    ]
+   }
+  },
+  "CYBR 4450": {
+   "title": "Internet of Things Security",
+   "credits": 3,
+   "prereqText": "IT 1510 , CYBR 2700 , and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "IT 1510",
+     "CYBR 2700"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 4550": {
+   "title": "Threat Hunting and Incident Response",
+   "credits": 3,
+   "prereqText": "CYBR 3700 and Advanced University Standing",
+   "prereqs": "CYBR 3700",
+   "prereqNonCourse": true
+  },
+  "CYBR 4650": {
+   "title": "Industrial Control Systems Security",
+   "credits": 3,
+   "prereqText": "IT 1510 , CYBR 2700 , and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "IT 1510",
+     "CYBR 2700"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 4800": {
+   "title": "Advanced Mobile Devices Forensics",
+   "credits": 3,
+   "prereqText": "CYBR 2800 and University Advanced Standing",
+   "prereqs": "CYBR 2800",
+   "prereqNonCourse": true
+  },
+  "CYBR 4850": {
+   "title": "Digital Forensics Investigations",
+   "credits": 3,
+   "prereqText": "CYBR 2800 and University Advanced Standing",
+   "prereqs": "CYBR 2800",
+   "prereqNonCourse": true
+  },
+  "ECE 3710": {
+   "title": "Applied Probability and Statistics for Engineers and Scientists",
+   "credits": 3,
+   "prereqText": "MATH 1210 and University Advanced Standing",
+   "prereqs": "MATH 1210",
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "GEO 1010": {
+   "title": "Introduction to Geology",
+   "credits": 3
+  },
+  "GEO 1015": {
+   "title": "Introduction to Geology Laboratory",
+   "credits": 1
+  },
+  "GEO 2020R": {
+   "title": "Science Excursion",
+   "credits": 1
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 3510": {
+   "title": "Advanced System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "[( INFO 1200 or CS 1400 ) and IT 1510 and ( IT 2600 or CS 2600 ) all with a grade of C- or higher within the past five years] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "CS 1400"
+      ]
+     },
+     "IT 1510",
+     {
+      "or": [
+       "IT 2600",
+       "CS 2600"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1220": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2210": {
+   "title": "Calculus III",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2270": {
+   "title": "Linear Algebra",
+   "credits": 3,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 3640": {
+   "title": "Introduction to Optimization",
+   "credits": 3,
+   "prereqText": "( MATH 2210 or MATH 2210H ) and MATH 2270 with a grade of C or higher and University Advanced Standing; CS 1400 with a grade of C or higher is recommended.",
+   "prereqs": null
+  },
+  "PHYS 2010": {
+   "title": "College Physics I",
+   "credits": 4,
+   "prereqText": "MATH 1050 or higher",
+   "prereqs": "MATH 1050",
+   "coreqText": "PHYS 2015",
+   "coreqs": [
+    "PHYS 2015"
+   ]
+  },
+  "PHYS 2015": {
+   "title": "College Physics I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2010",
+   "coreqs": [
+    "PHYS 2010"
+   ]
+  },
+  "PHYS 2020": {
+   "title": "College Physics II",
+   "credits": 4,
+   "prereqText": "PHYS 2010",
+   "prereqs": "PHYS 2010",
+   "coreqText": "PHYS 2025",
+   "coreqs": [
+    "PHYS 2025"
+   ]
+  },
+  "PHYS 2025": {
+   "title": "College Physics II Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2020",
+   "coreqs": [
+    "PHYS 2020"
+   ]
+  },
+  "PHYS 2210": {
+   "title": "Physics for Scientists and Engineers I",
+   "credits": 4,
+   "prereqText": "MATH 1210 or PHYS 1100",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "PHYS 1100"
+    ]
+   },
+   "coreqText": "PHYS 2215",
+   "coreqs": [
+    "PHYS 2215"
+   ]
+  },
+  "PHYS 2215": {
+   "title": "Physics for Scientists and Engineers I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2210",
+   "coreqs": [
+    "PHYS 2210"
+   ]
+  },
+  "PHYS 2220": {
+   "title": "Physics for Scientists and Engineers II",
+   "credits": 4,
+   "prereqText": "PHYS 2210",
+   "prereqs": "PHYS 2210",
+   "coreqText": "PHYS 2225",
+   "coreqs": [
+    "PHYS 2225"
+   ]
+  },
+  "PHYS 2225": {
+   "title": "Physics for Scientists and Engineers II Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2220",
+   "coreqs": [
+    "PHYS 2220"
+   ]
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 2050": {
+   "title": "Introduction to Statistical Methods",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

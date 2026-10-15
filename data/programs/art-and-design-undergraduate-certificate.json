@@ -1,0 +1,218 @@
+{
+ "id": "art-and-design-undergraduate-certificate",
+ "name": "Art and Design, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/arts/art-design/art-and-design-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ART 1130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 9 credits",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "ART 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1750"
+     ],
+     "credits": 3,
+     "alts": [
+      "ART 1050"
+     ]
+    },
+    {
+     "codes": [
+      "ART 1350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1420"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees):"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARTH 2710",
+   "alts": [
+    "ARTH 2720G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any ART course not already taken (See Department Advisor).",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ART 1120",
+     "credits": 3
+    },
+    {
+     "code": "ARTH 2710",
+     "alts": [
+      "ARTH 2720G"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ART 1130",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "ART/ARTH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1050": {
+   "title": "Photography I",
+   "credits": 3
+  },
+  "ART 1110": {
+   "title": "Drawing I",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Art Education",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1120": {
+   "title": "2D Design",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ART 1130": {
+   "title": "3D Design",
+   "credits": 3,
+   "precoreqText": "ART 1120",
+   "precoreqs": "ART 1120"
+  },
+  "ART 1210": {
+   "title": "Observational Drawing",
+   "credits": 3
+  },
+  "ART 1350": {
+   "title": "Ceramics I",
+   "credits": 3
+  },
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "ART 1420": {
+   "title": "Graphic Design I",
+   "credits": 3,
+   "prereqText": "ART 1400 . For DGM majors: DGM 1110 and DWDD 1410 .",
+   "prereqs": {
+    "and": [
+     "ART 1400",
+     "DGM 1110",
+     "DWDD 1410"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ART 1120",
+   "precoreqs": "ART 1120"
+  },
+  "ART 1750": {
+   "title": "Intro to Digital Imaging",
+   "credits": 3,
+   "prereqText": "Major in Art and Design or Art Education",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 2720G": {
+   "title": "Renaissance Through Contemporary Art History",
+   "credits": 3
+  }
+ }
+}

@@ -1,0 +1,163 @@
+{
+ "id": "endorsement-plus-med",
+ "name": "Master of Education - Endorsement Plus Emphasis, M.Ed.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/endorsement-plus-med/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Master of Education Core Requirements",
+   "credits": 12
+  },
+  {
+   "type": "placeholder",
+   "area": "Emphasis Requirement",
+   "label": "Students bring in 9 credits from 5000 level courses earned through state endorsement.",
+   "credits": 9
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirement",
+   "code": "EDUC 6400",
+   "alts": [
+    "EDUC 6330"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirement",
+   "code": "EDUC 6300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirement",
+   "code": "EDUC 6415",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "EDUC 6100",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6300",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "EDUC 6400",
+     "alts": [
+      "EDUC 6330"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6320",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDUC 6415",
+     "alts": [
+      "EDUC 6411"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "EDUC 6490",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDUC 6100": {
+   "title": "Research Methodology",
+   "credits": 3,
+   "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6110": {
+   "title": "Applied Statistics for Education",
+   "credits": 3,
+   "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6300": {
+   "title": "Curriculum Design",
+   "credits": 3,
+   "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6320": {
+   "title": "21st Century Instruction and Assessment",
+   "credits": 3,
+   "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6330": {
+   "title": "Strategies for Working with Diverse Learners",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program at UVU or an approval from a graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6400": {
+   "title": "Contemporary Issues in Teacher Leadership",
+   "credits": 3,
+   "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6411": {
+   "title": "Instructional Coaching",
+   "credits": 3,
+   "prereqText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed. program, or permission of the program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6415": {
+   "title": "Global Issues in Teaching and Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master's of Education program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6490": {
+   "title": "Masters Project",
+   "credits": 3
+  }
+ }
+}

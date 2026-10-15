@@ -1,0 +1,432 @@
+{
+ "id": "aviation-science-aas",
+ "name": "Aviation Science, A.A.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/aviation-science/aviation-science-aas/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 63,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Complete three courses with no more than one from any of the following GE distributions",
+   "credits": 9,
+   "notes": [
+    "American Institutions",
+    "Physical Science",
+    "Personal, Professional, and Civic Growth",
+    "Humanities Distribution",
+    "Fine Arts Distribution"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 1250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2070",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AVSC 2310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Elective Credits",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "AVSC 1010",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3
+    },
+    {
+     "label": "GE Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "AVSC 1100",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 1110",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2110",
+     "credits": 3
+    },
+    {
+     "label": "GE Distribution",
+     "credits": 3
+    },
+    {
+     "label": "GE Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "AVSC 1240",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 1250",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2070",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2130",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2150",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "AVSC 2300",
+     "credits": 3
+    },
+    {
+     "code": "AVSC 2310",
+     "credits": 3
+    },
+    {
+     "label": "Elective Credits",
+     "credits": 12
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AVSC 1010": {
+   "title": "Survey of Aviation Science",
+   "credits": 3
+  },
+  "AVSC 1100": {
+   "title": "Ground I - Private",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "AVSC 1110": {
+   "title": "Flight I - Private",
+   "credits": 3,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "AVSC 1100",
+   "precoreqs": "AVSC 1100"
+  },
+  "AVSC 1240": {
+   "title": "Ground II - Instrument",
+   "credits": 3,
+   "prereqText": "AVSC 1100 , AVSC 1110 and Department Approval",
+   "prereqs": {
+    "and": [
+     "AVSC 1100",
+     "AVSC 1110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AVSC 1250": {
+   "title": "Flight II - Instrument II",
+   "credits": 3,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "AVSC 2070": {
+   "title": "Communications for Aviation Professionals",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "AVSC 2110": {
+   "title": "Aviation Weather",
+   "credits": 3
+  },
+  "AVSC 2130": {
+   "title": "Aviation Safety",
+   "credits": 3
+  },
+  "AVSC 2150": {
+   "title": "Air Transportation Management",
+   "credits": 3
+  },
+  "AVSC 2300": {
+   "title": "Ground IV - Commercial",
+   "credits": 3,
+   "prereqText": "AVSC 1250 and Department Approval",
+   "prereqs": "AVSC 1250",
+   "prereqNonCourse": true
+  },
+  "AVSC 2310": {
+   "title": "Flight IV - Commercial",
+   "credits": 3,
+   "prereqText": "AVSC 1250 and Department Approval",
+   "prereqs": "AVSC 1250",
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,173 @@
+{
+ "id": "business-information-technology-minor",
+ "name": "Business Information Technology, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/business-information-technology-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2500",
+   "alts": [
+    "IM 3500"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 3700",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2420",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "IM 1010",
+     "credits": 3
+    },
+    {
+     "code": "IM 2100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "IM 2500",
+     "alts": [
+      "IM 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "INFO 2420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "IM 2600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "IM 2800",
+     "credits": 3
+    },
+    {
+     "code": "IM 3700",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "IM 1010": {
+   "title": "Basic Computer Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skill",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2100": {
+   "title": "Document Processing Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2500": {
+   "title": "Graphic Applications",
+   "credits": 3
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3,
+   "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "IM 2800": {
+   "title": "Integrated Software Projects",
+   "credits": 3,
+   "precoreqText": "IM 2100 and IM 2600 or Instructor Approval",
+   "precoreqs": {
+    "and": [
+     "IM 2100",
+     "IM 2600"
+    ]
+   },
+   "uncertain": true
+  },
+  "IM 3500": {
+   "title": "Desktop Publishing Applications",
+   "credits": 3,
+   "prereqText": "( IM 2100 or Instructor approval) and University Advanced Standing",
+   "prereqs": "IM 2100",
+   "prereqNonCourse": true
+  },
+  "IM 3700": {
+   "title": "Database Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skill and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  }
+ }
+}

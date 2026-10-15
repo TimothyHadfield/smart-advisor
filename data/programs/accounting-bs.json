@@ -1,0 +1,1064 @@
+{
+ "id": "accounting-bs",
+ "name": "Accounting, B.S.",
+ "url": "https://catalog.uvu.edu/business/accounting/accounting-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "An Advanced Placement (AP) Calculus AB or BC Test with a score of 3 or higher"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "FINE ART",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "HUMANITIES",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ACC 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 1110",
+      "ACC 1120"
+     ],
+     "credits": 2
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2390",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 4860",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2950R",
+   "alts": [
+    "ENTR 2930R"
+   ],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2115",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3710",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 4",
+   "pick": {
+    "count": 4
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "ACC 4030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4700R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4810R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5710"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete four of the following advanced accounting courses:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 10 credits of any courses 1000-level or higher",
+   "credits": 10,
+   "text": "Complete 10 credits of any courses 1000-level or higher"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "FINE ART",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 2
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "code": "MATH 1090",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2240",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "HUMANITIES",
+     "credits": 3
+    },
+    {
+     "label": "PHYSICAL SCIENCE",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2600",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "BIOLOGY",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ACC 2115",
+     "credits": 1
+    },
+    {
+     "code": "ACC 2120",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2250",
+     "credits": 3
+    },
+    {
+     "label": "SOCIAL SCIENCE",
+     "credits": 3
+    },
+    {
+     "label": "PERSONAL, PROFESSIONAL, and CIVIC GROWTH",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ACC 3010",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3250",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3300",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3400",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2340",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "ACC 3020",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3510",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3710",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3450",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2390",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "Accounting Elective",
+     "credits": 3
+    },
+    {
+     "code": "FIN 3100",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2950R",
+     "alts": [
+      "ENTR 2930R"
+     ],
+     "credits": 1
+    },
+    {
+     "code": "MGMT 3000",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3600",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "label": "Accounting Elective",
+     "credits": 3
+    },
+    {
+     "label": "Accounting Elective",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 4860",
+     "credits": 3
+    },
+    {
+     "label": "General Elective (Any course numbered 1000 or higher)",
+     "credits": 5
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 1110": {
+   "title": "Financial Accounting I",
+   "credits": 1.5,
+   "prereqText": "Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 1120": {
+   "title": "Financial Accounting II",
+   "credits": 1.5,
+   "prereqText": "ACC 1110 and departmental approval",
+   "prereqs": "ACC 1110",
+   "prereqNonCourse": true
+  },
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "ACC 2115": {
+   "title": "Introduction to the Accounting Profession",
+   "credits": 1,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110",
+   "coreqText": "ACC 2120",
+   "coreqs": [
+    "ACC 2120"
+   ]
+  },
+  "ACC 2120": {
+   "title": "Principles of Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110"
+  },
+  "ACC 2250": {
+   "title": "QuickBooks and Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110 or (concurrent enrollment courses: ACC 1110 and ACC 1120 )",
+   "prereqs": {
+    "or": [
+     "ACC 2110",
+     {
+      "and": [
+       "ACC 1110",
+       "ACC 1120"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 2600": {
+   "title": "Business Law and Ethics",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010",
+   "prereqs": null
+  },
+  "ACC 3010": {
+   "title": "Intermediate Accounting I",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 with a B- or higher, ( MATH 1050 , MATH 1055 , or MATH 1090 ) with a C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055",
+       "MATH 1090"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 2115",
+   "precoreqs": "ACC 2115"
+  },
+  "ACC 3020": {
+   "title": "Intermediate Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 3010 and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true
+  },
+  "ACC 3250": {
+   "title": "Advanced QuickBooks and Industry Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2250 and University Advanced Standing",
+   "prereqs": "ACC 2250",
+   "prereqNonCourse": true
+  },
+  "ACC 3300": {
+   "title": "Cost Management",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3400": {
+   "title": "Fundamentals of Taxation",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3510": {
+   "title": "Accounting Information Systems",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3710": {
+   "title": "Auditing",
+   "credits": 3,
+   "prereqText": "ACC 3010 and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3510",
+   "precoreqs": "ACC 3510"
+  },
+  "ACC 4030": {
+   "title": "Governmental and Not For Profit Accounting",
+   "credits": 3,
+   "prereqText": "ACC 3010 or ACC 3030 , University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ACC 3010",
+     "ACC 3030"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 4050": {
+   "title": "Financial Statement Analysis",
+   "credits": 3,
+   "prereqText": "( ACC 3010 or ACC 3030 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ACC 3010",
+     "ACC 3030"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 4250": {
+   "title": "Advisory and Controllership Practices",
+   "credits": 3,
+   "prereqText": "ACC 3250 and University Advanced Standing",
+   "prereqs": "ACC 3250",
+   "prereqNonCourse": true
+  },
+  "ACC 4310": {
+   "title": "Advanced Management Accounting",
+   "credits": 3,
+   "prereqText": "ACC 3300 , University Advanced Standing",
+   "prereqs": "ACC 3300",
+   "prereqNonCourse": true
+  },
+  "ACC 4510": {
+   "title": "Artificial Intelligence and Data Analytics in Accounting",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3510",
+   "precoreqs": "ACC 3510"
+  },
+  "ACC 4700R": {
+   "title": "Current Topics in Accounting",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "ACC 3010 and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true
+  },
+  "ACC 4810R": {
+   "title": "Internship",
+   "credits": 3,
+   "creditsMax": 6,
+   "prereqText": "ACC 3010 , departmental approval, and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true
+  },
+  "ACC 5020": {
+   "title": "Advanced Financial Accounting",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3020 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3020",
+   "prereqNonCourse": true
+  },
+  "ACC 5400": {
+   "title": "Advanced Principles of Taxation",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3400 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3400",
+   "prereqNonCourse": true
+  },
+  "ACC 5710": {
+   "title": "Financial Auditing",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3710 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3710",
+   "prereqNonCourse": true
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 2930R": {
+   "title": "Entrepreneurship Lecture Series",
+   "credits": 1
+  },
+  "FIN 3100": {
+   "title": "Principles of Finance",
+   "credits": 3,
+   "prereqText": "( MGMT 2340 or STAT 2040 or STAT 2050 ) and ( ACC 2110 or ACC 3000 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MGMT 2340",
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     {
+      "or": [
+       "ACC 2110",
+       "ACC 3000"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 2950R": {
+   "title": "Executive Lecture Series",
+   "credits": 1
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Matriculation into WSB and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 4860": {
+   "title": "Business Strategy Formulation and Implementation",
+   "credits": 3,
+   "prereqText": "FIN 3100 , MKTG 3600 , MGMT 3000 , MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "FIN 3100",
+     "MKTG 3600",
+     "MGMT 3000",
+     "MGMT 3450"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  }
+ }
+}

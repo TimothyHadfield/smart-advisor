@@ -1,0 +1,60 @@
+{
+ "id": "law-enforcement-certificate-proficiency",
+ "name": "Law Enforcement, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/law-enforcement-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 1800",
+   "alts": [],
+   "credits": 8
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CJ 1810",
+   "alts": [],
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CJ 1800",
+     "credits": 8
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CJ 1810",
+     "credits": 12
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 1800": {
+   "title": "POST Module I",
+   "credits": 8,
+   "prereqText": "Departmental approval is required.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CJ 1810": {
+   "title": "POST Module II",
+   "credits": 12,
+   "prereqText": "CJ 1800 , Departmental Approval Required",
+   "prereqs": "CJ 1800",
+   "prereqNonCourse": true
+  }
+ }
+}

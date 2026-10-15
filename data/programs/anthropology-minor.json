@@ -1,0 +1,124 @@
+{
+ "id": "anthropology-minor",
+ "name": "Anthropology, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/anthropology-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Complete the following courses:",
+   "code": "ANTH 1010G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Complete the following courses:",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ANTH 2880"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "or Any anthropology course numbered 3000 or higher"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Complete the following courses:",
+   "label": "Any anthropology course numbered 3000 or higher",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ANTH 1010G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ANTH 2880",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "ANTH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 1010G": {
+   "title": "Social Cultural Anthropology",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005 with a grade of C+ or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "ANTH 2880": {
+   "title": "Introduction to Anthropological Analysis",
+   "credits": 3,
+   "prereqText": "ENGL 2010",
+   "prereqs": "ENGL 2010"
+  }
+ },
+ "totalFrom": "area headers"
+}

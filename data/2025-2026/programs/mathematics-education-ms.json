@@ -1,0 +1,313 @@
+{
+ "id": "mathematics-education-ms",
+ "name": "Master of Science - Mathematics Education, M.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/mathematics-education-ms/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "STAT 6010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 6100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 6210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 6310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 6330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDUC 6100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDUC 6320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "EDUC 6490",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "EDUC XXXX",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "STAT 6020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 6700"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following courses for a total of 3 credits"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "MATH XXXX",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "EDUC 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "EDUC 6411"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following courses for a total of 3 credits"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 6210",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 6310",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6320",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "EDUC 6100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MATH 6100",
+     "credits": 3
+    },
+    {
+     "code": "EDUC 6490",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "MATH 6330",
+     "credits": 3
+    },
+    {
+     "label": "EDUC XXXX",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "STAT 6010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "MATH XXXX",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "EDUC 6100": {
+   "title": "Research Methodology",
+   "credits": 3,
+   "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6300": {
+   "title": "Curriculum Design",
+   "credits": 3,
+   "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6320": {
+   "title": "21st Century Instruction and Assessment",
+   "credits": 3,
+   "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6411": {
+   "title": "Instructional Coaching",
+   "credits": 3,
+   "prereqText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed. program, or permission of the program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDUC 6490": {
+   "title": "Masters Project",
+   "credits": 3
+  },
+  "MATH 6100": {
+   "title": "Topics in Geometry and Topology",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6210": {
+   "title": "Real Analysis",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6310": {
+   "title": "Modern Algebra",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6330": {
+   "title": "Advanced Linear Algebra",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6410": {
+   "title": "Topics in Ordinary Differential Equations",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6610": {
+   "title": "Numerical Methods and Modeling",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6620": {
+   "title": "Topics in Numerical Analysis",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 6700": {
+   "title": "Applications of Mathematics",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "STAT 6010": {
+   "title": "Theory of Statistics I",
+   "credits": 3,
+   "prereqText": "Matriculation into the Mathematics Education, M.S. program or Matriculation into the Mathematics Graduate Certificate program, or approval of graduate program director",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "STAT 6020": {
+   "title": "Theory of Statistics II",
+   "credits": 3,
+   "prereqText": "STAT 6010 with C or better",
+   "prereqs": "STAT 6010",
+   "prereqNonCourse": true
+  }
+ }
+}

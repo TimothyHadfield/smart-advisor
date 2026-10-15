@@ -1,0 +1,91 @@
+{
+ "id": "deaf-studies-minor",
+ "name": "Deaf Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/deaf-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ASL 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ASL 3530",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete additional 12 credits of 3000-4000 level ASL prefix courses.",
+   "credits": 12
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ASL 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ASL 3530",
+     "credits": 3
+    },
+    {
+     "label": "ASL Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "ASL Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "ASL Elective",
+     "credits": 3
+    },
+    {
+     "label": "ASL Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ASL 3000": {
+   "title": "Technology for Deaf Studies",
+   "credits": 3,
+   "prereqText": "It is recommended that students complete ASL 2020G or have equivalent skills acquired through classes elsewhere or other through life experiences.",
+   "prereqs": null
+  },
+  "ASL 3530": {
+   "title": "Modern Deaf Culture",
+   "credits": 3,
+   "prereqText": "( ASL 2020G or department approval) and University Advanced Standing",
+   "prereqs": "ASL 2020G",
+   "prereqNonCourse": true
+  }
+ }
+}

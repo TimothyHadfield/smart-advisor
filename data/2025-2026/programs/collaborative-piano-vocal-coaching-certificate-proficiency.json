@@ -1,0 +1,146 @@
+{
+ "id": "collaborative-piano-vocal-coaching-certificate-proficiency",
+ "name": "Collaborative Piano-Vocal Coaching, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/collaborative-piano-vocal-coaching-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2450R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2450R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2001",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 2002",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3005",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MUSC 3006",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "GER 1010 , 1020 or FREN 1010 , 1020",
+   "credits": 8
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MUSC 2450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2001",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3005",
+     "credits": 1
+    },
+    {
+     "code": "GER 1010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MUSC 2450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2450R",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 2002",
+     "credits": 1
+    },
+    {
+     "code": "MUSC 3006",
+     "credits": 1
+    },
+    {
+     "code": "FREN 1010",
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FREN 1010": {
+   "title": "Beginning French I",
+   "credits": 4
+  },
+  "GER 1010": {
+   "title": "Beginning German I",
+   "credits": 4
+  },
+  "MUSC 2001": {
+   "title": "Diction for Singers I",
+   "credits": 1
+  },
+  "MUSC 2002": {
+   "title": "Diction for Singers II",
+   "credits": 1
+  },
+  "MUSC 2450R": {
+   "title": "Private Lessons II",
+   "credits": 1
+  },
+  "MUSC 3005": {
+   "title": "Vocal Literature I",
+   "credits": 1,
+   "prereqText": "( MUSC 1120 or department audition) and University Advanced Standing",
+   "prereqs": "MUSC 1120",
+   "prereqNonCourse": true
+  },
+  "MUSC 3006": {
+   "title": "Vocal Literature II",
+   "credits": 1,
+   "prereqText": "MUSC 3005 and University Advanced Standing",
+   "prereqs": "MUSC 3005",
+   "prereqNonCourse": true
+  }
+ }
+}

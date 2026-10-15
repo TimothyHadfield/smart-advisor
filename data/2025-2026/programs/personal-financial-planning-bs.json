@@ -1,0 +1,1836 @@
+{
+ "id": "personal-financial-planning-bs",
+ "name": "Personal Financial Planning, B.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/personal-financial-planning-bs/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "General Elective (from list)",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "IM 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IM 2600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "My Educator"
+   ]
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2340",
+   "alts": [
+    "STAT 2040"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 4860",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 3050G",
+   "alts": [
+    "MGMT 3300G",
+    "MGMT 3320G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2390",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4290",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 5210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 5260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 5300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 5800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4830R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "FIN 4810R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4200"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 3 semester credit hours from the following courses:",
+   "notes": [
+    "Other upper division courses as approved by the Department Chair"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 17 credits",
+   "pick": {
+    "credits": 17
+   },
+   "credits": 17,
+   "options": [
+    {
+     "codes": [
+      "FIN 3170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4190"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4570R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 4940R"
+     ],
+     "credits": 0.5
+    },
+    {
+     "codes": [
+      "MKTG 3650"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3370"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENTR 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3420R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4180"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4570R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5180"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 5520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 3530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PSY 3460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 1010G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3501"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3750G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 1150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 1500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 2400G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 2705"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FAMS 3850"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 1020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 1050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 1500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2070G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 2120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3420"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 17 semester credit hours of any course numbered 1000 or higher",
+   "notes": [
+    "Students are strongly encouraged to select from the following courses:",
+    "Students are also encouraged to consider the following business courses:",
+    "Students are also encouraged to consider the following courses:"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "alts": [
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Physical Science",
+     "credits": 3
+    },
+    {
+     "label": "American Institution",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2240",
+     "credits": 3
+    },
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    },
+    {
+     "label": "Humanities",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2340",
+     "credits": 3
+    },
+    {
+     "code": "FIN 3060",
+     "credits": 3
+    },
+    {
+     "label": "Social Science",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4830R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MKTG 3600",
+     "credits": 3
+    },
+    {
+     "code": "IM 2010",
+     "alts": [
+      "IM 2600"
+     ],
+     "credits": null
+    },
+    {
+     "code": "FIN 3200",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "Biology",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "code": "IM 2010",
+     "credits": null
+    },
+    {
+     "label": "Notes: **Complete with a B- grade or higher",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "FIN 3100",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4200",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4290",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3000",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3450",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "FIN 3220",
+     "credits": 3
+    },
+    {
+     "code": "FIN 3400",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4270",
+     "credits": 3
+    },
+    {
+     "code": "FIN 5210",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4570R",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "ECON 3050G",
+     "alts": [
+      "MGMT 3300G",
+      "MGMT 3320G"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "FIN 4810R",
+     "credits": 3
+    },
+    {
+     "code": "FIN 5260",
+     "credits": 3
+    },
+    {
+     "code": "FIN 5300",
+     "credits": 3
+    },
+    {
+     "label": "General Elective (from list)",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "MKTG 2390",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 4860",
+     "credits": 3
+    },
+    {
+     "label": "General Elective",
+     "credits": 2
+    },
+    {
+     "code": "FIN 5700",
+     "credits": 3
+    },
+    {
+     "code": "FIN 5800",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ACC 3010": {
+   "title": "Intermediate Accounting I",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 with a B- or higher, ( MATH 1050 , MATH 1055 , or MATH 1090 ) with a C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055",
+       "MATH 1090"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 2125",
+   "precoreqs": "ACC 2125"
+  },
+  "ACC 3020": {
+   "title": "Intermediate Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 3010 , MKTG 2200G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 3010",
+     "MKTG 2200G"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3300",
+   "precoreqs": "ACC 3300"
+  },
+  "ACC 3510": {
+   "title": "Accounting Information Systems",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "COMM 1020": {
+   "title": "Public Speaking",
+   "credits": 3
+  },
+  "COMM 1050": {
+   "title": "Introduction to Communication",
+   "credits": 3
+  },
+  "COMM 1500": {
+   "title": "Introduction to Mass Communication",
+   "credits": 3
+  },
+  "COMM 2070G": {
+   "title": "Introduction to Gender and Communication",
+   "credits": 3
+  },
+  "COMM 2110": {
+   "title": "Interpersonal Communication",
+   "credits": 3
+  },
+  "COMM 2120": {
+   "title": "Small Group Communication and Decision Making",
+   "credits": 3
+  },
+  "COMM 3410": {
+   "title": "Fundamentals of Mediation and Negotiation",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 3420": {
+   "title": "Communication and Conflict",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1030": {
+   "title": "Foundations of Computer Science",
+   "credits": 3
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 3030": {
+   "title": "Intermediate Macroeconomics",
+   "credits": 3,
+   "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ECON 3050G": {
+   "title": "International Economics",
+   "credits": 3,
+   "prereqText": "ECON 2010 and University Advanced Standing",
+   "prereqs": "ECON 2010",
+   "prereqNonCourse": true
+  },
+  "ECON 3060": {
+   "title": "Money and Banking",
+   "credits": 3,
+   "prereqText": "ECON 2020 and University Advanced Standing",
+   "prereqs": "ECON 2020",
+   "prereqNonCourse": true
+  },
+  "ECON 3070": {
+   "title": "Behavioral Economics",
+   "credits": 3,
+   "prereqText": "ECON 2010 and University Advanced Standing",
+   "prereqs": "ECON 2010",
+   "prereqNonCourse": true
+  },
+  "ECON 3370": {
+   "title": "Economic Modeling and Data Analytics",
+   "credits": 3,
+   "prereqText": "MGMT 2240 with a B- or better; ECON 2020 ; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2240",
+     "ECON 2020"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 3400": {
+   "title": "Health Economics",
+   "credits": 3,
+   "prereqText": "ECON 3370 and University Advanced Standing",
+   "prereqs": "ECON 3370",
+   "prereqNonCourse": true
+  },
+  "ECON 4100": {
+   "title": "Analysis of Financial Institutions and Markets",
+   "credits": 3,
+   "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENTR 4400": {
+   "title": "New Venture Financing",
+   "credits": 3,
+   "prereqText": "ENTR 3170 and University Advanced Standing",
+   "prereqs": "ENTR 3170",
+   "prereqNonCourse": true
+  },
+  "FAMS 1150": {
+   "title": "Marriage and Relationship Skills",
+   "credits": 3
+  },
+  "FAMS 1500": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  },
+  "FAMS 2400G": {
+   "title": "Contemporary Family Relation",
+   "credits": 3
+  },
+  "FAMS 2705": {
+   "title": "Ethics for Family Interventions",
+   "credits": 3,
+   "prereqText": "ENGL 1010 , ENGL 1010H , or ENGH 1005 with a C or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FAMS 3850": {
+   "title": "Adult Development and Aging",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or ENGL 2010H with C or higher) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "ENGL 2010H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 3030": {
+   "title": "Foundations of Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 3060": {
+   "title": "Introduction to the PFP Profession",
+   "credits": 3,
+   "prereqText": "MATH 1050 or MATH 1055 or MATH 1090 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "FIN 3100": {
+   "title": "Principles of Finance",
+   "credits": 3,
+   "prereqText": "( MGMT 2340 or STAT 2040 or STAT 2050 ) and ( ACC 2110 or ACC 3000 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MGMT 2340",
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     {
+      "or": [
+       "ACC 2110",
+       "ACC 3000"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 3170": {
+   "title": "Financial Statement Analysis",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 3200": {
+   "title": "Financial Counseling",
+   "credits": 3,
+   "prereqText": "FIN 3060 and University Advanced Standing. For PFP Majors Only",
+   "prereqs": "FIN 3060",
+   "prereqNonCourse": true
+  },
+  "FIN 3220": {
+   "title": "Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "FIN 3060",
+   "precoreqs": "FIN 3060"
+  },
+  "FIN 3400": {
+   "title": "Investment Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 3410": {
+   "title": "Introduction to Venture Capital Skills",
+   "credits": 3,
+   "prereqText": "University Advanced Standing, FIN 3100 strongly recommended.",
+   "prereqs": null
+  },
+  "FIN 3420R": {
+   "title": "Wolverine Fund",
+   "credits": 3,
+   "prereqText": "FIN 3410 , Instructor Approval and University Advanced Standing, FIN 3100 strongly recommended.",
+   "prereqs": null
+  },
+  "FIN 4020": {
+   "title": "Enterprise Risk Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 , MGMT 2340 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FIN 3100",
+     "MGMT 2340"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 4040": {
+   "title": "Business Law for Insurance Professionals",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4050": {
+   "title": "Commercial Property Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4060": {
+   "title": "Commercial Liability Risk Management and Insurance",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4160": {
+   "title": "Portfolio Management",
+   "credits": 3,
+   "prereqText": "FIN 3400 and University Advanced Standing",
+   "prereqs": "FIN 3400",
+   "prereqNonCourse": true,
+   "precoreqText": "MGMT 3345",
+   "precoreqs": "MGMT 3345"
+  },
+  "FIN 4170": {
+   "title": "Derivative Securities",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true,
+   "precoreqText": "MGMT 3345",
+   "precoreqs": "MGMT 3345"
+  },
+  "FIN 4180": {
+   "title": "International Finance Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4190": {
+   "title": "Applied Asset Diversification and Management",
+   "credits": 3,
+   "prereqText": "FIN 3400 and University Advanced Standing",
+   "prereqs": "FIN 3400",
+   "prereqNonCourse": true
+  },
+  "FIN 4200": {
+   "title": "Financial Counseling Practicum",
+   "credits": 3,
+   "prereqText": "FIN 3060 , FIN 3200 , Instructor Approval, Matriculation into WSB, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FIN 3060",
+     "FIN 3200"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 4270": {
+   "title": "Wealth Management Seminar",
+   "credits": 3,
+   "prereqText": "FIN 3060 , FIN 3100 , and FIN 3400 , Matriculation into the Woodbury School of Business, University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "FIN 3060",
+     "FIN 3100",
+     "FIN 3400"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 4290": {
+   "title": "Technological Applications in Personal Financial Planning",
+   "credits": 3,
+   "prereqText": "FIN 3060 , WSB matriculation, University Advanced Standing, and For PFP Majors Only.",
+   "prereqs": "FIN 3060",
+   "prereqNonCourse": true
+  },
+  "FIN 4310": {
+   "title": "Real Estate Investment and Securities",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4570R": {
+   "title": "Advanced Topics in Finance",
+   "credits": 3,
+   "prereqText": "FIN 3100 , Instructor Approval, and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4600": {
+   "title": "AFC Examination Preparation",
+   "credits": 3,
+   "prereqText": "FIN 3200 and ( FIN 1060 or FIN 3060 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FIN 3200",
+     {
+      "or": [
+       "FIN 1060",
+       "FIN 3060"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 4810R": {
+   "title": "Personal Financial Planning Internship",
+   "credits": 2,
+   "creditsMax": 8,
+   "prereqText": "Departmental Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4830R": {
+   "title": "Colloquium in PFP Professionalism",
+   "credits": 1,
+   "prereqText": "University Advanced Standing and For PFP Majors Only.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 5130": {
+   "title": "Financial Statement Analysis and Modeling",
+   "credits": 3,
+   "prereqText": "FIN 3100",
+   "prereqs": "FIN 3100"
+  },
+  "FIN 5180": {
+   "title": "CFA Examination Preparation",
+   "credits": 3,
+   "prereqText": "Permission of instructor or department chairr",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 5210": {
+   "title": "Retirement Planning",
+   "credits": 3,
+   "prereqText": "FIN 3060 , Matriculation into the Woodbury School of Business, University Advanced Standing, and For PFP Majors Only.",
+   "prereqs": "FIN 3060",
+   "prereqNonCourse": true
+  },
+  "FIN 5260": {
+   "title": "Estate Planning Fundamentals",
+   "credits": 3,
+   "prereqText": "FIN 3060 , Matriculation into the Woodbury School of Business, University Advanced Standing, and For PFP Majors Only.",
+   "prereqs": "FIN 3060",
+   "prereqNonCourse": true
+  },
+  "FIN 5300": {
+   "title": "Tax Planning for Personal Financial Planners",
+   "credits": 3,
+   "prereqText": "FIN 3060 , Matriculation into WSB, University Advanced Standing, and for PFP majors only",
+   "prereqs": "FIN 3060",
+   "prereqNonCourse": true
+  },
+  "FIN 5510": {
+   "title": "Investment Products",
+   "credits": 3,
+   "prereqText": "Permission of instructor or department chair and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 5520": {
+   "title": "Financial Markets",
+   "credits": 3,
+   "prereqText": "Permission of instructor or department chair and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 5700": {
+   "title": "CFP Examination Preparation",
+   "credits": 3,
+   "prereqText": "FIN 3060 , FIN 3220 , FIN 3400 , FIN 5210 , FIN 5260 , FIN 5300 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "FIN 3060",
+     "FIN 3220",
+     "FIN 3400",
+     "FIN 5210",
+     "FIN 5260",
+     "FIN 5300"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "FIN 5800",
+   "precoreqs": "FIN 5800"
+  },
+  "FIN 5800": {
+   "title": "Wealth Management and Financial Planning Capstone",
+   "credits": 3,
+   "prereqText": "FIN 3060 , FIN 5210 , FIN 5300 , FIN 3400 , University Advanced Standing, and For PFP Majors Only.",
+   "prereqs": {
+    "and": [
+     "FIN 3060",
+     "FIN 5210",
+     "FIN 5300",
+     "FIN 3400"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "FIN 3220 , FIN 5260",
+   "precoreqs": {
+    "and": [
+     "FIN 3220",
+     "FIN 5260"
+    ]
+   }
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3,
+   "prereqText": "( IM 1010 recommended) or (Basic Computer Applications Challenge Exam with a minimum score of 80% recommended)",
+   "prereqs": null
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3,
+   "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3300G": {
+   "title": "Survey of International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or MKTG 2200G ), ECON 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 2010",
+       "MKTG 2200G"
+      ]
+     },
+     "ECON 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Matriculation into WSB and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 4860": {
+   "title": "Business Strategy Formulation and Implementation",
+   "credits": 3,
+   "prereqText": "FIN 3100 , MKTG 3600 , MGMT 3000 , MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "FIN 3100",
+     "MKTG 3600",
+     "MGMT 3000",
+     "MGMT 3450"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 4940R": {
+   "title": "Special Topics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 3650": {
+   "title": "Professional Selling",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 3300": {
+   "title": "Motivation and Emotion",
+   "credits": 3,
+   "prereqText": "PSY 1010 , ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 3460": {
+   "title": "Personality Theory",
+   "credits": 3,
+   "prereqText": "PSY 1010 (with C- grade or higher) and ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 3530": {
+   "title": "Psychology of Interpersonal Relationships",
+   "credits": 3,
+   "prereqText": "PSY 1010 (with a C- or higher), ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PSY 4300": {
+   "title": "Introduction to Counseling and Psychotherapy",
+   "credits": 3,
+   "prereqText": "PSY 1010 (with grade C- or higher) and PSY 2300 (with a C- grade or higher) and ( ENGL 2010 with a C- grade or higher or PSY 2020 with a C- or higher) and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     "PSY 2300",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 1010G": {
+   "title": "Intro to Sociology",
+   "credits": 3
+  },
+  "SOC 3501": {
+   "title": "Social Psychology",
+   "credits": 3,
+   "prereqText": "SOC 1010G and University Advanced Standing",
+   "prereqs": "SOC 1010G",
+   "prereqNonCourse": true
+  },
+  "SOC 3750G": {
+   "title": "Sociology of Aging",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SOC 4400": {
+   "title": "Social Change",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

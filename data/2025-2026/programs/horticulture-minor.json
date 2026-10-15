@@ -1,0 +1,374 @@
+{
+ "id": "horticulture-minor",
+ "name": "Horticulture, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/horticulture-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 23,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1610",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIOL 1615",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BOT 1800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BOT 4650",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 12 credits",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "BIOL 1620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 1625"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "BOT 2400"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "BOT 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 3210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 3710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 4100"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "BOT 4430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BOT 4700"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "BOT 4505"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MICR 4600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ZOOL 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ZOOL 3435"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 12 credits from the following courses with a grade of C- or higher in each."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
+    },
+    {
+     "code": "BOT 1800",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Electives",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "BOT 4650",
+     "credits": 3
+    },
+    {
+     "label": "Electives",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGH 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1610",
+   "coreqs": [
+    "BIOL 1610"
+   ]
+  },
+  "BIOL 1620": {
+   "title": "College Biology II",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and BIOL 1615 with a C- or higher in each.",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "BIOL 1615"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "BIOL 1625",
+   "coreqs": [
+    "BIOL 1625"
+   ]
+  },
+  "BIOL 1625": {
+   "title": "College Biology II Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1620",
+   "coreqs": [
+    "BIOL 1620"
+   ]
+  },
+  "BOT 1800": {
+   "title": "Introduction to Horticulture",
+   "credits": 3
+  },
+  "BOT 2400": {
+   "title": "Plant Kingdom",
+   "credits": 4,
+   "prereqText": "BIOL 1010 or BIOL 1610 with a minimum grade of C-",
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1610"
+    ]
+   }
+  },
+  "BOT 3200": {
+   "title": "Integrated Pest Management",
+   "credits": 3,
+   "prereqText": "BIOL 1610 or BOT 1800 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1610",
+     "BOT 1800"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "BOT 3210": {
+   "title": "Controlled Environment Experiments in Horticulture",
+   "credits": 3,
+   "prereqText": "BIOL 1610 or BOT 1800 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1610",
+     "BOT 1800"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "BOT 3710": {
+   "title": "Plant Propagation",
+   "credits": 3,
+   "prereqText": "BIOL 1620 and University Advanced Standing. BOT 1800 recommended",
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true
+  },
+  "BOT 4100": {
+   "title": "Plant Anatomy",
+   "credits": 4,
+   "prereqText": "BIOL 1620 and BIOL 1625 with a minimum grade of C- in each, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 1620",
+     "BIOL 1625"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "BOT 4430": {
+   "title": "Plant Pathology",
+   "credits": 3,
+   "prereqText": "( BIOL 1610 or BIOL 1610H ) or BOT 1800 with a minimum grade of C- and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1610",
+     "BIOL 1610H",
+     "BOT 1800"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "BOT 4505": {
+   "title": "Applied Virological Methods",
+   "credits": 3,
+   "prereqText": "MICR 2065 or MICR 3455 ; University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MICR 2065",
+     "MICR 3455"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "BOT 4650": {
+   "title": "Greenhouse Management",
+   "credits": 3,
+   "prereqText": "[ BOT 1800 , BOT 2050 , BOT 2100 , or BOT 2400 ] and University Advanced Standing; BOT 1800 recommended",
+   "prereqs": null
+  },
+  "BOT 4700": {
+   "title": "Plant Tissue Culture",
+   "credits": 4,
+   "prereqText": "BIOL 1620 or BTEC 2010 with a minimum grade of C- and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1620",
+     "BTEC 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MICR 4600": {
+   "title": "Arthropod-Borne Pathogens",
+   "credits": 3,
+   "prereqText": "BIOL 3400 and ( MICR 2060 or MICR 3450 ); University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 3400",
+     {
+      "or": [
+       "MICR 2060",
+       "MICR 3450"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ZOOL 3430": {
+   "title": "Entomology",
+   "credits": 3,
+   "prereqText": "BIOL 1620 and BIOL 1625 with a minimum grade of C- in each, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "BIOL 1620",
+     "BIOL 1625"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3435",
+   "coreqs": [
+    "ZOOL 3435"
+   ]
+  },
+  "ZOOL 3435": {
+   "title": "Entomology Laboratory",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ZOOL 3430",
+   "coreqs": [
+    "ZOOL 3430"
+   ]
+  }
+ }
+}

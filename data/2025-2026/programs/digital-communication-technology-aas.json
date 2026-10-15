@@ -1,0 +1,280 @@
+{
+ "id": "digital-communication-technology-aas",
+ "name": "Digital Communication Technology, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-communication-technology-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Mathematics",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities/Fine Arts/Foreign Language",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Behavioral Science, Social or Political Science Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Any approved Biology or Physical Science Distribution Course",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 1110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DWDD 1600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2000",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Complete 29 credits from approved DGM electives (see advisor)",
+   "credits": 29,
+   "text": "Complete 29 credits from approved DGM electives (see advisor)"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "credits": 1,
+   "text": "Complete any 1000-level, or higher, courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Social and Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "DGM 1110",
+     "credits": 4
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Biology or Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "DAGV 1200",
+     "credits": 3
+    },
+    {
+     "code": "DWDD 1600",
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2000",
+     "credits": 4
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "DCPR 1800",
+     "credits": 4
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Humanities, Fine Arts, or Foreign Language",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    },
+    {
+     "label": "DGM Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DAGV 1200": {
+   "title": "3D Modeling Essentials",
+   "credits": 3
+  },
+  "DAPR 2000": {
+   "title": "Digital Audio Essentials",
+   "credits": 3,
+   "coreqText": "DAPR 2000L",
+   "coreqs": [
+    "DAPR 2000L"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 3,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "DWDD 1600": {
+   "title": "Web Essentials",
+   "credits": 3
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

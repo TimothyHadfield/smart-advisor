@@ -1,0 +1,84 @@
+{
+ "id": "management-graduate-certificate",
+ "name": "Management, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/business-graduate-programs/management-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6740",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6760",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 6740",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 6510",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 6760",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 6510": {
+   "title": "Information Systems and Project Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6740": {
+   "title": "Operations and Supply Chain Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6760": {
+   "title": "Applied Business Research",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ },
+ "totalFrom": "area headers"
+}

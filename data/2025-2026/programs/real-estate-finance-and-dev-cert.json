@@ -1,0 +1,134 @@
+{
+ "id": "real-estate-finance-and-dev-cert",
+ "name": "Real Estate Finance and Development, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/real-estate-finance-and-dev-cert/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4330R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 4350",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4310",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FIN 4320",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4330R",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FIN 4340",
+     "credits": 3
+    },
+    {
+     "code": "FIN 4350",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FIN 4310": {
+   "title": "Real Estate Investment and Securities",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4320": {
+   "title": "Real Estate Development",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4330R": {
+   "title": "Real Estate Fund",
+   "credits": 3,
+   "prereqText": "FIN 4310 and University Advanced Standing",
+   "prereqs": "FIN 4310",
+   "prereqNonCourse": true
+  },
+  "FIN 4340": {
+   "title": "Real Estate Markets and Brokerage",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4350": {
+   "title": "Real Estate Mortgage and Lending",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  }
+ }
+}

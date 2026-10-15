@@ -1,0 +1,455 @@
+{
+ "id": "english-education-minor",
+ "name": "English Education, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/english-education-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2850",
+   "alts": [
+    "ENGL 2870"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 4220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 4225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 4230",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 4235",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 4250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3540"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3640"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3650"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3660"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 2850",
+     "alts": [
+      "ENGL 2870"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ENGL 4220",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 4225",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ENGL 4230",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 4235",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 3510",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3520",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3530",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3540",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 3610",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3620",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3640",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3650",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3660",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "ENGL 4250",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 2850": {
+   "title": "Literary History I",
+   "credits": 3,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  },
+  "ENGL 2870": {
+   "title": "Literary History II",
+   "credits": 3,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  },
+  "ENGL 3510": {
+   "title": "Early American Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3520": {
+   "title": "Nineteenth Century American Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3530": {
+   "title": "Modern American Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3540": {
+   "title": "Contemporary American Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3610": {
+   "title": "Medieval Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3620": {
+   "title": "Tudor and Stuart Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3640": {
+   "title": "British Literature of the Long Eighteenth Century",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3650": {
+   "title": "Victorian Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 3660": {
+   "title": "British Literature since 1900",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( ENGL 2850 or ENGL 2870 ), both with a grade of C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "ENGL 2850",
+       "ENGL 2870"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 4220": {
+   "title": "Teaching Reading and Literature",
+   "credits": 3,
+   "prereqText": "EDSC 1010 and University Advanced Standing",
+   "prereqs": "EDSC 1010",
+   "prereqNonCourse": true,
+   "coreqText": "ENGL 4225",
+   "coreqs": [
+    "ENGL 4225"
+   ]
+  },
+  "ENGL 4225": {
+   "title": "Teaching Reading Practicum",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ENGL 4220",
+   "coreqs": [
+    "ENGL 4220"
+   ]
+  },
+  "ENGL 4230": {
+   "title": "Teaching Writing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ENGL 4235",
+   "coreqs": [
+    "ENGL 4235"
+   ],
+   "precoreqText": "ENGL 4220",
+   "precoreqs": "ENGL 4220"
+  },
+  "ENGL 4235": {
+   "title": "Teaching Writing Practicum",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ENGL 4230",
+   "coreqs": [
+    "ENGL 4230"
+   ]
+  },
+  "ENGL 4250": {
+   "title": "Young Adult Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,261 @@
+{
+ "id": "cybersecurity-ms",
+ "name": "Master of Science in Cybersecurity, M.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/cybersecurity-ms/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6350",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6370",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6740",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6770",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 6900",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "IT 6660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 6750"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 6780"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 6420"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:",
+   "notes": [
+    "or other departmental approved electives."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "IT 6300",
+     "credits": 3
+    },
+    {
+     "code": "IT 6330",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "IT 6740",
+     "credits": 3
+    },
+    {
+     "code": "IT 6350",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "IT 6370",
+     "credits": 3
+    },
+    {
+     "code": "IT 6770",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "IT 6900",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "INFO 6420": {
+   "title": "Web and Mobile Application Security",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approvall",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "IT 6300",
+   "precoreqs": "IT 6300"
+  },
+  "IT 6300": {
+   "title": "Principles of Cybersecurity",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IT 6330": {
+   "title": "Cybersecurity Operations",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IT 6350": {
+   "title": "Law/Ethics/Privacy in Cybersecurity",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IT 6370": {
+   "title": "Penetration Testing and Vulnerability Assessment",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "IT 6300",
+   "precoreqs": "IT 6300"
+  },
+  "IT 6660": {
+   "title": "Advanced Network Forensics",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "IT 6300",
+   "precoreqs": "IT 6300"
+  },
+  "IT 6740": {
+   "title": "Advanced Network Defense and Countermeasures",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "IT 6300",
+   "precoreqs": "IT 6300"
+  },
+  "IT 6750": {
+   "title": "Reverse Engineering and Malware Analysis",
+   "credits": 3,
+   "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "IT 6300",
+   "precoreqs": "IT 6300"
+  },
+  "IT 6770": {
+   "title": "Cybersecurity Management",
+   "credits": 3,
+   "prereqText": "IT 6300 or Departmental approval",
+   "prereqs": "IT 6300",
+   "prereqNonCourse": true
+  },
+  "IT 6780": {
+   "title": "Secure Coding",
+   "credits": 3,
+   "prereqText": "IT 6300 or departmental approvall",
+   "prereqs": "IT 6300",
+   "prereqNonCourse": true
+  },
+  "IT 6900": {
+   "title": "Cybersecurity Capstone",
+   "credits": 3,
+   "prereqText": "IT 6330 , IT 6350 , IT 6370 , IT 6740 , and IT 6770",
+   "prereqs": {
+    "and": [
+     "IT 6330",
+     "IT 6350",
+     "IT 6370",
+     "IT 6740",
+     "IT 6770"
+    ]
+   }
+  }
+ }
+}

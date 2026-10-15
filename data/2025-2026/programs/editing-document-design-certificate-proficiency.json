@@ -1,0 +1,241 @@
+{
+ "id": "editing-document-design-certificate-proficiency",
+ "name": "Editing and Document Design, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/english-literature/editing-document-design-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Complete one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4360R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete ONE of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 2100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ENGL 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ENGL 3340",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 3300",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3320",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4340",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4360R",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H with a grade of C- or higher, or ENGH 1005 with a grade of C or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 2050": {
+   "title": "Editing",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "ENGL 2100": {
+   "title": "Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "ENGL 3050": {
+   "title": "Advanced Editing and Design for Print Media",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing; ENGL 2050 recommended",
+   "prereqs": null
+  },
+  "ENGL 3300": {
+   "title": "Collaborative Communication for Technology Professions",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 3320": {
+   "title": "Grant and Proposal Writing",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 3340": {
+   "title": "Digital Document Design",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 4340": {
+   "title": "Advanced Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and ENGL 2100 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "ENGL 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 4360R": {
+   "title": "Topics in Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and ENGL 2100 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "ENGL 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

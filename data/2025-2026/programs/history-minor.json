@@ -1,0 +1,117 @@
+{
+ "id": "history-minor",
+ "name": "History, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/history-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose three from the following:",
+   "pick": {
+    "count": 3
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "HIST 1500G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 2710"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose three from the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any three upper division history courses",
+   "credits": 9
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HIST 1500G",
+     "credits": 3
+    },
+    {
+     "code": "HIST 2700",
+     "alts": [
+      "HIST 2710"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "HIST 1510G",
+     "alts": [
+      "HIST 1500G",
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HIST 3000",
+     "credits": 3
+    },
+    {
+     "code": "HIST 3000",
+     "credits": 3
+    },
+    {
+     "code": "HIST 3000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HIST 1500G": {
+   "title": "World History to 1500",
+   "credits": 3
+  },
+  "HIST 1510G": {
+   "title": "World History from 1500 to the Present",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  }
+ },
+ "missingCourses": [
+  "HIST 3000"
+ ]
+}

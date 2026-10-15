@@ -1,0 +1,548 @@
+{
+ "id": "national-security-studies-minor",
+ "name": "National Security Studies, Minor",
+ "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/national-security-studies-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "CJ 1010",
+   "alts": [
+    "POLS 1100"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 3010R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 4750R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 4600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "CNST 4795"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 4160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 3340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 3100G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3440"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3450G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 4140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 4300G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 2590R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PJST 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PJST 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PJST 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4610"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:",
+   "notes": [
+    "or other course approved by department advisor or director."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CJ 1010",
+     "alts": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NSS 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "NSS 4600",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "NSS 3010R",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "NSS 4750R",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 1010": {
+   "title": "Introduction to Criminal Justice",
+   "credits": 3
+  },
+  "CJ 3340": {
+   "title": "Terrorism and the Criminal Justice System",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and CJ 1010",
+   "prereqs": "CJ 1010",
+   "prereqNonCourse": true
+  },
+  "CJ 4160": {
+   "title": "Constitutional Criminal Rights",
+   "credits": 3,
+   "prereqText": "CJ 1330 , ENGL 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CJ 1330",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CNST 4795": {
+   "title": "Civil Rights and Civil Liberties",
+   "credits": 3,
+   "prereqText": "CNST 4790 and University Advanced Standing",
+   "prereqs": "CNST 4790",
+   "prereqNonCourse": true
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "ESMG 3100G": {
+   "title": "Introduction to Homeland Security",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 3440": {
+   "title": "The History of World War I",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HIST 3450G": {
+   "title": "The History of World War II",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "HIST 4140": {
+   "title": "Genocide in the Twentieth Century",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "HIST 4300G": {
+   "title": "Violence and Social Conflict in Latin America",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "MILS 2590R": {
+   "title": "Current Topics in Military Science",
+   "credits": 3
+  },
+  "MILS 4200": {
+   "title": "The Profession of Arms I",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  },
+  "MILS 4210": {
+   "title": "The Profession of Arms II",
+   "credits": 3,
+   "prereqText": "MILS 4200 or Departmental Approval",
+   "prereqs": "MILS 4200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGL 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "NSS 3010R": {
+   "title": "National Security Area Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , or HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 4210": {
+   "title": "Law of War",
+   "credits": 3,
+   "prereqText": "( POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NSS 4600": {
+   "title": "National Security Law",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 4750R": {
+   "title": "Current Topics in National Security",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "PJST 3020": {
+   "title": "The Ethics of War and Peace",
+   "credits": 3,
+   "prereqText": "PHIL 2050 and University Advanced Standing",
+   "prereqs": "PHIL 2050",
+   "prereqNonCourse": true
+  },
+  "PJST 3100": {
+   "title": "Introduction to Human Security",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( PHIL 2050 or PHIL 2050G ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "PHIL 2050",
+       "PHIL 2050G"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PJST 3400": {
+   "title": "Conflict Transformation Resolution and Sustainable Peace",
+   "credits": 3,
+   "prereqText": "PJST 2000 and University Advanced Standing",
+   "prereqs": "PJST 2000",
+   "prereqNonCourse": true
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "POLS 2100": {
+   "title": "Introduction to International Relations",
+   "credits": 3
+  },
+  "POLS 3100": {
+   "title": "Survey of International Terrorism",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3210": {
+   "title": "World Diplomacy",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  },
+  "POLS 3400": {
+   "title": "American Foreign Policy",
+   "credits": 3,
+   "prereqText": "POLS 1100 , POLS 2100 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "POLS 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 3500": {
+   "title": "International Relations of the Middle East",
+   "credits": 3,
+   "prereqText": "( POLS 2100 or instructor approval) and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  },
+  "POLS 3600": {
+   "title": "International Relations of East Asia",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3610": {
+   "title": "International Organization",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  },
+  "POLS 4500": {
+   "title": "International Conflict and Security",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  },
+  "POLS 4610": {
+   "title": "International Law",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,84 @@
+{
+ "id": "technology-management-graduate-certificate",
+ "name": "Technology Management, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/business-graduate-programs/technology-management-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6440",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6470",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MKTG 6400",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 6440",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 6470",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MKTG 6400",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 6440": {
+   "title": "Advanced Project Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6470": {
+   "title": "Organization Information Technologies",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 6400": {
+   "title": "Technology Marketing and Customer Experience",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ },
+ "totalFrom": "area headers"
+}

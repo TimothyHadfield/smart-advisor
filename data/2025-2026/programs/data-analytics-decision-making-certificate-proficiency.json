@@ -1,0 +1,345 @@
+{
+ "id": "data-analytics-decision-making-certificate-proficiency",
+ "name": "Data Analytics and Decision Making, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/data-analytics-decision-making-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 1400",
+   "alts": [
+    "MGMT 2400"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CS 1400",
+   "alts": [
+    "INFO 1200"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MATH 1050",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Statistics course chosen from:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MGMT 2340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 2040"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "STAT 2050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PSY 3110"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Elective Courses",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "INFO 3130"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "INFO 4130"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "MATH 1100"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "MKTG 3300"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "CS 1410"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "CS 2420"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "STAT 2050"
+     ],
+     "credits": 4,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "BIOL 3100"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    },
+    {
+     "codes": [
+      "BIOL 1011"
+     ],
+     "credits": 3,
+     "section": "Choose six credits from the following:"
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 1400",
+     "credits": 3
+    },
+    {
+     "code": "CS 1400",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Statistics course chosen from:",
+     "credits": 3
+    },
+    {
+     "code": "STAT 2040",
+     "credits": null
+    },
+    {
+     "code": "MGMT 2340",
+     "credits": null
+    },
+    {
+     "code": "STAT 2050",
+     "credits": null
+    },
+    {
+     "code": "PSY 3110",
+     "credits": null
+    },
+    {
+     "code": "STAT 2050",
+     "credits": null
+    },
+    {
+     "label": "Complete 6 credits of electives from list",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1011": {
+   "title": "Introduction to Bioinformatics",
+   "credits": 3
+  },
+  "BIOL 3100": {
+   "title": "Introduction to Data Analysis for Biologists",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 1410": {
+   "title": "Object Oriented Programming",
+   "credits": 3,
+   "prereqText": "CS 1400 and Math equivalent to at least college algebra",
+   "prereqs": "CS 1400",
+   "prereqNonCourse": true
+  },
+  "CS 2420": {
+   "title": "Introduction to Algorithms and Data Structures",
+   "credits": 3,
+   "prereqText": "CS 1410",
+   "prereqs": "CS 1410"
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 3130": {
+   "title": "Introduction to Applied Data Analytics",
+   "credits": 3,
+   "prereqText": "Basic statistics course ( MGMT 2340 or STAT 1040 or STAT 1045 or STAT 2040 or STAT 2050 or PSY 3110 ), and basic knowledge of Microsoft Excel, or Departmental Approval and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 1040",
+     "STAT 1045",
+     "STAT 2040",
+     "STAT 2050",
+     "PSY 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "INFO 4130": {
+   "title": "Data Science and Big Data Analytics",
+   "credits": 3,
+   "prereqText": "INFO 3130 and University Advanced Standing",
+   "prereqs": "INFO 3130",
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1100": {
+   "title": "Survey of Calculus",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 1400": {
+   "title": "Introduction to Data Analytics",
+   "credits": 3
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MKTG 3300": {
+   "title": "Marketing Analytics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PSY 3110": {
+   "title": "Statistics for the Behavioral Sciences",
+   "credits": 4,
+   "prereqText": "MAT 1010 or higher and University Advanced Standing",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 2050": {
+   "title": "Introduction to Statistical Methods",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

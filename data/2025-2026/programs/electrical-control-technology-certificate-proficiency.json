@@ -1,0 +1,301 @@
+{
+ "id": "electrical-control-technology-certificate-proficiency",
+ "name": "Electrical and Control Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/transportation-technologies/electrical-control-technology-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 23,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1130",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1135",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1140",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1145",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1150",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1155",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1250",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1280",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "AET 1285",
+   "alts": [],
+   "credits": 4
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "AET 1050",
+     "credits": 3
+    },
+    {
+     "code": "AET 1130",
+     "credits": 1
+    },
+    {
+     "code": "AET 1135",
+     "credits": 1
+    },
+    {
+     "code": "AET 1150",
+     "credits": 1
+    },
+    {
+     "code": "AET 1155",
+     "credits": 1
+    },
+    {
+     "code": "AET 1140",
+     "credits": 1
+    },
+    {
+     "code": "AET 1145",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "AET 1060",
+     "credits": 3
+    },
+    {
+     "code": "AET 1250",
+     "credits": 2
+    },
+    {
+     "code": "AET 1280",
+     "credits": 4
+    },
+    {
+     "code": "AET 1285",
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AET 1050": {
+   "title": "Electrical Math I",
+   "credits": 3,
+   "prereqText": "MAT 1010 or Departmental Approval",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "AET 1060": {
+   "title": "Electrical Math II",
+   "credits": 3,
+   "prereqText": "AET 1050",
+   "prereqs": "AET 1050"
+  },
+  "AET 1130": {
+   "title": "Introduction to Automation",
+   "credits": 2,
+   "coreqText": "AET 1135 , AET 1150 , AET 1155",
+   "coreqs": [
+    "AET 1135",
+    "AET 1150",
+    "AET 1155"
+   ],
+   "precoreqText": "AET 1050",
+   "precoreqs": "AET 1050"
+  },
+  "AET 1135": {
+   "title": "Introduction to Automation Lab",
+   "credits": 1,
+   "coreqText": "AET 1130 , AET 1150 , AET 1155",
+   "coreqs": [
+    "AET 1130",
+    "AET 1150",
+    "AET 1155"
+   ],
+   "precoreqText": "AET 1050",
+   "precoreqs": "AET 1050"
+  },
+  "AET 1140": {
+   "title": "Applied AC Theory",
+   "credits": 1,
+   "coreqText": "AET 1145",
+   "coreqs": [
+    "AET 1145"
+   ],
+   "precoreqText": "AET 1050 , AET 1130 , AET 1135 , AET 1150 , AET 1155",
+   "precoreqs": {
+    "and": [
+     "AET 1050",
+     "AET 1130",
+     "AET 1135",
+     "AET 1150",
+     "AET 1155"
+    ]
+   }
+  },
+  "AET 1145": {
+   "title": "Applied AC Lab",
+   "credits": 2,
+   "prereqText": "AET 1130 , AET 1135 , AET 1150 , AET 1155",
+   "prereqs": {
+    "and": [
+     "AET 1130",
+     "AET 1135",
+     "AET 1150",
+     "AET 1155"
+    ]
+   },
+   "coreqText": "AET 1140",
+   "coreqs": [
+    "AET 1140"
+   ],
+   "precoreqText": "AET 1050",
+   "precoreqs": "AET 1050"
+  },
+  "AET 1150": {
+   "title": "Industrial Logic",
+   "credits": 1,
+   "coreqText": "AET 1155 , AET 1130 , AET 1135",
+   "coreqs": [
+    "AET 1155",
+    "AET 1130",
+    "AET 1135"
+   ],
+   "precoreqText": "AET 1050",
+   "precoreqs": "AET 1050"
+  },
+  "AET 1155": {
+   "title": "Industrial Logic Lab",
+   "credits": 1,
+   "coreqText": "AET 1150 , AET 1130 , AET 1135",
+   "coreqs": [
+    "AET 1150",
+    "AET 1130",
+    "AET 1135"
+   ],
+   "precoreqText": "AET 1050",
+   "precoreqs": "AET 1050"
+  },
+  "AET 1250": {
+   "title": "Industrial Electrical Code",
+   "credits": 2,
+   "prereqText": "( AET 1140 , AET 1145 ) or Department Approval",
+   "prereqs": {
+    "and": [
+     "AET 1140",
+     "AET 1145"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "AET 1060",
+   "precoreqs": "AET 1060"
+  },
+  "AET 1280": {
+   "title": "Electric Motor Control",
+   "credits": 4,
+   "prereqText": "AET 1140 , AET 1145",
+   "prereqs": {
+    "and": [
+     "AET 1140",
+     "AET 1145"
+    ]
+   },
+   "coreqText": "AET 1285",
+   "coreqs": [
+    "AET 1285"
+   ],
+   "precoreqText": "AET 1060 , AET 1250",
+   "precoreqs": {
+    "and": [
+     "AET 1060",
+     "AET 1250"
+    ]
+   }
+  },
+  "AET 1285": {
+   "title": "Electric Motor Control Lab",
+   "credits": 4,
+   "prereqText": "AET 1140 , AET 1145",
+   "prereqs": {
+    "and": [
+     "AET 1140",
+     "AET 1145"
+    ]
+   },
+   "coreqText": "AET 1280",
+   "coreqs": [
+    "AET 1280"
+   ],
+   "precoreqText": "AET 1060 , AET 1250",
+   "precoreqs": {
+    "and": [
+     "AET 1060",
+     "AET 1250"
+    ]
+   }
+  }
+ }
+}
