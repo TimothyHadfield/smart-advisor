@@ -14,7 +14,9 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 |---|---|---|
 | Repo + Pages + md files | done | github.com/TimothyHadfield/smart-advisor |
 | EE flowchart + auto plan | live (cdfcd9f) | 50 courses, 122 cr; 10 planner tests pass; phone + desktop checked headless |
-| All majors | not started | phase 2 |
+| Flowchart layout like Tim's | live (bd1827b) | `js/layout.js` layered + crossing reduction; EE crossings 62→8 drawn (Tim's hand chart: 10); elbows, labs folded, Gen Ed row below |
+| Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
+| All majors | not started | phase 2 (+ catalog-year archives) |
 | Google sign-in (Firebase) | not started | phase 3; create project `smart-advisor-th` via firebase CLI (logged in as timhadfield7@gmail.com) |
 | Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
 | Rate My Professors | not started | unofficial GraphQL; needs a CORS-free path (fetch at build time via script) |
@@ -47,7 +49,10 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 - 2026-10-15 · Plain HTML/CSS/JS, no build step, GitHub Pages. Course data pre-fetched by Node scripts into `data/*.json` (catalog has no CORS for browser fetches; assumed).
 - 2026-10-15 · Firebase (free Spark) only for accounts/saved plans, added in phase 3; phase 1 saves to localStorage.
 
+- 2026-10-15 · Layout/import UI choices (unconfirmed): Gen Ed row below chart (Tim's is left), "+Lab" marker, Tim's box colors not copied, buttons "Import audit / Choose PDF / Read / Apply / Count in progress"; folded box Taken only when lecture + lab both taken.
+
 ## NOT verified
+- pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).
 - Whether UVU exposes current-semester sections anywhere without login.
 - Whether RMP GraphQL is callable from a script without being blocked.
 - Course offering seasons (fall-only / spring-only) — catalog may not say; UVU grad plan order used as a hint.
@@ -59,5 +64,5 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 - `direction.md` · Tim's intent · `docs/research.md` · alternatives + data endpoints
 - `scripts/fetch-program.mjs <url> <id>` · scrapes a catalog program → `data/programs/<id>.json`
 - `js/planner.js` (pure) · `js/app.js` + `css/app.css` + `index.html` · UI, localStorage for taken classes
-- Tests: `node tests/planner.test.mjs` · last run 2026-10-15: 10 passed / 0 failed
+- Tests: `node tests/planner.test.mjs`, `tests/layout.test.mjs`, `tests/audit.test.mjs` · last run 2026-10-15: 10/8/6 passed, 0 failed
 - Live: https://timothyhadfield.github.io/smart-advisor/ · hosting: GitHub Pages

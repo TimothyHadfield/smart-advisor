@@ -9,4 +9,6 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** direction.md, progress.md, chat.md, docs/research.md, README.md; repo TimothyHadfield/smart-advisor with Pages.
 - **Verified how:** curl against catalog.uvu.edu (programs list, ribbit course endpoint, FOSE search API) on 2026-10-15.
 - **Phase 1 built (builder):** EE flowchart + tap-to-mark-taken + auto plan; merged cdfcd9f. Verified: 10 tests pass (5 failed vs a broken planner), 6 prereqs spot-checked vs catalog, phone-view tap test 122→109 credits, 393px + desktop screenshots, no console errors. Dark mode and real iPhone not checked.
-- **Open:** Tim to export his Lucid flowchart as PNG/PDF; current-semester section source.
+- **Asked (2):** flowchart arranged like his so lines "overlap as little as possible"; "connector to wolverine track ... so that some things are automaticaly selected". Gave PNG + his audit PDF.
+- **Built (builder, bd1827b):** layered layout (crossings 62→8), elbows, labs folded; audit import (paste + PDF, local only). Verified: 24 tests pass (new ones failed vs broken code first), real audit → 19 taken / 6 IP, WebKit PDF upload, phone + desktop screenshots, no private data in repo (git grep).
+- **Open (old):** Tim to export his Lucid flowchart as PNG/PDF; current-semester section source.
