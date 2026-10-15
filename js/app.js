@@ -4,6 +4,7 @@ import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
 import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
+import { termInfo, defaultTerm, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -28,6 +29,10 @@ const state = load();
 function defaults() {
   state.settings ??= { max: 16, summers: false, start: null };
   state.settings.grades ??= true;
+  // schedule builder: prefs (js/schedule.js DEFAULT_PREFS) + per term {add, drop, pin: {code: crn}, crns}
+  state.settings.sched ??= {};
+  state.settings.sched.prefs ??= {};
+  state.settings.sched.terms ??= {};
   state.done ??= {};
   state.grades ??= {};
   state.plan ??= { programs: [], catalogYear: null };
@@ -66,7 +71,7 @@ const doneSet = () => new Set(state.done[major()] || []);
 function setDone(set) { state.done[major()] = [...set]; save(); }
 const gradeMap = () => (state.grades[major()] ??= {});
 
-let model, nodes, edges, graph, sections = [];
+let model, nodes, edges, graph, sections = [], lastPlan = null;
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -118,6 +123,7 @@ async function boot() {
   wireSettings();
   wireImport();
   wirePicker();
+  wireSched();
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
   $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
@@ -330,6 +336,8 @@ function refresh() {
   }
   renderPlan(plan);
   renderLegend(plan);
+  lastPlan = plan;
+  if ($('main').dataset.tab === 'sched') renderSched();
 }
 
 function startTerm() {
@@ -357,12 +365,16 @@ function renderPlan(plan) {
 
 
 // ---------- tabs + settings ----------
+// phone: bottom tabs Flowchart / Plan / Schedule; laptop: Flowchart / Schedule in the header (the plan stays beside it)
+function setTab(tab) {
+  $('main').dataset.tab = tab;
+  for (const x of $('tabs').children) x.classList.toggle('on', x.dataset.tab === tab);
+  for (const x of $('wtabs').children) x.classList.toggle('on', x.dataset.tab === (tab === 'sched' ? 'sched' : 'flow'));
+  if (tab === 'flow' || tab === 'plan') layout();
+  if (tab === 'sched') renderSched();
+}
 function wireTabs() {
-  for (const b of $('tabs').children) b.addEventListener('click', () => {
-    $('main').dataset.tab = b.dataset.tab;
-    for (const x of $('tabs').children) x.classList.toggle('on', x === b);
-    if (b.dataset.tab === 'flow') layout();
-  });
+  for (const b of [...$('tabs').children, ...$('wtabs').children]) b.addEventListener('click', () => setTab(b.dataset.tab));
 }
 function wireSettings() {
   const dlg = $('settings');
@@ -376,13 +388,259 @@ function wireSettings() {
     $('setStart').innerHTML = terms.map(termLabel).map((l) => `<option${l === cur ? ' selected' : ''}>${l}</option>`).join('');
     $('setMax').innerHTML = Array.from({ length: 16 }, (_, i) => i + 6).map((v) => `<option${v === state.settings.max ? ' selected' : ''}>${v}</option>`).join('');
     $('setSummer').checked = !!state.settings.summers;
+    // schedule preferences
+    const p = prefs();
+    for (const b of $('setDays').children) b.classList.toggle('on', p.days.includes(b.dataset.d));
+    const hour = (h) => `${((h + 11) % 12) + 1} ${h < 12 ? 'am' : 'pm'}`;
+    const opts = (hours, cur, any) => `<option value="">${any}</option>` + hours.map((h) => { const v = String(h * 100).padStart(4, '0'); return `<option value="${v}"${v === cur ? ' selected' : ''}>${hour(h)}</option>`; }).join('');
+    $('setAfter').innerHTML = opts([7, 8, 9, 10, 11, 12, 13], p.after, 'Any');
+    $('setBefore').innerHTML = opts([12, 13, 14, 15, 16, 17, 18, 19, 20, 21], p.before, 'Any');
+    $('setMode').value = p.mode;
+    $('setGaps').checked = !!p.gaps; $('setRmp').checked = !!p.rmp; $('setMain').checked = !!p.main; $('setWait').checked = !!p.wait;
   };
+  const setPref = (k, v) => { state.settings.sched.prefs = { ...prefs(), [k]: v }; save(); renderSchedIfOpen(); };
+  $('setDays').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-d]');
+    if (!b) return;
+    b.classList.toggle('on');
+    setPref('days', [...$('setDays').children].filter((x) => x.classList.contains('on')).map((x) => x.dataset.d).join(''));
+  });
+  $('setAfter').addEventListener('change', (e) => setPref('after', e.target.value || null));
+  $('setBefore').addEventListener('change', (e) => setPref('before', e.target.value || null));
+  $('setMode').addEventListener('change', (e) => setPref('mode', e.target.value));
+  for (const [id, k] of [['setGaps', 'gaps'], ['setRmp', 'rmp'], ['setMain', 'main'], ['setWait', 'wait']]) $(id).addEventListener('change', (e) => setPref(k, e.target.checked));
   $('gear').addEventListener('click', () => { fill(); dlg.showModal(); });
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
   $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; setDone(new Set()); refresh(); });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+}
+
+// ---------- schedule: a term's sections, the best non-conflicting schedules (js/schedule.js) ----------
+// The classes come from the plan's semester for that term; the student can add or remove classes and
+// pin a section (tap a class). Preferences live in Settings. Section data + ratings load on first use.
+const prefs = () => ({ ...DEFAULT_PREFS, ...(state.settings.sched?.prefs || {}) });
+const sched = { terms: [], term: null, groups: new Map(), rmp: {}, list: [], idx: 0, courses: [], ready: null };
+const DAY_NAME = { M: 'Mon', T: 'Tue', W: 'Wed', R: 'Thu', F: 'Fri', S: 'Sat', U: 'Sun' };
+function loadSchedIndex() {
+  sched.ready ??= Promise.all([getJSON(`${DATA}/sections/index.json`), getJSON(`${DATA}/rmp.json`)]).then(([idx, rmp]) => {
+    sched.terms = (idx?.terms || []).map((t) => String(t.term)).sort();
+    sched.rmp = rmp?.profs || {};
+    sched.term ??= defaultTerm(sched.terms);
+    if (!sched.terms.length) sched.ready = null; // try again next time
+  });
+  return sched.ready;
+}
+async function termGroups(code) {
+  if (!sched.groups.has(code)) {
+    const d = await getJSON(`${DATA}/sections/${code}.json`);
+    if (!d) return new Map();
+    sched.groups.set(code, groupSections(d.sections));
+  }
+  return sched.groups.get(code);
+}
+function termState(code) {
+  const t = (state.settings.sched.terms[code] ??= {});
+  t.add ??= []; t.drop ??= []; t.pin ??= {}; t.crns ??= [];
+  return t;
+}
+// the plan's courses for that term (a course with alternatives: the one offered), minus removed, plus added
+function termCourses(code, groups) {
+  const t = termState(code);
+  const sem = lastPlan?.semesters.find((s) => s.term === termInfo(code).label);
+  const out = [];
+  for (const it of sem?.items || []) {
+    if (it.kind !== 'course' || !it.code) continue;
+    const codes = model?.units.find((u) => u.id === it.unitId)?.codes || [it.code];
+    const c = codes.find((x) => groups.has(x)) || it.code;
+    if (!t.drop.includes(c) && !out.includes(c)) out.push(c);
+  }
+  for (const c of t.add) if (!out.includes(c)) out.push(c);
+  return out;
+}
+const renderSchedIfOpen = () => { if ($('main').dataset.tab === 'sched') renderSched(); };
+let schedGen = 0;
+async function renderSched() {
+  const gen = ++schedGen;
+  await loadSchedIndex();
+  if (gen !== schedGen) return;
+  if (!sched.terms.length) { $('scList').innerHTML = '<li class="none">Class list not loaded</li>'; return; }
+  $('scTerms').innerHTML = sched.terms.map((c) => `<button type="button" data-term="${c}"${c === sched.term ? ' class="on"' : ''}>${termInfo(c).short}</button>`).join('');
+  if (!sched.groups.has(sched.term)) $('scList').innerHTML = '<li class="none">Loading…</li>';
+  const code = sched.term;
+  const groups = await termGroups(code);
+  if (gen !== schedGen) return;
+  const t = termState(code);
+  sched.courses = termCourses(code, groups).map((c) => ({ code: c, sections: groups.get(c) || [] }));
+  sched.list = buildSchedules(sched.courses, prefs(), sched.rmp, { pins: t.pin }).list;
+  const i = sched.list.findIndex((s) => s.crns.join(' ') === t.crns.join(' '));
+  sched.idx = i >= 0 ? i : 0;
+  drawSched();
+}
+function drawSched() {
+  const s = sched.list[sched.idx];
+  const t = termState(sched.term);
+  const crns = s ? s.crns : [];
+  if (crns.join(' ') !== t.crns.join(' ')) { t.crns = crns; save(); }
+  $('scRank').textContent = `${sched.list.length ? sched.idx + 1 : 0}/${sched.list.length}`;
+  $('scPrev').disabled = sched.idx <= 0;
+  $('scNext').disabled = sched.idx >= sched.list.length - 1;
+  $('scCopy').disabled = !crns.length;
+  drawWeek(s);
+  drawList(s);
+}
+const lastName = (instr) => (instr ? instr.split(',')[0] : 'Staff');
+function ratingBadge(instr, link) {
+  const p = sched.rmp[instr];
+  if (!p) return '<em class="rt unrated" title="No rating">–</em>';
+  const style = `style="--rh:${rmpHue(p.r)}"`;
+  return link && p.id
+    ? `<a class="rt" ${style} href="https://www.ratemyprofessors.com/professor/${encodeURIComponent(p.id)}" target="_blank" rel="noopener" title="Rate My Professors">${p.r.toFixed(1)}</a>`
+    : `<em class="rt" ${style}>${p.r.toFixed(1)}</em>`;
+}
+const seatText = (sec) => (sec.seats > 0 ? `${sec.seats} open` : `Full${sec.wait ? ` +${sec.wait}` : ''}`);
+// Mon-Fri (+Sat when needed), 8 am-5 pm at least; one colour per class (the plan's semester palette)
+function drawWeek(s) {
+  const blocks = [];
+  (s?.picks || []).forEach((o, i) => { if (o) for (const sec of o.secs) for (const m of meetingsOf(sec)) blocks.push({ i, m, sec }); });
+  const days = ['M', 'T', 'W', 'R', 'F', ...['S', 'U'].filter((d) => blocks.some((b) => b.m.day === d))];
+  let lo = 480, hi = 1020;
+  for (const b of blocks) { lo = Math.min(lo, Math.floor(b.m.s / 60) * 60); hi = Math.max(hi, Math.ceil(b.m.e / 60) * 60); }
+  const span = hi - lo, pct = (v) => +(v * 100).toFixed(3);
+  const hours = [];
+  for (let h = lo; h < hi; h += 60) hours.push(`<span style="top:${pct((h - lo) / span)}%">${((h / 60 + 11) % 12) + 1}</span>`);
+  $('scWeek').style.setProperty('--n', days.length);
+  $('scWeek').innerHTML = `<div class="wk-head"><span></span>${days.map((d) => `<span>${DAY_NAME[d]}</span>`).join('')}</div>`
+    + `<div class="wk-body" style="--rows:${span / 60}"><div class="wk-times">${hours.join('')}</div><div class="wk-cols">`
+    + blocks.map((b) => `<div class="wk-b s${b.i % 10}" style="left:calc(${days.indexOf(b.m.day)} * 100% / var(--n));top:${pct((b.m.s - lo) / span)}%;height:${pct((b.m.e - b.m.s) / span)}%" title="${esc(`${codeLabel(b.sec)} ${whenOf(b.sec)} ${b.sec.bldg || ''} ${b.sec.room || ''}`)}">`
+      + `<b>${esc(codeLabel(b.sec))}</b><span>${fmtTime(b.m.s)}</span></div>`).join('')
+    + '</div></div>';
+  // a block too short for two lines shows the course only
+  for (const el of $('scWeek').querySelectorAll('.wk-b')) el.classList.toggle('short', el.offsetHeight < 25);
+}
+const codeLabel = (sec) => `${sec.subj} ${sec.num}`;
+function whyUnplaced(c) {
+  if (!c.sections.length) return 'Not offered';
+  if (!prefs().wait && courseOptions(c.sections).every((o) => o.secs.some((x) => x.seats <= 0))) return 'Full';
+  return 'Doesn’t fit';
+}
+function drawList(s) {
+  const t = termState(sched.term);
+  $('scList').innerHTML = sched.courses.map((c, i) => {
+    const o = s?.picks[i];
+    const sw = `<span class="sw s${i % 10}"></span>`;
+    if (!o) return `<li><button type="button" class="sc-row off" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="why">${whyUnplaced(c)}</span></button></li>`;
+    const sec = o.secs[0];
+    return `<li><button type="button" class="sc-row" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="when">${esc(whenOf(sec))}</span>`
+      + `<span class="who">${esc(lastName(sec.instr))}</span>${ratingBadge(sec.instr)}<span class="seat${sec.seats > 0 ? '' : ' full'}">${seatText(sec)}</span>`
+      + `<span class="crn${t.pin[c.code] ? ' pin' : ''}">${o.secs.map((x) => x.crn).join('+')}</span></button></li>`;
+  }).join('') + '<li><button type="button" class="sc-add" id="scAdd">+ Add class</button></li>';
+}
+function openCourse(i) {
+  const c = sched.courses[i], t = termState(sched.term), s = sched.list[sched.idx];
+  const others = (s?.picks || []).filter((o, k) => o && k !== i);
+  const cur = new Set((s?.picks[i]?.secs || []).map((x) => x.crn));
+  const pin = t.pin[c.code];
+  const secs = c.sections.slice().sort((a, b) => (a.start || '9999').localeCompare(b.start || '9999') || a.days.localeCompare(b.days) || a.sec.localeCompare(b.sec));
+  $('secCode').textContent = c.code;
+  $('secTitle').textContent = c.sections[0]?.title || '';
+  $('secDlg').dataset.i = i;
+  const MODE = { online: 'Online', hybrid: 'Hybrid', livestream: 'Live' };
+  $('secList').innerHTML = `<li><button type="button" data-crn=""${pin ? '' : ' class="on"'}><b>Best fit</b></button></li>`
+    + (secs.length ? secs.map((x) => {
+      const clash = others.some((o) => optionsConflict(o, { secs: [x] }));
+      const tags = [x.mode !== 'in person' && whenOf(x) !== 'Online' ? MODE[x.mode] : '', x.campus && x.campus !== 'Main Campus' ? 'Off campus' : ''].filter(Boolean);
+      return `<li class="${clash ? 'clash' : ''}"><button type="button" data-crn="${esc(x.crn)}" class="${[pin === x.crn ? 'on' : '', cur.has(x.crn) ? 'cur' : ''].join(' ')}">`
+        + `<span class="sn">${esc(x.sec)}</span><span class="when">${esc(whenOf(x))}${tags.map((g) => `<i>${g}</i>`).join('')}</span>`
+        + `<span class="who">${esc(lastName(x.instr))}</span><span class="seat${x.seats > 0 ? '' : ' full'}">${seatText(x)}</span></button>${ratingBadge(x.instr, true)}</li>`;
+    }).join('') : '<li class="none">Not offered this term</li>');
+  $('secDlg').showModal();
+  document.activeElement?.blur(); // no focus ring on "Best fit" when it opens
+  $('secList').scrollTop = 0;
+}
+function wireSched() {
+  $('scTerms').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-term]');
+    if (!b || b.dataset.term === sched.term) return;
+    sched.term = b.dataset.term;
+    renderSched();
+  });
+  $('scPrev').addEventListener('click', () => { if (sched.idx > 0) { sched.idx--; drawSched(); } });
+  $('scNext').addEventListener('click', () => { if (sched.idx < sched.list.length - 1) { sched.idx++; drawSched(); } });
+  $('scCopy').addEventListener('click', async () => {
+    const text = (sched.list[sched.idx]?.crns || []).join(' ');
+    if (!text) return;
+    try { await navigator.clipboard.writeText(text); } catch {
+      const ta = document.createElement('textarea');
+      ta.value = text; document.body.appendChild(ta); ta.select();
+      try { document.execCommand('copy'); } catch {}
+      ta.remove();
+    }
+    $('scCopy').textContent = 'Copied';
+    clearTimeout(wireSched.t);
+    wireSched.t = setTimeout(() => { $('scCopy').textContent = 'Copy CRNs'; }, 1500);
+  });
+  $('scList').addEventListener('click', (e) => {
+    if (e.target.closest('#scAdd')) { openAdd(); return; }
+    const b = e.target.closest('button[data-i]');
+    if (b) openCourse(+b.dataset.i);
+  });
+  // a section: keep it (tap again or Best fit: let the builder choose)
+  $('secList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-crn]');
+    if (!b) return;
+    const c = sched.courses[+$('secDlg').dataset.i], t = termState(sched.term);
+    if (!b.dataset.crn || t.pin[c.code] === b.dataset.crn) delete t.pin[c.code]; else t.pin[c.code] = b.dataset.crn;
+    save();
+    $('secDlg').close();
+    renderSched();
+  });
+  $('secRemove').addEventListener('click', () => {
+    const c = sched.courses[+$('secDlg').dataset.i], t = termState(sched.term);
+    if (t.add.includes(c.code)) t.add = t.add.filter((x) => x !== c.code); else t.drop.push(c.code);
+    delete t.pin[c.code];
+    save();
+    $('secDlg').close();
+    renderSched();
+  });
+  $('secDlg').addEventListener('click', (e) => { if (e.target === $('secDlg')) $('secDlg').close(); });
+  // add a class: search the term's courses by code or title
+  const list = () => {
+    const groups = sched.groups.get(sched.term) || new Map();
+    const q = $('addQ').value.trim().toLowerCase().replace(/\s+/g, ' ');
+    const have = new Set(sched.courses.map((c) => c.code));
+    const rows = [];
+    for (const [code, secs] of groups) {
+      if (have.has(code)) continue;
+      const title = secs[0]?.title || '';
+      if (q && !code.toLowerCase().includes(q) && !code.toLowerCase().replace(' ', '').includes(q) && !title.toLowerCase().includes(q)) continue;
+      rows.push([code, title]);
+      if (rows.length >= 80) break;
+    }
+    rows.sort((a, b) => a[0].localeCompare(b[0], 'en', { numeric: true }));
+    $('addList').innerHTML = rows.length
+      ? rows.map(([code, title]) => `<li><button type="button" data-code="${esc(code)}"><b>${esc(code)}</b><span>${esc(title)}</span></button></li>`).join('')
+      : '<li class="none">No match</li>';
+  };
+  const openAdd = () => {
+    $('addQ').value = '';
+    list();
+    $('addDlg').showModal();
+    $('addList').scrollTop = 0;
+    if (matchMedia('(hover: hover)').matches) $('addQ').focus();
+  };
+  $('addQ').addEventListener('input', () => { list(); $('addList').scrollTop = 0; });
+  $('addList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-code]');
+    if (!b) return;
+    const t = termState(sched.term), code = b.dataset.code;
+    if (t.drop.includes(code)) t.drop = t.drop.filter((x) => x !== code); else if (!t.add.includes(code)) t.add.push(code);
+    save();
+    $('addDlg').close();
+    renderSched();
+  });
+  $('addDlg').addEventListener('click', (e) => { if (e.target === $('addDlg')) $('addDlg').close(); });
 }
 
 // ---------- the program picker (tap the program name in the header) ----------

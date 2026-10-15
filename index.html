@@ -8,6 +8,7 @@
 <header class="top">
   <span class="brand">Smart Advisor</span>
   <button class="prog" id="progName" aria-haspopup="dialog" title="Programs"></button>
+  <div class="wtabs" id="wtabs"><button data-tab="flow" class="on">Flowchart</button><button data-tab="sched">Schedule</button></div>
   <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
   <button class="icon profile" id="profile" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><span id="profileInitial" aria-hidden="true"></span></button>
 </header>
@@ -20,10 +21,22 @@
     <div class="sum" id="sum"></div>
     <div class="sems" id="sems"></div>
   </section>
+  <section class="panel sched" id="schedPanel" aria-label="Schedule">
+    <div class="sc-bar">
+      <div class="seg sc-terms" id="scTerms"></div>
+      <div class="sc-nav"><button type="button" id="scPrev" aria-label="Previous schedule">‹</button><span id="scRank"></span><button type="button" id="scNext" aria-label="Next schedule">›</button></div>
+      <button type="button" class="sc-copy" id="scCopy">Copy CRNs</button>
+    </div>
+    <div class="sc-body">
+      <div class="sc-week" id="scWeek"></div>
+      <ul class="sc-list" id="scList"></ul>
+    </div>
+  </section>
 </main>
 <nav class="tabs" id="tabs">
   <button data-tab="flow" class="on">Flowchart</button>
   <button data-tab="plan">Plan</button>
+  <button data-tab="sched">Schedule</button>
 </nav>
 <dialog id="settings">
   <form method="dialog">
@@ -31,6 +44,16 @@
     <label>Max credits <select id="setMax"></select></label>
     <label class="sw-row">Summers <input type="checkbox" id="setSummer" role="switch"></label>
     <button type="button" id="importBtn" class="ghost wide">Import audit</button>
+    <div class="set-sec">Schedule</div>
+    <div class="set-line"><span>Days</span><div class="seg days" id="setDays"><button type="button" data-d="M">M</button><button type="button" data-d="T">T</button><button type="button" data-d="W">W</button><button type="button" data-d="R">Th</button><button type="button" data-d="F">F</button></div></div>
+    <div class="set-line"><span>Hours</span><span class="hours"><select id="setAfter" aria-label="Start after"></select>–<select id="setBefore" aria-label="End by"></select></span></div>
+    <label>Classes <select id="setMode"><option value="any">Any</option><option value="person">In person</option><option value="online">Online</option></select></label>
+    <div class="sw-grid">
+      <label class="sw-row">Avoid gaps <input type="checkbox" id="setGaps" role="switch"></label>
+      <label class="sw-row">Top rated <input type="checkbox" id="setRmp" role="switch"></label>
+      <label class="sw-row">Main campus <input type="checkbox" id="setMain" role="switch"></label>
+      <label class="sw-row">Waitlist <input type="checkbox" id="setWait" role="switch"></label>
+    </div>
     <div class="row"><button type="button" id="clearDone" class="ghost">Clear taken</button><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
@@ -58,6 +81,20 @@
     <input type="search" id="pickQ" placeholder="Search" autocomplete="off" spellcheck="false" enterkeyhint="search">
     <div class="seg" id="pickSeg"><button type="button" data-g="major" class="on">Majors</button><button type="button" data-g="minor">Minors</button><button type="button" data-g="cert">Certificates</button></div>
     <ul class="pick-list" id="pickList"></ul>
+    <div class="row"><span></span><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<dialog id="secDlg" class="pick secs">
+  <form method="dialog">
+    <div class="sec-head"><b id="secCode"></b><span id="secTitle"></span></div>
+    <ul class="pick-list sec-list" id="secList"></ul>
+    <div class="row"><button type="button" id="secRemove" class="ghost">Remove</button><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<dialog id="addDlg" class="pick">
+  <form method="dialog">
+    <input type="search" id="addQ" placeholder="Search classes" autocomplete="off" spellcheck="false" enterkeyhint="search">
+    <ul class="pick-list" id="addList"></ul>
     <div class="row"><span></span><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
