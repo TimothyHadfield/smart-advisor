@@ -1,0 +1,578 @@
+{
+ "id": "leadership-studies-nonprofit-organizations-undergraduate-certificate",
+ "name": "Leadership Studies - Nonprofit Organizations, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/business/organizational-leadership/leadership-studies-nonprofit-organizations-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 1250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "POLS 3320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "THEA 3625",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Electives (Choose 6 credit hours from the following.)",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "MGMT 1150R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MGMT 2030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2970H"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3320G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 4500R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AERO 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AERO 3110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AMST 3000R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 4250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4730R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4000"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "ESWF 3380"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESWF 3381"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESWF 4481"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 1200"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MILS 1450R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "MILS 1210"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MKTG 3640"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PJST 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4200R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3370"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SLSS 4050G"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Electives (Choose 6 credit hours from the following.)"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 1250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 3500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "POLS 3320",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective courses chosen from approved list",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "THEA 3625",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AERO 3100": {
+   "title": "Leading People and Effective Communication A",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; AERO 2000 , AERO 2010 , AERO 2100 , AERO 2110",
+   "prereqs": {
+    "and": [
+     "AERO 2000",
+     "AERO 2010",
+     "AERO 2100",
+     "AERO 2110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AERO 3110": {
+   "title": "Leading People and Effective Communication B",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; AERO 2000 , AERO 2010 , AERO 2100 , AERO 2110 , AERO 3000 , AERO 3100",
+   "prereqs": {
+    "and": [
+     "AERO 2000",
+     "AERO 2010",
+     "AERO 2100",
+     "AERO 2110",
+     "AERO 3000",
+     "AERO 3100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "AMST 3000R": {
+   "title": "Topics in American Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 3410": {
+   "title": "Fundamentals of Mediation and Negotiation",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 4250": {
+   "title": "Communication and Leadership",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 4730R": {
+   "title": "Topics in Gender Studies",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , ENGL 2600 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "ENGL 2600"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ESMG 4000": {
+   "title": "Advanced Emergency Services Leadership",
+   "credits": 4,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESWF 3380": {
+   "title": "L380 Fireline/Fire Service Leadership",
+   "credits": 3,
+   "prereqText": "Department Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESWF 3381": {
+   "title": "L381 Incident Leadership",
+   "credits": 3,
+   "prereqText": "Department Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESWF 4481": {
+   "title": "L481 Advanced Leadership for Command and General Staff",
+   "credits": 3,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HR 3550": {
+   "title": "Organization Development and Change Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 highly recommended",
+   "prereqs": null
+  },
+  "MGMT 1150R": {
+   "title": "Leading in a Complex World - Developing Leadership Character",
+   "credits": 1
+  },
+  "MGMT 1250": {
+   "title": "Principles of Leadership",
+   "credits": 3
+  },
+  "MGMT 2030": {
+   "title": "Inclusive Leadership",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "MGMT 2970H": {
+   "title": "Honors Seminar in Leadership Development",
+   "credits": 3
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MGMT 3020": {
+   "title": "Ethical Decision-Making in Organizations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3500": {
+   "title": "Leadership Theory and Application",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 4500R": {
+   "title": "Leadership Practicum",
+   "credits": 3,
+   "prereqText": "MGMT 1250 or MGMT 2030 or MGMT 3000 or MGMT 3500 ; University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 1250",
+     "MGMT 2030",
+     "MGMT 3000",
+     "MGMT 3500"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MILS 1200": {
+   "title": "Introduction to Leadership Excellence I",
+   "credits": 2,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 1210": {
+   "title": "Introduction to Leadership Excellence II",
+   "credits": 2,
+   "prereqText": "MILS 1200 or Department Approval",
+   "prereqs": "MILS 1200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 1450R": {
+   "title": "Introduction to Leadership Dynamics and Techniques",
+   "credits": 1,
+   "prereqText": "Department Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 3640": {
+   "title": "Sales Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PJST 4300": {
+   "title": "Race Gender and Class in Peace and Justice",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3300": {
+   "title": "Introduction to Public Administration",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3320": {
+   "title": "Nonprofits and The Public Sector",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 3370": {
+   "title": "Leading Cities",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 4200R": {
+   "title": "Issues and Topics in Political Science",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "SLSS 3200": {
+   "title": "Leader--Teacher and Mentor",
+   "credits": 3
+  },
+  "SLSS 4050G": {
+   "title": "Leader--Global Contributor",
+   "credits": 3,
+   "prereqText": "Placement into ENGL 1010 or ENGL 1005 or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3510": {
+   "title": "Sociology of Work and Occupations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a minimum C+ grade, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4400": {
+   "title": "Social Change",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "THEA 3625": {
+   "title": "Development and Fundraising for the Arts",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  }
+ }
+}

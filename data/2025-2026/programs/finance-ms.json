@@ -1,0 +1,438 @@
+{
+ "id": "finance-ms",
+ "name": "Finance, M.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/finance-ms/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "FIN 6130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "FIN 6170",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "FIN 6340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "FIN 6820",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements:",
+   "code": "FIN 6840",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Select 15 semester credit hours from the following courses",
+   "pick": {
+    "credits": 15
+   },
+   "credits": 15,
+   "options": [
+    {
+     "codes": [
+      "FIN 6060"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFP(R) exam will need to complete the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6210"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFP(R) exam will need to complete the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6260"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFP(R) exam will need to complete the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6300"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFP(R) exam will need to complete the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6800"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFP(R) exam will need to complete the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6510"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFA(R) exam (Level 1) are strongly encouraged to take the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6520"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFA(R) exam (Level 1) are strongly encouraged to take the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6810"
+     ],
+     "credits": 3,
+     "section": "Students preparing to sit for the CFA(R) exam (Level 1) are strongly encouraged to take the following elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6160"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6350"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6370"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6380"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6390"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6400"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6450"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6700"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6790R"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6890R"
+     ],
+     "credits": 1,
+     "section": "Additional elective courses:"
+    },
+    {
+     "codes": [
+      "FIN 6900R"
+     ],
+     "credits": 3,
+     "section": "Additional elective courses:"
+    }
+   ],
+   "text": "Select 15 semester credit hours from the following courses"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "FIN 6130",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6840",
+     "credits": 3
+    },
+    {
+     "label": "Select two elective courses",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "FIN 6170",
+     "credits": 3
+    },
+    {
+     "code": "FIN 6340",
+     "credits": 3
+    },
+    {
+     "label": "Select two elective courses",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "FIN 6820",
+     "credits": 3
+    },
+    {
+     "label": "Select one elective course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "FIN 6060": {
+   "title": "Financial Planning for Professionals",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6130": {
+   "title": "Financial Statement Analysis and Modeling",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6160": {
+   "title": "International Financial Management",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6170": {
+   "title": "Investment Analysis and Portfolio Analysis",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6210": {
+   "title": "Retirement Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6260": {
+   "title": "Estate Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6300": {
+   "title": "Income Tax Planning",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6340": {
+   "title": "Analytics and Advanced Statistics",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6350": {
+   "title": "Retirement Income Planning",
+   "credits": 3,
+   "prereqText": "Admission into the MFPA program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6370": {
+   "title": "Wealth Management",
+   "credits": 3,
+   "prereqText": "Admission into the MFPA program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6380": {
+   "title": "Advanced Estate Planning and Asset Protection",
+   "credits": 3,
+   "prereqText": "FIN 6260 recommended; admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null
+  },
+  "FIN 6390": {
+   "title": "Financial Technology",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6400": {
+   "title": "Managing Client Relationships",
+   "credits": 3,
+   "prereqText": "Admission into the MFPA program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6450": {
+   "title": "Planning for Financial Planning Business Owners",
+   "credits": 3,
+   "prereqText": "Acceptance into the Masters of FPA Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6510": {
+   "title": "CFA I Investment Products",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6520": {
+   "title": "CFA I Financial Markets",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6700": {
+   "title": "CFP Exam Preparation",
+   "credits": 3,
+   "prereqText": "FIN 6060 , FIN 6170 , FIN 6210 , FIN 6300 , and FIN 6260",
+   "prereqs": {
+    "and": [
+     "FIN 6060",
+     "FIN 6170",
+     "FIN 6210",
+     "FIN 6300",
+     "FIN 6260"
+    ]
+   },
+   "precoreqText": "FIN 6800",
+   "precoreqs": "FIN 6800"
+  },
+  "FIN 6790R": {
+   "title": "Special Topics in Finance",
+   "credits": 3,
+   "prereqText": "Admission into the MFPA program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6800": {
+   "title": "Wealth Management and Financial Planning Capstone",
+   "credits": 3,
+   "prereqText": "FIN 6060 , FIN 6170 , FIN 6210 , FIN 6300",
+   "prereqs": {
+    "and": [
+     "FIN 6060",
+     "FIN 6170",
+     "FIN 6210",
+     "FIN 6300"
+    ]
+   },
+   "precoreqText": "FIN 6260",
+   "precoreqs": "FIN 6260"
+  },
+  "FIN 6810": {
+   "title": "CFA Exam Preparation",
+   "credits": 3,
+   "prereqText": "FIN 6510 , FIN 6520",
+   "prereqs": {
+    "and": [
+     "FIN 6510",
+     "FIN 6520"
+    ]
+   },
+   "precoreqText": "FIN 6170 , FIN 6340",
+   "precoreqs": {
+    "and": [
+     "FIN 6170",
+     "FIN 6340"
+    ]
+   }
+  },
+  "FIN 6820": {
+   "title": "Research Methods",
+   "credits": 3,
+   "prereqText": "Admission into the MFPA program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6840": {
+   "title": "Behavioral Finance Seminar",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6890R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "Admission into any Woodbury School of Business graduate program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 6900R": {
+   "title": "Independent Study",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Admission into any graduate program in the Woodbury School of Business",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

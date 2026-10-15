@@ -1,0 +1,342 @@
+{
+ "id": "cabinetry-architectural-woodwork-aas",
+ "name": "Cabinetry and Architectural Woodwork, A.A.S.",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/cabinetry-architectural-woodwork-aas/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 63,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "MAT 1030",
+   "alts": [
+    "MAT 1035"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social and Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1130",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1170",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CAW 1400R",
+   "alts": [],
+   "credits": 12
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2080",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CMGT 2890R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BIT 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Open Elective (CAW or CMGT preferred)",
+   "credits": 9
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    },
+    {
+     "code": "CAW 1150",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2010",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2890R",
+     "credits": 0.5
+    },
+    {
+     "code": "CAW 1170",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2060",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2890R",
+     "credits": 0.5
+    },
+    {
+     "code": "CAW 1250",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Open Elective (CAW or CMGT preferred)",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    },
+    {
+     "code": "CAW 2250",
+     "credits": 3
+    },
+    {
+     "code": "BIT 1010",
+     "credits": 3
+    },
+    {
+     "code": "CMGT 2080",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts or Humanities",
+     "credits": 3
+    },
+    {
+     "label": "Open Elective (CAW or CMGT preferred)",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CAW 1400R",
+     "credits": 3
+    },
+    {
+     "label": "Social/ Behavioral Science",
+     "credits": 3
+    },
+    {
+     "label": "Open Elective (CAW or CMGT preferred)",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science",
+     "credits": 3
+    },
+    {
+     "code": "CAW 1130",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIT 1010": {
+   "title": "Building Codes",
+   "credits": 3
+  },
+  "CAW 1130": {
+   "title": "Residential Cabinetry",
+   "credits": 3
+  },
+  "CAW 1150": {
+   "title": "Design Drafting and Billing",
+   "credits": 3
+  },
+  "CAW 1170": {
+   "title": "Finish Technology",
+   "credits": 2
+  },
+  "CAW 1250": {
+   "title": "Drafting and Computer Applications for Cabinetmakers",
+   "credits": 3
+  },
+  "CAW 1400R": {
+   "title": "Millwork Technology",
+   "credits": 3
+  },
+  "CAW 2250": {
+   "title": "Computer Aided Manufacturing for Woodworking",
+   "credits": 3
+  },
+  "CMGT 2010": {
+   "title": "Construction Materials and Methods II",
+   "credits": 3
+  },
+  "CMGT 2060": {
+   "title": "Construction Job Site Management",
+   "credits": 3,
+   "precoreqText": "CMGT 2010 or CMGT 1020",
+   "precoreqs": {
+    "or": [
+     "CMGT 2010",
+     "CMGT 1020"
+    ]
+   }
+  },
+  "CMGT 2080": {
+   "title": "Principles of Construction Scheduling",
+   "credits": 3,
+   "prereqText": "CMGT 2010",
+   "prereqs": "CMGT 2010"
+  },
+  "CMGT 2890R": {
+   "title": "Construction Industry Seminar",
+   "credits": 0.5
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

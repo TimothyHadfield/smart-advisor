@@ -1,0 +1,232 @@
+{
+ "id": "health-and-wellness-coaching-undergraduate-certificate",
+ "name": "Health and Wellness Coaching, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/health-science/health-and-wellness-coaching-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLTH 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 2000",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 2450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 2550",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 2820",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 2830",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Elective",
+   "pick": {
+    "credits": 5
+   },
+   "credits": 5,
+   "options": [
+    {
+     "codes": [
+      "HLSC 1055"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLSC 1057"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLSC 1405"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLSC 1500"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLSC 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 1020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 2000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 2020"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete five credits from the following elective options"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HLTH 1100",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 2450",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 2820",
+     "credits": 1
+    },
+    {
+     "label": "Elective",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HLSC 2000",
+     "credits": 2
+    },
+    {
+     "code": "HLSC 2550",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 2830",
+     "credits": 1
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HLSC 1055": {
+   "title": "Pilates",
+   "credits": 1
+  },
+  "HLSC 1057": {
+   "title": "Yoga",
+   "credits": 1
+  },
+  "HLSC 1405": {
+   "title": "Womens Safety Awareness and Self Defense",
+   "credits": 1
+  },
+  "HLSC 1500": {
+   "title": "Mindfulness/Meditation/Breathwork",
+   "credits": 1
+  },
+  "HLSC 2000": {
+   "title": "Lifestyle Medicine",
+   "credits": 2
+  },
+  "HLSC 2400": {
+   "title": "Mental Health and Mindful Resilience",
+   "credits": 3
+  },
+  "HLSC 2450": {
+   "title": "Health Coaching",
+   "credits": 3,
+   "coreqText": "HLSC 2820",
+   "coreqs": [
+    "HLSC 2820"
+   ]
+  },
+  "HLSC 2550": {
+   "title": "Health Coaching II",
+   "credits": 3,
+   "prereqText": "HLSC 2450",
+   "prereqs": "HLSC 2450",
+   "coreqText": "HLSC 2750",
+   "coreqs": [
+    "HLSC 2750"
+   ]
+  },
+  "HLSC 2820": {
+   "title": "Supervised Coaching I",
+   "credits": 1,
+   "coreqText": "HLSC 2450",
+   "coreqs": [
+    "HLSC 2450"
+   ]
+  },
+  "HLSC 2830": {
+   "title": "Supervised Coaching",
+   "credits": 1,
+   "coreqText": "HLSC 2550",
+   "coreqs": [
+    "HLSC 2550"
+   ]
+  },
+  "HLTH 1100": {
+   "title": "Personal Health and Wellness",
+   "credits": 3
+  },
+  "NUTR 1020": {
+   "title": "Foundations of Human Nutrition",
+   "credits": 3
+  },
+  "NUTR 2000": {
+   "title": "Body Image and Mindful Eating",
+   "credits": 3
+  },
+  "NUTR 2020": {
+   "title": "Nutrition Through the Life Cycle",
+   "credits": 3
+  }
+ }
+}

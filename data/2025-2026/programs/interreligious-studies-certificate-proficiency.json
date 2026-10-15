@@ -1,0 +1,286 @@
+{
+ "id": "interreligious-studies-certificate-proficiency",
+ "name": "Interreligious Studies, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/interreligious-studies-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 3680",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 3670G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 1610",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 1620",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 2950R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Certificate elective",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ANTH 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3480"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3740G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3660R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3400"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 3 credits from among the following:",
+   "notes": [
+    "other advisor-approved course"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete the following:",
+     "credits": null
+    },
+    {
+     "code": "PHIL 1610",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 1620",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Certificate elective",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 3670G",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 2950R",
+     "credits": 1
+    },
+    {
+     "code": "PHIL 3680",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 3400": {
+   "title": "Myth Magic and Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3420": {
+   "title": "Andean Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3450": {
+   "title": "Shamanism and Indigenous Religion",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3480": {
+   "title": "Global Christianity",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 3740G": {
+   "title": "Literature of the Sacred",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HIST 3160": {
+   "title": "Renaissance and Reformation Europe 1350 to 1600",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 1610": {
+   "title": "Introduction to Western Religions",
+   "credits": 3
+  },
+  "PHIL 1620": {
+   "title": "Introduction to Eastern Religions",
+   "credits": 3
+  },
+  "PHIL 2950R": {
+   "title": "Directed Readings",
+   "credits": 1,
+   "creditsMax": 3
+  },
+  "PHIL 3600": {
+   "title": "Philosophy of Religion",
+   "credits": 3,
+   "prereqText": "( PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or PHIL 2110 or PHIL 2150 or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G",
+     "PHIL 2110",
+     "PHIL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3620": {
+   "title": "Mormon Theology and the Christian Tradition",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 3660R": {
+   "title": "Issues in Religious Studies",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3670G": {
+   "title": "Engaging Religious Diversity",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 3680": {
+   "title": "Interreligious Studies Practicum",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PHIL 3670G or RLST 3670G",
+   "coreqs": [
+    "PHIL 3670G",
+    "RLST 3670G"
+   ]
+  },
+  "SOC 3400": {
+   "title": "Sociology of Religion",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

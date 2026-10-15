@@ -1,0 +1,249 @@
+{
+ "id": "national-security-studies-certificate-proficiency",
+ "name": "National Security Studies, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/national-security-studies-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 3010R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "NSS 4600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "POLS 4500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "NSS 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4750R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 3340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4610"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits from the following:",
+   "notes": [
+    "or other course approved by department advisor or director."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NSS 2010",
+     "credits": 3
+    },
+    {
+     "code": "NSS 3010R",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NSS 4600",
+     "credits": 3
+    },
+    {
+     "code": "POLS 4500",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 3340": {
+   "title": "Terrorism and the Criminal Justice System",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and CJ 1010",
+   "prereqs": "CJ 1010",
+   "prereqNonCourse": true
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGH 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "NSS 3010R": {
+   "title": "National Security Area Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , or HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 4210": {
+   "title": "Law of War",
+   "credits": 3,
+   "prereqText": "( POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NSS 4600": {
+   "title": "National Security Law",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 4750R": {
+   "title": "Current Topics in National Security",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "POLS 3100": {
+   "title": "Survey of International Terrorism",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3400": {
+   "title": "American Foreign Policy",
+   "credits": 3,
+   "prereqText": "POLS 1100 , POLS 2100 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "POLS 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 4500": {
+   "title": "International Conflict and Security",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  },
+  "POLS 4610": {
+   "title": "International Law",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  }
+ }
+}

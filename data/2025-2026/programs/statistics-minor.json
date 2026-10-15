@@ -1,0 +1,380 @@
+{
+ "id": "statistics-minor",
+ "name": "Statistics, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/statistics-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 22,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "STAT 2040",
+   "alts": [
+    "STAT 2050"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "STAT 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 2270"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "STAT 4000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "STAT 4400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Complete a 4000-level STAT course",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "STAT 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 4720"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "STAT 2040",
+     "alts": [
+      "STAT 2050"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "STAT 3000",
+     "credits": null
+    },
+    {
+     "code": "MATH 2270",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "STAT 4000",
+     "credits": 3
+    },
+    {
+     "code": "STAT 4400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Complete a 4000-level STAT course",
+     "credits": 3
+    },
+    {
+     "label": "Complete a 4000-level STAT course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Complete a 4000-level STAT course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MATH 2270": {
+   "title": "Linear Algebra",
+   "credits": 3,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 2050": {
+   "title": "Introduction to Statistical Methods",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 3000": {
+   "title": "Applied Mathematics for Statistical Methods",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4000": {
+   "title": "Applied Regression and Time Series",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4100": {
+   "title": "Design of Experiment",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4200": {
+   "title": "Survey Sampling",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4300": {
+   "title": "Stochastic Processes",
+   "credits": 3,
+   "prereqText": "( STAT 3040 or STAT 4710 ) and MATH 2270 each with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "STAT 3040",
+       "STAT 4710"
+      ]
+     },
+     "MATH 2270"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 4400": {
+   "title": "Multivariate Analysis",
+   "credits": 3,
+   "prereqText": "[( STAT 2040 or STAT 2050 ) and MATH 2270 ] or STAT 3000 , both with a grade of C or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     {
+      "or": [
+       "MATH 2270",
+       "STAT 3000"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4500": {
+   "title": "Nonparametric Statistics",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4600": {
+   "title": "Statistical Process Control",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4700": {
+   "title": "Introduction to Biostatistics",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 4710": {
+   "title": "Mathematical Statistics-Probability and Statistics",
+   "credits": 3,
+   "prereqText": "STAT 2040 or STAT 2050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "STAT 2040",
+     "STAT 2050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 2210 or MATH 2210H",
+   "precoreqs": {
+    "or": [
+     "MATH 2210",
+     "MATH 2210H"
+    ]
+   }
+  },
+  "STAT 4720": {
+   "title": "Mathematical Statistics-Statistical Inference",
+   "credits": 3,
+   "prereqText": "STAT 4710 with a grade of C or higher and University Advanced Standing",
+   "prereqs": "STAT 4710",
+   "prereqNonCourse": true
+  }
+ }
+}

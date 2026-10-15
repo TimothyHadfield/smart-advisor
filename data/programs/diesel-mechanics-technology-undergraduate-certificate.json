@@ -1,0 +1,254 @@
+{
+ "id": "diesel-mechanics-technology-undergraduate-certificate",
+ "name": "Diesel Mechanics Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/transportation-technologies/diesel-mechanics-technology-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 32,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 1110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 1110L",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 1120",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 1120L",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 2410",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 2410L",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 2420",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DMT 2420L",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "AUT 1260"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1015"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Any higher MAT or MATH course"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+   "credits": 2
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DMT 1110",
+     "credits": 4
+    },
+    {
+     "code": "DMT 1110L",
+     "credits": 2
+    },
+    {
+     "code": "DMT 1120",
+     "credits": 4
+    },
+    {
+     "code": "DMT 1120L",
+     "credits": 2
+    },
+    {
+     "code": "AUT 1260",
+     "alts": [
+      "MAT 1015"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DMT 2410",
+     "credits": 4
+    },
+    {
+     "code": "DMT 2410L",
+     "credits": 2
+    },
+    {
+     "code": "DMT 2420",
+     "credits": 4
+    },
+    {
+     "code": "DMT 2420L",
+     "credits": 2
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "label": "Social Science",
+     "credits": 2
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AUT 1260": {
+   "title": "Tech Math for Mechanics",
+   "credits": 3
+  },
+  "DMT 1110": {
+   "title": "Diesel Engine Overhaul",
+   "credits": 4,
+   "coreqText": "DMT 1110L",
+   "coreqs": [
+    "DMT 1110L"
+   ],
+   "precoreqText": "DMT 1005",
+   "precoreqs": "DMT 1005"
+  },
+  "DMT 1110L": {
+   "title": "Diesel Engine Overhaul Lab",
+   "credits": 2,
+   "coreqText": "DMT 1110",
+   "coreqs": [
+    "DMT 1110"
+   ],
+   "precoreqText": "DMT 1005",
+   "precoreqs": "DMT 1005"
+  },
+  "DMT 1120": {
+   "title": "Diesel Engine Operation Tune Up",
+   "credits": 4,
+   "precoreqText": "DMT 1110 , DMT 1110L , DMT 1120L",
+   "precoreqs": {
+    "and": [
+     "DMT 1110",
+     "DMT 1110L",
+     "DMT 1120L"
+    ]
+   }
+  },
+  "DMT 1120L": {
+   "title": "Diesel Engine Operation Tune up Lab",
+   "credits": 2,
+   "coreqText": "DMT 1120",
+   "coreqs": [
+    "DMT 1120"
+   ]
+  },
+  "DMT 2410": {
+   "title": "Chassis Theory",
+   "credits": 4,
+   "coreqText": "DMT 2410L",
+   "coreqs": [
+    "DMT 2410L"
+   ]
+  },
+  "DMT 2410L": {
+   "title": "Chassis Lab",
+   "credits": 2,
+   "coreqText": "DMT 2410",
+   "coreqs": [
+    "DMT 2410"
+   ]
+  },
+  "DMT 2420": {
+   "title": "Power Train Theory",
+   "credits": 4,
+   "coreqText": "DMT 2420L",
+   "coreqs": [
+    "DMT 2420L"
+   ]
+  },
+  "DMT 2420L": {
+   "title": "Power Train Lab",
+   "credits": 2,
+   "coreqText": "DMT 2420",
+   "coreqs": [
+    "DMT 2420"
+   ]
+  },
+  "MAT 1015": {
+   "title": "Intermediate Algebra with Integrated Review",
+   "credits": 5,
+   "prereqText": "(within department time limits): MAT 0980 with a C- or higher or appropriate placement by a placement exam.",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  }
+ }
+}

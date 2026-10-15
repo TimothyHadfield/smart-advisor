@@ -1,0 +1,115 @@
+{
+ "id": "client-accounting-and-advisory-services-undergraduate-certificate",
+ "name": "Client Accounting and Advisory Services, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/business/accounting/client-accounting-and-advisory-services-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 12,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 4250",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 2250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ACC 3250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ACC 4250",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "ACC 2250": {
+   "title": "QuickBooks and Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110 or (concurrent enrollment courses: ACC 1110 and ACC 1120 )",
+   "prereqs": {
+    "or": [
+     "ACC 2110",
+     {
+      "and": [
+       "ACC 1110",
+       "ACC 1120"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3250": {
+   "title": "Advanced QuickBooks and Industry Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2250 and University Advanced Standing",
+   "prereqs": "ACC 2250",
+   "prereqNonCourse": true
+  },
+  "ACC 4250": {
+   "title": "Advisory and Controllership Practices",
+   "credits": 3,
+   "prereqText": "ACC 3250 and University Advanced Standing",
+   "prereqs": "ACC 3250",
+   "prereqNonCourse": true
+  }
+ }
+}

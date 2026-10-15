@@ -1,0 +1,114 @@
+{
+ "id": "leadership-personal-social-impact-certificate-proficiency",
+ "name": "Leadership for Personal and Social Impact, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/education/student-leadership-success-studies/leadership-personal-social-impact-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SLSS 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SLSS 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SLSS 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SLSS 4050G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SLSS 4800",
+   "alts": [],
+   "credits": 4
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SLSS 1200",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 2500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SLSS 3200",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 4050G",
+     "credits": 3
+    },
+    {
+     "code": "SLSS 4800",
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "SLSS 1200": {
+   "title": "The 7 Habits of Highly Effective People",
+   "credits": 3
+  },
+  "SLSS 2500": {
+   "title": "Leader--Strengths-Based Leader/Coach",
+   "credits": 3
+  },
+  "SLSS 3200": {
+   "title": "Leader--Teacher and Mentor",
+   "credits": 3
+  },
+  "SLSS 4050G": {
+   "title": "Leader--Global Contributor",
+   "credits": 3,
+   "prereqText": "Placement into ENGL 1010 or ENGH 1005 or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SLSS 4800": {
+   "title": "Leader Capstone--Lifelong Change Agent",
+   "credits": 4,
+   "prereqText": "SLSS 2500 or SLSS 3200",
+   "prereqs": {
+    "or": [
+     "SLSS 2500",
+     "SLSS 3200"
+    ]
+   }
+  }
+ }
+}

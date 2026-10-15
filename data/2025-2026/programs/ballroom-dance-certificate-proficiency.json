@@ -1,0 +1,298 @@
+{
+ "id": "ballroom-dance-certificate-proficiency",
+ "name": "Ballroom Dance, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/dance/ballroom-dance-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "One credit from the following classes",
+   "pick": {
+    "credits": 1
+   },
+   "credits": 1,
+   "options": [
+    {
+     "codes": [
+      "DANC 2700R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "DANC 3700R"
+     ],
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Four credits from the following classes",
+   "pick": {
+    "credits": 4
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "DANC 2710R"
+     ],
+     "credits": 1,
+     "alts": [
+      "DANC 3710R"
+     ]
+    },
+    {
+     "codes": [
+      "DANC 3710R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "DANC 4710R"
+     ],
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Four credits from the following classes",
+   "pick": {
+    "credits": 4
+   },
+   "credits": 4,
+   "options": [
+    {
+     "codes": [
+      "DANC 2720R"
+     ],
+     "credits": 1,
+     "alts": [
+      "DANC 3720R"
+     ]
+    },
+    {
+     "codes": [
+      "DANC 3720R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "DANC 4720R"
+     ],
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Five credits from the following classes",
+   "pick": {
+    "credits": 5
+   },
+   "credits": 5,
+   "options": [
+    {
+     "codes": [
+      "DANC 2760R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "DANC 3760R"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "DANC 4760R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Dance Elective (any DANC course 1000 level or higher)",
+   "credits": 2
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DANC 2700R",
+     "alts": [
+      "DANC 3700R"
+     ],
+     "credits": 1
+    },
+    {
+     "code": "DANC 2760R",
+     "credits": 1
+    },
+    {
+     "code": "DANC 4710R",
+     "credits": 2
+    },
+    {
+     "code": "DANC 4720R",
+     "credits": 2
+    },
+    {
+     "code": "DANC 3760R",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DANC 4710R",
+     "credits": 2
+    },
+    {
+     "code": "DANC 4720R",
+     "credits": 2
+    },
+    {
+     "code": "DANC 3760R",
+     "credits": 2
+    },
+    {
+     "code": "DANC 3730",
+     "alts": [
+      "DANC 3740",
+      "DANC 4740"
+     ],
+     "credits": 2
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DANC 2700R": {
+   "title": "American Social Dance II",
+   "credits": 1,
+   "prereqText": "Instructor Approvall",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 2710R": {
+   "title": "International Ballroom Dance II",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 2720R": {
+   "title": "Latin Ballroom Dance II",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 2760R": {
+   "title": "Ballroom Dance Company Back Up Team",
+   "credits": 1,
+   "prereqText": "By audition only.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 3700R": {
+   "title": "American Social Dance III",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 3710R": {
+   "title": "International Ballroom Dance III",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 3720R": {
+   "title": "Latin Ballroom Dance III",
+   "credits": 1,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 3730": {
+   "title": "American Social Dance Teaching Methods",
+   "credits": 2,
+   "prereqText": "DANC 2700R or equivalent skill level, and University Advanced Standing",
+   "prereqs": "DANC 2700R",
+   "prereqNonCourse": true
+  },
+  "DANC 3740": {
+   "title": "Ballroom Dance Choreography",
+   "credits": 2,
+   "prereqText": "( DANC 2700R , DANC 2710R , DANC 2720R , or Instructor Approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "DANC 2700R",
+     "DANC 2710R",
+     "DANC 2720R"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "DANC 3760R": {
+   "title": "Ballroom Dance Ensemble",
+   "credits": 2,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 4710R": {
+   "title": "International Ballroom Dance IV",
+   "credits": 2,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 4720R": {
+   "title": "Latin Ballroom Dance IV",
+   "credits": 2,
+   "prereqText": "Instructor Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "DANC 4740": {
+   "title": "International Ballroom and Latin Theory",
+   "credits": 3,
+   "prereqText": "DANC 2710R , DANC 2720R , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DANC 2710R",
+     "DANC 2720R"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "DANC 4760R": {
+   "title": "Ballroom Dance Company Tour Team",
+   "credits": 3,
+   "prereqText": "Audition",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

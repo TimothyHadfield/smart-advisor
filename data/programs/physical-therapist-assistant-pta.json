@@ -1,0 +1,792 @@
+{
+ "id": "physical-therapist-assistant-pta",
+ "name": "Physical Therapist Assistant, SAAS",
+ "url": "https://catalog.uvu.edu/health-public-service/allied-health/physical-therapist-assistant-pta/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 76,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education",
+   "code": "PSY 1010",
+   "alts": [
+    "PSY 1100"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education",
+   "code": "COMM 1020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Additional Pre-Program Requirements",
+   "code": "ZOOL 2320",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Additional Pre-Program Requirements",
+   "code": "ZOOL 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Additional Pre-Program Requirements",
+   "code": "HLSC 1300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 1010",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2015",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2105",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2200",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2205",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2300",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2305",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 2500",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3105",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3205",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3300",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3305",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3505",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3600",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3605",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3700",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3800",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3810",
+   "alts": [],
+   "credits": 7
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PTA 3820",
+   "alts": [],
+   "credits": 7
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "HLSC 1300",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ZOOL 2320",
+     "alts": [
+      "ZOOL 2325"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "COMM 1020",
+     "credits": 3
+    },
+    {
+     "code": "PSY 1010",
+     "alts": [
+      "PSY 1100"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "PTA 1010",
+     "credits": 2
+    },
+    {
+     "code": "PTA 2010",
+     "alts": [
+      "PTA 2015"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "PTA 2100",
+     "alts": [
+      "PTA 2105"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "PTA 2400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PTA 2300",
+     "alts": [
+      "PTA 2305"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "PTA 2200",
+     "alts": [
+      "PTA 2205"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "PTA 2500",
+     "credits": 2
+    },
+    {
+     "code": "PTA 3810",
+     "credits": 5
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "PTA 3100",
+     "alts": [
+      "PTA 3105"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "PTA 3500",
+     "alts": [
+      "PTA 3505"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "PTA 3200",
+     "alts": [
+      "PTA 3205"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "PTA 3700",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "PTA 3300",
+     "alts": [
+      "PTA 3305"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "PTA 3600",
+     "alts": [
+      "PTA 3605"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "PTA 3800",
+     "credits": 2
+    },
+    {
+     "code": "PTA 3820",
+     "credits": 5
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "COMM 1020": {
+   "title": "Public Speaking",
+   "credits": 3
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 1300": {
+   "title": "Medical Terminology and Functional Anatomy",
+   "credits": 3
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 1100": {
+   "title": "Human Development Life Span",
+   "credits": 3
+  },
+  "PTA 1010": {
+   "title": "Introduction to Physical Therapy",
+   "credits": 2,
+   "prereqText": "Admission into PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PTA 2010": {
+   "title": "Essentials of Physiology for the Physical Therapist Assistant",
+   "credits": 3,
+   "prereqText": "Admission into the PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2015",
+   "coreqs": [
+    "PTA 2015"
+   ]
+  },
+  "PTA 2015": {
+   "title": "Essentials of Physiology for the Physical Therapist Assistant Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA Program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2010",
+   "coreqs": [
+    "PTA 2010"
+   ]
+  },
+  "PTA 2100": {
+   "title": "Clinical Kinesiology",
+   "credits": 3,
+   "prereqText": "Admission into the PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2105",
+   "coreqs": [
+    "PTA 2105"
+   ]
+  },
+  "PTA 2105": {
+   "title": "Clinical Kinesiology Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2100",
+   "coreqs": [
+    "PTA 2100"
+   ]
+  },
+  "PTA 2200": {
+   "title": "Foundations of Therapeutic Interventions I",
+   "credits": 2,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2205",
+   "coreqs": [
+    "PTA 2205"
+   ]
+  },
+  "PTA 2205": {
+   "title": "Foundations of Therapeutic Interventions Lab I",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2200",
+   "coreqs": [
+    "PTA 2200"
+   ]
+  },
+  "PTA 2300": {
+   "title": "Therapeutic Procedures",
+   "credits": 2,
+   "prereqText": "Admission into PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2305",
+   "coreqs": [
+    "PTA 2305"
+   ]
+  },
+  "PTA 2305": {
+   "title": "Therapeutic Procedures Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 2300",
+   "coreqs": [
+    "PTA 2300"
+   ]
+  },
+  "PTA 2400": {
+   "title": "Clinical Pathophysiology",
+   "credits": 3,
+   "prereqText": "Admission into PTA program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PTA 2500": {
+   "title": "Health Systems and Services for the PTA",
+   "credits": 2,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PTA 3100": {
+   "title": "Foundations of Therapeutic Interventions II",
+   "credits": 3,
+   "prereqText": "PTA 2200 , PTA 2205 , and Admission into PTA program.",
+   "prereqs": {
+    "and": [
+     "PTA 2200",
+     "PTA 2205"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3105",
+   "coreqs": [
+    "PTA 3105"
+   ]
+  },
+  "PTA 3105": {
+   "title": "Foundations of Therapeutic Interventions Lab II",
+   "credits": 1,
+   "prereqText": "PTA 2200 , PTA 2205 , and Admission into PTA program.",
+   "prereqs": {
+    "and": [
+     "PTA 2200",
+     "PTA 2205"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3100",
+   "coreqs": [
+    "PTA 3100"
+   ]
+  },
+  "PTA 3200": {
+   "title": "Orthopedic Rehabilitation",
+   "credits": 3,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3205",
+   "coreqs": [
+    "PTA 3205"
+   ]
+  },
+  "PTA 3205": {
+   "title": "Orthopedic Rehabilitation Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3200",
+   "coreqs": [
+    "PTA 3200"
+   ]
+  },
+  "PTA 3300": {
+   "title": "Cardiopulmonary Rehabilitation",
+   "credits": 2,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3305",
+   "coreqs": [
+    "PTA 3305"
+   ]
+  },
+  "PTA 3305": {
+   "title": "Cardiopulmonary Rehabilitation Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3300",
+   "coreqs": [
+    "PTA 3300"
+   ]
+  },
+  "PTA 3500": {
+   "title": "Neurological Rehabilitation",
+   "credits": 3,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3505",
+   "coreqs": [
+    "PTA 3505"
+   ]
+  },
+  "PTA 3505": {
+   "title": "Neurological Rehabilitation Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3500",
+   "coreqs": [
+    "PTA 3500"
+   ]
+  },
+  "PTA 3600": {
+   "title": "Specialty Populations in Physical Therapy",
+   "credits": 2,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3605",
+   "coreqs": [
+    "PTA 3605"
+   ]
+  },
+  "PTA 3605": {
+   "title": "Specialty Populations in Physical Therapy Lab",
+   "credits": 1,
+   "prereqText": "Admission into PTA program.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "PTA 3600",
+   "coreqs": [
+    "PTA 3600"
+   ]
+  },
+  "PTA 3700": {
+   "title": "Physical Therapist Assistant Seminar",
+   "credits": 2,
+   "prereqText": "Admission into PTA program, PTA 2500 , PTA 3810",
+   "prereqs": {
+    "and": [
+     "PTA 2500",
+     "PTA 3810"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PTA 3800": {
+   "title": "Capstone",
+   "credits": 2,
+   "prereqText": "Admission into PTA program, PTA 3100 , PTA 3200 , PTA 3300",
+   "prereqs": {
+    "and": [
+     "PTA 3100",
+     "PTA 3200",
+     "PTA 3300"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PTA 3810": {
+   "title": "Clinical Practicum I",
+   "credits": 7,
+   "prereqText": "Admission into PTA program, PTA 2100 , PTA 2400",
+   "prereqs": {
+    "and": [
+     "PTA 2100",
+     "PTA 2400"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PTA 3820": {
+   "title": "Clinical Practicum II",
+   "credits": 7,
+   "prereqText": "Admission into PTA program, PTA 3810",
+   "prereqs": "PTA 3810",
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "precoreqText": "ZOOL 2320",
+   "precoreqs": "ZOOL 2320"
+  }
+ }
+}

@@ -1,0 +1,185 @@
+{
+ "id": "resort-management-undergraduate-certificate",
+ "name": "Resort Management, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/business/organizational-leadership/resort-management-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 3030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 3150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 3400",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 4150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 4400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HM 4810R",
+   "alts": [],
+   "credits": 4
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "HM 3400",
+     "credits": 2
+    },
+    {
+     "code": "HM 4810R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HM 3020",
+     "credits": 3
+    },
+    {
+     "code": "HM 3030",
+     "credits": 3
+    },
+    {
+     "code": "HM 4150",
+     "credits": 3
+    },
+    {
+     "code": "HM 4810R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "HM 3150",
+     "credits": 3
+    },
+    {
+     "code": "HM 4400",
+     "credits": 3
+    },
+    {
+     "code": "HM 4810R",
+     "credits": 2
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "HM 3020": {
+   "title": "Hospitality Managerial Accounting I",
+   "credits": 3,
+   "prereqText": "ACC 2110 and University Advanced Standing",
+   "prereqs": "ACC 2110",
+   "prereqNonCourse": true
+  },
+  "HM 3030": {
+   "title": "Hospitality Managerial Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 2110 and University Advanced Standing",
+   "prereqs": "ACC 2110",
+   "prereqNonCourse": true,
+   "precoreqText": "HM 3020",
+   "precoreqs": "HM 3020"
+  },
+  "HM 3150": {
+   "title": "Hospitality Finance",
+   "credits": 3,
+   "prereqText": "HM 3030 and University Advanced Standing",
+   "prereqs": "HM 3030",
+   "prereqNonCourse": true,
+   "precoreqText": "HM 3400",
+   "precoreqs": "HM 3400"
+  },
+  "HM 3400": {
+   "title": "Hotel Industry Analytics",
+   "credits": 2,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HM 4150": {
+   "title": "Hospitality Revenue Management",
+   "credits": 3,
+   "prereqText": "HM 3400 , and University Advanced Standing",
+   "prereqs": "HM 3400",
+   "prereqNonCourse": true
+  },
+  "HM 4400": {
+   "title": "Advanced Hotel and Tourism Analytics",
+   "credits": 3,
+   "prereqText": "HM 3400 and University Advanced Standing",
+   "prereqs": "HM 3400",
+   "prereqNonCourse": true
+  },
+  "HM 4810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 9,
+   "prereqText": "Approval of WSB Internship Coordinator and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,192 @@
+{
+ "id": "cinema-media-studies-minor",
+ "name": "Cinema and Media Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/english-literature/cinema-media-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CINE 2150",
+   "alts": [
+    "ENGL 2150"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CINE 3150",
+   "alts": [
+    "ENGL 3150"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "CINE 2311"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "THEA 2311"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CINE 2312"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "THEA 2312"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "In addition to the 9 core requirements, students must complete an additional 9 hours of advisor-approved electives. Six (6) of the 9 hours must be upper-division (see coordinator for a list of approved electives).",
+   "credits": 9
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 2150",
+     "alts": [
+      "CINE 2150"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "CINE 2311",
+     "credits": null
+    },
+    {
+     "code": "THEA 2311",
+     "credits": null
+    },
+    {
+     "code": "CINE 2312",
+     "credits": null
+    },
+    {
+     "code": "THEA 2312",
+     "credits": null
+    },
+    {
+     "label": "Cinema Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 3150",
+     "alts": [
+      "CINE 3150"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Cinema Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Cinema Studies Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CINE 2150": {
+   "title": "Critical Introduction to Cinema Studies",
+   "credits": 3,
+   "prereqText": "ENGL 2010",
+   "prereqs": "ENGL 2010"
+  },
+  "CINE 2311": {
+   "title": "Film History I",
+   "credits": 3
+  },
+  "CINE 2312": {
+   "title": "Film History II",
+   "credits": 3
+  },
+  "CINE 3150": {
+   "title": "Cinema and Television Theory",
+   "credits": 3,
+   "prereqText": "( CINE 2150 or ENGL 2150 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CINE 2150",
+     "ENGL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 2150": {
+   "title": "Critical Introduction to Cinema Studies",
+   "credits": 3,
+   "prereqText": "ENGL 2010",
+   "prereqs": "ENGL 2010"
+  },
+  "ENGL 3150": {
+   "title": "Cinema and Television Theory",
+   "credits": 3,
+   "prereqText": "( CINE 2150 or ENGL 2150 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CINE 2150",
+     "ENGL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "THEA 2311": {
+   "title": "Film History I",
+   "credits": 3
+  },
+  "THEA 2312": {
+   "title": "Film History II",
+   "credits": 3
+  }
+ }
+}

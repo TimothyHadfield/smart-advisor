@@ -1,0 +1,528 @@
+{
+ "id": "sociology-minor",
+ "name": "Sociology, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/sociology-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "SOC 1010G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 1020"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "SOC Elective",
+   "pick": {
+    "count": 4
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "SOC 2370"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 2600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 2630G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 2830"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3110"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "SOC 3400"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "SOC 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3501"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3560"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3690"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3750G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 3850"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4750R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SOC 4810R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4850"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SOC 4900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete any 4 of the following classes (with at least 3 upper division)"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "SOC 1010G",
+     "credits": 3
+    },
+    {
+     "code": "SOC 1020",
+     "credits": 3
+    },
+    {
+     "label": "SOC Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "SOC Elective",
+     "credits": 3
+    },
+    {
+     "label": "SOC Elective",
+     "credits": 3
+    },
+    {
+     "label": "SOC Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "SOC 1010G": {
+   "title": "Intro to Sociology",
+   "credits": 3
+  },
+  "SOC 1020": {
+   "title": "Modern Social Problems",
+   "credits": 3
+  },
+  "SOC 2370": {
+   "title": "Sociology of Gender",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005 with a C+ or higher",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 2600": {
+   "title": "Sociology of the Family",
+   "credits": 3
+  },
+  "SOC 2630G": {
+   "title": "Race and Minority Relations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "SOC 2830": {
+   "title": "Sexualities and Society",
+   "credits": 3
+  },
+  "SOC 3030": {
+   "title": "Social Research Methods",
+   "credits": 3,
+   "prereqText": "PSY 3110 (statistics) with a C- or higher and University Advanced Standing",
+   "prereqs": "PSY 3110",
+   "prereqNonCourse": true
+  },
+  "SOC 3110": {
+   "title": "Statistics for Social Sciences",
+   "credits": 4,
+   "prereqText": "MAT 1010 or higher and University Advanced Standing",
+   "prereqs": "MAT 1010",
+   "prereqNonCourse": true
+  },
+  "SOC 3400": {
+   "title": "Sociology of Religion",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3430": {
+   "title": "Sociology of Education",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3460": {
+   "title": "Political Sociology",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3501": {
+   "title": "Social Psychology",
+   "credits": 3,
+   "prereqText": "SOC 1010G and University Advanced Standing",
+   "prereqs": "SOC 1010G",
+   "prereqNonCourse": true
+  },
+  "SOC 3510": {
+   "title": "Sociology of Work and Occupations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a minimum C+ grade, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3520": {
+   "title": "Environmental Sociology",
+   "credits": 3,
+   "prereqText": "SOC 1010G and ENGL 2010 with a C+ grade or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SOC 1010G",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3560": {
+   "title": "Sociology of Deviance",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3690": {
+   "title": "Internet Technology and Society",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 ), SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     },
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3700": {
+   "title": "Social Inequality",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 with a C+ or higher), SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3750G": {
+   "title": "Sociology of Aging",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SOC 3800": {
+   "title": "Animals and Society",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, ( SOC 1010G or ENST 1010 or GEOG 1400 or GEOG 2000 or ANTH 1010G ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "SOC 1010G",
+       "ENST 1010",
+       "GEOG 1400",
+       "GEOG 2000",
+       "ANTH 1010G"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 3850": {
+   "title": "Land Food and Society",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C+ or higher, ( SOC 1010G or ENST 1010 or GEOG 1400 or GEOG 2000 or ANTH 1010G ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "SOC 1010G",
+       "ENST 1010",
+       "GEOG 1400",
+       "GEOG 2000",
+       "ANTH 1010G"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4000": {
+   "title": "Classical Social Theory",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 with a minimum C+ grade), SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4020": {
+   "title": "Survey Research Design in the Social Sciences",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SOC 4100": {
+   "title": "Contemporary Social Theory",
+   "credits": 3,
+   "prereqText": "SOC 1010G and SOC 4000 and ( ENGL 2010 with a C+ or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "SOC 1010G",
+     "SOC 4000",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4400": {
+   "title": "Social Change",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4750R": {
+   "title": "Current Topics in Sociology",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "ENGL 2010 with a minimum grade of C+, SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4810R": {
+   "title": "Sociology Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SOC 4850": {
+   "title": "Social Movements and Collective Action",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , SOC 1010G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "SOC 1010G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "SOC 4900R": {
+   "title": "Independent Studies",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Instructor approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

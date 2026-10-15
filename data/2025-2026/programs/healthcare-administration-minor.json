@@ -1,0 +1,343 @@
+{
+ "id": "healthcare-administration-minor",
+ "name": "Healthcare Administration, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/healthcare-administration-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 4500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 4640",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLSC 4560G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Choose one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HLSC 4780"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 4140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 4470"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Please choose one of the following",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HLSC 4840"
+     ],
+     "credits": 3,
+     "alts": [
+      "LEGL 3000"
+     ]
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Please choose one of the following electives:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HLSC 4250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLSC 3660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLSC 4330"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HR 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLSC 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLSC 4000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLSC 3550"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Please choose one of the following",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4840",
+     "alts": [
+      "LEGL 3000"
+     ],
+     "credits": null
+    },
+    {
+     "label": "Please choose one of the following electives:",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4250",
+     "credits": null
+    },
+    {
+     "code": "HLSC 3660",
+     "credits": null
+    },
+    {
+     "code": "HR 3430",
+     "credits": null
+    },
+    {
+     "code": "HLSC 3050",
+     "credits": null
+    },
+    {
+     "code": "HLSC 3550",
+     "credits": null
+    },
+    {
+     "code": "HLSC 4000",
+     "credits": null
+    },
+    {
+     "code": "HLSC 4330",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "HLSC 4500",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4560G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HLSC 4640",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Choose one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4780",
+     "credits": null
+    },
+    {
+     "code": "HLTH 4140",
+     "credits": null
+    },
+    {
+     "code": "MGMT 4470",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HLSC 3050": {
+   "title": "Healthcare Quality and Safety",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 3550": {
+   "title": "Healthcare Project and Revenue Cycle Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 3660": {
+   "title": "Healthcare Economics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4000": {
+   "title": "Introduction to Health Insurance Management",
+   "credits": 3,
+   "prereqText": "Advanced University Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4250": {
+   "title": "Health Organization and Policy",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4330": {
+   "title": "Healthcare financial management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4500": {
+   "title": "Healthcare Administration",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4560G": {
+   "title": "Introduction to Healthcare Systems",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4640": {
+   "title": "Population Health and Strategic Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4780": {
+   "title": "Strategic Planning and Operations Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLSC 4840": {
+   "title": "Healthcare Law",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4140": {
+   "title": "Assessment and Program Development",
+   "credits": 3,
+   "prereqText": "HLTH 3200 and University Advanced Standing",
+   "prereqs": "HLTH 3200",
+   "prereqNonCourse": true,
+   "precoreqText": "HLTH 3260",
+   "precoreqs": "HLTH 3260"
+  },
+  "HR 3430": {
+   "title": "Introduction to Human Resource Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "LEGL 3000": {
+   "title": "Business Law",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 or appropriate test scores) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 4470": {
+   "title": "Strategic Operational Planning",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  }
+ }
+}

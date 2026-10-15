@@ -1,0 +1,282 @@
+{
+ "id": "constitutional-studies-minor",
+ "name": "Constitutional Studies, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/history-political-science/constitutional-studies-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "POLS 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CNST 4720",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CNST 4790",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CNST 4795",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "count": 3
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "POLS 1020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3260"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 4500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CNST 3870"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CNST 3880"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 4160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CNST 4730"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CNST 2600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete three of the following courses for 9 credits:",
+   "notes": [
+    "or any other Coordinator or Chair approved courses."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CNST 4720",
+     "credits": 3
+    },
+    {
+     "code": "CNST 4790",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "POLS 3250",
+     "credits": 3
+    },
+    {
+     "code": "CNST 4795",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 4160": {
+   "title": "Constitutional Criminal Rights",
+   "credits": 3,
+   "prereqText": "CJ 1330 , ENGL 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CJ 1330",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CNST 2600": {
+   "title": "Comparative Constitutionalism",
+   "credits": 3,
+   "prereqText": "POLS 1000 or POLS 1100",
+   "prereqs": {
+    "or": [
+     "POLS 1000",
+     "POLS 1100"
+    ]
+   }
+  },
+  "CNST 3870": {
+   "title": "Constitutional History to Plessy 1896",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CNST 3880": {
+   "title": "Constitutional History Since Plessy 1896",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CNST 4720": {
+   "title": "Foundations of American Constitutionalism",
+   "credits": 3,
+   "prereqText": "( POLS 1000 or POLS 1100 or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "POLS 1000",
+     "POLS 1100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CNST 4730": {
+   "title": "Framing of the US Constitution",
+   "credits": 3,
+   "prereqText": "CNST 4720 and University Advanced Standing",
+   "prereqs": "CNST 4720",
+   "prereqNonCourse": true
+  },
+  "CNST 4790": {
+   "title": "US Constitution",
+   "credits": 3,
+   "prereqText": "( POLS 1100 or POLS 1000 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "POLS 1100",
+     "POLS 1000"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CNST 4795": {
+   "title": "Civil Rights and Civil Liberties",
+   "credits": 3,
+   "prereqText": "CNST 4790 and University Advanced Standing",
+   "prereqs": "CNST 4790",
+   "prereqNonCourse": true
+  },
+  "ECON 4500": {
+   "title": "US Economic Development and History",
+   "credits": 3,
+   "prereqText": "Matriculation in the Woodbury School of Business, University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HIST 3320": {
+   "title": "Modern Britain",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 1020": {
+   "title": "Political Ideologies",
+   "credits": 3
+  },
+  "POLS 3250": {
+   "title": "Introduction to Law and Politics",
+   "credits": 3,
+   "prereqText": "POLS 1100 and University Advanced Standing",
+   "prereqs": "POLS 1100",
+   "prereqNonCourse": true
+  },
+  "POLS 3260": {
+   "title": "American Federalism",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3300": {
+   "title": "Introduction to Public Administration",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 4610": {
+   "title": "International Law",
+   "credits": 3,
+   "prereqText": "POLS 2100 and University Advanced Standing",
+   "prereqs": "POLS 2100",
+   "prereqNonCourse": true
+  }
+ }
+}

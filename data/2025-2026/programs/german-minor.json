@@ -1,0 +1,212 @@
+{
+ "id": "german-minor",
+ "name": "German, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/german-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "GER 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "GER Elective",
+   "pick": {
+    "credits": 15
+   },
+   "credits": 15,
+   "options": [
+    {
+     "codes": [
+      "GER 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GER 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GER 3510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GER 3800R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GER 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "LANG 3000"
+     ],
+     "credits": 3,
+     "alts": [
+      "LANG 3010",
+      "LANG 4200",
+      "LANG 4810R"
+     ]
+    }
+   ],
+   "text": "Complete 15 credits from among the following:",
+   "notes": [
+    "Other advisor-approved course"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "GER 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "GER Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "GER Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "GER Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "GER Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "GER Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "GER 3030": {
+   "title": "German Composition and Conversation",
+   "credits": 3,
+   "prereqText": "( GER 2020G or equivalent experience) and University Advanced Standing",
+   "prereqs": "GER 2020G",
+   "prereqNonCourse": true
+  },
+  "GER 3050": {
+   "title": "Advanced German",
+   "credits": 3,
+   "prereqText": "It is recommended that students have GER 2020G , one-year residency in German speaking country, or instructor approval",
+   "prereqs": null
+  },
+  "GER 3200": {
+   "title": "Business German",
+   "credits": 3,
+   "prereqText": "( GER 3050 or equivalent knowledge) and University Advanced Standing",
+   "prereqs": "GER 3050",
+   "prereqNonCourse": true
+  },
+  "GER 3510G": {
+   "title": "German Culture and Civilization",
+   "credits": 3,
+   "prereqText": "GER 3050 and University Advanced Standing",
+   "prereqs": "GER 3050",
+   "prereqNonCourse": true
+  },
+  "GER 3800R": {
+   "title": "Topics in German Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "GER 4200": {
+   "title": "Advanced Business German",
+   "credits": 3,
+   "prereqText": "( GER 3200 or equivalent knowledge) and University Advanced Standing",
+   "prereqs": "GER 3200",
+   "prereqNonCourse": true
+  },
+  "LANG 3000": {
+   "title": "Language and Culture",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 , ( ANTH 1010G or any foreign language 2010 course), Sophomore status, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     },
+     "ANTH 1010G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "LANG 3010": {
+   "title": "Introduction to Linguistics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "LANG 4200": {
+   "title": "Methods of Teaching a Foreign Language",
+   "credits": 3,
+   "prereqText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "LANG 4810R": {
+   "title": "Language Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Departmental Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,120 @@
+{
+ "id": "russian-language-certificate-of-prof",
+ "name": "Russian Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/russian-language-certificate-of-prof/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "RUS 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "RUS 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "RUS 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "RUS 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any RUS 3XXX or 4XXX course",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "RUS 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "RUS 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "RUS 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "RUS 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Any RUS 3XXX or 4XXX course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "RUS 1020": {
+   "title": "Beginning Russian II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of RUS 1010",
+   "prereqs": "RUS 1010",
+   "prereqNonCourse": true
+  },
+  "RUS 2010": {
+   "title": "Intermediate Russian I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of RUS 1020",
+   "prereqs": "RUS 1020",
+   "prereqNonCourse": true
+  },
+  "RUS 2020G": {
+   "title": "Intermediate Russian II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of RUS 2010",
+   "prereqs": "RUS 2010",
+   "prereqNonCourse": true
+  },
+  "RUS 3050": {
+   "title": "Advanced Russian",
+   "credits": 3,
+   "prereqText": "It is recommended that students have either taken RUS 2020G , had at least one year residency in a Russian-speaking country, or instructor approval",
+   "prereqs": null
+  }
+ }
+}

@@ -1,0 +1,181 @@
+{
+ "id": "business-information-technology-minor",
+ "name": "Business Information Technology, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/business-information-technology-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3320G",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "IM 2500",
+     "credits": 3
+    },
+    {
+     "code": "IM 2600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "IM 2800",
+     "credits": 3
+    },
+    {
+     "code": "IM 3500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "INFO 2420",
+     "credits": 3
+    },
+    {
+     "code": "IM 3600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MGMT 3020",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 3320G",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "IM 2500": {
+   "title": "Graphic Applications",
+   "credits": 3
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3
+  },
+  "IM 2800": {
+   "title": "Digital Business Applications",
+   "credits": 3,
+   "prereqText": "IM 1010",
+   "prereqs": "IM 1010"
+  },
+  "IM 3500": {
+   "title": "Content Creation Applications",
+   "credits": 3,
+   "prereqText": "University Advanced Standing. Basic Computer and online skills.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 3600": {
+   "title": "Advanced Excel for Decision Making",
+   "credits": 3,
+   "prereqText": "IM 2010 or IM 2600 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "IM 2010",
+     "IM 2600"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  },
+  "MGMT 3020": {
+   "title": "Ethical Decision-Making in Organizations",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,206 @@
+{
+ "id": "middle-school-math-endorsement",
+ "name": "Middle School Math Endorsement, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/middle-school-math-endorsement/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 23,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 1050",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 1060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 1210",
+   "alts": [
+    "MATH 2030"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 3030",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 3060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "MATH 3090",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 1050",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 1060",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 1210",
+     "alts": [
+      "MATH 2030"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 3030",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 3050",
+     "credits": 3
+    },
+    {
+     "code": "MATH 3060",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 3090",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1060": {
+   "title": "Trigonometry",
+   "credits": 3,
+   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 2030": {
+   "title": "Calculus for Middle School Mathematics Teachers",
+   "credits": 4,
+   "prereqText": "MATH 1060 with a grade of C or higher",
+   "prereqs": "MATH 1060"
+  },
+  "MATH 3030": {
+   "title": "Algebra for Secondary Mathematics Teaching",
+   "credits": 3,
+   "prereqText": "Math 1210 with a grade B- or higher and University Advanced Standing and Mathematics Department Adviser Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 3050": {
+   "title": "Geometry for Middle School Mathematics Teaching",
+   "credits": 3,
+   "prereqText": "MATH 1210 with a grade of C or higher and University Advanced Standing",
+   "prereqs": "MATH 1210",
+   "prereqNonCourse": true
+  },
+  "MATH 3060": {
+   "title": "Statistics and Probability for Middle School Mathematics Teaching",
+   "credits": 3,
+   "prereqText": "MATH 1210 with a grade of C or higher and University Advanced Standing",
+   "prereqs": "MATH 1210",
+   "prereqNonCourse": true
+  },
+  "MATH 3090": {
+   "title": "Methods of Middle School Mathematics Teaching",
+   "credits": 3,
+   "prereqText": "MATH 1210 with a grade of C or higher and University Advanced Standing",
+   "prereqs": "MATH 1210",
+   "prereqNonCourse": true
+  }
+ }
+}

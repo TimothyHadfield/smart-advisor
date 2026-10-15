@@ -1,0 +1,196 @@
+{
+ "id": "business-management-certificate-completion",
+ "name": "Business Management, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-management-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "FIN 1060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2390",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [
+    "MGMT 1400"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "IM 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IM 2600"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience.",
+   "credits": 6,
+   "text": "Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    },
+    {
+     "code": "ECON 1010",
+     "credits": 3
+    },
+    {
+     "code": "FIN 1060",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    },
+    {
+     "code": "IM 2010",
+     "alts": [
+      "IM 2600"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 1010",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2390",
+     "credits": 3
+    },
+    {
+     "label": "Business Elective",
+     "credits": 3
+    },
+    {
+     "label": "Business Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ECON 1010": {
+   "title": "Economics as a Social Science",
+   "credits": 3
+  },
+  "FIN 1060": {
+   "title": "Personal Finance",
+   "credits": 3
+  },
+  "IM 2010": {
+   "title": "Business Computer Proficiency",
+   "credits": 3,
+   "prereqText": "( IM 1010 recommended) or (Basic Computer Applications Challenge Exam with a minimum score of 80% recommended)",
+   "prereqs": null
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3,
+   "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
+   "prereqs": "MAT 0980",
+   "prereqNonCourse": true
+  },
+  "MGMT 1010": {
+   "title": "Introduction to Business",
+   "credits": 3
+  },
+  "MGMT 1400": {
+   "title": "Introduction to Data Analytics",
+   "credits": 3
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  }
+ }
+}

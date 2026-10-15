@@ -1,0 +1,296 @@
+{
+ "id": "integrated-college-community-studies-undergraduate-certificate",
+ "name": "Integrated College and Community Studies, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/education/student-leadership-success-studies/integrated-college-community-studies-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 33,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 1010",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 2010",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 1020",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 2020",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 1030",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 2030",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 1100R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 1200R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 2100R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ICCS 2200R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "SLSS 2100",
+   "alts": [
+    "SLSS 1000"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "SLSS 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "HLTH 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ENGL 1005",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "FIN 1060",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ICCS 1010",
+     "credits": 2
+    },
+    {
+     "code": "SLSS 2100",
+     "alts": [
+      "SLSS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "SLSS 1100",
+     "credits": 3
+    },
+    {
+     "code": "ICCS 1100R",
+     "credits": 2
+    },
+    {
+     "code": "ICCS 1200R",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ICCS 1030",
+     "credits": 2
+    },
+    {
+     "code": "ENGL 1005",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ICCS 2010",
+     "credits": 2
+    },
+    {
+     "code": "HLTH 1100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ICCS 1020",
+     "credits": 2
+    },
+    {
+     "code": "FIN 1060",
+     "credits": 3
+    },
+    {
+     "code": "ICCS 2100R",
+     "credits": 1
+    },
+    {
+     "code": "ICCS 2200R",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ICCS 2030",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "ICCS 2020",
+     "credits": 1
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 1060": {
+   "title": "Personal Finance",
+   "credits": 3
+  },
+  "HLTH 1100": {
+   "title": "Personal Health and Wellness",
+   "credits": 3
+  },
+  "ICCS 1010": {
+   "title": "Self Determination I",
+   "credits": 2
+  },
+  "ICCS 1020": {
+   "title": "Living and Working in the Community I",
+   "credits": 2
+  },
+  "ICCS 1030": {
+   "title": "Social Skills, Sexuality, and Mature Relationships",
+   "credits": 2
+  },
+  "ICCS 1100R": {
+   "title": "Career Development I",
+   "credits": 1,
+   "creditsMax": 3,
+   "coreqText": "ICCS 1200R",
+   "coreqs": [
+    "ICCS 1200R"
+   ]
+  },
+  "ICCS 1200R": {
+   "title": "Career Development Practicum I",
+   "credits": 1,
+   "creditsMax": 3
+  },
+  "ICCS 2010": {
+   "title": "Self Determination II",
+   "credits": 2
+  },
+  "ICCS 2020": {
+   "title": "Living and Working in the Community II",
+   "credits": 1
+  },
+  "ICCS 2030": {
+   "title": "Problem Solving for Adulthood",
+   "credits": 2
+  },
+  "ICCS 2100R": {
+   "title": "Career Development II",
+   "credits": 1,
+   "creditsMax": 3,
+   "coreqText": "ICCS 2200R",
+   "coreqs": [
+    "ICCS 2200R"
+   ]
+  },
+  "ICCS 2200R": {
+   "title": "Career Development Practicum II",
+   "credits": 1,
+   "creditsMax": 3
+  },
+  "SLSS 1000": {
+   "title": "University Student Success",
+   "credits": 3,
+   "prereqText": "Appropriate reading skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "SLSS 1100": {
+   "title": "Stress Management",
+   "credits": 3
+  },
+  "SLSS 2100": {
+   "title": "Major and Career Exploration",
+   "credits": 3
+  }
+ }
+}

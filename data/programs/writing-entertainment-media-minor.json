@@ -1,0 +1,287 @@
+{
+ "id": "writing-entertainment-media-minor",
+ "name": "Writing for Entertainment Media, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/digital-media/writing-entertainment-media-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 3210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 4210R",
+   "alts": [],
+   "credits": 6
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 4230R",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 4240R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Approved Optional Course",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "THEA 1033"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 2800"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete six hours from the following electives."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DCPR 1010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DCPR 1210",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Approved Optional Course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Approved Optional Course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "DCPR 3210",
+     "credits": 3
+    },
+    {
+     "code": "DCPR 4230R",
+     "alts": [
+      "DCPR 4240R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "DCPR 4210R",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "DCPR 4210R",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DCPR 1010": {
+   "title": "Film Production Analysis I",
+   "credits": 2,
+   "coreqText": "DCPR 1010L",
+   "coreqs": [
+    "DCPR 1010L"
+   ]
+  },
+  "DCPR 1210": {
+   "title": "Writing for Entertainment Media I",
+   "credits": 3
+  },
+  "DCPR 1610": {
+   "title": "Digital Cinema Editing I",
+   "credits": 2,
+   "coreqText": "DCPR 1610L",
+   "coreqs": [
+    "DCPR 1610L"
+   ]
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 2,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DCPR 2010": {
+   "title": "Film Production Analysis II",
+   "credits": 3,
+   "prereqText": "DCPR 1010",
+   "prereqs": "DCPR 1010"
+  },
+  "DCPR 2800": {
+   "title": "Filmmaking II",
+   "credits": 2,
+   "prereqText": "DCPR 1010 , DCPR 1800 , DCPR 1610",
+   "prereqs": {
+    "and": [
+     "DCPR 1010",
+     "DCPR 1800",
+     "DCPR 1610"
+    ]
+   },
+   "coreqText": "DCPR 2800L",
+   "coreqs": [
+    "DCPR 2800L"
+   ]
+  },
+  "DCPR 3210": {
+   "title": "Writing for Entertainment Media II",
+   "credits": 3,
+   "prereqText": "DCPR 1210 or THEA 2742 , Portfolio Review Acceptance and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "DCPR 1210",
+     "THEA 2742"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "DCPR 4210R": {
+   "title": "Writing for Entertainment Media III",
+   "credits": 3,
+   "prereqText": "( DCPR 1210 or THEA 2742 ), ( DCPR 3210 or THEA 3741 ), University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "DCPR 1210",
+       "THEA 2742"
+      ]
+     },
+     {
+      "or": [
+       "DCPR 3210",
+       "THEA 3741"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "DCPR 4230R": {
+   "title": "Story Editing for Digital Cinema",
+   "credits": 2,
+   "prereqText": "DCPR 1210 or THEA 2742 , University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "DCPR 1210",
+     "THEA 2742"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "DCPR 4240R",
+   "precoreqs": "DCPR 4240R"
+  },
+  "DCPR 4240R": {
+   "title": "Story Editing for Digital Cinema Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1210 or THEA 2742 , University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "DCPR 1210",
+     "THEA 2742"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 4230R",
+   "coreqs": [
+    "DCPR 4230R"
+   ]
+  },
+  "THEA 1033": {
+   "title": "Acting I",
+   "credits": 3
+  }
+ }
+}

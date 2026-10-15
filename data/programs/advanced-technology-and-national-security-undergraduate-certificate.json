@@ -1,0 +1,567 @@
+{
+ "id": "advanced-technology-and-national-security-undergraduate-certificate",
+ "name": "Advanced Technology and National Security, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/advanced-technology-and-national-security-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "NSS 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core",
+   "code": "NSS 3750",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Electives",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "NSS 4150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4260"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4650"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Electives",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "NSS 4750R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "TECH 4050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AERO 1100"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "AERO 1110"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "AERO 2100"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "AERO 2110"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "AERO 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 1200"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MILS 1210"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "MILS 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MILS 4210"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 4350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GIS 1600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GIS 2640"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BTEC 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 2200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "INFO 3130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 2900"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 4470"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits of any of the NSS classes from the discipline electives or from the following list:",
+   "notes": [
+    "Any other course approved by the program director or advisor"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NSS 2010",
+     "credits": 3
+    },
+    {
+     "label": "Discipline Elective",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "NSS 3750",
+     "credits": 3
+    },
+    {
+     "label": "Discipline Elective",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "AERO 1100": {
+   "title": "Department of the Air Force--DAF Professionalism A",
+   "credits": 1,
+   "coreqText": "AERO 1000 , AERO 1430R",
+   "coreqs": [
+    "AERO 1000",
+    "AERO 1430R"
+   ]
+  },
+  "AERO 1110": {
+   "title": "Department of the Air Force--DAF Professionalism B",
+   "credits": 1,
+   "coreqText": "AERO 1010 , AERO 1430R",
+   "coreqs": [
+    "AERO 1010",
+    "AERO 1430R"
+   ]
+  },
+  "AERO 2100": {
+   "title": "Team and Leadership Fundamentals A",
+   "credits": 1,
+   "coreqText": "AERO 2000 , AERO 1430R",
+   "coreqs": [
+    "AERO 2000",
+    "AERO 1430R"
+   ]
+  },
+  "AERO 2110": {
+   "title": "Team and Leadership Fundamentals B",
+   "credits": 1,
+   "coreqText": "AERO 2010 , AERO 1430R",
+   "coreqs": [
+    "AERO 2010",
+    "AERO 1430R"
+   ]
+  },
+  "AERO 4100": {
+   "title": "National Security - Leadership Responsibilities and Commissioning Preparation A",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; AERO 3000 , AERO 3010 , AERO 3100 , AERO 3110",
+   "prereqs": {
+    "and": [
+     "AERO 3000",
+     "AERO 3010",
+     "AERO 3100",
+     "AERO 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "BTEC 1010": {
+   "title": "Fundamentals of Biotechnology I Career Survey",
+   "credits": 3
+  },
+  "CS 1030": {
+   "title": "Foundations of Computer Science",
+   "credits": 3
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 2900": {
+   "title": "Data Privacy and Security",
+   "credits": 3,
+   "prereqText": "CS 2420 and University Advanced Standing",
+   "prereqs": "CS 2420",
+   "prereqNonCourse": true
+  },
+  "CS 4470": {
+   "title": "Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "CS 2420 and ( CS 3250 or CS 3260 or CS 3270 or CS 3370 or CS 3380 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CS 2420",
+     {
+      "or": [
+       "CS 3250",
+       "CS 3260",
+       "CS 3270",
+       "CS 3370",
+       "CS 3380"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 2800": {
+   "title": "Computer Forensic Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or IT 1600 or CS 1400 or CJ 1010",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "IT 1600",
+     "CS 1400",
+     "CJ 1010"
+    ]
+   }
+  },
+  "GIS 1600": {
+   "title": "Principles of Geographical Information Science",
+   "credits": 3
+  },
+  "GIS 2640": {
+   "title": "Fundamentals of Geographic Information Systems",
+   "credits": 3
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2200": {
+   "title": "Computer Programming II for IS IT",
+   "credits": 3,
+   "prereqText": "( INFO 1200 or CS 1400 with a grade of C- or better within the past seven years) or Departmental Approval",
+   "prereqs": {
+    "or": [
+     "INFO 1200",
+     "CS 1400"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "MATH 1050 or higher",
+   "precoreqs": "MATH 1050"
+  },
+  "INFO 3130": {
+   "title": "Introduction to Applied Data Analytics",
+   "credits": 3,
+   "prereqText": "Basic statistics course ( MGMT 2340 or STAT 1040 or STAT 1045 or STAT 2040 or STAT 2050 or PSY 3110 ), and basic knowledge of Microsoft Excel, or Departmental Approval and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 1040",
+     "STAT 1045",
+     "STAT 2040",
+     "STAT 2050",
+     "PSY 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 1400": {
+   "title": "Introduction to Data Analytics",
+   "credits": 3
+  },
+  "MGMT 4350": {
+   "title": "Business Intelligence and Data Visualization",
+   "credits": 3,
+   "prereqText": "MGMT 2400 , MGMT 2340 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2400",
+     "MGMT 2340"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MILS 1200": {
+   "title": "Introduction to Leadership Excellence I",
+   "credits": 2,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 1210": {
+   "title": "Introduction to Leadership Excellence II",
+   "credits": 2,
+   "prereqText": "MILS 1200 or Department Approval",
+   "prereqs": "MILS 1200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 1450R",
+   "coreqs": [
+    "MILS 1450R"
+   ]
+  },
+  "MILS 4200": {
+   "title": "The Profession of Arms I",
+   "credits": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  },
+  "MILS 4210": {
+   "title": "The Profession of Arms II",
+   "credits": 3,
+   "prereqText": "MILS 4200 or Departmental Approval",
+   "prereqs": "MILS 4200",
+   "prereqNonCourse": true,
+   "coreqText": "MILS 4450R",
+   "coreqs": [
+    "MILS 4450R"
+   ]
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGL 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "NSS 3750": {
+   "title": "Advanced Technologies in National Security",
+   "credits": 3,
+   "prereqText": "NSS 2010 and University Advanced Standing",
+   "prereqs": "NSS 2010",
+   "prereqNonCourse": true
+  },
+  "NSS 4150": {
+   "title": "Cybersecurity Policy",
+   "credits": 3,
+   "prereqText": "NSS 2010 and University Advanced Standing",
+   "prereqs": "NSS 2010",
+   "prereqNonCourse": true
+  },
+  "NSS 4200": {
+   "title": "Intelligent Systems and Data Policy",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "NSS 3750",
+   "precoreqs": "NSS 3750"
+  },
+  "NSS 4260": {
+   "title": "Hypersonic and Advanced Aeronautics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "NSS 3750",
+   "precoreqs": "NSS 3750"
+  },
+  "NSS 4320": {
+   "title": "Robotics and Autonomous Systems",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "NSS 3750",
+   "precoreqs": "NSS 3750"
+  },
+  "NSS 4650": {
+   "title": "Emerging Tech Policy Lab",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and departmental approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "NSS 4750R": {
+   "title": "Current Topics in National Security",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 3000": {
+   "title": "Introduction to Technology Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 4050G": {
+   "title": "Global Ethical and Professional Issues in Technology",
+   "credits": 3,
+   "prereqText": "PHIL 2050 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "PHIL 2050",
+   "prereqNonCourse": true
+  }
+ }
+}

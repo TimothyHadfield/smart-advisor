@@ -1,0 +1,385 @@
+{
+ "id": "russian-studies-minor",
+ "name": "Russian Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/russian-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 22,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "RUS 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Russian Studies Elective",
+   "pick": {
+    "credits": 18
+   },
+   "credits": 18,
+   "options": [
+    {
+     "codes": [
+      "HIST 3650"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 3660G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 3350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3560G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 2020G"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "RUS 2150R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "RUS 2660G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3660G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 3670G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 4050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 4110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 4160G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 4170"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "RUS 4900R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 18 hours of electives from the following; 12 credits must be upper-division:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "RUS 2010",
+     "credits": 4
+    },
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    },
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    },
+    {
+     "label": "Russian Studies Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HIST 3650": {
+   "title": "Imperial Russia--Autocracy to Opposition 1696-1917",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "HIST 3660G": {
+   "title": "The History of Modern Russia--1864 to Present",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "NSS 3350": {
+   "title": "The Cold War--Culture and Politics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3510": {
+   "title": "Post Soviet Politics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 3560G": {
+   "title": "Comparative Politics of Central Asia",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "RUS 2010": {
+   "title": "Intermediate Russian I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of RUS 1020",
+   "prereqs": "RUS 1020",
+   "prereqNonCourse": true
+  },
+  "RUS 2020G": {
+   "title": "Intermediate Russian II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of RUS 2010",
+   "prereqs": "RUS 2010",
+   "prereqNonCourse": true
+  },
+  "RUS 2150R": {
+   "title": "Russian Conversation II",
+   "credits": 1,
+   "prereqText": "Students should have equivalent knowledge of RUS 1020",
+   "prereqs": "RUS 1020",
+   "prereqNonCourse": true
+  },
+  "RUS 2660G": {
+   "title": "Introduction to Russian Culture",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "RUS 3030": {
+   "title": "Russian Conversation and Composition I",
+   "credits": 3,
+   "prereqText": "( RUS 2020G or instructor approval) and University Advanced Standing",
+   "prereqs": "RUS 2020G",
+   "prereqNonCourse": true
+  },
+  "RUS 3040": {
+   "title": "Russian Conversation and Composition II",
+   "credits": 3,
+   "prereqText": "( RUS 2020G or instructor approval) and University Advanced Standing",
+   "prereqs": "RUS 2020G",
+   "prereqNonCourse": true
+  },
+  "RUS 3050": {
+   "title": "Advanced Russian",
+   "credits": 3,
+   "prereqText": "It is recommended that students have either taken RUS 2020G , had at least one year residency in a Russian-speaking country, or instructor approval",
+   "prereqs": null
+  },
+  "RUS 3200": {
+   "title": "Business Russian",
+   "credits": 3,
+   "prereqText": "RUS 3050 and University Advanced Standing",
+   "prereqs": "RUS 3050",
+   "prereqNonCourse": true
+  },
+  "RUS 3520": {
+   "title": "Russian Culture and Civilization",
+   "credits": 3,
+   "prereqText": "( RUS 3050 or equivalent) and University Advanced Standing",
+   "prereqs": "RUS 3050",
+   "prereqNonCourse": true
+  },
+  "RUS 3620": {
+   "title": "Nineteenth-Century Russian Literature and Its Film Adaptations",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "RUS 3660G": {
+   "title": "Twentieth Century Russian Culture",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "RUS 3670G": {
+   "title": "History of Russian Film",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "RUS 4050": {
+   "title": "Special Problems in Grammar Usage and Style",
+   "credits": 3,
+   "prereqText": "[( RUS 3030 and RUS 3040 ) or RUS 3050 ] and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "RUS 3030",
+       "RUS 3040"
+      ]
+     },
+     "RUS 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "RUS 4110": {
+   "title": "Translation and Interpretation",
+   "credits": 3,
+   "prereqText": "( RUS 3050 or equivalent) and University Advanced Standing",
+   "prereqs": "RUS 3050",
+   "prereqNonCourse": true
+  },
+  "RUS 4160G": {
+   "title": "Contemporary Russian Cinema",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "RUS 4170": {
+   "title": "Russia Under Putin",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "RUS 4900R": {
+   "title": "Special Topics in Russian Studies",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  }
+ }
+}

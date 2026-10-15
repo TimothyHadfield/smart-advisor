@@ -1,0 +1,237 @@
+{
+ "id": "artificial-intelligence-graduate-certificate",
+ "name": "Artificial Intelligence, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/computer-science/artificial-intelligence-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 6150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 6460",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 6470",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CS 6480",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Pick two of the following courses or other approved departmental electives",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "CS 6100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CS 6730"
+     ],
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CS 6150",
+     "credits": 3
+    },
+    {
+     "code": "CS 6470",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CS 6480",
+     "credits": 3
+    },
+    {
+     "label": "CS 6XXX any other MCS course excluding 6600 and 6610",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CS 6460",
+     "credits": 3
+    },
+    {
+     "label": "CS 6XXX Any other MCS course not already taken excluding 6600 and 6610",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 6100": {
+   "title": "Database Management System Construction",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6150": {
+   "title": "Advanced Algorithms",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6200": {
+   "title": "Cyberphysical Security",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6300": {
+   "title": "Software Engineering Leadership",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6400": {
+   "title": "Modern Databases",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6460": {
+   "title": "Artificial Intelligence",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6470": {
+   "title": "Machine Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6480": {
+   "title": "Deep Learning",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6500": {
+   "title": "Software Architecture",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6510": {
+   "title": "Design and Simulation of Operating Systems",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6530": {
+   "title": "Computer Graphics and Mixed Realities",
+   "credits": 3,
+   "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6620": {
+   "title": "Advanced Data Mining and Visualization",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 6730": {
+   "title": "Advanced Embedded Systems Engineering",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

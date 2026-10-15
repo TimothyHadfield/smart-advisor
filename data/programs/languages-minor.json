@@ -1,0 +1,119 @@
+{
+ "id": "languages-minor",
+ "name": "Languages, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/languages-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 20,
+ "requirements": [
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "A 3050 course in any foreign language",
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "(Language #1) Elective",
+   "pick": {
+    "count": 1
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "LANG 3000"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following:",
+   "notes": [
+    "Six credits numbered higher than 3050 in the same language"
+   ]
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Eleven credits in courses numbered 2000 or higher in a SECOND foreign language.",
+   "credits": 11
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "(Language #1) 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "(Language #1) Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "(Language #1) Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "(Language #2) 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "(Language #2) 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "(Language #2) 3050",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "LANG 3000": {
+   "title": "Language and Culture",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005 , ( ANTH 1010G or any foreign language 2010 course), Sophomore status, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     },
+     "ANTH 1010G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  }
+ }
+}

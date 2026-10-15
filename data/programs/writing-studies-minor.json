@@ -1,0 +1,376 @@
+{
+ "id": "writing-studies-minor",
+ "name": "Writing Studies, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/writing-studies-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 2100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3070",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Professional Writing Practices: Complete TWO of the following (or other advisor-approved Writing Studies course):",
+   "pick": {
+    "count": 2
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "ENGL 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3320"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4360R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4810R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Professional Writing Practices: Complete TWO of the following (or other advisor-approved Writing Studies course):"
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Language and Cultural Rhetorics: Complete ONE of the following (or other advisor-approved Writing Studies course):",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ENGL 2030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 3085"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4010R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGL 4020G"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Language and Cultural Rhetorics: Complete ONE of the following (or other advisor-approved Writing Studies course):"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2100",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 3010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ENGL 3060",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "ENGL 3070",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2050",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3050",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3320",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4340",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4360R",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4810R",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2050",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3050",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3320",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4340",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4360R",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4810R",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2030",
+     "credits": null
+    },
+    {
+     "code": "ENGL 3085",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4010R",
+     "credits": null
+    },
+    {
+     "code": "ENGL 4020G",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 2030": {
+   "title": "Writing for Social Change",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher",
+   "prereqs": "ENGL 2010"
+  },
+  "ENGL 2050": {
+   "title": "Editing",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "ENGL 2100": {
+   "title": "Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGL 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   }
+  },
+  "ENGL 3010": {
+   "title": "Rhetorical Theory",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 3050": {
+   "title": "Advanced Editing and Design for Print Media",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing; ENGL 2050 recommended",
+   "prereqs": null
+  },
+  "ENGL 3060": {
+   "title": "Visual Rhetoric",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 3070": {
+   "title": "Public Rhetorics",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 3010",
+   "precoreqs": "ENGL 3010"
+  },
+  "ENGL 3085": {
+   "title": "Rhetorical Approaches to Popular Culture",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 3010",
+   "precoreqs": "ENGL 3010"
+  },
+  "ENGL 3320": {
+   "title": "Grant and Proposal Writing",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "ENGL 4010R": {
+   "title": "Topics in Rhetoric",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 3010",
+   "precoreqs": "ENGL 3010"
+  },
+  "ENGL 4020G": {
+   "title": "Multicultural Rhetorics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 3010",
+   "precoreqs": "ENGL 3010"
+  },
+  "ENGL 4340": {
+   "title": "Advanced Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and ENGL 2100 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "ENGL 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 4360R": {
+   "title": "Topics in Technical Communication",
+   "credits": 3,
+   "prereqText": "ENGL 2010 with a grade of C- or higher and ENGL 2100 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     "ENGL 2100"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGL 4810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 8,
+   "prereqText": "Departmental approval, senior status, and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

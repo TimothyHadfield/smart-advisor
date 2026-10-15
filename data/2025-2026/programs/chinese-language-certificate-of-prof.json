@@ -1,0 +1,122 @@
+{
+ "id": "chinese-language-certificate-of-prof",
+ "name": "Chinese Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/chinese-language-certificate-of-prof/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "CHIN 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CHIN 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CHIN 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CHIN 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any CHIN 3XXX or 4XXX course",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CHIN 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CHIN 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CHIN 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CHIN 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Any CHIN 3XXX or 4XXX course",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHIN 1020": {
+   "title": "Beginning Chinese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of CHIN 1010",
+   "prereqs": "CHIN 1010",
+   "prereqNonCourse": true
+  },
+  "CHIN 2010": {
+   "title": "Intermediate Chinese I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of CHIN 1020",
+   "prereqs": "CHIN 1020",
+   "prereqNonCourse": true
+  },
+  "CHIN 2020G": {
+   "title": "Intermediate Chinese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of CHIN 2010",
+   "prereqs": "CHIN 2010",
+   "prereqNonCourse": true
+  },
+  "CHIN 3050": {
+   "title": "Advanced Chinese",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed CHIN 2020G , have had one year residency in a Chinese-speaking region, or instructor approval.",
+   "prereqs": null,
+   "precoreqText": "CHIN 2000",
+   "precoreqs": "CHIN 2000"
+  }
+ }
+}

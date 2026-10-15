@@ -1,0 +1,622 @@
+{
+ "id": "pre-engineering-biological-chemical-engineering-emphasis-ape",
+ "name": "Associate in Pre-Engineering - Biological and Chemical Engineering Emphasis, A.P.E.",
+ "url": "https://catalog.uvu.edu/engineering-technology/mechanical-and-civil-engineering/pre-engineering-biological-chemical-engineering-emphasis-ape/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 69,
+ "requirements": [
+  {
+   "type": "placeholder",
+   "area": "Associate in Pre-Engineering Requirements",
+   "label": "Complete the requirements",
+   "credits": 44
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "CHEM 1220",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "CHEM 1225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Emphasis Requirements",
+   "label": "Students should carefully select electives from the following list, based on the engineering discipline (Biological or Chemical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+   "pick": {
+    "credits": 20
+   },
+   "credits": 20,
+   "options": [
+    {
+     "codes": [
+      "BIOL 1610"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "BIOL 1615"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "BIOL 1620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "BIOL 1625"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "BIOL 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHEM 2310"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 2315"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CHEM 2320"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHEM 2325"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECE 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGR 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGR 1020"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "ENGR 2160"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGR 2300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ENGR 2450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 2210"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 2250"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 2270",
+      "MATH 2280"
+     ],
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CS 1400",
+     "credits": 3
+    },
+    {
+     "code": "CHEM 1210",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1215",
+     "credits": 1
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Humanities",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 1210",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1220",
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1610",
+     "credits": 4
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MATH 1220",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2210",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2215",
+     "credits": 1
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PHYS 2220",
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2225",
+     "credits": 1
+    },
+    {
+     "code": "CHEM 2310",
+     "credits": 4
+    },
+    {
+     "label": "American Institutions Course",
+     "credits": 3
+    },
+    {
+     "label": "Social/ Behavioral Science",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Emphasis Elective",
+     "credits": 4
+    },
+    {
+     "label": "Emphasis Elective",
+     "credits": 3
+    },
+    {
+     "label": "Emphasis Elective",
+     "credits": 3
+    },
+    {
+     "label": "Emphasis Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "BIOL 1610": {
+   "title": "College Biology I",
+   "credits": 4,
+   "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
+   "precoreqs": {
+    "and": [
+     "ENGL 1005",
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true
+  },
+  "BIOL 1615": {
+   "title": "College Biology I Laboratory",
+   "credits": 1,
+   "precoreqText": "BIOL 1610",
+   "precoreqs": "BIOL 1610"
+  },
+  "BIOL 1620": {
+   "title": "College Biology II",
+   "credits": 3,
+   "prereqText": "BIOL 1610 and BIOL 1615 with a C- or higher in each.",
+   "prereqs": {
+    "and": [
+     "BIOL 1610",
+     "BIOL 1615"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "BIOL 1625",
+   "coreqs": [
+    "BIOL 1625"
+   ]
+  },
+  "BIOL 1625": {
+   "title": "College Biology II Laboratory",
+   "credits": 1,
+   "coreqText": "BIOL 1620",
+   "coreqs": [
+    "BIOL 1620"
+   ]
+  },
+  "BIOL 3400": {
+   "title": "Cell Biology",
+   "credits": 3,
+   "prereqText": "( BIOL 1610 or BIOL 1610H ) and ( CHEM 1110 or CHEM 1210 ) with a C- or higher in each and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "BIOL 1610",
+       "BIOL 1610H"
+      ]
+     },
+     {
+      "or": [
+       "CHEM 1110",
+       "CHEM 1210"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
+  "CHEM 1220": {
+   "title": "Principles of Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 1210 with a grade of C- or higher",
+   "prereqs": "CHEM 1210",
+   "coreqText": "CHEM 1225",
+   "coreqs": [
+    "CHEM 1225"
+   ]
+  },
+  "CHEM 1225": {
+   "title": "Principles of Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1215 with a C- or better",
+   "prereqs": "CHEM 1215",
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1220",
+   "coreqs": [
+    "CHEM 1220"
+   ]
+  },
+  "CHEM 2310": {
+   "title": "Organic Chemistry I",
+   "credits": 4,
+   "prereqText": "CHEM 1220 with a grade of C- or higher",
+   "prereqs": "CHEM 1220",
+   "coreqText": "CHEM 2315",
+   "coreqs": [
+    "CHEM 2315"
+   ]
+  },
+  "CHEM 2315": {
+   "title": "Organic Chemistry I Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1220 , CHEM 1225",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     "CHEM 1225"
+    ]
+   },
+   "coreqText": "CHEM 2310",
+   "coreqs": [
+    "CHEM 2310"
+   ]
+  },
+  "CHEM 2320": {
+   "title": "Organic Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 2310 & CHEM 2315 with a C- or higher",
+   "prereqs": {
+    "and": [
+     "CHEM 2310",
+     "CHEM 2315"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 2325",
+   "coreqs": [
+    "CHEM 2325"
+   ]
+  },
+  "CHEM 2325": {
+   "title": "Organic Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 2315",
+   "prereqs": "CHEM 2315",
+   "coreqText": "CHEM 2320",
+   "coreqs": [
+    "CHEM 2320"
+   ]
+  },
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ECE 1000": {
+   "title": "Introduction to Electrical and Computer Engineering",
+   "credits": 3,
+   "prereqText": "MATH 1060 or higher",
+   "prereqs": "MATH 1060"
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ENGR 1000": {
+   "title": "Introduction to Engineering",
+   "credits": 3
+  },
+  "ENGR 1020": {
+   "title": "Survey of Engineering",
+   "credits": 1
+  },
+  "ENGR 2160": {
+   "title": "Introduction to Materials Science and Engineering",
+   "credits": 3,
+   "prereqText": "CHEM 1210",
+   "prereqs": "CHEM 1210"
+  },
+  "ENGR 2300": {
+   "title": "Engineering Thermodynamics",
+   "credits": 3,
+   "prereqText": "ENGR 2030",
+   "prereqs": "ENGR 2030"
+  },
+  "ENGR 2450": {
+   "title": "Computational Methods for Engineering Analysis",
+   "credits": 3,
+   "precoreqText": "MATH 2250",
+   "precoreqs": "MATH 2250"
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1220": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2210": {
+   "title": "Calculus III",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2250": {
+   "title": "Differential Equations and Linear Algebra",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2270": {
+   "title": "Linear Algebra",
+   "credits": 3,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2280": {
+   "title": "Ordinary Differential Equations",
+   "credits": 3,
+   "prereqText": "MATH 2210 or MATH 2210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 2210",
+     "MATH 2210H"
+    ]
+   }
+  },
+  "PHYS 2210": {
+   "title": "Physics for Scientists and Engineers I",
+   "credits": 4,
+   "prereqText": "MATH 1210 or PHYS 1100",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "PHYS 1100"
+    ]
+   },
+   "coreqText": "PHYS 2215",
+   "coreqs": [
+    "PHYS 2215"
+   ]
+  },
+  "PHYS 2215": {
+   "title": "Physics for Scientists and Engineers I Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2210",
+   "coreqs": [
+    "PHYS 2210"
+   ]
+  },
+  "PHYS 2220": {
+   "title": "Physics for Scientists and Engineers II",
+   "credits": 4,
+   "prereqText": "PHYS 2210",
+   "prereqs": "PHYS 2210",
+   "coreqText": "PHYS 2225",
+   "coreqs": [
+    "PHYS 2225"
+   ]
+  },
+  "PHYS 2225": {
+   "title": "Physics for Scientists and Engineers II Lab",
+   "credits": 1,
+   "coreqText": "PHYS 2220",
+   "coreqs": [
+    "PHYS 2220"
+   ]
+  }
+ }
+}

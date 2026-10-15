@@ -1,0 +1,410 @@
+{
+ "id": "six-sigma-green-belt-undergraduate-certificate",
+ "name": "Six Sigma Green Belt, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/technology-management/six-sigma-green-belt-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 27,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3700",
+   "alts": [
+    "MGMT 3470"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 3850",
+   "alts": [
+    "MGMT 3070"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 4000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 4400",
+   "alts": [
+    "MGMT 3450"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "TECH 4910",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Complete one of following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ACC 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "STAT 2040"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "STAT 3040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2240"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 2340"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following for 3 credits:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "TECH 3000",
+     "credits": 3
+    },
+    {
+     "code": "TECH 3010",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of following:",
+     "credits": 3
+    },
+    {
+     "code": "ACC 3000",
+     "credits": null
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 2040",
+     "credits": null
+    },
+    {
+     "code": "STAT 3040",
+     "credits": null
+    },
+    {
+     "code": "MGMT 2240",
+     "credits": null
+    },
+    {
+     "code": "MGMT 2340",
+     "credits": null
+    },
+    {
+     "code": "MGMT 3470",
+     "alts": [
+      "TECH 3700"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "TECH 3400",
+     "credits": 3
+    },
+    {
+     "code": "TECH 3850",
+     "alts": [
+      "MGMT 3070"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "TECH 4000",
+     "credits": 3
+    },
+    {
+     "code": "TECH 4400",
+     "alts": [
+      "MGMT 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "TECH 4910",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 3000": {
+   "title": "Financial Managerial and Cost Accounting Concepts",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3070": {
+   "title": "Total Quality Management",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  },
+  "MGMT 3450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Matriculation into WSB and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 3470": {
+   "title": "Lean Management Systems",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 2040": {
+   "title": "Principles of Statistics",
+   "credits": 4,
+   "prereqText": "Within the past two years, MATH 1050 or MATH 1055 or MATH 1080 with a grade of C or higher or appropriate math placement test score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "STAT 3040": {
+   "title": "Probability and Statistics for Engineering and the Sciences",
+   "credits": 3,
+   "prereqText": "( STAT 2040 or STAT 2050 and MATH 2210 each with a grade of C or higher) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "STAT 2040",
+       "STAT 2050"
+      ]
+     },
+     "MATH 2210"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 3000": {
+   "title": "Introduction to Technology Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3010": {
+   "title": "Creative Problem Solving",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3400": {
+   "title": "Project Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 3700": {
+   "title": "Materials Management",
+   "credits": 3,
+   "prereqText": "TECH 3000 and ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 3850": {
+   "title": "Quality Management in Technology",
+   "credits": 3,
+   "prereqText": "[( TECH 3000 and ( STAT 1040 or STAT 1045 ) or advisor approval] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "TECH 4000": {
+   "title": "Reliability Management",
+   "credits": 3,
+   "prereqText": "TECH 3000 , TECH 3850 , ( STAT 1040 or STAT 1045 ), and IM 2010 each with a grade of C- or higher and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "TECH 3000",
+     "TECH 3850",
+     {
+      "or": [
+       "STAT 1040",
+       "STAT 1045"
+      ]
+     },
+     "IM 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "TECH 4400": {
+   "title": "Advanced Project Management",
+   "credits": 3,
+   "prereqText": "TECH 3400 with a C- or higher; University Advanced Standing",
+   "prereqs": "TECH 3400",
+   "prereqNonCourse": true
+  },
+  "TECH 4910": {
+   "title": "Senior Capstone Project",
+   "credits": 3,
+   "prereqText": "TECH 3010 , TECH 3400 , and TECH 3850 each with a grade of C- or higher; Senior Status and University Advanced Standing.",
+   "prereqs": {
+    "and": [
+     "TECH 3010",
+     "TECH 3400",
+     "TECH 3850"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

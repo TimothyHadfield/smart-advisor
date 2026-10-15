@@ -1,0 +1,501 @@
+{
+ "id": "art-history-minor",
+ "name": "Art History, Minor",
+ "url": "https://catalog.uvu.edu/arts/art-design/art-history-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARTH 2710",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ARTH 2720G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Upper Division ARTH Elective",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "ARTH 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3000R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3015"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3025"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3055"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3070"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3080"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3090G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3120"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ARTH 4000R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 credits of any 3000 or 4000 level ARTH course",
+   "notes": [
+    "or any other advisor approved upper division courses"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ARTH 2710",
+     "credits": 3
+    },
+    {
+     "code": "ARTH 2720G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Upper Division ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "Upper Division ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "Upper Division ARTH Elective",
+     "credits": 3
+    },
+    {
+     "label": "Upper Division ARTH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ARTH 2710": {
+   "title": "Prehistoric Through Gothic Art History",
+   "credits": 3
+  },
+  "ARTH 2720G": {
+   "title": "Renaissance Through Contemporary Art History",
+   "credits": 3
+  },
+  "ARTH 2800": {
+   "title": "Introduction to Art History Research and Methodology",
+   "credits": 3,
+   "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005",
+   "prereqs": null
+  },
+  "ARTH 3000R": {
+   "title": "Special Topics in Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2710 or ARTH 2720G and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ARTH 2710",
+     "ARTH 2720G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3010": {
+   "title": "History of Design and Visual Arts",
+   "credits": 3,
+   "prereqText": "ARTH 2720G or ARTH 2720H , ( ENGL 1010 or ENGL 1005 ), (Art and Design Sophomore status), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2720G",
+       "ARTH 2720H"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3015": {
+   "title": "Ancient Near Eastern Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3020": {
+   "title": "Ancient Greek Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3025": {
+   "title": "Roman Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3030": {
+   "title": "Medieval Art and Architecture",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3040": {
+   "title": "Renaissance Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3050": {
+   "title": "Southern Baroque Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3055": {
+   "title": "Northern Baroque Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2720G , ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ARTH 2720G",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3060": {
+   "title": "Nineteenth-Century Art History",
+   "credits": 3,
+   "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": null
+  },
+  "ARTH 3070": {
+   "title": "Modern Art and Architecture History",
+   "credits": 3,
+   "prereqText": "ARTH 2720G , ENGL 1010 or ENGL 1005 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ARTH 2720G",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3080": {
+   "title": "History of Architecture",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720G or B-ARCH degree student with department approval), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720G"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3090G": {
+   "title": "Introduction to Non-Western Ancient Art",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720G ), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720G"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3100": {
+   "title": "History of American Art and Architecture",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720G or B-ARCH degree student with department approval), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720G"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3110": {
+   "title": "The History of Illustration",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ARTH 3120": {
+   "title": "History of Contemporary Art",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720G ), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "ARTH 2710",
+       "ARTH 2720G"
+      ]
+     },
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3200": {
+   "title": "The History of Photography",
+   "credits": 3,
+   "prereqText": "( ARTH 2710 or ARTH 2720G ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ARTH 2710",
+     "ARTH 2720G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ARTH 3300": {
+   "title": "Introduction to Museum Studies",
+   "credits": 3,
+   "prereqText": "Students must be a declared Art and Design major (or admittance to class by instructor) and have taken either ARTH 2710 or ARTH 2720G , University Advanced Standing.",
+   "prereqs": {
+    "or": [
+     "ARTH 2710",
+     "ARTH 2720G"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3310": {
+   "title": "Art Theory and Criticism",
+   "credits": 3,
+   "prereqText": "[ ARTH 2710 or ARTH 2720G or ( HUM 2010 and HUM 2020 )] and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ARTH 2710",
+     "ARTH 2720G",
+     {
+      "and": [
+       "HUM 2010",
+       "HUM 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ARTH 3400": {
+   "title": "Arts Management",
+   "credits": 3,
+   "prereqText": "ARTH 2720G and University Advanced Standing",
+   "prereqs": "ARTH 2720G",
+   "prereqNonCourse": true
+  },
+  "ARTH 4000R": {
+   "title": "Art History Seminar",
+   "credits": 3,
+   "prereqText": "ARTH 2710 , ARTH 2720G , 6-credits upper-division ARTH, ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ARTH 2710",
+     "ARTH 2720G",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

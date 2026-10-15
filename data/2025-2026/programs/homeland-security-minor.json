@@ -1,0 +1,372 @@
+{
+ "id": "homeland-security-minor",
+ "name": "Homeland Security, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/emergency-services/homeland-security-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ESMG 3100G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ESMG 3710",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)",
+   "pick": {
+    "count": 4
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "CJ 1010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 3340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 4700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ES 1150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ES 2130"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4250G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4550"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 2010"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NSS 4400"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "ESMG 3100G",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "ESMG 3710",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CJ 1010": {
+   "title": "Introduction to Criminal Justice",
+   "credits": 3
+  },
+  "CJ 2110": {
+   "title": "Security Management and Loss Prevention",
+   "credits": 3,
+   "prereqText": "CJ 1010",
+   "prereqs": "CJ 1010"
+  },
+  "CJ 3340": {
+   "title": "Terrorism and the Criminal Justice System",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and CJ 1010",
+   "prereqs": "CJ 1010",
+   "prereqNonCourse": true
+  },
+  "CJ 3400": {
+   "title": "Drugs and Crime",
+   "credits": 3,
+   "prereqText": "CJ 1010 , ENGL 2010 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CJ 1010",
+     "ENGL 2010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 1700": {
+   "title": "Cybersecurity Essentials",
+   "credits": 3
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 2800": {
+   "title": "Computer Forensic Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or IT 1600 or CS 1400 or CJ 1010",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "IT 1600",
+     "CS 1400",
+     "CJ 1010"
+    ]
+   }
+  },
+  "CYBR 3700": {
+   "title": "Ethical Hacking and Countermeasures",
+   "credits": 3,
+   "prereqText": "IT 1510 , CYBR 2700 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "IT 1510",
+     "CYBR 2700"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "IT 3600",
+   "precoreqs": "IT 3600"
+  },
+  "CYBR 4700": {
+   "title": "Enterprise Cybersecurity Management",
+   "credits": 3,
+   "prereqText": "CYBR 2700 and University Advanced Standing",
+   "prereqs": "CYBR 2700",
+   "prereqNonCourse": true,
+   "precoreqText": "INFO 3430",
+   "precoreqs": "INFO 3430"
+  },
+  "ES 1150": {
+   "title": "Introduction to Emergency and Disaster Management",
+   "credits": 3
+  },
+  "ES 2130": {
+   "title": "Terrorism and the Emergency Services",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "ESMG 3100G": {
+   "title": "Introduction to Homeland Security",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGH 1005 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ESMG 3400": {
+   "title": "Critical Infrastructure Protection",
+   "credits": 3,
+   "prereqText": "ESMG 3100G and University Advanced Standing",
+   "prereqs": "ESMG 3100G",
+   "prereqNonCourse": true
+  },
+  "ESMG 3710": {
+   "title": "Comparative Approaches to Homeland Security",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESMG 4150": {
+   "title": "Humanitarian Services and Disaster Relief",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESMG 3100G",
+   "precoreqs": "ESMG 3100G"
+  },
+  "ESMG 4200": {
+   "title": "Public Information and Disasters",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESMG 3100G or department approval",
+   "precoreqs": "ESMG 3100G"
+  },
+  "ESMG 4250G": {
+   "title": "Humanitarian Management and Operations",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESMG 4550": {
+   "title": "Emergency Preparedness and Disaster Response",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESMG 3100G",
+   "precoreqs": "ESMG 3100G"
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGH 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "NSS 3050": {
+   "title": "US Intelligence Community",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "NSS 4300": {
+   "title": "Intelligence Cycle and Collections",
+   "credits": 3,
+   "prereqText": "NSS 2010 , NSS 3050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "NSS 2010",
+     "NSS 3050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NSS 4400": {
+   "title": "Statecraft and Strategy",
+   "credits": 3,
+   "prereqText": "NSS 2010",
+   "prereqs": "NSS 2010"
+  }
+ }
+}

@@ -1,0 +1,535 @@
+{
+ "id": "latin-american-studies-minor",
+ "name": "Latin American Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/latin-american-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HIST 2040G",
+   "alts": [
+    "HIST 2050G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 3770G",
+   "alts": [
+    "COMM 3500R"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "PORT 2020G"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "SPAN 2020G"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Complete 3 credits from the following:",
+   "notes": [
+    "Any PORT 3000 level or higher",
+    "Any SPAN 3000 level or higher"
+   ]
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Minor Elective",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "ANTH 3340"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3350"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ANTH 3370"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "GEOG 2500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 4300G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3250R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3320G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 4200R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3520G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3610"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3620"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 3630"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PORT 4900R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3520G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3640"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 3800R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "SPAN 4120R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4600R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "SPAN 4840R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:",
+   "notes": [
+    "Other advisor-approved course."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HIST 2040G",
+     "alts": [
+      "HIST 2050G"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete 3 credits from the following:",
+     "credits": 3
+    },
+    {
+     "code": "PORT 2020G",
+     "credits": null
+    },
+    {
+     "code": "SPAN 2020G",
+     "credits": null
+    },
+    {
+     "code": "PORT 3000",
+     "credits": null
+    },
+    {
+     "code": "SPAN 3000",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ENGL 3770G",
+     "alts": [
+      "COMM 3500R"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Minor Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ANTH 3340": {
+   "title": "Peoples and Cultures of Mexico",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ANTH 3350": {
+   "title": "Andean Prehistory",
+   "credits": 3,
+   "prereqText": "ANTH 1010G and ( ENGL 2010 with a minimum grade of C+) and ( ANTH 1030G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ANTH 1010G",
+     "ENGL 2010",
+     "ANTH 1030G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ANTH 3370": {
+   "title": "History and Ethnography of Andean Societies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "COMM 3500R": {
+   "title": "Special Topics in Communication",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 3770G": {
+   "title": "Latina/o Literature in America",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "GEOG 2500": {
+   "title": "Geography of Latin America and the Caribbean",
+   "credits": 3
+  },
+  "HIST 2040G": {
+   "title": "Colonial Latin America",
+   "credits": 3
+  },
+  "HIST 2050G": {
+   "title": "Modern Latin America",
+   "credits": 3
+  },
+  "HIST 4300G": {
+   "title": "Violence and Social Conflict in Latin America",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
+  },
+  "HUM 3250R": {
+   "title": "Topics in Area Studies",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "MGMT 3320G": {
+   "title": "Cross Cultural Communications for International Business",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or COMM 1050 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 2010",
+     "COMM 1050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 4200R": {
+   "title": "Issues and Topics in Political Science",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "PORT 2020G": {
+   "title": "Intermediate Portuguese II",
+   "credits": 4,
+   "prereqText": "PORT 2010",
+   "prereqs": "PORT 2010"
+  },
+  "PORT 3200": {
+   "title": "Business Portuguese",
+   "credits": 3,
+   "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
+   "prereqs": null
+  },
+  "PORT 3430": {
+   "title": "Masterpieces of Brazillian Film",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "PORT 3050 recommended",
+   "precoreqs": null
+  },
+  "PORT 3520G": {
+   "title": "Brazilian Culture and Civilization",
+   "credits": 3,
+   "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
+   "prereqs": null
+  },
+  "PORT 3610": {
+   "title": "Brazil through Literature and Film--1500-1900",
+   "credits": 3,
+   "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
+   "prereqs": null
+  },
+  "PORT 3620": {
+   "title": "Modern Brazil through Literature/Music/Film--1900-1964",
+   "credits": 3,
+   "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
+   "prereqs": null
+  },
+  "PORT 3630": {
+   "title": "Post-Modern Brazil through Literature/Music/Film--1945-today",
+   "credits": 3,
+   "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
+   "prereqs": null
+  },
+  "PORT 4900R": {
+   "title": "Special Topics in Brazilian Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "PORT 3050",
+   "precoreqs": "PORT 3050"
+  },
+  "SPAN 2020G": {
+   "title": "Intermediate Spanish II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of SPAN 2010",
+   "prereqs": "SPAN 2010",
+   "prereqNonCourse": true
+  },
+  "SPAN 3200": {
+   "title": "Business Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3050 and University Advanced Standing",
+   "prereqs": "SPAN 3050",
+   "prereqNonCourse": true
+  },
+  "SPAN 3520G": {
+   "title": "Culture and Civilization--Spanish America",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 3640": {
+   "title": "Spanish American Literature",
+   "credits": 3,
+   "prereqText": "[( SPAN 3030 and SPAN 3040 ) or SPAN 3050 ] and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 3800R": {
+   "title": "Community Engagement in Spanish",
+   "credits": 3,
+   "prereqText": "[( SPAN 3030 and SPAN 3040 ) or SPAN 3050 or instructor approval] and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4120R": {
+   "title": "Spanish for the Professions",
+   "credits": 3,
+   "prereqText": "( SPAN 3050 or departmental approval) and University Advanced Standing",
+   "prereqs": "SPAN 3050",
+   "prereqNonCourse": true
+  },
+  "SPAN 4200": {
+   "title": "Advanced Business Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3200 and University Advanced Standing",
+   "prereqs": "SPAN 3200",
+   "prereqNonCourse": true
+  },
+  "SPAN 4600R": {
+   "title": "Topics in Hispanic Literature",
+   "credits": 3,
+   "prereqText": "SPAN 3620 or SPAN 3640 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "SPAN 3620",
+     "SPAN 3640"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4840R": {
+   "title": "Special Topics in Hispanic Studies",
+   "credits": 3,
+   "prereqText": "( SPAN 3050 or departmental approval) and University Advanced Standing",
+   "prereqs": "SPAN 3050",
+   "prereqNonCourse": true
+  }
+ },
+ "missingCourses": [
+  "PORT 3000",
+  "SPAN 3000"
+ ]
+}

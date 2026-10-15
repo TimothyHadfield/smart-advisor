@@ -1,0 +1,171 @@
+{
+ "id": "accounting-undergraduate-certificate",
+ "name": "Accounting, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/business/accounting/accounting-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ACC 2110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 1110",
+      "ACC 1120"
+     ],
+     "credits": 2
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2115",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2600",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 2115",
+     "credits": 1
+    },
+    {
+     "code": "ACC 2120",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2250",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 1110": {
+   "title": "Financial Accounting I",
+   "credits": 1.5,
+   "prereqText": "Department approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 1120": {
+   "title": "Financial Accounting II",
+   "credits": 1.5,
+   "prereqText": "ACC 1110 and departmental approval",
+   "prereqs": "ACC 1110",
+   "prereqNonCourse": true
+  },
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "ACC 2115": {
+   "title": "Introduction to the Accounting Profession",
+   "credits": 1,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110",
+   "coreqText": "ACC 2120",
+   "coreqs": [
+    "ACC 2120"
+   ]
+  },
+  "ACC 2120": {
+   "title": "Principles of Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110"
+  },
+  "ACC 2250": {
+   "title": "QuickBooks and Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110 or (concurrent enrollment courses: ACC 1110 and ACC 1120 )",
+   "prereqs": {
+    "or": [
+     "ACC 2110",
+     {
+      "and": [
+       "ACC 1110",
+       "ACC 1120"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 2600": {
+   "title": "Business Law and Ethics",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010",
+   "prereqs": null
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  }
+ }
+}

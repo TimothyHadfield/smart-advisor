@@ -1,0 +1,78 @@
+{
+ "id": "emergency-management-and-homeland-security-admin-grad-cert",
+ "name": "Emergency Management and Homeland Security Administration, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/emergency-services/emergency-management-and-homeland-security-admin-grad-cert/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core:",
+   "code": "ESMG 6110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core:",
+   "code": "ESMG 6120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core:",
+   "code": "ESMG 6140",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ESMG 6110",
+     "credits": 3
+    },
+    {
+     "code": "ESMG 6120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ESMG 6140",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ESMG 6110": {
+   "title": "Disasters/Vulnerability/and Impacts",
+   "credits": 3,
+   "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESMG 6120": {
+   "title": "Emergency Planning and Response",
+   "credits": 3,
+   "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESMG 6140": {
+   "title": "Homeland Security Fundamentals",
+   "credits": 3,
+   "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

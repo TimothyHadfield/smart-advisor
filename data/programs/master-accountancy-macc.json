@@ -1,0 +1,349 @@
+{
+ "id": "master-accountancy-macc",
+ "name": "Master of Accountancy, M.Acc",
+ "url": "https://catalog.uvu.edu/business/accounting/master-accountancy-macc/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6350",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6410",
+   "alts": [
+    "ACC 6560"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses:",
+   "code": "ACC 6600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Courses:",
+   "label": "Select 12 semester credits from the following courses (not every elective is offered every academic year):",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "ACC 5020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6140"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6430"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6440"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6500"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6580"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 6790R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Select 12 semester credits from the following courses (not every elective is offered every academic year):",
+   "notes": [
+    "Other WSB master's level course as approved by the program"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 6350",
+     "credits": 3
+    },
+    {
+     "code": "ACC 6400",
+     "credits": 3
+    },
+    {
+     "code": "ACC 6060",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 6250",
+     "credits": 3
+    },
+    {
+     "code": "ACC 6410",
+     "alts": [
+      "ACC 6560"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "ACC 6600",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 5020": {
+   "title": "Advanced Financial Accounting",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3020 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3020",
+   "prereqNonCourse": true
+  },
+  "ACC 5400": {
+   "title": "Advanced Principles of Taxation",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3400 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3400",
+   "prereqNonCourse": true
+  },
+  "ACC 5710": {
+   "title": "Financial Auditing",
+   "credits": 3,
+   "prereqText": "Undergraduate course: ACC 3710 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
+   "prereqs": "ACC 3710",
+   "prereqNonCourse": true
+  },
+  "ACC 6060": {
+   "title": "Professionalism and Leadership",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6140": {
+   "title": "Fraud Examination and Forensic Accounting",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or the Master of Business Administration Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6150": {
+   "title": "Information Systems Auditing",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6250": {
+   "title": "Financial Reporting and Analysis",
+   "credits": 3,
+   "prereqText": "Admission to a Woodbury School of Business Graduate Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6300": {
+   "title": "Advanced Data Analytics in Accounting",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6350": {
+   "title": "Management Control Systems",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6400": {
+   "title": "Taxation of Business Entities",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6410": {
+   "title": "Tax Research and Procedure",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6420": {
+   "title": "Principles of Corporate Tax",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6430": {
+   "title": "Advanced Corporate Tax",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6440": {
+   "title": "Partnership Tax",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6450": {
+   "title": "Advanced Taxation of Business Entities",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy program and ACC 6400",
+   "prereqs": "ACC 6400",
+   "prereqNonCourse": true
+  },
+  "ACC 6460": {
+   "title": "Estate and Gift Tax",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6500": {
+   "title": "Corporate Financial Planning and Analysis",
+   "credits": 3,
+   "prereqText": "Admission to a Woodbury School of Business Graduate Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6560": {
+   "title": "Financial Accounting Theory and Research I",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6580": {
+   "title": "Financial Accounting Theory and Research II",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6600": {
+   "title": "Business Law for Accountants",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy Program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ACC 6790R": {
+   "title": "Special Topics in Accounting",
+   "credits": 3,
+   "prereqText": "Admission to Master of Accountancy program",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

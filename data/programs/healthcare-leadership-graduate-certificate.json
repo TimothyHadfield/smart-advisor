@@ -1,0 +1,84 @@
+{
+ "id": "healthcare-leadership-graduate-certificate",
+ "name": "Healthcare Leadership, Graduate Certificate",
+ "url": "https://catalog.uvu.edu/business/business-graduate-programs/healthcare-leadership-graduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 9,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Required Courses",
+   "code": "MGMT 6320",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MGMT 6300",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 6310",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 6320",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 6300": {
+   "title": "Healthcare Systems/Finance/Operations",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6310": {
+   "title": "Healthcare Policy and Law",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 6320": {
+   "title": "Healthcare Strategy",
+   "credits": 3,
+   "prereqText": "Admission into any graduate program at Utah Valley University",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ },
+ "totalFrom": "area headers"
+}

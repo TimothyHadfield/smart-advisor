@@ -1,0 +1,374 @@
+{
+ "id": "network-administration-certificate-completion",
+ "name": "Network Administration, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/network-administration-certificate-completion/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 31,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1200",
+   "alts": [
+    "CS 1400"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 1510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 1600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 2600",
+   "alts": [
+    "CS 2600"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MAT 1010",
+   "alts": [
+    "MATH 1050",
+    "MATH 1055"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "IT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 3530"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits from the following courses:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "INFO 1120",
+     "credits": 3
+    },
+    {
+     "code": "INFO 1200",
+     "alts": [
+      "CS 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "IT 1510",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1050",
+     "credits": 4
+    },
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "IT 1600",
+     "credits": 3
+    },
+    {
+     "code": "INFO 2410",
+     "credits": 3
+    },
+    {
+     "code": "IT 2600",
+     "alts": [
+      "CS 2600"
+     ],
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 2800": {
+   "title": "Computer Forensic Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or IT 1600 or CS 1400 or CJ 1010",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "IT 1600",
+     "CS 1400",
+     "CJ 1010"
+    ]
+   }
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 1120": {
+   "title": "Information Systems and Technology Fundamentals",
+   "credits": 3,
+   "prereqText": "IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 1600": {
+   "title": "Computer Architecture and Systems Software",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 2400": {
+   "title": "Voice and Data Cabling Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or INFO 1200 or CS 1030 or CS 1400",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "INFO 1200",
+     "CS 1030",
+     "CS 1400"
+    ]
+   }
+  },
+  "IT 2530": {
+   "title": "Introduction to System Administration--WIndows Client",
+   "credits": 3,
+   "prereqText": "IT 1600",
+   "prereqs": "IT 1600"
+  },
+  "IT 2600": {
+   "title": "Data Communication Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IT 1600 recommended or CS 1400 recommended",
+   "prereqs": null
+  },
+  "IT 3510": {
+   "title": "Advanced System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "[( INFO 1200 or CS 1400 ) and IT 1510 and ( IT 2600 or CS 2600 ) all with a grade of C- or higher within the past five years] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "CS 1400"
+      ]
+     },
+     "IT 1510",
+     {
+      "or": [
+       "IT 2600",
+       "CS 2600"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "IT 3530": {
+   "title": "Advanced System Administration--Windows Server",
+   "credits": 3,
+   "prereqText": "[ INFO 1200 and IT 2530 and ( IT 2600 or CS 2600 ) all with a grade of C- or higher within the past five years] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "INFO 1200",
+     "IT 2530",
+     {
+      "or": [
+       "IT 2600",
+       "CS 2600"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1010": {
+   "title": "Intermediate Algebra",
+   "credits": 4,
+   "prereqText": "One of the following (within two years): MAT 0980 or MAT 0990 with a grade of C- or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0980",
+     "MAT 0990"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

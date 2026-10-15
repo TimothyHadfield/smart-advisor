@@ -1,0 +1,281 @@
+{
+ "id": "paramedic-undergraduate-certificate",
+ "name": "Paramedic, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/health-public-service/emergency-services/paramedic-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 31,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3220",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3230",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3235",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3240",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3245",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 3255",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 4210",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 4220",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 4230",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ESEC 4240",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [],
+ "courses": {
+  "ESEC 3210": {
+   "title": "Paramedic I-Operations",
+   "credits": 3,
+   "prereqText": "Matriculated into Paramedic Program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ESEC 3220": {
+   "title": "Paramedic II-Cardiac and Respiratory Patient Care",
+   "credits": 3,
+   "prereqText": "Matriculated into the paramedic program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3225",
+   "coreqs": [
+    "ESEC 3225"
+   ],
+   "precoreqText": "ESEC 3210",
+   "precoreqs": "ESEC 3210"
+  },
+  "ESEC 3225": {
+   "title": "Paramedic II Lab-Cardiac and Respiratory Emergencies",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3220",
+   "coreqs": [
+    "ESEC 3220"
+   ]
+  },
+  "ESEC 3230": {
+   "title": "Paramedic III-Trauma Patient Care",
+   "credits": 3,
+   "prereqText": "Matriculated into the paramedic program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3235",
+   "coreqs": [
+    "ESEC 3235"
+   ],
+   "precoreqText": "ESEC 3210",
+   "precoreqs": "ESEC 3210"
+  },
+  "ESEC 3235": {
+   "title": "Paramedic III Lab-Trauma Emergencies",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3230",
+   "coreqs": [
+    "ESEC 3230"
+   ]
+  },
+  "ESEC 3240": {
+   "title": "Paramedic IV-Medical and Geriatric Patient Care",
+   "credits": 3,
+   "prereqText": "Matriculated into the paramedic program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3245",
+   "coreqs": [
+    "ESEC 3245"
+   ],
+   "precoreqText": "ESEC 3210",
+   "precoreqs": "ESEC 3210"
+  },
+  "ESEC 3245": {
+   "title": "Paramedic IV Lab-Medical Emergencies",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3240",
+   "coreqs": [
+    "ESEC 3240"
+   ]
+  },
+  "ESEC 3250": {
+   "title": "Paramedic V-Obstetric and Pediatric Patient Care",
+   "credits": 3,
+   "prereqText": "Matriculated into the paramedic program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3255",
+   "coreqs": [
+    "ESEC 3255"
+   ],
+   "precoreqText": "ESEC 3210",
+   "precoreqs": "ESEC 3210"
+  },
+  "ESEC 3255": {
+   "title": "Paramedic V Lab-Obstetric and Pediatric Emergencies",
+   "credits": 1,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "ESEC 3250",
+   "coreqs": [
+    "ESEC 3250"
+   ]
+  },
+  "ESEC 4210": {
+   "title": "Paramedic VI-Research",
+   "credits": 2,
+   "prereqText": "Matriculated into Paramedic Program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESEC 3210 , 3220 , 3225 , 3230 , 3235 , 3240 , 3245 , 3250 , 3255 and successful first-semester faculty evaluations. These evaluations will assess affective and effective domains, ensuring that students meet the behavioral and technical competencies required by the CoAEMSP accreditation standards prior to entering clinical, internship, and Capstone phases.",
+   "precoreqs": "ESEC 3210"
+  },
+  "ESEC 4220": {
+   "title": "Paramedic VII-Clinical Internship Hospital and Field Phase I and II",
+   "credits": 4,
+   "prereqText": "ESEC 3250 , ESEC 3255 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ESEC 3250",
+     "ESEC 3255"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ESEC 4230": {
+   "title": "Paramedic VIII-Practical Preparation and Testing",
+   "credits": 3,
+   "prereqText": "ESEC 3210 , ESEC 3220 , ESEC 3225 , ESEC 3230 , ESEC 3235 , ESEC 3240 , ESEC 3245 , ESEC 3250 , ESEC 3255 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ESEC 3210",
+     "ESEC 3220",
+     "ESEC 3225",
+     "ESEC 3230",
+     "ESEC 3235",
+     "ESEC 3240",
+     "ESEC 3245",
+     "ESEC 3250",
+     "ESEC 3255"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ESEC 4210 , ESEC 4220",
+   "precoreqs": {
+    "and": [
+     "ESEC 4210",
+     "ESEC 4220"
+    ]
+   }
+  },
+  "ESEC 4240": {
+   "title": "Paramedic Capstone",
+   "credits": 3,
+   "prereqText": "ESEC 3210 , ESEC 3220 , ESEC 3225 , ESEC 3230 , ESEC 3235 , ESEC 3240 , ESEC 3245 , ESEC 3250 , ESEC 3255 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ESEC 3210",
+     "ESEC 3220",
+     "ESEC 3225",
+     "ESEC 3230",
+     "ESEC 3235",
+     "ESEC 3240",
+     "ESEC 3245",
+     "ESEC 3250",
+     "ESEC 3255"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ESEC 4210 , ESEC 4220 , ESEC 4230",
+   "precoreqs": {
+    "and": [
+     "ESEC 4210",
+     "ESEC 4220",
+     "ESEC 4230"
+    ]
+   }
+  }
+ }
+}

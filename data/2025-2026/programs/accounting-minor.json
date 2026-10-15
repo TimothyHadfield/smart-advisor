@@ -1,0 +1,353 @@
+{
+ "id": "accounting-minor",
+ "name": "Accounting, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/accounting/accounting-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3010",
+   "alts": [
+    "ACC 3030"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 3300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Accounting Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "ACC 2250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3020"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3120G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4110"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4310"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 4510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ACC 5140"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 6 credits from the following (3 credits must be upper division):"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ACC 2120",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ACC 3010",
+     "alts": [
+      "ACC 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "ACC 3300",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Accounting Elective",
+     "credits": 3
+    },
+    {
+     "label": "Accounting Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005 and MAT 1010 or higher recommended",
+   "prereqs": null
+  },
+  "ACC 2120": {
+   "title": "Principles of Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110"
+  },
+  "ACC 2250": {
+   "title": "Small Business Accounting",
+   "credits": 3,
+   "prereqText": "ACC 2110",
+   "prereqs": "ACC 2110",
+   "precoreqText": "ACC 2120",
+   "precoreqs": "ACC 2120"
+  },
+  "ACC 3010": {
+   "title": "Intermediate Accounting I",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 with a B- or higher, ( MATH 1050 , MATH 1055 , or MATH 1090 ) with a C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055",
+       "MATH 1090"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 2125",
+   "precoreqs": "ACC 2125"
+  },
+  "ACC 3020": {
+   "title": "Intermediate Accounting II",
+   "credits": 3,
+   "prereqText": "ACC 3010 , MKTG 2200G , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 3010",
+     "MKTG 2200G"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3300",
+   "precoreqs": "ACC 3300"
+  },
+  "ACC 3030": {
+   "title": "Intermediate Accounting for Non-Accounting Majors",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3120G": {
+   "title": "International Internal Auditing",
+   "credits": 3,
+   "prereqText": "ACC 2110 and ACC 2120 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3300": {
+   "title": "Cost Management",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3400": {
+   "title": "Fundamentals of Taxation",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 3510": {
+   "title": "Accounting Information Systems",
+   "credits": 3,
+   "prereqText": "ACC 2110 , ACC 2120 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ACC 2110",
+     "ACC 2120"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 4030": {
+   "title": "Governmental and Not For Profit Accounting",
+   "credits": 3,
+   "prereqText": "ACC 3010 or ACC 3030 , University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ACC 3010",
+     "ACC 3030"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 4050": {
+   "title": "Financial Statement Analysis",
+   "credits": 3,
+   "prereqText": "( ACC 3010 or ACC 3030 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ACC 3010",
+     "ACC 3030"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ACC 4110": {
+   "title": "Auditing",
+   "credits": 3,
+   "prereqText": "ACC 3010 and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3510",
+   "precoreqs": "ACC 3510"
+  },
+  "ACC 4310": {
+   "title": "Advanced Management Accounting",
+   "credits": 3,
+   "prereqText": "ACC 3300 , University Advanced Standing",
+   "prereqs": "ACC 3300",
+   "prereqNonCourse": true
+  },
+  "ACC 4400": {
+   "title": "Advanced Fundamentals of Taxation",
+   "credits": 3,
+   "prereqText": "ACC 3400 , University Advanced Standing",
+   "prereqs": "ACC 3400",
+   "prereqNonCourse": true
+  },
+  "ACC 4510": {
+   "title": "Artificial Intelligence and Data Analytics in Accounting",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ACC 3510",
+   "precoreqs": "ACC 3510"
+  },
+  "ACC 5140": {
+   "title": "Fraud Examination",
+   "credits": 3,
+   "prereqText": "ACC 3010 and University Advanced Standing",
+   "prereqs": "ACC 3010",
+   "prereqNonCourse": true
+  }
+ }
+}

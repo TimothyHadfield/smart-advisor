@@ -1,0 +1,137 @@
+{
+ "id": "digital-media-minor",
+ "name": "Digital Media, Minor",
+ "url": "https://catalog.uvu.edu/engineering-technology/digital-media/digital-media-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 22,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DGM 1110",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Digital Media Essential Course",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "DWDD 1600"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DAGV 1200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "DCPR 1800"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "DAPR 2000",
+      "DAPR 2000L"
+     ],
+     "credits": null
+    }
+   ],
+   "text": "Complete one course from the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Complete 15 credits from DGM, DAGV, DAPR, DWDD, and DCPR courses. 11 credits must be upper-division.",
+   "credits": 15,
+   "text": "Complete 15 credits from DGM, DAGV, DAPR, DWDD, and DCPR courses. 11 credits must be upper-division."
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "DGM 1110",
+     "credits": 4
+    },
+    {
+     "label": "Digital Media Essential Course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Digital Media Elective",
+     "credits": 3
+    },
+    {
+     "label": "Digital Media Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Digital Media Elective",
+     "credits": 3
+    },
+    {
+     "label": "Digital Media Elective",
+     "credits": 3
+    },
+    {
+     "label": "Digital Media Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DAGV 1200": {
+   "title": "3D Modeling Essentials",
+   "credits": 3
+  },
+  "DAPR 2000": {
+   "title": "Digital Audio Essentials",
+   "credits": 3,
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DCPR 1800": {
+   "title": "Filmmaking I",
+   "credits": 2,
+   "coreqText": "DCPR 1800L",
+   "coreqs": [
+    "DCPR 1800L"
+   ]
+  },
+  "DGM 1110": {
+   "title": "Digital Media Essentials I",
+   "credits": 4
+  },
+  "DWDD 1600": {
+   "title": "Web Essentials",
+   "credits": 3
+  }
+ },
+ "missingCourses": [
+  "DAPR 2000L"
+ ]
+}

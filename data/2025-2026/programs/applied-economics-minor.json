@@ -1,0 +1,325 @@
+{
+ "id": "applied-economics-minor",
+ "name": "Applied Economics, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/applied-economics-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 21,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 2020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 2240",
+   "alts": [
+    "MATH 1210"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 3020",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 3370",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ECON 3470",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose three hours from the following:",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "ECON 3030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3060"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 4150"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ECON 3400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "FIN 4180"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete three hours from the following courses:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2240",
+     "alts": [
+      "MATH 1210"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ECON 2020",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ECON 3020",
+     "credits": 3
+    },
+    {
+     "code": "ECON 3370",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ECON 3470",
+     "credits": 3
+    },
+    {
+     "label": "Choose three hours from the following:",
+     "credits": 3
+    },
+    {
+     "code": "ECON 3030",
+     "credits": null
+    },
+    {
+     "code": "ECON 3050G",
+     "credits": null
+    },
+    {
+     "code": "ECON 3060",
+     "credits": null
+    },
+    {
+     "code": "ECON 3400",
+     "credits": null
+    },
+    {
+     "code": "ECON 4150",
+     "credits": null
+    },
+    {
+     "code": "FIN 4100",
+     "credits": null
+    },
+    {
+     "code": "FIN 4180",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 2020": {
+   "title": "Principles of Economics II",
+   "credits": 3,
+   "prereqText": "ECON 2010",
+   "prereqs": "ECON 2010"
+  },
+  "ECON 3020": {
+   "title": "Managerial Economics",
+   "credits": 3,
+   "prereqText": "MGMT 2240 with a B- or better; ECON 2020 ; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2240",
+     "ECON 2020"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 3030": {
+   "title": "Intermediate Macroeconomics",
+   "credits": 3,
+   "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ECON 3050G": {
+   "title": "International Economics",
+   "credits": 3,
+   "prereqText": "ECON 2010 and University Advanced Standing",
+   "prereqs": "ECON 2010",
+   "prereqNonCourse": true
+  },
+  "ECON 3060": {
+   "title": "Money and Banking",
+   "credits": 3,
+   "prereqText": "ECON 2020 and University Advanced Standing",
+   "prereqs": "ECON 2020",
+   "prereqNonCourse": true
+  },
+  "ECON 3370": {
+   "title": "Economic Modeling and Data Analytics",
+   "credits": 3,
+   "prereqText": "MGMT 2240 with a B- or better; ECON 2020 ; University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2240",
+     "ECON 2020"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 3400": {
+   "title": "Health Economics",
+   "credits": 3,
+   "prereqText": "ECON 3370 and University Advanced Standing",
+   "prereqs": "ECON 3370",
+   "prereqNonCourse": true
+  },
+  "ECON 3470": {
+   "title": "Principles of Applied Econometrics",
+   "credits": 3,
+   "prereqText": "ECON 3370 and University Advanced Standing",
+   "prereqs": "ECON 3370",
+   "prereqNonCourse": true
+  },
+  "ECON 4150": {
+   "title": "Public Finance",
+   "credits": 3,
+   "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "FIN 4100": {
+   "title": "Management of Financial Institutions",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "FIN 4180": {
+   "title": "International Finance Management",
+   "credits": 3,
+   "prereqText": "FIN 3100 and University Advanced Standing",
+   "prereqs": "FIN 3100",
+   "prereqNonCourse": true
+  },
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2240": {
+   "title": "Business Quantitative Analysis",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 or MATH 1090 taken within the last two years with grade of C- or better or appropriate placement assessment score.",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  }
+ }
+}

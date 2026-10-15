@@ -1,0 +1,956 @@
+{
+ "id": "public-health-bs",
+ "name": "Public Health, B.S.",
+ "url": "https://catalog.uvu.edu/health-public-service/public-health/public-health-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institution Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    },
+    {
+     "codes": [
+      "STAT 1040"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1045"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Physical Science Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biological Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 1100",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3260",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 3400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3500G",
+   "alts": [
+    "HLTH 4400G"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3700",
+   "alts": [
+    "HLTH 4600"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3750",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 3800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 4140",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 4160",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 4300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLSC 4250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HLTH 4950",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Take 3 credits from one or a combination of the following",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HLTH 4820R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HLTH 4850R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Take 3 credits from one or a combination of the following"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Take one of the following:",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HLSC 1300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ZOOL 1090"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ZOOL 2320",
+      "ZOOL 2325"
+     ],
+     "credits": 4
+    }
+   ],
+   "text": "Take one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Core Electives",
+   "label": "Public Health Lower Division Electives – Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "HLTH 2050"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "NUTR 2000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 2510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 2840"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 2900R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Public Health Lower Division Electives – Choose 6 credits"
+  },
+  {
+   "type": "choice",
+   "area": "Core Electives",
+   "label": "Public Health Upper Division Electives-Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "HLTH 3000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 4720"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HLTH 4900R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "NUTR 3100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Public Health Upper Division Electives-Choose 6 credits"
+  },
+  {
+   "type": "placeholder",
+   "area": "Additional Elective Courses",
+   "label": "Any course 1000 or higher (may include courses counting toward a minor)",
+   "credits": 29
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "HLTH 1100",
+     "credits": 3
+    },
+    {
+     "label": "American Institution Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "STAT 1040",
+     "credits": null
+    },
+    {
+     "code": "STAT 1045",
+     "credits": null
+    },
+    {
+     "code": "MATH 1050",
+     "credits": null
+    },
+    {
+     "code": "MATH 1055",
+     "credits": null
+    },
+    {
+     "label": "Social Science",
+     "credits": 3
+    },
+    {
+     "label": "Lower Division Health Elective - Take 6 credits",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "HLTH 3200",
+     "credits": 3
+    },
+    {
+     "label": "Biological Science",
+     "credits": 3
+    },
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Take one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 1300",
+     "credits": null
+    },
+    {
+     "code": "ZOOL 1090",
+     "credits": null
+    },
+    {
+     "code": "ZOOL 2320",
+     "alts": [
+      "ZOOL 2325"
+     ],
+     "credits": null
+    },
+    {
+     "label": "Upper Division Health Electives - Take 3 credits",
+     "credits": 3
+    },
+    {
+     "label": "Unrestricted electives",
+     "credits": 8
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "HLTH 3260",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 3400",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 3450",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 4140",
+     "credits": 3
+    },
+    {
+     "label": "Unrestricted electives",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "HLTH 3700",
+     "alts": [
+      "HLTH 4600"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "HLTH 3800",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 4160",
+     "credits": 3
+    },
+    {
+     "label": "Unrestricted electives",
+     "credits": 6
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "HLTH 3500G",
+     "alts": [
+      "HLTH 4400G"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "HLTH 3750",
+     "credits": 3
+    },
+    {
+     "code": "HLSC 4250",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 4300",
+     "credits": 3
+    },
+    {
+     "label": "Unrestrictive Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "HLTH 3600",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 4820R",
+     "credits": 3
+    },
+    {
+     "code": "HLTH 4950",
+     "credits": 1
+    },
+    {
+     "label": "Upper division HLTH Electives. Complete 3 credits.",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 6
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "HLSC 1300": {
+   "title": "Medical Terminology and Functional Anatomy",
+   "credits": 3
+  },
+  "HLSC 3400": {
+   "title": "Human Diseases",
+   "credits": 3,
+   "prereqText": "HLSC 1300 and University Advanced Standing",
+   "prereqs": "HLSC 1300",
+   "prereqNonCourse": true
+  },
+  "HLSC 4250": {
+   "title": "Health Organization and Policy",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 1100": {
+   "title": "Personal Health and Wellness",
+   "credits": 3
+  },
+  "HLTH 2050": {
+   "title": "Public Mental Health",
+   "credits": 3
+  },
+  "HLTH 2510": {
+   "title": "New Media in Public Health",
+   "credits": 3
+  },
+  "HLTH 2840": {
+   "title": "Womens Health Issues",
+   "credits": 3,
+   "prereqText": "HLTH 1100 or EXSC 1097",
+   "prereqs": {
+    "or": [
+     "HLTH 1100",
+     "EXSC 1097"
+    ]
+   }
+  },
+  "HLTH 2900R": {
+   "title": "Special Topics in Public Health",
+   "credits": 3
+  },
+  "HLTH 3000": {
+   "title": "Health Concepts of Death and Dying",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3200": {
+   "title": "Principles of Community Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3260": {
+   "title": "Health Behavior Theory and Practice",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3300": {
+   "title": "Health Promotion for Older Adults",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3450": {
+   "title": "Public Health and the Environment",
+   "credits": 3,
+   "prereqText": "HLTH 3200 , University Advanced Standing",
+   "prereqs": "HLTH 3200",
+   "prereqNonCourse": true
+  },
+  "HLTH 3500G": {
+   "title": "International Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3600": {
+   "title": "Social Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3700": {
+   "title": "Grant Writing for Public Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 3750": {
+   "title": "Biostatistics for Public Health",
+   "credits": 3,
+   "prereqText": "MATH 1050 or 1055 or STAT 1040 or 1045 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "STAT 1040"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "HLTH 3800": {
+   "title": "Epidemiology",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4140": {
+   "title": "Assessment and Program Development",
+   "credits": 3,
+   "prereqText": "HLTH 3200 and University Advanced Standing",
+   "prereqs": "HLTH 3200",
+   "prereqNonCourse": true,
+   "precoreqText": "HLTH 3260",
+   "precoreqs": "HLTH 3260"
+  },
+  "HLTH 4160": {
+   "title": "Program Implementation and Evaluation",
+   "credits": 3,
+   "prereqText": "HLTH 4140 and University Advanced Standing",
+   "prereqs": "HLTH 4140",
+   "prereqNonCourse": true
+  },
+  "HLTH 4300": {
+   "title": "Health Ethics",
+   "credits": 3,
+   "prereqText": "University advanced standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4400G": {
+   "title": "Health and Diversity",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4600": {
+   "title": "Research Methods for Public Health",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4720": {
+   "title": "CHES Preparation",
+   "credits": 3,
+   "prereqText": "Department approval; University Advanced Standing; Senior standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4820R": {
+   "title": "Health Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4850R": {
+   "title": "Public Health Special Project",
+   "credits": 1,
+   "creditsMax": 4,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4900R": {
+   "title": "Special Topics in Public Health",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Department Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HLTH 4950": {
+   "title": "Senior Capstone",
+   "credits": 1,
+   "prereqText": "University Advanced Standing; Senior Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NUTR 2000": {
+   "title": "Body Image and Mindful Eating",
+   "credits": 3
+  },
+  "NUTR 3100": {
+   "title": "Community Nutrition",
+   "credits": 3,
+   "prereqText": "NUTR 1020 and University Advanced Standing",
+   "prereqs": "NUTR 1020",
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "STAT 1040": {
+   "title": "Introduction to Statistics",
+   "credits": 3,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "STAT 1045": {
+   "title": "Introduction to Statistics with Algebra",
+   "credits": 5,
+   "prereqText": "One of the following: MAT 1010 or MAT 1015 with a grade of C or better within the past two years; an ACT mathematics score of 23 (assuming the test has been taken within the last two years); appropriate placement by the Accuplacer test score",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ZOOL 1090": {
+   "title": "Introduction to Human Anatomy and Physiology",
+   "credits": 3,
+   "prereqText": "BIOL 1010 or BIOL 1610",
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1610"
+    ]
+   }
+  },
+  "ZOOL 2320": {
+   "title": "Human Anatomy",
+   "credits": 3,
+   "coreqText": "ZOOL 2325",
+   "coreqs": [
+    "ZOOL 2325"
+   ]
+  },
+  "ZOOL 2325": {
+   "title": "Human Anatomy Laboratory",
+   "credits": 1,
+   "precoreqText": "ZOOL 2320",
+   "precoreqs": "ZOOL 2320"
+  }
+ }
+}

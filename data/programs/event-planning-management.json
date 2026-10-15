@@ -1,0 +1,212 @@
+{
+ "id": "event-planning-management",
+ "name": "Event Management, Minor",
+ "url": "https://catalog.uvu.edu/business/organizational-leadership/event-planning-management/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2390",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 3210",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 4200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HM 4250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Elective Requirements: Choose 3 credits from the Following",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "CA 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ART 1400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "THEA 1513",
+      "THEA 1514"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MGMT 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "COMM 3560"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MKTG 3650"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Elective Requirements: Choose 3 credits from the Following"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "HM 3000",
+     "credits": 3
+    },
+    {
+     "code": "HM 3210",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MKTG 2390",
+     "credits": 3
+    },
+    {
+     "code": "HM 4200",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "HM 4250",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ART 1400": {
+   "title": "Graphic Computer Applications",
+   "credits": 3
+  },
+  "CA 1000": {
+   "title": "Culinary Basics",
+   "credits": 3
+  },
+  "COMM 3560": {
+   "title": "Public Relations Event and Media Coordination",
+   "credits": 3,
+   "prereqText": "University Advanced Standing.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HM 3000": {
+   "title": "Hospitality Industry Foundations",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HM 3210": {
+   "title": "Event Venue and Convention Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HM 4200": {
+   "title": "Event Planning",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "HM 3210",
+   "precoreqs": "HM 3210"
+  },
+  "HM 4250": {
+   "title": "Advanced Event Production",
+   "credits": 3,
+   "prereqText": "HM 4200 and Advanced University Standing",
+   "prereqs": "HM 4200",
+   "prereqNonCourse": true
+  },
+  "MGMT 3450": {
+   "title": "Operations Management",
+   "credits": 3,
+   "prereqText": "Matriculation into WSB and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  },
+  "MKTG 3650": {
+   "title": "Professional Selling",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "THEA 1513": {
+   "title": "Stagecraft I",
+   "credits": 2,
+   "precoreqText": "THEA 1514",
+   "precoreqs": "THEA 1514"
+  },
+  "THEA 1514": {
+   "title": "Stagecraft I Lab",
+   "credits": 1,
+   "precoreqText": "THEA 1513",
+   "precoreqs": "THEA 1513"
+  }
+ },
+ "totalFrom": "area headers"
+}

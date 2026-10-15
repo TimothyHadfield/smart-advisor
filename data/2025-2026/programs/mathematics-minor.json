@@ -1,0 +1,228 @@
+{
+ "id": "mathematics-minor",
+ "name": "Mathematics, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/mathematics-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 1210",
+   "alts": [
+    "MATH 1210H"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 1220",
+   "alts": [
+    "MATH 1220H"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 2210",
+   "alts": [
+    "MATH 2210H"
+   ],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 2270",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MATH 2280",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Choose at least two mathematics courses from the mathematics courses numbered 3210 and above",
+   "credits": 6
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "MATH 1210",
+     "alts": [
+      "MATH 1210H"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MATH 1220",
+     "alts": [
+      "MATH 1220H"
+     ],
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MATH 2210",
+     "alts": [
+      "MATH 2210H"
+     ],
+     "credits": 4
+    },
+    {
+     "code": "MATH 2270",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "MATH 2280",
+     "credits": 3
+    },
+    {
+     "label": "MATH Elective",
+     "credits": 3
+    },
+    {
+     "label": "MATH Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MATH 1210": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1210H": {
+   "title": "Calculus I",
+   "credits": 4,
+   "prereqText": "One of the following within the past two years: ( MATH 1050 or MATH 1055 ) and MATH 1060 , each with a grade of C or higher; OR MATH 1080 with a grade of C or higher; OR appropriate placement by math placement test.",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       {
+        "or": [
+         "MATH 1050",
+         "MATH 1055"
+        ]
+       },
+       "MATH 1060"
+      ]
+     },
+     "MATH 1080"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1220": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 1220H": {
+   "title": "Calculus II",
+   "credits": 4,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2210": {
+   "title": "Calculus III",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2210H": {
+   "title": "Calculus III",
+   "credits": 4,
+   "prereqText": "MATH 1220 or MATH 1220H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1220",
+     "MATH 1220H"
+    ]
+   }
+  },
+  "MATH 2270": {
+   "title": "Linear Algebra",
+   "credits": 3,
+   "prereqText": "MATH 1210 or MATH 1210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 1210",
+     "MATH 1210H"
+    ]
+   }
+  },
+  "MATH 2280": {
+   "title": "Ordinary Differential Equations",
+   "credits": 3,
+   "prereqText": "MATH 2210 or MATH 2210H with a grade of C or higher",
+   "prereqs": {
+    "or": [
+     "MATH 2210",
+     "MATH 2210H"
+    ]
+   }
+  }
+ }
+}

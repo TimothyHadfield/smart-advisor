@@ -1,0 +1,249 @@
+{
+ "id": "cybersecurity-ms",
+ "name": "Cybersecurity, M.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/cybersecurity-ms/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 30,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6330",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6350",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6370",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6740",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6770",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 6900",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "CYBR 6420"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 6660"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 6750"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 6780"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:",
+   "notes": [
+    "or other departmental approved electives."
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CYBR 6300",
+     "credits": 3
+    },
+    {
+     "code": "CYBR 6350",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CYBR 6330",
+     "credits": 3
+    },
+    {
+     "code": "CYBR 6740",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CYBR 6370",
+     "credits": 3
+    },
+    {
+     "code": "CYBR 6770",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "CYBR 6900",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CYBR 6300": {
+   "title": "Principles of Cybersecurity",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CYBR 6330": {
+   "title": "Cybersecurity Operations ",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CYBR 6350": {
+   "title": "Law/Ethics/Privacy in Cybersecurity",
+   "credits": 3,
+   "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CYBR 6370": {
+   "title": "Penetration Testing and Vulnerability Assessment",
+   "credits": 3,
+   "prereqText": "CYBR 6300 or departmental approval.",
+   "prereqs": "CYBR 6300",
+   "prereqNonCourse": true
+  },
+  "CYBR 6420": {
+   "title": "Web and Mobile Application Security",
+   "credits": 3,
+   "prereqText": "CYBR 6300",
+   "prereqs": "CYBR 6300"
+  },
+  "CYBR 6660": {
+   "title": "Advanced Network Forensics",
+   "credits": 3,
+   "prereqText": "CYBR 6300",
+   "prereqs": "CYBR 6300"
+  },
+  "CYBR 6740": {
+   "title": "Advanced Network Defense and Countermeasures",
+   "credits": 3,
+   "prereqText": "CYBR 6300 or departmental approval.",
+   "prereqs": "CYBR 6300",
+   "prereqNonCourse": true
+  },
+  "CYBR 6750": {
+   "title": "Reverse Engineering and Malware Analysis",
+   "credits": 3,
+   "prereqText": "CYBR 6300 or departmental approval.",
+   "prereqs": "CYBR 6300",
+   "prereqNonCourse": true
+  },
+  "CYBR 6770": {
+   "title": "Cybersecurity Management",
+   "credits": 3,
+   "prereqText": "CYBR 6300 or Departmental approval.",
+   "prereqs": "CYBR 6300",
+   "prereqNonCourse": true
+  },
+  "CYBR 6780": {
+   "title": "Secure Coding",
+   "credits": 3,
+   "prereqText": "CYBR 6300 or departmental approval.",
+   "prereqs": "CYBR 6300",
+   "prereqNonCourse": true
+  },
+  "CYBR 6900": {
+   "title": "Cybersecurity Capstone",
+   "credits": 3,
+   "prereqText": "CYBR 6330 , CYBR 6350 , CYBR 6370 , CYBR 6740 , and CYBR 6770 .",
+   "prereqs": {
+    "and": [
+     "CYBR 6330",
+     "CYBR 6350",
+     "CYBR 6370",
+     "CYBR 6740",
+     "CYBR 6770"
+    ]
+   }
+  }
+ }
+}

@@ -1,0 +1,289 @@
+{
+ "id": "chemistry-minor",
+ "name": "Chemistry, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/science/chemistry/chemistry-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 27,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1210",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1220",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1215",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 1225",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 2310",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 2320",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 2315",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 2325",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 3000",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHEM 3005",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "placeholder",
+   "area": "Elective Requirements",
+   "label": "Any upper-division chemistry class numbered above 3000 with a minimum of 3 credit hours",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CHEM 1210",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1215",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "CHEM 1220",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1225",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "CHEM 2310",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2315",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "CHEM 2320",
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2325",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "CHEM 3000",
+     "credits": 2
+    },
+    {
+     "code": "CHEM 3005",
+     "credits": 2
+    },
+    {
+     "label": "CHEM Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHEM 1210": {
+   "title": "Principles of Chemistry I",
+   "credits": 4,
+   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
+   "prereqs": {
+    "or": [
+     "MATH 1080",
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1060"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1215",
+   "coreqs": [
+    "CHEM 1215"
+   ]
+  },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
+  "CHEM 1220": {
+   "title": "Principles of Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 1210 with a grade of C- or higher",
+   "prereqs": "CHEM 1210",
+   "coreqText": "CHEM 1225",
+   "coreqs": [
+    "CHEM 1225"
+   ]
+  },
+  "CHEM 1225": {
+   "title": "Principles of Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1215 with a C- or better",
+   "prereqs": "CHEM 1215",
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 1220",
+   "coreqs": [
+    "CHEM 1220"
+   ]
+  },
+  "CHEM 2310": {
+   "title": "Organic Chemistry I",
+   "credits": 4,
+   "prereqText": "CHEM 1220 with a grade of C- or higher",
+   "prereqs": "CHEM 1220",
+   "coreqText": "CHEM 2315",
+   "coreqs": [
+    "CHEM 2315"
+   ]
+  },
+  "CHEM 2315": {
+   "title": "Organic Chemistry I Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 1220 , CHEM 1225",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     "CHEM 1225"
+    ]
+   },
+   "coreqText": "CHEM 2310",
+   "coreqs": [
+    "CHEM 2310"
+   ]
+  },
+  "CHEM 2320": {
+   "title": "Organic Chemistry II",
+   "credits": 4,
+   "prereqText": "CHEM 2310 & CHEM 2315 with a C- or higher",
+   "prereqs": {
+    "and": [
+     "CHEM 2310",
+     "CHEM 2315"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 2325",
+   "coreqs": [
+    "CHEM 2325"
+   ]
+  },
+  "CHEM 2325": {
+   "title": "Organic Chemistry II Laboratory",
+   "credits": 1,
+   "prereqText": "CHEM 2315",
+   "prereqs": "CHEM 2315",
+   "coreqText": "CHEM 2320",
+   "coreqs": [
+    "CHEM 2320"
+   ]
+  },
+  "CHEM 3000": {
+   "title": "Analytical Chemistry",
+   "credits": 2,
+   "prereqText": "CHEM 1220 , CHEM 1225 and Advanced University Standing",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     "CHEM 1225"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 3005",
+   "coreqs": [
+    "CHEM 3005"
+   ]
+  },
+  "CHEM 3005": {
+   "title": "Analytical Chemistry Laboratory",
+   "credits": 2,
+   "prereqText": "CHEM 1220 , CHEM 1225 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "CHEM 1220",
+     "CHEM 1225"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "CHEM 3000",
+   "coreqs": [
+    "CHEM 3000"
+   ]
+  }
+ }
+}

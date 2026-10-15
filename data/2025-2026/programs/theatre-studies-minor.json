@@ -1,0 +1,135 @@
+{
+ "id": "theatre-studies-minor",
+ "name": "Theatre Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1013",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1513",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1514",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1713",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 3 credits in THEA courses, 1000 level or above. Students are encouraged to consider either THEA 1033 Acting I or THEA 2513 Intro to Design, as these courses are pre-requisites for a number of 3000+ level courses.",
+   "credits": 3,
+   "text": "Complete 3 credits in THEA courses, 1000 level or above. Students are encouraged to consider either THEA 1033 Acting I or THEA 2513 Intro to Design, as these courses are pre-requisites for a number of 3000+ level courses."
+  },
+  {
+   "type": "placeholder",
+   "area": "Discipline Core Requirements",
+   "label": "Complete 12 credits in THEA courses, 3000 level or above",
+   "credits": 12,
+   "text": "Complete 12 credits in THEA courses, 3000 level or above"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "THEA 1013",
+     "credits": 3
+    },
+    {
+     "code": "THEA 1513",
+     "credits": 2
+    },
+    {
+     "code": "THEA 1514",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "THEA 1713",
+     "credits": 3
+    },
+    {
+     "label": "Lower Division THEA Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "THEA 3000",
+     "credits": 3
+    },
+    {
+     "code": "THEA 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "THEA 3000",
+     "credits": 3
+    },
+    {
+     "code": "THEA 3000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "THEA 1013": {
+   "title": "Introduction to Theatre",
+   "credits": 3
+  },
+  "THEA 1513": {
+   "title": "Stagecraft I",
+   "credits": 2,
+   "precoreqText": "THEA 1514",
+   "precoreqs": "THEA 1514"
+  },
+  "THEA 1514": {
+   "title": "Stagecraft I Lab",
+   "credits": 1,
+   "precoreqText": "THEA 1513",
+   "precoreqs": "THEA 1513"
+  },
+  "THEA 1713": {
+   "title": "Script and Text Analysis I",
+   "credits": 3
+  }
+ },
+ "missingCourses": [
+  "THEA 3000"
+ ]
+}

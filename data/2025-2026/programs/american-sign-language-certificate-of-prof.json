@@ -1,0 +1,120 @@
+{
+ "id": "american-sign-language-certificate-of-prof",
+ "name": "American Sign Language, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/american-sign-language-certificate-of-prof/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "ASL 1020",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ASL 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ASL 2020G",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "ASL 3050",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "",
+   "label": "Any ASL course numbered 3XXX or 4XXX",
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ASL 1020",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ASL 2010",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "ASL 2020G",
+     "credits": 4
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "ASL 3050",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "ASL elective 3XXX or 4XXX",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ASL 1020": {
+   "title": "Beginning American Sign Language II",
+   "credits": 4,
+   "prereqText": "Students should have equivalent knowledge of ASL 1010",
+   "prereqs": "ASL 1010",
+   "prereqNonCourse": true
+  },
+  "ASL 2010": {
+   "title": "Intermediate American Sign Language I",
+   "credits": 4,
+   "prereqText": "Students should have equivalent knowledge of ASL 1020",
+   "prereqs": "ASL 1020",
+   "prereqNonCourse": true
+  },
+  "ASL 2020G": {
+   "title": "Intermediate American Sign Language II",
+   "credits": 4,
+   "prereqText": "Students should have equivalent knowledge of ASL 2010",
+   "prereqs": "ASL 2010",
+   "prereqNonCourse": true
+  },
+  "ASL 3050": {
+   "title": "Advanced American Sign Language",
+   "credits": 3,
+   "prereqText": "It is recommended that students complete ASL 2020G or have equivalent skills acquired through classes elsewhere or other through life experiences",
+   "prereqs": null
+  }
+ }
+}

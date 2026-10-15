@@ -1,0 +1,266 @@
+{
+ "id": "information-technology-certificate-proficiency",
+ "name": "Information Technology, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/information-technology-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 1510",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IT 1600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Elective",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "INFO 1200"
+     ],
+     "credits": 3,
+     "alts": [
+      "CS 1400"
+     ]
+    },
+    {
+     "codes": [
+      "INFO 2410"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2400"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2600"
+     ],
+     "credits": 3,
+     "alts": [
+      "CS 2600"
+     ]
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CYBR 2800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "IT 2900R"
+     ],
+     "credits": 1
+    }
+   ],
+   "text": "Complete 6 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGH 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "INFO 1120",
+     "credits": 3
+    },
+    {
+     "code": "IT 1510",
+     "credits": 3
+    },
+    {
+     "code": "IT 1600",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Elective",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CS 1400": {
+   "title": "Fundamentals of Programming",
+   "credits": 3,
+   "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 2600": {
+   "title": "Computer Networks I",
+   "credits": 3,
+   "prereqText": "CS 2810 or ( INFO 1200 and IT 1600 )",
+   "prereqs": {
+    "or": [
+     "CS 2810",
+     {
+      "and": [
+       "INFO 1200",
+       "IT 1600"
+      ]
+     }
+    ]
+   }
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 2800": {
+   "title": "Computer Forensic Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or IT 1600 or CS 1400 or CJ 1010",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "IT 1600",
+     "CS 1400",
+     "CJ 1010"
+    ]
+   }
+  },
+  "ENGH 1005": {
+   "title": "Literacies and Composition Across Contexts",
+   "credits": 5,
+   "prereqText": "ENGH 0890 or appropriate placement scores.",
+   "prereqs": "ENGH 0890",
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "INFO 1120": {
+   "title": "Information Systems and Technology Fundamentals",
+   "credits": 3,
+   "prereqText": "IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "IT 1510": {
+   "title": "Introduction to System Administration--Linux/UNIX",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 1600": {
+   "title": "Computer Architecture and Systems Software",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended",
+   "prereqs": null
+  },
+  "IT 2400": {
+   "title": "Voice and Data Cabling Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 or INFO 1200 or CS 1030 or CS 1400",
+   "prereqs": {
+    "or": [
+     "INFO 1120",
+     "INFO 1200",
+     "CS 1030",
+     "CS 1400"
+    ]
+   }
+  },
+  "IT 2530": {
+   "title": "Introduction to System Administration--WIndows Client",
+   "credits": 3,
+   "prereqText": "IT 1600",
+   "prereqs": "IT 1600"
+  },
+  "IT 2600": {
+   "title": "Data Communication Fundamentals",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IT 1600 recommended or CS 1400 recommended",
+   "prereqs": null
+  },
+  "IT 2900R": {
+   "title": "Current Topics in Information Technology",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Departmental Approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

@@ -1,0 +1,462 @@
+{
+ "id": "theatre-studies-aa",
+ "name": "Theatre Studies, A.A.",
+ "url": "https://catalog.uvu.edu/arts/theatrical-arts-stage-screen/theatre-studies-aa/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 60,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Biology Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MAT 1030"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MAT 1035"
+     ],
+     "credits": 6
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "American Institutions",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution, filled by a level I foreign language course",
+   "credits": 4
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/Behavioral Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth: Choose from Distribution List",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1013",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1033",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1513",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1514",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1590R",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 1713",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 2211",
+   "alts": [
+    "THEA 2741"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 2513",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "THEA 2514",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "placeholder",
+   "area": "Foreign Language Requirement",
+   "label": "Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement",
+   "credits": 4,
+   "text": "Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement"
+  },
+  {
+   "type": "placeholder",
+   "area": "Theatre Elective",
+   "label": "Complete 3 credits in any THEA course(s), 1000 level or higher",
+   "credits": 3,
+   "text": "Complete 3 credits in any THEA course(s), 1000 level or higher"
+  },
+  {
+   "type": "placeholder",
+   "area": "Free Elective",
+   "label": "Complete 5 credits in any course(s), 1000 level or higher",
+   "credits": 5,
+   "text": "Complete 5 credits in any course(s), 1000 level or higher"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "THEA 1013",
+     "credits": 3
+    },
+    {
+     "code": "THEA 1033",
+     "credits": 3
+    },
+    {
+     "code": "THEA 1513",
+     "credits": 2
+    },
+    {
+     "code": "THEA 1514",
+     "credits": 1
+    },
+    {
+     "code": "THEA 1590R",
+     "credits": 1
+    },
+    {
+     "label": "Free Elective course",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "MAT 1030",
+     "alts": [
+      "MAT 1035"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "THEA 1713",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2211",
+     "alts": [
+      "THEA 2741"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "THEA 2513",
+     "credits": 3
+    },
+    {
+     "code": "THEA 2514",
+     "credits": 1
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Foreign Language",
+     "credits": 4
+    },
+    {
+     "label": "Free Elective course",
+     "credits": 3
+    },
+    {
+     "label": "Theatre Elective course",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Foreign Language",
+     "credits": 4
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "MAT 1030": {
+   "title": "Quantitative Reasoning",
+   "credits": 3,
+   "prereqText": "One of the following (within department time limits): MAT 1020 (preferred), or MAT1015 or MAT 1010 with a grade of C– or higher; or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 1020",
+     "MAT 1010"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MAT 1035": {
+   "title": "Quantitative Reasoning with Integrated Algebra",
+   "credits": 6,
+   "prereqText": "One of the following (within department time limits): MAT 0950 with a grade of C- or higher, or MAT 0980 with a grade of C- or higher, or appropriate placement by a placement exam.",
+   "prereqs": {
+    "or": [
+     "MAT 0950",
+     "MAT 0980"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "THEA 1013": {
+   "title": "Introduction to Theatre",
+   "credits": 3
+  },
+  "THEA 1033": {
+   "title": "Acting I",
+   "credits": 3
+  },
+  "THEA 1513": {
+   "title": "Stagecraft I",
+   "credits": 2,
+   "precoreqText": "THEA 1514",
+   "precoreqs": "THEA 1514"
+  },
+  "THEA 1514": {
+   "title": "Stagecraft I Lab",
+   "credits": 1,
+   "precoreqText": "THEA 1513",
+   "precoreqs": "THEA 1513"
+  },
+  "THEA 1590R": {
+   "title": "Production Practicum for Stage and Screen I",
+   "credits": 1
+  },
+  "THEA 1713": {
+   "title": "Script and Text Analysis I",
+   "credits": 3
+  },
+  "THEA 2211": {
+   "title": "Theatre for Children and Youth",
+   "credits": 3
+  },
+  "THEA 2513": {
+   "title": "Introduction to Design for Stage and Screen",
+   "credits": 3,
+   "prereqText": "THEA 1513 and THEA 1514",
+   "prereqs": {
+    "and": [
+     "THEA 1513",
+     "THEA 1514"
+    ]
+   },
+   "precoreqText": "THEA 2514",
+   "precoreqs": "THEA 2514"
+  },
+  "THEA 2514": {
+   "title": "Introduction to Design for Stage and Screen Lab",
+   "credits": 1,
+   "prereqText": "THEA 1513",
+   "prereqs": "THEA 1513",
+   "precoreqText": "THEA 2513",
+   "precoreqs": "THEA 2513"
+  },
+  "THEA 2741": {
+   "title": "Scriptwriting for Stage",
+   "credits": 3
+  }
+ }
+}

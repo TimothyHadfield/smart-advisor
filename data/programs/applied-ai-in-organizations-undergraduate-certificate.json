@@ -1,0 +1,150 @@
+{
+ "id": "applied-ai-in-organizations-undergraduate-certificate",
+ "name": "Applied AI in Organizations, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/applied-ai-in-organizations-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "INFO 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "INFO 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "PHIL 3250",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 3410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "DWDD 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MKTG 3700",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "INFO 2500",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 3250",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "DWDD 2420",
+     "credits": 3
+    },
+    {
+     "code": "INFO 3500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "MGMT 3410",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3700",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "DWDD 2420": {
+   "title": "Media Formats and Outputs",
+   "credits": 3,
+   "prereqText": "DWDD 1400 or DGM 1110 or INFO 2420",
+   "prereqs": {
+    "or": [
+     "DWDD 1400",
+     "DGM 1110",
+     "INFO 2420"
+    ]
+   }
+  },
+  "INFO 2500": {
+   "title": "Applied Artificial Intelligence Concepts in Organizations",
+   "credits": 3
+  },
+  "INFO 3500": {
+   "title": "AI in Learning and Communication",
+   "credits": 3,
+   "prereqText": "INFO 2500 and University Advanced Standing",
+   "prereqs": "INFO 2500",
+   "prereqNonCourse": true
+  },
+  "MGMT 3410": {
+   "title": "AI Workflow Operations Automation",
+   "credits": 3,
+   "prereqText": "MGMT 2340 , ( MATH 1090 , MATH 1050 , MATH 1055 , or MGMT 2240 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "MGMT 2340",
+     {
+      "or": [
+       "MATH 1090",
+       "MATH 1050",
+       "MATH 1055",
+       "MGMT 2240"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MKTG 3700": {
+   "title": "Fundamentals of Product Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
+   "prereqs": null
+  },
+  "PHIL 3250": {
+   "title": "Ethics of AI",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

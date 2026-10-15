@@ -1,0 +1,343 @@
+{
+ "id": "humanities-minor",
+ "name": "Humanities, Minor",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/humanities-minor/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "HUM 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HUM 2010"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2010G",
+      "HUM 2010H"
+     ]
+    },
+    {
+     "codes": [
+      "HUM 2100"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2100H"
+     ]
+    }
+   ],
+   "text": "Complete 3 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 3 credits",
+   "pick": {
+    "credits": 3
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HUM 2020"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2020G",
+      "HUM 2020H"
+     ]
+    },
+    {
+     "codes": [
+      "HUM 2200"
+     ],
+     "credits": 3,
+     "alts": [
+      "HUM 2200H"
+     ]
+    }
+   ],
+   "text": "Complete 3 credits from the following:"
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Choose 9 credits",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
+    {
+     "codes": [
+      "HUM 3200R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "HUM 3250R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3300R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 3800"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 4000R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 4010R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HUM 4140R"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following:"
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete one of following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 2010",
+     "credits": null
+    },
+    {
+     "code": "HUM 2010G",
+     "credits": null
+    },
+    {
+     "code": "HUM 2010H",
+     "credits": null
+    },
+    {
+     "code": "HUM 2100",
+     "credits": null
+    },
+    {
+     "code": "HUM 2100H",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Complete one of following:",
+     "credits": 3
+    },
+    {
+     "code": "HUM 2020",
+     "credits": null
+    },
+    {
+     "code": "HUM 2020G",
+     "credits": null
+    },
+    {
+     "code": "HUM 2020H",
+     "credits": null
+    },
+    {
+     "code": "HUM 2200",
+     "credits": null
+    },
+    {
+     "code": "HUM 2200H",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "HUM 3500",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "HUM 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "code": "HUM 3000",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "HUM 3000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "HUM 2010": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2010G": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2010H": {
+   "title": "World History Through the Arts I",
+   "credits": 3
+  },
+  "HUM 2020": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2020G": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2020H": {
+   "title": "World History Through the Arts II",
+   "credits": 3
+  },
+  "HUM 2100": {
+   "title": "Adventures of Ideas Through 1500",
+   "credits": 3
+  },
+  "HUM 2100H": {
+   "title": "Adventures of Ideas Through 1500",
+   "credits": 3,
+   "prereqText": "Enrollment in the UVU Honors program or approval by the instructor.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 2200": {
+   "title": "Adventures of Ideas After 1500",
+   "credits": 3
+  },
+  "HUM 2200H": {
+   "title": "Adventures of Ideas After 1500",
+   "credits": 3,
+   "prereqText": "Enrollment in the Honors Program or instructor's approval",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 3200R": {
+   "title": "Topics in Humanities",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3250R": {
+   "title": "Topics in Area Studies",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3300R": {
+   "title": "Topics in Period Studies",
+   "credits": 3,
+   "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HUM 3500": {
+   "title": "Approaches to Humanities",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 3800": {
+   "title": "Aesthetics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "HUM 4000R": {
+   "title": "Humanism and Posthumanism",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENG 2010",
+   "precoreqs": "ENG 2010"
+  },
+  "HUM 4010R": {
+   "title": "Forms and Genres Across the Arts",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  },
+  "HUM 4140R": {
+   "title": "Advanced Topics in Humanities",
+   "credits": 3,
+   "prereqText": "At least junior standing and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ENGL 2010",
+   "precoreqs": "ENGL 2010"
+  }
+ },
+ "missingCourses": [
+  "HUM 3000"
+ ]
+}

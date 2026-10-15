@@ -1,0 +1,1232 @@
+{
+ "id": "business-technologies-and-education-bs",
+ "name": "Business Technologies and Education, B.S.",
+ "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/business-technologies-and-education-bs/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 120,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Fine Arts Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "MATH 1090"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "MATH 1050"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "MATH 1055"
+     ],
+     "credits": 5
+    }
+   ],
+   "text": "Complete one of the following MATH courses:"
+  },
+  {
+   "type": "choice",
+   "area": "General Education Requirements",
+   "label": "Physical Science Distribution",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "HIST 1700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "HIST 1740"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 1100"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ECON 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biological Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Personal, Professional, and Civic Growth",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Humanities Distribution",
+   "credits": 3
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Fine Arts",
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 1000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 1010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 2800",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "IM 3500",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1120",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 1200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2410",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 3430",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "INFO 4050G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ACC 2110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MGMT 3000",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CYBR 3350",
+   "alts": [
+    "LEGL 3000"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 2200G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MKTG 3600",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "BMED 5200",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Complete one of the two domain areas below:",
+   "label": "Domain Required Credits",
+   "pick": {
+    "credits": 33
+   },
+   "credits": 33,
+   "options": [
+    {
+     "codes": [
+      "EDSC 1010"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 3000"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 3250G"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSP 3400G"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4200"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4250"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4440"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4450G"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4550G"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4850"
+     ],
+     "credits": 8,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "EDSC 4990"
+     ],
+     "credits": 2,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "INFO 2500"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "INFO 3120"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "INFO 3500"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "CYBR 2700"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "HR 3430"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "HR 3570"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "MKTG 2390"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "TECH 3400"
+     ],
+     "credits": 3,
+     "section": "Complete all of the following:"
+    },
+    {
+     "codes": [
+      "IM 2100"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "IM 3600"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "INFO 3130"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "INFO 4120"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "MGMT 2340"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "FIN 1060"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "HR 3550"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "PSY 1010"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "PSY 3300"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "TECH 4400"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    },
+    {
+     "codes": [
+      "SLSS 1200"
+     ],
+     "credits": 3,
+     "section": "Complete 9 Credits of Elective Courses:"
+    }
+   ],
+   "notes": [
+    "Complete all of the following:: Any elective course from among IM, INFO, IT, CYBR, or BMED"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "ENGL 1010",
+     "alts": [
+      "ENGL 1005"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "IM 1010",
+     "credits": 3
+    },
+    {
+     "code": "IM 1000",
+     "credits": 3
+    },
+    {
+     "code": "IM 2300",
+     "credits": 3
+    },
+    {
+     "code": "ACC 2110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Fine Arts Distribution",
+     "credits": 3
+    },
+    {
+     "code": "ENGL 2010",
+     "credits": 3
+    },
+    {
+     "code": "IM 2600",
+     "credits": 3
+    },
+    {
+     "code": "MATH 1090",
+     "alts": [
+      "MATH 1050"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "EDSC 1010",
+     "credits": 2
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Physical Science Distribution",
+     "credits": 3
+    },
+    {
+     "code": "IM 2500",
+     "credits": 3
+    },
+    {
+     "code": "INFO 1200",
+     "credits": 3
+    },
+    {
+     "code": "INFO 1120",
+     "credits": 3
+    },
+    {
+     "code": "IM 2800",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "American Institutions",
+     "credits": 3
+    },
+    {
+     "label": "Biology Distribution",
+     "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3
+    },
+    {
+     "code": "IM 3500",
+     "credits": 3
+    },
+    {
+     "code": "ECON 2010",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Humanities Distribution",
+     "credits": 3
+    },
+    {
+     "code": "INFO 3430",
+     "credits": 3
+    },
+    {
+     "code": "CYBR 3350",
+     "credits": 3
+    },
+    {
+     "code": "EDSC 4440",
+     "credits": 3
+    },
+    {
+     "code": "INFO 2410",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "code": "EDSP 3400G",
+     "credits": 2
+    },
+    {
+     "code": "EDSC 3000",
+     "credits": 3
+    },
+    {
+     "label": "Elective",
+     "credits": 1
+    },
+    {
+     "code": "EDSC 4450G",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 3600",
+     "credits": 3
+    },
+    {
+     "code": "INFO 2420",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "code": "EDSC 3250G",
+     "credits": 2
+    },
+    {
+     "code": "EDSC 4200",
+     "credits": 2
+    },
+    {
+     "code": "INFO 4050G",
+     "credits": 3
+    },
+    {
+     "code": "BMED 5200",
+     "credits": 3
+    },
+    {
+     "code": "EDSC 4550G",
+     "credits": 3
+    },
+    {
+     "code": "MKTG 2200G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "code": "EDSC 4850",
+     "credits": 8
+    },
+    {
+     "code": "EDSC 4250",
+     "credits": 2
+    },
+    {
+     "code": "EDSC 4990",
+     "credits": 2
+    },
+    {
+     "code": "MGMT 3000",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ACC 2110": {
+   "title": "Principles of Accounting I",
+   "credits": 3,
+   "prereqText": "Recommended: ENGL 1010 or ENGL 1005 and MAT 1010 or higher",
+   "prereqs": null
+  },
+  "BMED 5200": {
+   "title": "Methods of Teaching Business/Marketing/Digital Technology",
+   "credits": 3,
+   "prereqText": "( IM 2100 or IM 2600 ), EDSC 3000 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "IM 2100",
+       "IM 2600"
+      ]
+     },
+     "EDSC 3000"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "CYBR 2700": {
+   "title": "Information Security Fundamentals",
+   "credits": 3,
+   "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
+   "prereqs": null
+  },
+  "CYBR 3350": {
+   "title": "Intellectual Property and Cyber Law",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( INFO 1120 or CS 1030 or LEGL 3000 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "INFO 1120",
+       "CS 1030",
+       "LEGL 3000"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ECON 2010": {
+   "title": "Principles of Economics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , MATH 1090 or higher or appropriate test score",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "EDSC 1010": {
+   "title": "Introduction to Education",
+   "credits": 2
+  },
+  "EDSC 3000": {
+   "title": "Educational Psychology",
+   "credits": 3,
+   "prereqText": "Admission to Professional Education Program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 3250G": {
+   "title": "Equitable Technology Integration",
+   "credits": 2,
+   "prereqText": "Admission to Professional Education Program and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 4200": {
+   "title": "Classroom Management I",
+   "credits": 2,
+   "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 4250": {
+   "title": "Classroom Management II",
+   "credits": 2,
+   "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "( EDSC 4850 and EDSC 4990 ) or ( EDSP 4990 and EDSP 4885 or EDSP 4895 )",
+   "coreqs": [
+    "EDSC 4850",
+    "EDSC 4990",
+    "EDSP 4990",
+    "EDSP 4885",
+    "EDSP 4895"
+   ]
+  },
+  "EDSC 4440": {
+   "title": "Content Area Literacies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 4450G": {
+   "title": "Multicultural and Multilingual Education",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 4550G": {
+   "title": "Secondary Curriculum Instruction and Assessment",
+   "credits": 3,
+   "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "EDSC 4850": {
+   "title": "Student Teaching Secondary",
+   "credits": 4,
+   "creditsMax": 10,
+   "prereqText": "University Advanced Standing, admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "EDSC 4250 and EDSC 4990",
+   "coreqs": [
+    "EDSC 4250",
+    "EDSC 4990"
+   ]
+  },
+  "EDSC 4990": {
+   "title": "Teacher Assessment Project",
+   "credits": 2,
+   "prereqText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework; University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "coreqText": "EDSC 4250 and EDSC 4850",
+   "coreqs": [
+    "EDSC 4250",
+    "EDSC 4850"
+   ]
+  },
+  "EDSP 3400G": {
+   "title": "Exceptional Students",
+   "credits": 2
+  },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 1010": {
+   "title": "Introduction to Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate test scores taken within the last five years.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "ENGL 2010": {
+   "title": "Intermediate Academic Writing",
+   "credits": 3,
+   "prereqText": "Appropriate ACT test scores taken within the last three years or completion of ENGL 1010 or ENGL 1010H or ENGL 1005 with a grade of C- or higher.",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1010H",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "FIN 1060": {
+   "title": "Personal Finance",
+   "credits": 3
+  },
+  "HIST 1700": {
+   "title": "American History",
+   "credits": 3
+  },
+  "HIST 1740": {
+   "title": "US Economic History",
+   "credits": 3
+  },
+  "HIST 2700": {
+   "title": "US History to 1877",
+   "credits": 3
+  },
+  "HIST 2710": {
+   "title": "US History since 1877",
+   "credits": 3
+  },
+  "HR 3430": {
+   "title": "Introduction to Human Resource Management",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "HR 3550": {
+   "title": "Organization Development and Change Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 highly recommended",
+   "prereqs": null
+  },
+  "HR 3570": {
+   "title": "Training and Development",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; HR 3430 recommended",
+   "prereqs": null
+  },
+  "IM 1000": {
+   "title": "Digital Marketing Technologies",
+   "credits": 3
+  },
+  "IM 1010": {
+   "title": "Basic Computer Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skill",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2100": {
+   "title": "Document Processing Applications",
+   "credits": 3,
+   "prereqText": "Basic keyboarding skills",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 2300": {
+   "title": "Information Management Principles",
+   "credits": 3
+  },
+  "IM 2500": {
+   "title": "Graphic Applications",
+   "credits": 3
+  },
+  "IM 2600": {
+   "title": "Spreadsheet Applications",
+   "credits": 3
+  },
+  "IM 2800": {
+   "title": "Digital Business Applications",
+   "credits": 3,
+   "prereqText": "IM 1010",
+   "prereqs": "IM 1010"
+  },
+  "IM 3500": {
+   "title": "Content Creation Applications",
+   "credits": 3,
+   "prereqText": "University Advanced Standing. Basic Computer and online skills.",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "IM 3600": {
+   "title": "Advanced Excel for Decision Making",
+   "credits": 3,
+   "prereqText": "IM 2010 or IM 2600 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "IM 2010",
+     "IM 2600"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "INFO 1120": {
+   "title": "Information Systems and Technology Fundamentals",
+   "credits": 3,
+   "prereqText": "IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 1200": {
+   "title": "Computer Programming I for IS IT",
+   "credits": 3,
+   "prereqText": "MAT 1010 or MAT 1015 recommended; INFO 1120 recommended",
+   "prereqs": null
+  },
+  "INFO 2410": {
+   "title": "Database Fundamentals",
+   "credits": 3,
+   "prereqText": "( INFO 1120 recommended) or ( IM 2010 recommended)",
+   "prereqs": null
+  },
+  "INFO 2420": {
+   "title": "Web Application Design",
+   "credits": 3,
+   "prereqText": "INFO 1120 recommended or IM 1010 recommended",
+   "prereqs": null
+  },
+  "INFO 2500": {
+   "title": "Applied Artificial Intelligence Concepts in Organizations",
+   "credits": 3
+  },
+  "INFO 3120": {
+   "title": "Management Information Systems",
+   "credits": 3,
+   "prereqText": "[( MKTG 2200G or ENGL 2010 ) and (Computer Proficiency or INFO 1120 or IM 2010 or IM 2600 with a grade of C- or better within the past five years) or departmental approval] and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MKTG 2200G",
+       "ENGL 2010"
+      ]
+     },
+     {
+      "or": [
+       "INFO 1120",
+       "IM 2010",
+       "IM 2600"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "INFO 3130": {
+   "title": "Introduction to Applied Data Analytics",
+   "credits": 3,
+   "prereqText": "Basic statistics course ( MGMT 2340 or STAT 1040 or STAT 1045 or STAT 2040 or STAT 2050 or PSY 3110 ), and basic knowledge of Microsoft Excel, or Departmental Approval and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MGMT 2340",
+     "STAT 1040",
+     "STAT 1045",
+     "STAT 2040",
+     "STAT 2050",
+     "PSY 3110"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "INFO 3430": {
+   "title": "Systems Analysis and Design",
+   "credits": 3,
+   "prereqText": "[ INFO 2410 and ( INFO 2420 or CYBR 2700 )] or [ IM 2600 and IM 2800 ] each with a grade of C- or higher within the past seven years] and ( MKTG 2200G or ENGL 2100 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "INFO 2410",
+     {
+      "or": [
+       "INFO 2420",
+       "CYBR 2700",
+       "IM 2600"
+      ]
+     },
+     "IM 2800",
+     {
+      "or": [
+       "MKTG 2200G",
+       "ENGL 2100"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "INFO 3500": {
+   "title": "AI in Learning and Communication",
+   "credits": 3,
+   "prereqText": "INFO 2500 and University Advanced Standing",
+   "prereqs": "INFO 2500",
+   "prereqNonCourse": true
+  },
+  "INFO 4050G": {
+   "title": "Global Ethical and Professional Perspectives in IS and IT",
+   "credits": 3,
+   "prereqText": "INFO 3430 and University Advanced Standing",
+   "prereqs": "INFO 3430",
+   "prereqNonCourse": true
+  },
+  "INFO 4120": {
+   "title": "Data Visualization",
+   "credits": 3,
+   "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
+   "prereqs": null
+  },
+  "LEGL 3000": {
+   "title": "Business Law",
+   "credits": 3,
+   "prereqText": "( ENGL 1010 or ENGL 1005 or appropriate test scores) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1050": {
+   "title": "College Algebra",
+   "credits": 4,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1055": {
+   "title": "College Algebra with Preliminaries",
+   "credits": 5,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MATH 1090": {
+   "title": "College Algebra for Business",
+   "credits": 3,
+   "prereqText": "Within the past two years one of the following: MAT 1010 or MAT 1015 with a grade of C or better or appropriate math placement score.",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 3000": {
+   "title": "Organizational Behavior",
+   "credits": 3,
+   "prereqText": "MKTG 2200G or ENGL 2010 and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "MKTG 2200G",
+     "ENGL 2010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "MKTG 2200G": {
+   "title": "Written Business Communication",
+   "credits": 3
+  },
+  "MKTG 2390": {
+   "title": "Professional Business Presentations",
+   "credits": 3
+  },
+  "MKTG 3600": {
+   "title": "Principles of Marketing",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "POLS 1000": {
+   "title": "American Heritage",
+   "credits": 3
+  },
+  "POLS 1100": {
+   "title": "American National Government",
+   "credits": 3
+  },
+  "PSY 1010": {
+   "title": "General Psychology",
+   "credits": 3
+  },
+  "PSY 3300": {
+   "title": "Motivation and Emotion",
+   "credits": 3,
+   "prereqText": "PSY 1010 , ENGL 2010 (with a C- or higher) or PSY 2020 (with a C- or higher), and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "PSY 1010",
+     {
+      "or": [
+       "ENGL 2010",
+       "PSY 2020"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SLSS 1200": {
+   "title": "The 7 Habits of Highly Effective People",
+   "credits": 3
+  },
+  "TECH 3400": {
+   "title": "Project Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "TECH 4400": {
+   "title": "Advanced Project Management",
+   "credits": 3,
+   "prereqText": "TECH 3400 with a C- or higher; University Advanced Standing",
+   "prereqs": "TECH 3400",
+   "prereqNonCourse": true
+  }
+ }
+}

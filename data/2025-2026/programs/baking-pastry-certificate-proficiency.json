@@ -1,0 +1,122 @@
+{
+ "id": "baking-pastry-certificate-proficiency",
+ "name": "Baking and Pastry, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/culinary-arts-institute/baking-pastry-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 16,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1140",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1150",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1160",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1170",
+   "alts": [],
+   "credits": 5
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 1490",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "CA 2130",
+   "alts": [],
+   "credits": 5
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CA 1140",
+     "credits": 1
+    },
+    {
+     "code": "CA 1150",
+     "credits": 3
+    },
+    {
+     "code": "CA 1160",
+     "credits": 1
+    },
+    {
+     "code": "CA 1170",
+     "credits": 5
+    },
+    {
+     "code": "CA 1490",
+     "credits": 1
+    },
+    {
+     "code": "CA 2130",
+     "credits": 5
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CA 1140": {
+   "title": "Professional Dining Room Services",
+   "credits": 1,
+   "prereqText": "Acceptance into the Culinary Arts Institute",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CA 1150": {
+   "title": "Nutrition and Food Service",
+   "credits": 3
+  },
+  "CA 1160": {
+   "title": "Culinary Math",
+   "credits": 1,
+   "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CA 1170": {
+   "title": "Pastry and Baking Skills",
+   "credits": 5,
+   "prereqText": "Food Handlers permit or ServSafe Certfication. Acceptance into the Culinary Arts Institute.",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "CA 1490",
+   "precoreqs": "CA 1490"
+  },
+  "CA 1490": {
+   "title": "Food Service Sanitation",
+   "credits": 1
+  },
+  "CA 2130": {
+   "title": "Advanced Pastry Baking",
+   "credits": 5,
+   "prereqText": "CA 1170",
+   "prereqs": "CA 1170"
+  }
+ }
+}

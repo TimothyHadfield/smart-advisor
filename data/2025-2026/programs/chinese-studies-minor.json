@@ -1,0 +1,268 @@
+{
+ "id": "chinese-studies-minor",
+ "name": "Chinese Studies, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/chinese-studies-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 19,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHST 2000G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "CHIN 2010",
+   "alts": [],
+   "credits": 4
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Chinese Studies Elective",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "CHIN 2020G"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "CHST 3620G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 3630G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHIN 3510G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 3730G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 3750G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 4160G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHIN 3650"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHIN 3690"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHIN 4250"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 3739"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CHST 3650"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 hours of advisor-approved upper division electives from the following:",
+   "notes": [
+    "Other advisor-approved course"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "CHIN 2010",
+     "credits": 4
+    },
+    {
+     "code": "CHST 2000G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "label": "Chinese Studies Elective",
+     "credits": 3
+    },
+    {
+     "label": "Chinese Studies Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "label": "Chinese Studies Elective",
+     "credits": 3
+    },
+    {
+     "label": "Chinese Studies Elective",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "CHIN 2010": {
+   "title": "Intermediate Chinese I",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of CHIN 1020",
+   "prereqs": "CHIN 1020",
+   "prereqNonCourse": true
+  },
+  "CHIN 2020G": {
+   "title": "Intermediate Chinese II",
+   "credits": 4,
+   "prereqText": "Students need equivalent knowledge of CHIN 2010",
+   "prereqs": "CHIN 2010",
+   "prereqNonCourse": true
+  },
+  "CHIN 3510G": {
+   "title": "Chinese Culture and Civilization",
+   "credits": 3,
+   "prereqText": "( CHIN 3050 or equivalent) and University Advanced Standing",
+   "prereqs": "CHIN 3050",
+   "prereqNonCourse": true
+  },
+  "CHIN 3650": {
+   "title": "Modern Chinese Literature from 1900",
+   "credits": 3,
+   "prereqText": "CHIN 3030 or CHIN 3050 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CHIN 3030",
+     "CHIN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CHIN 3690": {
+   "title": "Modern China Through Film",
+   "credits": 3,
+   "prereqText": "CHIN 3050 and University Advanced Standing",
+   "prereqs": "CHIN 3050",
+   "prereqNonCourse": true
+  },
+  "CHIN 4250": {
+   "title": "Newspaper Readings",
+   "credits": 3,
+   "prereqText": "CHIN 3030 or CHIN 3050 with a grade of C or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CHIN 3030",
+     "CHIN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CHST 2000G": {
+   "title": "Introduction to Chinese Studies",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "CHST 3620G": {
+   "title": "Traditional Chinese History",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 3630G": {
+   "title": "Modern Chinese History",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 3650": {
+   "title": "China Transformations from 1949",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 3730G": {
+   "title": "Classical Chinese Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 3739": {
+   "title": "Selected Readings from Pre-Qin Writings",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 3750G": {
+   "title": "Modern Chinese Literature",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "CHST 4160G": {
+   "title": "Chinese Culture and Film",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  }
+ }
+}

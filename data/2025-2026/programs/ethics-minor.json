@@ -1,0 +1,498 @@
+{
+ "id": "ethics-minor",
+ "name": "Ethics, Minor",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/ethics-minor/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 18,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 3550G",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "PHIL 4810R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "Elective Requirements",
+   "label": "Ethics Elective",
+   "pick": {
+    "credits": 12
+   },
+   "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "PHIL 1300R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "PHIL 3040"
+     ],
+     "credits": 3,
+     "alts": [
+      "COMM 3040"
+     ]
+    },
+    {
+     "codes": [
+      "PHIL 3450"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3460"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3510"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3520"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3530"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3570R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3700"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 3710"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 4500R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 4510R"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PHIL 4900R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "BIOL 4260"
+     ],
+     "credits": 2
+    },
+    {
+     "codes": [
+      "CS 3050G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ASL 3375"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "CJ 4200"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "PJST 2000"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESFF 2100"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "AVSC 4100G"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "POLS 3300"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "ESMG 4650"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete 12 credits from the following:",
+   "notes": [
+    "other advisor-approved course"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "code": "PHIL 3550G",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 5",
+   "items": [
+    {
+     "label": "Ethics Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 6",
+   "items": [
+    {
+     "label": "Ethics Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 7",
+   "items": [
+    {
+     "label": "Ethics Elective",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 8",
+   "items": [
+    {
+     "label": "Ethics Elective",
+     "credits": 3
+    },
+    {
+     "code": "PHIL 4810R",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "ASL 3375": {
+   "title": "Ethics for Interpreters",
+   "credits": 3,
+   "prereqText": "ASL 3310 and University Advanced Standing",
+   "prereqs": "ASL 3310",
+   "prereqNonCourse": true
+  },
+  "AVSC 4100G": {
+   "title": "Global Ethical and Professional Issues in Aviation",
+   "credits": 3,
+   "prereqText": "AVSC 2150 , PHIL 2050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "AVSC 2150",
+     "PHIL 2050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "BIOL 4260": {
+   "title": "Ethical Issues in Biology",
+   "credits": 2,
+   "prereqText": "BIOL 1010 or BIOL 1610 with a C- or higher, and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1610"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "CJ 4200": {
+   "title": "Ethical Issues in Criminal Justice",
+   "credits": 3,
+   "prereqText": "CJ 1010 and University Advanced Standing",
+   "prereqs": "CJ 1010",
+   "prereqNonCourse": true
+  },
+  "COMM 3040": {
+   "title": "Media Ethics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "CS 3050G": {
+   "title": "Global Social and Ethical Issues in Computing",
+   "credits": 3,
+   "prereqText": "ENGL 2010 and ( CS 1030 or CS 1400 or CS 1420 or INFO 1120 or DGM 1110 ) and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ENGL 2010",
+     {
+      "or": [
+       "CS 1030",
+       "CS 1400",
+       "CS 1420",
+       "INFO 1120",
+       "DGM 1110"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "ESFF 2100": {
+   "title": "Servant-Leadership for the Emergency Services",
+   "credits": 3,
+   "prereqText": "ENGL 1010 or ENGH 1005",
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "ESMG 4650": {
+   "title": "Emergency Services Capstone",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "ESMG 4600",
+   "precoreqs": "ESMG 4600"
+  },
+  "PHIL 1300R": {
+   "title": "Ethics Forum",
+   "credits": 1
+  },
+  "PHIL 3040": {
+   "title": "Media Ethics",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 3450": {
+   "title": "Philosophy of Childhood",
+   "credits": 3,
+   "prereqText": "( PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or PHIL 2110 or PHIL 2150 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G",
+     "PHIL 2110",
+     "PHIL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3460": {
+   "title": "The Ethics of Human/Animal Relationships",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050G or PHIL 2050H or PHIL 1000 or PHIL 1000H ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050G",
+     "PHIL 2050H",
+     "PHIL 1000",
+     "PHIL 1000H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3510": {
+   "title": "Business and Professional Ethics",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3520": {
+   "title": "Bioethics",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3530": {
+   "title": "Environmental Ethics",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3550G": {
+   "title": "Moral Philosophy",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3570R": {
+   "title": "Moral Reasoning Through Case Studies Ethics Bowl",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050G or PHIL 2050H ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050G",
+     "PHIL 2050H"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3700": {
+   "title": "Social and Political Philosophy",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 3710": {
+   "title": "Philosophy of Law",
+   "credits": 3,
+   "prereqText": "( PHIL 1000 or PHIL 1000H or PHIL 2050 or PHIL 2050H or PHIL 2050G or PHIL 2110 or PHIL 2150 or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 1000",
+     "PHIL 1000H",
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G",
+     "PHIL 2110",
+     "PHIL 2150"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 4500R": {
+   "title": "Interdisciplinary Senior Ethics Seminar",
+   "credits": 3,
+   "prereqText": "Instructor approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 4510R": {
+   "title": "Ethical Theory Seminar",
+   "credits": 3,
+   "prereqText": "( PHIL 2050 or PHIL 2050H or PHIL 2050G or instructor approval) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "PHIL 2050",
+     "PHIL 2050H",
+     "PHIL 2050G"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "PHIL 4810R": {
+   "title": "Internship",
+   "credits": 1,
+   "creditsMax": 6,
+   "prereqText": "Departmental chair approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PHIL 4900R": {
+   "title": "Independent Study",
+   "credits": 1,
+   "creditsMax": 3,
+   "prereqText": "Departmental Approval and University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "PJST 2000": {
+   "title": "Introduction to Peace and Justice Studies",
+   "credits": 3
+  },
+  "POLS 3300": {
+   "title": "Introduction to Public Administration",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}

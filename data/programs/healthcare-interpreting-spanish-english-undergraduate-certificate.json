@@ -1,0 +1,169 @@
+{
+ "id": "healthcare-interpreting-spanish-english-undergraduate-certificate",
+ "name": "Healthcare Interpreting Spanish-English, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/healthcare-interpreting-spanish-english-undergraduate-certificate/",
+ "catalogYear": "2026-2027",
+ "fetched": "2026-10-15",
+ "totalCredits": 12,
+ "requirements": [
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 1",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "SPAN 3030",
+      "SPAN 3040"
+     ],
+     "credits": 6
+    },
+    {
+     "codes": [
+      "SPAN 3050"
+     ],
+     "credits": 3
+    }
+   ],
+   "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 3310",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 4110",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "SPAN 4310",
+   "alts": [],
+   "credits": 3
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "label": "Complete one of the following:",
+     "credits": 3
+    },
+    {
+     "code": "SPAN 3030",
+     "alts": [
+      "SPAN 3040"
+     ],
+     "credits": null
+    },
+    {
+     "code": "SPAN 3050",
+     "credits": null
+    },
+    {
+     "label": "Potential elective from outside department can be completed during first semester",
+     "credits": null
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "SPAN 3310",
+     "credits": 3
+    },
+    {
+     "code": "SPAN 4110",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "SPAN 4310",
+     "credits": 3
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "SPAN 3030": {
+   "title": "Spanish Conversation and Composition I",
+   "credits": 3,
+   "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 2020G",
+   "prereqNonCourse": true
+  },
+  "SPAN 3040": {
+   "title": "Spanish Conversation and Composition II",
+   "credits": 3,
+   "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
+   "prereqs": "SPAN 2020G",
+   "prereqNonCourse": true
+  },
+  "SPAN 3050": {
+   "title": "Advanced Spanish",
+   "credits": 3,
+   "prereqText": "It is recommended that students have passed SPAN 2020G , have had one year residency in a Spanish-speaking country, or instructor approval",
+   "prereqs": null
+  },
+  "SPAN 3310": {
+   "title": "Spanish for Healthcare Professionals",
+   "credits": 3,
+   "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 , and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4110": {
+   "title": "Introduction to Translation and Interpreting English-Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3050 or ( SPAN 3030 and SPAN 3040 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "SPAN 3050",
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "SPAN 4310": {
+   "title": "Healthcare Interpreting English-Spanish",
+   "credits": 3,
+   "prereqText": "SPAN 3310 and University Advanced Standing",
+   "prereqs": "SPAN 3310",
+   "prereqNonCourse": true
+  }
+ }
+}

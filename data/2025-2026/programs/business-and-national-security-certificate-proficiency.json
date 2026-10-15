@@ -1,0 +1,307 @@
+{
+ "id": "business-and-national-security-certificate-proficiency",
+ "name": "Business and National Security, Undergraduate Certificate",
+ "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-and-national-security-certificate-proficiency/",
+ "catalogYear": "2025-2026",
+ "fetched": "2026-10-15",
+ "totalCredits": 24,
+ "requirements": [
+  {
+   "type": "course",
+   "area": "",
+   "code": "NSS 2010",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 1300",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 2340",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 2400",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "NSS 4300",
+   "alts": [
+    "NSS 3050"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "",
+   "code": "MGMT 4260",
+   "alts": [
+    "NSS 4800"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "choice",
+   "area": "",
+   "label": "Electives",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
+    {
+     "codes": [
+      "MGMT 4470"
+     ],
+     "credits": 3,
+     "section": "Business courses"
+    },
+    {
+     "codes": [
+      "MGMT 4620"
+     ],
+     "credits": 3,
+     "section": "Business courses"
+    },
+    {
+     "codes": [
+      "NSS 3010R"
+     ],
+     "credits": 3,
+     "section": "NSS courses"
+    },
+    {
+     "codes": [
+      "NSS 4400"
+     ],
+     "credits": 3,
+     "section": "NSS courses"
+    },
+    {
+     "codes": [
+      "NSS 4750R"
+     ],
+     "credits": 3,
+     "section": "NSS courses"
+    }
+   ],
+   "notes": [
+    "Business courses: Or other WSB approved course",
+    "NSS courses: Or other NSS approved course"
+   ]
+  }
+ ],
+ "gradPlan": [
+  {
+   "label": "Semester 1",
+   "items": [
+    {
+     "code": "NSS 2010",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 1300",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 2",
+   "items": [
+    {
+     "code": "MGMT 2340",
+     "credits": 3
+    },
+    {
+     "code": "MGMT 2400",
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 3",
+   "items": [
+    {
+     "code": "NSS 4300",
+     "alts": [
+      "NSS 3050"
+     ],
+     "credits": 3
+    },
+    {
+     "code": "MGMT 4260",
+     "alts": [
+      "NSS 4800"
+     ],
+     "credits": 3
+    }
+   ]
+  },
+  {
+   "label": "Semester 4",
+   "items": [
+    {
+     "label": "Electives",
+     "credits": 6
+    },
+    {
+     "label": "Business courses",
+     "credits": null
+    },
+    {
+     "code": "MGMT 4470",
+     "credits": null
+    },
+    {
+     "code": "MGMT 4620",
+     "credits": null
+    },
+    {
+     "label": "NSS courses",
+     "credits": null
+    },
+    {
+     "code": "NSS 3010R",
+     "credits": null
+    },
+    {
+     "code": "NSS 4400",
+     "credits": null
+    },
+    {
+     "code": "NSS 4750R",
+     "credits": null
+    }
+   ]
+  }
+ ],
+ "courses": {
+  "MGMT 1300": {
+   "title": "Business Security and Resilience",
+   "credits": 3
+  },
+  "MGMT 2340": {
+   "title": "Business Statistics I",
+   "credits": 3,
+   "prereqText": "MATH 1050 , MATH 1055 , or MATH 1090 or higher, or appropriate test scores",
+   "prereqs": {
+    "or": [
+     "MATH 1050",
+     "MATH 1055",
+     "MATH 1090"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "MGMT 2400": {
+   "title": "Data Analytics for Business",
+   "credits": 3
+  },
+  "MGMT 4260": {
+   "title": "Business Analysis and Project Management",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "MGMT 4470": {
+   "title": "Strategic Operational Planning",
+   "credits": 3,
+   "prereqText": "MGMT 3450 and University Advanced Standing",
+   "prereqs": "MGMT 3450",
+   "prereqNonCourse": true
+  },
+  "MGMT 4620": {
+   "title": "Developing Business in China",
+   "credits": 3,
+   "prereqText": "ENGL 2010 , Junior Standing, and University Advanced Standing",
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true
+  },
+  "NSS 2010": {
+   "title": "Introduction to National Security",
+   "credits": 3,
+   "precoreqText": "ENGL 1010 or ENGH 1005",
+   "precoreqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   }
+  },
+  "NSS 3010R": {
+   "title": "National Security Area Studies",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , or HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 3050": {
+   "title": "US Intelligence Community",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
+  "NSS 4300": {
+   "title": "Intelligence Cycle and Collections",
+   "credits": 3,
+   "prereqText": "NSS 2010 , NSS 3050 , and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "NSS 2010",
+     "NSS 3050"
+    ]
+   },
+   "prereqNonCourse": true
+  },
+  "NSS 4400": {
+   "title": "Statecraft and Strategy",
+   "credits": 3,
+   "prereqText": "NSS 2010",
+   "prereqs": "NSS 2010"
+  },
+  "NSS 4750R": {
+   "title": "Current Topics in National Security",
+   "credits": 3,
+   "prereqText": "University Advanced Standing; POLS 1100 , HIST 1700 , HIST 2700 , or CJ 1010",
+   "prereqs": {
+    "and": [
+     "POLS 1100",
+     "HIST 1700",
+     "HIST 2700",
+     "CJ 1010"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "NSS 4800": {
+   "title": "Intelligence Analysis and Tradecraft",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true
+  }
+ }
+}
