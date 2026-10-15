@@ -13,7 +13,7 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 | Area | State | Notes |
 |---|---|---|
 | Repo + Pages + md files | done | github.com/TimothyHadfield/smart-advisor |
-| EE flowchart + auto plan | in progress | phase 1 |
+| EE flowchart + auto plan | live (cdfcd9f) | 50 courses, 122 cr; 10 planner tests pass; phone + desktop checked headless |
 | All majors | not started | phase 2 |
 | Google sign-in (Firebase) | not started | phase 3; create project `smart-advisor-th` via firebase CLI (logged in as timhadfield7@gmail.com) |
 | Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
@@ -34,7 +34,11 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 - Folder lives at `Code Projects/Smart Advisor` (Tim's choice), not in a category folder.
 - Instructor names in UVU data are "F. Lastname" → RMP matching needs last name + department.
 
+- Builder worktrees spawn from the `Code Projects` root repo (Estimator_Quiz), not smart-advisor. Builders must clone smart-advisor inside the worktree; merge with `git fetch <path>/sa <branch>`.
+- Catalog prereqs ignore non-course gates (University Advanced Standing, formal acceptance), grade minimums and fall/spring-only offering; out-of-major prereqs (MATH 1050) assumed met by placement. ECE 2255 lacks a coreq on 2250 in catalog.
+
 ## Decisions
+- 2026-10-15 · Phase 1 UI (Claude's choices, unconfirmed by Tim): laptop = flowchart + plan side by side, no tabs; phone = Flowchart/Plan bottom tabs; gear → Start, Max credits (16), Summers switch, Clear taken; legend Taken/Ready/Locked; dashed boxes for Gen Ed/electives.
 - 2026-10-15 · Plain HTML/CSS/JS, no build step, GitHub Pages. Course data pre-fetched by Node scripts into `data/*.json` (catalog has no CORS for browser fetches; assumed).
 - 2026-10-15 · Firebase (free Spark) only for accounts/saved plans, added in phase 3; phase 1 saves to localStorage.
 
@@ -48,4 +52,7 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 ## Map
 - `direction.md` · Tim's intent · `docs/research.md` · alternatives + data endpoints
+- `scripts/fetch-program.mjs <url> <id>` · scrapes a catalog program → `data/programs/<id>.json`
+- `js/planner.js` (pure) · `js/app.js` + `css/app.css` + `index.html` · UI, localStorage for taken classes
+- Tests: `node tests/planner.test.mjs` · last run 2026-10-15: 10 passed / 0 failed
 - Live: https://timothyhadfield.github.io/smart-advisor/ · hosting: GitHub Pages
