@@ -1,4 +1,4 @@
-import { buildModel, makePlan, flowNodes, flowEdges, unitDone, defaultStartTerm, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, earliestStart, termIndex, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
 import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
@@ -340,10 +340,13 @@ function refresh() {
   if ($('main').dataset.tab === 'sched') renderSched();
 }
 
+const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); return year ? { season, year: +year } : null; };
+// first planned semester: the chosen Start, but never the semester in session (or one the imported audit
+// already shows classes in); a saved Start that has slipped into the past moves up on its own
+const earliest = () => earliestStart({ summers: state.settings.summers, lastTerm: parseTerm(state.settings.lastTerm) });
 function startTerm() {
-  const s = state.settings.start;
-  if (s) { const [season, year] = s.split(' '); return { season, year: +year }; }
-  return defaultStartTerm();
+  const e = earliest(), s = parseTerm(state.settings.start);
+  return s && termIndex(s) > termIndex(e) ? s : e;
 }
 
 const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
@@ -379,10 +382,8 @@ function wireTabs() {
 function wireSettings() {
   const dlg = $('settings');
   const fill = () => {
-    const def = defaultStartTerm();
-    const prev = { season: def.season === 'Spring' ? 'Fall' : 'Spring', year: def.season === 'Spring' ? def.year - 1 : def.year };
-    const terms = [prev];
-    let t = prev;
+    let t = earliest();
+    const terms = [t];
     for (let i = 0; i < 8; i++) { t = nextTerm(t, state.settings.summers); terms.push(t); }
     const cur = termLabel(startTerm());
     $('setStart').innerHTML = terms.map(termLabel).map((l) => `<option${l === cur ? ' selected' : ''}>${l}</option>`).join('');
@@ -413,7 +414,7 @@ function wireSettings() {
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
-  $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; setDone(new Set()); refresh(); });
+  $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; delete state.settings.lastTerm; setDone(new Set()); refresh(); });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
@@ -783,6 +784,8 @@ function wireImport() {
       gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
     }
     setDone(s);
+    // classes in progress (or already registered for next term): the plan starts after that semester
+    if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);
     if (switching) loadPlan(); else refresh();
     dlg.close();
   });

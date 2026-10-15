@@ -290,10 +290,25 @@ export function nextTerm(t, summers = false) {
   do { i++; if (i > 2) { i = 0; y++; } } while (!summers && SEASONS[i] === 'Summer');
   return { season: SEASONS[i], year: y };
 }
-export function defaultStartTerm(date = new Date()) {
-  const m = date.getMonth(); // 0-based
-  if (m <= 3) return { season: 'Fall', year: date.getFullYear() };
-  return { season: 'Spring', year: date.getFullYear() + 1 };
+// The semester in session on a date (UVU: Spring Jan-Apr, Summer May to mid-Aug, Fall from Aug 20).
+export function currentTerm(date = new Date()) {
+  const m = date.getMonth(), y = date.getFullYear(); // m is 0-based
+  if (m <= 3) return { season: 'Spring', year: y };
+  if (m <= 6 || (m === 7 && date.getDate() < 20)) return { season: 'Summer', year: y };
+  return { season: 'Fall', year: y };
+}
+export const termIndex = (t) => t.year * 3 + SEASONS.indexOf(t.season);
+// The plan starts with the first semester after the one in session (never the current one: its classes
+// are already in progress).
+export function defaultStartTerm(date = new Date(), summers = false) {
+  return nextTerm(currentTerm(date), summers);
+}
+// The first semester a plan may start: after today's semester and after the latest semester an imported
+// audit shows classes in (registered for next term already -> start the term after that).
+export function earliestStart({ date = new Date(), summers = false, lastTerm = null } = {}) {
+  let t = defaultStartTerm(date, summers);
+  if (lastTerm && SEASONS.includes(lastTerm.season) && termIndex(lastTerm) >= termIndex(t)) t = nextTerm(lastTerm, summers);
+  return t;
 }
 export const termLabel = (t) => `${t.season} ${t.year}`;
 

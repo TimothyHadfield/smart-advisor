@@ -63,6 +63,8 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 - 2026-10-15 · Flowchart loops: `layered()` drops loop-closing edges before layering (mutual pre-or-co pairs made nursing 63 columns, theatre 11–29); a no-prereq course whose arrows skip 3+ columns moves next to its first course. 20 charts changed, EE unchanged (8 crossings, 46 bends). Plan list: 2 columns `minmax(0,1fr)` so long elective names ellipsize instead of pushing column 2 off.
 
+- 2026-10-15 · Plan start is always future: `earliestStart` = term after today's semester (Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+) and after the latest term on any audit course row (`parseAudit().lastTerm` → `settings.lastTerm`, synced; Clear taken resets it). Saved Start in the past moves up; Start list begins at the earliest allowed term. Tim's audit → Fall 2026 → plan starts Spring 2027.
+
 ## NOT verified
 - v3: dark mode; phone legend's last label sits under the Grades switch (legend scrolls sideways); ECE 3710→3780 still has two jogs.
 - pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).

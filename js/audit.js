@@ -94,7 +94,24 @@ export function parseAudit(text) {
     else if (!ip.has(r.code)) ip.set(r.code, { code: r.code, req });
   }
   for (const c of taken.keys()) ip.delete(c);
-  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()] };
+  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()], lastTerm: latestTerm(lines.filter((l) => codesIn(l).length)) };
+}
+
+// The latest semester named on any course row ("2026 FALL", "Fall 2026", "2026FA", "FA26") -> {season, year} | null
+const SEASON_OF = { FALL: 'Fall', FA: 'Fall', SPRING: 'Spring', SP: 'Spring', SPR: 'Spring', SUMMER: 'Summer', SU: 'Summer', SM: 'Summer', SUM: 'Summer' };
+export function latestTerm(lines) {
+  let best = null;
+  const re = /\b(?:(Fall|Spring|Summer)\s+(\d{4})|(\d{4})\s+(Fall|Spring|Summer)|(\d{4})\s?(FA|SP|SU|SM)|(FA|SP|SU|SM)\s?(\d{2}(?:\d{2})?))\b/gi;
+  for (const l of lines) {
+    for (const m of l.matchAll(re)) {
+      const s = SEASON_OF[(m[1] || m[4] || m[6] || m[7]).toUpperCase()];
+      let y = +(m[2] || m[3] || m[5] || m[8]);
+      if (y < 100) y += 2000;
+      const i = y * 3 + ['Spring', 'Summer', 'Fall'].indexOf(s);
+      if (!best || i > best.i) best = { season: s, year: y, i };
+    }
+  }
+  return best && { season: best.season, year: best.year };
 }
 
 // The audit's header names the student's programs:
