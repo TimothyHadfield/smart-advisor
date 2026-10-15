@@ -1,25 +1,47 @@
 import { buildModel, makePlan, flowNodes, flowEdges, unitDone, defaultStartTerm, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
 import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
+import { toDoc, applyDoc } from './sync.js';
+import { initAccount } from './account.js';
 
 const $ = (id) => document.getElementById(id);
 const PROGRAM = new URLSearchParams(location.search).get('p') || 'ee-bs';
 const KEY = 'smart-advisor:v1';
 
-// ---------- saved state (localStorage; accounts come in a later phase) ----------
+// ---------- saved state (localStorage; a signed-in student's copy also syncs to their account) ----------
 // done[program]   = taken course codes / Gen Ed box ids
 // grades[program] = { code or box id: grade } for what came from an audit ("A-", "TCR", "IP", or "")
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
 }
-function save() {
+function saveLocal() {
   try { localStorage.setItem(KEY, JSON.stringify(state)); } catch {}
 }
+function save() { saveLocal(); account.changed(); }
 const state = load();
-state.settings ??= { max: 16, summers: false, start: null };
-state.settings.grades ??= true;
-state.done ??= {};
-state.grades ??= {};
+function defaults() {
+  state.settings ??= { max: 16, summers: false, start: null };
+  state.settings.grades ??= true;
+  state.done ??= {};
+  state.grades ??= {};
+}
+defaults();
+// accounts (js/account.js): the account's copy replaces this device's; signing out clears it
+const account = initAccount({
+  local: () => toDoc(state, PROGRAM),
+  apply: (doc) => { applyDoc(state, doc, PROGRAM); saveLocal(); redraw(); },
+  clear: () => {
+    for (const k of Object.keys(state)) delete state[k];
+    defaults();
+    try { localStorage.removeItem(KEY); } catch {}
+    redraw();
+  },
+});
+function redraw() {
+  if (!model) return;
+  $('gradesOn').checked = !!state.settings.grades;
+  refresh();
+}
 const doneSet = () => new Set(state.done[PROGRAM] || []);
 function setDone(set) { state.done[PROGRAM] = [...set]; save(); }
 const gradeMap = () => (state.grades[PROGRAM] ??= {});

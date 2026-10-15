@@ -9,6 +9,7 @@
   <span class="brand">Smart Advisor</span>
   <span class="prog" id="progName"></span>
   <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
+  <button class="icon profile" id="profile" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><span id="profileInitial" aria-hidden="true"></span></button>
 </header>
 <main id="main" data-tab="flow">
   <section class="panel flow" id="flowPanel" aria-label="Flowchart">
@@ -47,6 +48,23 @@
       <label class="sw-row">Count in progress <input type="checkbox" id="impIP" role="switch" checked></label>
     </div>
     <div class="row"><button type="button" id="impBack" class="ghost">Cancel</button><button type="button" id="impGo" class="ok">Read</button></div>
+  </form>
+</dialog>
+<dialog id="acct" class="acct">
+  <form method="dialog">
+    <div class="imp-head"><b>Account</b><button type="button" class="tip" id="acctTip" aria-label="Why">?</button>
+      <p class="tiptext" id="acctTipText" hidden>Your classes and settings follow you to any device.</p></div>
+    <div id="acctOut">
+      <button type="button" id="acctGoogle" class="ok wide" disabled>Continue with Google</button>
+    </div>
+    <div id="acctIn" class="acct-in" hidden>
+      <div class="who"><b id="acctName"></b><span id="acctEmail"></span></div>
+      <div class="sync" id="acctSync"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg><span id="acctSyncText"></span></div>
+      <button type="button" id="acctMore" class="ghost wide" aria-expanded="false">Account settings</button>
+      <div id="acctSettings" hidden><button type="button" id="acctDelete" class="danger wide">Delete account</button></div>
+    </div>
+    <p class="acct-msg" id="acctMsg"></p>
+    <div class="row"><button type="button" id="acctSignOut" class="ghost" hidden>Sign out</button><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
 <script type="module" src="js/app.js"></script>

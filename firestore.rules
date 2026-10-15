@@ -2,11 +2,21 @@ rules_version = '2';
 
 // Each signed-in student reads and writes only their own document:
 //   users/{uid}   {taken, grades, settings, program, catalogYear, updatedAt}
-// Everything else is denied.
+// Only those fields, and small (tests/rules.test.mjs). Everything else is denied.
 service cloud.firestore {
   match /databases/{database}/documents {
+    function isOwner(uid) {
+      return request.auth != null && request.auth.uid == uid;
+    }
+    function validDoc(d) {
+      return d.keys().hasOnly(['taken', 'grades', 'settings', 'program', 'catalogYear', 'updatedAt'])
+        && (!('taken' in d) || (d.taken is list && d.taken.size() <= 500))
+        && (!('grades' in d) || (d.grades is map && d.grades.size() <= 500))
+        && (!('settings' in d) || (d.settings is map && d.settings.size() <= 20));
+    }
     match /users/{uid} {
-      allow read, write: if request.auth != null && request.auth.uid == uid;
+      allow read, delete: if isOwner(uid);
+      allow create, update: if isOwner(uid) && validDoc(request.resource.data);
     }
   }
 }
