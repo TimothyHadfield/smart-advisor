@@ -15,9 +15,10 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 | Repo + Pages + md files | done | github.com/TimothyHadfield/smart-advisor |
 | EE flowchart + auto plan | live (cdfcd9f) | 50 courses, 122 cr; 10 planner tests pass; phone + desktop checked headless |
 | Flowchart layout like Tim's | live (bd1827b) | `js/layout.js` layered + crossing reduction; EE crossings 62→8 drawn (Tim's hand chart: 10); elbows, labs folded, Gen Ed row below |
+| Flowchart v3 | live (e76dc76) | names in boxes, bends 104→46, 17/39 straight, 0 overlapping segments, semester colors, tap locks + cascade, Gen Ed section, grades red→green + Grades switch |
 | Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
 | All majors | not started | phase 2 (+ catalog-year archives) |
-| Google sign-in (Firebase) | backend ready, UI not built | project `smart-advisor-th` (Spark, us-central1 Firestore), Google provider on, github.io authorized, owner-only rules deployed (b248015). Web config: `firebase apps:sdkconfig web --project smart-advisor-th`. UI waits for the flowchart builder (both edit js/app.js) |
+| Google sign-in (Firebase) | backend ready, UI builder running (branch accounts) | project `smart-advisor-th` (Spark, us-central1 Firestore), Google provider on, github.io authorized, owner-only rules deployed (b248015). Web config: `firebase apps:sdkconfig web --project smart-advisor-th`. UI waits for the flowchart builder (both edit js/app.js) |
 | Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
 | Rate My Professors | not started | unofficial GraphQL; needs a CORS-free path (fetch at build time via script) |
 
@@ -56,7 +57,10 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 - 2026-10-15 · Layout/import UI choices (unconfirmed): Gen Ed row below chart (Tim's is left), "+Lab" marker, Tim's box colors not copied, buttons "Import audit / Choose PDF / Read / Apply / Count in progress"; folded box Taken only when lecture + lab both taken.
 
+- 2026-10-15 · v3 choices (unconfirmed): 10-hue semester palette (Sp27 orange, Fa27 blue, Sp28 purple, Fa28 teal…), legend "Sp 27", locked = faded semester color, grade badge on box top edge, TR/P/IP tags, Gen Ed below chart, coreqs don't block taps.
+
 ## NOT verified
+- v3: dark mode; phone legend's last label sits under the Grades switch (legend scrolls sideways); ECE 3710→3780 still has two jogs.
 - pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).
 - Whether UVU exposes current-semester sections anywhere without login.
 - Whether RMP GraphQL is callable from a script without being blocked.
