@@ -25,7 +25,7 @@ async function page({ blockFirebase = false } = {}) {
   p.on('console', (m) => { if (m.type() === 'error') p.errors.push(m.text()); });
   return p;
 }
-const taken = (p) => p.evaluate(() => JSON.parse(localStorage.getItem('smart-advisor:v1') || '{}').done?.['ee-bs'] || []);
+const taken = (p) => p.evaluate(() => { const s = JSON.parse(localStorage.getItem('smart-advisor:v1') || '{}'); return s.done?.[s.plan?.programs?.[0] || 'ee-bs'] || []; });
 const tap = (p, id) => p.click(`.box[data-id="${id}"]`);
 async function remote(uid) {
   const r = await fetch(`${FS}/users/${uid}`, { headers: { authorization: 'Bearer owner' } });

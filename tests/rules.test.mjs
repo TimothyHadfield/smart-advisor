@@ -49,6 +49,13 @@ test('only the known fields, and lists stay small', async () => {
   assert.equal(await put('alice', 'users/alice', { ...GOOD, taken: Array.from({ length: 120 }, (_, i) => `X ${i}`) }), 200);
 });
 
+test('a major + minor list (programs) is allowed, small', async () => {
+  const two = ['electrical-engineering-bs', 'environmental-science-management-minor'];
+  assert.equal(await put('alice', 'users/alice', { ...GOOD, program: two[0], programs: two }), 200);
+  assert.equal(await put('alice', 'users/alice', { ...GOOD, programs: Array.from({ length: 7 }, (_, i) => `p${i}`) }), 403);
+  assert.equal(await put('alice', 'users/alice', { ...GOOD, programs: 'electrical-engineering-bs' }), 403);
+});
+
 test('nothing outside users/ is readable or writable', async () => {
   assert.equal(await put('alice', 'other/x', { a: 1 }), 403);
   assert.equal(await call('GET', 'alice', 'other/x'), 403);

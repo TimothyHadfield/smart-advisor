@@ -13,7 +13,7 @@
 //                (that's the outside course, not the UVU one), Planned / Not started rows, the
 //                Insufficient and Not counted blocks, failing grades (F, W, ...)
 //
-// parseAudit(text) -> { catalogYear, taken: [{code, grade, req}], inProgress: [{code, req}] }
+// parseAudit(text) -> { catalogYear, majors, minors, programs, taken: [{code, grade, req}], inProgress: [{code, req}] }
 //   codes look like "ECE 2250", "ECE 4810R", "SLSS 101R"; req = the requirement label printed before
 //   the course on its row (used to fill Gen Ed boxes like "Fine Arts Distribution").
 
@@ -94,7 +94,43 @@ export function parseAudit(text) {
     else if (!ip.has(r.code)) ip.set(r.code, { code: r.code, req });
   }
   for (const c of taken.keys()) ip.delete(c);
-  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, taken: [...taken.values()], inProgress: [...ip.values()] };
+  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()] };
+}
+
+// The audit's header names the student's programs:
+//   "Level Undergraduate    Classification Junior    Major Electrical Engineering    Minor Environmental
+//    Science & Management    Program Electrical Engineering-BS    College ...    Catalog Year 2025-2026 (BS-EE1)"
+// Fields are 3+ spaces (or tabs) apart and wrap onto the next line anywhere. Only the lines before the
+// first requirement block are read ("Minor Requirements Still needed: See MINOR: ..." further down is not
+// a header). -> { majors: [...], minors: [...], programs: ["Electrical Engineering-BS"] }
+const HEAD_KEY = /(?:Level|Classification|Majors?|Minors?|Programs?|College|Catalog\s+Year|Degree(?:\s+Effective\s+Term)?|Concentrations?|Emphasis|Advisor(?:\s+Email)?|Student(?:\s+(?:name|ID))?|Completion\s+Rate|Academic\s+Standing|Transfer\s+Credits|Overall\s+GPA|Priority|Audit\s+date)/;
+export function auditHeader(text) {
+  const lines = String(text || '').replace(/ /g, ' ').replace(/\r/g, '').split('\n');
+  const head = [];
+  for (const l of lines.slice(0, 80)) {
+    if (/credits\s+required|\b(?:IN)?COMPLETE\s*$|still\s+needed/i.test(l)) break;
+    head.push(l.replace(/\s+$/, ''));
+  }
+  // a wrapped field: "Program Electrical" + "Engineering-BS" (joined with two spaces, so a real 3+ space
+  // gap still separates fields); a new key after two spaces also starts a field
+  const flat = head.join('  ').replace(/\t/g, '    ');
+  const keyAhead = new RegExp('\\s{2}(?=' + HEAD_KEY.source + '\\s)');
+  const chunks = flat.split(/\s{3,}/).flatMap((c) => c.split(keyAhead));
+  const out = { majors: [], minors: [], programs: [] };
+  for (let i = 0; i < chunks.length; i++) {
+    // "Major Electrical Engineering", or the key and its value in cells of their own (a pasted table)
+    const lone = chunks[i].trim().match(/^(Majors?|Minors?|Programs?)\s*:?$/);
+    const m = lone && chunks[i + 1] ? [null, lone[1], chunks[++i].trim()] : chunks[i].trim().match(/^(Majors?|Minors?|Programs?)\s*:?\s+(.+)$/);
+    if (!m) continue;
+    const key = m[1].replace(/s$/, '').toLowerCase();
+    for (const v of m[2].split(/\s*;\s*/)) {
+      const val = v.replace(/\s+/g, ' ').replace(/\s*-\s*/g, '-').trim();
+      if (!val || /^requirements?\b/i.test(val)) continue;
+      const list = out[key === 'major' ? 'majors' : key === 'minor' ? 'minors' : 'programs'];
+      if (!list.includes(val)) list.push(val);
+    }
+  }
+  return out;
 }
 
 function hasEvidence(s) {

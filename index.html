@@ -7,7 +7,7 @@
 </head><body>
 <header class="top">
   <span class="brand">Smart Advisor</span>
-  <span class="prog" id="progName"></span>
+  <button class="prog" id="progName" aria-haspopup="dialog" title="Programs"></button>
   <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
   <button class="icon profile" id="profile" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><span id="profileInitial" aria-hidden="true"></span></button>
 </header>
@@ -43,11 +43,22 @@
       <label class="ghost file">Choose PDF<input type="file" id="impFile" accept="application/pdf,.pdf"></label>
     </div>
     <div class="imp-body" id="impStep2" hidden>
+      <ul class="imp-list imp-prog" id="impProg" hidden></ul>
       <div class="imp-sum" id="impSum"></div>
       <ul class="imp-list" id="impList"></ul>
       <label class="sw-row">Count in progress <input type="checkbox" id="impIP" role="switch" checked></label>
     </div>
     <div class="row"><button type="button" id="impBack" class="ghost">Cancel</button><button type="button" id="impGo" class="ok">Read</button></div>
+  </form>
+</dialog>
+<dialog id="pick" class="pick">
+  <form method="dialog">
+    <ul class="chosen" id="pickChosen"></ul>
+    <label id="pickYearRow">Catalog <select id="pickYear"></select></label>
+    <input type="search" id="pickQ" placeholder="Search" autocomplete="off" spellcheck="false" enterkeyhint="search">
+    <div class="seg" id="pickSeg"><button type="button" data-g="major" class="on">Majors</button><button type="button" data-g="minor">Minors</button><button type="button" data-g="cert">Certificates</button></div>
+    <ul class="pick-list" id="pickList"></ul>
+    <div class="row"><span></span><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
 <dialog id="acct" class="acct">
