@@ -223,3 +223,17 @@ test('real EE chart with labs folded into their lecture: few crossings, every la
   assert.ok(!F.nodes.some((n) => folded.includes(n.id)));
   assert.ok(F.edges.some((e) => e.from === 'ECE 2250' && e.to === 'ECE 3760'), 'lab arrows move to the lecture box');
 });
+
+test('a mutual prereq-or-coreq pair (A <-> B) does not push the chart dozens of columns right', () => {
+  const ns = ['A', 'B', 'C', 'D'].map((id) => ({ id }));
+  const es = [{ from: 'A', to: 'B' }, { from: 'B', to: 'A' }, { from: 'A', to: 'C' }, { from: 'B', to: 'C' }, { from: 'C', to: 'D' }];
+  const L = layoutGraph(ns, es);
+  assert.ok(L.columns <= 4, `columns ${L.columns}`);
+});
+
+test('a course with no prereqs sits just before its only course instead of far left', () => {
+  const ns = ['A', 'B', 'C', 'D', 'X'].map((id) => ({ id }));
+  const es = [{ from: 'A', to: 'B' }, { from: 'B', to: 'C' }, { from: 'C', to: 'D' }, { from: 'X', to: 'D' }];
+  const L = layoutGraph(ns, es);
+  assert.equal(L.pos.get('D').col - L.pos.get('X').col, 1);
+});

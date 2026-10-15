@@ -115,6 +115,23 @@ function layered(nodes, edges, opts = {}) {
   const isolated = ids.filter(isIso);
   const graphIds = ids.filter((id) => !isIso(id));
 
+  // ---- 0. break prereq loops ----
+  // Mutual "prereq or coreq" pairs (NURS 2300 <-> 2320) and catalog slips make loops; longest-path
+  // layering would push a loop right on every pass (nursing ended up 63 columns wide). Drop each edge
+  // that closes a loop (depth-first, in box order) so the earlier course stays left of its partner.
+  {
+    const out = new Map(graphIds.map((id) => [id, []]));
+    edges.forEach((e) => out.get(e.from)?.push(e));
+    const state = new Map(), back = new Set();
+    const visit = (id) => {
+      state.set(id, 1);
+      for (const e of out.get(id) || []) { const s = state.get(e.to); if (s === 1) back.add(e); else if (!s) visit(e.to); }
+      state.set(id, 2);
+    };
+    graphIds.forEach((id) => { if (!state.get(id)) visit(id); });
+    if (back.size) edges = edges.filter((e) => !back.has(e));
+  }
+
   // ---- 1. layers (longest path, labs share their lecture's layer) ----
   const layer = new Map(graphIds.map((id) => [id, 0]));
   for (let pass = 0; pass <= graphIds.length + 2; pass++) {
@@ -126,6 +143,15 @@ function layered(nodes, edges, opts = {}) {
       if (layer.get(a) !== m || layer.get(b) !== m) { layer.set(a, m); layer.set(b, m); changed = true; }
     }
     if (!changed) break; // (a prereq loop would keep changing; the pass limit stops it)
+  }
+  // a course with no prereqs here whose arrows would all cross 3+ columns (CIVE 3310 -> 3335) moves
+  // right to sit just before its first course, so its arrows stay short
+  for (const id of graphIds) {
+    if (partnerOf.has(id) || edges.some((e) => e.to === id)) continue;
+    const kids = edges.filter((e) => e.from === id).map((e) => layer.get(e.to));
+    if (!kids.length) continue;
+    const t = Math.min(...kids) - 1;
+    if (t - layer.get(id) >= 2) layer.set(id, t);
   }
   const fwd = edges.filter((e) => layer.get(e.to) > layer.get(e.from)); // drop anything a loop left backwards
   const nLayers = graphIds.length ? Math.max(...graphIds.map((id) => layer.get(id))) + 1 : 0;
