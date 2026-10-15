@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -297,8 +301,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Physical Science",
@@ -329,8 +334,9 @@
      "credits": 4
     },
     {
-     "label": "Social Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science"
     },
     {
      "code": "NUTR 1020",
@@ -358,8 +364,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "label": "Electives 1000+",
@@ -725,5 +732,7 @@
     ]
    }
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Students will apply for formal admission to the Secondary Education Program."
 }

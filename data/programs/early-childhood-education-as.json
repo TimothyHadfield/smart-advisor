@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -252,35 +257,39 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 2000",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 2000"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 2000"
+      ]
+     ]
     },
     {
      "code": "PSY 1100",
@@ -291,8 +300,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -312,8 +322,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "Social Behavioral Science",
@@ -325,8 +336,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -346,30 +358,33 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "HIST 2700",
+     "credits": 3,
      "alts": [
-      "HIST 2710"
+      "HIST 1700",
+      "HIST 1740",
+      "HIST 2700",
+      "HIST 2710",
+      "POLS 1000",
+      "POLS 1100"
      ],
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
+     "options": [
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "HIST 2700",
+       "HIST 2710"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ]
+     ]
     }
    ]
   },
@@ -508,7 +523,11 @@
      "EDEC 2610",
      "EDEC 2620"
     ]
-   }
+   },
+   "preco": [
+    "EDEC 2610",
+    "EDEC 2620"
+   ]
   },
   "EDEC 2720": {
    "title": "Early Childhood Assessment",
@@ -532,7 +551,11 @@
      "EDEC 2610",
      "EDEC 2620"
     ]
-   }
+   },
+   "preco": [
+    "EDEC 2610",
+    "EDEC 2620"
+   ]
   },
   "EDEL 2200": {
    "title": "Introduction to Educational Technology",
@@ -588,6 +611,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

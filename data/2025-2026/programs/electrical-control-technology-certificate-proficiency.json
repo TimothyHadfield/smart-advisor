@@ -164,7 +164,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1135": {
    "title": "Introduction to Automation Lab",
@@ -176,7 +179,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1140": {
    "title": "Applied AC Theory",
@@ -194,7 +200,14 @@
      "AET 1150",
      "AET 1155"
     ]
-   }
+   },
+   "preco": [
+    "AET 1050",
+    "AET 1130",
+    "AET 1135",
+    "AET 1150",
+    "AET 1155"
+   ]
   },
   "AET 1145": {
    "title": "Applied AC Lab",
@@ -213,7 +226,10 @@
     "AET 1140"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1150": {
    "title": "Industrial Logic",
@@ -225,7 +241,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1155": {
    "title": "Industrial Logic Lab",
@@ -237,7 +256,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1250": {
    "title": "Industrial Electrical Code",
@@ -251,7 +273,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "AET 1060",
-   "precoreqs": "AET 1060"
+   "precoreqs": "AET 1060",
+   "preco": [
+    "AET 1060"
+   ]
   },
   "AET 1280": {
    "title": "Electric Motor Control",
@@ -273,7 +298,11 @@
      "AET 1060",
      "AET 1250"
     ]
-   }
+   },
+   "preco": [
+    "AET 1060",
+    "AET 1250"
+   ]
   },
   "AET 1285": {
    "title": "Electric Motor Control Lab",
@@ -295,7 +324,11 @@
      "AET 1060",
      "AET 1250"
     ]
-   }
+   },
+   "preco": [
+    "AET 1060",
+    "AET 1250"
+   ]
   }
  }
 }

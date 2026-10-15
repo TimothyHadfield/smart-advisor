@@ -376,7 +376,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6930R",
-   "precoreqs": "MFT 6930R"
+   "precoreqs": "MFT 6930R",
+   "preco": [
+    "MFT 6930R"
+   ]
   },
   "MFT 6600": {
    "title": "Capstone in MFT",
@@ -385,7 +388,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6930R",
-   "precoreqs": "MFT 6930R"
+   "precoreqs": "MFT 6930R",
+   "preco": [
+    "MFT 6930R"
+   ]
   },
   "MFT 6790R": {
    "title": "Special Topics in MFT",
@@ -409,7 +415,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6900R",
-   "precoreqs": "MFT 6900R"
+   "precoreqs": "MFT 6900R",
+   "preco": [
+    "MFT 6900R"
+   ]
   },
   "MFT 6920R": {
    "title": "Practicum II",
@@ -418,7 +427,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6910R",
-   "precoreqs": "MFT 6910R"
+   "precoreqs": "MFT 6910R",
+   "preco": [
+    "MFT 6910R"
+   ]
   },
   "MFT 6930R": {
    "title": "Practicum III",
@@ -427,7 +439,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6920R",
-   "precoreqs": "MFT 6920R"
+   "precoreqs": "MFT 6920R",
+   "preco": [
+    "MFT 6920R"
+   ]
   },
   "MFT 6940R": {
    "title": "Practicum IV",
@@ -436,7 +451,12 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MFT 6930R",
-   "precoreqs": "MFT 6930R"
+   "precoreqs": "MFT 6930R",
+   "preco": [
+    "MFT 6930R"
+   ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
 }

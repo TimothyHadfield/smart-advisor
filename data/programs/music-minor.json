@@ -23,7 +23,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Large Ensemble",
+   "label": "MUSC Elective",
    "pick": {
     "credits": 4
    },
@@ -59,7 +59,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 4 credits",
+   "label": "Large Ensemble",
    "pick": {
     "credits": 4
    },
@@ -173,15 +173,19 @@
     },
     {
      "code": "MUSC 1450R",
-     "credits": 1
-    },
-    {
-     "code": "MUSC 2450R",
-     "credits": null
-    },
-    {
-     "code": "MUSC 2500R",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MUSC 2450R",
+      "MUSC 2500R"
+     ],
+     "options": [
+      [
+       "MUSC 2450R"
+      ],
+      [
+       "MUSC 2500R"
+      ]
+     ]
     },
     {
      "label": "Large Ensemble",
@@ -194,15 +198,19 @@
    "items": [
     {
      "code": "MUSC 1450R",
-     "credits": 1
-    },
-    {
-     "code": "MUSC 2450R",
-     "credits": null
-    },
-    {
-     "code": "MUSC 2500R",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MUSC 2450R",
+      "MUSC 2500R"
+     ],
+     "options": [
+      [
+       "MUSC 2450R"
+      ],
+      [
+       "MUSC 2500R"
+      ]
+     ]
     },
     {
      "label": "MUSC Elective",
@@ -219,15 +227,19 @@
    "items": [
     {
      "code": "MUSC 1450R",
-     "credits": 1
-    },
-    {
-     "code": "MUSC 2450R",
-     "credits": null
-    },
-    {
-     "code": "MUSC 2500R",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MUSC 2450R",
+      "MUSC 2500R"
+     ],
+     "options": [
+      [
+       "MUSC 2450R"
+      ],
+      [
+       "MUSC 2500R"
+      ]
+     ]
     },
     {
      "label": "MUSC Elective",
@@ -244,15 +256,19 @@
    "items": [
     {
      "code": "MUSC 1450R",
-     "credits": 1
-    },
-    {
-     "code": "MUSC 2450R",
-     "credits": null
-    },
-    {
-     "code": "MUSC 2500R",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MUSC 2450R",
+      "MUSC 2500R"
+     ],
+     "options": [
+      [
+       "MUSC 2450R"
+      ],
+      [
+       "MUSC 2500R"
+      ]
+     ]
     },
     {
      "label": "MUSC Elective",
@@ -270,12 +286,7 @@
    "title": "Music Theory I",
    "credits": 3,
    "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
-   "prereqs": {
-    "or": [
-     "MUSC 1105",
-     "MUSC 1110"
-    ]
-   },
+   "prereqs": null,
    "prereqNonCourse": true,
    "coreqText": "MUSC 1130",
    "coreqs": [
@@ -413,7 +424,10 @@
     "MUSC 4500R"
    ],
    "precoreqText": "MUSC 4550R",
-   "precoreqs": "MUSC 4550R"
+   "precoreqs": "MUSC 4550R",
+   "preco": [
+    "MUSC 4550R"
+   ]
   }
  }
 }

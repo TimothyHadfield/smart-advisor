@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Elective",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -169,7 +169,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "INFO 2410": {
    "title": "Database Fundamentals",

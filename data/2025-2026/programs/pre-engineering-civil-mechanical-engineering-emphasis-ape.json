@@ -7,10 +7,122 @@
  "totalCredits": 69,
  "requirements": [
   {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "ENGR 1030",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "American Institutions Course",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Social/ Behavioral Science",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
    "type": "placeholder",
    "area": "Associate in Pre-Engineering Requirements",
-   "label": "Complete the requirements",
-   "credits": 44
+   "label": "Humanities",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "MATH 1210",
+   "alts": [],
+   "credits": 4,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "CHEM 1210",
+   "alts": [],
+   "credits": 4,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "CHEM 1215",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Biology",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "MATH 1220",
+   "alts": [],
+   "credits": 4,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "PHYS 2210",
+   "alts": [],
+   "credits": 4,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "PHYS 2215",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "PHYS 2220",
+   "alts": [],
+   "credits": 4,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Associate in Pre-Engineering Requirements",
+   "code": "PHYS 2225",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
   },
   {
    "type": "course",
@@ -258,8 +370,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Civil or Mechanical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -267,20 +380,24 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Elective",
-     "credits": 4
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Civil or Mechanical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 4,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Civil or Mechanical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Civil or Mechanical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Civil or Mechanical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -406,7 +523,10 @@
    "title": "Engineering Programming",
    "credits": 3,
    "precoreqText": "MATH 1210",
-   "precoreqs": "MATH 1210"
+   "precoreqs": "MATH 1210",
+   "preco": [
+    "MATH 1210"
+   ]
   },
   "ENGR 2010": {
    "title": "Engineering Statics",
@@ -453,7 +573,10 @@
    "title": "Computational Methods for Engineering Analysis",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -586,5 +709,6 @@
    },
    "prereqNonCourse": true
   }
- }
+ },
+ "coreFrom": "graduation plan"
 }

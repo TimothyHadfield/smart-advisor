@@ -152,7 +152,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Emphasis Elective",
+   "label": "CS/ ECE Elective",
    "pick": {
     "credits": 6
    },
@@ -239,10 +239,11 @@
     },
     {
      "code": "PHYS 2210",
-     "alts": [
-      "PHYS 2215"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2215",
+     "credits": 1
     },
     {
      "label": "GE",
@@ -295,8 +296,9 @@
      "credits": 3
     },
     {
-     "label": "CS/ECE Elective",
-     "credits": 3
+     "label": "CS/ ECE Elective",
+     "credits": 3,
+     "text": "CS/ECE Elective"
     },
     {
      "label": "Emphasis Elective",

@@ -132,43 +132,47 @@
    "items": [
     {
      "label": "Choose nine hours of the following:",
-     "credits": 9
-    },
-    {
-     "code": "FIN 3150",
-     "credits": null
-    },
-    {
-     "code": "FIN 3400",
-     "credits": null
-    },
-    {
-     "code": "FIN 4100",
-     "credits": null
-    },
-    {
-     "code": "FIN 4160",
-     "credits": null
-    },
-    {
-     "code": "FIN 4170",
-     "credits": null
-    },
-    {
-     "code": "FIN 4180",
-     "credits": null
-    },
-    {
-     "code": "FIN 4190",
-     "credits": null
-    },
-    {
-     "code": "FIN 5130",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3345",
-     "credits": null
+     "credits": 9,
+     "alts": [
+      "FIN 3150",
+      "FIN 3400",
+      "FIN 4100",
+      "FIN 4160",
+      "FIN 4170",
+      "FIN 4180",
+      "FIN 4190",
+      "FIN 5130",
+      "MGMT 3345"
+     ],
+     "options": [
+      [
+       "FIN 3150"
+      ],
+      [
+       "FIN 3400"
+      ],
+      [
+       "FIN 4100"
+      ],
+      [
+       "FIN 4160"
+      ],
+      [
+       "FIN 4170"
+      ],
+      [
+       "FIN 4180"
+      ],
+      [
+       "FIN 4190"
+      ],
+      [
+       "FIN 5130"
+      ],
+      [
+       "MGMT 3345"
+      ]
+     ]
     }
    ]
   }
@@ -238,7 +242,10 @@
    "prereqs": "FIN 3400",
    "prereqNonCourse": true,
    "precoreqText": "MGMT 3345",
-   "precoreqs": "MGMT 3345"
+   "precoreqs": "MGMT 3345",
+   "preco": [
+    "MGMT 3345"
+   ]
   },
   "FIN 4170": {
    "title": "Derivative Securities",
@@ -247,7 +254,10 @@
    "prereqs": "FIN 3100",
    "prereqNonCourse": true,
    "precoreqText": "MGMT 3345",
-   "precoreqs": "MGMT 3345"
+   "precoreqs": "MGMT 3345",
+   "preco": [
+    "MGMT 3345"
+   ]
   },
   "FIN 4180": {
    "title": "International Finance",

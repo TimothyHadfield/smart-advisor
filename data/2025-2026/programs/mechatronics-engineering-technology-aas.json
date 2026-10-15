@@ -18,20 +18,29 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities ( ENGL 2100 Recommended)",
-   "credits": 3
+   "label": "Humanities (ENGL 2100 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "ENGL 2100"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social Science ( ECON 1010 Recommended)",
-   "credits": 3
+   "label": "Social Science (ECON 1010 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "ECON 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science ( PHYS 1010 Recommended)",
-   "credits": 3
+   "label": "Physical Science (PHYS 1010 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "PHYS 1010"
+   ]
   },
   {
    "type": "course",
@@ -259,8 +268,12 @@
    "label": "Semester 3",
    "items": [
     {
-     "code": "ECON 1010",
-     "credits": 3
+     "label": "Social Science (ECON 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "ECON 1010"
+     ],
+     "text": "Social Science Distribution (ECON 1010 Recommended)"
     },
     {
      "code": "MECH 2400",
@@ -288,12 +301,20 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "ENGL 2100",
-     "credits": 3
+     "label": "Humanities (ENGL 2100 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "ENGL 2100"
+     ],
+     "text": "Humanities Distribution (ENGL 2100 Recommended)"
     },
     {
-     "code": "PHYS 1010",
-     "credits": 3
+     "label": "Physical Science (PHYS 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010"
+     ],
+     "text": "Physical Science Distribution (PHYS 1010 Recommended)"
     },
     {
      "code": "MECH 2550",
@@ -323,10 +344,6 @@
   }
  ],
  "courses": {
-  "ECON 1010": {
-   "title": "Economics as a Social Science",
-   "credits": 3
-  },
   "EGDT 1071": {
    "title": "3 Dimensional Modeling--Solidworks",
    "credits": 3
@@ -344,17 +361,6 @@
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
    "prereqNonCourse": true
-  },
-  "ENGL 2100": {
-   "title": "Technical Communication",
-   "credits": 3,
-   "prereqText": "ENGL 1010 or ENGH 1005",
-   "prereqs": {
-    "or": [
-     "ENGL 1010",
-     "ENGH 1005"
-    ]
-   }
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -392,7 +398,10 @@
     "MECH 1205"
    ],
    "precoreqText": "MAT 1010",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "MECH 1205": {
    "title": "Electronics in Automation Design Laboratory",
@@ -410,7 +419,10 @@
     "MECH 1305"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 1305": {
    "title": "Industrial Wiring for Mechatronic Systems Laboratory",
@@ -420,7 +432,10 @@
     "MECH 1300"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 2200": {
    "title": "Semiconductors in Mechatronic Systems",
@@ -467,7 +482,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   },
   "MECH 2305": {
    "title": "Microcontroller Architecture and Programming Lab",
@@ -491,7 +510,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   },
   "MECH 2400": {
    "title": "Mechanical Components",
@@ -537,7 +560,10 @@
     "MECH 2515"
    ],
    "precoreqText": "MECH 2500",
-   "precoreqs": "MECH 2500"
+   "precoreqs": "MECH 2500",
+   "preco": [
+    "MECH 2500"
+   ]
   },
   "MECH 2515": {
    "title": "Fundamentals of Automation Controls Laboratory",
@@ -547,7 +573,10 @@
     "MECH 2510"
    ],
    "precoreqText": "MECH 2500",
-   "precoreqs": "MECH 2500"
+   "precoreqs": "MECH 2500",
+   "preco": [
+    "MECH 2500"
+   ]
   },
   "MECH 2550": {
    "title": "Advanced PLC Programming and Applications",
@@ -618,10 +647,6 @@
    "coreqs": [
     "MECH 2700"
    ]
-  },
-  "PHYS 1010": {
-   "title": "Elementary Physics",
-   "credits": 3
   }
  }
 }

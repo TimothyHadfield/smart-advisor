@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -337,7 +342,10 @@
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Secondary Education Licensure"
+   ]
   },
   {
    "type": "course",
@@ -437,8 +445,9 @@
      "credits": 3
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     }
    ]
   },
@@ -454,8 +463,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "ENGL 2850",
@@ -478,12 +488,14 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "Elective",
-     "credits": 2
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 2,
+     "text": "Elective"
     },
     {
      "code": "ENGL 2700G",
@@ -503,8 +515,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "EDSC 1010",
@@ -524,8 +537,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -558,8 +572,9 @@
      "credits": 2
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -620,8 +635,9 @@
      "credits": 2
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -781,19 +797,28 @@
    "title": "Introduction to the English Major",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2850": {
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3090": {
    "title": "Academic Writing for English Majors",
@@ -988,7 +1013,10 @@
     "ENGL 4235"
    ],
    "precoreqText": "ENGL 4220",
-   "precoreqs": "ENGL 4220"
+   "precoreqs": "ENGL 4220",
+   "preco": [
+    "ENGL 4220"
+   ]
   },
   "ENGL 4235": {
    "title": "Teaching Writing Practicum",
@@ -1060,6 +1088,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

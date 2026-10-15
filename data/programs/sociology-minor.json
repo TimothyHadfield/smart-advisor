@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 6 credits",
+   "label": "SOC Elective",
    "pick": {
     "credits": 6
    },
@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "SOC Elective",
+   "label": "Choose 4",
    "pick": {
     "count": 4
    },
@@ -174,7 +174,8 @@
      "codes": [
       "SOC 4750R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -192,7 +193,8 @@
      "codes": [
       "SOC 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete any 4 of the following classes (with at least 3 upper division)"

@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "General Education",
-   "label": "Choose 1",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -49,7 +49,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "course",
@@ -290,10 +291,11 @@
    "items": [
     {
      "code": "ZOOL 2320",
-     "alts": [
-      "ZOOL 2325"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
     },
     {
      "code": "COMM 1020",
@@ -317,17 +319,19 @@
     },
     {
      "code": "PTA 2010",
-     "alts": [
-      "PTA 2015"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "PTA 2015",
+     "credits": 1
     },
     {
      "code": "PTA 2100",
-     "alts": [
-      "PTA 2105"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "PTA 2105",
+     "credits": 1
     },
     {
      "code": "PTA 2400",
@@ -340,17 +344,19 @@
    "items": [
     {
      "code": "PTA 2300",
-     "alts": [
-      "PTA 2305"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "PTA 2305",
+     "credits": 1
     },
     {
      "code": "PTA 2200",
-     "alts": [
-      "PTA 2205"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "PTA 2205",
+     "credits": 1
     },
     {
      "code": "PTA 2500",
@@ -367,24 +373,27 @@
    "items": [
     {
      "code": "PTA 3100",
-     "alts": [
-      "PTA 3105"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "PTA 3105",
+     "credits": 1
     },
     {
      "code": "PTA 3500",
-     "alts": [
-      "PTA 3505"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "PTA 3505",
+     "credits": 1
     },
     {
      "code": "PTA 3200",
-     "alts": [
-      "PTA 3205"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "PTA 3205",
+     "credits": 1
     },
     {
      "code": "PTA 3700",
@@ -397,17 +406,19 @@
    "items": [
     {
      "code": "PTA 3300",
-     "alts": [
-      "PTA 3305"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "PTA 3305",
+     "credits": 1
     },
     {
      "code": "PTA 3600",
-     "alts": [
-      "PTA 3605"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "PTA 3605",
+     "credits": 1
     },
     {
      "code": "PTA 3800",
@@ -786,7 +797,12 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "This program uses a merit-based, competitive admission process."
 }

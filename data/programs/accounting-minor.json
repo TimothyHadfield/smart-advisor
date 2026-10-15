@@ -133,7 +133,8 @@
      "codes": [
       "ACC 4700R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -269,7 +270,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ACC 2115",
-   "precoreqs": "ACC 2115"
+   "precoreqs": "ACC 2115",
+   "preco": [
+    "ACC 2115"
+   ]
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
@@ -340,7 +344,10 @@
    "prereqs": "ACC 3010",
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 4030": {
    "title": "Governmental and Not For Profit Accounting",
@@ -387,7 +394,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 4700R": {
    "title": "Current Topics in Accounting",

@@ -27,7 +27,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 3 credits",
+   "label": "Complete 3 credits from the following:",
    "pick": {
     "credits": 3
    },
@@ -50,7 +50,8 @@
    "notes": [
     "Any PORT 3000 level or higher",
     "Any SPAN 3000 level or higher"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "choice",
@@ -173,7 +174,8 @@
      "codes": [
       "SPAN 3800R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -203,7 +205,8 @@
    "text": "Complete 9 credits from the following:",
    "notes": [
     "Other advisor-approved course."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -224,23 +227,19 @@
    "items": [
     {
      "label": "Complete 3 credits from the following:",
-     "credits": 3
-    },
-    {
-     "code": "PORT 2020G",
-     "credits": null
-    },
-    {
-     "code": "SPAN 2020G",
-     "credits": null
-    },
-    {
-     "code": "PORT 3000",
-     "credits": null
-    },
-    {
-     "code": "SPAN 3000",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "PORT 2020G",
+      "SPAN 2020G"
+     ],
+     "options": [
+      [
+       "PORT 2020G"
+      ],
+      [
+       "SPAN 2020G"
+      ]
+     ]
     }
    ]
   },
@@ -423,7 +422,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "PORT 3050",
-   "precoreqs": "PORT 3050"
+   "precoreqs": "PORT 3050",
+   "preco": [
+    "PORT 3050"
+   ]
   },
   "SPAN 2020G": {
    "title": "Intermediate Spanish II",
@@ -527,9 +529,5 @@
    "prereqs": "SPAN 3050",
    "prereqNonCourse": true
   }
- },
- "missingCourses": [
-  "PORT 3000",
-  "SPAN 3000"
- ]
+ }
 }

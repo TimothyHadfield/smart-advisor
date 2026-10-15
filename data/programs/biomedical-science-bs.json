@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "FINE ARTS",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,13 +72,20 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHIL 2050G"
+   ]
   },
   {
    "type": "placeholder",
@@ -96,7 +103,10 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PSY 1010"
+   ]
   },
   {
    "type": "course",
@@ -350,9 +360,12 @@
     },
     {
      "codes": [
-      "CHEM 3620"
+      "BIOL 3620"
      ],
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "CHEM 3620"
+     ]
     },
     {
      "codes": [
@@ -415,7 +428,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -454,19 +468,22 @@
      "codes": [
       "BIOL 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "BIOL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "BIOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -484,7 +501,8 @@
      "codes": [
       "BIOL 4990R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 2
     },
     {
      "codes": [
@@ -550,9 +568,12 @@
     },
     {
      "codes": [
-      "MICR 4100"
+      "ZOOL 4100"
      ],
-     "credits": 4
+     "credits": 4,
+     "alts": [
+      "MICR 4100"
+     ]
     },
     {
      "codes": [
@@ -564,13 +585,15 @@
      "codes": [
       "ZOOL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "ZOOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -669,7 +692,8 @@
    "notes": [
     "Any course in the Choose 3 category of the core",
     "Additional credits according to credit and upper division requirements"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -696,8 +720,9 @@
      "credits": 4
     },
     {
-     "label": "FINE ARTS",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ARTS"
     }
    ]
   },
@@ -710,18 +735,21 @@
     },
     {
      "code": "CHEM 1210",
-     "alts": [
-      "CHEM 1215"
-     ],
-     "credits": 5
+     "credits": 4
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "code": "CHEM 1215",
+     "credits": 1
     },
     {
-     "label": "SOCIAL/BEHAVIORAL SCIENCE",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
+    },
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "SOCIAL/BEHAVIORAL SCIENCE"
     },
     {
      "label": "Elective",
@@ -742,17 +770,19 @@
     },
     {
      "code": "CHEM 1220",
-     "alts": [
-      "CHEM 1225"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1225",
+     "credits": 1
     },
     {
      "code": "ZOOL 2320",
-     "alts": [
-      "ZOOL 2325"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
     }
    ]
   },
@@ -761,10 +791,11 @@
    "items": [
     {
      "code": "CHEM 2310",
-     "alts": [
-      "CHEM 2315"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2315",
+     "credits": 1
     },
     {
      "label": "Personal, Professional, and Civic Growth GE class",
@@ -772,10 +803,11 @@
     },
     {
      "code": "ZOOL 2420",
-     "alts": [
-      "ZOOL 2425"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
     },
     {
      "code": "BIOL 4940",
@@ -795,10 +827,11 @@
     },
     {
      "code": "CHEM 2320",
-     "alts": [
-      "CHEM 2325"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2325",
+     "credits": 1
     },
     {
      "code": "STAT 2040",
@@ -818,10 +851,11 @@
    "items": [
     {
      "code": "PHYS 2010",
-     "alts": [
-      "PHYS 2015"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
     },
     {
      "code": "BIOL 3600",
@@ -842,17 +876,19 @@
    "items": [
     {
      "code": "PHYS 2020",
-     "alts": [
-      "PHYS 2025"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2025",
+     "credits": 1
     },
     {
      "code": "MICR 2060",
-     "alts": [
-      "MICR 2065"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "MICR 2065",
+     "credits": 1
     },
     {
      "code": "BIOL 4560",
@@ -881,11 +917,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -897,7 +941,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -992,7 +1039,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3400",
-   "precoreqs": "BIOL 3400"
+   "precoreqs": "BIOL 3400",
+   "preco": [
+    "BIOL 3400"
+   ]
   },
   "BIOL 3500": {
    "title": "Genetics",
@@ -1008,7 +1058,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3500",
-   "precoreqs": "BIOL 3500"
+   "precoreqs": "BIOL 3500",
+   "preco": [
+    "BIOL 3500"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -1035,7 +1088,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "BIOL 3690R": {
    "title": "Introduction to Undergraduate Research",
@@ -1374,7 +1430,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "EXSC 2700G": {
    "title": "Foundations of Exercise Science",
@@ -1432,7 +1491,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -1460,7 +1524,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 4050": {
    "title": "Obesity Physiology and Physical Activity",
@@ -1474,7 +1542,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -1667,7 +1739,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "MICR 4100": {
    "title": "Parasitology",
@@ -1878,7 +1953,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",
@@ -1971,6 +2049,18 @@
     ]
    },
    "uncertain": true,
+   "prereqNonCourse": true
+  },
+  "ZOOL 4100": {
+   "title": "Parasitology",
+   "credits": 4,
+   "prereqText": "( BIOL 1620 or MICR 2060 ) with a C- or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1620",
+     "MICR 2060"
+    ]
+   },
    "prereqNonCourse": true
   },
   "ZOOL 4300": {
@@ -2086,6 +2176,20 @@
     ]
    },
    "prereqNonCourse": true
+  },
+  "BIOL 3620": {
+   "title": "Biological Chemistry II",
+   "credits": 3,
+   "prereqText": "( CHEM 3600 or BIOL 3600 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CHEM 3600",
+     "BIOL 3600"
+    ]
+   },
+   "prereqNonCourse": true,
+   "code": "BIOL 3620",
+   "crossListed": "CHEM 3620"
   }
  }
 }

@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Quantitative Literacy",
+   "label": "English",
    "pick": {
     "count": 1
    },
@@ -28,7 +28,8 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "eng"
   },
   {
    "type": "course",
@@ -40,7 +41,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -83,13 +84,18 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Any Social Science Distribution ( PSY 1010 or PSY 1100 highly recommended)",
-   "credits": 3
+   "label": "Any Social Science Distribution (PSY 1010 or PSY 1100 highly recommended)",
+   "credits": 3,
+   "recommended": [
+    "PSY 1010",
+    "PSY 1100"
+   ]
   },
   {
    "type": "course",
@@ -103,8 +109,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities/Art ( COMM 1020 Recommended)",
-   "credits": 3
+   "label": "Humanities/Art (COMM 1020 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "course",
@@ -177,10 +186,11 @@
    "items": [
     {
      "code": "BIOL 1610",
-     "alts": [
-      "BIOL 1615"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
     },
     {
      "code": "ENGL 1010",
@@ -225,14 +235,18 @@
     },
     {
      "code": "ZOOL 2320",
-     "alts": [
-      "ZOOL 2325"
-     ],
-     "credits": 4
+     "credits": 3
     },
     {
-     "code": "COMM 1020",
-     "credits": 3
+     "code": "ZOOL 2325",
+     "credits": 1
+    },
+    {
+     "label": "Humanities/Art (COMM 1020 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "COMM 1020"
+     ]
     }
    ]
   },
@@ -241,10 +255,11 @@
    "items": [
     {
      "code": "ZOOL 2420",
-     "alts": [
-      "ZOOL 2425"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
     },
     {
      "label": "Healthcare electives",
@@ -273,17 +288,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -316,10 +342,6 @@
    "coreqs": [
     "CHEM 1215"
    ]
-  },
-  "COMM 1020": {
-   "title": "Public Speaking",
-   "credits": 3
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
@@ -359,6 +381,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -450,7 +473,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",

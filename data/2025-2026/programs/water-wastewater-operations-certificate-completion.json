@@ -249,7 +249,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3330": {
    "title": "Water Resources Management",

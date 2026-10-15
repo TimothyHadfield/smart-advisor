@@ -151,12 +151,7 @@
    "title": "Music Theory I",
    "credits": 3,
    "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
-   "prereqs": {
-    "or": [
-     "MUSC 1105",
-     "MUSC 1110"
-    ]
-   },
+   "prereqs": null,
    "prereqNonCourse": true,
    "coreqText": "MUSC 1130",
    "coreqs": [
@@ -219,7 +214,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 1400",
-   "precoreqs": "MUSC 1400"
+   "precoreqs": "MUSC 1400",
+   "preco": [
+    "MUSC 1400"
+   ]
   }
  }
 }

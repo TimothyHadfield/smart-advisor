@@ -105,8 +105,11 @@
    "label": "Semester 1",
    "items": [
     {
-     "code": "MATH 1060",
-     "credits": null
+     "label": "MATH 1060 or equivalent is assumed to have been previously completed successfully.",
+     "credits": null,
+     "recommended": [
+      "MATH 1060"
+     ]
     },
     {
      "code": "SURV 1020",
@@ -179,18 +182,6 @@
    "title": "Geographic Information Systems",
    "credits": 3
   },
-  "MATH 1060": {
-   "title": "Trigonometry",
-   "credits": 3,
-   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
-   "prereqs": {
-    "or": [
-     "MATH 1050",
-     "MATH 1055"
-    ]
-   },
-   "prereqNonCourse": true
-  },
   "SURV 1020": {
    "title": "Introduction to Surveying and Mapping",
    "credits": 1
@@ -237,9 +228,14 @@
    "credits": 2,
    "prereqText": "EGDT1400, EGDT 1610 or MATH 1060 or Equivalent, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
    "prereqs": {
-    "or": [
-     "EGDT 1610",
-     "MATH 1060"
+    "and": [
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1610",
+       "MATH 1060"
+      ]
+     }
     ]
    },
    "uncertain": true,

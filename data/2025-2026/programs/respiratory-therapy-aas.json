@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -46,7 +46,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -89,7 +89,11 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "math"
   },
   {
    "type": "course",
@@ -126,7 +130,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -145,25 +149,37 @@
       "ZOOL 2320L"
      ],
      "credits": 4
-    },
-    {
-     "codes": [
-      "ZOOL 2420",
-      "ZOOL 2425"
-     ],
-     "credits": 4,
-     "section": "Complete the following:"
-    },
-    {
-     "codes": [
-      "MICR 2060",
-      "MICR 2065"
-     ],
-     "credits": 4,
-     "section": "Complete the following:"
     }
    ],
    "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2420",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "ZOOL 2425",
+   "alts": [],
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 2060",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 2065",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -281,27 +297,31 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ]
+     ]
     },
     {
      "code": "PSY 1010",
@@ -453,11 +473,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -540,6 +568,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -870,5 +899,7 @@
     "ZOOL 2420"
    ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "This interview does not guarantee acceptance into the program, as students will compete with all other applicants for matriculation into a cohort."
 }

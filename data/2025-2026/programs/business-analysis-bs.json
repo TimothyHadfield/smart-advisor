@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -50,12 +50,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Art Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -93,7 +94,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -134,11 +139,11 @@
   {
    "type": "choice",
    "area": "Matriculation Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -156,7 +161,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "My Educator"
-   ]
+   ],
+   "exam": "My Educator"
   },
   {
    "type": "course",
@@ -336,7 +342,10 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "notes": [
+    "Program Electives"
+   ]
   },
   {
    "type": "placeholder",
@@ -369,16 +378,22 @@
      "credits": 3
     },
     {
-     "code": "MAT 1000",
-     "credits": 4
+     "label": "General Elective (MAT 1000/1005 recommended)",
+     "credits": 4,
+     "recommended": [
+      "MAT 1000",
+      "MAT 1005"
+     ]
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Fine Art Distribution",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Art Distribution"
     },
     {
      "code": "MKTG 1890",
@@ -402,19 +417,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "American Institutions",
@@ -425,11 +444,12 @@
      "credits": 3
     },
     {
-     "code": "IM 2010",
-     "alts": [
+     "label": "General Elective (IM 2010 or IM 2600 recommended)",
+     "credits": 3,
+     "recommended": [
+      "IM 2010",
       "IM 2600"
-     ],
-     "credits": 3
+     ]
     }
    ]
   },
@@ -449,8 +469,9 @@
      "credits": 3
     },
     {
-     "label": "Social Science Distribution",
-     "credits": 3
+     "label": "Social Science distribution",
+     "credits": 3,
+     "text": "Social Science Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -478,8 +499,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities distribution",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities distribution"
     }
    ]
   },
@@ -529,23 +551,27 @@
     },
     {
      "label": "Choose one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MGMT 3300G",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3320G",
-     "credits": null
-    },
-    {
-     "code": "MKTG 3350G",
-     "credits": null
-    },
-    {
-     "code": "ECON 3050G",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MGMT 3300G",
+      "MGMT 3320G",
+      "MKTG 3350G",
+      "ECON 3050G"
+     ],
+     "options": [
+      [
+       "MGMT 3300G"
+      ],
+      [
+       "MGMT 3320G"
+      ],
+      [
+       "MKTG 3350G"
+      ],
+      [
+       "ECON 3050G"
+      ]
+     ]
     }
    ]
   },
@@ -930,8 +956,5 @@
    },
    "prereqNonCourse": true
   }
- },
- "missingCourses": [
-  "MAT 1000"
- ]
+ }
 }

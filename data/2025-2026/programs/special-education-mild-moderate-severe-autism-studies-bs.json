@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -50,12 +50,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "US Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -93,7 +94,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -339,13 +341,15 @@
      "codes": [
       "EDSP 4885"
      ],
-     "credits": 4
+     "credits": 4,
+     "crMax": 10
     },
     {
      "codes": [
       "EDSP 4895"
      ],
-     "credits": 4
+     "credits": 4,
+     "crMax": 10
     }
    ]
   }
@@ -363,23 +367,28 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 2000"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 2000"
+      ]
+     ]
     },
     {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 2000",
-     "credits": null
-    },
-    {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "code": "EDEL 1010",
@@ -403,8 +412,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "code": "EDEL 2330",
@@ -457,8 +467,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Elective",
@@ -907,5 +918,7 @@
    "title": "American National Government",
    "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "(Optional) Completion of the Associate of Science degree in Pre-Elementary Education or equivalent (completion of this degree does not guarantee acceptance into the UVU Special Education Program) ."
 }

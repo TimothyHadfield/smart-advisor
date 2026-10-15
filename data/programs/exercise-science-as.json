@@ -35,7 +35,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -44,7 +45,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -87,7 +89,12 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:",
+    "Distribution Courses: Biology"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -109,13 +116,19 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "EXSC 1097"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PSY 1010"
+   ]
   },
   {
    "type": "placeholder",
@@ -179,10 +192,22 @@
    "credits": 3
   },
   {
-   "type": "placeholder",
+   "type": "choice",
    "area": "Elective Requirements",
    "label": "Any 1000-level course or higher",
+   "pick": {
+    "credits": 12
+   },
    "credits": 12,
+   "options": [
+    {
+     "codes": [
+      "CHEM 1215",
+      "CHEM 1210"
+     ],
+     "credits": 5
+    }
+   ],
    "notes": [
     "Must include CHEM 1215 if taking CHEM 1210 for the Physical Science GE distribution"
    ]
@@ -204,16 +229,25 @@
      "credits": 4
     },
     {
-     "code": "BIOL 1610",
-     "credits": 4
+     "label": "BIOL 1610",
+     "credits": 4,
+     "recommended": [
+      "BIOL 1610"
+     ]
     },
     {
-     "code": "BIOL 1615",
-     "credits": 1
+     "label": "BIOL 1615",
+     "credits": 1,
+     "recommended": [
+      "BIOL 1615"
+     ]
     },
     {
-     "code": "PSY 1010",
-     "credits": 3
+     "label": "PSY 1010",
+     "credits": 3,
+     "recommended": [
+      "PSY 1010"
+     ]
     }
    ]
   },
@@ -233,12 +267,19 @@
      "credits": 3
     },
     {
-     "code": "EXSC 1097",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "recommended": [
+      "EXSC 1097"
+     ]
     },
     {
-     "code": "CHEM 1110",
-     "credits": 4
+     "label": "CHEM 1110 or 1210",
+     "credits": 4,
+     "recommended": [
+      "CHEM 1110",
+      "CHEM 1210"
+     ]
     }
    ]
   },
@@ -258,8 +299,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
      "label": "General Elective",
@@ -304,17 +346,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -348,6 +401,14 @@
     "CHEM 1215"
    ]
   },
+  "CHEM 1215": {
+   "title": "Principles of Chemistry I Laboratory",
+   "credits": 1,
+   "coreqText": "CHEM 1210",
+   "coreqs": [
+    "CHEM 1210"
+   ]
+  },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
@@ -374,10 +435,6 @@
     ]
    },
    "prereqNonCourse": true
-  },
-  "EXSC 1097": {
-   "title": "Fitness for Life",
-   "credits": 3
   },
   "EXSC 2500": {
    "title": "Sports Medicine",
@@ -412,7 +469,14 @@
      "PETE 2700",
      "REC 2200"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G",
+    "PETE 2700",
+    "REC 2200"
+   ]
   },
   "EXSC 2700G": {
    "title": "Foundations of Exercise Science",
@@ -482,10 +546,6 @@
    "title": "American National Government",
    "credits": 3
   },
-  "PSY 1010": {
-   "title": "General Psychology",
-   "credits": 3
-  },
   "ZOOL 2320": {
    "title": "Human Anatomy",
    "credits": 3,
@@ -498,7 +558,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",

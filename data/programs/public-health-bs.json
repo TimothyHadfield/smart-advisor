@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institution Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -56,12 +56,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "American Institution Distribution",
    "pick": {
     "count": 1
    },
@@ -99,7 +100,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -259,13 +264,15 @@
      "codes": [
       "HLTH 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6
     },
     {
      "codes": [
       "HLTH 4850R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     }
    ],
    "text": "Take 3 credits from one or a combination of the following"
@@ -374,7 +381,8 @@
      "codes": [
       "HLTH 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -416,8 +424,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     }
    ]
   },
@@ -430,31 +439,37 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
-     "code": "STAT 1040",
-     "credits": null
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science"
     },
     {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "label": "Social Science",
-     "credits": 3
-    },
-    {
-     "label": "Lower Division Health Elective - Take 6 credits",
-     "credits": 6
+     "label": "Public Health Lower Division Electives – Choose 6 credits",
+     "credits": 6,
+     "text": "Lower Division Health Elective - Take 6 credits"
     }
    ]
   },
@@ -488,26 +503,30 @@
    "items": [
     {
      "label": "Take one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HLSC 1300",
-     "credits": null
-    },
-    {
-     "code": "ZOOL 1090",
-     "credits": null
-    },
-    {
-     "code": "ZOOL 2320",
+     "credits": 3,
      "alts": [
+      "HLSC 1300",
+      "ZOOL 1090",
+      "ZOOL 2320",
       "ZOOL 2325"
      ],
-     "credits": null
+     "options": [
+      [
+       "HLSC 1300"
+      ],
+      [
+       "ZOOL 1090"
+      ],
+      [
+       "ZOOL 2320",
+       "ZOOL 2325"
+      ]
+     ]
     },
     {
-     "label": "Upper Division Health Electives - Take 3 credits",
-     "credits": 3
+     "label": "Public Health Upper Division Electives-Choose 6 credits",
+     "credits": 3,
+     "text": "Upper Division Health Electives - Take 3 credits"
     },
     {
      "label": "Unrestricted electives",
@@ -790,7 +809,10 @@
    "prereqs": "HLTH 3200",
    "prereqNonCourse": true,
    "precoreqText": "HLTH 3260",
-   "precoreqs": "HLTH 3260"
+   "precoreqs": "HLTH 3260",
+   "preco": [
+    "HLTH 3260"
+   ]
   },
   "HLTH 4160": {
    "title": "Program Implementation and Evaluation",
@@ -950,7 +972,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   }
  }
 }

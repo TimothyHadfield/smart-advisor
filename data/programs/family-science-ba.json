@@ -35,13 +35,15 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
       "MAT 1035"
      ],
-     "credits": 6
+     "credits": 6,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,12 +76,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements:",
-   "label": "Social Science",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +120,11 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -235,7 +242,7 @@
   {
    "type": "choice",
    "area": "Discipline Requirements",
-   "label": "American Institutions",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -245,13 +252,13 @@
      "codes": [
       "FAMS 4810R"
      ],
-     "credits": 1
+     "credits": 3
     },
     {
      "codes": [
       "FAMS 4820R"
      ],
-     "credits": 1
+     "credits": 3
     }
    ],
    "text": "Complete one of the following (students with extraordinary circumstances may petition the internship coordinator for an acceptable substitution for internship credit):"
@@ -297,12 +304,14 @@
      "credits": 3
     },
     {
-     "label": "Social Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science"
     },
     {
-     "label": "Language (Any course 1000 or higher)",
-     "credits": 4
+     "label": "Complete 12 credits in the same foreign language, includes ASL",
+     "credits": 4,
+     "text": "Language (Any course 1000 or higher)"
     }
    ]
   },
@@ -322,12 +331,14 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 2
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 2,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Language",
-     "credits": 4
+     "label": "Complete 12 credits in the same foreign language, includes ASL",
+     "credits": 4,
+     "text": "Language"
     }
    ]
   },
@@ -339,20 +350,23 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
      "label": "Physical Science",
      "credits": 3
     },
     {
-     "label": "Language",
-     "credits": 4
+     "label": "Complete 12 credits in the same foreign language, includes ASL",
+     "credits": 4,
+     "text": "Language"
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     }
    ]
   },
@@ -376,8 +390,9 @@
      "credits": 3
     },
     {
-     "label": "Language",
-     "credits": 4
+     "label": "Complete 12 credits in the same foreign language, includes ASL",
+     "credits": 4,
+     "text": "Language"
     }
    ]
   },
@@ -397,12 +412,14 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     }
    ]
   },
@@ -418,16 +435,19 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     }
    ]
   },
@@ -446,16 +466,19 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 2
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 2,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     }
    ]
   },
@@ -467,20 +490,24 @@
      "credits": 3
     },
     {
-     "label": "Elective (Any course 1000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Any course 1000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 3
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 3,
+     "text": "Elective (Upper-division - 3000 or higher)"
     },
     {
-     "label": "Elective (Upper-division - 3000 or higher)",
-     "credits": 2
+     "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+     "credits": 2,
+     "text": "Elective (Upper-division - 3000 or higher)"
     }
    ]
   }
@@ -678,6 +705,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

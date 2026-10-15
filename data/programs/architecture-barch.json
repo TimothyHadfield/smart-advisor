@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biology Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -87,19 +88,28 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology (Recommend BIOL 1010 General Biology)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities (Recommend ENGL 2030 Writing for Social Change)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "ENGL 2030"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavorial Science (Recommend COMM 1050 Introduction to Speech Communication)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "COMM 1050"
+   ]
   },
   {
    "type": "placeholder",
@@ -111,7 +121,10 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts (Recommend EGDT 1720 Architectural Rendering)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "EGDT 1720"
+   ]
   },
   {
    "type": "course",
@@ -328,19 +341,24 @@
      "codes": [
       "ARC 3550R"
      ],
-     "credits": 3
+     "credits": 3,
+     "crMax": 6
     },
     {
      "codes": [
       "ARC 4590R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6,
+     "recommended": true
     },
     {
      "codes": [
       "ARC 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "recommended": true,
+     "crMax": 6
     },
     {
      "codes": [
@@ -578,7 +596,8 @@
     },
     {
      "codes": [
-      "DAGV 1300"
+      "DAGV 1300",
+      "DAGV 1300L"
      ],
      "credits": 3
     },
@@ -644,8 +663,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology (Recommend BIOL 1010 General Biology)",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "EGDT 2850R",
@@ -690,8 +710,9 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     },
     {
      "code": "ENGL 2030",
@@ -719,8 +740,11 @@
      "credits": 3
     },
     {
-     "code": "ARC 4810R",
-     "credits": 1
+     "label": "Architecture Elective (ARC 4810R Recommended)",
+     "credits": 1,
+     "recommended": [
+      "ARC 4810R"
+     ]
     }
    ]
   },
@@ -1012,7 +1036,11 @@
      "ARC 4510",
      "ARC 4230"
     ]
-   }
+   },
+   "preco": [
+    "ARC 4510",
+    "ARC 4230"
+   ]
   },
   "ARC 4590R": {
    "title": "Special Topics in Architecture",
@@ -1271,6 +1299,14 @@
    "coreqText": "DAGV 1300L",
    "coreqs": [
     "DAGV 1300L"
+   ]
+  },
+  "DAGV 1300L": {
+   "title": "Animation Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAGV 1300",
+   "coreqs": [
+    "DAGV 1300"
    ]
   },
   "DAGV 2210": {

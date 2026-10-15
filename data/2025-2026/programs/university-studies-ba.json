@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -528,7 +533,8 @@
      "codes": [
       "UVST 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
@@ -587,12 +593,14 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
-     "label": "Foreign Language 1010 course",
-     "credits": 4
+     "label": "Foreign Language & Humanities (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1010 course"
     }
    ]
   },
@@ -604,20 +612,24 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
-     "label": "Foreign Language 1020 course",
-     "credits": 4
+     "label": "Foreign Language & Humanities (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1020 course"
     }
    ]
   },
@@ -629,8 +641,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 2010 course",
-     "credits": 4
+     "label": "Foreign Language & Humanities (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 2010 course"
     },
     {
      "label": "Lower Division Elective",
@@ -654,12 +667,14 @@
      "credits": 4
     },
     {
-     "label": "Lower Division School/College Specific Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Lower Division School/College Specific Course"
     },
     {
-     "label": "Lower Division School/College Specific Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Lower Division School/College Specific Course"
     },
     {
      "label": "Lower Division Elective",
@@ -675,16 +690,19 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Lower Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Lower Division School/College Course"
     },
     {
-     "label": "Lower Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Lower Division School/College Course"
     },
     {
-     "label": "Lower Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Lower Division School/College Course"
     },
     {
      "label": "Lower Division Elective",
@@ -704,16 +722,19 @@
      "credits": 3
     },
     {
-     "label": "Upper Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Upper Division School/College Course"
     },
     {
-     "label": "Upper Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Upper Division School/College Course"
     },
     {
-     "label": "Upper Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Upper Division School/College Course"
     },
     {
      "label": "Upper Division Elective",
@@ -725,12 +746,14 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Career Focus Course",
-     "credits": 3
+     "label": "Career Focus Course - Choose one from the following:",
+     "credits": 3,
+     "text": "Career Focus Course"
     },
     {
-     "label": "Upper Division School/College Course",
-     "credits": 3
+     "label": "Choose 27 credits from one School or College",
+     "credits": 3,
+     "text": "Upper Division School/College Course"
     },
     {
      "label": "Upper Division Elective",
@@ -1150,6 +1173,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

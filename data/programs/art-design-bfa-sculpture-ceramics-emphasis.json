@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Complete one of following:",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -44,12 +45,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "ART Core Elective",
+   "label": "American Institutions GE",
    "pick": {
     "count": 1
    },
@@ -87,7 +89,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -136,7 +142,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 9 credits",
+   "label": "ART Core Elective",
    "pick": {
     "credits": 9
    },
@@ -192,7 +198,9 @@
    "area": "Discipline Core Requirements",
    "code": "ART 2000R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 2,
+   "creditsEach": 1
   },
   {
    "type": "course",
@@ -309,7 +317,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Choose 9 credits",
+   "label": "ART/ARTH Elective",
    "pick": {
     "credits": 9
    },
@@ -327,6 +335,10 @@
      ],
      "credits": 3
     }
+   ],
+   "text": "Complete 9.0 credits of the following, with no more than 6.0 credits in one course.",
+   "notes": [
+    "Emphasis Elective Requirements"
    ]
   },
   {
@@ -349,31 +361,35 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "code": "ENGL 1010",
@@ -428,16 +444,18 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Humanities GE",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities GE"
     },
     {
      "label": "Elective (Global Intercultural Course Recommended)",
      "credits": 3
     },
     {
-     "label": "Art Core Elective",
-     "credits": 3
+     "label": "ART Core Elective",
+     "credits": 3,
+     "text": "Art Core Elective"
     },
     {
      "code": "ART 1340",
@@ -456,8 +474,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
      "code": "ART 2350",
@@ -481,8 +500,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Physical Science GE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science GE"
     },
     {
      "label": "ARTH Upper Division Elective",
@@ -513,8 +533,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Personal, Professional, & Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth"
     },
     {
      "label": "ARTH Upper Division Elective",
@@ -573,8 +594,9 @@
    "label": "Semester 8",
    "items": [
     {
-     "label": "Social Science GE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science GE"
     },
     {
      "label": "American Institutions GE",
@@ -614,7 +636,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -645,7 +670,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1650": {
    "title": "Watercolor",
@@ -829,6 +857,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

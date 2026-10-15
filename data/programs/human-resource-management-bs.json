@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -53,12 +53,14 @@
    "text": "Complete one of the following:",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
-   ]
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Art Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -96,7 +98,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -132,16 +138,19 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Discipline Core Requirements"
+   ]
   },
   {
    "type": "choice",
    "area": "Matriculation Courses:",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -159,7 +168,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "My Educator"
-   ]
+   ],
+   "exam": "My Educator"
   },
   {
    "type": "course",
@@ -348,12 +358,14 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Fine Art Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Art Distribution"
     },
     {
      "label": "General Elective",
@@ -370,38 +382,44 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "American Institutions",
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Elective",
      "credits": 3
     },
     {
-     "code": "IM 2010",
-     "alts": [
+     "label": "Elective (IM 2010 or IM 2600 recommended and must be passed with B- or higher. If one of these is not taken, My Educator will need to fulfill the Business Computer Proficiency requirement.)",
+     "credits": null,
+     "recommended": [
+      "IM 2010",
       "IM 2600"
-     ],
-     "credits": null
+     ]
     }
    ]
   },
@@ -449,8 +467,9 @@
      "credits": 3
     },
     {
-     "label": "Social Science Distribution",
-     "credits": 3
+     "label": "Social Science",
+     "credits": 3,
+     "text": "Social Science Distribution"
     },
     {
      "label": "Elective",
@@ -517,27 +536,31 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HR 4700G",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3300G",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3320G",
-     "credits": null
-    },
-    {
-     "code": "ECON 3050G",
-     "credits": null
-    },
-    {
-     "code": "MKTG 3350G",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HR 4700G",
+      "MGMT 3300G",
+      "MGMT 3320G",
+      "ECON 3050G",
+      "MKTG 3350G"
+     ],
+     "options": [
+      [
+       "HR 4700G"
+      ],
+      [
+       "MGMT 3300G"
+      ],
+      [
+       "MGMT 3320G"
+      ],
+      [
+       "ECON 3050G"
+      ],
+      [
+       "MKTG 3350G"
+      ]
+     ]
     },
     {
      "code": "HR 4060",

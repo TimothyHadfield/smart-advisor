@@ -218,7 +218,8 @@
     "Fine Arts Distribution",
     "Personal, Professional, and Civic Growth",
     "Any department approved elective course"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -274,8 +275,9 @@
      "credits": 1
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should select electives from the list below, or other advisor-approved courses. For Computer Engineering (B.S.) Pathway, select CS 1410 , CS 2300 , CS 2370 , CS 2420 , plus 4 credits of department-approved electives. For Electrical Engineering (B.S.) Pathway, select COMM 1020 , COMM 2110 , CHEM 1210 , CHEM 1215 , one Biology Distribution course, one Fine Arts Distribution course, and one Personal/Professional/Civic Growth course. Students are encouraged to consult with their advisor to ensure elective selections align with their academic and career goals.",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -299,8 +301,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should select electives from the list below, or other advisor-approved courses. For Computer Engineering (B.S.) Pathway, select CS 1410 , CS 2300 , CS 2370 , CS 2420 , plus 4 credits of department-approved electives. For Electrical Engineering (B.S.) Pathway, select COMM 1020 , COMM 2110 , CHEM 1210 , CHEM 1215 , one Biology Distribution course, one Fine Arts Distribution course, and one Personal/Professional/Civic Growth course. Students are encouraged to consult with their advisor to ensure elective selections align with their academic and career goals.",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -316,8 +319,9 @@
      "credits": 1
     },
     {
-     "label": "Electives",
-     "credits": 10
+     "label": "Students should select electives from the list below, or other advisor-approved courses. For Computer Engineering (B.S.) Pathway, select CS 1410 , CS 2300 , CS 2370 , CS 2420 , plus 4 credits of department-approved electives. For Electrical Engineering (B.S.) Pathway, select COMM 1020 , COMM 2110 , CHEM 1210 , CHEM 1215 , one Biology Distribution course, one Fine Arts Distribution course, and one Personal/Professional/Civic Growth course. Students are encouraged to consult with their advisor to ensure elective selections align with their academic and career goals.",
+     "credits": 10,
+     "text": "Electives"
     }
    ]
   }

@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "course",
@@ -86,7 +87,7 @@
   {
    "type": "choice",
    "area": "",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -143,51 +144,59 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "AVSC 1100",
-     "credits": null
-    },
-    {
-     "code": "AVSC 2110",
-     "credits": null
-    },
-    {
-     "code": "AVSC 2150",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "AVSC 1100",
+      "AVSC 2110",
+      "AVSC 2150"
+     ],
+     "options": [
+      [
+       "AVSC 1100"
+      ],
+      [
+       "AVSC 2110"
+      ],
+      [
+       "AVSC 2150"
+      ]
+     ]
     }
    ]
   }
@@ -237,6 +246,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

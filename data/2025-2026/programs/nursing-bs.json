@@ -68,12 +68,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -111,7 +112,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -446,6 +451,13 @@
       "STAT 1040"
      ],
      "credits": 3
+    },
+    {
+     "codes": [
+      "STAT 1040",
+      "STAT 1045"
+     ],
+     "credits": 8
     }
    ],
    "notes": [
@@ -457,7 +469,10 @@
    "area": "Discipline Core Requirements",
    "label": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree.",
    "credits": 5,
-   "text": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree."
+   "text": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree.",
+   "notes": [
+    "RNs returning to complete BS in Nursing should contact the nursing advisor for requirements."
+   ]
   }
  ],
  "gradPlan": [
@@ -486,8 +501,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "code": "BIOL 1610",
@@ -515,8 +531,9 @@
      "credits": 1
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -549,19 +566,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "MGMT 2340",
-     "credits": null
-    },
-    {
-     "code": "PSY 3110",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "STAT 1040",
+      "MGMT 2340",
+      "PSY 3110"
+     ],
+     "options": [
+      [
+       "STAT 1040"
+      ],
+      [
+       "MGMT 2340"
+      ],
+      [
+       "PSY 3110"
+      ]
+     ]
     }
    ]
   },
@@ -671,8 +692,9 @@
      "credits": 1
     },
     {
-     "label": "Electives",
-     "credits": 5
+     "label": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree.",
+     "credits": 5,
+     "text": "Electives"
     }
    ]
   },
@@ -733,11 +755,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -803,6 +833,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -914,7 +945,10 @@
     "NURS 2305"
    ],
    "precoreqText": "NURS 2320",
-   "precoreqs": "NURS 2320"
+   "precoreqs": "NURS 2320",
+   "preco": [
+    "NURS 2320"
+   ]
   },
   "NURS 2305": {
    "title": "Nursing Health Assessment Laboratory",
@@ -927,7 +961,10 @@
     "NURS 2300"
    ],
    "precoreqText": "NURS 2320",
-   "precoreqs": "NURS 2320"
+   "precoreqs": "NURS 2320",
+   "preco": [
+    "NURS 2320"
+   ]
   },
   "NURS 2310": {
    "title": "Nursing Pharmacology",
@@ -941,7 +978,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ZOOL 2420",
-   "precoreqs": "ZOOL 2420"
+   "precoreqs": "ZOOL 2420",
+   "preco": [
+    "ZOOL 2420"
+   ]
   },
   "NURS 2320": {
    "title": "Fundamentals of Nursing Care",
@@ -954,7 +994,10 @@
     "NURS 2325"
    ],
    "precoreqText": "NURS 2300",
-   "precoreqs": "NURS 2300"
+   "precoreqs": "NURS 2300",
+   "preco": [
+    "NURS 2300"
+   ]
   },
   "NURS 2325": {
    "title": "Nursing Practice Simulation and Skills Lab I",
@@ -967,7 +1010,10 @@
     "NURS 2320"
    ],
    "precoreqText": "NURS 2300",
-   "precoreqs": "NURS 2300"
+   "precoreqs": "NURS 2300",
+   "preco": [
+    "NURS 2300"
+   ]
   },
   "NURS 2410": {
    "title": "Nursing Care of Adults with Common Health Needs",
@@ -979,7 +1025,10 @@
     "NURS 2415"
    ],
    "precoreqText": "NURS 2420",
-   "precoreqs": "NURS 2420"
+   "precoreqs": "NURS 2420",
+   "preco": [
+    "NURS 2420"
+   ]
   },
   "NURS 2415": {
    "title": "Nursing Care of Adults with Common Health Needs Clinical",
@@ -1360,5 +1409,7 @@
    "uncertain": true,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Acceptance into the ASN program is by a competitive, point-based application process."
 }

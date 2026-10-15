@@ -161,31 +161,35 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4360R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4810R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2050",
+      "ENGL 3050",
+      "ENGL 3320",
+      "ENGL 4340",
+      "ENGL 4360R",
+      "ENGL 4810R"
+     ],
+     "options": [
+      [
+       "ENGL 2050"
+      ],
+      [
+       "ENGL 3050"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "ENGL 4340"
+      ],
+      [
+       "ENGL 4360R"
+      ],
+      [
+       "ENGL 4810R"
+      ]
+     ]
     }
    ]
   },
@@ -194,31 +198,35 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4360R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4810R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2050",
+      "ENGL 3050",
+      "ENGL 3320",
+      "ENGL 4340",
+      "ENGL 4360R",
+      "ENGL 4810R"
+     ],
+     "options": [
+      [
+       "ENGL 2050"
+      ],
+      [
+       "ENGL 3050"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "ENGL 4340"
+      ],
+      [
+       "ENGL 4360R"
+      ],
+      [
+       "ENGL 4810R"
+      ]
+     ]
     }
    ]
   },
@@ -227,23 +235,27 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2030",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3085",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4010R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4020G",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2030",
+      "ENGL 3085",
+      "ENGL 4010R",
+      "ENGL 4020G"
+     ],
+     "options": [
+      [
+       "ENGL 2030"
+      ],
+      [
+       "ENGL 3085"
+      ],
+      [
+       "ENGL 4010R"
+      ],
+      [
+       "ENGL 4020G"
+      ]
+     ]
     }
    ]
   }
@@ -304,7 +316,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 3085": {
    "title": "Rhetorical Approaches to Popular Culture",
@@ -313,7 +328,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 3320": {
    "title": "Grant and Proposal Writing",
@@ -329,7 +347,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 4020G": {
    "title": "Multicultural Rhetorics",
@@ -338,7 +359,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 4340": {
    "title": "Advanced Technical Communication",

@@ -299,7 +299,10 @@
    "title": "Powertrain Systems Lab",
    "credits": 1,
    "precoreqText": "AUT 1120",
-   "precoreqs": "AUT 1120"
+   "precoreqs": "AUT 1120",
+   "preco": [
+    "AUT 1120"
+   ]
   },
   "AUT 1130": {
    "title": "Engine Mechanical",
@@ -329,7 +332,10 @@
    "title": "Automotive Electrical Systems Lab",
    "credits": 1,
    "precoreqText": "AUT 1160",
-   "precoreqs": "AUT 1160"
+   "precoreqs": "AUT 1160",
+   "preco": [
+    "AUT 1160"
+   ]
   },
   "AUT 1170": {
    "title": "Engine Electrical Systems",
@@ -343,7 +349,9 @@
    "title": "Engine Electrical Systems Lab",
    "credits": 1,
    "coreqText": "AUT1170",
-   "coreqs": []
+   "coreqs": [
+    "AUT 1170"
+   ]
   },
   "AUT 1210": {
    "title": "Steering and Suspension Systems",
@@ -378,7 +386,11 @@
      "AUT 1010",
      "AUT 1020"
     ]
-   }
+   },
+   "preco": [
+    "AUT 1010",
+    "AUT 1020"
+   ]
   },
   "AUT 2210": {
    "title": "Brake Systems and Regenerative Braking",

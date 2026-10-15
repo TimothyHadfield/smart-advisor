@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biology Requirement",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -65,7 +65,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,12 +75,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/ Behavioral Science Requirement",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -99,7 +101,11 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -238,7 +244,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements:",
-   "label": "Choose 28 credits",
+   "label": "NSS Elective",
    "pick": {
     "credits": 28
    },
@@ -260,13 +266,15 @@
      "codes": [
       "NSS 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 9
     },
     {
      "codes": [
       "NSS 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -410,7 +418,8 @@
    "text": "Complete 28 credits from the following:",
    "notes": [
     "Any other course approved by the NSS Director or Academic Advisor"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -435,8 +444,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Requirement",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Requirement"
     },
     {
      "label": "General Elective",
@@ -453,35 +463,40 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "label": "Social/ Behavioral Science Requirement",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science Requirement"
     },
     {
      "code": "POLS 1100",
@@ -497,16 +512,19 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Physical Science Requirement",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Requirement"
     },
     {
-     "label": "Fine Arts Requirement",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Requirement"
     },
     {
-     "label": "Humanities Requirement",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Requirement"
     },
     {
      "code": "NSS 2010",
@@ -767,6 +785,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

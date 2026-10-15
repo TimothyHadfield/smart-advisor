@@ -110,8 +110,11 @@
    "label": "Semester 1",
    "items": [
     {
-     "code": "MATH 1060",
-     "credits": null
+     "label": "MATH 1060 or equivalent is assumed to have been previously completed successfully.",
+     "credits": null,
+     "recommended": [
+      "MATH 1060"
+     ]
     },
     {
      "code": "EGDT 1040",
@@ -179,18 +182,6 @@
   "GIS 2800": {
    "title": "Geographic Information Systems",
    "credits": 3
-  },
-  "MATH 1060": {
-   "title": "Trigonometry",
-   "credits": 3,
-   "prereqText": "Within the past two years: MATH 1050 or MATH 1055 with a grade of C or higher or appropriate math placement score.",
-   "prereqs": {
-    "or": [
-     "MATH 1050",
-     "MATH 1055"
-    ]
-   },
-   "prereqNonCourse": true
   },
   "SURV 1030": {
    "title": "Fundamentals of Geodesy and Control Surveys",

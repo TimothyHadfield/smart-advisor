@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
    "pick": {
     "count": 1
    },
@@ -68,12 +68,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following: (Recommend STAT 1040 )"
+   "text": "Complete one of the following: (Recommend STAT 1040)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -111,37 +112,56 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following: (Recommend HIST 1740 )"
+   "text": "Complete one of the following: (Recommend HIST 1740)",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Biology (Recommend BIOL 1010 )",
-   "credits": 3
+   "label": "Biology (Recommend BIOL 1010)",
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science (Recommend ASTR 1040 )",
-   "credits": 3
+   "label": "Physical Science (Recommend ASTR 1040)",
+   "credits": 3,
+   "recommended": [
+    "ASTR 1040"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities (Recommend COMM 1020 )",
-   "credits": 3
+   "label": "Humanities (Recommend COMM 1020)",
+   "credits": 3,
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Fine Arts (Recommend EGDT 1720 )",
-   "credits": 3
+   "label": "Fine Arts (Recommend EGDT 1720)",
+   "credits": 3,
+   "recommended": [
+    "EGDT 1720"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral (Recommend GEOG 1300G)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "GEOG 1300G"
+   ]
   },
   {
    "type": "placeholder",
@@ -207,7 +227,7 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600 ):"
+   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600):"
   },
   {
    "type": "course",
@@ -250,16 +270,23 @@
    "label": "Semester 1",
    "items": [
     {
-     "code": "EGDT 1600",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1600",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1600"
+     ],
+     "alts": [
+      "EGDT 1600",
+      "MATH 1050"
+     ],
+     "options": [
+      [
+       "EGDT 1600"
+      ],
+      [
+       "MATH 1050"
+      ]
+     ]
     },
     {
      "code": "ENGL 1010",
@@ -299,16 +326,24 @@
      "credits": 3
     },
     {
-     "code": "EGDT 1610",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1610",
-     "credits": null
-    },
-    {
-     "code": "MATH 1060",
-     "credits": null
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1610"
+     ],
+     "alts": [
+      "EGDT 1610",
+      "MATH 1060"
+     ],
+     "options": [
+      [
+       "EGDT 1610"
+      ],
+      [
+       "MATH 1060"
+      ]
+     ],
+     "text": "Complete one of the following Mathematics courses (Recommend EGDT 1610):"
     },
     {
      "code": "SURV 1030",
@@ -464,6 +499,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -601,9 +637,14 @@
    "credits": 2,
    "prereqText": "EGDT1400, EGDT 1610 or MATH 1060 or Equivalent, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
    "prereqs": {
-    "or": [
-     "EGDT 1610",
-     "MATH 1060"
+    "and": [
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1610",
+       "MATH 1060"
+      ]
+     }
     ]
    },
    "uncertain": true,

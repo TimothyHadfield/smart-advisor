@@ -56,13 +56,15 @@
      "codes": [
       "SLSS 1030R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "SLSS 1040R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -104,7 +106,8 @@
      "codes": [
       "SLSS 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
@@ -152,13 +155,15 @@
      "codes": [
       "SLSS 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 12
     },
     {
      "codes": [
       "UVST 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
@@ -220,8 +225,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Lower Division Elective",
-     "credits": 3
+     "label": "Lower Division Elective (complete 3 credits)",
+     "credits": 3,
+     "text": "Lower Division Elective"
     }
    ]
   },
@@ -229,8 +235,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Upper Division Elective",
-     "credits": 3
+     "label": "Upper Division Elective (complete 3 credits)",
+     "credits": 3,
+     "text": "Upper Division Elective"
     }
    ]
   }

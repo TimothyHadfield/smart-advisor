@@ -139,46 +139,52 @@
    "items": [
     {
      "label": "Please choose one of the following",
-     "credits": 3
-    },
-    {
-     "code": "HLSC 4840",
+     "credits": 3,
      "alts": [
+      "HLSC 4840",
       "LEGL 3000"
      ],
-     "credits": null
+     "options": [
+      [
+       "HLSC 4840"
+      ]
+     ]
     },
     {
      "label": "Please choose one of the following electives:",
-     "credits": 3
-    },
-    {
-     "code": "HLSC 4250",
-     "credits": null
-    },
-    {
-     "code": "HLSC 3660",
-     "credits": null
-    },
-    {
-     "code": "HR 3430",
-     "credits": null
-    },
-    {
-     "code": "HLSC 3050",
-     "credits": null
-    },
-    {
-     "code": "HLSC 3550",
-     "credits": null
-    },
-    {
-     "code": "HLSC 4000",
-     "credits": null
-    },
-    {
-     "code": "HLSC 4330",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HLSC 4250",
+      "HLSC 3660",
+      "HR 3430",
+      "HLSC 3050",
+      "HLSC 3550",
+      "HLSC 4000",
+      "HLSC 4330"
+     ],
+     "options": [
+      [
+       "HLSC 4250"
+      ],
+      [
+       "HLSC 3660"
+      ],
+      [
+       "HR 3430"
+      ],
+      [
+       "HLSC 3050"
+      ],
+      [
+       "HLSC 3550"
+      ],
+      [
+       "HLSC 4000"
+      ],
+      [
+       "HLSC 4330"
+      ]
+     ]
     }
    ]
   },
@@ -209,19 +215,23 @@
    "items": [
     {
      "label": "Choose one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HLSC 4780",
-     "credits": null
-    },
-    {
-     "code": "HLTH 4140",
-     "credits": null
-    },
-    {
-     "code": "MGMT 4470",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HLSC 4780",
+      "HLTH 4140",
+      "MGMT 4470"
+     ],
+     "options": [
+      [
+       "HLSC 4780"
+      ],
+      [
+       "HLTH 4140"
+      ],
+      [
+       "MGMT 4470"
+      ]
+     ]
     }
    ]
   }
@@ -311,7 +321,10 @@
    "prereqs": "HLTH 3200",
    "prereqNonCourse": true,
    "precoreqText": "HLTH 3260",
-   "precoreqs": "HLTH 3260"
+   "precoreqs": "HLTH 3260",
+   "preco": [
+    "HLTH 3260"
+   ]
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",

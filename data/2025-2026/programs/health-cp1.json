@@ -84,7 +84,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   }
  ],
  "gradPlan": [
@@ -132,11 +133,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -159,6 +168,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

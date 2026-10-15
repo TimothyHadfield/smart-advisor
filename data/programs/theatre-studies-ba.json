@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,12 +44,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Personal, Professional, & Civic Growth Distribution",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -87,7 +88,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -292,13 +294,15 @@
      "codes": [
       "THEA 3150R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 2
     },
     {
      "codes": [
       "THEA 3190R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 2
     },
     {
      "codes": [
@@ -328,201 +332,205 @@
       "ART 1020"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2540G"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3514"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3521"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4522"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3531"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4537"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3541"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4547"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3571"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4577"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "DAPR 2000"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 1223"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2203"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2204"
      ],
      "credits": 1,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2531"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2574"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3223"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3511"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3542"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3565"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 3573"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4540R"
      ],
      "credits": 1,
-     "section": "DESIGN COURSES:"
+     "crMax": 3,
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 4561"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES:"
+     "section": "DESIGN COURSES"
     },
     {
      "codes": [
       "THEA 2570R"
      ],
      "credits": 1,
-     "section": "CAPSTONE COURSES:"
+     "section": "CAPSTONE COURSES"
     },
     {
      "codes": [
       "THEA 4570R"
      ],
      "credits": 1,
-     "section": "CAPSTONE COURSES:"
+     "crMax": 3,
+     "section": "CAPSTONE COURSES"
     },
     {
      "codes": [
       "THEA 4810R"
      ],
      "credits": 1,
-     "section": "CAPSTONE COURSES:"
+     "section": "CAPSTONE COURSES"
     },
     {
      "codes": [
       "THEA 4995"
      ],
      "credits": 3,
-     "section": "CAPSTONE COURSES:"
+     "section": "CAPSTONE COURSES"
     }
    ],
    "text": "Complete 15 credits from the following courses. A minimum of 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above.",
    "notes": [
-    "DESIGN COURSES:: TECHNICAL PRODUCTION COURSES:"
+    "DESIGN COURSES:",
+    "DESIGN COURSES: TECHNICAL PRODUCTION COURSES:",
+    "DESIGN COURSES: CAPSTONE COURSES:"
    ]
   },
   {
@@ -658,7 +666,8 @@
      "codes": [
       "THEA 4750R"
      ],
-     "credits": 2
+     "credits": 2,
+     "crMax": 9
     },
     {
      "codes": [
@@ -730,7 +739,8 @@
      "codes": [
       "THEA 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -846,12 +856,14 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, & Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth Distribution"
     },
     {
-     "label": "Foreign Language 1010",
-     "credits": 4
+     "label": "Three Foreign Language courses in the same language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1010"
     },
     {
      "label": "Course from THEA Courselist A",
@@ -871,8 +883,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 1020",
-     "credits": 4
+     "label": "Three Foreign Language courses in the same language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1020"
     },
     {
      "label": "Course from THEA Courselist B",
@@ -888,8 +901,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Foreign Language 2010",
-     "credits": 4
+     "label": "Three Foreign Language courses in the same language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 2010"
     },
     {
      "code": "THEA 3611",
@@ -1099,6 +1113,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1148,13 +1163,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1590R": {
    "title": "Production Practicum for Stage and Screen I",
@@ -1205,7 +1226,12 @@
      "THEA 1514",
      "THEA 2204"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2204"
+   ]
   },
   "THEA 2204": {
    "title": "Costume Construction I Lab",
@@ -1217,7 +1243,12 @@
      "THEA 1514",
      "THEA 2203"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2203"
+   ]
   },
   "THEA 2211": {
    "title": "Theatre for Children and Youth",
@@ -1249,7 +1280,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2514": {
    "title": "Introduction to Design for Stage and Screen Lab",
@@ -1257,7 +1291,10 @@
    "prereqText": "THEA 1513",
    "prereqs": "THEA 1513",
    "precoreqText": "THEA 2513",
-   "precoreqs": "THEA 2513"
+   "precoreqs": "THEA 2513",
+   "preco": [
+    "THEA 2513"
+   ]
   },
   "THEA 2531": {
    "title": "Introduction to Lighting and Sound",
@@ -1564,7 +1601,10 @@
    "prereqs": "THEA 3521",
    "prereqNonCourse": true,
    "precoreqText": "THEA 2574",
-   "precoreqs": "THEA 2574"
+   "precoreqs": "THEA 2574",
+   "preco": [
+    "THEA 2574"
+   ]
   },
   "THEA 4537": {
    "title": "Lighting Design II",

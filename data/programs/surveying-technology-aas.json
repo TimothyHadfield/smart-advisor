@@ -20,13 +20,19 @@
    "area": "General Education Requirements",
    "label": "Elective",
    "credits": 3,
-   "text": "Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020 )"
+   "text": "Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020)",
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Behavioral Science, Social or Political Science Distribution Course (Recommend GEOG 1300G)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "GEOG 1300G"
+   ]
   },
   {
    "type": "course",
@@ -164,15 +170,20 @@
      "credits": 3
     },
     {
-     "code": "EGDT 1600",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1600",
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1600"
+     ],
      "alts": [
+      "EGDT 1600",
       "MATH 1050"
      ],
-     "credits": null
+     "options": [
+      [
+       "EGDT 1600"
+      ]
+     ]
     },
     {
      "code": "EGDT 1040",
@@ -192,15 +203,20 @@
      "credits": 3
     },
     {
-     "code": "EGDT 1610",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1610",
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1610):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1610"
+     ],
      "alts": [
+      "EGDT 1610",
       "MATH 1060"
      ],
-     "credits": null
+     "options": [
+      [
+       "EGDT 1610"
+      ]
+     ]
     },
     {
      "code": "SURV 1030",

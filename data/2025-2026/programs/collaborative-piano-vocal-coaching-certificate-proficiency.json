@@ -76,8 +76,12 @@
      "credits": 1
     },
     {
-     "code": "GER 1010",
-     "credits": 4
+     "label": "GER 1010 , 1020 or FREN 1010 , 1020",
+     "credits": 4,
+     "recommended": [
+      "GER 1010"
+     ],
+     "text": "GER 1010"
     }
    ]
   },
@@ -101,21 +105,17 @@
      "credits": 1
     },
     {
-     "code": "FREN 1010",
-     "credits": 4
+     "label": "GER 1010 , 1020 or FREN 1010 , 1020",
+     "credits": 4,
+     "recommended": [
+      "FREN 1010"
+     ],
+     "text": "FREN 1010"
     }
    ]
   }
  ],
  "courses": {
-  "FREN 1010": {
-   "title": "Beginning French I",
-   "credits": 4
-  },
-  "GER 1010": {
-   "title": "Beginning German I",
-   "credits": 4
-  },
   "MUSC 2001": {
    "title": "Diction for Singers I",
    "credits": 1

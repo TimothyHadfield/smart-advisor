@@ -37,7 +37,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "Or Higher math course"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "course",
@@ -92,19 +93,23 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     }
    ]
   },

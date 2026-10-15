@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -268,7 +272,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Domain Elective Requirement",
+   "label": "Choose 1 track",
    "pick": {
     "credits": 9
    },
@@ -315,154 +319,166 @@
       "IM 1000"
      ],
      "credits": 3,
-     "section": "Digital Marketing:"
+     "section": "Digital Marketing"
     },
     {
      "codes": [
       "CYBR 3350"
      ],
      "credits": 3,
-     "section": "Digital Marketing:"
+     "section": "Digital Marketing"
     },
     {
      "codes": [
       "MKTG 3660"
      ],
      "credits": 3,
-     "section": "Digital Marketing:"
+     "section": "Digital Marketing"
     },
     {
      "codes": [
       "MKTG 3680"
      ],
      "credits": 3,
-     "section": "Digital Marketing:"
+     "section": "Digital Marketing"
     },
     {
      "codes": [
       "MKTG 3685"
      ],
      "credits": 3,
-     "section": "Digital Marketing:"
+     "section": "Digital Marketing"
     },
     {
      "codes": [
       "INFO 3130"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "INFO 3300"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "INFO 3330"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "INFO 4420"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "DGM 1110"
      ],
      "credits": 4,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "DWDD 2410"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "DWDD 1430"
      ],
      "credits": 3,
-     "section": "Mobile Development Domain:"
+     "section": "Mobile Development Domain"
     },
     {
      "codes": [
       "IT 1200"
      ],
      "credits": 3,
-     "section": "Programming:"
+     "section": "Programming"
     },
     {
      "codes": [
       "IT 1510"
      ],
      "credits": 3,
-     "section": "Programming:"
+     "section": "Programming"
     },
     {
      "codes": [
       "IT 1600"
      ],
      "credits": 3,
-     "section": "Programming:"
+     "section": "Programming"
     },
     {
      "codes": [
       "IT 2600"
      ],
      "credits": 3,
-     "section": "Programming:"
+     "section": "Programming"
     },
     {
      "codes": [
       "INFO 3300"
      ],
      "credits": 3,
-     "section": "Web Systems Development Domain:"
+     "section": "Web Systems Development Domain"
     },
     {
      "codes": [
       "INFO 3330"
      ],
      "credits": 3,
-     "section": "Web Systems Development Domain:"
+     "section": "Web Systems Development Domain"
     },
     {
      "codes": [
       "INFO 3360"
      ],
      "credits": 3,
-     "section": "Web Systems Development Domain:"
+     "section": "Web Systems Development Domain"
     },
     {
      "codes": [
       "CYBR 4350"
      ],
      "credits": 3,
-     "section": "Web Systems Development Domain:"
+     "section": "Web Systems Development Domain"
     },
     {
      "codes": [
       "INFO 4300"
      ],
      "credits": 3,
-     "section": "Web Systems Development Domain:"
+     "section": "Web Systems Development Domain"
     }
+   ],
+   "notes": [
+    "Digital Marketing:",
+    "Digital Marketing: Mobile Development Domain:",
+    "Mobile Development Domain: Programming:",
+    "Programming: Web Systems Development Domain:"
+   ],
+   "tracks": [
+    "Digital Marketing",
+    "Mobile Development Domain",
+    "Programming",
+    "Web Systems Development Domain"
    ]
   },
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Elective Requirement",
+   "label": "Choose 9 credits",
    "pick": {
     "credits": 9
    },
@@ -484,13 +500,15 @@
      "codes": [
       "IM 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "IM 4960R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -535,7 +553,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete at least 9 credits from the following electives or from courses in above domains:"
+   "text": "Complete at least 9 credits from the following electives or from courses in above domains:",
+   "notes": [
+    "Other department approved classes"
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -639,8 +661,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "MKTG 2200G",
@@ -714,16 +737,18 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "Domain Elective Requirement",
      "credits": 3
     },
     {
-     "label": "Elective Requirement",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "Elective Requirement"
     }
    ]
   },
@@ -743,12 +768,14 @@
      "credits": 3
     },
     {
-     "label": "Elective Requirement",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "Elective Requirement"
     },
     {
-     "label": "Elective Requirement",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "Elective Requirement"
     }
    ]
   }
@@ -942,7 +969,11 @@
      "IM 2600"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "IM 2100",
+    "IM 2600"
+   ]
   },
   "IM 3600": {
    "title": "Advanced Excel for Decision Making",
@@ -1012,7 +1043,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -1084,7 +1118,10 @@
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2200 recommended",
    "prereqs": null,
    "precoreqText": "INFO 3300",
-   "precoreqs": "INFO 3300"
+   "precoreqs": "INFO 3300",
+   "preco": [
+    "INFO 3300"
+   ]
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",

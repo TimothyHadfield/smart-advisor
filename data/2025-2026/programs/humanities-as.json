@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions-AS",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,15 +74,17 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities-HH",
+   "label": "American Institutions-AS",
    "pick": {
     "count": 1
    },
@@ -117,7 +122,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -158,7 +167,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Fine Art-FF",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -188,7 +197,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "HUM Elective",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -218,7 +227,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Social/Behavioral Science-SS",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -248,7 +257,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 3 credits",
+   "label": "HUM Elective",
    "pick": {
     "credits": 3
    },
@@ -294,32 +303,38 @@
      "credits": 3
     },
     {
-     "label": "Elective Credit",
-     "credits": 4
+     "label": "HUM Elective",
+     "credits": 4,
+     "text": "Elective Credit"
     },
     {
      "label": "American Institutions-AS",
      "credits": 3
     },
     {
-     "label": "Elective Credit",
-     "credits": 2
+     "label": "HUM Elective",
+     "credits": 2,
+     "text": "Elective Credit"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HUM 1010",
-     "credits": null
-    },
-    {
-     "code": "HUM 1010G",
-     "credits": null
-    },
-    {
-     "code": "HUM 1010H",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HUM 1010",
+      "HUM 1010G",
+      "HUM 1010H"
+     ],
+     "options": [
+      [
+       "HUM 1010"
+      ],
+      [
+       "HUM 1010G"
+      ],
+      [
+       "HUM 1010H"
+      ]
+     ]
     }
    ]
   },
@@ -332,59 +347,68 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HUM 2010",
-     "credits": null
-    },
-    {
-     "code": "HUM 2010G",
-     "credits": null
-    },
-    {
-     "code": "HUM 2010H",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HUM 2010",
+      "HUM 2010G",
+      "HUM 2010H"
+     ],
+     "options": [
+      [
+       "HUM 2010"
+      ],
+      [
+       "HUM 2010G"
+      ],
+      [
+       "HUM 2010H"
+      ]
+     ]
     },
     {
      "label": "Humanities-HH",
      "credits": 3
     },
     {
-     "label": "Elective Credit",
-     "credits": 3
+     "label": "HUM Elective",
+     "credits": 3,
+     "text": "Elective Credit"
     }
    ]
   },
@@ -396,32 +420,43 @@
      "credits": 3
     },
     {
-     "label": "Elective Credit",
-     "credits": 3
+     "label": "HUM Elective",
+     "credits": 3,
+     "text": "Elective Credit"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "HUM 2020"
+     ],
+     "options": [
+      [
+       "HUM 2020"
+      ]
+     ]
     },
     {
-     "code": "HUM 2020",
-     "credits": null
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Art-FF"
     },
     {
-     "label": "Fine Art-FF",
-     "credits": 3
-    },
-    {
-     "label": "Elective Credit",
-     "credits": 3
-    },
-    {
-     "code": "HUM 2020G",
-     "credits": null
-    },
-    {
-     "code": "HUM 2020H",
-     "credits": null
+     "label": "HUM Elective",
+     "credits": 3,
+     "alts": [
+      "HUM 2020G",
+      "HUM 2020H"
+     ],
+     "options": [
+      [
+       "HUM 2020G"
+      ],
+      [
+       "HUM 2020H"
+      ]
+     ],
+     "text": "Elective Credit"
     }
    ]
   },
@@ -441,12 +476,14 @@
      "credits": 3
     },
     {
-     "label": "Elective Credit",
-     "credits": 3
+     "label": "HUM Elective",
+     "credits": 3,
+     "text": "Elective Credit"
     },
     {
-     "label": "Social/Behavioral Science-SS",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science-SS"
     }
    ]
   }
@@ -560,6 +597,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

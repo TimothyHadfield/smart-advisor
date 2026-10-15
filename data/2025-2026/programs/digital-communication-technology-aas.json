@@ -42,13 +42,19 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities/Fine Arts/Foreign Language",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Social and Behavioral Science:"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Behavioral Science, Social or Political Science Distribution Course",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Biology or Physical Science:"
+   ]
   },
   {
    "type": "placeholder",
@@ -75,14 +81,28 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 4
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2000",
    "alts": [],
-   "credits": 4
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DAPR 2000L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "placeholder",
@@ -118,8 +138,9 @@
      "credits": 3
     },
     {
-     "label": "Social and Behavioral Science Distribution",
-     "credits": 3
+     "label": "Any approved Behavioral Science, Social or Political Science Distribution Course",
+     "credits": 3,
+     "text": "Social and Behavioral Science Distribution"
     },
     {
      "code": "DGM 1110",
@@ -135,8 +156,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Biology or Physical Science Distribution",
-     "credits": 3
+     "label": "Any approved Biology or Physical Science Distribution Course",
+     "credits": 3,
+     "text": "Biology or Physical Science Distribution"
     },
     {
      "code": "DAGV 1200",
@@ -148,7 +170,11 @@
     },
     {
      "code": "DAPR 2000",
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "DAPR 2000L",
+     "credits": 1
     },
     {
      "label": "Elective",
@@ -161,23 +187,31 @@
    "items": [
     {
      "code": "DCPR 1800",
-     "credits": 4
-    },
-    {
-     "label": "DGM Elective",
      "credits": 3
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "code": "DCPR 1800L",
+     "credits": 1
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
     },
     {
-     "label": "DGM Elective",
-     "credits": 2
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
+    },
+    {
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
+    },
+    {
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 2,
+     "text": "DGM Elective"
     }
    ]
   },
@@ -185,24 +219,29 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities, Fine Arts, or Foreign Language",
-     "credits": 3
+     "label": "Humanities/Fine Arts/Foreign Language",
+     "credits": 3,
+     "text": "Humanities, Fine Arts, or Foreign Language"
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
     },
     {
-     "label": "DGM Elective",
-     "credits": 3
+     "label": "Complete 29 credits from approved DGM electives (see advisor)",
+     "credits": 3,
+     "text": "DGM Elective"
     }
    ]
   }
@@ -222,12 +261,30 @@
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
    "precoreqs": null
   },
+  "DAPR 2000L": {
+   "title": "Digital Audio Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAPR 2000",
+   "coreqs": [
+    "DAPR 2000"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 3,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DGM 1110": {
@@ -259,6 +316,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -84,12 +84,18 @@
    "label": "Semester 3",
    "items": [
     {
-     "code": "THEA 3000",
-     "credits": 3
+     "label": "THEA 3000+ Elective",
+     "credits": 3,
+     "recommended": [
+      "THEA 3000"
+     ]
     },
     {
-     "code": "THEA 3000",
-     "credits": 3
+     "label": "THEA 3000+ Elective",
+     "credits": 3,
+     "recommended": [
+      "THEA 3000"
+     ]
     }
    ]
   },
@@ -97,12 +103,18 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "THEA 3000",
-     "credits": 3
+     "label": "THEA 3000+ Elective",
+     "credits": 3,
+     "recommended": [
+      "THEA 3000"
+     ]
     },
     {
-     "code": "THEA 3000",
-     "credits": 3
+     "label": "THEA 3000+ Elective",
+     "credits": 3,
+     "recommended": [
+      "THEA 3000"
+     ]
     }
    ]
   }
@@ -116,20 +128,23 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1713": {
    "title": "Script and Text Analysis I",
    "credits": 3
   }
- },
- "missingCourses": [
-  "THEA 3000"
- ]
+ }
 }

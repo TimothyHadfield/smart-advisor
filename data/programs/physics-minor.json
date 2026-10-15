@@ -256,103 +256,107 @@
    "items": [
     {
      "label": "Complete a minimum of 5 Credits from the following courses:",
-     "credits": 5
-    },
-    {
-     "code": "ASTR 3050",
-     "credits": null
-    },
-    {
-     "code": "ASTR 3060",
-     "credits": null
-    },
-    {
-     "code": "PHYS 2500",
-     "credits": null
-    },
-    {
-     "code": "PHYS 2800",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3120",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3125",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3230",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3300",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3310",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3330",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3400",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3500",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3600",
-     "credits": null
-    },
-    {
-     "code": "PHYS 3800",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4210",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4250",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4410",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4420",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4510",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4520",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4700",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4800",
-     "credits": null
-    },
-    {
-     "code": "PHYS 4900R",
-     "credits": null
-    },
-    {
-     "code": "METO 3100",
-     "credits": null
+     "credits": 5,
+     "alts": [
+      "ASTR 3050",
+      "ASTR 3060",
+      "PHYS 2500",
+      "PHYS 2800",
+      "PHYS 3120",
+      "PHYS 3125",
+      "PHYS 3230",
+      "PHYS 3300",
+      "PHYS 3310",
+      "PHYS 3330",
+      "PHYS 3400",
+      "PHYS 3500",
+      "PHYS 3600",
+      "PHYS 3800",
+      "PHYS 4210",
+      "PHYS 4250",
+      "PHYS 4410",
+      "PHYS 4420",
+      "PHYS 4510",
+      "PHYS 4520",
+      "PHYS 4700",
+      "PHYS 4800",
+      "PHYS 4900R",
+      "METO 3100"
+     ],
+     "options": [
+      [
+       "ASTR 3050"
+      ],
+      [
+       "ASTR 3060"
+      ],
+      [
+       "PHYS 2500"
+      ],
+      [
+       "PHYS 2800"
+      ],
+      [
+       "PHYS 3120"
+      ],
+      [
+       "PHYS 3125"
+      ],
+      [
+       "PHYS 3230"
+      ],
+      [
+       "PHYS 3300"
+      ],
+      [
+       "PHYS 3310"
+      ],
+      [
+       "PHYS 3330"
+      ],
+      [
+       "PHYS 3400"
+      ],
+      [
+       "PHYS 3500"
+      ],
+      [
+       "PHYS 3600"
+      ],
+      [
+       "PHYS 3800"
+      ],
+      [
+       "PHYS 4210"
+      ],
+      [
+       "PHYS 4250"
+      ],
+      [
+       "PHYS 4410"
+      ],
+      [
+       "PHYS 4420"
+      ],
+      [
+       "PHYS 4510"
+      ],
+      [
+       "PHYS 4520"
+      ],
+      [
+       "PHYS 4700"
+      ],
+      [
+       "PHYS 4800"
+      ],
+      [
+       "PHYS 4900R"
+      ],
+      [
+       "METO 3100"
+      ]
+     ]
     }
    ]
   }
@@ -515,7 +519,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3120",
-   "precoreqs": "PHYS 3120"
+   "precoreqs": "PHYS 3120",
+   "preco": [
+    "PHYS 3120"
+   ]
   },
   "PHYS 3230": {
    "title": "Principles of Electronics for the Physical Sciences",

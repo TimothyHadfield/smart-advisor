@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Social/Behavioral Science Dist.",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -168,7 +172,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Physical Science Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -344,7 +348,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "American Institutions Distribution",
+   "label": "REC Elective",
    "pick": {
     "credits": 3
    },
@@ -392,7 +396,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "REC Elective",
+   "label": "Choose 6 credits",
    "pick": {
     "credits": 6
    },
@@ -458,8 +462,9 @@
      "credits": 1
     },
     {
-     "label": "Social/Behavioral Science Dist.",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Dist."
     }
    ]
   },
@@ -486,8 +491,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 2
+     "label": "REC Elective",
+     "credits": 2,
+     "text": "General Elective"
     }
    ]
   },
@@ -503,16 +509,18 @@
      "credits": 1
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "American Institutions Distribution",
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "REC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -541,39 +549,45 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
+     "credits": 1,
+     "alts": [
+      "REC 1505",
+      "REC 1516",
+      "REC 1525",
+      "REC 1528",
+      "REC 1550",
+      "REC 2010"
+     ],
+     "options": [
+      [
+       "REC 1505"
+      ],
+      [
+       "REC 1516"
+      ],
+      [
+       "REC 1525"
+      ],
+      [
+       "REC 1528"
+      ],
+      [
+       "REC 1550"
+      ],
+      [
+       "REC 2010"
+      ]
+     ]
     },
     {
-     "code": "REC 1505",
-     "credits": null
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "code": "REC 1516",
-     "credits": null
-    },
-    {
-     "code": "REC 1525",
-     "credits": null
-    },
-    {
-     "code": "REC 1528",
-     "credits": null
-    },
-    {
-     "code": "REC 1550",
-     "credits": null
-    },
-    {
-     "code": "REC 2010",
-     "credits": null
-    },
-    {
-     "label": "Fine Arts Distribution",
-     "credits": 3
-    },
-    {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -593,36 +607,41 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "REC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
-    },
-    {
-     "code": "REC 1505",
-     "credits": null
-    },
-    {
-     "code": "REC 1516",
-     "credits": null
-    },
-    {
-     "code": "REC 1525",
-     "credits": null
-    },
-    {
-     "code": "REC 1528",
-     "credits": null
-    },
-    {
-     "code": "REC 1550",
-     "credits": null
-    },
-    {
-     "code": "REC 2010",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "REC 1505",
+      "REC 1516",
+      "REC 1525",
+      "REC 1528",
+      "REC 1550",
+      "REC 2010"
+     ],
+     "options": [
+      [
+       "REC 1505"
+      ],
+      [
+       "REC 1516"
+      ],
+      [
+       "REC 1525"
+      ],
+      [
+       "REC 1528"
+      ],
+      [
+       "REC 1550"
+      ],
+      [
+       "REC 2010"
+      ]
+     ]
     },
     {
      "code": "REC 1500",
@@ -654,35 +673,40 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
+     "credits": 1,
+     "alts": [
+      "REC 1505",
+      "REC 1516",
+      "REC 1525",
+      "REC 1528",
+      "REC 1550",
+      "REC 2010"
+     ],
+     "options": [
+      [
+       "REC 1505"
+      ],
+      [
+       "REC 1516"
+      ],
+      [
+       "REC 1525"
+      ],
+      [
+       "REC 1528"
+      ],
+      [
+       "REC 1550"
+      ],
+      [
+       "REC 2010"
+      ]
+     ]
     },
     {
-     "code": "REC 1505",
-     "credits": null
-    },
-    {
-     "code": "REC 1516",
-     "credits": null
-    },
-    {
-     "code": "REC 1525",
-     "credits": null
-    },
-    {
-     "code": "REC 1528",
-     "credits": null
-    },
-    {
-     "code": "REC 1550",
-     "credits": null
-    },
-    {
-     "code": "REC 2010",
-     "credits": null
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
+     "label": "REC Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -703,39 +727,44 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ACC 2110",
-     "credits": null
-    },
-    {
-     "code": "ENTR 3170",
-     "credits": null
-    },
-    {
-     "code": "ENTR 3180",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "HR 3430",
-     "credits": null
-    },
-    {
-     "code": "BIOL 3800",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ACC 2110",
+      "ENTR 3170",
+      "ENTR 3180",
+      "ENGL 3320",
+      "HR 3430",
+      "BIOL 3800"
+     ],
+     "options": [
+      [
+       "ACC 2110"
+      ],
+      [
+       "ENTR 3170"
+      ],
+      [
+       "ENTR 3180"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "HR 3430"
+      ],
+      [
+       "BIOL 3800"
+      ]
+     ]
     },
     {
      "label": "REC Elective",
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "REC Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -778,11 +807,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 3800": {
    "title": "Conservation Biology",
@@ -848,7 +885,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ENTR 2500",
-   "precoreqs": "ENTR 2500"
+   "precoreqs": "ENTR 2500",
+   "preco": [
+    "ENTR 2500"
+   ]
   },
   "EXSC 2500": {
    "title": "Sports Medicine",
@@ -883,7 +923,14 @@
      "PETE 2700",
      "REC 2200"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G",
+    "PETE 2700",
+    "REC 2200"
+   ]
   },
   "EXSC 3270": {
    "title": "Exercise Testing and Prescription",
@@ -909,7 +956,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -946,7 +998,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -966,7 +1023,10 @@
      "ZOOL 2325"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "ZOOL 2325"
+   ]
   },
   "EXSC 4300": {
    "title": "Research Methods in Exercise Science and Outdoor Recreation",
@@ -1183,7 +1243,11 @@
      "ENGL 2010",
      "MATH 1000"
     ]
-   }
+   },
+   "preco": [
+    "ENGL 2010",
+    "MATH 1000"
+   ]
   },
   "REC 2450": {
    "title": "Rock Climbing Site Management and Facilitation",
@@ -1238,7 +1302,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MATH 1000 or higher",
-   "precoreqs": "MATH 1000"
+   "precoreqs": "MATH 1000",
+   "preco": [
+    "MATH 1000"
+   ]
   },
   "REC 3200": {
    "title": "Inclusive Recreation",
@@ -1259,7 +1326,10 @@
    "prereqs": "REC 1535",
    "prereqNonCourse": true,
    "precoreqText": "REC 2200",
-   "precoreqs": "REC 2200"
+   "precoreqs": "REC 2200",
+   "preco": [
+    "REC 2200"
+   ]
   },
   "REC 3400": {
    "title": "Risk Management",
@@ -1268,7 +1338,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MAT 1010",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "REC 3500": {
    "title": "Recreation Administration",
@@ -1338,7 +1411,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "REC 2400",
-   "precoreqs": "REC 2400"
+   "precoreqs": "REC 2400",
+   "preco": [
+    "REC 2400"
+   ]
   },
   "REC 4810R": {
    "title": "Senior Internship",

@@ -229,8 +229,9 @@
      "credits": 1
     },
     {
-     "label": "Social Science",
-     "credits": 3
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 3,
+     "text": "Social Science"
     },
     {
      "label": "English GE",
@@ -314,7 +315,10 @@
     "DMT 1110L"
    ],
    "precoreqText": "DMT 1005",
-   "precoreqs": "DMT 1005"
+   "precoreqs": "DMT 1005",
+   "preco": [
+    "DMT 1005"
+   ]
   },
   "DMT 1110L": {
    "title": "Diesel Engine Overhaul Lab",
@@ -324,7 +328,10 @@
     "DMT 1110"
    ],
    "precoreqText": "DMT 1005",
-   "precoreqs": "DMT 1005"
+   "precoreqs": "DMT 1005",
+   "preco": [
+    "DMT 1005"
+   ]
   },
   "DMT 1120": {
    "title": "Diesel Engine Operation Tune Up",
@@ -336,7 +343,12 @@
      "DMT 1110L",
      "DMT 1120L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1110",
+    "DMT 1110L",
+    "DMT 1120L"
+   ]
   },
   "DMT 1120L": {
    "title": "Diesel Engine Operation Tune up Lab",
@@ -381,7 +393,11 @@
      "DMT 1510",
      "DMT 1510L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1510",
+    "DMT 1510L"
+   ]
   },
   "DMT 1520L": {
    "title": "Electrical Systems Lab II",
@@ -396,7 +412,11 @@
      "DMT 1510",
      "DMT 1510L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1510",
+    "DMT 1510L"
+   ]
   },
   "DMT 2230": {
    "title": "Heating Ventilation Air Conditioning and Refrigeration Theory",
@@ -411,7 +431,11 @@
      "DMT 1510",
      "DMT 1510L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1510",
+    "DMT 1510L"
+   ]
   },
   "DMT 2230L": {
    "title": "Heating Ventilation Air Conditioning and Refrigeration Lab",
@@ -426,7 +450,11 @@
      "DMT 1510",
      "DMT 1510L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1510",
+    "DMT 1510L"
+   ]
   },
   "DMT 2310": {
    "title": "Fluid Power I Theory",
@@ -460,7 +488,12 @@
      "DMT 2310L",
      "DMT 2320L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 2310",
+    "DMT 2310L",
+    "DMT 2320L"
+   ]
   },
   "DMT 2320L": {
    "title": "Fluid Power II Lab",

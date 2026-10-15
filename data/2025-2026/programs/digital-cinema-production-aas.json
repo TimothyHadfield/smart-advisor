@@ -7,35 +7,25 @@
  "totalCredits": 60,
  "requirements": [
   {
-   "type": "choice",
+   "type": "course",
    "area": "General Education Requirements",
-   "label": "Choose 6 credits",
-   "pick": {
-    "credits": 6
-   },
-   "credits": 6,
-   "options": [
-    {
-     "codes": [
-      "ENGL 1010"
-     ],
-     "credits": 3,
-     "alts": [
-      "ENGH 1005"
-     ]
-    },
-    {
-     "codes": [
-      "ENGL 2010"
-     ],
-     "credits": 3
-    }
-   ]
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGH 1005"
+   ],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "General Education Requirements",
+   "code": "ENGL 2010",
+   "alts": [],
+   "credits": 3
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science",
+   "label": "Math Distribution",
    "pick": {
     "count": 1
    },
@@ -84,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -133,44 +124,86 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 3
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010L",
+   "alts": [],
+   "credits": 2
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1020",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1020L",
    "alts": [
     "THEA 2742"
    ],
-   "credits": 3
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1610",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1610L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 4
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2410",
    "alts": [],
-   "credits": 3
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2410L",
+   "alts": [],
+   "credits": 2
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2800",
    "alts": [],
-   "credits": 4
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "choice",
@@ -197,7 +230,8 @@
      "codes": [
       "DCPR 2000R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -219,19 +253,22 @@
     },
     {
      "codes": [
-      "DCPR 2620"
+      "DCPR 2620",
+      "DCPR 2620L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 2630"
+      "DCPR 2630",
+      "DCPR 2630L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 2810"
+      "DCPR 2810",
+      "DCPR 2810L"
      ],
      "credits": 3
     }
@@ -362,8 +399,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science",
-     "credits": 3
+     "label": "Any approved Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social/Behavioral Science"
     },
     {
      "code": "DCPR 1000",
@@ -371,11 +409,19 @@
     },
     {
      "code": "DCPR 1010",
-     "credits": 3
+     "credits": 1
+    },
+    {
+     "code": "DCPR 1010L",
+     "credits": 2
     },
     {
      "code": "DCPR 1610",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 1610L",
+     "credits": 1
     },
     {
      "label": "APPROVED OPTION/ELECTIVE",
@@ -391,8 +437,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Any approved Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "code": "DCPR 1020",
@@ -402,8 +449,16 @@
      "credits": 3
     },
     {
+     "code": "DCPR 1020L",
+     "credits": null
+    },
+    {
      "code": "DCPR 1800",
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "DCPR 1800L",
+     "credits": 1
     },
     {
      "code": "DGM 2320",
@@ -421,6 +476,10 @@
     {
      "code": "DCPR 2410",
      "credits": 3
+    },
+    {
+     "code": "DCPR 2410L",
+     "credits": null
     },
     {
      "code": "THEA 2311",
@@ -449,6 +508,10 @@
     {
      "code": "DCPR 2800",
      "credits": 4
+    },
+    {
+     "code": "DCPR 2800L",
+     "credits": null
     },
     {
      "label": "APPROVED OPTION/ELECTIVE",
@@ -511,6 +574,14 @@
     "DCPR 1010L"
    ]
   },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
+   ]
+  },
   "DCPR 1020": {
    "title": "Writing for Entertainment Media I",
    "credits": 2,
@@ -527,12 +598,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 3,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 2000R": {
@@ -660,6 +747,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -751,13 +839,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 2033": {
    "title": "Acting II",
@@ -775,7 +869,12 @@
      "THEA 1514",
      "THEA 2204"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2204"
+   ]
   },
   "THEA 2204": {
    "title": "Costume Construction I Lab",
@@ -787,7 +886,12 @@
      "THEA 1514",
      "THEA 2203"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2203"
+   ]
   },
   "THEA 2311": {
    "title": "Film History I",
@@ -808,7 +912,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2514": {
    "title": "Introduction to Design for Stage and Screen Lab",
@@ -816,11 +923,22 @@
    "prereqText": "THEA 1513",
    "prereqs": "THEA 1513",
    "precoreqText": "THEA 2513",
-   "precoreqs": "THEA 2513"
+   "precoreqs": "THEA 2513",
+   "preco": [
+    "THEA 2513"
+   ]
   },
   "THEA 2742": {
    "title": "Scriptwriting for the Screen",
    "credits": 3
   }
- }
+ },
+ "missingCourses": [
+  "DCPR 1020L",
+  "DCPR 2410L",
+  "DCPR 2620L",
+  "DCPR 2630L",
+  "DCPR 2800L",
+  "DCPR 2810L"
+ ]
 }

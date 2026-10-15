@@ -220,7 +220,8 @@
      "codes": [
       "AET 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
@@ -346,8 +347,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Biology or Physical Science Distribution",
-     "credits": 3
+     "label": "Any approved Biology or Physical Science",
+     "credits": 3,
+     "text": "Biology or Physical Science Distribution"
     },
     {
      "code": "AET 2250",
@@ -371,80 +373,86 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities or Fine Art Distribution",
-     "credits": 3
+     "label": "Any approved Humanities or Fine Art",
+     "credits": 3,
+     "text": "Humanities or Fine Art Distribution"
     },
     {
-     "label": "Behavioral/Social Science Distribution",
-     "credits": 3
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 3,
+     "text": "Behavioral/Social Science Distribution"
     },
     {
      "label": "Choose 12 Credits from the Following Options:",
-     "credits": 12
-    },
-    {
-     "code": "AET 2010",
-     "credits": null
-    },
-    {
-     "code": "AET 2015",
-     "credits": null
-    },
-    {
-     "code": "AET 2160",
-     "credits": null
-    },
-    {
-     "code": "AET 2165",
-     "credits": null
-    },
-    {
-     "code": "AET 2270",
-     "credits": null
-    },
-    {
-     "code": "AET 2275",
-     "credits": null
-    },
-    {
-     "code": "AET 2280",
-     "credits": null
-    },
-    {
-     "code": "AET 2285",
-     "credits": null
-    },
-    {
-     "code": "AET 2810R",
-     "credits": null
-    },
-    {
-     "code": "AET 2900",
-     "credits": null
-    },
-    {
-     "code": "AET 2910R",
-     "credits": null
-    },
-    {
-     "code": "AET 2150",
-     "credits": null
-    },
-    {
-     "code": "AET 2155",
-     "credits": null
-    },
-    {
-     "code": "AET 2850R",
-     "credits": null
-    },
-    {
-     "code": "MECH 2300",
-     "credits": null
-    },
-    {
-     "code": "MECH 2305",
-     "credits": null
+     "credits": 12,
+     "alts": [
+      "AET 2010",
+      "AET 2015",
+      "AET 2160",
+      "AET 2165",
+      "AET 2270",
+      "AET 2275",
+      "AET 2280",
+      "AET 2285",
+      "AET 2810R",
+      "AET 2900",
+      "AET 2910R",
+      "AET 2150",
+      "AET 2155",
+      "AET 2850R",
+      "MECH 2300",
+      "MECH 2305"
+     ],
+     "options": [
+      [
+       "AET 2010"
+      ],
+      [
+       "AET 2015"
+      ],
+      [
+       "AET 2160"
+      ],
+      [
+       "AET 2165"
+      ],
+      [
+       "AET 2270"
+      ],
+      [
+       "AET 2275"
+      ],
+      [
+       "AET 2280"
+      ],
+      [
+       "AET 2285"
+      ],
+      [
+       "AET 2810R"
+      ],
+      [
+       "AET 2900"
+      ],
+      [
+       "AET 2910R"
+      ],
+      [
+       "AET 2150"
+      ],
+      [
+       "AET 2155"
+      ],
+      [
+       "AET 2850R"
+      ],
+      [
+       "MECH 2300"
+      ],
+      [
+       "MECH 2305"
+      ]
+     ]
     }
    ]
   }
@@ -473,7 +481,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1135": {
    "title": "Introduction to Automation Lab",
@@ -485,7 +496,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1140": {
    "title": "Applied AC Theory",
@@ -503,7 +517,14 @@
      "AET 1150",
      "AET 1155"
     ]
-   }
+   },
+   "preco": [
+    "AET 1050",
+    "AET 1130",
+    "AET 1135",
+    "AET 1150",
+    "AET 1155"
+   ]
   },
   "AET 1145": {
    "title": "Applied AC Lab",
@@ -522,7 +543,10 @@
     "AET 1140"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1150": {
    "title": "Industrial Logic",
@@ -534,7 +558,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1155": {
    "title": "Industrial Logic Lab",
@@ -546,7 +573,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1250": {
    "title": "Industrial Electrical Code",
@@ -560,7 +590,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "AET 1060",
-   "precoreqs": "AET 1060"
+   "precoreqs": "AET 1060",
+   "preco": [
+    "AET 1060"
+   ]
   },
   "AET 1280": {
    "title": "Electric Motor Control",
@@ -582,7 +615,11 @@
      "AET 1060",
      "AET 1250"
     ]
-   }
+   },
+   "preco": [
+    "AET 1060",
+    "AET 1250"
+   ]
   },
   "AET 1285": {
    "title": "Electric Motor Control Lab",
@@ -604,7 +641,11 @@
      "AET 1060",
      "AET 1250"
     ]
-   }
+   },
+   "preco": [
+    "AET 1060",
+    "AET 1250"
+   ]
   },
   "AET 2010": {
    "title": "Manufacturing Technology",
@@ -643,7 +684,11 @@
      "AET 2250",
      "AET 2255"
     ]
-   }
+   },
+   "preco": [
+    "AET 2250",
+    "AET 2255"
+   ]
   },
   "AET 2115": {
    "title": "Industrial Electronics I Lab",
@@ -666,7 +711,11 @@
      "AET 2250",
      "AET 2255"
     ]
-   }
+   },
+   "preco": [
+    "AET 2250",
+    "AET 2255"
+   ]
   },
   "AET 2150": {
    "title": "Introduction to Fluid Power Systems",
@@ -757,7 +806,11 @@
      "AET 2110",
      "AET 2115"
     ]
-   }
+   },
+   "preco": [
+    "AET 2110",
+    "AET 2115"
+   ]
   },
   "AET 2255": {
    "title": "Industrial Programmable Logic Controllers--PLCs Lab",
@@ -780,7 +833,11 @@
      "AET 2110",
      "AET 2115"
     ]
-   }
+   },
+   "preco": [
+    "AET 2110",
+    "AET 2115"
+   ]
   },
   "AET 2270": {
    "title": "Industrial Programmable Automation Controllers--PACs",
@@ -943,7 +1000,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   },
   "MECH 2305": {
    "title": "Microcontroller Architecture and Programming Lab",
@@ -967,7 +1028,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   }
  }
 }

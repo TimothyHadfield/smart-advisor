@@ -33,14 +33,20 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science ( TECH 1010 Recommended)",
-   "credits": 3
+   "label": "Physical Science (TECH 1010 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "TECH 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science (TECH 2000G Recommended)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "TECH 2000G"
+   ]
   },
   {
    "type": "course",
@@ -68,7 +74,10 @@
    "area": "Discipline Elective Requirements",
    "label": "Complete 9 credits any course numbered 1000 or 2000",
    "credits": 9,
-   "text": "Complete 9 credits any course numbered 1000 or 2000"
+   "text": "Complete 9 credits any course numbered 1000 or 2000",
+   "notes": [
+    "Recommended Courses: ENGR 1000 ; CS 1030 ; DGM 1110"
+   ]
   },
   {
    "type": "placeholder",
@@ -90,27 +99,39 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "STAT 1040",
+      "STAT 1045"
+     ],
+     "options": [
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ]
+     ]
     },
     {
-     "code": "STAT 1040",
-     "credits": null
+     "label": "Discipline Elective Requirement (DGM 1110 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "DGM 1110"
+     ]
     },
     {
-     "code": "STAT 1045",
-     "credits": null
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "code": "DGM 1110",
-     "credits": 3
-    },
-    {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
-    },
-    {
-     "code": "TECH 1010",
-     "credits": 3
+     "label": "Physical Science (TECH 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "TECH 1010"
+     ],
+     "text": "Physical Science (Recommended TECH 1010)"
     }
    ]
   },
@@ -122,20 +143,29 @@
      "credits": 3
     },
     {
-     "code": "CS 1030",
-     "credits": 3
+     "label": "Discipline Elective Requirement (CS 1030 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "CS 1030"
+     ]
     },
     {
-     "code": "TECH 2000G",
-     "credits": 3
+     "label": "Social/Behavioral Science (TECH 2000G Recommended)",
+     "credits": 3,
+     "recommended": [
+      "TECH 2000G"
+     ],
+     "text": "Social/Behavioral Science (TECH 2000G Recommended))"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     }
    ]
   },
@@ -147,20 +177,25 @@
      "credits": 3
     },
     {
-     "code": "ENGR 1000",
-     "credits": 3
+     "label": "Discipline Elective Requirement (Recommended ENGR 1000)",
+     "credits": 3,
+     "recommended": [
+      "ENGR 1000"
+     ]
     },
     {
      "code": "TECH 2850",
      "credits": 2
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     }
    ]
   },
@@ -172,37 +207,34 @@
      "credits": 3
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     },
     {
-     "label": "Approved or articulated technical credits",
-     "credits": 3
+     "label": "Complete 30 approved or articulated technical credits",
+     "credits": 3,
+     "text": "Approved or articulated technical credits"
     }
    ]
   }
  ],
  "courses": {
-  "CS 1030": {
-   "title": "Foundations of Computer Science",
-   "credits": 3
-  },
-  "DGM 1110": {
-   "title": "Digital Media Essentials I",
-   "credits": 4
-  },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
@@ -216,10 +248,6 @@
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
    "prereqNonCourse": true
-  },
-  "ENGR 1000": {
-   "title": "Introduction to Engineering",
-   "credits": 3
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -250,14 +278,6 @@
    },
    "uncertain": true,
    "prereqNonCourse": true
-  },
-  "TECH 1010": {
-   "title": "Understanding Technology",
-   "credits": 3
-  },
-  "TECH 2000G": {
-   "title": "Technology and Human Life",
-   "credits": 3
   },
   "TECH 2010": {
    "title": "Supervision in Technology",

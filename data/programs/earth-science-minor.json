@@ -228,6 +228,7 @@
       "GEO 4900R"
      ],
      "credits": 1,
+     "crMax": 4,
      "alts": [
       "ENVT 4950R",
       "ENVT 4820R",
@@ -243,7 +244,8 @@
      "codes": [
       "GEO 4950R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -280,7 +282,8 @@
      ],
      "credits": 1
     }
-   ]
+   ],
+   "text": "Complete eleven credits of upper division electives from the following:"
   }
  ],
  "gradPlan": [
@@ -311,42 +314,45 @@
    "items": [
     {
      "label": "Complete 4 credits of lower division electives, such as:",
-     "credits": 4
-    },
-    {
-     "code": "ENVT 1110",
-     "credits": null
-    },
-    {
-     "code": "ENVT 2710",
-     "credits": null
-    },
-    {
-     "code": "GEO 2020R",
-     "credits": null
-    },
-    {
-     "code": "GEO 1200",
-     "credits": null
-    },
-    {
-     "code": "GEO 1080",
-     "credits": null
-    },
-    {
-     "code": "GEO 1220",
+     "credits": 4,
      "alts": [
-      "GEO 1225"
+      "ENVT 1110",
+      "ENVT 2710",
+      "GEO 2020R",
+      "GEO 1200",
+      "GEO 1080",
+      "GEO 1220",
+      "GEO 1225",
+      "GEOG 1000",
+      "METO 1010"
      ],
-     "credits": null
-    },
-    {
-     "code": "GEOG 1000",
-     "credits": null
-    },
-    {
-     "code": "METO 1010",
-     "credits": null
+     "options": [
+      [
+       "ENVT 1110"
+      ],
+      [
+       "ENVT 2710"
+      ],
+      [
+       "GEO 2020R"
+      ],
+      [
+       "GEO 1200"
+      ],
+      [
+       "GEO 1080"
+      ],
+      [
+       "GEO 1220",
+       "GEO 1225"
+      ],
+      [
+       "GEOG 1000"
+      ],
+      [
+       "METO 1010"
+      ]
+     ]
     }
    ]
   },
@@ -355,27 +361,31 @@
    "items": [
     {
      "label": "Complete 3 credits of lower division electives such as:",
-     "credits": 3
-    },
-    {
-     "code": "ENVT 2730",
-     "credits": null
-    },
-    {
-     "code": "GEO 2070",
-     "credits": null
-    },
-    {
-     "code": "GEO 2500",
-     "credits": null
-    },
-    {
-     "code": "GEOG 2000",
-     "credits": null
-    },
-    {
-     "code": "METO 1060",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENVT 2730",
+      "GEO 2070",
+      "GEO 2500",
+      "GEOG 2000",
+      "METO 1060"
+     ],
+     "options": [
+      [
+       "ENVT 2730"
+      ],
+      [
+       "GEO 2070"
+      ],
+      [
+       "GEO 2500"
+      ],
+      [
+       "GEOG 2000"
+      ],
+      [
+       "METO 1060"
+      ]
+     ]
     },
     {
      "label": "Upper Division Elective",
@@ -523,7 +533,10 @@
     ]
    },
    "precoreqText": "GEO 1220",
-   "precoreqs": "GEO 1220"
+   "precoreqs": "GEO 1220",
+   "preco": [
+    "GEO 1220"
+   ]
   },
   "GEO 2020R": {
    "title": "Science Excursion",

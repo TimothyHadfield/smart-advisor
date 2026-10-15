@@ -112,7 +112,7 @@
   {
    "type": "choice",
    "area": "Discipline Requirements",
-   "label": "Elective",
+   "label": "CS Electives (3000 or 4000-level)",
    "pick": {
     "count": 1
    },
@@ -271,6 +271,9 @@
    "credits": 33,
    "notes": [
     "At least 16 credit hours must be upper division"
+   ],
+   "rules": [
+    "At least 16 credit hours must be upper division"
    ]
   }
  ],
@@ -408,27 +411,31 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "CS 3250",
-     "credits": null
-    },
-    {
-     "code": "CS 3260",
-     "credits": null
-    },
-    {
-     "code": "CS 3270",
-     "credits": null
-    },
-    {
-     "code": "CS 3370",
-     "credits": null
-    },
-    {
-     "code": "CS 3380",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "CS 3250",
+      "CS 3260",
+      "CS 3270",
+      "CS 3370",
+      "CS 3380"
+     ],
+     "options": [
+      [
+       "CS 3250"
+      ],
+      [
+       "CS 3260"
+      ],
+      [
+       "CS 3270"
+      ],
+      [
+       "CS 3370"
+      ],
+      [
+       "CS 3380"
+      ]
+     ]
     },
     {
      "label": "Extra-Major Specialization",
@@ -462,19 +469,23 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "CS 3410",
-     "credits": null
-    },
-    {
-     "code": "CS 3680",
-     "credits": null
-    },
-    {
-     "code": "CS 4810R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "CS 3410",
+      "CS 3680",
+      "CS 4810R"
+     ],
+     "options": [
+      [
+       "CS 3410"
+      ],
+      [
+       "CS 3680"
+      ],
+      [
+       "CS 4810R"
+      ]
+     ]
     },
     {
      "label": "CS Electives (3000 or 4000-level)",

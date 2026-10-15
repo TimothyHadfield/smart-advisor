@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -111,8 +115,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Personal, Professional, and Civic Growth ( GEOG 2000 is recommended)",
-   "credits": 3
+   "label": "Personal, Professional, and Civic Growth (GEOG 2000 is recommended)",
+   "credits": 3,
+   "recommended": [
+    "GEOG 2000"
+   ]
   },
   {
    "type": "course",
@@ -205,7 +212,9 @@
    "area": "Discipline Core Requirements",
    "code": "GEO 4800R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -391,7 +400,11 @@
      "credits": 4
     }
    ],
-   "text": "Complete 5 credits from the following list"
+   "text": "Complete 5 credits from the following list",
+   "notes": [
+    "Or other department approved electives"
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -487,8 +500,9 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth (GEOG 2000 is recommended)",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     }
    ]
   },
@@ -533,8 +547,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behav Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behav Science Distribution"
     },
     {
      "code": "GEOG 3700",
@@ -629,11 +644,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 2500": {
    "title": "Environmental Biology",
@@ -890,7 +913,10 @@
     ]
    },
    "precoreqText": "GEO 1220",
-   "precoreqs": "GEO 1220"
+   "precoreqs": "GEO 1220",
+   "preco": [
+    "GEO 1220"
+   ]
   },
   "GEO 3080": {
    "title": "Earth Materials",

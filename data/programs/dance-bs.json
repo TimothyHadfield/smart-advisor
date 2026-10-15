@@ -11,7 +11,7 @@
    "area": "General Education Requiremensts",
    "code": "ENGL 1010",
    "alts": [
-    "ENGH 1005"
+    "ENGL 1005"
    ],
    "credits": 3
   },
@@ -87,7 +87,10 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ]
   },
   {
    "type": "placeholder",
@@ -182,9 +185,10 @@
    "credits": 1
   },
   {
-   "type": "placeholder",
+   "type": "course",
    "area": "Discipline Core Requirements",
-   "label": "DANC 2560G",
+   "code": "DANC 2560G",
+   "alts": [],
    "credits": 3
   },
   {
@@ -218,9 +222,10 @@
   {
    "type": "choice",
    "area": "BS Dance Tracks",
-   "label": "Choose 49 credits",
+   "label": "Choose 1 track",
    "pick": {
-    "credits": 49
+    "credits": 49,
+    "tracks": 1
    },
    "credits": 49,
    "options": [
@@ -229,105 +234,112 @@
       "DANC 2700R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2710R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2720R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3700R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3710R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3720R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 4710R"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 4720R"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
+    },
+    {
+     "codes": [
+      "DANC 3730"
+     ],
+     "credits": 2,
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3740"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 4740"
      ],
      "credits": 3,
-     "section": "Complete the following courses:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2760R"
      ],
      "credits": 1,
-     "section": "Complete 6 credits total from the following courses"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3760R"
      ],
      "credits": 2,
-     "section": "Complete 6 credits total from the following courses"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 4760R"
      ],
      "credits": 3,
-     "section": "Complete 6 credits total from the following courses"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2330"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2340"
      ],
      "credits": 2,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
@@ -337,70 +349,84 @@
      "alts": [
       "DANC 2670"
      ],
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3140"
      ],
      "credits": 2,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
+    },
+    {
+     "codes": [
+      "DANC 3750"
+     ],
+     "credits": 2,
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 3850"
      ],
      "credits": 2,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
+    },
+    {
+     "codes": [
+      "DANC 4880"
+     ],
+     "credits": 3,
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Ballroom Dance Track"
     },
     {
      "codes": [
       "DANC 2330"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 2340"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3140"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 1500R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 1510R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
@@ -410,7 +436,7 @@
      "alts": [
       "DANC 1600R"
      ],
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
@@ -420,49 +446,50 @@
      "alts": [
       "DANC 2580R"
      ],
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 2700R"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3850"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3600R"
      ],
      "credits": 3,
-     "section": "Complete 6 credits from the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3460R"
      ],
      "credits": 3,
-     "section": "Complete 6 credits from the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3800R"
      ],
      "credits": 2,
-     "section": "Complete 6 credits from the following courses:"
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
       "DANC 3480R"
      ],
      "credits": 1,
-     "section": "Complete 6 credits from the following courses:"
+     "crMax": 3,
+     "section": "Commercial Dance Track"
     },
     {
      "codes": [
@@ -472,155 +499,188 @@
      "alts": [
       "DANC 2670"
      ],
-     "section": "Strongly Recommended:"
+     "section": "Commercial Dance Track DANC Electives"
+    },
+    {
+     "codes": [
+      "DANC 4880"
+     ],
+     "credits": 3,
+     "section": "Commercial Dance Track DANC Electives"
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Commercial Dance Track DANC Electives"
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Commercial Dance Track DANC Electives"
     },
     {
      "codes": [
       "DANC 2330"
      ],
      "credits": 1,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 2340"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 2650R"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 2670"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 2850"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 3160"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 3400"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 3650R"
      ],
      "credits": 2,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
+    },
+    {
+     "codes": [
+      "DANC 4880"
+     ],
+     "credits": 3,
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "PSY 1010"
      ],
      "credits": 3,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "PSY 2300"
      ],
      "credits": 3,
-     "section": "Complete the following courses:"
+     "section": "Pre-Dance Therapy Track"
     },
     {
      "codes": [
       "DANC 3140"
      ],
      "credits": 2,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "PSY 1100"
      ],
      "credits": 3,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "PSY 1250"
      ],
      "credits": 3,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "PSY 4300"
      ],
      "credits": 3,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     },
     {
      "codes": [
       "PSY 4400"
      ],
      "credits": 3,
-     "section": "Strongly Recommended:"
+     "section": "Pre-Dance Therapy Electives",
+     "shared": true
     }
    ],
    "notes": [
-    "Complete the following courses:: DANC 3730",
-    "Strongly Recommended:: DANC 3750",
-    "Strongly Recommended:: DANC 4880",
-    "Complete 6 credits from the following courses:: Other Department Approved Performing Company",
-    "Strongly Recommended:: DANC 4880",
-    "Complete the following courses:: DANC 4880"
+    "Ballroom Dance Track",
+    "Ballroom Dance Track: Complete the following courses:",
+    "Ballroom Dance Track: Complete 6 credits total from the following courses",
+    "Ballroom Dance Track: Complete 26 credits from any DANC or other Department approved course",
+    "Ballroom Dance Track: Strongly Recommended:",
+    "Ballroom Dance Track: Commercial Dance Track",
+    "Commercial Dance Track: Complete the following courses:",
+    "Commercial Dance Track: Complete 6 credits from the following courses:",
+    "Commercial Dance Track: Other Department Approved Performing Company",
+    "Commercial Dance Track: Commercial Dance Track DANC Electives",
+    "Commercial Dance Track DANC Electives: Complete 31 credits from any DANC or other Department approved course:",
+    "Commercial Dance Track DANC Electives: Strongly Recommended:",
+    "Commercial Dance Track DANC Electives: Pre-Dance Therapy Track",
+    "Pre-Dance Therapy Track: Complete the following courses:",
+    "Pre-Dance Therapy Track: Pre-Dance Therapy Electives",
+    "Pre-Dance Therapy Electives: Complete 25 credits from any DANC, HLSC, or PSY course",
+    "Pre-Dance Therapy Electives: Strongly Recommended:"
    ],
+   "open": true,
    "tracks": [
-    "Complete the following courses:",
-    "Complete 6 credits total from the following courses",
-    "Strongly Recommended:",
-    "Complete 6 credits from the following courses:"
+    "Ballroom Dance Track",
+    "Commercial Dance Track",
+    "Commercial Dance Track DANC Electives",
+    "Pre-Dance Therapy Track"
    ]
   },
   {
@@ -656,8 +716,9 @@
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 2
+     "label": "Choose 1 track",
+     "credits": 2,
+     "text": "Track Requirements or Electives"
     }
    ]
   },
@@ -669,16 +730,18 @@
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 3
+     "label": "Choose 1 track",
+     "credits": 3,
+     "text": "Track Requirements or Electives"
     },
     {
      "label": "Personal, Professional, & Civic Growth",
      "credits": 3
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "label": "Free Electives",
@@ -690,40 +753,47 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Complete 3 credits from the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "DANC 1100R",
+      "DANC 1200R",
+      "DANC 1270R",
+      "DANC 1410R",
+      "DANC 1430R"
+     ],
+     "options": [
+      [
+       "DANC 1100R"
+      ],
+      [
+       "DANC 1200R"
+      ],
+      [
+       "DANC 1270R"
+      ],
+      [
+       "DANC 1410R"
+      ],
+      [
+       "DANC 1430R"
+      ]
+     ]
     },
     {
-     "code": "DANC 1100R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1200R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1270R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1410R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1430R",
-     "credits": null
-    },
-    {
-     "label": "Track Requirement or Electives",
-     "credits": 3
+     "label": "Choose 1 track",
+     "credits": 3,
+     "text": "Track Requirement or Electives"
     },
     {
      "label": "Free Electives",
@@ -736,39 +806,45 @@
    "items": [
     {
      "label": "Complete 3 credits from the following:",
-     "credits": 3
-    },
-    {
-     "code": "DANC 1100R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1200R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1270R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1410R",
-     "credits": null
-    },
-    {
-     "code": "DANC 1440R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "DANC 1100R",
+      "DANC 1200R",
+      "DANC 1270R",
+      "DANC 1410R",
+      "DANC 1440R"
+     ],
+     "options": [
+      [
+       "DANC 1100R"
+      ],
+      [
+       "DANC 1200R"
+      ],
+      [
+       "DANC 1270R"
+      ],
+      [
+       "DANC 1410R"
+      ],
+      [
+       "DANC 1440R"
+      ]
+     ]
     },
     {
      "code": "DANC 2560G",
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 6
+     "label": "Choose 1 track",
+     "credits": 6,
+     "text": "Track Requirements or Electives"
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     }
    ]
   },
@@ -784,8 +860,9 @@
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 9
+     "label": "Choose 1 track",
+     "credits": 9,
+     "text": "Track Requirements or Electives"
     }
    ]
   },
@@ -801,8 +878,9 @@
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 8
+     "label": "Choose 1 track",
+     "credits": 8,
+     "text": "Track Requirements or Electives"
     }
    ]
   },
@@ -818,8 +896,9 @@
      "credits": 5
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 8
+     "label": "Choose 1 track",
+     "credits": 8,
+     "text": "Track Requirements or Electives"
     }
    ]
   },
@@ -835,8 +914,9 @@
      "credits": 3
     },
     {
-     "label": "Track Requirements or Electives",
-     "credits": 10
+     "label": "Choose 1 track",
+     "credits": 10,
+     "text": "Track Requirements or Electives"
     }
    ]
   }
@@ -1154,6 +1234,13 @@
    "prereqs": null,
    "prereqNonCourse": true
   },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
@@ -1205,6 +1292,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1312,6 +1400,11 @@
  "missingCourses": [
   "DANC 1600R",
   "DANC 2560G",
-  "ENGH 1005"
+  "DANC 3730",
+  "DANC 3750",
+  "DANC 4880"
+ ],
+ "typos": [
+  "ENGH 1005 -> ENGL 1005"
  ]
 }

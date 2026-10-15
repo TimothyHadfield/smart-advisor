@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -485,7 +489,8 @@
    "text": "Complete 6 credits from the following",
    "notes": [
     "Any Upper Division CJ Course or Approved Elective"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -744,17 +749,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -794,7 +810,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3500",
-   "precoreqs": "BIOL 3500"
+   "precoreqs": "BIOL 3500",
+   "preco": [
+    "BIOL 3500"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -821,7 +840,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3550",
-   "precoreqs": "BIOL 3550"
+   "precoreqs": "BIOL 3550",
+   "preco": [
+    "BIOL 3550"
+   ]
   },
   "BIOL 3600": {
    "title": "Biological Chemistry",
@@ -830,7 +852,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "BIOL 3605": {
    "title": "Biological Chemistry Lab",
@@ -1135,7 +1160,10 @@
    "prereqs": "FSCI 3820",
    "prereqNonCourse": true,
    "precoreqText": "FSCI 3780",
-   "precoreqs": "FSCI 3780"
+   "precoreqs": "FSCI 3780",
+   "preco": [
+    "FSCI 3780"
+   ]
   },
   "FSCI 3850": {
    "title": "Marijuana Identification Certificate",

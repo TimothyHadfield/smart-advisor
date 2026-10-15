@@ -72,7 +72,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -175,31 +175,35 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "EXSC 3550",
-     "credits": null
-    },
-    {
-     "code": "EXSC 3750",
-     "credits": null
-    },
-    {
-     "code": "EXSC 4000",
-     "credits": null
-    },
-    {
-     "code": "EXSC 4100",
-     "credits": null
-    },
-    {
-     "code": "EXSC 4500",
-     "credits": null
-    },
-    {
-     "code": "EXSC 4550",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "EXSC 3550",
+      "EXSC 3750",
+      "EXSC 4000",
+      "EXSC 4100",
+      "EXSC 4500",
+      "EXSC 4550"
+     ],
+     "options": [
+      [
+       "EXSC 3550"
+      ],
+      [
+       "EXSC 3750"
+      ],
+      [
+       "EXSC 4000"
+      ],
+      [
+       "EXSC 4100"
+      ],
+      [
+       "EXSC 4500"
+      ],
+      [
+       "EXSC 4550"
+      ]
+     ]
     }
    ]
   }
@@ -249,7 +253,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3500": {
    "title": "Kinesiology",
@@ -287,7 +296,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -324,7 +338,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -352,7 +371,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -383,7 +406,10 @@
      "ZOOL 2325"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "ZOOL 2325"
+   ]
   },
   "EXSC 4000": {
    "title": "Clinical Exercise Physiology",

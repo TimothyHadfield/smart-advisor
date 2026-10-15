@@ -53,7 +53,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Choose 3 credits",
+   "label": "Complete three hours from the following courses:",
    "pick": {
     "credits": 3
    },
@@ -165,43 +165,47 @@
     },
     {
      "label": "Complete three hours from the following courses:",
-     "credits": 3
-    },
-    {
-     "code": "ECON 3030",
-     "credits": null
-    },
-    {
-     "code": "ECON 3050G",
-     "credits": null
-    },
-    {
-     "code": "ECON 3060",
-     "credits": null
-    },
-    {
-     "code": "ECON 3070",
-     "credits": null
-    },
-    {
-     "code": "ECON 3400",
-     "credits": null
-    },
-    {
-     "code": "ECON 4150",
-     "credits": null
-    },
-    {
-     "code": "FIN 4180",
-     "credits": null
-    },
-    {
-     "code": "FIN 4100",
-     "credits": null
-    },
-    {
-     "code": "FIN 4570R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ECON 3030",
+      "ECON 3050G",
+      "ECON 3060",
+      "ECON 3070",
+      "ECON 3400",
+      "ECON 4150",
+      "FIN 4180",
+      "FIN 4100",
+      "FIN 4570R"
+     ],
+     "options": [
+      [
+       "ECON 3030"
+      ],
+      [
+       "ECON 3050G"
+      ],
+      [
+       "ECON 3060"
+      ],
+      [
+       "ECON 3070"
+      ],
+      [
+       "ECON 3400"
+      ],
+      [
+       "ECON 4150"
+      ],
+      [
+       "FIN 4180"
+      ],
+      [
+       "FIN 4100"
+      ],
+      [
+       "FIN 4570R"
+      ]
+     ]
     }
    ]
   }

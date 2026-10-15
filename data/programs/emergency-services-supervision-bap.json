@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +118,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -152,8 +154,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( ES 1150 Recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (ES 1150 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "ES 1150"
+   ]
   },
   {
    "type": "course",
@@ -227,12 +232,14 @@
      "credits": 3
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
-     "label": "Personal, Professional, and Civic Growth GE",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth GE"
     }
    ]
   },
@@ -244,20 +251,23 @@
      "credits": 3
     },
     {
-     "label": "Physical Science GE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science GE"
     },
     {
-     "label": "Humanities GE",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities GE"
     },
     {
      "label": "Fine Arts",
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science GE",
-     "credits": 3
+     "label": "Social/Behavioral Science (ES 1150 Recommended)",
+     "credits": 3,
+     "text": "Social/Behavioral Science GE"
     }
    ]
   },
@@ -380,7 +390,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 3600": {
    "title": "Psychology of Emergency Services",
@@ -389,7 +402,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 4600": {
    "title": "Public Administration for the Emergency Services",
@@ -398,7 +414,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 4650": {
    "title": "Emergency Services Capstone",
@@ -407,7 +426,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 4600",
-   "precoreqs": "ESMG 4600"
+   "precoreqs": "ESMG 4600",
+   "preco": [
+    "ESMG 4600"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -432,6 +454,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

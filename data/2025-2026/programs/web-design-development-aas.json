@@ -59,7 +59,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -171,8 +172,9 @@
      "credits": 3
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     }
    ]
   },
@@ -196,8 +198,9 @@
      "credits": 3
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     }
    ]
   },
@@ -217,12 +220,14 @@
      "credits": 3
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     }
    ]
   },
@@ -242,16 +247,19 @@
      "credits": 3
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 3
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 3,
+     "text": "Advisor Approved Elective"
     },
     {
-     "label": "Advisor Approved Elective",
-     "credits": 2
+     "label": "Complete 20 credits of Advisor Approved Electives",
+     "credits": 2,
+     "text": "Advisor Approved Elective"
     }
    ]
   }
@@ -310,7 +318,11 @@
      "DWDD 2410",
      "DWDD 2610"
     ]
-   }
+   },
+   "preco": [
+    "DWDD 2410",
+    "DWDD 2610"
+   ]
   },
   "DWDD 2610": {
    "title": "Principles of Web Languages",
@@ -332,6 +344,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -31,7 +31,8 @@
     "MATH 1050",
     "MATH 1055"
    ],
-   "credits": 3
+   "credits": 3,
+   "recommended": true
   },
   {
    "type": "choice",
@@ -74,7 +75,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -293,8 +298,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 1
+     "label": "Directed Elective",
+     "credits": 1,
+     "text": "Elective"
     }
    ]
   },
@@ -315,8 +321,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "REC 1600",
@@ -331,8 +338,9 @@
      "credits": 1
     },
     {
-     "label": "Elective",
-     "credits": 1
+     "label": "Directed Elective",
+     "credits": 1,
+     "text": "Elective"
     }
    ]
   },
@@ -344,20 +352,23 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional and Civic Growth"
     },
     {
      "label": "Directed Elective",
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Directed Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "code": "REC 1500",
@@ -376,20 +387,24 @@
      "credits": 3
     },
     {
-     "label": "Social, Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social, Behavioral Science"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Directed Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Directed Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Directed Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -604,7 +619,11 @@
      "ENGL 2010",
      "MATH 1000"
     ]
-   }
+   },
+   "preco": [
+    "ENGL 2010",
+    "MATH 1000"
+   ]
   },
   "REC 2600": {
    "title": "Principles of Outdoor and Adventure Education",

@@ -23,7 +23,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 9 credits",
+   "label": "ART/ARTH Elective",
    "pick": {
     "credits": 9
    },
@@ -170,7 +170,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -197,7 +200,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1750": {
    "title": "Intro to Digital Imaging",

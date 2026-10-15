@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities GE",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -293,8 +297,9 @@
      "credits": 4
     },
     {
-     "label": "Humanities GE",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities GE"
     },
     {
      "code": "ENGL 1010",
@@ -377,8 +382,9 @@
      "credits": 3
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
      "label": "Elective",
@@ -402,16 +408,19 @@
      "credits": 3
     },
     {
-     "label": "MATH/STAT Elective",
-     "credits": 3
+     "label": "Complete 6 credits of upper level MATH or STAT courses",
+     "credits": 3,
+     "text": "MATH/STAT Elective"
     },
     {
-     "label": "MATH/STAT Elective",
-     "credits": 3
+     "label": "Complete 6 credits of upper level MATH or STAT courses",
+     "credits": 3,
+     "text": "MATH/STAT Elective"
     },
     {
-     "label": "Fine Arts GE",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts GE"
     }
    ]
   },
@@ -431,8 +440,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral GE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral GE"
     },
     {
      "label": "Elective",
@@ -448,16 +458,19 @@
      "credits": 3
     },
     {
-     "label": "MATH/STAT Elective",
-     "credits": 3
+     "label": "Complete 6 credits of upper level MATH or STAT courses",
+     "credits": 3,
+     "text": "MATH/STAT Elective"
     },
     {
-     "label": "MATH/STAT Elective",
-     "credits": 3
+     "label": "Complete 6 credits of upper level MATH or STAT courses",
+     "credits": 3,
+     "text": "MATH/STAT Elective"
     },
     {
-     "label": "Personal, Professional, & Civic Growth GE",
-     "credits": 3
+     "label": "Personal, Professional, & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth GE"
     },
     {
      "label": "Elective",
@@ -473,8 +486,9 @@
      "credits": 3
     },
     {
-     "label": "MATH/STAT Elective",
-     "credits": 3
+     "label": "Complete 6 credits of upper level MATH or STAT courses",
+     "credits": 3,
+     "text": "MATH/STAT Elective"
     },
     {
      "label": "Upper Division Elective",
@@ -676,7 +690,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 2280",
-   "precoreqs": "MATH 2280"
+   "precoreqs": "MATH 2280",
+   "preco": [
+    "MATH 2280"
+   ]
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",

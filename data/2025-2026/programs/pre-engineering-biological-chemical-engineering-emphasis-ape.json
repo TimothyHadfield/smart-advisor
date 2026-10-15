@@ -198,8 +198,9 @@
      "credits": 4
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Students should carefully select electives from the following list, based on the engineering discipline (Biological or Chemical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor.",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -278,11 +279,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -500,7 +509,10 @@
    "title": "Computational Methods for Engineering Analysis",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "MATH 1210": {
    "title": "Calculus I",

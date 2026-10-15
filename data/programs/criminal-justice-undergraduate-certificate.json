@@ -64,7 +64,8 @@
    "text": "Choose one of the following:",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "course",
@@ -176,6 +177,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -44,12 +45,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Humanities Distribution",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -87,7 +89,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -136,7 +142,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "BFA Specialization Elective",
+   "label": "ART 4840",
    "pick": {
     "credits": 9
    },
@@ -192,7 +198,9 @@
    "area": "Discipline Core Requirements",
    "code": "ART 2000R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 2,
+   "creditsEach": 1
   },
   {
    "type": "course",
@@ -295,7 +303,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Art Core Elective",
+   "label": "Complete one of following:",
    "pick": {
     "count": 2
    },
@@ -347,7 +355,10 @@
      "credits": 3
     }
    ],
-   "text": "Complete two classes from the following:"
+   "text": "Complete two classes from the following:",
+   "notes": [
+    "Emphasis Elective Requirements:"
+   ]
   },
   {
    "type": "choice",
@@ -362,31 +373,41 @@
      "codes": [
       "ART 3110R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 3660R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 4110R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 4660R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 3630R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
@@ -398,21 +419,28 @@
      "codes": [
       "ART 4630R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 3680R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
       "ART 4680R"
      ],
-     "credits": 3
+     "credits": 6,
+     "repeat": 2,
+     "creditsEach": 3
     }
    ],
+   "text": "Complete 21.0 credits from upper-division specialization courses listed below. It is recommended to focus on depth in the selected specialization.",
    "notes": [
     "Drawing:",
     "Painting:",
@@ -488,8 +516,9 @@
      "credits": 3
     },
     {
-     "label": "Art Core Elective",
-     "credits": 3
+     "label": "ART 4840",
+     "credits": 3,
+     "text": "Art Core Elective"
     },
     {
      "code": "ART 1130",
@@ -509,8 +538,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "code": "ART 1650",
@@ -526,31 +556,35 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ARTH 3020",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3030",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3040",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3050",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3060",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3100",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ARTH 3020",
+      "ARTH 3030",
+      "ARTH 3040",
+      "ARTH 3050",
+      "ARTH 3060",
+      "ARTH 3100"
+     ],
+     "options": [
+      [
+       "ARTH 3020"
+      ],
+      [
+       "ARTH 3030"
+      ],
+      [
+       "ARTH 3040"
+      ],
+      [
+       "ARTH 3050"
+      ],
+      [
+       "ARTH 3060"
+      ],
+      [
+       "ARTH 3100"
+      ]
+     ]
     }
    ]
   },
@@ -558,8 +592,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "label": "American Institutions Distribution",
@@ -583,8 +618,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Elective",
@@ -600,31 +636,35 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ARTH 3020",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3030",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3040",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3050",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3060",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3100",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ARTH 3020",
+      "ARTH 3030",
+      "ARTH 3040",
+      "ARTH 3050",
+      "ARTH 3060",
+      "ARTH 3100"
+     ],
+     "options": [
+      [
+       "ARTH 3020"
+      ],
+      [
+       "ARTH 3030"
+      ],
+      [
+       "ARTH 3040"
+      ],
+      [
+       "ARTH 3050"
+      ],
+      [
+       "ARTH 3060"
+      ],
+      [
+       "ARTH 3100"
+      ]
+     ]
     },
     {
      "code": "ART 4820",
@@ -647,8 +687,9 @@
      "credits": 1
     },
     {
-     "label": "Art Core Elective",
-     "credits": 3
+     "label": "ART 4840",
+     "credits": 3,
+     "text": "Art Core Elective"
     },
     {
      "label": "BFA Specialization Elective",
@@ -668,8 +709,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Social Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science Distribution"
     },
     {
      "code": "ART 4990R",
@@ -713,8 +755,11 @@
      "credits": 3
     },
     {
-     "code": "ART 4840",
-     "credits": 1
+     "label": "ART 4840",
+     "credits": 1,
+     "recommended": [
+      "ART 4840"
+     ]
     }
    ]
   }
@@ -738,7 +783,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -769,7 +817,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1650": {
    "title": "Watercolor",
@@ -1119,6 +1170,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

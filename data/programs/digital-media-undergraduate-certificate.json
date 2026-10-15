@@ -67,7 +67,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following: (Course must be completed with grade 'C' or higher. )"
+   "text": "Complete one of the following: (Course must be completed with grade 'C' or higher.)",
+   "ge": "math"
   },
   {
    "type": "course",
@@ -81,7 +82,8 @@
    "area": "Discipline Core Requirements",
    "label": "Choose 6 credits from one of the following categories:",
    "pick": {
-    "credits": 6
+    "credits": 6,
+    "tracks": 1
    },
    "credits": 6,
    "options": [
@@ -90,66 +92,81 @@
       "DAGV 1200"
      ],
      "credits": 3,
-     "section": "--Animation and Games"
+     "section": "Animation and Games"
     },
     {
      "codes": [
-      "DAGV 1300"
+      "DAGV 1300",
+      "DAGV 1300L"
      ],
      "credits": 3,
-     "section": "--Animation and Games"
+     "section": "Animation and Games"
     },
     {
      "codes": [
       "DAGV 1700"
      ],
      "credits": 3,
-     "section": "--Animation and Games"
+     "section": "Animation and Games"
     },
     {
      "codes": [
-      "DCPR 1610"
+      "DCPR 1610",
+      "DCPR 1610L"
      ],
      "credits": 3,
-     "section": "--Digital Cinema Production"
+     "section": "Digital Cinema Production"
     },
     {
      "codes": [
-      "DCPR 1800"
+      "DCPR 1800",
+      "DCPR 1800L"
      ],
      "credits": 3,
-     "section": "--Digital Cinema Production"
+     "section": "Digital Cinema Production"
     },
     {
      "codes": [
       "DAPR 2000"
      ],
      "credits": 3,
-     "section": "--Digital Audio"
+     "section": "Digital Audio"
     },
     {
      "codes": [
       "DAPR 2080"
      ],
      "credits": 3,
-     "section": "--Digital Audio"
+     "section": "Digital Audio"
     },
     {
      "codes": [
       "DWDD 1600"
      ],
      "credits": 3,
-     "section": "--Web Development"
+     "section": "Web Development"
     },
     {
      "codes": [
       "DWDD 1400"
      ],
      "credits": 3,
-     "section": "--Web Development"
+     "section": "Web Development"
     }
    ],
-   "text": "Choose 6 credits from one of the following categories:"
+   "text": "Choose 6 credits from one of the following categories:",
+   "notes": [
+    "--Animation and Games",
+    "Animation and Games: --Digital Cinema Production",
+    "Digital Cinema Production: --Digital Audio",
+    "Digital Audio: --Web Development"
+   ],
+   "tracks": [
+    "Animation and Games",
+    "Digital Cinema Production",
+    "Digital Audio",
+    "Web Development"
+   ]
   }
  ],
  "gradPlan": [
@@ -196,6 +213,14 @@
     "DAGV 1300L"
    ]
   },
+  "DAGV 1300L": {
+   "title": "Animation Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAGV 1300",
+   "coreqs": [
+    "DAGV 1300"
+   ]
+  },
   "DAGV 1700": {
    "title": "Scripting Essentials",
    "credits": 3
@@ -218,12 +243,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 2,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DGM 1110": {
@@ -259,6 +300,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

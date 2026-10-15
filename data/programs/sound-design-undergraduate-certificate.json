@@ -59,31 +59,36 @@
    "options": [
     {
      "codes": [
-      "DCPR 1010"
+      "DCPR 1010",
+      "DCPR 1010L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 1610"
+      "DCPR 1610",
+      "DCPR 1610L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 1800"
+      "DCPR 1800",
+      "DCPR 1800L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 3610"
+      "DCPR 3610",
+      "DCPR 3610L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 3660"
+      "DCPR 3660",
+      "DCPR 3660L"
      ],
      "credits": 3
     },
@@ -374,6 +379,14 @@
     "DCPR 1010L"
    ]
   },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
+   ]
+  },
   "DCPR 1610": {
    "title": "Digital Cinema Editing I",
    "credits": 2,
@@ -382,12 +395,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 2,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 3610": {
@@ -399,6 +428,17 @@
    "coreqText": "DCPR 3610L",
    "coreqs": [
     "DCPR 3610L"
+   ]
+  },
+  "DCPR 3610L": {
+   "title": "Digital Cinema Editing II Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": "DCPR 1610",
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3610",
+   "coreqs": [
+    "DCPR 3610"
    ]
   },
   "DCPR 3660": {
@@ -415,6 +455,22 @@
    "coreqText": "DCPR 3660L",
    "coreqs": [
     "DCPR 3660L"
+   ]
+  },
+  "DCPR 3660L": {
+   "title": "Professional NLE Certification Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , DCPR 2630 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DCPR 1610",
+     "DCPR 2630"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3660",
+   "coreqs": [
+    "DCPR 3660"
    ]
   }
  }

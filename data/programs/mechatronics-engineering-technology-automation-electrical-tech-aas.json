@@ -7,10 +7,179 @@
  "totalCredits": 60,
  "requirements": [
   {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "ENGL 1010",
+   "alts": [
+    "ENGL 1005"
+   ],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 1010",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 1200",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 1205",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 1300",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 1305",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2200",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2205",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2300",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2305",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
    "type": "placeholder",
    "area": "Mechatronics Engineering Technology Requirements",
-   "label": "Complete the requirements",
-   "credits": 48
+   "label": "Humanities Distribution (ENGL 2100 Recommended)",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2500",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2505",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2510",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2515",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "EGDT 1071",
+   "alts": [],
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "placeholder",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "label": "Elective",
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "placeholder",
+   "area": "General Education Requirements",
+   "label": "Physical Science Distribution (PHYS 1010 Recommended)",
+   "credits": 3,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2550",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2555",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2600",
+   "alts": [],
+   "credits": 2,
+   "fromPlan": true
+  },
+  {
+   "type": "course",
+   "area": "Mechatronics Engineering Technology Requirements",
+   "code": "MECH 2605",
+   "alts": [],
+   "credits": 1,
+   "fromPlan": true
   },
   {
    "type": "course",
@@ -107,8 +276,11 @@
    "label": "Semester 3",
    "items": [
     {
-     "code": "ENGL 2100",
-     "credits": 3
+     "label": "Humanities Distribution (ENGL 2100 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "ENGL 2100"
+     ]
     },
     {
      "code": "MECH 2500",
@@ -140,8 +312,11 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "PHYS 1010",
-     "credits": 3
+     "label": "Physical Science Distribution (PHYS 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010"
+     ]
     },
     {
      "code": "MECH 2550",
@@ -227,17 +402,6 @@
    "prereqs": null,
    "prereqNonCourse": true
   },
-  "ENGL 2100": {
-   "title": "Technical Communication",
-   "credits": 3,
-   "prereqText": "ENGL 1010 or ENGL 1005",
-   "prereqs": {
-    "or": [
-     "ENGL 1010",
-     "ENGL 1005"
-    ]
-   }
-  },
   "MECH 1010": {
    "title": "Fundamentals of Mechatronics",
    "credits": 3
@@ -250,7 +414,10 @@
     "MECH 1205"
    ],
    "precoreqText": "MAT 1010 or higher",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "MECH 1205": {
    "title": "Electronics in Automation Design Laboratory",
@@ -268,7 +435,10 @@
     "MECH 1305"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 1305": {
    "title": "Industrial Wiring for Mechatronic Systems Laboratory",
@@ -278,7 +448,10 @@
     "MECH 1300"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 2200": {
    "title": "Semiconductors in Mechatronic Systems",
@@ -318,7 +491,11 @@
      "MECH 2200",
      "MECH 2205"
     ]
-   }
+   },
+   "preco": [
+    "MECH 2200",
+    "MECH 2205"
+   ]
   },
   "MECH 2305": {
    "title": "Microcontroller Architecture and Programming Lab",
@@ -335,7 +512,11 @@
      "MECH 2200",
      "MECH 2205"
     ]
-   }
+   },
+   "preco": [
+    "MECH 2200",
+    "MECH 2205"
+   ]
   },
   "MECH 2500": {
    "title": "Introduction to PLCs in Mechatronic Design",
@@ -375,7 +556,10 @@
     "MECH 2515"
    ],
    "precoreqText": "MECH 2500",
-   "precoreqs": "MECH 2500"
+   "precoreqs": "MECH 2500",
+   "preco": [
+    "MECH 2500"
+   ]
   },
   "MECH 2515": {
    "title": "Fundamentals of Automation Controls Laboratory",
@@ -390,7 +574,11 @@
      "MECH 2500",
      "MECH 2305"
     ]
-   }
+   },
+   "preco": [
+    "MECH 2500",
+    "MECH 2305"
+   ]
   },
   "MECH 2550": {
    "title": "Advanced PLC Programming and Applications",
@@ -431,10 +619,7 @@
    "coreqs": [
     "MECH 2600"
    ]
-  },
-  "PHYS 1010": {
-   "title": "Elementary Physics",
-   "credits": 3
   }
- }
+ },
+ "coreFrom": "graduation plan"
 }

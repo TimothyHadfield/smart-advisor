@@ -92,7 +92,8 @@
    "text": "Complete 9 credits from the following:",
    "notes": [
     "or other departmental approved electives."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -170,7 +171,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "IT 6300",
-   "precoreqs": "IT 6300"
+   "precoreqs": "IT 6300",
+   "preco": [
+    "IT 6300"
+   ]
   },
   "IT 6300": {
    "title": "Principles of Cybersecurity",
@@ -200,7 +204,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "IT 6300",
-   "precoreqs": "IT 6300"
+   "precoreqs": "IT 6300",
+   "preco": [
+    "IT 6300"
+   ]
   },
   "IT 6660": {
    "title": "Advanced Network Forensics",
@@ -209,7 +216,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "IT 6300",
-   "precoreqs": "IT 6300"
+   "precoreqs": "IT 6300",
+   "preco": [
+    "IT 6300"
+   ]
   },
   "IT 6740": {
    "title": "Advanced Network Defense and Countermeasures",
@@ -218,7 +228,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "IT 6300",
-   "precoreqs": "IT 6300"
+   "precoreqs": "IT 6300",
+   "preco": [
+    "IT 6300"
+   ]
   },
   "IT 6750": {
    "title": "Reverse Engineering and Malware Analysis",
@@ -227,7 +240,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "IT 6300",
-   "precoreqs": "IT 6300"
+   "precoreqs": "IT 6300",
+   "preco": [
+    "IT 6300"
+   ]
   },
   "IT 6770": {
    "title": "Cybersecurity Management",

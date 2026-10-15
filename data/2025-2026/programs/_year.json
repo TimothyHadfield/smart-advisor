@@ -3,8 +3,8 @@
  "source": "https://catalog.uvu.edu/archives/2025-2026/programs/",
  "fetched": "2026-10-15",
  "counts": {
-  "ok": 414,
-  "warn": 38
+  "ok": 421,
+  "warn": 31
  },
  "programs": [
   {
@@ -1295,7 +1295,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-analysis-bs/",
    "department": "Strategic Management and Operations",
    "credits": 120,
-   "status": "warn",
+   "status": "ok",
    "file": "business-analysis-bs.json"
   },
   {
@@ -1958,7 +1958,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/construction-management-aas/",
    "department": "Construction Technologies",
    "credits": 63,
-   "status": "warn",
+   "status": "ok",
    "file": "construction-management-aas.json"
   },
   {
@@ -1974,7 +1974,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/construction-management-bs/",
    "department": "Construction Technologies",
    "credits": 120,
-   "status": "warn",
+   "status": "ok",
    "file": "construction-management-bs.json"
   },
   {
@@ -2410,7 +2410,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-production-aas/",
    "department": "Digital Media",
    "credits": 60,
-   "status": "ok",
+   "status": "warn",
    "file": "digital-cinema-production-aas.json"
   },
   {
@@ -2442,7 +2442,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-certificate-proficiency/",
    "department": "Digital Media",
    "credits": 18,
-   "status": "ok",
+   "status": "warn",
    "file": "digital-cinema-certificate-proficiency.json"
   },
   {
@@ -3588,7 +3588,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/education/student-leadership-success-studies/general-education-certificate-completion/",
    "department": "Student Leadership and Success Studies",
    "credits": 30,
-   "status": "warn",
+   "status": "ok",
    "file": "general-education-certificate-completion.json"
   },
   {
@@ -3876,7 +3876,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/history-minor/",
    "department": "History and Political Science",
    "credits": 18,
-   "status": "warn",
+   "status": "ok",
    "file": "history-minor.json"
   },
   {
@@ -4116,7 +4116,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/humanities-minor/",
    "department": "Philosophy and Humanities",
    "credits": 18,
-   "status": "warn",
+   "status": "ok",
    "file": "humanities-minor.json"
   },
   {
@@ -4471,7 +4471,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/latin-american-studies-minor/",
    "department": "Languages and Cultures",
    "credits": 18,
-   "status": "warn",
+   "status": "ok",
    "file": "latin-american-studies-minor.json"
   },
   {
@@ -6328,7 +6328,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/allied-health/respiratory-therapy-aas/",
    "department": "Allied Health",
    "credits": 66,
-   "status": "warn",
+   "status": "ok",
    "file": "respiratory-therapy-aas.json"
   },
   {
@@ -6519,8 +6519,8 @@
    "online": false,
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/sociology-minor/",
    "department": "Social and Behavioral Sciences",
-   "credits": null,
-   "status": "warn",
+   "credits": 18,
+   "status": "ok",
    "file": "sociology-minor.json"
   },
   {
@@ -7035,7 +7035,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-studies-minor/",
    "department": "Theatrical Arts for Stage and Screen",
    "credits": 24,
-   "status": "warn",
+   "status": "ok",
    "file": "theatre-studies-minor.json"
   },
   {
@@ -7245,7 +7245,7 @@
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/writing-entertainment-media-minor/",
    "department": "Digital Media",
    "credits": 24,
-   "status": "ok",
+   "status": "warn",
    "file": "writing-entertainment-media-minor.json"
   },
   {
@@ -7314,19 +7314,13 @@
    "id": "pre-engineering-civil-mechanical-engineering-emphasis-ape",
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/mechanical-and-civil-engineering/pre-engineering-civil-mechanical-engineering-emphasis-ape/",
    "status": "warn",
-   "reason": "\"Complete the requirements\" (44 cr) points to requirements that are not on this page; kept as one placeholder"
+   "reason": "core requirements not on this page; rebuilt from the graduation plan"
   },
   {
    "id": "pre-engineering-computer-electrical-engineering-emphasis-ape",
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/mechanical-and-civil-engineering/pre-engineering-computer-electrical-engineering-emphasis-ape/",
    "status": "warn",
-   "reason": "\"Complete the requirements\" (44 cr) points to requirements that are not on this page; kept as one placeholder"
-  },
-  {
-   "id": "business-analysis-bs",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-analysis-bs/",
-   "status": "warn",
-   "reason": "no catalog entry for MAT 1000"
+   "reason": "core requirements not on this page; rebuilt from the graduation plan"
   },
   {
    "id": "business-marketing-education-bs",
@@ -7335,22 +7329,22 @@
    "reason": "no catalog entry for IT 1700"
   },
   {
-   "id": "construction-management-aas",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/construction-management-aas/",
+   "id": "digital-cinema-production-aas",
+   "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-production-aas/",
    "status": "warn",
-   "reason": "no catalog entry for COMM 2010"
-  },
-  {
-   "id": "construction-management-bs",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/construction-management-bs/",
-   "status": "warn",
-   "reason": "no catalog entry for COMM 2010"
+   "reason": "no catalog entry for DCPR 1020L, DCPR 2410L, DCPR 2620L, DCPR 2630L, DCPR 2800L, DCPR 2810L"
   },
   {
    "id": "digital-cinema-production-bs",
    "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-production-bs/",
    "status": "warn",
-   "reason": "requirement credits add to 306, page says 120"
+   "reason": "no catalog entry for DCPR 1020L, DCPR 2410L, DCPR 2620L, DCPR 2630L, DCPR 2800L, DCPR 2810L, DCPR 3210L, DCPR 3410L, DCPR 3620L, DCPR 3630L, DCPR 4610L, DCPR 4920L"
+  },
+  {
+   "id": "digital-cinema-certificate-proficiency",
+   "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-cinema-certificate-proficiency/",
+   "status": "warn",
+   "reason": "no catalog entry for DCPR 2410L"
   },
   {
    "id": "enterprise-risk-management-and-insurance-undergraduate-certificate",
@@ -7362,7 +7356,7 @@
    "id": "environmental-science-management-bs",
    "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/environmental-science-management-bs/",
    "status": "warn",
-   "reason": "requirement credits add to 139, page says 121; no catalog entry for ENVT 3300"
+   "reason": "no catalog entry for ENVT 3300"
   },
   {
    "id": "event-management-certificate-proficiency",
@@ -7389,46 +7383,22 @@
    "reason": "no \"Total Credit Hours\" row; total taken from area headers"
   },
   {
-   "id": "general-education-certificate-completion",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/education/student-leadership-success-studies/general-education-certificate-completion/",
-   "status": "warn",
-   "reason": "no \"Total Credit Hours\" row; total taken from area headers"
-  },
-  {
    "id": "healthcare-leadership-graduate-certificate",
    "url": "https://catalog.uvu.edu/archives/2025-2026/business/business-graduate-programs/healthcare-leadership-graduate-certificate/",
    "status": "warn",
    "reason": "no \"Total Credit Hours\" row; total taken from area headers"
   },
   {
-   "id": "history-minor",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/history-minor/",
-   "status": "warn",
-   "reason": "no catalog entry for HIST 3000"
-  },
-  {
    "id": "humanities-ba",
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/humanities-ba/",
    "status": "warn",
-   "reason": "no catalog entry for LANG 1010, LANG 1020, LANG 2010, LANG 2020"
-  },
-  {
-   "id": "humanities-minor",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/humanities-minor/",
-   "status": "warn",
-   "reason": "no catalog entry for HUM 3000"
+   "reason": "no catalog entry for LANG 1010, LANG 1020, LANG 2010"
   },
   {
    "id": "integrated-studies-ba",
    "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/integrated-studies/integrated-studies-ba/",
    "status": "warn",
    "reason": "no catalog entry for LANG 1010, LANG 1020, LANG 2010, LANG 2020G"
-  },
-  {
-   "id": "latin-american-studies-minor",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/latin-american-studies-minor/",
-   "status": "warn",
-   "reason": "no catalog entry for PORT 3000, SPAN 3000"
   },
   {
    "id": "management-graduate-certificate",
@@ -7503,28 +7473,16 @@
    "reason": "no \"Total Credit Hours\" row; total taken from area headers"
   },
   {
-   "id": "respiratory-therapy-aas",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/allied-health/respiratory-therapy-aas/",
-   "status": "warn",
-   "reason": "requirement credits add to 58, page says 66"
-  },
-  {
-   "id": "sociology-minor",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/sociology-minor/",
-   "status": "warn",
-   "reason": "no total credits on page"
-  },
-  {
    "id": "technology-management-graduate-certificate",
    "url": "https://catalog.uvu.edu/archives/2025-2026/business/business-graduate-programs/technology-management-graduate-certificate/",
    "status": "warn",
    "reason": "no \"Total Credit Hours\" row; total taken from area headers"
   },
   {
-   "id": "theatre-studies-minor",
-   "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-studies-minor/",
+   "id": "writing-entertainment-media-minor",
+   "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/writing-entertainment-media-minor/",
    "status": "warn",
-   "reason": "no catalog entry for THEA 3000"
+   "reason": "no catalog entry for DCPR 1020L, DCPR 2800L, DCPR 3210L"
   }
  ]
 }

@@ -161,7 +161,8 @@
      "codes": [
       "CMGT 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6
     }
    ],
    "text": "Choose one of the following:"
@@ -180,7 +181,8 @@
    "alts": [
     "IM 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "recommended": true
   },
   {
    "type": "course",
@@ -201,12 +203,14 @@
    "area": "Discipline Core Requirements",
    "code": "CMGT 2890R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "General Elective",
+   "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
    "pick": {
     "credits": 6
    },
@@ -243,7 +247,8 @@
    "text": "Complete 6 credits from the following two specializations:",
    "notes": [
     "Heavy/Civil:",
-    "Commercial/Residential:"
+    "Commercial/Residential:",
+    "Electives:"
    ]
   },
   {
@@ -282,8 +287,12 @@
      "credits": 2
     },
     {
-     "code": "COMM 1020",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "recommended": [
+      "COMM 1020"
+     ],
+     "text": "Humanities Distribution (COMM 1020 recommended)"
     }
    ]
   },
@@ -303,11 +312,12 @@
      "credits": 0.5
     },
     {
-     "code": "EGDT 1040",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1040",
       "EGDT 1020"
-     ],
-     "credits": 3
+     ]
     },
     {
      "code": "EGDT 1610",
@@ -323,22 +333,26 @@
    "label": "Semester 3",
    "items": [
     {
-     "code": "PHYS 1010",
-     "alts": [
+     "label": "Physical Science Distribution",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010",
       "PHSC 1000"
      ],
-     "credits": 3
+     "text": "Physical Science Distribution (PHYS 1010 or PHSC 1000 recommended)"
     },
     {
      "code": "CMGT 2035",
      "credits": 3
     },
     {
-     "code": "EGDT 2400",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "EGDT 2400",
       "BIT 1010"
      ],
-     "credits": 3
+     "text": "Heavy/Civil Track (EGDT 2400) or Commercial/Residential Track (BIT 1010)"
     },
     {
      "code": "CMGT 2890R",
@@ -349,8 +363,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -358,11 +373,13 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "COMM 2010",
-     "alts": [
+     "label": "Social Sciences Distribution",
+     "credits": 3,
+     "recommended": [
+      "COMM 2010",
       "FIN 1060"
      ],
-     "credits": 3
+     "text": "Social-Behavioral Science Distribution (COMM 2010 or FIN 1060 recommended)"
     },
     {
      "code": "CMGT 2060",
@@ -373,24 +390,30 @@
      "credits": 3
     },
     {
-     "label": "Take one of the following:",
-     "credits": 3
+     "label": "Choose one of the following:",
+     "credits": 3,
+     "alts": [
+      "CMGT 1190",
+      "CMGT 1220",
+      "CMGT 2810R"
+     ],
+     "options": [
+      [
+       "CMGT 1190"
+      ],
+      [
+       "CMGT 1220"
+      ],
+      [
+       "CMGT 2810R"
+      ]
+     ],
+     "text": "Take one of the following:"
     },
     {
-     "code": "CMGT 1190",
-     "credits": null
-    },
-    {
-     "code": "CMGT 1220",
-     "credits": null
-    },
-    {
-     "code": "CMGT 2810R",
-     "credits": null
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   }
@@ -446,7 +469,10 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "CMGT 1010"
+   ]
   },
   "CMGT 2060": {
    "title": "Construction Job Site Management",
@@ -476,10 +502,6 @@
   "CMGT 2890R": {
    "title": "Construction Industry Seminar",
    "credits": 0.5
-  },
-  "COMM 1020": {
-   "title": "Public Speaking",
-   "credits": 3
   },
   "EGDT 1020": {
    "title": "3D Architectural Modeling",
@@ -552,10 +574,6 @@
    },
    "prereqNonCourse": true
   },
-  "FIN 1060": {
-   "title": "Personal Finance",
-   "credits": 3
-  },
   "IM 2010": {
    "title": "Business Computer Proficiency",
    "credits": 3,
@@ -569,6 +587,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -622,14 +641,6 @@
    },
    "prereqNonCourse": true
   },
-  "PHSC 1000": {
-   "title": "Survey of Physical Science",
-   "credits": 3
-  },
-  "PHYS 1010": {
-   "title": "Elementary Physics",
-   "credits": 3
-  },
   "STAT 1040": {
    "title": "Introduction to Statistics",
    "credits": 3,
@@ -656,8 +667,5 @@
    "uncertain": true,
    "prereqNonCourse": true
   }
- },
- "missingCourses": [
-  "COMM 2010"
- ]
+ }
 }

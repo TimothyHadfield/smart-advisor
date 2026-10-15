@@ -119,8 +119,9 @@
      "credits": 1
     },
     {
-     "label": "Any THEA course 1000 or higher",
-     "credits": 3
+     "label": "Any THEA courses 1000 or higher",
+     "credits": 3,
+     "text": "Any THEA course 1000 or higher"
     }
    ]
   },
@@ -163,13 +164,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1590R": {
    "title": "Production Practicum for Stage and Screen I",
@@ -185,7 +192,12 @@
      "THEA 1514",
      "THEA 2204"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2204"
+   ]
   },
   "THEA 2204": {
    "title": "Costume Construction I Lab",
@@ -197,7 +209,12 @@
      "THEA 1514",
      "THEA 2203"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2203"
+   ]
   },
   "THEA 2513": {
    "title": "Introduction to Design for Stage and Screen",
@@ -210,7 +227,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2514": {
    "title": "Introduction to Design for Stage and Screen Lab",
@@ -218,7 +238,10 @@
    "prereqText": "THEA 1513",
    "prereqs": "THEA 1513",
    "precoreqText": "THEA 2513",
-   "precoreqs": "THEA 2513"
+   "precoreqs": "THEA 2513",
+   "preco": [
+    "THEA 2513"
+   ]
   },
   "THEA 2531": {
    "title": "Introduction to Lighting and Sound",

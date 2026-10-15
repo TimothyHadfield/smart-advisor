@@ -138,7 +138,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 3400": {
    "title": "Critical Infrastructure Protection",
@@ -161,7 +164,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G or department approval",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 4300": {
    "title": "Disaster Recovery and Hazard Mitigation",
@@ -184,7 +190,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ESMG 4550": {
    "title": "Emergency Preparedness and Disaster Response",
@@ -193,7 +202,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   }
  }
 }

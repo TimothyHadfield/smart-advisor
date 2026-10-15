@@ -254,9 +254,9 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Choose 1",
+   "label": "DANC Elective",
    "pick": {
-    "count": 1
+    "credits": 2
    },
    "credits": 2,
    "options": [
@@ -400,7 +400,8 @@
    "text": "Choose 11 credits from the following:",
    "notes": [
     "Any DANC course not previously taken."
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -486,8 +487,9 @@
      "credits": 3
     },
     {
-     "label": "Dance Electives",
-     "credits": 3
+     "label": "DANC Elective",
+     "credits": 3,
+     "text": "Dance Electives"
     }
    ]
   },
@@ -514,8 +516,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "American Institution Distribution",
@@ -546,12 +549,14 @@
      "credits": 2
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     }
    ]
   },
@@ -574,20 +579,24 @@
      "credits": 3
     },
     {
-     "label": "Dance Elective (non-ballet) e.g. Jazz, African, Tap, etc.",
-     "credits": 1
+     "label": "DANC Elective",
+     "credits": 1,
+     "text": "Dance Elective (non-ballet) e.g. Jazz, African, Tap, etc."
     },
     {
-     "label": "Personal, Professional, & Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth Distribution"
     },
     {
-     "label": "Elective (an course 1000 level or higher)",
-     "credits": 1
+     "label": "DANC Elective",
+     "credits": 1,
+     "text": "Elective (an course 1000 level or higher)"
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     }
    ]
   },
@@ -618,8 +627,9 @@
      "credits": 4
     },
     {
-     "label": "Electives",
-     "credits": 3
+     "label": "DANC Elective",
+     "credits": 3,
+     "text": "Electives"
     }
    ]
   },
@@ -654,8 +664,9 @@
      "credits": 2
     },
     {
-     "label": "Elective (any course 1000 level or higher)",
-     "credits": 3
+     "label": "DANC Elective",
+     "credits": 3,
+     "text": "Elective (any course 1000 level or higher)"
     }
    ]
   },
@@ -682,12 +693,14 @@
      "credits": 2
     },
     {
-     "label": "Dance Electives",
-     "credits": 2
+     "label": "DANC Elective",
+     "credits": 2,
+     "text": "Dance Electives"
     },
     {
-     "label": "Elective (any course 1000 level or higher)",
-     "credits": 2
+     "label": "DANC Elective",
+     "credits": 2,
+     "text": "Elective (any course 1000 level or higher)"
     }
    ]
   }
@@ -1072,6 +1085,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

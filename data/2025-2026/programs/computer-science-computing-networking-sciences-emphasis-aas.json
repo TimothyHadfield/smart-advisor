@@ -155,54 +155,52 @@
      "codes": [
       "CS 1030"
      ],
-     "credits": 3,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 3
     },
     {
      "codes": [
       "CS 2690"
      ],
-     "credits": 3,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 3
     },
     {
      "codes": [
       "CS 2700"
      ],
-     "credits": 3,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 3
     },
     {
      "codes": [
       "CS 2810R"
      ],
      "credits": 1,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "crMax": 8
     },
     {
      "codes": [
       "MATH 1220"
      ],
-     "credits": 4,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 4
     },
     {
      "codes": [
       "ECE 2700",
       "ECE 2705"
      ],
-     "credits": 4,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 4
     },
     {
      "codes": [
       "IT 1200"
      ],
-     "credits": 3,
-     "section": "(Must be approved by CS Department. See CS Advisor):"
+     "credits": 3
     }
    ],
-   "text": "Complete 10 credits from the following courses (minimum grade of C- required)."
+   "text": "Complete 10 credits from the following courses (minimum grade of C- required).",
+   "notes": [
+    "(Must be approved by CS Department. See CS Advisor):"
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -293,10 +291,11 @@
     },
     {
      "code": "PHYS 2210",
-     "alts": [
-      "PHYS 2215"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2215",
+     "credits": 1
     },
     {
      "label": "Emphasis Elective",
@@ -412,7 +411,10 @@
     ]
    },
    "precoreqText": "MATH 1210",
-   "precoreqs": "MATH 1210"
+   "precoreqs": "MATH 1210",
+   "preco": [
+    "MATH 1210"
+   ]
   },
   "CS 2700": {
    "title": "Causal Inference",

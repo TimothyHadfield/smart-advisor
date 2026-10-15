@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biological Science",
+   "label": "American Institution",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following"
+   "text": "Complete one of the following",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -234,7 +239,8 @@
      "codes": [
       "SOC 2750R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -324,13 +330,15 @@
      "codes": [
       "SOC 4750R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "SOC 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 23 credits of any SOC classes:"
@@ -363,35 +371,39 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "American Institution",
@@ -415,12 +427,14 @@
      "credits": 3
     },
     {
-     "label": "Biological Science",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biological Science"
     },
     {
-     "label": "Social and Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science distribution",
+     "credits": 3,
+     "text": "Social and Behavioral Science"
     },
     {
      "label": "Elective",
@@ -461,12 +475,14 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "label": "SOC Elective",
@@ -630,6 +646,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

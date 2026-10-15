@@ -68,7 +68,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "course",
@@ -295,20 +296,25 @@
       "NURS 2210"
      ],
      "credits": 1,
-     "section": "Students must bring in an LPN certificate"
+     "section": "LPN Track--For students with LPN licence"
     },
     {
      "codes": [
       "NURS 3365"
      ],
      "credits": 5,
-     "section": "Students must bring in an LPN certificate"
+     "section": "LPN Track--For students with LPN licence"
     }
    ],
    "text": "Choose one of the following tracks",
+   "notes": [
+    "Direct RN Path",
+    "Direct RN Path: LPN Track--For students with LPN licence",
+    "LPN Track--For students with LPN licence: Students must bring in an LPN certificate"
+   ],
    "tracks": [
     "Direct RN Path",
-    "Students must bring in an LPN certificate"
+    "LPN Track--For students with LPN licence"
    ]
   }
  ],
@@ -497,11 +503,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -551,6 +565,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -656,7 +671,10 @@
     "NURS 2305"
    ],
    "precoreqText": "NURS 2320",
-   "precoreqs": "NURS 2320"
+   "precoreqs": "NURS 2320",
+   "preco": [
+    "NURS 2320"
+   ]
   },
   "NURS 2305": {
    "title": "Nursing Health Assessment Laboratory",
@@ -669,7 +687,10 @@
     "NURS 2300"
    ],
    "precoreqText": "NURS 2320",
-   "precoreqs": "NURS 2320"
+   "precoreqs": "NURS 2320",
+   "preco": [
+    "NURS 2320"
+   ]
   },
   "NURS 2310": {
    "title": "Nursing Pharmacology",
@@ -683,7 +704,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ZOOL 2420",
-   "precoreqs": "ZOOL 2420"
+   "precoreqs": "ZOOL 2420",
+   "preco": [
+    "ZOOL 2420"
+   ]
   },
   "NURS 2320": {
    "title": "Fundamentals of Nursing Care",
@@ -696,7 +720,10 @@
     "NURS 2325"
    ],
    "precoreqText": "NURS 2300",
-   "precoreqs": "NURS 2300"
+   "precoreqs": "NURS 2300",
+   "preco": [
+    "NURS 2300"
+   ]
   },
   "NURS 2325": {
    "title": "Nursing Practice Simulation and Skills Lab I",
@@ -709,7 +736,10 @@
     "NURS 2320"
    ],
    "precoreqText": "NURS 2300",
-   "precoreqs": "NURS 2300"
+   "precoreqs": "NURS 2300",
+   "preco": [
+    "NURS 2300"
+   ]
   },
   "NURS 2410": {
    "title": "Nursing Care of Adults with Common Health Needs",
@@ -721,7 +751,10 @@
     "NURS 2415"
    ],
    "precoreqText": "NURS 2420",
-   "precoreqs": "NURS 2420"
+   "precoreqs": "NURS 2420",
+   "preco": [
+    "NURS 2420"
+   ]
   },
   "NURS 2415": {
    "title": "Nursing Care of Adults with Common Health Needs Clinical",
@@ -1008,5 +1041,7 @@
     "ZOOL 2420"
    ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Acceptance into the ASN program is by a competitive, point-based application process."
 }

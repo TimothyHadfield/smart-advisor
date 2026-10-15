@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities GE",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -340,12 +344,14 @@
      "credits": 3
     },
     {
-     "label": "Humanities GE",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities GE"
     },
     {
-     "label": "Personal, Professional, & Civic Growth GE",
-     "credits": 3
+     "label": "Personal, Professional, & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth GE"
     },
     {
      "label": "Electives",
@@ -368,12 +374,14 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Fine Arts GE",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts GE"
     },
     {
      "code": "MATH 2270",
@@ -389,12 +397,14 @@
      "credits": 3
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
-     "label": "Social/Behavioral GE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral GE"
     },
     {
      "label": "Electives",
@@ -797,7 +807,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 2280",
-   "precoreqs": "MATH 2280"
+   "precoreqs": "MATH 2280",
+   "preco": [
+    "MATH 2280"
+   ]
   },
   "MATH 3200": {
    "title": "Foundations of Analysis",

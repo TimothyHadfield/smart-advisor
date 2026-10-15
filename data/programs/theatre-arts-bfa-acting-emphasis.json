@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "American Institutions Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,12 +44,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Soc/Beh Science Distribution",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -81,7 +82,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -93,7 +95,10 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHYS 1700"
+   ]
   },
   {
    "type": "placeholder",
@@ -203,7 +208,13 @@
    "type": "placeholder",
    "area": "Core Requirements: Free Elective Requirement",
    "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
-   "credits": 2
+   "credits": 2,
+   "notes": [
+    "Successful completion of at least two Writing Enriched courses is required for graduation."
+   ],
+   "rules": [
+    "Successful completion of at least two Writing Enriched courses is required for graduation."
+   ]
   },
   {
    "type": "course",
@@ -266,7 +277,9 @@
    "area": "Emphasis Requirements",
    "code": "THEA 3110R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 2,
+   "creditsEach": 2
   },
   {
    "type": "course",
@@ -318,7 +331,9 @@
     "THEA 4190R",
     "THEA 3150R"
    ],
-   "credits": 6
+   "credits": 6,
+   "repeat": 3,
+   "creditsEach": 2
   },
   {
    "type": "course",
@@ -456,8 +471,9 @@
      "credits": 3
     },
     {
-     "label": "Free Elective",
-     "credits": 2
+     "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
+     "credits": 2,
+     "text": "Free Elective"
     },
     {
      "label": "Performing Arts Elective",
@@ -642,6 +658,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -683,13 +700,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1590R": {
    "title": "Production Practicum for Stage and Screen I",
@@ -952,5 +975,7 @@
    "prereqs": null,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio."
 }

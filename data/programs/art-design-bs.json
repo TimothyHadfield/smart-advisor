@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Lower or Upper division General Elective",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -191,7 +196,7 @@
   {
    "type": "choice",
    "area": "Lower Division Core",
-   "label": "Lower Division Core Elective",
+   "label": "ART/ARTH Lower Division",
    "pick": {
     "credits": 9
    },
@@ -252,7 +257,7 @@
   {
    "type": "choice",
    "area": "Upper Division Core",
-   "label": "Writing Enriched Elective",
+   "label": "ART Upper Division",
    "pick": {
     "credits": 6
    },
@@ -313,7 +318,7 @@
   {
    "type": "choice",
    "area": "Upper Division Core",
-   "label": "Gen Ed Distribution",
+   "label": "Choose 15 credits",
    "pick": {
     "credits": 15
    },
@@ -323,7 +328,8 @@
      "codes": [
       "ART 3000R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -341,7 +347,8 @@
      "codes": [
       "ART 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6
     },
     {
      "codes": [
@@ -399,35 +406,39 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "code": "ART 1120",
@@ -493,33 +504,34 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 2700",
+     "credits": 3,
      "alts": [
-      "HIST 2710"
+      "HIST 2700",
+      "HIST 2710",
+      "HIST 1700",
+      "HIST 1700H",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100"
      ],
-     "credits": null
-    },
-    {
-     "code": "HIST 1700",
-     "alts": [
-      "HIST 1700H"
-     ],
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
+     "options": [
+      [
+       "HIST 2700",
+       "HIST 2710"
+      ],
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ]
+     ]
     }
    ]
   },
@@ -600,8 +612,9 @@
      "credits": 3
     },
     {
-     "label": "ARTH Upper Division",
-     "credits": 3
+     "label": "Complete 12 Credits of Upper Division ARTH",
+     "credits": 3,
+     "text": "ARTH Upper Division"
     }
    ]
   },
@@ -613,8 +626,9 @@
      "credits": 3
     },
     {
-     "label": "ARTH Upper Division",
-     "credits": 3
+     "label": "Complete 12 Credits of Upper Division ARTH",
+     "credits": 3,
+     "text": "ARTH Upper Division"
     },
     {
      "label": "Gen Ed Distribution",
@@ -646,8 +660,9 @@
      "credits": 3
     },
     {
-     "label": "ARTH Upper Division",
-     "credits": 3
+     "label": "Complete 12 Credits of Upper Division ARTH",
+     "credits": 3,
+     "text": "ARTH Upper Division"
     },
     {
      "label": "Writing Enriched Elective",
@@ -675,7 +690,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -702,7 +720,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1650": {
    "title": "Watercolor",
@@ -973,6 +994,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

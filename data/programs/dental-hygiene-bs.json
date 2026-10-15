@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Personal, Professional and Civic Growth",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -68,7 +68,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -111,7 +112,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -390,7 +395,8 @@
      "codes": [
       "DENT 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 5
     },
     {
      "codes": [
@@ -474,7 +480,8 @@
    "text": "Take 11 credits from the following electives:",
    "notes": [
     "Other advisor approved upper division elective"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -490,31 +497,35 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
      "code": "COMM 1020",
@@ -570,8 +581,9 @@
      "credits": 1
     },
     {
-     "label": "Personal, Professional and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional or Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional and Civic Growth"
     }
    ]
   },
@@ -729,11 +741,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -1088,6 +1108,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1272,7 +1293,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",
@@ -1310,5 +1334,7 @@
     "ZOOL 2420"
    ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Complete interview process and be formally accepted into the program."
 }

@@ -16,7 +16,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Choose 3 credits",
+   "label": "Complete one of following:",
    "pick": {
     "credits": 3
    },
@@ -47,7 +47,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Choose 3 credits",
+   "label": "HUM 3000+",
    "pick": {
     "credits": 3
    },
@@ -88,7 +88,8 @@
      "codes": [
       "HUM 3200R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -136,27 +137,31 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "HUM 2010",
-     "credits": null
-    },
-    {
-     "code": "HUM 2010G",
-     "credits": null
-    },
-    {
-     "code": "HUM 2010H",
-     "credits": null
-    },
-    {
-     "code": "HUM 2100",
-     "credits": null
-    },
-    {
-     "code": "HUM 2100H",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HUM 2010",
+      "HUM 2010G",
+      "HUM 2010H",
+      "HUM 2100",
+      "HUM 2100H"
+     ],
+     "options": [
+      [
+       "HUM 2010"
+      ],
+      [
+       "HUM 2010G"
+      ],
+      [
+       "HUM 2010H"
+      ],
+      [
+       "HUM 2100"
+      ],
+      [
+       "HUM 2100H"
+      ]
+     ]
     }
    ]
   },
@@ -165,27 +170,31 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "HUM 2020",
-     "credits": null
-    },
-    {
-     "code": "HUM 2020G",
-     "credits": null
-    },
-    {
-     "code": "HUM 2020H",
-     "credits": null
-    },
-    {
-     "code": "HUM 2200",
-     "credits": null
-    },
-    {
-     "code": "HUM 2200H",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HUM 2020",
+      "HUM 2020G",
+      "HUM 2020H",
+      "HUM 2200",
+      "HUM 2200H"
+     ],
+     "options": [
+      [
+       "HUM 2020"
+      ],
+      [
+       "HUM 2020G"
+      ],
+      [
+       "HUM 2020H"
+      ],
+      [
+       "HUM 2200"
+      ],
+      [
+       "HUM 2200H"
+      ]
+     ]
     }
    ]
   },
@@ -202,8 +211,11 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "HUM 3000",
-     "credits": 3
+     "label": "HUM 3000+",
+     "credits": 3,
+     "recommended": [
+      "HUM 3000"
+     ]
     }
    ]
   },
@@ -211,8 +223,11 @@
    "label": "Semester 5",
    "items": [
     {
-     "code": "HUM 3000",
-     "credits": 3
+     "label": "HUM 3000+",
+     "credits": 3,
+     "recommended": [
+      "HUM 3000"
+     ]
     }
    ]
   },
@@ -220,8 +235,11 @@
    "label": "Semester 6",
    "items": [
     {
-     "code": "HUM 3000",
-     "credits": 3
+     "label": "HUM 3000+",
+     "credits": 3,
+     "recommended": [
+      "HUM 3000"
+     ]
     }
    ]
   }
@@ -316,7 +334,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENG 2010",
-   "precoreqs": "ENG 2010"
+   "precoreqs": "ENG 2010",
+   "preco": [
+    "ENG 2010"
+   ]
   },
   "HUM 4010R": {
    "title": "Forms and Genres Across the Arts",
@@ -325,7 +346,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "HUM 4140R": {
    "title": "Advanced Topics in Humanities",
@@ -334,10 +358,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   }
- },
- "missingCourses": [
-  "HUM 3000"
- ]
+ }
 }

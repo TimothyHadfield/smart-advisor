@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Social/Behavioral Science Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -37,7 +37,8 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -77,7 +78,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "ART/ARTH Elective",
+   "label": "ART/ ARTH Elective",
    "pick": {
     "credits": 9
    },
@@ -197,8 +198,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social or Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
      "code": "ART 1120",
@@ -218,8 +220,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Biology or Physical Science Distribution",
-     "credits": 3
+     "label": "Biology or Physical Science",
+     "credits": 3,
+     "text": "Biology or Physical Science Distribution"
     },
     {
      "code": "ARTH 2710",
@@ -283,16 +286,19 @@
      "credits": 1
     },
     {
-     "label": "ART/ARTH Elective",
-     "credits": 3
+     "label": "ART/ ARTH Elective",
+     "credits": 3,
+     "text": "ART/ARTH Elective"
     },
     {
-     "label": "ART/ARTH Elective",
-     "credits": 3
+     "label": "ART/ ARTH Elective",
+     "credits": 3,
+     "text": "ART/ARTH Elective"
     },
     {
-     "label": "ART/ARTH Elective",
-     "credits": 3
+     "label": "ART/ ARTH Elective",
+     "credits": 3,
+     "text": "ART/ARTH Elective"
     }
    ]
   }
@@ -343,7 +349,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1750": {
    "title": "Intro to Digital Imaging",
@@ -391,7 +400,10 @@
    "title": "Photographic Lighting I",
    "credits": 3,
    "precoreqText": "ART 2720",
-   "precoreqs": "ART 2720"
+   "precoreqs": "ART 2720",
+   "preco": [
+    "ART 2720"
+   ]
   },
   "ARTH 2710": {
    "title": "Prehistoric Through Gothic Art History",
@@ -422,6 +434,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

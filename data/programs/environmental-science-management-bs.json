@@ -69,6 +69,9 @@
      ],
      "credits": 3
     }
+   ],
+   "notes": [
+    "Distribution Courses:"
    ]
   },
   {
@@ -107,20 +110,12 @@
    "credits": 3
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "GEOG 2000"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "GEOG 2000"
    ]
   },
   {
@@ -233,7 +228,9 @@
    "area": "Discipline Core Requirements",
    "code": "GEO 4800R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "choice",
@@ -707,7 +704,8 @@
      "codes": [
       "GEOG 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -755,7 +753,7 @@
      "codes": [
       "BIOL 3705"
      ],
-     "credits": 1
+     "credits": 3
     },
     {
      "codes": [
@@ -779,7 +777,8 @@
    "text": "Choose 12 credits from the following list (at least 3 credits must be Upper Division):",
    "notes": [
     "Or other electives approved by the advisor and chair"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -802,12 +801,14 @@
      "credits": 3
     },
     {
-     "label": "Arts Distribution",
-     "credits": 3
+     "label": "Arts",
+     "credits": 3,
+     "text": "Arts Distribution"
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -845,11 +846,15 @@
    "items": [
     {
      "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
-    },
-    {
-     "code": "GEOG 2000",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "GEOG 2000"
+     ],
+     "options": [
+      [
+       "GEOG 2000"
+      ]
+     ]
     },
     {
      "code": "CHEM 1210",
@@ -862,11 +867,14 @@
     {
      "code": "PHYS 2010",
      "alts": [
-      "PHYS 2015",
       "PHYS 2210",
       "PHYS 2215"
      ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
     },
     {
      "code": "ENVT 2730",
@@ -878,8 +886,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "code": "CHEM 1220",
@@ -928,8 +937,9 @@
      "credits": 4
     },
     {
-     "label": "Interdisciplinary Core Requirement - Biological Sciences",
-     "credits": 3
+     "label": "Biological Sciences - Complete one of the following",
+     "credits": 3,
+     "text": "Interdisciplinary Core Requirement - Biological Sciences"
     },
     {
      "label": "Interdisciplinary Core Requirement - Water Pollution and Management",
@@ -997,7 +1007,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -1222,7 +1235,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3330": {
    "title": "Water Resources Management",
@@ -1636,7 +1652,13 @@
    "title": "Biogeography",
    "credits": 4,
    "prereqText": "(BIOL1010, or BIOL1620, or GEOG1000) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620",
+     "GEOG 1000"
+    ]
+   },
    "prereqNonCourse": true
   },
   "GEOG 3400": {

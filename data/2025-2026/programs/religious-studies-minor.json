@@ -104,19 +104,23 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "PHIL 1610",
-     "credits": null
-    },
-    {
-     "code": "PHIL 1620",
-     "credits": null
-    },
-    {
-     "code": "ANTH 3450",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "PHIL 1610",
+      "PHIL 1620",
+      "ANTH 3450"
+     ],
+     "options": [
+      [
+       "PHIL 1610"
+      ],
+      [
+       "PHIL 1620"
+      ],
+      [
+       "ANTH 3450"
+      ]
+     ]
     },
     {
      "label": "RLST Elective",

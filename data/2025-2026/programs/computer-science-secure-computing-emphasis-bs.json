@@ -160,12 +160,15 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following course/lab combinations:"
+   "text": "Complete one of the following course/lab combinations:",
+   "notes": [
+    "Minimum grade of C- required in these courses."
+   ]
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -485,27 +488,31 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "CS 3250",
-     "credits": null
-    },
-    {
-     "code": "CS 3260",
-     "credits": null
-    },
-    {
-     "code": "CS 3270",
-     "credits": null
-    },
-    {
-     "code": "CS 3370",
-     "credits": null
-    },
-    {
-     "code": "CS 3380",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "CS 3250",
+      "CS 3260",
+      "CS 3270",
+      "CS 3370",
+      "CS 3380"
+     ],
+     "options": [
+      [
+       "CS 3250"
+      ],
+      [
+       "CS 3260"
+      ],
+      [
+       "CS 3270"
+      ],
+      [
+       "CS 3370"
+      ],
+      [
+       "CS 3380"
+      ]
+     ]
     }
    ]
   },
@@ -601,11 +608,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -659,7 +674,7 @@
    "title": "Accelerated Introduction to Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to college algebra. Pass CS 1420 Entrance Exam.",
-   "prereqs": "CS 1420",
+   "prereqs": null,
    "prereqNonCourse": true
   },
   "CS 2300": {
@@ -742,7 +757,10 @@
     ]
    },
    "precoreqText": "MATH 1210",
-   "precoreqs": "MATH 1210"
+   "precoreqs": "MATH 1210",
+   "preco": [
+    "MATH 1210"
+   ]
   },
   "CS 2810": {
    "title": "Computer Organization and Architecture",

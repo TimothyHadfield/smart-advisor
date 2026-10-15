@@ -150,12 +150,14 @@
      "codes": [
       "SW 6945"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     }
    ],
    "notes": [
     "or other departmental approved courses"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -201,8 +203,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Elective requirements",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -226,8 +229,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Elective requirements",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -389,5 +393,7 @@
    "prereqs": "SW 6400",
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
 }

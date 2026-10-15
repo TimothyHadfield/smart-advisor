@@ -4,7 +4,7 @@
  "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/gerontology-minor/",
  "catalogYear": "2026-2027",
  "fetched": "2026-10-15",
- "totalCredits": 27,
+ "totalCredits": 18,
  "requirements": [
   {
    "type": "choice",
@@ -139,7 +139,8 @@
      "codes": [
       "HLTH 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -193,7 +194,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Choose 3 credits",
+   "label": "Complete any 3 credits from Internship/Research courses",
    "pick": {
     "credits": 3
    },
@@ -203,25 +204,29 @@
      "codes": [
       "EXSC 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
       "FAMS 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
       "FAMS 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
       "HLTH 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6
     },
     {
      "codes": [
@@ -233,25 +238,29 @@
      "codes": [
       "NURS 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "NURS 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "NURS 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "NURS 4950R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -265,7 +274,8 @@
      ],
      "credits": 6
     }
-   ]
+   ],
+   "text": "Complete any 3 credits from Internship/Research courses:"
   }
  ],
  "gradPlan": [
@@ -538,7 +548,10 @@
     "NURS 2320"
    ],
    "precoreqText": "NURS 2300",
-   "precoreqs": "NURS 2300"
+   "precoreqs": "NURS 2300",
+   "preco": [
+    "NURS 2300"
+   ]
   },
   "NURS 2420": {
    "title": "Nursing Care of the Aging Population",
@@ -604,7 +617,12 @@
      "NURS 2415",
      "NURS 2420"
     ]
-   }
+   },
+   "preco": [
+    "NURS 2410",
+    "NURS 2415",
+    "NURS 2420"
+   ]
   },
   "NURS 4810R": {
    "title": "Internship in Nursing",
@@ -777,6 +795,5 @@
    },
    "prereqNonCourse": true
   }
- },
- "totalFrom": "area headers"
+ }
 }

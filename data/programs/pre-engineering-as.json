@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -135,9 +139,10 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Choose 1 track",
    "pick": {
-    "count": 1
+    "credits": 19,
+    "tracks": 1
    },
    "credits": 19,
    "options": [
@@ -146,28 +151,28 @@
       "PHYS 2215"
      ],
      "credits": 1,
-     "section": "General Engineering Focus:"
+     "section": "General Engineering Focus"
     },
     {
      "codes": [
       "CHEM 1215"
      ],
      "credits": 1,
-     "section": "General Engineering Focus:"
+     "section": "General Engineering Focus"
     },
     {
      "codes": [
       "ENGR 1000"
      ],
      "credits": 3,
-     "section": "General Engineering Focus:"
+     "section": "General Engineering Focus"
     },
     {
      "codes": [
       "ENGR 2160"
      ],
      "credits": 3,
-     "section": "General Engineering Focus:"
+     "section": "General Engineering Focus"
     },
     {
      "codes": [
@@ -177,28 +182,28 @@
      "alts": [
       "CS 1410"
      ],
-     "section": "General Engineering Focus:"
+     "section": "General Engineering Focus"
     },
     {
      "codes": [
       "PHYS 2220"
      ],
      "credits": 4,
-     "section": "Mechanical/Civil Engineering Focus:"
+     "section": "Mechanical/Civil Engineering Focus"
     },
     {
      "codes": [
       "ENGR 2010"
      ],
      "credits": 3,
-     "section": "Mechanical/Civil Engineering Focus:"
+     "section": "Mechanical/Civil Engineering Focus"
     },
     {
      "codes": [
       "ENGR 2030"
      ],
      "credits": 3,
-     "section": "Mechanical/Civil Engineering Focus:"
+     "section": "Mechanical/Civil Engineering Focus"
     },
     {
      "codes": [
@@ -209,7 +214,7 @@
       "ENGR 2300",
       "ENGR 2450"
      ],
-     "section": "Complete one of the following:"
+     "section": "Mechanical/Civil Engineering Focus"
     },
     {
      "codes": [
@@ -221,84 +226,88 @@
       "EGDT 2500",
       "STAT 2040"
      ],
-     "section": "Complete one of the following:"
+     "section": "Mechanical/Civil Engineering Focus"
     },
     {
      "codes": [
       "PHYS 2220"
      ],
      "credits": 4,
-     "section": "Electrical/Computer Engineering Focus:"
+     "section": "Electrical/Computer Engineering Focus"
     },
     {
      "codes": [
       "ECE 1000"
      ],
      "credits": 3,
-     "section": "Electrical/Computer Engineering Focus:"
+     "section": "Electrical/Computer Engineering Focus"
     },
     {
      "codes": [
       "ECE 2700"
      ],
      "credits": 3,
-     "section": "Electrical/Computer Engineering Focus:"
+     "section": "Electrical/Computer Engineering Focus"
     },
     {
      "codes": [
       "ECE 2705"
      ],
      "credits": 1,
-     "section": "Electrical/Computer Engineering Focus:"
+     "section": "Electrical/Computer Engineering Focus"
     },
     {
      "codes": [
       "PHYS 2220"
      ],
      "credits": 4,
-     "section": "Chemical/Biological Engineering Focus:"
+     "section": "Chemical/Biological Engineering Focus"
     },
     {
      "codes": [
       "CHEM 1220"
      ],
      "credits": 4,
-     "section": "Chemical/Biological Engineering Focus:"
+     "section": "Chemical/Biological Engineering Focus"
     },
     {
      "codes": [
       "CHEM 2310"
      ],
      "credits": 4,
-     "section": "Chemical/Biological Engineering Focus:"
+     "section": "Chemical/Biological Engineering Focus"
     },
     {
      "codes": [
       "MATH 1050"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "MATH 1060"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "MATH 2210"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "MATH 2250"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
@@ -306,294 +315,354 @@
       "MATH 2280"
      ],
      "credits": 6,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "STAT 2040"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "PHYS 2215"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "PHYS 2225"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 1010"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 1215"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 1000"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 1020"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 1030"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 2140"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 2160"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 2300"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ENGR 2450"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1020"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1040"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1060"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1071"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1400"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 1200"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "EGDT 2500"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 1400"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 1410"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 2300"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 2420"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 2600"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CS 2810"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ECE 1000"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "ECE 2210"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "BIOL 1610"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "BIOL 1615"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "BIOL 1620"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "BIOL 1625"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "BIOL 3400"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "MICR 2060"
      ],
      "credits": 3,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "MICR 2065"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 1220"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 1225"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 2315"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 2320"
      ],
      "credits": 4,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     },
     {
      "codes": [
       "CHEM 2325"
      ],
      "credits": 1,
-     "section": "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor."
+     "section": "Pre-Engineering Elective List",
+     "shared": true
     }
    ],
    "text": "Complete one of the following sets of courses:",
    "notes": [
-    "General Engineering Focus:: Also complete 8 credits from the Pre-Engineering elective list",
-    "Complete one of the following:: Also complete 3 credits from the Pre-Engineering elective list",
-    "Electrical/Computer Engineering Focus:: Also complete 8 credits from the Pre-Engineering elective list",
-    "Chemical/Biological Engineering Focus:: Also complete 7 credits from the Pre-Engineering elective list",
-    "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.: Math and Science Electives:",
-    "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.: General Engineering Electives:",
-    "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.: CAD Electives:",
-    "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.: Computer and Electrical Electives:",
-    "Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.: Biological and Chemical Electives:"
-   ]
+    "General Engineering Focus:",
+    "General Engineering Focus: Also complete 8 credits from the Pre-Engineering elective list",
+    "General Engineering Focus: Mechanical/Civil Engineering Focus:",
+    "Mechanical/Civil Engineering Focus: Complete one of the following:",
+    "Mechanical/Civil Engineering Focus: Complete one of the following:",
+    "Mechanical/Civil Engineering Focus: Also complete 3 credits from the Pre-Engineering elective list",
+    "Mechanical/Civil Engineering Focus: Electrical/Computer Engineering Focus:",
+    "Electrical/Computer Engineering Focus: Also complete 8 credits from the Pre-Engineering elective list",
+    "Electrical/Computer Engineering Focus: Chemical/Biological Engineering Focus:",
+    "Chemical/Biological Engineering Focus: Also complete 7 credits from the Pre-Engineering elective list",
+    "Chemical/Biological Engineering Focus: Pre-Engineering Elective List:",
+    "Pre-Engineering Elective List: Students should carefully select electives based on the engineering discipline they are interested in. See your advisor.",
+    "Pre-Engineering Elective List: Math and Science Electives:",
+    "Pre-Engineering Elective List: General Engineering Electives:",
+    "Pre-Engineering Elective List: CAD Electives:",
+    "Pre-Engineering Elective List: Computer and Electrical Electives:",
+    "Pre-Engineering Elective List: Biological and Chemical Electives:"
+   ],
+   "tracks": [
+    "General Engineering Focus",
+    "Mechanical/Civil Engineering Focus",
+    "Electrical/Computer Engineering Focus",
+    "Chemical/Biological Engineering Focus"
+   ],
+   "trackElectives": {
+    "General Engineering Focus": 8,
+    "Mechanical/Civil Engineering Focus": 3,
+    "Electrical/Computer Engineering Focus": 8,
+    "Chemical/Biological Engineering Focus": 7
+   }
   }
  ],
  "gradPlan": [
@@ -702,8 +771,9 @@
      "credits": 3
     },
     {
-     "label": "Any approved Social/Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Any approved Social/Behavioral Science"
     }
    ]
   }
@@ -715,17 +785,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -1081,7 +1162,10 @@
    "title": "Engineering Programming",
    "credits": 3,
    "precoreqText": "MATH 1210",
-   "precoreqs": "MATH 1210"
+   "precoreqs": "MATH 1210",
+   "preco": [
+    "MATH 1210"
+   ]
   },
   "ENGR 2010": {
    "title": "Engineering Statics",
@@ -1128,7 +1212,10 @@
    "title": "Computational Methods for Engineering Analysis",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "HIST 1700": {
    "title": "American History",

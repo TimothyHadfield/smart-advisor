@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Any approved Behavioral/ Social/ Political Science Gen Ed",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -348,15 +348,19 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 1010",
-     "credits": null
-    },
-    {
-     "code": "ENGH 1005",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 1010",
+      "ENGH 1005"
+     ],
+     "options": [
+      [
+       "ENGL 1010"
+      ],
+      [
+       "ENGH 1005"
+      ]
+     ]
     }
    ]
   },
@@ -396,12 +400,14 @@
      "credits": 1
     },
     {
-     "label": "Any approved Behavioral/ Social/ Political Science Gen Ed",
-     "credits": 3
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 3,
+     "text": "Any approved Behavioral/ Social/ Political Science Gen Ed"
     },
     {
-     "label": "Any approved Humanities/ Fine Arts/ Foreign Language Gen Ed",
-     "credits": 3
+     "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
+     "credits": 3,
+     "text": "Any approved Humanities/ Fine Arts/ Foreign Language Gen Ed"
     }
    ]
   },
@@ -441,8 +447,9 @@
      "credits": 2
     },
     {
-     "label": "Any approved Biology/ Physical Science Gen Ed",
-     "credits": 3
+     "label": "Any approved Biology or Physical Science Distribution Course",
+     "credits": 3,
+     "text": "Any approved Biology/ Physical Science Gen Ed"
     }
    ]
   }
@@ -460,7 +467,10 @@
    "title": "Automotive Electrical Systems Lab",
    "credits": 1,
    "precoreqText": "AUT 1160",
-   "precoreqs": "AUT 1160"
+   "precoreqs": "AUT 1160",
+   "preco": [
+    "AUT 1160"
+   ]
   },
   "AUT 1170": {
    "title": "Engine Electrical Systems",
@@ -474,7 +484,9 @@
    "title": "Engine Electrical Systems Lab",
    "credits": 1,
    "coreqText": "AUT1170",
-   "coreqs": []
+   "coreqs": [
+    "AUT 1170"
+   ]
   },
   "AUT 1210": {
    "title": "Steering and Suspension Systems",

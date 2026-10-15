@@ -233,7 +233,8 @@
    "text": "Complete 6 credits from the following:",
    "notes": [
     "Graduate-level electives as approved by the MPA Director."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -556,7 +557,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "PADM 6060",
-   "precoreqs": "PADM 6060"
+   "precoreqs": "PADM 6060",
+   "preco": [
+    "PADM 6060"
+   ]
   }
  }
 }

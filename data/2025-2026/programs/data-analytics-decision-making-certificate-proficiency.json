@@ -80,65 +80,59 @@
      "codes": [
       "INFO 3130"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "INFO 4130"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "MATH 1100"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "MKTG 3300"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "CS 1410"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "CS 2420"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "STAT 2050"
      ],
-     "credits": 4,
-     "section": "Choose six credits from the following:"
+     "credits": 4
     },
     {
      "codes": [
       "BIOL 3100"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     },
     {
      "codes": [
       "BIOL 1011"
      ],
-     "credits": 3,
-     "section": "Choose six credits from the following:"
+     "credits": 3
     }
+   ],
+   "notes": [
+    "Choose six credits from the following:"
    ]
   }
  ],
@@ -165,31 +159,35 @@
    "items": [
     {
      "label": "Statistics course chosen from:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "STAT 2040",
+      "MGMT 2340",
+      "STAT 2050",
+      "PSY 3110"
+     ],
+     "options": [
+      [
+       "STAT 2040"
+      ],
+      [
+       "MGMT 2340"
+      ],
+      [
+       "STAT 2050"
+      ],
+      [
+       "PSY 3110"
+      ],
+      [
+       "STAT 2050"
+      ]
+     ]
     },
     {
-     "code": "STAT 2040",
-     "credits": null
-    },
-    {
-     "code": "MGMT 2340",
-     "credits": null
-    },
-    {
-     "code": "STAT 2050",
-     "credits": null
-    },
-    {
-     "code": "PSY 3110",
-     "credits": null
-    },
-    {
-     "code": "STAT 2050",
-     "credits": null
-    },
-    {
-     "label": "Complete 6 credits of electives from list",
-     "credits": 6
+     "label": "Elective Courses",
+     "credits": 6,
+     "text": "Complete 6 credits of electives from list"
     }
    ]
   }

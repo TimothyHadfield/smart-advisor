@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -59,18 +59,21 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "SPAN 3030",
+     "credits": 3,
      "alts": [
-      "SPAN 3040"
+      "SPAN 3030",
+      "SPAN 3040",
+      "SPAN 3050"
      ],
-     "credits": null
-    },
-    {
-     "code": "SPAN 3050",
-     "credits": null
+     "options": [
+      [
+       "SPAN 3030",
+       "SPAN 3040"
+      ],
+      [
+       "SPAN 3050"
+      ]
+     ]
     }
    ]
   },

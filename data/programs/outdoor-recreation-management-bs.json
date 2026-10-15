@@ -325,7 +325,8 @@
      "codes": [
       "REC 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 6 credits from the following:"
@@ -562,8 +563,9 @@
      "credits": 1
     },
     {
-     "label": "American Institutions Distribution",
-     "credits": 3
+     "label": "American Institutions",
+     "credits": 3,
+     "text": "American Institutions Distribution"
     },
     {
      "code": "REC 1500",
@@ -590,8 +592,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Directed Elective",
@@ -607,8 +610,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "General Elective",
@@ -623,8 +627,9 @@
      "credits": 1
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     }
    ]
   },
@@ -645,35 +650,41 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
+     "credits": 1,
+     "alts": [
+      "REC 1505",
+      "REC 1525",
+      "REC 1528",
+      "REC 1550",
+      "REC 2010"
+     ],
+     "options": [
+      [
+       "REC 1505"
+      ],
+      [
+       "REC 1525"
+      ],
+      [
+       "REC 1528"
+      ],
+      [
+       "REC 1550"
+      ],
+      [
+       "REC 2010"
+      ]
+     ]
     },
     {
-     "code": "REC 1505",
-     "credits": null
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "code": "REC 1525",
-     "credits": null
-    },
-    {
-     "code": "REC 1528",
-     "credits": null
-    },
-    {
-     "code": "REC 1550",
-     "credits": null
-    },
-    {
-     "code": "REC 2010",
-     "credits": null
-    },
-    {
-     "label": "Fine Arts Distribution",
-     "credits": 3
-    },
-    {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "label": "Directed Elective",
@@ -698,31 +709,35 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
-    },
-    {
-     "code": "REC 1505",
-     "credits": null
-    },
-    {
-     "code": "REC 1516",
-     "credits": null
-    },
-    {
-     "code": "REC 1525",
-     "credits": null
-    },
-    {
-     "code": "REC 1528",
-     "credits": null
-    },
-    {
-     "code": "REC 1550",
-     "credits": null
-    },
-    {
-     "code": "REC 2010",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "REC 1505",
+      "REC 1516",
+      "REC 1525",
+      "REC 1528",
+      "REC 1550",
+      "REC 2010"
+     ],
+     "options": [
+      [
+       "REC 1505"
+      ],
+      [
+       "REC 1516"
+      ],
+      [
+       "REC 1525"
+      ],
+      [
+       "REC 1528"
+      ],
+      [
+       "REC 1550"
+      ],
+      [
+       "REC 2010"
+      ]
+     ]
     },
     {
      "code": "REC 4400",
@@ -991,7 +1006,10 @@
      "ZOOL 2325"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "ZOOL 2325"
+   ]
   },
   "EXSC 4300": {
    "title": "Research Methods in Exercise Science and Outdoor Recreation",
@@ -1219,7 +1237,11 @@
      "ENGL 2010",
      "MATH 1000"
     ]
-   }
+   },
+   "preco": [
+    "ENGL 2010",
+    "MATH 1000"
+   ]
   },
   "REC 2450": {
    "title": "Rock Climbing Site Management and Facilitation",
@@ -1267,7 +1289,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MATH 1000 or higher",
-   "precoreqs": "MATH 1000"
+   "precoreqs": "MATH 1000",
+   "preco": [
+    "MATH 1000"
+   ]
   },
   "REC 3200": {
    "title": "Inclusive Recreation",
@@ -1288,7 +1313,10 @@
    "prereqs": "REC 1535",
    "prereqNonCourse": true,
    "precoreqText": "REC 2200",
-   "precoreqs": "REC 2200"
+   "precoreqs": "REC 2200",
+   "preco": [
+    "REC 2200"
+   ]
   },
   "REC 3400": {
    "title": "Risk Management",
@@ -1297,7 +1325,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MAT 1010",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "REC 3500": {
    "title": "Recreation Administration",
@@ -1362,7 +1393,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "REC 2400",
-   "precoreqs": "REC 2400"
+   "precoreqs": "REC 2400",
+   "preco": [
+    "REC 2400"
+   ]
   },
   "REC 4810R": {
    "title": "Senior Internship",

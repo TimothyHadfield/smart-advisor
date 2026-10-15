@@ -189,7 +189,10 @@
    "prereqText": "ACC 2110",
    "prereqs": "ACC 2110",
    "precoreqText": "ACC 2120",
-   "precoreqs": "ACC 2120"
+   "precoreqs": "ACC 2120",
+   "preco": [
+    "ACC 2120"
+   ]
   },
   "ACC 3010": {
    "title": "Intermediate Accounting I",
@@ -210,7 +213,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ACC 2125",
-   "precoreqs": "ACC 2125"
+   "precoreqs": "ACC 2125",
+   "preco": [
+    "ACC 2125"
+   ]
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
@@ -224,7 +230,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ACC 3300",
-   "precoreqs": "ACC 3300"
+   "precoreqs": "ACC 3300",
+   "preco": [
+    "ACC 3300"
+   ]
   },
   "ACC 3030": {
    "title": "Intermediate Accounting for Non-Accounting Majors",
@@ -317,7 +326,10 @@
    "prereqs": "ACC 3010",
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 4310": {
    "title": "Advanced Management Accounting",
@@ -340,7 +352,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 5140": {
    "title": "Fraud Examination",

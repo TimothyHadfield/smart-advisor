@@ -252,7 +252,9 @@
    "area": "Discipline Core Requirements",
    "code": "PHYS 4900R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 4,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -402,13 +404,15 @@
      "codes": [
       "PHYS 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "PHYS 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -420,7 +424,8 @@
      "codes": [
       "PHYS 4950R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -438,46 +443,49 @@
      "codes": [
       "CHEM 1210"
      ],
-     "credits": 4,
-     "section": "See Physics Department academic advisor for possibly more complete and up to date list."
+     "credits": 4
     },
     {
      "codes": [
       "CHEM 1215"
      ],
-     "credits": 1,
-     "section": "See Physics Department academic advisor for possibly more complete and up to date list."
+     "credits": 1
     },
     {
      "codes": [
       "CHEM 1220"
      ],
-     "credits": 4,
-     "section": "See Physics Department academic advisor for possibly more complete and up to date list."
+     "credits": 4
     },
     {
      "codes": [
       "CHEM 1225"
      ],
-     "credits": 1,
-     "section": "See Physics Department academic advisor for possibly more complete and up to date list."
+     "credits": 1
     },
     {
      "codes": [
       "MATH 2270"
      ],
-     "credits": 3,
-     "section": "Any ENGR course 2010 or higher except internship and independent study type courses."
+     "credits": 3
     },
     {
      "codes": [
       "METO 3100"
      ],
-     "credits": 3,
-     "section": "Any GEO course 3080 or higher, except internship and independent study-type courses."
+     "credits": 3
     }
    ],
-   "text": "Complete 21 credits from the following courses. The selection of elective coursework should present a coherent theme such as engineering physics, medical phyiscs, nuclear physics, geophysics, computational physics, etc. (Consult Advisor or Department Chair for assistance or to consider possible course substitutions.)"
+   "text": "Complete 21 credits from the following courses. The selection of elective coursework should present a coherent theme such as engineering physics, medical phyiscs, nuclear physics, geophysics, computational physics, etc. (Consult Advisor or Department Chair for assistance or to consider possible course substitutions.)",
+   "notes": [
+    "See Physics Department academic advisor for possibly more complete and up to date list.",
+    "Any CHEM course 2310 or higher except internship and independent study type courses.",
+    "Any EENG course 2700 or higher except internship and independent study type courses.",
+    "Any ENGR course 2010 or higher except internship and independent study type courses.",
+    "Any MATH course 3200 or higher except intership and independent study type courses.",
+    "Any GEO course 3080 or higher, except internship and independent study-type courses."
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -536,8 +544,9 @@
      "credits": 3
     },
     {
-     "label": "FINE ARTS",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ARTS"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -569,8 +578,9 @@
      "credits": 0.5
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     }
    ]
   },
@@ -601,8 +611,9 @@
      "credits": 0.5
     },
     {
-     "label": "Soc/Behavioral Elective",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Soc/Behavioral Elective"
     }
    ]
   },
@@ -743,7 +754,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3100",
-   "precoreqs": "PHYS 3100"
+   "precoreqs": "PHYS 3100",
+   "preco": [
+    "PHYS 3100"
+   ]
   },
   "ASTR 4350": {
    "title": "Research Methods in Astronomy",
@@ -1066,7 +1080,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3120",
-   "precoreqs": "PHYS 3120"
+   "precoreqs": "PHYS 3120",
+   "preco": [
+    "PHYS 3120"
+   ]
   },
   "PHYS 3230": {
    "title": "Principles of Electronics for the Physical Sciences",

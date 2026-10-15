@@ -45,6 +45,12 @@
    "options": [
     {
      "codes": [
+      "GEOG 3650"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
       "GIS 3620"
      ],
      "credits": 3
@@ -78,7 +84,8 @@
    "notes": [
     "GEOG 3650",
     "Or any other courses with the following prefix: GEOG, SURV, GIS, EGDT, subject to program approval"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "choice",
@@ -116,21 +123,24 @@
    ],
    "notes": [
     "Or any courses with the NSS or INTS prefixes, subject to program approval."
-   ]
+   ],
+   "open": true
   },
   {
    "type": "course",
    "area": "Discipline Research Requirements",
    "code": "GEOG 4890R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 4
   },
   {
    "type": "course",
    "area": "Discipline Research Requirements",
    "code": "NSS 4910R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 3
   }
  ],
  "gradPlan": [
@@ -214,6 +224,13 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null
+  },
+  "GEOG 3650": {
+   "title": "Advanced Geographic Information Systems",
+   "credits": 4,
+   "prereqText": "GEOG 3600 and University Advanced Standing",
+   "prereqs": "GEOG 3600",
+   "prereqNonCourse": true
   },
   "GEOG 4100": {
    "title": "Geospatial Field Methods",

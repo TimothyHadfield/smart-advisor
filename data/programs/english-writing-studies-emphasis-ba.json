@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,10 +74,12 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +122,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -420,8 +429,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 1010",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1010"
     },
     {
      "label": "Elective",
@@ -433,16 +443,18 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "ENGL 2600",
      "credits": 3
     },
     {
-     "label": "Foreign Language 1020",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1020"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -463,31 +475,35 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2030",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3040G",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3060",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3070",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3085",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4010R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2030",
+      "ENGL 3040G",
+      "ENGL 3060",
+      "ENGL 3070",
+      "ENGL 3085",
+      "ENGL 4010R"
+     ],
+     "options": [
+      [
+       "ENGL 2030"
+      ],
+      [
+       "ENGL 3040G"
+      ],
+      [
+       "ENGL 3060"
+      ],
+      [
+       "ENGL 3070"
+      ],
+      [
+       "ENGL 3085"
+      ],
+      [
+       "ENGL 4010R"
+      ]
+     ]
     },
     {
      "code": "ENGL 2850",
@@ -497,8 +513,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Language 2010",
@@ -510,16 +527,19 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Language 2020G",
@@ -527,39 +547,43 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 2060",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3020",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4360R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2050",
+      "ENGL 2060",
+      "ENGL 3020",
+      "ENGL 3050",
+      "ENGL 3320",
+      "ENGL 3340",
+      "ENGL 4340",
+      "ENGL 4360R"
+     ],
+     "options": [
+      [
+       "ENGL 2050"
+      ],
+      [
+       "ENGL 2060"
+      ],
+      [
+       "ENGL 3020"
+      ],
+      [
+       "ENGL 3050"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "ENGL 3340"
+      ],
+      [
+       "ENGL 4340"
+      ],
+      [
+       "ENGL 4360R"
+      ]
+     ]
     }
    ]
   },
@@ -572,39 +596,46 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "ENGL 2030",
+      "ENGL 3060",
+      "ENGL 3070",
+      "ENGL 3085",
+      "ENGL 4010R"
+     ],
+     "options": [
+      [
+       "ENGL 2030"
+      ],
+      [
+       "ENGL 3060"
+      ],
+      [
+       "ENGL 3070"
+      ],
+      [
+       "ENGL 3085"
+      ],
+      [
+       "ENGL 4010R"
+      ]
+     ]
     },
     {
-     "code": "ENGL 2030",
-     "credits": null
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "code": "ENGL 3060",
-     "credits": null
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "code": "ENGL 3070",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3085",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4010R",
-     "credits": null
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -617,47 +648,53 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "ENGL 2050",
+      "ENGL 2060",
+      "ENGL 3020",
+      "ENGL 3050",
+      "ENGL 3320",
+      "ENGL 3340",
+      "ENGL 4340",
+      "ENGL 4360R"
+     ],
+     "options": [
+      [
+       "ENGL 2050"
+      ],
+      [
+       "ENGL 2060"
+      ],
+      [
+       "ENGL 3020"
+      ],
+      [
+       "ENGL 3050"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "ENGL 3340"
+      ],
+      [
+       "ENGL 4340"
+      ],
+      [
+       "ENGL 4360R"
+      ]
+     ]
     },
     {
-     "code": "ENGL 2050",
-     "credits": null
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "code": "ENGL 2060",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3020",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3050",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4360R",
-     "credits": null
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   }
@@ -745,19 +782,28 @@
    "title": "Introduction to the English Major",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2850": {
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3010": {
    "title": "Rhetorical Theory",
@@ -800,7 +846,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 3085": {
    "title": "Rhetorical Approaches to Popular Culture",
@@ -809,7 +858,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 3090": {
    "title": "Academic Writing for English Majors",
@@ -839,7 +891,10 @@
    "prereqs": "ENGL 2010",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 4020G": {
    "title": "Multicultural Rhetorics",
@@ -848,7 +903,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3010",
-   "precoreqs": "ENGL 3010"
+   "precoreqs": "ENGL 3010",
+   "preco": [
+    "ENGL 3010"
+   ]
   },
   "ENGL 4340": {
    "title": "Advanced Technical Communication",
@@ -909,6 +967,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

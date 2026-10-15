@@ -17,23 +17,16 @@
    "options": [
     {
      "codes": [
-      "EGDT 1600"
-     ],
-     "credits": 3
-    },
-    {
-     "codes": [
+      "EGDT 1600",
       "EGDT 1610"
      ],
-     "credits": 3,
-     "section": "and"
+     "credits": 6
     },
     {
      "codes": [
       "MATH 1060"
      ],
-     "credits": 3,
-     "section": "or"
+     "credits": 3
     }
    ],
    "text": "Choose one of the following courses:"
@@ -64,7 +57,10 @@
    "area": "Discipline Core Requirements",
    "label": "Electives: Choose 6 credit hours:",
    "credits": 6,
-   "text": "Electives: Choose 6 credit hours:"
+   "text": "Electives: Choose 6 credit hours:",
+   "notes": [
+    "Any course beginning with the following prefix may be taken as an elective: EGDT, SURV, GIS, ENGR, or CIVE"
+   ]
   }
  ],
  "gradPlan": [
@@ -76,11 +72,12 @@
      "credits": 3
     },
     {
-     "code": "EGDT 1600",
-     "alts": [
+     "label": "Or EGDT 1600 and EGDT 1610",
+     "credits": null,
+     "recommended": [
+      "EGDT 1600",
       "EGDT 1610"
-     ],
-     "credits": null
+     ]
     },
     {
      "code": "EGDT 1040",
@@ -100,8 +97,9 @@
      "credits": 3
     },
     {
-     "label": "Electives",
-     "credits": 6
+     "label": "Electives: Choose 6 credit hours:",
+     "credits": 6,
+     "text": "Electives"
     }
    ]
   }

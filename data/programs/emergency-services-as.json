@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,15 +74,17 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "American Institution",
    "pick": {
     "count": 1
    },
@@ -117,7 +122,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -152,8 +158,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( ES 1150 recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (ES 1150 recommended)",
+   "credits": 3,
+   "recommended": [
+    "ES 1150"
+   ]
   },
   {
    "type": "course",
@@ -201,35 +210,39 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Elective",
@@ -279,16 +292,18 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Elective",
      "credits": 6
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -371,6 +386,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

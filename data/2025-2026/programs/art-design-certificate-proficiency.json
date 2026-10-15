@@ -115,7 +115,10 @@
    "title": "General Biology Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1010",
-   "precoreqs": "BIOL 1010"
+   "precoreqs": "BIOL 1010",
+   "preco": [
+    "BIOL 1010"
+   ]
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -138,6 +141,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

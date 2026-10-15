@@ -38,7 +38,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "QL Math",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -70,7 +70,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following American Institution courses:"
+   "text": "Complete one of the following American Institution courses:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -105,14 +106,20 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities Elective ( COMM 1020 highly recommended)",
-   "credits": 3
+   "label": "Humanities Elective (COMM 1020 highly recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social Science Elective ( PSY 1010 highly recommended)",
-   "credits": 3
+   "label": "Social Science Elective (PSY 1010 highly recommended)",
+   "credits": 3,
+   "recommended": [
+    "PSY 1010"
+   ]
   },
   {
    "type": "course",
@@ -248,9 +255,12 @@
     },
     {
      "codes": [
-      "CHEM 3600"
+      "BIOL 3600"
      ],
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "CHEM 3600"
+     ]
     },
     {
      "codes": [
@@ -320,7 +330,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete 20 credits of the following health-related courses"
+   "text": "Complete 20 credits of the following health-related courses",
+   "notes": [
+    "Any course with the following health-related prefix: NURS, DENT, RESP, NUTR, HLSC, HLTH, HCA, PSY, ESEC, or any health-related department approved course."
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -382,10 +396,7 @@
      "credits": 4
     },
     {
-     "code": "CHEM 1215",
-     "alts": [
-      "CHEM 1210"
-     ],
+     "label": "Health -Related Elective",
      "credits": 4
     }
    ]
@@ -435,8 +446,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Art Elective",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Health Related Elective",
@@ -519,11 +531,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -607,6 +627,18 @@
    "prereqText": "BIOL 1610 with minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
    "prereqNonCourse": true
+  },
+  "BIOL 3600": {
+   "title": "Biological Chemistry",
+   "credits": 3,
+   "prereqText": "University Advanced Standing",
+   "prereqs": null,
+   "prereqNonCourse": true,
+   "precoreqText": "CHEM 2320",
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -727,7 +759,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "COMM 1020": {
    "title": "Public Speaking",
@@ -793,6 +828,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1073,5 +1109,7 @@
    "prereqs": "ZOOL 2320",
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Additionally, the program provides a customizable bachelor-level degree option in health for those who are not accepted into the competitive and limited healthcare cohort programs at the university and allows for pathway development opportunities with other institutions."
 }

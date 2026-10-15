@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements:",
-   "label": "FINE ARTS",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -100,7 +104,10 @@
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHIL 2050G"
+   ]
   },
   {
    "type": "placeholder",
@@ -349,7 +356,8 @@
      "codes": [
       "MICR 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -463,7 +471,8 @@
      "codes": [
       "MICR 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -475,7 +484,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -524,8 +534,9 @@
      "credits": 4
     },
     {
-     "label": "FINE ARTS",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ARTS"
     }
    ]
   },
@@ -545,12 +556,14 @@
      "credits": 3
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
     },
     {
-     "label": "SOCIAL/BEHAVIORAL SCIENCE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "SOCIAL/BEHAVIORAL SCIENCE"
     },
     {
      "label": "Elective",
@@ -724,11 +737,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -740,7 +761,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -829,7 +853,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3400",
-   "precoreqs": "BIOL 3400"
+   "precoreqs": "BIOL 3400",
+   "preco": [
+    "BIOL 3400"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -856,7 +883,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3550",
-   "precoreqs": "BIOL 3550"
+   "precoreqs": "BIOL 3550",
+   "preco": [
+    "BIOL 3550"
+   ]
   },
   "BIOL 3600": {
    "title": "Biological Chemistry",
@@ -865,7 +895,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "BIOL 3605": {
    "title": "Biological Chemistry Lab",
@@ -1157,7 +1190,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -1255,7 +1291,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "MICR 3550": {
    "title": "Microbial Physiology",
@@ -1322,7 +1361,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "BIOL 4455",
-   "precoreqs": "BIOL 4455"
+   "precoreqs": "BIOL 4455",
+   "preco": [
+    "BIOL 4455"
+   ]
   },
   "MICR 4500": {
    "title": "Virology",

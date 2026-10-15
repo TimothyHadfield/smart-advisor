@@ -159,7 +159,7 @@
   {
    "type": "choice",
    "area": "Discipline Elective Requirements",
-   "label": "Choose 20 credits",
+   "label": "COMM Elective",
    "pick": {
     "credits": 20
    },
@@ -187,7 +187,8 @@
      "codes": [
       "COMM 2020R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -271,7 +272,8 @@
      "codes": [
       "COMM 2900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -553,7 +555,8 @@
      "codes": [
       "COMM 4970R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 20 credits within the Communication Major, 9 must be from the 3000-4000 level."
@@ -574,20 +577,24 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Behavioral/Social Science GE",
-     "credits": 3
+     "label": "Behavioral/Social Science",
+     "credits": 3,
+     "text": "Behavioral/Social Science GE"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -607,12 +614,14 @@
      "credits": 3
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
-     "label": "Fine Arts GE",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts GE"
     }
    ]
   },
@@ -628,16 +637,19 @@
      "credits": 3
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -649,12 +661,14 @@
      "credits": 3
     },
     {
-     "label": "Physical Science GE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science GE"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
      "label": "American Institutions GE",
@@ -674,20 +688,23 @@
      "credits": 3
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 2
+     "label": "COMM Elective",
+     "credits": 2,
+     "text": "COMM Upper Division Elective"
     },
     {
      "code": "COMM 3190G",
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 4
+     "label": "COMM Elective",
+     "credits": 4,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -699,20 +716,23 @@
      "credits": 3
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
      "label": "COMM Elective",
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -724,20 +744,24 @@
      "credits": 3
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -749,20 +773,24 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -1300,6 +1328,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

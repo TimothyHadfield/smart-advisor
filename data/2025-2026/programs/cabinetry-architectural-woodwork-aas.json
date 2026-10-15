@@ -110,7 +110,9 @@
    "area": "Discipline Core Requirements",
    "code": "CMGT 2890R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -211,8 +213,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts or Humanities",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Fine Arts or Humanities"
     },
     {
      "label": "Open Elective (CAW or CMGT preferred)",
@@ -228,8 +231,9 @@
      "credits": 3
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "Social and Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     },
     {
      "label": "Open Elective (CAW or CMGT preferred)",
@@ -321,6 +325,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

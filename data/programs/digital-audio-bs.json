@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "History Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -62,12 +62,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social / Behavioral Science",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -105,7 +106,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -307,7 +312,7 @@
   {
    "type": "choice",
    "area": "Recommended Tracks",
-   "label": "Choose 18 credits",
+   "label": "DAPR Elective",
    "pick": {
     "credits": 18
    },
@@ -441,6 +446,11 @@
     }
    ],
    "text": "Complete at least 18 credits from the following recommended tracks",
+   "notes": [
+    "Sound Design Track",
+    "Sound Design Track: Audio Engineering Track",
+    "Audio Engineering Track: Game Sound Track"
+   ],
    "tracks": [
     "Sound Design Track",
     "Audio Engineering Track",
@@ -506,31 +516,36 @@
     },
     {
      "codes": [
-      "DCPR 1010"
+      "DCPR 1010",
+      "DCPR 1010L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 1610"
+      "DCPR 1610",
+      "DCPR 1610L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 1800"
+      "DCPR 1800",
+      "DCPR 1800L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 3610"
+      "DCPR 3610",
+      "DCPR 3610L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 3660"
+      "DCPR 3660",
+      "DCPR 3660L"
      ],
      "credits": 3
     },
@@ -762,8 +777,9 @@
      "credits": 3
     },
     {
-     "label": "Social / Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social / Behavioral Science"
     }
    ]
   },
@@ -845,7 +861,10 @@
    "title": "Audio Portfolio Prep",
    "credits": 2,
    "precoreqText": "DAPR 1000",
-   "precoreqs": "DAPR 1000"
+   "precoreqs": "DAPR 1000",
+   "preco": [
+    "DAPR 1000"
+   ]
   },
   "DAPR 2010": {
    "title": "Core Recording",
@@ -1124,7 +1143,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "DAPR 3020",
-   "precoreqs": "DAPR 3020"
+   "precoreqs": "DAPR 3020",
+   "preco": [
+    "DAPR 3020"
+   ]
   },
   "DAPR 4900R": {
    "title": "Senior Capstone",
@@ -1141,6 +1163,14 @@
     "DCPR 1010L"
    ]
   },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
+   ]
+  },
   "DCPR 1610": {
    "title": "Digital Cinema Editing I",
    "credits": 2,
@@ -1149,12 +1179,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 2,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 3610": {
@@ -1166,6 +1212,17 @@
    "coreqText": "DCPR 3610L",
    "coreqs": [
     "DCPR 3610L"
+   ]
+  },
+  "DCPR 3610L": {
+   "title": "Digital Cinema Editing II Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": "DCPR 1610",
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3610",
+   "coreqs": [
+    "DCPR 3610"
    ]
   },
   "DCPR 3660": {
@@ -1182,6 +1239,22 @@
    "coreqText": "DCPR 3660L",
    "coreqs": [
     "DCPR 3660L"
+   ]
+  },
+  "DCPR 3660L": {
+   "title": "Professional NLE Certification Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , DCPR 2630 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DCPR 1610",
+     "DCPR 2630"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3660",
+   "coreqs": [
+    "DCPR 3660"
    ]
   },
   "DGM 1645": {
@@ -1252,6 +1325,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1261,7 +1335,12 @@
    "title": "Quantitative Reasoning",
    "credits": 3,
    "prereqText": "One of the following (within department time limits): MAT 1010 or MAT1015 with a grade of C- or higher; or appropriate placement by a placement exam.",
-   "prereqs": "MAT 1010",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
    "prereqNonCourse": true
   },
   "MAT 1035": {
@@ -1330,5 +1409,7 @@
    "title": "American National Government",
    "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
 }

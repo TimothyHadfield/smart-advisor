@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science GE",
+   "label": "American Institutions GE",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,8 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -370,7 +372,8 @@
      "codes": [
       "PSY 4750R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -414,16 +417,18 @@
      "credits": 3
     },
     {
-     "label": "Language Course 1010",
-     "credits": 4
+     "label": "Complete 12 credits of one Foreign Language, including ASL (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Language Course 1010"
     },
     {
      "label": "Math GE",
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science GE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science GE"
     },
     {
      "code": "PSY 1010",
@@ -439,20 +444,23 @@
      "credits": 3
     },
     {
-     "label": "Physical Science GE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science GE"
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
      "code": "PSY 2020",
      "credits": 3
     },
     {
-     "label": "Language Course 1020",
-     "credits": 4
+     "label": "Complete 12 credits of one Foreign Language, including ASL (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Language Course 1020"
     }
    ]
   },
@@ -460,20 +468,24 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Personal, Professional, and Civic Growth GE",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth GE"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Psychology Foundations Course",
-     "credits": 3
+     "label": "Psychology Foundations-Complete 9 Credits",
+     "credits": 3,
+     "text": "Psychology Foundations Course"
     }
    ]
   },
@@ -481,24 +493,28 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Fine Art GE",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Art GE"
     },
     {
-     "label": "Humanities GE/Language",
-     "credits": 4
+     "label": "Humanities (fulfilled with Foreign Language 2020G/2020 course)",
+     "credits": 4,
+     "text": "Humanities GE/Language"
     },
     {
      "label": "American Institutions GE",
      "credits": 3
     },
     {
-     "label": "Psychology Foundations Course",
-     "credits": 3
+     "label": "Psychology Foundations-Complete 9 Credits",
+     "credits": 3,
+     "text": "Psychology Foundations Course"
     },
     {
-     "label": "Psychology Foundations Course",
-     "credits": 3
+     "label": "Psychology Foundations-Complete 9 Credits",
+     "credits": 3,
+     "text": "Psychology Foundations Course"
     }
    ]
   },
@@ -506,20 +522,24 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirement - Complete 15 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     },
     {
      "code": "PSY 3110",
@@ -535,20 +555,24 @@
      "credits": 4
     },
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirement - Complete 15 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     },
     {
-     "label": "Language",
-     "credits": 4
+     "label": "Complete 12 credits of one Foreign Language, including ASL (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Language"
     }
    ]
   },
@@ -556,24 +580,29 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirement - Complete 15 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     },
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirement - Complete 15 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -581,20 +610,24 @@
    "label": "Semester 8",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirement - Complete 15 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     },
     {
-     "label": "Upper-division Elective",
-     "credits": 3
+     "label": "Complete 39 credits of electives including 17 upper division",
+     "credits": 3,
+     "text": "Upper-division Elective"
     }
    ]
   }
@@ -650,6 +683,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -723,7 +757,10 @@
    "title": "Psychology as a Science and Profession",
    "credits": 3,
    "precoreqText": "PSY 1010",
-   "precoreqs": "PSY 1010"
+   "precoreqs": "PSY 1010",
+   "preco": [
+    "PSY 1010"
+   ]
   },
   "PSY 2300": {
    "title": "Abnormal Psychology",
@@ -953,7 +990,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "PSY 2420",
-   "precoreqs": "PSY 2420"
+   "precoreqs": "PSY 2420",
+   "preco": [
+    "PSY 2420"
+   ]
   },
   "PSY 3430": {
    "title": "Psychopharmacology",

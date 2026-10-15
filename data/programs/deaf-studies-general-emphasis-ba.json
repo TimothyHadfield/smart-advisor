@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Biology Refer to General Education (BB)",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following;"
+   "text": "Complete one of the following;",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Fine Arts Refer to General Education (FF)",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -279,7 +281,10 @@
    "area": "Emphasis Requirements",
    "label": "Complete 31 credits from any courses. ASL prefix courses are highly recommended and encouraged to develop language skills",
    "credits": 31,
-   "text": "Complete 31 credits from any courses. ASL prefix courses are highly recommended and encouraged to develop language skills"
+   "text": "Complete 31 credits from any courses. ASL prefix courses are highly recommended and encouraged to develop language skills",
+   "notes": [
+    "An internship (LANG 4810R) is also highly recommended where feasible."
+   ]
   }
  ],
  "gradPlan": [
@@ -295,63 +300,71 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
-    },
-    {
-     "code": "HIST 2700",
-     "credits": null
-    },
-    {
-     "code": "HIST 2710",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HIST 1700",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100",
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "options": [
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ],
+      [
+       "HIST 2700"
+      ],
+      [
+       "HIST 2710"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": null
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Humanities Distribution",
@@ -375,12 +388,14 @@
      "credits": 3
     },
     {
-     "label": "Biology Refer to General Education (BB)",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Refer to General Education (BB)"
     },
     {
-     "label": "Fine Arts Refer to General Education (FF)",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts Refer to General Education (FF)"
     },
     {
      "code": "ASL 3050",
@@ -400,8 +415,9 @@
      "credits": 3
     },
     {
-     "label": "Social Behavioral Science",
-     "credits": 3
+     "label": "Social/Cultural Anthropology Social Science",
+     "credits": 3,
+     "text": "Social Behavioral Science"
     },
     {
      "label": "Elective",
@@ -429,8 +445,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science",
-     "credits": 3
+     "label": "Social/Cultural Anthropology Social Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science"
     },
     {
      "label": "Elective",
@@ -764,6 +781,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -7,30 +7,6 @@
  "totalCredits": 19,
  "requirements": [
   {
-   "type": "choice",
-   "area": "Discipline Core Requirements",
-   "label": "Choose 1",
-   "pick": {
-    "count": 1
-   },
-   "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "ENGL 1010"
-     ],
-     "credits": 3,
-     "alts": [
-      "ENGL 1005"
-     ]
-    }
-   ],
-   "text": "Complete one of the following:",
-   "notes": [
-    "Writing proficiency determined by Autism Studies program director"
-   ]
-  },
-  {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 2500G",
@@ -188,7 +164,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "AUTS 4820R (Suggested to be completed during the first semester of the internship)",
-   "precoreqs": "AUTS 4820R"
+   "precoreqs": "AUTS 4820R",
+   "preco": [
+    "AUTS 4820R"
+   ]
   },
   "AUTS 4820R": {
    "title": "Group Autism Seminar",
@@ -209,20 +188,10 @@
      "AUTS 4650"
     ]
    }
-  },
-  "ENGL 1005": {
-   "title": "Foundations of Academic Writing",
-   "credits": 4,
-   "prereqText": "Appropriate placement scores",
-   "prereqs": null,
-   "prereqNonCourse": true
-  },
-  "ENGL 1010": {
-   "title": "Introduction to Academic Writing",
-   "credits": 3,
-   "prereqText": "Appropriate test scores taken within the last five years.",
-   "prereqs": null,
-   "prereqNonCourse": true
   }
- }
+ },
+ "entryRequirements": [
+  "ENGL 1010",
+  "or ENGL 1005"
+ ]
 }

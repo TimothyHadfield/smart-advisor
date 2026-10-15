@@ -57,7 +57,8 @@
      "codes": [
       "HIST 1740"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -72,25 +73,38 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Biology ( BIOL 1010 Recommended)",
-   "credits": 3
+   "label": "Biology (BIOL 1010 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science ( PHYS 1010 Recommended)",
-   "credits": 3
+   "label": "Physical Science (PHYS 1010 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "PHYS 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities ( ENGL 2100 Recommended)",
-   "credits": 3
+   "label": "Humanities (ENGL 2100 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "ENGL 2100"
+   ]
   },
   {
    "type": "placeholder",
@@ -490,14 +504,19 @@
    "items": [
     {
      "code": "PHYS 2010",
-     "alts": [
-      "PHYS 2015"
-     ],
-     "credits": 5
+     "credits": 4
     },
     {
-     "code": "ECON 1010",
-     "credits": 3
+     "code": "PHYS 2015",
+     "credits": 1
+    },
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "recommended": [
+      "ECON 1010"
+     ],
+     "text": "Social/Behavioral Science (ECON 1010 Recommended)"
     },
     {
      "code": "MECH 2400",
@@ -525,12 +544,18 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "ENGL 2100",
-     "credits": 3
+     "label": "Humanities (ENGL 2100 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "ENGL 2100"
+     ]
     },
     {
-     "code": "PHYS 1010",
-     "credits": 3
+     "label": "Physical Science (PHYS 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010"
+     ]
     },
     {
      "code": "MECH 2550",
@@ -595,8 +620,11 @@
    "label": "Semester 6",
    "items": [
     {
-     "code": "BIOL 1010",
-     "credits": 3
+     "label": "Biology (BIOL 1010 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "BIOL 1010"
+     ]
     },
     {
      "code": "MECH 3300",
@@ -676,14 +704,6 @@
   }
  ],
  "courses": {
-  "BIOL 1010": {
-   "title": "General Biology",
-   "credits": 3
-  },
-  "ECON 1010": {
-   "title": "Economics as a Social Science",
-   "credits": 3
-  },
   "EGDT 1071": {
    "title": "3 Dimensional Modeling--Solidworks",
    "credits": 3
@@ -714,17 +734,6 @@
     ]
    },
    "prereqNonCourse": true
-  },
-  "ENGL 2100": {
-   "title": "Technical Communication",
-   "credits": 3,
-   "prereqText": "ENGL 1010 or ENGH 1005",
-   "prereqs": {
-    "or": [
-     "ENGL 1010",
-     "ENGH 1005"
-    ]
-   }
   },
   "HIST 1700": {
    "title": "American History",
@@ -778,7 +787,10 @@
     "MECH 1205"
    ],
    "precoreqText": "MAT 1010",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "MECH 1205": {
    "title": "Electronics in Automation Design Laboratory",
@@ -796,7 +808,10 @@
     "MECH 1305"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 1305": {
    "title": "Industrial Wiring for Mechatronic Systems Laboratory",
@@ -806,7 +821,10 @@
     "MECH 1300"
    ],
    "precoreqText": "MECH 1010",
-   "precoreqs": "MECH 1010"
+   "precoreqs": "MECH 1010",
+   "preco": [
+    "MECH 1010"
+   ]
   },
   "MECH 2200": {
    "title": "Semiconductors in Mechatronic Systems",
@@ -853,7 +871,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   },
   "MECH 2305": {
    "title": "Microcontroller Architecture and Programming Lab",
@@ -877,7 +899,11 @@
      "AET 2115"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "MECH 2200",
+    "AET 2115"
+   ]
   },
   "MECH 2400": {
    "title": "Mechanical Components",
@@ -923,7 +949,10 @@
     "MECH 2515"
    ],
    "precoreqText": "MECH 2500",
-   "precoreqs": "MECH 2500"
+   "precoreqs": "MECH 2500",
+   "preco": [
+    "MECH 2500"
+   ]
   },
   "MECH 2515": {
    "title": "Fundamentals of Automation Controls Laboratory",
@@ -933,7 +962,10 @@
     "MECH 2510"
    ],
    "precoreqText": "MECH 2500",
-   "precoreqs": "MECH 2500"
+   "precoreqs": "MECH 2500",
+   "preco": [
+    "MECH 2500"
+   ]
   },
   "MECH 2550": {
    "title": "Advanced PLC Programming and Applications",
@@ -1259,10 +1291,6 @@
    "prereqText": "University Advanced Standing",
    "prereqs": null,
    "prereqNonCourse": true
-  },
-  "PHYS 1010": {
-   "title": "Elementary Physics",
-   "credits": 3
   },
   "PHYS 2010": {
    "title": "College Physics I",

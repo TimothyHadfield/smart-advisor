@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Complete one of the following Mathematics courses:",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -68,12 +68,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following: (Recommend STAT 1040 )"
+   "text": "Complete one of the following: (Recommend STAT 1040)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Surveying and Mapping Elective Course (see approved prefixes)",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -111,37 +112,56 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following: (Recommend HIST 1740 )"
+   "text": "Complete one of the following: (Recommend HIST 1740)",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Biology (Recommend BIOL 1010 )",
-   "credits": 3
+   "label": "Biology (Recommend BIOL 1010)",
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science (Recommend ASTR 1040 )",
-   "credits": 3
+   "label": "Physical Science (Recommend ASTR 1040)",
+   "credits": 3,
+   "recommended": [
+    "ASTR 1040"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities (Recommend COMM 1010)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "COMM 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Fine Arts (Recommend EGDT 1720 )",
-   "credits": 3
+   "label": "Fine Arts (Recommend EGDT 1720)",
+   "credits": 3,
+   "recommended": [
+    "EGDT 1720"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science (Recommend GEOG 1300G)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "GEOG 1300G"
+   ]
   },
   {
    "type": "placeholder",
@@ -187,7 +207,7 @@
   {
    "type": "choice",
    "area": "Course Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following Mathematics courses:",
    "pick": {
     "count": 1
    },
@@ -207,7 +227,7 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600 ):"
+   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600):"
   },
   {
    "type": "course",
@@ -366,8 +386,12 @@
   {
    "type": "placeholder",
    "area": "Required Electives",
-   "label": "Approved Surveying and Mapping elective courses must be taken with the following prefixes: SURV, GIS, EGDT, ARC, ENGR, CIVE, PHYS, GEOG, CMGT, CS, ENST, MATH, or LEGL or be approved by the Surveying and Mapping Program Coordinator. (Recommend GIS 3630 and SURV 4340 )",
-   "credits": 9
+   "label": "Approved Surveying and Mapping elective courses must be taken with the following prefixes: SURV, GIS, EGDT, ARC, ENGR, CIVE, PHYS, GEOG, CMGT, CS, ENST, MATH, or LEGL or be approved by the Surveying and Mapping Program Coordinator. (Recommend GIS 3630 and SURV 4340)",
+   "credits": 9,
+   "recommended": [
+    "GIS 3630",
+    "SURV 4340"
+   ]
   }
  ],
  "gradPlan": [
@@ -417,18 +441,21 @@
     },
     {
      "label": "Complete one of the following Mathematics courses:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1060",
-     "credits": null
-    },
-    {
-     "code": "EGDT 1600",
+     "credits": 3,
      "alts": [
+      "MATH 1060",
+      "EGDT 1600",
       "EGDT 1610"
      ],
-     "credits": null
+     "options": [
+      [
+       "MATH 1060"
+      ],
+      [
+       "EGDT 1600",
+       "EGDT 1610"
+      ]
+     ]
     },
     {
      "code": "SURV 1030",
@@ -564,8 +591,9 @@
      "credits": 0.5
     },
     {
-     "label": "Surveying and Mapping Elective Course (see approved prefixes)",
-     "credits": 3
+     "label": "Approved Surveying and Mapping elective courses must be taken with the following prefixes: SURV, GIS, EGDT, ARC, ENGR, CIVE, PHYS, GEOG, CMGT, CS, ENST, MATH, or LEGL or be approved by the Surveying and Mapping Program Coordinator. (Recommend GIS 3630 and SURV 4340)",
+     "credits": 3,
+     "text": "Surveying and Mapping Elective Course (see approved prefixes)"
     }
    ]
   },
@@ -589,11 +617,13 @@
      "credits": 0.5
     },
     {
-     "code": "GIS 3630",
-     "alts": [
+     "label": "Approved Surveying and Mapping elective courses must be taken with the following prefixes: SURV, GIS, EGDT, ARC, ENGR, CIVE, PHYS, GEOG, CMGT, CS, ENST, MATH, or LEGL or be approved by the Surveying and Mapping Program Coordinator. (Recommend GIS 3630 and SURV 4340)",
+     "credits": 6,
+     "recommended": [
+      "GIS 3630",
       "SURV 4340"
      ],
-     "credits": 6
+     "text": "Surveying and Mapping Elective Course (recommend GIS 3630 and SURV 4340)"
     }
    ]
   }
@@ -679,19 +709,6 @@
    "prereqs": "GIS 2800",
    "prereqNonCourse": true
   },
-  "GIS 3630": {
-   "title": "Geographic Information Systems Application Development",
-   "credits": 3,
-   "prereqText": "GIS 2800 or GEOG 3600 and University Advanced Standing",
-   "prereqs": {
-    "or": [
-     "GIS 2800",
-     "GEOG 3600"
-    ]
-   },
-   "uncertain": true,
-   "prereqNonCourse": true
-  },
   "HIST 1700": {
    "title": "American History",
    "credits": 3
@@ -727,6 +744,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -864,9 +882,14 @@
    "credits": 2,
    "prereqText": "EGDT1400, EGDT 1610 or MATH 1060 or Equivalent, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
    "prereqs": {
-    "or": [
-     "EGDT 1610",
-     "MATH 1060"
+    "and": [
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1610",
+       "MATH 1060"
+      ]
+     }
     ]
    },
    "uncertain": true,
@@ -1015,18 +1038,6 @@
    "credits": 3,
    "prereqText": "SURV 2100 , University Advanced Standing, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
    "prereqs": "SURV 2100",
-   "prereqNonCourse": true
-  },
-  "SURV 4340": {
-   "title": "Surveying Legal Principles",
-   "credits": 3,
-   "prereqText": "SURV 2320 , SURV 3340 , matriculation into the Surveying and Mapping BS degree, and University Advanced Standing",
-   "prereqs": {
-    "and": [
-     "SURV 2320",
-     "SURV 3340"
-    ]
-   },
    "prereqNonCourse": true
   },
   "SURV 4500": {

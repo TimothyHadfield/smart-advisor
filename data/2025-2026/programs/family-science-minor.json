@@ -16,7 +16,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 15 credits",
+   "label": "Complete any three of the following:",
    "pick": {
     "credits": 15
    },
@@ -91,27 +91,31 @@
    "items": [
     {
      "label": "Complete any three of the following:",
-     "credits": 9
-    },
-    {
-     "code": "FAMS 3250",
-     "credits": null
-    },
-    {
-     "code": "FAMS 3800",
-     "credits": null
-    },
-    {
-     "code": "FAMS 3850",
-     "credits": null
-    },
-    {
-     "code": "FAMS 4660",
-     "credits": null
-    },
-    {
-     "code": "FAMS 4670",
-     "credits": null
+     "credits": 9,
+     "alts": [
+      "FAMS 3250",
+      "FAMS 3800",
+      "FAMS 3850",
+      "FAMS 4660",
+      "FAMS 4670"
+     ],
+     "options": [
+      [
+       "FAMS 3250"
+      ],
+      [
+       "FAMS 3800"
+      ],
+      [
+       "FAMS 3850"
+      ],
+      [
+       "FAMS 4660"
+      ],
+      [
+       "FAMS 4670"
+      ]
+     ]
     }
    ]
   }

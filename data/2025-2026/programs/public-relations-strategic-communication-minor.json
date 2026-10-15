@@ -30,7 +30,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 9 credits",
+   "label": "COMM Elective",
    "pick": {
     "credits": 9
    },
@@ -70,7 +70,8 @@
      "codes": [
       "COMM 2020R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -148,7 +149,8 @@
      "codes": [
       "COMM 2900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -442,7 +444,8 @@
      "codes": [
       "COMM 4970R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 9 credits of Communication courses, 6 must be upper-division credits (3000-4000 level classes)"
@@ -480,8 +483,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
      "code": "COMM 3520",
@@ -493,8 +497,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     }
    ]
   }

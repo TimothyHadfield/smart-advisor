@@ -220,8 +220,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Psychology Foundations Course",
-     "credits": 3
+     "label": "Psychology Foundations - Complete 6 credits",
+     "credits": 3,
+     "text": "Psychology Foundations Course"
     }
    ]
   },
@@ -229,8 +230,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Psychology Foundations Course",
-     "credits": 3
+     "label": "Psychology Foundations - Complete 6 credits",
+     "credits": 3,
+     "text": "Psychology Foundations Course"
     }
    ]
   },
@@ -238,8 +240,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirements - Complete 9 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     }
    ]
   },
@@ -247,8 +250,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirements - Complete 9 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     }
    ]
   },
@@ -256,8 +260,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Advanced Psychology Course",
-     "credits": 3
+     "label": "Advanced Psychology Requirements - Complete 9 credits",
+     "credits": 3,
+     "text": "Advanced Psychology Course"
     }
    ]
   }
@@ -474,7 +479,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "PSY 2420",
-   "precoreqs": "PSY 2420"
+   "precoreqs": "PSY 2420",
+   "preco": [
+    "PSY 2420"
+   ]
   },
   "PSY 3430": {
    "title": "Psychopharmacology",

@@ -87,7 +87,10 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ]
   },
   {
    "type": "placeholder",
@@ -177,7 +180,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 20 credits",
+   "label": "COMM Elective",
    "pick": {
     "credits": 20
    },
@@ -217,7 +220,8 @@
      "codes": [
       "COMM 2020R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -295,7 +299,8 @@
      "codes": [
       "COMM 2900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -571,7 +576,8 @@
      "codes": [
       "COMM 4970R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 20 credits within the Communication Major, 9 must be at the 3000-4000 level"
@@ -603,8 +609,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -616,8 +623,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Social/ Behavioral Science Distribution",
-     "credits": 3
+     "label": "Behavioral/Social Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science Distribution"
     },
     {
      "code": "ENGL 2010",
@@ -628,12 +636,14 @@
      "credits": 3
     },
     {
-     "label": "Biology GE",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology GE"
     },
     {
-     "label": "Language 1",
-     "credits": 4
+     "label": "Complete 12 credits from one foreign language to include the 1010, 1020, and 2010 levels.",
+     "credits": 4,
+     "text": "Language 1"
     }
    ]
   },
@@ -645,20 +655,23 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
      "code": "COMM 2270",
      "credits": 3
     },
     {
-     "label": "Language 2",
-     "credits": 4
+     "label": "Complete 12 credits from one foreign language to include the 1010, 1020, and 2010 levels.",
+     "credits": 4,
+     "text": "Language 2"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -670,20 +683,23 @@
      "credits": 3
     },
     {
-     "label": "Physical Science GE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science GE"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
      "label": "American Institutions GE",
      "credits": 3
     },
     {
-     "label": "Language 3",
-     "credits": 4
+     "label": "Complete 12 credits from one foreign language to include the 1010, 1020, and 2010 levels.",
+     "credits": 4,
+     "text": "Language 3"
     }
    ]
   },
@@ -707,8 +723,9 @@
      "credits": 4
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -724,16 +741,19 @@
      "credits": 3
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -745,20 +765,24 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -770,20 +794,24 @@
      "credits": 3
     },
     {
-     "label": "COMM Upper Division Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "COMM Upper Division Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "COMM Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }

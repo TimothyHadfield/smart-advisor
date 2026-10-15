@@ -58,7 +58,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -176,16 +177,18 @@
      "credits": 4
     },
     {
-     "label": "Biology/Physical Science",
-     "credits": 3
+     "label": "BIOLOGY OR PHYSICAL SCIENCE",
+     "credits": 3,
+     "text": "Biology/Physical Science"
     },
     {
      "code": "HM 1010",
      "credits": 3
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "HUMANITIES/FINE ARTS/FOREIGN LANGUAGE",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -201,8 +204,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 8
+     "label": "Complete 17 hours of Electives numbered 1000 or higher",
+     "credits": 8,
+     "text": "General Elective"
     }
    ]
   },
@@ -218,8 +222,9 @@
      "credits": 3
     },
     {
-     "label": "Social Science Distribution",
-     "credits": 3
+     "label": "SOCIAL BEHAVIORAL SCIENCE",
+     "credits": 3,
+     "text": "Social Science Distribution"
     },
     {
      "code": "HM 1180",
@@ -246,8 +251,9 @@
      "credits": 3
     },
     {
-     "label": "General Electives",
-     "credits": 9
+     "label": "Complete 17 hours of Electives numbered 1000 or higher",
+     "credits": 9,
+     "text": "General Electives"
     }
    ]
   }
@@ -324,6 +330,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

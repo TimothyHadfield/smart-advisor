@@ -108,7 +108,8 @@
      "codes": [
       "PHIL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -168,7 +169,8 @@
    "text": "Complete 12 credits from the following:",
    "notes": [
     "other advisor-approved course"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -307,7 +309,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 4600",
-   "precoreqs": "ESMG 4600"
+   "precoreqs": "ESMG 4600",
+   "preco": [
+    "ESMG 4600"
+   ]
   },
   "PHIL 1300R": {
    "title": "Ethics Forum",

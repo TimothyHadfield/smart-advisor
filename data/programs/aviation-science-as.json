@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +60,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,12 +76,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social Science",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +120,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -221,43 +225,49 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
-     "code": "MAT 1030",
-     "credits": null
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
-    },
-    {
-     "label": "Humanities",
-     "credits": 3
-    },
-    {
-     "label": "Social Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science"
     },
     {
      "code": "AVSC 1010",
@@ -280,8 +290,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Physical Science",
@@ -316,8 +327,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective credits",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -333,8 +345,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 11
+     "label": "Elective credits",
+     "credits": 11,
+     "text": "General Elective"
     }
    ]
   }
@@ -428,6 +441,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

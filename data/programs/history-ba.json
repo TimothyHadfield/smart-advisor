@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -110,7 +111,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -531,13 +536,15 @@
      "codes": [
       "HIST 4820R"
      ],
-     "credits": 2
+     "credits": 2,
+     "crMax": 9
     },
     {
      "codes": [
       "HIST 4910R"
      ],
-     "credits": 2
+     "credits": 2,
+     "crMax": 4
     }
    ]
   },
@@ -577,12 +584,14 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete additional 12 hours of one Foreign Language.",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "code": "HIST 1500G",
@@ -602,16 +611,19 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete additional 12 hours of one Foreign Language.",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
-     "label": "General Elective",
-     "credits": 2
+     "label": "Elective",
+     "credits": 2,
+     "text": "General Elective"
     }
    ]
   },
@@ -635,8 +647,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete additional 12 hours of one Foreign Language.",
+     "credits": 4,
+     "text": "Foreign Language"
     }
    ]
   },
@@ -656,8 +669,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities (Foreign Language)",
-     "credits": 4
+     "label": "Humanities Distribution :(Fulfilled by completing Foreign Language Course 2020G/2020)",
+     "credits": 4,
+     "text": "Humanities (Foreign Language)"
     },
     {
      "label": "American Institutions",
@@ -673,16 +687,19 @@
      "credits": 3
     },
     {
-     "label": "European History",
-     "credits": 3
+     "label": "European History: complete at least one course in European history",
+     "credits": 3,
+     "text": "European History"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Upper-Division Elective",
@@ -702,12 +719,14 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Upper-division Elective",
@@ -723,8 +742,9 @@
      "credits": 3
     },
     {
-     "label": "World History",
-     "credits": 3
+     "label": "World History: Complete at least one course in world history",
+     "credits": 3,
+     "text": "World History"
     },
     {
      "label": "Upper-division Elective",
@@ -1237,6 +1257,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

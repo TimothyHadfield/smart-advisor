@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -45,7 +45,8 @@
      "credits": 7
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -88,7 +89,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -111,37 +116,21 @@
    "credits": 4
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "ART 1050"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "ART 1050"
    ]
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "COMM 1020"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "COMM 1020"
    ]
   },
   {
@@ -217,7 +206,7 @@
   {
    "type": "choice",
    "area": "Program Electives",
-   "label": "Take one of the following blocks",
+   "label": "Choose 6 credits",
    "pick": {
     "credits": 6
    },
@@ -227,28 +216,28 @@
      "codes": [
       "CJ 1340"
      ],
-     "credits": 3,
-     "section": "For Application to the BS Forensic Investigation Track"
+     "credits": 3
     },
     {
      "codes": [
       "ZOOL 1090"
      ],
-     "credits": 3,
-     "section": "For Application to the BS Forensic Investigation Track"
+     "credits": 3
     },
     {
      "codes": [
       "MATH 1210"
      ],
-     "credits": 4,
-     "section": "For Application to the BS Forensic Laboratory Track"
+     "credits": 4
     }
    ],
    "text": "Complete 6 credits from one of the following",
    "notes": [
-    "For Application to the BS Forensic Laboratory Track: 2 credits from any 1000 or 2000 level course"
-   ]
+    "For Application to the BS Forensic Investigation Track",
+    "For Application to the BS Forensic Laboratory Track",
+    "2 credits from any 1000 or 2000 level course"
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -326,23 +315,31 @@
     },
     {
      "label": "For Forensic Science Investigation Emphasis",
-     "credits": null
-    },
-    {
-     "code": "ZOOL 1090",
-     "credits": null
-    },
-    {
-     "code": "CJ 1340",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "ZOOL 1090",
+      "CJ 1340"
+     ],
+     "options": [
+      [
+       "ZOOL 1090"
+      ],
+      [
+       "CJ 1340"
+      ]
+     ]
     },
     {
      "label": "For Forensic Science Lab Emphasis",
-     "credits": null
-    },
-    {
-     "code": "MATH 1210",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "MATH 1210"
+     ],
+     "options": [
+      [
+       "MATH 1210"
+      ]
+     ]
     },
     {
      "label": "Two credits of 1000+ electives",
@@ -391,17 +388,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",

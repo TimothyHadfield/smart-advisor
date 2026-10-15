@@ -72,7 +72,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -224,7 +225,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -323,7 +325,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Micr Elective",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -528,19 +530,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 4
-    },
-    {
-     "code": "STAT 2040",
-     "credits": null
-    },
-    {
-     "code": "MATH 1060",
-     "credits": null
-    },
-    {
-     "code": "MATH 1210",
-     "credits": null
+     "credits": 4,
+     "alts": [
+      "STAT 2040",
+      "MATH 1060",
+      "MATH 1210"
+     ],
+     "options": [
+      [
+       "STAT 2040"
+      ],
+      [
+       "MATH 1060"
+      ],
+      [
+       "MATH 1210"
+      ]
+     ]
     }
    ]
   },
@@ -560,8 +566,9 @@
      "credits": 1
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
      "label": "Elective",
@@ -618,8 +625,9 @@
      "credits": 3
     },
     {
-     "label": "Zoology Elective",
-     "credits": 3
+     "label": "Choose 3 credits from any ZOOL electives.",
+     "credits": 3,
+     "text": "Zoology Elective"
     },
     {
      "code": "BIOL 4970R",
@@ -660,8 +668,9 @@
      "credits": 1
     },
     {
-     "label": "Micr Elective",
-     "credits": 4
+     "label": "Choose 3 credits from any MICR electives.",
+     "credits": 4,
+     "text": "Micr Elective"
     },
     {
      "code": "BIOL 4940",
@@ -681,11 +690,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -796,7 +813,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3500",
-   "precoreqs": "BIOL 3500"
+   "precoreqs": "BIOL 3500",
+   "preco": [
+    "BIOL 3500"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -823,7 +843,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3550",
-   "precoreqs": "BIOL 3550"
+   "precoreqs": "BIOL 3550",
+   "preco": [
+    "BIOL 3550"
+   ]
   },
   "BIOL 3600": {
    "title": "Biological Chemistry",
@@ -832,7 +855,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "BIOL 3700": {
    "title": "General Ecology",
@@ -1226,7 +1252,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "MICR 4505": {
    "title": "Applied Virological Methods",
