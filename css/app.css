@@ -200,6 +200,29 @@ dialog.imp { width: min(380px, calc(100vw - 32px)); }
 .imp-list input { accent-color: var(--green); margin: 0; }
 .imp button:disabled { opacity: .5; cursor: default; }
 
+/* account: profile icon (header) + its sheet */
+.profile { position: relative; display: grid; place-items: center; }
+.profile span { display: none; }
+.profile.in svg { display: none; }
+.profile.in span { display: grid; place-items: center; width: 26px; height: 26px; border-radius: 50%; background: #fff; color: var(--green); font-size: 13px; font-weight: 700; }
+.profile.warn::after { content: ""; position: absolute; top: 7px; right: 7px; width: 8px; height: 8px; border-radius: 50%; background: #f0b429; border: 1.5px solid var(--green); }
+.acct .tiptext { white-space: normal; width: 220px; }
+.acct-in { display: flex; flex-direction: column; gap: 10px; }
+.acct-in[hidden] { display: none; }
+.acct .who { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
+.acct .who b { font-size: 14px; }
+.acct .who b:empty { display: none; }
+.acct .who span { color: var(--muted); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.acct .sync { display: flex; align-items: center; gap: 6px; color: var(--muted); font-size: 12px; }
+.acct .sync[data-s="saved"] svg { color: var(--green); }
+.acct .sync[data-s="offline"] svg { color: #c98a00; }
+.acct .danger { background: none; border: 1px solid #b3261e; color: #b3261e; border-radius: 8px; padding: 8px 12px; font-weight: 600; cursor: pointer; }
+.acct .danger[data-armed="1"] { background: #b3261e; color: #fff; }
+.acct-msg { margin: 0; color: #b3261e; font-size: 12px; }
+.acct-msg:empty { display: none; }
+.acct .row .ok { margin-left: auto; }
+.acct button:disabled { opacity: .5; cursor: default; }
+
 input[role="switch"] { appearance: none; -webkit-appearance: none; width: 40px; height: 24px; border-radius: 12px; background: var(--line); position: relative; cursor: pointer; transition: background .15s; margin: 0; }
 input[role="switch"]::after { content: ""; position: absolute; left: 3px; top: 3px; width: 18px; height: 18px; border-radius: 50%; background: #fff; transition: transform .15s; }
 input[role="switch"]:checked { background: var(--green); }
