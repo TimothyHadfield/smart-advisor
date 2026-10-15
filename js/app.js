@@ -256,7 +256,7 @@ function layout() {
 
 function nodeDone(n, completed) {
   const labsDone = (n.labs || []).every((l) => unitDone(l, completed));
-  if (n.kind === 'option') return labsDone && n.codes.every((c) => completed.has(c));
+  if (n.kind === 'option') return labsDone && unitDone(n, completed);
   return labsDone && unitDone(n, completed);
 }
 // the keys a box puts in the taken set
