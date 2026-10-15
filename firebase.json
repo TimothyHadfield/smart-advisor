@@ -1,0 +1,18 @@
+{
+  "firestore": {
+    "rules": "firestore.rules"
+  },
+  "auth": {
+    "providers": {
+      "googleSignIn": {
+        "oAuthBrandDisplayName": "Smart Advisor",
+        "supportEmail": "timhadfield7@gmail.com",
+        "authorizedRedirectUris": ["https://timothyhadfield.github.io"]
+      }
+    }
+  },
+  "emulators": {
+    "firestore": { "port": 8086 },
+    "ui": { "enabled": false }
+  }
+}
