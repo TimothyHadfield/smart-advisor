@@ -1,12 +1,14 @@
-import { buildModel, makePlan, flowNodes, flowEdges, evalReq, unitDone, defaultStartTerm, nextTerm, termLabel } from './planner.js';
-import { layoutGraph, foldLabs } from './layout.js';
-import { parseAudit, matchAudit } from './audit.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, defaultStartTerm, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { flowChart, foldLabs } from './layout.js';
+import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 
 const $ = (id) => document.getElementById(id);
 const PROGRAM = new URLSearchParams(location.search).get('p') || 'ee-bs';
 const KEY = 'smart-advisor:v1';
 
 // ---------- saved state (localStorage; accounts come in a later phase) ----------
+// done[program]   = taken course codes / Gen Ed box ids
+// grades[program] = { code or box id: grade } for what came from an audit ("A-", "TCR", "IP", or "")
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
 }
@@ -15,11 +17,14 @@ function save() {
 }
 const state = load();
 state.settings ??= { max: 16, summers: false, start: null };
+state.settings.grades ??= true;
 state.done ??= {};
+state.grades ??= {};
 const doneSet = () => new Set(state.done[PROGRAM] || []);
 function setDone(set) { state.done[PROGRAM] = [...set]; save(); }
+const gradeMap = () => (state.grades[PROGRAM] ??= {});
 
-let model, nodes, edges, graph, layoutCache = null;
+let model, nodes, edges, graph;
 
 // ---------- boot ----------
 async function boot() {
@@ -30,7 +35,7 @@ async function boot() {
   model = buildModel(program);
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
   ({ nodes, edges } = foldLabs(flowNodes(model), flowEdges(model)));
-  graph = layoutGraph(nodes, edges);
+  graph = chartFor(0);
   buildBoxes();
   layout();
   refresh();
@@ -38,82 +43,82 @@ async function boot() {
   wireTabs();
   wireSettings();
   wireImport();
+  $('gradesOn').checked = !!state.settings.grades;
+  $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
 }
 
 // ---------- flowchart ----------
-// Box positions come from js/layout.js (layered layout with few crossings), computed once per program;
-// layout() only scales them to the chart size.
+// Box positions and arrow routes come from js/layout.js (flowChart) in pixels. A laptop gets the widest
+// boxes that still fit the chart's width; a phone gets the widest and scrolls inside the chart area.
+const BASE = { boxH: 48, rowH: 58, gapMin: 26, port: 10, near: 8, pad: 12 };
+const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, track: 8 }, { boxW: 104, track: 8 }, { boxW: 100, track: 8 }];
+let SIZES = { ...BASE, ...FITS[0] };
+const charts = new Map();
+const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k] })).get(k);
+function pickChart(W) {
+  let k = FITS.findIndex((_, i) => chartFor(i).width <= W - 16);
+  if (k < 0) k = W >= 700 ? FITS.length - 1 : 0;
+  SIZES = { ...BASE, ...FITS[k] };
+  graph = chartFor(k);
+}
 
 function buildBoxes() {
   const host = $('boxes');
   host.innerHTML = '';
   for (const n of nodes) {
     const b = document.createElement('button');
-    b.className = 'box' + (n.kind === 'placeholder' || n.kind === 'choice' ? ' ph flex' : n.kind === 'option' ? ' flex' : '');
+    const flex = n.kind === 'placeholder' || n.kind === 'choice';
+    b.className = 'box' + (flex ? ' ph flex' : n.kind === 'option' ? ' flex' : '');
     b.dataset.id = n.id;
     const credits = n.kind === 'choice' ? (n.pick?.credits ?? n.credits) : n.credits;
     const labs = n.labs || [];
     b.title = [n.label, n.title, ...labs.map((l) => `${l.label} ${l.title}`), `${credits + labs.reduce((s, l) => s + l.credits, 0)} cr`].filter(Boolean).join(' · ');
-    // course code only, like Tim's chart; the title is in the tooltip
-    b.innerHTML = `<b>${esc(n.label)}</b>` + (labs.length ? '<i>+Lab</i>' : '');
-    b.addEventListener('click', () => toggle(n));
+    // course code and its name (Gen Ed / elective boxes: their name only)
+    b.innerHTML = flex
+      ? `<b>${esc(n.label)}</b>`
+      : `<b>${esc(n.label)}${labs.length ? '<small>+Lab</small>' : ''}</b><i>${esc(n.title)}</i>`;
+    b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
+    b.addEventListener('click', () => toggle(n, b));
     host.appendChild(b);
   }
+  const head = document.createElement('div');
+  head.className = 'sec';
+  head.id = 'genHead';
+  head.textContent = 'Gen Ed';
+  head.hidden = graph.genTop === null;
+  host.appendChild(head);
+  const note = document.createElement('div');
+  note.className = 'note';
+  note.id = 'note';
+  host.appendChild(note);
 }
 
 function layout() {
   const chart = $('chart');
   const W = chart.clientWidth, H = chart.clientHeight;
   if (!W || !H) return;
+  pickChart(W);
   const g = graph;
-  const pad = 10;
-  const rowH = Math.max(34, Math.min(56, Math.floor((H - pad * 2) / g.height)));
-  const boxH = rowH - Math.max(5, Math.round(rowH * 0.18));
-  const colW = Math.max(110, Math.min(150, Math.floor((W - pad * 2) / g.columns)));
-  const boxW = Math.max(80, Math.min(96, Math.round(colW * 0.64)));
-  const totalH = Math.max(H, Math.ceil(g.height * rowH) + pad * 2);
-  const totalW = Math.max(W, g.columns * colW + pad * 2 - (colW - boxW));
-  const top = Math.round((totalH - g.height * rowH) / 2);
-  const X = (col) => pad + col * colW;
-  const Y = (y) => Math.round(top + y * rowH); // box centre
+  const dx = Math.max(0, Math.round((W - g.width) / 2));
+  const totalW = Math.max(W, Math.ceil(g.width)), totalH = Math.max(H, Math.ceil(g.height));
   for (const el of $('boxes').children) {
-    const p = g.pos.get(el.dataset.id);
-    el.style.cssText = `left:${X(p.col)}px;top:${Y(p.y) - boxH / 2}px;width:${boxW}px;height:${boxH}px`;
+    if (!el.dataset.id) continue;
+    const r = g.boxes.get(el.dataset.id);
+    Object.assign(el.style, { left: `${r.x + dx}px`, top: `${r.y}px`, width: `${r.w}px`, height: `${r.h}px` }); // (keeps --gh)
   }
+  if (g.genTop !== null) $('genHead').style.cssText = `left:${SIZES.pad + dx}px;top:${g.genTop}px;width:${Math.ceil(g.width) - 2 * SIZES.pad}px`;
   const svg = $('edges');
   svg.setAttribute('width', totalW); svg.setAttribute('height', totalH);
   $('boxes').style.cssText = `width:${totalW}px;height:${totalH}px`;
-  // Elbow connectors like Tim's chart: an arrow leaves the right side of its box, runs level (through
-  // the columns it passes, between boxes), and turns at right angles in the gaps. Each gap gives every
-  // bend its own vertical track; arrows from the same box share one. Downward bends from lower boxes go
-  // further left (and upward bends from higher boxes), which keeps the tracks from crossing each other.
-  const segs = [];
-  g.paths.forEach((e, pi) => e.pts.slice(1).forEach((b, k) => {
-    const a = e.pts[k];
-    segs.push({ pi, k, gap: a.col, y1: Y(a.y), y2: Y(b.y), x1: X(a.col) + boxW, x2: X(b.col) });
-  }));
-  const byGap = new Map();
-  for (const s of segs) if (Math.abs(s.y1 - s.y2) >= 1) (byGap.get(s.gap) ?? byGap.set(s.gap, []).get(s.gap)).push(s);
-  for (const list of byGap.values()) {
-    const groups = new Map();
-    for (const s of list) { const key = `${s.y1}${s.y2 > s.y1 ? 'd' : 'u'}`; (groups.get(key) ?? groups.set(key, []).get(key)).push(s); }
-    const keys = [...groups.keys()].sort((a, b) => {
-      const da = a.endsWith('d'), db = b.endsWith('d'), ya = parseFloat(a), yb = parseFloat(b);
-      return da !== db ? (da ? -1 : 1) : da ? yb - ya : ya - yb;
-    });
-    const { x1, x2 } = list[0], m = Math.min(8, (x2 - x1) / 4);
-    keys.forEach((key, i) => { const tx = Math.round(x1 + m + ((x2 - x1 - 2 * m) * (i + 0.5)) / keys.length); for (const s of groups.get(key)) s.tx = tx; });
+  // first time on a small screen: start scrolled to the first column's boxes, not empty space
+  if (!layout.scrolled && g.width > W) {
+    layout.scrolled = true;
+    const first = [...g.boxes.values()].filter((r) => r.x <= SIZES.pad + 1).map((r) => r.y);
+    if (first.length) chart.scrollTop = Math.max(0, Math.min(...first) - 16);
   }
-  const path = new Map();
-  for (const s of segs) {
-    let d = path.get(s.pi) ?? `M${s.x1},${s.y1}`;
-    if (s.k > 0) d += ` H${s.x1}`; // run level through the column of a passing point
-    d += s.tx === undefined ? ` H${s.x2}` : ` H${s.tx} V${s.y2} H${s.x2}`;
-    path.set(s.pi, d);
-  }
+  const d = (pts) => 'M' + pts.map(([x, y]) => `${+(x + dx).toFixed(1)},${+y.toFixed(1)}`).join('L');
   svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker></defs>'
-    + g.paths.map((e, pi) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${path.get(pi)}"/>`).join('');
-  layoutCache = { W, H };
+    + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('');
 }
 
 function nodeDone(n, completed) {
@@ -121,41 +126,76 @@ function nodeDone(n, completed) {
   if (n.kind === 'option') return labsDone && n.codes.every((c) => completed.has(c));
   return labsDone && unitDone(n, completed);
 }
-function toggle(n) {
+// the keys a box puts in the taken set
+const keysOf = (n) => (n.kind === 'course' || n.kind === 'option' ? [n, ...(n.labs || [])].flatMap((u) => u.codes) : [n.id]);
+
+function toggle(n, el) {
   const s = doneSet();
-  const on = nodeDone(n, s);
-  if (n.kind === 'course') {
-    // one tap marks (or clears) the lecture and its folded lab together
-    for (const u of [n, ...(n.labs || [])]) {
-      if (on) u.codes.forEach((c) => s.delete(c)); // un-take, including an "or" alternative
-      else if (!unitDone(u, s)) s.add(u.code);
-    }
-  } else if (n.kind === 'option') {
-    n.codes.forEach((c) => (on ? s.delete(c) : s.add(c)));
-  } else if (on) s.delete(n.id);
-  else s.add(n.id);
-  setDone(s);
+  const grades = gradeMap();
+  if (nodeDone(n, s)) {
+    // untake it (and its folded lab, and an "or" alternative), then everything tapped that needed it;
+    // classes from an imported audit stay (the audit is the truth)
+    for (const k of keysOf(n)) { s.delete(k); delete grades[k]; }
+    setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
+  } else {
+    const chk = tapCheck(model, n, s);
+    if (!chk.ok) { blocked(el, chk.missing); return; }
+    if (n.kind === 'course') { for (const u of [n, ...(n.labs || [])]) if (!unitDone(u, s)) s.add(u.code); }
+    else if (n.kind === 'option') n.codes.forEach((c) => s.add(c));
+    else s.add(n.id);
+    setDone(s);
+  }
   refresh();
 }
 
+// a box that can't be taken yet: a small shake and a note under it saying what it needs
+let noteTimer = 0;
+function blocked(el, missing) {
+  el.classList.remove('shake');
+  void el.offsetWidth; // restart the animation
+  el.classList.add('shake');
+  const note = $('note');
+  note.textContent = `Needs ${missing.join(', ')}`;
+  const r = el.getBoundingClientRect(), host = $('boxes').getBoundingClientRect();
+  const below = r.bottom - host.top + 4;
+  note.style.left = `${Math.max(4, r.left - host.left)}px`;
+  note.style.top = `${below + 26 > $('boxes').offsetHeight ? r.top - host.top - 26 : below}px`;
+  note.classList.add('on');
+  clearTimeout(noteTimer);
+  noteTimer = setTimeout(() => note.classList.remove('on'), 2200);
+}
+
 // ---------- refresh states + plan ----------
+function gradeOfBox(n, grades) {
+  for (const k of keysOf(n)) if (k in grades) return grades[k];
+  return grades[n.id];
+}
 function refresh() {
   const completed = doneSet();
-  const have = new Set(completed);
-  for (const u of model.units) if (u.kind === 'course' && unitDone(u, completed)) u.codes.forEach((c) => have.add(c));
-  const inProgram = (c) => !!model.byCode[c];
-  const prereqOk = (n) => n.kind === 'placeholder' || n.kind === 'choice' || evalReq(n.prereqs, have, inProgram);
-  // a lab is only ready when its lecture could be taken alongside it
-  const coreqOk = (n) => (n.coreqs || []).every((c) => !inProgram(c) || have.has(c) || prereqOk(model.byCode[c]));
+  const grades = gradeMap();
+  const showGrades = !!state.settings.grades;
+  const plan = makePlan(model, completed, { maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm() });
+  // which semester each unit is planned in (a choice group: its first chunk)
+  const semOf = new Map();
+  plan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!semOf.has(it.unitId)) semOf.set(it.unitId, i); }));
   for (const el of $('boxes').children) {
+    if (!el.dataset.id) continue;
     const n = nodes.find((x) => x.id === el.dataset.id);
     const done = nodeDone(n, completed);
-    const ready = !done && prereqOk(n) && coreqOk(n) && (n.labs || []).every(prereqOk);
+    const sem = done ? undefined : semOf.get(n.id) ?? semOf.get(n.labs?.[0]?.id);
+    el.className = el.className.replace(/\s?\bs\d+\b/g, '');
+    if (sem !== undefined) el.classList.add(`s${sem % 10}`);
+    el.classList.toggle('planned', sem !== undefined);
     el.classList.toggle('done', done);
-    el.classList.toggle('ready', ready);
+    el.classList.toggle('locked', !done && !tapCheck(model, n, completed).ok);
+    const gi = gradeInfo(done && showGrades ? gradeOfBox(n, grades) : '');
+    el.classList.toggle('graded', gi.kind === 'letter');
+    el.style.setProperty('--gh', gi.hue ?? 0);
+    el.querySelector('.gr').textContent = gi.text;
     el.setAttribute('aria-pressed', done);
   }
-  renderPlan(completed);
+  renderPlan(plan);
+  renderLegend(plan);
 }
 
 function startTerm() {
@@ -164,17 +204,23 @@ function startTerm() {
   return defaultStartTerm();
 }
 
-function renderPlan(completed) {
-  const plan = makePlan(model, completed, { maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm() });
+const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
+function renderLegend(plan) {
+  $('legendItems').innerHTML = '<span class="sw done"></span>Taken'
+    + plan.semesters.map((s, i) => `<span class="sw s${i % 10}"></span>${shortTerm(s.term)}`).join('');
+}
+
+function renderPlan(plan) {
   const n = plan.semesters.length;
   $('sum').innerHTML = plan.graduation
     ? `<b>Graduate ${plan.graduation}</b><span>${plan.creditsLeft} credits · ${n} semester${n === 1 ? '' : 's'}</span>`
     : `<b>All done</b>`;
-  $('sems').innerHTML = plan.semesters.map((s) => `
-    <div class="sem"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.map((it) =>
+  $('sems').innerHTML = plan.semesters.map((s, i) => `
+    <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
+
 
 // ---------- tabs + settings ----------
 function wireTabs() {
@@ -201,7 +247,7 @@ function wireSettings() {
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
-  $('clearDone').addEventListener('click', () => { setDone(new Set()); refresh(); });
+  $('clearDone').addEventListener('click', () => { state.grades[PROGRAM] = {}; setDone(new Set()); refresh(); });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
@@ -245,6 +291,7 @@ function wireImport() {
       const r = found.rows[+cb.dataset.i];
       if (r.status === 'ip' && !ipOn) continue;
       s.add(r.key);
+      gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
     }
     setDone(s); refresh(); dlg.close();
   });

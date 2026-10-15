@@ -147,8 +147,27 @@ function tokenOffset(s, k) {
   return s.length;
 }
 
+const gradeText = (r, status) => (status === 'ip' ? 'IP' : r.grade || '');
+
+// How a grade is shown: { kind: 'letter'|'mark'|'none', text, hue }. Letter grades get a hue on a tight
+// red -> green scale (A 135 green, B 95, C 55 yellow, D 10, E/F 0 red); transfer / pass / in-progress
+// marks get a short tag and no hue.
+const POINTS = { A: 4, 'A-': 3.7, 'B+': 3.3, B: 3, 'B-': 2.7, 'C+': 2.3, C: 2, 'C-': 1.7, 'D+': 1.3, D: 1, 'D-': 0.7, E: 0, F: 0 };
+export function gradeInfo(g) {
+  const t = String(g || '').toUpperCase();
+  if (t in POINTS) {
+    const p = POINTS[t];
+    const hue = p >= 3 ? 95 + (p - 3) * 40 : p >= 2 ? 55 + (p - 2) * 40 : p >= 1 ? 10 + (p - 1) * 45 : p * 10;
+    return { kind: 'letter', text: t, hue: Math.round(hue) };
+  }
+  if (!t) return { kind: 'none', text: '' };
+  if (t === 'IP') return { kind: 'mark', text: 'IP' };
+  if (/^T/.test(t)) return { kind: 'mark', text: 'TR' }; // transfer / AP credit (TCR, T, TA, TB+ ...)
+  return { kind: 'mark', text: t === 'S' || t === 'CR' ? 'P' : t.slice(0, 2) };
+}
+
 // Match parsed courses to a program model (planner.js buildModel).
-// Returns { rows: [{key, code, status: 'taken'|'ip', label, title}], other } where key is what goes in
+// Returns { rows: [{key, code, status: 'taken'|'ip', grade, label, title}], other } where key is what goes in
 // the taken set: a course code, or a Gen Ed box id (e.g. "ph:7") when the audit row's requirement label
 // names that box ("FINE ARTS THEA 1023 ..." -> "Fine Arts Distribution"). other = courses not in this major.
 export function matchAudit(parsed, model) {
@@ -162,12 +181,12 @@ export function matchAudit(parsed, model) {
   let other = 0;
   for (const [list, status] of [[parsed.taken, 'taken'], [parsed.inProgress, 'ip']]) {
     for (const r of list) {
-      if (inProgram(r.code)) { rows.push({ key: r.code, code: r.code, status, label: r.code, title: courses[r.code]?.title || '' }); continue; }
+      if (inProgram(r.code)) { rows.push({ key: r.code, code: r.code, status, grade: gradeText(r, status), label: r.code, title: courses[r.code]?.title || '' }); continue; }
       const have = new Set(words(r.req));
       // all the label's words; a long label may miss one (a PDF can print its last word on the next line)
       const hits = (b) => b.need.filter((w) => have.has(w)).length;
       const box = boxes.find((b) => !usedBox.has(b.u.id) && hits(b) >= (b.need.length >= 3 ? b.need.length - 1 : b.need.length));
-      if (box) { usedBox.add(box.u.id); rows.push({ key: box.u.id, code: r.code, status, label: box.u.label, title: r.code }); continue; }
+      if (box) { usedBox.add(box.u.id); rows.push({ key: box.u.id, code: r.code, status, grade: gradeText(r, status), label: box.u.label, title: r.code }); continue; }
       other++;
     }
   }

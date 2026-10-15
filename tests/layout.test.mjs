@@ -4,7 +4,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
-import { layoutGraph, countCrossings, labPairs, foldLabs } from '../js/layout.js';
+import { layoutGraph, countCrossings, labPairs, foldLabs, flowChart, chartStats, splitGenEd } from '../js/layout.js';
 
 const ee = JSON.parse(readFileSync(fileURLToPath(new URL('../data/programs/ee-bs.json', import.meta.url)), 'utf8'));
 const model = buildModel(ee);
@@ -137,6 +137,79 @@ test("on Tim's own graph the auto layout crosses no more than his hand layout", 
     const p = T.pos.get(id);
     for (const [other, q] of T.pos) if (other !== id && q.col === p.col) assert.ok(Math.abs(q.y - p.y) >= 1, `${id} vs ${other}`);
   }
+});
+
+// ---- the drawn chart (pixels) ----
+// The arrows as the app drew them before routeChart (js/app.js layout() at 9d42e08, laptop size
+// 1040x826): the "before" for the bends / overlap numbers. Arrows from one box shared a track there.
+const OLD_DRAWN = { crossings: 8, bends: 104, straight: 5, overlaps: 80 }; // measured with chartStats
+const F0 = foldLabs(nodes, edges);
+const CH = flowChart(F0.nodes, F0.edges);
+const ST = chartStats(CH);
+console.log(`EE chart drawn: crossings ${OLD_DRAWN.crossings} -> ${ST.crossings}, bends ${OLD_DRAWN.bends} -> ${ST.bends}, ` +
+  `straight arrows ${OLD_DRAWN.straight} -> ${ST.straight} of ${ST.edges}, overlapping pieces ${OLD_DRAWN.overlaps} -> ${ST.overlaps.length}`);
+
+test('chartStats spots shared lines, lines through boxes, bends and crossings', () => {
+  const boxes = new Map([['A', { x: 0, y: 0, w: 10, h: 10 }], ['B', { x: 50, y: 0, w: 10, h: 10 }], ['M', { x: 25, y: 40, w: 10, h: 10 }]]);
+  const st = chartStats({ boxes, edges: [
+    { from: 'A', to: 'B', pts: [[10, 5], [50, 5]] },                        // straight
+    { from: 'A', to: 'M', pts: [[10, 6], [20, 6], [20, 45], [25, 45]] },    // runs on top of A>B for 10px
+    { from: 'X', to: 'Y', pts: [[30, 30], [30, 60]] },                      // through box M
+    { from: 'P', to: 'Q', pts: [[12, -5], [12, 40]] },                      // crosses A>B and A>M's level piece
+  ] });
+  assert.equal(st.straight, 3);
+  assert.equal(st.bends, 2);
+  assert.equal(st.overlaps.length, 1, st.overlaps.join());
+  assert.ok(st.boxHits.some((s) => s.includes('M')), st.boxHits.join());
+  assert.equal(st.crossings, 2); // P>Q crosses A>B and A>M (level piece at y=6)
+});
+
+test('drawn EE chart: no two arrows share or hug a line, no arrow runs through a box', () => {
+  assert.deepEqual(ST.overlaps, [], 'arrows on top of each other');
+  assert.deepEqual(ST.boxHits, [], 'arrows through boxes');
+  // and the old drawing did have them (the check isn't vacuous)
+  assert.ok(OLD_DRAWN.overlaps > 0);
+});
+
+test('drawn EE chart: far fewer bends, many straight arrows, at most one jog almost everywhere', () => {
+  assert.ok(ST.bends <= OLD_DRAWN.bends / 2, `bends ${ST.bends}`);
+  assert.ok(ST.straight >= 15, `straight ${ST.straight}`);
+  assert.ok(ST.crossings <= OLD_DRAWN.crossings, `crossings ${ST.crossings}`);
+  const multi = CH.edges.filter((e) => e.pts.length > 4).map((e) => `${e.from}>${e.to}`);
+  assert.ok(multi.length <= 1, `arrows with more than one jog: ${multi}`);
+  for (const e of CH.edges) {
+    for (let k = 1; k < e.pts.length; k++) {
+      const [x1, y1] = e.pts[k - 1], [x2, y2] = e.pts[k];
+      assert.ok(Math.abs(x1 - x2) < 0.01 || Math.abs(y1 - y2) < 0.01, 'only level and upright pieces');
+      assert.ok(x2 >= x1 - 0.01, 'never runs backwards');
+    }
+    const a = CH.boxes.get(e.from), b = CH.boxes.get(e.to);
+    assert.equal(e.pts[0][0], a.x + a.w, 'leaves from the right side');
+    assert.equal(e.pts.at(-1)[0], b.x, 'arrives at the left side');
+    assert.ok(e.pts[0][1] > a.y && e.pts[0][1] < a.y + a.h && e.pts.at(-1)[1] > b.y && e.pts.at(-1)[1] < b.y + b.h);
+  }
+});
+
+test('each arrow has its own exit and entry point, and jogs in one gap are spaced apart', () => {
+  const ends = new Set();
+  for (const e of CH.edges) for (const [x, y] of [e.pts[0], e.pts.at(-1)]) {
+    const k = `${x},${y}`;
+    assert.ok(!ends.has(k), `two arrows share the point ${k}`);
+    ends.add(k);
+  }
+  const xs = [...new Set(CH.edges.flatMap((e) => e.pts.slice(1, -1).map((p) => p[0])))].sort((p, q) => p - q);
+  const boxEdges = new Set([...CH.boxes.values()].flatMap((r) => [r.x, r.x + r.w]));
+  for (let i = 1; i < xs.length; i++) if (!boxEdges.has(xs[i]) && !boxEdges.has(xs[i - 1])) assert.ok(xs[i] - xs[i - 1] >= 8 - 1e-6, `tracks ${xs[i - 1]} / ${xs[i]} too close`);
+});
+
+test('Gen Ed boxes get their own section under the chart; MATH 1210 (prereq of the core) stays in the chart', () => {
+  const { gen } = splitGenEd(F0.nodes, F0.edges);
+  const ids = gen.nodes.map((n) => n.id);
+  for (const id of ['ENGL 1010', 'ENGL 2010', 'COMM 1020', 'CHEM 1210']) assert.ok(ids.includes(id), id);
+  assert.ok(!ids.includes('MATH 1210'));
+  assert.ok(CH.genTop !== null);
+  for (const id of ids) assert.ok(CH.boxes.get(id).y > CH.genTop, `${id} under the Gen Ed heading`);
+  for (const n of F0.nodes) if (!ids.includes(n.id)) assert.ok(CH.boxes.get(n.id).y + CH.boxes.get(n.id).h < CH.genTop, `${n.id} above it`);
 });
 
 test('real EE chart with labs folded into their lecture: few crossings, every lab folded', () => {
