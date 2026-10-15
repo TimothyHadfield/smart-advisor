@@ -17,12 +17,15 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 | Flowchart layout like Tim's | live (bd1827b) | `js/layout.js` layered + crossing reduction; EE crossings 62→8 drawn (Tim's hand chart: 10); elbows, labs folded, Gen Ed row below |
 | Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
 | All majors | not started | phase 2 (+ catalog-year archives) |
-| Google sign-in (Firebase) | not started | phase 3; create project `smart-advisor-th` via firebase CLI (logged in as timhadfield7@gmail.com) |
+| Google sign-in (Firebase) | backend ready, UI not built | project `smart-advisor-th` (Spark, us-central1 Firestore), Google provider on, github.io authorized, owner-only rules deployed (b248015). Web config: `firebase apps:sdkconfig web --project smart-advisor-th`. UI waits for the flowchart builder (both edit js/app.js) |
 | Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
 | Rate My Professors | not started | unofficial GraphQL; needs a CORS-free path (fetch at build time via script) |
 
 ## Authorized next steps
 - 2026-10-15 · Build phase 1 (EE first), then all majors. Tim: "Yes, build phase 1".
+- 2026-10-15 · Accounts: "build an account system so every user can have their information and progress saved across devices or after they log out". Plan: guest works locally; profile icon → Continue with Google (signInWithPopup, not redirect — iOS/GitHub Pages trap from Fitness Tracker); users/{uid} doc {taken, grades, settings, program, catalogYear}; local data merges into account on first sign-in; sign-out clears local copy.
+- 2026-10-15 · In flowchart builder (flow-v3): titles in boxes, fewest bends, separated lines, semester colors, block taps with unmet prereqs (cascade untake; import exempt), Gen Ed labeled section, grades red→green from audit + on-screen "Grades" switch.
+- 2026-10-15 · All majors + minors + catalog-year archives: data builder (all-programs), then a picker.
 - 2026-10-15 · Flowchart like his ("lines connecting them don't overlap or overlap as little as possible") + Wolverine Track import ("some things are automaticaly selected"): builder running, paste + PDF upload.
 
 ## Standing instructions (Tim's words / interview answers)
@@ -43,6 +46,8 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 - Tim's real Degree Works audit: `.claude/test/wolverine-track-audit.pdf` + `audit.txt` (gitignored; has his name/ID/advisor email). Never commit or screenshot it; fixtures must be anonymized copies.
 - **Catalog year matters:** Tim is on 2025-2026 (125 cr, requires ECE 4950 Capstone II); current catalog EE = 122 cr, no 4950. Phase 2 should load catalog archives by year (audit header gives it).
 - Tim's EE flowchart picture: `docs/reference/ee-flowchart-tim.png` — the layout bar (left→right, code-only boxes, elbow connectors, labs folded into lectures, Gen Ed set apart).
+
+- Enabling Google auth via `firebase deploy --only auth` turned the project into Identity Platform (subtype IDENTITY_PLATFORM, still no billing). Don't call identityPlatform:initializeAuth (needs billing). Admin API calls: token from scratch script exchanging firebase-tools refresh token; serviceusage enable needs a `-d '{}'` body.
 
 ## Decisions
 - 2026-10-15 · Phase 1 UI (Claude's choices, unconfirmed by Tim): laptop = flowchart + plan side by side, no tabs; phone = Flowchart/Plan bottom tabs; gear → Start, Max credits (16), Summers switch, Clear taken; legend Taken/Ready/Locked; dashed boxes for Gen Ed/electives.
