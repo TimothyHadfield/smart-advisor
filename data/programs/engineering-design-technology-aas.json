@@ -39,13 +39,19 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Social and Behavioral Science:"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Social Science",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Biology or Physical Science:"
+   ]
   },
   {
    "type": "course",
@@ -210,7 +216,8 @@
      "codes": [
       "EGDT 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ]
   },
@@ -227,20 +234,25 @@
    "label": "Semester 1",
    "items": [
     {
-     "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "EGDT 1600",
-     "credits": null
+     "label": "Choose a minimum of three courses from the following list for a minimum of 9 credits",
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "EGDT 1600"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "EGDT 1600"
+      ]
+     ],
+     "text": "Complete one of the following:"
     },
     {
      "code": "EGDT 1020",
@@ -271,20 +283,25 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 1010",
-     "credits": null
-    },
-    {
-     "code": "ENGL 1005",
-     "credits": null
-    },
-    {
-     "code": "MKTG 2200G",
-     "credits": null
+     "label": "Choose a minimum of three courses from the following list for a minimum of 9 credits",
+     "credits": 3,
+     "alts": [
+      "ENGL 1010",
+      "ENGL 1005",
+      "MKTG 2200G"
+     ],
+     "options": [
+      [
+       "ENGL 1010"
+      ],
+      [
+       "ENGL 1005"
+      ],
+      [
+       "MKTG 2200G"
+      ]
+     ],
+     "text": "Complete one of the following:"
     },
     {
      "code": "EGDT 1010",
@@ -312,12 +329,16 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Social/Behavioral Science",
-     "credits": 3
+     "label": "Any approved Social Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science"
     },
     {
-     "code": "PHYS 1010",
-     "credits": 3
+     "label": "PHYS 1010",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010"
+     ]
     },
     {
      "code": "EGDT 1300",
@@ -349,8 +370,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities, Fine Arts, or Foreign Language",
-     "credits": 3
+     "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
+     "credits": 3,
+     "text": "Humanities, Fine Arts, or Foreign Language"
     },
     {
      "label": "EGDT Elective",

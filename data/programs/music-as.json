@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Large Ensemble (requires ensemble audition)",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -44,7 +45,8 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -87,7 +89,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -96,20 +102,12 @@
    "credits": 3
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "PHYS 1750"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "PHYS 1750"
    ]
   },
   {
@@ -293,7 +291,9 @@
      "codes": [
       "MUSC 2500R"
      ],
-     "credits": 1
+     "credits": 4,
+     "repeat": 4,
+     "creditsEach": 1
     }
    ],
    "text": "Complete 4 credits of the following on major instrument:"
@@ -311,7 +311,9 @@
      "codes": [
       "MUSC 2510R"
      ],
-     "credits": 1
+     "credits": 4,
+     "repeat": 4,
+     "creditsEach": 1
     }
    ],
    "text": "Complete 4 credits of the following on major instrument or voice:"
@@ -377,8 +379,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "MUSC 2500R",
@@ -414,16 +417,22 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
-     "code": "PHYS 1750",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1750"
+     ],
+     "text": "Physical Science Distribution (PHYS 1750 recommended)"
     },
     {
-     "label": "Personal, Professional and Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional and Civic Growth Distribution"
     },
     {
      "code": "MUSC 2500R",
@@ -459,12 +468,14 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "code": "MUSC 2500R",
@@ -548,6 +559,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -569,12 +581,7 @@
    "title": "Music Theory I",
    "credits": 3,
    "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
-   "prereqs": {
-    "or": [
-     "MUSC 1105",
-     "MUSC 1110"
-    ]
-   },
+   "prereqs": null,
    "prereqNonCourse": true,
    "coreqText": "MUSC 1130",
    "coreqs": [
@@ -746,12 +753,6 @@
    "prereqText": "Audition",
    "prereqs": null,
    "prereqNonCourse": true
-  },
-  "PHYS 1750": {
-   "title": "The Acoustics of Music",
-   "credits": 3,
-   "prereqText": "MAT 1010 or higher",
-   "prereqs": "MAT 1010"
   },
   "POLS 1000": {
    "title": "American Heritage",

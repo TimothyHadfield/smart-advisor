@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -37,7 +37,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "Any higher MAT or MATH course"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "course",
@@ -45,7 +46,7 @@
    "code": "MKTG 2200G",
    "alts": [
     "ENGL 1010",
-    "ENGH 1005"
+    "ENGL 1005"
    ],
    "credits": 3
   },
@@ -206,19 +207,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "AUT 1260",
-     "credits": null
-    },
-    {
-     "code": "MAT 1010",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "AUT 1260",
+      "MAT 1010",
+      "MATH 1050"
+     ],
+     "options": [
+      [
+       "AUT 1260"
+      ],
+      [
+       "MAT 1010"
+      ],
+      [
+       "MATH 1050"
+      ]
+     ]
     }
    ]
   },
@@ -259,23 +264,28 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MKTG 2200G",
+      "ENGL 1010",
+      "ENGL 1005"
+     ],
+     "options": [
+      [
+       "MKTG 2200G"
+      ],
+      [
+       "ENGL 1010"
+      ],
+      [
+       "ENGL 1005"
+      ]
+     ]
     },
     {
-     "code": "MKTG 2200G",
-     "credits": null
-    },
-    {
-     "code": "ENGL 1010",
-     "credits": null
-    },
-    {
-     "code": "ENGH 1005",
-     "credits": null
-    },
-    {
-     "label": "Social Science Distribution",
-     "credits": 2
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 2,
+     "text": "Social Science Distribution"
     }
    ]
   }
@@ -293,7 +303,10 @@
    "title": "Automotive Electrical Systems Lab",
    "credits": 1,
    "precoreqText": "AUT 1160",
-   "precoreqs": "AUT 1160"
+   "precoreqs": "AUT 1160",
+   "preco": [
+    "AUT 1160"
+   ]
   },
   "AUT 1260": {
    "title": "Tech Math for Mechanics",
@@ -403,6 +416,13 @@
     "CRT 1230"
    ]
   },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
@@ -434,7 +454,7 @@
    "credits": 3
   }
  },
- "missingCourses": [
-  "ENGH 1005"
+ "typos": [
+  "ENGH 1005 -> ENGL 1005"
  ]
 }

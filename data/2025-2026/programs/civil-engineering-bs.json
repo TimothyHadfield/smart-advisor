@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biology (Choose from the GE approved Biology list)",
+   "label": "American Institution (Choose from the GE American institution list)",
    "pick": {
     "count": 1
    },
@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -94,8 +98,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities ( COMM 1020 recommended)",
-   "credits": 3
+   "label": "Humanities (COMM 1020 recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
@@ -106,8 +113,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( COMM 2110 recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (COMM 2110 recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 2110"
+   ]
   },
   {
    "type": "course",
@@ -147,7 +157,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Technical Elective",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -426,19 +436,22 @@
      "codes": [
       "CIVE 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "CIVE 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "CIVE 4810R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "Technical Elective Courses"
     },
     {
@@ -623,6 +636,10 @@
      "credits": 3,
      "section": "Technical Elective Courses"
     }
+   ],
+   "notes": [
+    "Technical Elective Courses",
+    "Technical Elective Courses: Students may also take upper level computer, electrical, and mechanical engineering classes as technical electives in consultation with their faculty advisors and approval of the department offering the courses."
    ]
   }
  ],
@@ -694,21 +711,23 @@
     },
     {
      "label": "Complete one:",
-     "credits": 5
-    },
-    {
-     "code": "PHYS 2220",
+     "credits": 5,
      "alts": [
-      "PHYS 2225"
-     ],
-     "credits": null
-    },
-    {
-     "code": "CHEM 1220",
-     "alts": [
+      "PHYS 2220",
+      "PHYS 2225",
+      "CHEM 1220",
       "CHEM 1225"
      ],
-     "credits": null
+     "options": [
+      [
+       "PHYS 2220",
+       "PHYS 2225"
+      ],
+      [
+       "CHEM 1220",
+       "CHEM 1225"
+      ]
+     ]
     }
    ]
   },
@@ -737,19 +756,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1020",
-     "credits": null
-    },
-    {
-     "code": "EGDT 1060",
-     "credits": null
-    },
-    {
-     "code": "EGDT 2500",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "EGDT 1020",
+      "EGDT 1060",
+      "EGDT 2500"
+     ],
+     "options": [
+      [
+       "EGDT 1020"
+      ],
+      [
+       "EGDT 1060"
+      ],
+      [
+       "EGDT 2500"
+      ]
+     ]
     }
    ]
   },
@@ -757,8 +780,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Biology (Choose from the GE approved Biology list)",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology (Choose from the GE approved Biology list)"
     },
     {
      "code": "CIVE 2450",
@@ -838,8 +862,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts (Choose from the GE approved Fine Arts list)",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts (Choose from the GE approved Fine Arts list)"
     }
    ]
   },
@@ -863,8 +888,9 @@
      "credits": 3
     },
     {
-     "label": "Person, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Person, Professional, and Civic Growth"
     }
    ]
   }
@@ -950,7 +976,10 @@
    "title": "Numerical Methods with Excel",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "CIVE 3000": {
    "title": "Civil Engineering Career Planning Seminar",
@@ -1027,7 +1056,10 @@
    "prereqs": "CIVE 3310",
    "prereqNonCourse": true,
    "precoreqText": "CIVE 3320",
-   "precoreqs": "CIVE 3320"
+   "precoreqs": "CIVE 3320",
+   "preco": [
+    "CIVE 3320"
+   ]
   },
   "CIVE 3410": {
    "title": "Introduction to Civil Engineering Materials",
@@ -1048,7 +1080,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "CIVE 3410",
-   "precoreqs": "CIVE 3410"
+   "precoreqs": "CIVE 3410",
+   "preco": [
+    "CIVE 3410"
+   ]
   },
   "CIVE 3610": {
    "title": "Environmental Engineering",
@@ -1069,7 +1104,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CIVE 3010",
-   "precoreqs": "CIVE 3010"
+   "precoreqs": "CIVE 3010",
+   "preco": [
+    "CIVE 3010"
+   ]
   },
   "CIVE 4020": {
    "title": "Highway Design",
@@ -1078,7 +1116,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CIVE 3010",
-   "precoreqs": "CIVE 3010"
+   "precoreqs": "CIVE 3010",
+   "preco": [
+    "CIVE 3010"
+   ]
   },
   "CIVE 4160": {
    "title": "Timber and Masonry Design",
@@ -1228,7 +1269,10 @@
    "prereqText": "CMGT 2080 , ACC 3000 (recommended) or ( ACC 2110 ), and University Advanced Standing, or CMGT Instructor/Program approval for non-CMGT majors",
    "prereqs": null,
    "precoreqText": "CMGT 3030",
-   "precoreqs": "CMGT 3030"
+   "precoreqs": "CMGT 3030",
+   "preco": [
+    "CMGT 3030"
+   ]
   },
   "CMGT 3160": {
    "title": "Building Information Modeling",
@@ -1404,7 +1448,10 @@
    "title": "Computational Methods for Engineering Analysis",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "ENVT 3280": {
    "title": "Environmental Law",
@@ -1445,7 +1492,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "GEO 3000": {
    "title": "Environmental Geochemistry",

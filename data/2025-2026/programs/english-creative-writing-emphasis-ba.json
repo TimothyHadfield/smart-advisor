@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,10 +74,12 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +122,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -258,7 +267,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Social/ Behavioral Science",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -316,27 +325,18 @@
    "text": "Complete ONE of the following:"
   },
   {
-   "type": "choice",
+   "type": "course",
    "area": "Emphasis Requirements",
-   "label": "Choose 6 credits",
-   "pick": {
-    "credits": 6
-   },
-   "credits": 6,
-   "options": [
-    {
-     "codes": [
-      "ENGL 4120R"
-     ],
-     "credits": 3
-    },
-    {
-     "codes": [
-      "ENGL 4490"
-     ],
-     "credits": 3
-    }
-   ]
+   "code": "ENGL 4120R",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Emphasis Requirements",
+   "code": "ENGL 4490",
+   "alts": [],
+   "credits": 3
   }
  ],
  "gradPlan": [
@@ -363,8 +363,9 @@
      "credits": 3
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     }
    ]
   },
@@ -415,8 +416,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 1010",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1010"
     },
     {
      "label": "Elective",
@@ -441,8 +443,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 1020",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 1020"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -474,8 +477,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 2010",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 2010"
     }
    ]
   },
@@ -491,16 +495,19 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "Foreign Language 2020G",
-     "credits": 4
+     "label": "One Foreign Language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
+     "credits": 4,
+     "text": "Foreign Language 2020G"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -520,16 +527,19 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -550,16 +560,19 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   }
@@ -631,19 +644,28 @@
    "title": "Introduction to the English Major",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2850": {
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3090": {
    "title": "Academic Writing for English Majors",
@@ -796,6 +818,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

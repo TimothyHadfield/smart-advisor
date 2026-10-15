@@ -59,7 +59,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,12 +75,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following: ( MATH 1050 recommended for App Dev Emphasis)"
+   "text": "Complete one of the following: (MATH 1050 recommended for App Dev Emphasis)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "History Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +119,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -253,7 +259,8 @@
    "area": "Discipline Core Requirements",
    "code": "DGM 4810R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 8
   },
   {
    "type": "course",
@@ -364,13 +371,15 @@
      "codes": [
       "DWDD 2700R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "DGM 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 8
     },
     {
      "codes": [
@@ -400,7 +409,8 @@
      "codes": [
       "DWDD 3700R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -412,7 +422,8 @@
    "text": "Complete 21 credits of electives (at least 6 upper-division)",
    "notes": [
     "Or other advisor-approved electives"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -539,8 +550,9 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     }
    ]
   },
@@ -769,7 +781,11 @@
      "DWDD 2410",
      "DWDD 2610"
     ]
-   }
+   },
+   "preco": [
+    "DWDD 2410",
+    "DWDD 2610"
+   ]
   },
   "DWDD 2610": {
    "title": "Principles of Web Languages",
@@ -939,7 +955,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -948,6 +967,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1042,5 +1062,7 @@
    "uncertain": true,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
 }

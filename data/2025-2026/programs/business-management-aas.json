@@ -127,7 +127,10 @@
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any ACC, ECON, FIN, HM, LEGL, MGMT, MKTG course 1000 level or higher",
-   "credits": 29
+   "credits": 29,
+   "notes": [
+    "MTECH students will receive 29 credits for electives with a 900+ hour certificate in any technical area."
+   ]
   }
  ],
  "gradPlan": [
@@ -135,8 +138,9 @@
    "label": "Semester 1",
    "items": [
     {
-     "label": "MATHEMATICS",
-     "credits": 4
+     "label": "MATHEMATICS: Complete one of the following",
+     "credits": 4,
+     "text": "MATHEMATICS"
     },
     {
      "code": "ENGL 1010",
@@ -286,6 +290,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

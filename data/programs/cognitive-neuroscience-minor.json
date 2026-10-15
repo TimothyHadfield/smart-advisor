@@ -61,6 +61,18 @@
    "options": [
     {
      "codes": [
+      "PSY 3450"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
+      "PSY 3490"
+     ],
+     "credits": 4
+    },
+    {
+     "codes": [
       "PSY 3425"
      ],
      "credits": 1
@@ -123,15 +135,19 @@
    "items": [
     {
      "label": "Lab Requirement (one of the following)",
-     "credits": 4
-    },
-    {
-     "code": "PSY 3450",
-     "credits": null
-    },
-    {
-     "code": "PSY 3490",
-     "credits": null
+     "credits": 4,
+     "alts": [
+      "PSY 3450",
+      "PSY 3490"
+     ],
+     "options": [
+      [
+       "PSY 3450"
+      ],
+      [
+       "PSY 3490"
+      ]
+     ]
     }
    ]
   },
@@ -139,8 +155,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Cognitive Neuroscience Elective",
-     "credits": 3
+     "label": "Cognitive Neuroscience Electives (6 credits)",
+     "credits": 3,
+     "text": "Cognitive Neuroscience Elective"
     }
    ]
   },
@@ -148,8 +165,9 @@
    "label": "Semester 8",
    "items": [
     {
-     "label": "Cognitive Neuroscience Elective",
-     "credits": 3
+     "label": "Cognitive Neuroscience Electives (6 credits)",
+     "credits": 3,
+     "text": "Cognitive Neuroscience Elective"
     }
    ]
   }
@@ -206,7 +224,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "PSY 2420",
-   "precoreqs": "PSY 2420"
+   "precoreqs": "PSY 2420",
+   "preco": [
+    "PSY 2420"
+   ]
   },
   "PSY 3430": {
    "title": "Psychopharmacology",

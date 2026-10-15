@@ -35,7 +35,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "History Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -73,7 +73,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -282,7 +286,7 @@
   {
    "type": "choice",
    "area": "Recommended Tracks",
-   "label": "Track Elective",
+   "label": "DAPR Elective",
    "pick": {
     "credits": 18
    },
@@ -416,6 +420,11 @@
     }
    ],
    "text": "Complete at least 18 credits from the following recommended tracks",
+   "notes": [
+    "Sound Design Track",
+    "Sound Design Track: Audio Engineering Track",
+    "Audio Engineering Track: Game Sound Track"
+   ],
    "tracks": [
     "Sound Design Track",
     "Audio Engineering Track",
@@ -425,7 +434,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "DAPR Elective",
+   "label": "Choose 14 credits",
    "pick": {
     "credits": 14
    },
@@ -765,8 +774,9 @@
      "credits": 3
     },
     {
-     "label": "Social / Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social / Behavioral Science"
     }
    ]
   },
@@ -855,7 +865,10 @@
    "title": "Audio Portfolio Prep",
    "credits": 2,
    "precoreqText": "DAPR 1000",
-   "precoreqs": "DAPR 1000"
+   "precoreqs": "DAPR 1000",
+   "preco": [
+    "DAPR 1000"
+   ]
   },
   "DAPR 2010": {
    "title": "Core Recording",
@@ -1134,7 +1147,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "DAPR 3020",
-   "precoreqs": "DAPR 3020"
+   "precoreqs": "DAPR 3020",
+   "preco": [
+    "DAPR 3020"
+   ]
   },
   "DAPR 4900R": {
    "title": "Senior Capstone",
@@ -1313,6 +1329,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1322,7 +1339,12 @@
    "title": "Quantitative Reasoning",
    "credits": 3,
    "prereqText": "One of the following (within department time limits): MAT 1010 or MAT1015 with a grade of C- or higher; or appropriate placement by a placement exam.",
-   "prereqs": "MAT 1010",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
    "prereqNonCourse": true
   },
   "MAT 1035": {
@@ -1355,5 +1377,7 @@
    "title": "American National Government",
    "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
 }

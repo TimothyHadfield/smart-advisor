@@ -101,7 +101,8 @@
    "text": "Choose 6 credits from the following courses in the College of Humanities and Social Sciences or the Woodbury School of Business.",
    "notes": [
     "Any other advisor approved courses"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "choice",
@@ -527,7 +528,19 @@
      "section": "Zoology"
     }
    ],
-   "text": "Choose 6 credits from the following courses in the College of Science. 3 of these credits must be at the 3000 or 4000 level."
+   "text": "Choose 6 credits from the following courses in the College of Science. 3 of these credits must be at the 3000 or 4000 level.",
+   "notes": [
+    "Biology",
+    "Biology: Botany",
+    "Botany: Chemistry",
+    "Chemistry: Environmental Management",
+    "Environmental Management: Geology",
+    "Geology: Geography",
+    "Geography: Meterology",
+    "Meterology: Physics",
+    "Physics: Outdoor Recreation",
+    "Outdoor Recreation: Zoology"
+   ]
   },
   {
    "type": "placeholder",
@@ -555,8 +568,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Core Elective - Choose one elective from the College of Humanities and Social Sciences or the Woodbury School of Business",
-     "credits": 3
+     "label": "Choose 6 credits from the following courses in the College of Humanities and Social Sciences or the Woodbury School of Business.",
+     "credits": 3,
+     "text": "Core Elective - Choose one elective from the College of Humanities and Social Sciences or the Woodbury School of Business"
     },
     {
      "label": "Core Elective - Choose one elective from the College of Science",
@@ -568,8 +582,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Core Elective - Choose one elective from the College of Humanities and Social Sciences or the Woodbury School of Business",
-     "credits": 3
+     "label": "Choose 6 credits from the following courses in the College of Humanities and Social Sciences or the Woodbury School of Business.",
+     "credits": 3,
+     "text": "Core Elective - Choose one elective from the College of Humanities and Social Sciences or the Woodbury School of Business"
     }
    ]
   },
@@ -618,11 +633,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -870,7 +893,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3280": {
    "title": "Environmental Law",

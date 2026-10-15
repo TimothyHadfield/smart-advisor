@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements:",
-   "label": "FINE ARTS",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -112,7 +116,10 @@
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHIL 2050G"
+   ]
   },
   {
    "type": "course",
@@ -386,6 +393,7 @@
       "BIOL 4900R"
      ],
      "credits": 1,
+     "crMax": 4,
      "alts": [
       "ZOOL 4900R"
      ]
@@ -394,7 +402,8 @@
      "codes": [
       "BIOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -406,13 +415,15 @@
      "codes": [
       "ZOOL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "ZOOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     }
    ],
    "text": "Choose any four from the following (courses with separate labs count as one course)."
@@ -436,7 +447,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -454,13 +466,15 @@
      "codes": [
       "BIOL 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "BIOL 4900R"
      ],
      "credits": 1,
+     "crMax": 4,
      "alts": [
       "ZOOL 4900R"
      ]
@@ -517,7 +531,8 @@
      "codes": [
       "BOT 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -627,8 +642,9 @@
      "credits": 4
     },
     {
-     "label": "FINE ARTS",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ARTS"
     }
    ]
   },
@@ -637,22 +653,25 @@
    "items": [
     {
      "code": "BIOL 1620",
-     "alts": [
-      "BIOL 1625"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "BIOL 1625",
+     "credits": 1
     },
     {
      "code": "ENGL 2010",
      "credits": 3
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
     },
     {
-     "label": "SOCIAL/BEHAVIORAL SCIENCE",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "SOCIAL/BEHAVIORAL SCIENCE"
     },
     {
      "label": "Elective",
@@ -669,10 +688,11 @@
     },
     {
      "code": "ZOOL 3200",
-     "alts": [
-      "ZOOL 3205"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 3205",
+     "credits": 1
     },
     {
      "label": "HISTORY GE",
@@ -680,10 +700,11 @@
     },
     {
      "code": "CHEM 1210",
-     "alts": [
-      "CHEM 1215"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1215",
+     "credits": 1
     }
    ]
   },
@@ -692,25 +713,28 @@
    "items": [
     {
      "code": "CHEM 1220",
-     "alts": [
-      "CHEM 1225"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1225",
+     "credits": 1
     },
     {
      "code": "ZOOL 3100",
-     "alts": [
-      "ZOOL 3105"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 3105",
+     "credits": 1
     },
     {
      "code": "STAT 2040",
      "credits": 4
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth GE class",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     }
    ]
   },
@@ -727,10 +751,11 @@
     },
     {
      "code": "CHEM 2310",
-     "alts": [
-      "CHEM 2315"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2315",
+     "credits": 1
     },
     {
      "label": "ELECTIVE",
@@ -743,10 +768,11 @@
    "items": [
     {
      "code": "PHYS 2010",
-     "alts": [
-      "PHYS 2015"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
     },
     {
      "code": "ZOOL 1090",
@@ -800,11 +826,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -816,7 +850,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -1222,7 +1259,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
@@ -1497,7 +1537,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",

@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,15 +74,17 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +122,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -219,290 +228,298 @@
       "DAGV 1300"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 1300L"
      ],
      "credits": 1,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 1500"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 1600"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2210"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2230"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2330L"
      ],
      "credits": 1,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2240"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2330"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2330L"
      ],
      "credits": 1,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2340"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2480"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DGM 3110"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3310"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3350"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3350L"
      ],
      "credits": 1,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3360"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3450"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3450L"
      ],
      "credits": 1,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 4550"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "2D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "CS 1400"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 1700"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2610"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2671"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2640"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2830"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2700"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2460"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2470"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 2672"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3460"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3461"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3480"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3671"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3672"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 3830"
      ],
      "credits": 3,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 4600R"
      ],
      "credits": 2,
-     "section": "Take the following courses:"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DWDD 3261"
      ],
      "credits": 3,
-     "section": "--Approved Electives"
+     "section": "3D TRACK REQUIREMENTS"
     },
     {
      "codes": [
       "DAGV 1200R"
      ],
      "credits": 1,
-     "section": "--Approved Electives"
+     "section": "3D TRACK REQUIREMENTS",
+     "crMax": 3
     },
     {
      "codes": [
       "DAGV 2200R"
      ],
      "credits": 1,
-     "section": "--Approved Electives"
+     "section": "3D TRACK REQUIREMENTS",
+     "crMax": 3
     }
    ],
    "text": "Students must complete one of the following tracks",
    "notes": [
-    "Take the following courses:: Complete 20 additional approved credits (4 credits must be upper-division)",
-    "Take the following courses:: Complete 15 additional advisor approved credits. (2 credits must be upper-division)"
+    "--2D TRACK REQUIREMENTS",
+    "2D TRACK REQUIREMENTS: Take the following courses:",
+    "2D TRACK REQUIREMENTS: Complete 20 additional approved credits (4 credits must be upper-division)",
+    "2D TRACK REQUIREMENTS: --3D TRACK REQUIREMENTS",
+    "3D TRACK REQUIREMENTS: Take the following courses:",
+    "3D TRACK REQUIREMENTS: Complete 15 additional advisor approved credits. (2 credits must be upper-division)",
+    "3D TRACK REQUIREMENTS: --Approved Electives"
    ],
+   "open": true,
    "tracks": [
-    "Take the following courses:",
-    "--Approved Electives"
+    "2D TRACK REQUIREMENTS",
+    "3D TRACK REQUIREMENTS"
    ]
   }
  ],
@@ -555,8 +572,9 @@
      "credits": 2
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     }
    ]
   },
@@ -601,8 +619,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "ENGL 2010",
@@ -1104,6 +1123,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1191,5 +1211,7 @@
    "uncertain": true,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
 }

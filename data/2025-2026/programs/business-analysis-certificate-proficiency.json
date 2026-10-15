@@ -37,7 +37,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "MGMT Elective Course",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -67,7 +67,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "MGMT Elective Course",
    "pick": {
     "count": 1
    },
@@ -169,19 +169,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "INFO 2410",
-     "credits": null
-    },
-    {
-     "code": "HR 4060",
-     "credits": null
-    },
-    {
-     "code": "MKTG 3300",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "INFO 2410",
+      "HR 4060",
+      "MKTG 3300"
+     ],
+     "options": [
+      [
+       "INFO 2410"
+      ],
+      [
+       "HR 4060"
+      ],
+      [
+       "MKTG 3300"
+      ]
+     ]
     }
    ]
   },

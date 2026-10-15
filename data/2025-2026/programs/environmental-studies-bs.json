@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities distribution",
+   "label": "American Institutions distribution",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -83,14 +87,22 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science ( ENVT 1110 or GEOG 1000 is recommended)",
-   "credits": 3
+   "label": "Physical Science (ENVT 1110 or GEOG 1000 is recommended)",
+   "credits": 3,
+   "recommended": [
+    "ENVT 1110",
+    "GEOG 1000"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Life Science ( BIOL 1010 or BIOL 1610 is recommended)",
-   "credits": 3
+   "label": "Life Science (BIOL 1010 or BIOL 1610 is recommended)",
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010",
+    "BIOL 1610"
+   ]
   },
   {
    "type": "placeholder",
@@ -274,7 +286,7 @@
   {
    "type": "choice",
    "area": "Program electives",
-   "label": "Social science / humanities program electives",
+   "label": "Choose 12 credits",
    "pick": {
     "credits": 12
    },
@@ -419,7 +431,7 @@
   {
    "type": "choice",
    "area": "Program electives",
-   "label": "Physical / life science program electives",
+   "label": "Choose 12 credits",
    "pick": {
     "credits": 12
    },
@@ -463,9 +475,12 @@
     },
     {
      "codes": [
-      "HIST 3800"
+      "GEOG 3800"
      ],
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "HIST 3800"
+     ]
     },
     {
      "codes": [
@@ -582,13 +597,15 @@
      "codes": [
       "GEOG 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "GEOG 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -824,8 +841,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -841,8 +859,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities distribution"
     },
     {
      "label": "American Institutions distribution",
@@ -877,8 +896,9 @@
      "credits": 3
     },
     {
-     "label": "Physical / life science program electives",
-     "credits": 3
+     "label": "Life Science (BIOL 1010 or BIOL 1610 is recommended)",
+     "credits": 3,
+     "text": "Physical / life science program electives"
     }
    ]
   },
@@ -886,8 +906,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "code": "GEOG 3600",
@@ -907,8 +928,9 @@
      "credits": 3
     },
     {
-     "label": "Physical / life science program electives",
-     "credits": 3
+     "label": "Life Science (BIOL 1010 or BIOL 1610 is recommended)",
+     "credits": 3,
+     "text": "Physical / life science program electives"
     }
    ]
   },
@@ -924,16 +946,18 @@
      "credits": 3
     },
     {
-     "label": "Physical / life science program electives",
-     "credits": 3
+     "label": "Life Science (BIOL 1010 or BIOL 1610 is recommended)",
+     "credits": 3,
+     "text": "Physical / life science program electives"
     },
     {
      "label": "Social science / humanities program electives",
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -945,12 +969,14 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 4
+     "label": "Program electives",
+     "credits": 4,
+     "text": "Elective"
     },
     {
-     "label": "Physical / life science program electives",
-     "credits": 3
+     "label": "Life Science (BIOL 1010 or BIOL 1610 is recommended)",
+     "credits": 3,
+     "text": "Physical / life science program electives"
     },
     {
      "label": "Social science / humanities program electives",
@@ -981,16 +1007,19 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -1002,20 +1031,24 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Program electives",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -1106,11 +1139,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 2500": {
    "title": "Environmental Biology",
@@ -1293,7 +1334,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3280": {
    "title": "Environmental Law",
@@ -1594,7 +1638,13 @@
    "title": "Biogeography",
    "credits": 4,
    "prereqText": "(BIOL1010, or BIOL1620, or GEOG1000) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620",
+     "GEOG 1000"
+    ]
+   },
    "prereqNonCourse": true
   },
   "GEOG 3350": {
@@ -1709,6 +1759,13 @@
    "coreqs": [
     "GEOG 3700"
    ]
+  },
+  "GEOG 3800": {
+   "title": "Environmental History of the United States",
+   "credits": 3,
+   "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
+   "prereqs": "HIST 3010",
+   "prereqNonCourse": true
   },
   "GEOG 4100": {
    "title": "Geospatial Field Methods",

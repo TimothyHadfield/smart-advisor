@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -96,20 +97,12 @@
    "credits": 3
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "PHYS 1750"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "PHYS 1750"
    ]
   },
   {
@@ -315,35 +308,46 @@
      "credits": 3
     }
    ],
-   "text": "Choose two credits from the following:"
+   "text": "Choose two credits from the following:",
+   "notes": [
+    "Individual Musicianship Studies:"
+   ]
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2500R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 4,
+   "creditsEach": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2510R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 4,
+   "creditsEach": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4550R",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "repeat": 4,
+   "creditsEach": 2
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4510R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 4,
+   "creditsEach": 1
   },
   {
    "type": "course",
@@ -362,7 +366,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Large Ensemble",
+   "label": "MUSC Elective",
    "pick": {
     "credits": 8
    },
@@ -420,7 +424,9 @@
      "codes": [
       "MUSC 3060R"
      ],
-     "credits": 1
+     "credits": 4,
+     "repeat": 4,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -438,7 +444,9 @@
      "codes": [
       "MUSC 3730R"
      ],
-     "credits": 1
+     "credits": 4,
+     "repeat": 4,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -472,8 +480,10 @@
      "codes": [
       "MUSC 4230R"
      ],
-     "credits": 1,
-     "section": "Vocal Performance"
+     "credits": 4,
+     "section": "Vocal Performance",
+     "repeat": 4,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -509,6 +519,7 @@
    ],
    "notes": [
     "12 credits of music electives for Piano Performance area and 16 credits of music electives for Instrumental Performance area.",
+    "Vocal Performance",
     "Vocal Performance: 2 credits of music electives for Vocal Performance"
    ]
   },
@@ -620,8 +631,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Personal, Professional and Civic Growth",
@@ -665,8 +677,12 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "PHYS 1750",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1750"
+     ],
+     "text": "Physical Science Distribution (PHYS 1750 recommended)"
     },
     {
      "label": "Humanities Distribution",
@@ -726,8 +742,9 @@
      "credits": 1
     },
     {
-     "label": "Performance Area (Instrumental, Piano, or Vocal)",
-     "credits": 5
+     "label": "Choose from one of the following performance areas",
+     "credits": 5,
+     "text": "Performance Area (Instrumental, Piano, or Vocal)"
     },
     {
      "label": "Concert Attendance",
@@ -743,8 +760,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
      "code": "MUSC 3451",
@@ -767,8 +785,9 @@
      "credits": 1
     },
     {
-     "label": "Performance Area (Instrumental, Piano, or Vocal)",
-     "credits": 4
+     "label": "Choose from one of the following performance areas",
+     "credits": 4,
+     "text": "Performance Area (Instrumental, Piano, or Vocal)"
     },
     {
      "label": "Concert Attendance",
@@ -796,8 +815,9 @@
      "credits": 1
     },
     {
-     "label": "Performance Area (Instrumental, Piano, or Vocal)",
-     "credits": 8
+     "label": "Choose from one of the following performance areas",
+     "credits": 8,
+     "text": "Performance Area (Instrumental, Piano, or Vocal)"
     }
    ]
   },
@@ -825,8 +845,9 @@
      "credits": 1
     },
     {
-     "label": "Performance Area (Instrumental, Piano, or Vocal)",
-     "credits": 7
+     "label": "Choose from one of the following performance areas",
+     "credits": 7,
+     "text": "Performance Area (Instrumental, Piano, or Vocal)"
     }
    ]
   }
@@ -904,6 +925,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -925,12 +947,7 @@
    "title": "Music Theory I",
    "credits": 3,
    "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
-   "prereqs": {
-    "or": [
-     "MUSC 1105",
-     "MUSC 1110"
-    ]
-   },
+   "prereqs": null,
    "prereqNonCourse": true,
    "coreqText": "MUSC 1130",
    "coreqs": [
@@ -1189,7 +1206,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110 or department audition",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3416": {
    "title": "Instrumental Pedagogy and Literature II",
@@ -1240,7 +1260,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 1400",
-   "precoreqs": "MUSC 1400"
+   "precoreqs": "MUSC 1400",
+   "preco": [
+    "MUSC 1400"
+   ]
   },
   "MUSC 3800": {
    "title": "Junior Recital",
@@ -1263,7 +1286,10 @@
     "MUSC 4500R"
    ],
    "precoreqText": "MUSC 4550R",
-   "precoreqs": "MUSC 4550R"
+   "precoreqs": "MUSC 4550R",
+   "preco": [
+    "MUSC 4550R"
+   ]
   },
   "MUSC 4240": {
    "title": "Vocal Pedagogy",
@@ -1318,12 +1344,6 @@
     "MUSC 4500R",
     "MUSC 4550R"
    ]
-  },
-  "PHYS 1750": {
-   "title": "The Acoustics of Music",
-   "credits": 3,
-   "prereqText": "MAT 1010 or higher",
-   "prereqs": "MAT 1010"
   },
   "POLS 1000": {
    "title": "American Heritage",

@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,7 +77,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +121,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -411,8 +419,9 @@
      "credits": 3
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     }
    ]
   },
@@ -481,23 +490,27 @@
    "items": [
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3510",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3520",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3530",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3540",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3510",
+      "ENGL 3520",
+      "ENGL 3530",
+      "ENGL 3540"
+     ],
+     "options": [
+      [
+       "ENGL 3510"
+      ],
+      [
+       "ENGL 3520"
+      ],
+      [
+       "ENGL 3530"
+      ],
+      [
+       "ENGL 3540"
+      ]
+     ]
     },
     {
      "code": "ENGL 2600",
@@ -526,23 +539,27 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3610",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3620",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3650",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3660",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3610",
+      "ENGL 3620",
+      "ENGL 3650",
+      "ENGL 3660"
+     ],
+     "options": [
+      [
+       "ENGL 3610"
+      ],
+      [
+       "ENGL 3620"
+      ],
+      [
+       "ENGL 3650"
+      ],
+      [
+       "ENGL 3660"
+      ]
+     ]
     },
     {
      "label": "General Elective",
@@ -567,23 +584,27 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3510",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3520",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3530",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3540",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3510",
+      "ENGL 3520",
+      "ENGL 3530",
+      "ENGL 3540"
+     ],
+     "options": [
+      [
+       "ENGL 3510"
+      ],
+      [
+       "ENGL 3520"
+      ],
+      [
+       "ENGL 3530"
+      ],
+      [
+       "ENGL 3540"
+      ]
+     ]
     },
     {
      "label": "General Elective",
@@ -604,27 +625,31 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3610",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3620",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3640",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3650",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3660",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3610",
+      "ENGL 3620",
+      "ENGL 3640",
+      "ENGL 3650",
+      "ENGL 3660"
+     ],
+     "options": [
+      [
+       "ENGL 3610"
+      ],
+      [
+       "ENGL 3620"
+      ],
+      [
+       "ENGL 3640"
+      ],
+      [
+       "ENGL 3650"
+      ],
+      [
+       "ENGL 3660"
+      ]
+     ]
     },
     {
      "label": "General Elective",
@@ -718,19 +743,28 @@
    "title": "Introduction to the English Major",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2850": {
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3090": {
    "title": "Academic Writing for English Majors",
@@ -945,7 +979,10 @@
    "prereqs": "ENGL 2600",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3090",
-   "precoreqs": "ENGL 3090"
+   "precoreqs": "ENGL 3090",
+   "preco": [
+    "ENGL 3090"
+   ]
   },
   "ENGL 4650": {
    "title": "Studies in Shakespeare",
@@ -1003,6 +1040,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

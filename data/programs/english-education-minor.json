@@ -53,7 +53,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -173,23 +173,27 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3510",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3520",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3530",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3540",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3510",
+      "ENGL 3520",
+      "ENGL 3530",
+      "ENGL 3540"
+     ],
+     "options": [
+      [
+       "ENGL 3510"
+      ],
+      [
+       "ENGL 3520"
+      ],
+      [
+       "ENGL 3530"
+      ],
+      [
+       "ENGL 3540"
+      ]
+     ]
     }
    ]
   },
@@ -198,27 +202,31 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3610",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3620",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3640",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3650",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3660",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3610",
+      "ENGL 3620",
+      "ENGL 3640",
+      "ENGL 3650",
+      "ENGL 3660"
+     ],
+     "options": [
+      [
+       "ENGL 3610"
+      ],
+      [
+       "ENGL 3620"
+      ],
+      [
+       "ENGL 3640"
+      ],
+      [
+       "ENGL 3650"
+      ],
+      [
+       "ENGL 3660"
+      ]
+     ]
     }
    ]
   },
@@ -237,13 +245,19 @@
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3510": {
    "title": "Early American Literature",
@@ -431,7 +445,10 @@
     "ENGL 4235"
    ],
    "precoreqText": "ENGL 4220",
-   "precoreqs": "ENGL 4220"
+   "precoreqs": "ENGL 4220",
+   "preco": [
+    "ENGL 4220"
+   ]
   },
   "ENGL 4235": {
    "title": "Teaching Writing Practicum",

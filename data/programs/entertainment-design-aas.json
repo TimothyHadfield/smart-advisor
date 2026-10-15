@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "GE distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,7 +44,8 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -269,7 +270,10 @@
    "title": "Perspective Drawing",
    "credits": 3,
    "precoreqText": "ART 1210",
-   "precoreqs": "ART 1210"
+   "precoreqs": "ART 1210",
+   "preco": [
+    "ART 1210"
+   ]
   },
   "ART 1400": {
    "title": "Graphic Computer Applications",
@@ -373,6 +377,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

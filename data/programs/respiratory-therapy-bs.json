@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Complete one of the following: (or higher)",
+   "label": "English",
    "pick": {
     "count": 1
    },
@@ -34,7 +34,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "eng"
   },
   {
    "type": "course",
@@ -46,7 +47,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities Distribution",
+   "label": "Complete one of the following: (or higher)",
    "pick": {
     "count": 1
    },
@@ -89,7 +90,8 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -139,7 +141,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -477,31 +483,35 @@
     },
     {
      "label": "Complete one of the following: (or higher)",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
      "code": "PSY 1010",
@@ -518,8 +528,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 2
+     "label": "Choose 2 Credits from 1000 + Electives",
+     "credits": 2,
+     "text": "Elective"
     }
    ]
   },
@@ -559,8 +570,9 @@
      "credits": 1
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "label": "American Institutions",
@@ -588,8 +600,9 @@
      "credits": 1
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -761,17 +774,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -870,6 +894,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1207,7 +1232,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "RESP 3280",
-   "precoreqs": "RESP 3280"
+   "precoreqs": "RESP 3280",
+   "preco": [
+    "RESP 3280"
+   ]
   },
   "RESP 4610": {
    "title": "Advanced Patient Assessment",
@@ -1289,7 +1317,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",
@@ -1327,5 +1358,7 @@
     "ZOOL 2420"
    ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort."
 }

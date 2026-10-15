@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,12 +44,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science Distribution",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -87,7 +88,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -154,7 +159,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Lower Division Core Elective",
+   "label": "ART/ARTH Lower Division",
    "pick": {
     "credits": 9
    },
@@ -271,8 +276,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
      "label": "Lower Division Core Elective",
@@ -292,12 +298,14 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete 8 credits of the same Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "label": "Lower Division Core Elective",
@@ -329,8 +337,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete 8 credits of the same Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "label": "Lower Division Core Elective",
@@ -358,7 +367,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -385,7 +397,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1750": {
    "title": "Intro to Digital Imaging",
@@ -471,6 +486,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

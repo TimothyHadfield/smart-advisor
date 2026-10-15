@@ -165,7 +165,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -283,7 +283,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -396,7 +396,8 @@
    "text": "Complete 15 credits from the following:",
    "notes": [
     "Any CS course numbered 3000 or higher not already required."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -495,31 +496,35 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "CS 3250",
-     "credits": null
-    },
-    {
-     "code": "CS 3260",
-     "credits": null
-    },
-    {
-     "code": "CS 3270",
-     "credits": null
-    },
-    {
-     "code": "CS 3370",
-     "credits": null
-    },
-    {
-     "code": "CS 3380",
-     "credits": null
-    },
-    {
-     "code": "CS 3390R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "CS 3250",
+      "CS 3260",
+      "CS 3270",
+      "CS 3370",
+      "CS 3380",
+      "CS 3390R"
+     ],
+     "options": [
+      [
+       "CS 3250"
+      ],
+      [
+       "CS 3260"
+      ],
+      [
+       "CS 3270"
+      ],
+      [
+       "CS 3370"
+      ],
+      [
+       "CS 3380"
+      ],
+      [
+       "CS 3390R"
+      ]
+     ]
     },
     {
      "label": "GE",
@@ -638,17 +643,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -995,7 +1011,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "CS 3450",
-   "precoreqs": "CS 3450"
+   "precoreqs": "CS 3450",
+   "preco": [
+    "CS 3450"
+   ]
   },
   "CS 4450": {
    "title": "Analysis of Programming Languages",

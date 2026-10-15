@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -50,12 +50,17 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following MATH courses:"
+   "text": "Complete one of the following MATH courses:",
+   "notes": [
+    "ENGL and MATH QL courses must have a grade C or higher"
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -93,7 +98,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -118,7 +127,10 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "CYBR 1700"
+   ]
   },
   {
    "type": "placeholder",
@@ -281,214 +293,224 @@
       "EDSC 1010"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 3000"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 3250G"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSP 3400G"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4200"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4250"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4440"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4450G"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4550G"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4850"
      ],
      "credits": 8,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "EDSC 4990"
      ],
      "credits": 2,
-     "section": "Complete all of the following:"
+     "section": "Business Education and Technology Domain Requirements"
     },
     {
      "codes": [
       "INFO 2500"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "INFO 3120"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "INFO 3500"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "CYBR 2700"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "HR 3430"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "HR 3570"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "MKTG 2390"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "TECH 3400"
      ],
      "credits": 3,
-     "section": "Complete all of the following:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "IM 2100"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "IM 3600"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "INFO 3130"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "INFO 4120"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "MGMT 2340"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "FIN 1060"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "HR 3550"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "PSY 1010"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "PSY 3300"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "TECH 4400"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     },
     {
      "codes": [
       "SLSS 1200"
      ],
      "credits": 3,
-     "section": "Complete 9 Credits of Elective Courses:"
+     "section": "Corporate Training and Technology Domain Requirements"
     }
    ],
    "notes": [
-    "Complete all of the following:: Any elective course from among IM, INFO, IT, CYBR, or BMED"
+    "Business Education and Technology Domain Requirements",
+    "Business Education and Technology Domain Requirements: Complete all of the following:",
+    "Business Education and Technology Domain Requirements: Any elective course from among IM, INFO, IT, CYBR, or BMED",
+    "Business Education and Technology Domain Requirements: Corporate Training and Technology Domain Requirements",
+    "Corporate Training and Technology Domain Requirements: Complete all of the following:",
+    "Corporate Training and Technology Domain Requirements: Complete 9 Credits of Elective Courses:"
+   ],
+   "open": true,
+   "tracks": [
+    "Business Education and Technology Domain Requirements",
+    "Corporate Training and Technology Domain Requirements"
    ]
   }
  ],
@@ -525,8 +547,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "code": "ENGL 2010",
@@ -553,8 +576,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "code": "IM 2500",
@@ -582,8 +606,9 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biological Science",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",

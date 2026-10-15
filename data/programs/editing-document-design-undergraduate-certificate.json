@@ -135,27 +135,31 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 2060",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3300",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3320",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4340",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4360R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 2060",
+      "ENGL 3300",
+      "ENGL 3320",
+      "ENGL 4340",
+      "ENGL 4360R"
+     ],
+     "options": [
+      [
+       "ENGL 2060"
+      ],
+      [
+       "ENGL 3300"
+      ],
+      [
+       "ENGL 3320"
+      ],
+      [
+       "ENGL 4340"
+      ],
+      [
+       "ENGL 4360R"
+      ]
+     ]
     }
    ]
   }

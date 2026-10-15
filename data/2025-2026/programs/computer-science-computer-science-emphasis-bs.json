@@ -160,12 +160,15 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following course/lab combinations:"
+   "text": "Complete one of the following course/lab combinations:",
+   "notes": [
+    "Minimum grade of C- required in these courses."
+   ]
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "CS Elective",
    "pick": {
     "count": 1
    },
@@ -555,11 +558,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -613,7 +624,7 @@
    "title": "Accelerated Introduction to Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to college algebra. Pass CS 1420 Entrance Exam.",
-   "prereqs": "CS 1420",
+   "prereqs": null,
    "prereqNonCourse": true
   },
   "CS 2300": {

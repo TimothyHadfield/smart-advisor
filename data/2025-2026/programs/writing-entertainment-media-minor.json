@@ -11,23 +11,44 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 3
+   "credits": 1
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010L",
+   "alts": [],
+   "credits": 2
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1020",
+   "alts": [],
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1020L",
    "alts": [
     "THEA 2742"
    ],
-   "credits": 3
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3210",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 3210L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -41,7 +62,7 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 4220R",
    "alts": [],
-   "credits": 1
+   "credits": 4
   },
   {
    "type": "course",
@@ -60,7 +81,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Approved Optional Course",
+   "label": "Choose 6 credits",
    "pick": {
     "credits": 6
    },
@@ -74,13 +95,15 @@
     },
     {
      "codes": [
-      "DCPR 1610"
+      "DCPR 1610",
+      "DCPR 1610L"
      ],
      "credits": 3
     },
     {
      "codes": [
-      "DCPR 1800"
+      "DCPR 1800",
+      "DCPR 1800L"
      ],
      "credits": 4
     },
@@ -92,7 +115,8 @@
     },
     {
      "codes": [
-      "DCPR 2800"
+      "DCPR 2800",
+      "DCPR 2800L"
      ],
      "credits": 4
     }
@@ -106,7 +130,11 @@
    "items": [
     {
      "code": "DCPR 1010",
-     "credits": 3
+     "credits": 1
+    },
+    {
+     "code": "DCPR 1010L",
+     "credits": 2
     }
    ]
   },
@@ -119,6 +147,10 @@
       "THEA 2742"
      ],
      "credits": 3
+    },
+    {
+     "code": "DCPR 1020L",
+     "credits": null
     }
    ]
   },
@@ -148,11 +180,16 @@
      "credits": 3
     },
     {
+     "code": "DCPR 3210L",
+     "credits": null
+    },
+    {
      "code": "DCPR 4230R",
-     "alts": [
-      "DCPR 4240R"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 4240R",
+     "credits": 1
     }
    ]
   },
@@ -161,10 +198,11 @@
    "items": [
     {
      "code": "DCPR 4210R",
-     "alts": [
-      "DCPR 4220R"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 4220R",
+     "credits": 1
     }
    ]
   },
@@ -173,10 +211,11 @@
    "items": [
     {
      "code": "DCPR 4210R",
-     "alts": [
-      "DCPR 4220R"
-     ],
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 4220R",
+     "credits": 1
     }
    ]
   }
@@ -188,6 +227,14 @@
    "coreqText": "DCPR 1010L",
    "coreqs": [
     "DCPR 1010L"
+   ]
+  },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
    ]
   },
   "DCPR 1020": {
@@ -206,12 +253,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 3,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 2010": {
@@ -317,7 +380,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "DCPR 4240R",
-   "precoreqs": "DCPR 4240R"
+   "precoreqs": "DCPR 4240R",
+   "preco": [
+    "DCPR 4240R"
+   ]
   },
   "DCPR 4240R": {
    "title": "Story Editing for Digital Cinema Lab",
@@ -343,5 +409,10 @@
    "title": "Scriptwriting for the Screen",
    "credits": 3
   }
- }
+ },
+ "missingCourses": [
+  "DCPR 1020L",
+  "DCPR 2800L",
+  "DCPR 3210L"
+ ]
 }

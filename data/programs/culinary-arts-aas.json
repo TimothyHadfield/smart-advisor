@@ -221,8 +221,9 @@
      "credits": 3
     },
     {
-     "label": "SOCIAL or BEHAVIORAL SCIENCE",
-     "credits": 3
+     "label": "SOCIAL AND BEHAVIORAL SCIENCE",
+     "credits": 3,
+     "text": "SOCIAL or BEHAVIORAL SCIENCE"
     }
    ]
   }
@@ -260,7 +261,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CA 1490",
-   "precoreqs": "CA 1490"
+   "precoreqs": "CA 1490",
+   "preco": [
+    "CA 1490"
+   ]
   },
   "CA 1180": {
    "title": "Professional Kitchen Garde Manger",
@@ -339,5 +343,7 @@
    "title": "Introduction to Hospitality Industry",
    "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details)."
 }

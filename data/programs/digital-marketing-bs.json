@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -53,12 +53,14 @@
    "text": "Complete one of the following:",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
-   ]
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Personal, professional, and civic growth",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -96,7 +98,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -144,11 +147,11 @@
   {
    "type": "choice",
    "area": "Matriculation Courses:",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -166,7 +169,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "My Educator"
-   ]
+   ],
+   "exam": "My Educator"
   },
   {
    "type": "course",
@@ -351,19 +355,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Physical Science",
@@ -433,15 +441,19 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": null
-    },
-    {
-     "code": "IM 2010",
-     "credits": null
-    },
-    {
-     "code": "IM 2600",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "IM 2010",
+      "IM 2600"
+     ],
+     "options": [
+      [
+       "IM 2010"
+      ],
+      [
+       "IM 2600"
+      ]
+     ]
     }
    ]
   },
@@ -461,8 +473,9 @@
      "credits": 3
     },
     {
-     "label": "Personal, professional, and civic growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, professional, and civic growth"
     },
     {
      "label": "Humanities",

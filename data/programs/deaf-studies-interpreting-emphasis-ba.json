@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Fine Arts",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following;"
+   "text": "Complete one of the following;",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Social/Behavioral",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -342,7 +344,10 @@
    "area": "Emphasis Requirements",
    "label": "Complete 9 credits; Any 3000- or 4000-level courses that are not part of the core and are not emphasis requirements",
    "credits": 9,
-   "text": "Complete 9 credits; Any 3000- or 4000-level courses that are not part of the core and are not emphasis requirements"
+   "text": "Complete 9 credits; Any 3000- or 4000-level courses that are not part of the core and are not emphasis requirements",
+   "notes": [
+    "Additional Elective Courses"
+   ]
   },
   {
    "type": "placeholder",
@@ -364,67 +369,78 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "HIST 1700",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100",
+      "HIST 2700",
+      "HIST 2710"
+     ],
+     "options": [
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ],
+      [
+       "HIST 2700"
+      ],
+      [
+       "HIST 2710"
+      ]
+     ]
     },
     {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
-    },
-    {
-     "code": "HIST 2700",
-     "credits": null
-    },
-    {
-     "code": "HIST 2710",
-     "credits": null
-    },
-    {
-     "code": "ASL 2020G",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "recommended": [
+      "ASL 2020G"
+     ],
+     "text": "Humanities Distribution (ASL 2020G recommended)"
     },
     {
      "label": "Any course numbered 1000 or higher",
@@ -440,8 +456,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Biology",
@@ -498,8 +515,9 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral",
-     "credits": 3
+     "label": "Social/Cultural Anthropology Social Science",
+     "credits": 3,
+     "text": "Social/Behavioral"
     },
     {
      "label": "Elective",
@@ -564,8 +582,9 @@
      "credits": 3
     },
     {
-     "label": "Any course numbered 1000 or higher (ASL prefix course recommended)",
-     "credits": 3
+     "label": "Any course numbered 1000 or higher",
+     "credits": 3,
+     "text": "Any course numbered 1000 or higher (ASL prefix course recommended)"
     }
    ]
   },
@@ -589,8 +608,9 @@
      "credits": 3
     },
     {
-     "label": "Any course numbered 3000 or higher (ASL prefix course recommended)",
-     "credits": 3
+     "label": "Any course numbered 1000 or higher",
+     "credits": 3,
+     "text": "Any course numbered 3000 or higher (ASL prefix course recommended)"
     }
    ]
   },
@@ -606,8 +626,9 @@
      "credits": 2
     },
     {
-     "label": "Any course numbered 3000 or higher (ASL prefix course recommended)",
-     "credits": 3
+     "label": "Any course numbered 1000 or higher",
+     "credits": 3,
+     "text": "Any course numbered 3000 or higher (ASL prefix course recommended)"
     },
     {
      "code": "ASL 4390",
@@ -625,13 +646,6 @@
   }
  ],
  "courses": {
-  "ASL 2020G": {
-   "title": "Intermediate American Sign Language II",
-   "credits": 4,
-   "prereqText": "Students should have equivalent knowledge of ASL 2010",
-   "prereqs": "ASL 2010",
-   "prereqNonCourse": true
-  },
   "ASL 2030": {
    "title": "Fingerspelling in American Sign Language",
    "credits": 1,
@@ -904,6 +918,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

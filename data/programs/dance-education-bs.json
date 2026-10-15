@@ -11,7 +11,7 @@
    "area": "General Education Requirements",
    "code": "ENGL 1010",
    "alts": [
-    "ENGH 1005"
+    "ENGL 1005"
    ],
    "credits": 3
   },
@@ -59,7 +59,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,7 +75,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +119,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -215,9 +218,10 @@
    "credits": 3
   },
   {
-   "type": "placeholder",
+   "type": "course",
    "area": "Discipline Core Requirements",
-   "label": "DANC 2560G",
+   "code": "DANC 2560G",
+   "alts": [],
    "credits": 3
   },
   {
@@ -323,7 +327,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Breadth Elective",
+   "label": "DANC 1440R",
    "pick": {
     "count": 2
    },
@@ -344,6 +348,12 @@
     {
      "codes": [
       "DANC 1590R"
+     ],
+     "credits": 1
+    },
+    {
+     "codes": [
+      "DANC 1600R"
      ],
      "credits": 1
     },
@@ -380,7 +390,7 @@
    ],
    "text": "Complete 2 courses from the following:",
    "notes": [
-    "DANC 1600R"
+    "Depth Electives"
    ]
   },
   {
@@ -402,6 +412,13 @@
     {
      "codes": [
       "DANC 1590R"
+     ],
+     "credits": 1,
+     "section": "Depth Elective A"
+    },
+    {
+     "codes": [
+      "DANC 1600R"
      ],
      "credits": 1,
      "section": "Depth Elective A"
@@ -535,8 +552,12 @@
    ],
    "text": "Complete 6 credits in either Category A, B, or C. Depth Electives cannot be repeated from Breadth Electives.",
    "notes": [
-    "Depth Elective A: DANC 1600R"
-   ]
+    "Depth Elective A",
+    "Depth Elective A: Depth Elective B",
+    "Depth Elective B: Depth Elective C",
+    "Depth Elective C: Education Courses: Must be completed with a grade of C or higher."
+   ],
+   "open": true
   },
   {
    "type": "course",
@@ -651,12 +672,16 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "code": "DANC 1440R",
-     "credits": 3
+     "label": "DANC 1440R",
+     "credits": 3,
+     "recommended": [
+      "DANC 1440R"
+     ]
     },
     {
      "code": "DANC 2330",
@@ -676,12 +701,14 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "DANC 2430R",
@@ -701,8 +728,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Personal, Professional, & Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth Distribution"
     },
     {
      "code": "DANC 1270R",
@@ -1255,6 +1283,13 @@
    "title": "Exceptional Students",
    "credits": 2
   },
+  "ENGL 1005": {
+   "title": "Foundations of Academic Writing",
+   "credits": 4,
+   "prereqText": "Appropriate placement scores",
+   "prereqs": null,
+   "prereqNonCourse": true
+  },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
@@ -1298,6 +1333,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1387,7 +1423,10 @@
   }
  },
  "missingCourses": [
-  "DANC 2560G",
-  "ENGH 1005"
+  "DANC 1600R",
+  "DANC 2560G"
+ ],
+ "typos": [
+  "ENGH 1005 -> ENGL 1005"
  ]
 }

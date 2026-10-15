@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements:",
-   "label": "Behaviorial Science, Social, or Political Science",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -39,7 +39,9 @@
    "text": "Complete one of the following:",
    "notes": [
     "Any higher MAT or MATH course"
-   ]
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "placeholder",
@@ -176,14 +178,16 @@
    "area": "Discipline Core Requirements:",
    "code": "CRT 2810R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 8
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements:",
    "code": "CRT 2850R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 4
   },
   {
    "type": "course",
@@ -402,8 +406,9 @@
      "credits": 3
     },
     {
-     "label": "Behaviorial Science, Social, or Political Science",
-     "credits": 3
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 3,
+     "text": "Behaviorial Science, Social, or Political Science"
     }
    ]
   },
@@ -443,8 +448,9 @@
      "credits": 1
     },
     {
-     "label": "Humanities/Fine Arts/ ovr Foreign Language",
-     "credits": 3
+     "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
+     "credits": 3,
+     "text": "Humanities/Fine Arts/ ovr Foreign Language"
     },
     {
      "label": "Elective",
@@ -488,8 +494,9 @@
      "credits": 1
     },
     {
-     "label": "Biology or Physical Science",
-     "credits": 3
+     "label": "Any approved Biology or Physical Science Distribution Course",
+     "credits": 3,
+     "text": "Biology or Physical Science"
     }
    ]
   }
@@ -507,7 +514,10 @@
    "title": "Automotive Electrical Systems Lab",
    "credits": 1,
    "precoreqText": "AUT 1160",
-   "precoreqs": "AUT 1160"
+   "precoreqs": "AUT 1160",
+   "preco": [
+    "AUT 1160"
+   ]
   },
   "AUT 2240": {
    "title": "Transportation Heating Ventilation Air Conditioning and Refrigeration Theory",
@@ -802,6 +812,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

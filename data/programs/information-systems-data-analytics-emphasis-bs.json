@@ -50,12 +50,16 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "American Institutions:"
+   ],
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Biology General Education",
+   "label": "American Institutions General Education",
    "pick": {
     "count": 1
    },
@@ -93,7 +97,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -373,7 +381,8 @@
    "text": "Complete 12 credit hours from the following:",
    "notes": [
     "Other approved upper-division Information Systems courses"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -396,27 +405,36 @@
     },
     {
      "label": "Math Requirement. Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MATH 1090",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "MATH 1090"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
-     "code": "MATH 1090",
-     "credits": null
+     "label": "Biology Distribution",
+     "credits": 3,
+     "text": "Biology General Education"
     },
     {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "label": "Biology General Education",
-     "credits": 3
-    },
-    {
-     "code": "CYBR 1700",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "recommended": [
+      "CYBR 1700"
+     ],
+     "text": "Personal, Professional, and Civic Growth General Education"
     }
    ]
   },
@@ -465,8 +483,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities General Education",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities General Education"
     }
    ]
   },
@@ -482,12 +501,14 @@
      "credits": 3
     },
     {
-     "label": "Physical Science General Education",
-     "credits": 3
+     "label": "Physical Science Distribution",
+     "credits": 3,
+     "text": "Physical Science General Education"
     },
     {
-     "label": "Fine Arts General Education",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts General Education"
     },
     {
      "label": "American Institutions General Education",
@@ -507,8 +528,9 @@
      "credits": 3
     },
     {
-     "label": "Social Science General Education",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social Science General Education"
     },
     {
      "code": "MGMT 3000",
@@ -565,8 +587,9 @@
      "credits": 3
     },
     {
-     "label": "Free Elective",
-     "credits": 3
+     "label": "Free Electives",
+     "credits": 3,
+     "text": "Free Elective"
     }
    ]
   },
@@ -590,8 +613,9 @@
      "credits": 3
     },
     {
-     "label": "Free Elective",
-     "credits": 3
+     "label": "Free Electives",
+     "credits": 3,
+     "text": "Free Elective"
     }
    ]
   }
@@ -609,10 +633,6 @@
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
    "prereqNonCourse": true
-  },
-  "CYBR 1700": {
-   "title": "Cybersecurity Essentials",
-   "credits": 3
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -741,7 +761,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -813,7 +836,10 @@
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2200 recommended",
    "prereqs": null,
    "precoreqText": "INFO 3300",
-   "precoreqs": "INFO 3300"
+   "precoreqs": "INFO 3300",
+   "preco": [
+    "INFO 3300"
+   ]
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",

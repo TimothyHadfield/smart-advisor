@@ -46,7 +46,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Elective",
+   "label": "Choose 9 credits",
    "pick": {
     "credits": 9
    },
@@ -206,7 +206,8 @@
    "text": "Complete 9 credits from the following:",
    "notes": [
     "or other course approved by department advisor or director."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [

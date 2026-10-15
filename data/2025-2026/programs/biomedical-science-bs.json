@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "FINE ARTS",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -96,7 +100,10 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PSY 1010"
+   ]
   },
   {
    "type": "course",
@@ -403,7 +410,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -419,9 +427,12 @@
     },
     {
      "codes": [
-      "CHEM 3620"
+      "BIOL 3620"
      ],
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "CHEM 3620"
+     ]
     },
     {
      "codes": [
@@ -448,19 +459,22 @@
      "codes": [
       "BIOL 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "BIOL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "BIOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -472,13 +486,15 @@
      "codes": [
       "BIOL 4970R"
      ],
-     "credits": 0.5
+     "credits": 0.5,
+     "crMax": 1
     },
     {
      "codes": [
       "BIOL 4990R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 2
     },
     {
      "codes": [
@@ -538,15 +554,21 @@
     },
     {
      "codes": [
-      "EXSC 3700"
+      "ZOOL 3700"
      ],
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "EXSC 3700"
+     ]
     },
     {
      "codes": [
-      "MICR 4100"
+      "ZOOL 4100"
      ],
-     "credits": 4
+     "credits": 4,
+     "alts": [
+      "MICR 4100"
+     ]
     },
     {
      "codes": [
@@ -558,13 +580,15 @@
      "codes": [
       "ZOOL 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "ZOOL 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -612,8 +636,9 @@
      "credits": 4
     },
     {
-     "label": "FINE ARTS",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ARTS"
     }
    ]
   },
@@ -626,18 +651,21 @@
     },
     {
      "code": "CHEM 1210",
-     "alts": [
-      "CHEM 1215"
-     ],
-     "credits": 5
+     "credits": 4
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "code": "CHEM 1215",
+     "credits": 1
     },
     {
-     "label": "SOCIAL/BEHAVIORAL SCIENCE",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
+    },
+    {
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "SOCIAL/BEHAVIORAL SCIENCE"
     },
     {
      "label": "Elective",
@@ -658,17 +686,19 @@
     },
     {
      "code": "CHEM 1220",
-     "alts": [
-      "CHEM 1225"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1225",
+     "credits": 1
     },
     {
      "code": "ZOOL 2320",
-     "alts": [
-      "ZOOL 2325"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
     }
    ]
   },
@@ -677,10 +707,11 @@
    "items": [
     {
      "code": "CHEM 2310",
-     "alts": [
-      "CHEM 2315"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2315",
+     "credits": 1
     },
     {
      "label": "Personal, Professional, and Civic Growth GE class",
@@ -688,10 +719,11 @@
     },
     {
      "code": "ZOOL 2420",
-     "alts": [
-      "ZOOL 2425"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
     },
     {
      "code": "BIOL 4940",
@@ -711,10 +743,11 @@
     },
     {
      "code": "CHEM 2320",
-     "alts": [
-      "CHEM 2325"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 2325",
+     "credits": 1
     },
     {
      "code": "STAT 2040",
@@ -734,10 +767,11 @@
    "items": [
     {
      "code": "PHYS 2010",
-     "alts": [
-      "PHYS 2015"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
     },
     {
      "code": "BIOL 3600",
@@ -758,17 +792,19 @@
    "items": [
     {
      "code": "PHYS 2020",
-     "alts": [
-      "PHYS 2025"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2025",
+     "credits": 1
     },
     {
      "code": "MICR 2060",
-     "alts": [
-      "MICR 2065"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "MICR 2065",
+     "credits": 1
     },
     {
      "code": "BIOL 4560",
@@ -797,11 +833,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -912,7 +956,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3500",
-   "precoreqs": "BIOL 3500"
+   "precoreqs": "BIOL 3500",
+   "preco": [
+    "BIOL 3500"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -939,7 +986,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "BIOL 3690R": {
    "title": "Introduction to Undergraduate Research",
@@ -1328,7 +1378,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -1356,7 +1411,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 4050": {
    "title": "Obesity Physiology and Physical Activity",
@@ -1370,7 +1429,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -1527,7 +1590,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "MICR 4100": {
    "title": "Parasitology",
@@ -1746,6 +1812,18 @@
    "uncertain": true,
    "prereqNonCourse": true
   },
+  "ZOOL 4100": {
+   "title": "Parasitology",
+   "credits": 4,
+   "prereqText": "( BIOL 1620 or MICR 2060 ) with a C- or higher and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "BIOL 1620",
+     "MICR 2060"
+    ]
+   },
+   "prereqNonCourse": true
+  },
   "ZOOL 4300": {
    "title": "Histology",
    "credits": 4,
@@ -1859,6 +1937,54 @@
     ]
    },
    "prereqNonCourse": true
+  },
+  "BIOL 3620": {
+   "title": "Biological Chemistry II",
+   "credits": 3,
+   "prereqText": "( CHEM 3600 or BIOL 3600 ) and University Advanced Standing",
+   "prereqs": {
+    "or": [
+     "CHEM 3600",
+     "BIOL 3600"
+    ]
+   },
+   "prereqNonCourse": true,
+   "code": "BIOL 3620",
+   "crossListed": "CHEM 3620"
+  },
+  "ZOOL 3700": {
+   "title": "Exercise Physiology",
+   "credits": 3,
+   "prereqText": "EXSC Majors: ZOOL 2320 (or 2320H), ZOOL 2325 (or 2320L), and EXSC 2700G all with a C- or higher and ( MATH 1050 or MATH 1055 ). PETE Majors: PETE 2700 and ZOOL 1090 with a C- or higher and ( MATH 1050 or MATH 1055 ). All: University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "ZOOL 2320",
+     "ZOOL 2325",
+     "EXSC 2700G",
+     {
+      "or": [
+       "MATH 1050",
+       "MATH 1055"
+      ]
+     },
+     "PETE 2700",
+     "ZOOL 1090"
+    ]
+   },
+   "prereqNonCourse": true,
+   "precoreqText": "ZOOL 2420 (or 2420H), ZOOL 2425 (or 2420L)",
+   "precoreqs": {
+    "and": [
+     "ZOOL 2420",
+     "ZOOL 2425"
+    ]
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ],
+   "code": "ZOOL 3700",
+   "crossListed": "EXSC 3700"
   }
  }
 }

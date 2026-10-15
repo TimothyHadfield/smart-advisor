@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "ART Core Elective",
+   "label": "Quantitative Literacy Requirement",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -44,12 +45,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Quantitative Literacy Requirement",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -87,7 +89,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -136,7 +142,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "ART/ARTH Elective",
+   "label": "ART Core Elective",
    "pick": {
     "credits": 9
    },
@@ -192,7 +198,9 @@
    "area": "Discipline Core Requirements",
    "code": "ART 2000R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 2,
+   "creditsEach": 1
   },
   {
    "type": "course",
@@ -448,8 +456,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Art Core Elective",
-     "credits": 3
+     "label": "ART Core Elective",
+     "credits": 3,
+     "text": "Art Core Elective"
     },
     {
      "code": "ART 2700",
@@ -473,8 +482,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Biology or Physical Science Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology or Physical Science Distribution"
     },
     {
      "code": "ART 2710",
@@ -514,36 +524,41 @@
      "credits": 3
     },
     {
-     "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ARTH 3040",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3050",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3060",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3070",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3120",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3310",
-     "credits": null
-    },
-    {
-     "code": "ARTH 3400",
-     "credits": null
+     "label": "Take ONE of the following classes:",
+     "credits": 3,
+     "alts": [
+      "ARTH 3040",
+      "ARTH 3050",
+      "ARTH 3060",
+      "ARTH 3070",
+      "ARTH 3120",
+      "ARTH 3310",
+      "ARTH 3400"
+     ],
+     "options": [
+      [
+       "ARTH 3040"
+      ],
+      [
+       "ARTH 3050"
+      ],
+      [
+       "ARTH 3060"
+      ],
+      [
+       "ARTH 3070"
+      ],
+      [
+       "ARTH 3120"
+      ],
+      [
+       "ARTH 3310"
+      ],
+      [
+       "ARTH 3400"
+      ]
+     ],
+     "text": "Complete one of following:"
     }
    ]
   },
@@ -555,8 +570,9 @@
      "credits": 3
     },
     {
-     "label": "Biology or Physical Science Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology or Physical Science Distribution"
     },
     {
      "code": "ART 3730",
@@ -576,8 +592,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "code": "ART 4740R",
@@ -601,8 +618,9 @@
    "label": "Semester 8",
    "items": [
     {
-     "label": "Personal, Professional, and Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth Distribution"
     },
     {
      "code": "ART 4710R",
@@ -642,7 +660,10 @@
    "title": "3D Design",
    "credits": 3,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1210": {
    "title": "Observational Drawing",
@@ -669,7 +690,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1750": {
    "title": "Intro to Digital Imaging",
@@ -717,7 +741,10 @@
    "title": "Photographic Lighting I",
    "credits": 3,
    "precoreqText": "ART 2720",
-   "precoreqs": "ART 2720"
+   "precoreqs": "ART 2720",
+   "preco": [
+    "ART 2720"
+   ]
   },
   "ART 3710R": {
    "title": "Historical Photographic Processes",
@@ -937,6 +964,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

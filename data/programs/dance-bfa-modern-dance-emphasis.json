@@ -391,7 +391,10 @@
      "credits": 1
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "notes": [
+    "Emphasis Elective Requirements:"
+   ]
   },
   {
    "type": "choice",
@@ -472,7 +475,8 @@
    "text": "Choose 7 credits from the following list:",
    "notes": [
     "Any DANC course not previously taken"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -572,8 +576,9 @@
      "credits": 2
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "Electives",
@@ -597,8 +602,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "Personal, Profesional, & Civic Growth Distribution",
@@ -642,19 +648,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "DANC 3460R",
-     "credits": null
-    },
-    {
-     "code": "DANC 3600R",
-     "credits": null
-    },
-    {
-     "code": "DANC 4460R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "DANC 3460R",
+      "DANC 3600R",
+      "DANC 4460R"
+     ],
+     "options": [
+      [
+       "DANC 3460R"
+      ],
+      [
+       "DANC 3600R"
+      ],
+      [
+       "DANC 4460R"
+      ]
+     ]
     }
    ]
   },
@@ -683,19 +693,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "DANC 3460R",
-     "credits": null
-    },
-    {
-     "code": "DANC 3600R",
-     "credits": null
-    },
-    {
-     "code": "DANC 4460R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "DANC 3460R",
+      "DANC 3600R",
+      "DANC 4460R"
+     ],
+     "options": [
+      [
+       "DANC 3460R"
+      ],
+      [
+       "DANC 3600R"
+      ],
+      [
+       "DANC 4460R"
+      ]
+     ]
     }
    ]
   },
@@ -719,8 +733,9 @@
      "credits": 2
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -1133,6 +1148,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

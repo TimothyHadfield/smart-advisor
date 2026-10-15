@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions-AS",
+   "label": "Quantitative Literacy (MAT 1010 recommended)",
    "pick": {
     "count": 1
    },
@@ -74,14 +74,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavior Science-SS",
+   "label": "American Institutions-AS",
    "pick": {
-    "credits": 3
+    "count": 1
    },
    "credits": 3,
    "options": [
@@ -116,7 +117,9 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "text": "Complete one of following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -157,7 +160,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Humanities-HH",
+   "label": "SPAN Elective (upper-division)",
    "pick": {
     "count": 1
    },
@@ -198,11 +201,11 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 1,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -214,7 +217,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "Oral Proficiency Interview (OPI)"
-   ]
+   ],
+   "exam": "Oral Proficiency Interview (OPI)"
   },
   {
    "type": "course",
@@ -262,20 +266,23 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 4
+     "label": "SPAN Elective (upper-division)",
+     "credits": 4,
+     "text": "General Elective"
     },
     {
      "label": "American Institutions-AS",
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 2
+     "label": "SPAN Elective (upper-division)",
+     "credits": 2,
+     "text": "General Elective"
     }
    ]
   },
@@ -287,20 +294,25 @@
      "credits": 3
     },
     {
-     "code": "MAT 1010",
-     "credits": 3
+     "label": "Quantitative Literacy (MAT 1010 recommended)",
+     "credits": 3,
+     "recommended": [
+      "MAT 1010"
+     ]
     },
     {
      "label": "Biology",
      "credits": 3
     },
     {
-     "label": "Social/Behavior Science-SS",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavior Science-SS"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -308,35 +320,41 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Humanities-HH",
-     "credits": 3
+     "label": "Humanities Distribution (non-language courses only)",
+     "credits": 3,
+     "text": "Humanities-HH"
     },
     {
      "label": "Physical Science",
      "credits": 3
     },
     {
-     "label": "Fine Art-FF",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Art-FF"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "SPAN 3030",
+     "credits": 3,
      "alts": [
-      "SPAN 3040"
+      "SPAN 3030",
+      "SPAN 3040",
+      "SPAN 3050"
      ],
-     "credits": null
-    },
-    {
-     "code": "SPAN 3050",
-     "credits": null
+     "options": [
+      [
+       "SPAN 3030",
+       "SPAN 3040"
+      ],
+      [
+       "SPAN 3050"
+      ]
+     ]
     }
    ]
   },
@@ -344,8 +362,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Personal, Professional, & Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth"
     },
     {
      "code": "SPAN 4050",
@@ -359,12 +378,14 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -377,27 +398,34 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "SPAN 3620",
+      "SPAN 3640"
+     ],
+     "options": [
+      [
+       "SPAN 3620"
+      ],
+      [
+       "SPAN 3640"
+      ]
+     ]
     },
     {
-     "code": "SPAN 3620",
-     "credits": null
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "code": "SPAN 3640",
-     "credits": null
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
-    },
-    {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -406,15 +434,19 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "SPAN 3620",
-     "credits": null
-    },
-    {
-     "code": "SPAN 3640",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "SPAN 3620",
+      "SPAN 3640"
+     ],
+     "options": [
+      [
+       "SPAN 3620"
+      ],
+      [
+       "SPAN 3640"
+      ]
+     ]
     },
     {
      "label": "SPAN Elective (upper-division)",
@@ -425,12 +457,14 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -446,16 +480,19 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -479,12 +516,17 @@
      "credits": 2
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "SPAN Elective (upper-division)",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "code": "SPAN 3060",
-     "credits": 1
+     "label": "SPAN Elective (upper-division)",
+     "credits": 1,
+     "recommended": [
+      "SPAN 3060"
+     ],
+     "text": "SPAN Elective (SPAN 3060 or Spanish Oral Proficiency Interview Optional)"
     }
    ]
   }
@@ -533,13 +575,6 @@
    "title": "US History since 1877",
    "credits": 3
   },
-  "MAT 1010": {
-   "title": "Intermediate Algebra",
-   "credits": 4,
-   "prereqText": "One of the following (within two years): MAT 0980 with a grade of C- or higher; or appropriate placement by a placement exam.",
-   "prereqs": "MAT 0980",
-   "prereqNonCourse": true
-  },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
    "credits": 3,
@@ -547,6 +582,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

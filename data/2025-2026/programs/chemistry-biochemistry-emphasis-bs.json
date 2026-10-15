@@ -70,7 +70,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -361,13 +362,15 @@
      "codes": [
       "CHEM 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "CHEM 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -379,13 +382,15 @@
      "codes": [
       "CHEM 4960R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "CHEM 4990R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -599,8 +604,9 @@
      "credits": 1
     },
     {
-     "label": "Biology Elective",
-     "credits": 4
+     "label": "Biology Electives (11 credits) from the following",
+     "credits": 4,
+     "text": "Biology Elective"
     }
    ]
   },
@@ -620,8 +626,9 @@
      "credits": 1
     },
     {
-     "label": "Biology Elective",
-     "credits": 4
+     "label": "Biology Electives (11 credits) from the following",
+     "credits": 4,
+     "text": "Biology Elective"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -661,8 +668,9 @@
      "credits": 1
     },
     {
-     "label": "Biology Elective",
-     "credits": 3
+     "label": "Biology Electives (11 credits) from the following",
+     "credits": 3,
+     "text": "Biology Elective"
     }
    ]
   },
@@ -720,11 +728,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -793,7 +809,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3500",
-   "precoreqs": "BIOL 3500"
+   "precoreqs": "BIOL 3500",
+   "preco": [
+    "BIOL 3500"
+   ]
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -1038,7 +1057,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 3000",
-   "precoreqs": "CHEM 3000"
+   "precoreqs": "CHEM 3000",
+   "preco": [
+    "CHEM 3000"
+   ]
   },
   "CHEM 3115": {
    "title": "Advanced Inorganic Chemistry Lab",
@@ -1071,7 +1093,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "CHEM 3605": {
    "title": "Biological Chemistry Lab",
@@ -1338,7 +1363,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",

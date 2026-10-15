@@ -167,91 +167,84 @@
      "codes": [
       "ANTH 3260"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ANTH 3850"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "BIOL 3700"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "BIOL 3800"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "BOT 4050"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ENGL 3730R"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ENST 2000"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ENVT 3330"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ENVT 3850"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "ANTH 3150"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "PHIL 3530"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     },
     {
      "codes": [
       "SOC 4020"
      ],
-     "credits": 3,
-     "section": "At most one of the following courses may be used towards elective requirements:"
+     "credits": 3
     }
    ],
    "text": "Complete at least 10 credits from the following list, at least six of which much be 3000-level or higher:",
    "notes": [
-    "At most one of the following courses may be used towards elective requirements:: Or other advisor-approved electives"
-   ]
+    "At most one of the following courses may be used towards elective requirements:",
+    "Or other advisor-approved electives"
+   ],
+   "rules": [
+    "At most one of the following courses may be used towards elective requirements:"
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -415,7 +408,10 @@
    "title": "Introduction to Physical Geography Lab",
    "credits": 1,
    "precoreqText": "GEOG 1000",
-   "precoreqs": "GEOG 1000"
+   "precoreqs": "GEOG 1000",
+   "preco": [
+    "GEOG 1000"
+   ]
   },
   "GEOG 1300G": {
    "title": "Survey of World Geography",
@@ -466,7 +462,13 @@
    "title": "Biogeography",
    "credits": 4,
    "prereqText": "(BIOL1010, or BIOL1620, or GEOG1000) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620",
+     "GEOG 1000"
+    ]
+   },
    "prereqNonCourse": true
   },
   "GEOG 3350": {

@@ -72,7 +72,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -316,13 +317,15 @@
      "codes": [
       "THEA 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 2
     },
     {
      "codes": [
       "THEA 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -606,8 +609,12 @@
      "credits": 3
     },
     {
-     "code": "THEA 4810R",
-     "credits": 2
+     "label": "Production Skills Elective; THEA 4810R, 490R, and/or 4993 recommended",
+     "credits": 2,
+     "recommended": [
+      "THEA 4810R",
+      "THEA 4993"
+     ]
     }
    ]
   },
@@ -770,6 +777,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -815,13 +823,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1590R": {
    "title": "Production Practicum for Stage and Screen I",
@@ -856,7 +870,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2514": {
    "title": "Introduction to Design for Stage and Screen Lab",
@@ -864,7 +881,10 @@
    "prereqText": "THEA 1513",
    "prereqs": "THEA 1513",
    "precoreqText": "THEA 2513",
-   "precoreqs": "THEA 2513"
+   "precoreqs": "THEA 2513",
+   "preco": [
+    "THEA 2513"
+   ]
   },
   "THEA 2531": {
    "title": "Introduction to Lighting and Sound",

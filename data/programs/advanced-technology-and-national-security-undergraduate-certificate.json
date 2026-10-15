@@ -231,7 +231,8 @@
    "text": "Complete 6 credits of any of the NSS classes from the discipline electives or from the following list:",
    "notes": [
     "Any other course approved by the program director or advisor"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -400,7 +401,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "INFO 3130": {
    "title": "Introduction to Applied Data Analytics",
@@ -507,7 +511,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "NSS 3750",
-   "precoreqs": "NSS 3750"
+   "precoreqs": "NSS 3750",
+   "preco": [
+    "NSS 3750"
+   ]
   },
   "NSS 4260": {
    "title": "Hypersonic and Advanced Aeronautics",
@@ -516,7 +523,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "NSS 3750",
-   "precoreqs": "NSS 3750"
+   "precoreqs": "NSS 3750",
+   "preco": [
+    "NSS 3750"
+   ]
   },
   "NSS 4320": {
    "title": "Robotics and Autonomous Systems",
@@ -525,7 +535,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "NSS 3750",
-   "precoreqs": "NSS 3750"
+   "precoreqs": "NSS 3750",
+   "preco": [
+    "NSS 3750"
+   ]
   },
   "NSS 4650": {
    "title": "Emerging Tech Policy Lab",

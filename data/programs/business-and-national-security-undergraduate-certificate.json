@@ -98,9 +98,12 @@
     }
    ],
    "notes": [
+    "Business courses",
     "Business courses: Or other WSB approved course",
+    "Business courses: NSS courses",
     "NSS courses: Or other NSS approved course"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -158,31 +161,39 @@
     },
     {
      "label": "Business courses",
-     "credits": null
-    },
-    {
-     "code": "MGMT 4470",
-     "credits": null
-    },
-    {
-     "code": "MGMT 4620",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "MGMT 4470",
+      "MGMT 4620"
+     ],
+     "options": [
+      [
+       "MGMT 4470"
+      ],
+      [
+       "MGMT 4620"
+      ]
+     ]
     },
     {
      "label": "NSS courses",
-     "credits": null
-    },
-    {
-     "code": "NSS 3010R",
-     "credits": null
-    },
-    {
-     "code": "NSS 4400",
-     "credits": null
-    },
-    {
-     "code": "NSS 4750R",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "NSS 3010R",
+      "NSS 4400",
+      "NSS 4750R"
+     ],
+     "options": [
+      [
+       "NSS 3010R"
+      ],
+      [
+       "NSS 4400"
+      ],
+      [
+       "NSS 4750R"
+      ]
+     ]
     }
    ]
   }

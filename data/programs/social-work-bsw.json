@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete One of the Following"
+   "text": "Complete One of the Following",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +118,11 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -328,13 +333,15 @@
      "codes": [
       "SW 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "SW 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:"
@@ -370,8 +377,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -391,12 +399,14 @@
      "credits": 3
     },
     {
-     "label": "Biological Science",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biological Science"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -412,12 +422,14 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     },
     {
      "label": "Behavioral/Social Science",
@@ -433,20 +445,24 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -594,6 +610,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -910,5 +927,7 @@
    "prereqs": null,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Admission to the BSW program includes the following requirements: ."
 }

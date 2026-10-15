@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biol/ Physical Science",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -368,7 +368,10 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "CMGT 1010"
+   ]
   },
   "CMGT 2080": {
    "title": "Principles of Construction Scheduling",
@@ -432,6 +435,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -80,12 +80,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -116,7 +117,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -189,39 +191,47 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "STAT 1040",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "STAT 1040"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HIST 1700",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100"
+     ],
+     "options": [
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ]
+     ]
     },
     {
      "label": "Social/Behavioral Science",
@@ -319,6 +329,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -328,7 +339,12 @@
    "title": "Quantitative Reasoning",
    "credits": 3,
    "prereqText": "One of the following (within department time limits): MAT 1010 or MAT1015 with a grade of C- or higher; or appropriate placement by a placement exam.",
-   "prereqs": "MAT 1010",
+   "prereqs": {
+    "or": [
+     "MAT 1010",
+     "MAT 1015"
+    ]
+   },
    "prereqNonCourse": true
   },
   "MAT 1035": {

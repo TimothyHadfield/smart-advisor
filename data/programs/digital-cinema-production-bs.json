@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Cinema Elective (Film History)",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -167,21 +172,42 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1610",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1610L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -202,14 +228,28 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 2410",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2410L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2800",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -230,14 +270,28 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 3410",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 3410L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3610",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 3610L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -261,14 +315,14 @@
       "DAPR 2170"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
       "DAPR 2171"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -280,7 +334,7 @@
       "ENGL 2170G",
       "DGM 3120G"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -290,7 +344,7 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -300,21 +354,23 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
-      "DCPR 2620"
+      "DCPR 2620",
+      "DCPR 2620L"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
-      "DCPR 2630"
+      "DCPR 2630",
+      "DCPR 2630L"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -325,7 +381,7 @@
       "DCPR 3320",
       "DCPR 3580"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -335,7 +391,7 @@
      "alts": [
       "DCPR 3570"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -345,56 +401,59 @@
      "alts": [
       "DCPR 3570L"
      ],
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
-      "DCPR 3620"
+      "DCPR 3620",
+      "DCPR 3620L"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
-      "DCPR 3630"
+      "DCPR 3630",
+      "DCPR 3630L"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
-      "DCPR 3660"
+      "DCPR 3660",
+      "DCPR 3660L"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
       "DCPR 4610"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
       "DCPR 4910"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
       "DCPR 4920"
      ],
      "credits": 3,
-     "section": "--POST-PRODUCTION TRACK--"
+     "section": "POST-PRODUCTION TRACK"
     },
     {
      "codes": [
@@ -404,14 +463,14 @@
      "alts": [
       "IM 2600"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "ACC 3000"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -423,7 +482,7 @@
       "RUS 3670G",
       "RUS 4160G"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -433,14 +492,14 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "FIN 3100"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -450,21 +509,21 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 3310"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 3320"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -474,7 +533,7 @@
      "alts": [
       "DCPR 3570"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -484,14 +543,14 @@
      "alts": [
       "DCPR 3570L"
      ],
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 3580"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -499,35 +558,35 @@
       "DCPR 4240R"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 4310"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 4910"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
       "DCPR 4920"
      ],
      "credits": 3,
-     "section": "--PRODUCING TRACK--"
+     "section": "PRODUCING TRACK"
     },
     {
      "codes": [
@@ -539,7 +598,7 @@
       "RUS 3670G",
       "RUS 4160G"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -549,7 +608,7 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -559,28 +618,30 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
-      "DCPR 2430"
+      "DCPR 2430",
+      "DCPR 2430L"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
       "DCPR 2440"
      ],
      "credits": 1,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
-      "DCPR 2630"
+      "DCPR 2630",
+      "DCPR 2630L"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -591,14 +652,14 @@
       "DCPR 3320",
       "DCPR 3580"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
       "DCPR 3400"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -608,7 +669,7 @@
      "alts": [
       "DCPR 3570"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -618,14 +679,15 @@
      "alts": [
       "DCPR 3570L"
      ],
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
-      "DCPR 3630"
+      "DCPR 3630",
+      "DCPR 3630L"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -633,35 +695,37 @@
       "DCPR 4420R"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
       "DGM 4810R"
      ],
      "credits": 4,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK",
+     "repeat": 2,
+     "creditsEach": 2
     },
     {
      "codes": [
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
       "DCPR 4910"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
       "DCPR 4920"
      ],
      "credits": 3,
-     "section": "--CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK"
     },
     {
      "codes": [
@@ -673,7 +737,7 @@
       "RUS 3670G",
       "RUS 4160G"
      ],
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -683,21 +747,21 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "THEA 3113"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "THEA 3614"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -707,28 +771,30 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 2010"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 2500"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 3100R"
      ],
-     "credits": 1,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "credits": 2,
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -739,21 +805,23 @@
       "DCPR 3320",
       "DCPR 3580"
      ],
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
-      "DCPR 3510"
+      "DCPR 3510",
+      "DCPR 3510L"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
-      "DCPR 3570"
+      "DCPR 3570",
+      "DCPR 3570L"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -761,7 +829,7 @@
       "DCPR 4240R"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -769,28 +837,30 @@
       "DCPR 4520R"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK",
+     "repeat": 2,
+     "creditsEach": 1.5
     },
     {
      "codes": [
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 4910"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 4920"
      ],
      "credits": 3,
-     "section": "--DIRECTING FOR DIGITAL CINEMA TRACK--"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -802,7 +872,7 @@
       "RUS 3670G",
       "RUS 4160G"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
@@ -812,21 +882,21 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "THEA 2741"
      ],
      "credits": 3,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "THEA 3741"
      ],
      "credits": 3,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
@@ -837,7 +907,7 @@
       "THEA 3241",
       "THEA 4741"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
@@ -847,28 +917,30 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "DCPR 2000R"
      ],
      "credits": 3,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "DCPR 2010"
      ],
      "credits": 3,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "DCPR 3100R"
      ],
-     "credits": 1,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "credits": 2,
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -879,7 +951,7 @@
       "DCPR 3320",
       "DCPR 3580"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
@@ -889,7 +961,7 @@
      "alts": [
       "DCPR 3570"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
@@ -899,14 +971,16 @@
      "alts": [
       "DCPR 3570L"
      ],
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK"
     },
     {
      "codes": [
       "DCPR 4210R"
      ],
      "credits": 6,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK",
+     "repeat": 2,
+     "creditsEach": 3
     },
     {
      "codes": [
@@ -914,7 +988,9 @@
       "DCPR 4240R"
      ],
      "credits": 3,
-     "section": "--WRITING FOR ENTERTAINMENT MEDIA TRACK--"
+     "section": "WRITING FOR ENTERTAINMENT MEDIA TRACK",
+     "repeat": 2,
+     "creditsEach": 1.5
     },
     {
      "codes": [
@@ -926,7 +1002,7 @@
       "RUS 3670G",
       "RUS 4160G"
      ],
-     "section": "--GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -936,7 +1012,7 @@
      "alts": [
       "THEA 2312"
      ],
-     "section": "--GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -946,21 +1022,23 @@
      "alts": [
       "THEA 2742"
      ],
-     "section": "--GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 2010"
      ],
      "credits": 3,
-     "section": "--GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 3100R"
      ],
-     "credits": 1,
-     "section": "--GENERAL CINEMA TRACK"
+     "credits": 2,
+     "section": "GENERAL CINEMA TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -970,7 +1048,7 @@
      "alts": [
       "DCPR 3570"
      ],
-     "section": "--GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
@@ -980,84 +1058,121 @@
      "alts": [
       "DCPR 3570L"
      ],
-     "section": "--GENERAL CINEMA TRACK"
-    },
-    {
-     "codes": [
-      "DCPR 2000R"
-     ],
-     "credits": 1,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2010"
-     ],
-     "credits": 3,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2400"
-     ],
-     "credits": 3,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2430"
-     ],
-     "credits": 3,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2500"
-     ],
-     "credits": 3,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2620"
-     ],
-     "credits": 3,
-     "section": "Electives"
-    },
-    {
-     "codes": [
-      "DCPR 2630"
-     ],
-     "credits": 3,
-     "section": "Electives"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 3310"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "GENERAL CINEMA TRACK"
     },
     {
      "codes": [
       "DCPR 3320"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "GENERAL CINEMA TRACK"
+    },
+    {
+     "codes": [
+      "DCPR 3580"
+     ],
+     "credits": 3,
+     "section": "GENERAL CINEMA TRACK"
+    },
+    {
+     "codes": [
+      "DCPR 2000R"
+     ],
+     "credits": 1,
+     "crMax": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2010"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2400"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2430",
+      "DCPR 2430L"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2500"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2620",
+      "DCPR 2620L"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 2630",
+      "DCPR 2630L"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 3310"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
+    },
+    {
+     "codes": [
+      "DCPR 3320"
+     ],
+     "credits": 3,
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DCPR 3400"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
-      "DCPR 3510"
+      "DCPR 3510",
+      "DCPR 3510L"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1065,42 +1180,51 @@
       "DCPR 3510L"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DCPR 3580"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
-      "DCPR 3620"
+      "DCPR 3620",
+      "DCPR 3620L"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
-      "DCPR 3660"
+      "DCPR 3660",
+      "DCPR 3660L"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DCPR 4110R"
      ],
      "credits": 1,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true,
+     "crMax": 3
     },
     {
      "codes": [
       "DCPR 4210R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1108,7 +1232,8 @@
       "DCPR 4240R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1116,7 +1241,8 @@
       "DCPR 4420R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1124,217 +1250,252 @@
       "DCPR 4520R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DCPR 4610"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "ACC 2110"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DGM 1110"
      ],
      "credits": 4,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DGM 2810R"
      ],
      "credits": 1,
-     "section": "Electives"
+     "crMax": 8,
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DGM 3110"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DGM 3200R"
      ],
      "credits": 1,
-     "section": "Electives"
+     "crMax": 4,
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DGM 4810R"
      ],
      "credits": 1,
-     "section": "Electives"
+     "crMax": 8,
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAGV 1200"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 1030"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 2000"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 1031"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 2170"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 2171"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 3170"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 3171"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DAPR 3080R"
      ],
      "credits": 1,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true,
+     "crMax": 4
     },
     {
      "codes": [
       "DAPR 3340"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "DWDD 3261"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "ENGL 2300"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "FIN 3100"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "IM 2010"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "IM 2600"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "LANG 3120R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "MKTG 3600"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "MGMT 1010"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "MGMT 2340"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "RUS 3670G"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "RUS 4160G"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 1033"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 1223"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1342,14 +1503,16 @@
       "THEA 1514"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 2033"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
@@ -1357,140 +1520,173 @@
       "THEA 2204"
      ],
      "credits": 4,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 2311"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 2312"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 2513"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3113"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3223"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3241"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3516"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3541"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3571"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3612"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3614"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3625"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3740R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 3741"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 4741"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     },
     {
      "codes": [
       "THEA 4160R"
      ],
      "credits": 3,
-     "section": "Electives"
+     "section": "Electives",
+     "shared": true
     }
    ],
    "text": "Choose one of the following Tracks:",
    "notes": [
-    "--POST-PRODUCTION TRACK--: Select an additional 11 credits of electives from the list below",
-    "--PRODUCING TRACK--: Select an additional 14 credits of electives from the list below",
-    "--CINEMATOGRAPHY TRACK: Select an additional 15 credits of electives from the list below",
-    "--DIRECTING FOR DIGITAL CINEMA TRACK--: Select an additional 10 credits of electives from the list below",
-    "--WRITING FOR ENTERTAINMENT MEDIA TRACK--: Select an additional 14 credits of electives from the list below",
-    "--GENERAL CINEMA TRACK: Choose 2 from: DCPR 3310 Creative Producing or DCPR 3320 Line Producing or DCPR 3580 Non-Fiction Producing",
-    "--GENERAL CINEMA TRACK: Select an additional 35 credits of electives from the list below"
-   ],
-   "tracks": [
     "--POST-PRODUCTION TRACK--",
-    "--PRODUCING TRACK--",
-    "--CINEMATOGRAPHY TRACK",
-    "--DIRECTING FOR DIGITAL CINEMA TRACK--",
-    "--WRITING FOR ENTERTAINMENT MEDIA TRACK--",
-    "--GENERAL CINEMA TRACK",
-    "Electives"
-   ]
+    "POST-PRODUCTION TRACK: Select an additional 11 credits of electives from the list below",
+    "POST-PRODUCTION TRACK: --PRODUCING TRACK--",
+    "PRODUCING TRACK: Select an additional 14 credits of electives from the list below",
+    "PRODUCING TRACK: --CINEMATOGRAPHY TRACK",
+    "CINEMATOGRAPHY TRACK: Select an additional 15 credits of electives from the list below",
+    "CINEMATOGRAPHY TRACK: --DIRECTING FOR DIGITAL CINEMA TRACK--",
+    "DIRECTING FOR DIGITAL CINEMA TRACK: Select an additional 10 credits of electives from the list below",
+    "DIRECTING FOR DIGITAL CINEMA TRACK: --WRITING FOR ENTERTAINMENT MEDIA TRACK--",
+    "WRITING FOR ENTERTAINMENT MEDIA TRACK: Select an additional 14 credits of electives from the list below",
+    "WRITING FOR ENTERTAINMENT MEDIA TRACK: --GENERAL CINEMA TRACK",
+    "GENERAL CINEMA TRACK: Choose 2 from: DCPR 3310 Creative Producing or DCPR 3320 Line Producing or DCPR 3580 Non-Fiction Producing",
+    "GENERAL CINEMA TRACK: Select an additional 35 credits of electives from the list below",
+    "GENERAL CINEMA TRACK: Electives",
+    "Electives: Other Advisor Approved Electives"
+   ],
+   "open": true,
+   "tracks": [
+    "POST-PRODUCTION TRACK",
+    "PRODUCING TRACK",
+    "CINEMATOGRAPHY TRACK",
+    "DIRECTING FOR DIGITAL CINEMA TRACK",
+    "WRITING FOR ENTERTAINMENT MEDIA TRACK",
+    "GENERAL CINEMA TRACK"
+   ],
+   "trackElectives": {
+    "POST-PRODUCTION TRACK": 11,
+    "PRODUCING TRACK": 14,
+    "CINEMATOGRAPHY TRACK": 15,
+    "DIRECTING FOR DIGITAL CINEMA TRACK": 10,
+    "WRITING FOR ENTERTAINMENT MEDIA TRACK": 14,
+    "GENERAL CINEMA TRACK": 35
+   }
   }
  ],
  "gradPlan": [
@@ -1503,11 +1699,19 @@
     },
     {
      "code": "DCPR 1010",
-     "credits": 3
+     "credits": 1
+    },
+    {
+     "code": "DCPR 1010L",
+     "credits": 2
     },
     {
      "code": "DCPR 1610",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 1610L",
+     "credits": 1
     },
     {
      "code": "ENGL 1010",
@@ -1528,7 +1732,11 @@
    "items": [
     {
      "code": "DCPR 1800",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 1800L",
+     "credits": 1
     },
     {
      "code": "DCPR 2400",
@@ -1539,8 +1747,9 @@
      "credits": 3
     },
     {
-     "label": "Social / Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social / Behavioral Science"
     },
     {
      "label": "Humanities Distribution",
@@ -1554,6 +1763,10 @@
     {
      "code": "DCPR 2410",
      "credits": 3
+    },
+    {
+     "code": "DCPR 2410L",
+     "credits": null
     },
     {
      "code": "DAPR 2110",
@@ -1579,6 +1792,10 @@
     {
      "code": "DCPR 2800",
      "credits": 3
+    },
+    {
+     "code": "DCPR 2800L",
+     "credits": null
     },
     {
      "label": "Cinema Elective",
@@ -1635,8 +1852,8 @@
      "credits": 3
     },
     {
-     "label": "Cinema Elective",
-     "credits": 3
+     "code": "DCPR 3410L",
+     "credits": null
     },
     {
      "label": "Cinema Elective",
@@ -1647,8 +1864,13 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, and Civic Growth",
+     "label": "Cinema Elective",
      "credits": 3
+    },
+    {
+     "label": "Personal, Professional, and Civic Growth Distribution",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth"
     }
    ]
   },
@@ -1657,7 +1879,11 @@
    "items": [
     {
      "code": "DCPR 3610",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 3610L",
+     "credits": 1
     },
     {
      "label": "Cinema Elective",
@@ -1794,6 +2020,14 @@
     "DCPR 1010L"
    ]
   },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
+   ]
+  },
   "DCPR 1210": {
    "title": "Writing for Entertainment Media I",
    "credits": 3
@@ -1806,12 +2040,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 2,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 2000R": {
@@ -2031,6 +2281,17 @@
     "DCPR 3610L"
    ]
   },
+  "DCPR 3610L": {
+   "title": "Digital Cinema Editing II Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": "DCPR 1610",
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3610",
+   "coreqs": [
+    "DCPR 3610"
+   ]
+  },
   "DCPR 3620": {
    "title": "Visual Effects for Digital Cinema II",
    "credits": 2,
@@ -2072,6 +2333,22 @@
    "coreqText": "DCPR 3660L",
    "coreqs": [
     "DCPR 3660L"
+   ]
+  },
+  "DCPR 3660L": {
+   "title": "Professional NLE Certification Lab",
+   "credits": 1,
+   "prereqText": "DCPR 1610 , DCPR 2630 , Portfolio Review Acceptance, and University Advanced Standing",
+   "prereqs": {
+    "and": [
+     "DCPR 1610",
+     "DCPR 2630"
+    ]
+   },
+   "prereqNonCourse": true,
+   "coreqText": "DCPR 3660",
+   "coreqs": [
+    "DCPR 3660"
    ]
   },
   "DCPR 4110R": {
@@ -2116,7 +2393,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "DCPR 4240R",
-   "precoreqs": "DCPR 4240R"
+   "precoreqs": "DCPR 4240R",
+   "preco": [
+    "DCPR 4240R"
+   ]
   },
   "DCPR 4240R": {
    "title": "Story Editing for Digital Cinema Lab",
@@ -2385,6 +2665,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -2527,13 +2808,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 2033": {
    "title": "Acting II",
@@ -2551,7 +2838,12 @@
      "THEA 1514",
      "THEA 2204"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2204"
+   ]
   },
   "THEA 2204": {
    "title": "Costume Construction I Lab",
@@ -2563,7 +2855,12 @@
      "THEA 1514",
      "THEA 2203"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2203"
+   ]
   },
   "THEA 2311": {
    "title": "Film History I",
@@ -2584,7 +2881,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2741": {
    "title": "Scriptwriting for Stage",
@@ -2721,5 +3021,17 @@
    "uncertain": true,
    "prereqNonCourse": true
   }
- }
+ },
+ "missingCourses": [
+  "DCPR 2410L",
+  "DCPR 2430L",
+  "DCPR 2620L",
+  "DCPR 2630L",
+  "DCPR 2800L",
+  "DCPR 3410L",
+  "DCPR 3620L",
+  "DCPR 3630L"
+ ],
+ "admission": true,
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
 }

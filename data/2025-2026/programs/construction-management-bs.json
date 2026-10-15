@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -172,7 +177,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Upper Division Elective",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -194,7 +199,8 @@
      "codes": [
       "CMGT 2810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 6
     }
    ],
    "text": "Complete one of the following:"
@@ -241,7 +247,9 @@
    "area": "Discipline Core Requirements",
    "code": "CMGT 2890R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -260,7 +268,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Biology",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -315,7 +323,8 @@
    "area": "Discipline Core Requirements",
    "code": "CMGT 4810R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "crMax": 4
   },
   {
    "type": "course",
@@ -348,7 +357,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -358,7 +367,8 @@
      "codes": [
       "ACC 3000"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -373,9 +383,10 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 15 credits",
+   "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
    "pick": {
-    "credits": 15
+    "credits": 15,
+    "tracks": 1
    },
    "credits": 15,
    "options": [
@@ -456,10 +467,19 @@
      "alts": [
       "TECH 3400"
      ],
-     "section": "Commercial/Residential"
+     "section": "Commercial/Residential",
+     "recommended": true
     }
    ],
-   "text": "Complete 15 credits from one of the following two specializations (A minimum of 5 credits must be upper division):"
+   "text": "Complete 15 credits from one of the following two specializations (A minimum of 5 credits must be upper division):",
+   "notes": [
+    "Heavy/Civil",
+    "Heavy/Civil: Commercial/Residential"
+   ],
+   "tracks": [
+    "Heavy/Civil",
+    "Commercial/Residential"
+   ]
   },
   {
    "type": "placeholder",
@@ -531,11 +551,12 @@
      "credits": 0.5
     },
     {
-     "code": "EGDT 1040",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1040",
       "EGDT 1020"
-     ],
-     "credits": 3
+     ]
     },
     {
      "code": "EGDT 1610",
@@ -551,22 +572,26 @@
    "label": "Semester 3",
    "items": [
     {
-     "code": "PHYS 1010",
-     "alts": [
+     "label": "Physical Science Distribution",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1010",
       "PHSC 1000"
      ],
-     "credits": 3
+     "text": "Physical Science Distribution (PHYS 1010 or PHSC 1000 recommended)"
     },
     {
      "code": "CMGT 2035",
      "credits": 3
     },
     {
-     "code": "EGDT 2400",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "EGDT 2400",
       "BIT 1010"
      ],
-     "credits": 3
+     "text": "Heavy Civil Track (EGDT 2400) or Commercial/Residential Track (BIT 1010)"
     },
     {
      "code": "CMGT 2890R",
@@ -577,8 +602,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -586,11 +612,13 @@
    "label": "Semester 4",
    "items": [
     {
-     "code": "COMM 2010",
-     "alts": [
+     "label": "Social Sciences Distribution",
+     "credits": 3,
+     "recommended": [
+      "COMM 2010",
       "FIN 1060"
      ],
-     "credits": 3
+     "text": "Social-Behavioral Science Distribution (COMM 2010 or FIN 1060 recommended)"
     },
     {
      "code": "CMGT 2060",
@@ -601,12 +629,13 @@
      "credits": 3
     },
     {
-     "code": "CMGT 1190",
-     "alts": [
+     "label": "CMGT 1190 or CMGT 1220 or CMGT 2810R",
+     "credits": 3,
+     "recommended": [
+      "CMGT 1190",
       "CMGT 1220",
       "CMGT 2810R"
-     ],
-     "credits": 3
+     ]
     },
     {
      "label": "Personal, Professional, Civic Growth",
@@ -626,30 +655,36 @@
      "credits": 3
     },
     {
-     "code": "EGDT 3500",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "EGDT 3500",
       "CMGT 3020"
      ],
-     "credits": 3
+     "text": "Heavy Civil Track (EGDT 3500); Commercial/Residential Track (CMGT 3020)"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ACC 2110",
+     "credits": 3,
      "alts": [
-      "ACC 2120"
+      "ACC 2110",
+      "ACC 2120",
+      "ACC 3000"
      ],
-     "credits": null
+     "options": [
+      [
+       "ACC 2110",
+       "ACC 2120"
+      ],
+      [
+       "ACC 3000"
+      ]
+     ]
     },
     {
-     "code": "ACC 3000",
-     "credits": null
-    },
-    {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     }
    ]
   },
@@ -677,8 +712,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 2
+     "label": "Elective",
+     "credits": 2,
+     "text": "General Elective"
     }
    ]
   },
@@ -698,12 +734,14 @@
      "credits": 3
     },
     {
-     "code": "CMGT 3090",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "CMGT 3090",
       "SURV 3230",
       "CMGT 3160"
      ],
-     "credits": 3
+     "text": "Heavy/Civil Track (CMGT 3090 or SURV 3230) or Commercial/Residential Track (CMGT 3160)"
     },
     {
      "label": "Upper Division Elective (WSOB, TECH, CMGT, or EGDT course not already completed)",
@@ -719,20 +757,23 @@
      "credits": 3
     },
     {
-     "code": "CMGT 3050",
-     "alts": [
+     "label": "Heavy Civil Track (EGDT 1040) or Commercial/Residential Track (EGDT 1020)",
+     "credits": 3,
+     "recommended": [
+      "CMGT 3050",
       "CMGT 4020",
       "TECH 3400"
      ],
-     "credits": 3
+     "text": "Heavy/Civil Track (CMGT 3050) or Commercial/Residential Track (CMGT 4020 or TECH 3400)"
     },
     {
      "label": "Upper Division Elective (WSOB, TECH, CMGT, or EGDT course not already completed)",
      "credits": 3
     },
     {
-     "label": "Biology",
-     "credits": 3
+     "label": "Biology Distribution",
+     "credits": 3,
+     "text": "Biology"
     }
    ]
   }
@@ -807,7 +848,10 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "CMGT 1010"
+   ]
   },
   "CMGT 2060": {
    "title": "Construction Job Site Management",
@@ -902,7 +946,10 @@
    "prereqText": "CMGT 2080 , ACC 3000 (recommended) or ( ACC 2110 ), and University Advanced Standing, or CMGT Instructor/Program approval for non-CMGT majors",
    "prereqs": null,
    "precoreqText": "CMGT 3030",
-   "precoreqs": "CMGT 3030"
+   "precoreqs": "CMGT 3030",
+   "preco": [
+    "CMGT 3030"
+   ]
   },
   "CMGT 3060": {
    "title": "Applied Statics and Strength of Materials",
@@ -922,7 +969,10 @@
    "prereqText": "ACC 3000 (Recommended) or ( ACC 2110 ), and University Advanced Standing",
    "prereqs": null,
    "precoreqText": "CMGT 3030",
-   "precoreqs": "CMGT 3030"
+   "precoreqs": "CMGT 3030",
+   "preco": [
+    "CMGT 3030"
+   ]
   },
   "CMGT 3090": {
    "title": "Principles of Hydrology in Construction Management",
@@ -988,7 +1038,11 @@
      "CMGT 3080",
      "CMGT 4010"
     ]
-   }
+   },
+   "preco": [
+    "CMGT 3080",
+    "CMGT 4010"
+   ]
   },
   "CMGT 4810R": {
    "title": "Internship",
@@ -1104,10 +1158,6 @@
    },
    "prereqNonCourse": true
   },
-  "FIN 1060": {
-   "title": "Personal Finance",
-   "credits": 3
-  },
   "HIST 1700": {
    "title": "American History",
    "credits": 3
@@ -1149,6 +1199,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1201,14 +1252,6 @@
     ]
    },
    "prereqNonCourse": true
-  },
-  "PHSC 1000": {
-   "title": "Survey of Physical Science",
-   "credits": 3
-  },
-  "PHYS 1010": {
-   "title": "Elementary Physics",
-   "credits": 3
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1270,8 +1313,5 @@
    "prereqs": null,
    "prereqNonCourse": true
   }
- },
- "missingCourses": [
-  "COMM 2010"
- ]
+ }
 }

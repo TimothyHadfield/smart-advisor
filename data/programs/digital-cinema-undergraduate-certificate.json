@@ -11,21 +11,42 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1010L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1610",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1610L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 1800L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -39,7 +60,14 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 2410",
    "alts": [],
-   "credits": 3
+   "credits": 2
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "DCPR 2410L",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "placeholder",
@@ -55,15 +83,27 @@
    "items": [
     {
      "code": "DCPR 1610",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 1610L",
+     "credits": 1
     },
     {
      "code": "DCPR 1010",
-     "credits": 3
+     "credits": 1
+    },
+    {
+     "code": "DCPR 1010L",
+     "credits": 2
     },
     {
      "code": "DCPR 1800",
-     "credits": 3
+     "credits": 2
+    },
+    {
+     "code": "DCPR 1800L",
+     "credits": 1
     }
    ]
   },
@@ -73,6 +113,10 @@
     {
      "code": "DCPR 2410",
      "credits": 3
+    },
+    {
+     "code": "DCPR 2410L",
+     "credits": null
     },
     {
      "code": "DCPR 2400",
@@ -94,6 +138,14 @@
     "DCPR 1010L"
    ]
   },
+  "DCPR 1010L": {
+   "title": "Film Production Analysis I Lab",
+   "credits": 2,
+   "coreqText": "DCPR 1010",
+   "coreqs": [
+    "DCPR 1010"
+   ]
+  },
   "DCPR 1610": {
    "title": "Digital Cinema Editing I",
    "credits": 2,
@@ -102,12 +154,28 @@
     "DCPR 1610L"
    ]
   },
+  "DCPR 1610L": {
+   "title": "Digital Cinema Editing I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1610",
+   "coreqs": [
+    "DCPR 1610"
+   ]
+  },
   "DCPR 1800": {
    "title": "Filmmaking I",
    "credits": 2,
    "coreqText": "DCPR 1800L",
    "coreqs": [
     "DCPR 1800L"
+   ]
+  },
+  "DCPR 1800L": {
+   "title": "Filmmaking I Lab",
+   "credits": 1,
+   "coreqText": "DCPR 1800",
+   "coreqs": [
+    "DCPR 1800"
    ]
   },
   "DCPR 2400": {
@@ -129,5 +197,8 @@
     "DCPR 2410L"
    ]
   }
- }
+ },
+ "missingCourses": [
+  "DCPR 2410L"
+ ]
 }

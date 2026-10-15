@@ -75,7 +75,10 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ]
   },
   {
    "type": "placeholder",
@@ -86,19 +89,25 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Humanities ( COMM 1020 recommended)",
-   "credits": 3
+   "label": "Humanities (COMM 1020 recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( COMM 2110 recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (COMM 2110 recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 2110"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Fine Arts (Choose from list: https://www.uvu.edu/catalog/current/policies-requirements/general-education.html )",
+   "label": "Fine Arts (Choose from list: https://www.uvu.edu/catalog/current/policies-requirements/general-education.html)",
    "credits": 3
   },
   {
@@ -110,8 +119,12 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Physical Science ( CHEM 1210 & CHEM 1215 recommended)",
-   "credits": 3
+   "label": "Physical Science (CHEM 1210 & CHEM 1215 recommended)",
+   "credits": 3,
+   "recommended": [
+    "CHEM 1210",
+    "CHEM 1215"
+   ]
   },
   {
    "type": "course",
@@ -333,7 +346,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 7 credits",
+   "label": "CE Elective l: (Select a course from CS (above CS 3060) or ECE 4810R or ECE 3250 or ECE 3350 or (ECE 3780 and ECE 3785))",
    "pick": {
     "credits": 7
    },
@@ -373,7 +386,8 @@
      "codes": [
       "ECE 4810R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -566,12 +580,17 @@
      "credits": 3
     },
     {
-     "label": "GE American Institutions",
-     "credits": 3
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
+     "label": "American Institutions",
+     "credits": 3,
+     "alts": [
+      "HIST 1700"
+     ],
+     "options": [
+      [
+       "HIST 1700"
+      ]
+     ],
+     "text": "GE American Institutions"
     }
    ]
   },
@@ -595,11 +614,12 @@
      "credits": 3
     },
     {
-     "code": "CHEM 1210",
-     "alts": [
+     "label": "Physical Science (CHEM 1210 & CHEM 1215 recommended)",
+     "credits": 3,
+     "recommended": [
+      "CHEM 1210",
       "CHEM 1215"
-     ],
-     "credits": 3
+     ]
     }
    ]
   },
@@ -644,23 +664,27 @@
      "credits": 1
     },
     {
-     "code": "COMM 1020",
-     "credits": 3
+     "label": "Humanities (COMM 1020 recommended)",
+     "credits": 3,
+     "recommended": [
+      "COMM 1020"
+     ]
     },
     {
      "label": "Personal, Professional, and Civic Growth",
      "credits": 3
     },
     {
-     "code": "CS 3060",
-     "alts": [
+     "label": "CE Elective l: (Select a course from CS (above CS 3060) or ECE 4810R or ECE 3250 or ECE 3350 or (ECE 3780 and ECE 3785))",
+     "credits": 4,
+     "recommended": [
+      "CS 3060",
       "ECE 4810R",
       "ECE 3250",
       "ECE 3350",
       "ECE 3780",
       "ECE 3785"
-     ],
-     "credits": 4
+     ]
     }
    ]
   },
@@ -684,12 +708,14 @@
      "credits": 3
     },
     {
-     "label": "GE Biology Elective",
-     "credits": 3
+     "label": "Biology (Choose from list)",
+     "credits": 3,
+     "text": "GE Biology Elective"
     },
     {
-     "label": "GE Fine Arts Elective",
-     "credits": 3
+     "label": "Fine Arts (Choose from list: https://www.uvu.edu/catalog/current/policies-requirements/general-education.html)",
+     "credits": 3,
+     "text": "GE Fine Arts Elective"
     }
    ]
   },
@@ -701,58 +727,28 @@
      "credits": 3
     },
     {
-     "code": "CS 3060",
-     "alts": [
+     "label": "CE Elective II: Select any 3-credit course above CS 3060 or ECE 4780 or (Any of the courses defined for ECE Elective I if you have not taken as ECE Elective I)",
+     "credits": 3,
+     "recommended": [
+      "CS 3060",
       "ECE 4780"
-     ],
-     "credits": 3
+     ]
     },
     {
      "code": "CS 3060",
      "credits": 3
     },
     {
-     "code": "COMM 2110",
-     "credits": 3
+     "label": "Social/Behavioral Science (COMM 2110 recommended)",
+     "credits": 3,
+     "recommended": [
+      "COMM 2110"
+     ]
     }
    ]
   }
  ],
  "courses": {
-  "CHEM 1210": {
-   "title": "Principles of Chemistry I",
-   "credits": 4,
-   "prereqText": "MATH 1080 , MATH 1050 , MATH 1055 or any higher MATH course with a C- or better, or appropriate placement scores for MATH 1060 or higher. Also, it is highly recommended to have prior chemistry experience in high school or in CHEM 1010",
-   "prereqs": {
-    "or": [
-     "MATH 1080",
-     "MATH 1050",
-     "MATH 1055",
-     "MATH 1060"
-    ]
-   },
-   "prereqNonCourse": true,
-   "coreqText": "CHEM 1215",
-   "coreqs": [
-    "CHEM 1215"
-   ]
-  },
-  "CHEM 1215": {
-   "title": "Principles of Chemistry I Laboratory",
-   "credits": 1,
-   "coreqText": "CHEM 1210",
-   "coreqs": [
-    "CHEM 1210"
-   ]
-  },
-  "COMM 1020": {
-   "title": "Public Speaking",
-   "credits": 3
-  },
-  "COMM 2110": {
-   "title": "Interpersonal Communication",
-   "credits": 3
-  },
   "CS 1400": {
    "title": "Fundamentals of Programming",
    "credits": 3,
@@ -1152,22 +1148,6 @@
     ]
    },
    "prereqNonCourse": true
-  },
-  "ECE 3785": {
-   "title": "Communication Systems and Circuits Lab",
-   "credits": 1,
-   "prereqText": "ECE 3770 , ECE 3710 , and University Advanced Standing",
-   "prereqs": {
-    "and": [
-     "ECE 3770",
-     "ECE 3710"
-    ]
-   },
-   "prereqNonCourse": true,
-   "coreqText": "ECE 3780",
-   "coreqs": [
-    "ECE 3780"
-   ]
   },
   "ECE 4250": {
    "title": "Power Systems Engineering",

@@ -45,7 +45,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Elective",
+   "label": "Choose 6 credits",
    "pick": {
     "credits": 6
    },
@@ -67,13 +67,15 @@
      "codes": [
       "GEOG 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "GEOG 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -109,7 +111,8 @@
    "text": "Complete 6 credits from the following courses:",
    "notes": [
     "Or any courses with the following prefix: GEOG, SURV, GIS, EGDT subject to department approval"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [

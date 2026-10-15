@@ -187,7 +187,14 @@
      "credits": 3
     }
    ],
-   "text": "Select 9 Credits from the following list"
+   "text": "Select 9 Credits from the following list",
+   "notes": [
+    "To receive a Finance Graduate Certificate, complete FIN 6130 , FIN 6160 and FIN 6170",
+    "To receive a Finance Graduate Certificate, complete FIN 6130 , FIN 6160 and FIN 6170: To receive a Tech Management Graduate Certificate, complete MGMT 6440 , MGMT 6470 and MKTG 6400",
+    "To receive a Tech Management Graduate Certificate, complete MGMT 6440 , MGMT 6470 and MKTG 6400: To receive a Management Graduate Certificate, complete MGMT 6740 , MGMT 6510 and MGMT 6760",
+    "To receive a Management Graduate Certificate, complete MGMT 6740 , MGMT 6510 and MGMT 6760: To receive a Marketing Graduate Certificate, complete MKTG 6620 , MKTG 6600 , MKTG 6640 and MKTG 6660",
+    "To receive a Marketing Graduate Certificate, complete MKTG 6620 , MKTG 6600 , MKTG 6640 and MKTG 6660: To receive a Healthcare Management Graduate Certificate, complete MGMT 6300 , MGMT 6310 and MGMT 6320"
+   ]
   }
  ],
  "gradPlan": [
@@ -418,7 +425,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MGMT 6800",
-   "precoreqs": "MGMT 6800"
+   "precoreqs": "MGMT 6800",
+   "preco": [
+    "MGMT 6800"
+   ]
   },
   "MKTG 6400": {
    "title": "Technology Marketing and Customer Experience",

@@ -84,7 +84,8 @@
    "notes": [
     "any Intelligence Studies (INTS) courses",
     "or other course approved by department advisor or director."
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -183,7 +184,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "NSS 2010",
-   "precoreqs": "NSS 2010"
+   "precoreqs": "NSS 2010",
+   "preco": [
+    "NSS 2010"
+   ]
   },
   "NSS 4300": {
    "title": "Intelligence Cycle and Collections",

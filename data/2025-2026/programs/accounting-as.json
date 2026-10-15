@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,18 +48,21 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
    "text": "Complete one of the following:",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
-   ]
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "FINE ART",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -96,7 +100,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -202,7 +207,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "HUMANITIES",
+   "label": "PERSONAL, PROFESSIONAL, and CIVIC GROWTH",
    "pick": {
     "credits": 3
    },
@@ -253,8 +258,9 @@
      "credits": 3
     },
     {
-     "label": "FINE ART",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ART"
     },
     {
      "label": "General Elective",
@@ -262,19 +268,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     }
    ]
   },
@@ -294,12 +304,14 @@
      "credits": 3
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
     },
     {
-     "label": "PHYSICAL SCIENCE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "PHYSICAL SCIENCE"
     }
    ]
   },
@@ -330,8 +342,9 @@
      "credits": 3
     },
     {
-     "label": "BIOLOGY",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "BIOLOGY"
     }
    ]
   },
@@ -351,8 +364,9 @@
      "credits": 3
     },
     {
-     "label": "SOCIAL SCIENCE",
-     "credits": 3
+     "label": "Social Science",
+     "credits": 3,
+     "text": "SOCIAL SCIENCE"
     },
     {
      "label": "PERSONAL, PROFESSIONAL, and CIVIC GROWTH",
@@ -384,7 +398,10 @@
    "prereqText": "ACC 2110",
    "prereqs": "ACC 2110",
    "precoreqText": "ACC 2120",
-   "precoreqs": "ACC 2120"
+   "precoreqs": "ACC 2120",
+   "preco": [
+    "ACC 2120"
+   ]
   },
   "ACC 2500": {
    "title": "Data Analytics in Accounting",
@@ -397,7 +414,10 @@
     ]
    },
    "precoreqText": "ACC 2120",
-   "precoreqs": "ACC 2120"
+   "precoreqs": "ACC 2120",
+   "preco": [
+    "ACC 2120"
+   ]
   },
   "ACC 2600": {
    "title": "Business Law and Ethics",

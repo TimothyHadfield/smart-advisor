@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "American Institutions",
+   "label": "Quantitative Requirements",
    "pick": {
     "count": 1
    },
@@ -35,13 +35,15 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
       "MAT 1035"
      ],
-     "credits": 6
+     "credits": 6,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -68,12 +71,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Biological Science",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -105,7 +109,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -198,7 +206,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Quantitative Requirements",
+   "label": "POLS Concentration",
    "pick": {
     "credits": 9
    },
@@ -263,7 +271,7 @@
   {
    "type": "choice",
    "area": "Political Science Requirements",
-   "label": "POLS Concentration",
+   "label": "Choose 12 credits",
    "pick": {
     "credits": 12
    },
@@ -363,7 +371,8 @@
      "codes": [
       "POLS 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     }
    ],
    "text": "Complete 12 credits from the following courses:"
@@ -442,16 +451,18 @@
      "credits": 3
     },
     {
-     "label": "Biological Science",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biological Science"
     },
     {
      "label": "Physical Science",
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Sciences",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Sciences"
     },
     {
      "code": "POLS 2300",
@@ -680,6 +691,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

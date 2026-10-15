@@ -167,12 +167,15 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following course/lab combinations:"
+   "text": "Complete one of the following course/lab combinations:",
+   "notes": [
+    "Minimum grade of C- required in these courses."
+   ]
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "CS Elective",
    "pick": {
     "count": 1
    },
@@ -309,7 +312,7 @@
   {
    "type": "choice",
    "area": "Recommended Tracks",
-   "label": "CS Elective",
+   "label": "Choose 1 track",
    "pick": {
     "credits": 33
    },
@@ -533,80 +536,86 @@
       "CS 2700"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "CS 3530"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "CS 3540"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "CS 3800"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "CS 3820"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "CS 4770"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "MATH 1220"
      ],
      "credits": 4,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "MATH 2210"
      ],
      "credits": 4,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     },
     {
      "codes": [
       "MATH 3640"
      ],
      "credits": 3,
-     "section": "Complete 9 hours from the following:"
+     "section": "Artificial Intelligence Track"
     }
    ],
    "text": "Complete 33 credits from the following recommended tracks. Minimum grade of C- required in track courses.",
    "notes": [
+    "CS Track",
     "CS Track: Complete 18 credits from CS 2700 , ECE 4850 , any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.)",
     "CS Track: Complete 3 credits of Senior Elective Requirements; R courses are not approved for this credit.",
+    "CS Track: Full Stack Web Development Track",
     "Full Stack Web Development Track: Complete 12 credits from CS 2700 , ECE 4850 , or any CS 3000 or 4000 level course not already required.",
+    "Full Stack Web Development Track: Secure Computing Track",
     "Secure Computing Track: Complete 12 credits from the following. Minimum grade of C- required in these courses.",
     "Secure Computing Track: Any CS 3000 0r 4000 level course not already required",
-    "Complete 9 hours from the following:: Any CS 3000+ course not already required."
+    "Secure Computing Track: Artificial Intelligence Track",
+    "Artificial Intelligence Track: Complete 9 hours from the following:",
+    "Artificial Intelligence Track: Complete 9 hours from the following:",
+    "Artificial Intelligence Track: Any CS 3000+ course not already required."
    ],
+   "open": true,
    "tracks": [
     "CS Track",
     "Full Stack Web Development Track",
     "Secure Computing Track",
-    "Artificial Intelligence Track",
-    "Complete 9 hours from the following:"
+    "Artificial Intelligence Track"
    ]
   }
  ],
@@ -829,17 +838,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",

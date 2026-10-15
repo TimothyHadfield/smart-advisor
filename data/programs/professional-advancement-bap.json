@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Quantitative Literacy",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -193,34 +198,45 @@
       "ENGL 1005"
      ],
      "credits": 4
-    },
+    }
+   ],
+   "text": "Complete 3 credits from the following (Developing Academic Independence):"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 9 credits",
+   "pick": {
+    "credits": 9
+   },
+   "credits": 9,
+   "options": [
     {
      "codes": [
       "SLSS 1010R"
      ],
      "credits": 1,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     "crMax": 3
     },
     {
      "codes": [
       "SLSS 1030R"
      ],
      "credits": 1,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     "crMax": 4
     },
     {
      "codes": [
       "SLSS 1040R"
      ],
      "credits": 1,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     "crMax": 4
     },
     {
      "codes": [
       "SLSS 1100"
      ],
-     "credits": 3,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     "credits": 3
     },
     {
      "codes": [
@@ -229,81 +245,83 @@
      "credits": 3,
      "alts": [
       "SLSS 1200H"
-     ],
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     ]
     },
     {
      "codes": [
       "SLSS 2100"
      ],
-     "credits": 3,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+     "credits": 3
     },
     {
      "codes": [
       "SLSS 2500"
      ],
-     "credits": 3,
-     "section": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
-    },
+     "credits": 3
+    }
+   ],
+   "text": "Complete 9 credits from the following (Building Knowledge for Self-Leadership)"
+  },
+  {
+   "type": "choice",
+   "area": "Discipline Core Requirements",
+   "label": "Choose 6 credits",
+   "pick": {
+    "credits": 6
+   },
+   "credits": 6,
+   "options": [
     {
      "codes": [
       "SLSS 1120G"
      ],
-     "credits": 3,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 3
     },
     {
      "codes": [
       "SLSS 2000G"
      ],
-     "credits": 3,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 3
     },
     {
      "codes": [
       "SLSS 2300"
      ],
-     "credits": 3,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 3
     },
     {
      "codes": [
       "SLSS 2400R"
      ],
-     "credits": 2,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 2
     },
     {
      "codes": [
       "SLSS 2810R"
      ],
      "credits": 1,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "crMax": 8
     },
     {
      "codes": [
       "UVST 1100"
      ],
-     "credits": 3,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 3
     },
     {
      "codes": [
       "UVST 2890R"
      ],
-     "credits": 1,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 1
     },
     {
      "codes": [
       "UVST 2900R"
      ],
-     "credits": 1,
-     "section": "Complete 6 credits from the following (Learning Experientially):"
+     "credits": 1
     }
    ],
-   "text": "Complete 3 credits from the following (Developing Academic Independence):"
+   "text": "Complete 6 credits from the following (Learning Experientially):"
   },
   {
    "type": "choice",
@@ -371,6 +389,7 @@
       "UVST 4810R"
      ],
      "credits": 1,
+     "crMax": 8,
      "alts": [
       "UVST 4930"
      ]
@@ -585,6 +604,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

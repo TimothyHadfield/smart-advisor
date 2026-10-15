@@ -70,7 +70,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -379,13 +380,15 @@
      "codes": [
       "CHEM 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "CHEM 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -403,13 +406,15 @@
      "codes": [
       "CHEM 4960R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
       "CHEM 4990R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -587,8 +592,9 @@
      "credits": 1
     },
     {
-     "label": "Chemistry Electives",
-     "credits": 5
+     "label": "Chemistry Electives (23 credits) from the following",
+     "credits": 5,
+     "text": "Chemistry Electives"
     }
    ]
   },
@@ -608,8 +614,9 @@
      "credits": 1
     },
     {
-     "label": "Chemistry Electives",
-     "credits": 9
+     "label": "Chemistry Electives (23 credits) from the following",
+     "credits": 9,
+     "text": "Chemistry Electives"
     }
    ]
   },
@@ -633,8 +640,9 @@
      "credits": 1
     },
     {
-     "label": "Chemistry Electives",
-     "credits": 5
+     "label": "Chemistry Electives (23 credits) from the following",
+     "credits": 5,
+     "text": "Chemistry Electives"
     }
    ]
   },
@@ -666,8 +674,9 @@
      "credits": 2
     },
     {
-     "label": "Chemistry Electives",
-     "credits": 4
+     "label": "Chemistry Electives (23 credits) from the following",
+     "credits": 4,
+     "text": "Chemistry Electives"
     }
    ]
   }
@@ -679,11 +688,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -919,7 +936,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 3000",
-   "precoreqs": "CHEM 3000"
+   "precoreqs": "CHEM 3000",
+   "preco": [
+    "CHEM 3000"
+   ]
   },
   "CHEM 3115": {
    "title": "Advanced Inorganic Chemistry Lab",
@@ -952,7 +972,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CHEM 2320",
-   "precoreqs": "CHEM 2320"
+   "precoreqs": "CHEM 2320",
+   "preco": [
+    "CHEM 2320"
+   ]
   },
   "CHEM 3605": {
    "title": "Biological Chemistry Lab",

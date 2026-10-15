@@ -117,7 +117,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -350,12 +351,14 @@
      "credits": 4
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
-     "label": "Social/Behavior Science-SS",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavior Science-SS"
     },
     {
      "code": "SPAN 3050",
@@ -370,16 +373,19 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Humanities-HH",
-     "credits": 3
+     "label": "Humanities Distribution (non-language courses only)",
+     "credits": 3,
+     "text": "Humanities-HH"
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "label": "Fine Art-FF",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Art-FF"
     },
     {
      "label": "General Elective",
@@ -395,20 +401,26 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Personal, Professional & Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional & Civic Growth"
     },
     {
-     "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "SPAN 3620",
-     "credits": null
-    },
-    {
-     "code": "SPAN 3640",
-     "credits": null
+     "label": "Choose one of the following:",
+     "credits": 3,
+     "alts": [
+      "SPAN 3620",
+      "SPAN 3640"
+     ],
+     "options": [
+      [
+       "SPAN 3620"
+      ],
+      [
+       "SPAN 3640"
+      ]
+     ],
+     "text": "Complete one of the following:"
     },
     {
      "code": "SPAN 3510G",
@@ -435,16 +447,21 @@
      "credits": 3
     },
     {
-     "label": "Complete one of the following;",
-     "credits": 3
-    },
-    {
-     "code": "SPAN 3620",
-     "credits": null
-    },
-    {
-     "code": "SPAN 3640",
-     "credits": null
+     "label": "Choose one of the following:",
+     "credits": 3,
+     "alts": [
+      "SPAN 3620",
+      "SPAN 3640"
+     ],
+     "options": [
+      [
+       "SPAN 3620"
+      ],
+      [
+       "SPAN 3640"
+      ]
+     ],
+     "text": "Complete one of the following;"
     },
     {
      "label": "SPAN Elective",
@@ -684,6 +701,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -100,7 +104,10 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHIL 2050G"
+   ]
   },
   {
    "type": "placeholder",
@@ -282,7 +289,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -300,16 +307,23 @@
       "MATH 1210"
      ],
      "credits": 7
-    },
-    {
-     "codes": [
-      "MICR 3450",
-      "MICR 3455"
-     ],
-     "credits": 4
     }
    ],
    "text": "Complete one of the following:"
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 3450",
+   "alts": [],
+   "credits": 3
+  },
+  {
+   "type": "course",
+   "area": "Discipline Core Requirements",
+   "code": "MICR 3455",
+   "alts": [],
+   "credits": 1
   },
   {
    "type": "course",
@@ -355,8 +369,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "code": "BOT 2100",
@@ -380,18 +395,21 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 4
-    },
-    {
-     "code": "STAT 2040",
-     "credits": null
-    },
-    {
-     "code": "MATH 1060",
+     "credits": 4,
      "alts": [
+      "STAT 2040",
+      "MATH 1060",
       "MATH 1210"
      ],
-     "credits": null
+     "options": [
+      [
+       "STAT 2040"
+      ],
+      [
+       "MATH 1060",
+       "MATH 1210"
+      ]
+     ]
     },
     {
      "code": "ENGL 2010",
@@ -577,11 +595,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -593,7 +619,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -1032,7 +1061,10 @@
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
    "prereqs": null,
    "precoreqText": "MICR 3450",
-   "precoreqs": "MICR 3450"
+   "precoreqs": "MICR 3450",
+   "preco": [
+    "MICR 3450"
+   ]
   },
   "PHYS 2010": {
    "title": "College Physics I",

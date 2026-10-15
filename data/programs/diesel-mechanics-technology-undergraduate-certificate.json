@@ -94,7 +94,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "Any higher MAT or MATH course"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -156,8 +157,9 @@
      "credits": 3
     },
     {
-     "label": "Social Science",
-     "credits": 2
+     "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
+     "credits": 2,
+     "text": "Social Science"
     }
    ]
   }
@@ -175,7 +177,10 @@
     "DMT 1110L"
    ],
    "precoreqText": "DMT 1005",
-   "precoreqs": "DMT 1005"
+   "precoreqs": "DMT 1005",
+   "preco": [
+    "DMT 1005"
+   ]
   },
   "DMT 1110L": {
    "title": "Diesel Engine Overhaul Lab",
@@ -185,7 +190,10 @@
     "DMT 1110"
    ],
    "precoreqText": "DMT 1005",
-   "precoreqs": "DMT 1005"
+   "precoreqs": "DMT 1005",
+   "preco": [
+    "DMT 1005"
+   ]
   },
   "DMT 1120": {
    "title": "Diesel Engine Operation Tune Up",
@@ -197,7 +205,12 @@
      "DMT 1110L",
      "DMT 1120L"
     ]
-   }
+   },
+   "preco": [
+    "DMT 1110",
+    "DMT 1110L",
+    "DMT 1120L"
+   ]
   },
   "DMT 1120L": {
    "title": "Diesel Engine Operation Tune up Lab",

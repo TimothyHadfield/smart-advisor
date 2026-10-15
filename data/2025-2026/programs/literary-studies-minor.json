@@ -276,8 +276,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Lower-division Literature",
-     "credits": 3
+     "label": "Lower-division Literature (Complete ONE of the following):",
+     "credits": 3,
+     "text": "Lower-division Literature"
     }
    ]
   },
@@ -294,8 +295,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Upper-division Literature",
-     "credits": 3
+     "label": "Upper-division Literature (Complete FOUR of the following):",
+     "credits": 3,
+     "text": "Upper-division Literature"
     }
    ]
   },
@@ -303,8 +305,9 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Upper-division Literature",
-     "credits": 3
+     "label": "Upper-division Literature (Complete FOUR of the following):",
+     "credits": 3,
+     "text": "Upper-division Literature"
     }
    ]
   },
@@ -312,8 +315,9 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Upper-division Literature",
-     "credits": 3
+     "label": "Upper-division Literature (Complete FOUR of the following):",
+     "credits": 3,
+     "text": "Upper-division Literature"
     }
    ]
   },
@@ -321,8 +325,9 @@
    "label": "Semester 8",
    "items": [
     {
-     "label": "Upper-division Literature",
-     "credits": 3
+     "label": "Upper-division Literature (Complete FOUR of the following):",
+     "credits": 3,
+     "text": "Upper-division Literature"
     }
    ]
   }
@@ -442,13 +447,19 @@
    "title": "Literary History I",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 2870": {
    "title": "Literary History II",
    "credits": 3,
    "precoreqText": "ENGL 2010",
-   "precoreqs": "ENGL 2010"
+   "precoreqs": "ENGL 2010",
+   "preco": [
+    "ENGL 2010"
+   ]
   },
   "ENGL 3510": {
    "title": "Early American Literature",
@@ -673,7 +684,10 @@
    "prereqs": "ENGL 2600",
    "prereqNonCourse": true,
    "precoreqText": "ENGL 3090",
-   "precoreqs": "ENGL 3090"
+   "precoreqs": "ENGL 3090",
+   "preco": [
+    "ENGL 3090"
+   ]
   },
   "ENGL 4250": {
    "title": "Adolescent Literature",

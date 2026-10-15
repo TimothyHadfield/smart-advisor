@@ -118,7 +118,10 @@
     "ESEC 3225"
    ],
    "precoreqText": "ESEC 3210",
-   "precoreqs": "ESEC 3210"
+   "precoreqs": "ESEC 3210",
+   "preco": [
+    "ESEC 3210"
+   ]
   },
   "ESEC 3225": {
    "title": "Paramedic II Lab-Cardiac and Respiratory Emergencies",
@@ -142,7 +145,10 @@
     "ESEC 3235"
    ],
    "precoreqText": "ESEC 3210",
-   "precoreqs": "ESEC 3210"
+   "precoreqs": "ESEC 3210",
+   "preco": [
+    "ESEC 3210"
+   ]
   },
   "ESEC 3235": {
    "title": "Paramedic III Lab-Trauma Emergencies",
@@ -166,7 +172,10 @@
     "ESEC 3245"
    ],
    "precoreqText": "ESEC 3210",
-   "precoreqs": "ESEC 3210"
+   "precoreqs": "ESEC 3210",
+   "preco": [
+    "ESEC 3210"
+   ]
   },
   "ESEC 3245": {
    "title": "Paramedic IV Lab-Medical Emergencies",
@@ -190,7 +199,10 @@
     "ESEC 3255"
    ],
    "precoreqText": "ESEC 3210",
-   "precoreqs": "ESEC 3210"
+   "precoreqs": "ESEC 3210",
+   "preco": [
+    "ESEC 3210"
+   ]
   },
   "ESEC 3255": {
    "title": "Paramedic V Lab-Obstetric and Pediatric Emergencies",
@@ -210,7 +222,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESEC 3210 , 3220 , 3225 , 3230 , 3235 , 3240 , 3245 , 3250 , 3255 and successful first-semester faculty evaluations. These evaluations will assess affective and effective domains, ensuring that students meet the behavioral and technical competencies required by the CoAEMSP accreditation standards prior to entering clinical, internship, and Capstone phases.",
-   "precoreqs": "ESEC 3210"
+   "precoreqs": "ESEC 3210",
+   "preco": [
+    "ESEC 3210"
+   ]
   },
   "ESEC 4220": {
    "title": "Paramedic VII-Clinical Internship Hospital and Field Phase I and II",
@@ -248,7 +263,11 @@
      "ESEC 4210",
      "ESEC 4220"
     ]
-   }
+   },
+   "preco": [
+    "ESEC 4210",
+    "ESEC 4220"
+   ]
   },
   "ESEC 4240": {
    "title": "Paramedic Capstone",
@@ -275,7 +294,12 @@
      "ESEC 4220",
      "ESEC 4230"
     ]
-   }
+   },
+   "preco": [
+    "ESEC 4210",
+    "ESEC 4220",
+    "ESEC 4230"
+   ]
   }
  }
 }

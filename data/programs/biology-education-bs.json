@@ -79,7 +79,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -145,7 +149,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following Combinations:",
    "pick": {
     "count": 1
    },
@@ -227,7 +231,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -269,7 +274,8 @@
      "codes": [
       "BIOL 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -702,53 +708,54 @@
    "items": [
     {
      "label": "Complete one of the following Combinations:",
-     "credits": 4
-    },
-    {
-     "code": "ZOOL 2320",
+     "credits": 4,
      "alts": [
-      "ZOOL 2325"
+      "ZOOL 2320",
+      "ZOOL 2325",
+      "ZOOL 2420",
+      "ZOOL 2425",
+      "ZOOL 3100",
+      "ZOOL 3105",
+      "ZOOL 3200"
      ],
-     "credits": null
-    },
-    {
-     "code": "ZOOL 2420",
-     "alts": [
-      "ZOOL 2425"
-     ],
-     "credits": null
-    },
-    {
-     "code": "ZOOL 3100",
-     "alts": [
-      "ZOOL 3105"
-     ],
-     "credits": null
-    },
-    {
-     "code": "ZOOL 3200",
-     "alts": [
-      "ZOOL 3105"
-     ],
-     "credits": null
+     "options": [
+      [
+       "ZOOL 2320",
+       "ZOOL 2325"
+      ],
+      [
+       "ZOOL 2420",
+       "ZOOL 2425"
+      ],
+      [
+       "ZOOL 3100",
+       "ZOOL 3105"
+      ],
+      [
+       "ZOOL 3200",
+       "ZOOL 3105"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following Combinations:",
-     "credits": 4
-    },
-    {
-     "code": "MICR 2060",
+     "credits": 4,
      "alts": [
-      "MICR 2065"
-     ],
-     "credits": null
-    },
-    {
-     "code": "BIOL 3400",
-     "alts": [
+      "MICR 2060",
+      "MICR 2065",
+      "BIOL 3400",
       "BIOL 3405"
      ],
-     "credits": null
+     "options": [
+      [
+       "MICR 2060",
+       "MICR 2065"
+      ],
+      [
+       "BIOL 3400",
+       "BIOL 3405"
+      ]
+     ]
     },
     {
      "code": "SCIE 2400",
@@ -760,19 +767,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "BOT 2050",
-     "credits": null
-    },
-    {
-     "code": "BOT 2100",
-     "credits": null
-    },
-    {
-     "code": "BOT 4300",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "BOT 2050",
+      "BOT 2100",
+      "BOT 4300"
+     ],
+     "options": [
+      [
+       "BOT 2050"
+      ],
+      [
+       "BOT 2100"
+      ],
+      [
+       "BOT 4300"
+      ]
+     ]
     }
    ]
   },
@@ -884,11 +895,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",
@@ -900,7 +919,10 @@
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "BIOL 1620": {
    "title": "College Biology II",
@@ -1001,7 +1023,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "BIOL 3400",
-   "precoreqs": "BIOL 3400"
+   "precoreqs": "BIOL 3400",
+   "preco": [
+    "BIOL 3400"
+   ]
   },
   "BIOL 3500": {
    "title": "Genetics",
@@ -1515,7 +1540,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "BIOL 4455",
-   "precoreqs": "BIOL 4455"
+   "precoreqs": "BIOL 4455",
+   "preco": [
+    "BIOL 4455"
+   ]
   },
   "MICR 4500": {
    "title": "Virology",
@@ -1580,7 +1608,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",

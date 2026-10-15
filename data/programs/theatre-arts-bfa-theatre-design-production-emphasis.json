@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Biology Distribution Course",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,12 +44,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Social and Behavioral Science Course",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -81,7 +82,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -93,7 +95,10 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "PHYS 1700"
+   ]
   },
   {
    "type": "placeholder",
@@ -203,7 +208,13 @@
    "type": "placeholder",
    "area": "Core Requirements: Free Elective Requirement",
    "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
-   "credits": 2
+   "credits": 2,
+   "notes": [
+    "Successful completion of at least two Writing Enriched courses is required for graduation."
+   ],
+   "rules": [
+    "Successful completion of at least two Writing Enriched courses is required for graduation."
+   ]
   },
   {
    "type": "course",
@@ -294,7 +305,7 @@
   {
    "type": "choice",
    "area": "EMPHASIS ELECTIVE REQUIREMENT:",
-   "label": "Choose 9 credits",
+   "label": "Emphasis Elective Course (THEA 2570R recommended)",
    "pick": {
     "credits": 9
    },
@@ -379,7 +390,8 @@
      "codes": [
       "THEA 4510R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -391,19 +403,22 @@
      "codes": [
       "THEA 4540R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "THEA 4570R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "THEA 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 9 credits from the following:"
@@ -411,9 +426,10 @@
   {
    "type": "choice",
    "area": "TRACK REQUIREMENTS:",
-   "label": "Choose 24 credits",
+   "label": "Emphasis Track Course (THEA 4570R recommended)",
    "pick": {
-    "credits": 24
+    "credits": 24,
+    "tracks": 1
    },
    "credits": 24,
    "options": [
@@ -477,8 +493,10 @@
      "codes": [
       "THEA 4570R"
      ],
-     "credits": 1,
-     "section": "COSTUME TRACK"
+     "credits": 2,
+     "section": "COSTUME TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -540,8 +558,10 @@
      "codes": [
       "THEA 4570R"
      ],
-     "credits": 1,
-     "section": "SCENERY TRACK"
+     "credits": 2,
+     "section": "SCENERY TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -603,8 +623,10 @@
      "codes": [
       "THEA 4570R"
      ],
-     "credits": 1,
-     "section": "LIGHTING TRACK"
+     "credits": 2,
+     "section": "LIGHTING TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     },
     {
      "codes": [
@@ -764,14 +786,22 @@
      "codes": [
       "THEA 4570R"
      ],
-     "credits": 1,
-     "section": "SOUND TRACK"
+     "credits": 2,
+     "section": "SOUND TRACK",
+     "repeat": 2,
+     "creditsEach": 1
     }
    ],
    "text": "Complete 24 credits from one of the following tracks",
    "notes": [
+    "COSTUME TRACK",
+    "COSTUME TRACK: SCENERY TRACK",
+    "SCENERY TRACK: LIGHTING TRACK",
+    "LIGHTING TRACK: TECHNICAL DIRECTION TRACK",
     "TECHNICAL DIRECTION TRACK: 3 Elective Credits",
+    "TECHNICAL DIRECTION TRACK: STAGE MANAGEMENT TRACK",
     "STAGE MANAGEMENT TRACK: 2 Elective Credits",
+    "STAGE MANAGEMENT TRACK: SOUND TRACK",
     "SOUND TRACK: 6 Elective Credits"
    ],
    "tracks": [
@@ -820,8 +850,9 @@
      "credits": 3
     },
     {
-     "label": "Emphasis Elective Course",
-     "credits": 3
+     "label": "Emphasis Elective Course (THEA 2570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Elective Course"
     }
    ]
   },
@@ -878,8 +909,9 @@
      "credits": 3
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     }
    ]
   },
@@ -920,12 +952,14 @@
      "credits": 4
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     },
     {
      "label": "Personal, Professional, & Civic Growth Distribution",
@@ -937,28 +971,35 @@
    "label": "Semester 6",
    "items": [
     {
-     "label": "Biology Distribution Course",
-     "credits": 3
+     "label": "Biology Distribution",
+     "credits": 3,
+     "text": "Biology Distribution Course"
     },
     {
-     "label": "Social and Behavioral Science Course",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social and Behavioral Science Course"
     },
     {
      "code": "THEA 3722",
      "credits": 3
     },
     {
-     "label": "Emphasis Elective Course",
-     "credits": 2
+     "label": "Emphasis Elective Course (THEA 2570R recommended)",
+     "credits": 2,
+     "text": "Emphasis Elective Course"
     },
     {
-     "code": "THEA 2570R",
-     "credits": 1
+     "label": "Emphasis Elective Course (THEA 2570R recommended)",
+     "credits": 1,
+     "recommended": [
+      "THEA 2570R"
+     ]
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     }
    ]
   },
@@ -978,24 +1019,31 @@
      "credits": 1
     },
     {
-     "label": "Emphasis Elective Course",
-     "credits": 3
+     "label": "Emphasis Elective Course (THEA 2570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Elective Course"
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 1
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 1,
+     "text": "Emphasis Track Course"
     },
     {
-     "code": "THEA 4570R",
-     "credits": 1
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 1,
+     "recommended": [
+      "THEA 4570R"
+     ]
     },
     {
-     "label": "Free Elective course",
-     "credits": 3
+     "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
+     "credits": 3,
+     "text": "Free Elective course"
     }
    ]
   },
@@ -1011,24 +1059,31 @@
      "credits": 3
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     },
     {
-     "label": "Emphasis Track Course",
-     "credits": 3
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 3,
+     "text": "Emphasis Track Course"
     },
     {
-     "code": "THEA 4570R",
-     "credits": 1
+     "label": "Emphasis Track Course (THEA 4570R recommended)",
+     "credits": 1,
+     "recommended": [
+      "THEA 4570R"
+     ],
+     "text": "Emphasis Track Course (THEA 4570R Recommended)"
     },
     {
      "label": "Performing Arts Elective course",
      "credits": 4
     },
     {
-     "label": "Free Elective course",
-     "credits": 1
+     "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
+     "credits": 1,
+     "text": "Free Elective course"
     }
    ]
   }
@@ -1120,6 +1175,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1168,13 +1224,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   },
   "THEA 1590R": {
    "title": "Production Practicum for Stage and Screen I",
@@ -1194,7 +1256,12 @@
      "THEA 1514",
      "THEA 2204"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2204"
+   ]
   },
   "THEA 2204": {
    "title": "Costume Construction I Lab",
@@ -1206,7 +1273,12 @@
      "THEA 1514",
      "THEA 2203"
     ]
-   }
+   },
+   "preco": [
+    "THEA 1513",
+    "THEA 1514",
+    "THEA 2203"
+   ]
   },
   "THEA 2513": {
    "title": "Introduction to Design for Stage and Screen",
@@ -1219,7 +1291,10 @@
     ]
    },
    "precoreqText": "THEA 2514",
-   "precoreqs": "THEA 2514"
+   "precoreqs": "THEA 2514",
+   "preco": [
+    "THEA 2514"
+   ]
   },
   "THEA 2514": {
    "title": "Introduction to Design for Stage and Screen Lab",
@@ -1227,7 +1302,10 @@
    "prereqText": "THEA 1513",
    "prereqs": "THEA 1513",
    "precoreqText": "THEA 2513",
-   "precoreqs": "THEA 2513"
+   "precoreqs": "THEA 2513",
+   "preco": [
+    "THEA 2513"
+   ]
   },
   "THEA 2515": {
    "title": "Rendering for Theatre",
@@ -1427,7 +1505,10 @@
    "prereqs": "THEA 3521",
    "prereqNonCourse": true,
    "precoreqText": "THEA 2574",
-   "precoreqs": "THEA 2574"
+   "precoreqs": "THEA 2574",
+   "preco": [
+    "THEA 2574"
+   ]
   },
   "THEA 4535": {
    "title": "Multimedia Design for Stage",
@@ -1531,5 +1612,7 @@
    "prereqs": null,
    "prereqNonCourse": true
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio."
 }

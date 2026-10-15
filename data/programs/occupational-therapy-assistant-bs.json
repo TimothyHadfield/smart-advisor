@@ -110,7 +110,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following American Institution courses:"
+   "text": "Complete one of the following American Institution courses:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -386,8 +387,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Complete one Fine Arts course",
+     "credits": 3,
+     "text": "Fine Arts"
     }
    ]
   },
@@ -404,10 +406,11 @@
     },
     {
      "code": "BIOL 1610",
-     "alts": [
-      "BIOL 1615"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "BIOL 1615",
+     "credits": 1
     },
     {
      "code": "ANTH 1010G",
@@ -424,17 +427,19 @@
     },
     {
      "code": "CHEM 1210",
-     "alts": [
-      "CHEM 1215"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "CHEM 1215",
+     "credits": 1
     },
     {
      "code": "ZOOL 2320",
-     "alts": [
-      "ZOOL 2325"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2325",
+     "credits": 1
     },
     {
      "code": "PSY 1100",
@@ -447,10 +452,11 @@
    "items": [
     {
      "code": "ZOOL 2420",
-     "alts": [
-      "ZOOL 2425"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "ZOOL 2425",
+     "credits": 1
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -479,17 +485,19 @@
     },
     {
      "code": "OT 3100",
-     "alts": [
-      "OT 3105"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "OT 3105",
+     "credits": 1
     },
     {
      "code": "OT 3200",
-     "alts": [
-      "OT 3205"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "OT 3205",
+     "credits": 1
     },
     {
      "code": "OT 3300",
@@ -506,10 +514,11 @@
    "items": [
     {
      "code": "OT 3400",
-     "alts": [
-      "OT 3405"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "OT 3405",
+     "credits": 1
     },
     {
      "code": "OT 3500",
@@ -534,17 +543,19 @@
    "items": [
     {
      "code": "OT 3800",
-     "alts": [
-      "OT 3805"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "OT 3805",
+     "credits": 1
     },
     {
      "code": "OT 4000",
-     "alts": [
-      "OT 4005"
-     ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "OT 4005",
+     "credits": 1
     },
     {
      "code": "OT 4100",
@@ -600,17 +611,28 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
    "credits": 1,
    "precoreqText": "BIOL 1610",
-   "precoreqs": "BIOL 1610"
+   "precoreqs": "BIOL 1610",
+   "preco": [
+    "BIOL 1610"
+   ]
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -754,7 +776,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3300",
-   "precoreqs": "OT 3300"
+   "precoreqs": "OT 3300",
+   "preco": [
+    "OT 3300"
+   ]
   },
   "OT 3405": {
    "title": "Occupational Therapy in Pediatrics Lab",
@@ -763,7 +788,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3300",
-   "precoreqs": "OT 3300"
+   "precoreqs": "OT 3300",
+   "preco": [
+    "OT 3300"
+   ]
   },
   "OT 3500": {
    "title": "Pediatric Occupational Therapy Practicum",
@@ -772,7 +800,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3300",
-   "precoreqs": "OT 3300"
+   "precoreqs": "OT 3300",
+   "preco": [
+    "OT 3300"
+   ]
   },
   "OT 3600": {
    "title": "Patient Management Skills in Occupational Therapy",
@@ -781,7 +812,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3300",
-   "precoreqs": "OT 3300"
+   "precoreqs": "OT 3300",
+   "preco": [
+    "OT 3300"
+   ]
   },
   "OT 3700": {
    "title": "Research Methods in Occupational Therapy",
@@ -790,7 +824,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3300",
-   "precoreqs": "OT 3300"
+   "precoreqs": "OT 3300",
+   "preco": [
+    "OT 3300"
+   ]
   },
   "OT 3800": {
    "title": "Psychosocial Issues in Occupational Therapy",
@@ -799,7 +836,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 3805": {
    "title": "Psychosocial Issues in Occupational Therapy Lab",
@@ -808,7 +848,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4000": {
    "title": "Occupational Therapy in Geriatrics",
@@ -817,7 +860,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4005": {
    "title": "Occupational Therapy in Geriatrics Lab",
@@ -826,7 +872,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4100": {
    "title": "Geriatric/Psychosocial OT Practicum",
@@ -835,7 +884,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4200": {
    "title": "Professional Seminar",
@@ -844,7 +896,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4300": {
    "title": "Occupational Therapy Management and Leadership",
@@ -853,7 +908,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4400": {
    "title": "Baccalaureate Project I",
@@ -862,7 +920,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 3500",
-   "precoreqs": "OT 3500"
+   "precoreqs": "OT 3500",
+   "preco": [
+    "OT 3500"
+   ]
   },
   "OT 4720": {
    "title": "Fieldwork IIA",
@@ -871,7 +932,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 4100",
-   "precoreqs": "OT 4100"
+   "precoreqs": "OT 4100",
+   "preco": [
+    "OT 4100"
+   ]
   },
   "OT 4800": {
    "title": "Baccalaureate Project II",
@@ -880,7 +944,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 4400",
-   "precoreqs": "OT 4400"
+   "precoreqs": "OT 4400",
+   "preco": [
+    "OT 4400"
+   ]
   },
   "OT 4820": {
    "title": "Fieldwork IIB",
@@ -889,7 +956,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "OT 4100",
-   "precoreqs": "OT 4100"
+   "precoreqs": "OT 4100",
+   "preco": [
+    "OT 4100"
+   ]
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -953,7 +1023,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   },
   "ZOOL 2420": {
    "title": "Human Physiology",
@@ -991,5 +1064,7 @@
     "ZOOL 2420"
    ]
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "This program uses a merit-based, competitive admission process."
 }

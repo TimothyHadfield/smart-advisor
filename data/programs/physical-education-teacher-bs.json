@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -41,12 +41,13 @@
      ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Elective",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -84,7 +85,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -273,7 +278,10 @@
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Additional 3 credits of any courses",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Secondary Education Courses:"
+   ]
   },
   {
    "type": "course",
@@ -405,12 +413,14 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -422,8 +432,9 @@
      "credits": 3
     },
     {
-     "label": "Personal, Professional, & Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth"
     },
     {
      "code": "PETE 2140",
@@ -731,7 +742,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -768,7 +784,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -796,7 +817,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -827,7 +852,10 @@
      "ZOOL 2325"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "ZOOL 2325"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -939,7 +967,10 @@
     "PETE 4400"
    ],
    "precoreqText": "PETE 2120",
-   "precoreqs": "PETE 2120"
+   "precoreqs": "PETE 2120",
+   "preco": [
+    "PETE 2120"
+   ]
   },
   "PETE 4250": {
    "title": "Methods of Teaching Secondary Physical Education",

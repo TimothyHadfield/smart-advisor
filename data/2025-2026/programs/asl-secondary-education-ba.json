@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Any 3000-4000 level ASL prefix course",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,13 +118,20 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution (Fulfilled by completing Foreign Language Course 2020G/2020, ASL 2020G recommended)",
-   "credits": 4
+   "credits": 4,
+   "recommended": [
+    "ASL 2020G"
+   ]
   },
   {
    "type": "placeholder",
@@ -200,7 +208,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -265,7 +273,10 @@
    "area": "Discipline Core Requirements",
    "label": "Complete 9 credits 3000+ class with an ASL or LANG prefix",
    "credits": 9,
-   "text": "Complete 9 credits 3000+ class with an ASL or LANG prefix"
+   "text": "Complete 9 credits 3000+ class with an ASL or LANG prefix",
+   "notes": [
+    "Education Courses:"
+   ]
   },
   {
    "type": "course",
@@ -347,9 +358,9 @@
   {
    "type": "placeholder",
    "area": "Elective Requirements",
-   "label": "Complete 16 credits of any courses 1000-level or higher ( ASL 2030 and ASL 2040 are strongly recommended)",
+   "label": "Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended)",
    "credits": 16,
-   "text": "Complete 16 credits of any courses 1000-level or higher ( ASL 2030 and ASL 2040 are strongly recommended)"
+   "text": "Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended)"
   }
  ],
  "gradPlan": [
@@ -365,59 +376,67 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090",
+      "STAT 1040",
+      "STAT 1045"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
-    },
-    {
-     "code": "HIST 2700",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HIST 1700",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100",
+      "HIST 2700"
+     ],
+     "options": [
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ],
+      [
+       "HIST 2700"
+      ]
+     ]
     },
     {
      "code": "ASL 2020G",
@@ -437,8 +456,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Biology",
@@ -882,6 +902,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

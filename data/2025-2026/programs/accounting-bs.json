@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -53,12 +53,14 @@
    "text": "Complete one of the following:",
    "notes": [
     "An Advanced Placement (AP) Calculus AB or BC Test with a score of 3 or higher"
-   ]
+   ],
+   "open": true,
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "FINE ART",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -96,7 +98,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -374,7 +380,10 @@
      "credits": 3
     }
    ],
-   "text": "Complete three of the following advanced accounting courses:"
+   "text": "Complete three of the following advanced accounting courses:",
+   "notes": [
+    "General Elective Requirements"
+   ]
   },
   {
    "type": "placeholder",
@@ -400,28 +409,34 @@
      "credits": 3
     },
     {
-     "label": "FINE ART",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "FINE ART"
     },
     {
-     "label": "General Elective",
-     "credits": 2
+     "label": "Accounting Elective",
+     "credits": 2,
+     "text": "General Elective"
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     }
    ]
   },
@@ -441,12 +456,14 @@
      "credits": 3
     },
     {
-     "label": "HUMANITIES",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "HUMANITIES"
     },
     {
-     "label": "PHYSICAL SCIENCE",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "PHYSICAL SCIENCE"
     }
    ]
   },
@@ -474,8 +491,9 @@
      "credits": 3
     },
     {
-     "label": "BIOLOGY",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "BIOLOGY"
     }
    ]
   },
@@ -495,12 +513,14 @@
      "credits": 3
     },
     {
-     "label": "SOCIAL SCIENCE",
-     "credits": 3
+     "label": "Social Science",
+     "credits": 3,
+     "text": "SOCIAL SCIENCE"
     },
     {
-     "label": "PERSONAL, PROFESSIONAL, and CIVIC GROWTH",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "PERSONAL, PROFESSIONAL, and CIVIC GROWTH"
     }
    ]
   },
@@ -577,8 +597,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 6
+     "label": "Accounting Elective",
+     "credits": 6,
+     "text": "General Elective"
     }
    ]
   },
@@ -598,8 +619,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective (Any course numbered 1000 or higher)",
-     "credits": 5
+     "label": "Accounting Elective",
+     "credits": 5,
+     "text": "General Elective (Any course numbered 1000 or higher)"
     }
    ]
   }
@@ -627,7 +649,10 @@
    "prereqText": "ACC 2110",
    "prereqs": "ACC 2110",
    "precoreqText": "ACC 2120",
-   "precoreqs": "ACC 2120"
+   "precoreqs": "ACC 2120",
+   "preco": [
+    "ACC 2120"
+   ]
   },
   "ACC 2500": {
    "title": "Data Analytics in Accounting",
@@ -640,7 +665,10 @@
     ]
    },
    "precoreqText": "ACC 2120",
-   "precoreqs": "ACC 2120"
+   "precoreqs": "ACC 2120",
+   "preco": [
+    "ACC 2120"
+   ]
   },
   "ACC 2600": {
    "title": "Business Law and Ethics",
@@ -667,7 +695,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ACC 2125",
-   "precoreqs": "ACC 2125"
+   "precoreqs": "ACC 2125",
+   "preco": [
+    "ACC 2125"
+   ]
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
@@ -681,7 +712,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ACC 3300",
-   "precoreqs": "ACC 3300"
+   "precoreqs": "ACC 3300",
+   "preco": [
+    "ACC 3300"
+   ]
   },
   "ACC 3120G": {
    "title": "International Internal Auditing",
@@ -762,7 +796,10 @@
    "prereqs": "ACC 3010",
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 4310": {
    "title": "Advanced Management Accounting",
@@ -785,7 +822,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ACC 3510",
-   "precoreqs": "ACC 3510"
+   "precoreqs": "ACC 3510",
+   "preco": [
+    "ACC 3510"
+   ]
   },
   "ACC 4700R": {
    "title": "Current Topics in Accounting",

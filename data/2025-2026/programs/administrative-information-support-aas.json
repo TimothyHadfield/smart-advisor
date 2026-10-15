@@ -43,19 +43,29 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Humanities/Fine Arts/Foreign Language"
+   ],
+   "ge": "math"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Humanities/Fine Arts/Foreign Language Distribution",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Social and Behavioral Science"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Social and Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "notes": [
+    "Biology or Physical Science"
+   ]
   },
   {
    "type": "placeholder",
@@ -211,19 +221,23 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 4
-    },
-    {
-     "code": "MAT 1010",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
+     "credits": 4,
+     "alts": [
+      "MAT 1010",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "MAT 1010"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
      "code": "IM 1010",
@@ -234,8 +248,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities or Fine Arts",
-     "credits": 3
+     "label": "Any approved Humanities/Fine Arts/Foreign Language Distribution",
+     "credits": 3,
+     "text": "Humanities or Fine Arts"
     },
     {
      "label": "Elective",
@@ -258,12 +273,14 @@
      "credits": 3
     },
     {
-     "label": "Social/ Behavioral Science Distribution",
-     "credits": 3
+     "label": "Any approved Social and Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social/ Behavioral Science Distribution"
     },
     {
-     "label": "Biology or Physical Science",
-     "credits": 3
+     "label": "Any approved Biology or Physical Science Distribution",
+     "credits": 3,
+     "text": "Biology or Physical Science"
     },
     {
      "code": "ACC 2110",

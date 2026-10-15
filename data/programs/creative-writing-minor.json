@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Complete one of the following:",
+   "label": "Choose 3",
    "pick": {
     "count": 3
    },
@@ -79,7 +79,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Complete one of following:",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 2
    },
@@ -130,24 +130,29 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3420",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3430",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3440",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3450",
-     "credits": null
+     "label": "Complete one of the following:",
+     "credits": 3,
+     "alts": [
+      "ENGL 3420",
+      "ENGL 3430",
+      "ENGL 3440",
+      "ENGL 3450"
+     ],
+     "options": [
+      [
+       "ENGL 3420"
+      ],
+      [
+       "ENGL 3430"
+      ],
+      [
+       "ENGL 3440"
+      ],
+      [
+       "ENGL 3450"
+      ]
+     ],
+     "text": "Complete one of following:"
     }
    ]
   },
@@ -155,36 +160,41 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3420",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3430",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3440",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3450",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4420",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4440",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4450",
-     "credits": null
+     "label": "Complete one of the following:",
+     "credits": 3,
+     "alts": [
+      "ENGL 3420",
+      "ENGL 3430",
+      "ENGL 3440",
+      "ENGL 3450",
+      "ENGL 4420",
+      "ENGL 4440",
+      "ENGL 4450"
+     ],
+     "options": [
+      [
+       "ENGL 3420"
+      ],
+      [
+       "ENGL 3430"
+      ],
+      [
+       "ENGL 3440"
+      ],
+      [
+       "ENGL 3450"
+      ],
+      [
+       "ENGL 4420"
+      ],
+      [
+       "ENGL 4440"
+      ],
+      [
+       "ENGL 4450"
+      ]
+     ],
+     "text": "Complete one of following:"
     }
    ]
   },
@@ -202,35 +212,39 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3420",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3430",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3440",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3450",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4420",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4440",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4450",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3420",
+      "ENGL 3430",
+      "ENGL 3440",
+      "ENGL 3450",
+      "ENGL 4420",
+      "ENGL 4440",
+      "ENGL 4450"
+     ],
+     "options": [
+      [
+       "ENGL 3420"
+      ],
+      [
+       "ENGL 3430"
+      ],
+      [
+       "ENGL 3440"
+      ],
+      [
+       "ENGL 3450"
+      ],
+      [
+       "ENGL 4420"
+      ],
+      [
+       "ENGL 4440"
+      ],
+      [
+       "ENGL 4450"
+      ]
+     ]
     }
    ]
   },
@@ -239,23 +253,27 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3470R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3480R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4490",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4120R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3470R",
+      "ENGL 3480R",
+      "ENGL 4490",
+      "ENGL 4120R"
+     ],
+     "options": [
+      [
+       "ENGL 3470R"
+      ],
+      [
+       "ENGL 3480R"
+      ],
+      [
+       "ENGL 4490"
+      ],
+      [
+       "ENGL 4120R"
+      ]
+     ]
     }
    ]
   },
@@ -264,23 +282,27 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ENGL 3470R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 3480R",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4490",
-     "credits": null
-    },
-    {
-     "code": "ENGL 4120R",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ENGL 3470R",
+      "ENGL 3480R",
+      "ENGL 4490",
+      "ENGL 4120R"
+     ],
+     "options": [
+      [
+       "ENGL 3470R"
+      ],
+      [
+       "ENGL 3480R"
+      ],
+      [
+       "ENGL 4490"
+      ],
+      [
+       "ENGL 4120R"
+      ]
+     ]
     }
    ]
   }

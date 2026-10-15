@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
    "pick": {
     "count": 1
    },
@@ -44,26 +44,35 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1600 ):"
+   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1600):"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Elective",
    "credits": 3,
-   "text": "Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020 )"
+   "text": "Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020)",
+   "recommended": [
+    "COMM 1020"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Any approved Biology or Physical Science Course (Recommend PHYS 1010 )",
-   "credits": 3
+   "label": "Any approved Biology or Physical Science Course (Recommend PHYS 1010)",
+   "credits": 3,
+   "recommended": [
+    "PHYS 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Behavioral Science, Social or Political Science Distribution Course (Recommend GEOG 1300G)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "GEOG 1300G"
+   ]
   },
   {
    "type": "course",
@@ -89,7 +98,7 @@
   {
    "type": "choice",
    "area": "Surveying Technology Foundation",
-   "label": "Choose 1",
+   "label": "Complete one of the following Mathematics courses (Recommend EGDT 1610):",
    "pick": {
     "count": 1
    },
@@ -108,7 +117,7 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1610 ):"
+   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1610):"
   },
   {
    "type": "course",
@@ -203,16 +212,23 @@
      "credits": 1
     },
     {
-     "code": "EGDT 1600",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1600",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1600"
+     ],
+     "alts": [
+      "EGDT 1600",
+      "MATH 1050"
+     ],
+     "options": [
+      [
+       "EGDT 1600"
+      ],
+      [
+       "MATH 1050"
+      ]
+     ]
     },
     {
      "code": "SURV 1020",
@@ -240,16 +256,23 @@
      "credits": 3
     },
     {
-     "code": "EGDT 1610",
-     "credits": 3
-    },
-    {
-     "code": "EGDT 1610",
-     "credits": null
-    },
-    {
-     "code": "MATH 1060",
-     "credits": null
+     "label": "Complete one of the following Mathematics courses (Recommend EGDT 1610):",
+     "credits": 3,
+     "recommended": [
+      "EGDT 1610"
+     ],
+     "alts": [
+      "EGDT 1610",
+      "MATH 1060"
+     ],
+     "options": [
+      [
+       "EGDT 1610"
+      ],
+      [
+       "MATH 1060"
+      ]
+     ]
     },
     {
      "code": "SURV 1030",
@@ -447,9 +470,14 @@
    "credits": 2,
    "prereqText": "EGDT1400, EGDT 1610 or MATH 1060 or Equivalent, Completed and Approved Matriculation into any Surveying and Mapping degree program.",
    "prereqs": {
-    "or": [
-     "EGDT 1610",
-     "MATH 1060"
+    "and": [
+     "EGDT 1400",
+     {
+      "or": [
+       "EGDT 1610",
+       "MATH 1060"
+      ]
+     }
     ]
    },
    "uncertain": true,

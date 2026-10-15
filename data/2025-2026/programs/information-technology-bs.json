@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavior Science",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -63,7 +63,8 @@
      "codes": [
       "POLS 1000"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -72,23 +73,19 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology Distribution",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "BIOL 1011"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "BIOL 1011"
    ]
   },
   {
@@ -311,7 +308,8 @@
    "area": "Discipline Core Requirements",
    "label": "BS IT Elective Domain Requirements",
    "pick": {
-    "count": 1
+    "credits": 12,
+    "tracks": 1
    },
    "credits": 12,
    "options": [
@@ -334,6 +332,7 @@
       "IT 4810R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "Enterprise IT Domain"
     },
     {
@@ -383,6 +382,7 @@
       "IT 4810R"
      ],
      "credits": 1,
+     "crMax": 3,
      "alts": [
       "CYBR 4250"
      ],
@@ -495,12 +495,24 @@
    ],
    "text": "Select one of the following domains (12 Credit hours)",
    "notes": [
+    "Enterprise IT Domain",
     "Enterprise IT Domain: Select 12 Credits Hours from the following:",
+    "Enterprise IT Domain: Database Domain",
     "Database Domain: Complete the following 12 Credits Hours",
+    "Database Domain: Web/Mobile Development Domain",
     "Web/Mobile Development Domain: Complete the following 9 Credit Hours",
     "Web/Mobile Development Domain: Elective (3 Credit Hours) - Select one course form the following:",
+    "Web/Mobile Development Domain: Cybersecurity Domain",
     "Cybersecurity Domain: Complete the following 12 Credit Hours",
+    "Cybersecurity Domain: Business Intelligence and Big Data Domain",
     "Business Intelligence and Big Data Domain: Complete the following 12 Credit Hours"
+   ],
+   "tracks": [
+    "Enterprise IT Domain",
+    "Database Domain",
+    "Web/Mobile Development Domain",
+    "Cybersecurity Domain",
+    "Business Intelligence and Big Data Domain"
    ]
   }
  ],
@@ -523,8 +535,9 @@
      "credits": 4
     },
     {
-     "label": "Social/Behavior Science",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution",
+     "credits": 3,
+     "text": "Social/Behavior Science"
     },
     {
      "code": "INFO 1120",
@@ -584,8 +597,9 @@
      "credits": 3
     },
     {
-     "label": "Lower Division Elective",
-     "credits": 3
+     "label": "Lower Division Electives",
+     "credits": 3,
+     "text": "Lower Division Elective"
     }
    ]
   },
@@ -609,8 +623,9 @@
      "credits": 3
     },
     {
-     "label": "IT Application Domain",
-     "credits": 3
+     "label": "IT Application Domain Requirement",
+     "credits": 3,
+     "text": "IT Application Domain"
     }
    ]
   },
@@ -618,8 +633,11 @@
    "label": "Semester 5",
    "items": [
     {
-     "code": "BIOL 1011",
-     "credits": 3
+     "label": "Biology Distribution",
+     "credits": 3,
+     "recommended": [
+      "BIOL 1011"
+     ]
     },
     {
      "code": "ENGL 2100",
@@ -655,12 +673,14 @@
      "credits": 3
     },
     {
-     "label": "Lower Division Elective",
-     "credits": 2
+     "label": "Lower Division Electives",
+     "credits": 2,
+     "text": "Lower Division Elective"
     },
     {
-     "label": "BS IT Elective Domain",
-     "credits": 3
+     "label": "BS IT Elective Domain Requirements",
+     "credits": 3,
+     "text": "BS IT Elective Domain"
     }
    ]
   },
@@ -680,12 +700,14 @@
      "credits": 3
     },
     {
-     "label": "IT Application Domain",
-     "credits": 3
+     "label": "IT Application Domain Requirement",
+     "credits": 3,
+     "text": "IT Application Domain"
     },
     {
-     "label": "BS IT Elective Domain",
-     "credits": 3
+     "label": "BS IT Elective Domain Requirements",
+     "credits": 3,
+     "text": "BS IT Elective Domain"
     }
    ]
   },
@@ -705,21 +727,19 @@
      "credits": 3
     },
     {
-     "label": "BS IT Elective Domain",
-     "credits": 3
+     "label": "BS IT Elective Domain Requirements",
+     "credits": 3,
+     "text": "BS IT Elective Domain"
     },
     {
-     "label": "BS IT Elective Domain",
-     "credits": 3
+     "label": "BS IT Elective Domain Requirements",
+     "credits": 3,
+     "text": "BS IT Elective Domain"
     }
    ]
   }
  ],
  "courses": {
-  "BIOL 1011": {
-   "title": "Introduction to Bioinformatics",
-   "credits": 3
-  },
   "CS 2300": {
    "title": "Discrete Mathematical Structures I",
    "credits": 3,
@@ -826,7 +846,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "IT 3600",
-   "precoreqs": "IT 3600"
+   "precoreqs": "IT 3600",
+   "preco": [
+    "IT 3600"
+   ]
   },
   "CYBR 4250": {
    "title": "Database Security and Auditing",
@@ -859,7 +882,10 @@
    "prereqs": "CYBR 2700",
    "prereqNonCourse": true,
    "precoreqText": "INFO 3430",
-   "precoreqs": "INFO 3430"
+   "precoreqs": "INFO 3430",
+   "preco": [
+    "INFO 3430"
+   ]
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -939,7 +965,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "MATH 1050 or higher",
-   "precoreqs": "MATH 1050"
+   "precoreqs": "MATH 1050",
+   "preco": [
+    "MATH 1050"
+   ]
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -987,7 +1016,10 @@
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2200 recommended",
    "prereqs": null,
    "precoreqText": "INFO 3300",
-   "precoreqs": "INFO 3300"
+   "precoreqs": "INFO 3300",
+   "preco": [
+    "INFO 3300"
+   ]
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -1121,6 +1153,7 @@
        "CS 1400"
       ]
      },
+     "IT 1600",
      {
       "or": [
        "IT 2600",

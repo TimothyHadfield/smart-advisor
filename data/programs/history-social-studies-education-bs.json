@@ -74,7 +74,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following"
+   "text": "Complete one of the following",
+   "ge": "math"
   },
   {
    "type": "course",
@@ -117,7 +118,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -136,7 +137,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following Social/Behavioral Science:"
+   "text": "Complete one of the following Social/Behavioral Science:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -582,7 +584,8 @@
    ],
    "notes": [
     "Complete any one ECON course numbered 1000 or higher"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -607,8 +610,9 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "code": "HIST 1500G",
@@ -653,8 +657,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "code": "GEOG 1300G",
@@ -665,8 +670,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete elective courses numbered 1000 or higher",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -693,8 +699,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Complete elective courses numbered 1000 or higher",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -722,8 +729,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 1
+     "label": "Complete elective courses numbered 1000 or higher",
+     "credits": 1,
+     "text": "Elective"
     }
    ]
   },
@@ -1325,6 +1333,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

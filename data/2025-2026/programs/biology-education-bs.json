@@ -79,7 +79,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -145,7 +149,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Complete one of the following Combinations:",
+   "label": "MICR 2060 and MICR 2065 OR",
    "pick": {
     "count": 1
    },
@@ -211,7 +215,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 2",
+   "label": "BIOL 3400 and BIOL 3405",
    "pick": {
     "count": 2
    },
@@ -227,7 +231,8 @@
      "codes": [
       "BIOL 3200"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -263,13 +268,15 @@
      "codes": [
       "BIOL 4970R"
      ],
-     "credits": 0.5
+     "credits": 0.5,
+     "crMax": 1
     },
     {
      "codes": [
       "BIOL 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -713,18 +720,20 @@
      "credits": 4
     },
     {
-     "code": "MICR 2060",
-     "alts": [
+     "label": "MICR 2060 and MICR 2065 OR",
+     "credits": null,
+     "recommended": [
+      "MICR 2060",
       "MICR 2065"
-     ],
-     "credits": null
+     ]
     },
     {
-     "code": "BIOL 3400",
-     "alts": [
+     "label": "BIOL 3400 and BIOL 3405",
+     "credits": null,
+     "recommended": [
+      "BIOL 3400",
       "BIOL 3405"
-     ],
-     "credits": null
+     ]
     },
     {
      "code": "SCIE 2400",
@@ -735,20 +744,25 @@
      "credits": 3
     },
     {
-     "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "BOT 2050",
-     "credits": null
-    },
-    {
-     "code": "BOT 2100",
-     "credits": null
-    },
-    {
-     "code": "BOT 4300",
-     "credits": null
+     "label": "Take one of the following series:",
+     "credits": 3,
+     "alts": [
+      "BOT 2050",
+      "BOT 2100",
+      "BOT 4300"
+     ],
+     "options": [
+      [
+       "BOT 2050"
+      ],
+      [
+       "BOT 2100"
+      ],
+      [
+       "BOT 4300"
+      ]
+     ],
+     "text": "Complete one of the following:"
     }
    ]
   },
@@ -860,11 +874,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1610H": {
    "title": "College Biology I",

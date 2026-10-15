@@ -16,7 +16,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 15 credits",
+   "label": "HR Electives",
    "pick": {
     "credits": 15
    },
@@ -80,7 +80,8 @@
      "codes": [
       "HR 4950R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
    "text": "Complete 15 credits from the following courses"
@@ -109,8 +110,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "HR Elective",
-     "credits": 3
+     "label": "HR Electives",
+     "credits": 3,
+     "text": "HR Elective"
     }
    ]
   },
@@ -118,8 +120,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "HR Elective",
-     "credits": 3
+     "label": "HR Electives",
+     "credits": 3,
+     "text": "HR Elective"
     }
    ]
   },
@@ -127,8 +130,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "HR Elective",
-     "credits": 3
+     "label": "HR Electives",
+     "credits": 3,
+     "text": "HR Elective"
     }
    ]
   }

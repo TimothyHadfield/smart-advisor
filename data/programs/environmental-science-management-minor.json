@@ -160,6 +160,7 @@
       "ENVT 4820R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "Environmental Science and Management"
     },
     {
@@ -167,6 +168,7 @@
       "ENVT 4950R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "Environmental Science and Management"
     },
     {
@@ -300,59 +302,70 @@
       "GEO 4790"
      ],
      "credits": 4,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "BIOL 2500"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "BIOL 3700"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "BIOL 3800"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "BOT 4050"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "CHEM 3020"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "CHEM 3025"
      ],
      "credits": 1,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     },
     {
      "codes": [
       "ENST 2000"
      ],
      "credits": 3,
-     "section": "At most 4 credits of the following may be used towards elective requirements:"
+     "section": "Geology"
     }
    ],
-   "text": "Complete at least 11 credits from the following list, at least six need to have an ENVT designation. In addition, at least 7 credits must be 3000-level or higher."
+   "text": "Complete at least 11 credits from the following list, at least six need to have an ENVT designation. In addition, at least 7 credits must be 3000-level or higher.",
+   "notes": [
+    "Environmental Science and Management",
+    "Environmental Science and Management: Geography",
+    "Geography: Geology",
+    "Geology: At most 4 credits of the following may be used towards elective requirements:",
+    "Geology: Or other electives approved by the chair of the Earth Science Department"
+   ],
+   "rules": [
+    "Geology: At most 4 credits of the following may be used towards elective requirements:"
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -535,7 +548,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3320": {
    "title": "Hydraulics of Water",

@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -87,7 +88,10 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ]
   },
   {
    "type": "placeholder",
@@ -96,20 +100,12 @@
    "credits": 3
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "PHYS 1750"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "PHYS 1750"
    ]
   },
   {
@@ -119,20 +115,12 @@
    "credits": 3
   },
   {
-   "type": "choice",
+   "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "pick": {
-    "credits": 3
-   },
    "credits": 3,
-   "options": [
-    {
-     "codes": [
-      "PSY 1100"
-     ],
-     "credits": 3
-    }
+   "recommended": [
+    "PSY 1100"
    ]
   },
   {
@@ -277,7 +265,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 13 credits",
+   "label": "MUSC 1150 , or equivalent exam",
    "pick": {
     "credits": 13
    },
@@ -450,7 +438,8 @@
     "Choral students complete these 13 credits",
     "Complete 1 credit of MUSC courses not already required for the degree",
     "Band students complete these 13 credits:",
-    "Orchestra students complete these 13 credits:"
+    "Orchestra students complete these 13 credits:",
+    "Performance Skills Development Courses"
    ]
   },
   {
@@ -458,33 +447,41 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 2500R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 4,
+   "creditsEach": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2510R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "repeat": 4,
+   "creditsEach": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4500R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 2,
+   "creditsEach": 1
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4510R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "repeat": 2,
+   "creditsEach": 1
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Large Ensemble",
+   "label": "MUSC 1160 , or equivalent exam",
    "pick": {
     "credits": 6
    },
@@ -527,7 +524,10 @@
      "credits": 1
     }
    ],
-   "text": "Complete 6 credits from the following on your major instrument (as assigned):"
+   "text": "Complete 6 credits from the following on your major instrument (as assigned):",
+   "notes": [
+    "Secondary Education Courses"
+   ]
   },
   {
    "type": "course",
@@ -606,8 +606,11 @@
      "credits": 1
     },
     {
-     "code": "MUSC 1150",
-     "credits": null
+     "label": "MUSC 1150 , or equivalent exam",
+     "credits": null,
+     "recommended": [
+      "MUSC 1150"
+     ]
     },
     {
      "code": "MUSC 1800",
@@ -655,8 +658,11 @@
      "credits": 1
     },
     {
-     "code": "MUSC 1160",
-     "credits": null
+     "label": "MUSC 1160 , or equivalent exam",
+     "credits": null,
+     "recommended": [
+      "MUSC 1160"
+     ]
     },
     {
      "code": "MUSC 2510R",
@@ -704,8 +710,11 @@
      "credits": 1
     },
     {
-     "code": "MUSC 2150",
-     "credits": null
+     "label": "MUSC 2150 , or equivalent exam",
+     "credits": null,
+     "recommended": [
+      "MUSC 2150"
+     ]
     },
     {
      "code": "MUSC 2500R",
@@ -729,19 +738,27 @@
     },
     {
      "label": "Choral/Instrumental Track",
-     "credits": 1
+     "credits": 1,
+     "alts": [
+      "MUSC 2001",
+      "MUSC 3649"
+     ],
+     "options": [
+      [
+       "MUSC 2001"
+      ],
+      [
+       "MUSC 3649"
+      ]
+     ]
     },
     {
-     "code": "MUSC 2001",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3649",
-     "credits": null
-    },
-    {
-     "code": "PHYS 1750",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "recommended": [
+      "PHYS 1750"
+     ],
+     "text": "Physical Science Distribution (PHYS 1750 recommended)"
     },
     {
      "label": "Concert Attendance",
@@ -753,16 +770,22 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
-     "label": "Personal, Professional and Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional and Civic Growth Distribution"
     },
     {
-     "code": "PSY 1100",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "recommended": [
+      "PSY 1100"
+     ],
+     "text": "Social/Behavioral Science Distribution (PSY 1100 recommended)"
     },
     {
      "code": "MUSC 2125",
@@ -773,8 +796,11 @@
      "credits": 1
     },
     {
-     "code": "MUSC 2160",
-     "credits": null
+     "label": "MUSC 2160 , or equivalent exam",
+     "credits": null,
+     "recommended": [
+      "MUSC 2160"
+     ]
     },
     {
      "code": "MUSC 2500R",
@@ -790,15 +816,19 @@
     },
     {
      "label": "Choral/Instrumental Track",
-     "credits": 1
-    },
-    {
-     "code": "MUSC 2002",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3630",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MUSC 2002",
+      "MUSC 3630"
+     ],
+     "options": [
+      [
+       "MUSC 2002"
+      ],
+      [
+       "MUSC 3630"
+      ]
+     ]
     },
     {
      "label": "Concert Attendance",
@@ -835,31 +865,36 @@
     },
     {
      "label": "Choral or Instrumental Track",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MUSC 4240",
+      "MUSC 4220",
+      "MUSC 4360",
+      "MUSC 3659",
+      "MUSC 3415"
+     ],
+     "options": [
+      [
+       "MUSC 4240"
+      ],
+      [
+       "MUSC 4220"
+      ],
+      [
+       "MUSC 4360"
+      ],
+      [
+       "MUSC 3659"
+      ],
+      [
+       "MUSC 3415"
+      ]
+     ]
     },
     {
-     "code": "MUSC 4240",
-     "credits": null
-    },
-    {
-     "code": "MUSC 4220",
-     "credits": null
-    },
-    {
-     "code": "MUSC 4360",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3659",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3415",
-     "credits": null
-    },
-    {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "EDSP 3400G",
@@ -896,27 +931,35 @@
     },
     {
      "label": "Choral/Instrumental Track",
-     "credits": 2
-    },
-    {
-     "code": "MUSC 4221",
-     "credits": null
-    },
-    {
-     "code": "MUSC 4370",
-     "credits": null
+     "credits": 2,
+     "alts": [
+      "MUSC 4221",
+      "MUSC 4370"
+     ],
+     "options": [
+      [
+       "MUSC 4221"
+      ],
+      [
+       "MUSC 4370"
+      ]
+     ]
     },
     {
      "label": "Choral/Instrumental Track",
-     "credits": 2
-    },
-    {
-     "code": "MUSC 4150",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3150",
-     "credits": null
+     "credits": 2,
+     "alts": [
+      "MUSC 4150",
+      "MUSC 3150"
+     ],
+     "options": [
+      [
+       "MUSC 4150"
+      ],
+      [
+       "MUSC 3150"
+      ]
+     ]
     },
     {
      "code": "EDSC 3000",
@@ -949,23 +992,27 @@
     },
     {
      "label": "Choral/Instrumental Track",
-     "credits": 3
-    },
-    {
-     "code": "MUSC 3630",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3679",
-     "credits": null
-    },
-    {
-     "code": "MUSC 3690",
-     "credits": null
-    },
-    {
-     "code": "MUSC 4340",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MUSC 3630",
+      "MUSC 3679",
+      "MUSC 3690",
+      "MUSC 4340"
+     ],
+     "options": [
+      [
+       "MUSC 3630"
+      ],
+      [
+       "MUSC 3679"
+      ],
+      [
+       "MUSC 3690"
+      ],
+      [
+       "MUSC 4340"
+      ]
+     ]
     },
     {
      "code": "EDSC 3250G",
@@ -1122,6 +1169,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -1143,12 +1191,7 @@
    "title": "Music Theory I",
    "credits": 3,
    "prereqText": "Music majors only or department approval. Complete music theory diagnostic exam. Students who do not earn at least 80% on the music department theory diagnostic exam must complete MUSC 1105 before MUSC 1110 .",
-   "prereqs": {
-    "or": [
-     "MUSC 1105",
-     "MUSC 1110"
-    ]
-   },
+   "prereqs": null,
    "prereqNonCourse": true,
    "coreqText": "MUSC 1130",
    "coreqs": [
@@ -1186,25 +1229,6 @@
    "prereqText": "MUSC 1130",
    "prereqs": "MUSC 1130",
    "coreqText": "MUSC 1120",
-   "coreqs": [
-    "MUSC 1120"
-   ]
-  },
-  "MUSC 1150": {
-   "title": "Group Piano I",
-   "credits": 1,
-   "coreqText": "MUSC 1110 recommended",
-   "coreqs": [
-    "MUSC 1110"
-   ]
-  },
-  "MUSC 1160": {
-   "title": "Group Piano II",
-   "credits": 1,
-   "prereqText": "MUSC 1150 or equivalent proficiency examination",
-   "prereqs": "MUSC 1150",
-   "prereqNonCourse": true,
-   "coreqText": "MUSC 1120 recommended",
    "coreqs": [
     "MUSC 1120"
    ]
@@ -1255,28 +1279,6 @@
    "credits": 1,
    "prereqText": "MUSC 2130",
    "prereqs": "MUSC 2130"
-  },
-  "MUSC 2150": {
-   "title": "Group Piano III",
-   "credits": 1,
-   "prereqText": "MUSC 1160 or equivalent proficiency examination",
-   "prereqs": "MUSC 1160",
-   "prereqNonCourse": true,
-   "coreqText": "MUSC 2110 recommended",
-   "coreqs": [
-    "MUSC 2110"
-   ]
-  },
-  "MUSC 2160": {
-   "title": "Group Piano IV",
-   "credits": 1,
-   "prereqText": "MUSC 2150 or equivalent proficiency examination",
-   "prereqs": "MUSC 2150",
-   "prereqNonCourse": true,
-   "coreqText": "MUSC 2125 recommended",
-   "coreqs": [
-    "MUSC 2125"
-   ]
   },
   "MUSC 2350": {
    "title": "Fundamentals of Conducting",
@@ -1359,7 +1361,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110 or department audition",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3450": {
    "title": "Music History and Literature I",
@@ -1386,7 +1391,10 @@
    "title": "Percussion Techniques I",
    "credits": 1,
    "precoreqText": "MUSC 2110",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3630": {
    "title": "Vocal Techniques",
@@ -1395,7 +1403,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3649": {
    "title": "String Techniques I",
@@ -1404,7 +1415,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3659": {
    "title": "Woodwind Techniques I",
@@ -1413,7 +1427,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3679": {
    "title": "Brass Techniques I",
@@ -1422,7 +1439,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "MUSC 2110",
-   "precoreqs": "MUSC 2110"
+   "precoreqs": "MUSC 2110",
+   "preco": [
+    "MUSC 2110"
+   ]
   },
   "MUSC 3690": {
    "title": "Jazz Techniques",
@@ -1544,12 +1564,6 @@
    "prereqs": null,
    "prereqNonCourse": true
   },
-  "PHYS 1750": {
-   "title": "The Acoustics of Music",
-   "credits": 3,
-   "prereqText": "MAT 1010 or higher",
-   "prereqs": "MAT 1010"
-  },
   "POLS 1000": {
    "title": "American Heritage",
    "credits": 3
@@ -1557,10 +1571,8 @@
   "POLS 1100": {
    "title": "American National Government",
    "credits": 3
-  },
-  "PSY 1100": {
-   "title": "Human Development Life Span",
-   "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Students will apply for formal admission to the Secondary Ed program in the semester prior to the beginning of their junior year."
 }

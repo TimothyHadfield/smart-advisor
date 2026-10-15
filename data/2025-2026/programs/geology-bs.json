@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Choose 1",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -88,7 +92,11 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Life Science",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010",
+    "BIOL 1610"
+   ]
   },
   {
    "type": "course",
@@ -229,7 +237,8 @@
    "alts": [
     "ENVT 3790"
    ],
-   "credits": 4
+   "credits": 4,
+   "recommended": true
   },
   {
    "type": "course",
@@ -257,7 +266,9 @@
    "area": "Discipline Core Requirements",
    "code": "GEO 4800R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -386,7 +397,8 @@
      "codes": [
       "GEO 4890R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 4
     },
     {
      "codes": [
@@ -452,7 +464,8 @@
    "text": "Complete 24 credits from the following list (at least 12 credits must be Upper Division)",
    "notes": [
     "Or other department approved electives"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -580,10 +593,11 @@
    "items": [
     {
      "code": "PHYS 2220",
-     "alts": [
-      "PHYS 2225"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2225",
+     "credits": 1
     },
     {
      "code": "GEO 3080",
@@ -596,13 +610,16 @@
     {
      "code": "GEO 3200",
      "alts": [
-      "GEO 3205",
       "GEO 3500",
       "GEO 3505",
       "GEOG 3500",
       "GEOG 3505"
      ],
-     "credits": 4
+     "credits": 3
+    },
+    {
+     "code": "GEO 3205",
+     "credits": 1
     },
     {
      "label": "Geology Elective",
@@ -839,7 +856,10 @@
     ]
    },
    "precoreqText": "GEO 1220",
-   "precoreqs": "GEO 1220"
+   "precoreqs": "GEO 1220",
+   "preco": [
+    "GEO 1220"
+   ]
   },
   "GEO 2020R": {
    "title": "Science Excursion",

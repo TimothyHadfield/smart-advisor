@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -320,7 +324,9 @@
    "area": "Discipline Core Requirements",
    "code": "PHYS 4900R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "choice",
@@ -464,8 +470,9 @@
      "credits": 1
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology: complete one of the following",
+     "credits": 3,
+     "text": "Biology Distribution"
     }
    ]
   },
@@ -493,8 +500,9 @@
      "credits": 1
     },
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     }
    ]
   },
@@ -510,8 +518,9 @@
      "credits": 6
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -523,8 +532,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Social/ Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/ Behavioral Science Distribution"
     },
     {
      "label": "Physics Electives",
@@ -560,8 +570,9 @@
      "credits": 3
     },
     {
-     "label": "Upper Division Elective",
-     "credits": 4
+     "label": "Complete 4 credits of upper division electives.",
+     "credits": 4,
+     "text": "Upper Division Elective"
     },
     {
      "code": "SCIE 4220",
@@ -660,11 +671,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGL 1005",
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -1011,7 +1030,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3120",
-   "precoreqs": "PHYS 3120"
+   "precoreqs": "PHYS 3120",
+   "preco": [
+    "PHYS 3120"
+   ]
   },
   "PHYS 3230": {
    "title": "Principles of Electronics for the Physical Sciences",

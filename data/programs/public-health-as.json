@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institution Distribution",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -47,7 +47,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -56,12 +57,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science Distribution",
+   "label": "American Institution Distribution",
    "pick": {
     "count": 1
    },
@@ -99,7 +101,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -147,7 +153,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Social Science Distribution",
+   "label": "Anatomy/Med Term Elective",
    "pick": {
     "credits": 3
    },
@@ -212,8 +218,9 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     }
    ]
   },
@@ -226,31 +233,37 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055"
+     ],
+     "options": [
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ]
+     ]
     },
     {
-     "code": "STAT 1040",
-     "credits": null
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social Science Distribution"
     },
     {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "label": "Social Science Distribution",
-     "credits": 3
-    },
-    {
-     "label": "General Electives",
-     "credits": 6
+     "label": "Anatomy/Med Term Elective",
+     "credits": 6,
+     "text": "General Electives"
     }
    ]
   },
@@ -258,16 +271,18 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Biological Science Distribution",
-     "credits": 3
+     "label": "Biological Science",
+     "credits": 3,
+     "text": "Biological Science Distribution"
     },
     {
      "label": "Humanities Distribution",
      "credits": 3
     },
     {
-     "label": "Personal, Professional, and Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, and Civic Growth Distribution"
     },
     {
      "label": "Lower Division HLTH Elective",
@@ -283,8 +298,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 12
+     "label": "Anatomy/Med Term Elective",
+     "credits": 12,
+     "text": "General Elective"
     }
    ]
   }
@@ -422,7 +438,10 @@
    "title": "Human Anatomy Laboratory",
    "credits": 1,
    "precoreqText": "ZOOL 2320",
-   "precoreqs": "ZOOL 2320"
+   "precoreqs": "ZOOL 2320",
+   "preco": [
+    "ZOOL 2320"
+   ]
   }
  }
 }

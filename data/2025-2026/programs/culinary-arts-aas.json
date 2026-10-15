@@ -207,8 +207,9 @@
      "credits": 5
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "SOCIAL AND BEHAVIORAL SCIENCE",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     },
     {
      "code": "CA 1150",
@@ -271,7 +272,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "CA 1490",
-   "precoreqs": "CA 1490"
+   "precoreqs": "CA 1490",
+   "preco": [
+    "CA 1490"
+   ]
   },
   "CA 1180": {
    "title": "Professional Kitchen Garde Manger",
@@ -358,5 +362,7 @@
    "title": "Food and Beverage Management",
    "credits": 3
   }
- }
+ },
+ "admission": true,
+ "admissionNote": "Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details)."
 }

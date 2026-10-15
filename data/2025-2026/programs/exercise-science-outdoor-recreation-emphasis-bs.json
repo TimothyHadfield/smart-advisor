@@ -34,7 +34,7 @@
   {
    "type": "choice",
    "area": "Core Requirements: General Education Requirements",
-   "label": "Fine Arts Dist.",
+   "label": "American Institutions Dist.",
    "pick": {
     "count": 1
    },
@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -247,7 +251,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "Humanities Dist.",
+   "label": "EXSC Elective",
    "pick": {
     "count": 1
    },
@@ -277,7 +281,7 @@
   {
    "type": "choice",
    "area": "Emphasis Requirements",
-   "label": "EXSC Elective",
+   "label": "Choose 22 credits",
    "pick": {
     "credits": 22
    },
@@ -368,7 +372,10 @@
      "credits": 3
     }
    ],
-   "text": "Complete 22 credits from the following (make sure selections will satisfy the requirements for upper-division course work):"
+   "text": "Complete 22 credits from the following (make sure selections will satisfy the requirements for upper-division course work):",
+   "notes": [
+    "Emphasis Elective Requirements:"
+   ]
   },
   {
    "type": "placeholder",
@@ -386,12 +393,14 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "ENGL 1010",
@@ -406,8 +415,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Fine Arts Dist.",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Dist."
     },
     {
      "label": "Personal, Professional, and Civic Growth",
@@ -425,8 +435,9 @@
      "credits": 4
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -442,12 +453,14 @@
      "credits": 4
     },
     {
-     "label": "Humanities Dist.",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Dist."
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "BIOL 1615",
@@ -479,8 +492,9 @@
      "credits": 3
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     }
    ]
   },
@@ -533,8 +547,9 @@
      "credits": 1
     },
     {
-     "label": "General Elective",
-     "credits": 3
+     "label": "EXSC Elective",
+     "credits": 3,
+     "text": "General Elective"
     },
     {
      "code": "EXSC 4950",
@@ -604,11 +619,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -728,7 +751,14 @@
      "PETE 2700",
      "REC 2200"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G",
+    "PETE 2700",
+    "REC 2200"
+   ]
   },
   "EXSC 2700G": {
    "title": "Foundations of Exercise Science",
@@ -774,7 +804,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3400": {
    "title": "Statistical Analysis in Exercise Science",
@@ -819,7 +854,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -856,7 +896,12 @@
      "ZOOL 2425",
      "EXSC 2700G"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G"
+   ]
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -884,7 +929,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -934,7 +983,13 @@
      "EXSC 2700G",
      "EXSC 3500"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "EXSC 2700G",
+    "EXSC 3500"
+   ]
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -954,7 +1009,10 @@
      "ZOOL 2325"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "ZOOL 2325"
+   ]
   },
   "EXSC 4000": {
    "title": "Clinical Exercise Physiology",
@@ -981,7 +1039,11 @@
      "ZOOL 2420",
      "ZOOL 2425"
     ]
-   }
+   },
+   "preco": [
+    "ZOOL 2420",
+    "ZOOL 2425"
+   ]
   },
   "EXSC 4100": {
    "title": "Physiology of Aging",
@@ -1134,7 +1196,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "EXSC 3730",
-   "precoreqs": "EXSC 3730"
+   "precoreqs": "EXSC 3730",
+   "preco": [
+    "EXSC 3730"
+   ]
   },
   "EXSC 4700": {
    "title": "Advanced Gross Motor Assessment",

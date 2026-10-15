@@ -16,7 +16,7 @@
   {
    "type": "choice",
    "area": "Complete the following courses:",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -31,8 +31,10 @@
    ],
    "text": "Complete one of the following:",
    "notes": [
-    "or Any anthropology course numbered 3000 or higher"
-   ]
+    "or Any anthropology course numbered 3000 or higher",
+    "Elective Requirements"
+   ],
+   "open": true
   },
   {
    "type": "placeholder",
@@ -56,11 +58,15 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ANTH 2880",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ANTH 2880"
+     ],
+     "options": [
+      [
+       "ANTH 2880"
+      ]
+     ]
     }
    ]
   },

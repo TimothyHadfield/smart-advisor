@@ -79,16 +79,28 @@
    "label": "Semester 2",
    "items": [
     {
-     "code": "HIST 3000",
-     "credits": 3
+     "label": "HIST 3000-4000 elective",
+     "credits": 3,
+     "recommended": [
+      "HIST 3000",
+      "HIST 4000"
+     ]
     },
     {
-     "code": "HIST 3000",
-     "credits": 3
+     "label": "HIST 3000-4000 elective",
+     "credits": 3,
+     "recommended": [
+      "HIST 3000",
+      "HIST 4000"
+     ]
     },
     {
-     "code": "HIST 3000",
-     "credits": 3
+     "label": "HIST 3000-4000 elective",
+     "credits": 3,
+     "recommended": [
+      "HIST 3000",
+      "HIST 4000"
+     ]
     }
    ]
   }
@@ -110,8 +122,5 @@
    "title": "US History since 1877",
    "credits": 3
   }
- },
- "missingCourses": [
-  "HIST 3000"
- ]
+ }
 }

@@ -174,12 +174,14 @@
      "credits": 2
     },
     {
-     "code": "DANC 3730",
-     "alts": [
+     "label": "Dance Elective (any DANC course 1000 level or higher)",
+     "credits": 2,
+     "recommended": [
+      "DANC 3730",
       "DANC 3740",
       "DANC 4740"
      ],
-     "credits": 2
+     "text": "DANC Elective"
     }
    ]
   }
@@ -234,26 +236,6 @@
    "prereqs": null,
    "prereqNonCourse": true
   },
-  "DANC 3730": {
-   "title": "American Social Dance Teaching Methods",
-   "credits": 2,
-   "prereqText": "DANC 2700R or equivalent skill level, and University Advanced Standing",
-   "prereqs": "DANC 2700R",
-   "prereqNonCourse": true
-  },
-  "DANC 3740": {
-   "title": "Ballroom Dance Choreography",
-   "credits": 2,
-   "prereqText": "( DANC 2700R , DANC 2710R , DANC 2720R , or Instructor Approval) and University Advanced Standing",
-   "prereqs": {
-    "or": [
-     "DANC 2700R",
-     "DANC 2710R",
-     "DANC 2720R"
-    ]
-   },
-   "prereqNonCourse": true
-  },
   "DANC 3760R": {
    "title": "Ballroom Dance Ensemble",
    "credits": 2,
@@ -273,18 +255,6 @@
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
-  },
-  "DANC 4740": {
-   "title": "International Ballroom and Latin Theory",
-   "credits": 3,
-   "prereqText": "DANC 2710R , DANC 2720R , and University Advanced Standing",
-   "prereqs": {
-    "and": [
-     "DANC 2710R",
-     "DANC 2720R"
-    ]
-   },
    "prereqNonCourse": true
   },
   "DANC 4760R": {

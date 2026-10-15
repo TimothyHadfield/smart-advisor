@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -50,7 +50,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -93,7 +94,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -148,11 +150,11 @@
   {
    "type": "choice",
    "area": "Matriculation Courses",
-   "label": "Humanities",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -170,7 +172,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "My Educator"
-   ]
+   ],
+   "exam": "My Educator"
   },
   {
    "type": "course",
@@ -261,7 +264,7 @@
   {
    "type": "choice",
    "area": "Business Core Courses:",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -352,27 +355,32 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Physical Science",
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "General Elective",
@@ -396,11 +404,12 @@
      "credits": 3
     },
     {
-     "code": "IM 2600",
-     "alts": [
+     "label": "General Elective (IM 2600 or IM 2010 can be taken as an elective)",
+     "credits": 3,
+     "recommended": [
+      "IM 2600",
       "IM 2010"
-     ],
-     "credits": 3
+     ]
     },
     {
      "label": "Biology",
@@ -420,8 +429,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
      "code": "ECON 2010",
@@ -475,19 +485,23 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "ECON 3050G",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3300G",
-     "credits": null
-    },
-    {
-     "code": "MGMT 3320G",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ECON 3050G",
+      "MGMT 3300G",
+      "MGMT 3320G"
+     ],
+     "options": [
+      [
+       "ECON 3050G"
+      ],
+      [
+       "MGMT 3300G"
+      ],
+      [
+       "MGMT 3320G"
+      ]
+     ]
     },
     {
      "label": "General Elective",
@@ -724,7 +738,11 @@
      "FIN 3400",
      "FIN 4100"
     ]
-   }
+   },
+   "preco": [
+    "FIN 3400",
+    "FIN 4100"
+   ]
   },
   "FIN 5130": {
    "title": "Financial Statement Analysis and Modeling",

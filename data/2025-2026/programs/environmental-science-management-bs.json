@@ -50,12 +50,13 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -93,7 +94,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -126,8 +131,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( GEOG 2000 Recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (GEOG 2000 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "GEOG 2000"
+   ]
   },
   {
    "type": "placeholder",
@@ -138,7 +146,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Social/Behavioral Science Distribution",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -256,9 +264,10 @@
    "credits": 3
   },
   {
-   "type": "placeholder",
+   "type": "course",
    "area": "Discipline Core Requirements",
-   "label": "ENVT 3300",
+   "code": "ENVT 3300",
+   "alts": [],
    "credits": 3
   },
   {
@@ -287,7 +296,9 @@
    "area": "Discipline Core Requirements",
    "code": "GEO 4800R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "choice",
@@ -316,148 +327,148 @@
    "text": "Complete one of the following combinations:"
   },
   {
-   "type": "placeholder",
+   "type": "choice",
    "area": "Academic Track Requirements",
    "label": "Select one of the following tracks:",
-   "credits": 12,
-   "text": "Select one of the following tracks:"
-  },
-  {
-   "type": "course",
-   "area": "Environmental Management Track",
-   "code": "ENVT 1200",
-   "alts": [],
-   "credits": 3
-  },
-  {
-   "type": "course",
-   "area": "Environmental Management Track",
-   "code": "ENVT 1510",
-   "alts": [],
-   "credits": 3
-  },
-  {
-   "type": "choice",
-   "area": "Environmental Management Track",
-   "label": "American Institutions",
    "pick": {
-    "count": 1
+    "credits": 12,
+    "tracks": 1
    },
-   "credits": 3,
+   "credits": 12,
    "options": [
+    {
+     "codes": [
+      "ENVT 1200"
+     ],
+     "credits": 3,
+     "section": "Environmental Management Track"
+    },
+    {
+     "codes": [
+      "ENVT 1510"
+     ],
+     "credits": 3,
+     "section": "Environmental Management Track"
+    },
     {
      "codes": [
       "ENVT 3010"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Management Track"
     },
     {
      "codes": [
       "ENVT 3320"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Management Track"
     },
     {
      "codes": [
       "ENVT 3330"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Management Track"
     },
     {
      "codes": [
       "ENVT 3530"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Management Track"
     },
     {
      "codes": [
       "ENVT 3750"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Management Track"
     },
     {
      "codes": [
       "ENVT 3770"
      ],
-     "credits": 3
-    }
-   ],
-   "text": "Complete one of the following - Water and Pollution Management",
-   "notes": [
-    "Complete one of the following - Land and Environmental Management"
-   ]
-  },
-  {
-   "type": "course",
-   "area": "Environmental Science Track",
-   "code": "METO 1010",
-   "alts": [
-    "METO 1060"
-   ],
-   "credits": 3
-  },
-  {
-   "type": "course",
-   "area": "Environmental Science Track",
-   "code": "GEOG 3400",
-   "alts": [],
-   "credits": 3
-  },
-  {
-   "type": "choice",
-   "area": "Environmental Science Track",
-   "label": "Humanities Distribution",
-   "pick": {
-    "count": 1
-   },
-   "credits": 3,
-   "options": [
+     "credits": 3,
+     "section": "Environmental Management Track"
+    },
+    {
+     "codes": [
+      "METO 1010"
+     ],
+     "credits": 3,
+     "alts": [
+      "METO 1060"
+     ],
+     "section": "Environmental Science Track"
+    },
+    {
+     "codes": [
+      "GEOG 3400"
+     ],
+     "credits": 3,
+     "section": "Environmental Science Track"
+    },
     {
      "codes": [
       "BIOL 2500"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "BIOL 3700"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "BIOL 3800"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "GEO 3000"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "METO 3100"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "GEOG 3700"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     },
     {
      "codes": [
       "ENVT 3800"
      ],
-     "credits": 3
+     "credits": 3,
+     "section": "Environmental Science Track"
     }
    ],
-   "text": "Complete one of the following - Biological Sciences",
+   "text": "Select one of the following tracks:",
    "notes": [
-    "Complete one of the following - Environmental Sciences"
+    "Environmental Management Track: Complete one of the following - Water and Pollution Management",
+    "Environmental Management Track: Complete one of the following - Land and Environmental Management",
+    "Environmental Science Track: Complete one of the following - Biological Sciences",
+    "Environmental Science Track: Complete one of the following - Environmental Sciences"
+   ],
+   "tracks": [
+    "Environmental Management Track",
+    "Environmental Science Track"
    ]
   },
   {
@@ -704,7 +715,8 @@
      "codes": [
       "GEOG 4820R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
@@ -854,7 +866,8 @@
    "text": "Choose 21 credits, not already taken in the core or track, from the following list (at least 10 credits must be Upper Division):",
    "notes": [
     "Or other electives approved by the advisor and chair"
-   ]
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -877,12 +890,14 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science (GEOG 2000 Recommended)",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     }
    ]
   },
@@ -939,10 +954,11 @@
     },
     {
      "code": "PHYS 2010",
-     "alts": [
-      "PHYS 2015"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "PHYS 2015",
+     "credits": 1
     },
     {
      "code": "ENVT 2730",
@@ -954,8 +970,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Humanities Distribution",
-     "credits": 3
+     "label": "Humanities",
+     "credits": 3,
+     "text": "Humanities Distribution"
     },
     {
      "code": "CHEM 1220",
@@ -1063,11 +1080,19 @@
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615",
    "precoreqs": {
     "and": [
-     "ENGH 1005",
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
      "BIOL 1615"
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -1327,7 +1352,10 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "To ensure safety and ability to perform lab analysis, the sampling course (ENVT 3300) is suggested as a pre- or corequisite.",
-   "precoreqs": "ENVT 3300"
+   "precoreqs": "ENVT 3300",
+   "preco": [
+    "ENVT 3300"
+   ]
   },
   "ENVT 3280": {
    "title": "Environmental Law",

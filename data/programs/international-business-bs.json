@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Physical Science",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -50,12 +50,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Art",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -93,7 +94,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -134,11 +139,11 @@
   {
    "type": "choice",
    "area": "Matriculation Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -156,7 +161,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "MyEducator"
-   ]
+   ],
+   "exam": "MyEducator"
   },
   {
    "type": "course",
@@ -219,7 +225,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -229,7 +235,8 @@
      "codes": [
       "MGMT 4910R"
      ],
-     "credits": 1
+     "credits": 1,
+     "recommended": true
     },
     {
      "codes": [
@@ -335,7 +342,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 6 credits",
+   "label": "WSB Elective (chosen from ACC 3120G, ECON 3050G, HM 3200G, MGMT 3300G or MGMT 4810R)",
    "pick": {
     "credits": 6
    },
@@ -399,20 +406,27 @@
      "credits": 3
     },
     {
-     "label": "Language 1010 Beginning I",
-     "credits": 4
+     "label": "Language Requirement",
+     "credits": 4,
+     "text": "Language 1010 Beginning I"
     },
     {
-     "label": "Physical Science",
-     "credits": 3
+     "label": "Physical Science Distribution",
+     "credits": 3,
+     "text": "Physical Science"
     },
     {
-     "label": "Fine Art",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Art"
     },
     {
-     "code": "IM 2600",
-     "credits": 3
+     "label": "WSB Elective (chosen from ACC 3120G, ECON 3050G, HM 3200G, MGMT 3300G or MGMT 4810R)",
+     "credits": 3,
+     "recommended": [
+      "IM 2600"
+     ],
+     "text": "General elective (IM 2600 recommended)"
     }
    ]
   },
@@ -435,12 +449,14 @@
      "credits": 3
     },
     {
-     "label": "Biology",
-     "credits": 3
+     "label": "Biology Distribution",
+     "credits": 3,
+     "text": "Biology"
     },
     {
-     "label": "Language 1020 Beginning II",
-     "credits": 4
+     "label": "Language Requirement",
+     "credits": 4,
+     "text": "Language 1020 Beginning II"
     }
    ]
   },
@@ -452,8 +468,9 @@
      "credits": 3
     },
     {
-     "label": "Language 2010 Intermediate I",
-     "credits": 4
+     "label": "Language Requirement",
+     "credits": 4,
+     "text": "Language 2010 Intermediate I"
     },
     {
      "code": "MKTG 2390",
@@ -464,8 +481,9 @@
      "credits": 3
     },
     {
-     "label": "Humanities distribution",
-     "credits": 3
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities distribution"
     }
    ]
   },
@@ -489,8 +507,9 @@
      "credits": 3
     },
     {
-     "label": "Language 2020G Intermediate II",
-     "credits": 4
+     "label": "Language Requirement",
+     "credits": 4,
+     "text": "Language 2020G Intermediate II"
     }
    ]
   },
@@ -511,27 +530,32 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 1
-    },
-    {
-     "code": "MGMT 4910R",
-     "credits": null
-    },
-    {
-     "code": "ENTR 2930R",
-     "credits": null
-    },
-    {
-     "code": "MGMT 2950R",
-     "credits": null
+     "credits": 1,
+     "alts": [
+      "MGMT 4910R",
+      "ENTR 2930R",
+      "MGMT 2950R"
+     ],
+     "options": [
+      [
+       "MGMT 4910R"
+      ],
+      [
+       "ENTR 2930R"
+      ],
+      [
+       "MGMT 2950R"
+      ]
+     ]
     },
     {
      "code": "MGMT 3320G",
      "credits": 3
     },
     {
-     "label": "Language 3050 Advanced I",
-     "credits": 3
+     "label": "Language Requirement",
+     "credits": 3,
+     "text": "Language 3050 Advanced I"
     }
    ]
   },
@@ -555,8 +579,9 @@
      "credits": 3
     },
     {
-     "label": "Language 3200 Advanced II",
-     "credits": 3
+     "label": "Language Requirement",
+     "credits": 3,
+     "text": "Language 3200 Advanced II"
     }
    ]
   },
@@ -576,8 +601,9 @@
      "credits": 3
     },
     {
-     "label": "Language 4200 (or other language course numbered 3000 or higher)",
-     "credits": 3
+     "label": "Language Requirement",
+     "credits": 3,
+     "text": "Language 4200 (or other language course numbered 3000 or higher)"
     },
     {
      "label": "Social Science Distribution",
@@ -593,18 +619,20 @@
      "credits": 3
     },
     {
-     "code": "ACC 3120G",
-     "alts": [
+     "label": "WSB Elective (chosen from ACC 3120G, ECON 3050G, HM 3200G, MGMT 3300G or MGMT 4810R)",
+     "credits": 6,
+     "recommended": [
+      "ACC 3120G",
       "ECON 3050G",
       "HM 3200G",
       "MGMT 3300G",
       "MGMT 4810R"
-     ],
-     "credits": 6
+     ]
     },
     {
-     "label": "General Elective",
-     "credits": 4
+     "label": "WSB Elective (chosen from ACC 3120G, ECON 3050G, HM 3200G, MGMT 3300G or MGMT 4810R)",
+     "credits": 4,
+     "text": "General Elective"
     }
    ]
   }

@@ -42,7 +42,8 @@
     },
     {
      "codes": [
-      "DAPR 2000"
+      "DAPR 2000",
+      "DAPR 2000L"
      ],
      "credits": 4
     }
@@ -113,6 +114,16 @@
    "coreqText": "DAPR 2000L",
    "coreqs": [
     "DAPR 2000L"
+   ],
+   "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
+   "precoreqs": null
+  },
+  "DAPR 2000L": {
+   "title": "Digital Audio Essentials Lab",
+   "credits": 1,
+   "coreqText": "DAPR 2000",
+   "coreqs": [
+    "DAPR 2000"
    ],
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
    "precoreqs": null

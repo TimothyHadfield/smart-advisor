@@ -9,7 +9,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "Elective PHIL 3000 +",
    "pick": {
     "count": 1
    },
@@ -48,8 +48,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Philosophy Elective",
-     "credits": 3
+     "label": "Elective PHIL 3000 +",
+     "credits": 3,
+     "text": "Philosophy Elective"
     }
    ]
   },
@@ -57,8 +58,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Philosophy Elective",
-     "credits": 3
+     "label": "Elective PHIL 3000 +",
+     "credits": 3,
+     "text": "Philosophy Elective"
     }
    ]
   },
@@ -66,8 +68,11 @@
    "label": "Semester 6",
    "items": [
     {
-     "code": "PHIL 3000",
-     "credits": 3
+     "label": "Elective PHIL 3000 +",
+     "credits": 3,
+     "recommended": [
+      "PHIL 3000"
+     ]
     }
    ]
   },
@@ -75,8 +80,11 @@
    "label": "Semester 7",
    "items": [
     {
-     "code": "PHIL 3000",
-     "credits": 3
+     "label": "Elective PHIL 3000 +",
+     "credits": 3,
+     "recommended": [
+      "PHIL 3000"
+     ]
     }
    ]
   },
@@ -84,8 +92,11 @@
    "label": "Semester 8",
    "items": [
     {
-     "code": "PHIL 3000",
-     "credits": 3
+     "label": "Elective PHIL 3000 +",
+     "credits": 3,
+     "recommended": [
+      "PHIL 3000"
+     ]
     }
    ]
   }
@@ -120,13 +131,6 @@
      "PHIL 2050"
     ]
    }
-  },
-  "PHIL 3000": {
-   "title": "Formal Logic II",
-   "credits": 3,
-   "prereqText": "PHIL 2000 and University Advanced Standing",
-   "prereqs": "PHIL 2000",
-   "prereqNonCourse": true
   }
  }
 }

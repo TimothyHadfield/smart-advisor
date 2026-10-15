@@ -162,8 +162,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 6
+     "label": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)",
+     "credits": 6,
+     "text": "Elective"
     }
    ]
   },
@@ -175,8 +176,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 6
+     "label": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)",
+     "credits": 6,
+     "text": "Elective"
     }
    ]
   }
@@ -246,7 +248,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "IT 3600",
-   "precoreqs": "IT 3600"
+   "precoreqs": "IT 3600",
+   "preco": [
+    "IT 3600"
+   ]
   },
   "CYBR 4700": {
    "title": "Enterprise Cybersecurity Management",
@@ -255,7 +260,10 @@
    "prereqs": "CYBR 2700",
    "prereqNonCourse": true,
    "precoreqText": "INFO 3430",
-   "precoreqs": "INFO 3430"
+   "precoreqs": "INFO 3430",
+   "preco": [
+    "INFO 3430"
+   ]
   },
   "ES 1150": {
    "title": "Introduction to Emergency and Disaster Management",
@@ -305,7 +313,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 4200": {
    "title": "Public Information and Disasters",
@@ -314,7 +325,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G or department approval",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "ESMG 4250G": {
    "title": "Humanitarian Management and Operations",
@@ -330,7 +344,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "ESMG 3100G",
-   "precoreqs": "ESMG 3100G"
+   "precoreqs": "ESMG 3100G",
+   "preco": [
+    "ESMG 3100G"
+   ]
   },
   "NSS 2010": {
    "title": "Introduction to National Security",

@@ -137,31 +137,35 @@
     },
     {
      "label": "Complete one of following:",
-     "credits": 3
-    },
-    {
-     "code": "ACC 3000",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 2040",
-     "credits": null
-    },
-    {
-     "code": "STAT 3040",
-     "credits": null
-    },
-    {
-     "code": "MGMT 2240",
-     "credits": null
-    },
-    {
-     "code": "MGMT 2340",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "ACC 3000",
+      "STAT 1040",
+      "STAT 2040",
+      "STAT 3040",
+      "MGMT 2240",
+      "MGMT 2340"
+     ],
+     "options": [
+      [
+       "ACC 3000"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 2040"
+      ],
+      [
+       "STAT 3040"
+      ],
+      [
+       "MGMT 2240"
+      ],
+      [
+       "MGMT 2340"
+      ]
+     ]
     },
     {
      "code": "MGMT 3470",

@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "General Biology",
+   "label": "Mathematics",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Art Studio core",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -152,7 +157,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Mathematics",
+   "label": "Choose 1",
    "pick": {
     "count": 1
    },
@@ -201,7 +206,10 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Art History Foundation Core:"
+   ]
   },
   {
    "type": "course",
@@ -229,7 +237,7 @@
    "area": "Discipline Core Requirements",
    "label": "ARTH",
    "pick": {
-    "credits": 33
+    "count": 11
    },
    "credits": 33,
    "options": [
@@ -353,6 +361,10 @@
      ],
      "credits": 3
     }
+   ],
+   "text": "Complete eleven courses from the following:",
+   "notes": [
+    "Seminars:"
    ]
   },
   {
@@ -410,12 +422,14 @@
      "credits": 2
     },
     {
-     "label": "General Biology",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "General Biology"
     },
     {
-     "label": "Art Studio core",
-     "credits": 3
+     "label": "Complete 3 credits of any ART course",
+     "credits": 3,
+     "text": "Art Studio core"
     }
    ]
   },
@@ -456,8 +470,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "One Foreign Language (1010, 1020, 2010 levels. German or French are recommended)",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "code": "ARTH 2800",
@@ -481,8 +496,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "One Foreign Language (1010, 1020, 2010 levels. German or French are recommended)",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "label": "ARTH",
@@ -506,8 +522,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "One Foreign Language (1010, 1020, 2010 levels. German or French are recommended)",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
      "label": "ARTH",
@@ -531,8 +548,9 @@
      "credits": 3
     },
     {
-     "label": "Language 2020",
-     "credits": 4
+     "label": "One Foreign Language (1010, 1020, 2010 levels. German or French are recommended)",
+     "credits": 4,
+     "text": "Language 2020"
     },
     {
      "label": "ARTH",
@@ -982,6 +1000,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

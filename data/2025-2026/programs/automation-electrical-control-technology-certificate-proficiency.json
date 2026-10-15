@@ -125,7 +125,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1135": {
    "title": "Introduction to Automation Lab",
@@ -137,7 +140,10 @@
     "AET 1155"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1140": {
    "title": "Applied AC Theory",
@@ -155,7 +161,14 @@
      "AET 1150",
      "AET 1155"
     ]
-   }
+   },
+   "preco": [
+    "AET 1050",
+    "AET 1130",
+    "AET 1135",
+    "AET 1150",
+    "AET 1155"
+   ]
   },
   "AET 1145": {
    "title": "Applied AC Lab",
@@ -174,7 +187,10 @@
     "AET 1140"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1150": {
    "title": "Industrial Logic",
@@ -186,7 +202,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "AET 1155": {
    "title": "Industrial Logic Lab",
@@ -198,7 +217,10 @@
     "AET 1135"
    ],
    "precoreqText": "AET 1050",
-   "precoreqs": "AET 1050"
+   "precoreqs": "AET 1050",
+   "preco": [
+    "AET 1050"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",

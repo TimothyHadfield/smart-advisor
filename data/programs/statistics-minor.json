@@ -18,7 +18,7 @@
   {
    "type": "choice",
    "area": "Discipline Core",
-   "label": "Choose 1",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -28,7 +28,8 @@
      "codes": [
       "STAT 3000"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -132,15 +133,19 @@
    "items": [
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "STAT 3000",
-     "credits": null
-    },
-    {
-     "code": "MATH 2270",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "STAT 3000",
+      "MATH 2270"
+     ],
+     "options": [
+      [
+       "STAT 3000"
+      ],
+      [
+       "MATH 2270"
+      ]
+     ]
     }
    ]
   },

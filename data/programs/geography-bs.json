@@ -72,7 +72,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -147,7 +151,7 @@
    "area": "Discipline Core Requirements",
    "code": "GEOG 3500",
    "alts": [],
-   "credits": 4
+   "credits": 3
   },
   {
    "type": "course",
@@ -175,7 +179,9 @@
    "area": "Discipline Core Requirements",
    "code": "GEO 4800R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "repeat": 2,
+   "creditsEach": 0.5
   },
   {
    "type": "course",
@@ -425,189 +431,164 @@
       "GEOG 4820R"
      ],
      "credits": 1,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "crMax": 3
     },
     {
      "codes": [
       "GEOG 4890R"
      ],
      "credits": 1,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "crMax": 4
     },
     {
      "codes": [
       "AIST 3270G"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "HIST 3840G"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ANTH 3150"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ANTH 3300"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ANTH 3660"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "BIOL 2500"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "CHEM 1210"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     },
     {
      "codes": [
       "CHEM 1215"
      ],
-     "credits": 1,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 1
     },
     {
      "codes": [
       "CHEM 1220"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     },
     {
      "codes": [
       "CHEM 1225"
      ],
-     "credits": 1,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 1
     },
     {
      "codes": [
       "STAT 2060"
      ],
-     "credits": 1,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 1
     },
     {
      "codes": [
       "STAT 3040"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ENGL 3730R"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ENVT 1110"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ENVT 2560"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "ENVT 3600"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "GEO 1220"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "GEO 2070"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "GEO 3100"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "GEO 3000"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "GEO 3700"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     },
     {
      "codes": [
       "GEO 4500"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     },
     {
      "codes": [
       "MATH 1060"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "MATH 1210"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     },
     {
      "codes": [
       "PHIL 3530"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
@@ -616,8 +597,7 @@
      "credits": 4,
      "alts": [
       "PHYS 2210"
-     ],
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     ]
     },
     {
      "codes": [
@@ -626,45 +606,43 @@
      "credits": 4,
      "alts": [
       "PHYS 2220"
-     ],
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     ]
     },
     {
      "codes": [
       "SOC 3030"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "SOC 2370"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "SOC 3690"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "SOC 3850"
      ],
-     "credits": 3,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 3
     },
     {
      "codes": [
       "STAT 2050"
      ],
-     "credits": 4,
-     "section": "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+     "credits": 4
     }
-   ]
+   ],
+   "notes": [
+    "Choose any classes from the following list or any classes from the following prefixes: GEOG, GEO, ENVT, ENST, AIST, ANTH, SOC, BIOL, CHEM, PHYS, NSS, HIST, GIS, MATH, STAT, CS."
+   ],
+   "open": true
   }
  ],
  "gradPlan": [
@@ -693,8 +671,9 @@
    "label": "Semester 2",
    "items": [
     {
-     "label": "Personal, Professional and Civic Growth",
-     "credits": 3
+     "label": "Personal, Professional, and Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional and Civic Growth"
     },
     {
      "code": "GEOG 1300G",
@@ -769,10 +748,11 @@
     },
     {
      "code": "GEOG 3500",
-     "alts": [
-      "GEOG 3505"
-     ],
-     "credits": 5
+     "credits": 4
+    },
+    {
+     "code": "GEOG 3505",
+     "credits": 1
     },
     {
      "label": "Core Elective",
@@ -1289,7 +1269,10 @@
    "title": "Introduction to Physical Geography Lab",
    "credits": 1,
    "precoreqText": "GEOG 1000",
-   "precoreqs": "GEOG 1000"
+   "precoreqs": "GEOG 1000",
+   "preco": [
+    "GEOG 1000"
+   ]
   },
   "GEOG 1300G": {
    "title": "Survey of World Geography",
@@ -1347,7 +1330,13 @@
    "title": "Biogeography",
    "credits": 4,
    "prereqText": "(BIOL1010, or BIOL1620, or GEOG1000) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620",
+     "GEOG 1000"
+    ]
+   },
    "prereqNonCourse": true
   },
   "GEOG 3350": {

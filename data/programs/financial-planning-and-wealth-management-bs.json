@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -50,12 +50,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "General Elective (from list)",
+   "label": "American Institution",
    "pick": {
     "count": 1
    },
@@ -99,7 +100,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -147,11 +152,11 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1",
+   "label": "My Educator or IM 2010 or IM 2600 *",
    "pick": {
     "count": 1
    },
-   "credits": 3,
+   "credits": 0,
    "options": [
     {
      "codes": [
@@ -169,7 +174,8 @@
    "text": "Complete one of the following:",
    "notes": [
     "My Educator"
-   ]
+   ],
+   "exam": "My Educator"
   },
   {
    "type": "course",
@@ -340,7 +346,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 3 credits",
+   "label": "FIN Elective",
    "pick": {
     "credits": 3
    },
@@ -362,12 +368,13 @@
    "text": "Complete 3 semester credit hours from the following courses:",
    "notes": [
     "Other upper division courses as approved by the Department Chair"
-   ]
+   ],
+   "open": true
   },
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Choose 17 credits",
+   "label": "FIN Elective (FIN 5700 suggested)",
    "pick": {
     "credits": 17
    },
@@ -579,11 +586,12 @@
      "credits": 3
     },
     {
-     "code": "IM 2010",
-     "alts": [
+     "label": "My Educator or IM 2010 or IM 2600 *",
+     "credits": null,
+     "recommended": [
+      "IM 2010",
       "IM 2600"
-     ],
-     "credits": null
+     ]
     },
     {
      "code": "FIN 3200",
@@ -602,8 +610,13 @@
      "credits": 3
     },
     {
-     "code": "IM 2010",
-     "credits": null
+     "label": "My Educator or IM 2010 or IM 2600 *",
+     "credits": null,
+     "recommended": [
+      "IM 2010",
+      "IM 2600"
+     ],
+     "text": "*Students will be required to complete My Educator with a score of 80 percent or higher or complete the IM 2010 or 2600 course with a score of 80 percent or higher. Course could count for 2 credit of General Elective."
     },
     {
      "label": "Notes: **Complete with a B- grade or higher",
@@ -706,8 +719,11 @@
      "credits": 2
     },
     {
-     "code": "FIN 5700",
-     "credits": 3
+     "label": "FIN Elective (FIN 5700 suggested)",
+     "credits": 3,
+     "recommended": [
+      "FIN 5700"
+     ]
     },
     {
      "code": "FIN 5800",
@@ -868,7 +884,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "FIN 3060",
-   "precoreqs": "FIN 3060"
+   "precoreqs": "FIN 3060",
+   "preco": [
+    "FIN 3060"
+   ]
   },
   "FIN 3400": {
    "title": "Investment Management",
@@ -884,7 +903,10 @@
    "prereqs": "FIN 3400",
    "prereqNonCourse": true,
    "precoreqText": "MGMT 3345",
-   "precoreqs": "MGMT 3345"
+   "precoreqs": "MGMT 3345",
+   "preco": [
+    "MGMT 3345"
+   ]
   },
   "FIN 4190": {
    "title": "Applied Asset Diversification and Management",
@@ -1008,7 +1030,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "FIN 5800",
-   "precoreqs": "FIN 5800"
+   "precoreqs": "FIN 5800",
+   "preco": [
+    "FIN 5800"
+   ]
   },
   "FIN 5800": {
    "title": "Wealth Management and Financial Planning Capstone",
@@ -1029,7 +1054,11 @@
      "FIN 3220",
      "FIN 5260"
     ]
-   }
+   },
+   "preco": [
+    "FIN 3220",
+    "FIN 5260"
+   ]
   },
   "HIST 1700": {
    "title": "American History",

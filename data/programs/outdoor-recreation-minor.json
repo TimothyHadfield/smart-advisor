@@ -44,7 +44,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Choose 1 credits",
+   "label": "REC Elective",
    "pick": {
     "credits": 1
    },
@@ -234,7 +234,11 @@
      "ENGL 2010",
      "MATH 1000"
     ]
-   }
+   },
+   "preco": [
+    "ENGL 2010",
+    "MATH 1000"
+   ]
   },
   "REC 3100": {
    "title": "Recreation Program Planning",
@@ -243,7 +247,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MATH 1000 or higher",
-   "precoreqs": "MATH 1000"
+   "precoreqs": "MATH 1000",
+   "preco": [
+    "MATH 1000"
+   ]
   },
   "REC 3200": {
    "title": "Inclusive Recreation",
@@ -264,7 +271,10 @@
    "prereqs": "REC 2200",
    "prereqNonCourse": true,
    "precoreqText": "MAT 1010",
-   "precoreqs": "MAT 1010"
+   "precoreqs": "MAT 1010",
+   "preco": [
+    "MAT 1010"
+   ]
   },
   "REC 3500": {
    "title": "Recreation Administration",

@@ -32,7 +32,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biology Distribution",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -70,7 +70,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -108,8 +112,11 @@
   {
    "type": "placeholder",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science ( COMM 2110 Recommended)",
-   "credits": 3
+   "label": "Social/Behavioral Science (COMM 2110 Recommended)",
+   "credits": 3,
+   "recommended": [
+    "COMM 2110"
+   ]
   },
   {
    "type": "course",
@@ -435,6 +442,7 @@
       "ME 3810R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "Technical Elective Courses"
     },
     {
@@ -466,7 +474,12 @@
      "section": "Technical Elective Courses"
     }
    ],
-   "text": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level."
+   "text": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level.",
+   "notes": [
+    "ME Elective Courses",
+    "ME Elective Courses: Technical Elective Courses",
+    "Technical Elective Courses: Students may also take upper level physics, chemistry, mathematics, biology, computer engineering, electrical engineering, and civil engineering classes as technical electives in consultation with their faculty advisors and approval of the department offering the course."
+   ]
   }
  ],
  "gradPlan": [
@@ -588,8 +601,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "ENGR 2300",
@@ -633,8 +647,9 @@
      "credits": 1
     },
     {
-     "label": "ME Elective",
-     "credits": 3
+     "label": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level.",
+     "credits": 3,
+     "text": "ME Elective"
     }
    ]
   },
@@ -642,12 +657,16 @@
    "label": "Semester 7",
    "items": [
     {
-     "label": "Fine Arts Distribution",
-     "credits": 3
+     "label": "Fine Arts",
+     "credits": 3,
+     "text": "Fine Arts Distribution"
     },
     {
-     "code": "COMM 2110",
-     "credits": 3
+     "label": "Social/Behavioral Science (COMM 2110 Recommended)",
+     "credits": 3,
+     "recommended": [
+      "COMM 2110"
+     ]
     },
     {
      "code": "ME 4010",
@@ -662,8 +681,9 @@
      "credits": 3
     },
     {
-     "label": "ME Elective",
-     "credits": 3
+     "label": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level.",
+     "credits": 3,
+     "text": "ME Elective"
     }
    ]
   },
@@ -679,8 +699,9 @@
      "credits": 3
     },
     {
-     "label": "ME Elective",
-     "credits": 6
+     "label": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level.",
+     "credits": 6,
+     "text": "ME Elective"
     },
     {
      "code": "PHIL 2050G",
@@ -722,10 +743,6 @@
    "prereqText": "EGDT 1040 , University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)",
    "prereqs": "EGDT 1040",
    "prereqNonCourse": true
-  },
-  "COMM 2110": {
-   "title": "Interpersonal Communication",
-   "credits": 3
   },
   "CS 1400": {
    "title": "Fundamentals of Programming",
@@ -832,7 +849,10 @@
    "title": "Computational Methods for Engineering Analysis",
    "credits": 3,
    "precoreqText": "MATH 2250",
-   "precoreqs": "MATH 2250"
+   "precoreqs": "MATH 2250",
+   "preco": [
+    "MATH 2250"
+   ]
   },
   "HIST 1700": {
    "title": "American History",
@@ -914,7 +934,11 @@
      "ENGR 2140",
      "ENGR 2160"
     ]
-   }
+   },
+   "preco": [
+    "ENGR 2140",
+    "ENGR 2160"
+   ]
   },
   "ME 3010": {
    "title": "System Dynamics I",
@@ -1024,7 +1048,10 @@
    "prereqs": "ENGR 2300",
    "prereqNonCourse": true,
    "precoreqText": "ME 3320",
-   "precoreqs": "ME 3320"
+   "precoreqs": "ME 3320",
+   "preco": [
+    "ME 3320"
+   ]
   },
   "ME 3410": {
    "title": "Applied Finite Element Analysis",
@@ -1038,7 +1065,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ME 3320",
-   "precoreqs": "ME 3320"
+   "precoreqs": "ME 3320",
+   "preco": [
+    "ME 3320"
+   ]
   },
   "ME 3810R": {
    "title": "Mechanical Engineering Internship",
@@ -1062,7 +1092,10 @@
    "prereqs": "ME 3050",
    "prereqNonCourse": true,
    "precoreqText": "ME 4010",
-   "precoreqs": "ME 4010"
+   "precoreqs": "ME 4010",
+   "preco": [
+    "ME 4010"
+   ]
   },
   "ME 4180": {
    "title": "Compliant Mechanisms",
@@ -1171,7 +1204,11 @@
      "ME 2210",
      "ME 3410"
     ]
-   }
+   },
+   "preco": [
+    "ME 2210",
+    "ME 3410"
+   ]
   },
   "ME 4820": {
    "title": "Mechanical Engineering Capstone II",

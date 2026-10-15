@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -35,7 +35,8 @@
      "codes": [
       "MAT 1030"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -47,7 +48,8 @@
      "codes": [
       "STAT 1040"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     },
     {
      "codes": [
@@ -59,7 +61,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -71,15 +74,17 @@
      "codes": [
       "MATH 1090"
      ],
-     "credits": 3
+     "credits": 3,
+     "recommended": true
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Humanities",
+   "label": "American Institutions",
    "pick": {
     "count": 1
    },
@@ -117,7 +122,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses:"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -353,16 +362,20 @@
      "credits": 3
     },
     {
-     "code": "MAT 1010",
-     "credits": 4
+     "label": "Elective: MAT 1010 (recommended)",
+     "credits": 4,
+     "recommended": [
+      "MAT 1010"
+     ]
     },
     {
      "label": "American Institutions",
      "credits": 3
     },
     {
-     "label": "Foreign Language 1010",
-     "credits": 4
+     "label": "One Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language 1010"
     },
     {
      "label": "Elective",
@@ -379,47 +392,56 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
-     "code": "MAT 1030",
-     "credits": null
+     "label": "Elective: PHIL 1250 (recommended)",
+     "credits": 3,
+     "recommended": [
+      "PHIL 1250"
+     ]
     },
     {
-     "code": "MAT 1035",
-     "credits": null
+     "label": "Humanities Distribution",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
-    },
-    {
-     "code": "PHIL 1250",
-     "credits": 3
-    },
-    {
-     "label": "Humanities",
-     "credits": 3
-    },
-    {
-     "label": "Foreign Language 1020",
-     "credits": 4
+     "label": "One Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language 1020"
     }
    ]
   },
@@ -435,8 +457,9 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language 2010",
-     "credits": 4
+     "label": "One Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language 2010"
     },
     {
      "code": "PHIL 2110",
@@ -456,12 +479,14 @@
      "credits": 3
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts Distribution",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
-     "label": "Foreign Language 2020/2020G",
-     "credits": 4
+     "label": "One Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language 2020/2020G"
     },
     {
      "code": "PHIL 2150",
@@ -477,8 +502,9 @@
    "label": "Semester 5",
    "items": [
     {
-     "label": "VALUE THEORY SET",
-     "credits": 3
+     "label": "Value Theory (compete 3 credits from the following)",
+     "credits": 3,
+     "text": "VALUE THEORY SET"
     },
     {
      "code": "PHIL 2000",
@@ -614,13 +640,6 @@
    "title": "US History since 1877",
    "credits": 3
   },
-  "MAT 1010": {
-   "title": "Intermediate Algebra",
-   "credits": 4,
-   "prereqText": "One of the following (within two years): MAT 0980 with a grade of C- or higher; or appropriate placement by a placement exam.",
-   "prereqs": "MAT 0980",
-   "prereqNonCourse": true
-  },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
    "credits": 3,
@@ -628,6 +647,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -680,10 +700,6 @@
     ]
    },
    "prereqNonCourse": true
-  },
-  "PHIL 1250": {
-   "title": "Introduction to Logic and Critical Thinking",
-   "credits": 3
   },
   "PHIL 2000": {
    "title": "Formal Logic I",

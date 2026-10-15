@@ -30,7 +30,7 @@
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Complete 6 credits from one domain",
+   "label": "Choose 1 track",
    "pick": {
     "credits": 6
    },
@@ -44,31 +44,39 @@
      "alts": [
       "CS 1400"
      ],
-     "section": "Information Systems Domain:"
+     "section": "Information Systems Domain"
     },
     {
      "codes": [
       "INFO 2420"
      ],
      "credits": 3,
-     "section": "Information Systems Domain:"
+     "section": "Information Systems Domain"
     },
     {
      "codes": [
       "IT 1510"
      ],
      "credits": 3,
-     "section": "Information Technology Domain:"
+     "section": "Information Technology Domain"
     },
     {
      "codes": [
       "IT 1600"
      ],
      "credits": 3,
-     "section": "Information Technology Domain:"
+     "section": "Information Technology Domain"
     }
    ],
-   "text": "Complete 6 credits from either the Information Systems or Information Technology domain:"
+   "text": "Complete 6 credits from either the Information Systems or Information Technology domain:",
+   "notes": [
+    "Information Systems Domain:",
+    "Information Systems Domain: Information Technology Domain:"
+   ],
+   "tracks": [
+    "Information Systems Domain",
+    "Information Technology Domain"
+   ]
   }
  ],
  "gradPlan": [
@@ -104,30 +112,36 @@
     },
     {
      "label": "Information Systems Domain:",
-     "credits": null
-    },
-    {
-     "code": "INFO 1200",
+     "credits": null,
      "alts": [
-      "CS 1400"
+      "INFO 1200",
+      "CS 1400",
+      "INFO 2420"
      ],
-     "credits": null
-    },
-    {
-     "code": "INFO 2420",
-     "credits": null
+     "options": [
+      [
+       "INFO 1200"
+      ],
+      [
+       "INFO 2420"
+      ]
+     ]
     },
     {
      "label": "Information Technology Domain:",
-     "credits": null
-    },
-    {
-     "code": "IT 1510",
-     "credits": null
-    },
-    {
-     "code": "IT 1600",
-     "credits": null
+     "credits": null,
+     "alts": [
+      "IT 1510",
+      "IT 1600"
+     ],
+     "options": [
+      [
+       "IT 1510"
+      ],
+      [
+       "IT 1600"
+      ]
+     ]
     }
    ]
   }

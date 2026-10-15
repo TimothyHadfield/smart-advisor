@@ -4,18 +4,12 @@
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/sociology-minor/",
  "catalogYear": "2025-2026",
  "fetched": "2026-10-15",
- "totalCredits": null,
+ "totalCredits": 18,
  "requirements": [
-  {
-   "type": "placeholder",
-   "area": "",
-   "label": "Total hours",
-   "credits": 18
-  },
   {
    "type": "choice",
    "area": "",
-   "label": "Choose 6 credits",
+   "label": "Social/Behavioral Science",
    "pick": {
     "credits": 6
    },
@@ -33,12 +27,13 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "ge": "soc"
   },
   {
    "type": "choice",
    "area": "",
-   "label": "SOC Elective",
+   "label": "Social/Behavioral Science",
    "pick": {
     "count": 4
    },
@@ -138,16 +133,19 @@
      "codes": [
       "SOC 4750R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     },
     {
      "codes": [
       "SOC 4900R"
      ],
-     "credits": 1
+     "credits": 1,
+     "crMax": 3
     }
    ],
-   "text": "Complete any 4 of the following classes (with at least 3 upper division)"
+   "text": "Complete any 4 of the following classes (with at least 3 upper division)",
+   "ge": "soc"
   }
  ],
  "gradPlan": [

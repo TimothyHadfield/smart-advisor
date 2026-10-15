@@ -59,7 +59,8 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "recommended": true
     },
     {
      "codes": [
@@ -74,7 +75,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
@@ -117,7 +119,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -324,7 +327,7 @@
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Breadth Elective",
+   "label": "DANC 1440R",
    "pick": {
     "count": 2
    },
@@ -385,7 +388,10 @@
      "credits": 1
     }
    ],
-   "text": "Complete 2 courses from the following:"
+   "text": "Complete 2 courses from the following:",
+   "notes": [
+    "Depth Electives"
+   ]
   },
   {
    "type": "choice",
@@ -544,7 +550,14 @@
      "section": "Depth Elective C"
     }
    ],
-   "text": "Complete 6 credits in either Category A, B, or C. Depth Electives cannot be repeated from Breadth Electives."
+   "text": "Complete 6 credits in either Category A, B, or C. Depth Electives cannot be repeated from Breadth Electives.",
+   "notes": [
+    "Depth Elective A",
+    "Depth Elective A: Depth Elective B",
+    "Depth Elective B: Depth Elective C",
+    "Depth Elective C: Education Courses: Must be completed with a grade of C or higher."
+   ],
+   "open": true
   },
   {
    "type": "course",
@@ -659,12 +672,16 @@
      "credits": 3
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
-     "code": "DANC 1440R",
-     "credits": 3
+     "label": "DANC 1440R",
+     "credits": 3,
+     "recommended": [
+      "DANC 1440R"
+     ]
     },
     {
      "code": "DANC 2330",
@@ -684,12 +701,14 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "DANC 2430R",
@@ -709,8 +728,9 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Personal, Professional, & Civic Growth Distribution",
-     "credits": 3
+     "label": "Personal, Professional, & Civic Growth",
+     "credits": 3,
+     "text": "Personal, Professional, & Civic Growth Distribution"
     },
     {
      "code": "DANC 1270R",
@@ -1327,6 +1347,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

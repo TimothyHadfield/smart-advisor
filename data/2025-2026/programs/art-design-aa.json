@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "American Institutions Distribution",
+   "label": "Quantitative Literacy",
    "pick": {
     "count": 1
    },
@@ -44,12 +44,13 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Social/Behavioral Science Distribution",
+   "label": "American Institutions Distribution",
    "pick": {
     "count": 1
    },
@@ -87,7 +88,11 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "notes": [
+    "Distribution Courses"
+   ],
+   "ge": "ai"
   },
   {
    "type": "placeholder",
@@ -256,12 +261,14 @@
      "credits": 3
     },
     {
-     "label": "Social/Behavioral Science Distribution",
-     "credits": 3
+     "label": "Social/Behavioral Science",
+     "credits": 3,
+     "text": "Social/Behavioral Science Distribution"
     },
     {
-     "label": "Physical Science Distribution",
-     "credits": 3
+     "label": "Physical Science",
+     "credits": 3,
+     "text": "Physical Science Distribution"
     },
     {
      "label": "Art Elective",
@@ -277,8 +284,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "code": "ARTH 2710",
@@ -289,12 +297,14 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete 8 credits of the same Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Art Elective",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   },
@@ -314,12 +324,14 @@
      "credits": 3
     },
     {
-     "label": "Foreign Language",
-     "credits": 4
+     "label": "Complete 8 credits of the same Foreign Language",
+     "credits": 4,
+     "text": "Foreign Language"
     },
     {
-     "label": "Elective",
-     "credits": 2
+     "label": "Art Elective",
+     "credits": 2,
+     "text": "Elective"
     }
    ]
   }
@@ -370,7 +382,10 @@
    },
    "prereqNonCourse": true,
    "precoreqText": "ART 1120",
-   "precoreqs": "ART 1120"
+   "precoreqs": "ART 1120",
+   "preco": [
+    "ART 1120"
+   ]
   },
   "ART 1750": {
    "title": "Intro to Digital Imaging",
@@ -441,6 +456,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

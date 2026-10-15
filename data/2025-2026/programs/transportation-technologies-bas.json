@@ -111,7 +111,10 @@
    "type": "placeholder",
    "area": "Additional General Education",
    "label": "Social/Behavioral Science Distribution (TECH 2000G recommended)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "TECH 2000G"
+   ]
   },
   {
    "type": "course",
@@ -281,8 +284,9 @@
      "credits": 3
     },
     {
-     "label": "Transportation Related Credits",
-     "credits": 12
+     "label": "Credits from a transportation-related AAS",
+     "credits": 12,
+     "text": "Transportation Related Credits"
     }
    ]
   },
@@ -294,12 +298,16 @@
      "credits": 3
     },
     {
-     "code": "TECH 2000G",
-     "credits": 3
+     "label": "Social/Behavioral Science Distribution (TECH 2000G recommended)",
+     "credits": 3,
+     "recommended": [
+      "TECH 2000G"
+     ]
     },
     {
-     "label": "Transportation Related Credits",
-     "credits": 12
+     "label": "Credits from a transportation-related AAS",
+     "credits": 12,
+     "text": "Transportation Related Credits"
     }
    ]
   },
@@ -307,8 +315,9 @@
    "label": "Semester 3",
    "items": [
     {
-     "label": "Transportation Related Credits",
-     "credits": 12
+     "label": "Credits from a transportation-related AAS",
+     "credits": 12,
+     "text": "Transportation Related Credits"
     },
     {
      "label": "Humanities Distribution",
@@ -328,16 +337,18 @@
      "credits": 3
     },
     {
-     "label": "Biology Distribution",
-     "credits": 3
+     "label": "Biology Distributions",
+     "credits": 3,
+     "text": "Biology Distribution"
     },
     {
      "label": "American Institution Distribution",
      "credits": 3
     },
     {
-     "label": "Transportation Related Credits",
-     "credits": 9
+     "label": "Credits from a transportation-related AAS",
+     "credits": 9,
+     "text": "Transportation Related Credits"
     }
    ]
   },
@@ -399,8 +410,9 @@
      "credits": 6
     },
     {
-     "label": "Physical Science",
-     "credits": 3
+     "label": "Physical Science Distribution",
+     "credits": 3,
+     "text": "Physical Science"
     }
    ]
   },
@@ -485,6 +497,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },
@@ -508,10 +521,6 @@
   },
   "POLS 1100": {
    "title": "American National Government",
-   "credits": 3
-  },
-  "TECH 2000G": {
-   "title": "Technology and Human Life",
    "credits": 3
   },
   "TECH 4200": {
@@ -622,7 +631,12 @@
    "title": "Advanced Welding Technologies and Attachment Methods",
    "credits": 3,
    "prereqText": "CRT1230, CRT2510, Matriculation, and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "CRT 1230",
+     "CRT 2510"
+    ]
+   },
    "prereqNonCourse": true
   },
   "TT 4260": {

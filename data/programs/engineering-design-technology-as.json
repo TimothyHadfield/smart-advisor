@@ -25,7 +25,7 @@
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Biology",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -74,12 +74,13 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "math"
   },
   {
    "type": "choice",
    "area": "General Education Requirements",
-   "label": "Fine Arts",
+   "label": "Complete one of the following:",
    "pick": {
     "count": 1
    },
@@ -117,7 +118,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "ge": "ai"
   },
   {
    "type": "course",
@@ -132,25 +134,37 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology (Recommend BIOL 1010 General Biology)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "BIOL 1010"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities (Recommend ENGL 2100 Technical Communication HH)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "ENGL 2100"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science (Recommend COMM 1050 Introduction to Speech Communication)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "COMM 1050"
+   ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts (Recommend EGDT 1720 Architectural Rendering)",
-   "credits": 3
+   "credits": 3,
+   "recommended": [
+    "EGDT 1720"
+   ]
   },
   {
    "type": "placeholder",
@@ -161,9 +175,10 @@
   {
    "type": "choice",
    "area": "Discipline Related Core",
-   "label": "Choose 26 credits",
+   "label": "EGDT Elective",
    "pick": {
-    "credits": 26
+    "credits": 26,
+    "tracks": 1
    },
    "credits": 26,
    "options": [
@@ -619,6 +634,7 @@
       "EGDT 2810R"
      ],
      "credits": 1,
+     "crMax": 3,
      "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
     },
     {
@@ -638,6 +654,11 @@
    ],
    "text": "Complete a minimum of 26 credits from one the following tracks:",
    "notes": [
+    "Architectural Drafting and Design Track. (Students select this track if interested in a career in architectural drafting and design. Students also take these classes as part of the Bachelor of Architecture degree.)",
+    "Architectural Drafting and Design Track. (Students select this track if interested in a career in architectural drafting and design. Students also take these classes as part of the Bachelor of Architecture degree.): Civil Drafting and Design Track. (Students select this track if interested in a career in civil drafting and design. Students may also apply these courses to several focus areas within the Surveying and Mapping B.S. degree.)",
+    "Civil Drafting and Design Track. (Students select this track if interested in a career in civil drafting and design. Students may also apply these courses to several focus areas within the Surveying and Mapping B.S. degree.): Mechanical/Electrical Drafting and Design Track. (Students select this track if interested in a career in mechanical drafting and design.)",
+    "Mechanical/Electrical Drafting and Design Track. (Students select this track if interested in a career in mechanical drafting and design.): Structural Drafting and Design Track. (Students select this track if interested in a career in structural drafting and design.)",
+    "Structural Drafting and Design Track. (Students select this track if interested in a career in structural drafting and design.): General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
     "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.): Complete the following:",
     "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.): Choose 11 Credits of Electives from the following: (Some courses may have additional prereqs.)"
    ],
@@ -681,63 +702,71 @@
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "MAT 1030",
-     "credits": null
-    },
-    {
-     "code": "MAT 1035",
-     "credits": null
-    },
-    {
-     "code": "STAT 1040",
-     "credits": null
-    },
-    {
-     "code": "STAT 1045",
-     "credits": null
-    },
-    {
-     "code": "MATH 1050",
-     "credits": null
-    },
-    {
-     "code": "MATH 1055",
-     "credits": null
-    },
-    {
-     "code": "MATH 1090",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "MAT 1030",
+      "MAT 1035",
+      "STAT 1040",
+      "STAT 1045",
+      "MATH 1050",
+      "MATH 1055",
+      "MATH 1090"
+     ],
+     "options": [
+      [
+       "MAT 1030"
+      ],
+      [
+       "MAT 1035"
+      ],
+      [
+       "STAT 1040"
+      ],
+      [
+       "STAT 1045"
+      ],
+      [
+       "MATH 1050"
+      ],
+      [
+       "MATH 1055"
+      ],
+      [
+       "MATH 1090"
+      ]
+     ]
     },
     {
      "label": "Complete one of the following:",
-     "credits": 3
-    },
-    {
-     "code": "HIST 2700",
-     "credits": null
-    },
-    {
-     "code": "HIST 2710",
-     "credits": null
-    },
-    {
-     "code": "HIST 1700",
-     "credits": null
-    },
-    {
-     "code": "HIST 1740",
-     "credits": null
-    },
-    {
-     "code": "POLS 1000",
-     "credits": null
-    },
-    {
-     "code": "POLS 1100",
-     "credits": null
+     "credits": 3,
+     "alts": [
+      "HIST 2700",
+      "HIST 2710",
+      "HIST 1700",
+      "HIST 1740",
+      "POLS 1000",
+      "POLS 1100"
+     ],
+     "options": [
+      [
+       "HIST 2700"
+      ],
+      [
+       "HIST 2710"
+      ],
+      [
+       "HIST 1700"
+      ],
+      [
+       "HIST 1740"
+      ],
+      [
+       "POLS 1000"
+      ],
+      [
+       "POLS 1100"
+      ]
+     ]
     }
    ]
   },
@@ -782,12 +811,14 @@
      "credits": 2
     },
     {
-     "label": "Biology",
-     "credits": 3
+     "label": "Biology (Recommend BIOL 1010 General Biology)",
+     "credits": 3,
+     "text": "Biology"
     },
     {
-     "label": "Fine Arts",
-     "credits": 3
+     "label": "Fine Arts (Recommend EGDT 1720 Architectural Rendering)",
+     "credits": 3,
+     "text": "Fine Arts"
     },
     {
      "label": "Physical Science",
@@ -811,12 +842,14 @@
      "credits": 3
     },
     {
-     "label": "Humanities",
-     "credits": 3
+     "label": "Humanities (Recommend ENGL 2100 Technical Communication HH)",
+     "credits": 3,
+     "text": "Humanities"
     },
     {
-     "label": "Social/ Behavioral Science",
-     "credits": 3
+     "label": "Social/Behavioral Science (Recommend COMM 1050 Introduction to Speech Communication)",
+     "credits": 3,
+     "text": "Social/ Behavioral Science"
     }
    ]
   }
@@ -1133,6 +1166,7 @@
    "prereqs": {
     "or": [
      "MAT 1020",
+     "MAT 1015",
      "MAT 1010"
     ]
    },

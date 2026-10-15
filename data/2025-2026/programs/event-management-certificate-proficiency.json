@@ -121,8 +121,9 @@
      "credits": 3
     },
     {
-     "label": "Elective",
-     "credits": 3
+     "label": "Elective Requirements: Choose 3 credits from the Following",
+     "credits": 3,
+     "text": "Elective"
     }
    ]
   }
@@ -164,7 +165,10 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "HM 3210",
-   "precoreqs": "HM 3210"
+   "precoreqs": "HM 3210",
+   "preco": [
+    "HM 3210"
+   ]
   },
   "HM 4250": {
    "title": "Advanced Event Production",
@@ -194,13 +198,19 @@
    "title": "Stagecraft I",
    "credits": 2,
    "precoreqText": "THEA 1514",
-   "precoreqs": "THEA 1514"
+   "precoreqs": "THEA 1514",
+   "preco": [
+    "THEA 1514"
+   ]
   },
   "THEA 1514": {
    "title": "Stagecraft I Lab",
    "credits": 1,
    "precoreqText": "THEA 1513",
-   "precoreqs": "THEA 1513"
+   "precoreqs": "THEA 1513",
+   "preco": [
+    "THEA 1513"
+   ]
   }
  },
  "totalFrom": "area headers"
