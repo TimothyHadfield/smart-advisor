@@ -1,5 +1,36 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#275d38">
 <title>Smart Advisor</title>
-<style>:root{--bg:#fff;--fg:#1b1b1b;--accent:#275d38}@media (prefers-color-scheme:dark){:root{--bg:#121412;--fg:#e8ece8;--accent:#4f9a62}}body{margin:0;padding:24px 16px;background:var(--bg);color:var(--fg);font-family:system-ui,sans-serif}h1{color:var(--accent);margin:0 0 8px}</style>
-</head><body><h1>Smart Advisor</h1><p>UVU degree flowcharts and semester plans. Coming soon.</p></body></html>
+<link rel="stylesheet" href="css/app.css">
+</head><body>
+<header class="top">
+  <span class="brand">Smart Advisor</span>
+  <span class="prog" id="progName"></span>
+  <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
+</header>
+<main id="main" data-tab="flow">
+  <section class="panel flow" id="flowPanel" aria-label="Flowchart">
+    <div class="legend"><span class="sw done"></span>Taken<span class="sw ready"></span>Ready<span class="sw locked"></span>Locked</div>
+    <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
+  </section>
+  <section class="panel plan" id="planPanel" aria-label="Plan">
+    <div class="sum" id="sum"></div>
+    <div class="sems" id="sems"></div>
+  </section>
+</main>
+<nav class="tabs" id="tabs">
+  <button data-tab="flow" class="on">Flowchart</button>
+  <button data-tab="plan">Plan</button>
+</nav>
+<dialog id="settings">
+  <form method="dialog">
+    <label>Start <select id="setStart"></select></label>
+    <label>Max credits <select id="setMax"></select></label>
+    <label class="sw-row">Summers <input type="checkbox" id="setSummer" role="switch"></label>
+    <div class="row"><button type="button" id="clearDone" class="ghost">Clear taken</button><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<script type="module" src="js/app.js"></script>
+</body></html>
