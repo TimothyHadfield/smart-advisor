@@ -1,6 +1,6 @@
 // Firestore rules, against the emulator (needs Java 21):
-//   firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.test.mjs"
-// Talks REST with unsigned test tokens (the emulator doesn't check signatures). Not in the plain suite.
+//   firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.emulator.mjs"
+// Talks REST with unsigned test tokens (the emulator doesn't check signatures). Named .emulator.mjs so `node --test tests/*.test.mjs` skips it.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 
