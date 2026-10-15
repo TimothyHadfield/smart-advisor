@@ -17,8 +17,8 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 | Flowchart layout like Tim's | live (bd1827b) | `js/layout.js` layered + crossing reduction; EE crossings 62→8 drawn (Tim's hand chart: 10); elbows, labs folded, Gen Ed row below |
 | Flowchart v3 | live (e76dc76) | names in boxes, bends 104→46, 17/39 straight, 0 overlapping segments, semester colors, tap locks + cascade, Gen Ed section, grades red→green + Grades switch |
 | Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
-| All majors | not started | phase 2 (+ catalog-year archives) |
-| Google sign-in (Firebase) | backend ready, UI builder running (branch accounts) | project `smart-advisor-th` (Spark, us-central1 Firestore), Google provider on, github.io authorized, owner-only rules deployed (b248015). Web config: `firebase apps:sdkconfig web --project smart-advisor-th`. UI waits for the flowchart builder (both edit js/app.js) |
+| All majors | data builder running (branch all-programs) | then a major/minor picker + audit auto-picks program/catalog year |
+| Google sign-in (Firebase) | live (8a3bcfb) | `js/account.js` (Firebase 10.14.1) + `js/sync.js` merge; profile icon → Continue with Google (popup); users/{uid} field-checked rules deployed; sign-out clears device; delete account two-tap. e2e: `python -m http.server 8137` + `node tests/accounts.e2e.mjs` (emulators, Playwright from ~/.claude/tools); rules: `tests/rules.test.mjs` via emulator. Real Google popup untested |
 | Section schedules + builder | blocked on data | public class search stops at Spring 2025; keep hunting, fallback = paste from myUVU |
 | Rate My Professors | not started | unofficial GraphQL; needs a CORS-free path (fetch at build time via script) |
 
