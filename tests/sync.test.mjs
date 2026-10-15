@@ -147,3 +147,13 @@ test('mergeDocs: the account\'s programs win; a device-only choice is kept when 
   assert.deepEqual(m.programs, PLAN.programs);
   assert.equal(m.program, 'electrical-engineering-bs');
 });
+
+test('schedule preferences + chosen sections (settings.sched) go to the account and come back', () => {
+  const sched = { prefs: { days: 'MTWR', after: '0900', before: null, gaps: true, rmp: true, mode: 'any', main: true, wait: false },
+    terms: { 202720: { add: ['ENGL 2010'], drop: ['ECE 2260'], pin: { 'ECE 2250': '14874' }, crns: ['14874', '14869', '10355'] } } };
+  const d = toDoc({ ...localState(), settings: { ...localState().settings, sched } }, 'ee-bs');
+  assert.deepEqual(d.settings.sched, sched);
+  const s = { settings: {}, done: {}, grades: {} };
+  applyDoc(s, d, 'ee-bs');
+  assert.deepEqual(s.settings.sched, sched);
+});
