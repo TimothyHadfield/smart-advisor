@@ -1,4 +1,5 @@
-import { buildModel, makePlan, flowNodes, flowEdges, unitDone, earliestStart, termIndex, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, termIndex, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
@@ -16,7 +17,8 @@ const KEY = 'smart-advisor:v1';
 
 // ---------- saved state (localStorage; a signed-in student's copy also syncs to their account) ----------
 // plan            = { programs: [major, minor...], catalogYear (null = current) }
-// done[major]     = taken course codes / Gen Ed box ids (a minor's boxes: "<minor id>/ph:3")
+// done[major]     = taken course codes / Gen Ed box ids (a minor's boxes: "<minor id>/ph:3"); a Gen Ed box
+//                   filled from its class list also has "<box id>=<code>" ("ph:8=DANC 1010", js/gened.js)
 // grades[major]   = { code or box id: grade } for what came from an audit ("A-", "TCR", "IP", or "")
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
@@ -71,7 +73,7 @@ const doneSet = () => new Set(state.done[major()] || []);
 function setDone(set) { state.done[major()] = [...set]; save(); }
 const gradeMap = () => (state.grades[major()] ??= {});
 
-let model, nodes, edges, graph, sections = [], lastPlan = null;
+let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null;
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -124,6 +126,7 @@ async function boot() {
   wireImport();
   wirePicker();
   wireSched();
+  wireGenEd();
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
   $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
@@ -159,6 +162,10 @@ async function loadPlan() {
   if (gen !== loadGen) return;
   if (!built) { $('progName').textContent = 'Program not found'; return; }
   const { parts } = built;
+  // Gen Ed class lists of the major's catalog year (missing: the current catalog's)
+  const y = parts[0].year;
+  gened = (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/gened.json`)) || await getJSON(`${DATA}/gened.json`);
+  if (gen !== loadGen) return;
   $('progName').textContent = parts.map((p) => p.program.name).join(' + ');
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
@@ -207,7 +214,12 @@ function buildBoxes() {
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);
     if (sec) { b.classList.add('extra'); b.insertAdjacentHTML('beforeend', `<em class="tag">${TAG[sec.group] || 'Minor'}</em>`); }
-    b.addEventListener('click', () => toggle(n, b));
+    // a Gen Ed box with a class list: the class taken (line 2) and a small list button on its bottom edge
+    if (flex && listOf(n)) {
+      b.classList.add('has-list');
+      b.insertAdjacentHTML('beforeend', '<i class="pk"></i><span class="gl" role="button" aria-label="Class list" title="Class list"><svg viewBox="0 0 12 10" width="11" height="9" aria-hidden="true"><path d="M1 1.5h10M1 5h10M1 8.5h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>');
+    }
+    b.addEventListener('click', (e) => { if (e.target.closest('.gl')) openGenEd(n); else toggle(n, b); });
     host.appendChild(b);
   }
   // section headings (a minor's name, Gen Ed); placed by layout()
@@ -276,6 +288,7 @@ function toggle(n, el) {
     // classes from an imported audit stay (the audit is the truth)
     // a pick-one box (American Institutions) can be filled by a class code from the audit: clear those too
     const keys = n.kind === 'choice' ? [n.id, ...(n.options || []).flatMap((o) => [...(o.codes || []), ...(o.alts || [])])] : keysOf(n);
+    keys.push(...pickKeysOf(s, n.id)); // the class picked from its Gen Ed list
     for (const k of keys) { s.delete(k); delete grades[k]; }
     setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
   } else {
@@ -334,12 +347,92 @@ function refresh() {
     el.classList.toggle('graded', gi.kind === 'letter');
     el.style.setProperty('--gh', gi.hue ?? 0);
     el.querySelector('.gr').textContent = gi.text;
+    const pk = el.querySelector('.pk');
+    if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
   }
   renderPlan(plan);
   renderLegend(plan);
   lastPlan = plan;
   if ($('main').dataset.tab === 'sched') renderSched();
+}
+
+// ---------- Gen Ed class lists (js/gened.js): a sheet with the classes that fill a Gen Ed box ----------
+// Placeholder box: tapping a class marks the box taken and remembers the class ("ph:8=DANC 1010").
+// Pick-one box with its own options (American Institutions): tapping one takes that option's classes.
+const listOf = (n) => genEdList(n, gened, { aas: /-aas$/.test(major() || ''), courses: model?.program.courses || {} });
+const shortCode = (codes) => codes.map((c, i) => (i ? c.split(' ').pop() : c)).join(' + '); // "HIST 2700 + 2710"
+function classOfBox(n, completed) {
+  if (n.kind === 'choice') { const o = (n.options || []).find((x) => optionDone(x, completed)); return o ? shortCode(o.codes) : null; }
+  return pickedOf(completed, n.id);
+}
+let geNode = null;
+function openGenEd(n) {
+  const list = listOf(n);
+  if (!list) return;
+  geNode = n;
+  $('geName').textContent = n.label;
+  const cr = n.kind === 'choice' ? (n.pick?.credits ?? n.credits) : n.credits;
+  $('geSub').textContent = [list.groups.filter((g) => g.name).map((g) => g.name).join(' · '), cr ? `${cr} cr` : ''].filter(Boolean).join(' · ');
+  $('geQ').value = '';
+  drawGenEd();
+  $('geDlg').showModal();
+  document.activeElement?.blur();
+  $('geList').scrollTop = 0;
+}
+function drawGenEd() {
+  const n = geNode, list = listOf(n), s = doneSet();
+  const done = nodeDone(n, s);
+  const picked = n.kind === 'choice' ? null : pickedOf(s, n.id);
+  const groups = filterList(list, $('geQ').value);
+  const many = list.groups.length > 1;
+  const row = (c) => {
+    const on = c.codes ? optionDone({ codes: c.codes, alts: [] }, s) : c.code === picked;
+    const code = c.codes ? shortCode(c.codes) : c.and ? shortCode([c.code, ...c.and]) : c.code;
+    return `<li><button type="button" data-code="${esc(c.code)}"${on ? ' class="on" aria-pressed="true"' : ''}><b>${esc(code)}</b><span>${esc(c.title)}</span><em>${c.credits ?? ''}</em></button></li>`;
+  };
+  $('geList').innerHTML = groups.length
+    ? groups.map((g) => (many ? `<li class="ge-h">${esc(g.name)}</li>` : '') + g.courses.map(row).join('')).join('')
+    : '<li class="none">No match</li>';
+  $('geUntake').style.visibility = done ? '' : 'hidden';
+}
+function wireGenEd() {
+  const dlg = $('geDlg');
+  $('geQ').addEventListener('input', () => { drawGenEd(); $('geList').scrollTop = 0; });
+  $('geList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-code]');
+    if (!b || !geNode) return;
+    const n = geNode, s = doneSet();
+    const c = listOf(n).groups.flatMap((g) => g.courses).find((x) => x.code === b.dataset.code);
+    if (!c) return;
+    const el = $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`);
+    if (n.kind === 'choice') {
+      const grades = gradeMap();
+      if (optionDone({ codes: c.codes, alts: [] }, s)) {
+        // tap a taken option again: untake it (and what needed it)
+        for (const k of c.codes) { s.delete(k); delete grades[k]; }
+        setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
+        refresh(); drawGenEd();
+        return;
+      }
+      const chk = tapCheck(model, n.options.find((o) => o.codes.join(' + ') === c.code) || n, s);
+      if (!chk.ok) { dlg.close(); if (el) blocked(el, chk.missing); return; }
+      c.codes.forEach((k) => s.add(k));
+      setDone(s);
+    } else {
+      const chk = tapCheck(model, n, s);
+      if (!chk.ok) { dlg.close(); if (el) blocked(el, chk.missing); return; }
+      setDone(withPick(s, n.id, c.code));
+    }
+    refresh();
+    if (nodeDone(n, doneSet())) dlg.close(); else drawGenEd();
+  });
+  $('geUntake').addEventListener('click', () => {
+    const n = geNode, el = $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`);
+    if (n && el && nodeDone(n, doneSet())) toggle(n, el);
+    dlg.close();
+  });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
 const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); return year ? { season, year: +year } : null; };
