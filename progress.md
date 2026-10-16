@@ -61,6 +61,7 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - D7 · 2026-10-15 · Term boundaries: Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+. `settings.lastTerm` (synced) from audit; Clear taken resets it.
 - D8 · 2026-10-15 · Gen Ed lists (unconfirmed): ≡ on box bottom-right; picked class as 2nd line; pick-one boxes list only the program's own options; two-area boxes show both lists.
 - D9 · 2026-10-15 · Untaking a pick-one box also clears its option codes (else an audit class kept it on forever).
+- D10 · 2026-10-16 · Sweep (builder, branch claude/sweep-1016): imported `lastTerm` now saved locally (was lost on reload); Clear taken sets `lastTerm: null` so other devices clear it; `lastTerm` only from taken/IP rows (not Planned/Still needed); saved Summer start with summers off → that Fall (`planStart`); Gen Ed sheet long codes no longer overlap titles; new `CLAUDE.md`, `tests/import.e2e.mjs`. Report: laptop-ops `coding-and-claude/reports/sweep-2026-10-16/smart-advisor.md`.
 
 ## NOT verified
 - Real iPhone (all checks headless WebKit), real Google popup sign-in, dark mode.
