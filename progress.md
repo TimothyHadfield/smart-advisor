@@ -65,6 +65,9 @@ Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semes
 
 - 2026-10-15 · Plan start is always future: `earliestStart` = term after today's semester (Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+) and after the latest term on any audit course row (`parseAudit().lastTerm` → `settings.lastTerm`, synced; Clear taken resets it). Saved Start in the past moves up; Start list begins at the earliest allowed term. Tim's audit → Fall 2026 → plan starts Spring 2027.
 
+- 2026-10-15 · Re-import fills grades for already-taken (disabled) rows; tapping off a pick-one Gen Ed box also clears its option codes (American Institutions stuck on).
+- 2026-10-15 · Gen Ed lists MERGED (ed8767a): `scripts/fetch-gened.mjs` → `data/gened.json` + `data/2025-2026/gened.json` (9 areas + AAS lists); `js/gened.js` matcher (2,718/2,901 boxes; unmatched = generic "Choose one…" labels); ≡ button on box bottom edge opens a searchable sheet; pick saves `ph:7=DANC 1010` in `done` (no rules change), shown as 2nd line on the box. Pick-one boxes list the program's own options.
+
 ## NOT verified
 - v3: dark mode; phone legend's last label sits under the Grades switch (legend scrolls sideways); ECE 3710→3780 still has two jogs.
 - pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).
