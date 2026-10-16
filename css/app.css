@@ -344,7 +344,7 @@ dialog.secs { width: min(460px, calc(100vw - 32px)); }
 .box .gl:active { background: var(--green); color: #fff; border-color: var(--green); }
 /* its sheet: area, search, the classes (code · title · credits) */
 .ge-list button { gap: 10px; }
-.ge-list b { flex: none; width: 92px; white-space: nowrap; }
+.ge-list b { flex: none; min-width: 92px; white-space: nowrap; }
 .ge-list span { flex: 1; min-width: 0; color: var(--muted); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .ge-list em { flex: none; font-style: normal; font-size: 12px; color: var(--muted); }
 .ge-list button::after { content: ""; flex: none; width: 12px; margin-left: 0; padding-left: 0; }

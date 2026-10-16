@@ -33,3 +33,22 @@ test('the audit reader finds the latest semester on course rows', () => {
   assert.deepEqual(A.parseAudit(text).lastTerm, { season: 'Fall', year: 2026 });
   assert.deepEqual(A.latestTerm(['ECE-2250 Circuit Theory I B+ 2025FA 3', 'ECE-2700 IP 2026SP 4']), { season: 'Spring', year: 2026 });
 });
+test('planned / still-needed rows with a later term do not push the start (only taken + in-progress rows count)', () => {
+  const text = [
+    'Circuits ECE 2250 Circuit Theory I IP (3) 2026 FALL',
+    'Signals ECE 3770 Signals and Systems PLANNED 2027 FALL',
+    'Still needed: 1 Class in ECE 4900 2028 SPRING',
+    'Planned',
+    'ECE 4710 Embedded Systems 2028 FALL',
+  ].join('\n');
+  assert.deepEqual(A.parseAudit(text).lastTerm, { season: 'Fall', year: 2026 });
+});
+test('a saved Summer start with summers off moves to that Fall (the plan never has a summer then)', () => {
+  const opts = { date: d('2026-10-15'), summers: false };
+  assert.equal(lbl(P.planStart({ season: 'Summer', year: 2027 }, opts)), 'Fall 2027');
+  assert.equal(lbl(P.planStart({ season: 'Summer', year: 2027 }, { ...opts, summers: true })), 'Summer 2027');
+  // a saved start in the past, or none, gives the earliest allowed term
+  assert.equal(lbl(P.planStart({ season: 'Fall', year: 2025 }, opts)), 'Spring 2027');
+  assert.equal(lbl(P.planStart(null, { ...opts, lastTerm: { season: 'Spring', year: 2027 } })), 'Fall 2027');
+  assert.equal(lbl(P.planStart({ season: 'Fall', year: 2028 }, opts)), 'Fall 2028');
+});

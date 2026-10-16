@@ -1,4 +1,4 @@
-import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, termIndex, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, planStart, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
@@ -173,6 +173,7 @@ async function loadPlan() {
   // a minor (or second major, certificate) gets its own section under the major's chart
   sections = parts.slice(1).map((p) => ({ key: p.id, label: p.program.name, group: programGroup(entry(p.id) || { type: /minor/i.test(p.program.name) ? 'minor' : '' }), test: (n) => n.prog === p.id }));
   charts.clear();
+  layouts.clear();
   layout.scrolled = false;
   graph = chartFor(0);
   buildBoxes();
@@ -187,7 +188,8 @@ const BASE = { boxH: 48, rowH: 58, gapMin: 26, port: 10, near: 8, pad: 12 };
 const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, track: 8 }, { boxW: 104, track: 8 }, { boxW: 100, track: 8 }];
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
-const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k] }, sections)).get(k);
+const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)
+const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k] }, sections, layouts)).get(k);
 function pickChart(W) {
   let k = FITS.findIndex((_, i) => chartFor(i).width <= W - 16);
   if (k < 0) k = W >= 700 ? FITS.length - 1 : 0;
@@ -440,8 +442,7 @@ const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); re
 // already shows classes in); a saved Start that has slipped into the past moves up on its own
 const earliest = () => earliestStart({ summers: state.settings.summers, lastTerm: parseTerm(state.settings.lastTerm) });
 function startTerm() {
-  const e = earliest(), s = parseTerm(state.settings.start);
-  return s && termIndex(s) > termIndex(e) ? s : e;
+  return planStart(parseTerm(state.settings.start), { summers: state.settings.summers, lastTerm: parseTerm(state.settings.lastTerm) });
 }
 
 const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
@@ -509,7 +510,8 @@ function wireSettings() {
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
-  $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; delete state.settings.lastTerm; setDone(new Set()); refresh(); });
+  // lastTerm becomes null, not deleted, so the account's copy (and other devices) clear it too
+  $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; state.settings.lastTerm = null; setDone(new Set()); refresh(); });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
@@ -879,9 +881,10 @@ function wireImport() {
       s.add(r.key);
       if (r.grade || !cb.disabled) gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
     }
-    setDone(s);
     // classes in progress (or already registered for next term): the plan starts after that semester
+    // (set before setDone, which saves)
     if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);
+    setDone(s);
     if (switching) loadPlan(); else refresh();
     dlg.close();
   });

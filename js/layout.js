@@ -457,7 +457,14 @@ export function splitGenEd(nodes, edges) {
 // sections = more sections drawn the same way, before Gen Ed: [{ key, label, test(node) }] (a minor's
 // boxes). A box goes in the first section whose test it passes, unless an arrow ties it to a box in
 // another section (then it stays in the main chart). heads = [{ key, label, top }] for each section drawn.
-export function flowChart(nodes, edges, sizes = {}, sections = []) {
+// cache (optional Map, section key -> layoutGraph result): the layout doesn't depend on sizes, so calls for
+// the same nodes at other box sizes reuse it (only the pixel routing is redone).
+export function flowChart(nodes, edges, sizes = {}, sections = [], cache = null) {
+  const lay = (key, ...a) => {
+    if (!cache) return layoutGraph(...a);
+    if (!cache.has(key)) cache.set(key, layoutGraph(...a));
+    return cache.get(key);
+  };
   const all = [...sections, { key: 'gen', label: 'Gen Ed', test: (n) => /general\s+education/i.test(n.area || '') }];
   const sec = new Map(nodes.map((n) => [n.id, all.find((s) => s.test(n))?.key ?? '']));
   for (let changed = true; changed;) {
@@ -466,14 +473,14 @@ export function flowChart(nodes, edges, sizes = {}, sections = []) {
   }
   const part = (key) => ({ nodes: nodes.filter((n) => sec.get(n.id) === key), edges: edges.filter((e) => sec.get(e.from) === key && sec.get(e.to) === key) });
   const main = part('');
-  const LM = layoutGraph(main.nodes, main.edges);
+  const LM = lay('', main.nodes, main.edges);
   const C = routeChart(LM, sizes);
   const out = { ...C, boxes: new Map(C.boxes), edges: C.edges.slice(), genTop: null, heads: [], layout: LM };
   const head = sizes.head ?? 28;
   for (const s of all) {
     const p = part(s.key);
     if (!p.nodes.length) continue;
-    const LG = layoutGraph(p.nodes, p.edges, { perRow: Math.max(4, LM.columns), inline: true });
+    const LG = lay(s.key, p.nodes, p.edges, { perRow: Math.max(4, LM.columns), inline: true });
     const G = routeChart(LG, sizes);
     const dy = out.boxes.size ? out.height + head : head;
     const top = dy - head + 6;

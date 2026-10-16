@@ -237,3 +237,19 @@ test('a course with no prereqs sits just before its only course instead of far l
   const L = layoutGraph(ns, es);
   assert.equal(L.pos.get('D').col - L.pos.get('X').col, 1);
 });
+
+// A phone tries every box size before falling back to the widest; the layout itself doesn't depend on
+// the size, so a shared cache computes it once per section and the pictures stay exactly the same.
+test('flowChart: a shared layout cache gives identical charts for every size and lays out each section once', () => {
+  const folded = foldLabs(nodes, edges);
+  const BASE = { boxH: 48, rowH: 58, gapMin: 26, port: 10, near: 8, pad: 12 };
+  const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, track: 8 }, { boxW: 104, track: 8 }, { boxW: 100, track: 8 }];
+  const cache = new Map();
+  const plain = (c) => JSON.stringify({ w: c.width, h: c.height, boxes: [...c.boxes], edges: c.edges, heads: c.heads });
+  for (const f of FITS) {
+    const a = flowChart(folded.nodes, folded.edges, { ...BASE, ...f });
+    const b = flowChart(folded.nodes, folded.edges, { ...BASE, ...f }, [], cache);
+    assert.equal(plain(b), plain(a), `boxW ${f.boxW}`);
+  }
+  assert.equal(cache.size, 2, 'main chart + Gen Ed section, each laid out once');
+});

@@ -310,6 +310,14 @@ export function earliestStart({ date = new Date(), summers = false, lastTerm = n
   if (lastTerm && SEASONS.includes(lastTerm.season) && termIndex(lastTerm) >= termIndex(t)) t = nextTerm(lastTerm, summers);
   return t;
 }
+// The plan's first semester: the saved Start, unless it's earlier than earliestStart; a saved Summer
+// start with summers off moves to that Fall (the plan has no summers then).
+export function planStart(saved, { date = new Date(), summers = false, lastTerm = null } = {}) {
+  const e = earliestStart({ date, summers, lastTerm });
+  let s = saved && SEASONS.includes(saved.season) ? saved : null;
+  if (s && !summers && s.season === 'Summer') s = nextTerm(s, false);
+  return s && termIndex(s) > termIndex(e) ? s : e;
+}
 export const termLabel = (t) => `${t.season} ${t.year}`;
 
 // ---------- the plan ----------

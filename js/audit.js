@@ -50,6 +50,7 @@ export function parseAudit(text) {
   const cy = src.match(/catalog\s+year:?\s*(\d{4}\s*-\s*\d{4})/i);
   const lines = src.split('\n').map((l) => l.replace(/\s+$/, ''));
   const taken = new Map(), ip = new Map();
+  const rowLines = []; // the rows read as taken / in progress (their terms decide lastTerm)
   let mode = 'normal';     // block mode from the last header: normal | ip | ignore
   let neededTail = false;  // the lines that continue a "Still needed" line
   let context = [];        // code-less lines just above a row (a requirement label split over lines)
@@ -88,13 +89,14 @@ export function parseAudit(text) {
     }
     const r = readRow(rec, mode);
     if (!r) continue;
+    rowLines.push(rec);
     const pre = rec.slice(0, codes.find((c) => c.code === r.code)?.at ?? 0).trim();
     const req = (pre && !/^(completed?|in[\s-]?progress|registered)$/i.test(pre) ? pre : ctx.join(' ')).replace(/\s+/g, ' ');
     if (r.status === 'taken') { if (!taken.has(r.code)) taken.set(r.code, { code: r.code, grade: r.grade, req }); }
     else if (!ip.has(r.code)) ip.set(r.code, { code: r.code, req });
   }
   for (const c of taken.keys()) ip.delete(c);
-  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()], lastTerm: latestTerm(lines.filter((l) => codesIn(l).length)) };
+  return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()], lastTerm: latestTerm(rowLines) };
 }
 
 // The latest semester named on any course row ("2026 FALL", "Fall 2026", "2026FA", "FA26") -> {season, year} | null
