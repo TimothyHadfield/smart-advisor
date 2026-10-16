@@ -274,7 +274,9 @@ function toggle(n, el) {
   if (nodeDone(n, s)) {
     // untake it (and its folded lab, and an "or" alternative), then everything tapped that needed it;
     // classes from an imported audit stay (the audit is the truth)
-    for (const k of keysOf(n)) { s.delete(k); delete grades[k]; }
+    // a pick-one box (American Institutions) can be filled by a class code from the audit: clear those too
+    const keys = n.kind === 'choice' ? [n.id, ...(n.options || []).flatMap((o) => [...(o.codes || []), ...(o.alts || [])])] : keysOf(n);
+    for (const k of keys) { s.delete(k); delete grades[k]; }
     setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
   } else {
     const chk = tapCheck(model, n, s);
@@ -777,11 +779,12 @@ function wireImport() {
     if (switching) setPlan(t.ids, t.year);
     const s = doneSet();
     const ipOn = $('impIP').checked;
-    for (const cb of $('impList').querySelectorAll('input:checked:not(:disabled)')) {
+    // already-taken rows are disabled (can't be unticked) but still bring their grade from the audit
+    for (const cb of $('impList').querySelectorAll('input:checked')) {
       const r = found.rows[+cb.dataset.i];
       if (r.status === 'ip' && !ipOn) continue;
       s.add(r.key);
-      gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
+      if (r.grade || !cb.disabled) gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
     }
     setDone(s);
     // classes in progress (or already registered for next term): the plan starts after that semester
