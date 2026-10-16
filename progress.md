@@ -1,86 +1,86 @@
 # Smart Advisor — progress (handoff for Claude)
 
 ## START HERE
-_Last updated 2026-10-15. For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
-1. Read this file (it's short on purpose).
-2. Read `direction.md` (it overrules everything).
-3. Skim the last 3 entries of `chat.md`. Data-source details: `docs/research.md`. Phase plan: `docs/phase1-plan.md`.
+_Last updated 2026-10-15 (checkpoint after 081f1db). For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
+1. Read this file.
+2. Read `direction.md` (Tim's intent; overrules everything).
+3. Skim the last entries of `chat.md`. Previous long version of this file: `docs/archive/progress-2026-10-15.md`. Data endpoints: `docs/research.md`. Phase plan: `docs/phase1-plan.md`.
 
 ## Goal right now
-Phase 1: Electrical Engineering BS flowchart + tap-to-complete + automatic semester plan, live on GitHub Pages.
+Public UVU advisor for any student: prereq flowchart + auto semester plan for all 541 majors/minors/certs, Wolverine Track audit import, Google accounts, section schedule builder with RMP ratings, Gen Ed class lists. All live; now polishing from Tim's field reports.
 
 ## Status
 | Area | State | Notes |
 |---|---|---|
-| Repo + Pages + md files | done | github.com/TimothyHadfield/smart-advisor |
-| EE flowchart + auto plan | live (cdfcd9f) | 50 courses, 122 cr; 10 planner tests pass; phone + desktop checked headless |
-| Flowchart layout like Tim's | live (bd1827b) | `js/layout.js` layered + crossing reduction; EE crossings 62→8 drawn (Tim's hand chart: 10); elbows, labs folded, Gen Ed row below |
-| Flowchart v3 | live (e76dc76) | names in boxes, bends 104→46, 17/39 straight, 0 overlapping segments, semester colors, tap locks + cascade, Gen Ed section, grades red→green + Grades switch |
-| Wolverine Track import | live (bd1827b) | gear → Import audit: paste or PDF (pdf.js 3.11.174 lazy); `js/audit.js`; real audit → 19 taken, 6 IP |
-| All majors | DATA MERGED (3e4a3c0): 541 programs (413 current 2026-2027 + 2025-2026 archive), `scripts/fetch-all.mjs`, per-year `courses.json`, `_report.json` (82 warnings), `_by-college.json`. 2024-2025 archive not fetched (`--year 2024-2025`). Raw page cache in session scratchpad `cache/`. Picker LIVE (7a603c8; `js/programs.js`; header name ▾ → search, Majors/Minors/Certificates, catalog year, major + minors combined; audit auto-picks programs + year; rules allow `programs`). Verifiers done: HSS, Health, Arts+Ed, Business (findings in their agent reports; scripts in scratchpad verify-*). Top bugs: Gen Ed choice groups misnamed by `nameChoices` (credits-only match), placeholders not split (planner), flattened grad-plan sub-lists, alts ignored, recommended-course → required, self-prereq MUSC 1110, mutual pre-or-co deadlock, My Educator +3 cr, R repeats. EngTech verifier done (88: 36 ok/10 minor/42 wrong, 26 only from nameChoices; also lab shorthand "& 1010L" dropped, sets/domains not tracks, missing parent core). Science verifier done (44: 6 ok/23 minor/15 wrong; forwarded to parser-fix). Planner-fix MERGED (327e58f): 866/866 program files pass `tests/planner-all.test.mjs` (no semester > cap, prereq order, all units placed; allowlist: military-science-minor, collaborative-piano cert); nursing 12→8, music-ba 14→8; Tim's EE 2025-26 + ESM minor unchanged (10 sem, Sp 2031, 146 cr from empty start). Parser-fix MERGED (99a99ca + b577b80): all 18 verifier bugs + 15 science findings; regenerate offline with `node scripts/fetch-all.mjs --year current|2025-2026 --cache <scratchpad>/cache --offline` (cache root, not the year dir); credit totals match page for 413/413 current, 450/452 2025-26; unplaceable plan units 2694→1332; new optional fields tracks/shared/trackElectives/rules/open/recommended/preco/admission/admissionNote/entryRequirements/coreFrom/fromPlan/typos, repeat+creditsEach, crMax, exam (credits 0). Still wrong: 2025-26 bioinformatics-bs (118/120), collision-repair-technology-aas (67/64, "(optional)" counted); ~28 small programs lost a plan link (no credits-only naming). `rules` not enforced by planner yet. Suite 1016 pass |
-| Google sign-in (Firebase) | live (8a3bcfb) | `js/account.js` (Firebase 10.14.1) + `js/sync.js` merge; profile icon → Continue with Google (popup); users/{uid} field-checked rules deployed; sign-out clears device; delete account two-tap. e2e: `python -m http.server 8137` + `node tests/accounts.e2e.mjs` (emulators, Playwright from ~/.claude/tools); rules: `tests/rules.emulator.mjs` via `firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.emulator.mjs"` (5/5). Real Google popup untested |
-| Section schedules + builder | DATA LIVE (e6baba0): data/sections/{202640,202720}.json (8,192 / 7,296 sections), weekly Action `refresh-data.yml` verified run 38800499895 success → commit 5781782. Schedule UI MERGED (330f28d): `js/schedule.js` (pure) + Schedule tab (phone) / Flowchart|Schedule switch (laptop); term Fa 26/Sp 27, ranked non-conflicting schedules ‹ 1/20 ›, week grid, rows code/time/instructor/RMP badge (2.5–4.5 red→green)/seats/CRN, Copy CRNs, + Add class; prefs in Settings › Schedule (days, hours, In person default, avoid gaps, top rated, main campus, waitlist); saved in `settings.sched` (no rules change). NOT verified: linked lecture/lab (none in live data), Copy CRNs on real iPhone | SOURCE FOUND: public Banner 9 `https://userve.uvu.edu/StudentRegistrationSsb/ssb/` (no login, cookie session, no CORS → Node prefetch; ~7,300 sections/term; 202640, 202720, 202730). Weekly GitHub Action refresh. UI next |
-| Rate My Professors | DATA LIVE: data/rmp.json keyed by section `instr` ("Last, First M."), {r,d,n,wta,id}; 1,146 matched (87.6% of instructors with an RMP profile; 57% Fall / 70% Spring staffed sections show a rating) | GraphQL from Node works (school U2Nob29sLTE4NDU4 / 18458, Basic dGVzdDp0ZXN0), no CORS; 4,128 teachers; ~92% name match; store overall rating + link only, no reviews |
+| Flowchart | live | `js/layout.js` layered (crossing reduction, elbows, separate tracks, labs folded, Gen Ed row below, semester colors, tap locks + cascade, grades red→green + Grades switch). Loops broken before layering (mutual pre-or-co pairs: nursing 63→8 cols, theatre); no-prereq source sits next to its first course when arrows would skip 3+ cols. EE: 8 crossings, 46 bends (Tim's hand chart: 10 crossings) |
+| Auto plan | live | `js/planner.js` `makePlan`; 866/866 program files pass `tests/planner-all.test.mjs` (≤cap, prereq order, all placed). Splits placeholders, bundles pre-or-co pairs, ignores self-prereqs, honors alts/tracks/repeats/crMax. First semester always future: `earliestStart` (after today's term; after audit's latest course-row term) |
+| Plan list | live | 2 cols `minmax(0,1fr)`; long names ellipsize (hover title shows full) |
+| Audit import | live | gear → Import audit (paste or PDF via pdf.js 3.11.174 lazy). `js/audit.js` parseAudit → taken/IP/grades/header (majors, minors, catalog year)/`lastTerm`; auto-picks programs + year. Re-import fills grades for already-taken rows |
+| All programs data | live | 541 programs (413 current 2026-27 + 2025-26 archive) in `data/programs/`, `data/2025-2026/programs/`; parser `scripts/fetch-program.mjs` + `scripts/lib/post.mjs`. Credit totals match page 413/413 and 450/452 |
+| Picker | live | header name ▾ → search, Majors/Minors/Certificates, catalog year, major + minors combined (`js/programs.js`) |
+| Gen Ed lists | live (ed8767a) | `data/gened.json` (+2025-26) from catalog.uvu.edu/general-education/; `js/gened.js` matcher 2,718/2,901 boxes; ≡ button on box → searchable sheet; pick saved as `ph:7=DANC 1010` in `done` |
+| Google sign-in | live | Firebase `smart-advisor-th` (Spark, $0); `js/account.js` + `js/sync.js`; popup sign-in; owner-only field-checked rules |
+| Sections + schedule | live | Banner 9 data `data/sections/{202640,202720}.json` (weekly Action `refresh-data.yml`); Schedule tab (`js/schedule.js`): ranked conflict-free schedules, week grid, RMP badge, Copy CRNs, prefs in Settings › Schedule; saved in `settings.sched` |
+| RMP | live | `data/rmp.json` keyed by section `instr`; overall rating + link only |
 
 ## Authorized next steps
-- 2026-10-15 · Build phase 1 (EE first), then all majors. Tim: "Yes, build phase 1".
-- 2026-10-15 · Accounts: "build an account system so every user can have their information and progress saved across devices or after they log out". Plan: guest works locally; profile icon → Continue with Google (signInWithPopup, not redirect — iOS/GitHub Pages trap from Fitness Tracker); users/{uid} doc {taken, grades, settings, program, catalogYear}; local data merges into account on first sign-in; sign-out clears local copy.
-- 2026-10-15 · In flowchart builder (flow-v3): titles in boxes, fewest bends, separated lines, semester colors, block taps with unmet prereqs (cascade untake; import exempt), Gen Ed labeled section, grades red→green from audit + on-screen "Grades" switch.
-- 2026-10-15 · All majors + minors + catalog-year archives: data builder (all-programs), then a picker.
-- 2026-10-15 · Flowchart like his ("lines connecting them don't overlap or overlap as little as possible") + Wolverine Track import ("some things are automaticaly selected"): builder running, paste + PDF upload.
+- 2026-10-15 · Phase 1 + all majors + accounts + flowchart/import/grades/Gen Ed labels — all built. No open authorized items beyond fixing what Tim reports.
 
 ## Standing instructions (Tim's words / interview answers)
 - Public site for any UVU student, **with accounts (Google sign-in)**.
 - Schedules: "Keep hunting, fall back to paste".
 - First slice: "EE flowchart + plan, then all majors".
 - Look: "UVU green, clean and compact". Completed classes: "Tap classes on the flowchart".
+- Flowchart: "minimize how much the lines turn cornours and bend ... make the lines seperated from each other enough where you'll never be confused which line goes where".
+- "don't allow the user to select a class that still needs prerequisites filled."
+- "label gen eds in their own section" · grades red→green + "a switch somewhere in the screen that says turn off grades".
+- "remember to deploy many sub-agents to help you with all the work of building the majors/minors".
+- "if the program fills in classes that the user is currently taking, the first semester ... is a future semester, not a current one."
 
 ## Traps / rules that bite
-- Public class-search API only has srcdb 202430/202440/202520; newer terms → "Cannot open database".
-- Tim's Lucid flowchart link needs a Lucid login; ask him to export PNG/PDF into the folder.
-- Folder lives at `Code Projects/Smart Advisor` (Tim's choice), not in a category folder.
-- Instructor names in UVU data are "F. Lastname" → RMP matching needs last name + department.
-
-- Builder worktrees spawn from the `Code Projects` root repo (Estimator_Quiz), not smart-advisor. Builders must clone smart-advisor inside the worktree; merge with `git fetch <path>/sa <branch>`.
-- Catalog prereqs ignore non-course gates (University Advanced Standing, formal acceptance), grade minimums and fall/spring-only offering; out-of-major prereqs (MATH 1050) assumed met by placement. ECE 2255 lacks a coreq on 2250 in catalog.
-
-- Tim's real Degree Works audit: `.claude/test/wolverine-track-audit.pdf` + `audit.txt` (gitignored; has his name/ID/advisor email). Never commit or screenshot it; fixtures must be anonymized copies.
-- **Catalog year matters:** Tim is on 2025-2026 (125 cr, requires ECE 4950 Capstone II); current catalog EE = 122 cr, no 4950. Phase 2 should load catalog archives by year (audit header gives it).
-- Tim's EE flowchart picture: `docs/reference/ee-flowchart-tim.png` — the layout bar (left→right, code-only boxes, elbow connectors, labs folded into lectures, Gen Ed set apart).
-
-- Enabling Google auth via `firebase deploy --only auth` turned the project into Identity Platform (subtype IDENTITY_PLATFORM, still no billing). Don't call identityPlatform:initializeAuth (needs billing). Admin API calls: token from scratch script exchanging firebase-tools refresh token; serviceusage enable needs a `-d '{}'` body.
+- Builder worktrees spawn from the `Code Projects` root repo (Estimator_Quiz). Builders must clone smart-advisor into `<worktree>/sa`; merge with `git fetch "<worktree>/sa" <branch>`. `git worktree remove` often "Permission denied" (OneDrive) → weekly sweep handles it.
+- Tim's real audit: `.claude/test/wolverine-track-audit.pdf` + `audit.txt` (gitignored; name, student ID, advisor email). Never commit, copy or screenshot it. Fixtures anonymized. Repro scripts use a fake audit (scratchpad `fakeaudit.txt`).
+- Catalog year matters: Tim is on 2025-2026 (EE 125 cr, ECE 4950). His audit → lastTerm Fall 2026 → plan starts Spring 2027; 4 semesters left (5 with ESM minor).
+- Regenerate program data offline: `node scripts/fetch-all.mjs --year current|2025-2026 --cache <scratchpad>/cache --offline` (cache ROOT, not the year dir). It rewrites every data file with LF line endings → commit only files whose `git diff -w` changed, then `git checkout -- data/`.
+- Raw catalog page cache lives in the session scratchpad (`.../99882441-.../scratchpad/cache/`); a new session may not have it → would need a polite re-fetch (fetch-all without --offline, ≥400 ms delay).
+- Old CourseLeaf class search only has terms ≤202520; current sections come from public Banner 9 `https://userve.uvu.edu/StudentRegistrationSsb/ssb/` (cookie session, no CORS → Node prefetch).
+- RMP GraphQL (Basic dGVzdDp0ZXN0, school U2Nob29sLTE4NDU4) has no CORS → build-time only. Instructor names "Last, First M." need last name + dept matching.
+- Firebase: `firebase deploy --only auth` turned the project into Identity Platform (still no billing). Never call identityPlatform:initializeAuth (needs billing). Admin API token: scratch `gtoken.mjs`; serviceusage enable needs `-d '{}'`.
+- Rules test is `tests/rules.emulator.mjs` (not in plain suite; needs Java 21 + emulator).
+- Catalog prereqs ignore non-course gates, grade minimums, season-only offering; out-of-major prereqs (MATH 1050) assumed met.
+- Guard blocks shell writes to .md files → Edit/Write only.
+- Pages live-check hook sometimes reports an older commit "NOT live" when a newer build already includes it → ignore.
 
 ## Decisions
-- 2026-10-15 · Phase 1 UI (Claude's choices, unconfirmed by Tim): laptop = flowchart + plan side by side, no tabs; phone = Flowchart/Plan bottom tabs; gear → Start, Max credits (16), Summers switch, Clear taken; legend Taken/Ready/Locked; dashed boxes for Gen Ed/electives.
-- 2026-10-15 · Plain HTML/CSS/JS, no build step, GitHub Pages. Course data pre-fetched by Node scripts into `data/*.json` (catalog has no CORS for browser fetches; assumed).
-- 2026-10-15 · Firebase (free Spark) only for accounts/saved plans, added in phase 3; phase 1 saves to localStorage.
-
-- 2026-10-15 · Layout/import UI choices (unconfirmed): Gen Ed row below chart (Tim's is left), "+Lab" marker, Tim's box colors not copied, buttons "Import audit / Choose PDF / Read / Apply / Count in progress"; folded box Taken only when lecture + lab both taken.
-
-- 2026-10-15 · v3 choices (unconfirmed): 10-hue semester palette (Sp27 orange, Fa27 blue, Sp28 purple, Fa28 teal…), legend "Sp 27", locked = faded semester color, grade badge on box top edge, TR/P/IP tags, Gen Ed below chart, coreqs don't block taps.
-
-- 2026-10-15 · All-majors choices (unconfirmed): unnamed lists → "Choose N" / "Choose N credits" / "Choose 1 track"; graduate programs admission:true; track picked by most progress then fewest credits; track courses shown as dashed "pick from list" rows; schedule Classes default In person.
-
-- 2026-10-15 · Flowchart loops: `layered()` drops loop-closing edges before layering (mutual pre-or-co pairs made nursing 63 columns, theatre 11–29); a no-prereq course whose arrows skip 3+ columns moves next to its first course. 20 charts changed, EE unchanged (8 crossings, 46 bends). Plan list: 2 columns `minmax(0,1fr)` so long elective names ellipsize instead of pushing column 2 off.
-
-- 2026-10-15 · Plan start is always future: `earliestStart` = term after today's semester (Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+) and after the latest term on any audit course row (`parseAudit().lastTerm` → `settings.lastTerm`, synced; Clear taken resets it). Saved Start in the past moves up; Start list begins at the earliest allowed term. Tim's audit → Fall 2026 → plan starts Spring 2027.
-
-- 2026-10-15 · Re-import fills grades for already-taken (disabled) rows; tapping off a pick-one Gen Ed box also clears its option codes (American Institutions stuck on).
-- 2026-10-15 · Gen Ed lists MERGED (ed8767a): `scripts/fetch-gened.mjs` → `data/gened.json` + `data/2025-2026/gened.json` (9 areas + AAS lists); `js/gened.js` matcher (2,718/2,901 boxes; unmatched = generic "Choose one…" labels); ≡ button on box bottom edge opens a searchable sheet; pick saves `ph:7=DANC 1010` in `done` (no rules change), shown as 2nd line on the box. Pick-one boxes list the program's own options.
+- D1 · 2026-10-15 · Plain HTML/CSS/JS on GitHub Pages, data pre-fetched to JSON by Node scripts (catalog/Banner/RMP have no CORS).
+- D2 · 2026-10-15 · Firebase Spark only for accounts; guest works locally (localStorage `smart-advisor:v1`); signInWithPopup not redirect (iOS/Pages trap).
+- D3 · 2026-10-15 · UI (unconfirmed by Tim): laptop = flowchart + plan side by side, Flowchart|Schedule switch in header; phone = Flowchart/Plan/Schedule bottom tabs; gear → Start, Max credits, Summers, Schedule prefs, Import audit, Clear taken.
+- D4 · 2026-10-15 · Flowchart look (unconfirmed): 10-hue semester palette (Sp27 orange, Fa27 blue…), locked = faded semester color, grade badge on box top edge, "+Lab" marker, Gen Ed row below chart, coreqs don't block taps.
+- D5 · 2026-10-15 · All-majors choices (unconfirmed): unnamed lists → "Choose N"/"Choose N credits"/"Choose 1 track"; graduate programs admission:true; track picked by most progress then fewest credits; track courses = dashed "pick from list" rows.
+- D6 · 2026-10-15 · Schedule (unconfirmed): Classes default In person ("Any" ranked online first); concurrent-enrollment sections hidden; Gen Ed/electives added via "+ Add class"; grid colors reuse semester palette.
+- D7 · 2026-10-15 · Term boundaries: Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+. `settings.lastTerm` (synced) from audit; Clear taken resets it.
+- D8 · 2026-10-15 · Gen Ed lists (unconfirmed): ≡ on box bottom-right; picked class as 2nd line; pick-one boxes list only the program's own options; two-area boxes show both lists.
+- D9 · 2026-10-15 · Untaking a pick-one box also clears its option codes (else an audit class kept it on forever).
 
 ## NOT verified
-- v3: dark mode; phone legend's last label sits under the Grades switch (legend scrolls sideways); ECE 3710→3780 still has two jogs.
-- pdf.js import on a real iPhone (tested in headless WebKit only); real transcript/web-page paste formats (synthetic fixtures).
-- Whether UVU exposes current-semester sections anywhere without login.
-- Whether RMP GraphQL is callable from a script without being blocked.
-- Course offering seasons (fall-only / spring-only) — catalog may not say; UVU grad plan order used as a hint.
+- Real iPhone (all checks headless WebKit), real Google popup sign-in, dark mode.
+- Linked lecture/lab sections in schedule (none in live data); Copy CRNs on iPhone.
+- Gen Ed pick key sync between devices (code-read only).
+- Choice `rules` (e.g. "at least 6 ENVT credits") parsed but not enforced by planner.
+- Still-wrong data: 2025-26 bioinformatics-bs 118/120, collision-repair-technology-aas 67/64; ~28 small programs lost a plan-order link; missing catalog entries COMM 2010, ENVT 3300.
+- Course offering seasons (fall/spring-only) unknown; grad-plan order used as hint.
+- Cohort/admission programs flagged (`admission`) but planner doesn't model cohorts.
+- 2024-2025 archive not fetched.
 
 ## Rejected / parked
-- ~~Paste Wolverine Track audit~~ · 2026-10-15 · parked; tapping chosen first
+- ~~Paste-only Wolverine Track~~ · 2026-10-15 · tapping first, then built paste + PDF import.
+- ~~Store RMP reviews~~ · 2026-10-15 · overall rating + link only.
+- ~~Schedule "+ Add class" from Gen Ed lists~~ · 2026-10-15 · parked (needs a new filter in that dialog).
 
 ## Map
-- `direction.md` · Tim's intent · `docs/research.md` · alternatives + data endpoints
-- `scripts/fetch-program.mjs <url> <id>` · scrapes a catalog program → `data/programs/<id>.json`
-- `js/planner.js` (pure) · `js/app.js` + `css/app.css` + `index.html` · UI, localStorage for taken classes
-- Tests: `node tests/planner.test.mjs`, `tests/layout.test.mjs`, `tests/audit.test.mjs` · last run 2026-10-15: 10/8/6 passed, 0 failed
-- Live: https://timothyhadfield.github.io/smart-advisor/ · hosting: GitHub Pages
+- Project: `C:\Users\timha\OneDrive\Desktop\my-website\Code Projects\Smart Advisor` · repo github.com/TimothyHadfield/smart-advisor (public) · push → GitHub Pages redeploy.
+- Live: https://timothyhadfield.github.io/smart-advisor/ (`?p=<program-id>` opens a program).
+- `index.html`, `css/app.css`, `js/app.js` (UI/state) · `js/planner.js` (model, plan, terms) · `js/layout.js` (chart) · `js/audit.js` · `js/pdftext.js` · `js/programs.js` (picker) · `js/schedule.js` · `js/gened.js` · `js/account.js` + `js/sync.js` · `firestore.rules`, `firebase.json`, `.firebaserc`.
+- Scripts: `scripts/fetch-program.mjs`, `scripts/lib/post.mjs`, `scripts/fetch-all.mjs`, `scripts/fetch-sections.mjs`, `scripts/fetch-rmp.mjs`, `scripts/fetch-gened.mjs`, `scripts/lib/{banner,names}.mjs`; weekly `.github/workflows/refresh-data.yml`.
+- Tests: `node --test tests/*.test.mjs` · 2026-10-15: 1032 pass, 0 fail, 1 skipped. Rules: `firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.emulator.mjs"` · 2026-10-15: 5/5. e2e: `python -m http.server 8137` + emulators + `node tests/accounts.e2e.mjs`.
+- Headless repro: `node ~/.claude/tools/phone-view.mjs "<url>?p=<id>" [--desktop] --out shot.png`; Playwright scripts in scratchpad (`gradesrepro2.mjs`, `longedges.mjs`, `spans.mjs`, `cmpstats.mjs`).
