@@ -2,7 +2,7 @@ rules_version = '2';
 
 // Each signed-in student reads and writes only their own document:
 //   users/{uid}   {taken, grades, settings, program, programs, catalogYear, updatedAt}
-// Only those fields, and small (tests/rules.test.mjs). Everything else is denied.
+// Only those fields, and small (tests/rules.emulator.mjs). Everything else is denied.
 service cloud.firestore {
   match /databases/{database}/documents {
     function isOwner(uid) {
