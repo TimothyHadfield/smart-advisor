@@ -269,6 +269,7 @@ input[role="switch"]:checked::after { transform: translateX(16px); }
 .seg.days button { flex: none; width: 34px; padding: 5px 0; }
 .hours { display: flex; align-items: center; gap: 4px; color: var(--muted); }
 .sw-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px 16px; }
+.ver { margin: -4px 0 0; font-size: 11px; color: var(--muted); text-align: center; }
 
 /* schedule: term, which schedule, copy CRNs · week grid · the classes */
 .wtabs { display: none; }

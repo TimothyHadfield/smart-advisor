@@ -506,7 +506,7 @@ function wireSettings() {
   $('setBefore').addEventListener('change', (e) => setPref('before', e.target.value || null));
   $('setMode').addEventListener('change', (e) => setPref('mode', e.target.value));
   for (const [id, k] of [['setGaps', 'gaps'], ['setRmp', 'rmp'], ['setMain', 'main'], ['setWait', 'wait']]) $(id).addEventListener('change', (e) => setPref(k, e.target.checked));
-  $('gear').addEventListener('click', () => { fill(); dlg.showModal(); });
+  $('gear').addEventListener('click', () => { fill(); dlg.showModal(); document.activeElement?.blur(); }); // no focus ring on Start
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });

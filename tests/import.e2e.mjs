@@ -37,6 +37,8 @@ test('audit import: the later start is saved and still there after a reload; Cle
   await p.goto(APP + '?p=electrical-engineering-bs');
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   await p.click('#gear');
+  // Settings opens without a focus ring on Start, like the other sheets
+  assert.equal(await p.evaluate(() => document.activeElement?.id || document.activeElement?.tagName), 'BODY');
   await p.click('#importBtn');
   await p.fill('#impText', AUDIT);
   await p.click('#impGo');
