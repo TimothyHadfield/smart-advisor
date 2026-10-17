@@ -1,7 +1,7 @@
 # Smart Advisor — progress (handoff for Claude)
 
 ## START HERE
-_Last updated 2026-10-15 (checkpoint after 081f1db). For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
+_Last updated 2026-10-17 (manager batch 1, a010c3b). For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
 1. Read this file.
 2. Read `direction.md` (Tim's intent; overrules everything).
 3. Skim the last entries of `chat.md`. Previous long version of this file: `docs/archive/progress-2026-10-15.md`. Data endpoints: `docs/research.md`. Phase plan: `docs/phase1-plan.md`.
@@ -22,6 +22,7 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 | Google sign-in | live | Firebase `smart-advisor-th` (Spark, $0); `js/account.js` + `js/sync.js`; popup sign-in; owner-only field-checked rules |
 | Sections + schedule | live | Banner 9 data `data/sections/{202640,202720}.json` (weekly Action `refresh-data.yml`); Schedule tab (`js/schedule.js`): ranked conflict-free schedules, week grid, RMP badge, Copy CRNs, prefs in Settings › Schedule; saved in `settings.sched` |
 | RMP | live | `data/rmp.json` keyed by section `instr`; overall rating + link only |
+| Auto-update | live (a010c3b) | `js/fresh.js`: phones pick up new builds without a hard refresh (one reload per build, never while typing); Settings opens without a focus ring |
 
 ## Authorized next steps
 - 2026-10-15 · Phase 1 + all majors + accounts + flowchart/import/grades/Gen Ed labels — all built. No open authorized items beyond fixing what Tim reports.

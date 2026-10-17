@@ -19,3 +19,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** layout breaks prereq loops + pulls no-prereq sources right (20 charts fixed, nursing 63→8 cols); plan grid minmax(0,1fr); `earliestStart` + audit `lastTerm`; re-import writes grades for already-taken rows; pick-one untake clears option codes; Gen Ed lists (builder, ed8767a).
 - **Verified how:** cmpcols/cmpstats over all programs (EE unchanged 8 crossings); headless desktop + 393px screenshots; Playwright repro with fake audit (old code fails, new passes); suite 1032 pass; rules 5/5.
 - **Open:** see progress.md NOT verified.
+
+## 2026-10-17 · Manager batch 1 (sweep leftovers)
+- **Asked (via manager, Tim's standing go):** "any fixes or improvements you feel confident about go ahead and do."
+- **Built:** 20c1a30 (CLAUDE.md, sweep notes), e2ef6cc (head meta, favicon 404, rules comment only), a010c3b (`js/fresh.js` auto-update + Settings focus ring).
+- **Verified how:** suite 1043 pass / 1 skipped; fresh e2e + import e2e (local http.server 8137), 2026-10-17. Rules file changed only in a comment, so no rules deploy was needed.
+- **Open:** real iPhone auto-update not checked.
