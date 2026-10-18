@@ -6,6 +6,8 @@ import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
 import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
 import { termInfo, defaultTerm, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
+import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, applyIndex, tracksOf } from './uistate.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -42,7 +44,10 @@ function defaults() {
   state.plan.catalogYear ??= null;
 }
 defaults();
-if (PARAMS.get('p')) state.plan.programs = [PARAMS.get('p')];
+// ?p=major,minor opens those programs like picking them; it never wipes the saved plan (js/uistate.js)
+const LINK = urlPrograms(location.search);
+// a new student (nothing saved, no link) gets the program picker, not EE
+const FIRST = isFirstVisit(state, LINK);
 // accounts (js/account.js): the account's copy replaces this device's; signing out clears it
 const account = initAccount({
   local: () => toDoc(state, major()),
@@ -73,7 +78,7 @@ const doneSet = () => new Set(state.done[major()] || []);
 function setDone(set) { state.done[major()] = [...set]; save(); }
 const gradeMap = () => (state.grades[major()] ??= {});
 
-let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null;
+let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [];
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -107,7 +112,8 @@ async function loadProgram(id, year) {
 function tidyPlan() {
   const known = (id) => !catalog.list.length || !!entry(id);
   // saved before programs could be picked: EE, and the catalog year its audit import found
-  if (!state.plan.programs.length) {
+  // (a new student has nothing saved: no program until they pick one)
+  if (!state.plan.programs.length && !isFirstVisit(state, null)) {
     state.plan.programs = ['ee-bs'];
     state.plan.catalogYear ??= state.audit?.['ee-bs']?.catalogYear ?? null;
   }
@@ -127,11 +133,19 @@ async function boot() {
   wirePicker();
   wireSched();
   wireGenEd();
+  wireNav();
+  wireClassSheet();
+  wireZoom();
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
   $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
   await loadCatalog();
+  if (LINK) {
+    const ids = programsFromLink(state.plan.programs, LINK, (id) => (entry(id) ? programGroup(entry(id)) : ''));
+    if (JSON.stringify(ids) !== JSON.stringify(state.plan.programs)) setPlan(ids, state.plan.catalogYear);
+  }
   tidyPlan();
+  if (FIRST && !state.plan.programs.length) $('progName').click();
   await loadPlan();
 }
 
@@ -158,6 +172,8 @@ function setPlan(ids, year) {
 let loadGen = 0;
 async function loadPlan() {
   const gen = ++loadGen;
+  if (!state.plan.programs.length) { showEmpty(); return; }
+  $('main').classList.remove('empty');
   const built = await buildFor([...state.plan.programs], state.plan.catalogYear);
   if (gen !== loadGen) return;
   if (!built) { $('progName').textContent = 'Program not found'; return; }
@@ -167,6 +183,8 @@ async function loadPlan() {
   gened = (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/gened.json`)) || await getJSON(`${DATA}/gened.json`);
   if (gen !== loadGen) return;
   $('progName').textContent = parts.map((p) => p.program.name).join(' + ');
+  progParts = parts;
+  syncURL();
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
   ({ nodes, edges } = foldLabs(flowNodes(model), flowEdges(model)));
@@ -179,6 +197,23 @@ async function loadPlan() {
   buildBoxes();
   layout();
   refresh();
+}
+
+// no program chosen yet (a first visit, or after signing out): an empty chart and a "Pick your program" button
+function showEmpty() {
+  model = null; nodes = null; lastPlan = null; progParts = [];
+  $('main').classList.add('empty');
+  $('progName').textContent = 'Pick your program';
+  $('boxes').innerHTML = '';
+  $('edges').innerHTML = '';
+  $('legendItems').innerHTML = '';
+  $('sems').innerHTML = '';
+  $('sum').innerHTML = '<button type="button" class="ok" data-pick>Pick your program</button>';
+  syncURL();
+}
+// the address bar names the chosen programs (?p=major,minor), so a bookmark or shared link keeps them
+function syncURL() {
+  try { history.replaceState(history.state, '', urlWithPrograms(location.href, state.plan.programs)); } catch {}
 }
 
 // ---------- flowchart ----------
@@ -200,6 +235,16 @@ function pickChart(W) {
 function buildBoxes() {
   const host = $('boxes');
   host.innerHTML = '';
+  // "pick N of these" options: one dashed frame with a "Pick N" label around them (placed by layout(),
+  // drawn under the boxes), or a small "Pick N" tag on each box when they aren't next to each other
+  for (const g of model.units.filter((u) => u.kind === 'choice' && u.showOptions)) {
+    const f = document.createElement('div');
+    f.className = 'pickgrp';
+    f.dataset.grp = g.id;
+    f.hidden = true;
+    f.innerHTML = `<em>${esc(pickLabel(g.pick))}</em>`;
+    host.appendChild(f);
+  }
   for (const n of nodes) {
     const b = document.createElement('button');
     const flex = n.kind === 'placeholder' || n.kind === 'choice';
@@ -216,12 +261,17 @@ function buildBoxes() {
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);
     if (sec) { b.classList.add('extra'); b.insertAdjacentHTML('beforeend', `<em class="tag">${TAG[sec.group] || 'Minor'}</em>`); }
+    if (n.kind === 'option') { const g = unitOf(n.group); b.insertAdjacentHTML('beforeend', `<em class="ptag">${esc(pickLabel(g?.pick))}</em>`); }
     // a Gen Ed box with a class list: the class taken (line 2) and a small list button on its bottom edge
     if (flex && listOf(n)) {
       b.classList.add('has-list');
       b.insertAdjacentHTML('beforeend', '<i class="pk"></i><span class="gl" role="button" aria-label="Class list" title="Class list"><svg viewBox="0 0 12 10" width="11" height="9" aria-hidden="true"><path d="M1 1.5h10M1 5h10M1 8.5h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>');
     }
-    b.addEventListener('click', (e) => { if (e.target.closest('.gl')) openGenEd(n); else toggle(n, b); });
+    b.addEventListener('click', (e) => {
+      if (pressed.fired) { pressed.fired = false; return; } // a long press opened the class sheet
+      if (e.target.closest('.gl')) openGenEd(n); else toggle(n, b);
+    });
+    longPress(b, () => openClass({ node: n }));
     host.appendChild(b);
   }
   // section headings (a minor's name, Gen Ed); placed by layout()
@@ -240,15 +290,27 @@ function buildBoxes() {
 }
 
 const TAG = { minor: 'Minor', cert: 'Cert', major: 'Major' };
+const unitOf = (id) => model?.units.find((u) => u.id === id);
 
+// zoom (phone): the chart can be shrunk to fit the screen (Fit button or pinch); 1 = full size
+const zoom = { mode: null, k: 1, fitK: 1 };
 function layout() {
   const chart = $('chart');
   const W = chart.clientWidth, H = chart.clientHeight;
   if (!W || !H || !nodes) return;
   pickChart(W);
   const g = graph;
-  const dx = Math.max(0, Math.round((W - g.width) / 2));
-  const totalW = Math.max(W, Math.ceil(g.width)), totalH = Math.max(H, Math.ceil(g.height));
+  // whole chart on screen; a phone starts there when that still leaves boxes readable (>= 50%)
+  zoom.fitK = Math.min(1, (W - 8) / g.width, (H - 8) / g.height);
+  if (zoom.mode === null) zoom.mode = W < 700 && zoom.fitK < 1 && zoom.fitK >= 0.5 ? 'fit' : 'full';
+  const k = zoom.mode === 'fit' ? zoom.fitK : zoom.mode === 'free' ? Math.max(zoom.fitK, Math.min(1.5, zoom.k)) : 1;
+  zoom.k = k;
+  const fitBtn = $('fitBtn');
+  fitBtn.hidden = zoom.fitK >= 0.999;
+  fitBtn.setAttribute('aria-pressed', k < 0.999);
+  const dx = Math.max(0, Math.round((W / k - g.width) / 2));
+  const totalW = Math.max(W / k, Math.ceil(g.width)), totalH = Math.max(H / k, Math.ceil(g.height));
+  const frames = [];
   for (const el of $('boxes').children) {
     if (el.dataset.sec) {
       const h = g.heads.find((x) => x.key === el.dataset.sec);
@@ -256,22 +318,86 @@ function layout() {
       if (h) el.style.cssText = `left:${SIZES.pad + dx}px;top:${h.top}px;width:${Math.ceil(g.width) - 2 * SIZES.pad}px`;
       continue;
     }
+    if (el.dataset.grp) { frames.push(el); continue; }
     if (!el.dataset.id) continue;
     const r = g.boxes.get(el.dataset.id);
     Object.assign(el.style, { left: `${r.x + dx}px`, top: `${r.y}px`, width: `${r.w}px`, height: `${r.h}px` }); // (keeps --gh)
   }
+  // a "pick N" group gets one frame when its boxes sit one under another with nothing else between
+  const others = [...g.boxes.entries()];
+  for (const f of frames) {
+    const ids = nodes.filter((n) => n.group === f.dataset.grp).map((n) => n.id);
+    const rs = ids.map((id) => g.boxes.get(id)).filter(Boolean).sort((a, b) => a.y - b.y);
+    let ok = rs.length > 1 && rs.every((r) => Math.abs(r.x - rs[0].x) < 1);
+    for (let i = 1; ok && i < rs.length; i++) ok = rs[i].y - (rs[i - 1].y + rs[i - 1].h) <= SIZES.rowH - SIZES.boxH + 2;
+    const box = ok && { x: rs[0].x - 5, y: rs[0].y - 9, w: rs[0].w + 10, h: rs[rs.length - 1].y + rs[rs.length - 1].h - rs[0].y + 14 };
+    if (box) ok = !others.some(([id, r]) => !ids.includes(id) && r.x < box.x + box.w && r.x + r.w > box.x && r.y < box.y + box.h && r.y + r.h > box.y);
+    f.hidden = !ok;
+    if (ok) f.style.cssText = `left:${box.x + dx}px;top:${box.y}px;width:${box.w}px;height:${box.h}px`;
+    for (const id of ids) $('boxes').querySelector(`.box[data-id="${CSS.escape(id)}"]`)?.classList.toggle('in-grp', ok);
+  }
   const svg = $('edges');
   svg.setAttribute('width', totalW); svg.setAttribute('height', totalH);
-  $('boxes').style.cssText = `width:${totalW}px;height:${totalH}px`;
+  const scale = k === 1 ? '' : `transform:scale(${k});`;
+  $('boxes').style.cssText = `width:${totalW}px;height:${totalH}px;${scale}`;
+  svg.style.cssText = scale;
   // first time on a small screen: start scrolled to the first column's boxes, not empty space
-  if (!layout.scrolled && g.width > W) {
+  if (!layout.scrolled && g.width * k > W) {
     layout.scrolled = true;
     const first = [...g.boxes.values()].filter((r) => r.x <= SIZES.pad + 1).map((r) => r.y);
-    if (first.length) chart.scrollTop = Math.max(0, Math.min(...first) - 16);
+    if (first.length) chart.scrollTop = Math.max(0, Math.min(...first) - 16) * k;
   }
   const d = (pts) => 'M' + pts.map(([x, y]) => `${+(x + dx).toFixed(1)},${+y.toFixed(1)}`).join('L');
   svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker></defs>'
     + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('');
+}
+
+// Fit button (shown when the chart is bigger than the screen) + two-finger pinch on the chart only
+function wireZoom() {
+  const chart = $('chart');
+  $('fitBtn').addEventListener('click', () => {
+    const was = zoom.k;
+    zoom.mode = zoom.k < 0.999 ? 'full' : 'fit';
+    layout();
+    // keep the middle of the view in the middle
+    chart.scrollLeft = Math.max(0, (chart.scrollLeft + chart.clientWidth / 2) * (zoom.k / was) - chart.clientWidth / 2);
+    chart.scrollTop = Math.max(0, (chart.scrollTop + chart.clientHeight / 2) * (zoom.k / was) - chart.clientHeight / 2);
+  });
+  let pinch = null;
+  const dist = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+  chart.addEventListener('touchstart', (e) => {
+    if (e.touches.length !== 2) return;
+    pressed.cancel();
+    const r = chart.getBoundingClientRect();
+    const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left, my = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
+    pinch = { d0: dist(e.touches), k0: zoom.k, mx, my, cx: (chart.scrollLeft + mx) / zoom.k, cy: (chart.scrollTop + my) / zoom.k };
+  }, { passive: true });
+  chart.addEventListener('touchmove', (e) => {
+    if (!pinch || e.touches.length !== 2) return;
+    e.preventDefault();
+    zoom.mode = 'free';
+    zoom.k = pinch.k0 * dist(e.touches) / pinch.d0;
+    layout();
+    chart.scrollLeft = pinch.cx * zoom.k - pinch.mx;
+    chart.scrollTop = pinch.cy * zoom.k - pinch.my;
+  }, { passive: false });
+  chart.addEventListener('touchend', (e) => { if (e.touches.length < 2) pinch = null; });
+  for (const ev of ['gesturestart', 'gesturechange']) chart.addEventListener(ev, (e) => e.preventDefault()); // iOS: no page zoom from the chart
+}
+
+// press and hold (or right-click) a box: its class sheet; the tap that ends a hold doesn't toggle it
+const pressed = { timer: 0, fired: false, x: 0, y: 0, cancel() { clearTimeout(pressed.timer); pressed.timer = 0; } };
+function longPress(el, fn) {
+  el.addEventListener('pointerdown', (e) => {
+    if (e.button > 0) return;
+    pressed.cancel();
+    pressed.fired = false;
+    pressed.x = e.clientX; pressed.y = e.clientY;
+    pressed.timer = setTimeout(() => { pressed.timer = 0; pressed.fired = true; fn(); }, 480);
+  });
+  el.addEventListener('pointermove', (e) => { if (Math.hypot(e.clientX - pressed.x, e.clientY - pressed.y) > 8) pressed.cancel(); });
+  for (const ev of ['pointerup', 'pointercancel', 'pointerleave']) el.addEventListener(ev, () => pressed.cancel());
+  el.addEventListener('contextmenu', (e) => { e.preventDefault(); pressed.cancel(); if (!pressed.fired) fn(); });
 }
 
 function nodeDone(n, completed) {
@@ -312,10 +438,11 @@ function blocked(el, missing) {
   el.classList.add('shake');
   const note = $('note');
   note.textContent = `Needs ${missing.join(', ')}`;
-  const r = el.getBoundingClientRect(), host = $('boxes').getBoundingClientRect();
-  const below = r.bottom - host.top + 4;
-  note.style.left = `${Math.max(4, r.left - host.left)}px`;
-  note.style.top = `${below + 26 > $('boxes').offsetHeight ? r.top - host.top - 26 : below}px`;
+  const r = el.getBoundingClientRect(), host = $('boxes').getBoundingClientRect(), k = zoom.k;
+  const below = (r.bottom - host.top) / k + 4;
+  note.style.left = `${Math.max(4, (r.left - host.left) / k)}px`;
+  note.style.top = `${below + 26 / k > $('boxes').offsetHeight ? (r.top - host.top) / k - 26 / k : below}px`;
+  note.style.transform = k === 1 ? '' : `scale(${1 / k})`;
   note.classList.add('on');
   clearTimeout(noteTimer);
   noteTimer = setTimeout(() => note.classList.remove('on'), 2200);
@@ -331,7 +458,7 @@ function refresh() {
   const completed = doneSet();
   const grades = gradeMap();
   const showGrades = !!state.settings.grades;
-  const plan = makePlan(model, completed, { maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm() });
+  const plan = makePlan(model, completed, planOpts());
   // which semester each unit is planned in (a choice group: its first chunk)
   const semOf = new Map();
   plan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!semOf.has(it.unitId)) semOf.set(it.unitId, i); }));
@@ -378,8 +505,7 @@ function openGenEd(n) {
   $('geSub').textContent = [list.groups.filter((g) => g.name).map((g) => g.name).join(' · '), cr ? `${cr} cr` : ''].filter(Boolean).join(' · ');
   $('geQ').value = '';
   drawGenEd();
-  $('geDlg').showModal();
-  document.activeElement?.blur();
+  openDlg($('geDlg'));
   $('geList').scrollTop = 0;
 }
 function drawGenEd() {
@@ -437,6 +563,9 @@ function wireGenEd() {
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
+// the student's chosen tracks for this major ({ group id: track }); the planner uses them when it can
+const chosenTracks = () => state.settings.tracks?.[major()] || {};
+const planOpts = () => ({ maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm(), track: chosenTracks(), tracks: chosenTracks() });
 const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); return year ? { season, year: +year } : null; };
 // first planned semester: the chosen Start, but never the semester in session (or one the imported audit
 // already shows classes in); a saved Start that has slipped into the past moves up on its own
@@ -453,19 +582,42 @@ function renderLegend(plan) {
 
 function renderPlan(plan) {
   const n = plan.semesters.length;
-  $('sum').innerHTML = plan.graduation
+  const first = progParts[0]?.program || model.program;
+  // needs program admission: the program says so, or a class in it is gated (newer data)
+  const gated = !!first.admission || model.program.requirements.some((r) => r.gate) || Object.values(model.program.courses || {}).some((c) => c?.gate);
+  const tracks = model.units.filter((u) => u.kind === 'choice' && tracksOf(u).length > 1);
+  const completed = doneSet();
+  $('sum').innerHTML = (plan.graduation
     ? `<b>Graduate ${plan.graduation}</b><span>${plan.creditsLeft} credits · ${n} semester${n === 1 ? '' : 's'}</span>`
-    : `<b>All done</b>`;
-  $('sems').innerHTML = plan.semesters.map((s, i) => `
-    <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.map((it) =>
-      `<li class="${it.kind === 'course' ? '' : 'ph'}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
+    : `<b>All done</b>`)
+    + `<p class="caveat">Unofficial plan — confirm with your advisor. <a href="${esc(issueURL(progIssue()))}" target="_blank" rel="noopener" id="sumReport">Report a mistake</a></p>`
+    + (gated ? '<p class="adm">Requires admission — apply after these classes.</p>' : '')
+    + tracks.map((g) => {
+      const mine = chosenTracks()[g.id];
+      const t = mine && tracksOf(g).includes(mine) ? mine : (P.pickTrack ? P.pickTrack(g, completed) : null) || tracksOf(g)[0];
+      return `<button type="button" class="chip" data-track="${esc(g.id)}" title="${esc(g.label)}"><span>${esc(shortName(t, 34))}</span>${mine ? '' : '<em>Guessed — pick yours</em>'}</button>`;
+    }).join('');
+  // admission programs (when the planner marks phases): an "Apply" row before the program's semesters
+  let phases = null;
+  try { phases = P.planPhases ? P.planPhases(plan) : null; } catch { phases = null; }
+  let at = applyIndex(plan, phases);
+  const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
+  if (at < 0) at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone));
+  $('sems').innerHTML = plan.semesters.map((s, i) => (i === at ? '<div class="apply"><span>Apply</span></div>' : '') + `
+    <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
+      `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
-
+// the program-level "Report a mistake" issue
+function progIssue(extra = {}) {
+  const p = progParts[0];
+  return { program: progParts.map((x) => x.program.name).join(' + '), programId: progParts.map((x) => x.id).join('+'), year: p?.year || p?.program.catalogYear || '', ...extra };
+}
 
 // ---------- tabs + settings ----------
 // phone: bottom tabs Flowchart / Plan / Schedule; laptop: Flowchart / Schedule in the header (the plan stays beside it)
-function setTab(tab) {
+function setTab(tab, push = true) {
+  if (push && tab !== $('main').dataset.tab) pushNav({ tab });
   $('main').dataset.tab = tab;
   for (const x of $('tabs').children) x.classList.toggle('on', x.dataset.tab === tab);
   for (const x of $('wtabs').children) x.classList.toggle('on', x.dataset.tab === (tab === 'sched' ? 'sched' : 'flow'));
@@ -474,6 +626,53 @@ function setTab(tab) {
 }
 function wireTabs() {
   for (const b of [...$('tabs').children, ...$('wtabs').children]) b.addEventListener('click', () => setTab(b.dataset.tab));
+}
+
+// ---------- back button: tabs and sheets are history entries, so Back goes where you just were ----------
+// Each entry is { tab, dlg? }. Opening a sheet pushes one; closing it (Done, Esc, outside tap) steps back
+// over it; Back closes the sheet or returns to the previous tab. A sheet opened right as another closes
+// (Settings -> Import audit) takes over that one's entry.
+const NAV = { pending: 0, queued: null, kbd: false };
+function pushNav(st) {
+  const entry = { sa: 1, tab: $('main').dataset.tab, ...st };
+  if (NAV.pending) NAV.queued = entry; else history.pushState(entry, '', location.href);
+}
+function openDlg(dlg) {
+  if (!dlg.open) dlg.showModal();
+  if (!NAV.kbd) document.activeElement?.blur(); // a focus ring only for keyboard users (:focus-visible)
+  const cur = history.state?.dlg;
+  if (cur === dlg.id) return;
+  if (cur && !NAV.pending) history.replaceState({ sa: 1, tab: $('main').dataset.tab, dlg: dlg.id }, '', location.href);
+  else pushNav({ dlg: dlg.id });
+}
+function wireNav() {
+  history.replaceState({ sa: 1, tab: $('main').dataset.tab }, '', location.href);
+  addEventListener('keydown', () => { NAV.kbd = true; }, true);
+  addEventListener('pointerdown', () => { NAV.kbd = false; }, true);
+  for (const d of document.querySelectorAll('dialog')) {
+    d.addEventListener('close', () => {
+      if (history.state?.dlg !== d.id) return;
+      NAV.pending++;
+      history.back();
+    });
+  }
+  addEventListener('popstate', (e) => {
+    if (NAV.pending) {
+      NAV.pending--;
+      if (!NAV.pending && NAV.queued) { history.pushState(NAV.queued, '', location.href); NAV.queued = null; }
+      return;
+    }
+    const st = e.state || {};
+    for (const d of document.querySelectorAll('dialog[open]')) if (d.id !== st.dlg) d.close();
+    const tab = st.tab || 'flow';
+    if (tab !== $('main').dataset.tab) setTab(tab, false);
+    if (st.dlg && !$(st.dlg)?.open) history.replaceState({ sa: 1, tab }, '', location.href); // forward into a closed sheet
+    if (model) syncURL();
+  });
+  // the account sheet (js/account.js opens it): an entry too
+  $('profile').addEventListener('click', () => setTimeout(() => { if ($('acct').open) openDlg($('acct')); }));
+  // "Pick your program" buttons (first visit)
+  document.addEventListener('click', (e) => { if (e.target.closest('[data-pick]')) $('progName').click(); });
 }
 function wireSettings() {
   const dlg = $('settings');
@@ -506,13 +705,133 @@ function wireSettings() {
   $('setBefore').addEventListener('change', (e) => setPref('before', e.target.value || null));
   $('setMode').addEventListener('change', (e) => setPref('mode', e.target.value));
   for (const [id, k] of [['setGaps', 'gaps'], ['setRmp', 'rmp'], ['setMain', 'main'], ['setWait', 'wait']]) $(id).addEventListener('change', (e) => setPref(k, e.target.checked));
-  $('gear').addEventListener('click', () => { fill(); dlg.showModal(); document.activeElement?.blur(); }); // no focus ring on Start
+  $('gear').addEventListener('click', () => { fill(); openDlg(dlg); }); // no focus ring on Start
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
+  // Clear taken: a second tap clears (the button asks first), then "Cleared · Undo" for a few seconds.
   // lastTerm becomes null, not deleted, so the account's copy (and other devices) clear it too
-  $('clearDone').addEventListener('click', () => { state.grades[major()] = {}; state.settings.lastTerm = null; setDone(new Set()); refresh(); });
+  const clr = $('clearDone');
+  const arm = (on) => { clr.dataset.armed = on ? '1' : ''; clr.textContent = on ? 'Tap again to clear' : 'Clear taken'; clearTimeout(arm.t); if (on) arm.t = setTimeout(() => arm(false), 4000); };
+  clr.addEventListener('click', () => {
+    if (!clr.dataset.armed) { arm(true); return; }
+    arm(false);
+    const snap = clearTaken(state, major());
+    save(); refresh();
+    dlg.close();
+    toast('Taken classes cleared', () => { undoClear(state, snap); save(); refresh(); });
+  });
+  dlg.addEventListener('close', () => arm(false));
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+}
+
+// a short message above the tabs with an optional Undo (gone after 6 s)
+function toast(text, undo) {
+  const t = $('toast');
+  $('toastText').textContent = text;
+  $('toastUndo').hidden = !undo;
+  $('toastUndo').onclick = () => { hide(); undo?.(); };
+  t.classList.add('on');
+  clearTimeout(toast.t);
+  toast.t = setTimeout(hide, 6000);
+  function hide() { clearTimeout(toast.t); t.classList.remove('on'); }
+}
+
+// ---------- class sheet: hold a box or tap a plan row -> what it is, why it's here, how to check it ----------
+// Uses whatever the data has: title, credits, prereq text, grade minimum (minGrade), the requirement it
+// fills (planner requirementFor, or the requirement's src / name), the catalog page.
+let clsNode = null;
+const PRE = { prereqText: 'Before', precoreqText: 'Before or with', coreqText: 'With' };
+function reqOf(u) {
+  if (!u) return null;
+  const g = u.kind === 'option' ? unitOf(u.group) : u;
+  return model.program.requirements[Math.floor(g?.order ?? -1)] || null;
+}
+function openClass({ node, item }) {
+  if (!model) return;
+  const u = node ? (node.kind === 'option' ? node : unitOf(node.id) || node) : unitOf(item.unitId) || model.units.flatMap((x) => x.options || []).find((o) => o.id === item.unitId);
+  if (!u && !item) return;
+  const kind = item?.kind || u.kind;
+  const code = item?.code || (u?.kind === 'course' || u?.kind === 'option' ? u.code : null);
+  const c = (code && model.program.courses?.[code]) || {};
+  const g = u?.kind === 'option' ? unitOf(u.group) : u?.kind === 'choice' ? u : null;
+  const req = reqOf(u);
+  const opt = code && req?.options ? req.options.find((o) => o.codes?.includes(code)) : null;
+  const part = progParts.find((p) => p.id === (u?.prog || progParts[0]?.id)) || progParts[0];
+  $('clsCode').textContent = code || item?.label || u.label;
+  $('clsTitle').textContent = code ? (c.title || u?.title || item?.title || '') : (item?.title || u?.title || '');
+  const rows = [];
+  const credits = item?.credits ?? (u?.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u?.credits);
+  if (credits != null) rows.push(['Credits', String(credits)]);
+  const labs = (node?.labs || u?.labs || []).map((l) => l.label);
+  if (labs.length) rows.push(['Lab', labs.join(', ')]);
+  if (code) {
+    const pre = Object.entries(PRE).filter(([k]) => c[k]).map(([k, label]) => [label, c[k]]);
+    if (!pre.length && c.coreqs?.length) pre.push(['With', c.coreqs.join(', ')]);
+    rows.push(...(pre.length ? pre : [['Before', 'None listed']]));
+  }
+  const min = opt?.minGrade ?? req?.minGrade ?? c.minGrade;
+  if (min) rows.push(['Grade', `${min} or higher`]);
+  // why it's here: the planner's answer, else the catalog text, else the requirement's name
+  let why = null;
+  try { why = P.requirementFor ? P.requirementFor(model, code || u?.id) : null; } catch { why = null; }
+  const whyText = typeof why === 'string' ? why : why?.src || why?.name || why?.label
+    || opt?.src || req?.src
+    || [g ? `${g.label} · ${pickLabel(g.pick)}` : kind === 'placeholder' ? u?.label : null, req?.area].filter(Boolean).join(' — ');
+  if (whyText) rows.push(['Why', whyText + (part && progParts.length > 1 ? ` (${part.program.name})` : '')]);
+  if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
+  else if (kind === 'placeholder' && u?.title) rows.push(['Note', u.title]);
+  $('clsFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+  $('clsCat').href = code ? courseURL(code) : part?.program.url || 'https://catalog.uvu.edu/';
+  $('clsReport').href = issueURL(progIssue({ code: code || u?.label || '', title: code ? c.title || '' : '' }));
+  // taken switch: for a class that is a box on the chart
+  clsNode = node || nodes.find((x) => x.id === u?.id || x.id === item?.unitId) || null;
+  $('clsTakenRow').hidden = !clsNode;
+  if (clsNode) $('clsTaken').checked = nodeDone(clsNode, doneSet());
+  openDlg($('clsDlg'));
+}
+function wireClassSheet() {
+  const dlg = $('clsDlg');
+  $('sems').addEventListener('click', (e) => {
+    const li = e.target.closest('li[data-item]');
+    if (!li || !lastPlan) return;
+    const it = lastPlan.semesters[+li.dataset.sem]?.items.find((x) => x.id === li.dataset.item);
+    if (it) openClass({ item: it });
+  });
+  // the Taken switch works like tapping the box (a class that still needs prerequisites stays off)
+  $('clsTaken').addEventListener('change', () => {
+    const n = clsNode, el = n && $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`);
+    if (!n || !el) return;
+    const want = $('clsTaken').checked;
+    if (nodeDone(n, doneSet()) !== want) toggle(n, el);
+    $('clsTaken').checked = nodeDone(n, doneSet());
+    if ($('clsTaken').checked !== want) dlg.close(); // blocked: the box shows what it needs
+  });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  // tracks: the chip under the plan summary -> the program's tracks
+  $('sum').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-track]');
+    if (b) openTracks(b.dataset.track);
+  });
+  $('trackList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-t]');
+    if (!b) return;
+    const id = $('trackDlg').dataset.g;
+    state.settings.tracks = { ...(state.settings.tracks || {}), [major()]: { ...chosenTracks(), [id]: b.dataset.t } };
+    save(); refresh();
+    $('trackDlg').close();
+  });
+  $('trackDlg').addEventListener('click', (e) => { if (e.target === $('trackDlg')) $('trackDlg').close(); });
+}
+function openTracks(id) {
+  const g = unitOf(id);
+  if (!g) return;
+  const mine = chosenTracks()[id];
+  const cur = mine || (P.pickTrack ? P.pickTrack(g, doneSet()) : null);
+  $('trackDlg').dataset.g = id;
+  $('trackName').textContent = shortName(g.label, 40);
+  $('trackList').innerHTML = tracksOf(g).map((t) => `<li><button type="button" data-t="${esc(t)}"${t === cur ? ' class="on" aria-pressed="true"' : ''}>${esc(t)}</button></li>`).join('');
+  openDlg($('trackDlg'));
 }
 
 // ---------- schedule: a term's sections, the best non-conflicting schedules (js/schedule.js) ----------
@@ -653,8 +972,7 @@ function openCourse(i) {
         + `<span class="sn">${esc(x.sec)}</span><span class="when">${esc(whenOf(x))}${tags.map((g) => `<i>${g}</i>`).join('')}</span>`
         + `<span class="who">${esc(lastName(x.instr))}</span><span class="seat${x.seats > 0 ? '' : ' full'}">${seatText(x)}</span></button>${ratingBadge(x.instr, true)}</li>`;
     }).join('') : '<li class="none">Not offered this term</li>');
-  $('secDlg').showModal();
-  document.activeElement?.blur(); // no focus ring on "Best fit" when it opens
+  openDlg($('secDlg')); // no focus ring on "Best fit" when it opens
   $('secList').scrollTop = 0;
 }
 function wireSched() {
@@ -724,7 +1042,7 @@ function wireSched() {
   const openAdd = () => {
     $('addQ').value = '';
     list();
-    $('addDlg').showModal();
+    openDlg($('addDlg'));
     $('addList').scrollTop = 0;
     if (matchMedia('(hover: hover)').matches) $('addQ').focus();
   };
@@ -777,7 +1095,7 @@ function wirePicker() {
   };
   $('progName').addEventListener('click', async () => {
     $('pickQ').value = '';
-    dlg.showModal();
+    openDlg(dlg);
     await loadCatalog();
     chosen(); list();
     $('pickList').scrollTop = 0;
@@ -864,7 +1182,7 @@ function wireImport() {
     const on = $('impIP').checked;
     for (const cb of $('impList').querySelectorAll('input[data-ip="1"]')) { if (!on) cb.checked = false; else if (!cb.disabled) cb.checked = true; cb.closest('li').classList.toggle('off', !on); }
   };
-  $('importBtn').addEventListener('click', () => { $('settings').close(); $('impText').value = ''; $('impFile').value = ''; step(1); dlg.showModal(); });
+  $('importBtn').addEventListener('click', () => { $('settings').close(); $('impText').value = ''; $('impFile').value = ''; step(1); openDlg(dlg); });
   $('impIP').addEventListener('change', syncIP);
   $('impBack').addEventListener('click', () => (dlg.dataset.step === '2' ? step(1) : dlg.close()));
   $('impGo').addEventListener('click', () => {

@@ -18,8 +18,9 @@
 </header>
 <main id="main" data-tab="flow">
   <section class="panel flow" id="flowPanel" aria-label="Flowchart">
-    <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
+    <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><button type="button" class="lg-fit" id="fitBtn" aria-label="Fit to screen" title="Fit to screen" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M1.5 5.5v-4h4M10.5 1.5h4v4M14.5 10.5v4h-4M5.5 14.5h-4v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
     <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
+    <button type="button" class="ok empty-pick" data-pick>Pick your program</button>
   </section>
   <section class="panel plan" id="planPanel" aria-label="Plan">
     <div class="sum" id="sum"></div>
@@ -111,6 +112,21 @@
     <div class="row"><button type="button" id="geUntake" class="ghost">Untake</button><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
+<dialog id="clsDlg" class="cls">
+  <form method="dialog">
+    <div class="sec-head"><b id="clsCode"></b><span id="clsTitle"></span></div>
+    <dl class="cls-facts" id="clsFacts"></dl>
+    <label class="sw-row" id="clsTakenRow">Taken <input type="checkbox" id="clsTaken" role="switch"></label>
+    <div class="row"><a id="clsReport" class="ghost" target="_blank" rel="noopener">Report a mistake</a><span class="cls-r"><a id="clsCat" class="cls-cat" target="_blank" rel="noopener">Catalog ↗</a><button value="ok" class="ok">Done</button></span></div>
+  </form>
+</dialog>
+<dialog id="trackDlg" class="pick tracks">
+  <form method="dialog">
+    <div class="sec-head"><b>Your track</b><span id="trackName"></span></div>
+    <ul class="pick-list" id="trackList"></ul>
+    <div class="row"><span></span><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
 <dialog id="acct" class="acct">
   <form method="dialog">
     <div class="imp-head"><b>Account</b><button type="button" class="tip" id="acctTip" aria-label="Why">?</button>
@@ -128,6 +144,7 @@
     <div class="row"><button type="button" id="acctSignOut" class="ghost" hidden>Sign out</button><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
+<div class="toast" id="toast" role="status"><span id="toastText"></span><button type="button" id="toastUndo">Undo</button></div>
 <script type="module" src="js/fresh.js"></script>
 <script type="module" src="js/app.js"></script>
 </body></html>
