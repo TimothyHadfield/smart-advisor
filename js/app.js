@@ -5,8 +5,9 @@ import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
 import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
-import { termInfo, defaultTerm, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
+import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
+import { initMine } from './mineui.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf } from './uistate.js';
 
 const $ = (id) => document.getElementById(id);
@@ -904,6 +905,10 @@ async function renderSched() {
   const code = sched.term;
   const groups = await termGroups(code);
   if (gen !== schedGen) return;
+  // the term the student is in (or registered for): their real classes (js/mineui.js)
+  const isMine = mine.isMine(code);
+  $('schedPanel').classList.toggle('mine', isMine);
+  if (isMine) { mine.render(code, groups); return; }
   const t = termState(code);
   sched.courses = termCourses(code, groups).map((c) => ({ code: c, sections: groups.get(c) || [] }));
   sched.list = buildSchedules(sched.courses, prefs(), sched.rmp, { pins: t.pin }).list;
@@ -968,7 +973,7 @@ function drawList(s) {
     return `<li><button type="button" class="sc-row" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="when">${esc(whenOf(sec))}</span>`
       + `<span class="who">${esc(lastName(sec.instr))}</span>${ratingBadge(sec.instr)}<span class="seat${sec.seats > 0 ? '' : ' full'}">${seatText(sec)}</span>`
       + `<span class="crn${t.pin[c.code] ? ' pin' : ''}">${o.secs.map((x) => x.crn).join('+')}</span></button></li>`;
-  }).join('') + '<li><button type="button" class="sc-add" id="scAdd">+ Add class</button></li>';
+  }).join('') + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-mine>Add my schedule</button></li>';
 }
 function openCourse(i) {
   const c = sched.courses[i], t = termState(sched.term), s = sched.list[sched.idx];
@@ -991,7 +996,22 @@ function openCourse(i) {
   openDlg($('secDlg')); // no focus ring on "Best fit" when it opens
   $('secList').scrollTop = 0;
 }
+let mine = null;
 function wireSched() {
+  mine = initMine({
+    $, esc, openDlg, save, toast, termState, termGroups, sched, drawWeek, ratingBadge, lastName,
+    render: () => renderSched(),
+    lastTerm: () => state.settings.lastTerm || null,
+    planHas: (code) => !!lastPlan?.semesters.find((s) => s.term === termInfo(code).label)?.items.some((it) => it.kind === 'course'),
+    // the imported audit's in-progress classes: course rows marked IP, and Gen Ed boxes filled with a class
+    ipCodes: () => {
+      const g = state.grades[major()] || {}, out = [];
+      for (const [k, v] of Object.entries(g)) if (v === 'IP' && /^[A-Z]{2,5} \d{4}[A-Z]?$/.test(k)) out.push(k);
+      for (const k of state.done[major()] || []) { const m = k.match(/^(.+)=([A-Z]{2,5} \d{4}[A-Z]?)$/); if (m && g[m[1]] === 'IP') out.push(m[2]); }
+      return out;
+    },
+    subjects: () => getJSON(`${DATA}/sections/index.json`).then((i) => i?.subjects || {}),
+  });
   $('scTerms').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-term]');
     if (!b || b.dataset.term === sched.term) return;
@@ -1015,6 +1035,8 @@ function wireSched() {
   });
   $('scList').addEventListener('click', (e) => {
     if (e.target.closest('#scAdd')) { openAdd(); return; }
+    if (e.target.closest('[data-mine]')) { mine.open(); return; }
+    if ($('schedPanel').classList.contains('mine')) { mine.click(e); return; }
     const b = e.target.closest('button[data-i]');
     if (b) openCourse(+b.dataset.i);
   });
@@ -1067,6 +1089,7 @@ function wireSched() {
     const b = e.target.closest('button[data-code]');
     if (!b) return;
     const t = termState(sched.term), code = b.dataset.code;
+    if ($('schedPanel').classList.contains('mine')) { $('addDlg').close(); mine.addCode(code); return; }
     if (t.drop.includes(code)) t.drop = t.drop.filter((x) => x !== code); else if (!t.add.includes(code)) t.add.push(code);
     save();
     $('addDlg').close();
@@ -1218,6 +1241,8 @@ function wireImport() {
     // classes in progress (or already registered for next term): the plan starts after that semester
     // (set before setDone, which saves)
     if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);
+    // in-progress classes fill this term's "my schedule" (Schedule tab) until the student changes it
+    if (ipOn && parsed?.inProgress?.length) termState(currentTermCode()).ip = parsed.inProgress.map((r) => r.code);
     setDone(s);
     if (switching) loadPlan(); else refresh();
     dlg.close();

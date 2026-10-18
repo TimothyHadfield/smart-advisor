@@ -334,6 +334,23 @@ main[data-tab="sched"] .sched { display: flex; }
 .sc-add { width: 100%; padding: 9px 8px; border: 0; background: none; color: var(--green); font-weight: 600; text-align: left; cursor: pointer; }
 /* a class's sections (tap one to keep it) + add a class */
 dialog.secs { width: min(460px, calc(100vw - 32px)); }
+/* my schedule (js/mineui.js): Add my schedule in the bar, Pick your section rows, the paste dialog, add by hand */
+.sc-mine { display: none; flex: none; margin-left: auto; padding: 6px 10px; border: 1px solid var(--green); border-radius: 8px; background: none; color: var(--green); font-size: 12px; font-weight: 600; cursor: pointer; }
+.sc-mine:active { background: var(--green); color: #fff; }
+.sched.mine .sc-mine { display: block; }
+.sched.mine .sc-nav { display: none; }
+.sc-adds { display: flex; }
+.sc-adds .sc-add { width: auto; }
+.sc-adds .sc-add + .sc-add { margin-left: auto; }
+.sc-row .pick-sec { flex: 1; color: var(--green); font-weight: 600; }
+#myTipText { white-space: normal; width: 240px; }
+.my-list li { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
+.my-list li.miss span { color: var(--muted); }
+.my-list .ghost { flex: none; padding: 3px 10px; font-size: 12px; }
+.my-list .none { color: var(--muted); }
+dialog.hand input { font: inherit; font-size: 16px; width: 150px; padding: 6px 8px; border-radius: 8px; border: 1px solid var(--line); background: var(--bg); color: var(--fg); }
+.hand-msg { margin: -4px 0 0; min-height: 16px; font-size: 12px; color: #b3261e; }
+#handRemove[hidden] { visibility: hidden; display: block; }
 .sec-head { display: flex; flex-direction: column; gap: 2px; min-width: 0; }
 .sec-head b { font-size: 15px; }
 .sec-head span { color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }

@@ -30,6 +30,7 @@
     <div class="sc-bar">
       <div class="seg sc-terms" id="scTerms"></div>
       <div class="sc-nav"><button type="button" id="scPrev" aria-label="Previous schedule">‹</button><span id="scRank"></span><button type="button" id="scNext" aria-label="Next schedule">›</button></div>
+      <button type="button" class="sc-mine" id="scMine">Add my schedule</button>
       <button type="button" class="sc-copy" id="scCopy">Copy CRNs</button>
     </div>
     <div class="sc-body">
@@ -95,6 +96,38 @@
     <div class="sec-head"><b id="secCode"></b><span id="secTitle"></span></div>
     <ul class="pick-list sec-list" id="secList"></ul>
     <div class="row"><button type="button" id="secRemove" class="ghost">Remove</button><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<dialog id="myDlg" class="imp">
+  <form method="dialog">
+    <div class="imp-head"><b>Add my schedule</b><button type="button" class="tip" id="myTip" aria-label="Why">?</button>
+      <p class="tiptext" id="myTipText" hidden>From myUVU: View Registration Information, or a schedule printout. Read on this device only.</p></div>
+    <div class="imp-body" id="myStep1">
+      <textarea id="myText" placeholder="Paste your myUVU schedule" spellcheck="false"></textarea>
+      <label class="ghost file">Choose file<input type="file" id="myFile" accept="application/pdf,.pdf,.html,.htm,.txt,text/html,text/plain"></label>
+    </div>
+    <div class="imp-body" id="myStep2" hidden>
+      <div class="imp-sum" id="mySum"></div>
+      <ul class="imp-list my-list" id="myList"></ul>
+    </div>
+    <div class="row"><button type="button" id="myBack" class="ghost">Cancel</button><button type="button" id="myGo" class="ok">Read</button></div>
+  </form>
+</dialog>
+<dialog id="mySecDlg" class="pick secs">
+  <form method="dialog">
+    <div class="sec-head"><b id="mySecCode"></b><span id="mySecTitle"></span></div>
+    <ul class="pick-list sec-list" id="mySecList"></ul>
+    <div class="row"><button type="button" id="mySecRemove" class="ghost">Remove</button><button value="ok" class="ok">Done</button></div>
+  </form>
+</dialog>
+<dialog id="handDlg" class="hand">
+  <form method="dialog">
+    <label>Course <input type="text" id="handCode" placeholder="ECE 2250" autocomplete="off" spellcheck="false"></label>
+    <label>Days <input type="text" id="handDays" placeholder="MWF" autocomplete="off" spellcheck="false"></label>
+    <label>Start <input type="time" id="handStart"></label>
+    <label>End <input type="time" id="handEnd"></label>
+    <p class="hand-msg" id="handMsg"></p>
+    <div class="row"><button type="button" id="handRemove" class="ghost">Remove</button><button type="button" id="handSave" class="ok">Add</button></div>
   </form>
 </dialog>
 <dialog id="addDlg" class="pick">
