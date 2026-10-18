@@ -224,7 +224,8 @@ export function gradeInfo(g) {
 // Match parsed courses to a program model (planner.js buildModel).
 // Returns { rows: [{key, code, status: 'taken'|'ip', grade, label, title}], other } where key is what goes in
 // the taken set: a course code, or a Gen Ed box id (e.g. "ph:7") when the audit row's requirement label
-// names that box ("FINE ARTS THEA 1023 ..." -> "Fine Arts Distribution"). other = courses not in this major.
+// names that box ("FINE ARTS THEA 1023 ..." -> "Fine Arts Distribution"). others = the courses not in this major
+// ([{code, status, grade}]: transfer/AP credit and classes the plan doesn't use); other = how many.
 export function matchAudit(parsed, model) {
   const courses = model.program.courses || {};
   const optionCodes = new Set(model.units.filter((u) => u.kind === 'choice').flatMap((u) => u.options.flatMap((o) => o.codes)));
@@ -232,8 +233,7 @@ export function matchAudit(parsed, model) {
   const words = (s) => String(s).toLowerCase().match(/[a-z]+/g) || [];
   const STOP = new Set(['and', 'the', 'of', 'distribution', 'requirement', 'requirements']);
   const boxes = model.units.filter((u) => u.kind === 'placeholder').map((u) => ({ u, need: words(u.label).filter((w) => !STOP.has(w)) })).filter((b) => b.need.length);
-  const rows = [], usedBox = new Set();
-  let other = 0;
+  const rows = [], usedBox = new Set(), others = [];
   for (const [list, status] of [[parsed.taken, 'taken'], [parsed.inProgress, 'ip']]) {
     for (const r of list) {
       if (inProgram(r.code)) { rows.push({ key: r.code, code: r.code, status, grade: gradeText(r, status), label: r.code, title: courses[r.code]?.title || '' }); continue; }
@@ -242,9 +242,9 @@ export function matchAudit(parsed, model) {
       const hits = (b) => b.need.filter((w) => have.has(w)).length;
       const box = boxes.find((b) => !usedBox.has(b.u.id) && hits(b) >= (b.need.length >= 3 ? b.need.length - 1 : b.need.length));
       if (box) { usedBox.add(box.u.id); rows.push({ key: box.u.id, code: r.code, status, grade: gradeText(r, status), label: box.u.label, title: r.code }); continue; }
-      other++;
+      others.push({ code: r.code, status, grade: gradeText(r, status) });
     }
   }
   rows.sort((a, b) => (a.status === b.status ? 0 : a.status === 'taken' ? -1 : 1) || a.label.localeCompare(b.label));
-  return { rows, other };
+  return { rows, others, other: others.length };
 }

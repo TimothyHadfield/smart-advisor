@@ -46,13 +46,17 @@ export function isFirstVisit(state, ids) {
 }
 
 // ---------- Clear taken (with undo) ----------
-// clears the major's taken classes, grades and imported term; returns what Undo needs
+// clears the major's taken classes, grades, imported term, hypothetical taps and sources (js/classes.js);
+// returns what Undo needs
 export function clearTaken(state, major) {
-  const snap = { major, done: [...(state.done?.[major] || [])], grades: { ...(state.grades?.[major] || {}) }, lastTerm: state.settings?.lastTerm ?? null };
+  const snap = { major, done: [...(state.done?.[major] || [])], grades: { ...(state.grades?.[major] || {}) }, lastTerm: state.settings?.lastTerm ?? null,
+    hypo: state.settings?.hypo?.[major] ?? null, src: state.settings?.src?.[major] ?? null };
   state.done ??= {}; state.grades ??= {}; state.settings ??= {};
   state.done[major] = [];
   state.grades[major] = {};
   state.settings.lastTerm = null; // null, not deleted, so other devices clear it too
+  if (state.settings.hypo?.[major]) state.settings.hypo = { ...state.settings.hypo, [major]: { add: [], del: [] } };
+  if (state.settings.src?.[major]) state.settings.src = { ...state.settings.src, [major]: {} };
   return snap;
 }
 export function undoClear(state, snap) {
@@ -61,6 +65,8 @@ export function undoClear(state, snap) {
   state.done[snap.major] = [...snap.done];
   state.grades[snap.major] = { ...snap.grades };
   state.settings.lastTerm = snap.lastTerm;
+  if (snap.hypo) state.settings.hypo = { ...(state.settings.hypo || {}), [snap.major]: snap.hypo };
+  if (snap.src) state.settings.src = { ...(state.settings.src || {}), [snap.major]: snap.src };
   return state;
 }
 

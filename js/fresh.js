@@ -12,7 +12,7 @@
 // load later and are not needed for the first paint). tests/fresh.test.mjs checks this list.
 export const STARTUP = ['css/app.css', 'js/fresh.js', 'js/app.js', 'js/planner.js', 'js/phases.js', 'js/gened.js', 'js/layout.js',
   'js/audit.js', 'js/sync.js', 'js/account.js', 'js/programs.js', 'js/schedule.js', 'js/uistate.js',
-  'js/mysched.js', 'js/mineui.js'];
+  'js/mysched.js', 'js/mineui.js', 'js/classes.js'];
 
 const KEY = 'smart-advisor:fresh'; // sessionStorage: the live Last-Modified we already reloaded for
 const EVERY_MS = 60_000;

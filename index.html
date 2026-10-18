@@ -12,6 +12,7 @@
 <header class="top">
   <span class="brand">Smart Advisor</span>
   <button class="prog" id="progName" aria-haspopup="dialog" title="Programs"></button>
+  <div class="hyp" id="hyp" hidden><div class="hyp-seg" id="hypSeg"><button type="button" data-v="hypo" class="on">Hypothetical</button><button type="button" data-v="actual">Actual</button></div><button type="button" class="hyp-x" id="hypClear" aria-label="Clear hypothetical" title="Clear hypothetical">×</button></div>
   <div class="wtabs" id="wtabs"><button data-tab="flow" class="on">Flowchart</button><button data-tab="sched">Schedule</button></div>
   <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
   <button class="icon profile" id="profile" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><span id="profileInitial" aria-hidden="true"></span></button>
@@ -19,12 +20,19 @@
 <main id="main" data-tab="flow">
   <section class="panel flow" id="flowPanel" aria-label="Flowchart">
     <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><button type="button" class="lg-fit" id="fitBtn" aria-label="Fit to screen" title="Fit to screen" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M1.5 5.5v-4h4M10.5 1.5h4v4M14.5 10.5v4h-4M5.5 14.5h-4v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
+    <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
     <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
     <button type="button" class="ok empty-pick" data-pick>Pick your program</button>
   </section>
-  <section class="panel plan" id="planPanel" aria-label="Plan">
+  <section class="panel plan" id="planPanel" aria-label="Plan" data-sub="plan">
+    <div class="seg plan-seg" id="planSeg"><button type="button" data-v="plan" class="on">Plan</button><button type="button" data-v="classes">Classes</button></div>
     <div class="sum" id="sum"></div>
     <div class="sems" id="sems"></div>
+    <div class="cl-view" id="clView">
+      <div class="cl-head"><span class="cl-gpa" id="clGpa"></span><button type="button" class="chip cl-add" id="clAdd">+ Add class</button></div>
+      <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
+      <ul class="cl-list" id="clList"></ul>
+    </div>
   </section>
   <section class="panel sched" id="schedPanel" aria-label="Schedule">
     <div class="sc-bar">
@@ -150,7 +158,22 @@
     <div class="sec-head"><b id="clsCode"></b><span id="clsTitle"></span></div>
     <dl class="cls-facts" id="clsFacts"></dl>
     <label class="sw-row" id="clsTakenRow">Taken <input type="checkbox" id="clsTaken" role="switch"></label>
+    <div class="cls-grades" id="clsGrades"></div>
     <div class="row"><a id="clsReport" class="ghost" target="_blank" rel="noopener">Report a mistake</a><span class="cls-r"><a id="clsCat" class="cls-cat" target="_blank" rel="noopener">Catalog ↗</a><button value="ok" class="ok">Done</button></span></div>
+  </form>
+</dialog>
+<dialog id="editDlg" class="pick cl-edit" data-step="find">
+  <form method="dialog">
+    <div class="ed-find" id="edFind">
+      <input type="search" id="edQ" placeholder="Search classes" autocomplete="off" spellcheck="false" enterkeyhint="search">
+      <ul class="pick-list" id="edList"></ul>
+    </div>
+    <div class="ed-form" id="edForm" hidden>
+      <div class="sec-head"><b id="edCode"></b><span id="edTitle"></span></div>
+      <div class="seg" id="edSeg"><button type="button" data-s="taken" class="on">Taken</button><button type="button" data-s="ip">Current</button></div>
+      <label id="edGradeRow">Grade <select id="edGrade"></select></label>
+    </div>
+    <div class="row"><button type="button" id="edRemove" class="ghost" hidden>Remove</button><span></span><button type="button" id="edSave" class="ok">Done</button></div>
   </form>
 </dialog>
 <dialog id="trackDlg" class="pick tracks">

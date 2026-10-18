@@ -9,6 +9,7 @@ import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, 
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf } from './uistate.js';
+import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -22,7 +23,9 @@ const KEY = 'smart-advisor:v1';
 // plan            = { programs: [major, minor...], catalogYear (null = current) }
 // done[major]     = taken course codes / Gen Ed box ids (a minor's boxes: "<minor id>/ph:3"); a Gen Ed box
 //                   filled from its class list also has "<box id>=<code>" ("ph:8=DANC 1010", js/gened.js)
-// grades[major]   = { code or box id: grade } for what came from an audit ("A-", "TCR", "IP", or "")
+// grades[major]   = { code or box id: grade } ("A-", "TCR", "IP" = in progress, or ""), from an audit or the student
+// done[major] holds the ACTUAL classes (audit + added in Classes); flowchart taps are hypothetical and live in
+// settings.hypo[major] (js/classes.js), shown on top unless the student picks "Actual"
 function load() {
   try { return JSON.parse(localStorage.getItem(KEY)) || {}; } catch { return {}; }
 }
@@ -75,8 +78,20 @@ function redraw() {
 }
 const major = () => state.plan.programs[0];
 const planSig = () => JSON.stringify([state.plan.programs, state.plan.catalogYear]);
-const doneSet = () => new Set(state.done[major()] || []);
-function setDone(set) { state.done[major()] = [...set]; save(); }
+// view: 'hypo' (actual + taps) or 'actual' (audit + added only); not saved
+const ui = { view: 'hypo', sub: 'plan' };
+const actualSet = () => new Set(state.done[major()] || []);
+const hypoOf = () => normHypo(actualSet(), state.settings.hypo?.[major()]);
+// the classes counted on screen (flowchart, plan, Classes, schedule)
+const doneSet = () => viewSet(actualSet(), state.settings.hypo?.[major()], ui.view);
+function setHypo(h) { state.settings.hypo = { ...(state.settings.hypo || {}), [major()]: h }; }
+// a tap (flowchart box, its class sheet's Taken switch, a Gen Ed list): hypothetical, never the actual classes
+function setDone(set) { setHypo(hypoFrom(actualSet(), set)); ui.view = 'hypo'; save(); }
+// taps start from what Hypothetical shows (a tap while viewing Actual switches back)
+function tapSet() { ui.view = 'hypo'; return doneSet(); }
+// the actual classes (audit import, Classes); taps that now change nothing drop out
+function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new Set(set), state.settings.hypo?.[major()])); save(); }
+const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
 const gradeMap = () => (state.grades[major()] ??= {});
 
 let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [];
@@ -136,6 +151,9 @@ async function boot() {
   wireGenEd();
   wireNav();
   wireClassSheet();
+  wireHypo();
+  wireClasses();
+  wireNoAudit();
   wireZoom();
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
@@ -165,6 +183,8 @@ function setPlan(ids, year) {
     const course = (k) => !/^(ph|choice):|\//.test(k);
     state.done[to] = (state.done[from] || []).filter(course);
     state.grades[to] = Object.fromEntries(Object.entries(state.grades[from] || {}).filter(([k]) => course(k)));
+    const src = state.settings.src?.[from];
+    if (src) state.settings.src = { ...state.settings.src, [to]: Object.fromEntries(Object.entries(src).filter(([k]) => course(k))) };
   }
   state.plan.programs = [...ids];
   state.plan.catalogYear = year ?? null;
@@ -210,6 +230,9 @@ function showEmpty() {
   $('legendItems').innerHTML = '';
   $('sems').innerHTML = '';
   $('sum').innerHTML = '<button type="button" class="ok" data-pick>Pick your program</button>';
+  renderHypo();
+  renderNoAudit();
+  renderClasses();
   syncURL();
 }
 // the address bar names the chosen programs (?p=major,minor), so a bookmark or shared link keeps them
@@ -410,16 +433,16 @@ function nodeDone(n, completed) {
 const keysOf = (n) => (n.kind === 'course' || n.kind === 'option' ? [n, ...(n.labs || [])].flatMap((u) => u.codes) : [n.id]);
 
 function toggle(n, el) {
-  const s = doneSet();
-  const grades = gradeMap();
+  const s = tapSet();
   if (nodeDone(n, s)) {
-    // untake it (and its folded lab, and an "or" alternative), then everything tapped that needed it;
-    // classes from an imported audit stay (the audit is the truth)
+    // untake it (and its folded lab, and an "or" alternative), then everything tapped that needed it.
+    // Hypothetical only: an actual class is hidden, not deleted, and keeps its grade; actual classes that
+    // needed it stay (the audit is the truth)
     // a pick-one box (American Institutions) can be filled by a class code from the audit: clear those too
     const keys = n.kind === 'choice' ? [n.id, ...(n.options || []).flatMap((o) => [...(o.codes || []), ...(o.alts || [])])] : keysOf(n);
     keys.push(...pickKeysOf(s, n.id)); // the class picked from its Gen Ed list
-    for (const k of keys) { s.delete(k); delete grades[k]; }
-    setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
+    for (const k of keys) s.delete(k);
+    setDone(cascadeUntake(model, s, actualSet()));
   } else {
     const chk = tapCheck(model, n, s);
     if (!chk.ok) { blocked(el, chk.missing); return; }
@@ -450,10 +473,6 @@ function blocked(el, missing) {
 }
 
 // ---------- refresh states + plan ----------
-function gradeOfBox(n, grades) {
-  for (const k of keysOf(n)) if (k in grades) return grades[k];
-  return grades[n.id];
-}
 function refresh() {
   if (!model) return;
   const completed = doneSet();
@@ -463,6 +482,7 @@ function refresh() {
   // which semester each unit is planned in (a choice group: its first chunk)
   const semOf = new Map();
   plan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!semOf.has(it.unitId)) semOf.set(it.unitId, i); }));
+  let anyIP = false;
   for (const el of $('boxes').children) {
     if (!el.dataset.id) continue;
     const n = nodes.find((x) => x.id === el.dataset.id);
@@ -473,7 +493,12 @@ function refresh() {
     el.classList.toggle('planned', sem !== undefined);
     el.classList.toggle('done', done);
     el.classList.toggle('locked', !done && !tapCheck(model, n, completed).ok);
-    const gi = gradeInfo(done && showGrades ? gradeOfBox(n, grades) : '');
+    // in progress: its own look (and an IP tag even with grades off); otherwise the grade, when on
+    const g = done ? boxGrade(n, completed, grades) : '';
+    const ip = statusOf(g) === 'ip';
+    anyIP ||= ip;
+    el.classList.toggle('ip', ip);
+    const gi = gradeInfo(ip || showGrades ? g : '');
     el.classList.toggle('graded', gi.kind === 'letter');
     el.style.setProperty('--gh', gi.hue ?? 0);
     el.querySelector('.gr').textContent = gi.text;
@@ -482,8 +507,11 @@ function refresh() {
     el.setAttribute('aria-pressed', done);
   }
   renderPlan(plan);
-  renderLegend(plan);
+  renderLegend(plan, anyIP);
   lastPlan = plan;
+  renderHypo();
+  renderNoAudit();
+  if (ui.sub === 'classes') renderClasses();
   if ($('main').dataset.tab === 'sched') renderSched();
 }
 
@@ -531,16 +559,15 @@ function wireGenEd() {
   $('geList').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-code]');
     if (!b || !geNode) return;
-    const n = geNode, s = doneSet();
+    const n = geNode, s = tapSet();
     const c = listOf(n).groups.flatMap((g) => g.courses).find((x) => x.code === b.dataset.code);
     if (!c) return;
     const el = $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`);
     if (n.kind === 'choice') {
-      const grades = gradeMap();
       if (optionDone({ codes: c.codes, alts: [] }, s)) {
-        // tap a taken option again: untake it (and what needed it)
-        for (const k of c.codes) { s.delete(k); delete grades[k]; }
-        setDone(cascadeUntake(model, s, new Set(Object.keys(grades))));
+        // tap a taken option again: untake it (and what needed it); hypothetical, grades kept
+        for (const k of c.codes) s.delete(k);
+        setDone(cascadeUntake(model, s, actualSet()));
         refresh(); drawGenEd();
         return;
       }
@@ -576,8 +603,8 @@ function startTerm() {
 }
 
 const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
-function renderLegend(plan) {
-  $('legendItems').innerHTML = '<span class="sw done"></span>Taken'
+function renderLegend(plan, anyIP) {
+  $('legendItems').innerHTML = '<span class="sw done"></span>Taken' + (anyIP ? '<span class="sw ip"></span>Current' : '')
     + plan.semesters.map((s, i) => `<span class="sw s${i % 10}"></span>${shortTerm(s.term)}`).join('');
 }
 
@@ -619,6 +646,233 @@ function progIssue(extra = {}) {
   return { program: progParts.map((x) => x.program.name).join(' + '), programId: progParts.map((x) => x.id).join('+'), year: p?.year || p?.program.catalogYear || '', ...extra };
 }
 
+// ---------- Hypothetical | Actual (header): shown once a tap changed anything ----------
+function renderHypo() {
+  const on = !!model && hasHypo(hypoOf());
+  if (!on) ui.view = 'hypo';
+  $('hyp').hidden = !on;
+  document.querySelector('.top').classList.toggle('hyp-on', on);
+  for (const b of $('hypSeg').children) b.classList.toggle('on', b.dataset.v === ui.view);
+}
+function wireHypo() {
+  $('hypSeg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-v]');
+    if (!b || b.dataset.v === ui.view) return;
+    ui.view = b.dataset.v;
+    refresh();
+  });
+  // clear every tap (the actual classes stay), with Undo
+  $('hypClear').addEventListener('click', () => {
+    const snap = hypoOf();
+    setHypo({ add: [], del: [] });
+    save(); refresh();
+    toast('Hypothetical cleared', () => { setHypo(snap); save(); refresh(); });
+  });
+}
+
+// ---------- "No audit loaded — Upload or Sign in": so missing grades never look like a bug ----------
+// An audit counts as loaded when a class came from one (settings.src), the import saved its catalog year,
+// or (imported before sources were kept) the major has grades but no sources at all.
+function hasAudit() {
+  const src = state.settings.src?.[major()];
+  if (src && Object.values(src).includes('audit')) return true;
+  if (state.audit?.[major()]) return true;
+  return !src && Object.keys(state.grades[major()] || {}).length > 0;
+}
+function renderNoAudit() {
+  const show = !!model && !hasAudit();
+  const signedIn = $('profile').classList.contains('in');
+  for (const el of document.querySelectorAll('[data-noaud]')) {
+    el.hidden = !show;
+    el.querySelector('[data-signin]').hidden = signedIn;
+  }
+}
+function wireNoAudit() {
+  document.addEventListener('click', (e) => {
+    if (e.target.closest('[data-upload]')) $('importBtn').click();
+    else if (e.target.closest('[data-signin-btn]')) $('profile').click();
+  });  new MutationObserver(renderNoAudit).observe($('profile'), { attributes: true, attributeFilter: ['class'] }); // signed in / out
+}
+
+// ---------- Classes (the Plan panel's second view): every class for the chosen programs, grouped ----------
+// Taken / AP/CE / Current / Still need / Not used by your plan (js/classes.js classGroups), a GPA line, and
+// "+ Add class" (search the catalog, Taken or Current, a grade). Added classes are actual; they apply to the
+// flowchart and plan like the audit's.
+const courseCat = { map: {}, list: [], ready: null };
+function loadCourses() {
+  courseCat.ready ??= getJSON(`${DATA}/courses.json`).then((all) => {
+    const map = {};
+    for (const [code, c] of Object.entries(all || {})) if (c?.title) map[code] = { title: c.title, credits: c.credits ?? null };
+    for (const a of gened?.areas || []) for (const c of a.courses || []) map[c.code] ??= { title: c.title, credits: c.credits ?? null };
+    for (const [code, c] of Object.entries(model?.program.courses || {})) map[code] ??= { title: c.title || '', credits: c.credits ?? null };
+    courseCat.map = map;
+    courseCat.list = Object.entries(map).sort((a, b) => a[0].localeCompare(b[0], 'en', { numeric: true }));
+    if (!all) courseCat.ready = null; // try again next time
+  });
+  return courseCat.ready;
+}
+function setSub(v, push = true) {
+  if (push && v !== ui.sub) pushNav({ sub: v });
+  ui.sub = v;
+  $('planPanel').dataset.sub = v;
+  for (const b of $('planSeg').children) b.classList.toggle('on', b.dataset.v === v);
+  if (v === 'classes') renderClasses();
+}
+let clRows = [];
+function gradeBadge(g) {
+  const gi = gradeInfo(g);
+  if (gi.kind === 'letter') return `<em class="gb" style="--gh:${gi.hue}">${esc(gi.text)}</em>`;
+  return `<em class="gb${gi.text ? ' mark' : ''}">${esc(gi.text)}</em>`;
+}
+function renderClasses() {
+  if (!model || !lastPlan) { $('clList').innerHTML = ''; $('clGpa').innerHTML = ''; return; }
+  if (!courseCat.ready) loadCourses().then(() => { if (ui.sub === 'classes') renderClasses(); });
+  const order = new Map();
+  lastPlan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!order.has(it.unitId)) order.set(it.unitId, i); }));
+  const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: gradeMap(), src: state.settings.src?.[major()] || {},
+    catalog: courseCat.map, order, when: (i) => shortTerm(lastPlan.semesters[i].term) });
+  const g = gpa(groups.filter((x) => x.key !== 'need').flatMap((x) => x.rows));
+  $('clGpa').innerHTML = g.gpa == null ? '<b>GPA —</b><span>No grades yet</span>' : `<b>GPA ${g.gpa.toFixed(2)}</b><span>${g.credits} graded cr</span>`;
+  clRows = [];
+  $('clList').innerHTML = groups.filter((x) => x.rows.length).map((x) => `<li class="cl-h">${esc(x.label)}<span>${x.rows.length}</span></li>`
+    + x.rows.map((r) => {
+      const i = clRows.push({ ...r, group: x.key }) - 1;
+      const right = x.key === 'need' ? `<em class="when">${esc(r.when || '')}</em>` : gradeBadge(r.grade);
+      return `<li><button type="button" class="cl-row${r.src === 'tap' ? ' tap' : ''}" data-r="${i}"><b>${esc(r.label)}</b><span>${esc(r.title)}</span>`
+        + `${r.src === 'tap' ? '<i>Tapped</i>' : ''}<em class="cr">${r.credits ?? ''}</em>${right}</button></li>`;
+    }).join('')).join('') || '<li class="none">No classes</li>';
+}
+// the requirement behind a "Still need" row -> its class sheet (a box on the chart, else the requirement)
+function openNeed(r) {
+  const n = nodes.find((x) => x.id === r.unit);
+  if (n) { openClass({ node: n }); return; }
+  const u = unitOf(r.unit);
+  if (u) openClass({ item: { unitId: u.id, kind: u.kind, code: u.kind === 'course' ? u.code : null, label: u.label, title: u.title, credits: r.credits } });
+}
+const inProgram = (code) => !!model.byCode[code] || model.units.some((u) => u.kind === 'choice' && u.options.some((o) => [...o.codes, ...(o.alts || [])].includes(code)));
+// add a class to the actual list (an outside Gen Ed class also fills an open Gen Ed box whose list has it)
+function addClass(code, status, grade) {
+  const s = actualSet(), src = srcMap(), grades = gradeMap();
+  if (!s.has(code) && !inProgram(code)) {
+    const box = geBoxFor(code, model.units.filter((u) => u.kind === 'placeholder'), listOf, viewSet(s, null, 'hypo'));
+    if (box) { s.add(box); s.add(`${box}=${code}`); src[box] = 'added'; }
+  }
+  if (!s.has(code)) src[code] = 'added';
+  s.add(code);
+  grades[code] = status === 'ip' ? 'IP' : grade || '';
+  setActual(s);
+  refresh();
+}
+// remove a class: a tapped one is untapped (hypothetical); an actual one leaves the list (Undo for a few seconds)
+function removeClass(r) {
+  const boxOf = (s) => [...s].filter((k) => k.endsWith(`=${r.code}`)).map((k) => k.split('=')[0]);
+  if (r.src === 'tap') {
+    const s = tapSet();
+    for (const k of [r.key, r.code, ...pickKeysOf(s, r.key)].filter(Boolean)) s.delete(k);
+    setDone(cascadeUntake(model, s, actualSet()));
+    refresh();
+    return;
+  }
+  const snap = { done: [...(state.done[major()] || [])], src: { ...(state.settings.src?.[major()] || {}) } };
+  const s = actualSet(), src = srcMap();
+  const boxes = r.key !== r.code ? [r.key] : r.code ? boxOf(s) : [];
+  for (const k of [r.key, r.code, ...boxes, ...boxes.flatMap((b) => pickKeysOf(s, b))].filter(Boolean)) { s.delete(k); delete src[k]; }
+  setActual(s);
+  refresh();
+  toast(`${r.label} removed`, () => { state.done[major()] = snap.done; state.settings.src = { ...(state.settings.src || {}), [major()]: snap.src }; save(); refresh(); });
+}
+// the Add / edit sheet: search (add) -> Taken | Current + grade
+const ed = { mode: 'add', code: null, row: null, status: 'taken' };
+function edStep(step) {
+  $('editDlg').dataset.step = step;
+  $('edFind').hidden = step !== 'find';
+  $('edForm').hidden = step !== 'form';
+  $('edRemove').hidden = step === 'find';
+  $('edRemove').textContent = ed.mode === 'add' ? 'Back' : 'Remove';
+  $('edSave').textContent = step === 'form' && ed.mode === 'add' ? 'Add' : 'Done';
+}
+function edForm(code, title, status, grade) {
+  $('edCode').textContent = code;
+  $('edTitle').textContent = title || '';
+  ed.status = status;
+  for (const b of $('edSeg').children) b.classList.toggle('on', b.dataset.s === status);
+  $('edGrade').innerHTML = gradeOptions(status === 'ip' ? '' : grade).replace(/<option value="IP"[^>]*>[^<]*<\/option>/, '');
+  $('edGradeRow').hidden = status === 'ip';
+}
+function edList() {
+  const words = $('edQ').value.toLowerCase().trim().split(/\s+/).filter(Boolean);
+  const have = doneSet();
+  const rows = [];
+  for (const [code, c] of courseCat.list) {
+    if (have.has(code)) continue;
+    const hay = `${code} ${code.replace(/\s+/g, '')} ${c.title}`.toLowerCase();
+    if (words.length && !words.every((w) => hay.includes(w))) continue;
+    rows.push([code, c.title]);
+    if (rows.length >= 80) break;
+  }
+  $('edList').innerHTML = rows.length
+    ? rows.map(([code, title]) => `<li><button type="button" data-code="${esc(code)}"><b>${esc(code)}</b><span>${esc(title)}</span></button></li>`).join('')
+    : `<li class="none">${courseCat.list.length ? 'No match' : 'Loading…'}</li>`;
+}
+async function openAddClass() {
+  Object.assign(ed, { mode: 'add', code: null, row: null });
+  $('edQ').value = '';
+  edStep('find');
+  openDlg($('editDlg'));
+  edList();
+  if (matchMedia('(hover: hover)').matches) $('edQ').focus();
+  await loadCourses();
+  if ($('editDlg').open && $('editDlg').dataset.step === 'find') edList();
+}
+function openEditClass(r) {
+  Object.assign(ed, { mode: 'edit', code: r.code || r.key, row: r });
+  edForm(r.code ? r.label : r.label, r.title, statusOf(r.grade) === 'ip' ? 'ip' : 'taken', r.grade);
+  edStep('form');
+  openDlg($('editDlg'));
+}
+function wireClasses() {
+  $('planSeg').addEventListener('click', (e) => { const b = e.target.closest('button[data-v]'); if (b) setSub(b.dataset.v); });
+  $('clAdd').addEventListener('click', openAddClass);
+  $('clList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-r]');
+    const r = b && clRows[+b.dataset.r];
+    if (!r) return;
+    if (r.group === 'need') openNeed(r); else openEditClass(r);
+  });
+  const dlg = $('editDlg');
+  $('edQ').addEventListener('input', () => { edList(); $('edList').scrollTop = 0; });
+  $('edList').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-code]');
+    if (!b) return;
+    ed.code = b.dataset.code;
+    edForm(ed.code, courseCat.map[ed.code]?.title, 'taken', '');
+    edStep('form');
+  });
+  // Taken | Current, and the grade: an edit saves at once; an add waits for Add
+  const apply = () => {
+    if (ed.mode !== 'edit') return;
+    gradeMap()[ed.code] = ed.status === 'ip' ? 'IP' : $('edGrade').value;
+    save(); refresh();
+  };
+  $('edSeg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-s]');
+    if (!b) return;
+    edForm($('edCode').textContent, $('edTitle').textContent, b.dataset.s, ed.mode === 'edit' ? gradeMap()[ed.code] : $('edGrade').value);
+    apply();
+  });
+  $('edGrade').addEventListener('change', apply);
+  $('edSave').addEventListener('click', () => {
+    if (ed.mode === 'add' && dlg.dataset.step === 'form' && ed.code) addClass(ed.code, ed.status, $('edGrade').value);
+    dlg.close();
+  });
+  $('edRemove').addEventListener('click', () => {
+    if (ed.mode === 'add') { edStep('find'); return; }
+    dlg.close();
+    removeClass(ed.row);
+  });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+}
+
 // ---------- tabs + settings ----------
 // phone: bottom tabs Flowchart / Plan / Schedule; laptop: Flowchart / Schedule in the header (the plan stays beside it)
 function setTab(tab, push = true) {
@@ -639,7 +893,7 @@ function wireTabs() {
 // (Settings -> Import audit) takes over that one's entry.
 const NAV = { pending: 0, queued: null, kbd: false };
 function pushNav(st) {
-  const entry = { sa: 1, tab: $('main').dataset.tab, ...st };
+  const entry = { sa: 1, tab: $('main').dataset.tab, sub: ui.sub, ...st };
   if (NAV.pending) NAV.queued = entry; else history.pushState(entry, '', location.href);
 }
 function openDlg(dlg) {
@@ -647,7 +901,7 @@ function openDlg(dlg) {
   if (!NAV.kbd) document.activeElement?.blur(); // a focus ring only for keyboard users (:focus-visible)
   const cur = history.state?.dlg;
   if (cur === dlg.id) return;
-  if (cur && !NAV.pending) history.replaceState({ sa: 1, tab: $('main').dataset.tab, dlg: dlg.id }, '', location.href);
+  if (cur && !NAV.pending) history.replaceState({ sa: 1, tab: $('main').dataset.tab, sub: ui.sub, dlg: dlg.id }, '', location.href);
   else pushNav({ dlg: dlg.id });
 }
 function wireNav() {
@@ -671,7 +925,8 @@ function wireNav() {
     for (const d of document.querySelectorAll('dialog[open]')) if (d.id !== st.dlg) d.close();
     const tab = st.tab || 'flow';
     if (tab !== $('main').dataset.tab) setTab(tab, false);
-    if (st.dlg && !$(st.dlg)?.open) history.replaceState({ sa: 1, tab }, '', location.href); // forward into a closed sheet
+    if ((st.sub || 'plan') !== ui.sub) setSub(st.sub || 'plan', false);
+    if (st.dlg && !$(st.dlg)?.open) history.replaceState({ sa: 1, tab, sub: ui.sub }, '', location.href); // forward into a closed sheet
     if (model) syncURL();
   });
   // the account sheet (js/account.js opens it): an entry too
@@ -805,7 +1060,23 @@ function openClass({ node, item }) {
   clsNode = node || nodes.find((x) => x.id === u?.id || x.id === item?.unitId) || null;
   $('clsTakenRow').hidden = !clsNode;
   if (clsNode) $('clsTaken').checked = nodeDone(clsNode, doneSet());
+  drawClsGrades();
   openDlg($('clsDlg'));
+}
+// the classes a taken box stands for, each with its own grade (lecture + its folded lab; a pick-one box's
+// option; the class picked for a Gen Ed box, else the box)
+function gradeCodes(n, s) {
+  if (!n || !nodeDone(n, s)) return [];
+  if (n.kind === 'course' || n.kind === 'option') return [n, ...(n.labs || [])].map((u) => (u.codes || [u.code]).find((c) => s.has(c)) || u.code).filter(Boolean);
+  if (n.kind === 'choice') { const o = (n.options || []).find((x) => optionDone(x, s)); return o ? [...o.codes, ...(o.alts || [])].filter((c) => s.has(c)) : [n.id]; }
+  return [pickedOf(s, n.id) || n.id];
+}
+const gradeOptions = (cur) => [['', '—'], ['IP', 'In progress'], ...GRADES.map((g) => [g, g])]
+  .map(([v, t]) => `<option value="${v}"${v === (cur || '') ? ' selected' : ''}>${t}</option>`).join('');
+// the class sheet's grade pickers: one per class the box stands for, only once it counts as taken
+function drawClsGrades() {
+  const codes = gradeCodes(clsNode, doneSet()), grades = gradeMap();
+  $('clsGrades').innerHTML = codes.map((c) => `<label>Grade${codes.length > 1 ? ` <small>${esc(c)}</small>` : ''}<select data-code="${esc(c)}">${gradeOptions(grades[c] ?? (codes.length === 1 && clsNode ? grades[clsNode.id] : ''))}</select></label>`).join('');
 }
 function wireClassSheet() {
   const dlg = $('clsDlg');
@@ -822,7 +1093,15 @@ function wireClassSheet() {
     const want = $('clsTaken').checked;
     if (nodeDone(n, doneSet()) !== want) toggle(n, el);
     $('clsTaken').checked = nodeDone(n, doneSet());
-    if ($('clsTaken').checked !== want) dlg.close(); // blocked: the box shows what it needs
+    if ($('clsTaken').checked !== want) { dlg.close(); return; } // blocked: the box shows what it needs
+    drawClsGrades();
+  });
+  // a grade (or In progress): saved for that class whatever view it is taken in; never removed by a tap
+  $('clsGrades').addEventListener('change', (e) => {
+    const sel = e.target.closest('select[data-code]');
+    if (!sel) return;
+    gradeMap()[sel.dataset.code] = sel.value;
+    save(); refresh();
   });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
   // tracks: the chip under the plan summary -> the program's tracks
@@ -1006,9 +1285,11 @@ function wireSched() {
     // the imported audit's in-progress classes: course rows marked IP, and Gen Ed boxes filled with a class
     ipCodes: () => {
       const g = state.grades[major()] || {}, out = [];
-      for (const [k, v] of Object.entries(g)) if (v === 'IP' && /^[A-Z]{2,5} \d{4}[A-Z]?$/.test(k)) out.push(k);
-      for (const k of state.done[major()] || []) { const m = k.match(/^(.+)=([A-Z]{2,5} \d{4}[A-Z]?)$/); if (m && g[m[1]] === 'IP') out.push(m[2]); }
-      return out;
+      // (actual classes only: a grade outlives a removed or untapped class, js/classes.js)
+      const have = actualSet();
+      for (const [k, v] of Object.entries(g)) if (v === 'IP' && have.has(k) && /^[A-Z]{2,5} \d{4}[A-Z]?$/.test(k)) out.push(k);
+      for (const k of have) { const m = k.match(/^(.+)=([A-Z]{2,5} \d{4}[A-Z]?)$/); if (m && g[m[1]] === 'IP') out.push(m[2]); }
+      return [...new Set(out)];
     },
     subjects: () => getJSON(`${DATA}/sections/index.json`).then((i) => i?.subjects || {}),
   });
@@ -1229,21 +1510,34 @@ function wireImport() {
     const t = target();
     const switching = JSON.stringify([t.ids, t.year]) !== planSig();
     if (switching) setPlan(t.ids, t.year);
-    const s = doneSet();
+    // the audit is actual data (never hypothetical)
+    const s = actualSet(), src = srcMap(), grades = gradeMap();
     const ipOn = $('impIP').checked;
     // already-taken rows are disabled (can't be unticked) but still bring their grade from the audit
     for (const cb of $('impList').querySelectorAll('input:checked')) {
       const r = found.rows[+cb.dataset.i];
       if (r.status === 'ip' && !ipOn) continue;
       s.add(r.key);
-      if (r.grade || !cb.disabled) gradeMap()[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
+      src[r.key] ??= 'audit';
+      if (r.grade || !cb.disabled) grades[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
+      // a Gen Ed box filled by an outside class: remember which class (its sheet and Classes show it)
+      if (r.key !== r.code && !pickKeysOf(s, r.key).length) {
+        s.add(`${r.key}=${r.code}`); s.add(r.code); src[r.code] ??= 'audit';
+        if (r.grade) grades[r.code] ??= r.grade;
+      }
+    }
+    // classes outside the program (AP/transfer credit, classes the plan doesn't use): kept for Classes
+    for (const r of found.others || []) {
+      if (r.status === 'ip' && !ipOn) continue;
+      if (!s.has(r.code)) { s.add(r.code); src[r.code] = 'audit'; }
+      if (r.grade) grades[r.code] = r.grade;
     }
     // classes in progress (or already registered for next term): the plan starts after that semester
-    // (set before setDone, which saves)
+    // (set before setActual, which saves)
     if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);
     // in-progress classes fill this term's "my schedule" (Schedule tab) until the student changes it
     if (ipOn && parsed?.inProgress?.length) termState(currentTermCode()).ip = parsed.inProgress.map((r) => r.code);
-    setDone(s);
+    setActual(s);
     if (switching) loadPlan(); else refresh();
     dlg.close();
   });
