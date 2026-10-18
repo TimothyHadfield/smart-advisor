@@ -1,6 +1,8 @@
 // Smart Advisor planner: pure functions, used by the browser (js/app.js) and Node tests.
 // Program JSON comes from scripts/fetch-program.mjs.
 import { gatesOf, mainGate, STANDING_RULE } from './phases.js';
+import { seasonTable, offeredIn, offeredLabel, gradeMeets, electiveKind, courseLevel, isUpper, isBachelor, BACHELOR } from './rules.js';
+import { areasFor } from './gened.js';
 export { planPhases } from './phases.js';
 
 // ---------- model ----------
@@ -13,9 +15,18 @@ const MAX_OPTION_BOXES = 8;
 // The plan may run at most this many semesters ahead of the catalog's sample plan (fills a light term
 // without pulling a senior class into the first year).
 const EARLY_SLACK = 2;
-export function buildModel(program) {
+// The most credits planned in a summer semester (summers are shorter; UVU runs fewer classes then).
+const SUMMER_MAX = 9;
+// opts (all optional):
+//   extraCourses  catalog entries for prereqs outside the program (data/prereq-courses.json): those become
+//                 "Needed first" boxes instead of being assumed done
+//   gened         data/gened.json: an outside prereq on a Gen Ed list the program has a box for (MATH 1050 ->
+//                 Quantitative Literacy) is planned in that box instead of as an extra class
+//   seasons       data/seasons.json: which semesters each course is usually offered (a plan preference)
+export function buildModel(program, opts = {}) {
   const units = [];
   const byCode = {};
+  if (opts.extraCourses) program = { ...program, courses: { ...opts.extraCourses, ...(program.courses || {}) } };
   const courses = program.courses || {};
   const planIndex = gradPlanIndex(program.gradPlan || []);
   const planNamed = new Set((program.gradPlan || []).flatMap((t) => t.items.map((x) => x.code).filter(Boolean)));
@@ -66,7 +77,8 @@ export function buildModel(program) {
       units.push(u);
       for (const k of u.codes) byCode[k] ??= u;
     } else if (r.type === 'placeholder') {
-      units.push({ id: r.id ?? `ph:${i}`, kind: 'placeholder', label: r.label, title: r.text || '', credits: r.credits || 0, area: r.area, order: i, planSem: planIndex[r.label] ?? 99, prog: r.prog });
+      const free = /general\s+education/i.test(r.area || '') ? null : electiveKind(r.label, r.area);
+      units.push({ id: r.id ?? `ph:${i}`, kind: 'placeholder', label: r.label, title: r.text || '', credits: r.credits || 0, area: r.area, order: i, planSem: planIndex[r.label] ?? 99, prog: r.prog, ...(free ? { free, upperCr: upperOf(r.label, r.credits || 0, free) } : {}) });
     } else if (r.type === 'choice') {
       const g = { id: r.id ?? `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99, prog: r.prog, minGrade: r.minGrade ?? null };
       // "complete one of the following tracks": option.section names its track
@@ -121,9 +133,11 @@ export function buildModel(program) {
   }
   matchPlanLabels(program.gradPlan || [], units);
   linkWordPrereqs(units, courses);
-  const model = { program, units, byCode };
-  // choiceRemaining needs the whole program to count each finished class once
-  for (const u of units) if (u.kind === 'choice') Object.defineProperty(u, '_model', { value: model, enumerable: false });
+  addOutsidePrereqs(units, byCode, courses, opts.gened);
+  const model = { program, units, byCode, seasons: opts.seasons ? (opts.seasons.of ? opts.seasons : seasonTable(opts.seasons)) : null };
+  // choiceRemaining needs the whole program to count each finished class once; a free elective box counts
+  // classes from outside the program
+  for (const u of units) if (u.kind === 'choice' || u.free) Object.defineProperty(u, '_model', { value: model, enumerable: false });
   computeDepths(model);
   return model;
 }
@@ -170,6 +184,118 @@ function linkWordPrereqs(units, courses) {
   for (const u of units) {
     if (u.kind === 'course') link(u, [u.code]);
     if (u.kind === 'choice') for (const o of u.options) link(o, o.codes);
+  }
+}
+
+// Upper-division credits a box stands for: an "upper" elective box all of it; "Any course 1000 or higher
+// (9 credit hours must be upper division)" 9; anything else 0.
+function upperOf(label, credits, kind) {
+  if (kind === 'upper') return credits;
+  const m = String(label || '').match(/(\d+)\s*(?:credits?|credit hours|hours)?\s*(?:must be|of which must be)\s*upper|(\d+) of which must be upper|including (\d+) (?:credits of )?upper/i);
+  const n = m ? +(m[1] || m[2] || m[3]) : 0;
+  return Math.min(credits, n);
+}
+
+// Prerequisites from outside the program (MATH 1050 before EE's MATH 1210) used to be assumed done. Now each
+// becomes a "Needed first" course box (kind 'course', outside: true, neededFor: the classes that need it),
+// unless the program has a Gen Ed box whose list holds it: then that box is planned first instead
+// (afterUnits) and remembers the class (suggest). Only direct prerequisites of required courses, and only
+// ones the catalog has an entry for; the new box's own prerequisites are not added (placement tests and
+// earlier schooling usually cover them; the box can be tapped as "already have it").
+function addOutsidePrereqs(units, byCode, courses, gened) {
+  const all = new Set();
+  for (const u of units) {
+    for (const c of u.codes || []) all.add(c);
+    for (const o of u.options || []) for (const c of [...o.codes, ...(o.alts || [])]) all.add(c);
+  }
+  const geBoxes = gened?.areas ? units.filter((u) => u.kind === 'placeholder' && /general\s+education/i.test(u.area || ''))
+    .map((u) => ({ u, codes: new Set(areasFor(u.label).flatMap((k) => gened.areas.filter((a) => a.key === k).flatMap((a) => (a.courses || []).map((c) => c.code)))) }))
+    .filter((b) => b.codes.size) : [];
+  // "or higher": a class the program already covers with a higher course of the same subject that builds on
+  // it (EE's MATH 1210 needs MATH 1050 + 1060 or MATH 1080), so "ECE 1000 needs MATH 1060" adds no box.
+  // (Only through classes outside the program: MATH 1220 -> MATH 1210 -> MATH 1080 doesn't count, MATH
+  // 1210's own box covers that.)
+  const under = new Map(); // program course -> outside classes beneath it
+  // (an honors twin, MATH 1210H, counts as the program's MATH 1210)
+  const inAll = (k) => all.has(k) || all.has(k.replace(/(\d{4})[A-Z]+$/, '$1'));
+  const beneathOf = (c) => {
+    if (under.has(c)) return under.get(c);
+    const seen = new Set();
+    let front = [c];
+    for (let d = 0; d < 4 && front.length; d++) {
+      const next = [];
+      for (const x of front) for (const k of [...codesOf(courses[x]?.prereqs), ...codesOf(courses[x]?.precoreqs)]) if (!inAll(k) && !seen.has(k)) { seen.add(k); next.push(k); }
+      front = next;
+    }
+    under.set(c, seen);
+    return seen;
+  };
+  const progCourses = units.filter((u) => u.kind === 'course').flatMap((u) => u.codes);
+  const covered = (x, dep) => {
+    const [subj, num] = [x.split(' ')[0], courseLevel(x)];
+    return progCourses.some((c) => !dep.codes.includes(c) && c.split(' ')[0] === subj && courseLevel(c) > num && beneathOf(c).has(x));
+  };
+  const added = new Map();
+  // codes: the alternatives (any one will do); group: every outside code of that "or" (MATH 1050 + 1060 or
+  // MATH 1080): the box stands for all of them, so a missing one is no longer assumed done
+  const need = (codes, dep, group = codes) => {
+    if (codes.some((c) => covered(c, dep))) return;
+    // (developmental classes below 1000, MAT 0920, are left to placement)
+    const known = codes.filter((c) => courses[c] && courseLevel(c) >= 1000);
+    if (!known.length) return;
+    const ge = geBoxes.find((b) => known.some((c) => b.codes.has(c)));
+    if (ge) {
+      (dep.afterUnits ??= []).includes(ge.u.id) || dep.afterUnits.push(ge.u.id);
+      const pick = known.find((c) => ge.codes.has(c));
+      (ge.u.suggest ??= []).includes(pick) || ge.u.suggest.push(pick);
+      (ge.u.suggestFor ??= []).includes(dep.code) || ge.u.suggestFor.push(dep.code);
+      if (dep.planSem < 99) ge.u.planSem = Math.min(ge.u.planSem, Math.max(0, dep.planSem - 1));
+      return;
+    }
+    let x = known.map((c) => added.get(c)).find(Boolean);
+    if (!x) {
+      const key = known[0];
+      const c = courses[key];
+      const codesAll = [...new Set([...known, ...group])];
+      x = {
+        id: key, kind: 'course', code: key, codes: codesAll, alts: known.slice(1), shown: known, label: key, title: c.title || '',
+        credits: c.credits ?? 3, area: 'Needed first', order: dep.order - 0.5, outside: true, neededFor: [], neededCodes: [],
+        prereqs: null, precoreqs: null, coreqs: [], planPrereqs: null, planPrecoreqs: null, planCoreqs: [], altPrereqs: {},
+        repeat: 1, planCode: key, rowCredits: null, gates: Object.fromEntries(codesAll.map((k) => [k, []])), gate: null,
+        minGrade: null, planSem: 99, prog: dep.prog,
+      };
+      for (const k of codesAll) added.set(k, x);
+    }
+    if (!x.neededFor.includes(dep.code)) x.neededFor.push(dep.code);
+    for (const k of dep.codes) if (!x.neededCodes.includes(k)) x.neededCodes.push(k);
+    if (dep.planSem < 99) x.planSem = Math.min(x.planSem, Math.max(0, dep.planSem - 1));
+    x.order = Math.min(x.order, dep.order - 0.5);
+  };
+  const walk = (e, dep) => {
+    if (!e) return;
+    if (typeof e === 'string') { if (!all.has(e)) need([e], dep); return; }
+    if (e.and) { e.and.forEach((x) => walk(x, dep)); return; }
+    // "A or B" with one of them in the program: it waits for that one (as before)
+    if (e.or.some((x) => codesOf(x).some((c) => all.has(c)))) return;
+    const plain = e.or.filter((x) => typeof x === 'string');
+    if (plain.length) need(plain, dep, codesOf(e)); else walk(e.or[0], dep);
+  };
+  for (const u of units.filter((x) => x.kind === 'course')) walk(u.prereqs, u);
+  const extra = [...new Set(added.values())];
+  // a lecture and its lab both from outside (CHEM 1210 + CHEM 1215) still go together, both ways
+  for (const x of extra) {
+    const cq = (courses[x.code]?.coreqs || []).filter((k) => added.has(k) && !x.codes.includes(k));
+    for (const y of extra) if (y !== x && (courses[y.code]?.coreqs || []).some((k) => x.codes.includes(k)) && !cq.includes(y.code)) cq.push(y.code);
+    x.coreqs = cq; x.planCoreqs = cq;
+    // a box's own prerequisites order it after other boxes / program classes (MATH 1050 -> 1060 -> 1210);
+    // ones outside everything stay assumed done
+    const pre = (k) => stripCodes(courses[k]?.prereqs ?? null, x.codes);
+    x.prereqs = x.planPrereqs = x.shown.length > 1 ? orAll(x.shown.map(pre)) : pre(x.code);
+    x.altPrereqs = Object.fromEntries(x.shown.map((k) => [k, pre(k)]));
+  }
+  for (const x of extra) {
+    units.push(x);
+    for (const k of x.codes) byCode[k] ??= x;
   }
 }
 
@@ -253,9 +379,10 @@ export function evalReq(expr, done, inProgram) {
 
 // ---------- completion ----------
 export function unitDone(u, completed) {
-  if (u.kind === 'placeholder') return completed.has(u.id);
+  if (u.kind === 'placeholder') return completed.has(u.id) || (!!u.free && !!u._model && (electiveCover(u._model, completed).get(u.id) || 0) >= u.credits);
   if (u.kind === 'option') return optionDone(u, completed);
-  if (u.kind === 'course') return u.codes.some((c) => completed.has(c));
+  // a "needed first" box is done once a class that needs it is (the student had it, or placed out)
+  if (u.kind === 'course') return u.codes.some((c) => completed.has(c)) || (!!u.outside && u.neededCodes.some((c) => completed.has(c)));
   if (u.kind === 'choice') return choiceRemaining(u, completed) <= 0;
   return false;
 }
@@ -276,26 +403,95 @@ export function countedOptions(g, completed) {
   const model = g._model;
   const doneHere = (o) => optionDone(o, completed);
   if (!model) return g.options.filter(doneHere);
+  // one class, one requirement inside each program; a major and a minor may share it (combinePrograms)
   const used = new Set();
-  for (const u of model.units) if (u.kind === 'course') { const c = u.codes.find((k) => completed.has(k)); if (c) used.add(c); }
+  const key = (prog, c) => `${prog || ''}|${c}`;
+  for (const u of model.units) if (u.kind === 'course') { const c = u.codes.find((k) => completed.has(k)); if (c) used.add(key(u.prog, c)); }
   const groups = model.units.filter((u) => u.kind === 'choice');
   const codesOfOpt = (o) => [...o.codes, ...o.alts].filter((c) => completed.has(c));
   for (let gi = 0; gi < groups.length; gi++) {
     const h = groups[gi];
-    const cands = completed.has(h.id) ? [] : h.options.filter((o) => doneHere(o) && !codesOfOpt(o).some((c) => used.has(c)));
+    const isUsed = (c) => used.has(key(h.prog, c));
+    const cands = completed.has(h.id) ? [] : h.options.filter((o) => doneHere(o) && !codesOfOpt(o).some(isUsed));
     const later = (o) => groups.slice(gi + 1).filter((x) => x.options.some((p) => codesOfOpt(p).some((c) => codesOfOpt(o).includes(c)))).length;
     cands.sort((a, b) => later(a) - later(b));
     const take = [];
     let need = h.pick?.credits ? h.pick.credits : (h.pick?.count ?? 1);
     for (const o of cands) {
       if (need <= 0) break;
-      if (codesOfOpt(o).some((c) => used.has(c))) continue;
-      take.push(o); codesOfOpt(o).forEach((c) => used.add(c));
+      if (codesOfOpt(o).some(isUsed)) continue;
+      take.push(o); codesOfOpt(o).forEach((c) => used.add(key(h.prog, c)));
       need -= h.pick?.credits ? o.credits : 1;
     }
     if (h === g) return take;
   }
   return g.options.filter(doneHere);
+}
+
+// ---------- classes from outside the program -> free electives ----------
+// Taken classes that no requirement of the program uses (an audit's other classes, a class from a major the
+// student left) count toward the program's free elective boxes ("Elective", "Any course 1000 or higher"):
+// upper-division boxes take 3000+ classes first, then the rest fill the others in catalog order.
+// Credits: the catalog entry, else 3. Classes below 1000 don't count toward a degree.
+// planned: extra classes the plan will add (its "Needed first" boxes), [{code, credits}].
+// -> Map(box id -> credits covered); .outside = [{code, credits}] the classes counted (all of them).
+export function outsideClasses(model, completed) {
+  const used = new Set();
+  for (const u of model.units) {
+    if (u.kind === 'course') { if (!u.outside) u.codes.forEach((c) => used.add(c)); }
+    else if (u.kind === 'choice') for (const o of u.options) [...o.codes, ...o.alts].forEach((c) => used.add(c));
+  }
+  const courses = model.program.courses || {};
+  const out = [];
+  for (const k of completed) {
+    if (typeof k !== 'string' || used.has(k) || !/^[A-Z]{2,5} \d{4}[A-Z]{0,2}$/.test(k) || courseLevel(k) < 1000) continue;
+    const c = courses[k];
+    out.push({ code: k, credits: typeof c?.credits === 'number' && c.credits > 0 ? c.credits : 3 });
+  }
+  return out.sort((a, b) => a.code.localeCompare(b.code));
+}
+export function electiveCover(model, completed, planned = []) {
+  const pool = [...outsideClasses(model, completed), ...planned].map((x) => ({ ...x }));
+  const boxes = model.units.filter((u) => u.kind === 'placeholder' && u.free && !completed.has(u.id));
+  const map = new Map();
+  const fill = (box, ok) => {
+    let got = map.get(box.id) || 0;
+    for (const x of pool) {
+      if (got >= box.credits) break;
+      if (x.credits <= 0 || !ok(x)) continue;
+      const take = Math.min(x.credits, box.credits - got);
+      got += take; x.credits -= take;
+    }
+    map.set(box.id, got);
+  };
+  for (const b of boxes.filter((x) => x.free === 'upper')) fill(b, (x) => isUpper(x.code));
+  for (const b of boxes.filter((x) => x.free !== 'upper')) fill(b, () => true);
+  map.outside = outsideClasses(model, completed);
+  return map;
+}
+
+// ---------- grade minimums ----------
+// The lowest grade a class may have to fill its requirement here (the requirement row, its list, or the
+// track's "with a minimum C-"), or null.
+export function minGradeFor(model, code) {
+  for (const u of model.units) {
+    if (u.kind === 'course' && u.codes.includes(code) && u.minGrade) return u.minGrade;
+    if (u.kind === 'choice') {
+      const o = u.options.find((x) => x.codes.includes(code) || x.alts.includes(code));
+      if (o) { const g = o.minGrade ?? (o.section && u.trackGrades?.[o.section]) ?? u.minGrade; if (g) return g; }
+    }
+  }
+  return null;
+}
+// Taken classes whose grade is below what their requirement needs: [{code, grade, min}]
+export function belowMinimum(model, completed, grades = {}) {
+  const out = [];
+  for (const [code, grade] of Object.entries(grades || {})) {
+    if (!completed.has(code)) continue;
+    const min = minGradeFor(model, code);
+    if (min && !gradeMeets(grade, min)) out.push({ code, grade, min });
+  }
+  return out;
 }
 
 // ---------- tapping classes taken ----------
@@ -450,6 +646,10 @@ export const termLabel = (t) => `${t.season} ${t.year}`;
 //   admitted   true: the student is already in the program (no Apply step)
 //   creditsDone credits finished in total (all classes, for University Advanced Standing); default: the
 //              finished classes of this program
+//   grades     {code: grade} from an audit: a class below its requirement's minimum grade is planned again
+//   seasons    data/seasons.json (default: the model's): a class is kept out of a semester it is never
+//              offered in (when the history has that season); a preference, never a reason to leave a class out
+//   summerMax  credits in a summer semester (default min(maxCredits, 9))
 // Order of placement: the catalog's sample-plan semester first, then the longest prereq chain.
 // Admission programs: "Before you apply" semesters -> Apply -> program semesters (plan.admission, planPhases).
 export function makePlan(model, completed = new Set(), opts = {}) {
@@ -458,6 +658,21 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   let term = opts.start ?? defaultStartTerm();
   const { units, byCode } = model;
   const courses = model.program.courses || {};
+  // grade minimums: a class taken with too low a grade doesn't fill its requirement (taken again)
+  const low = opts.grades ? belowMinimum(model, completed, opts.grades) : [];
+  if (low.length) { completed = new Set(completed); for (const x of low) completed.delete(x.code); }
+  const lowOf = new Map(low.map((x) => [x.code, x]));
+  const seasons = opts.seasons ? (opts.seasons.of ? opts.seasons : seasonTable(opts.seasons)) : model.seasons;
+  const summerMax = opts.summerMax ?? Math.min(maxCredits, SUMMER_MAX);
+  // free elective boxes: classes from outside the program (taken, or "Needed first" boxes still to take) count
+  const plannedOutside = units.filter((u) => u.outside && !unitDone(u, completed)).map((u) => ({ code: u.code, credits: u.credits }));
+  const cover = electiveCover(model, completed, plannedOutside);
+  // a minor's required class that is also an option of the major's list (or the other way): taken once, it
+  // fills both (combinePrograms already drops what the major requires outright)
+  const sharedCodes = new Set();
+  for (const u of units) if (u.kind === 'course' && !u.outside && !unitDone(u, completed)) {
+    if (units.some((g) => g.kind === 'choice' && !g.tracks && (g.prog || null) !== (u.prog || null) && g.options.some((o) => o.codes.length === 1 && u.codes.includes(o.codes[0])))) sharedCodes.add(u.planCode ?? u.code);
+  }
   // completing any alt of a course (or of an "A or B" option) satisfies prereqs naming the others
   const done = haveSet(model, completed);
   const startDone = new Set(done);
@@ -496,11 +711,16 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       }));
     }
     else if (u.kind === 'placeholder') {
-      const ch = chunksOf(u.credits);
-      if (ch.length <= 1) todo.push({ ...u, unit: u });
-      else ch.forEach((c, k) => todo.push({ ...u, id: `${u.id}#${k}`, credits: c, unit: u, order: u.order + k / 100 }));
+      const cr = u.free ? Math.max(0, u.credits - (cover.get(u.id) || 0)) : u.credits;
+      if (cr <= 0) continue;
+      const ph = { ...u, credits: cr, unit: u, ...(u.suggest ? { title: `${u.suggest.join(' or ')} (needed for ${u.suggestFor.join(', ')})` } : {}) };
+      const ch = chunksOf(cr);
+      if (ch.length <= 1) todo.push(ph);
+      else ch.forEach((c, k) => todo.push({ ...ph, id: `${u.id}#${k}`, credits: c, order: u.order + k / 100 }));
     } else if (u.kind === 'choice') {
-      let left = choiceRemaining(u, completed);
+      const mine = !u.tracks && sharedCodes.size ? u.options.filter((o) => o.codes.every((c) => sharedCodes.has(c))) : [];
+      let left = choiceRemaining(u, mine.length ? new Set([...completed, ...mine.flatMap((o) => o.codes)]) : completed);
+      if (left <= 0) continue;
       let optsLeft = u.options.filter((o) => !optionDone(o, completed));
       const chosen = trackChoice(u, opts);
       const track = pickTrack(u, completed, left, chosen);
@@ -564,6 +784,18 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   // a page's own matriculation list can name classes its sample plan puts late: those keep the sample-plan
   // order (the Apply step simply waits for them) instead of jumping ahead of earlier classes
   const listedGate = gate.listed;
+  // seasons: a course/option is kept out of a term it was never offered in, unless it is never offered in any
+  // season this plan uses (then the history can't help)
+  let inSeason = false, skipped = 0;
+  const planSeasons = summers ? ['Fall', 'Spring', 'Summer'] : ['Fall', 'Spring'];
+  const seasonMemo = new Map();
+  const seasonOk = (it, season) => {
+    if (!(it.kind === 'course' || it.kind === 'option')) return true;
+    const codes = it.kind === 'course' ? it.codes : it.codeList || it.codes;
+    const k = `${codes.join('|')}@${season}`;
+    if (!seasonMemo.has(k)) seasonMemo.set(k, offeredIn(seasons, codes, season) || !planSeasons.some((x) => offeredIn(seasons, codes, x)));
+    return seasonMemo.get(k);
+  };
   const sortKey = listedGate
     ? (a, b) => (rank(b) === 0) - (rank(a) === 0) || (a.planSem - b.planSem) || rank(a) - rank(b) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order)
     : (a, b) => rank(a) - rank(b) || (a.planSem - b.planSem) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order);
@@ -579,8 +811,10 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     if (hasStanding && standingOut && standingOut.at == null) standingOut.at = semesters.length;
     // the cohort runs block by block (the catalog's semesters), one block per term
     const cohortNow = Math.min(Infinity, ...todo.filter((x) => x.cohort != null).map((x) => x.cohort));
+    const cap = term.season === 'Summer' ? summerMax : maxCredits;
     const avail = (it) => {
       if (it.after && !placed.has(it.after)) return false;
+      if (inSeason && !seasonOk(it, term.season)) return false;
       if (early && it.cohort == null && it.planSem < 99 && it.planSem - planBase > semesters.length + EARLY_SLACK) return false;
       if (isAdm(it) && !open) return false;
       if (isStd(it) && !hasStanding) return false;
@@ -616,7 +850,7 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     const fits = (bundle) => {
       if (!bundle.every(avail)) return false;
       const cr = bundle.reduce((s, x) => s + x.credits, 0);
-      if (sem.credits + cr > maxCredits) return false;
+      if (sem.credits + cr > cap) return false;
       const now = new Set(before);
       for (const x of [...sem.items, ...bundle]) (x.codes || []).forEach((c) => now.add(c));
       return bundle.every((x) => coreqOk(x, now));
@@ -640,8 +874,21 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     };
     // first: nothing more than EARLY_SLACK semesters ahead of the catalog's sample plan; a term left empty
     // that way takes anything that can go
-    early = sequenced; fill();
+    early = sequenced; inSeason = !!seasons; fill();
     if (!sem.items.length && early) { early = false; fill(); }
+    // nothing that is left is offered this term: skip it (the plan waits for the term the class runs in), at
+    // most twice in a row; after that a class goes in anyway (the history is a preference, not a rule)
+    if (!sem.items.length && inSeason && term.season !== 'Summer') {
+      inSeason = false; fill();
+      if (sem.items.length && skipped < 2 && sem.items.every((it) => !seasonOk(it, term.season))) {
+        sem.items.length = 0; sem.credits = 0; skipped++;
+        term = nextTerm(term, summers);
+        continue;
+      }
+    }
+    if (sem.items.length) skipped = 0;
+    // a summer with nothing to take (nothing offered then, or nothing left that can go) is skipped
+    if (!sem.items.length && term.season === 'Summer') { term = nextTerm(term, summers); continue; }
     if (!sem.items.length) {
       // nothing fits (credit cap smaller than a bundle, or a prereq loop): force the best one in (never a gated one
       // while something else is left)
@@ -673,18 +920,66 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   if (standingOut && standingOut.at == null) standingOut.at = semesters.length;
   void startDone;
   const totalLeft = semesters.reduce((s, x) => s + x.credits, 0);
+  for (const x of low) warnings.push(`${x.code}: a ${x.grade} is below the ${x.min} this requirement needs, so the plan takes it again`);
+  const totals = degreeTotals(model, completed, semesters);
+  const itemCodes = (it) => (it.kind === 'option' ? it.codeList : it.kind === 'course' ? [it.code] : []) || [];
   return {
-    semesters: semesters.map((s) => ({ term: s.term, credits: s.credits, items: s.items.map((it) => ({
-      id: it.id, unitId: it.unitId ?? it.unit.id, kind: it.kind, code: it.code || null,
-      codes: it.kind === 'option' ? it.codeList : it.kind === 'course' ? [it.code] : undefined,
-      label: it.label, title: it.title, credits: it.credits,
-      gate: isAdm(it) ? 'admission' : it.gate || null, minGrade: it.minGrade ?? null,
-    })) })),
+    semesters: semesters.map((s) => ({ term: s.term, credits: s.credits, items: s.items.map((it) => {
+      const out = {
+        id: it.id, unitId: it.unitId ?? it.unit.id, kind: it.kind, code: it.code || null,
+        codes: it.kind === 'option' ? it.codeList : it.kind === 'course' ? [it.code] : undefined,
+        label: it.label, title: it.title, credits: it.credits,
+        gate: isAdm(it) ? 'admission' : it.gate || null, minGrade: it.minGrade ?? null,
+      };
+      const off = itemCodes(it).length ? offeredLabel(seasons, itemCodes(it)) : null;
+      if (off) out.offered = off;
+      if (it.outside) out.neededFor = it.neededFor;
+      if (it.kind === 'course' && lowOf.has(it.code)) out.retake = lowOf.get(it.code);
+      if (it.kind === 'course' && sharedCodes.has(it.code)) out.shared = true;
+      return out;
+    }) })),
     creditsLeft: totalLeft,
     graduation: semesters.length ? semesters[semesters.length - 1].term : null,
     warnings,
     admission, standing: standingOut, tracks,
+    totals, checks: totals.checks,
+    // free elective credits filled by classes from outside the program (taken, or "Needed first" boxes)
+    electiveCover: Object.fromEntries(cover),
   };
+}
+
+// A bachelor's degree needs 120 credits, 40 of them upper division (3000+). Counts what the student has
+// finished (this program's classes + classes from outside it) and what the plan adds.
+// -> { bachelor, credits, upper, checks: [short warning lines] }
+export function degreeTotals(model, completed, semesters) {
+  const bachelor = isBachelor(model.program);
+  let credits = 0, upper = 0;
+  const allUpper = (opts) => opts.length > 0 && opts.every((o) => o.codes.every(isUpper));
+  // finished
+  for (const u of model.units) {
+    if (u.kind === 'course' && !u.outside) {
+      const c = u.codes.find((k) => completed.has(k));
+      if (c) { credits += u.credits; if (isUpper(c)) upper += u.credits; }
+    } else if (u.kind === 'choice') {
+      for (const o of countedOptions(u, completed)) { credits += o.credits; if (o.codes.every(isUpper)) upper += o.credits; }
+      if (completed.has(u.id)) { const cr = u.pick?.credits ?? u.credits; credits += cr; if (allUpper(u.options)) upper += cr; }
+    } else if (u.kind === 'placeholder' && completed.has(u.id)) {
+      credits += u.credits; upper += u.upperCr || 0;
+    }
+  }
+  for (const x of outsideClasses(model, completed)) { credits += x.credits; if (isUpper(x.code)) upper += x.credits; }
+  // planned
+  for (const s of semesters) for (const it of s.items) {
+    credits += it.credits;
+    if (it.kind === 'course' || it.kind === 'option') { if ((it.kind === 'option' ? it.codeList : [it.code]).every(isUpper)) upper += it.credits; }
+    else if (it.kind === 'choice') { if (allUpper(it.options || [])) upper += it.credits; }
+    else if (it.kind === 'placeholder') upper += Math.min(it.credits, it.unit?.upperCr ? it.unit.upperCr * it.credits / it.unit.credits : 0);
+  }
+  credits = Math.round(credits * 10) / 10; upper = Math.round(upper);
+  const checks = [];
+  if (bachelor && credits < BACHELOR.credits) checks.push(`This plan adds up to ${credits} credits; a bachelor's degree needs ${BACHELOR.credits}. Add ${Math.ceil(BACHELOR.credits - credits)} elective credits.`);
+  if (bachelor && upper < BACHELOR.upper) checks.push(`Upper-division (3000+) credits: ${upper} of the ${BACHELOR.upper} a bachelor's degree needs. Pick upper-division classes for electives.`);
+  return { bachelor, credits, upper, checks };
 }
 
 // Credits of a course requirement when the plan names `code`: the row's credits, except when the named
@@ -836,7 +1131,9 @@ export function requirementFor(model, code, completed = new Set()) {
   const gate = mainGate(gl);
   const area = u.area || '';
   let why;
-  if (u.kind === 'course') {
+  if (u.kind === 'course' && u.outside) {
+    why = `Needed before ${u.neededFor.join(', ')}: a prerequisite from outside this program${u.shown.length > 1 ? ` (${u.shown.join(' or ')})` : ''}. Already have it or placed out? Mark it taken`;
+  } else if (u.kind === 'course') {
     why = u.codes.length > 1 ? `Required (${area}): ${u.codes.join(' or ')}; any one counts` : `Required course (${area})`;
   } else if (o?.section && u.tracks) {
     why = `Part of the "${o.section}" track; ${u.label} (one track is required, ${area})`;
@@ -846,10 +1143,20 @@ export function requirementFor(model, code, completed = new Set()) {
   }
   if (gate === 'admission') why += '. Needs acceptance into the program first';
   else if (gate === 'advanced-standing') why += '. Needs University Advanced Standing';
+  // a major + minor sharing the class: it counts once and fills both
+  const shared = (model.program.shared || []).filter((x) => x.code === code).map((x) => x.name);
+  const crossList = model.units.filter((g) => g !== u && (g.prog || null) !== (u.prog || null)
+    && (g.kind === 'choice' ? g.options.some((o) => o.codes.length === 1 && o.codes[0] === code) : g.kind === 'course' && !g.outside && g.codes.includes(code)));
+  const partName = (id) => (model.program.parts || []).find((p) => p.id === id)?.name;
+  for (const g of crossList) { const n = partName(g.prog) || (g.prog ? null : partName((model.program.parts || [])[0]?.id)); if (n && !shared.includes(n)) shared.push(n); }
+  if (shared.length) why += `. Counts once for both: also fills ${shared.join(', ')}`;
+  const offered = offeredLabel(model.seasons, [code]);
+  if (offered) why += `. ${offered} (UVU's class schedules, ${model.seasons.covered.size === 3 ? 'recent Fall, Spring and Summer terms' : 'recent terms'})`;
   const alsoIn = [...new Set(hits.slice(1).map((h) => h.u.label))].filter((l) => l !== u.label);
   return {
     unitId: u.id, kind: u.kind, label: u.label, area, credits: o ? o.credits : u.credits, why, alsoIn,
     gate, minGrade: (o ? o.minGrade : u.minGrade) ?? null, track: o?.section && u.tracks ? o.section : null,
+    offered, shared, neededFor: u.outside ? u.neededFor : null,
   };
 }
 

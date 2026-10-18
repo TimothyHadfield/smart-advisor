@@ -127,6 +127,7 @@ export function auditPrograms(parsed, list) {
  *     a Gen Ed box with the same name as one already there is dropped
  *   - courses merged; totalCredits = the union's
  * parts of the result: [{ id, name, shared }] (shared = requirements dropped as already counted).
+ * shared of the result: [{ code, name }] each class counted once for both (name = the later program).
  */
 export function combinePrograms(parts) {
   if (!parts?.length) return null;
@@ -137,6 +138,8 @@ export function combinePrograms(parts) {
   const phLabels = new Set();
   const choiceLabels = new Set();
   const info = [];
+  const sharedList = []; // [{ code, name }]: a class one program requires that a later one counts too
+  const share = (codes, name) => { for (const c of codes) if (required.has(c) && !sharedList.some((x) => x.code === c && x.name === name)) sharedList.push({ code: c, name }); };
   parts.forEach((part, k) => {
     const prog = part.program;
     let shared = 0;
@@ -145,7 +148,7 @@ export function combinePrograms(parts) {
       if (k === 0) { requirements.push(r); remember(r); return; }
       const tag = { prog: part.id };
       if (r.type === 'course') {
-        if ([r.code, ...(r.alts || [])].some((c) => required.has(c))) { shared++; return; }
+        if ([r.code, ...(r.alts || [])].some((c) => required.has(c))) { shared++; share([r.code, ...(r.alts || [])], prog.name); return; }
         requirements.push({ ...r, ...tag });
       } else if (r.type === 'placeholder') {
         if (phLabels.has(norm(r.label))) { shared++; return; }
@@ -156,6 +159,7 @@ export function combinePrograms(parts) {
         let { pick, credits } = r;
         if (covered.length) {
           shared++;
+          share(covered.flatMap((o) => o.codes), prog.name);
           if (pick?.credits) {
             const less = covered.reduce((s, o) => s + (o.credits || 0), 0);
             pick = { ...pick, credits: Math.max(0, pick.credits - less) };
@@ -189,6 +193,7 @@ export function combinePrograms(parts) {
     gradPlan: first.gradPlan || [],
     courses,
     parts: info,
+    shared: sharedList,
   };
 }
 

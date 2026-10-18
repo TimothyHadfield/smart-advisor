@@ -5,6 +5,8 @@
 //   - every required unit placed (each course once; choices / Gen Ed / electives get their credits)
 //   - semesters <= ceil(credits / 12) + 2 (programs whose data is at fault go in ALLOW, with the reason)
 // PLAN_REPORT=1 prints the semester-count distribution and the worst plans.
+// Plans use the same extra data as the site: out-of-program prereqs (prereq-courses.json, "Needed first"
+// boxes), Gen Ed lists and course seasons (seasons.json, a preference).
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
@@ -23,7 +25,17 @@ const ALLOW = {
   'education-higher-leadership-med': 'cohort runs the catalog sample plan: 6 terms for 30 credits',
   'mathematics-education-ms': 'cohort runs the catalog sample plan: 7 terms for 30 credits',
   'collaborative-piano-chamber-music-certificate-proficiency':'MUSC 3730R (accompanying ensemble) is required 6 times, one enrollment per semester',
+  // seasons (UVU class schedules): a chain of classes each run in one semester only, so the plan waits
+  'applied-artificial-intelligence-ms': 'CS 6470 runs in Fall only; TECH 6750 (Spring) comes first in the cohort',
+  'education-applied-behavioral-analysis-med': 'EDAB cohort classes run in fixed semesters (6030/6100 Fall, 6040/6050 Spring, 6070/6220 Fall)',
+  'school-counseling-med': 'EDCO classes run in fixed semesters (6080/6100/6050/6060 Fall, 6030/6070/6710 Spring)',
+  'dance-ballet-emphasis-bfa': 'DANC 3630 (Fall) -> 4350 (Fall only) -> 4360 (Spring only), then the DANC 3270R coreq block',
 };
+
+const readJSON = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
+const SEASONS = readJSON(ROOT + 'seasons.json');
+const EXTRA = { current: { extraCourses: readJSON(ROOT + 'prereq-courses.json'), gened: readJSON(ROOT + 'gened.json'), seasons: SEASONS },
+  '2025-2026': { extraCourses: readJSON(ROOT + '2025-2026/prereq-courses.json'), gened: readJSON(ROOT + '2025-2026/gened.json'), seasons: SEASONS } };
 
 function programFiles() {
   const out = [];
@@ -92,7 +104,8 @@ export function checkPlan(model, plan, cap = CAP) {
       if (!ids.has(u.id)) out.push(`${u.id} never placed`);
       continue;
     }
-    const need = u.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u.credits;
+    // (a free elective box needs less when "Needed first" classes from outside the program fill part of it)
+    const need = (u.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u.credits) - (plan.electiveCover?.[u.id] || 0);
     let got = ids.get(u.id) || 0;
     for (const [k, v] of ids) if (k.startsWith(u.id + '/')) got += v;
     if (got + 1e-9 < need) out.push(`${u.id} (${u.label}) placed ${got} of ${need} credits`);
@@ -104,7 +117,7 @@ const results = [];
 for (const f of programFiles()) {
   test(`plan: ${f.key}`, () => {
     const program = JSON.parse(readFileSync(f.path, 'utf8'));
-    const model = buildModel(program);
+    const model = buildModel(program, EXTRA[f.key.split('/')[0]]);
     const plan = makePlan(model, new Set(), { start: START, maxCredits: CAP });
     const total = plan.creditsLeft;
     const bound = Math.ceil(total / 12) + 2;
