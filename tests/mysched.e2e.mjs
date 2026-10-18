@@ -106,7 +106,8 @@ test('the next term still builds schedules from the plan', async () => {
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   await p.click('#tabs button[data-tab="sched"]');
-  await p.waitForSelector('#scList li');
+  await p.waitForSelector('#scTerms button.on');
+  await p.waitForSelector('#scList [data-mine]');
   assert.equal(await p.getAttribute('#scTerms button.on', 'data-term'), '202720');
   assert.ok(!(await p.$eval('#schedPanel', (e) => e.classList.contains('mine'))));
   assert.ok(await p.isVisible('.sc-nav'));
