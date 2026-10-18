@@ -1,7 +1,7 @@
 // Run: node --test tests/planner-all.test.mjs
 // Plans EVERY program in both catalog years (empty start, 16-credit cap) and checks each plan:
 //   - no semester over the cap (unless it holds one single item bigger than the cap)
-//   - no prerequisite placed before its prereqs (pre-or-co and coreqs may share the semester)
+//   - no prerequisite placed before its prereqs (pre-or-co may share the semester; coreqs MUST share it)
 //   - every required unit placed (each course once; choices / Gen Ed / electives get their credits)
 //   - semesters <= ceil(credits / 12) + 2 (programs whose data is at fault go in ALLOW, with the reason)
 // PLAN_REPORT=1 prints the semester-count distribution and the worst plans.
@@ -19,7 +19,10 @@ const CAP = 16;
 // Programs allowed over the semester bound because the catalog data itself forces it: id -> reason.
 const ALLOW = {
   'military-science-minor': 'MILS 1200 -> 1210 -> 2200 -> 2210 -> 3200 -> 3210: a six-course chain, one per semester',
-  'collaborative-piano-chamber-music-certificate-proficiency': 'MUSC 3730R (accompanying ensemble) is required 6 times, one enrollment per semester',
+  // admission cohorts that follow the catalog's own part-time sample plan (6-7 terms for 30 credits)
+  'education-higher-leadership-med': 'cohort runs the catalog sample plan: 6 terms for 30 credits',
+  'mathematics-education-ms': 'cohort runs the catalog sample plan: 7 terms for 30 credits',
+  'collaborative-piano-chamber-music-certificate-proficiency':'MUSC 3730R (accompanying ensemble) is required 6 times, one enrollment per semester',
 };
 
 function programFiles() {
@@ -59,7 +62,12 @@ export function checkPlan(model, plan, cap = CAP) {
     if (s.credits > cap && s.items.length > 1) out.push(`${s.term}: ${s.credits} credits > cap ${cap}`);
     const now = new Set(done);
     for (const it of s.items) finishes(it).forEach((c) => now.add(c));
+    // coreqs share the term (a lab never lands before or after its lecture)
+    const here = new Set();
+    for (const it of s.items) finishes(it).forEach((c) => here.add(c));
     for (const it of s.items) {
+      // a second enrollment of a repeated course (SW 4810R twice) keeps its first term's partners
+      const repeatTake = /#(r[2-9]|r\d\d|t\d)/.test(it.id);
       const own = it.codes || [];
       for (const code of own) {
         const c = courses[code] || {};
@@ -70,7 +78,8 @@ export function checkPlan(model, plan, cap = CAP) {
         const cq = (c.coreqs || []).filter((k) => !own.includes(k) && inProgram(k));
         // "A or B" coreqs (catalog text with "or", no "and"/brackets): one of them is enough
         const anyOne = cq.length > 1 && /\bor\b/i.test(c.coreqText || '') && !/\band\b|[()]/i.test(c.coreqText || '');
-        if (anyOne ? !cq.some((k) => now.has(k)) : cq.some((k) => !now.has(k))) out.push(`${code} coreqs ${cq.join(anyOne ? ' or ' : ', ')} not same/earlier term`);
+        const ok = repeatTake ? (k) => now.has(k) : (k) => here.has(k);
+        if (anyOne ? !cq.some(ok) : cq.some((k) => !ok(k))) out.push(`${code} coreqs ${cq.join(anyOne ? ' or ' : ', ')} not in the same term`);
       }
     }
     for (const it of s.items) finishes(it).forEach((c) => done.add(c));

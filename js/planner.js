@@ -1,5 +1,7 @@
 // Smart Advisor planner: pure functions, used by the browser (js/app.js) and Node tests.
 // Program JSON comes from scripts/fetch-program.mjs.
+import { gatesOf, mainGate, STANDING_RULE } from './phases.js';
+export { planPhases } from './phases.js';
 
 // ---------- model ----------
 // Units are the things a student has to finish:
@@ -8,11 +10,19 @@
 //   option      a course inside a choice group (only built when the group has real prereqs)
 //   placeholder a Gen Ed distribution or free elective with no fixed course
 const MAX_OPTION_BOXES = 8;
+// The plan may run at most this many semesters ahead of the catalog's sample plan (fills a light term
+// without pulling a senior class into the first year).
+const EARLY_SLACK = 2;
 export function buildModel(program) {
   const units = [];
   const byCode = {};
   const courses = program.courses || {};
   const planIndex = gradPlanIndex(program.gradPlan || []);
+  const planNamed = new Set((program.gradPlan || []).flatMap((t) => t.items.map((x) => x.code).filter(Boolean)));
+  const back = backCoreqs(courses);
+  const minPlanSem = (codes) => Math.min(99, ...codes.map((k) => planIndex[k] ?? 99));
+  // codes required on their own (a course requirement), which elective lists can't count again
+  const reqCodes = new Set(program.requirements.filter((r) => r.type === 'course').flatMap((r) => [r.code, ...(r.alts || [])]));
   program.requirements.forEach((r, i) => {
     if (r.type === 'course') {
       const c = courses[r.code] || {};
@@ -24,25 +34,35 @@ export function buildModel(program) {
       const prereqs = stripCodes(c.prereqs ?? null, codes);
       const credits = r.credits ?? c.credits ?? 3;
       const repeat = repeatsOf(r, r.code, credits, courses);
-      const cq = coreqsOf([r.code], codes, courses);
-      // an alternative's own "prereq or concurrent" courses count as prereqs when choosing it
-      const altReq = (k) => k === r.code ? stripCodes(c.prereqs ?? null, [k]) : andAll([stripCodes(courses[k]?.prereqs ?? null, [k]), stripCodes(courses[k]?.precoreqs ?? null, [k])]);
+      // the code the plan names first: the one the catalog's sample plan uses (ZOOL 2600 for "ZOOL 4400 or ZOOL 2600")
+      const planCode = repeat === 1 && !planNamed.has(r.code) ? codes.find((k) => planNamed.has(k) && courses[k]) ?? r.code : r.code;
+      const cq = coreqsOf([planCode], codes, courses);
+      // two-way coreqs: a lab that names nothing still goes with the lecture that names it
+      for (const k of back[planCode] || []) if (!codes.includes(k) && !cq.all.includes(k)) cq.all.push(k);
+      // an alternative's own "prereq or concurrent" courses count as prereqs when choosing it (the sample
+      // plan's own pick keeps them as "prereq or concurrent")
+      const altReq = (k) => k === r.code || k === planCode ? stripCodes(courses[k]?.prereqs ?? null, [k]) : andAll([stripCodes(courses[k]?.prereqs ?? null, [k]), stripCodes(courses[k]?.precoreqs ?? null, [k])]);
       const u = {
         id: r.code, kind: 'course', code: r.code, codes, alts: r.alts || [],
         label: r.code, title: c.title || '', credits, area: r.area, order: i,
         prereqs, precoreqs: stripCodes(c.precoreqs ?? null, codes), coreqs: (c.coreqs || []).filter((k) => !codes.includes(k)),
-        planPrereqs: known.length > 1 && repeat === 1 ? orAll(known.map((k) => stripCodes(altReq(k), codes))) : prereqs,
-        planPrecoreqs: andAll([stripCodes(c.precoreqs ?? null, codes), cq.any]), planCoreqs: cq.all,
+        // the sample plan's own pick of "A or B" waits for its prereqs (ZOOL 2600 after NURS 2310)
+        planPrereqs: planCode !== r.code && repeat === 1 ? stripCodes(courses[planCode]?.prereqs ?? null, codes)
+          : known.length > 1 && repeat === 1 ? orAll(known.map((k) => stripCodes(altReq(k), codes))) : prereqs,
+        planPrecoreqs: andAll([stripCodes((planCode !== r.code && repeat === 1 ? courses[planCode] : c)?.precoreqs ?? null, codes), cq.any]), planCoreqs: cq.all,
         altPrereqs: Object.fromEntries(codes.map((k) => [k, altReq(k)])),
-        repeat,
-        planSem: planIndex[r.code] ?? 99, prog: r.prog,
+        repeat, planCode, rowCredits: r.credits ?? null,
+        gates: Object.fromEntries(codes.map((k) => [k, gatesOf(courses[k], k === r.code ? r : {})])),
+        minGrade: r.minGrade ?? c.minGrade ?? null,
+        planSem: minPlanSem(codes), prog: r.prog,
       };
+      u.gate = mainGate(u.gates[r.code]);
       units.push(u);
       for (const k of u.codes) byCode[k] ??= u;
     } else if (r.type === 'placeholder') {
       units.push({ id: r.id ?? `ph:${i}`, kind: 'placeholder', label: r.label, title: r.text || '', credits: r.credits || 0, area: r.area, order: i, planSem: planIndex[r.label] ?? 99, prog: r.prog });
     } else if (r.type === 'choice') {
-      const g = { id: r.id ?? `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99, prog: r.prog };
+      const g = { id: r.id ?? `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99, prog: r.prog, minGrade: r.minGrade ?? null };
       // "complete one of the following tracks": option.section names its track
       if (Array.isArray(r.tracks) && r.tracks.length > 1) g.tracks = r.tracks;
       units.push(g);
@@ -52,12 +72,20 @@ export function buildModel(program) {
   // Option courses become their own boxes only when they connect to the program's prereq graph, and only
   // for a short list (a 40-course elective list stays one box).
   for (const g of units.filter((u) => u.kind === 'choice')) {
+    // a course required on its own is "not otherwise required": drop it from elective lists, unless the list
+    // couldn't be finished without it
+    const keep = g._raw.filter((o) => !o.codes.every((c) => reqCodes.has(c)));
+    const enough = g.pick?.credits ? keep.reduce((a, o) => a + (o.credits ?? courses[o.codes[0]]?.credits ?? 3), 0) >= g.pick.credits : keep.length >= (g.pick?.count ?? 1);
+    if (keep.length < g._raw.length && enough) { g.dropped = g._raw.filter((o) => !keep.includes(o)).map((o) => o.codes.join(' + ')); g._raw = keep; }
     const opts = g._raw.map((o, k) => {
       const code = o.codes[0];
       const c = courses[code] || {};
       const own = [...o.codes, ...(o.alts || [])];
       const reqOf = (list) => andAll(list.map((x) => stripCodes(courses[x]?.prereqs ?? null, own)));
       const credits = o.credits ?? c.credits ?? 3;
+      const pcq = coreqsOf(o.codes, own, courses);
+      for (const x of o.codes) for (const kk of back[x] || []) if (!own.includes(kk) && !pcq.all.includes(kk)) pcq.all.push(kk);
+      const gl = [...new Set(o.codes.flatMap((x) => gatesOf(courses[x], o)))];
       return {
         id: `${g.id}/${code}`, kind: 'option', group: g.id, code, codes: o.codes, alts: o.alts || [],
         label: o.codes.join(' + '), title: o.codes.map((x) => courses[x]?.title || '').filter(Boolean).join(' + '),
@@ -66,19 +94,70 @@ export function buildModel(program) {
         prereqs: reqOf(o.codes), precoreqs: null, coreqs: [],
         planPrereqs: o.alts?.length && o.alts.some((x) => courses[x]) ? orAll([reqOf(o.codes), reqOf(o.alts.filter((x) => courses[x]))]) : reqOf(o.codes),
         // used only by the semester plan (the flowchart keeps options free of coreq links)
-        planPrecoreqs: andAll([...o.codes.map((x) => stripCodes(courses[x]?.precoreqs ?? null, own)), coreqsOf(o.codes, own, courses).any]),
-        planCoreqs: coreqsOf(o.codes, own, courses).all,
+        planPrecoreqs: andAll([...o.codes.map((x) => stripCodes(courses[x]?.precoreqs ?? null, own)), pcq.any]),
+        planCoreqs: pcq.all,
         section: o.section, repeat: o.codes.length === 1 ? repeatsOf(o, code, credits, courses) : 1,
-        planSem: 99, prog: g.prog,
+        gates: Object.fromEntries(o.codes.map((x) => [x, gatesOf(courses[x], o)])), gate: mainGate(gl),
+        minGrade: o.minGrade ?? c.minGrade ?? g.minGrade ?? null,
+        planSem: minPlanSem(own), prog: g.prog,
       };
     });
     delete g._raw;
     g.options = opts;
     g.showOptions = opts.length <= MAX_OPTION_BOXES && opts.some((o) => codesOf(o.prereqs).some((x) => byCode[x]));
   }
+  matchPlanLabels(program.gradPlan || [], units);
+  linkWordPrereqs(units, courses);
   const model = { program, units, byCode };
+  // choiceRemaining needs the whole program to count each finished class once
+  for (const u of units) if (u.kind === 'choice') Object.defineProperty(u, '_model', { value: model, enumerable: false });
   computeDepths(model);
   return model;
+}
+
+// Two-way coreqs: back[Y] = courses that name Y as a coreq while Y doesn't name them (the catalog often
+// lists the coreq on the lecture only). "A or B" coreq lists (one is enough) are not reversed.
+function backCoreqs(courses) {
+  const back = {};
+  for (const [x, c] of Object.entries(courses)) {
+    const cq = c.coreqs || [];
+    const t = String(c.coreqText || '');
+    if (!cq.length || (cq.length > 1 && /\bor\b/i.test(t) && !/\band\b|[()]/i.test(t))) continue;
+    for (const y of cq) {
+      const yc = courses[y];
+      if (y === x || (yc && ((yc.coreqs || []).includes(x) || String(yc.coreqText || '').includes(x)))) continue;
+      (back[y] ??= []).push(x);
+    }
+  }
+  return back;
+}
+// Sample-plan rows the catalog labels loosely ("Complete one of the following:") go to the choice groups
+// no row named, in catalog order.
+function matchPlanLabels(terms, units) {
+  const labels = new Set(units.map((u) => u.label));
+  const free = units.filter((u) => u.kind === 'choice' && u.planSem === 99);
+  terms.forEach((t, s) => t.items.forEach((x) => {
+    if (x.code || !x.label || labels.has(x.label) || !/^(complete|choose|select)\b/i.test(x.label)) return;
+    const g = free.shift();
+    if (g) g.planSem = s;
+  }));
+}
+// Prereqs written in words that name a requirement of the program ("completion of a university-level
+// statistics course" -> the "University-level statistics course" group): that group is planned first.
+function linkWordPrereqs(units, courses) {
+  const named = units.filter((u) => (u.kind === 'choice' || u.kind === 'placeholder') && String(u.label || '').length >= 15)
+    .map((u) => ({ u, l: String(u.label).toLowerCase().replace(/[:.]+$/, '') }));
+  if (!named.length) return;
+  const link = (x, codes) => {
+    const t = codes.map((c) => String(courses[c]?.prereqText || '').toLowerCase()).join(' ');
+    if (!t) return;
+    const after = named.filter(({ u, l }) => u.id !== x.id && u.id !== x.group && t.includes(l)).map(({ u }) => u.id);
+    if (after.length) x.afterUnits = after;
+  };
+  for (const u of units) {
+    if (u.kind === 'course') link(u, [u.code]);
+    if (u.kind === 'choice') for (const o of u.options) link(o, o.codes);
+  }
 }
 
 function andAll(list) {
@@ -169,11 +248,41 @@ export function unitDone(u, completed) {
 }
 export function choiceRemaining(g, completed) {
   if (completed.has(g.id)) return 0;
-  const doneOpts = g.options.filter((o) => optionDone(o, completed));
+  const doneOpts = countedOptions(g, completed);
   if (g.pick?.credits) return Math.max(0, g.pick.credits - doneOpts.reduce((s, o) => s + o.credits, 0));
   const need = g.pick?.count ?? 1;
   if (doneOpts.length >= need) return 0;
   return Math.round((g.credits / need) * (need - doneOpts.length)) || g.credits;
+}
+
+// A finished class fills ONE requirement of a program: required courses take theirs first, then choice
+// groups in catalog order, each taking the finished options the later groups can't use first.
+// (STAT 1040 fills Quantitative Literacy or the nursing statistics course, not both.)
+// Returns the finished options that count for group g.
+export function countedOptions(g, completed) {
+  const model = g._model;
+  const doneHere = (o) => optionDone(o, completed);
+  if (!model) return g.options.filter(doneHere);
+  const used = new Set();
+  for (const u of model.units) if (u.kind === 'course') { const c = u.codes.find((k) => completed.has(k)); if (c) used.add(c); }
+  const groups = model.units.filter((u) => u.kind === 'choice');
+  const codesOfOpt = (o) => [...o.codes, ...o.alts].filter((c) => completed.has(c));
+  for (let gi = 0; gi < groups.length; gi++) {
+    const h = groups[gi];
+    const cands = completed.has(h.id) ? [] : h.options.filter((o) => doneHere(o) && !codesOfOpt(o).some((c) => used.has(c)));
+    const later = (o) => groups.slice(gi + 1).filter((x) => x.options.some((p) => codesOfOpt(p).some((c) => codesOfOpt(o).includes(c)))).length;
+    cands.sort((a, b) => later(a) - later(b));
+    const take = [];
+    let need = h.pick?.credits ? h.pick.credits : (h.pick?.count ?? 1);
+    for (const o of cands) {
+      if (need <= 0) break;
+      if (codesOfOpt(o).some((c) => used.has(c))) continue;
+      take.push(o); codesOfOpt(o).forEach((c) => used.add(c));
+      need -= h.pick?.credits ? o.credits : 1;
+    }
+    if (h === g) return take;
+  }
+  return g.options.filter(doneHere);
 }
 
 // ---------- tapping classes taken ----------
@@ -322,13 +431,23 @@ export const termLabel = (t) => `${t.season} ${t.year}`;
 
 // ---------- the plan ----------
 // completed: Set of course codes and unit ids already finished.
+// opts: start, maxCredits, summers, plus
+//   tracks     {groupId: track name} chosen tracks (settings.tracks); a missing/unknown one is guessed
+//   track      one track name to use wherever a group has it
+//   admitted   true: the student is already in the program (no Apply step)
+//   creditsDone credits finished in total (all classes, for University Advanced Standing); default: the
+//              finished classes of this program
+// Order of placement: the catalog's sample-plan semester first, then the longest prereq chain.
+// Admission programs: "Before you apply" semesters -> Apply -> program semesters (plan.admission, planPhases).
 export function makePlan(model, completed = new Set(), opts = {}) {
   const maxCredits = opts.maxCredits ?? 16;
   const summers = opts.summers ?? false;
   let term = opts.start ?? defaultStartTerm();
   const { units, byCode } = model;
+  const courses = model.program.courses || {};
   // completing any alt of a course (or of an "A or B" option) satisfies prereqs naming the others
   const done = haveSet(model, completed);
+  const startDone = new Set(done);
 
   // work items
   const todo = [];
@@ -348,6 +467,7 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     }
     return prev;
   };
+  const tracks = [];
   const lastTake = new Map(); // a course listed twice (SW 4810R field placement): the second take comes later
   for (const u of units) {
     if (unitDone(u, completed)) continue;
@@ -355,7 +475,12 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       const prev = lastTake.get(u.id);
       if (prev && !/\dR$/.test(u.code)) continue; // listed twice but not repeatable: once is enough
       const id = prev ? `${u.id}#t${units.filter((x) => x.id === u.id).indexOf(u) + 1}` : u.id;
-      lastTake.set(u.id, pushRepeats({ ...u, id, after: prev ?? null, prereqs: u.planPrereqs, precoreqs: u.planPrecoreqs, coreqs: prev ? [] : u.planCoreqs, unit: u }));
+      const code = u.repeat > 1 ? u.code : u.planCode ?? u.code;
+      lastTake.set(u.id, pushRepeats({
+        ...u, id, code, label: code, title: courses[code]?.title || u.title, credits: courseCredits(u, code, courses),
+        after: prev ?? null, prereqs: u.planPrereqs, precoreqs: u.planPrecoreqs, coreqs: prev ? [] : u.planCoreqs, unit: u,
+        gateList: u.gates?.[code] || [], gate: mainGate(u.gates?.[code]),
+      }));
     }
     else if (u.kind === 'placeholder') {
       const ch = chunksOf(u.credits);
@@ -364,21 +489,25 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     } else if (u.kind === 'choice') {
       let left = choiceRemaining(u, completed);
       let optsLeft = u.options.filter((o) => !optionDone(o, completed));
-      const track = pickTrack(u, completed, left);
+      const chosen = trackChoice(u, opts);
+      const track = pickTrack(u, completed, left, chosen);
       if (track) {
+        tracks.push({ groupId: u.id, label: u.label, tracks: u.tracks, track, guessed: track !== chosen });
         // one track, required in full: its courses become real items (up to what the group needs)
         for (const o of optsLeft.filter((x) => x.section === track)) {
           if (left <= 0) break;
+          const gl = [...new Set(Object.values(o.gates || {}).flat())];
           pushRepeats({
             ...o, kind: 'option', unit: u, unitId: u.showOptions ? o.id : u.id, prereqs: o.planPrereqs,
             precoreqs: o.planPrecoreqs, coreqs: o.planCoreqs, codes: [...o.codes, ...o.alts], codeList: o.codes,
+            gateList: gl, gate: mainGate(gl),
           });
           left -= o.credits;
         }
         optsLeft = optsLeft.filter((x) => !u.tracks.includes(x.section));
       }
       const opts2 = optsLeft.map((o) => ({ ...o, prereqs: o.planPrereqs }));
-      if (left > 0) chunksOf(left).forEach((c, k) => todo.push({ id: `${u.id}#${k}`, kind: 'choice', label: u.label, title: u.title, credits: c, unit: u, order: u.order + k / 100, planSem: u.planSem, options: opts2 }));
+      if (left > 0) chunksOf(left).forEach((c, k) => todo.push({ id: `${u.id}#${k}`, kind: 'choice', label: u.label, title: u.title, credits: c, unit: u, order: u.order + k / 100, planSem: u.planSem, options: opts2, minGrade: u.minGrade }));
     }
   }
   // courses this plan schedules (a track's courses count; other tracks' do not)
@@ -386,16 +515,47 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   for (const it of todo) for (const c of it.codes || []) planCodes.add(c);
   const inProgram = (c) => planCodes.has(c);
   const height = heights(model, todo);
+
+  // ----- gates -----
+  const gate = gateSetup(model, todo, completed, opts);
+  const isAdm = (it) => it.cohort != null || (it.gateList || []).includes('admission');
+  const isStd = (it) => (it.gateList || []).includes('advanced-standing');
+  const standing = standingSetup(model, todo, completed, opts);
+  const admission = gate.items ? { at: null, admitted: gate.admitted } : null;
+  const standingOut = standing.needed ? { at: standing.fromStart ? 0 : null, fromStart: standing.fromStart } : null;
+
   const warnings = [];
   const semesters = [];
   const placed = new Set();
-  const sortKey = (a, b) => (height.get(b.id) - height.get(a.id)) || (a.planSem - b.planSem) || (a.order - b.order);
+  // cohort blocks first, then (until Apply) the before-you-apply requirements, then the rest
+  const rank = (it) => (it.cohort != null ? 0 : !gate.open && gate.applyUnits.has(it.unit.id) ? 1 : 2);
+  // the catalog semester the student is at: the earliest sample-plan semester still to do
+  // (a student with credits done is at least that many 15-credit semesters along)
+  const doneCredits = model.units.filter((u) => unitDone(u, completed)).reduce((a, u) => a + (u.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u.credits), 0);
+  const planBase = Math.max(Math.min(99, ...todo.map((x) => x.planSem ?? 99)), Math.floor(doneCredits / 15));
+  // (degree-size programs only: a minor's or certificate's sample plan is spread over a whole degree)
+  const sequenced = programCredits(model) >= 60;
+  let early = sequenced;
+  const sortKey = (a, b) => rank(a) - rank(b) || (a.planSem - b.planSem) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order);
 
   while (todo.length && semesters.length < 40) {
     const before = new Set(done);
     const sem = { term: termLabel(term), items: [], credits: 0 };
+    const leftUnits = new Set(todo.map((x) => x.unit.id));
+    // Apply milestone: open once every "before you apply" requirement is finished in an earlier term
+    const open = gate.open || [...gate.applyUnits].every((id) => !leftUnits.has(id));
+    if (open && admission && admission.at == null) admission.at = semesters.length;
+    const hasStanding = standing.ok(before, leftUnits, semesters);
+    if (hasStanding && standingOut && standingOut.at == null) standingOut.at = semesters.length;
+    // the cohort runs block by block (the catalog's semesters), one block per term
+    const cohortNow = Math.min(Infinity, ...todo.filter((x) => x.cohort != null).map((x) => x.cohort));
     const avail = (it) => {
       if (it.after && !placed.has(it.after)) return false;
+      if (early && it.cohort == null && it.planSem < 99 && it.planSem - planBase > semesters.length + EARLY_SLACK) return false;
+      if (isAdm(it) && !open) return false;
+      if (isStd(it) && !hasStanding) return false;
+      if (it.cohort != null && it.cohort !== cohortNow) return false;
+      if (it.afterUnits && it.afterUnits.some((id) => leftUnits.has(id))) return false;
       if (it.kind === 'course' || it.kind === 'option') return evalReq(it.prereqs, before, inProgram);
       if (it.kind === 'choice') return !it.options.length || it.options.some((o) => evalReq(o.prereqs, before, inProgram));
       return true;
@@ -412,34 +572,51 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       for (const x of e.or) { const m = missing(x, have); if (m.length && m.every((c) => partnerOf(c, []))) return m; }
       return [];
     };
-    let added = true;
-    while (added) {
-      added = false;
-      const cands = todo.filter((it) => !sem.items.includes(it) && avail(it)).sort(sortKey);
-      for (const it of cands) {
-        // bundle a course with its not-yet-taken coreqs (lecture + lab) and with "prereq or corequisite"
-        // courses not yet taken (BIOL 1610 + BIOL 1615 name each other: same semester)
-        const bundle = [it];
-        for (let i = 0; i < bundle.length && bundle.length < 8; i++) {
-          const x = bundle[i];
-          for (const c of x.coreqs || []) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
-          const have = new Set(before);
-          for (const y of [...sem.items, ...bundle]) (y.codes || []).forEach((c) => have.add(c));
-          for (const c of missing(x.precoreqs, have)) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
-        }
-        if (!bundle.every(avail)) continue;
-        const cr = bundle.reduce((s, x) => s + x.credits, 0);
-        if (sem.credits + cr > maxCredits) continue;
-        const now = new Set(before);
-        for (const x of [...sem.items, ...bundle]) (x.codes || []).forEach((c) => now.add(c));
-        if (!bundle.every((x) => coreqOk(x, now))) continue;
-        sem.items.push(...bundle); sem.credits += cr; added = true;
-        break; // re-sort after each pick
+    // a course + its coreqs (lecture + lab, two-way) + "prereq or corequisite" courses not yet taken
+    const grow = (bundle) => {
+      for (let i = 0; i < bundle.length && bundle.length < 16; i++) {
+        const x = bundle[i];
+        for (const c of x.coreqs || []) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
+        const have = new Set(before);
+        for (const y of [...sem.items, ...bundle]) (y.codes || []).forEach((c) => have.add(c));
+        for (const c of missing(x.precoreqs, have)) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
       }
-    }
+      return bundle;
+    };
+    const fits = (bundle) => {
+      if (!bundle.every(avail)) return false;
+      const cr = bundle.reduce((s, x) => s + x.credits, 0);
+      if (sem.credits + cr > maxCredits) return false;
+      const now = new Set(before);
+      for (const x of [...sem.items, ...bundle]) (x.codes || []).forEach((c) => now.add(c));
+      return bundle.every((x) => coreqOk(x, now));
+    };
+    const fill = () => {
+      let added = true;
+      while (added) {
+        added = false;
+        const cands = todo.filter((it) => !sem.items.includes(it) && avail(it)).sort(sortKey);
+        for (const it of cands) {
+          // a cohort block goes in whole when it fits
+          const tries = [];
+          if (it.cohort != null) tries.push(grow(todo.filter((x) => x.cohort === it.cohort && !sem.items.includes(x))));
+          tries.push(grow([it]));
+          const bundle = tries.find(fits);
+          if (!bundle) continue;
+          sem.items.push(...bundle); sem.credits += bundle.reduce((s, x) => s + x.credits, 0); added = true;
+          break; // re-sort after each pick
+        }
+      }
+    };
+    // first: nothing more than EARLY_SLACK semesters ahead of the catalog's sample plan; a term left empty
+    // that way takes anything that can go
+    early = sequenced; fill();
+    if (!sem.items.length && early) { early = false; fill(); }
     if (!sem.items.length) {
-      // nothing fits (credit cap smaller than a bundle, or a prereq loop): force the best one in
-      const it = todo.filter((x) => !x.after || placed.has(x.after)).sort(sortKey)[0] || todo[0];
+      // nothing fits (credit cap smaller than a bundle, or a prereq loop): force the best one in (never a gated one
+      // while something else is left)
+      const free = todo.filter((x) => !x.after || placed.has(x.after));
+      const it = free.filter((x) => !isAdm(x) && !isStd(x)).sort(sortKey)[0] || free.sort(sortKey)[0] || todo[0];
       warnings.push(`${it.label}: placed without its prerequisites or over the credit limit`);
       sem.items.push(it); sem.credits += it.credits;
     }
@@ -447,7 +624,13 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       // "A or B" where A needs B: name the one that can be taken now
       if (it.kind === 'course' && it.altPrereqs && it.codes.length > 1 && !it.after && !(it.repeat > 1) && !evalReq(it.altPrereqs[it.code], before, inProgram)) {
         const ok = it.codes.find((c) => evalReq(it.altPrereqs[c], before, inProgram));
-        if (ok) { it.code = ok; it.label = ok; it.title = model.program.courses?.[ok]?.title || it.title; }
+        if (ok) {
+          sem.credits -= it.credits;
+          it.code = ok; it.label = ok; it.title = courses[ok]?.title || it.title;
+          it.credits = courseCredits(it.unit, ok, courses);
+          it.gateList = it.unit.gates?.[ok] || []; it.gate = mainGate(it.gateList);
+          sem.credits += it.credits;
+        }
       }
     }
     for (const it of sem.items) { todo.splice(todo.indexOf(it), 1); placed.add(it.id); (it.codes || []).forEach((c) => done.add(c)); }
@@ -455,22 +638,140 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     semesters.push(sem);
     term = nextTerm(term, summers);
   }
+  if (todo.length) warnings.push(`${todo.length} requirement(s) could not be placed within 40 semesters`);
+  if (admission && admission.at == null) admission.at = semesters.length;
+  if (standingOut && standingOut.at == null) standingOut.at = semesters.length;
+  void startDone;
   const totalLeft = semesters.reduce((s, x) => s + x.credits, 0);
   return {
     semesters: semesters.map((s) => ({ term: s.term, credits: s.credits, items: s.items.map((it) => ({
       id: it.id, unitId: it.unitId ?? it.unit.id, kind: it.kind, code: it.code || null,
       codes: it.kind === 'option' ? it.codeList : it.kind === 'course' ? [it.code] : undefined,
       label: it.label, title: it.title, credits: it.credits,
+      gate: isAdm(it) ? 'admission' : it.gate || null, minGrade: it.minGrade ?? null,
     })) })),
     creditsLeft: totalLeft,
     graduation: semesters.length ? semesters[semesters.length - 1].term : null,
     warnings,
+    admission, standing: standingOut, tracks,
   };
 }
 
-// "Complete one of the following tracks": the track to plan. The one the student has the most credits in,
-// then the cheapest (fewest credits to finish the group with it), then catalog order. null = no tracks.
-export function pickTrack(g, completed, need = choiceRemaining(g, completed)) {
+// Credits of a course requirement when the plan names `code`: the row's credits, except when the named
+// course is another one of the "A or B" codes (or the row's number is plainly the other code's): then its own.
+function courseCredits(u, code, courses) {
+  const row = u.rowCredits ?? u.credits;
+  if (u.repeat > 1 || !u.codes || u.codes.length < 2) return u.credits;
+  const own = courses[code]?.credits;
+  if (typeof own !== 'number' || courses[code]?.creditsMax || courses[code]?.crMax) return u.credits;
+  if (code !== u.code) return own;
+  const others = u.codes.filter((k) => k !== code).map((k) => courses[k]?.credits);
+  return row !== own && others.includes(row) ? own : u.credits;
+}
+
+// The track a student chose for a group (opts.tracks[groupId], or opts.track when the group has that name).
+function trackChoice(g, opts) {
+  if (!g.tracks) return null;
+  const t = opts.tracks?.[g.id] ?? (typeof opts.track === 'string' ? opts.track : opts.track?.[g.id]);
+  return t && g.tracks.includes(t) ? t : null;
+}
+
+// Admission gate: which requirements come before "Apply", and the cohort blocks.
+// Before-you-apply set: the program's own list when the data has one (applyPrereqs / gate.codes), else every
+// lower-division requirement the catalog's sample plan puts before the first gated course, else every
+// lower-division required course; never one that itself waits on a gated course.
+function gateSetup(model, todo, completed, opts) {
+  const { program, units } = model;
+  const adm = (it) => (it.gateList || []).includes('admission');
+  const gatedUnits = units.filter((u) => u.kind === 'course' ? (u.gates?.[u.code] || []).includes('admission') : u.kind === 'choice' && u.options.some((o) => (o.gates && Object.values(o.gates).flat().includes('admission'))));
+  const gatedCodes = new Set();
+  for (const u of units) {
+    if (u.kind === 'course' && (u.gates?.[u.code] || []).includes('admission')) u.codes.forEach((c) => gatedCodes.add(c));
+    if (u.kind === 'choice') for (const o of u.options) if (Object.values(o.gates || {}).flat().includes('admission')) o.codes.forEach((c) => gatedCodes.add(c));
+  }
+  const out = { open: true, admitted: false, items: false, applyUnits: new Set() };
+  if (!gatedCodes.size) return out;
+  // cohort programs (admission: true): the program's own subject courses from the first gated sample-plan
+  // semester on run as the catalog's semester blocks
+  const gateSems = [];
+  for (const u of units) {
+    if (u.kind === 'course' && (u.gates?.[u.code] || []).includes('admission') && u.planSem < 99) gateSems.push(u.planSem);
+    if (u.kind === 'choice') for (const o of u.options) if (Object.values(o.gates || {}).flat().includes('admission') && o.planSem < 99) gateSems.push(o.planSem);
+  }
+  const firstGate = Math.min(99, ...gateSems);
+  if (program.admission === true && firstGate < 99) {
+    const subj = new Set([...gatedCodes].map((c) => c.split(' ')[0]));
+    const cand = todo.filter((it) => {
+      if (!(it.kind === 'course' || it.kind === 'option') || it.after) return false;
+      const code = it.kind === 'course' ? it.code : it.codeList?.[0];
+      return code && subj.has(code.split(' ')[0]) && it.planSem >= firstGate && it.planSem < 99;
+    });
+    // only when the catalog's blocks agree with the prereqs (each prereq in an earlier block, coreqs in the
+    // same one); otherwise the gate alone orders the program (graduate plans, loose sample plans)
+    const blockOf = (c) => cand.find((y) => (y.codes || []).includes(c))?.planSem;
+    const clean = cand.every((x) => codesOf(x.prereqs).every((c) => !(blockOf(c) >= x.planSem))
+      && codesOf(x.precoreqs).every((c) => !(blockOf(c) > x.planSem))
+      && (x.coreqs || []).every((c) => blockOf(c) === undefined || blockOf(c) === x.planSem));
+    if (clean) for (const it of cand) it.cohort = it.planSem;
+  }
+  if (!todo.some((it) => adm(it) || it.cohort != null)) return out;
+  out.items = true;
+  // already in the program: a gated class is finished
+  if (opts.admitted || [...gatedCodes].some((c) => completed.has(c))) { out.admitted = true; return out; }
+  out.open = false;
+  // requirements that (through prereqs/coreqs) wait on a gated or cohort course can't be "before you apply"
+  const waits = new Set([...gatedCodes]);
+  for (const it of todo) if (it.cohort != null) (it.codes || []).forEach((c) => waits.add(c));
+  const codesIn = (u) => u.kind === 'course' ? u.codes : u.kind === 'choice' ? u.options.flatMap((o) => o.codes) : [];
+  const reqOf = (u) => u.kind === 'course' ? [u.planPrereqs, u.planPrecoreqs, ...(u.planCoreqs || [])] : u.kind === 'choice' ? u.options.flatMap((o) => [o.planPrereqs]) : [];
+  let grew = true;
+  const blocked = new Set();
+  while (grew) {
+    grew = false;
+    for (const u of units) {
+      if (blocked.has(u.id)) continue;
+      if (codesIn(u).some((c) => waits.has(c)) && (u.kind !== 'choice' || u.options.every((o) => o.codes.some((c) => waits.has(c))))) { blocked.add(u.id); grew = true; continue; }
+      const req = reqOf(u).flatMap(codesOf);
+      if (req.some((c) => waits.has(c))) { blocked.add(u.id); codesIn(u).forEach((c) => waits.add(c)); grew = true; }
+    }
+  }
+  const lower = (u) => u.kind !== 'course' || Number((u.code.match(/\d{4}/) || ['0'])[0]) < 3000;
+  const listed = program.applyPrereqs || program.gate?.codes;
+  let set;
+  if (Array.isArray(listed) && listed.length) set = units.filter((u) => codesIn(u).some((c) => listed.includes(c)));
+  else if (firstGate < 99) set = units.filter((u) => (u.kind === 'course' || u.kind === 'choice') && u.planSem < firstGate && lower(u));
+  else set = units.filter((u) => u.kind === 'course' && lower(u));
+  void gatedUnits;
+  for (const u of set) if (!blocked.has(u.id) && !unitDone(u, completed)) out.applyUnits.add(u.id);
+  return out;
+}
+
+// University Advanced Standing (STANDING_RULE): needed by Advanced Standing courses still to plan.
+function standingSetup(model, todo, completed, opts) {
+  const std = (it) => (it.gateList || []).includes('advanced-standing');
+  const out = { needed: todo.some(std), fromStart: false, ok: () => true };
+  if (!out.needed) return out;
+  const stdCodes = model.units.flatMap((u) => u.kind === 'course' ? u.codes.filter((c) => (u.gates?.[c] || []).includes('advanced-standing'))
+    : u.kind === 'choice' ? u.options.flatMap((o) => o.codes.filter((c) => (o.gates?.[c] || []).includes('advanced-standing'))) : []);
+  if (opts.standing || stdCodes.some((c) => completed.has(c))) { out.fromStart = true; return out; }
+  const total = programCredits(model);
+  const english = model.byCode[STANDING_RULE.english] ? STANDING_RULE.english : null;
+  const ql = model.units.filter((u) => STANDING_RULE.ql.test(String(u.label || '')) && u.kind !== 'course').map((u) => u.id);
+  const doneCr = opts.creditsDone ?? model.units.filter((u) => unitDone(u, completed)).reduce((s, u) => s + (u.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u.credits), 0);
+  out.ok = (before, leftUnits, semesters) => {
+    if (english && !before.has(english)) return false;
+    if (ql.some((id) => leftUnits.has(id))) return false;
+    if (total < STANDING_RULE.minProgramCredits) return true;
+    return doneCr + semesters.reduce((s, x) => s + x.credits, 0) >= STANDING_RULE.credits;
+  };
+  if (out.ok(haveSet(model, completed), new Set(todo.map((x) => x.unit.id)), [])) out.fromStart = true;
+  return out;
+}
+
+// "Complete one of the following tracks": the track to plan. The one the student chose, else the one they
+// have the most credits in, then the cheapest (fewest credits to finish the group with it), then catalog
+// order. null = no tracks.
+export function pickTrack(g, completed, need = choiceRemaining(g, completed), chosen = null) {
   if (!g.tracks) return null;
   const cands = g.tracks.map((t, k) => {
     const opts = g.options.filter((o) => o.section === t);
@@ -479,8 +780,41 @@ export function pickTrack(g, completed, need = choiceRemaining(g, completed)) {
     return { t, k, n: opts.length, doneCr, cost: Math.max(need, leftCr) };
   }).filter((x) => x.n);
   if (cands.length < 2) return null;
+  if (chosen && cands.some((x) => x.t === chosen)) return chosen;
   cands.sort((a, b) => b.doneCr - a.doneCr || a.cost - b.cost || a.k - b.k);
   return cands[0].t;
+}
+
+// Which requirement a class fills, and why it is in the plan (for the class sheet).
+// -> {unitId, kind, label, area, credits, why, alsoIn: [labels], gate, minGrade, track} | null
+export function requirementFor(model, code, completed = new Set()) {
+  void completed;
+  const hits = [];
+  for (const u of model.units) {
+    if (u.kind === 'course' && u.codes.includes(code)) hits.push({ u, o: null });
+    if (u.kind === 'choice') { const o = u.options.find((x) => x.codes.includes(code) || x.alts.includes(code)); if (o) hits.push({ u, o }); }
+  }
+  if (!hits.length) return null;
+  const { u, o } = hits[0];
+  const gl = (o ? o.gates?.[code] : u.gates?.[code]) || [];
+  const gate = mainGate(gl);
+  const area = u.area || '';
+  let why;
+  if (u.kind === 'course') {
+    why = u.codes.length > 1 ? `Required (${area}): ${u.codes.join(' or ')}; any one counts` : `Required course (${area})`;
+  } else if (o?.section && u.tracks) {
+    why = `Part of the "${o.section}" track; ${u.label} (one track is required, ${area})`;
+  } else {
+    const pick = u.pick?.credits ? `${u.pick.credits} credits from the list` : `${u.pick?.count ?? 1} from the list`;
+    why = `One of the options for "${u.label}" (${pick}, ${area})`;
+  }
+  if (gate === 'admission') why += '. Needs acceptance into the program first';
+  else if (gate === 'advanced-standing') why += '. Needs University Advanced Standing';
+  const alsoIn = [...new Set(hits.slice(1).map((h) => h.u.label))].filter((l) => l !== u.label);
+  return {
+    unitId: u.id, kind: u.kind, label: u.label, area, credits: o ? o.credits : u.credits, why, alsoIn,
+    gate, minGrade: (o ? o.minGrade : u.minGrade) ?? null, track: o?.section && u.tracks ? o.section : null,
+  };
 }
 
 // Longest chain of later courses that depend on each item (so long chains start first).
