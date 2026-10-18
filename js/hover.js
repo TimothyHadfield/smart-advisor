@@ -23,7 +23,7 @@ export function edgeRoles(edges, id) {
  * The label's text: when the class was taken (+ its grade), when it is in progress, or when the plan has it.
  *   done: taken or in progress · grade: its grade ('IP' = in progress) · term: the semester it was taken in
  *   ("Fall 2025", from the audit) · planned: the plan's semester for it · now: the semester in session
- * '' = no label.
+ * '' = no label (a class neither taken nor planned).
  */
 export function hintText({ done, grade = '', term = '', planned = '', now = '' }) {
   if (!done) return planned && termMonth(planned) ? `Planned ${termMonth(planned)}` : '';
@@ -32,7 +32,8 @@ export function hintText({ done, grade = '', term = '', planned = '', now = '' }
     const m = termMonth(term || now);
     return m ? `Now · ${m}` : 'Now';
   }
-  return [termMonth(term), grade].filter(Boolean).join(' · ');
+  // no semester known (tapped, added by hand, or imported before terms were kept): "Taken"
+  return [termMonth(term) || 'Taken', grade].filter(Boolean).join(' · ');
 }
 
 /**

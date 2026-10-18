@@ -231,6 +231,7 @@ function showEmpty() {
   model = null; nodes = null; lastPlan = null; progParts = [];
   $('main').classList.add('empty');
   $('progName').textContent = 'Pick your program';
+  $('noDates').hidden = true;
   $('boxes').innerHTML = '';
   $('edges').innerHTML = '';
   $('legendItems').innerHTML = '';
@@ -542,7 +543,7 @@ function refresh() {
   // which semester each unit is planned in (a choice group: its first chunk)
   const semOf = new Map();
   plan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!semOf.has(it.unitId)) semOf.set(it.unitId, i); }));
-  let anyIP = false;
+  let anyIP = false, undated = false;
   const now = termLabel(currentTerm());
   for (const el of $('boxes').children) {
     if (!el.dataset.id) continue;
@@ -567,8 +568,13 @@ function refresh() {
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
     // the hover label: when taken (+ grade, when grades are on) / in progress / planned
-    el.dataset.hint = hintText({ done, grade: ip || showGrades ? g : '', term: done ? boxTerm(n, completed) : '', planned: sem !== undefined ? plan.semesters[sem].term : '', now });
+    const term = done ? boxTerm(n, completed) : '';
+    if (done && !ip && !term) undated = true;
+    el.dataset.hint = hintText({ done, grade: ip || showGrades ? g : '', term, planned: sem !== undefined ? plan.semesters[sem].term : '', now });
   }
+  // audits imported before 2026-10-18 kept no semesters (nothing saved holds them): ask for a re-upload.
+  // An import since then always leaves settings.when (even {}), so this line never comes back after it.
+  $('noDates').hidden = !(undated && !state.settings.when && hasAudit());
   if (hoverId) drawHover();
   renderPlan(plan);
   renderLegend(plan, anyIP);

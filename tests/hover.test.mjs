@@ -37,9 +37,9 @@ test('termMonth: UVU term start months', () => {
 test('hintText: taken, in progress, planned, nothing else', () => {
   assert.equal(hintText({ done: true, grade: 'A', term: 'Fall 2025' }), 'Aug 2025 · A');
   assert.equal(hintText({ done: true, grade: 'TCR', term: 'Summer 2025' }), 'May 2025 · TCR');
-  assert.equal(hintText({ done: true, grade: 'B+' }), 'B+', 'no term known: the grade only');
+  assert.equal(hintText({ done: true, grade: 'B+' }), 'Taken · B+', 'no term known: says Taken, with the grade');
   assert.equal(hintText({ done: true, grade: '', term: 'Spring 2026' }), 'Jan 2026');
-  assert.equal(hintText({ done: true, grade: '' }), '', 'tapped with nothing known: no label');
+  assert.equal(hintText({ done: true, grade: '' }), 'Taken', 'every taken class gets a label');
   assert.equal(hintText({ done: true, grade: 'IP', term: 'Fall 2026', now: 'Fall 2026' }), 'Now · Aug 2026');
   assert.equal(hintText({ done: true, grade: 'IP', now: 'Fall 2026' }), 'Now · Aug 2026', 'in progress without a term: this term');
   assert.equal(hintText({ done: true, grade: 'IP', term: 'Spring 2027', now: 'Fall 2026' }), 'Jan 2027', 'registered for a later term');

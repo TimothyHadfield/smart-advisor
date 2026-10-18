@@ -25,10 +25,10 @@ const PASS = /^(A|A-|B\+|B|B-|C\+|C|C-|D\+|D|D-|P|CR|S|T|TR|TP|TCR|TS|T[ABCD][+-
 const FAIL = /^(F|W|UW|WF|WD|NC|U|E|AU|NG|FN)$/;
 const IPTOK = /^(IP|INP|REG|CURR)$/;
 const CREDIT = /^\(?\d{1,2}(\.\d{1,3})?\)?$/;
-const TERM = /\b(?:(?:Fall|Spring|Summer|Winter)\s+\d{4}|\d{4}\s+(?:Fall|Spring|Summer|Winter)|\d{4}\s?(?:FA|SP|SU|SM|WI)|(?:FA|SP|SU|SM)\s?\d{2,4})\b/i;
+const TERM = /\b(?:(?:Fall|Spring|Summer|Winter|Spr|Sum)(?:\s+Semester)?,?\s+\d{4}|\d{4}\s+(?:Fall|Spring|Summer|Winter)|\d{4}\s?(?:FA|SP|SU|SM|WI)|(?:FA|SP|SU|SM)\s?\d{2,4}|(?:19|20)\d{2}(?:20|30|40))\b/i;
 // "ECE 2250", "ECE2250", "ECE-2250", "ECE 4810R", "SLSS 101R". Not "ECE 3000:4999" (range), "ECE 3@".
 const CODE = /(?<![A-Za-z])([A-Z]{2,5})[ \t]?-?[ \t]?(\d{3,4})([A-Z]{1,2}(?![A-Za-z]))?(?![\d:@])/g;
-const NOT_SUBJECT = new Set(['FALL', 'SPR', 'SUMR', 'SUM', 'WIN', 'TERM', 'YEAR', 'PAGE', 'GPA', 'HRS', 'CRED', 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUNE', 'JULY', 'AUG', 'SEPT', 'SEP', 'OCT', 'NOV', 'DEC', 'ID', 'UVID', 'ZIP', 'AM', 'PM']);
+const NOT_SUBJECT = new Set(['FALL', 'FA', 'SP', 'SU', 'SM', 'WI', 'SPR', 'SUMR', 'SUM', 'WIN', 'TERM', 'YEAR', 'PAGE', 'GPA', 'HRS', 'CRED', 'JAN', 'FEB', 'MAR', 'APR', 'MAY', 'JUNE', 'JULY', 'AUG', 'SEPT', 'SEP', 'OCT', 'NOV', 'DEC', 'ID', 'UVID', 'ZIP', 'AM', 'PM']);
 
 // a line that states a requirement rather than a taken course
 const NEEDED = /still\s+needed|\bneeds?\s*:|\bnot\s+complete\b|\bincomplete\b|\byou\s+need|\bnot\s+started\b|\bplanned\b|\bchoose\s+from|\bselect\s+from|\b\d+\s+(?:class(?:es)?|courses?|credits?|hours?)\s+(?:in|from)\b|\bexcept\b|\bminimum\s+grade|\bor\s+(?:better|higher)\b|\bmatriculation\b/i;
@@ -97,7 +97,11 @@ export function parseAudit(text) {
     const r = readRow(rec, mode);
     if (!r) continue;
     rowLines.push(rec);
-    const tm = latestTerm([rec]) || headTerm;
+    // the row's own term; a PDF may wrap it onto the next line ("... B+ 3" / "2025 FALL"); else the heading's
+    let tm = latestTerm([rec]);
+    const nx = lines[i + 1] || '';
+    if (!tm && !codesIn(nx).length && latestTerm([nx]) && !nx.replace(TERM_ANY, '').trim()) { tm = latestTerm([nx]); rowLines.push(nx); i++; }
+    tm ||= headTerm;
     const term = tm ? { term: `${tm.season} ${tm.year}` } : {};
     const pre = rec.slice(0, codes.find((c) => c.code === r.code)?.at ?? 0).trim();
     const req = (pre && !/^(completed?|in[\s-]?progress|registered)$/i.test(pre) ? pre : ctx.join(' ')).replace(/\s+/g, ' ');
@@ -108,15 +112,17 @@ export function parseAudit(text) {
   return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()], lastTerm: latestTerm(rowLines) };
 }
 
-// The latest semester named on any course row ("2026 FALL", "Fall 2026", "2026FA", "FA26") -> {season, year} | null
-const SEASON_OF = { FALL: 'Fall', FA: 'Fall', SPRING: 'Spring', SP: 'Spring', SPR: 'Spring', SUMMER: 'Summer', SU: 'Summer', SM: 'Summer', SUM: 'Summer' };
+// The latest semester named on any course row -> {season, year} | null. Reads "2026 FALL", "Fall 2026",
+// "FALL 2026", "Fall Semester 2026", "Spring, 2026", "2026FA", "FA26", "FA 2026", "SP 2024", "Spr 2024",
+// "Sum 2024", and Banner term codes ("202640": yyyy20 Spring, yyyy30 Summer, yyyy40 Fall).
+const SEASON_OF = { FALL: 'Fall', FA: 'Fall', SPRING: 'Spring', SP: 'Spring', SPR: 'Spring', SUMMER: 'Summer', SU: 'Summer', SM: 'Summer', SUM: 'Summer', 20: 'Spring', 30: 'Summer', 40: 'Fall' };
+const TERM_ANY = /\b(?:(Fall|Spring|Summer|Spr|Sum)(?:\s+Semester)?,?\s+(\d{4})|(\d{4})\s+(Fall|Spring|Summer)|(\d{4})\s?(FA|SP|SU|SM)|(FA|SP|SU|SM)\s?(\d{2}(?:\d{2})?)|((?:19|20)\d{2})(20|30|40))\b/gi;
 export function latestTerm(lines) {
   let best = null;
-  const re = /\b(?:(Fall|Spring|Summer)\s+(\d{4})|(\d{4})\s+(Fall|Spring|Summer)|(\d{4})\s?(FA|SP|SU|SM)|(FA|SP|SU|SM)\s?(\d{2}(?:\d{2})?))\b/gi;
   for (const l of lines) {
-    for (const m of l.matchAll(re)) {
-      const s = SEASON_OF[(m[1] || m[4] || m[6] || m[7]).toUpperCase()];
-      let y = +(m[2] || m[3] || m[5] || m[8]);
+    for (const m of l.matchAll(TERM_ANY)) {
+      const s = SEASON_OF[(m[1] || m[4] || m[6] || m[7] || m[10]).toUpperCase()];
+      let y = +(m[2] || m[3] || m[5] || m[8] || m[9]);
       if (y < 100) y += 2000;
       const i = y * 3 + ['Spring', 'Summer', 'Fall'].indexOf(s);
       if (!best || i > best.i) best = { season: s, year: y, i };

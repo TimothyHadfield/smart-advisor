@@ -251,6 +251,33 @@ test('terms: each row keeps the semester it was taken in (row term, or the trans
   assert.equal(m.others.find((r) => r.code === 'STAT 1040').term, 'Summer 2025');
 });
 
+test('terms: every common way an audit / transcript writes a semester', () => {
+  const one = (row) => { const p = parseAudit(row); return [...p.taken, ...p.inProgress][0]?.term; };
+  // Degree Works (UVU's Wolverine Track) and the usual variants
+  assert.equal(one('Circuits ECE 2250 Circuit Theory I B+ 3 2025 FALL'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 Fall 2025'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 FALL 2025'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 FA25'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 FA 2025'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 2025FA'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 SP 2024'), 'Spring 2024');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 Spr 2024'), 'Spring 2024');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 Sum 2024'), 'Summer 2024');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 SU24'), 'Summer 2024');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 Fall Semester 2025'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 Spring, 2026'), 'Spring 2026');
+  // Banner term codes: yyyy20 Spring, yyyy30 Summer, yyyy40 Fall
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3 202540'), 'Fall 2025');
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3.000 202420'), 'Spring 2024');
+  assert.equal(one('MATH 1220 Calculus II TCR 4 202530'), 'Summer 2025', 'transfer / AP row');
+  assert.equal(one('MATH 1220 Calculus II TCR 4 2025 SUMMER'), 'Summer 2025', 'transfer / AP row');
+  // a PDF that wrapped the term onto the next line
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3\n2025 FALL'), 'Fall 2025');
+  // no term anywhere: none made up; a student ID is not a term code
+  assert.equal(one('ECE 2250 Circuit Theory I B+ 3'), undefined);
+  assert.equal(one('Student ID 10202540\nECE 2250 Circuit Theory I B+ 3'), undefined);
+});
+
 test('grade scale: A green ... C yellow ... D/E red; non-letter grades get a short tag', () => {
   assert.equal(gradeInfo('A').kind, 'letter');
   assert.ok(gradeInfo('A').hue > gradeInfo('B').hue && gradeInfo('B').hue > gradeInfo('C').hue && gradeInfo('C').hue > gradeInfo('D').hue);
@@ -280,4 +307,8 @@ test('real Wolverine Track audit (local only)', { skip: !realPath && 'no .claude
   const m = matchAudit(p, model);
   assert.equal(m.rows.find((r) => r.key === 'ECE 2250').grade, 'IP');
   console.log(`real audit -> ${m.rows.filter((r) => r.status === 'taken').length} taken, ${m.rows.filter((r) => r.status === 'ip').length} in progress in EE`);
+  // every row read from the audit knows its semester (counts only: the terms themselves are private)
+  const all = [...p.taken, ...p.inProgress];
+  console.log(`real audit -> ${all.filter((r) => !r.term).length} of ${all.length} rows without a term`);
+  assert.equal(all.filter((r) => !r.term).length, 0);
 });

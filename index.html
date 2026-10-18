@@ -21,6 +21,7 @@
   <section class="panel flow" id="flowPanel" aria-label="Flowchart">
     <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><button type="button" class="lg-fit" id="fitBtn" aria-label="Fit to screen" title="Fit to screen" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M1.5 5.5v-4h4M10.5 1.5h4v4M14.5 10.5v4h-4M5.5 14.5h-4v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
     <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
+    <p class="noaud" id="noDates" hidden><button type="button" data-upload>Re-upload your audit</button> to see dates</p>
     <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
     <button type="button" class="ok empty-pick" data-pick>Pick your program</button>
   </section>

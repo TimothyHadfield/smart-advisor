@@ -22,10 +22,10 @@ const SAVED = {
   grades: { [EE]: { 'MATH 1210': 'A', 'ECE 1000': 'IP' } },
   settings: { grades: true, when: { 'MATH 1210': 'Fall 2025' } },
 };
-async function page(opts) {
+async function page(opts, saved = SAVED) {
   const ctx = await browser.newContext({ ...opts, serviceWorkers: 'block' });
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
-  await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(SAVED)]);
+  await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
@@ -93,6 +93,69 @@ test('phone: label + lines while the finger is down; a tap still marks the class
   await p.tap(sel);
   await p.waitForTimeout(150);
   assert.equal(await p.getAttribute(sel, 'aria-pressed'), 'true', 'tap marks Taken');
+  assert.deepEqual(p.errors, []);
+  await p.context().close();
+});
+
+// a made-up audit in Wolverine Track's real row shape (Degree Works "Save as PDF" text), not a real student
+const AUDIT = `Utah Valley University Doe, Jane Q - 00000000
+Level Undergraduate    Classification Junior    Major Electrical Engineering    Program Electrical
+Engineering-BS    College College of Engineering & Tech.    Catalog Year 2026-2027 (BS-EE1)
+Bachelor of Science INCOMPLETE
+New General Education COMPLETE
+Course Title Grade Credits Term
+ACADEMIC WRITING I ENGL 1010 Intro to Acad Writing CC TCR 3 2025 SUMMER
+Satisfied by: AP ELGC0000 - English Language & Composition - Adv Pl - English Lang/Comp (3)
+Electrical Engineering Core-BS INCOMPLETE
+Course Title Grade Credits Term
+Calculus I MATH 1210 Calculus I A 4 2025 FALL
+Calculus II MATH 1220 Calculus II B+ 4 2026 SPRING
+Intro to ECE ECE 1000 Intro to ECE IP (3) 2026 FALL`;
+async function importAudit(p) {
+  await p.click('#gear');
+  await p.click('#importBtn');
+  await p.fill('#impText', AUDIT);
+  await p.click('#impGo');
+  await p.waitForSelector('#impStep2:not([hidden])');
+  await p.click('#impGo');
+  await p.waitForTimeout(500);
+}
+const hintOf = async (p, id) => { await p.hover(box(id)); await p.waitForTimeout(100); return p.textContent('#hint'); };
+
+test('fresh import: every taken class shows its month and year (transfer / AP rows too)', async () => {
+  const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, serviceWorkers: 'block' });
+  await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
+  const p = await ctx.newPage();
+  const errors = [];
+  p.on('pageerror', (e) => errors.push(String(e)));
+  await p.goto(APP + '?p=' + EE);
+  await p.waitForSelector(box('MATH 1210'));
+  await importAudit(p);
+  assert.equal(await hintOf(p, 'MATH 1210'), 'Aug 2025 · A');
+  assert.equal(await hintOf(p, 'MATH 1220'), 'Jan 2026 · B+');
+  assert.equal(await hintOf(p, 'ENGL 1010'), 'May 2025 · TCR');
+  assert.equal(await p.$eval('#noDates', (e) => e.hidden), true);
+  assert.deepEqual(errors, []);
+  await ctx.close();
+});
+
+test('imported before terms were kept: "Taken · A" + a re-upload line that goes away after re-uploading', async () => {
+  const OLD = { // what the old import saved: no settings.when
+    plan: { programs: [EE], catalogYear: null },
+    done: { [EE]: ['MATH 1210', 'MATH 1220', 'ENGL 1010', 'ECE 1000'] },
+    grades: { [EE]: { 'MATH 1210': 'A', 'MATH 1220': 'B+', 'ENGL 1010': 'TCR', 'ECE 1000': 'IP' } },
+    settings: { grades: true, src: { [EE]: { 'MATH 1210': 'audit', 'MATH 1220': 'audit', 'ENGL 1010': 'audit', 'ECE 1000': 'audit' } } },
+    audit: { [EE]: { catalogYear: '2026-2027' } },
+  };
+  const p = await page({ viewport: { width: 1280, height: 800 } }, OLD);
+  assert.equal(await hintOf(p, 'MATH 1210'), 'Taken · A');
+  assert.equal(await p.$eval('#noDates', (e) => e.hidden), false);
+  await p.click('#noDates [data-upload]');
+  assert.ok(await p.$eval('#importDlg', (d) => d.open), 'the line opens Import');
+  await p.click('#impBack');
+  await importAudit(p);
+  assert.equal(await hintOf(p, 'MATH 1210'), 'Aug 2025 · A');
+  assert.equal(await p.$eval('#noDates', (e) => e.hidden), true);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
