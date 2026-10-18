@@ -41,9 +41,10 @@ Evidence: `docs/audit-2026-10-17/` (nursing-report, data-accuracy-report, calc-r
 Merge order: sa-data → sa-plan → sa-ui (each rebases). Full suite `node --test tests/*.test.mjs` + `planner-all` must pass at every merge.
 
 ## Wave 2 (after wave 1)
-- Seasons data from Banner (`data/seasons.json`) + planner preference + summer rules (D-A7).
-- Out-of-program prereqs as boxes (D-A6), grade minimums in audit (D-A8), audit outside classes reduce electives.
-- Major+minor double counting; 120 total / 40 upper-division checks with a warning line.
+- DONE 2026-10-18 (sa-rules): Seasons data from Banner (`data/seasons.json`, `scripts/build-seasons.mjs`, 8 terms 202440..202720) + planner preference + summer cap 9 (D-A7).
+- DONE 2026-10-18 (sa-rules): Out-of-program prereqs as "Needed first" boxes or a named Gen Ed box (D-A6, `data/prereq-courses.json`), grade minimums in plan + audit match (D-A8), audit outside classes reduce free electives.
+- DONE 2026-10-18 (sa-rules): Major+minor double counting (a minor's required class fills a major list once); 120 total / 40 upper-division warning lines.
+  Sweep (866 files, empty start, 16 cr, base 01bc073 → sa-rules, same data): off-season placements 909 → 17, summer semesters over 9 cr 792 → 0, required classes with a prereq silently assumed met 756 → 137, 496 "Needed first" boxes (1,764 cr), semesters 4,199 → 4,502. Bachelor plans: 3 under 120, 47 can't reach 40 upper-division, 172 need upper-division elective picks.
 - Customization: move a class to another semester (dropdown phone, drag laptop), lock a semester, credits per semester, "In progress" mark, share link + print.
 - What-if: compare a second major's remaining credits.
 
