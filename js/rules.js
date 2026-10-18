@@ -93,5 +93,6 @@ export function isBachelor(program) {
   const id = String(program?.parts?.[0]?.id || program?.id || '').split('+')[0];
   if (/-(bs|ba|bas|bfa|bsw|bm|bes|bis|bsn)$/i.test(id)) return true;
   const name = String(program?.parts?.[0]?.name || program?.name || '').split(' + ')[0];
-  return /\bB\.(?:S|A|F\.A|S\.W|M|A\.S)\.|\bBachelor\b/.test(name);
+  // (not "M.B.A.": the B must start the abbreviation)
+  return /(?:^|[\s,(])B\.(?:S|A|F\.A|S\.W|M|A\.S)\.|\bBachelor\b/.test(name);
 }

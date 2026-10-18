@@ -174,7 +174,12 @@ async function buildFor(ids, year) {
   const got = await Promise.all(ids.map((id) => loadProgram(id, year)));
   const parts = ids.map((id, i) => got[i] && { id, program: got[i].program, year: got[i].year }).filter(Boolean);
   if (!parts.length || parts[0].id !== ids[0]) return null;
-  return { parts, model: buildModel(combinePrograms(parts)) };
+  // the planner's extra data for the major's catalog year: prerequisites from outside the program ("Needed
+  // first" boxes), Gen Ed lists, and the semesters each class usually runs in (missing: plan without it)
+  const y = parts[0].year;
+  const ofYear = async (f) => (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/${f}`)) || getJSON(`${DATA}/${f}`);
+  const [extraCourses, ge, seasons] = await Promise.all([ofYear('prereq-courses.json'), ofYear('gened.json'), getJSON(`${DATA}/seasons.json`)]);
+  return { parts, model: buildModel(combinePrograms(parts), { extraCourses, gened: ge, seasons }) };
 }
 // change the chosen programs / catalog year; a new major brings the classes taken (not its Gen Ed boxes)
 function setPlan(ids, year) {
@@ -593,7 +598,7 @@ function wireGenEd() {
 
 // the student's chosen tracks for this major ({ group id: track }); the planner uses them when it can
 const chosenTracks = () => state.settings.tracks?.[major()] || {};
-const planOpts = () => ({ maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm(), track: chosenTracks(), tracks: chosenTracks() });
+const planOpts = () => ({ maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm(), track: chosenTracks(), tracks: chosenTracks(), grades: gradeMap() });
 const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); return year ? { season, year: +year } : null; };
 // first planned semester: the chosen Start, but never the semester in session (or one the imported audit
 // already shows classes in); a saved Start that has slipped into the past moves up on its own
@@ -621,6 +626,13 @@ function renderPlan(plan) {
     : `<b>All done</b>`)
     + `<p class="caveat">Unofficial plan — confirm with your advisor. <a href="${esc(issueURL(progIssue()))}" target="_blank" rel="noopener" id="sumReport">Report a mistake</a></p>`
     + (gated ? '<p class="adm">Requires admission — apply after these classes.</p>' : '')
+    // bachelor's totals (120 credits, 40 upper-division) and classes a major and minor share
+    + (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
+    + (() => {
+      if (progParts.length < 2) return '';
+      const both = [...new Set([...(model.program.shared || []).map((x) => x.code), ...plan.semesters.flatMap((s) => s.items.filter((it) => it.shared).map((it) => it.code))])];
+      return both.length ? `<p>Counted once for both: ${esc(both.join(', '))}</p>` : '';
+    })()
     + tracks.map((g) => {
       const mine = chosenTracks()[g.id];
       const t = mine && tracksOf(g).includes(mine) ? mine : (P.pickTrack ? P.pickTrack(g, completed) : null) || tracksOf(g)[0];
@@ -1494,7 +1506,7 @@ function wireImport() {
     $('impSum').innerHTML = `<b>Found ${n} taken, ${ip} in progress</b>`;
     const done = new Set(state.done[t.ids[0]] || []);
     $('impList').innerHTML = found.rows.map((r, i) => `<li><label><input type="checkbox" data-i="${i}" data-ip="${r.status === 'ip' ? 1 : 0}"${done.has(r.key) ? ' disabled' : ''} checked>`
-      + `<span>${esc(r.label)}</span><i>${esc(r.title)}</i>${r.status === 'ip' ? '<em>IP</em>' : ''}</label></li>`).join('');
+      + `<span>${esc(r.label)}</span><i>${esc(r.title)}</i>${r.status === 'ip' ? '<em>IP</em>' : ''}${r.low ? `<em title="Below the requirement's minimum grade: the plan takes it again">${esc(r.grade)} · needs ${esc(r.min)}</em>` : ''}</label></li>`).join('');
     syncIP();
   };
   $('impProg').addEventListener('change', () => rematch());

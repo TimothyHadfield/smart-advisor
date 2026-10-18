@@ -32,8 +32,9 @@ export function buildModel(program, opts = {}) {
   const planNamed = new Set((program.gradPlan || []).flatMap((t) => t.items.map((x) => x.code).filter(Boolean)));
   const back = backCoreqs(courses);
   const minPlanSem = (codes) => Math.min(99, ...codes.map((k) => planIndex[k] ?? 99));
-  // codes required on their own (a course requirement), which elective lists can't count again
-  const reqCodes = new Set(program.requirements.filter((r) => r.type === 'course').flatMap((r) => [r.code, ...(r.alts || [])]));
+  // codes required on their own (a course requirement), which elective lists of the same program can't count
+  // again (a minor's required class may still fill a major's list: taken once, it counts for both)
+  const reqCodes = new Set(program.requirements.filter((r) => r.type === 'course').flatMap((r) => [r.code, ...(r.alts || [])].map((c) => `${r.prog || ''}|${c}`)));
   // the program page's own "needs admission" list (admissionInfo.gated) adds the admission gate
   const admGated = new Set(program.admissionInfo?.gated || []);
   const gatesFor = (code, row) => {
@@ -97,7 +98,7 @@ export function buildModel(program, opts = {}) {
   for (const g of units.filter((u) => u.kind === 'choice')) {
     // a course required on its own is "not otherwise required": drop it from elective lists, unless the list
     // couldn't be finished without it
-    const keep = g._raw.filter((o) => !o.codes.every((c) => reqCodes.has(c)));
+    const keep = g._raw.filter((o) => !o.codes.every((c) => reqCodes.has(`${g.prog || ''}|${c}`)));
     const enough = g.pick?.credits ? keep.reduce((a, o) => a + (o.credits ?? courses[o.codes[0]]?.credits ?? 3), 0) >= g.pick.credits : keep.length >= (g.pick?.count ?? 1);
     if (keep.length < g._raw.length && enough) { g.dropped = g._raw.filter((o) => !keep.includes(o)).map((o) => o.codes.join(' + ')); g._raw = keep; }
     const opts = g._raw.map((o, k) => {
@@ -968,18 +969,26 @@ export function degreeTotals(model, completed, semesters) {
     }
   }
   for (const x of outsideClasses(model, completed)) { credits += x.credits; if (isUpper(x.code)) upper += x.credits; }
-  // planned
+  // planned. upper = the least the plan gives (only what must be 3000+); upperMax = the most, when every
+  // list / free elective with a 3000+ choice is filled with one
+  let upperMax = upper;
   for (const s of semesters) for (const it of s.items) {
     credits += it.credits;
-    if (it.kind === 'course' || it.kind === 'option') { if ((it.kind === 'option' ? it.codeList : [it.code]).every(isUpper)) upper += it.credits; }
-    else if (it.kind === 'choice') { if (allUpper(it.options || [])) upper += it.credits; }
-    else if (it.kind === 'placeholder') upper += Math.min(it.credits, it.unit?.upperCr ? it.unit.upperCr * it.credits / it.unit.credits : 0);
+    if (it.kind === 'course' || it.kind === 'option') { if ((it.kind === 'option' ? it.codeList : [it.code]).every(isUpper)) { upper += it.credits; upperMax += it.credits; } }
+    else if (it.kind === 'choice') {
+      if (allUpper(it.options || [])) upper += it.credits;
+      if ((it.options || []).some((o) => o.codes.every(isUpper))) upperMax += it.credits;
+    } else if (it.kind === 'placeholder') {
+      upper += Math.min(it.credits, it.unit?.upperCr ? it.unit.upperCr * it.credits / it.unit.credits : 0);
+      if (it.unit?.free) upperMax += it.credits;
+    }
   }
-  credits = Math.round(credits * 10) / 10; upper = Math.round(upper);
+  credits = Math.round(credits * 10) / 10; upper = Math.round(upper); upperMax = Math.round(upperMax);
   const checks = [];
   if (bachelor && credits < BACHELOR.credits) checks.push(`This plan adds up to ${credits} credits; a bachelor's degree needs ${BACHELOR.credits}. Add ${Math.ceil(BACHELOR.credits - credits)} elective credits.`);
-  if (bachelor && upper < BACHELOR.upper) checks.push(`Upper-division (3000+) credits: ${upper} of the ${BACHELOR.upper} a bachelor's degree needs. Pick upper-division classes for electives.`);
-  return { bachelor, credits, upper, checks };
+  if (bachelor && upperMax < BACHELOR.upper) checks.push(`Upper-division (3000+) credits: at most ${upperMax} of the ${BACHELOR.upper} a bachelor's degree needs. ${BACHELOR.upper - upperMax} more must be upper-division (electives count).`);
+  else if (bachelor && upper < BACHELOR.upper) checks.push(`Upper-division (3000+) credits: ${upper} of ${BACHELOR.upper} are set. Pick 3000+ classes for at least ${BACHELOR.upper - upper} of your elective credits.`);
+  return { bachelor, credits, upper, upperMax, checks };
 }
 
 // Credits of a course requirement when the plan names `code`: the row's credits, except when the named
