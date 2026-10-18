@@ -149,6 +149,15 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sum { flex: none; display: flex; align-items: baseline; gap: 8px; padding: 8px 16px 6px; }
 .sum b { font-size: 16px; color: var(--green); }
 .sum span { color: var(--muted); font-size: 12px; }
+.sum { flex-wrap: wrap; row-gap: 3px; }
+.sum p { flex-basis: 100%; margin: 0; font-size: 11px; color: var(--muted); }
+.sum a { color: var(--green); font-weight: 600; }
+.sum .adm { color: #9a5b00; font-weight: 600; }
+.chip { display: inline-flex; align-items: baseline; gap: 6px; max-width: 100%; min-height: 28px; padding: 4px 10px; border: 1px solid var(--green); border-radius: 14px; background: none; color: var(--green); font-size: 12px; font-weight: 600; cursor: pointer; }
+.chip span { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.chip span::after { content: " ▾"; font-size: 10px; }
+.chip em { flex: none; font-style: normal; font-size: 11px; font-weight: 600; color: #9a5b00; }
+.sum .ok { padding: 8px 18px; }
 .sems { flex: 1; min-height: 0; overflow: auto; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px 12px; padding: 2px 16px 12px; align-content: start; overscroll-behavior: contain; }
 .sem h3 { margin: 0 0 2px; font-size: 12px; display: flex; justify-content: space-between; border-bottom: 1.5px solid var(--green); padding-bottom: 2px; }
 .sem[class*=" s"] h3 { border-bottom: 3px solid var(--sb); }
@@ -161,6 +170,11 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sem li span:first-child { min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .sem li.ph span:first-child { color: var(--muted); font-style: italic; }
 .sem li span:last-child { color: var(--muted); flex: none; }
+.sem li { cursor: pointer; border-radius: 4px; }
+.sem li:active { background: var(--bg); }
+/* admission programs: the Apply step between the prerequisite semesters and the program */
+.apply { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: #9a5b00; text-transform: uppercase; letter-spacing: .03em; }
+.apply::before, .apply::after { content: ""; flex: 1; border-top: 1.5px dashed currentColor; opacity: .6; }
 .warn { grid-column: 1 / -1; color: #b3261e; font-size: 11px; }
 
 /* bottom tabs (phone) */
@@ -341,7 +355,7 @@ dialog.secs { width: min(460px, calc(100vw - 32px)); }
 .box .pk { font-weight: 600; white-space: nowrap; display: block; text-overflow: ellipsis; }
 .box .pk:empty { display: none; }
 .box .gl { position: absolute; bottom: -7px; right: 5px; display: grid; place-items: center; width: 22px; height: 14px; border-radius: 4px; background: var(--panel); color: var(--green); border: 1px solid var(--line); line-height: 0; }
-.box .gl::after { content: ""; position: absolute; inset: -6px -5px -4px; }
+.box .gl::after { content: ""; position: absolute; inset: -16px -12px; } /* 46 x 46 tap target */
 .box .gl:active { background: var(--green); color: #fff; border-color: var(--green); }
 /* its sheet: area, search, the classes (code · title · credits) */
 .ge-list button { gap: 10px; }
@@ -375,3 +389,48 @@ dialog.secs { width: min(460px, calc(100vw - 32px)); }
   .sc-week { flex: 1; height: auto; padding: 0 16px 16px 6px; }
   .sc-list { flex: none; width: 420px; border-top: 0; border-left: 1px solid var(--line); }
 }
+
+/* keyboard users keep a focus ring; a tap or click doesn't leave one */
+:focus:not(:focus-visible) { outline: none; }
+
+/* flowchart: hold a box for its class sheet (no iOS callout / text selection); zoom; "pick N" groups */
+.box { -webkit-touch-callout: none; -webkit-user-select: none; user-select: none; }
+.chart { touch-action: pan-x pan-y; }
+.edges, .boxes { transform-origin: 0 0; }
+.lg-fit { flex: none; display: grid; place-items: center; width: 30px; height: 28px; margin-right: -2px; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--muted); cursor: pointer; }
+.lg-fit[aria-pressed="true"] { border-color: var(--green); color: var(--green); }
+.lg-fit[hidden] { display: none; }
+.pickgrp { position: absolute; border: 1.5px dashed var(--edge); border-radius: 9px; pointer-events: none; }
+.pickgrp em { position: absolute; top: -8px; left: 8px; padding: 0 4px; background: var(--panel); font-style: normal; font-size: 9.5px; font-weight: 700; line-height: 14px; color: var(--muted); }
+.box .ptag { position: absolute; top: -9px; left: 5px; padding: 0 3px; border-radius: 4px; font-style: normal; font-size: 8.5px; font-weight: 700; line-height: 1.25; background: var(--panel); color: var(--muted); border: 1px dashed var(--edge); }
+.box.extra .ptag { left: auto; right: 5px; }
+.box.in-grp .ptag, .box.done .ptag { display: none; }
+
+/* first visit: no program yet */
+.empty-pick { display: none; }
+main.empty .empty-pick { display: block; position: absolute; left: 50%; top: 45%; transform: translate(-50%, -50%); background: var(--green); color: #fff; border: 0; border-radius: 8px; padding: 10px 20px; font-weight: 600; cursor: pointer; }
+.flow { position: relative; }
+main.empty .legend .lg-grades { visibility: hidden; }
+
+/* class sheet: code + title, facts, Taken, Report a mistake · Catalog · Done */
+dialog.cls { width: min(380px, calc(100vw - 32px)); }
+.cls-facts { display: grid; grid-template-columns: auto 1fr; gap: 6px 12px; margin: 0; font-size: 12.5px; max-height: 50dvh; overflow: auto; }
+.cls-facts dt { color: var(--muted); font-weight: 600; }
+.cls-facts dd { margin: 0; min-width: 0; overflow-wrap: anywhere; }
+#clsTakenRow[hidden] { display: none; }
+.cls .row { align-items: center; gap: 8px; }
+.cls a.ghost { text-decoration: none; font-size: 12px; padding: 8px 10px; }
+.cls-r { display: flex; align-items: center; gap: 12px; }
+.cls-cat { color: var(--green); font-weight: 600; text-decoration: none; }
+dialog.tracks { height: fit-content; max-height: min(520px, calc(100dvh - 32px)); }
+dialog.tracks form { height: auto; }
+.tracks .pick-list { flex: none; }
+
+/* toast: "Taken classes cleared · Undo" above the tabs */
+.toast { position: fixed; left: 50%; bottom: calc(var(--tab-h) + env(safe-area-inset-bottom) + 12px); z-index: 20; display: flex; align-items: center; gap: 14px; max-width: calc(100vw - 32px); padding: 8px 8px 8px 14px; border-radius: 10px; background: var(--fg); color: var(--panel); font-size: 13px; box-shadow: 0 6px 24px rgba(0,0,0,.25); transform: translate(-50%, 20px); opacity: 0; pointer-events: none; transition: opacity .18s, transform .18s; }
+.toast.on { opacity: 1; transform: translate(-50%, 0); pointer-events: auto; }
+.toast button { border: 0; background: none; color: inherit; text-decoration: underline; font-weight: 700; padding: 6px 8px; cursor: pointer; }
+.toast button[hidden] { display: none; }
+@media (min-width: 900px) { .toast { bottom: 20px; } }
+#clearDone[data-armed="1"] { color: #b3261e; border-color: #b3261e; }
+.toast span { white-space: nowrap; }

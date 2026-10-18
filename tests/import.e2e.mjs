@@ -55,6 +55,7 @@ test('audit import: the later start is saved and still there after a reload; Cle
   // Clear taken: lastTerm is null (not missing), so the account doc carries the reset to other devices
   await p.click('#gear');
   await p.click('#clearDone');
+  await p.click('#clearDone'); // the first tap asks, the second clears
   const s = await saved(p);
   assert.ok('lastTerm' in s && s.lastTerm === null);
   assert.deepEqual(errors, []);
