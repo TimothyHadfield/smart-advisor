@@ -23,6 +23,12 @@ export function buildModel(program) {
   const minPlanSem = (codes) => Math.min(99, ...codes.map((k) => planIndex[k] ?? 99));
   // codes required on their own (a course requirement), which elective lists can't count again
   const reqCodes = new Set(program.requirements.filter((r) => r.type === 'course').flatMap((r) => [r.code, ...(r.alts || [])]));
+  // the program page's own "needs admission" list (admissionInfo.gated) adds the admission gate
+  const admGated = new Set(program.admissionInfo?.gated || []);
+  const gatesFor = (code, row) => {
+    const g = gatesOf(courses[code], row);
+    return admGated.has(code) && !g.includes('admission') ? ['admission', ...g] : g;
+  };
   program.requirements.forEach((r, i) => {
     if (r.type === 'course') {
       const c = courses[r.code] || {};
@@ -52,7 +58,7 @@ export function buildModel(program) {
         planPrecoreqs: andAll([stripCodes((planCode !== r.code && repeat === 1 ? courses[planCode] : c)?.precoreqs ?? null, codes), cq.any]), planCoreqs: cq.all,
         altPrereqs: Object.fromEntries(codes.map((k) => [k, altReq(k)])),
         repeat, planCode, rowCredits: r.credits ?? null,
-        gates: Object.fromEntries(codes.map((k) => [k, gatesOf(courses[k], k === r.code ? r : {})])),
+        gates: Object.fromEntries(codes.map((k) => [k, gatesFor(k, k === r.code ? r : {})])),
         minGrade: r.minGrade ?? c.minGrade ?? null,
         planSem: minPlanSem(codes), prog: r.prog,
       };
@@ -64,7 +70,12 @@ export function buildModel(program) {
     } else if (r.type === 'choice') {
       const g = { id: r.id ?? `choice:${i}`, kind: 'choice', label: r.label, title: r.text || '', credits: r.credits || 0, pick: r.pick, area: r.area, order: i, options: [], planSem: planIndex[r.label] ?? 99, prog: r.prog, minGrade: r.minGrade ?? null };
       // "complete one of the following tracks": option.section names its track
-      if (Array.isArray(r.tracks) && r.tracks.length > 1) g.tracks = r.tracks;
+      if (Array.isArray(r.tracks) && r.tracks.length > 1) {
+        g.tracks = r.tracks;
+        g.subs = r.subs || [];
+        g.trackElectives = r.trackElectives || {};
+        g.trackGrades = r.trackGrades || null;
+      }
       units.push(g);
       g._raw = r.options;
     }
@@ -85,7 +96,7 @@ export function buildModel(program) {
       const credits = o.credits ?? c.credits ?? 3;
       const pcq = coreqsOf(o.codes, own, courses);
       for (const x of o.codes) for (const kk of back[x] || []) if (!own.includes(kk) && !pcq.all.includes(kk)) pcq.all.push(kk);
-      const gl = [...new Set(o.codes.flatMap((x) => gatesOf(courses[x], o)))];
+      const gl = [...new Set(o.codes.flatMap((x) => gatesFor(x, o)))];
       return {
         id: `${g.id}/${code}`, kind: 'option', group: g.id, code, codes: o.codes, alts: o.alts || [],
         label: o.codes.join(' + '), title: o.codes.map((x) => courses[x]?.title || '').filter(Boolean).join(' + '),
@@ -97,7 +108,9 @@ export function buildModel(program) {
         planPrecoreqs: andAll([...o.codes.map((x) => stripCodes(courses[x]?.precoreqs ?? null, own)), pcq.any]),
         planCoreqs: pcq.all,
         section: o.section, repeat: o.codes.length === 1 ? repeatsOf(o, code, credits, courses) : 1,
-        gates: Object.fromEntries(o.codes.map((x) => [x, gatesOf(courses[x], o)])), gate: mainGate(gl),
+        gates: Object.fromEntries(o.codes.map((x) => [x, gatesFor(x, o)])), gate: mainGate(gl),
+        // inside a track: a pick-list choice (sub), advice only (recommended), or the tracks' shared list
+        sub: o.sub ?? null, recommended: !!o.recommended, shared: !!o.shared,
         minGrade: o.minGrade ?? c.minGrade ?? g.minGrade ?? null,
         planSem: minPlanSem(own), prog: g.prog,
       };
@@ -493,18 +506,30 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       const track = pickTrack(u, completed, left, chosen);
       if (track) {
         tracks.push({ groupId: u.id, label: u.label, tracks: u.tracks, track, guessed: track !== chosen });
-        // one track, required in full: its courses become real items (up to what the group needs)
-        for (const o of optsLeft.filter((x) => x.section === track)) {
-          if (left <= 0) break;
+        // the chosen track: its required courses become real items (not its pick lists, advice or the shared list)
+        const grade = u.trackGrades?.[track] ?? u.minGrade ?? null;
+        for (const o of optsLeft.filter((x) => x.section === track && x.sub == null && !x.recommended && !x.shared)) {
           const gl = [...new Set(Object.values(o.gates || {}).flat())];
           pushRepeats({
             ...o, kind: 'option', unit: u, unitId: u.showOptions ? o.id : u.id, prereqs: o.planPrereqs,
             precoreqs: o.planPrecoreqs, coreqs: o.planCoreqs, codes: [...o.codes, ...o.alts], codeList: o.codes,
-            gateList: gl, gate: mainGate(gl),
+            gateList: gl, gate: mainGate(gl), minGrade: o.minGrade ?? grade,
           });
           left -= o.credits;
         }
-        optsLeft = optsLeft.filter((x) => !u.tracks.includes(x.section));
+        // the track's own pick lists ("Complete 12 credits from the following"): one choice each
+        (u.subs || []).forEach((sb, k) => {
+          if (sb.section !== track || left <= 0) return;
+          const mine = u.options.filter((o) => o.sub === k && o.section === track);
+          const doneCr = mine.filter((o) => optionDone(o, completed)).reduce((a, o) => a + o.credits, 0);
+          const need = Math.min(left, Math.max(0, (sb.credits || 0) - doneCr));
+          if (!need) return;
+          const subOpts = mine.filter((o) => !optionDone(o, completed)).map((o) => ({ ...o, prereqs: o.planPrereqs }));
+          chunksOf(need).forEach((c, j) => todo.push({ id: `${u.id}#s${k}.${j}`, kind: 'choice', label: sb.label || u.label, title: u.title, credits: c, unit: u, order: u.order + (k + 1) / 100 + j / 1000, planSem: u.planSem, options: subOpts, minGrade: sb.minGrade ?? grade }));
+          left -= need;
+        });
+        // the rest of the group's credits: the tracks' shared list, plus this track's recommended classes
+        optsLeft = optsLeft.filter((x) => !u.tracks.includes(x.section) || (x.section === track && x.recommended));
       }
       const opts2 = optsLeft.map((o) => ({ ...o, prereqs: o.planPrereqs }));
       if (left > 0) chunksOf(left).forEach((c, k) => todo.push({ id: `${u.id}#${k}`, kind: 'choice', label: u.label, title: u.title, credits: c, unit: u, order: u.order + k / 100, planSem: u.planSem, options: opts2, minGrade: u.minGrade }));
@@ -536,7 +561,12 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   // (degree-size programs only: a minor's or certificate's sample plan is spread over a whole degree)
   const sequenced = programCredits(model) >= 60;
   let early = sequenced;
-  const sortKey = (a, b) => rank(a) - rank(b) || (a.planSem - b.planSem) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order);
+  // a page's own matriculation list can name classes its sample plan puts late: those keep the sample-plan
+  // order (the Apply step simply waits for them) instead of jumping ahead of earlier classes
+  const listedGate = gate.listed;
+  const sortKey = listedGate
+    ? (a, b) => (rank(b) === 0) - (rank(a) === 0) || (a.planSem - b.planSem) || rank(a) - rank(b) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order)
+    : (a, b) => rank(a) - rank(b) || (a.planSem - b.planSem) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order);
 
   while (todo.length && semesters.length < 40) {
     const before = new Set(done);
@@ -736,9 +766,12 @@ function gateSetup(model, todo, completed, opts) {
     }
   }
   const lower = (u) => u.kind !== 'course' || Number((u.code.match(/\d{4}/) || ['0'])[0]) < 3000;
-  const listed = program.applyPrereqs || program.gate?.codes;
+  // the page's own matriculation list (admissionInfo.before when it came from that section; a list read off
+  // the sample plan is no better than the sample-plan rule below)
+  const info = program.admissionInfo;
+  const listed = program.applyPrereqs || program.gate?.codes || (info?.beforeFrom === 'matriculation section' ? info.before : null);
   let set;
-  if (Array.isArray(listed) && listed.length) set = units.filter((u) => codesIn(u).some((c) => listed.includes(c)));
+  if (Array.isArray(listed) && listed.length) { set = units.filter((u) => codesIn(u).some((c) => listed.includes(c))); out.listed = true; }
   else if (firstGate < 99) set = units.filter((u) => (u.kind === 'course' || u.kind === 'choice') && u.planSem < firstGate && lower(u));
   else set = units.filter((u) => u.kind === 'course' && lower(u));
   void gatedUnits;
@@ -776,7 +809,10 @@ export function pickTrack(g, completed, need = choiceRemaining(g, completed), ch
   const cands = g.tracks.map((t, k) => {
     const opts = g.options.filter((o) => o.section === t);
     const doneCr = opts.filter((o) => optionDone(o, completed)).reduce((s, o) => s + o.credits, 0);
-    const leftCr = opts.filter((o) => !optionDone(o, completed)).reduce((s, o) => s + o.credits, 0);
+    // credits still to do: the track's required courses + its pick lists (advice and shared lists aren't required)
+    const req = opts.filter((o) => o.sub == null && !o.recommended && !o.shared);
+    const subCr = (g.subs || []).filter((sb) => sb.section === t).reduce((s, sb) => s + (sb.credits || 0), 0);
+    const leftCr = req.filter((o) => !optionDone(o, completed)).reduce((s, o) => s + o.credits, 0) + subCr;
     return { t, k, n: opts.length, doneCr, cost: Math.max(need, leftCr) };
   }).filter((x) => x.n);
   if (cands.length < 2) return null;

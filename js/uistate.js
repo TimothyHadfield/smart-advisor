@@ -97,6 +97,10 @@ export function applyIndex(plan, phases) {
   const sems = plan?.semesters || [];
   if (!sems.length) return -1;
   const list = Array.isArray(phases) ? phases : Array.isArray(plan?.phases) ? plan.phases : null;
+  // js/phases.js planPhases: { kind: 'milestone', gate: 'admission', at } sits just before semester `at`
+  const stone = list?.find((ph) => ph?.kind === 'milestone' && ph.gate === 'admission');
+  if (stone) return Number.isInteger(stone.at) && stone.at >= 0 && stone.at < sems.length ? stone.at : -1;
+  if (list?.some((ph) => ph?.kind === 'milestone' || ph?.kind === 'semesters')) return -1;
   if (list?.length) {
     const prog = list.find((ph) => !isPre(ph?.name ?? ph?.key ?? ph?.phase ?? ph?.id) && !/apply/i.test(String(ph?.name ?? ph?.key ?? ph?.phase ?? '')));
     const hasPre = list.some((ph) => isPre(ph?.name ?? ph?.key ?? ph?.phase ?? ph?.id));
@@ -119,4 +123,35 @@ export function applyIndex(plan, phases) {
 export function tracksOf(g) {
   if (!g?.tracks) return [];
   return g.tracks.filter((t) => (g.options || []).some((o) => o.section === t));
+}
+
+// Every milestone row the plan screen shows, as [{ at, gate }] sorted by semester index: program admission
+// ("Apply") and University Advanced Standing. A milestone at the very start or past the end is not shown.
+export function milestonesOf(plan, phases) {
+  const n = plan?.semesters?.length || 0;
+  const list = Array.isArray(phases) ? phases : [];
+  const out = list.filter((ph) => ph?.kind === 'milestone' && Number.isInteger(ph.at) && ph.at > 0 && ph.at < n)
+    .map((ph) => ({ at: ph.at, gate: ph.gate }));
+  if (!out.some((m) => m.gate === 'admission')) { const at = applyIndex(plan, phases); if (at > 0) out.push({ at, gate: 'admission' }); }
+  // admission first when both fall before the same semester
+  return out.sort((a, b) => a.at - b.at || (a.gate === 'admission' ? -1 : 1));
+}
+
+// What a class needs besides other classes, for the class sheet: the catalog's own words (gate text, then
+// any other prerequisite words), else plain names of the gates. ["Formal Acceptance into ...", "University Advanced Standing"]
+const GATE_NAME = { admission: 'Acceptance into the program', 'advanced-standing': 'University Advanced Standing' };
+const tidy = (w) => String(w || '').replace(/^[\s(,;]+|[\s),;.]+$/g, '').replace(/\s+/g, ' ').trim();
+export function needsOf(course = {}, gates = []) {
+  const out = [];
+  const has = (w) => out.some((x) => x.toLowerCase().includes(w.toLowerCase()));
+  const add = (w) => { const t = tidy(w); if (t && !has(t)) out.push(t); };
+  if (course.gateText) add(course.gateText);
+  for (const w of course.prereqWords || []) add(w);
+  for (const g of gates || []) {
+    const name = GATE_NAME[g];
+    if (!name) continue;
+    const covered = g === 'admission' ? out.some((x) => /accept|admi|matricul/i.test(x)) : out.some((x) => /advanced standing/i.test(x));
+    if (!covered) out.push(name);
+  }
+  return out;
 }

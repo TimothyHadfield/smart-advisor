@@ -1,7 +1,7 @@
 // js/uistate.js: ?p= links vs the saved plan, first visit, Clear taken + Undo, labels, links, Apply row.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
-import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, applyIndex, tracksOf } from '../js/uistate.js';
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, applyIndex, tracksOf, milestonesOf, needsOf } from '../js/uistate.js';
 
 const group = (id) => (/minor/.test(id) ? 'minor' : 'major');
 const SAVED = ['electrical-engineering-bs', 'mathematics-minor'];
@@ -84,4 +84,26 @@ test('tracksOf: only tracks that have courses', () => {
   const g = { tracks: ['A Track', 'Includes 36 credits', 'B Track'], options: [{ section: 'A Track' }, { section: 'B Track' }] };
   assert.deepEqual(tracksOf(g), ['A Track', 'B Track']);
   assert.deepEqual(tracksOf({}), []);
+});
+
+test('applyIndex + milestonesOf read js/phases.js planPhases (milestone { gate, at })', () => {
+  const plan = { semesters: [{ term: 'a' }, { term: 'b' }, { term: 'c' }, { term: 'd' }, { term: 'e' }] };
+  const phases = [
+    { kind: 'semesters', phase: 'before', from: 0, to: 1 }, { kind: 'milestone', gate: 'advanced-standing', at: 2 },
+    { kind: 'semesters', phase: 'before', from: 2, to: 2 }, { kind: 'milestone', gate: 'admission', at: 3 },
+    { kind: 'semesters', phase: 'program', from: 3, to: 4 },
+  ];
+  assert.equal(applyIndex(plan, phases), 3);
+  assert.deepEqual(milestonesOf(plan, phases), [{ at: 2, gate: 'advanced-standing' }, { at: 3, gate: 'admission' }]);
+  assert.equal(applyIndex(plan, [{ kind: 'semesters', phase: 'all', from: 0, to: 4 }]), -1, 'no admission step');
+  assert.deepEqual(milestonesOf(plan, [{ kind: 'semesters', phase: 'all', from: 0, to: 4 }]), []);
+});
+
+test('needsOf: the catalog own words for gates (ECE 4900 2025-26), else plain gate names', () => {
+  const ece4900 = { prereqText: 'University Advanced Standing, Formal Acceptance into the Electrical or Computer Engineering Programs, and Senior Standing recommended.', prereqWords: ['University Advanced Standing', 'Formal Acceptance into the Electrical or Computer Engineering Programs'], gate: 'admission', gateText: 'Formal Acceptance into the Electrical or Computer Engineering Programs,' };
+  assert.deepEqual(needsOf(ece4900, ['admission', 'advanced-standing']), ['Formal Acceptance into the Electrical or Computer Engineering Programs', 'University Advanced Standing']);
+  const ece3740 = { gateText: '(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)', prereqWords: ['(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program', 'Departmental Approval)', 'University Advanced Standing'] };
+  assert.deepEqual(needsOf(ece3740, ['admission', 'advanced-standing']), ['Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval', 'University Advanced Standing']);
+  assert.deepEqual(needsOf({}, ['admission']), ['Acceptance into the program']);
+  assert.deepEqual(needsOf({}, []), []);
 });

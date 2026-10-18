@@ -7,7 +7,7 @@ import { initAccount } from './account.js';
 import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
 import { termInfo, defaultTerm, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
-import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, applyIndex, tracksOf } from './uistate.js';
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf } from './uistate.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -583,8 +583,9 @@ function renderLegend(plan) {
 function renderPlan(plan) {
   const n = plan.semesters.length;
   const first = progParts[0]?.program || model.program;
-  // needs program admission: the program says so, or a class in it is gated (newer data)
-  const gated = !!first.admission || model.program.requirements.some((r) => r.gate) || Object.values(model.program.courses || {}).some((c) => c?.gate);
+  // needs program admission: the planner found an Apply step still ahead (gated classes, the page's
+  // admission section), or the program is flagged as admission-only
+  const gated = plan.admission ? !plan.admission.admitted : !!first.admission;
   const tracks = model.units.filter((u) => u.kind === 'choice' && tracksOf(u).length > 1);
   const completed = doneSet();
   $('sum').innerHTML = (plan.graduation
@@ -597,13 +598,16 @@ function renderPlan(plan) {
       const t = mine && tracksOf(g).includes(mine) ? mine : (P.pickTrack ? P.pickTrack(g, completed) : null) || tracksOf(g)[0];
       return `<button type="button" class="chip" data-track="${esc(g.id)}" title="${esc(g.label)}"><span>${esc(shortName(t, 34))}</span>${mine ? '' : '<em>Guessed — pick yours</em>'}</button>`;
     }).join('');
-  // admission programs (when the planner marks phases): an "Apply" row before the program's semesters
+  // admission programs: an "Apply" row before the program's semesters; an "Advanced Standing" row before the
+  // first term the planner counts University Advanced Standing as reached (js/phases.js planPhases)
   let phases = null;
   try { phases = P.planPhases ? P.planPhases(plan) : null; } catch { phases = null; }
-  let at = applyIndex(plan, phases);
+  const stones = milestonesOf(plan, phases);
   const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
-  if (at < 0) at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone));
-  $('sems').innerHTML = plan.semesters.map((s, i) => (i === at ? '<div class="apply"><span>Apply</span></div>' : '') + `
+  if (!stones.length) { const at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone)); if (at > 0) stones.push({ at, gate: 'admission' }); }
+  const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
+  const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span></div>`).join('');
+  $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
     <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
@@ -768,17 +772,29 @@ function openClass({ node, item }) {
   if (code) {
     const pre = Object.entries(PRE).filter(([k]) => c[k]).map(([k, label]) => [label, c[k]]);
     if (!pre.length && c.coreqs?.length) pre.push(['With', c.coreqs.join(', ')]);
-    rows.push(...(pre.length ? pre : [['Before', 'None listed']]));
+    // the grade the prerequisites need, when the catalog line states one somewhere the text doesn't show
+    const pb = pre.find(([l]) => l === 'Before');
+    if (pb && c.prereqMinGrade && !/grade|or higher|or better/i.test(pb[1])) pb[1] += ` (${c.prereqMinGrade} or higher)`;
+    // gates (program acceptance, University Advanced Standing): the catalog's own words
+    const gl = u?.gates?.[code] || (item?.gate ? [item.gate] : []);
+    const needs = needsOf(c, gl);
+    rows.push(...(pre.length ? pre : [['Before', needs.length ? 'No classes listed' : 'None listed']]));
+    // (not when the Before line already says exactly that and nothing else)
+    const same = pb && needs.length === 1 && pb[1].replace(/[\s.,;()]+/g, ' ').trim() === needs[0].replace(/[\s.,;()]+/g, ' ').trim();
+    if (needs.length && !same) rows.push(['Needs', needs.join(' · ')]);
   }
   const min = opt?.minGrade ?? req?.minGrade ?? c.minGrade;
   if (min) rows.push(['Grade', `${min} or higher`]);
   // why it's here: the planner's answer, else the catalog text, else the requirement's name
   let why = null;
   try { why = P.requirementFor ? P.requirementFor(model, code || u?.id) : null; } catch { why = null; }
-  const whyText = typeof why === 'string' ? why : why?.src || why?.name || why?.label
-    || opt?.src || req?.src
+  const src = opt?.src || req?.src || null;
+  const whyText = typeof why === 'string' ? why : why?.why || why?.name || why?.label
+    || src
     || [g ? `${g.label} · ${pickLabel(g.pick)}` : kind === 'placeholder' ? u?.label : null, req?.area].filter(Boolean).join(' — ');
   if (whyText) rows.push(['Why', whyText + (part && progParts.length > 1 ? ` (${part.program.name})` : '')]);
+  // the catalog lines this requirement came from
+  if (src && src !== whyText) rows.push(['Catalog', src]);
   if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
   else if (kind === 'placeholder' && u?.title) rows.push(['Note', u.title]);
   $('clsFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');

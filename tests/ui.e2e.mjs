@@ -147,3 +147,25 @@ test('hold a box: the class sheet opens and the box is not marked taken; a chose
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+test('EE 2025-26: Apply + Advanced Standing rows in the plan; ECE 4900\'s class sheet shows both gates', async () => {
+  const p = await page({ plan: { programs: ['electrical-engineering-bs'], catalogYear: '2025-2026' }, done: {} });
+  await p.goto(APP);
+  await p.waitForSelector('.box[data-id="MATH 1210"]');
+  await p.click('#tabs button[data-tab="plan"]');
+  assert.equal(await p.textContent('#sems .apply[data-gate="admission"]'), 'Apply');
+  assert.ok(await p.$('#sems .apply[data-gate="advanced-standing"]'), 'Advanced Standing row');
+  // the Apply row comes after ECE 2250's semester and before ECE 3740's
+  const order = await p.$$eval('#sems > *', (els) => els.map((e) => (e.classList.contains('apply') ? e.dataset.gate : [...e.querySelectorAll('li')].map((l) => l.dataset.unit).join(','))));
+  const at = (re) => order.findIndex((x) => re.test(x));
+  assert.ok(at(/ECE 2250/) < at(/^admission$/) && at(/^admission$/) < at(/ECE 3740/), JSON.stringify(order));
+  assert.match(await p.textContent('#sum'), /Requires admission/);
+  await p.click('#sems li[data-unit="ECE 4900"]');
+  await p.waitForSelector('#clsDlg[open]');
+  const facts = await p.textContent('#clsFacts');
+  assert.match(facts, /Needs.*Formal Acceptance into the Electrical or Computer Engineering Programs/);
+  assert.match(facts, /University Advanced Standing/);
+  assert.match(facts, /Catalog.*Discipline Core Requirements/);
+  assert.deepEqual(p.errors, []);
+  await p.context().close();
+});

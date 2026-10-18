@@ -13,12 +13,20 @@ function undergradText(t) {
   return s.replace(/\bGraduate course:.*$/is, '');
 }
 
-// Gates a course needs, from the data's own `gate` field when it has one (sa-data parser), else from the
-// prerequisite text. Returns a list: [] | ['admission'] | ['advanced-standing'] | both.
+// Gates a course needs: the data's own `gate` field (requirement row or course, from the parser) plus what
+// the prerequisite text says. The parser stores one gate per course, so "Acceptance into X and University
+// Advanced Standing" (ECE 4900, 2025-26) keeps both from the text; a gate set to null/'' means none.
+// Returns a list: [] | ['admission'] | ['advanced-standing'] | both.
 // An acceptance clause written as an alternative to a course ("Admittance into X or MUSC 2500R") is not a gate.
 export function gatesOf(course = {}, row = {}) {
-  const own = row && 'gate' in row ? row.gate : course && 'gate' in course ? course.gate : undefined;
-  if (own !== undefined) return own ? (Array.isArray(own) ? own : [own]) : [];
+  const pick = (o) => (o && 'gate' in o ? o.gate : undefined);
+  const owns = [pick(row), pick(course)].filter((g) => g !== undefined);
+  if (owns.length && owns.every((g) => !g)) return [];
+  const out = [...new Set(owns.flatMap((g) => (Array.isArray(g) ? g : g ? [g] : [])))];
+  for (const g of textGates(course)) if (!out.includes(g)) out.push(g);
+  return out;
+}
+function textGates(course) {
   const t = undergradText(course?.prereqText);
   if (!t) return [];
   const out = [];
