@@ -3,7 +3,7 @@
  "name": "Environmental Science and Management, B.S.",
  "url": "https://catalog.uvu.edu/science/earth-science/environmental-science-management-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1050",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4"
   },
   {
    "type": "choice",
@@ -70,6 +77,7 @@
      "credits": 3
     }
    ],
+   "src": "General Education Requirements (31 credits) › American Institutions | 3",
    "notes": [
     "Distribution Courses:"
    ]
@@ -79,14 +87,16 @@
    "area": "General Education Requirements",
    "code": "ENVT 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENVT 1110 Introduction to Environmental Science and Management | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › BIOL 1010 General Biology | 3"
   },
   {
    "type": "course",
@@ -95,25 +105,29 @@
    "alts": [
     "GEOG 1300G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › GEOG 1400G Introduction to Human Geography | 3 or GEOG 1300G Survey of World Geography"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
    "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3",
    "recommended": [
     "GEOG 2000"
    ]
@@ -123,105 +137,120 @@
    "area": "Discipline Core Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › CHEM 1210 & CHEM 1215 Principles of Chemistry I and Principles of Chemistry I Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (55 credits) › CHEM 1210 & CHEM 1215 Principles of Chemistry I and Principles of Chemistry I Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › CHEM 1220 & CHEM 1225 Principles of Chemistry II and Principles of Chemistry II Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (55 credits) › CHEM 1220 & CHEM 1225 Principles of Chemistry II and Principles of Chemistry II Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 2040",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › STAT 2040 Principles of Statistics | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 2300 Environmental Lab and Sampling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 2710",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 2710 Careers in the Earth Sciences | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 2730",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 2730 Introduction to Soils | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 2560",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 2560 Environmental Health | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3270",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 3270 Environmental Microbiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3790",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 3790 Applied Hydrology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3850",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 3850 Environmental Policy and Law | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 4700",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › ENVT 4700 Ecological Foundations in Restoration | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEOG 3400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › GEOG 3400 Environmental Remote Sensing | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEOG 3600",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (55 credits) › GEOG 3600 Introduction to Geographic Information Systems | 4"
   },
   {
    "type": "course",
@@ -230,6 +259,7 @@
    "alts": [],
    "credits": 1,
    "repeat": 2,
+   "src": "Discipline Core Requirements (55 credits) › GEO 4800R Earth Science Seminar (Must be taken twice) | 1",
    "creditsEach": 0.5
   },
   {
@@ -253,10 +283,14 @@
       "PHYS 2210",
       "PHYS 2215"
      ],
-     "credits": 5
+     "credits": 5,
+     "notes": [
+      "MATH 1210 or PHYS 1100 is required for PHYS 2210 option PHYS 1100 is also a recommended course for ENVT 3790"
+     ]
     }
    ],
-   "text": "Complete one of the following combinations:"
+   "text": "Complete one of the following combinations:",
+   "src": "Discipline Core Requirements (55 credits) › Complete one of the following combinations: | 5"
   },
   {
    "type": "choice",
@@ -286,7 +320,8 @@
      "credits": 3
     }
    ],
-   "text": "Water and Pollution Management - Complete one of the following:"
+   "text": "Water and Pollution Management - Complete one of the following:",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Water and Pollution Management - Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -316,7 +351,8 @@
      "credits": 3
     }
    ],
-   "text": "Land and Environmental Management - Complete one of the following:"
+   "text": "Land and Environmental Management - Complete one of the following:",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Land and Environmental Management - Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -340,7 +376,8 @@
      "credits": 3
     }
    ],
-   "text": "Weather - Complete one of the following"
+   "text": "Weather - Complete one of the following",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Weather - Complete one of the following | 3"
   },
   {
    "type": "choice",
@@ -370,7 +407,8 @@
      "credits": 3
     }
    ],
-   "text": "Climate and Geography - Complete one of the following:"
+   "text": "Climate and Geography - Complete one of the following:",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Climate and Geography - Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -391,7 +429,10 @@
      "codes": [
       "BIOL 3700"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     },
     {
      "codes": [
@@ -400,7 +441,8 @@
      "credits": 3
     }
    ],
-   "text": "Biological Sciences - Complete one of the following"
+   "text": "Biological Sciences - Complete one of the following",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Biological Sciences - Complete one of the following | 3"
   },
   {
    "type": "choice",
@@ -440,7 +482,8 @@
      "credits": 4
     }
    ],
-   "text": "Geological Sciences - Complete one of the following"
+   "text": "Geological Sciences - Complete one of the following",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Geological Sciences - Complete one of the following | 4"
   },
   {
    "type": "choice",
@@ -470,7 +513,8 @@
      "credits": 3
     }
    ],
-   "text": "Integrated Sciences - Complete one of the following"
+   "text": "Integrated Sciences - Complete one of the following",
+   "src": "Interdisciplinary Core Requirements (22 credits) › Integrated Sciences - Complete one of the following | 3"
   },
   {
    "type": "choice",
@@ -644,7 +688,10 @@
      "codes": [
       "GEO 4500"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     },
     {
      "codes": [
@@ -747,13 +794,19 @@
      "codes": [
       "BIOL 3700"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     },
     {
      "codes": [
       "BIOL 3705"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     },
     {
      "codes": [
@@ -765,16 +818,23 @@
      "codes": [
       "BIOL 4000"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     },
     {
      "codes": [
       "MICR 3150"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "This course may have a prerequisite that is not in the program and may require you to take additional courses or additional approval."
+     ]
     }
    ],
    "text": "Choose 12 credits from the following list (at least 3 credits must be Upper Division):",
+   "src": "Elective Requirements (12 credits) › Choose 12 credits from the following list (at least 3 credits must be Upper Division): | 12 (Note: Credits used to satisfy core requirements or General Education requirements cannot double count as an elective.)",
    "notes": [
     "Or other electives approved by the advisor and chair"
    ],
@@ -1026,7 +1086,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -1047,7 +1108,13 @@
    "credits": 3,
    "prereqText": "BIOL 1620 with a C- or higher, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3705": {
    "title": "General Ecology Laboratory",
@@ -1058,20 +1125,34 @@
    "coreqText": "BIOL 3700",
    "coreqs": [
     "BIOL 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3800": {
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4000": {
    "title": "Freshwater Ecology",
    "credits": 4,
    "prereqText": "BIOL 1620 with a C- or higher in each, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 2050": {
    "title": "Field Botany",
@@ -1101,7 +1182,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -1119,7 +1204,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -1130,21 +1216,28 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1157,7 +1250,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENVT 1110": {
    "title": "Introduction to Environmental Science and Management",
@@ -1181,7 +1275,12 @@
      "CHEM 1215"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 2560": {
    "title": "Environmental Health",
@@ -1208,14 +1307,21 @@
    "title": "Environmental Toxicology",
    "credits": 3,
    "prereqText": "University Advanced Standing ( BIOL 1010 and CHEM 1210 Recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3210": {
    "title": "Water Quality and Reclamation",
    "credits": 4,
    "prereqText": "CHEM 1210 and University Advanced Standing",
    "prereqs": "CHEM 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3270": {
    "title": "Environmental Microbiology",
@@ -1238,51 +1344,76 @@
    "precoreqs": "ENVT 3300",
    "preco": [
     "ENVT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3330": {
    "title": "Water Resources Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3530": {
    "title": "Environmental Management and Reporting",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3550": {
    "title": "Site Investigation",
    "credits": 3,
    "prereqText": "University Advanced Standing; CHEM 1110 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3700": {
    "title": "Current Topics in Environmental Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 1110 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3750": {
    "title": "Land Use Planning",
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3770": {
    "title": "Natural Resources Management",
    "credits": 3,
    "prereqText": "BIOL 1010 and University Advanced Standing; ENVT 1110 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3790": {
    "title": "Applied Hydrology",
    "credits": 4,
    "prereqText": "( MATH 1050 or higher or PHYS 1100 ), ( GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050 ), GEOG 3600 and University Advanced Standing ( PHYS 2210 or PHYS 2010 highly recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3800": {
    "title": "Energy Use on Earth",
@@ -1308,7 +1439,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3850": {
    "title": "Environmental Policy and Law",
@@ -1320,7 +1456,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 4700": {
    "title": "Ecological Foundations in Restoration",
@@ -1357,7 +1498,12 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "Recommended pre- or corequisities: GEO 1010 ; GEOG 3400 ; ENVT 3270 ; ENVT 3790 ; ENVT 3850 .",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 4820R": {
    "title": "Geologic Environmental Internship",
@@ -1371,7 +1517,16 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "12 credit hours of any GEO",
+    "GEOG",
+    "ENVT courses",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 4950R": {
    "title": "Special Projects in Environmental Management",
@@ -1379,7 +1534,13 @@
    "creditsMax": 3,
    "prereqText": "Instructor Permission and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Permission",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -1433,7 +1594,12 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3080": {
    "title": "Earth Materials",
@@ -1443,7 +1609,9 @@
    "coreqText": "GEO 3085",
    "coreqs": [
     "GEO 3085"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3085": {
    "title": "Earth Materials Laboratory",
@@ -1453,7 +1621,9 @@
    "coreqText": "GEO 3080",
    "coreqs": [
     "GEO 3080"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3100": {
    "title": "Isotope Geochemistry",
@@ -1479,7 +1649,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3105": {
    "title": "Isotope Geochemistry Laboratory",
@@ -1505,7 +1680,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3200": {
    "title": "Geologic Hazards",
@@ -1528,7 +1708,12 @@
    "coreqText": "GEO 3205",
    "coreqs": [
     "GEO 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3205": {
    "title": "Geologic Hazards Laboratory",
@@ -1551,7 +1736,12 @@
    "coreqText": "GEO 3200",
    "coreqs": [
     "GEO 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3500": {
    "title": "Geomorphology",
@@ -1567,7 +1757,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3505": {
    "title": "Geomorphology Lab",
@@ -1587,13 +1782,20 @@
    "coreqText": "GEO 3500",
    "coreqs": [
     "GEO 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4500": {
    "title": "Sedimentary Geology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , and University Advanced Standing; CHEM 1210 or other chemistry recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4790": {
    "title": "Hydrogeology",
@@ -1620,14 +1822,24 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "( PHYS 2210 OR PHYS 2010 ), and GEOG 3600 highly recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4800R": {
    "title": "Earth Science Seminar",
    "credits": 0.5,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 1300G": {
    "title": "Survey of World Geography",
@@ -1646,7 +1858,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3300": {
    "title": "Biogeography",
@@ -1659,13 +1876,20 @@
      "GEOG 1000"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3400": {
    "title": "Environmental Remote Sensing",
    "credits": 4,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3440": {
    "title": "Geospatial Data Science",
@@ -1677,20 +1901,32 @@
      "STAT 2040"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3600": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3650": {
    "title": "Advanced Geographic Information Systems",
    "credits": 4,
    "prereqText": "GEOG 3600 and University Advanced Standing",
    "prereqs": "GEOG 3600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3700": {
    "title": "Wetland Studies",
@@ -1706,7 +1942,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3705": {
    "title": "Wetland Studies Laboratory",
@@ -1725,14 +1966,24 @@
    "coreqText": "GEOG 3700",
    "coreqs": [
     "GEOG 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4100": {
    "title": "Geospatial Field Methods",
@@ -1744,7 +1995,12 @@
      "MATH 1060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4820R": {
    "title": "GIS Internship",
@@ -1758,7 +2014,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "department approval",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1786,7 +2049,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "METO 1010": {
    "title": "Introduction to Meteorology",
@@ -1828,14 +2092,24 @@
      "GEO 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3150": {
    "title": "Microbial Ecology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2010": {
    "title": "College Physics I",
@@ -1897,7 +2171,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

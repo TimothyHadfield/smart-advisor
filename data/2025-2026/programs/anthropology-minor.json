@@ -3,7 +3,7 @@
  "name": "Anthropology, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/anthropology-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,20 +11,23 @@
    "area": "Complete the following courses:",
    "code": "ANTH 1010G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following courses: (18 credits) › ANTH 1010G Social Cultural Anthropology | 3"
   },
   {
    "type": "course",
    "area": "Complete the following courses:",
    "code": "ANTH 2880",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following courses: (18 credits) › ANTH 2880 Introduction to Anthropological Analysis | 3"
   },
   {
    "type": "placeholder",
    "area": "Complete the following courses:",
    "label": "Any anthropology course numbered 3000 or higher",
-   "credits": 12
+   "credits": 12,
+   "src": "Complete the following courses: (18 credits) › Any anthropology course numbered 3000 or higher | 12"
   }
  ],
  "gradPlan": [
@@ -93,7 +96,8 @@
      "ENGL 1010",
      "ENGH 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C+"
   },
   "ANTH 2880": {
    "title": "Introduction to Anthropological Analysis",

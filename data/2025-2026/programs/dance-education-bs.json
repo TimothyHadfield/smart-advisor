@@ -3,7 +3,7 @@
  "name": "Dance Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/dance/dance-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 125,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -76,6 +82,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -120,44 +127,51 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Distribution Courses: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, & Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Distribution Courses: › Personal, Professional, & Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2110 Orientation to Dance | 3"
   },
   {
    "type": "course",
@@ -166,105 +180,120 @@
    "alts": [
     "DANC 2270R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 1270R Ballet Technique and Theory I | 3 or DANC 2270R Ballet Technique and Theory II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1430R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 1430R Modern/Contemporary Dance Technique and Theory I/Semester I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1440R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 1440R Modern/Contemporary Dance Technique and Theory I/Semester II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1610R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (98 credits) › DANC 1610R Dance Conditioning | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2330",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2330 Improvisation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2340 Composition | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2430R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2430R Modern/Contemporary Dance Technique and Theory Level II /Semester I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2440R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2440R Modern/Contemporary Dance Technique and Theory Level II/Semester II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2560G Dance as a Cultural Practice I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2670",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 2670 Introduction to Laban Studies | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3140",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3140 Dance Production and Lighting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3160",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3160 Dance Accompaniment | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3330",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3330 Modern Dance Workshop | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3350 Choreography | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3400 Dance in the Elementary School | 2"
   },
   {
    "type": "course",
@@ -273,56 +302,64 @@
    "alts": [
     "DANC 3420R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3410R Modern/Contemporary Dance Technique and Theory Level III/ Semester I | 3 or DANC 3420R Modern/Contemporary Dance Technique and Theory Level III/ Semester II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3450 Modern/Contemporary Dance Teaching Methods | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3460R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3460R Synergy Dance Company | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3630 Dance as a Cultural Practice II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3680",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (98 credits) › DANC 3680 Dance Kinesiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 4350 Senior Capstone I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4360",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › DANC 4360 Senior Capstone II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › DANC 4430 Dance Teaching Practicum (Dance Education majors take DANC 4430 in place of EDSC 4200 .) | 3"
   },
   {
    "type": "choice",
@@ -389,6 +426,7 @@
     }
    ],
    "text": "Complete 2 courses from the following:",
+   "src": "Discipline Core Requirements (98 credits) › Complete 2 courses from the following: | 2",
    "notes": [
     "Depth Electives"
    ]
@@ -551,6 +589,7 @@
     }
    ],
    "text": "Complete 6 credits in either Category A, B, or C. Depth Electives cannot be repeated from Breadth Electives.",
+   "src": "Discipline Core Requirements (98 credits) › Complete 6 credits in either Category A, B, or C. Depth Electives cannot be repeated from Breadth Electives. | 6",
    "notes": [
     "Depth Elective A",
     "Depth Elective A: Depth Elective B",
@@ -564,70 +603,80 @@
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (98 credits) › EDSC 4990 Teacher Assessment Project | 2"
   }
  ],
  "gradPlan": [
@@ -882,7 +931,10 @@
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 1440R": {
    "title": "Modern/Contemporary Dance Technique and Theory I/Semester II",
@@ -911,7 +963,10 @@
    "credits": 1,
    "prereqText": "Previous Hip Hop Dance experience",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Previous Hip Hop Dance experience"
+   ]
   },
   "DANC 1610R": {
    "title": "Dance Conditioning",
@@ -942,7 +997,10 @@
    "credits": 3,
    "prereqText": "Intermediate equivalent skill level to be determined by audition.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
+   ]
   },
   "DANC 2330": {
    "title": "Improvisation",
@@ -966,7 +1024,10 @@
    "credits": 3,
    "prereqText": "by audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "by audition"
+   ]
   },
   "DANC 2440R": {
    "title": "Modern/Contemporary Dance Technique and Theory Level II/Semester II",
@@ -979,63 +1040,95 @@
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2560G": {
    "title": "Dance as a Cultural Practice I",
    "credits": 3,
    "prereqText": "Matriculation in any BFA or BS Dance major",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation in any BFA or BS Dance major"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation in any BFA or BS Dance major"
   },
   "DANC 2670": {
    "title": "Introduction to Laban Studies",
    "credits": 2,
    "prereqText": "DANC 2650R or Matriculation in BS Dance Education Program",
    "prereqs": "DANC 2650R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "DANC 2650R or Matriculation in BS Dance Education Program"
   },
   "DANC 2700R": {
    "title": "American Social Dance II",
    "credits": 1,
    "prereqText": "Instructor Approvall",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approvall"
+   ]
   },
   "DANC 2710R": {
    "title": "International Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2720R": {
    "title": "Latin Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2760R": {
    "title": "Ballroom Dance Company Back Up Team",
    "credits": 1,
    "prereqText": "By audition only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "By audition only"
+   ]
   },
   "DANC 3140": {
    "title": "Dance Production and Lighting",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3160": {
    "title": "Dance Accompaniment",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3270R": {
    "title": "Ballet Technique and Theory III",
@@ -1049,28 +1142,46 @@
    "credits": 2,
    "prereqText": "DANC 2340 and University Advanced Standing",
    "prereqs": "DANC 2340",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3350": {
    "title": "Choreography",
    "credits": 2,
    "prereqText": "DANC 3330 and University Advanced Standing",
    "prereqs": "DANC 3330",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3400": {
    "title": "Dance in the Elementary School",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3410R": {
    "title": "Modern/Contemporary Dance Technique and Theory Level III/ Semester I",
    "credits": 3,
    "prereqText": "By audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "By audition"
+   ]
   },
   "DANC 3420R": {
    "title": "Modern/Contemporary Dance Technique and Theory Level III/ Semester II",
@@ -1084,7 +1195,12 @@
    "credits": 3,
    "prereqText": "DANC 3400 and University Advanced Standing",
    "prereqs": "DANC 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3460R": {
    "title": "Synergy Dance Company",
@@ -1102,6 +1218,9 @@
     "DANC 3420R",
     "DANC 4410R",
     "DANC 4420R"
+   ],
+   "prereqWords": [
+    "Audition required"
    ]
   },
   "DANC 3600R": {
@@ -1109,7 +1228,10 @@
    "credits": 3,
    "prereqText": "Audition required",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition required"
+   ]
   },
   "DANC 3630": {
    "title": "Dance as a Cultural Practice II",
@@ -1122,42 +1244,64 @@
      "DANC 2560G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3680": {
    "title": "Dance Kinesiology",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3700R": {
    "title": "American Social Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3710R": {
    "title": "International Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3720R": {
    "title": "Latin Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3760R": {
    "title": "Ballroom Dance Ensemble",
    "credits": 2,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 4250R": {
    "title": "Repertory Ballet Ensemble",
@@ -1174,6 +1318,9 @@
     "DANC 4220R",
     "DANC 4230R",
     "DANC 4240R"
+   ],
+   "prereqWords": [
+    "Audition required"
    ]
   },
   "DANC 4350": {
@@ -1186,7 +1333,12 @@
      "DANC 3680"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4360": {
    "title": "Senior Capstone II",
@@ -1198,21 +1350,34 @@
      "DANC 4350"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4430": {
    "title": "Dance Teaching Practicum",
    "credits": 3,
    "prereqText": "DANC 3450 and University Advanced Standing",
    "prereqs": "DANC 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4760R": {
    "title": "Ballroom Dance Company Tour Team",
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "EDSC 1010": {
    "title": "Introduction to Education",
@@ -1223,14 +1388,26 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -1245,28 +1422,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -1279,7 +1480,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -1291,7 +1499,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -1309,7 +1524,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1322,7 +1540,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1351,7 +1570,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1363,7 +1586,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1375,7 +1602,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1387,7 +1615,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1399,7 +1628,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1420,7 +1650,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1433,7 +1668,49 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "ENGL 1010",
+   "DANC 2110",
+   "DANC 1430R",
+   "DANC 1610R",
+   "EDSC 1010",
+   "ENGL 2010",
+   "DANC 2330",
+   "DANC 2430R",
+   "DANC 2340"
+  ],
+  "gated": [
+   "DANC 2560G",
+   "DANC 2670",
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeLabels": [
+   "Quantitative Literacy",
+   "American Institutions",
+   "Physical Science",
+   "DANC 1440R",
+   "Depth Elective A, B, or C",
+   "Humanities Distribution",
+   "Social/Behavioral Science",
+   "Biology",
+   "Breadth Elective"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

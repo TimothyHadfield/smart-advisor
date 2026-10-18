@@ -3,7 +3,7 @@
  "name": "Art History, Minor",
  "url": "https://catalog.uvu.edu/arts/art-design/art-history-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "ARTH 2710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › ARTH 2710 Prehistoric Through Gothic Art History | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARTH 2720G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › ARTH 2720G Renaissance Through Contemporary Art History | 3"
   },
   {
    "type": "choice",
@@ -163,6 +165,7 @@
     }
    ],
    "text": "Complete 12 credits of any 3000 or 4000 level ARTH course",
+   "src": "Elective Requirements (12 credits) › Complete 12 credits of any 3000 or 4000 level ARTH course | 12",
    "notes": [
     "or any other advisor approved upper division courses"
    ],
@@ -231,7 +234,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3010": {
    "title": "History of Design and Visual Arts",
@@ -254,43 +262,61 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Art and Design Sophomore status)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3015": {
    "title": "Ancient Near Eastern Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3020": {
    "title": "Ancient Greek Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3025": {
    "title": "Roman Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3030": {
    "title": "Medieval Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3040": {
    "title": "Renaissance Art History",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3050": {
    "title": "Southern Baroque Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3055": {
    "title": "Northern Baroque Art History",
@@ -308,13 +334,20 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3060": {
    "title": "Nineteenth-Century Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3070": {
    "title": "Modern Art and Architecture History",
@@ -332,7 +365,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3080": {
    "title": "History of Architecture",
@@ -354,7 +392,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3090G": {
    "title": "Introduction to Non-Western Ancient Art",
@@ -376,7 +419,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3100": {
    "title": "History of American Art and Architecture",
@@ -398,14 +446,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3110": {
    "title": "The History of Illustration",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3120": {
    "title": "History of Contemporary Art",
@@ -427,7 +485,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3200": {
    "title": "The History of Photography",
@@ -439,7 +502,12 @@
      "ARTH 2720G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3300": {
    "title": "Introduction to Museum Studies",
@@ -452,7 +520,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3310": {
    "title": "Art Theory and Criticism",
@@ -471,14 +544,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3400": {
    "title": "Arts Management",
    "credits": 3,
    "prereqText": "ARTH 2720G and University Advanced Standing",
    "prereqs": "ARTH 2720G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 4000R": {
    "title": "Art History Seminar",
@@ -496,7 +579,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "6-credits upper-division ARTH",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

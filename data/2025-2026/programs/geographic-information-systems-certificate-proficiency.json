@@ -3,7 +3,7 @@
  "name": "Geographic Information Systems, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/geographic-information-systems-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "SURV 1220"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › GEOG 3400 Environmental Remote Sensing | 3 or SURV 1220 Remote Sensing and Photogrammetry"
   },
   {
    "type": "course",
@@ -22,7 +23,12 @@
    "alts": [
     "GIS 2800"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › GEOG 3600 Introduction to Geographic Information Systems | 4 or GIS 2800 Geographic Information Systems",
+   "creditsBy": {
+    "GEOG 3600": 4,
+    "GIS 2800": 3
+   }
   },
   {
    "type": "course",
@@ -31,7 +37,12 @@
    "alts": [
     "GEOG 3650"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › GIS 3620 Advanced Geographic Information Systems | 3 or GEOG 3650 Advanced Geographic Information Systems",
+   "creditsBy": {
+    "GIS 3620": 3,
+    "GEOG 3650": 4
+   }
   },
   {
    "type": "course",
@@ -40,7 +51,8 @@
    "alts": [
     "SURV 2100"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › GEOG 4100 Geospatial Field Methods | 3 or SURV 2100 Mapping From Field to Finish"
   },
   {
    "type": "choice",
@@ -109,6 +121,7 @@
     }
    ],
    "text": "Complete 6 credits from the following courses:",
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › Complete 6 credits from the following courses: | 6",
    "notes": [
     "Or any courses with the following prefix: GEOG, SURV, GIS, EGDT subject to department approval"
    ],
@@ -160,7 +173,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "EGDT 1040": {
    "title": "Fundamentals of Technical Engineering Drawing",
@@ -170,7 +186,9 @@
    "title": "Environmental Remote Sensing",
    "credits": 3,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3440": {
    "title": "Geospatial Data Science",
@@ -182,20 +200,32 @@
      "STAT 2040"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3600": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3650": {
    "title": "Advanced Geographic Information Systems",
    "credits": 4,
    "prereqText": "GEOG 3600 and University Advanced Standing",
    "prereqs": "GEOG 3600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4100": {
    "title": "Geospatial Field Methods",
@@ -207,7 +237,12 @@
      "MATH 1060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4820R": {
    "title": "GIS Internship",
@@ -221,7 +256,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "department approval",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4890R": {
    "title": "Student Research in Geography",
@@ -229,7 +271,14 @@
    "creditsMax": 4,
    "prereqText": "Junior or Senior standing, instructor approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 2800": {
    "title": "Geographic Information Systems",
@@ -240,7 +289,12 @@
    "credits": 3,
    "prereqText": "GIS 2800 and University Advanced Standing",
    "prereqs": "GIS 2800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 3630": {
    "title": "Geographic Information Systems Application Development",
@@ -253,14 +307,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SURV 1220": {
    "title": "Remote Sensing and Photogrammetry",
    "credits": 3,
    "prereqText": "MAT 1010 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1340": {
    "title": "Fundamentals of Boundary Law",
@@ -283,7 +347,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 3210": {
    "title": "Advanced Photogrammetry",
@@ -298,7 +367,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate math placement score",
+    "University Advanced Standing",
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 3250": {
    "title": "Geodesy",
@@ -316,7 +392,22 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "SURV 1220",
+   "SURV 2100",
+   "SURV 3210",
+   "SURV 3250"
+  ]
  }
 }

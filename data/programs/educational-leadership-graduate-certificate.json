@@ -3,7 +3,7 @@
  "name": "Educational Leadership, Graduate Certificate",
  "url": "https://catalog.uvu.edu/education/education-graduate-programs/educational-leadership-graduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "",
    "code": "EDLE 6120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6120 Personal Leadership and Organizational Design | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6130 School Operations and Management-Finance/Law/Safety | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6140 Instructional Leadership | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6150 School Operations and Management-Communication/Planning/HR/Evaluation | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6160 Developing Positive School and Community Culture | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6170 Leading Change/Innovation/Educational Entrepreneurship | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "EDLE 6960R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Complete the following › EDLE 6960R Clinical Portfolio | 3"
   }
  ],
  "gradPlan": [
@@ -115,42 +122,81 @@
    "credits": 3,
    "prereqText": "Admission to Master of Education in K-12 Education Leadership or Graduate Certificate leading to USBE K-12 Education Leadership License Area of Concentration, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Education in K-12 Education Leadership or Graduate Certificate leading to USBE K-12 Education Leadership License Area of Concentration",
+    "permission of the graduate program director"
+   ]
   },
   "EDLE 6130": {
    "title": "School Operations and Management-Finance/Law/Safety",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6140": {
    "title": "Instructional Leadership",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6150": {
    "title": "School Operations and Management-Communication/Planning/HR/Evaluation",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6160": {
    "title": "Developing Positive School and Community Culture",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6170": {
    "title": "Leading Change/Innovation/Educational Entrepreneurship",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6960R": {
    "title": "Clinical Portfolio",
@@ -158,9 +204,29 @@
    "creditsMax": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   }
  },
  "admission": true,
- "admissionNote": "and acceptance into the program."
+ "admissionNote": "and acceptance into the program.",
+ "admissionInfo": {
+  "note": "and acceptance into the program.",
+  "text": "Earned M.Ed. and acceptance into the program.",
+  "before": [],
+  "gated": [
+   "EDLE 6130",
+   "EDLE 6140",
+   "EDLE 6150",
+   "EDLE 6160",
+   "EDLE 6170",
+   "EDLE 6960R"
+  ]
+ }
 }

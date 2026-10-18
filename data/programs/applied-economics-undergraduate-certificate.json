@@ -3,7 +3,7 @@
  "name": "Applied Economics, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/business/finance-economics/applied-economics-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 2020 Principles of Economics II | 3"
   },
   {
    "type": "course",
@@ -27,28 +29,36 @@
    "alts": [
     "MATH 1210"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2240 Business Quantitative Analysis | 3 or MATH 1210 Calculus I",
+   "creditsBy": {
+    "MGMT 2240": 3,
+    "MATH 1210": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 3020 Managerial Economics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 3370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 3370 Economic Modeling and Data Analytics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 3470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 3470 Principles of Applied Econometrics | 3"
   },
   {
    "type": "choice",
@@ -120,7 +130,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete three hours from the following recommended courses:"
+   "text": "Complete three hours from the following recommended courses:",
+   "src": "Elective Requirements (3 credits) › Complete three hours from the following recommended courses: | 3"
   }
  ],
  "gradPlan": [
@@ -250,35 +261,62 @@
      "ECON 2020"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3030": {
    "title": "Intermediate Macroeconomics",
    "credits": 3,
    "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "ECON 3050G": {
    "title": "International Economics",
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3060": {
    "title": "Money and Banking",
    "credits": 3,
    "prereqText": "ECON 2020 and University Advanced Standing",
    "prereqs": "ECON 2020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3070": {
    "title": "Behavioral Economics",
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3370": {
    "title": "Economic Modeling and Data Analytics",
@@ -290,56 +328,100 @@
      "ECON 2020"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3400": {
    "title": "Health Economics",
    "credits": 3,
    "prereqText": "ECON 3370 and University Advanced Standing",
    "prereqs": "ECON 3370",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3470": {
    "title": "Principles of Applied Econometrics",
    "credits": 3,
    "prereqText": "ECON 3370 and University Advanced Standing",
    "prereqs": "ECON 3370",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 4100": {
    "title": "Analysis of Financial Institutions and Markets",
    "credits": 3,
    "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "ECON 4150": {
    "title": "Public Finance",
    "credits": 3,
    "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "FIN 4100": {
    "title": "Management of Financial Institutions",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4180": {
    "title": "International Finance",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4570R": {
    "title": "Advanced Topics in Finance",
    "credits": 3,
    "prereqText": "FIN 3100 , Instructor Approval, and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -361,7 +443,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -374,7 +460,16 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "ECON 3030",
+   "ECON 4100",
+   "ECON 4150"
+  ]
  }
 }

@@ -3,7 +3,7 @@
  "name": "Mechatronics Engineering Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/technology-management/mechatronics-engineering-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 61,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (16 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "placeholder",
@@ -22,7 +27,8 @@
    "credits": 3,
    "recommended": [
     "ENGL 2100"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › Humanities (ENGL 2100 Recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -31,7 +37,8 @@
    "credits": 3,
    "recommended": [
     "ECON 1010"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › Social Science (ECON 1010 Recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -40,7 +47,8 @@
    "credits": 3,
    "recommended": [
     "PHYS 1010"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › Physical Science (PHYS 1010 Recommended) | 3"
   },
   {
    "type": "course",
@@ -49,154 +57,180 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (16 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1071",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › EGDT 1071 3 Dimensional Modeling--Solidworks | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › MECH 1010 Fundamentals of Mechatronics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › MECH 1200 Electronics in Automation Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1205",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 1205 Electronics in Automation Design Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1300",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (45 credits) › MECH 1300 Industrial Wiring for Mechatronic Systems | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1305",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 1305 Industrial Wiring for Mechatronic Systems Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2200 Semiconductors in Mechatronic Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2205",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2205 Semiconductors in Mechatronic Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2300 Microcontroller Architecture and Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2305",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2305 Microcontroller Architecture and Programming Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2400 Mechanical Components | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2500",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2500 Introduction to PLCs in Mechatronic Design | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2505",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2505 Introduction to PLCs in Mechatronic Design Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2510",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2510 Fundamentals of Automation Controls | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2515",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2515 Fundamentals of Automation Controls Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2550",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2550 Advanced PLC Programming and Applications | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2555",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2555 Advanced PLC Programming and Applications Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2600",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2600 Introduction to Fluid Power Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2605",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2605 Introduction to Fluid Power Systems Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2700",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2700 Industrial Motor Control Mechatronic Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2705",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › MECH 2705 Industrial Motor Control Mechatronic Systems Laboratory | 2"
   }
  ],
  "gradPlan": [
@@ -360,7 +394,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -372,7 +409,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -384,7 +422,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MECH 1010": {
    "title": "Fundamentals of Mechatronics",

@@ -3,7 +3,7 @@
  "name": "Collaborative Piano-Vocal Coaching, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/collaborative-piano-vocal-coaching-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -11,48 +11,55 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 2450R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2450R Private Lessons II (Piano) | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2450R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2450R Private Lessons II (Voice) | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2001",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2001 Diction for Singers I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2002",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2002 Diction for Singers II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3005",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3005 Vocal Literature I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3006",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3006 Vocal Literature II | 1"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "GER 1010 , 1020 or FREN 1010 , 1020",
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (16 credits) › GER 1010 , 1020 or FREN 1010 , 1020 | 8"
   }
  ],
  "gradPlan": [
@@ -133,14 +140,29 @@
    "credits": 1,
    "prereqText": "( MUSC 1120 or department audition) and University Advanced Standing",
    "prereqs": "MUSC 1120",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3006": {
    "title": "Vocal Literature II",
    "credits": 1,
    "prereqText": "MUSC 3005 and University Advanced Standing",
    "prereqs": "MUSC 3005",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete entrance audition with music department faculty.",
+  "before": [],
+  "gated": []
  }
 }

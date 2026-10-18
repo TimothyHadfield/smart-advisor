@@ -3,7 +3,7 @@
  "name": "Programmer, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/programmer-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 1400 Fundamentals of Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 1410 Object Oriented Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 2300 Discrete Mathematical Structures I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 2600 Computer Networks I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › CS 2810 Computer Organization and Architecture | 3"
   },
   {
    "type": "course",
@@ -55,7 +61,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -122,7 +133,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 9 credits from the following courses (Must be approved by CSE Department. See CSE adviser):"
+   "text": "Choose 9 credits from the following courses (Must be approved by CSE Department. See CSE adviser):",
+   "src": "Elective Requirements (9 credits) › Choose 9 credits from the following courses (Must be approved by CSE Department. See CSE adviser): | 9"
   }
  ],
  "gradPlan": [
@@ -191,7 +203,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -278,7 +293,10 @@
    "creditsMax": 8,
    "prereqText": "Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval"
+   ]
   },
   "CS 3060": {
    "title": "Operating Systems Theory",
@@ -294,21 +312,41 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "If a computer science or software engineering major",
+    "matriculation to computer science or software engineering",
+    "If a computer engineering major"
+   ],
+   "gate": "admission",
+   "gateText": "also CS 2810 and matriculation to computer science or software engineering"
   },
   "CS 3250": {
    "title": "Java Software Development",
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3260": {
    "title": "CsharpNET Software Development",
    "credits": 3,
    "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to computer science or software engineering and University Advanced Standing"
   },
   "CS 3370": {
    "title": "C Plus Plus Software Development",
@@ -326,7 +364,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering"
   },
   "CS 3520": {
    "title": "Database Theory",
@@ -338,7 +382,12 @@
      "CS 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -352,7 +401,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",
@@ -360,5 +412,14 @@
    "prereqText": "INFO 1120 recommended",
    "prereqs": null
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "CS 3060",
+   "CS 3250",
+   "CS 3260",
+   "CS 3370"
+  ]
  }
 }

@@ -3,7 +3,7 @@
  "name": "Facilities Management, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/construction-technologies/facilities-management-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 64,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -43,62 +48,71 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "General Education Requirements (12 credits) › Complete one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Biology or Physical Science Distribution Course",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Any approved Biology or Physical Science Distribution Course | 3 (Note: Recommended: PHYS 1010 Elementary Physics)"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "TECH 2000G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › TECH 2000G Technology and Human Life | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1150",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 1150 Construction Safety | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1820",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › ART 1820 Interior Space Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 1645",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › DGM 1645 Mixed Reality Essentials | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › BIT 1010 Building Codes | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 1010 Introduction to Construction Management | 3"
   },
   {
    "type": "course",
@@ -107,7 +121,12 @@
    "alts": [
     "CMGT 2810R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 1190 Concrete and Framing Lab | 3 or CMGT 2810R Internship",
+   "creditsBy": {
+    "CMGT 1190": 3,
+    "CMGT 2810R": 1
+   }
   },
   {
    "type": "course",
@@ -116,77 +135,92 @@
    "alts": [
     "CMGT 2810R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 1220 Finishing Lab | 3 or CMGT 2810R Internship",
+   "creditsBy": {
+    "CMGT 1220": 3,
+    "CMGT 2810R": 1
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 1020 Construction Materials and Methods I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 2010 Construction Materials and Methods II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2035",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 2035 Construction Computer Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › CMGT 2080 Principles of Construction Scheduling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FAC 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › FAC 1010 Survey of Facilities Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › EGDT 1020 3D Architectural Modeling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › EGDT 1050 Intro to 3D Printing and Fabrication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (52 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 3,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Core Requirements (52 credits) › Complete any 1000-level, or higher, courses | 3"
   }
  ],
  "gradPlan": [
@@ -385,7 +419,10 @@
    "creditsMax": 6,
    "prereqText": "Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval"
+   ]
   },
   "DGM 1645": {
    "title": "Mixed Reality Essentials",
@@ -408,7 +445,8 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -422,7 +460,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "FAC 1010": {
    "title": "Survey of Facilities Management",
@@ -439,7 +480,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -451,7 +496,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",

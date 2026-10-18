@@ -3,7 +3,7 @@
  "name": "Information Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/information-technology-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -13,28 +13,36 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 1510 Introduction to System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 1600 Computer Architecture and Systems Software | 3"
   },
   {
    "type": "choice",
@@ -100,7 +108,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete 6 credits from the following:"
+   "text": "Complete 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following: | 6"
   }
  ],
  "gradPlan": [
@@ -148,7 +157,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 2600": {
    "title": "Computer Networks I",
@@ -197,7 +209,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "INFO 1120": {
    "title": "Information Systems and Technology Fundamentals",
@@ -260,7 +275,10 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Information Systems and Technology, Minor",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/information-systems-technology-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -13,14 +13,16 @@
    "alts": [
     "CS 1400"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › INFO 1200 Computer Programming I for IS IT | 3 or CS 1400 Fundamentals of Programming"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
@@ -29,21 +31,24 @@
    "alts": [
     "CS 2810"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › IT 1600 Computer Architecture and Systems Software | 3 or CS 2810 Computer Organization and Architecture"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › IT 2600 Data Communication Fundamentals | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 12 credits at the 3000 or 4000 level from INFO, IT, or CYBR.",
    "credits": 12,
-   "text": "Complete 12 credits at the 3000 or 4000 level from INFO, IT, or CYBR."
+   "text": "Complete 12 credits at the 3000 or 4000 level from INFO, IT, or CYBR.",
+   "src": "Elective Requirements (12 credits) › Complete 12 credits at the 3000 or 4000 level from INFO, IT, or CYBR. | 12"
   }
  ],
  "gradPlan": [
@@ -112,7 +117,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 2810": {
    "title": "Computer Organization and Architecture",

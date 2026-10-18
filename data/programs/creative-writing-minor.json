@@ -3,7 +3,7 @@
  "name": "Creative Writing, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/creative-writing-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "ENGL 2250H"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Minor Prerequisite: › ENGL 2250 Introduction to Creative Writing | 3 or ENGL 2250H Introduction to Creative Writing Honors"
   },
   {
    "type": "choice",
@@ -67,14 +68,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete three from the following:"
+   "text": "Complete three from the following:",
+   "src": "Discipline Core Requirements (21 credits) › Minor Prerequisite: › Complete three from the following: | 9"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4120R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following: › ENGL 4120R Studies in Literary Genres | 3 (Note: Course may be repeated with a different topic.)"
   },
   {
    "type": "choice",
@@ -89,13 +92,19 @@
      "codes": [
       "ENGL 3470R"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Course may be repeated with a different topic."
+     ]
     },
     {
      "codes": [
       "ENGL 3480R"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Course may be repeated with a different topic."
+     ]
     },
     {
      "codes": [
@@ -107,10 +116,14 @@
      "codes": [
       "ENGL 4120R"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Course may be repeated with a different topic."
+     ]
     }
    ],
-   "text": "Complete two of the following:"
+   "text": "Complete two of the following:",
+   "src": "Discipline Core Requirements (21 credits) › Complete the following: › Complete two of the following: | 6"
   }
  ],
  "gradPlan": [
@@ -317,7 +330,8 @@
      "ENGL 1010",
      "ENGL 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ENGL 2250H": {
    "title": "Introduction to Creative Writing Honors",
@@ -328,7 +342,8 @@
      "ENGL 1010",
      "ENGL 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ENGL 3420": {
    "title": "Intermediate Fiction Writing",
@@ -341,7 +356,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3430": {
    "title": "Play Writing for Creative Writers",
@@ -354,7 +375,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3440": {
    "title": "Intermediate Poetry Writing",
@@ -367,7 +394,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3450": {
    "title": "Intermediate Creative Nonfiction Writing",
@@ -380,21 +413,41 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3470R": {
    "title": "Popular Genre Writing",
    "credits": 3,
    "prereqText": "English 2250 or English 2250H with a C- or better, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "English 2250 or English 2250H with a C- or better",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3480R": {
    "title": "Creative Writing Craft and Theory",
    "credits": 3,
    "prereqText": "English 2250 or English 2250H with a C- or better, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "English 2250 or English 2250H with a C- or better",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4120R": {
    "title": "Studies in Literary Genres",
@@ -406,28 +459,49 @@
      "ENGL 2250H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4420": {
    "title": "Advanced Fiction Writing",
    "credits": 3,
    "prereqText": "ENGL 3420 and University Advanced Standing",
    "prereqs": "ENGL 3420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4440": {
    "title": "Advanced Poetry Writing",
    "credits": 3,
    "prereqText": "ENGL 3440 and University Advanced Standing",
    "prereqs": "ENGL 3440",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4450": {
    "title": "Advanced Creative Nonfiction Writing",
    "credits": 3,
    "prereqText": "ENGL 3450 and University Advanced Standing",
    "prereqs": "ENGL 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4490": {
    "title": "Creative Writing Capstone",
@@ -445,7 +519,15 @@
      "ENGL 3090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "each with a C- or better",
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

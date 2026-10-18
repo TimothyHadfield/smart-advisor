@@ -3,7 +3,7 @@
  "name": "Hospitality Management, A.S.",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/hospitality-management-as/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
    ],
@@ -123,6 +130,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -132,37 +140,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3 (Note: COMM 1020 Public Speaking recommended)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "course",
@@ -171,35 +185,41 @@
    "alts": [
     "ECON 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ECON 1010 Economics as a Social Science | 3 or ECON 2010 Principles of Economics I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HM 1010 Introduction to Hospitality Industry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 1180",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HM 1180 Food and Beverage Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (21 credits) › MKTG 2200G Written Business Communication (B- or higher) | 3"
   },
   {
    "type": "course",
@@ -208,14 +228,20 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "choice",
@@ -234,6 +260,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (21 credits) › Complete one of the following: (Note: Students will be required to complete the Business Computer Proficiency exam with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency course with a score of 80 percent or higher.)",
    "notes": [
     "MyEducator"
    ],
@@ -244,7 +271,8 @@
    "area": "Elective Requirements",
    "label": "Complete nine hours of elective credits from HM, ACC, ECON, DGM, FIN, INFO, LEGL, MGMT, or MKTG courses.",
    "credits": 9,
-   "text": "Complete nine hours of elective credits from HM, ACC, ECON, DGM, FIN, INFO, LEGL, MGMT, or MKTG courses."
+   "text": "Complete nine hours of elective credits from HM, ACC, ECON, DGM, FIN, INFO, LEGL, MGMT, or MKTG courses.",
+   "src": "Elective Requirements (9 credits) › Complete nine hours of elective credits from HM, ACC, ECON, DGM, FIN, INFO, LEGL, MGMT, or MKTG courses. | 9"
   }
  ],
  "gradPlan": [
@@ -420,14 +448,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -440,7 +474,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -481,7 +516,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -493,7 +532,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -505,7 +548,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -517,7 +561,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -529,7 +574,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -542,7 +588,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -571,7 +620,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -584,7 +638,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -597,7 +656,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

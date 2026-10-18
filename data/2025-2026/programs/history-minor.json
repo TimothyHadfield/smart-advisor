@@ -3,7 +3,7 @@
  "name": "History, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/history-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -40,13 +40,15 @@
      "credits": 3
     }
    ],
-   "text": "Choose three from the following:"
+   "text": "Choose three from the following:",
+   "src": "Discipline Core Requirements (9 credits) › Choose three from the following: | 9"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any three upper division history courses",
-   "credits": 9
+   "credits": 9,
+   "src": "Elective Requirements (9 credits) › Any three upper division history courses | 9 (Note: Except HIST 4250 Teaching History in the Secondary Curriculum and HIST 4990 Senior Research Thesis Writing Component .)"
   }
  ],
  "gradPlan": [
@@ -122,5 +124,10 @@
    "title": "US History since 1877",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Successful completion of one history course at UVU. Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

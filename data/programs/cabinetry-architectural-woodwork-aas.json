@@ -3,7 +3,7 @@
  "name": "Cabinetry and Architectural Woodwork, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/construction-technologies/cabinetry-architectural-woodwork-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
@@ -22,88 +27,105 @@
    "alts": [
     "MAT 1035"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › MAT 1030 Quantitative Reasoning (or higher) | 3 or MAT 1035 Quantitative Reasoning with Integrated Algebra",
+   "creditsBy": {
+    "MAT 1030": 3,
+    "MAT 1035": 6
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social and Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Social and Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Physical Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 1130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CAW 1130 Residential Cabinetry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 1150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CAW 1150 Design Drafting and Billing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 1170",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (48 credits) › CAW 1170 Finish Technology | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 1250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CAW 1250 Drafting and Computer Applications for Cabinetmakers | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CAW 2250 Computer Aided Manufacturing for Woodworking | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CAW 1400R",
    "alts": [],
-   "credits": 12
+   "credits": 12,
+   "src": "Discipline Core Requirements (48 credits) › CAW 1400R Millwork Technology | 12"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMGT 2010 Construction Materials and Methods II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMGT 2060 Construction Job Site Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMGT 2080 Principles of Construction Scheduling | 3"
   },
   {
    "type": "course",
@@ -112,6 +134,7 @@
    "alts": [],
    "credits": 1,
    "repeat": 2,
+   "src": "Discipline Core Requirements (48 credits) › CMGT 2890R Construction Industry Seminar (Taken twice) | 1",
    "creditsEach": 0.5
   },
   {
@@ -119,13 +142,15 @@
    "area": "Discipline Core Requirements",
    "code": "BIT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › BIT 1010 Building Codes | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Open Elective (CAW or CMGT preferred)",
-   "credits": 9
+   "credits": 9,
+   "src": "Discipline Core Requirements (48 credits) › Electives: › Open Elective (CAW or CMGT preferred) | 9"
   }
  ],
  "gradPlan": [
@@ -309,14 +334,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -329,7 +360,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -341,7 +376,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Family Science, B.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/family-science-ba/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements:",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -77,6 +83,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements: (31 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -121,6 +128,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements: (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -130,114 +138,131 @@
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Humanities (Fulfilled with Foreign Language 2020/2020G course)",
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements: (31 credits) › Humanities (Fulfilled with Foreign Language 2020/2020G course) | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 1150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 1150 Marriage and Relationship Skills | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 1500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 1500 Human Development Life Span | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 2400G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 2400G Contemporary Family Relation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 2705",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 2705 Ethics for Family Interventions | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 2800 Teaching Human Sexuality | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 3050 Clinical Practice for Helping Professions | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 3250 Applied Parenting | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 4400 Family Policy and Advocacy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 4500 Family Life Education Methodology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 4660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 4660 Family Resource Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "FAMS 4670",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (36 credits) › FAMS 4670 Family Dynamics and Systems | 3"
   },
   {
    "type": "choice",
@@ -252,36 +277,46 @@
      "codes": [
       "FAMS 4810R"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Students must earn a B- or greater to meet graduation requirements."
+     ]
     },
     {
      "codes": [
       "FAMS 4820R"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Students must earn a B- or greater to meet graduation requirements."
+     ]
     }
    ],
-   "text": "Complete one of the following (students with extraordinary circumstances may petition the internship coordinator for an acceptable substitution for internship credit):"
+   "text": "Complete one of the following (students with extraordinary circumstances may petition the internship coordinator for an acceptable substitution for internship credit):",
+   "src": "Discipline Requirements (36 credits) › Complete one of the following (students with extraordinary circumstances may petition the internship coordinator for an acceptable substitution for internship credit): | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
    "credits": 24,
-   "text": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals."
+   "text": "Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals.",
+   "src": "Elective Requirements (53 credits) › Complete 24 hours of electives (19 of which must be upper division). Students should select courses that complement Family Science or that meet their personal goals. | 24"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any course 1000 or greater",
-   "credits": 17
+   "credits": 17,
+   "src": "Elective Requirements (53 credits) › Any course 1000 or greater | 17"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 12 credits in the same foreign language, includes ASL",
    "credits": 12,
-   "text": "Complete 12 credits in the same foreign language, includes ASL"
+   "text": "Complete 12 credits in the same foreign language, includes ASL",
+   "src": "Elective Requirements (53 credits) › Complete 12 credits in the same foreign language, includes ASL | 12"
   }
  ],
  "gradPlan": [
@@ -525,7 +560,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -538,7 +576,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "FAMS 1150": {
    "title": "Marriage and Relationship Skills",
@@ -563,7 +602,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "FAMS 2800": {
    "title": "Teaching Human Sexuality",
@@ -576,14 +616,20 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "FAMS 3050": {
    "title": "Clinical Practice for Helping Professions",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 3250": {
    "title": "Applied Parenting",
@@ -595,7 +641,13 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4400": {
    "title": "Family Policy and Advocacy",
@@ -619,7 +671,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4500": {
    "title": "Family Life Education Methodology",
@@ -636,13 +694,21 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4660": {
    "title": "Family Resource Management",
    "credits": 3,
    "prereqText": "FAMS 2400G strongly recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4670": {
    "title": "Family Dynamics and Systems",
@@ -659,7 +725,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4810R": {
    "title": "Community Practicum",
@@ -667,7 +739,13 @@
    "creditsMax": 8,
    "prereqText": "Department approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4820R": {
    "title": "Stronger Families Practicum",
@@ -680,7 +758,14 @@
      "FAMS 4500"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing in the Family Science program",
+    "permission of the instructor",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -709,7 +794,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -721,7 +810,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -733,7 +826,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -745,7 +839,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -757,7 +852,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -778,7 +874,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -791,7 +892,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

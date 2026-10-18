@@ -3,7 +3,7 @@
  "name": "Earth Science Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/earth-science-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 122,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,6 +84,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -82,7 +94,8 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities Distribution | 3"
   },
   {
    "type": "course",
@@ -91,39 +104,49 @@
    "alts": [
     "BIOL 1610"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › BIOL 1010 General Biology | 3 or BIOL 1610 College Biology I",
+   "creditsBy": {
+    "BIOL 1010": 3,
+    "BIOL 1610": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "GEO 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › GEO 1010 Introduction to Geology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASTR 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › ASTR 1040 Elementary Astronomy | 3"
   },
   {
    "type": "course",
@@ -132,84 +155,96 @@
    "alts": [
     "BIOL 2500"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › GEOG 3700 Wetland Studies | 3 or BIOL 2500 Environmental Biology"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › GEO 1015 Introduction to Geology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › GEO 1220 Historical Geology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › GEO 1225 Historical Geology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 3700",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › GEO 3700 Structure and Tectonics | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 3080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › GEO 3080 & GEO 3085 Earth Materials and Earth Materials Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 3085",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › GEO 3080 & GEO 3085 Earth Materials and Earth Materials Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 4500",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › GEO 4500 Sedimentary Geology | 4"
   },
   {
    "type": "course",
@@ -218,6 +253,7 @@
    "alts": [],
    "credits": 1,
    "repeat": 2,
+   "src": "Discipline Core Requirements (91 credits) › GEO 4800R Earth Science Seminar (must be taken twice) | 1",
    "creditsEach": 0.5
   },
   {
@@ -225,140 +261,160 @@
    "area": "Discipline Core Requirements",
    "code": "METO 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › METO 1010 Introduction to Meteorology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "METO 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › METO 3100 Climate and the Earth System | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › SCIE 2400 Measurement and Analysis for Science Teachers | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › SCIE 4210 Science Teaching Methods I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › SCIE 4220 Teaching Methods in Science II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › PHYS 2010 College Physics I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › PHYS 2015 College Physics I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2020",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (91 credits) › PHYS 2020 College Physics II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2025",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (91 credits) › PHYS 2025 College Physics II Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSC 4990 Teacher Assessment Project | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (91 credits) › Education Courses: › EDSP 3400G Exceptional Students | 2"
   }
  ],
  "gradPlan": [
@@ -641,7 +697,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -659,7 +719,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -670,7 +731,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDSC 1010": {
    "title": "Introduction to Education",
@@ -681,21 +743,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -710,28 +790,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -744,7 +848,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -756,7 +867,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -774,7 +892,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -787,7 +908,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -836,7 +958,9 @@
    "coreqText": "GEO 3085",
    "coreqs": [
     "GEO 3085"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3085": {
    "title": "Earth Materials Laboratory",
@@ -846,7 +970,9 @@
    "coreqText": "GEO 3080",
    "coreqs": [
     "GEO 3080"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3700": {
    "title": "Structure and Tectonics",
@@ -864,20 +990,32 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4500": {
    "title": "Sedimentary Geology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , and University Advanced Standing; CHEM 1210 or other chemistry recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4800R": {
    "title": "Earth Science Seminar",
    "credits": 0.5,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3700": {
    "title": "Wetland Studies",
@@ -893,7 +1031,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -921,7 +1064,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -933,7 +1077,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "METO 1010": {
    "title": "Introduction to Meteorology",
@@ -967,7 +1112,12 @@
      "GEO 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2010": {
    "title": "College Physics I",
@@ -1024,14 +1174,47 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SCIE 4220": {
    "title": "Teaching Methods in Science II",
    "credits": 3,
    "prereqText": "SCIE 4210 and University Advanced Standing",
    "prereqs": "SCIE 4210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete the following courses: GEO 1010 Introduction to Geology , GEO 1015 Introduction to Geology Laboratory , MATH 1050 College Algebra (or MATH 1055 College Algebra with Preliminaries ), MATH 1060 Trigonometry , Life Sciences BB with a grade of \"C\" or higher in each. Complete a minimum of 30 semester hours of college credit. Apply to the department of Earth Science for admission. Completion of an exit interview with the Earth Science Department chair and a Qualtrics Exit Survey prior to graduation.",
+  "before": [
+   "GEO 1010",
+   "GEO 1015",
+   "MATH 1050",
+   "MATH 1055",
+   "MATH 1060"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

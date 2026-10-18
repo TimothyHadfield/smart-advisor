@@ -3,7 +3,7 @@
  "name": "Digital Cinema Production, B.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/digital-media/digital-cinema-production-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -59,13 +65,19 @@
      "codes": [
       "MATH 1050"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "Students in the Producing (Pre MBA) Track must take either MATH 1050 or MATH 1055 (College Algebra)"
+     ]
     },
     {
      "codes": [
       "MATH 1055"
      ],
-     "credits": 5
+     "credits": 5,
+     "notes": [
+      "Students in the Producing (Pre MBA) Track must take either MATH 1050 or MATH 1055 (College Algebra)"
+     ]
     },
     {
      "codes": [
@@ -75,6 +87,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -119,6 +132,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -128,177 +142,203 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3 (Note: ENGL 2300 (Shakespeare) recommended)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3 (Note: MGMT 1010 Introduction to Business recommended)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1000",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1000 Digital Cinema Production Orientation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1610",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1610 & DCPR 1610L Digital Cinema Editing I and Digital Cinema Editing I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1610L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1610 & DCPR 1610L Digital Cinema Editing I and Digital Cinema Editing I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1800 & DCPR 1800L Filmmaking I and Filmmaking I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 1800 & DCPR 1800L Filmmaking I and Filmmaking I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › DAPR 2110 Production Sound for Cinema | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 2400 Digital Photography and Compositing I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2410",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 2410 & DCPR 2410L Cinematography I and Cinematography I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2410L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 2410 & DCPR 2410L Cinematography I and Cinematography I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2800",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 2800 & DCPR 2800L Filmmaking II and Filmmaking II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 2800L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 2800 & DCPR 2800L Filmmaking II and Filmmaking II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3100R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3100R Digital Cinema Production Lecture Series-CineSkype | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3210 Writing for Entertainment Media II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3410",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3410 & DCPR 3410L Cinematography II and Cinematography II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3410L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3410 & DCPR 3410L Cinematography II and Cinematography II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3610",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3610 & DCPR 3610L Digital Cinema Editing II and Digital Cinema Editing II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3610L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 3610 & DCPR 3610L Digital Cinema Editing II and Digital Cinema Editing II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 4930",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › DCPR 4930 Senior Professional Preparation | 1"
   },
   {
    "type": "choice",
@@ -334,7 +374,10 @@
       "ENGL 2170G",
       "DGM 3120G"
      ],
-     "section": "POST-PRODUCTION TRACK"
+     "section": "POST-PRODUCTION TRACK",
+     "notes": [
+      "RUS 3670G recommended for students in the Post-Production Track"
+     ]
     },
     {
      "codes": [
@@ -439,7 +482,10 @@
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "POST-PRODUCTION TRACK"
+     "section": "POST-PRODUCTION TRACK",
+     "notes": [
+      "DCPR 3900 - Capstone Prep must be taken the Spring semester before you intend to enroll in Senior Capstone I."
+     ]
     },
     {
      "codes": [
@@ -572,7 +618,10 @@
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "PRODUCING TRACK"
+     "section": "PRODUCING TRACK",
+     "notes": [
+      "DCPR 3900 - Capstone Prep must be taken the Spring semester before you intend to enroll in Senior Capstone I."
+     ]
     },
     {
      "codes": [
@@ -711,7 +760,10 @@
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "CINEMATOGRAPHY TRACK"
+     "section": "CINEMATOGRAPHY TRACK",
+     "notes": [
+      "DCPR 3900 - Capstone Prep must be taken the Spring semester before you intend to enroll in Senior Capstone I."
+     ]
     },
     {
      "codes": [
@@ -846,7 +898,10 @@
       "DCPR 4900"
      ],
      "credits": 1,
-     "section": "DIRECTING FOR DIGITAL CINEMA TRACK"
+     "section": "DIRECTING FOR DIGITAL CINEMA TRACK",
+     "notes": [
+      "DCPR 3900 - Capstone Prep must be taken the Spring semester before you intend to enroll in Senior Capstone I."
+     ]
     },
     {
      "codes": [
@@ -1065,21 +1120,27 @@
       "DCPR 3310"
      ],
      "credits": 3,
-     "section": "GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK",
+     "sub": 0,
+     "fromText": true
     },
     {
      "codes": [
       "DCPR 3320"
      ],
      "credits": 3,
-     "section": "GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK",
+     "sub": 0,
+     "fromText": true
     },
     {
      "codes": [
       "DCPR 3580"
      ],
      "credits": 3,
-     "section": "GENERAL CINEMA TRACK"
+     "section": "GENERAL CINEMA TRACK",
+     "sub": 0,
+     "fromText": true
     },
     {
      "codes": [
@@ -1653,6 +1714,7 @@
     }
    ],
    "text": "Choose one of the following Tracks:",
+   "src": "Tracks (57 credits) › Choose one of the following Tracks: | 57",
    "notes": [
     "--POST-PRODUCTION TRACK--",
     "POST-PRODUCTION TRACK: Select an additional 11 credits of electives from the list below",
@@ -1686,7 +1748,17 @@
     "DIRECTING FOR DIGITAL CINEMA TRACK": 10,
     "WRITING FOR ENTERTAINMENT MEDIA TRACK": 14,
     "GENERAL CINEMA TRACK": 35
-   }
+   },
+   "subs": [
+    {
+     "section": "GENERAL CINEMA TRACK",
+     "label": "Choose 2 from: DCPR 3310 Creative Producing or DCPR 3320 Line Producing or DCPR 3580 Non-Fiction Producing",
+     "pick": {
+      "count": 2
+     },
+     "credits": 6
+    }
+   ]
   }
  ],
  "gradPlan": [
@@ -1941,7 +2013,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAGV 1200": {
    "title": "3D Modeling Essentials",
@@ -1985,28 +2062,49 @@
    "creditsMax": 4,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3170": {
    "title": "Post-Production Sound for Cinema I",
    "credits": 3,
    "prereqText": "DAPR 2170 and University Advanced Standing",
    "prereqs": "DAPR 2170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3171": {
    "title": "Post-Production Sound for Cinema II",
    "credits": 3,
    "prereqText": "DAPR 3170 , University Advanced Standing",
    "prereqs": "DAPR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3340": {
    "title": "Spatial Audio I",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 1000": {
    "title": "Digital Cinema Production Orientation",
@@ -2167,7 +2265,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3210": {
    "title": "Writing for Entertainment Media II",
@@ -2180,28 +2283,51 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3310": {
    "title": "Creative Producing",
    "credits": 3,
    "prereqText": "DCPR 2800 , Portfolio Review Acceptance, and University Advanced Standing",
    "prereqs": "DCPR 2800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3320": {
    "title": "Line Producing",
    "credits": 3,
    "prereqText": "DCPR 2800 , Portfolio Review Acceptance, and University Advanced Standing",
    "prereqs": "DCPR 2800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3400": {
    "title": "Digital Photography and Compositing II",
    "credits": 3,
    "prereqText": "DCPR 2400 and University Advanced Standing",
    "prereqs": "DCPR 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3410": {
    "title": "Cinematography II",
@@ -2212,7 +2338,13 @@
    "coreqText": "DCPR 3410L",
    "coreqs": [
     "DCPR 3410L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3510": {
    "title": "Narrative Directing Workshop I",
@@ -2223,7 +2355,13 @@
    "coreqText": "DCPR 3510L",
    "coreqs": [
     "DCPR 3510L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3510L": {
    "title": "Narrative Directing Workshop I Lab",
@@ -2239,7 +2377,13 @@
    "coreqText": "DCPR 3510",
    "coreqs": [
     "DCPR 3510"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3570": {
    "title": "Non-Fiction Directing Workshop",
@@ -2250,7 +2394,13 @@
    "coreqText": "DCPR 3570L",
    "coreqs": [
     "DCPR 3570L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3570L": {
    "title": "Non-Fiction Directing Workshop Lab",
@@ -2261,14 +2411,26 @@
    "coreqText": "DCPR 3570",
    "coreqs": [
     "DCPR 3570"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3580": {
    "title": "Non-Fiction Producing",
    "credits": 3,
    "prereqText": "DCPR 1800 , Portfolio Review Acceptance, and University Advanced Standing",
    "prereqs": "DCPR 1800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3610": {
    "title": "Digital Cinema Editing II",
@@ -2279,7 +2441,13 @@
    "coreqText": "DCPR 3610L",
    "coreqs": [
     "DCPR 3610L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3610L": {
    "title": "Digital Cinema Editing II Lab",
@@ -2290,7 +2458,13 @@
    "coreqText": "DCPR 3610",
    "coreqs": [
     "DCPR 3610"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3620": {
    "title": "Visual Effects for Digital Cinema II",
@@ -2301,7 +2475,12 @@
    "coreqText": "DCPR 3620L",
    "coreqs": [
     "DCPR 3620L"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3630": {
    "title": "Output and Color for Digital Cinema II",
@@ -2317,7 +2496,13 @@
    "coreqText": "DCPR 3630L",
    "coreqs": [
     "DCPR 3630L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3660": {
    "title": "Professional NLE Certification",
@@ -2333,7 +2518,13 @@
    "coreqText": "DCPR 3660L",
    "coreqs": [
     "DCPR 3660L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3660L": {
    "title": "Professional NLE Certification Lab",
@@ -2349,7 +2540,13 @@
    "coreqText": "DCPR 3660",
    "coreqs": [
     "DCPR 3660"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4110R": {
    "title": "Independent Study - Cinema Production",
@@ -2357,7 +2554,13 @@
    "creditsMax": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4210R": {
    "title": "Writing for Entertainment Media III",
@@ -2379,7 +2582,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4230R": {
    "title": "Story Editing for Digital Cinema",
@@ -2396,7 +2604,12 @@
    "precoreqs": "DCPR 4240R",
    "preco": [
     "DCPR 4240R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4240R": {
    "title": "Story Editing for Digital Cinema Lab",
@@ -2412,7 +2625,12 @@
    "coreqText": "DCPR 4230R",
    "coreqs": [
     "DCPR 4230R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4310": {
    "title": "Filmmaking III",
@@ -2425,7 +2643,14 @@
      "DCPR 3580"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Accepted to Cinema Track",
+    "University Advanced Standing",
+    "Portfolio Review Acceptance"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4410R": {
    "title": "Cinematography III",
@@ -2436,7 +2661,13 @@
    "coreqText": "DCPR 4420R",
    "coreqs": [
     "DCPR 4420R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4420R": {
    "title": "Cinematography III Lab",
@@ -2447,7 +2678,13 @@
    "coreqText": "DCPR 4410R",
    "coreqs": [
     "DCPR 4410R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4510R": {
    "title": "Narrative Directing Workshop II",
@@ -2458,7 +2695,13 @@
    "coreqText": "DCPR 4520R",
    "coreqs": [
     "DCPR 4520R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4520R": {
    "title": "Narrative Directing Workshop II Lab",
@@ -2469,42 +2712,81 @@
    "coreqText": "DCPR 4510R",
    "coreqs": [
     "DCPR 4510R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4610": {
    "title": "Digital Cinema Editing III",
    "credits": 3,
    "prereqText": "DCPR 3610 , University Advanced Standing, Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)",
    "prereqs": "DCPR 3610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Portfolio Review Acceptance and (Accepted to Cinema Track or Faculty Approval)"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4900": {
    "title": "Senior Capstone Prep",
    "credits": 1,
    "prereqText": "University Advanced standing, Portfolio Review Acceptance, Accepted to Cinema Track",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced standing",
+    "Portfolio Review Acceptance",
+    "Accepted to Cinema Track"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4910": {
    "title": "Senior Capstone I",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance, University Advanced Standing, Accepted for Cinema Track",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing",
+    "Accepted for Cinema Track"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4920": {
    "title": "Senior Capstone II",
    "credits": 3,
    "prereqText": "DCPR 4910 , Portfolio Review Acceptance, University Advanced Standing, Accepted to Cinema Track",
    "prereqs": "DCPR 4910",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing",
+    "Accepted to Cinema Track"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4930": {
    "title": "Senior Professional Preparation",
    "credits": 1,
    "prereqText": "Portfolio Review and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 1110": {
    "title": "Digital Media Essentials I",
@@ -2516,21 +2798,36 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "DGM 3110": {
    "title": "Corporate Issues in Digital Media",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 3120G": {
    "title": "Digital Media for Intercultural Communication",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 3200R": {
    "title": "Advanced Topics in Digital Media Design",
@@ -2538,7 +2835,13 @@
    "creditsMax": 4,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 4810R": {
    "title": "Internship",
@@ -2546,28 +2849,45 @@
    "creditsMax": 8,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3261": {
    "title": "Mixed Reality Experiences",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -2580,7 +2900,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -2625,7 +2946,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -2656,7 +2982,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -2669,7 +3000,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -2681,7 +3016,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -2693,7 +3032,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -2705,7 +3045,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -2717,7 +3058,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 1010": {
    "title": "Introduction to Business",
@@ -2734,14 +3076,22 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -2761,14 +3111,24 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4160G": {
    "title": "Contemporary Russian Cinema",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -2781,7 +3141,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -2794,7 +3159,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "THEA 1033": {
    "title": "Acting I",
@@ -2905,49 +3275,85 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3223": {
    "title": "Makeup II",
    "credits": 3,
    "prereqText": "THEA 1223 ; Instructor Approval; and University Advanced Standing",
    "prereqs": "THEA 1223",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3241": {
    "title": "Storytelling",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3516": {
    "title": "Art Direction for Film",
    "credits": 3,
    "prereqText": "THEA 3514 and University Advanced Standing",
    "prereqs": "THEA 3514",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3541": {
    "title": "Costume Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3571": {
    "title": "Scenic Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3612": {
    "title": "Directing Actors for the Stage",
    "credits": 3,
    "prereqText": "THEA 3611 ; University Advanced Standing",
    "prereqs": "THEA 3611",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3614": {
    "title": "Directing Actors for the Screen",
@@ -2960,14 +3366,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3625": {
    "title": "Development and Fundraising for the Arts",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3740R": {
    "title": "New Script Workshop",
@@ -2981,7 +3397,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3741": {
    "title": "Script Writing II",
@@ -2993,7 +3414,12 @@
      "THEA 2742"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4160R": {
    "title": "Special Topics in Film Studies",
@@ -3006,7 +3432,12 @@
      "THEA 1023"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4741": {
    "title": "Scriptwriting III",
@@ -3019,7 +3450,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "missingCourses": [
@@ -3033,5 +3469,10 @@
   "DCPR 3630L"
  ],
  "admission": true,
- "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree.",
+ "admissionInfo": {
+  "note": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree.",
+  "before": [],
+  "gated": []
+ }
 }

@@ -3,7 +3,7 @@
  "name": "Nutrition, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/nutrition-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 2020 Nutrition Through the Life Cycle | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 3000 Nutrition and Disease | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 3100 Community Nutrition | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 3200 Nutrition and Culture | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 2000 Body Image and Mindful Eating | 3"
   }
  ],
  "gradPlan": [
@@ -103,21 +109,41 @@
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 3100": {
    "title": "Public Health Nutrition",
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 3200": {
    "title": "Cultural Aspects of Health and Nutrition",
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admission into a bachelor’s degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

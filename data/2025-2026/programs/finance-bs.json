@@ -3,7 +3,7 @@
  "name": "Finance, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/finance-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -95,57 +102,66 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Fine Arts Distribution | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "ACC 2120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › ACC 2120 Principles of Accounting II | 3"
   },
   {
    "type": "choice",
@@ -160,16 +176,25 @@
      "codes": [
       "IM 2010"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete the Business Computer Proficiency exam with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 course with a grade of B- or higher."
+     ]
     },
     {
      "codes": [
       "IM 2600"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete the Business Computer Proficiency exam with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 course with a grade of B- or higher."
+     ]
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Courses (24 credits) › Complete one of the following:",
    "notes": [
     "My Educator"
    ],
@@ -180,77 +205,91 @@
    "area": "Matriculation Courses",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Matriculation Courses (24 credits) › ECON 2010 Principles of Economics I | 3 (Note: Must be completed with a grade of B- or better.)"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "ECON 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › ECON 2020 Principles of Economics II | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "MGMT 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › MGMT 2240 Business Quantitative Analysis | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses (24 credits) › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Matriculation Courses (24 credits) › MKTG 2200G Written Business Communication | 3 (Note: Must be completed with a grade of B- or better.)"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Business Core Courses: (19 credits) › FIN 3100 Principles of Finance | 3 (Note: Must be completed with a grade of B- or better.)"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (19 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (19 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (19 credits) › MGMT 3450 Operations Management | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (19 credits) › MGMT 4860 Business Strategy Formulation and Implementation | 3"
   },
   {
    "type": "course",
@@ -259,7 +298,8 @@
    "alts": [
     "ENTR 2930R"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Business Core Courses: (19 credits) › MGMT 2950R Executive Lecture Series | 1 or ENTR 2930R Entrepreneurship Lecture Series"
   },
   {
    "type": "choice",
@@ -289,14 +329,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Business Core Courses: (19 credits) › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Finance Core Requirements:",
    "code": "FIN 3150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Finance Core Requirements: (30 credits) › FIN 3150 Financial Management | 3"
   },
   {
    "type": "course",
@@ -305,41 +347,47 @@
    "alts": [
     "FIN 5130"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Finance Core Requirements: (30 credits) › FIN 3170 Financial Statement Analysis | 3 or FIN 5130 Financial Statement Analysis and Modeling"
   },
   {
    "type": "course",
    "area": "Finance Core Requirements:",
    "code": "FIN 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Finance Core Requirements: (30 credits) › FIN 3400 Investment Management | 3"
   },
   {
    "type": "course",
    "area": "Finance Core Requirements:",
    "code": "FIN 4100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Finance Core Requirements: (30 credits) › FIN 4100 Management of Financial Institutions | 3"
   },
   {
    "type": "course",
    "area": "Finance Core Requirements:",
    "code": "FIN 4900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Finance Core Requirements: (30 credits) › FIN 4900 Strategic Financial Management Capstone | 3"
   },
   {
    "type": "placeholder",
    "area": "Finance Core Requirements:",
    "label": "Choose 15 upper-division credits from the list available from the appropriate faculty or advisor.",
-   "credits": 15
+   "credits": 15,
+   "src": "Finance Core Requirements: (30 credits) › Choose 15 upper-division credits from the list available from the appropriate faculty or advisor. | 15"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 17 credits of any courses 1000 or higher",
    "credits": 17,
-   "text": "Complete 17 credits of any courses 1000 or higher"
+   "text": "Complete 17 credits of any courses 1000 or higher",
+   "src": "Elective Requirements (17 credits) › Complete 17 credits of any courses 1000 or higher | 17"
   }
  ],
  "gradPlan": [
@@ -632,7 +680,12 @@
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -646,7 +699,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -659,7 +715,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -686,35 +743,60 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3150": {
    "title": "Financial Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3170": {
    "title": "Financial Statement Analysis",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3400": {
    "title": "Investment Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4100": {
    "title": "Management of Financial Institutions",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4900": {
    "title": "Strategic Financial Management Capstone",
@@ -742,7 +824,12 @@
    "preco": [
     "FIN 3400",
     "FIN 4100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5130": {
    "title": "Financial Statement Analysis and Modeling",
@@ -777,7 +864,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -789,7 +879,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -801,7 +892,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -813,7 +905,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -826,7 +919,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -839,7 +933,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -860,7 +957,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -877,7 +979,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -889,14 +996,25 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -910,7 +1028,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -921,7 +1045,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -931,5 +1060,25 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours ECON 2010 Principles of Economics I 3 ECON 2020 Principles of Economics II 3 ACC 2110 Principles of Accounting I 3 ACC 2120 Principles of Accounting II 3 Complete one of the following. 1 IM 2010 Business Computer Proficiency 1 IM 2600 Spreadsheet Applications MKTG 2200G Written Business Communication 3 MGMT 2240 Business Quantitative Analysis 3 MGMT 2340 Business Statistics I 3 MGMT 2400 Data Analytics for Business 3",
+  "before": [
+   "ECON 2010",
+   "ECON 2020",
+   "ACC 2110",
+   "ACC 2120",
+   "IM 2010",
+   "IM 2600",
+   "MKTG 2200G",
+   "MGMT 2240",
+   "MGMT 2340",
+   "MGMT 2400"
+  ],
+  "gated": [
+   "MGMT 3450",
+   "MGMT 4860"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

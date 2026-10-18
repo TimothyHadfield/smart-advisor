@@ -3,7 +3,7 @@
  "name": "Master of Science in Cybersecurity, M.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/cybersecurity-ms/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "IT 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6300 Principles of Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6330 Cybersecurity Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6350 Law/Ethics/Privacy in Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6370 Penetration Testing and Vulnerability Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6740",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6740 Advanced Network Defense and Countermeasures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6770",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6770 Cybersecurity Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › IT 6900 Cybersecurity Capstone | 3"
   },
   {
    "type": "choice",
@@ -90,6 +97,7 @@
     }
    ],
    "text": "Complete 9 credits from the following:",
+   "src": "Elective Requirements (9 credits) › Complete 9 credits from the following: | 9",
    "notes": [
     "or other departmental approved electives."
    ],
@@ -174,6 +182,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approvall"
    ]
   },
   "IT 6300": {
@@ -181,21 +192,30 @@
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6330": {
    "title": "Cybersecurity Operations",
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6350": {
    "title": "Law/Ethics/Privacy in Cybersecurity",
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6370": {
    "title": "Penetration Testing and Vulnerability Assessment",
@@ -207,6 +227,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6660": {
@@ -219,6 +242,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6740": {
@@ -231,6 +257,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6750": {
@@ -243,6 +272,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6770": {
@@ -273,5 +305,11 @@
     ]
    }
   }
+ },
+ "admissionInfo": {
+  "text": "Bachelor's degree with a GPA of at least 3.2 on a 4.0 scale from an accredited institution in one of the following fields: (Applicants who have bachelor's degrees in other fields may be admitted to the program if they have at least two years of technology or cybersecurity industry experience and have completed undergraduate courses in data communication, programming, and server administration with a grade of C+ or better. Students may also take a comprehensive exam on these topics to satisfy this admission requirement. These applications will be handled on a case-by-case basis.) Information Systems Information Security Information Technology Computer Science 2. Admission Essay 3. Completed application for admission 4. Official transcripts from all attended institutions of higher education 5. Two letters of recommendation",
+  "before": [],
+  "gated": [],
+  "minGrade": "C+"
  }
 }

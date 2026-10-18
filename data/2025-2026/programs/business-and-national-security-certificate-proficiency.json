@@ -3,7 +3,7 @@
  "name": "Business and National Security, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-and-national-security-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 1300 Business Security and Resilience | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
@@ -41,7 +45,8 @@
    "alts": [
     "NSS 3050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "NSS 4300 Intelligence Cycle and Collections | 3 or NSS 3050 US Intelligence Community"
   },
   {
    "type": "course",
@@ -50,7 +55,8 @@
    "alts": [
     "NSS 4800"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 4260 Business Analysis and Project Management | 3 or NSS 4800 Intelligence Analysis and Tradecraft"
   },
   {
    "type": "choice",
@@ -97,6 +103,7 @@
      "section": "NSS courses"
     }
    ],
+   "src": "Electives | 6 (Note: Business majors should select from the NSS courses and NSS majors should select from the Business courses. Other majors should meet with their academic advisors for direction.)",
    "notes": [
     "Business courses",
     "Business courses: Or other WSB approved course",
@@ -214,7 +221,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -225,21 +235,37 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4470": {
    "title": "Strategic Operational Planning",
    "credits": 3,
    "prereqText": "MGMT 3450 and University Advanced Standing",
    "prereqs": "MGMT 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4620": {
    "title": "Developing Business in China",
    "credits": 3,
    "prereqText": "ENGL 2010 , Junior Standing, and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 2010": {
    "title": "Introduction to National Security",
@@ -265,14 +291,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3050": {
    "title": "US Intelligence Community",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4300": {
    "title": "Intelligence Cycle and Collections",
@@ -284,7 +320,12 @@
      "NSS 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4400": {
    "title": "Statecraft and Strategy",
@@ -305,14 +346,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4800": {
    "title": "Intelligence Analysis and Tradecraft",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

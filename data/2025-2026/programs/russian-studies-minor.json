@@ -3,7 +3,7 @@
  "name": "Russian Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/russian-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 22,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "RUS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (4 credits) › RUS 2010 Intermediate Russian I | 4"
   },
   {
    "type": "choice",
@@ -149,7 +150,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 18 hours of electives from the following; 12 credits must be upper-division:"
+   "text": "Complete 18 hours of electives from the following; 12 credits must be upper-division:",
+   "src": "Elective Requirements (18 credits) › Complete 18 hours of electives from the following; 12 credits must be upper-division: | 18"
   }
  ],
  "gradPlan": [
@@ -208,28 +210,48 @@
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3660G": {
    "title": "The History of Modern Russia--1864 to Present",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3350": {
    "title": "The Cold War--Culture and Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3510": {
    "title": "Post Soviet Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3560G": {
    "title": "Comparative Politics of Central Asia",
@@ -241,7 +263,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 2010": {
    "title": "Intermediate Russian I",
@@ -280,14 +307,24 @@
    "credits": 3,
    "prereqText": "( RUS 2020G or instructor approval) and University Advanced Standing",
    "prereqs": "RUS 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3040": {
    "title": "Russian Conversation and Composition II",
    "credits": 3,
    "prereqText": "( RUS 2020G or instructor approval) and University Advanced Standing",
    "prereqs": "RUS 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3050": {
    "title": "Advanced Russian",
@@ -300,28 +337,48 @@
    "credits": 3,
    "prereqText": "RUS 3050 and University Advanced Standing",
    "prereqs": "RUS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3520": {
    "title": "Russian Culture and Civilization",
    "credits": 3,
    "prereqText": "( RUS 3050 or equivalent) and University Advanced Standing",
    "prereqs": "RUS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3620": {
    "title": "Nineteenth-Century Russian Literature and Its Film Adaptations",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3660G": {
    "title": "Twentieth Century Russian Culture",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 3670G": {
    "title": "History of Russian Film",
@@ -333,7 +390,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4050": {
    "title": "Special Problems in Grammar Usage and Style",
@@ -351,35 +413,65 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4110": {
    "title": "Translation and Interpretation",
    "credits": 3,
    "prereqText": "( RUS 3050 or equivalent) and University Advanced Standing",
    "prereqs": "RUS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4160G": {
    "title": "Contemporary Russian Cinema",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4170": {
    "title": "Russia Under Putin",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RUS 4900R": {
    "title": "Special Topics in Russian Studies",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit.",
+  "before": [],
+  "gated": []
  }
 }

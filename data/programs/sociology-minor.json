@@ -3,7 +3,7 @@
  "name": "Sociology, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/sociology-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -27,7 +27,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (18 credits) › Complete 2 required classes | 6"
   },
   {
    "type": "choice",
@@ -197,7 +198,8 @@
      "crMax": 3
     }
    ],
-   "text": "Complete any 4 of the following classes (with at least 3 upper division)"
+   "text": "Complete any 4 of the following classes (with at least 3 upper division)",
+   "src": "Discipline Core Requirements (18 credits) › Complete any 4 of the following classes (with at least 3 upper division) | 12"
   }
  ],
  "gradPlan": [
@@ -255,7 +257,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 2600": {
    "title": "Sociology of the Family",
@@ -266,7 +269,8 @@
    "credits": 3,
    "prereqText": "ENGL 2010 with a C+ or higher",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 2830": {
    "title": "Sexualities and Society",
@@ -277,14 +281,25 @@
    "credits": 3,
    "prereqText": "PSY 3110 (statistics) with a C- or higher and University Advanced Standing",
    "prereqs": "PSY 3110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3110": {
    "title": "Statistics for Social Sciences",
    "credits": 4,
    "prereqText": "MAT 1010 or higher and University Advanced Standing",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3400": {
    "title": "Sociology of Religion",
@@ -296,7 +311,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3430": {
    "title": "Sociology of Education",
@@ -308,7 +329,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3460": {
    "title": "Political Sociology",
@@ -320,14 +347,25 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3501": {
    "title": "Social Psychology",
    "credits": 3,
    "prereqText": "SOC 1010G and University Advanced Standing",
    "prereqs": "SOC 1010G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3510": {
    "title": "Sociology of Work and Occupations",
@@ -339,7 +377,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3520": {
    "title": "Environmental Sociology",
@@ -351,7 +395,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3560": {
    "title": "Sociology of Deviance",
@@ -363,7 +413,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3690": {
    "title": "Internet Technology and Society",
@@ -380,7 +436,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3700": {
    "title": "Social Inequality",
@@ -392,14 +453,25 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3750G": {
    "title": "Sociology of Aging",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3800": {
    "title": "Animals and Society",
@@ -419,7 +491,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3850": {
    "title": "Land Food and Society",
@@ -439,7 +517,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4000": {
    "title": "Classical Social Theory",
@@ -451,14 +535,25 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4020": {
    "title": "Survey Research Design in the Social Sciences",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4100": {
    "title": "Contemporary Social Theory",
@@ -471,7 +566,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4400": {
    "title": "Social Change",
@@ -483,7 +584,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4750R": {
    "title": "Current Topics in Sociology",
@@ -496,7 +602,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4810R": {
    "title": "Sociology Internship",
@@ -504,7 +616,12 @@
    "creditsMax": 6,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4850": {
    "title": "Social Movements and Collective Action",
@@ -516,7 +633,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4900R": {
    "title": "Independent Studies",
@@ -524,7 +646,13 @@
    "creditsMax": 3,
    "prereqText": "Instructor approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

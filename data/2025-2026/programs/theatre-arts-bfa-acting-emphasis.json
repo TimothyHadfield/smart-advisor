@@ -3,7 +3,7 @@
  "name": "Theatre Arts - Acting Emphasis, B.F.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-arts-bfa-acting-emphasis/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 126,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -45,6 +51,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -83,13 +90,15 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete the following: › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
@@ -98,95 +107,109 @@
    "credits": 3,
    "recommended": [
     "PHYS 1700"
-   ]
+   ],
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete the following: › Physical Science Distribution | 3 (Note: Students in the Sound track of the BFA Theatre Design & Production Emphasis are strongly recommended to take PHYS 1700 Physics of Sound)"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete the following: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, & Civic Growth Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete the following: › Personal, Professional, & Civic Growth Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Complete the following: › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1013",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1013 Introduction to Theatre (Majors only section) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1033",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1033 Acting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1223",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1223 Makeup I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1513",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1513 Stagecraft I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1514",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1514 Stagecraft I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1590R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1590R Production Practicum for Stage and Screen I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1713",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 1713 Script and Text Analysis I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3611",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 3611 Directing Actors for Stage and Screen | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3721",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 3721 Theatre History and Literature I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3722",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 3722 Theatre History and Literature II | 3"
   },
   {
    "type": "course",
@@ -195,20 +218,23 @@
    "alts": [
     "THEA 4996"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (27 credits) › THEA 4810R Theatre Internship (1-8) | 2 or THEA 4996 Senior Capstone"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: Performing Arts Elective Requirement",
    "label": "Complete 4 credits of any THEA, MUSC, DANC, or ART course 1000 level or higher",
    "credits": 4,
-   "text": "Complete 4 credits of any THEA, MUSC, DANC, or ART course 1000 level or higher"
+   "text": "Complete 4 credits of any THEA, MUSC, DANC, or ART course 1000 level or higher",
+   "src": "Core Requirements › Performing Arts Elective Requirement (4 credits) › Complete 4 credits of any THEA, MUSC, DANC, or ART course 1000 level or higher | 4"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: Free Elective Requirement",
    "label": "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
    "credits": 2,
+   "src": "Core Requirements › Free Elective Requirement (2 credits) › Successful completion of at least two free elective credits, 1000 or above, required for graduation | 2",
    "notes": [
     "Successful completion of at least two Writing Enriched courses is required for graduation."
    ],
@@ -221,56 +247,64 @@
    "area": "Emphasis Requirements",
    "code": "THEA 1113",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 1113 Voice and Speech I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 2033",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 2033 Acting II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 2127",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 2127 Voiceover Acting | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 2131",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 2131 Movement for the Actor I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 2156",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 2156 Group Voice for Theatre | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3033",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3033 Acting III | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3113",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3113 Acting for Film | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3115",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3115 Improvisation I - BFA | 3"
   },
   {
    "type": "course",
@@ -279,6 +313,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 2,
+   "src": "Emphasis Requirements (66 credits) › THEA 3110R Improvisation II-Performance Team-BFA (Must be repeated twice for a total of 4 credits) | 4",
    "creditsEach": 2
   },
   {
@@ -286,42 +321,48 @@
    "area": "Emphasis Requirements",
    "code": "THEA 3122",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3122 Voice and Speech II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3123",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3123 Acting in Accent - BFA | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3131",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3131 Movement for the Actor II-BFA | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3133",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3133 Stage Combat | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3151",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3151 Acting for Musical Theatre I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 3154",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3154 Dance for Musical Theatre I | 3"
   },
   {
    "type": "course",
@@ -333,6 +374,7 @@
    ],
    "credits": 6,
    "repeat": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 3190R Performance Practicum for Stage and Screen (2 credits taken three times for a total of 6 credits) | 6 or THEA 4190R Musical Performance Practicum or THEA 3150R Performance Workshop",
    "creditsEach": 2
   },
   {
@@ -340,35 +382,40 @@
    "area": "Emphasis Requirements",
    "code": "THEA 4115",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 4115 Acting Styles-BFA | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 4114",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (66 credits) › THEA 4114 Film Acting II | 2"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 4117",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 4117 Auditioning and the Business - BFA | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 4119",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 4119 Senior Showcase and Career Management - BFA | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "THEA 4122",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (66 credits) › THEA 4122 Speaking Shakespeare-BFA | 3"
   }
  ],
  "gradPlan": [
@@ -620,7 +667,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -633,7 +683,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -662,7 +713,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -674,7 +729,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -744,28 +803,47 @@
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts"
+   ]
   },
   "THEA 2156": {
    "title": "Group Voice for Theatre",
    "credits": 3,
    "prereqText": "Theatre major in BFA Theatre Arts or BA Theatre Arts",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre major in BFA Theatre Arts or BA Theatre Arts"
+   ]
   },
   "THEA 3033": {
    "title": "Acting III",
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts; THEA 2033 ; Successful Completion of the Sophomore Review; University Advanced Standing",
    "prereqs": "THEA 2033",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
+    "Successful Completion of the Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3110R": {
    "title": "Improvisation II-Performance Team-BFA",
    "credits": 2,
    "prereqText": "Theatre Major in BFA Theatre Arts; THEA 3115 ; University Advanced Standing",
    "prereqs": "THEA 3115",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3113": {
    "title": "Acting for Film",
@@ -778,7 +856,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3115": {
    "title": "Improvisation I - BFA",
@@ -790,7 +873,14 @@
      "THEA 2131"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts",
+    "Successful completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3122": {
    "title": "Voice and Speech II-BFA",
@@ -802,14 +892,26 @@
      "THEA 2131"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts",
+    "Successful Completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3123": {
    "title": "Acting in Accent - BFA",
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts and THEA 3122 OR department approval by audition; University Advanced Standing",
    "prereqs": "THEA 3122",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3131": {
    "title": "Movement for the Actor II-BFA",
@@ -821,14 +923,27 @@
      "THEA 2131"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts",
+    "Successful Completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3133": {
    "title": "Stage Combat",
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts; University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3150R": {
    "title": "Performance Workshop",
@@ -836,7 +951,13 @@
    "creditsMax": 2,
    "prereqText": "Audition, University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3151": {
    "title": "Acting for Musical Theatre I",
@@ -849,14 +970,28 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
+    "Successful Completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3154": {
    "title": "Dance for Musical Theatre I",
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts; THEA 2033 ; Successful Completion of Sophomore Review; University Advanced Standing",
    "prereqs": "THEA 2033",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
+    "Successful Completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3190R": {
    "title": "Performance Practicum for Stage and Screen",
@@ -864,7 +999,13 @@
    "creditsMax": 2,
    "prereqText": "Audition, THEA 1590R , and University Advanced Standing",
    "prereqs": "THEA 1590R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3611": {
    "title": "Directing Actors for Stage and Screen",
@@ -882,7 +1023,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3721": {
    "title": "Theatre History and Literature I",
@@ -895,7 +1041,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3722": {
    "title": "Theatre History and Literature II",
@@ -908,21 +1059,39 @@
      "ENG 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4114": {
    "title": "Film Acting II",
    "credits": 2,
    "prereqText": "THEA 3113 , BFA Theatre Arts Matriculation, and University Advanced Standing",
    "prereqs": "THEA 3113",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "BFA Theatre Arts Matriculation",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "BFA Theatre Arts Matriculation"
   },
   "THEA 4115": {
    "title": "Acting Styles-BFA",
    "credits": 3,
    "prereqText": "BFA Theatre Arts Matriculation; THEA 2033 , Successful Completion of Sophomore Review; University Advanced Standing",
    "prereqs": "THEA 2033",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "BFA Theatre Arts Matriculation",
+    "Successful Completion of Sophomore Review",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "BFA Theatre Arts Matriculation"
   },
   "THEA 4117": {
    "title": "Auditioning and the Business - BFA",
@@ -934,21 +1103,41 @@
      "THEA 3151"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "BFA Theatre Arts Matriculation",
+    "University Advanced Standing",
+    "Senior Standing"
+   ],
+   "gate": "admission",
+   "gateText": "BFA Theatre Arts Matriculation"
   },
   "THEA 4119": {
    "title": "Senior Showcase and Career Management - BFA",
    "credits": 3,
    "prereqText": "Department Approval; THEA 4117 , BFA Theatre Arts Major, University Advanced Standing",
    "prereqs": "THEA 4117",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "BFA Theatre Arts Major",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4122": {
    "title": "Speaking Shakespeare-BFA",
    "credits": 3,
    "prereqText": "BFA Theatre Arts Major, THEA 3122 , and University Advanced Standing",
    "prereqs": "THEA 3122",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "BFA Theatre Arts Major",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4190R": {
    "title": "Musical Performance Practicum",
@@ -956,7 +1145,13 @@
    "creditsMax": 2,
    "prereqText": "Audition. University Advanced Standing, THEA 1590R .",
    "prereqs": "THEA 1590R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4810R": {
    "title": "Theatre Internship",
@@ -964,7 +1159,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4996": {
    "title": "Senior Capstone",
@@ -972,9 +1173,65 @@
    "creditsMax": 2,
    "prereqText": "University Advanced Status, Senior Status, BFA Matriculation, Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Status",
+    "Senior Status",
+    "BFA Matriculation",
+    "Instructor Approval"
+   ],
+   "gate": "admission",
+   "gateText": "BFA Matriculation, Instructor Approval"
   }
  },
  "admission": true,
- "admissionNote": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio."
+ "admissionNote": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio.",
+ "admissionInfo": {
+  "note": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio.",
+  "text": "Admission is competitive and based on successful evaluation of student's performance audition or production portfolio.",
+  "before": [
+   "ENGL 1010",
+   "MAT 1030",
+   "THEA 1033",
+   "THEA 1113",
+   "THEA 1590R",
+   "ENGL 2010",
+   "THEA 1013",
+   "THEA 1713",
+   "THEA 2156",
+   "THEA 1513",
+   "THEA 1514",
+   "THEA 2033",
+   "THEA 1223",
+   "THEA 2131",
+   "THEA 3115",
+   "THEA 3131",
+   "THEA 3151",
+   "THEA 3154",
+   "THEA 3190R",
+   "THEA 3721",
+   "THEA 2127",
+   "THEA 3033",
+   "THEA 3122",
+   "THEA 3611",
+   "THEA 3722"
+  ],
+  "gated": [
+   "THEA 4114",
+   "THEA 4115",
+   "THEA 4117",
+   "THEA 4996"
+  ],
+  "beforeLabels": [
+   "American Institutions Distribution",
+   "Physical Science Distribution",
+   "Biology Distribution",
+   "Humanities Distribution",
+   "Personal, Professional, & Civic Growth Distribution",
+   "Soc/Beh Science Distribution",
+   "Successful completion of at least two free elective credits, 1000 or above, required for graduation",
+   "Performing Arts Elective"
+  ],
+  "beforeFrom": "graduation plan"
+ }
 }

@@ -3,7 +3,7 @@
  "name": "Classical Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/classical-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "PHIL 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › PHIL 2110 Ancient Greek Philosophy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CLST 2900R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CLST 2900R Themes in Classical Civilizations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CLST 4900R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CLST 4900R Special Topics in Classical Civilizations | 3"
   },
   {
    "type": "choice",
@@ -186,7 +189,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Elective Requirements (9 credits) › In addition to the 9 credits of core requirements, students must complete an additional 9 hours of electives. The following list of courses has been approved for the Classical Studies IS Emphasis. If a course that is not represented on the following list has sufficient classical studies related content, the student may seek approval from the Classical Studies Coordinator to have the course count toward the IS Emphasis. Note: Latin or Greek language coursework…"
   }
  ],
  "gradPlan": [
@@ -246,7 +250,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 2710": {
    "title": "Prehistoric Through Gothic Art History",
@@ -256,7 +265,9 @@
    "title": "Ancient Greek Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CLST 2900R": {
    "title": "Themes in Classical Civilizations",
@@ -267,7 +278,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 2230": {
    "title": "Myths and Legends in Literature",
@@ -295,14 +311,26 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3760G": {
    "title": "World Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GRK 1010": {
    "title": "Beginning Ancient Greek I",
@@ -338,35 +366,60 @@
    "credits": 3,
    "prereqText": "GRK 2020 and University Advanced Standing",
    "prereqs": "GRK 2020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3110": {
    "title": "Greek History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3130": {
    "title": "Roman History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3140": {
    "title": "Roman Empire",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing.",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HONR 2000": {
    "title": "Ancient Legacies",
    "credits": 3,
    "prereqText": "Current enrollment in Utah Valley University Honors program or permission of the instructor",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Current enrollment in Utah Valley University Honors program or permission of the instructor"
+   ],
+   "gate": "admission",
+   "gateText": "Current enrollment in Utah Valley University Honors program or permission of the instructor"
   },
   "HUM 2010": {
    "title": "World History Through the Arts I",
@@ -416,7 +469,12 @@
    "credits": 3,
    "prereqText": "( LATN 2020 or equivalent) and University Advanced Standing",
    "prereqs": "LATN 2020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 2110": {
    "title": "Ancient Greek Philosophy",
@@ -466,7 +524,19 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit.",
+  "before": [],
+  "gated": [
+   "HONR 2000"
+  ]
  }
 }

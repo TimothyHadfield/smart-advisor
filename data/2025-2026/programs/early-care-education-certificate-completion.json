@@ -3,7 +3,7 @@
  "name": "Early Care and Education, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/elementary-education/early-care-education-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,83 +11,106 @@
    "area": "Discipline Core Requirements",
    "code": "PSY 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C",
+   "src": "Discipline Core Requirements (28 credits) › PSY 1100 Human Development Life Span (C grade or higher) | 3 (Note: This course must be taken before EDEC 2300 and EDEC 2500)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 1640",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 1640 Childrens Music and Movement | 2",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2300 Including Young Diverse Learners | 2 (Note: PSY 1100 is a prerequisite for these courses) or EDSP 340G",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2500 Child Development Birth to Eight Years | 3 (Note: PSY 1100 is a prerequisite for these courses)",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2600",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2600 Introduction to Early Childhood Education | 2 (Note: Must receive a B- grade or higher in this course prior to enrolling in EDEC 2700 and EDEC 2720)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2610 Child Guidance | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2620 Early Childhood Curriculum | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2630 Literacy and Literature for Early Childhood | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2700 Early Childhood Practicum | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEC 2720",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (28 credits) › EDEC 2720 Early Childhood Assessment | 2",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDEL 2200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (28 credits) › EDEL 2200 Introduction to Educational Technology | 2",
+   "minGrade": "C-"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Advisor Approval",
-   "credits": 2
+   "credits": 2,
+   "src": "Elective Requirements (2 credits) › Advisor Approval | 2"
   }
  ],
  "gradPlan": [
@@ -171,7 +194,11 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2500": {
    "title": "Child Development Birth to Eight Years",
@@ -189,7 +216,11 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2600": {
    "title": "Introduction to Early Childhood Education",
@@ -201,7 +232,11 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2610": {
    "title": "Child Guidance",
@@ -213,13 +248,18 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2620": {
    "title": "Early Childhood Curriculum",
    "credits": 3,
    "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-, EDEC 2600 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-"
   },
   "EDEC 2630": {
    "title": "Literacy and Literature for Early Childhood",
@@ -231,7 +271,11 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2700": {
    "title": "Early Childhood Practicum",
@@ -259,7 +303,11 @@
    "preco": [
     "EDEC 2610",
     "EDEC 2620"
-   ]
+   ],
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEC 2720": {
    "title": "Early Childhood Assessment",
@@ -287,7 +335,11 @@
    "preco": [
     "EDEC 2610",
     "EDEC 2620"
-   ]
+   ],
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EDEL 2200": {
    "title": "Introduction to Educational Technology",

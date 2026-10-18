@@ -3,7 +3,7 @@
  "name": "Biology Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/biology-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,14 +35,20 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › CHEM 1110 Elementary Chemistry for the Health Sciences | 4"
   },
   {
    "type": "choice",
@@ -80,6 +92,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -89,32 +102,37 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Personal, Professional, and Civic Growth GE class | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PHYS 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › PHYS 1010 Elementary Physics | 3"
   },
   {
    "type": "course",
@@ -123,28 +141,32 @@
    "alts": [
     "BIOL 1610H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 1610 College Biology I | 4 or BIOL 1610H College Biology I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 1620 & BIOL 1625 College Biology II and College Biology II Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1625",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 1620 & BIOL 1625 College Biology II and College Biology II Laboratory | 4"
   },
   {
    "type": "choice",
@@ -170,7 +192,8 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following series:"
+   "text": "Complete one of the following series:",
+   "src": "Discipline Core Requirements (88 credits) › Complete one of the following series: | 4"
   },
   {
    "type": "choice",
@@ -210,7 +233,8 @@
      "credits": 4
     }
    ],
-   "text": "Take one of the following series:"
+   "text": "Take one of the following series:",
+   "src": "Discipline Core Requirements (88 credits) › Take one of the following series: | 4"
   },
   {
    "type": "choice",
@@ -269,14 +293,20 @@
       "BIOL 4970R"
      ],
      "credits": 0.5,
-     "crMax": 1
+     "crMax": 1,
+     "notes": [
+      "Max of 1 credit"
+     ]
     },
     {
      "codes": [
       "BIOL 4890R"
      ],
      "credits": 1,
-     "crMax": 4
+     "crMax": 4,
+     "notes": [
+      "Max of three credits."
+     ]
     },
     {
      "codes": [
@@ -447,168 +477,192 @@
      "credits": 4
     }
    ],
-   "text": "Complete two of the following:"
+   "text": "Complete two of the following:",
+   "src": "Discipline Core Requirements (88 credits) › Complete two of the following: | 7"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › SCIE 2400 Measurement and Analysis for Science Teachers | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 3500 Genetics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 3550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 3550 Molecular Biology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 3700 General Ecology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 4500 Principles of Evolution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 4940",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › BIOL 4940 Student Seminar | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BOT 3340",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (88 credits) › BOT 3340 Plant Biology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › SCIE 4210 Science Teaching Methods I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › SCIE 4220 Teaching Methods in Science II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1115",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › CHEM 1115 Elementary Chemistry Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › GEO 1010 & GEO 1015 Introduction to Geology and Introduction to Geology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › GEO 1010 & GEO 1015 Introduction to Geology and Introduction to Geology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Education Courses: › EDSC 4990 Teacher Assessment Project | 2"
   }
  ],
  "gradPlan": [
@@ -916,7 +970,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -949,7 +1004,13 @@
    "credits": 3,
    "prereqText": "BIOL 1610 with a minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3400": {
    "title": "Cell Biology",
@@ -971,7 +1032,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3405": {
    "title": "Cell Biology Laboratory",
@@ -987,14 +1054,26 @@
    "coreqText": "BIOL 3400",
    "coreqs": [
     "BIOL 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3500": {
    "title": "Genetics",
    "credits": 3,
    "prereqText": "BIOL 1610 with minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -1012,41 +1091,73 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3700": {
    "title": "General Ecology",
    "credits": 3,
    "prereqText": "BIOL 1620 with a C- or higher, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3800": {
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4000": {
    "title": "Freshwater Ecology",
    "credits": 4,
    "prereqText": "BIOL 1620 with a C- or higher in each, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4300": {
    "title": "Bioinformatics and Genome Analysis",
    "credits": 4,
    "prereqText": "BIOL 3500 with a minimum grade C- and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4400": {
    "title": "Genomics",
    "credits": 3,
    "prereqText": "BIOL 3500 with minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4500": {
    "title": "Principles of Evolution",
@@ -1071,7 +1182,14 @@
      "MICR 3150",
      "BOT 4050"
     ]
-   }
+   },
+   "prereqWords": [
+    "senior status",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4890R": {
    "title": "Student Research",
@@ -1084,7 +1202,13 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "instructor permission",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4940": {
    "title": "Student Seminar",
@@ -1096,7 +1220,14 @@
      "BIOL 1610H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "junior or senior standing",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4970R": {
    "title": "Biology Colloquium",
@@ -1104,7 +1235,12 @@
    "creditsMax": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 2050": {
    "title": "Field Botany",
@@ -1127,7 +1263,8 @@
      "BIOL 1010",
      "BIOL 1610"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "BOT 3200": {
    "title": "Integrated Pest Management",
@@ -1140,7 +1277,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3340": {
    "title": "Plant Biology",
@@ -1157,28 +1299,50 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3500": {
    "title": "Mycology",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3710": {
    "title": "Plant Propagation",
    "credits": 3,
    "prereqText": "BIOL 1620 and University Advanced Standing. BOT 1800 recommended",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3800": {
    "title": "Ethnobotany",
    "credits": 4,
    "prereqText": "BIOL 1620 with a C- or higher and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4300": {
    "title": "Native Trees and Shrubs of Utah",
@@ -1191,7 +1355,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4430": {
    "title": "Plant Pathology",
@@ -1205,7 +1374,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -1241,21 +1416,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -1270,28 +1463,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -1304,7 +1521,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -1316,7 +1540,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -1334,7 +1565,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1347,7 +1581,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -1383,7 +1618,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1395,7 +1631,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -1416,7 +1653,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -1448,7 +1686,12 @@
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3200": {
    "title": "Emerging and Re Emerging Diseases and Zoonoses",
@@ -1461,7 +1704,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4200": {
    "title": "Microbiomes",
@@ -1474,7 +1723,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4300": {
    "title": "Pathogenic Microbiology",
@@ -1487,7 +1741,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4450": {
    "title": "Immunology",
@@ -1500,7 +1759,12 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4500": {
    "title": "Virology",
@@ -1519,7 +1783,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 1010": {
    "title": "Elementary Physics",
@@ -1544,14 +1813,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SCIE 4220": {
    "title": "Teaching Methods in Science II",
    "credits": 3,
    "prereqText": "SCIE 4210 and University Advanced Standing",
    "prereqs": "SCIE 4210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1588,7 +1867,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1614,7 +1894,13 @@
    "coreqText": "ZOOL 3105",
    "coreqs": [
     "ZOOL 3105"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3105": {
    "title": "Vertebrate Zoology Laboratory",
@@ -1625,7 +1911,12 @@
    "coreqText": "ZOOL 3100",
    "coreqs": [
     "ZOOL 3100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3200": {
    "title": "Invertebrate Zoology",
@@ -1636,7 +1927,13 @@
    "coreqText": "ZOOL 3205",
    "coreqs": [
     "ZOOL 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3205": {
    "title": "Invertebrate Zoology Laboratory",
@@ -1647,7 +1944,13 @@
    "coreqText": "ZOOL 3200 Invertebrate Zoology",
    "coreqs": [
     "ZOOL 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3300": {
    "title": "Herpetology",
@@ -1658,7 +1961,13 @@
    "coreqText": "ZOOL 3305 Herpetology Laboratory",
    "coreqs": [
     "ZOOL 3305"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3305": {
    "title": "Herpetology Laboratory",
@@ -1669,7 +1978,13 @@
    "coreqText": "ZOOL 3300 Herpetology",
    "coreqs": [
     "ZOOL 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3430": {
    "title": "Entomology",
@@ -1685,7 +2000,13 @@
    "coreqText": "ZOOL 3435",
    "coreqs": [
     "ZOOL 3435"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3435": {
    "title": "Entomology Laboratory",
@@ -1696,7 +2017,12 @@
    "coreqText": "ZOOL 3430",
    "coreqs": [
     "ZOOL 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3500": {
    "title": "Mammalogy",
@@ -1706,7 +2032,10 @@
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3505": {
    "title": "Mammalogy Laboratory",
@@ -1717,14 +2046,24 @@
    "coreqText": "ZOOL 3500",
    "coreqs": [
     "ZOOL 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4000": {
    "title": "Animal Behavior",
    "credits": 3,
    "prereqText": "BIOL 1610 and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4100": {
    "title": "Parasitology",
@@ -1736,7 +2075,13 @@
      "MICR 2060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4300": {
    "title": "Histology",
@@ -1749,7 +2094,13 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4500": {
    "title": "Comparative Vertebrate Zoology",
@@ -1771,7 +2122,13 @@
    "coreqText": "ZOOL 4505",
    "coreqs": [
     "ZOOL 4505"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4505": {
    "title": "Comparative Vertebrate Zoology Laboratory",
@@ -1793,20 +2150,81 @@
    "coreqText": "ZOOL 4500",
    "coreqs": [
     "ZOOL 4500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4600": {
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4780": {
    "title": "Neuroscience",
    "credits": 4,
    "prereqText": "ZOOL 2420 with a C- or higher and University Advanced Standing",
    "prereqs": "ZOOL 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admission to Professional Education status is a requirement for enrollment in professional studies level courses. Admission criteria includes: ENGL and MATH QL courses must have a grade C or higher. GPA of 3.0 or higher with no grade lower than a C in content area courses. Completion of all General Education requirements and 70% of content area courses. Pass LiveScan Criminal Background Check.",
+  "before": [
+   "BIOL 1610",
+   "BIOL 1615",
+   "ENGL 1010",
+   "MATH 1050",
+   "ENGL 2010",
+   "BIOL 1620",
+   "BIOL 1625",
+   "BIOL 3200",
+   "BIOL 3700",
+   "CHEM 1110",
+   "CHEM 1115",
+   "GEO 1010",
+   "GEO 1015",
+   "PHYS 1010",
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "SCIE 2400",
+   "BIOL 3550",
+   "BOT 3340",
+   "BIOL 3500"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeLabels": [
+   "American Institutions",
+   "Fine Arts Distribution",
+   "Personal, Professional, and Civic Growth GE class",
+   "Complete one of the following Combinations:",
+   "Take one of the following series:",
+   "Humanities Distribution",
+   "Social/Behavioral Science Distribution"
+  ],
+  "beforeFrom": "graduation plan",
+  "minGrade": "C"
  }
 }

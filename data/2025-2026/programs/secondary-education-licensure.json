@@ -3,7 +3,7 @@
  "name": "Secondary Education, Licensure",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/secondary-special-education/secondary-education-licensure/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 32,
  "requirements": [
   {
@@ -11,77 +11,88 @@
    "area": "Pre-Professional Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Pre-Professional Core Requirements (2 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › EDSC 4990 Teacher Assessment Project | 2"
   }
  ],
  "gradPlan": [
@@ -167,21 +178,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -196,28 +225,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -230,7 +283,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -242,11 +302,32 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
    "credits": 2
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ]
  }
 }

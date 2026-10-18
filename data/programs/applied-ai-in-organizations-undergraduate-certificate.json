@@ -3,7 +3,7 @@
  "name": "Applied AI in Organizations, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/applied-ai-in-organizations-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "",
    "code": "INFO 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "INFO 2500 Applied Artificial Intelligence Concepts in Organizations | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "INFO 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "INFO 3500 AI in Learning and Communication | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "PHIL 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PHIL 3250 Ethics of AI | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 3410 AI Workflow Operations Automation | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "DWDD 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "DWDD 2420 Media Formats and Outputs | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3700 Fundamentals of Product Management | 3"
   }
  ],
  "gradPlan": [
@@ -112,7 +118,12 @@
    "credits": 3,
    "prereqText": "INFO 2500 and University Advanced Standing",
    "prereqs": "INFO 2500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3410": {
    "title": "AI Workflow Operations Automation",
@@ -131,20 +142,32 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3700": {
    "title": "Fundamentals of Product Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3250": {
    "title": "Ethics of AI",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

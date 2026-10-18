@@ -3,7 +3,7 @@
  "name": "Digital Marketing, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/marketing/digital-marketing-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 2400 Data Analytics for Business | 3 (Note: Can be taken simultaneously with MKTG 3600.)"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3660 Digital Marketing | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3170 Digital Advertising | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3680",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3680 Marketing with Social Media | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 3690",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 3690 Digital Marketing Analytics | 3"
   }
  ],
  "gradPlan": [
@@ -99,33 +105,49 @@
    "title": "Digital Advertising",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3660": {
    "title": "Digital Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3680": {
    "title": "Marketing with Social Media",
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3690": {
    "title": "Digital Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

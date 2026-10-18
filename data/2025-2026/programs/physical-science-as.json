@@ -3,7 +3,7 @@
  "name": "Physical Science, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/physical-science-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -75,6 +86,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -84,37 +96,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Life Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Life Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -259,6 +277,7 @@
     }
    ],
    "text": "Complete one of the following",
+   "src": "Core Discipline Requirements (17 credits) › Complete one of the following | 17",
    "notes": [
     "Recommended for students most interested in physics:",
     "Any 1000- or 2000-level PHYS elective (1)",
@@ -462,7 +481,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 12 credits from the following (not to include any course being used to fill one of the requirements above). Consult with an advisor to determine which courses best match your long-term educational and career goals."
+   "text": "Complete 12 credits from the following (not to include any course being used to fill one of the requirements above). Consult with an advisor to determine which courses best match your long-term educational and career goals.",
+   "src": "Elective Requirements (12 credits) › Complete 12 credits from the following (not to include any course being used to fill one of the requirements above). Consult with an advisor to determine which courses best match your long-term educational and career goals. | 12"
   }
  ],
  "gradPlan": [
@@ -571,7 +591,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -589,7 +613,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -600,7 +625,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -610,7 +636,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -641,7 +668,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -665,7 +693,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -678,7 +709,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENVT 1110": {
    "title": "Introduction to Environmental Management",
@@ -795,7 +827,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -807,7 +840,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -819,7 +853,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -841,7 +876,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -852,7 +891,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -863,7 +903,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -874,7 +915,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -885,7 +927,8 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "METO 1010": {
    "title": "Introduction to Meteorology",
@@ -955,7 +998,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

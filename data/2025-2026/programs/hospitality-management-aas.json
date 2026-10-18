@@ -3,7 +3,7 @@
  "name": "Hospitality Management, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/hospitality-management-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 61,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (16 credits) › ENGLISH: › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -59,6 +64,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (16 credits) › ENGLISH: › Complete one of the following: | 4",
    "ge": "math"
   },
   {
@@ -68,7 +74,8 @@
    "credits": 3,
    "notes": [
     "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › ENGLISH: › HUMANITIES/FINE ARTS/FOREIGN LANGUAGE: | 3"
   },
   {
    "type": "placeholder",
@@ -77,7 +84,8 @@
    "credits": 3,
    "notes": [
     "Any approved social science course"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › ENGLISH: › SOCIAL BEHAVIORAL SCIENCE: | 3"
   },
   {
    "type": "placeholder",
@@ -86,14 +94,16 @@
    "credits": 3,
    "notes": [
     "Any approved Biology or Physical Science Distribution Course"
-   ]
+   ],
+   "src": "General Education Requirements (16 credits) › ENGLISH: › BIOLOGY OR PHYSICAL SCIENCE: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › CA 1000 Culinary Basics | 3"
   },
   {
    "type": "course",
@@ -102,63 +112,73 @@
    "alts": [
     "ECON 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › ECON 1010 Economics as a Social Science | 3 or ECON 2010 Principles of Economics I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › HM 1010 Introduction to Hospitality Industry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 1180",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › HM 1180 Food and Beverage Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 2810R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › HM 2810R Cooperative Work Experience | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › IM 2600 Spreadsheet Applications | 3 (Note: Grade of B- or higher is required for IM 2600.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 17 hours of Electives numbered 1000 or higher",
    "credits": 17,
-   "text": "Complete 17 hours of Electives numbered 1000 or higher"
+   "text": "Complete 17 hours of Electives numbered 1000 or higher",
+   "src": "Discipline Core Requirements (45 credits) › Complete the following: › Complete 17 hours of Electives numbered 1000 or higher | 17"
   }
  ],
  "gradPlan": [
@@ -298,7 +318,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "HM 1010": {
    "title": "Introduction to Hospitality Industry",
@@ -314,14 +337,20 @@
    "creditsMax": 9,
    "prereqText": "Approval of School of Business Career and Corporate Manager",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Approval of School of Business Career and Corporate Manager"
+   ]
   },
   "IM 2600": {
    "title": "Spreadsheet Applications",
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -334,7 +363,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -346,7 +379,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -358,7 +395,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -370,7 +408,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -382,7 +421,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -403,7 +443,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -416,7 +461,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Automotive Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/transportation-technologies/automotive-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 67,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
@@ -24,270 +29,315 @@
     "MATH 1050",
     "MATH 1055"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › MAT 1030 Quantitative Reasoning | 3 or MAT 1035 Quantitative Reasoning with Integrated Algebra or MATH 1050 College Algebra or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MAT 1030": 3,
+    "MAT 1035": 6,
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Behavioral Science, Social, or Political Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Behavioral Science, Social, or Political Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology/Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Biology/Physical Science Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1001",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1001 Automotive Skills and Safety Training | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1010 Maintenance and Light Repair | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1015 Maintenance and Light Repair Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1020",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1020 Automotive Service Skills | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1025",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1025 Automotive Service Skills Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1120",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1120 Powertrain Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1125",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1125 Powertrain Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1130",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1130 Engine Mechanical | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1135",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1135 Engine Mechanical Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1160",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1160 Automotive Electrical Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1165",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1165 Automotive Electrical Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1170",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1170 Engine Electrical Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1175",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1175 Engine Electrical Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1210 Steering and Suspension Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1215 Suspension and Steering Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1230",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1230 Engine Performance | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 1235",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 1235 Engine Performance Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2120",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2120 Advanced Engine Performance II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2125",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2125 Advanced Engine Performance II Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2130",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2130 Transportation Environmental Pollution Controls | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2135",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2135 Transportation Environmental Pollution Controls Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2140",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2140 Chassis Electrical and Electronics Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2145",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2145 Chassis Electrical and Electronics Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2210 Brake Systems and Regenerative Braking | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2215 Brake Systems and Regenerative Braking Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2220",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2220 Automatic Powertrain Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2225 Automatic Powertrain Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2240",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2240 Transportation Heating Ventilation Air Conditioning and Refrigeration Theory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2245",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2245 Transportation Heating Ventilation Air Conditioning and Refrigeration Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2250 Fuel Management | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2255 Fuel Management Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2260",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2260 EV/Hybrid and ADAS Vehicle Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2265",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2265 EV/Hybrid and ADAS Vehicle Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2270",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2270 Advanced Electrical Diagnosis | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUT 2275",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (52 credits) › AUT 2275 Advanced Electrical Diagnosis Lab | 1"
   }
  ],
  "gradPlan": [
@@ -654,7 +704,8 @@
    "coreqText": "AUT 2135 Recommended",
    "coreqs": [
     "AUT 2135"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "AUT 2135": {
    "title": "Transportation Environmental Pollution Controls Lab",
@@ -679,7 +730,8 @@
    "coreqText": "AUT 2145 Recommended",
    "coreqs": [
     "AUT 2145"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "AUT 2145": {
    "title": "Chassis Electrical and Electronics Systems Lab",
@@ -704,7 +756,8 @@
    "coreqText": "AUT 2215",
    "coreqs": [
     "AUT 2215"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "AUT 2215": {
    "title": "Brake Systems and Regenerative Braking Lab",
@@ -724,7 +777,8 @@
    "coreqText": "AUT 2225 Recommended",
    "coreqs": [
     "AUT 2225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "AUT 2225": {
    "title": "Automatic Powertrain Systems Lab",
@@ -781,7 +835,8 @@
    "coreqText": "AUT 2255 Recommended",
    "coreqs": [
     "AUT 2255"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "AUT 2255": {
    "title": "Fuel Management Lab",
@@ -830,7 +885,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -843,7 +901,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -855,7 +917,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -867,7 +933,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -879,7 +946,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   }
  }
 }

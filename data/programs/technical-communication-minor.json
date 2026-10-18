@@ -3,7 +3,7 @@
  "name": "Technical Communication, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/technical-communication-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "ENGL 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ENGL 2100 Technical Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ENGL 3010 Rhetorical Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › ENGL 4390 Writing Studies Capstone | 3"
   },
   {
    "type": "choice",
@@ -85,7 +88,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete FOUR courses from the following:"
+   "text": "Complete FOUR courses from the following:",
+   "src": "Discipline Core Requirements (21 credits) › Complete FOUR courses from the following: | 12"
   }
  ],
  "gradPlan": [
@@ -314,41 +318,74 @@
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3020": {
    "title": "Modern English Grammars",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3050": {
    "title": "Advanced Editing and Design for Print Media",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing; ENGL 2050 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3300": {
    "title": "Collaborative Communication for Technology Professions",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3320": {
    "title": "Grant and Proposal Writing",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3340": {
    "title": "Digital Document Design",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4010R": {
    "title": "Topics in Rhetoric",
@@ -360,7 +397,13 @@
    "precoreqs": "ENGL 3010",
    "preco": [
     "ENGL 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4340": {
    "title": "Advanced Technical Communication",
@@ -372,7 +415,13 @@
      "ENGL 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4360R": {
    "title": "Topics in Technical Communication",
@@ -384,7 +433,13 @@
      "ENGL 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4390": {
    "title": "Writing Studies Capstone",
@@ -396,7 +451,19 @@
      "ENGL 3010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 35 semester credits with a cumulative GPA: 2.5 minimum. Or completion of an Associate in Science or an Associate in Arts degree. Minimum grade of \"C\" in all courses. Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": [],
+  "minGrade": "C"
  }
 }

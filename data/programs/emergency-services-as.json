@@ -3,7 +3,7 @@
  "name": "Emergency Services, A.S.",
  "url": "https://catalog.uvu.edu/health-public-service/emergency-services/emergency-services-as/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -79,6 +85,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete the following: › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -123,37 +130,43 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete the following: › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
@@ -162,34 +175,39 @@
    "credits": 3,
    "recommended": [
     "ES 1150"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Social/Behavioral Science (ES 1150 recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESFF 1000",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (30 credits) › ESFF 1000 Introduction to Emergency Services | 4 (Note: or sufficient emergency services work experience)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESFF 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › ESFF 2100 Servant-Leadership for the Emergency Services | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Any Emergency Servics advisor approved courses",
-   "credits": 18
+   "credits": 18,
+   "src": "Discipline Core Requirements (30 credits) › Any Emergency Servics advisor approved courses | 18"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 5,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Core Requirements (30 credits) › Complete any 1000-level, or higher, courses | 5"
   }
  ],
  "gradPlan": [
@@ -322,14 +340,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -342,7 +366,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ES 1150": {
    "title": "Introduction to Emergency and Disaster Management",
@@ -390,7 +415,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -402,7 +431,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -414,7 +447,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -426,7 +460,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -438,7 +473,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -459,7 +495,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -472,7 +513,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

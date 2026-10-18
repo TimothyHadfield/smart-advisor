@@ -3,7 +3,7 @@
  "name": "Surveying and Mapping, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/surveying-mapping-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -69,6 +75,7 @@
     }
    ],
    "text": "Complete one of the following: (Recommend STAT 1040)",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: (Recommend STAT 1040) | 3",
    "ge": "math"
   },
   {
@@ -113,6 +120,7 @@
     }
    ],
    "text": "Complete one of the following: (Recommend HIST 1740)",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: (Recommend HIST 1740) | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -125,7 +133,8 @@
    "credits": 3,
    "recommended": [
     "BIOL 1010"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Biology (Recommend BIOL 1010) | 3"
   },
   {
    "type": "placeholder",
@@ -134,7 +143,8 @@
    "credits": 3,
    "recommended": [
     "ASTR 1040"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Physical Science (Recommend ASTR 1040) | 3"
   },
   {
    "type": "placeholder",
@@ -143,7 +153,8 @@
    "credits": 3,
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Humanities (Recommend COMM 1020) | 3"
   },
   {
    "type": "placeholder",
@@ -152,7 +163,8 @@
    "credits": 3,
    "recommended": [
     "EGDT 1720"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Fine Arts (Recommend EGDT 1720) | 3"
   },
   {
    "type": "placeholder",
@@ -161,48 +173,55 @@
    "credits": 3,
    "recommended": [
     "GEOG 1300G"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Social/Behavioral (Recommend GEOG 1300G) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1020",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Course Requirements (30 credits) › SURV 1020 Introduction to Surveying and Mapping | 1"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › SURV 1030 Fundamentals of Geodesy and Control Surveys | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "choice",
@@ -227,42 +246,48 @@
      "credits": 6
     }
    ],
-   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600):"
+   "text": "Complete one of the following Mathmatics courses (recommend EGDT 1600):",
+   "src": "Course Requirements (30 credits) › Complete one of the following Mathmatics courses (recommend EGDT 1600): | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › SURV 1220 Remote Sensing and Photogrammetry | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › SURV 2010 Land History of America | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › SURV 2100 Mapping From Field to Finish | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2240",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Course Requirements (30 credits) › SURV 2240 Fundamentals of Adjustments and Computations | 2"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "GIS 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (30 credits) › GIS 2800 Geographic Information Systems | 3"
   }
  ],
  "gradPlan": [
@@ -428,14 +453,16 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1610": {
    "title": "Technical Math Geometry Trig",
    "credits": 3,
    "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
    "prereqs": "EGDT 1600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1720": {
    "title": "Architectural Rendering",
@@ -453,7 +480,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -466,7 +496,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEOG 1300G": {
    "title": "Survey of World Geography",
@@ -503,7 +534,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -515,7 +550,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -527,7 +566,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -539,7 +579,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -551,7 +592,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -576,7 +618,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -589,7 +636,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "SURV 1020": {
    "title": "Introduction to Surveying and Mapping",
@@ -600,14 +652,24 @@
    "credits": 3,
    "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1220": {
    "title": "Remote Sensing and Photogrammetry",
    "credits": 3,
    "prereqText": "MAT 1010 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2010": {
    "title": "Land History of America",
@@ -630,7 +692,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2240": {
    "title": "Fundamentals of Adjustments and Computations",
@@ -648,7 +715,31 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "ENGL 1010",
+   "SURV 1020",
+   "SURV 2010",
+   "EGDT 1040",
+   "EGDT 1400"
+  ],
+  "gated": [
+   "SURV 1030",
+   "SURV 1220",
+   "SURV 2100",
+   "SURV 2240"
+  ],
+  "beforeLabels": [
+   "Complete one of the following Mathematics courses (Recommend EGDT 1600):"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

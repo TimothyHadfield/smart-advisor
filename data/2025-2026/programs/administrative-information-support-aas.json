@@ -3,7 +3,7 @@
  "name": "Administrative Information Support, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/administrative-information-support-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (16 credits) › English: › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -44,6 +49,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (16 credits) › Mathematics: › Complete one of the following: | 4",
    "notes": [
     "Humanities/Fine Arts/Foreign Language"
    ],
@@ -54,6 +60,7 @@
    "area": "General Education Requirements",
    "label": "Any approved Humanities/Fine Arts/Foreign Language Distribution",
    "credits": 3,
+   "src": "General Education Requirements (16 credits) › Mathematics: › Any approved Humanities/Fine Arts/Foreign Language Distribution | 3",
    "notes": [
     "Social and Behavioral Science"
    ]
@@ -63,6 +70,7 @@
    "area": "General Education Requirements",
    "label": "Any approved Social and Behavioral Science Distribution",
    "credits": 3,
+   "src": "General Education Requirements (16 credits) › Mathematics: › Any approved Social and Behavioral Science Distribution | 3",
    "notes": [
     "Biology or Physical Science"
    ]
@@ -71,14 +79,16 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Biology or Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (16 credits) › Mathematics: › Any approved Biology or Physical Science Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "IM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › IM 1010 Basic Computer Applications | 3"
   },
   {
    "type": "course",
@@ -87,70 +97,80 @@
    "alts": [
     "IM 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › IM 2010 Business Computer Proficiency | 3 or IM 2600 Spreadsheet Applications"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "IM 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › IM 2100 Document Processing Applications | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "IM 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › IM 2300 Information Management Principles | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "IM 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › IM 2500 Graphic Applications | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "INFO 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › INFO 1200 Computer Programming I for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "INFO 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › INFO 2420 Web Application Design | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "FIN 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › FIN 1060 Personal Finance | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discpline Core Requirements",
    "code": "COMM 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discpline Core Requirements (33 credits) › COMM 2110 Interpersonal Communication | 3"
   },
   {
    "type": "choice",
@@ -198,14 +218,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete 12 credits from the following department pre-approved electives:"
+   "text": "Complete 12 credits from the following department pre-approved electives:",
+   "src": "Elective Requirements (14 credits) › Complete 12 credits from the following department pre-approved electives: | 12"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 2,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Elective Requirements (14 credits) › Complete any 1000-level, or higher, courses | 2"
   }
  ],
  "gradPlan": [
@@ -362,7 +384,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "FIN 1060": {
    "title": "Personal Finance",
@@ -381,7 +406,10 @@
    "credits": 3,
    "prereqText": "Basic keyboarding skill",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Basic keyboarding skill"
+   ]
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -394,7 +422,10 @@
    "credits": 3,
    "prereqText": "Basic keyboarding skills",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Basic keyboarding skills"
+   ]
   },
   "IM 2300": {
    "title": "Information Management Principles",
@@ -409,7 +440,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "INFO 1200": {
    "title": "Computer Programming I for IS IT",
@@ -451,7 +485,11 @@
      "MAT 0990"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -463,7 +501,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -475,7 +514,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2030": {
    "title": "Inclusive Leadership",
@@ -499,7 +539,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -512,7 +553,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",

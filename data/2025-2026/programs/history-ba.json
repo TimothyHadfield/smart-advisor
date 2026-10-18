@@ -3,7 +3,7 @@
  "name": "History, B.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/history-ba/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -112,6 +119,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -121,86 +129,99 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution :(Fulfilled by completing Foreign Language Course 2020G/2020)",
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › Humanities Distribution :(Fulfilled by completing Foreign Language Course 2020G/2020) | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 1500G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 1500G World History to 1500 | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 1510G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 1510G World History from 1500 to the Present | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 2700 US History to 1877 | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 2710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 2710 US History since 1877 | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 3010 The Historians Craft | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 4980",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 4980 Senior Research Thesis Research Component | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HIST 4990",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HIST 4990 Senior Research Thesis Writing Component | 3"
   },
   {
    "type": "choice",
@@ -277,7 +298,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Elective Requirements (18 credits) › European History: complete at least one course in European history | 3"
   },
   {
    "type": "choice",
@@ -390,7 +412,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Elective Requirements (18 credits) › United States History: complete at least one course in US history | 3"
   },
   {
    "type": "choice",
@@ -461,7 +484,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Elective Requirements (18 credits) › World History: Complete at least one course in world history | 3"
   },
   {
    "type": "choice",
@@ -546,26 +570,30 @@
      "credits": 2,
      "crMax": 4
     }
-   ]
+   ],
+   "src": "Discipline Elective Requirements (18 credits) › Special Topics: complete at least one course in a special topic | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Elective Requirements",
    "label": "Elective",
    "credits": 6,
-   "text": "Complete any two additional upper division History courses"
+   "text": "Complete any two additional upper division History courses",
+   "src": "Discipline Elective Requirements (18 credits) › Complete any two additional upper division History courses | 6"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete additional 12 hours of one Foreign Language.",
-   "credits": 12
+   "credits": 12,
+   "src": "Elective Requirements (50 credits) › Complete additional 12 hours of one Foreign Language. | 12"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any courses numbered 1000 or higher (19 credits must be upper division)",
-   "credits": 38
+   "credits": 38,
+   "src": "Elective Requirements (50 credits) › Any courses numbered 1000 or higher (19 credits must be upper division) | 38"
   }
  ],
  "gradPlan": [
@@ -793,7 +821,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AIST 3810": {
    "title": "Precolumbian America",
@@ -810,7 +843,12 @@
      "AIST 1800G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AIST 3830": {
    "title": "Indians of the Great Plains",
@@ -834,7 +872,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -848,7 +891,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -861,7 +907,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1500G": {
    "title": "World History to 1500",
@@ -907,287 +954,493 @@
      "HIST 2710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3020": {
    "title": "Public and Digital History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3030": {
    "title": "Introduction to African History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3110": {
    "title": "Greek History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3130": {
    "title": "Roman History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3150": {
    "title": "Medieval Europe",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3160": {
    "title": "Renaissance and Reformation Europe 1350 to 1600",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3170": {
    "title": "Absolutism Enlightenment and Revolution Europe from 1600 to 1815",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3180": {
    "title": "Nineteenth Century Europe",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3190": {
    "title": "Twentieth Century Europe",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3200G": {
    "title": "Women in American History to 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3200R": {
    "title": "Issues and Topics in Global History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3210G": {
    "title": "Women in American History since 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3220G": {
    "title": "History of the American West to 1850",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3230G": {
    "title": "History of the American West since 1850",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3260": {
    "title": "History of Utah",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3300G": {
    "title": "Mediterranean World 1500-1800",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3320": {
    "title": "Modern Britain",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3340": {
    "title": "The French Revolution and Napoleon",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3440": {
    "title": "The History of World War I",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3450G": {
    "title": "The History of World War II",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3540": {
    "title": "History of South Africa",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3660G": {
    "title": "The History of Modern Russia--1864 to Present",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3710R": {
    "title": "Issues and Topics in American History",
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3730": {
    "title": "American Origins to 1790",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3731": {
    "title": "US History-Early Republic through the Progressive Era",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3732": {
    "title": "U.S. History-Progressive Era to the 21st Century",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3740": {
    "title": "American Revolution",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3745": {
    "title": "Civil War and Reconstruction",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3820G": {
    "title": "American Indian History to 1890",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3840G": {
    "title": "American Indian History since 1890",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4130": {
    "title": "Anti-Semitism and the Holocaust",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4140": {
    "title": "Genocide in the Twentieth Century",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4180": {
    "title": "The Italian Renaissance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4200R": {
    "title": "Issues and Topics in Global History",
    "credits": 3,
    "prereqText": "Instructor approval; and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4210G": {
    "title": "The Global Cold War",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4300G": {
    "title": "Violence and Social Conflict in Latin America",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4310": {
    "title": "Violence and War in the Ancient World",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4320": {
    "title": "History of Scientific Thought",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4610G": {
    "title": "Peoples of the Atlantic World 1450-1800",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4630G": {
    "title": "Missions and Conversion in Early North America",
@@ -1204,21 +1457,38 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "instructor approval)",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4660G": {
    "title": "Legacies and Reckonings in the American West",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4710R": {
    "title": "Special Issues and Topics in American History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4820R": {
    "title": "Public History Internship",
@@ -1226,7 +1496,12 @@
    "creditsMax": 9,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4910R": {
    "title": "Directed Readings",
@@ -1234,21 +1509,38 @@
    "creditsMax": 4,
    "prereqText": "Instructor approval; University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4980": {
    "title": "Senior Research Thesis Research Component",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4990": {
    "title": "Senior Research Thesis Writing Component",
    "credits": 3,
    "prereqText": "HIST 4980 and Senior Standing in History and University Advanced Standing",
    "prereqs": "HIST 4980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing in History",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -1261,7 +1553,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1273,7 +1569,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1285,7 +1585,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1297,7 +1598,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1309,7 +1611,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1330,7 +1633,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1343,7 +1651,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

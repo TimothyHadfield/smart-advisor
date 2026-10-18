@@ -3,7 +3,7 @@
  "name": "Resort Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/resort-management-undergraduate-certificate/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,56 +11,64 @@
    "area": "",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 3020 Hospitality Managerial Accounting I | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 3030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 3030 Hospitality Managerial Accounting II | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 3150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 3150 Hospitality Finance | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 3400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "HM 3400 Hotel Industry Analytics | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 4150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 4150 Hospitality Revenue Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 4400 Advanced Hotel and Tourism Analytics | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 4810R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "HM 4810R Internship | 4"
   }
  ],
  "gradPlan": [
@@ -132,7 +140,12 @@
    "credits": 3,
    "prereqText": "ACC 2110 and University Advanced Standing",
    "prereqs": "ACC 2110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3030": {
    "title": "Hospitality Managerial Accounting II",
@@ -144,7 +157,12 @@
    "precoreqs": "HM 3020",
    "preco": [
     "HM 3020"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3150": {
    "title": "Hospitality Finance",
@@ -156,28 +174,48 @@
    "precoreqs": "HM 3400",
    "preco": [
     "HM 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3400": {
    "title": "Hotel Industry Analytics",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4150": {
    "title": "Hospitality Revenue Management",
    "credits": 3,
    "prereqText": "HM 3400 , and University Advanced Standing",
    "prereqs": "HM 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4400": {
    "title": "Advanced Hotel and Tourism Analytics",
    "credits": 3,
    "prereqText": "HM 3400 and University Advanced Standing",
    "prereqs": "HM 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4810R": {
    "title": "Internship",
@@ -185,7 +223,13 @@
    "creditsMax": 9,
    "prereqText": "Approval of WSB Internship Coordinator and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Approval of WSB Internship Coordinator",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

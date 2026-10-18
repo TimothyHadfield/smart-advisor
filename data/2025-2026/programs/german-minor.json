@@ -3,7 +3,7 @@
  "name": "German, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/german-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "GER 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (3 credits) › GER 3050 Advanced German | 3"
   },
   {
    "type": "choice",
@@ -65,6 +66,7 @@
     }
    ],
    "text": "Complete 15 credits from among the following:",
+   "src": "Elective Requirements (15 credits) › Complete 15 credits from among the following: | 15",
    "notes": [
     "Other advisor-approved course"
    ],
@@ -133,7 +135,12 @@
    "credits": 3,
    "prereqText": "( GER 2020G or equivalent experience) and University Advanced Standing",
    "prereqs": "GER 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GER 3050": {
    "title": "Advanced German",
@@ -146,28 +153,48 @@
    "credits": 3,
    "prereqText": "( GER 3050 or equivalent knowledge) and University Advanced Standing",
    "prereqs": "GER 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GER 3510G": {
    "title": "German Culture and Civilization",
    "credits": 3,
    "prereqText": "GER 3050 and University Advanced Standing",
    "prereqs": "GER 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GER 3800R": {
    "title": "Topics in German Studies",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GER 4200": {
    "title": "Advanced Business German",
    "credits": 3,
    "prereqText": "( GER 3200 or equivalent knowledge) and University Advanced Standing",
    "prereqs": "GER 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 3000": {
    "title": "Language and Culture",
@@ -185,21 +212,38 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Sophomore status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 3010": {
    "title": "Introduction to Linguistics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 4200": {
    "title": "Methods of Teaching a Foreign Language",
    "credits": 3,
    "prereqText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Matriculation into any secondary education bachelor degree program or departmental approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing"
   },
   "LANG 4810R": {
    "title": "Language Internship",
@@ -207,7 +251,27 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete ENGL 2010 Intermediate Academic Writing and 30 hours of college-level courses other than German with a minimum GPA of 2.0 Complete lower division German courses [ GER 1010 Beginning German I , GER 1020 Beginning German II , GER 2010 Intermediate German I , and GER 2020G Intermediate German II ] or attain a similar level of language mastery through other means. Native speakers begin at the upper division level. Be admitted to a bachelor degree program at UVU.",
+  "before": [
+   "ENGL 2010",
+   "GER 1010",
+   "GER 1020",
+   "GER 2010",
+   "GER 2020G"
+  ],
+  "gated": [
+   "LANG 4200"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

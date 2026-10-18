@@ -3,7 +3,7 @@
  "name": "Chemistry - Biochemistry Emphasis, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/chemistry/chemistry-biochemistry-emphasis-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements (33 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -71,6 +78,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (33 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
@@ -78,234 +86,268 @@
    "area": "Core Requirements: General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › BIOL 1610 College Biology I | 4"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (33 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1 (Note: To be taken with CHEM 1210 Principles of Chemistry I)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1 (Note: To be taken with CHEM 1220 Principles of Chemistry II)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1250",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 1250 Chemistry Cornerstone- Research and Careers | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1260",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 1260 Chemistry Cornerstone- Ethics | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2310",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 2310 Organic Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2315",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 2315 Organic Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2320",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 2320 Organic Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 2325 Organic Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3000",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 3000 Analytical Chemistry | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3005",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 3005 Analytical Chemistry Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 3600 Biological Chemistry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3605",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 3605 Biological Chemistry Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 4000",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 4000 Instrumental Analysis | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 4005",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › CHEM 4005 Instrumental Analysis Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › MATH 1220 Calculus II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "BIOL 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (42 credits) › BIOL 3400 Cell Biology | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "BIOL 3405",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (42 credits) › BIOL 3405 Cell Biology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 3060",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (42 credits) › CHEM 3060 Physical Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 3065",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (42 credits) › CHEM 3065 Physical Chemistry I Lab | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 3100",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (42 credits) › CHEM 3100 Advanced Inorganic Chemistry | 4"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 3115",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (42 credits) › CHEM 3115 Advanced Inorganic Chemistry Lab | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 3620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (42 credits) › CHEM 3620 Biological Chemistry II | 3"
   },
   {
    "type": "choice",
@@ -398,7 +440,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Emphasis Requirements (42 credits) › Chemistry Electives (14 credits) from the following: | 14"
   },
   {
    "type": "choice",
@@ -501,7 +544,8 @@
      ],
      "credits": 4
     }
-   ]
+   ],
+   "src": "Emphasis Requirements (42 credits) › Biology Electives (11 credits) from the following: | 11"
   }
  ],
  "gradPlan": [
@@ -755,7 +799,13 @@
    "credits": 3,
    "prereqText": "BIOL 1610 with a minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3400": {
    "title": "Cell Biology",
@@ -777,7 +827,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3405": {
    "title": "Cell Biology Laboratory",
@@ -793,14 +849,26 @@
    "coreqText": "BIOL 3400",
    "coreqs": [
     "BIOL 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3500": {
    "title": "Genetics",
    "credits": 3,
    "prereqText": "BIOL 1610 with minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3515": {
    "title": "Advanced Genetics Laboratory",
@@ -812,7 +880,12 @@
    "precoreqs": "BIOL 3500",
    "preco": [
     "BIOL 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -830,14 +903,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4300": {
    "title": "Bioinformatics and Genome Analysis",
    "credits": 4,
    "prereqText": "BIOL 3500 with a minimum grade C- and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4450": {
    "title": "Immunology",
@@ -850,7 +934,12 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4455": {
    "title": "Immunology Laboratory",
@@ -861,14 +950,30 @@
    "coreqText": "BIOL 4450",
    "coreqs": [
     "BIOL 4450"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4550": {
    "title": "Molecular Evolution and Bioinformatics",
    "credits": 3,
    "prereqText": "BIOL 3500 with minimum grade of C-, and minimum of 6 additional credits upper division biology (BIOL, BOT, MICR, ZOOL, BTEC) courses, and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "minimum of 6 additional credits upper division biology (BIOL",
+    "BOT",
+    "MICR",
+    "ZOOL",
+    "BTEC) courses",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -886,7 +991,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -904,7 +1013,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -915,7 +1025,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1250": {
    "title": "Chemistry Cornerstone- Research and Careers",
@@ -933,7 +1044,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -964,7 +1076,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -1006,21 +1119,36 @@
    "coreqText": "CHEM 3000",
    "coreqs": [
     "CHEM 3000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3020": {
    "title": "Environmental Chemistry",
    "credits": 3,
    "prereqText": "CHEM 1225 and University Advanced Standing",
    "prereqs": "CHEM 1225",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3025": {
    "title": "Environmental Chemistry Laboratory",
    "credits": 1,
    "prereqText": "CHEM 1225 and University Advanced Standing",
    "prereqs": "CHEM 1225",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3060": {
    "title": "Physical Chemistry I",
@@ -1037,7 +1165,12 @@
    "coreqText": "CHEM 3065",
    "coreqs": [
     "CHEM 3065"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3065": {
    "title": "Physical Chemistry I Lab",
@@ -1048,7 +1181,12 @@
    "coreqText": "CHEM 3060",
    "coreqs": [
     "CHEM 3060"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3100": {
    "title": "Advanced Inorganic Chemistry",
@@ -1060,7 +1198,12 @@
    "precoreqs": "CHEM 3000",
    "preco": [
     "CHEM 3000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3115": {
    "title": "Advanced Inorganic Chemistry Lab",
@@ -1071,7 +1214,12 @@
    "coreqText": "CHEM 3100",
    "coreqs": [
     "CHEM 3100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3300": {
    "title": "Biomolecular Modeling and Simulations",
@@ -1084,7 +1232,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3600": {
    "title": "Biological Chemistry",
@@ -1096,7 +1249,12 @@
    "precoreqs": "CHEM 2320",
    "preco": [
     "CHEM 2320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3605": {
    "title": "Biological Chemistry Lab",
@@ -1107,7 +1265,12 @@
    "coreqText": "BIOL 3600",
    "coreqs": [
     "BIOL 3600"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3620": {
    "title": "Biological Chemistry II",
@@ -1119,7 +1282,12 @@
      "BIOL 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3800": {
    "title": "Energy Use on Earth",
@@ -1145,7 +1313,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4000": {
    "title": "Instrumental Analysis",
@@ -1156,7 +1329,12 @@
    "coreqText": "CHEM 4005",
    "coreqs": [
     "CHEM 4005"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4005": {
    "title": "Instrumental Analysis Laboratory",
@@ -1172,7 +1350,12 @@
    "coreqText": "CHEM 4000",
    "coreqs": [
     "CHEM 4000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4030": {
    "title": "Radiochemistry",
@@ -1184,7 +1367,12 @@
      "MATH 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4600": {
    "title": "Structure Determination",
@@ -1195,7 +1383,12 @@
    "coreqText": "CHEM 4605",
    "coreqs": [
     "CHEM 4605"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4605": {
    "title": "Structure Determination Laboratory",
@@ -1206,7 +1399,12 @@
    "coreqText": "CHEM 4600",
    "coreqs": [
     "CHEM 4600"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4800": {
    "title": "Pharmacology",
@@ -1218,7 +1416,12 @@
      "BIOL 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4820R": {
    "title": "Chemistry Internship",
@@ -1226,7 +1429,14 @@
    "creditsMax": 4,
    "prereqText": "CHEM 2320 , a minimum GPA of 3.0, Departmental approval of the internship proposal, and University Advanced Standing",
    "prereqs": "CHEM 2320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "a minimum GPA of 3.0",
+    "Departmental approval of the internship proposal",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4890R": {
    "title": "Undergraduate Research in Chemistry",
@@ -1234,7 +1444,13 @@
    "creditsMax": 4,
    "prereqText": "Departmental approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4950R": {
    "title": "Advanced Topics in Organic Chemistry",
@@ -1246,7 +1462,13 @@
      "CHEM 2320"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4960R": {
    "title": "Special Topics in Chemistry",
@@ -1254,7 +1476,14 @@
    "creditsMax": 4,
    "prereqText": "CHEM 2320 , Junior or Senior standing, instructor approval, and University Advanced Standing",
    "prereqs": "CHEM 2320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4990R": {
    "title": "Independent Study and Research",
@@ -1262,7 +1491,13 @@
    "creditsMax": 4,
    "prereqText": "Instructor approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -1276,7 +1511,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1289,7 +1527,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1327,7 +1566,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -1338,7 +1581,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MICR 3450": {
    "title": "General Microbiology",
@@ -1355,7 +1599,13 @@
    "coreqText": "MICR 3455",
    "coreqs": [
     "MICR 3455"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3455": {
    "title": "General Microbiology Laboratory",
@@ -1366,7 +1616,9 @@
    "precoreqs": "MICR 3450",
    "preco": [
     "MICR 3450"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",
@@ -1452,7 +1704,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1480,21 +1733,51 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4700": {
    "title": "Advanced Anatomy",
    "credits": 4,
    "prereqText": "ZOOL 2320 with a minimum grade of C- and University Advanced Standing",
    "prereqs": "ZOOL 2320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4780": {
    "title": "Neuroscience",
    "credits": 4,
    "prereqText": "ZOOL 2420 with a C- or higher and University Advanced Standing",
    "prereqs": "ZOOL 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "To matriculate into the Chemistry degree, students must have adviser approval, and completed CHEM 1210, CHEM 1220, CHEM 1250, and CHEM 1260 all with a C- or higher.",
+  "before": [
+   "CHEM 1210",
+   "CHEM 1220",
+   "CHEM 1250",
+   "CHEM 1260"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
  }
 }

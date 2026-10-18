@@ -3,7 +3,7 @@
  "name": "Nursing, B.S.",
  "url": "https://catalog.uvu.edu/health-public-service/nursing/nursing-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -69,6 +75,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -113,6 +120,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -122,292 +130,370 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › BIOL 1610 College Biology I | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › CHEM 1110 Elementary Chemistry for the Health Sciences | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PSY 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › PSY 1100 Human Development Life Span | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2300 Nursing Health Assessment | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2305",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2305 Nursing Health Assessment Laboratory | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2310 Nursing Pharmacology | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2320",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2320 Fundamentals of Nursing Care | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2325",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2325 Nursing Practice Simulation and Skills Lab I | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2410 Nursing Care of Adults with Common Health Needs | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2415",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2415 Nursing Care of Adults with Common Health Needs Clinical | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2420",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2420 Nursing Care of the Aging Population | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2430",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2430 Mental Health Nursing | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2435",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2435 Mental Health Nursing Clinical | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 2445",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 2445 Nursing Practice Simulation and Skills Lab II | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3330",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3330 Nursing Care of Individuals with Complex Health Needs | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3335",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3335 Nursing Care of Individuals with Complex Health Needs Clinical | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3340 Nursing Care of Women Children and Developing Families | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3345",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3345 Nursing Care of Women Children and Developing Families Clinical | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3355",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3355 Nursing Practice Simulation and Skills Lab III | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3400",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3400 Patient Care Coordination and Management | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3405",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3405 Patient Care Coordination and Management Preceptorship | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3440",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3440 Pharmacology for the Practicing Nurse | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 3445",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 3445 Nursing Practice Simulation and Skills Lab IV | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4320 Nursing in the Community | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4230 Palliative Care in Nursing | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4410G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4410G Nursing in Global Perspective | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4340 Genomics in Nursing and Health | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4500 Nursing Leadership | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4520",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4520 Navigating Health Systems | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4510",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4510 Clinical Assessment and Reasoning | 2",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4540",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4540 Research and Theory in Nursing Practice | 4",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 4550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NURS 4550 Quality and Safety in Nursing | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › MICR 2060 Microbiology for Health Professions | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2065",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › MICR 2065 Microbiology for Health Professions Laboratory | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › NUTR 1020 Foundations of Human Nutrition | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › ZOOL 2420 Human Physiology | 3",
+   "minGrade": "C"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › ZOOL 2425 Human Physiology Laboratory | 1",
+   "minGrade": "C"
   },
   {
    "type": "course",
@@ -416,7 +502,14 @@
    "alts": [
     "ZOOL 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › ZOOL 4400 Pathophysiology | 3 or ZOOL 2600 Concepts of Pathophysiology",
+   "minGrade": "C",
+   "creditsBy": {
+    "ZOOL 4400": 4,
+    "ZOOL 2600": 3
+   },
+   "prefer": "ZOOL 2600"
   },
   {
    "type": "choice",
@@ -444,15 +537,10 @@
       "STAT 1040"
      ],
      "credits": 3
-    },
-    {
-     "codes": [
-      "STAT 1040",
-      "STAT 1045"
-     ],
-     "credits": 8
     }
    ],
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › University-level statistics course | 3",
+   "minGrade": "C",
    "notes": [
     "STAT 1040 and STAT 1045 can be used only if not used for GE."
    ]
@@ -463,6 +551,8 @@
    "label": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree.",
    "credits": 5,
    "text": "Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree.",
+   "src": "Discipline Core Requirements (88 credits) › Complete the following with a minimum C or higher: › Complete a minimum of 5 credits of adviser approved electives, a minimum of 2 from any upper-division nursing courses, not otherwise required for the Bachelor of Science degree. | 5",
+   "minGrade": "C",
    "notes": [
     "RNs returning to complete BS in Nursing should contact the nursing advisor for requirements."
    ]
@@ -777,14 +867,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -797,7 +893,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -826,7 +923,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -838,7 +939,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -850,7 +955,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -862,7 +968,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -875,7 +982,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -896,7 +1006,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -937,7 +1048,12 @@
    "precoreqs": "NURS 2320",
    "preco": [
     "NURS 2320"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into ASN/BS Nursing program"
   },
   "NURS 2305": {
    "title": "Nursing Health Assessment Laboratory",
@@ -953,7 +1069,12 @@
    "precoreqs": "NURS 2320",
    "preco": [
     "NURS 2320"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into ASN/BS Nursing program"
   },
   "NURS 2310": {
    "title": "Nursing Pharmacology",
@@ -970,7 +1091,12 @@
    "precoreqs": "ZOOL 2420",
    "preco": [
     "ZOOL 2420"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "ZOOL 2320 and Acceptance into ASN/BS Nursing program"
   },
   "NURS 2320": {
    "title": "Fundamentals of Nursing Care",
@@ -986,7 +1112,12 @@
    "precoreqs": "NURS 2300",
    "preco": [
     "NURS 2300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into ASN/BS Nursing program"
   },
   "NURS 2325": {
    "title": "Nursing Practice Simulation and Skills Lab I",
@@ -1002,7 +1133,12 @@
    "precoreqs": "NURS 2300",
    "preco": [
     "NURS 2300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into ASN/BS Nursing program"
   },
   "NURS 2410": {
    "title": "Nursing Care of Adults with Common Health Needs",
@@ -1095,7 +1231,12 @@
     "NURS 3335"
    ],
    "precoreqText": "ZOOL 4400 highly recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3335": {
    "title": "Nursing Care of Individuals with Complex Health Needs Clinical",
@@ -1108,7 +1249,12 @@
     "NURS 3330"
    ],
    "precoreqText": "ZOOL 4400 highly recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3340": {
    "title": "Nursing Care of Women Children and Developing Families",
@@ -1119,7 +1265,12 @@
    "coreqText": "NURS 3345",
    "coreqs": [
     "NURS 3345"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3345": {
    "title": "Nursing Care of Women Children and Developing Families Clinical",
@@ -1130,7 +1281,12 @@
    "coreqText": "NURS 3340",
    "coreqs": [
     "NURS 3340"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3355": {
    "title": "Nursing Practice Simulation and Skills Lab III",
@@ -1141,7 +1297,12 @@
    "coreqText": "NURS 3330",
    "coreqs": [
     "NURS 3330"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3400": {
    "title": "Patient Care Coordination and Management",
@@ -1157,7 +1318,12 @@
    "coreqText": "NURS 3405",
    "coreqs": [
     "NURS 3405"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3405": {
    "title": "Patient Care Coordination and Management Preceptorship",
@@ -1173,7 +1339,12 @@
    "coreqText": "NURS 3400",
    "coreqs": [
     "NURS 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3440": {
    "title": "Pharmacology for the Practicing Nurse",
@@ -1184,77 +1355,134 @@
    "coreqText": "NURS 3400",
    "coreqs": [
     "NURS 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3445": {
    "title": "Nursing Practice Simulation and Skills Lab IV",
    "credits": 1,
    "prereqText": "NURS 3355 and University Advanced Standing",
    "prereqs": "NURS 3355",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4230": {
    "title": "Palliative Care in Nursing",
    "credits": 3,
    "prereqText": "NURS 2410 and University Advanced Standing",
    "prereqs": "NURS 2410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4320": {
    "title": "Nursing in the Community",
    "credits": 3,
    "prereqText": "NURS 3405 and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4340": {
    "title": "Genomics in Nursing and Health",
    "credits": 2,
    "prereqText": "NURS 3330 and University Advanced Standing",
    "prereqs": "NURS 3330",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4410G": {
    "title": "Nursing in Global Perspective",
    "credits": 3,
    "prereqText": "NURS 2300 and University Advanced Standing",
    "prereqs": "NURS 2300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4500": {
    "title": "Nursing Leadership",
    "credits": 3,
    "prereqText": "NURS 3405 and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4510": {
    "title": "Clinical Assessment and Reasoning",
    "credits": 2,
    "prereqText": "NURS 3405 and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4520": {
    "title": "Navigating Health Systems",
    "credits": 3,
    "prereqText": "NURS 3405 and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4540": {
    "title": "Research and Theory in Nursing Practice",
    "credits": 4,
    "prereqText": "NURS 3405 , completion of a university-level statistics course with a minimum C or higher and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "completion of a university-level statistics course with a minimum C or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4550": {
    "title": "Quality and Safety in Nursing",
    "credits": 3,
    "prereqText": "NURS 3405 and University Advanced Standing",
    "prereqs": "NURS 3405",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 1020": {
    "title": "Foundations of Human Nutrition",
@@ -1277,7 +1505,12 @@
    "credits": 4,
    "prereqText": "MAT 1010 or higher and University Advanced Standing",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -1290,7 +1523,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1303,7 +1541,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1341,7 +1584,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1363,7 +1607,8 @@
    "credits": 3,
    "prereqText": "NURS 2310 with a B- or higher.",
    "prereqs": "NURS 2310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "B-"
   },
   "ZOOL 4400": {
    "title": "Pathophysiology",
@@ -1382,9 +1627,40 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "admission": true,
- "admissionNote": "Each application for acceptance into the program is for a specific semester only."
+ "admissionNote": "Each application for acceptance into the program is for a specific semester only.",
+ "admissionInfo": {
+  "note": "Each application for acceptance into the program is for a specific semester only.",
+  "text": "Associate of Science in Nursing RN licensure complete Prerequisite coursework: ENGL 1010 Introduction to Academic Writing or ENGL 1005 Foundations of Academic Writing Math Quantitative Literacy Course PSY 1100 Human Development Life Span CHEM 1110 Elementary Chemistry for the Health Sciences NUTR 1020 Foundations of Human Nutrition ZOOL 2320 Human Anatomy and ZOOL 2325 Human Anatomy Laboratory MICR 2060 Microbiology for Health Professions and MICR 2065 Microbiology for Health Professions Laboratory ZOOL 2420 Human Physiology and ZOOL 2420 Human Physiology All prerequisite courses must be completed prior to application. A final grade of C or higher is necessary in all classes except Math Quantitative Literacy. Course work must be on an official transcript and articulation into the UVU system by the end of the application period or the application will be considered incomplete. Pass/Fail or Credit/No credit grades and ACT scores are not accepted for prerequisite course work. (see Advisor for details) Each application for acceptance into the program is for a specific semester only.",
+  "before": [
+   "ENGL 1010",
+   "ENGL 1005",
+   "PSY 1100",
+   "CHEM 1110",
+   "NUTR 1020",
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "MICR 2060",
+   "MICR 2065",
+   "ZOOL 2420"
+  ],
+  "gated": [
+   "NURS 2300",
+   "NURS 2305",
+   "NURS 2310",
+   "NURS 2320",
+   "NURS 2325"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
+ }
 }

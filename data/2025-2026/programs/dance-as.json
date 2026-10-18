@@ -3,7 +3,7 @@
  "name": "Dance, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/dance/dance-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -76,6 +82,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -120,86 +127,99 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (27 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Complete the following: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Complete the following: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Complete the following: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Complete the following: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, & Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Complete the following: › Personal, Professional, & Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1270R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (25 credits) › DANC 1270R Ballet Technique and Theory I (2 semesters) | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (25 credits) › DANC 2110 Orientation to Dance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1430R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (25 credits) › DANC 1430R Modern/Contemporary Dance Technique and Theory I/Semester I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1440R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (25 credits) › DANC 1440R Modern/Contemporary Dance Technique and Theory I/Semester II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1610R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (25 credits) › DANC 1610R Dance Conditioning | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2330",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (25 credits) › DANC 2330 Improvisation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (25 credits) › DANC 2340 Composition | 2"
   },
   {
    "type": "course",
@@ -208,14 +228,16 @@
    "alts": [
     "DANC 2670"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (25 credits) › DANC 2650R Fundamentals of Movement | 2 or DANC 2670 Introduction to Laban Studies"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (25 credits) › DANC 2560G Dance as a Cultural Practice I | 3"
   },
   {
    "type": "choice",
@@ -275,7 +297,8 @@
      "credits": 1
     }
    ],
-   "text": "Choose one of the following"
+   "text": "Choose one of the following",
+   "src": "Discipline Core Requirements (25 credits) › Choose one of the following | 1"
   },
   {
    "type": "choice",
@@ -402,14 +425,16 @@
      "crMax": 3
     }
    ],
-   "text": "Complete 5 credits from the following:"
+   "text": "Complete 5 credits from the following:",
+   "src": "Elective Requirements (8 credits) › Complete 5 credits from the following: | 5"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 3 credits from any 1000 or 2000 level course(s)",
    "credits": 3,
-   "text": "Complete 3 credits from any 1000 or 2000 level course(s)"
+   "text": "Complete 3 credits from any 1000 or 2000 level course(s)",
+   "src": "Elective Requirements (8 credits) › Complete 3 credits from any 1000 or 2000 level course(s) | 3"
   }
  ],
  "gradPlan": [
@@ -546,7 +571,10 @@
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 1440R": {
    "title": "Modern/Contemporary Dance Technique and Theory I/Semester II",
@@ -579,7 +607,10 @@
    "credits": 1,
    "prereqText": "Previous Hip Hop Dance experience",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Previous Hip Hop Dance experience"
+   ]
   },
   "DANC 1610R": {
    "title": "Dance Conditioning",
@@ -619,6 +650,9 @@
    "coreqs": [
     "DANC 1270R",
     "DANC 2270R"
+   ],
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
    ]
   },
   "DANC 2220R": {
@@ -635,14 +669,20 @@
    "credits": 1,
    "prereqText": "Intermediate equivalent skill level to be determined by audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
+   ]
   },
   "DANC 2270R": {
    "title": "Ballet Technique and Theory II",
    "credits": 3,
    "prereqText": "Intermediate equivalent skill level to be determined by audition.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
+   ]
   },
   "DANC 2330": {
    "title": "Improvisation",
@@ -670,7 +710,10 @@
    "credits": 3,
    "prereqText": "by audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "by audition"
+   ]
   },
   "DANC 2440R": {
    "title": "Modern/Contemporary Dance Technique and Theory Level II/Semester II",
@@ -690,6 +733,9 @@
     "DANC 1440R",
     "DANC 2430R",
     "DANC 2440R"
+   ],
+   "prereqWords": [
+    "By Audition"
    ]
   },
   "DANC 2480R": {
@@ -701,14 +747,22 @@
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2560G": {
    "title": "Dance as a Cultural Practice I",
    "credits": 3,
    "prereqText": "Matriculation in any BFA or BS Dance major",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation in any BFA or BS Dance major"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation in any BFA or BS Dance major"
   },
   "DANC 2560R": {
    "title": "African Dance II",
@@ -728,35 +782,49 @@
    "credits": 2,
    "prereqText": "DANC 2650R or Matriculation in BS Dance Education Program",
    "prereqs": "DANC 2650R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "DANC 2650R or Matriculation in BS Dance Education Program"
   },
   "DANC 2700R": {
    "title": "American Social Dance II",
    "credits": 1,
    "prereqText": "Instructor Approvall",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approvall"
+   ]
   },
   "DANC 2710R": {
    "title": "International Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2720R": {
    "title": "Latin Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2760R": {
    "title": "Ballroom Dance Company Back Up Team",
    "credits": 1,
    "prereqText": "By audition only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "By audition only"
+   ]
   },
   "DANC 2810R": {
    "title": "Internship in Dance I",
@@ -764,7 +832,10 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -778,7 +849,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -791,7 +865,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -820,7 +895,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -832,7 +911,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -844,7 +927,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -856,7 +940,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -868,7 +953,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -889,7 +975,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -902,7 +993,34 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "ENGL 1010",
+   "DANC 2110",
+   "DANC 1270R",
+   "DANC 1430R",
+   "ENGL 2010",
+   "DANC 1440R",
+   "DANC 1610R",
+   "DANC 2330"
+  ],
+  "gated": [
+   "DANC 2560G",
+   "DANC 2670"
+  ],
+  "beforeLabels": [
+   "Quantitative Literacy",
+   "Biology",
+   "DANC Elective"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

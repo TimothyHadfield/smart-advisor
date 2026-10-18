@@ -3,7 +3,7 @@
  "name": "Hospitality Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/hospitality-management-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "",
    "code": "IM 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "IM 2010 Business Computer Proficiency | 3"
   },
   {
    "type": "course",
@@ -29,21 +35,28 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "course",
    "area": "",
    "code": "HM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HM 1010 Introduction to Hospitality Industry | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CA 1000 Culinary Basics | 3"
   }
  ],
  "gradPlan": [
@@ -94,14 +107,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "HM 1010": {
    "title": "Introduction to Hospitality Industry",
@@ -121,7 +140,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -133,7 +153,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   }
  }
 }

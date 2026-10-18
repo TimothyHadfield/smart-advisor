@@ -3,7 +3,7 @@
  "name": "Enterprise Risk Management and Insurance, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/enterprise-risk-management-insurance-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -13,42 +13,52 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 3030 Foundations of Risk Management and Insurance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4020 Enterprise Risk Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4040 Business Law for Insurance Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4050 Commercial Property Risk Management and Insurance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4060 Commercial Liability Risk Management and Insurance | 3"
   }
  ],
  "gradPlan": [
@@ -101,7 +111,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4020": {
    "title": "Enterprise Risk Management",
@@ -113,28 +128,48 @@
      "MGMT 2340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4040": {
    "title": "Business Law for Insurance Professionals",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4050": {
    "title": "Commercial Property Risk Management and Insurance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4060": {
    "title": "Commercial Liability Risk Management and Insurance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -147,7 +182,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -160,7 +198,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

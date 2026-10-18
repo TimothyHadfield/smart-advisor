@@ -3,7 +3,7 @@
  "name": "Writing Studies, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/writing-studies-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "ENGL 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENGL 2100 Technical Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENGL 3010 Rhetorical Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 3060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENGL 3060 Visual Rhetoric | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 3070",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENGL 3070 Public Rhetorics | 3"
   },
   {
    "type": "choice",
@@ -80,7 +84,8 @@
      "credits": 1
     }
    ],
-   "text": "Professional Writing Practices: Complete TWO of the following (or other advisor-approved Writing Studies course):"
+   "text": "Professional Writing Practices: Complete TWO of the following (or other advisor-approved Writing Studies course):",
+   "src": "Elective Requirements (9 credits) › Professional Writing Practices: Complete TWO of the following (or other advisor-approved Writing Studies course): | 6"
   },
   {
    "type": "choice",
@@ -116,7 +121,8 @@
      "credits": 3
     }
    ],
-   "text": "Language and Cultural Rhetorics: Complete ONE of the following (or other advisor-approved Writing Studies course):"
+   "text": "Language and Cultural Rhetorics: Complete ONE of the following (or other advisor-approved Writing Studies course):",
+   "src": "Elective Requirements (9 credits) › Language and Cultural Rhetorics: Complete ONE of the following (or other advisor-approved Writing Studies course): | 3"
   }
  ],
  "gradPlan": [
@@ -265,7 +271,8 @@
    "title": "Writing for Social Change",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher",
-   "prereqs": "ENGL 2010"
+   "prereqs": "ENGL 2010",
+   "prereqMinGrade": "C-"
   },
   "ENGL 2050": {
    "title": "Editing",
@@ -294,20 +301,35 @@
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3050": {
    "title": "Advanced Editing and Design for Print Media",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing; ENGL 2050 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3060": {
    "title": "Visual Rhetoric",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3070": {
    "title": "Public Rhetorics",
@@ -319,7 +341,13 @@
    "precoreqs": "ENGL 3010",
    "preco": [
     "ENGL 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3085": {
    "title": "Rhetorical Approaches to Popular Culture",
@@ -331,14 +359,26 @@
    "precoreqs": "ENGL 3010",
    "preco": [
     "ENGL 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3320": {
    "title": "Grant and Proposal Writing",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4010R": {
    "title": "Topics in Rhetoric",
@@ -350,7 +390,13 @@
    "precoreqs": "ENGL 3010",
    "preco": [
     "ENGL 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4020G": {
    "title": "Multicultural Rhetorics",
@@ -362,7 +408,12 @@
    "precoreqs": "ENGL 3010",
    "preco": [
     "ENGL 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4340": {
    "title": "Advanced Technical Communication",
@@ -374,7 +425,13 @@
      "ENGL 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4360R": {
    "title": "Topics in Technical Communication",
@@ -386,7 +443,13 @@
      "ENGL 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4810R": {
    "title": "Internship",
@@ -394,7 +457,14 @@
    "creditsMax": 8,
    "prereqText": "Departmental approval, senior status, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval",
+    "senior status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Finance, Graduate Certificate",
  "url": "https://catalog.uvu.edu/business/business-graduate-programs/finance-graduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 9,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Required Courses",
    "code": "FIN 6130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › FIN 6130 Financial Statement Analysis and Modeling | 3"
   },
   {
    "type": "course",
    "area": "Required Courses",
    "code": "FIN 6160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › FIN 6160 International Financial Management | 3"
   },
   {
    "type": "course",
    "area": "Required Courses",
    "code": "FIN 6170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › FIN 6170 Investment Analysis and Portfolio Analysis | 3"
   }
  ],
  "gradPlan": [
@@ -63,22 +66,45 @@
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6160": {
    "title": "International Financial Management",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6170": {
    "title": "Investment Analysis and Portfolio Analysis",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   }
  },
- "totalFrom": "area headers"
+ "totalFrom": "area headers",
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "FIN 6130",
+   "FIN 6160",
+   "FIN 6170"
+  ]
+ }
 }

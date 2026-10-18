@@ -3,28 +3,31 @@
  "name": "Associate in Pre-Engineering - Biological and Chemical Engineering Emphasis, A.P.E.",
  "url": "https://catalog.uvu.edu/engineering-technology/mechanical-and-civil-engineering/pre-engineering-biological-chemical-engineering-emphasis-ape/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 69,
  "requirements": [
   {
    "type": "placeholder",
    "area": "Associate in Pre-Engineering Requirements",
    "label": "Complete the requirements",
-   "credits": 44
+   "credits": 44,
+   "src": "Associate in Pre-Engineering Requirements (44 credits) › Complete the requirements | 44"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (25 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (25 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "choice",
@@ -150,7 +153,8 @@
      ],
      "credits": 6
     }
-   ]
+   ],
+   "src": "Emphasis Requirements (25 credits) › Students should carefully select electives from the following list, based on the engineering discipline (Biological or Chemical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor. | 20"
   }
  ],
  "gradPlan": [
@@ -316,7 +320,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -346,7 +351,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -364,7 +375,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -382,7 +397,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -393,7 +409,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -403,7 +420,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -434,7 +452,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -451,7 +470,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "ECE 1000": {
    "title": "Introduction to Electrical and Computer Engineering",
@@ -464,14 +486,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -484,7 +512,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGR 1000": {
    "title": "Introduction to Engineering",
@@ -535,7 +564,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -546,7 +579,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -557,7 +591,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2250": {
    "title": "Differential Equations and Linear Algebra",
@@ -568,7 +603,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -579,7 +615,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -590,7 +627,8 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",

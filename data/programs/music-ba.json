@@ -3,7 +3,7 @@
  "name": "Music, B.A.",
  "url": "https://catalog.uvu.edu/arts/music/music-ba/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -46,6 +52,7 @@
     }
    ],
    "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: (Note: A higher level MATH course may substitute for this requirement) | 3",
    "ge": "math"
   },
   {
@@ -90,6 +97,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -99,13 +107,15 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
    "credits": 3,
+   "src": "General Education Requirements (28 credits) › Physical Science | 3",
    "recommended": [
     "PHYS 1750"
    ]
@@ -114,138 +124,158 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution (Fulfilled by completing Foreign Language Course 2020G/2020)",
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (28 credits) › Humanities Distribution (Fulfilled by completing Foreign Language Course 2020G/2020) | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Personal, Professional and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1110 Music Theory I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1115",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1115 Music Notation and Score Preparation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1120 Music Theory II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1130 Aural Skills I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1140 Aural Skills II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1150",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1150 Group Piano I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1160",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1160 Group Piano II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1390",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 1390 Survey of Recording Techniques | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2110 Music Theory III | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2125",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2125 Music Theory IV | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2130 Aural Skills III | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2140 Aural Skills IV | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2150",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2150 Group Piano III | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2160",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2160 Group Piano IV | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3490G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 3490G Global Musical Styles and Ideas | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 3450 Music History and Literature I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3451",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 3451 Music History and Literature II | 3"
   },
   {
    "type": "placeholder",
@@ -253,6 +283,7 @@
    "label": "Complete 8 credits of MUSC courses not already required for the degree (at least 6 credits must be upper-division)",
    "credits": 8,
    "text": "Complete 8 credits of MUSC courses not already required for the degree (at least 6 credits must be upper-division)",
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › Complete 8 credits of MUSC courses not already required for the degree (at least 6 credits must be upper-division) | 8",
    "notes": [
     "Individual Musicianship Studies"
    ]
@@ -264,6 +295,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2500R Private Lessons for Music Majors (Repeated 4 times on major instrument or voice. Includes completion of sophomore review.) | 4",
    "creditsEach": 1
   },
   {
@@ -273,6 +305,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 2510R Performance Class (Repeated 4 times on major instrument or voice. Includes completion of sophomore review.) | 4",
    "creditsEach": 1
   },
   {
@@ -282,6 +315,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 4500R Advanced Private Lessons for Music Majors (Repeated 4 times on major instrument or voice.) | 4",
    "creditsEach": 1
   },
   {
@@ -291,6 +325,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (63 credits) › Musicianship Courses: › MUSC 4510R Performance Class (Repeated 4 times on major instrument or voice.) | 4",
    "creditsEach": 1
   },
   {
@@ -339,20 +374,23 @@
      "credits": 1
     }
    ],
-   "text": "Complete 8 credits from the following on your major instrument:"
+   "text": "Complete 8 credits from the following on your major instrument:",
+   "src": "Discipline Core Requirements (63 credits) › Ensembles: › Complete 8 credits from the following on your major instrument: | 8"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "One Foreign Language",
-   "credits": 12
+   "credits": 12,
+   "src": "Elective Requirements (29 credits) › One Foreign Language | 12"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 17,
-   "text": "Complete any courses 1000 level or higher (may not include MUSC courses) (at least 9 credits must be upper-division, see graduation requirements)"
+   "text": "Complete any courses 1000 level or higher (may not include MUSC courses) (at least 9 credits must be upper-division, see graduation requirements)",
+   "src": "Elective Requirements (29 credits) › Complete any courses 1000 level or higher (may not include MUSC courses) (at least 9 credits must be upper-division, see graduation requirements) | 17"
   }
  ],
  "gradPlan": [
@@ -693,14 +731,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -713,7 +757,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -742,7 +787,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -754,7 +803,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MUSC 1110": {
    "title": "Music Theory I",
@@ -765,6 +818,10 @@
    "coreqText": "MUSC 1130",
    "coreqs": [
     "MUSC 1130"
+   ],
+   "prereqWords": [
+    "Music majors only or department approval",
+    "Complete music theory diagnostic exam"
    ]
   },
   "MUSC 1115": {
@@ -772,7 +829,10 @@
    "credits": 1,
    "prereqText": "Music major or minor only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music major or minor only"
+   ]
   },
   "MUSC 1120": {
    "title": "Music Theory II",
@@ -826,7 +886,11 @@
    "credits": 1,
    "prereqText": "Music majors or minors only. Not applicable for BM Commercial Music students.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music majors or minors only",
+    "Not applicable for BM Commercial Music students"
+   ]
   },
   "MUSC 2110": {
    "title": "Music Theory III",
@@ -887,6 +951,9 @@
    "coreqText": "MUSC 2510R",
    "coreqs": [
     "MUSC 2510R"
+   ],
+   "prereqWords": [
+    "Music major entrance audition required"
    ]
   },
   "MUSC 2510R": {
@@ -902,63 +969,96 @@
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3270R": {
    "title": "Deep Green-Tenor/Bass Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3280R": {
    "title": "Emerald Singers-Soprano/Alto Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3300R": {
    "title": "Wind Symphony",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3320R": {
    "title": "Jazz Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3450": {
    "title": "Music History and Literature I",
    "credits": 3,
    "prereqText": "MUSC 2125 and University Advanced Standing",
    "prereqs": "MUSC 2125",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3451": {
    "title": "Music History and Literature II",
    "credits": 3,
    "prereqText": "MUSC 3450 and University Advanced Standing",
    "prereqs": "MUSC 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3490G": {
    "title": "Global Musical Styles and Ideas",
    "credits": 3,
    "prereqText": "MUSC 1110 and University Advanced Standing",
    "prereqs": "MUSC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3700R": {
    "title": "Symphony Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 4500R": {
    "title": "Advanced Private Lessons for Music Majors",
@@ -969,7 +1069,13 @@
    "coreqText": "MUSC 4510R",
    "coreqs": [
     "MUSC 4510R"
-   ]
+   ],
+   "prereqWords": [
+    "Sophomore Review required",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4510R": {
    "title": "Performance Class",
@@ -981,7 +1087,12 @@
    "coreqs": [
     "MUSC 4500R",
     "MUSC 4550R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -991,5 +1102,10 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "1. Pass performance audition and interview with music faculty.",
+  "before": [],
+  "gated": []
  }
 }

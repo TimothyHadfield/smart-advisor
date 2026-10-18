@@ -3,7 +3,7 @@
  "name": "American Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/american-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "AMST 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › AMST 2000 Introduction to American Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AMST 3000R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › AMST 3000R Topics in American Studies | 3"
   },
   {
    "type": "choice",
@@ -414,7 +416,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 12 hours from the following list of electives"
+   "text": "Complete 12 hours from the following list of electives",
+   "src": "Elective Requirements (12 credits) › Complete 12 hours from the following list of electives | 12"
   }
  ],
  "gradPlan": [
@@ -474,7 +477,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AIST 3810": {
    "title": "Precolumbian America",
@@ -491,7 +499,12 @@
      "AIST 1800G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AIST 3830": {
    "title": "Indians of the Great Plains",
@@ -515,7 +528,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AMST 2000": {
    "title": "Introduction to American Studies",
@@ -526,7 +544,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3000": {
    "title": "Language and Culture",
@@ -544,28 +567,49 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Sophomore status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3360": {
    "title": "Contemporary Issues in American Culture",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3460": {
    "title": "Anthropology of Mormonism",
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3500": {
    "title": "Discourse Semiotics and Representation",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3100": {
    "title": "History of American Art and Architecture",
@@ -587,7 +631,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CINE 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -605,77 +654,135 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 3880": {
    "title": "Constitutional History Since Plessy 1896",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4730": {
    "title": "Framing of the US Constitution",
    "credits": 3,
    "prereqText": "CNST 4720 and University Advanced Standing",
    "prereqs": "CNST 4720",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4795": {
    "title": "Civil Rights and Civil Liberties",
    "credits": 3,
    "prereqText": "CNST 4790 and University Advanced Standing",
    "prereqs": "CNST 4790",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3100": {
    "title": "Propaganda and Persuasion",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3115": {
    "title": "Communicating in Environments",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3700": {
    "title": "Free Expression in a Democratic Society",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3780": {
    "title": "Mormons Media and Culture",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 4500": {
    "title": "US Economic Development and History",
    "credits": 3,
    "prereqText": "Matriculation in the Woodbury School of Business, University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation in the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation in the Woodbury School of Business"
   },
   "EDEL 3050": {
    "title": "Foundations of American Education",
    "credits": 2,
    "prereqText": "University Advanced Standing and Admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and Admission to Professional Education Program or permission of department chair"
   },
   "EDSC 3050": {
    "title": "Foundations of American Education",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "ENGL 2210": {
    "title": "Introduction to Folklore",
@@ -725,7 +832,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3530": {
    "title": "Modern American Literature",
@@ -742,7 +856,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3540": {
    "title": "Contemporary American Literature",
@@ -759,41 +880,71 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3710": {
    "title": "Literature by Women",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3780": {
    "title": "Mormon Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4760G": {
    "title": "Multi-ethnic Literature in America",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3280": {
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGH 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3850": {
    "title": "Environmental Policy",
    "credits": 3,
    "prereqText": "ENVT 1110 and University Advanced Standing",
    "prereqs": "ENVT 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3100": {
    "title": "Cartography",
@@ -816,112 +967,192 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3200G": {
    "title": "Women in American History to 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3210G": {
    "title": "Women in American History since 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3220G": {
    "title": "History of the American West to 1850",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3230G": {
    "title": "History of the American West since 1850",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3260": {
    "title": "History of Utah",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3710R": {
    "title": "Issues and Topics in American History",
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3730": {
    "title": "American Origins to 1790",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3731": {
    "title": "US History-Early Republic through the Progressive Era",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3732": {
    "title": "U.S. History-Progressive Era to the 21st Century",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3740": {
    "title": "American Revolution",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3840G": {
    "title": "American Indian History since 1890",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4660G": {
    "title": "Legacies and Reckonings in the American West",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4710R": {
    "title": "Special Issues and Topics in American History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 1010": {
    "title": "Humanities Through the Arts",
@@ -932,7 +1163,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 3000": {
    "title": "Language and Culture",
@@ -950,7 +1186,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Sophomore status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3150": {
    "title": "Philosophical Issues in Feminism",
@@ -967,7 +1209,12 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3470": {
    "title": "Pragmatism and American Philosophy",
@@ -984,7 +1231,12 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3530": {
    "title": "Environmental Ethics",
@@ -997,7 +1249,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3700": {
    "title": "Social and Political Philosophy",
@@ -1010,7 +1267,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3150": {
    "title": "US Presidency",
@@ -1022,7 +1284,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3200": {
    "title": "US Congress",
@@ -1034,7 +1301,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3400": {
    "title": "American Foreign Policy",
@@ -1046,7 +1318,12 @@
      "POLS 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3100": {
    "title": "Psychology of Gender",
@@ -1064,14 +1341,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3700": {
    "title": "Natural Resource Interpretation",
    "credits": 3,
    "prereqText": "REC 2400 and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 2370": {
    "title": "Sociology of Gender",
@@ -1083,14 +1371,16 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 2630G": {
    "title": "Race and Minority Relations",
    "credits": 3,
    "prereqText": "ENGL 2010 with a C+ or higher",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 3430": {
    "title": "Sociology of Education",
@@ -1102,7 +1392,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3460": {
    "title": "Political Sociology",
@@ -1114,7 +1410,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4400": {
    "title": "Social Change",
@@ -1126,7 +1428,21 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit at UVU. Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": [
+   "ECON 4500",
+   "EDEL 3050",
+   "EDSC 3050"
+  ]
  }
 }

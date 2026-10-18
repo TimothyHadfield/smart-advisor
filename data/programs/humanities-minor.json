@@ -3,7 +3,7 @@
  "name": "Humanities, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/humanities-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "HUM 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (3 credits) › HUM 3500 Approaches to Humanities | 3"
   },
   {
    "type": "choice",
@@ -42,7 +43,8 @@
      ]
     }
    ],
-   "text": "Complete 3 credits from the following:"
+   "text": "Complete 3 credits from the following:",
+   "src": "Elective Requirements (15 credits) › Complete 3 credits from the following: | 3"
   },
   {
    "type": "choice",
@@ -73,7 +75,8 @@
      ]
     }
    ],
-   "text": "Complete 3 credits from the following:"
+   "text": "Complete 3 credits from the following:",
+   "src": "Elective Requirements (15 credits) › Complete 3 credits from the following: | 3"
   },
   {
    "type": "choice",
@@ -128,7 +131,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits from the following:"
+   "text": "Complete 9 credits from the following:",
+   "src": "Elective Requirements (15 credits) › Complete 9 credits from the following: | 9"
   }
  ],
  "gradPlan": [
@@ -278,7 +282,12 @@
    "credits": 3,
    "prereqText": "Enrollment in the UVU Honors program or approval by the instructor.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Enrollment in the UVU Honors program or approval by the instructor"
+   ],
+   "gate": "admission",
+   "gateText": "Enrollment in the UVU Honors program or approval by the instructor"
   },
   "HUM 2200": {
    "title": "Adventures of Ideas After 1500",
@@ -289,7 +298,12 @@
    "credits": 3,
    "prereqText": "Enrollment in the Honors Program or instructor's approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Enrollment in the Honors Program or instructor's approval"
+   ],
+   "gate": "admission",
+   "gateText": "Enrollment in the Honors Program or instructor's approval"
   },
   "HUM 3200R": {
    "title": "Topics in Humanities",
@@ -297,35 +311,60 @@
    "creditsMax": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3250R": {
    "title": "Topics in Area Studies",
    "credits": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3300R": {
    "title": "Topics in Period Studies",
    "credits": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3500": {
    "title": "Approaches to Humanities",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3800": {
    "title": "Aesthetics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4000R": {
    "title": "Humanism and Posthumanism",
@@ -337,7 +376,13 @@
    "precoreqs": "ENG 2010",
    "preco": [
     "ENG 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4010R": {
    "title": "Forms and Genres Across the Arts",
@@ -349,7 +394,13 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4140R": {
    "title": "Advanced Topics in Humanities",
@@ -361,7 +412,21 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Overall grade point average of a 2.0 (C) or better Admitted to a bachelor degree program at UVU",
+  "before": [],
+  "gated": [
+   "HUM 2100H",
+   "HUM 2200H"
+  ]
  }
 }

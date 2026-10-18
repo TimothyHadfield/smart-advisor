@@ -3,7 +3,7 @@
  "name": "Chemistry, Minor",
  "url": "https://catalog.uvu.edu/science/chemistry/chemistry-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 27,
  "requirements": [
   {
@@ -11,76 +11,87 @@
    "area": "Discipline Core Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2310",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 2310 Organic Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2320",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 2320 Organic Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2315",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 2315 Organic Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 2325 Organic Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3000",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 3000 Analytical Chemistry | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 3005",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › CHEM 3005 Analytical Chemistry Laboratory | 2"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any upper-division chemistry class numbered above 3000 with a minimum of 3 credit hours",
-   "credits": 3
+   "credits": 3,
+   "src": "Elective Requirements (3 credits) › Any upper-division chemistry class numbered above 3000 with a minimum of 3 credit hours | 3"
   }
  ],
  "gradPlan": [
@@ -171,7 +182,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -189,7 +204,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -200,7 +216,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -210,7 +227,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -241,7 +259,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -283,7 +302,17 @@
    "coreqText": "CHEM 3000",
    "coreqs": [
     "CHEM 3000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

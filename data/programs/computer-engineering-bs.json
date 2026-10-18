@@ -3,7 +3,7 @@
  "name": "Computer Engineering, B.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/electrical-and-computer-engineering/computer-engineering-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -76,6 +83,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › American Institutions: | 3 › Complete one of the following:",
    "notes": [
     "Distribution Courses:"
    ]
@@ -84,7 +92,8 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
@@ -93,7 +102,8 @@
    "credits": 3,
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Humanities (COMM 1020 recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -102,19 +112,22 @@
    "credits": 3,
    "recommended": [
     "COMM 2110"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science (COMM 2110 recommended) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts (Choose from list: https://www.uvu.edu/catalog/current/policies-requirements/general-education.html)",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts (Choose from list: https://www.uvu.edu/catalog/current/policies-requirements/general-education.html) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology (Choose from list)",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology (Choose from list) | 3"
   },
   {
    "type": "placeholder",
@@ -124,224 +137,256 @@
    "recommended": [
     "CHEM 1210",
     "CHEM 1215"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Physical Science (CHEM 1210 & CHEM 1215 recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 1000 Introduction to Electrical and Computer Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 2250 Circuit Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 2255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ECE 2255 Circuit Theory Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 2700 Digital Design I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 2705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ECE 2705 Digital Design I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 2750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 2750 Engineering Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3710 Applied Probability and Statistics for Engineers and Scientists | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3730",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3730 Embedded Systems I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3740",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3740 Digital Design II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3760",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3760 Electronic Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3765",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3765 Electronic Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 3770",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 3770 Signals and Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4700 Computer Architecture for Engineering Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4730",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4730 Embedded Systems II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4750 Digital Signal Processing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4755",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4755 Digital Signal Processing Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4760",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4760 VLSI Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4765",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4765 VLSI Design Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4800 Computer Engineering Senior Design Project (This wourse will become WE) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECE 4850",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ECE 4850 Machine Learning (This course will become WE) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 1400 Fundamentals of Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 1410 Object Oriented Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 2300 Discrete Mathematical Structures I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 2370 C Plus Plus Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › CS 3060 Operating Systems Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › MATH 1220 Calculus II | 4"
   },
   {
    "type": "choice",
@@ -498,7 +543,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 7 credits from the following:"
+   "text": "Complete 7 credits from the following:",
+   "src": "Discipline Core Requirements (89 credits) › Complete 7 credits from the following: | 7"
   }
  ],
  "gradPlan": [
@@ -754,7 +800,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -796,7 +845,12 @@
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3060": {
    "title": "Operating Systems Theory",
@@ -812,7 +866,15 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "If a computer science or software engineering major",
+    "matriculation to computer science or software engineering",
+    "If a computer engineering major"
+   ],
+   "gate": "admission",
+   "gateText": "also CS 2810 and matriculation to computer science or software engineering"
   },
   "CS 3140": {
    "title": "Network and Cloud Security",
@@ -824,7 +886,12 @@
      "CS 2900"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3240": {
    "title": "Discrete Mathematical Structures II",
@@ -838,35 +905,65 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "computer engineering major or (matriculation to computer science or software engineering)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "computer engineering major or (matriculation to computer science or software engineering)"
   },
   "CS 3250": {
    "title": "Java Software Development",
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3260": {
    "title": "CsharpNET Software Development",
    "credits": 3,
    "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to computer science or software engineering and University Advanced Standing"
   },
   "CS 3270": {
    "title": "Python Software Development",
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3310": {
    "title": "Analysis of Algorithms",
    "credits": 3,
    "prereqText": "Matriculation into Computer Science or Software Engineering, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Computer Science or Software Engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Computer Science or Software Engineering"
   },
   "CS 3370": {
    "title": "C Plus Plus Software Development",
@@ -884,7 +981,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering"
   },
   "CS 3380": {
    "title": "JavaScript Software Development",
@@ -902,7 +1005,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "( CS 2550 or DWDD 2720 ) matriculation into the Computer Science or Software Engineering program if a Computer Science or Software Engineering major"
   },
   "CS 3520": {
    "title": "Database Theory",
@@ -914,21 +1022,36 @@
      "CS 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3530": {
    "title": "Data Management For Data Sciences",
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3720": {
    "title": "Database Programming",
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3800": {
    "title": "Data Science Through Statistical Reasoning",
@@ -940,7 +1063,12 @@
      "ECE 3710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4470": {
    "title": "Artificial Intelligence",
@@ -960,28 +1088,48 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4620": {
    "title": "Data Mining",
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4700": {
    "title": "Machine Learning",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4710": {
    "title": "Machine Learning II",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 1000": {
    "title": "Introduction to Electrical and Computer Engineering",
@@ -1063,7 +1211,14 @@
    "credits": 3,
    "prereqText": "ECE 2250 , (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3350": {
    "title": "Control Systems",
@@ -1075,14 +1230,26 @@
      "ECE 3770"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3710": {
    "title": "Applied Probability and Statistics for Engineers and Scientists",
    "credits": 3,
    "prereqText": "MATH 1210 and University Advanced Standing",
    "prereqs": "MATH 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 3730": {
    "title": "Embedded Systems I",
@@ -1094,14 +1261,28 @@
      "ECE 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical or Computer Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical or Computer Engineering Program, or Departmental Approval)"
   },
   "ECE 3740": {
    "title": "Digital Design II",
    "credits": 3,
    "prereqText": "ECE 2700 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2700",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3760": {
    "title": "Electronic Systems",
@@ -1117,7 +1298,14 @@
    "coreqText": "ECE 3765",
    "coreqs": [
     "ECE 3765"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3765": {
    "title": "Electronic Systems Lab",
@@ -1133,14 +1321,26 @@
    "coreqText": "ECE 3760",
    "coreqs": [
     "ECE 3760"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 3770": {
    "title": "Signals and Systems",
    "credits": 3,
    "prereqText": "ECE 2750 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2750",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3780": {
    "title": "Communication Systems and Circuits",
@@ -1152,28 +1352,52 @@
      "ECE 3710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 4250": {
    "title": "Power Systems Engineering",
    "credits": 3,
    "prereqText": "ECE 3250 , (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 3250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 4260": {
    "title": "Smart Power Grids",
    "credits": 3,
    "prereqText": "ECE 2250 and University Advanced Standing",
    "prereqs": "ECE 2250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4700": {
    "title": "Computer Architecture for Engineering Applications",
    "credits": 3,
    "prereqText": "ECE 3740 and University Advanced Standing",
    "prereqs": "ECE 3740",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4730": {
    "title": "Embedded Systems II",
@@ -1185,7 +1409,12 @@
      "ECE 3740"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4750": {
    "title": "Digital Signal Processing",
@@ -1197,14 +1426,24 @@
      "ECE 3710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4755": {
    "title": "Digital Signal Processing Lab",
    "credits": 1,
    "prereqText": "ECE 3770 and University Advanced Standing",
    "prereqs": "ECE 3770",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4760": {
    "title": "VLSI Design",
@@ -1215,7 +1454,12 @@
    "coreqText": "ECE 4765",
    "coreqs": [
     "ECE 4765"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4765": {
    "title": "VLSI Design Laboratory",
@@ -1226,7 +1470,12 @@
    "coreqText": "ECE 4760",
    "coreqs": [
     "ECE 4760"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4780": {
    "title": "Wireless and Mobile Communications",
@@ -1238,14 +1487,24 @@
      "ECE 3710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4800": {
    "title": "Computer Engineering Senior Design Project",
    "credits": 3,
    "prereqText": "ECE 3740 and University Advanced Standing",
    "prereqs": "ECE 3740",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4810R": {
    "title": "Electrical and Computer Engineering Internship",
@@ -1253,7 +1512,14 @@
    "creditsMax": 3,
    "prereqText": "Admission to Computer Engineering program or Electrical Engineering program, Instructor Approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Computer Engineering program or Electrical Engineering program",
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Computer Engineering program or Electrical Engineering program, Instructor Approval"
   },
   "ECE 4850": {
    "title": "Machine Learning",
@@ -1270,21 +1536,32 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1297,7 +1574,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1335,7 +1613,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -1346,7 +1628,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",
@@ -1397,5 +1680,43 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "To be admitted to the BSCE program a student must complete the following courses with a minimum grade of C in these courses and a grade point average of 2.5 or above. A student not meeting all of the admission requirements may request in writing, a provisional admission status for a semester from the department. the provisional admission status must be approved by the computer engineering program coordinator. Course List Code Title Credit Hours MATH 1210 Calculus I 4 MATH 1220 Calculus II 4 PHYS 2210 Physics for Scientists and Engineers I 4 PHYS 2215 Physics for Scientists and Engineers I Lab 1 PHYS 2220 Physics for Scientists and Engineers II 4 PHYS 2225 Physics for Scientists and Engineers II Lab 1 CS 1400 Fundamentals of Programming 3 ECE 1000 Introduction to Electrical and Computer Engineering 3 ECE 2700 Digital Design I 3 ECE 2705 Digital Design I Lab 1 ECE 2250 Circuit Theory 3 ECE 2255 Circuit Theory Lab 1",
+  "before": [
+   "MATH 1210",
+   "MATH 1220",
+   "PHYS 2210",
+   "PHYS 2215",
+   "PHYS 2220",
+   "PHYS 2225",
+   "CS 1400",
+   "ECE 1000",
+   "ECE 2700",
+   "ECE 2705",
+   "ECE 2250",
+   "ECE 2255"
+  ],
+  "gated": [
+   "CS 3060",
+   "CS 3240",
+   "CS 3250",
+   "CS 3260",
+   "CS 3270",
+   "CS 3310",
+   "CS 3370",
+   "CS 3380",
+   "ECE 3250",
+   "ECE 3350",
+   "ECE 3730",
+   "ECE 3740",
+   "ECE 3760",
+   "ECE 3770",
+   "ECE 3780",
+   "ECE 4250",
+   "ECE 4810R"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

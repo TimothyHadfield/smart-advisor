@@ -3,7 +3,7 @@
  "name": "Biology, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/biology-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,34 +11,44 @@
    "area": "Discipline Core Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following with a grade of C- or better: › BIOL 1610 College Biology I | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following with a grade of C- or better: › BIOL 1615 College Biology I Laboratory | 1",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following with a grade of C- or better: › BIOL 1620 College Biology II | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1625",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following with a grade of C- or better: › BIOL 1625 College Biology II Laboratory | 1",
+   "minGrade": "C-"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 12 upper-division credits from any BIOL, BOT, MICR, or ZOOL courses with a grade of C- or higher in each.",
-   "credits": 12
+   "credits": 12,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following with a grade of C- or better: › Complete 12 upper-division credits from any BIOL, BOT, MICR, or ZOOL courses with a grade of C- or higher in each. | 12 (Note: BIOL 4890R Student Research , BIOL 4990R Senior Thesis , cannot be used to meet this requirement.)",
+   "minGrade": "C-"
   }
  ],
  "gradPlan": [
@@ -125,7 +135,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",

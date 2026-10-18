@@ -3,7 +3,7 @@
  "name": "Physical Therapist Assistant, SAAS",
  "url": "https://catalog.uvu.edu/health-public-service/allied-health/physical-therapist-assistant-pta/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 76,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "choice",
@@ -50,6 +55,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education (12 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -59,210 +65,240 @@
    "alts": [
     "PSY 1100"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education (12 credits) › PSY 1010 General Psychology | 3 or PSY 1100 Human Development Life Span"
   },
   {
    "type": "course",
    "area": "General Education",
    "code": "COMM 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education (12 credits) › COMM 1020 Public Speaking | 3"
   },
   {
    "type": "course",
    "area": "Additional Pre-Program Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Additional Pre-Program Requirements (7 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Additional Pre-Program Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Additional Pre-Program Requirements (7 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Additional Pre-Program Requirements",
    "code": "HLSC 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Additional Pre-Program Requirements (7 credits) › HLSC 1300 Medical Terminology and Functional Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 1010 Introduction to Physical Therapy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2010 Essentials of Physiology for the Physical Therapist Assistant | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2015 Essentials of Physiology for the Physical Therapist Assistant Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2100 Clinical Kinesiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2105",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2105 Clinical Kinesiology Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2200 Foundations of Therapeutic Interventions I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2205",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2205 Foundations of Therapeutic Interventions Lab I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2300 Therapeutic Procedures | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2305",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2305 Therapeutic Procedures Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2400 Clinical Pathophysiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 2500",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 2500 Health Systems and Services for the PTA | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3100 Foundations of Therapeutic Interventions II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3105",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3105 Foundations of Therapeutic Interventions Lab II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3200 Orthopedic Rehabilitation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3205",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3205 Orthopedic Rehabilitation Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3300 Cardiopulmonary Rehabilitation | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3305",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3305 Cardiopulmonary Rehabilitation Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3500 Neurological Rehabilitation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3505",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3505 Neurological Rehabilitation Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3600",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3600 Specialty Populations in Physical Therapy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3605",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3605 Specialty Populations in Physical Therapy Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3700",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3700 Physical Therapist Assistant Seminar | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3800",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3800 Capstone | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3810",
    "alts": [],
-   "credits": 7
+   "credits": 7,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3810 Clinical Practicum I | 7"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PTA 3820",
    "alts": [],
-   "credits": 7
+   "credits": 7,
+   "src": "Discipline Core Requirements (57 credits) › PTA 3820 Clinical Practicum II | 7"
   }
  ],
  "gradPlan": [
@@ -441,14 +477,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "HLSC 1300": {
    "title": "Medical Terminology and Functional Anatomy",
@@ -464,7 +506,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -476,7 +519,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PSY 1010": {
    "title": "General Psychology",
@@ -491,7 +535,12 @@
    "credits": 2,
    "prereqText": "Admission into PTA program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2010": {
    "title": "Essentials of Physiology for the Physical Therapist Assistant",
@@ -502,7 +551,12 @@
    "coreqText": "PTA 2015",
    "coreqs": [
     "PTA 2015"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into the PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the PTA program"
   },
   "PTA 2015": {
    "title": "Essentials of Physiology for the Physical Therapist Assistant Lab",
@@ -513,7 +567,12 @@
    "coreqText": "PTA 2010",
    "coreqs": [
     "PTA 2010"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA Program"
   },
   "PTA 2100": {
    "title": "Clinical Kinesiology",
@@ -524,7 +583,12 @@
    "coreqText": "PTA 2105",
    "coreqs": [
     "PTA 2105"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into the PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the PTA program"
   },
   "PTA 2105": {
    "title": "Clinical Kinesiology Lab",
@@ -535,7 +599,12 @@
    "coreqText": "PTA 2100",
    "coreqs": [
     "PTA 2100"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2200": {
    "title": "Foundations of Therapeutic Interventions I",
@@ -546,7 +615,12 @@
    "coreqText": "PTA 2205",
    "coreqs": [
     "PTA 2205"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2205": {
    "title": "Foundations of Therapeutic Interventions Lab I",
@@ -557,7 +631,12 @@
    "coreqText": "PTA 2200",
    "coreqs": [
     "PTA 2200"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2300": {
    "title": "Therapeutic Procedures",
@@ -568,7 +647,12 @@
    "coreqText": "PTA 2305",
    "coreqs": [
     "PTA 2305"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2305": {
    "title": "Therapeutic Procedures Lab",
@@ -579,21 +663,36 @@
    "coreqText": "PTA 2300",
    "coreqs": [
     "PTA 2300"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2400": {
    "title": "Clinical Pathophysiology",
    "credits": 3,
    "prereqText": "Admission into PTA program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 2500": {
    "title": "Health Systems and Services for the PTA",
    "credits": 2,
    "prereqText": "Admission into PTA program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3100": {
    "title": "Foundations of Therapeutic Interventions II",
@@ -609,7 +708,12 @@
    "coreqText": "PTA 3105",
    "coreqs": [
     "PTA 3105"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3105": {
    "title": "Foundations of Therapeutic Interventions Lab II",
@@ -625,7 +729,12 @@
    "coreqText": "PTA 3100",
    "coreqs": [
     "PTA 3100"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3200": {
    "title": "Orthopedic Rehabilitation",
@@ -636,7 +745,12 @@
    "coreqText": "PTA 3205",
    "coreqs": [
     "PTA 3205"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3205": {
    "title": "Orthopedic Rehabilitation Lab",
@@ -647,7 +761,12 @@
    "coreqText": "PTA 3200",
    "coreqs": [
     "PTA 3200"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3300": {
    "title": "Cardiopulmonary Rehabilitation",
@@ -658,7 +777,12 @@
    "coreqText": "PTA 3305",
    "coreqs": [
     "PTA 3305"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3305": {
    "title": "Cardiopulmonary Rehabilitation Lab",
@@ -669,7 +793,12 @@
    "coreqText": "PTA 3300",
    "coreqs": [
     "PTA 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3500": {
    "title": "Neurological Rehabilitation",
@@ -680,7 +809,12 @@
    "coreqText": "PTA 3505",
    "coreqs": [
     "PTA 3505"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3505": {
    "title": "Neurological Rehabilitation Lab",
@@ -691,7 +825,12 @@
    "coreqText": "PTA 3500",
    "coreqs": [
     "PTA 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3600": {
    "title": "Specialty Populations in Physical Therapy",
@@ -702,7 +841,12 @@
    "coreqText": "PTA 3605",
    "coreqs": [
     "PTA 3605"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3605": {
    "title": "Specialty Populations in Physical Therapy Lab",
@@ -713,7 +857,12 @@
    "coreqText": "PTA 3600",
    "coreqs": [
     "PTA 3600"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3700": {
    "title": "Physical Therapist Assistant Seminar",
@@ -725,7 +874,12 @@
      "PTA 3810"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3800": {
    "title": "Capstone",
@@ -738,7 +892,12 @@
      "PTA 3300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3810": {
    "title": "Clinical Practicum I",
@@ -750,14 +909,24 @@
      "PTA 2400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "PTA 3820": {
    "title": "Clinical Practicum II",
    "credits": 7,
    "prereqText": "Admission into PTA program, PTA 3810",
    "prereqs": "PTA 3810",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into PTA program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into PTA program"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -770,7 +939,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -783,7 +957,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -804,5 +983,51 @@
   }
  },
  "admission": true,
- "admissionNote": "This program uses a merit-based, competitive admission process."
+ "admissionNote": "This program uses a merit-based, competitive admission process.",
+ "admissionInfo": {
+  "note": "This program uses a merit-based, competitive admission process.",
+  "text": "Matriculation requirements are designed to ensure applicants who are admitted into the PTA program can be successful and meet the rigor required of the technical classes. This program uses a merit-based, competitive admission process. Applications may be submitted prior to the completion of the prerequisite courses listed below, but the students must complete all prerequisite courses prior to starting the PTA program and have obtained a C (74%) or better in all the courses. Matriculation Requirements: Be admitted to Utah Valley University. Minimum GPA of 3.0 in prerequisite courses (no grades below C) Complete the following courses: ZOOL 2320 Human Anatomy / ZOOL 2325 Human Anatomy Laboratory , HLSC 1300 Medical Terminology and Functional Anatomy , ENGL 1010 Introduction to Academic Writing or ENGL 1005 Foundations of Academic Writing , MATH 1050 College Algebra or MATH 1055 College Algebra with Preliminaries or STAT 1040 or STAT 1045, PSY 1010 General Psychology or PSY 1100 Human Development Life Span , COMM 1020 Public Speaking . Observation, volunteer, or work experience in physical therapy (20 hours minimum) Exam scores for TEAS test Interview/Essay Upon Conditional Acceptance: Criminal background check Health/immunization requirements CPR certification Drug screening",
+  "before": [
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "HLSC 1300",
+   "ENGL 1010",
+   "ENGL 1005",
+   "MATH 1050",
+   "MATH 1055",
+   "STAT 1040",
+   "STAT 1045",
+   "PSY 1010",
+   "PSY 1100",
+   "COMM 1020"
+  ],
+  "gated": [
+   "PTA 1010",
+   "PTA 2010",
+   "PTA 2015",
+   "PTA 2100",
+   "PTA 2105",
+   "PTA 2200",
+   "PTA 2205",
+   "PTA 2300",
+   "PTA 2305",
+   "PTA 2400",
+   "PTA 2500",
+   "PTA 3100",
+   "PTA 3105",
+   "PTA 3200",
+   "PTA 3205",
+   "PTA 3300",
+   "PTA 3305",
+   "PTA 3500",
+   "PTA 3505",
+   "PTA 3600",
+   "PTA 3605",
+   "PTA 3700",
+   "PTA 3800",
+   "PTA 3810",
+   "PTA 3820"
+  ],
+  "beforeFrom": "matriculation section"
+ }
 }

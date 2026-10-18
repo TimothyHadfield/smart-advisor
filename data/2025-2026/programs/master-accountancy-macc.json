@@ -3,7 +3,7 @@
  "name": "Master of Accountancy, M.Acc",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/accounting/master-accountancy-macc/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Required Courses:",
    "code": "ACC 6060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6060 Professionalism and Leadership | 3"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6250 Financial Reporting and Analysis | 3"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6300 Advanced Data Analytics in Accounting | 3"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6350 Management Control Systems | 3"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6400 Taxation of Business Entities | 3"
   },
   {
    "type": "course",
@@ -48,21 +53,24 @@
    "alts": [
     "ACC 6560"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6410 Tax Research and Procedure | 3 or ACC 6560 Financial Accounting Theory and Research I"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6510 Financial Auditing | 3"
   },
   {
    "type": "course",
    "area": "Required Courses:",
    "code": "ACC 6600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses: (24 credits) › ACC 6600 Business Law for Accountants | 3"
   },
   {
    "type": "choice",
@@ -135,6 +143,7 @@
     }
    ],
    "text": "Select 6 semester credits from the following courses (not every elective is offered every academic year):",
+   "src": "Elective Courses: (6 credits) › Select 6 semester credits from the following courses (not every elective is offered every academic year): | 6",
    "notes": [
     "Other WSB master's level course as approved by the program"
    ],
@@ -198,135 +207,253 @@
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy program"
   },
   "ACC 6060": {
    "title": "Professionalism and Leadership",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy program"
   },
   "ACC 6140": {
    "title": "Fraud Examination and Forensic Accounting",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy or the Master of Business Administration Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy or the Master of Business Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy or the Master of Business Administration Program"
   },
   "ACC 6150": {
    "title": "Information Systems Auditing",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy or Master of Business Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy or Master of Business Administration Program"
   },
   "ACC 6250": {
    "title": "Financial Reporting and Analysis",
    "credits": 3,
    "prereqText": "Admission to a Woodbury School of Business Graduate Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a Woodbury School of Business Graduate Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a Woodbury School of Business Graduate Program"
   },
   "ACC 6300": {
    "title": "Advanced Data Analytics in Accounting",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6350": {
    "title": "Management Control Systems",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy or Master of Business Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy or Master of Business Administration Program"
   },
   "ACC 6400": {
    "title": "Taxation of Business Entities",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6410": {
    "title": "Tax Research and Procedure",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6420": {
    "title": "Principles of Corporate Tax",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6430": {
    "title": "Advanced Corporate Tax",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy or Master of Business Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy or Master of Business Administration Program"
   },
   "ACC 6440": {
    "title": "Partnership Tax",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6450": {
    "title": "Advanced Taxation of Business Entities",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy program and ACC 6400",
    "prereqs": "ACC 6400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy program and ACC 6400"
   },
   "ACC 6460": {
    "title": "Estate and Gift Tax",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy or Master of Business Administration Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy or Master of Business Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy or Master of Business Administration Program"
   },
   "ACC 6510": {
    "title": "Financial Auditing",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6560": {
    "title": "Financial Accounting Theory and Research I",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6580": {
    "title": "Financial Accounting Theory and Research II",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6600": {
    "title": "Business Law for Accountants",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy Program"
   },
   "ACC 6790R": {
    "title": "Special Topics in Accounting",
    "credits": 3,
    "prereqText": "Admission to Master of Accountancy program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Accountancy program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master of Accountancy program"
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "1. Application for admission to graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. 4. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. 5. For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score of 80 iBT (550 pBT) or higher, or an IELTS band score of 6.5 or higher within the past two years is required. 6. International students must also meet all US government requirements for international students. 7. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. 8. Required prerequisite classes to the MAcc program must be taken from a regionally accredited U.S. institution or an AACSB International accredited business program. 9. A minimum average GPA of 3.0 in the prerequisite classes is required. No individual grade for a prerequisite class may be a C- or lower. Required prerequisite classes include Acc 3300 and 3510 or their equivalents. Required prerequisite classes also include Acc 3010, 3020, 4110, and 3400 or their equivalents which must cover…",
+  "before": [],
+  "gated": [
+   "ACC 6020",
+   "ACC 6060",
+   "ACC 6140",
+   "ACC 6150",
+   "ACC 6250",
+   "ACC 6300",
+   "ACC 6350",
+   "ACC 6400",
+   "ACC 6410",
+   "ACC 6420",
+   "ACC 6430",
+   "ACC 6440",
+   "ACC 6450",
+   "ACC 6460",
+   "ACC 6510",
+   "ACC 6560",
+   "ACC 6580",
+   "ACC 6600",
+   "ACC 6790R"
+  ]
+ }
 }

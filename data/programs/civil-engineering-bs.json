@@ -3,7 +3,7 @@
  "name": "Civil Engineering, B.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/mechanical-and-civil-engineering/civil-engineering-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 127,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -71,6 +78,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -81,19 +89,22 @@
    "area": "General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
@@ -102,13 +113,15 @@
    "credits": 3,
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (32 credits) › Humanities (COMM 1020 recommended) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
@@ -117,42 +130,48 @@
    "credits": 3,
    "recommended": [
     "COMM 2110"
-   ]
+   ],
+   "src": "General Education Requirements (32 credits) › Social/Behavioral Science (COMM 2110 recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (95 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (95 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (95 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "choice",
@@ -182,70 +201,80 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (95 credits) › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (95 credits) › MATH 1220 Calculus II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (95 credits) › MATH 2210 Calculus III | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2250",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (95 credits) › MATH 2250 Differential Equations and Linear Algebra | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › ENGR 1000 Introduction to Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › ENGR 2010 Engineering Statics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › ENGR 2030 Engineering Dynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › ENGR 2140 Mechanics of Materials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 2000",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 2000 Introduction to Civil Engineering Seminar | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 2130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 2130 Engineering Economics and Statistics | 3"
   },
   {
    "type": "course",
@@ -254,84 +283,96 @@
    "alts": [
     "ENGR 2450"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 2450 Numerical Methods with Excel | 3 or ENGR 2450 Computational Methods for Engineering Analysis"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3000",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3000 Civil Engineering Career Planning Seminar | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3010 Introduction to Transportation Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3130 Introduction to Structural Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3210 Introduction to Geotechnical Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3310 Civil Engineering Fluid Mechanics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3320 Introduction to Water Resources | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3335",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3335 Hydrology and Hydraulics Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3410 Introduction to Civil Engineering Materials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 3415",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 3415 Civil Engineering Materials Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 4810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 4810 Civil Engineering Capstone I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CIVE 4820",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (95 credits) › CIVE 4820 Civil Engineering Capstone II | 3"
   },
   {
    "type": "course",
@@ -340,7 +381,8 @@
    "alts": [
     "CHEM 1220"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (95 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4 or CHEM 1220 Principles of Chemistry II"
   },
   {
    "type": "course",
@@ -349,7 +391,8 @@
    "alts": [
     "CHEM 1225"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (95 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1 or CHEM 1225 Principles of Chemistry II Laboratory"
   },
   {
    "type": "choice",
@@ -637,6 +680,7 @@
      "section": "Technical Elective Courses"
     }
    ],
+   "src": "Discipline Core Requirements (95 credits) › CIVE Elective Courses | 15",
    "notes": [
     "Technical Elective Courses",
     "Technical Elective Courses: Students may also take upper level computer, electrical, and mechanical engineering classes as technical electives in consultation with their faculty advisors and approval of the department offering the courses."
@@ -901,21 +945,37 @@
    "credits": 3,
    "prereqText": "ARC 3220 and University Advanced Standing",
    "prereqs": "ARC 3220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4220": {
    "title": "Building Envelope and Science",
    "credits": 3,
    "prereqText": "ARC 4120 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ARC 4120",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3120": {
    "title": "Airport Management",
    "credits": 3,
    "prereqText": "AVSC 2150 and University Advanced Standing",
    "prereqs": "AVSC 2150",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -933,7 +993,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -951,7 +1015,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -962,7 +1027,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CIVE 2000": {
    "title": "Introduction to Civil Engineering Seminar",
@@ -988,49 +1054,90 @@
    "credits": 1,
    "prereqText": "CIVE 2000 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "CIVE 2000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3010": {
    "title": "Introduction to Transportation Engineering",
    "credits": 3,
    "prereqText": "EGDT 1040 , University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)",
    "prereqs": "EGDT 1040",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
   },
   "CIVE 3130": {
    "title": "Introduction to Structural Engineering",
    "credits": 3,
    "prereqText": "ENGR 2140 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "ENGR 2140",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3140": {
    "title": "Structural Steel Design I",
    "credits": 3,
    "prereqText": "CIVE 3130 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "CIVE 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3150": {
    "title": "Reinforced Concrete Design I",
    "credits": 3,
    "prereqText": "CIVE 3130 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "CIVE 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3210": {
    "title": "Introduction to Geotechnical Engineering",
    "credits": 3,
    "prereqText": "ENGR 2140 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "ENGR 2140",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3310": {
    "title": "Civil Engineering Fluid Mechanics",
    "credits": 3,
    "prereqText": "Matriculation into Civil Engineering Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program and University Advanced Standing"
   },
   "CIVE 3320": {
    "title": "Introduction to Water Resources",
@@ -1049,7 +1156,13 @@
      "ENGR 2450",
      "CIVE 2450"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into Civil Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3335": {
    "title": "Hydrology and Hydraulics Lab",
@@ -1061,14 +1174,26 @@
    "precoreqs": "CIVE 3320",
    "preco": [
     "CIVE 3320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into Civil Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3410": {
    "title": "Introduction to Civil Engineering Materials",
    "credits": 3,
    "prereqText": "ENGR 2140 , Matriculation into Civil Engineering Program, and University Advanced Standing",
    "prereqs": "ENGR 2140",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3415": {
    "title": "Civil Engineering Materials Lab",
@@ -1085,7 +1210,13 @@
    "precoreqs": "CIVE 3410",
    "preco": [
     "CIVE 3410"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculation into Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Civil Engineering Program"
   },
   "CIVE 3610": {
    "title": "Environmental Engineering",
@@ -1097,7 +1228,13 @@
      "MATH 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
   },
   "CIVE 4010": {
    "title": "Traffic Engineering",
@@ -1109,7 +1246,12 @@
    "precoreqs": "CIVE 3010",
    "preco": [
     "CIVE 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4020": {
    "title": "Highway Design",
@@ -1121,49 +1263,85 @@
    "precoreqs": "CIVE 3010",
    "preco": [
     "CIVE 3010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4160": {
    "title": "Timber and Masonry Design",
    "credits": 3,
    "prereqText": "CIVE 3130 , Matriculation into the Civil Engineering Program, and University Advanced Standing",
    "prereqs": "CIVE 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Civil Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Civil Engineering Program"
   },
   "CIVE 4210": {
    "title": "Foundation Design",
    "credits": 3,
    "prereqText": "CIVE 3210 and University Advanced Standing",
    "prereqs": "CIVE 3210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4220": {
    "title": "Ground Improvement Methods",
    "credits": 3,
    "prereqText": "CIVE 3210 and University Advanced Standing",
    "prereqs": "CIVE 3210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4310": {
    "title": "Storm Water Management",
    "credits": 3,
    "prereqText": "CIVE 3310 and University Advanced Standing",
    "prereqs": "CIVE 3310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4320": {
    "title": "Open Channel Flow",
    "credits": 3,
    "prereqText": "CIVE 3320 and University Advanced Standing",
    "prereqs": "CIVE 3320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4610": {
    "title": "Water and Wastewater",
    "credits": 3,
    "prereqText": "CIVE 3320 and University Advanced Standing",
    "prereqs": "CIVE 3320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4810": {
    "title": "Civil Engineering Capstone I",
@@ -1180,7 +1358,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Formal Acceptance into Civil Engineering Program",
+    "Program Approval"
+   ],
+   "gate": "admission",
+   "gateText": "Formal Acceptance into Civil Engineering Program, and at least three of the following courses: CIVE 3010"
   },
   "CIVE 4810R": {
    "title": "Internship",
@@ -1188,14 +1373,26 @@
    "creditsMax": 3,
    "prereqText": "Matriculation to civil engineering program, Instructor Approval, and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to civil engineering program",
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to civil engineering program, Instructor Approval"
   },
   "CIVE 4820": {
    "title": "Civil Engineering Capstone II",
    "credits": 3,
    "prereqText": "CIVE 4810 and University Advanced Standing",
    "prereqs": "CIVE 4810",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CIVE 4900R": {
    "title": "Advanced Current Topics in Civil Engineering",
@@ -1203,7 +1400,12 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Department Approval)",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Department Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Department Approval)"
   },
   "CIVE 4910R": {
    "title": "Independent Study in Civil Engineering",
@@ -1211,7 +1413,13 @@
    "creditsMax": 3,
    "prereqText": "Prior written Program Chair approval and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Prior written Program Chair approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 2025": {
    "title": "Heavy Civil Plans and Specifications",
@@ -1263,7 +1471,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 3050": {
    "title": "Construction Equipment/Planning and Logistics",
@@ -1275,14 +1488,25 @@
    "precoreqs": "CMGT 3030",
    "preco": [
     "CMGT 3030"
-   ]
+   ],
+   "prereqWords": [
+    "CMGT Major",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 3160": {
    "title": "Building Information Modeling",
    "credits": 3,
    "prereqText": "EGDT 1020 or CMGT Instructor/Program approval for non-CMGT majors and University Advanced Standing",
    "prereqs": "EGDT 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 4010": {
    "title": "Construction Contracts",
@@ -1295,7 +1519,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing",
+    "CMGT Instructor/Program approval for non-CMGT majors"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 4020": {
    "title": "Construction Project Management",
@@ -1307,14 +1538,25 @@
    "precoreqs": "CMGT 2080",
    "preco": [
     "CMGT 2080"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 4050G": {
    "title": "Global Sustainability and the Built Environment",
    "credits": 3,
    "prereqText": "CMGT 2060 and Construction Management majors, or CMGT Instructor/Program approval for non-CMGT majors; and University Advanced Standing.",
    "prereqs": "CMGT 2060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "CMGT Instructor/Program approval for non-CMGT majors",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 1020": {
    "title": "Public Speaking",
@@ -1340,7 +1582,8 @@
    "title": "Structural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1400": {
    "title": "Surveying Applications and Field Techniques I",
@@ -1362,7 +1605,8 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2500": {
    "title": "3 Dimensional Modeling--Civil 3D",
@@ -1390,21 +1634,33 @@
      "EGDT 1400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1417,7 +1673,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGR 1000": {
    "title": "Introduction to Engineering",
@@ -1465,26 +1722,37 @@
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGL 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3290": {
    "title": "Environmental Reporting",
    "credits": 3,
    "prereqText": "ENGL 1010 recommended, University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3330": {
    "title": "Water Resources Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3750": {
    "title": "Land Use Planning",
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3850": {
    "title": "Environmental Policy and Law",
@@ -1496,7 +1764,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4450G": {
    "title": "Human Factors in Emergency Management",
@@ -1508,7 +1781,12 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3000": {
    "title": "Environmental Geochemistry",
@@ -1526,7 +1804,12 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1554,7 +1837,12 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -1576,7 +1864,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -1587,7 +1879,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -1598,7 +1891,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2250": {
    "title": "Differential Equations and Linear Algebra",
@@ -1609,7 +1903,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "ME 4420": {
    "title": "Finite Element Methods",
@@ -1621,7 +1916,12 @@
      "ME 3320"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",
@@ -1672,5 +1972,52 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "To be admitted to the BSCE program, a student must complete the foundation courses in Mathematics (MATH 1210, 1220, 2210, 2250); Physics and Chemistry (PHYS 2210 with 2215, CHEM 1210 with 1215, and PHYS 2220 with 2225 or CHEM 1220 with 1225); English (ENGL 1010 or ENGL 1005, ENGL 2010); Engineering (ENGR 1000, 2010, 2030, 2140; and CIVE 2130); Computer Aided Drafting (EGDT 1040), and Surveying Applications and Field Techniques I (EGDT 1400) with a minimum grade of C in these courses. Must complete courses with a grade point average of 2.5 or above. A student not meeting all of the admission requirements, may request in writing, a provisional admission status for a semester from the department. The provisional admission status must be approved by the civil engineering program coordinator.",
+  "before": [
+   "MATH 1210",
+   "MATH 1220",
+   "MATH 2210",
+   "MATH 2250",
+   "PHYS 2210",
+   "PHYS 2215",
+   "CHEM 1210",
+   "CHEM 1215",
+   "PHYS 2220",
+   "PHYS 2225",
+   "CHEM 1220",
+   "CHEM 1225",
+   "ENGL 1010",
+   "ENGL 1005",
+   "ENGL 2010",
+   "ENGR 1000",
+   "ENGR 2010",
+   "ENGR 2030",
+   "ENGR 2140",
+   "CIVE 2130",
+   "EGDT 1040",
+   "EGDT 1400"
+  ],
+  "gated": [
+   "CIVE 3000",
+   "CIVE 3010",
+   "CIVE 3130",
+   "CIVE 3140",
+   "CIVE 3150",
+   "CIVE 3210",
+   "CIVE 3310",
+   "CIVE 3320",
+   "CIVE 3335",
+   "CIVE 3410",
+   "CIVE 3415",
+   "CIVE 3610",
+   "CIVE 4160",
+   "CIVE 4810",
+   "CIVE 4810R",
+   "CIVE 4900R"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Art and Design - Design/Illustration Emphasis, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/art-design-aas-design-illustration-emphasis/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 62,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -38,19 +43,22 @@
     }
    ],
    "text": "Complete one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "src": "Core Requirements › General Education Requirements (12 credits) › Complete one of the following: (Note: A higher level MATH course may substitute for this requirement) | 3",
    "ge": "math"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social or Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (12 credits) › Social or Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology or Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (12 credits) › Biology or Physical Science | 3"
   },
   {
    "type": "course",
@@ -59,21 +67,24 @@
    "alts": [
     "ARTH 2720"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › ARTH 2710 Prehistoric Through Gothic Art History | 3 or ARTH 2720 Renaissance Through Contemporary Art History"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › ART 1120 2D Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › ART 1130 3D Design | 3"
   },
   {
    "type": "choice",
@@ -127,84 +138,96 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees):"
+   "text": "Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees):",
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees): | 9"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 1210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 1210 Observational Drawing | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 1220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 1220 Perspective Drawing | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2220 Imagination and Visual Literacy | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2230 Illustrative Media and Techniques I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2240 Illustrative Media and Techniques II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2250 Gestural Drawing | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2260 Digital Painting I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2270 Figure Drawing I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2280",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (32 credits) › ART 2280 3D Modeling | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ART 2000R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (32 credits) › ART 2000R Art and Design Lecture Series | 2"
   },
   {
    "type": "placeholder",
    "area": "Emphasis Requirements",
    "label": "Complete 3 credits of ART/ARTH lower-division electives. Students are strongly encouraged to take either ARTH 2710 or ARTH 2720 (whichever course was not previously taken).",
    "credits": 3,
-   "text": "Complete 3 credits of ART/ARTH lower-division electives. Students are strongly encouraged to take either ARTH 2710 or ARTH 2720 (whichever course was not previously taken)."
+   "text": "Complete 3 credits of ART/ARTH lower-division electives. Students are strongly encouraged to take either ARTH 2710 or ARTH 2720 (whichever course was not previously taken).",
+   "src": "Emphasis Requirements (32 credits) › Emphasis Elective Requirements: › Complete 3 credits of ART/ARTH lower-division electives. Students are strongly encouraged to take either ARTH 2710 or ARTH 2720 (whichever course was not previously taken). | 3"
   }
  ],
  "gradPlan": [
@@ -337,14 +360,20 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ART 1120": {
    "title": "2D Design",
    "credits": 3,
    "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Entertainment Design or Art Education or Digital Media"
+   ]
   },
   "ART 1130": {
    "title": "3D Design",
@@ -396,14 +425,20 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ART 2000R": {
    "title": "Art and Design Lecture Series",
    "credits": 1,
    "prereqText": "Declared Art and Design major",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Declared Art and Design major"
+   ]
   },
   "ART 2220": {
    "title": "Imagination and Visual Literacy",
@@ -510,7 +545,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -523,7 +561,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -535,7 +577,16 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   }
+ },
+ "admissionInfo": {
+  "text": "Portfolio review required for students seeking the AAS - Art and Design - Graphic Design Emphasis (The Portfolio Review occurs after the first year of coursework. Students who do not pass the review may apply the first year of coursework to the AA or AS in Art & Design.)",
+  "before": [],
+  "gated": []
  }
 }

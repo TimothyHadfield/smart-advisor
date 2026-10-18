@@ -3,7 +3,7 @@
  "name": "Digital Audio, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/digital-media/digital-audio-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -57,6 +63,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -101,6 +108,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses"
    ],
@@ -110,128 +118,147 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 1000",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 1000 Intro to Digital Audio | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2000 Digital Audio Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › MUSC 1100 Fundamentals of Music | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2010 Core Recording | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2010L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2010L Core Recording Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 1030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 1030 Digital Audio Workstation Training I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 1700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PHYS 1700 Descriptive Acoustics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2020 Core Mixing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2020L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2020L Core Mixing Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 1031",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 1031 Digital Audio Workstation Training II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2080 Podcast and Radio Production | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2001R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (30 credits) › DAPR 2001R Audio Portfolio Prep | 2"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 1,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Core Requirements (30 credits) › Complete any 1000-level, or higher, courses | 1"
   }
  ],
  "gradPlan": [
@@ -454,14 +481,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -474,7 +507,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -503,7 +537,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -515,7 +553,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -527,7 +569,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -539,7 +582,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MUSC 1100": {
    "title": "Fundamentals of Music",

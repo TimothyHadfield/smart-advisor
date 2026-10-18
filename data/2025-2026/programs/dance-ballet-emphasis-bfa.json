@@ -3,7 +3,7 @@
  "name": "Dance - Ballet Emphasis, B.F.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/dance/dance-ballet-emphasis-bfa/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -44,7 +50,8 @@
      "credits": 6
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Core Requirements › General Education Requirements (27 credits) › Choose one of the following: | 3"
   },
   {
    "type": "choice",
@@ -87,44 +94,51 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Core Requirements › General Education Requirements (27 credits) › Choose one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Distribution Courses: › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (27 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2110 Orientation to Dance | 3"
   },
   {
    "type": "course",
@@ -133,126 +147,144 @@
    "alts": [
     "DANC 2270R"
    ],
-   "credits": 6
+   "credits": 6,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 1270R Ballet Technique and Theory I (3) | 6 (Note: DANC 2270R strongly recommended for BFA Ballet Emphasis majors) or DANC 2270R Ballet Technique and Theory II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1430R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 1430R Modern/Contemporary Dance Technique and Theory I/Semester I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1440R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 1440R Modern/Contemporary Dance Technique and Theory I/Semester II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1610R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 1610R Dance Conditioning | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2330",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2330 Improvisation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2340 Composition | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2560G Dance as a Cultural Practice I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2650R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2650R Fundamentals of Movement | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2670",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 2670 Introduction to Laban Studies | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3140",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 3140 Dance Production and Lighting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 3630 Dance as a Cultural Practice II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › BIOL 1010 General Biology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 1090",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › ZOOL 1090 Introduction to Human Anatomy and Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3680",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 3680 Dance Kinesiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 4350 Senior Capstone I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4360",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 4360 Senior Capstone II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4880",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (48 credits) › DANC 4880 Current Issues in Dance | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 2270R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Emphasis Requirements (45 credits) › DANC 2270R Ballet Technique and Theory II (two semesters in Level II or higher) | 6"
   },
   {
    "type": "course",
@@ -261,14 +293,16 @@
    "alts": [
     "DANC 2220R"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (45 credits) › DANC 2210R Pointe II (1) (four semesters required in level II or higher) | 4 or DANC 2220R Allegro Dance II"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 3270R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Emphasis Requirements (45 credits) › DANC 3270R Ballet Technique and Theory III (two semesters in Level III or higher) | 6"
   },
   {
    "type": "course",
@@ -277,14 +311,16 @@
    "alts": [
     "DANC 3220R"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (45 credits) › DANC 3210R Pointe III (1) (two semesters required in level III or higher) | 2 or DANC 3220R Allegro Dance III"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 4270R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Emphasis Requirements (45 credits) › DANC 4270R Ballet Technique and Theory IV (two semesters in Level IV or higher) | 6"
   },
   {
    "type": "choice",
@@ -314,35 +350,40 @@
      "credits": 1
     }
    ],
-   "text": "Complete one of the following (two semesters required):"
+   "text": "Complete one of the following (two semesters required):",
+   "src": "Emphasis Requirements (45 credits) › Complete one of the following (two semesters required): | 2"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 4240R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (45 credits) › DANC 4240R Partnering (1) | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 4250R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Emphasis Requirements (45 credits) › DANC 4250R Repertory Ballet Ensemble (3) (two semesters required total) | 6"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 3340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (45 credits) › DANC 3340 Ballet Choreography | 2"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DANC 4260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DANC 4260 Ballet Pedagogy | 3"
   },
   {
    "type": "choice",
@@ -427,6 +468,7 @@
     }
    ],
    "text": "Choose 4 credits from the following:",
+   "src": "Emphasis Requirements (45 credits) › Emphasis Elective Requirements: › Choose 4 credits from the following: | 4",
    "notes": [
     "Any DANC course not previously taken."
    ],
@@ -437,7 +479,8 @@
    "area": "Emphasis Requirements",
    "label": "Complete 3 credits from any course(s) 1000 level or higher (Students must have 40 upper division credits hours to graduate.)",
    "credits": 3,
-   "text": "Complete 3 credits from any course(s) 1000 level or higher (Students must have 40 upper division credits hours to graduate.)"
+   "text": "Complete 3 credits from any course(s) 1000 level or higher (Students must have 40 upper division credits hours to graduate.)",
+   "src": "Emphasis Requirements (45 credits) › Emphasis Elective Requirements: › Complete 3 credits from any course(s) 1000 level or higher (Students must have 40 upper division credits hours to graduate.) | 3"
   }
  ],
  "gradPlan": [
@@ -751,7 +794,10 @@
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 1440R": {
    "title": "Modern/Contemporary Dance Technique and Theory I/Semester II",
@@ -793,6 +839,9 @@
    "coreqs": [
     "DANC 1270R",
     "DANC 2270R"
+   ],
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
    ]
   },
   "DANC 2220R": {
@@ -809,7 +858,10 @@
    "credits": 1,
    "prereqText": "Intermediate equivalent skill level to be determined by audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
+   ]
   },
   "DANC 2260": {
    "title": "Performance Practices in Ballet",
@@ -822,7 +874,10 @@
    "credits": 3,
    "prereqText": "Intermediate equivalent skill level to be determined by audition.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate equivalent skill level to be determined by audition"
+   ]
   },
   "DANC 2330": {
    "title": "Improvisation",
@@ -846,7 +901,12 @@
    "credits": 3,
    "prereqText": "Matriculation in any BFA or BS Dance major",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation in any BFA or BS Dance major"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation in any BFA or BS Dance major"
   },
   "DANC 2650R": {
    "title": "Fundamentals of Movement",
@@ -859,14 +919,21 @@
    "credits": 2,
    "prereqText": "DANC 2650R or Matriculation in BS Dance Education Program",
    "prereqs": "DANC 2650R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "DANC 2650R or Matriculation in BS Dance Education Program"
   },
   "DANC 3140": {
    "title": "Dance Production and Lighting",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3210R": {
    "title": "Pointe III",
@@ -906,6 +973,9 @@
     "DANC 2270R",
     "DANC 3270R",
     "DANC 4270R"
+   ],
+   "prereqWords": [
+    "By audition only"
    ]
   },
   "DANC 3340": {
@@ -923,14 +993,24 @@
    "coreqs": [
     "DANC 3270R",
     "DANC 4270R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3610": {
    "title": "Intermediate Dance Conditioning and Injury Prevention",
    "credits": 2,
    "prereqText": "DANC 1610R and University Advanced Standing",
    "prereqs": "DANC 1610R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3630": {
    "title": "Dance as a Cultural Practice II",
@@ -943,7 +1023,12 @@
      "DANC 2560G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3650R": {
    "title": "Advanced Fundamentals of Movement",
@@ -955,7 +1040,12 @@
      "DANC 2670"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3670": {
    "title": "Movement Analysis",
@@ -968,14 +1058,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3680": {
    "title": "Dance Kinesiology",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4210R": {
    "title": "Pointe IV",
@@ -986,6 +1086,9 @@
    "coreqText": "DANC 4270R",
    "coreqs": [
     "DANC 4270R"
+   ],
+   "prereqWords": [
+    "Advanced equivalent skill level to be determined by audition"
    ]
   },
   "DANC 4220R": {
@@ -999,6 +1102,9 @@
     "DANC 2270R",
     "DANC 3270R",
     "DANC 4270R"
+   ],
+   "prereqWords": [
+    "Intermediate/Advanced equivalent skill level to be determined by audition"
    ]
   },
   "DANC 4230R": {
@@ -1038,6 +1144,9 @@
     "DANC 4220R",
     "DANC 4230R",
     "DANC 4240R"
+   ],
+   "prereqWords": [
+    "Audition required"
    ]
   },
   "DANC 4260": {
@@ -1045,7 +1154,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4270R": {
    "title": "Ballet Technique and Theory IV",
@@ -1069,7 +1183,12 @@
      "DANC 3680"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4360": {
    "title": "Senior Capstone II",
@@ -1081,14 +1200,24 @@
      "DANC 4350"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4880": {
    "title": "Current Issues in Dance",
    "credits": 3,
    "prereqText": "DANC 3630 , and University Advanced Standing",
    "prereqs": "DANC 3630",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -1102,7 +1231,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1115,7 +1247,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1144,7 +1277,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1156,7 +1293,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1181,5 +1322,34 @@
     ]
    }
   }
+ },
+ "admissionInfo": {
+  "text": "Pass performance audition with Dance faculty.",
+  "before": [
+   "DANC 2110",
+   "DANC 1270R",
+   "DANC 2210R",
+   "DANC 1430R",
+   "ENGL 1010",
+   "MAT 1030",
+   "DANC 2330",
+   "DANC 1610R",
+   "DANC 1440R",
+   "ENGL 2010",
+   "DANC 2650R",
+   "DANC 2340",
+   "DANC 3270R",
+   "DANC 3210R"
+  ],
+  "gated": [
+   "DANC 2560G",
+   "DANC 2670"
+  ],
+  "beforeLabels": [
+   "DANC Elective",
+   "Physical Science",
+   "American Institution Distribution"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

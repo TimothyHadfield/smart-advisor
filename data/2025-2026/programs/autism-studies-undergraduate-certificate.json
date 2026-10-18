@@ -3,7 +3,7 @@
  "name": "Autism Studies, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/secondary-special-education/autism-studies-undergraduate-certificate/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "AUTS 2500G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 2500G Understanding the Autism Spectrum | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 3810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 3810 Autism Across the Lifespan I Infants and Children | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 3820G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 3820G Autism across the Lifespan II Teens and Adults | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 3850",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 3850 Autism Assessment and Treatment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 4650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 4650 Autism and Applied Behavior Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 4810R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 4810R Field Placement | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AUTS 4820R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (19 credits) › Complete the following: › AUTS 4820R Group Autism Seminar | 1"
   }
  ],
  "gradPlan": [
@@ -112,28 +119,41 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "AUTS 3810": {
    "title": "Autism Across the Lifespan I Infants and Children",
    "credits": 3,
    "prereqText": "AUTS 2500G and University Advanced Standing",
    "prereqs": "AUTS 2500G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AUTS 3820G": {
    "title": "Autism across the Lifespan II Teens and Adults",
    "credits": 3,
    "prereqText": "University Advanced Standing and AUTS 2500G",
    "prereqs": "AUTS 2500G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AUTS 3850": {
    "title": "Autism Assessment and Treatment",
    "credits": 3,
    "prereqText": "AUTS 2500G and University Advanced Standing",
    "prereqs": "AUTS 2500G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AUTS 4650": {
    "title": "Autism and Applied Behavior Analysis",
@@ -146,7 +166,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AUTS 4810R": {
    "title": "Field Placement",
@@ -167,7 +192,12 @@
    "precoreqs": "AUTS 4820R",
    "preco": [
     "AUTS 4820R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AUTS 4820R": {
    "title": "Group Autism Seminar",
@@ -187,7 +217,12 @@
      "AUTS 3850",
      "AUTS 4650"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "entryRequirements": [

@@ -3,7 +3,7 @@
  "name": "Entry Kitchen, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/culinary-arts-institute/entry-kitchen-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "",
    "code": "CA 1120",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "CA 1120 Cooking Skills Development | 5"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "CA 1140 Professional Dining Room Services | 1"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CA 1150 Nutrition and Food Service | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1160",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "CA 1160 Culinary Math | 1"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1170",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "CA 1170 Pastry and Baking Skills | 5"
   },
   {
    "type": "course",
    "area": "",
    "code": "CA 1490",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "CA 1490 Food Service Sanitation | 1"
   }
  ],
  "gradPlan": [
@@ -86,14 +92,25 @@
    "credits": 5,
    "prereqText": "CA 1490 , Food Handlers permit or ServSafe Certification. Acceptance into the Culinary Arts Institute.",
    "prereqs": "CA 1490",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Food Handlers permit or ServSafe Certification",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1140": {
    "title": "Professional Dining Room Services",
    "credits": 1,
    "prereqText": "Acceptance into the Culinary Arts Institute",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1150": {
    "title": "Nutrition and Food Service",
@@ -104,7 +121,13 @@
    "credits": 1,
    "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation and Acceptance into the Culinary Arts Institute"
   },
   "CA 1170": {
    "title": "Pastry and Baking Skills",
@@ -116,11 +139,26 @@
    "precoreqs": "CA 1490",
    "preco": [
     "CA 1490"
-   ]
+   ],
+   "prereqWords": [
+    "Food Handlers permit or ServSafe Certfication",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1490": {
    "title": "Food Service Sanitation",
    "credits": 1
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "CA 1120",
+   "CA 1140",
+   "CA 1160",
+   "CA 1170"
+  ]
  }
 }

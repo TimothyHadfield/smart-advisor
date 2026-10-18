@@ -3,7 +3,7 @@
  "name": "Web Design and Development, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/digital-media/web-design-development-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "General Education Requirements",
    "code": "ENGL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › ENGL 1010 Introduction to Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -60,95 +61,109 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (15 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities or Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Humanities or Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Social/Behavioral | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology or Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Biology or Physical Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (48 credits) › DGM 1110 Digital Media Essentials I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 1400 Digital Design Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 1410 Interaction Design Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 1420 Communicating Digital Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 1600 Web Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 1720 Scripting for Internet Technologies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 2410 Interaction Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 2610 Principles of Web Languages | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2590",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › DWDD 2590 Portfolio Workshop | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 20 credits of Advisor Approved Electives",
    "credits": 20,
-   "text": "Complete 20 credits of Advisor Approved Electives"
+   "text": "Complete 20 credits of Advisor Approved Electives",
+   "src": "Discipline Core Requirements (48 credits) › Complete 20 credits of Advisor Approved Electives | 20"
   }
  ],
  "gradPlan": [
@@ -327,7 +342,8 @@
    "preco": [
     "DWDD 2410",
     "DWDD 2610"
-   ]
+   ],
+   "prereqMinGrade": "B-"
   },
   "DWDD 2610": {
    "title": "Principles of Web Languages",
@@ -340,7 +356,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -353,7 +372,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -365,7 +388,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -377,7 +404,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -389,7 +417,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -402,7 +431,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -415,7 +449,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

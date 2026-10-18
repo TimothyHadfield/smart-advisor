@@ -3,7 +3,7 @@
  "name": "Marketing, Graduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/business-graduate-programs/marketing-graduate-certificate/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 12,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "",
    "code": "MKTG 6600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 6600 Marketing Strategy | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 6620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 6620 Marketing Research and Analytics | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 6640",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 6640 Brand/Product/Services Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MKTG 6660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MKTG 6660 Marketing Channels and Communications | 3"
   }
  ],
  "gradPlan": [
@@ -74,28 +78,49 @@
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "MKTG 6620": {
    "title": "Marketing Research and Analytics",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
    "prereqs": "MKTG 6600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600"
   },
   "MKTG 6640": {
    "title": "Brand/Product/Services Management",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
    "prereqs": "MKTG 6600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600"
   },
   "MKTG 6660": {
    "title": "Marketing Channels and Communications",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600",
    "prereqs": "MKTG 6600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business and MKTG 6600"
   }
+ },
+ "admissionInfo": {
+  "text": "Application for admission to the Graduate Certificate Program in Marketing with application fee. A bachelor's degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. Acceptance of graduate certificate program student status offers is valid only for the semester in the offer. Applicants who do not begin attendance during the semester in their admissions offers must reapply and pay the application fees before the applicable semester deadline. At the graduate certificate program's discretion, graduate certificate programs may defer enrollment if students apply for a deferment before the end of the semester for which they were admitted.",
+  "before": [],
+  "gated": [
+   "MKTG 6600",
+   "MKTG 6620",
+   "MKTG 6640",
+   "MKTG 6660"
+  ]
  }
 }

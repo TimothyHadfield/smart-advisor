@@ -3,7 +3,7 @@
  "name": "Finance, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/finance-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
@@ -20,14 +21,20 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "choice",
@@ -93,7 +100,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete nine hours from the following courses:"
+   "text": "Complete nine hours from the following courses:",
+   "src": "Elective Requirements (9 credits) › Complete nine hours from the following courses: | 9"
   }
  ],
  "gradPlan": [
@@ -212,28 +220,48 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3150": {
    "title": "Financial Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3400": {
    "title": "Investment Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4100": {
    "title": "Management of Financial Institutions",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4160": {
    "title": "Portfolio Management",
@@ -245,7 +273,12 @@
    "precoreqs": "MGMT 3345",
    "preco": [
     "MGMT 3345"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4170": {
    "title": "Derivative Securities",
@@ -257,21 +290,36 @@
    "precoreqs": "MGMT 3345",
    "preco": [
     "MGMT 3345"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4180": {
    "title": "International Finance Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4190": {
    "title": "Applied Asset Diversification and Management",
    "credits": 3,
    "prereqText": "FIN 3400 and University Advanced Standing",
    "prereqs": "FIN 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5130": {
    "title": "Financial Statement Analysis and Modeling",
@@ -290,7 +338,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 3345": {
    "title": "Business Statistics II",
@@ -303,7 +354,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -316,7 +372,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

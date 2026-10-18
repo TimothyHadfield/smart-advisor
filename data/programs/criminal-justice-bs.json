@@ -3,7 +3,7 @@
  "name": "Criminal Justice, B.S.",
  "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/criminal-justice-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
    ],
@@ -123,6 +130,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -132,177 +140,203 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1010 Introduction to Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1300 Introduction to Corrections Process | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1330 Criminal Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1340 Criminal Investigations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1350 Introduction to Forensic Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 1390 Introduction to Policing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 2200 Writing for Criminal Justice Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 2330 Juvenile Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 2350 Laws of Evidence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2500G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 2500G Justice For All | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 3270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 3270 Criminology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 3300 Victimology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 3400 Drugs and Crime | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4060 Special Problems in Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4160 Constitutional Criminal Rights | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4200 Ethical Issues in Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4250 Criminal Justice Career Strategies | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4700G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4700G Comparative Criminal Justice Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4880",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4880 Research Methods in Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 4990",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (77 credits) › CJ 4990 Criminal Justice Capstone Seminar | 3"
   },
   {
    "type": "placeholder",
@@ -310,6 +344,7 @@
    "label": "Complete 18 credits from the following (12 must be upper-division):",
    "credits": 18,
    "text": "Complete 18 credits from the following (12 must be upper-division):",
+   "src": "Discipline Core Requirements (77 credits) › Complete 18 credits from the following (12 must be upper-division): | 18",
    "notes": [
     "any Criminal Justice (CJ courses that are not part of the core requirements), National Security Studies (NSS) or Intelligence Studies (INTS) courses.",
     "Other Department Approved Electives"
@@ -324,7 +359,8 @@
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 13,
-   "text": "Complete any 1000 course or higher"
+   "text": "Complete any 1000 course or higher",
+   "src": "Elective Requirements (13 credits) › Complete any 1000 course or higher | 13"
   }
  ],
  "gradPlan": [
@@ -654,14 +690,24 @@
    "credits": 3,
    "prereqText": "CJ 1010 and University Advanced Standing",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 3300": {
    "title": "Victimology",
    "credits": 3,
    "prereqText": "CJ 1010 and University Advanced Standing",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 3400": {
    "title": "Drugs and Crime",
@@ -673,14 +719,24 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4060": {
    "title": "Special Problems in Criminal Justice",
    "credits": 3,
    "prereqText": "CJ 1010 and University Advanced Standing",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4160": {
    "title": "Constitutional Criminal Rights",
@@ -692,28 +748,48 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4200": {
    "title": "Ethical Issues in Criminal Justice",
    "credits": 3,
    "prereqText": "CJ 1010 and University Advanced Standing",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4250": {
    "title": "Criminal Justice Career Strategies",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4700G": {
    "title": "Comparative Criminal Justice Systems",
    "credits": 3,
    "prereqText": "CJ 1010 , and University Advanced Standing",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4810R": {
    "title": "Internship",
@@ -721,35 +797,56 @@
    "creditsMax": 12,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4880": {
    "title": "Research Methods in Criminal Justice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4990": {
    "title": "Criminal Justice Capstone Seminar",
    "credits": 3,
    "prereqText": "CJ 4880 and University Advanced Standing",
    "prereqs": "CJ 4880",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -762,7 +859,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -791,7 +889,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -803,7 +905,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -815,7 +921,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -827,7 +934,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -839,7 +947,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -860,7 +969,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -873,7 +987,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

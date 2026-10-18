@@ -3,7 +3,7 @@
  "name": "Nutrition, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/health-public-service/health-science/nutrition-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 2020 Nutrition Through the Life Cycle | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "NUTR 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "NUTR 3000 Nutrition and Disease | 3"
   },
   {
    "type": "choice",
@@ -74,7 +77,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 9 credits from the following:"
+   "text": "Choose 9 credits from the following:",
+   "src": "Choose 9 credits from the following: | 9"
   }
  ],
  "gradPlan": [
@@ -135,21 +139,36 @@
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 3100": {
    "title": "Community Nutrition",
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 3200": {
    "title": "Nutrition and Culture",
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 4900R": {
    "title": "Special Topics in Advanced Nutrition",
@@ -157,7 +176,12 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

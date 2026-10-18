@@ -3,7 +3,7 @@
  "name": "Ethical Leadership and Social Impact, Minor",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/ethical-leadership-and-social-impact-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "MGMT 1550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 1550 Introduction to Social Impact Frameworks and Strategies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2030 Inclusive Leadership | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 3020 Ethical Decision-Making in Organizations | 3"
   },
   {
    "type": "choice",
@@ -360,7 +363,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (18 credits) › 9 elective credits | 9 (Note: 6 credits must be upper division.)"
   }
  ],
  "gradPlan": [
@@ -402,7 +406,12 @@
      "AIST 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 1010G": {
    "title": "Social Cultural Anthropology",
@@ -413,14 +422,20 @@
      "ENGL 1010",
      "ENGL 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C+"
   },
   "ANTH 3560": {
    "title": "Peace Violence and Human Morality",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CINE 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -449,62 +464,103 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3115": {
    "title": "Communicating in Environments",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3190G": {
    "title": "Intercultural Communication Encounters",
    "credits": 3,
    "prereqText": "COMM 1050 and University Advanced Standing",
    "prereqs": "COMM 1050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3420": {
    "title": "Communication and Conflict",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3700": {
    "title": "Free Expression in a Democratic Society",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 4180": {
    "title": "Communication and Social Behavior",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 4250": {
    "title": "Communication and Leadership",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 4500": {
    "title": "Media and Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 2030": {
    "title": "Writing for Social Change",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher",
-   "prereqs": "ENGL 2010"
+   "prereqs": "ENGL 2010",
+   "prereqMinGrade": "C-"
   },
   "ENGL 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -527,7 +583,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 2500": {
    "title": "Creativity and Entrepreneurial Thinking",
@@ -542,27 +604,44 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3200": {
    "title": "Geography of Utah",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3430": {
    "title": "Political Geography",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 1550": {
    "title": "Introduction to Social Impact Frameworks and Strategies",
@@ -584,14 +663,24 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3500": {
    "title": "Leadership Theory and Application",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 2900G": {
    "title": "Marginalized Philosophies",
@@ -616,7 +705,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3460": {
    "title": "The Ethics of Human/Animal Relationships",
@@ -631,7 +725,12 @@
      "PHIL 1000H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3510": {
    "title": "Business and Professional Ethics",
@@ -644,7 +743,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3520": {
    "title": "Bioethics",
@@ -657,7 +761,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3530": {
    "title": "Environmental Ethics",
@@ -670,7 +779,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 2000": {
    "title": "Introduction to Peace and Justice Studies",
@@ -691,7 +805,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3200": {
    "title": "Global Poverty Facts Causes and Solutions",
@@ -705,14 +824,24 @@
      "PHIL 2050",
      "PHIL 2050G"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3400": {
    "title": "Conflict Transformation Resolution and Sustainable Peace",
    "credits": 3,
    "prereqText": "PJST 2000 and University Advanced Standing",
    "prereqs": "PJST 2000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4200": {
    "title": "Advanced Poverty Studies:Global Problems and Policies",
@@ -724,21 +853,36 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4300": {
    "title": "Race Gender and Class in Peace and Justice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3070": {
    "title": "Policy Analysis",
    "credits": 3,
    "prereqText": "POLS 3310 and University Advanced Standing",
    "prereqs": "POLS 3310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3320": {
    "title": "Nonprofits and The Public Sector",
@@ -750,14 +894,24 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3330": {
    "title": "Environmental Politics and Policy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3340": {
    "title": "Public Innovation",
@@ -769,14 +923,24 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3360": {
    "title": "The Politics of Economic Inequality",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3380": {
    "title": "Local Economic Development",
@@ -788,35 +952,60 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3410": {
    "title": "Globalization and Sustainable Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3480": {
    "title": "Race in Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3630": {
    "title": "Sustainable Mountain Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3640": {
    "title": "United Nations Sustainable Development Goals",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SLSS 1120G": {
    "title": "Leadership and Civic Engagement",
@@ -839,7 +1028,8 @@
    "credits": 3,
    "prereqText": "ENGL 2010 with a C+ or higher",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 3510": {
    "title": "Sociology of Work and Occupations",
@@ -851,7 +1041,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3520": {
    "title": "Environmental Sociology",
@@ -863,7 +1059,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3700": {
    "title": "Social Inequality",
@@ -875,7 +1077,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4400": {
    "title": "Social Change",
@@ -887,7 +1095,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

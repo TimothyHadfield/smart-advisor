@@ -3,7 +3,7 @@
  "name": "Business Management, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-management-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -48,6 +54,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
    ],
@@ -96,43 +103,50 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Fine Arts | 3"
   },
   {
    "type": "choice",
@@ -204,16 +218,22 @@
      "credits": 3,
      "alts": [
       "IM 2600"
+     ],
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications with a grade of B- or higher."
      ]
     }
    ],
-   "text": "Complete 18 credits from the following:"
+   "text": "Complete 18 credits from the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete 18 credits from the following: | 18"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete an additional 12 credits of any course numbered 1000 or higher.",
-   "credits": 12
+   "credits": 12,
+   "src": "Elective Requirements (12 credits) › Complete an additional 12 credits of any course numbered 1000 or higher. | 12"
   }
  ],
  "gradPlan": [
@@ -375,7 +395,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -388,7 +411,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2500": {
    "title": "Creativity and Entrepreneurial Thinking",
@@ -421,7 +445,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -433,7 +460,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -445,7 +473,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -457,7 +486,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -470,7 +500,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -483,7 +514,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",

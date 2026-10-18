@@ -3,7 +3,7 @@
  "name": "Spanish-English Translation and Interpreting, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/spanish-english-translation-interpreting-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "LANG 3020",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (16 credits) › LANG 3020 Language Services Industry and Languages in the Professional World | 1"
   },
   {
    "type": "choice",
@@ -36,7 +37,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (16 credits) › Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -53,7 +55,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › Complete first translation/interpreting course: | 3"
   },
   {
    "type": "choice",
@@ -80,6 +83,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (16 credits) › Complete one of the following: | 6",
    "notes": [
     "Translation Track",
     "Medical Interpreting Track",
@@ -101,7 +105,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › Required Language Internship | 3"
   },
   {
    "type": "choice",
@@ -162,7 +167,8 @@
      "recommended": true
     }
    ],
-   "text": "Choose 3 credit hours from the following:"
+   "text": "Choose 3 credit hours from the following:",
+   "src": "Spanish for the Professions Courses: (3 credits) › Choose 3 credit hours from the following: | 3"
   }
  ],
  "gradPlan": [
@@ -240,7 +246,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 4810R": {
    "title": "Language Internship",
@@ -248,21 +259,37 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3030": {
    "title": "Spanish Conversation and Composition I",
    "credits": 3,
    "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3040": {
    "title": "Spanish Conversation and Composition II",
    "credits": 3,
    "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3050": {
    "title": "Advanced Spanish",
@@ -275,7 +302,12 @@
    "credits": 3,
    "prereqText": "SPAN 3050 and University Advanced Standing",
    "prereqs": "SPAN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3310": {
    "title": "Spanish for Healthcare Professionals",
@@ -293,7 +325,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3320": {
    "title": "Spanish for Mental Health Professionals",
@@ -311,7 +348,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3340": {
    "title": "Spanish for Tourism and Hospitality Management",
@@ -329,7 +371,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4110": {
    "title": "Introduction to Translation and Interpreting English-Spanish",
@@ -342,21 +389,46 @@
    "credits": 3,
    "prereqText": "SPAN 4110 and University Advanced Standing",
    "prereqs": "SPAN 4110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4200": {
    "title": "Advanced Business Spanish",
    "credits": 3,
    "prereqText": "SPAN 3200 and University Advanced Standing",
    "prereqs": "SPAN 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4310": {
    "title": "Healthcare Interpreting English-Spanish",
    "credits": 3,
    "prereqText": "SPAN 3310 and University Advanced Standing",
    "prereqs": "SPAN 3310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete ENGL 2010 Intermediate Academic Writing and 30 hours of college-level courses other than Spanish with a minimum GPA of 2.0 Complete lower division Spanish courses (1010, 1020, 2010, and 202G) or receive the equivalent through experiential credit (does not apply to native speakers). Admitted to a bachelor degree program at UVU.",
+  "before": [
+   "ENGL 2010",
+   "ENGL 1010",
+   "ENGL 1020"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

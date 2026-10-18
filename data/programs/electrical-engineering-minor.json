@@ -3,7 +3,7 @@
  "name": "Electrical Engineering, Minor",
  "url": "https://catalog.uvu.edu/engineering-technology/electrical-and-computer-engineering/electrical-engineering-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 20,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Program Requirements",
    "code": "ECE 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Program Requirements (20 credits) › ECE 1000 Introduction to Electrical and Computer Engineering | 3"
   },
   {
    "type": "course",
    "area": "Program Requirements",
    "code": "ECE 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Program Requirements (20 credits) › ECE 2250 Circuit Theory | 3 (Note: Requires PHYS 2220 as a prerequisite.)"
   },
   {
    "type": "course",
    "area": "Program Requirements",
    "code": "ECE 2255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Program Requirements (20 credits) › ECE 2255 Circuit Theory Lab | 1 (Note: Requires PHYS 2220 as a prerequisite.)"
   },
   {
    "type": "course",
    "area": "Program Requirements",
    "code": "ECE 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Program Requirements (20 credits) › ECE 2700 Digital Design I | 3"
   },
   {
    "type": "course",
    "area": "Program Requirements",
    "code": "ECE 2705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Program Requirements (20 credits) › ECE 2705 Digital Design I Lab | 1"
   },
   {
    "type": "choice",
@@ -123,7 +128,8 @@
      "credits": 3
     }
    ],
-   "text": "Elective Requirements: Choose 9 Credits from the following list:"
+   "text": "Elective Requirements: Choose 9 Credits from the following list:",
+   "src": "Program Requirements (20 credits) › Elective Requirements: Choose 9 Credits from the following list: | 9"
   }
  ],
  "gradPlan": [
@@ -263,7 +269,14 @@
    "credits": 3,
    "prereqText": "ECE 2250 , (Formal Acceptance into the Electrical Engineering Program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3350": {
    "title": "Control Systems",
@@ -275,7 +288,14 @@
      "ECE 3770"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3450": {
    "title": "Electromagnetics and Transmission Lines",
@@ -287,7 +307,14 @@
      "ECE 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3730": {
    "title": "Embedded Systems I",
@@ -299,14 +326,28 @@
      "ECE 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical or Computer Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical or Computer Engineering Program, or Departmental Approval)"
   },
   "ECE 3740": {
    "title": "Digital Design II",
    "credits": 3,
    "prereqText": "ECE 2700 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2700",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3760": {
    "title": "Electronic Systems",
@@ -322,7 +363,14 @@
    "coreqText": "ECE 3765",
    "coreqs": [
     "ECE 3765"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3765": {
    "title": "Electronic Systems Lab",
@@ -338,14 +386,26 @@
    "coreqText": "ECE 3760",
    "coreqs": [
     "ECE 3760"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 3770": {
    "title": "Signals and Systems",
    "credits": 3,
    "prereqText": "ECE 2750 , (Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval), and University Advanced Standing",
    "prereqs": "ECE 2750",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program or Computer Engineering program, or Departmental Approval)"
   },
   "ECE 3780": {
    "title": "Communication Systems and Circuits",
@@ -357,7 +417,14 @@
      "ECE 3710"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Formal Acceptance into the Electrical Engineering Program",
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Electrical Engineering Program, or Departmental Approval)"
   },
   "ECE 3785": {
    "title": "Communication Systems and Circuits Lab",
@@ -373,14 +440,24 @@
    "coreqText": "ECE 3780",
    "coreqs": [
     "ECE 3780"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4700": {
    "title": "Computer Architecture for Engineering Applications",
    "credits": 3,
    "prereqText": "ECE 3740 and University Advanced Standing",
    "prereqs": "ECE 3740",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 4730": {
    "title": "Embedded Systems II",
@@ -392,7 +469,25 @@
      "ECE 3740"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "ECE 3250",
+   "ECE 3350",
+   "ECE 3450",
+   "ECE 3730",
+   "ECE 3740",
+   "ECE 3760",
+   "ECE 3770",
+   "ECE 3780"
+  ]
  }
 }

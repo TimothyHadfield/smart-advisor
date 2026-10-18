@@ -3,7 +3,7 @@
  "name": "Marketing, Minor",
  "url": "https://catalog.uvu.edu/business/marketing/marketing-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 4600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 4600 Customer Experience | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 3650 Professional Selling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 3660 Digital Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 3700 Fundamentals of Product Management | 3"
   }
  ],
  "gradPlan": [
@@ -133,31 +139,44 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3650": {
    "title": "Professional Selling",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3660": {
    "title": "Digital Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3700": {
    "title": "Fundamentals of Product Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4600": {
    "title": "Customer Experience",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Law Enforcement, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/law-enforcement-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 20,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "CJ 1800",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (20 credits) › CJ 1800 POST Module I | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1810",
    "alts": [],
-   "credits": 12
+   "credits": 12,
+   "src": "Discipline Core Requirements (20 credits) › CJ 1810 POST Module II | 12"
   }
  ],
  "gradPlan": [
@@ -47,14 +49,25 @@
    "credits": 8,
    "prereqText": "Departmental approval is required.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval is required"
+   ]
   },
   "CJ 1810": {
    "title": "POST Module II",
    "credits": 12,
    "prereqText": "CJ 1800 , Departmental Approval Required",
    "prereqs": "CJ 1800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval Required"
+   ]
   }
+ },
+ "admissionInfo": {
+  "text": "By permission only class. Individual must complete the State POST application. Individual must attend an application meeting/interview to have their application accepted by the director of the academy.",
+  "before": [],
+  "gated": []
  }
 }

@@ -3,7 +3,7 @@
  "name": "Water and Wastewater Operations, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/earth-science/water-wastewater-operations-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 36,
  "requirements": [
   {
@@ -13,84 +13,100 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (36 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1050",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › MATH 1050 College Algebra | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (36 credits) › ENVT 1200 Environmental Worker Safety | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (36 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (36 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › ENVT 3210 Water Quality and Reclamation | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3270",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › ENVT 3270 Environmental Microbiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENVT 3330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (36 credits) › ENVT 3330 Water Resources Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (36 credits) › PHYS 2010 College Physics I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (36 credits) › PHYS 2015 College Physics I Lab | 1"
   }
  ],
  "gradPlan": [
@@ -175,7 +191,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -193,7 +213,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -204,7 +225,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -218,7 +240,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENVT 1200": {
    "title": "Environmental Worker Safety",
@@ -229,7 +254,12 @@
    "credits": 4,
    "prereqText": "CHEM 1210 and University Advanced Standing",
    "prereqs": "CHEM 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3270": {
    "title": "Environmental Microbiology",
@@ -252,14 +282,24 @@
    "precoreqs": "ENVT 3300",
    "preco": [
     "ENVT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3330": {
    "title": "Water Resources Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -271,7 +311,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PHYS 2010": {
    "title": "College Physics I",

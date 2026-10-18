@@ -6,8 +6,8 @@
 import { writeFile, readFile, mkdir, readdir } from 'node:fs/promises';
 import { dirname, join, resolve } from 'node:path';
 import { fileURLToPath } from 'node:url';
-import { nameChoices, linkPlan, fillCredits, spliceCore, admissionInfo, splitPlanPairs } from './lib/post.mjs';
-export { nameChoices, linkPlan, fillCredits, spliceCore, admissionInfo, splitPlanPairs };
+import { nameChoices, linkPlan, fillCredits, spliceCore, admissionInfo, splitPlanPairs, altCredits } from './lib/post.mjs';
+export { nameChoices, linkPlan, fillCredits, spliceCore, admissionInfo, splitPlanPairs, altCredits };
 
 const CATALOG = 'https://catalog.uvu.edu';
 const UA = 'SmartAdvisor/1.0 (student project; github.com/TimothyHadfield/smart-advisor)';
@@ -123,32 +123,94 @@ const titleCredits = (t) => {
 
 // Free-text row kinds inside a course list
 const INSTR = /^(?:complete|choose|select|take|also|pick|students (?:must|will) (?:complete|choose|select|take))\b/i;
-const NOTE = /^(?:see|note|notes|please|students\b|must\b|these\b|this\b|if\b|for\b|it is|a grade|a minimum grade|minimum grade|grade|courses? (?:may|must|can|taken)|no more than one|only\b|strongly recommended|recommended|\*|\()/i;
+const NOTE = /^(?:see|note|notes|please|students\b|must\b|these\b|this\b|if\b|for\b|it is|a grade|a minimum grade|minimum grade|grade|courses? (?:may|must|can|taken)|no more than one|only\b|strongly recommended|recommended|includes\b|\*|\()/i;
 const RULE = /\b(?:at most|no more than|a maximum of|maximum of|at least|a minimum of|minimum of|may not|cannot|can not|not both|only one)\b[^.]*\b(?:credits?|courses?|hours?|classes?|upper[- ]division|\d{4}|level)\b/i;
 const OPEN = /\b(?:any|other)\b[^.]*(?:\d{4}|courses?|electives?|approved|classes?)|\bapproved\b|\d{4}\s*\+|\d{4}[- ]level|\bor (?:above|higher)\b/i;
 const TRACKISH = /\btracks?\b|\bemphas[ie]s\b|\boptions?\b|\bsets\b|\bset of\b|\bdomains?\b|\bfocus\b|\bspeciali[sz]ations?\b|\bcategor(?:y|ies)\b|\bconcentrations?\b|\bpathways?\b/i;
 const TRACK_NAME = /\btrack\b|\bfocus\b|\bdomain\b|\bemphasis\b|\bspeciali[sz]ation\b|\bcategory\b|\bconcentration\b|\bpathway\b|\boption\b/i;
 const SHARED_LIST = /\belectives?\b|\blist\b/i;
 const PREREQ_HEAD = /^(?:program )?prerequisites?(?: courses?)?\s*:?$/i;
+// "Complete the following:", "Complete all of the following", "Complete the following (X Certificate):",
+// "Complete the following with a minimum C or higher:", "Complete the following 12 Credits Hours"
+const ALL_FOLLOWING = /^(?:complete|take) (?:all )?(?:of )?the following(?: courses?| requirements| \d+ credits?(?: hours?)?)?(?:\s*\([^)]*\))?(?:\s*(?:with|each with)\b[^:]*)?\s*:?\s*$/i;
+// free text that only advises or explains ("are advised to take", "can be used only if not used for GE")
+const ADVICE = /recommend|advis|\bnote\b|prerequisite|required for|must be|to receive|certificate|only if|can be used|not used for|if not\b|in place of|substitut/i;
+// A pick inside a track: "Complete 12 credits from the following", "Select one course form the following:",
+// "Choose 11 Credits of Electives from the following", "Choose 2 from: A or B or C", "Complete 26 credits from any DANC course"
+export function subPick(label) {
+  let m = label.match(/^(?:[^:]*\)\s*-\s*)?(?:complete|choose|select|take|pick)\s+(?:a minimum of\s+|at least\s+|a total of\s+|any\s+)?([\w.]+)\s+(?:[\w-]+\s+){0,2}?(?:credits?|credit hours?|hours?|semester credits?)\b/i);
+  if (m && num(m[1])) return { credits: num(m[1]) };
+  m = label.match(/(?:complete|choose|select|take|pick)\s+(?:any\s+)?(\w+)\s+(?:(?:courses?|classes?)\s+)?(?:of|from|form)\b/i);
+  if (m && num(m[1])) return { count: num(m[1]) };
+  return null;
+}
+// a heading inside a track that belongs to it ("Commercial Dance Track DANC Electives" under "Commercial
+// Dance Track", "Pre-Dance Therapy Electives" under "Pre-Dance Therapy Track"): not a new track
+const trackStem = (s) => s.replace(/[-–—:]+/g, ' ').replace(/\b(?:track|domain|emphasis|focus|option|pathway|concentration|specialization|requirements?)\b/gi, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+const inTrackHeading = (label, section) => {
+  const stem = trackStem(section);
+  const l = label.replace(/[-–—:]+/g, ' ').replace(/\s+/g, ' ').trim().toLowerCase();
+  return stem.length >= 3 && l !== section.toLowerCase() && l.startsWith(stem) && /elective|recommend|course/i.test(l.slice(stem.length));
+};
+const clip = (s, n = 260) => (s.length > n ? s.slice(0, n - 1).trimEnd() + '…' : s);
+
+// Footnotes under a course list: <dl class="sc_footnotes"><dt><sup>1</sup></dt><dd>text</dd>...
+export function footnotesIn(html) {
+  const out = {};
+  for (const dl of html.matchAll(/<dl class="sc_footnotes"[\s\S]*?<\/dl>/g))
+    for (const m of dl[0].matchAll(/<dt>\s*<sup>\s*([^<]*?)\s*<\/sup>\s*<\/dt>\s*<dd>([\s\S]*?)<\/dd>/g)) out[text(m[1])] = text(m[2]);
+  return out;
+}
+// The footnote texts a row points at (<sup>1, 2</sup>), plus a <sup> that is itself a note.
+function rowNotes(html, foot) {
+  const out = [];
+  for (const m of html.matchAll(/<sup>([\s\S]*?)<\/sup>/g)) {
+    const t = text(m[1]);
+    if (!t) continue;
+    const nums = t.split(/[,&\s]+|\band\b/).filter(Boolean); // "1, 2", "2 & 3"
+    if (nums.every((n) => /^\d+$/.test(n))) { for (const n of nums) if (foot[n]) out.push(foot[n]); }
+    else out.push(t);
+  }
+  return out;
+}
 
 // ---------- program requirements ----------
-// One sc_courselist table -> { total, items, entry? }.
-export function parseTable(tbl) {
+// One sc_courselist table -> { total, items, entry? }. `foot` maps footnote numbers to their text.
+// Each item gets `src` (the catalog lines it came from), and where the page says so `minGrade` and
+// `gate` ('admission' | 'advanced-standing').
+export function parseTable(tbl, foot = {}) {
   const items = [];
   const entry = []; // "Prerequisites:" rows (entry requirements listed on the page, not program courses)
-  let total = null, areaSum = null, area = '', group = null, pendingLabel = null, section = null;
+  let total = null, areaSum = null, area = '', areaSrc = '', group = null, pendingLabel = null, section = null;
   let joinNext = false, inPrereq = false;
+  // the instruction the next rows fall under ("Complete the following with a minimum C or higher:",
+  // "Must be accepted into Program to take these Courses"), and what it says about grades and gates
+  let under = '', scope = {};
+  // inside a track: the sub-list ("Complete 12 credits from the following") or "Strongly Recommended:" list
+  // the next options belong to
+  let cur = { sub: null, rec: false };
+  const srcOf = (row, notes = []) => clip([areaSrc, under, row].filter(Boolean).join(' › ') + (notes.length ? ` (Note: ${notes.join(' ')})` : ''), 500);
+  const marks = (notes, base = scope) => {
+    const out = {};
+    const g = notes.map(gradeIn).find(Boolean) || base.minGrade;
+    if (g) out.minGrade = g;
+    const gt = notes.map(gateOf).find(Boolean);
+    if (gt) { out.gate = gt.gate; out.gateText = gt.text; } else if (base.gate) { out.gate = base.gate; out.gateText = base.gateText; }
+    return out;
+  };
   const flushPending = () => {
     if (!pendingLabel) return;
-    items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits, ...(pendingLabel.notes ? { notes: pendingLabel.notes } : {}), ...(pendingLabel.recommended ? { recommended: pendingLabel.recommended } : {}) });
+    items.push({ type: 'placeholder', area, label: pendingLabel.label, credits: pendingLabel.credits, ...(pendingLabel.notes ? { notes: pendingLabel.notes } : {}), ...(pendingLabel.recommended ? { recommended: pendingLabel.recommended } : {}), src: pendingLabel.src, ...pendingLabel.marks });
     pendingLabel = null;
   };
-  const endGroup = () => { group = null; section = null; joinNext = false; };
-  const startSection = (name) => { section = name; (group.sectionList ||= []).includes(name) || group.sectionList.push(name); };
+  const endGroup = () => { group = null; section = null; joinNext = false; cur = { sub: null, rec: false }; };
+  const startSection = (name) => { section = name; cur = { sub: null, rec: false }; (group.sectionList ||= []).includes(name) || group.sectionList.push(name); };
   const addOption = (codes, extra = {}) => {
     const opt = codes.slice(); // "A & B" => both needed
     Object.assign(opt, extra);
     if (section) opt.section = section;
+    if (section && cur.sub != null) opt.sub = cur.sub;
+    if (section && cur.rec) { opt.recommended = true; opt.recMode = true; }
     group.options.push(opt);
     return opt;
   };
@@ -168,6 +230,7 @@ export function parseTable(tbl) {
     const indented = /^\s*<div[^>]*class="blockindent"/.test(c0raw) || /^\s*<span[^>]*class="[^"]*commentindent/.test(c0raw);
     const hr = hoursRange(r);
     const hrs = hr?.lo ?? null;
+    const notesHere = rowNotes(r.html, foot);
 
     if (/areaheader/.test(r.cls)) {
       const t = text(stripSup(r.html));
@@ -182,14 +245,29 @@ export function parseTable(tbl) {
       if (ac) areaSum = (areaSum ?? 0) + +ac[1];
       flushPending(); endGroup(); inPrereq = false;
       area = name;
+      areaSrc = ac ? `${name} (${ac[1]} credits)` : name;
+      under = ''; scope = marks(notesHere, {});
       continue;
     }
     if (/orclass/.test(r.cls)) {
       const alt = cellCodes(c0).groups.flat();
       if (inPrereq) { entry.push(...alt.map((c) => `or ${c}`)); continue; }
+      const orText = `or ${text(c0).replace(/^or\s+/i, '')} ${text(stripSup(r.cells[1]?.html || ''))}`.trim();
       const target = group && group.options.length ? group.options[group.options.length - 1] : items[items.length - 1];
       if (target) {
-        if (target.type === 'course') target.alts.push(...alt);
+        // "A & B or C & D" (or "A & B or C"): the alternative replaces the whole pair, so the pair is a choice
+        const pair = !group && target.type === 'course' ? pairEnding(items) : null;
+        if (pair) {
+          const { at, codes, item } = pair;
+          items.splice(at, codes.length, {
+            type: 'choice', area, label: `${codes.join(' & ')} or ${alt.join(' & ')}`, pick: { count: 1 }, credits: item.pairHours ?? null,
+            options: [Object.assign(codes.slice(), { credits: item.pairHours ?? null }), Object.assign(alt.slice(), { credits: null })], pairOr: true,
+            src: `${item.src} ${orText}`, ...(item.minGrade ? { minGrade: item.minGrade } : {}), ...(item.gate ? { gate: item.gate, gateText: item.gateText } : {}),
+          });
+          continue;
+        }
+        if (target.type === 'course') { target.alts.push(...alt); if (target.src) target.src = clip(`${target.src} ${orText}`, 500); }
+        else if (target.type === 'choice') target.options.push(Object.assign(alt.slice(), { credits: null })); // after a pair-or choice: one more way
         else if (Array.isArray(target)) target.alts = [...(target.alts || []), ...alt];
       }
       continue;
@@ -223,14 +301,37 @@ export function parseTable(tbl) {
           // "Complete one of the following:" (no hours) + "MyEducator" / "Oral Proficiency Interview (OPI)":
           // passing the exam is one way through, so the list carries no credits of its own
           if (group.credits == null && indented && !codesIn(comment).length && /my ?educator|\bexam\b|\binterview\b|\bOPI\b/i.test(label)) { group.exam = label; continue; }
-          // "Also complete 8 credits from the Pre-Engineering elective list", "Select an additional 11 credits of electives from the list below"
+          // "Also complete 8 credits from the Pre-Engineering elective list", "Select an additional 11 credits of electives from the list below",
+          // "Complete 20 additional advisor-approved credits"
           const extra = label.match(/\b(?:also |an additional |additional )(?:complete |select |choose |take )?(?:an additional |additional )?(\w+) (?:credits?|credit hours?|hours?)\b[^.]*\b(?:from|of)\b/i) ||
-            (inTracks && section && label.match(/^(?:complete|select|choose|take) (?:an additional |additional )(\w+) (?:credits?|credit hours?|hours?)\b/i));
+            (inTracks && section && (label.match(/^(?:complete|select|choose|take) (?:an additional |additional )(\w+) (?:credits?|credit hours?|hours?)\b/i) || label.match(/^(?:complete|select|choose|take) (\w+) additional\b[^.]*\bcredits?\b/i) ||
+              label.match(/^(\w+) (?:additional )?elective (?:credits?|credit hours?|hours?)$/i))); // "3 Elective Credits"
           if (extra && num(extra[1]) && section) { (group.trackExtra ||= {})[section] = num(extra[1]); continue; }
+          if (inTracks && section) {
+            // inside a track: "Strongly Recommended:" courses are advice; "Complete the following courses:" goes
+            // back to the track's required courses; "Complete N credits from ..." starts one of the track's own picks
+            if (/^(?:strongly )?recommended\b/i.test(label)) { cur = { sub: null, rec: true }; continue; }
+            const sp = !RULE.test(label) || /^(?:complete|choose|select|take|pick)\b/i.test(label) ? subPick(label) : null;
+            if (ALL_FOLLOWING.test(label) && !sp) { cur = { sub: null, rec: false }; const g = gradeIn(label); if (g) (group.trackGrade ||= {})[section] = g; continue; }
+            if (sp) {
+              const subs = (group.subs ||= []);
+              const s = { section, label: label.replace(/:$/, ''), pick: sp, ...(OPEN.test(label) ? { open: true } : {}), ...(gradeIn(label) ? { minGrade: gradeIn(label) } : {}) };
+              subs.push(s);
+              cur = { sub: subs.length - 1, rec: false };
+              // courses named in the sentence ("from CS 2700, ECE 4850, any CS 3000 ...", "Choose 2 from: A or B or C")
+              const named = codesIn(comment);
+              // ("any CS 3000 or 4000 level course" names a range, not a course)
+              if (named.length) for (const part of label.replace(/[()]/g, ' ').replace(/\b(?:any|other)\b[^,;]*/gi, ' ').split(/\bor\b|,/i)) for (const c of codesIn(part)) addOption([c], { credits: null, fromText: true });
+              if (s.open) group.open = true;
+              continue;
+            }
+            if (cur.sub != null && OPEN.test(label) && !codesIn(comment).length) { group.subs[cur.sub].open = true; group.open = true; continue; }
+            if (!indented && !instr && inTrackHeading(label, section)) continue;
+          }
           if (RULE.test(label) && !/grade/i.test(label)) { (group.rules ||= []).push(section ? `${section}: ${label}` : label); continue; }
           // free text naming whole courses: "(A and B) or C", "Choose 2 from: X or Y or Z"
           const named = codesIn(comment);
-          if (named.length && !OPEN.test(label) && !/recommend|note|prerequisite|required for|must be|to receive|certificate/i.test(label)) {
+          if (named.length && !OPEN.test(label) && !ADVICE.test(label)) {
             for (const part of label.replace(/[()]/g, ' ').split(/\bor\b/i)) { const cs = codesIn(part); if (cs.length) addOption(cs, { credits: null, fromText: true }); }
             continue;
           }
@@ -241,33 +342,42 @@ export function parseTable(tbl) {
       }
       // "Elective Requirements: | 47" followed by indented notes ("15 credits any course 3000 or higher")
       if (pendingLabel && indented && !hrs) { (pendingLabel.notes ||= []).push(label); continue; }
-      if (!hrs && !instr) continue; // stray note / sub-heading ("Distribution Courses:")
+      // a note that gates or grades the rows under it ("Must be accepted into Program to take these Courses")
+      if (!hrs && !instr) {
+        const gt = gateOf(label), g = gradeIn(label);
+        if (!group && (gt || g) && !indented) { under = label; scope = { ...scope, ...(g ? { minGrade: g } : {}), ...(gt ? { gate: gt.gate, gateText: gt.text } : {}) }; }
+        else if (!group && /:$/.test(label) && !indented) under = label; // "Distribution Courses:"
+        continue; // stray note / sub-heading
+      }
       section = null;
       joinNext = false;
       let m;
       // "Complete the following:" (with or without hours): every row under it is required
-      if (/^(?:complete|take) (?:all )?(?:of )?the following(?: courses?| requirements| \d+ credits?(?: hours?)?)?\s*:?\s*$/i.test(label)) { endGroup(); flushPending(); continue; }
+      if (ALL_FOLLOWING.test(label)) { endGroup(); flushPending(); under = label; scope = marks(notesHere, { minGrade: gradeIn(label), ...(gateOf(label) ? { gate: gateOf(label).gate, gateText: gateOf(label).text } : {}) }); continue; }
       const labelCr = (label.match(/\((\d+) credit/i) || [])[1];
+      const groupMarks = () => { const mk = marks([label, ...notesHere]); return mk; };
+      const rowSrc = srcOf(`${label}${hrs != null ? ` | ${hrs}` : ''}`, notesHere);
       if ((m = label.match(/(?:complete|choose|select|take) (?:any )?(\w+) (?:\(\d+\) )?(?:courses? |classes? )?(?:of|from)(?: the)? following/i) || label.match(/(?:complete|choose|select|take) (one|two|three) (?:domain|track|emphasis|option|set|area)/i)) && num(m[1])) {
-        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { count: num(m[1]) }, credits: pendingLabel?.credits ?? hrs ?? (labelCr ? +labelCr : null), options: [], text: label };
+        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { count: num(m[1]) }, credits: pendingLabel?.credits ?? hrs ?? (labelCr ? +labelCr : null), options: [], text: label, src: pendingLabel ? `${pendingLabel.src} › ${label}` : rowSrc, ...groupMarks() };
         items.push(group); pendingLabel = null; continue;
       }
       if ((m = label.match(/(?:complete|choose|select|take) (?:a minimum of |at least |a total of |any )?([\w.]+) (?:\(\d+\) )?(?:credits?|credit hours?|hours?|semester credits?)\b/i)) && num(m[1])) {
         const c = num(m[1]) ?? hrs;
-        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { credits: c }, credits: hrs ?? c, options: [], text: label, soft: true };
+        group = { type: 'choice', area, label: pendingLabel?.label || label, pick: { credits: c }, credits: hrs ?? c, options: [], text: label, soft: true, src: pendingLabel ? `${pendingLabel.src} › ${label}` : rowSrc, ...groupMarks() };
         items.push(group); pendingLabel = null; continue;
       }
       endGroup();
       flushPending();
       if (/:$/.test(label)) {
-        if (hrs) pendingLabel = { label: label.replace(/:$/, ''), credits: hrs };
+        if (hrs) pendingLabel = { label: label.replace(/:$/, ''), credits: hrs, src: rowSrc, marks: groupMarks() };
+        else under = label;
         continue; // sub-header like "Distribution Courses:"
       }
       if (hrs) {
         // a labelled credit row; if indented courses follow it becomes a choice list, else it stays a placeholder
         const short = /^complete any/i.test(label) ? 'Elective' : label;
         const rec = /recommend/i.test(label + ' ' + sup) ? codesIn(comment + ' ' + sup) : [];
-        group = { type: 'choice', area, label: short, pick: { credits: hrs }, credits: hrs, options: [], ...(short !== label ? { text: label } : {}), soft: true, ...(rec.length ? { recommended: rec } : {}) };
+        group = { type: 'choice', area, label: short, pick: { credits: hrs }, credits: hrs, options: [], ...(short !== label ? { text: label } : {}), soft: true, ...(rec.length ? { recommended: rec } : {}), src: rowSrc, ...groupMarks() };
         items.push(group);
       }
       continue;
@@ -284,9 +394,11 @@ export function parseTable(tbl) {
     const hi = hr?.hi ?? (hr ? null : tc?.hi) ?? null;
     const rep = repeatsIn(title);
     const recommended = /\brecommended\b/i.test(title);
-    const extra = { credits: lo, ...(hi ? { crMax: hi } : {}), ...(rep ? { repeat: rep } : {}), ...(recommended ? { recommended: true } : {}) };
+    const titleGrade = gradeIn(title);
+    const optMarks = marks(titleGrade ? [title, ...notesHere] : notesHere, {});
+    const extra = { credits: lo, ...(hi ? { crMax: hi } : {}), ...(rep ? { repeat: rep } : {}), ...(recommended ? { recommended: true } : {}), ...optMarks, ...(notesHere.length ? { notes: notesHere } : {}) };
     if (indented && !group && pendingLabel) {
-      group = { type: 'choice', area, label: pendingLabel.label, pick: { credits: pendingLabel.credits }, credits: pendingLabel.credits, options: [], soft: true, fromLabel: true };
+      group = { type: 'choice', area, label: pendingLabel.label, pick: { credits: pendingLabel.credits }, credits: pendingLabel.credits, options: [], soft: true, fromLabel: true, src: pendingLabel.src, ...pendingLabel.marks };
       items.push(group); pendingLabel = null;
     }
     if (group && (indented || joinNext)) {
@@ -298,22 +410,36 @@ export function parseTable(tbl) {
     }
     flushPending();
     endGroup();
+    const rowText = `${codes.join(' & ')} ${title}${lo != null ? ` | ${hr?.hi ? `${lo}-${hr.hi}` : lo}` : ''}`.trim();
+    const src = srcOf(rowText, notesHere);
+    const rowMarks = marks(titleGrade ? [title, ...notesHere] : notesHere);
     if (codes.length > 1) {
       // "A & B | 4": both required; the row's hours cover the pair (split by catalog credits in fillCredits)
-      codes.forEach((c, k) => items.push({ type: 'course', area, code: c, alts: k === 0 ? [...inCellAlts, ...xalts] : [], credits: null, ...(k === 0 && lo != null ? { pairHours: lo, pair: codes, ...(rep ? { pairRepeat: rep } : {}) } : {}) }));
+      codes.forEach((c, k) => items.push({ type: 'course', area, code: c, alts: k === 0 ? [...inCellAlts, ...xalts] : [], credits: null, ...(k === 0 && lo != null ? { pairHours: lo, pair: codes, ...(rep ? { pairRepeat: rep } : {}) } : {}), ...(k === 0 ? { pairFirst: codes } : {}), src, ...rowMarks }));
       continue;
     }
-    items.push({ type: 'course', area, code: codes[0], alts: [...inCellAlts, ...xalts], ...extra });
+    items.push({ type: 'course', area, code: codes[0], alts: [...inCellAlts, ...xalts], ...extra, src, ...rowMarks });
     if (!extra.recommended) delete items[items.length - 1].recommended;
+    delete items[items.length - 1].notes;
   }
   flushPending();
   const out = [];
   for (const it of items) {
+    if (it.type === 'course') delete it.pairFirst;
     if (it.type !== 'choice') { out.push(it); continue; }
     finishChoice(it, out);
   }
   // no "Total Credit Hours" row: fall back to the area headers ("Political Science Requirements | 120 Credits")
   return { total: total ?? areaSum, ...(total == null && areaSum != null ? { totalFrom: 'area headers' } : {}), items: out, ...(entry.length ? { entry } : {}) };
+}
+// The "A & B" pair that ends the item list (its first item carries pairFirst): { at, codes, item }.
+function pairEnding(items) {
+  for (let k = items.length - 1; k >= 0 && k >= items.length - 6; k--) {
+    const it = items[k];
+    if (it.type !== 'course') return null;
+    if (it.pairFirst) return k + it.pairFirst.length === items.length ? { at: k, codes: it.pairFirst, item: it } : null;
+  }
+  return null;
 }
 
 // Clean up one choice group and push it (or what it turns into) to `out`.
@@ -323,16 +449,21 @@ function finishChoice(it, out) {
     codes: [...o], credits: o.credits ?? null,
     ...(o.crMax ? { crMax: o.crMax } : {}), ...(o.alts?.length ? { alts: o.alts } : {}), ...(o.section ? { section: o.section } : {}),
     ...(o.repeat ? { repeat: o.repeat } : {}), ...(o.recommended ? { recommended: true } : {}),
+    ...(o.sub != null ? { sub: o.sub } : {}), ...(o.recMode ? { recMode: true } : {}), ...(o.fromText ? { fromText: true } : {}),
+    ...(o.minGrade ? { minGrade: o.minGrade } : {}), ...(o.gate ? { gate: o.gate, gateText: o.gateText } : {}), ...(o.notes?.length ? { notes: o.notes } : {}),
   }));
   const sectionList = it.sectionList || [];
   const trackExtra = it.trackExtra;
+  const trackGrade = it.trackGrade;
   const fromLabel = it.fromLabel;
-  delete it.soft; delete it.sectionList; delete it.trackExtra; delete it.fromLabel;
+  const subs = it.subs;
+  delete it.soft; delete it.sectionList; delete it.trackExtra; delete it.fromLabel; delete it.subs; delete it.trackGrade;
   // A labelled distribution slot ("Biology Distribution | 3") listing only a recommended course
-  // ("BIOL 1011 (Recommended)") is still a free choice: keep it a placeholder and note the advice.
-  if (it.options.length && it.options.every((o) => o.recommended) && (fromLabel || it.pick.credits)) {
+  // ("BIOL 1011 (Recommended)", "MUSC 1030 (recommended) or MUSC 1236") is still a free choice: keep it a
+  // placeholder and note the advice (the "or" courses too).
+  if (it.options.length && it.options.every((o) => o.recommended && !o.recMode) && (fromLabel || it.pick.credits)) {
     const { type, pick, options, ...rest } = it;
-    out.push({ type: 'placeholder', ...rest, recommended: options.flatMap((o) => o.codes) });
+    out.push({ type: 'placeholder', ...rest, recommended: [...new Set(options.flatMap((o) => [...o.codes, ...(o.alts || [])]))] });
     return;
   }
   // "Choose one of the following Emphasis Tracks:" + sub-headings per track: the student picks a whole
@@ -350,6 +481,17 @@ function finishChoice(it, out) {
     else if (it.pick.credits && !it.pick.tracks && /\bone\b/i.test(it.label + ' ' + (it.text || ''))) it.pick = { ...it.pick, tracks: 1 };
     for (const o of it.options) if (shared.includes(o.section)) o.shared = true;
     if (trackExtra) it.trackElectives = trackExtra;
+    // a track's own picks: the options marked `sub: k` are a choice inside their track, not required
+    if (subs?.length) it.subs = subs.map((s) => ({ ...s, credits: s.pick.credits ?? null }));
+    if (trackGrade) it.trackGrades = trackGrade;
+    for (const o of it.options) {
+      // "CMGT 4020 (Highly Recommended) or TECH 3400": the slot is required; the advice picks between the two
+      if (o.recommended && !o.recMode && o.alts?.length) { delete o.recommended; o.prefer = o.codes[0]; }
+      delete o.recMode;
+    }
+  } else {
+    // not tracks after all: no sub-picks; "Strongly Recommended:" marks only apply inside tracks
+    for (const o of it.options) { delete o.sub; if (o.recMode) { delete o.recommended; delete o.recMode; } }
   }
   // "Complete one of the following: | 19" over a 1-credit list: the count can't be met; it's a credit pick
   const maxOpt = Math.max(0, ...it.options.map((o) => o.crMax ?? o.credits ?? 0));
@@ -379,11 +521,15 @@ export function parseRequirements(html) {
   const tables = [];
   const re = /<table class="sc_courselist"[\s\S]*?<\/table>/g;
   let m, last = 0;
-  while ((m = re.exec(box))) {
-    const hs = [...box.slice(last, m.index).matchAll(/<h[2-6][^>]*>([\s\S]*?)<\/h[2-6]>/g)];
-    tables.push({ heading: hs.length ? text(hs[hs.length - 1][1]) : '', ...parseTable(m[0]) });
-    last = re.lastIndex;
-  }
+  const found = [];
+  while ((m = re.exec(box))) { found.push({ m: m[0], start: m.index, end: re.lastIndex }); }
+  found.forEach((f, k) => {
+    const hs = [...box.slice(last, f.start).matchAll(/<h[2-6][^>]*>([\s\S]*?)<\/h[2-6]>/g)];
+    // footnotes sit right under their table (before the next one)
+    const foot = footnotesIn(box.slice(f.end, found[k + 1]?.start));
+    tables.push({ heading: hs.length ? text(hs[hs.length - 1][1]) : '', ...parseTable(f.m, foot) });
+    last = f.end;
+  });
   if (!tables.length) return { total: null, items: [], tables: 0 };
   const [main, ...subs] = tables;
   const items = main.items.slice();
@@ -393,7 +539,7 @@ export function parseRequirements(html) {
   for (const sub of subs) {
     const at = items.findIndex((it) => it.type === 'placeholder' && it.credits === sub.total &&
       /requir|\bcore\b/i.test(it.label + ' ' + (it.text || ''))); // "Complete the requirements", "Complete core requirements", "requirments"
-    const subItems = sub.items.map((it) => ({ ...it, area: sub.heading && !it.area.includes(sub.heading) ? `${sub.heading}: ${it.area}`.replace(/: $/, '') : it.area }));
+    const subItems = sub.items.map((it) => ({ ...it, area: sub.heading && !it.area.includes(sub.heading) ? `${sub.heading}: ${it.area}`.replace(/: $/, '') : it.area, ...(it.src && sub.heading ? { src: `${sub.heading} › ${it.src}` } : {}) }));
     if (at >= 0) items.splice(at, 1, ...subItems);
     else extra.push({ heading: sub.heading, total: sub.total, items: subItems });
   }
@@ -535,6 +681,59 @@ export function dropSelf(expr, self) {
   return a.length === 0 ? null : a.length === 1 ? a[0] : { and: a };
 }
 
+// ---------- gates, grades and worded prerequisites ----------
+// A letter grade named as a minimum: "minimum grade of C-", "with a B- or higher", "a C or better", 'minimum of a "C"'.
+export function gradeIn(s) {
+  if (!s) return null;
+  const t = s.replace(/[“”"']/g, '');
+  const m = t.match(/\b(?:minimum|min\.?)\s+(?:grade\s+)?(?:of\s+)?(?:an?\s+)?(?:grade\s+)?(?:of\s+)?([A-D][+-]?)(?![A-Za-z])/) ||
+    t.match(/\bgrade\s+(?:of\s+)?(?:an?\s+)?([A-D][+-]?)(?![A-Za-z])\s*(?:or\s+(?:higher|better|above))?/i) ||
+    t.match(/\b(?:with\s+)?(?:an?\s+)?([A-D][+-]?)(?![A-Za-z])\s+(?:grade\s+)?or\s+(?:higher|better|above)\b/);
+  return m ? m[1].toUpperCase() : null;
+}
+// Program admission ("Acceptance into ASN/BS Nursing program", "Matriculation into Civil Engineering Program",
+// "formally admitted into the BSW program") and University Advanced Standing gates.
+const ADMIT_GATE = /\b(?:acceptance|accepted|admission|admitted|admittance|matriculat(?:ion|ed)|enrollment)\b[^.;]{0,30}?\b(?:in(?:to)?|to)\b[^.;]{0,120}?(?:\bprograms?\b|\binstitute\b|\bemphasis\b|\bcohort\b|\bdegree\b|\bmajor\b|\bB-?Arch\b|\bBFA\b|\bBSW\b|\bASN\b|\bBSN\b|\bMPAS\b|\bAAS\b)|\bprogram (?:acceptance|admission)\b|\bmatriculat(?:ion|ed)\b(?! (?:requirements?|exam))/i;
+const STANDING_GATE = /\badvanced standing\b/i;
+// the gate a prereq text names (an undergraduate course listed with a "Graduate course: Admission to ..." twin is not gated)
+// The page's "Matriculation Requirements" / "Admission Requirements" section (what a student must finish
+// before applying to a limited-entry program): { text, codes, minGrade? } or null.
+export function matriculationSection(html) {
+  const i = html.search(/<h[2-4][^>]*>\s*(?:Program )?(?:Matriculation|Admissions?) Requirements?\b/i);
+  if (i < 0) return null;
+  const rest = html.slice(i);
+  const j = rest.slice(5).search(/<h[2-4][^>]*>|id="[a-z]+textcontainer"/);
+  const sec = rest.slice(0, j < 0 ? 20000 : j + 5).replace(/<[^>]*$/, ''); // no half tag at the cut
+  const t = text(sec.replace(/<(?:br|p|li|tr|div)[^>]*>/gi, ' ')).replace(/^(?:Program )?(?:Matriculation|Admissions?) Requirements?\s*/i, '');
+  if (!t) return null;
+  const g = gradeIn(t);
+  return { text: t.length > 1500 ? t.slice(0, 1499).trimEnd() + '…' : t, codes: [...new Set(codesIn(sec))], ...(g ? { minGrade: g } : {}) };
+}
+export function gateOf(s) {
+  if (!s) return null;
+  const t = s.replace(/\bGraduate course:[\s\S]*$/i, '');
+  const adm = t.match(ADMIT_GATE);
+  if (adm) return { gate: 'admission', text: sentenceAround(t, adm.index) };
+  const st = t.match(STANDING_GATE);
+  if (st) return { gate: 'advanced-standing', text: 'University Advanced Standing' };
+  return null;
+}
+const sentenceAround = (t, i) => {
+  const a = Math.max(t.lastIndexOf(';', i), t.lastIndexOf('.', i), t.lastIndexOf(',', i)) + 1;
+  const rest = t.slice(i);
+  const e = rest.search(/[;.]|,\s*(?:and\s+)?(?:University|[A-Z]{2,5} \d{4})/);
+  return t.slice(a, e < 0 ? undefined : i + e).trim().replace(/^and\s+/i, '');
+};
+// The parts of a prerequisite written in words (no course code): "completion of a university-level statistics
+// course with a minimum C or higher", "University Advanced Standing", "instructor approval".
+export function wordsIn(s) {
+  if (!s) return [];
+  const parts = s.replace(/\bGraduate course:[\s\S]*$/i, '').split(/\s*(?:[;,]|\.\s|\.$|\band\b(?=\s+(?:University|completion|admission|acceptance|matriculation|instructor|department|declared|senior|junior)))\s*/i);
+  return [...new Set(parts.map((p) => p.trim().replace(/^(?:and|or)\s+/i, '').replace(/\.$/, '').trim())
+    .filter((p) => p && !/\b[A-Z]{2,5} ?\d{4}[A-Z]{0,2}\b/.test(p) && /[a-z]{3}/i.test(p) && !/^(?:both|either|all|one|each)(?: of)?(?: the following)?$/i.test(p)
+      && !/^(?:each )?with (?:a )?(?:minimum )?grade/i.test(p) && !/^(?:a )?(?:minimum )?grade of [A-F]/i.test(p) && !/^or (?:higher|better)$/i.test(p)))];
+}
+
 export function parseCourseXml(xml, self = null) {
   const html = decode((xml.match(/<!\[CDATA\[([\s\S]*?)\]\]>/) || [, ''])[1]);
   if (!html.trim()) return null;
@@ -566,6 +765,12 @@ export function parseCourseXml(xml, self = null) {
       out.coreqText = m[1]; out.coreqs = notSelf(codesIn(m[1]));
     }
   }
+  // worded prerequisites, their grade minimum, and an admission / Advanced Standing gate
+  if (out.prereqNonCourse) { const w = wordsIn(out.prereqText); if (w.length) out.prereqWords = w; }
+  const g = gradeIn(out.prereqText);
+  if (g) out.prereqMinGrade = g;
+  const gate = gateOf(out.prereqText) || gateOf(out.precoreqText);
+  if (gate) { out.gate = gate.gate; out.gateText = gate.text; }
   return out;
 }
 
@@ -654,9 +859,10 @@ export async function buildProgram(html, { id, name, url, catalogYear = null, ge
   }
   fillCredits(req.items, courses);
   splitPlanPairs(gradPlan, courses);
+  altCredits(req.items, gradPlan, courses);
   nameChoices(req.items, gradPlan, courses);
   linkPlan(req.items, gradPlan);
-  const adm = admissionInfo(html, req.items, courses);
+  const adm = admissionInfo(html, req.items, courses, gradPlan, matriculationSection(html));
   const prog = {
     id, name: programName(html, name), url, ...(catalogYear ? { catalogYear } : {}), fetched: new Date().toISOString().slice(0, 10),
     totalCredits: req.total, requirements: req.items, gradPlan, courses,

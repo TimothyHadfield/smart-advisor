@@ -3,7 +3,7 @@
  "name": "French Language, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/french-language-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,34 +11,39 @@
    "area": "",
    "code": "FREN 1020",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "FREN 1020 Beginning French II | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "FREN 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "FREN 2010 Intermediate French I | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "FREN 2020G",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "FREN 2020G Intermediate French II | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "FREN 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "FREN 3050 Advanced French | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Any FREN 3XXX or 4XXX course",
-   "credits": 3
+   "credits": 3,
+   "src": "Any FREN 3XXX or 4XXX course | 3"
   }
  ],
  "gradPlan": [
@@ -115,7 +120,11 @@
    "credits": 3,
    "prereqText": "It is recommended that students take FR 2020G prior to enrolling in FR 3050. If you have advanced study of French, you may also contact the French Program Director for a placement test.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "If you have advanced study of French",
+    "you may also contact the French Program Director for a placement test"
+   ]
   }
  }
 }

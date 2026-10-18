@@ -3,7 +3,7 @@
  "name": "Entrepreneurship, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/entrepreneurship-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "",
    "code": "ENGL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 1010 Introduction to Academic Writing | 3"
   },
   {
    "type": "course",
@@ -24,21 +25,25 @@
     "POLS 1000",
     "POLS 1100"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "HIST 2700 US History to 1877 | 3 or HIST 2710 US History since 1877 or HIST 1700 American History or HIST 1740 US Economic History or POLS 1000 American Heritage or POLS 1100 American National Government",
+   "prefer": "HIST 1700"
   },
   {
    "type": "course",
    "area": "",
    "code": "ENTR 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ENTR 2500 Creativity and Entrepreneurial Thinking | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "ENTR 3170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ENTR 3170 Entrepreneurship - Feasibility Analysis | 3"
   },
   {
    "type": "course",
@@ -47,7 +52,8 @@
    "alts": [
     "ENTR 4450"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "ENTR 3180 Launching a New Venture - For Non-Business Majors | 3 or ENTR 4450 Entrepreneurship - Enterprise Formation"
   },
   {
    "type": "choice",
@@ -119,7 +125,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Choose one of the following: | 3"
   }
  ],
  "gradPlan": [
@@ -172,7 +179,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENTR 2500": {
    "title": "Creativity and Entrepreneurial Thinking",
@@ -188,7 +198,12 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 3180": {
    "title": "Entrepreneurship - Launching a New Venture - For Non-Business Majors",
@@ -205,21 +220,36 @@
    "precoreqs": "ENTR 2500",
    "preco": [
     "ENTR 2500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4200": {
    "title": "Innovative Opportunity Development",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4210": {
    "title": "Career Development for Entrepreneurs",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4300": {
    "title": "The Art of the Pitch",
@@ -231,21 +261,36 @@
      "ENTR 3170"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4400": {
    "title": "New Venture Financing",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4450": {
    "title": "Entrepreneurship - Enterprise Formation",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -280,7 +325,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -292,14 +342,24 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",

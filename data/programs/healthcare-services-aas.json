@@ -3,7 +3,7 @@
  "name": "Healthcare Services, A.A.S.",
  "url": "https://catalog.uvu.edu/health-public-service/health-science/healthcare-services-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -29,6 +29,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (19 credits) › Complete one of the following: | 3",
    "ge": "eng"
   },
   {
@@ -36,7 +37,8 @@
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (19 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -85,6 +87,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (19 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -95,7 +98,8 @@
    "recommended": [
     "PSY 1010",
     "PSY 1100"
-   ]
+   ],
+   "src": "General Education Requirements (19 credits) › Any Social Science Distribution (PSY 1010 or PSY 1100 highly recommended) | 3"
   },
   {
    "type": "course",
@@ -104,7 +108,8 @@
    "alts": [
     "CHEM 1110"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (19 credits) › CHEM 1210 Principles of Chemistry I | 4 or CHEM 1110 Elementary Chemistry for the Health Sciences"
   },
   {
    "type": "placeholder",
@@ -113,7 +118,8 @@
    "credits": 3,
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (19 credits) › Humanities/Art (COMM 1020 Recommended) | 3"
   },
   {
    "type": "course",
@@ -122,62 +128,71 @@
    "alts": [
     "HLSC 1300"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Healthcare Services Core (32 credits) › NUTR 1020 Foundations of Human Nutrition | 3 or HLSC 1300 Medical Terminology and Functional Anatomy"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Healthcare Services Core (32 credits) › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Healthcare Services Core (32 credits) › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Healthcare Services Core (32 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Healthcare Services Core (32 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Healthcare Services Core (32 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Healthcare Services Core (32 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "placeholder",
    "area": "Healthcare Services Core",
    "label": "16 credits of any health course with the following health-related prefix: HLSC, NUTR, NURS, DENT, RESP, HLTH, ESEC, or any health-related department approved course.",
-   "credits": 16
+   "credits": 16,
+   "src": "Healthcare Services Core (32 credits) › 16 credits of any health course with the following health-related prefix: HLSC, NUTR, NURS, DENT, RESP, HLTH, ESEC, or any health-related department approved course. | 16"
   },
   {
    "type": "placeholder",
    "area": "General Electives",
    "label": "Choose 9 credits from any course 1000 or higher",
    "credits": 9,
-   "text": "Choose 9 credits from any course 1000 or higher"
+   "text": "Choose 9 credits from any course 1000 or higher",
+   "src": "General Electives (9 credits) › Choose 9 credits from any course 1000 or higher | 9"
   }
  ],
  "gradPlan": [
@@ -341,21 +356,31 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -368,7 +393,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HLSC 1300": {
    "title": "Medical Terminology and Functional Anatomy",
@@ -385,7 +411,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -397,7 +427,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -409,7 +443,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -421,7 +456,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "NUTR 1020": {
    "title": "Foundations of Human Nutrition",
@@ -446,7 +482,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -459,7 +500,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -497,7 +543,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",

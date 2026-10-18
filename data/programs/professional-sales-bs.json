@@ -3,7 +3,7 @@
  "name": "Professional Sales, B.S.",
  "url": "https://catalog.uvu.edu/business/marketing/professional-sales-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -95,6 +102,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -104,37 +112,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "choice",
@@ -159,6 +173,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › Complete one of the following:",
    "notes": [
     "My Educator"
    ],
@@ -169,21 +184,24 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
@@ -192,56 +210,68 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 1890",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Matriculation Requirements: › MKTG 1890 Introduction to Careers in Business | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › MGMT 3450 Operations Management | 3"
   },
   {
    "type": "course",
@@ -250,70 +280,80 @@
    "alts": [
     "MGMT 2950R"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › ENTR 2930R Entrepreneurship Lecture Series | 1 or MGMT 2950R Executive Lecture Series"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Requirements: › MGMT 4860 Business Strategy Formulation and Implementation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3890",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 3890 Business Career Strategy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 3650 Professional Selling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3640",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 3640 Sales Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 4600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 4600 Customer Experience | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 4610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 4610 Sales Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 4620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 4620 Advanced Professional Selling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 4630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › MKTG 4630 Professional Sales Capstone | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 15 credits of any upper division MKTG course. Transfer students needing global/intercultural credit should take MKTG 3350G.",
    "credits": 15,
-   "text": "Complete 15 credits of any upper division MKTG course. Transfer students needing global/intercultural credit should take MKTG 3350G."
+   "text": "Complete 15 credits of any upper division MKTG course. Transfer students needing global/intercultural credit should take MKTG 3350G.",
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › Complete 15 credits of any upper division MKTG course. Transfer students needing global/intercultural credit should take MKTG 3350G. | 15"
   },
   {
    "type": "choice",
@@ -346,14 +386,16 @@
      "crMax": 8
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › Complete one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "General Electives -- Complete 17 credits 1000 level or higher",
    "credits": 17,
-   "text": "General Electives -- Complete 17 credits 1000 level or higher"
+   "text": "General Electives -- Complete 17 credits 1000 level or higher",
+   "src": "Discipline Core Requirements (90 credits) › Sales Core Requirements: › General Electives -- Complete 17 credits 1000 level or higher | 17"
   }
  ],
  "gradPlan": [
@@ -651,14 +693,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -671,7 +719,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -698,7 +747,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -734,7 +788,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -746,7 +801,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -758,7 +814,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -771,7 +828,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -792,14 +852,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -813,7 +884,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MKTG 1890": {
    "title": "Introduction to Careers in Business",
@@ -832,45 +909,68 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3640": {
    "title": "Sales Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3650": {
    "title": "Professional Selling",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3890": {
    "title": "Business Career Strategy",
    "credits": 2,
    "prereqText": "University Advanced Standing; MKTG 1890 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4600": {
    "title": "Customer Experience",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4610": {
    "title": "Sales Operations",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4620": {
    "title": "Advanced Professional Selling",
    "credits": 3,
    "prereqText": "MKTG 3650 and University Advanced Standing",
    "prereqs": "MKTG 3650",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4630": {
    "title": "Professional Sales Capstone",
@@ -883,7 +983,13 @@
      "MKTG 4610"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the BS Professional Sales",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the BS Professional Sales"
   },
   "MKTG 4810R": {
    "title": "Marketing Internship",
@@ -891,7 +997,13 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4820R": {
    "title": "Sales Internship",
@@ -899,7 +1011,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4830R": {
    "title": "Digital Marketing Internship",
@@ -907,7 +1025,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -928,7 +1052,30 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "ACC 2110 Principles of Accounting I (3 hours) ECON 2010 Principles of Economics I (3 hours) MGMT 2400 Data Analytics for Business (3 hours) MGMT 2340 Business Statistics I (3 hours) MKTG 2200G Written Business Communication (3 hours) MKTG 2390 Professional Business Presentations (3 hours) MKTG 1890 Introduction to Careers in Business (1 hour) NOTE: Grade of C- or higher required for all matriculation courses.",
+  "before": [
+   "ACC 2110",
+   "ECON 2010",
+   "MGMT 2400",
+   "MGMT 2340",
+   "MKTG 2200G",
+   "MKTG 2390",
+   "MKTG 1890"
+  ],
+  "gated": [
+   "MGMT 3450",
+   "MGMT 4860",
+   "MKTG 4630"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
  }
 }

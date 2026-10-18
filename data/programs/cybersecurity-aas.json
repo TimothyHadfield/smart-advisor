@@ -3,7 +3,7 @@
  "name": "Cybersecurity, A.A.S",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/cybersecurity-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "choice",
@@ -44,6 +49,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (12 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -53,55 +59,63 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › INFO 1200 Computer Programming I for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › IT 1510 Introduction to System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › IT 1600 Computer Architecture and Systems Software | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 2530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › IT 2530 Introduction to System Administration--WIndows Client | 3"
   },
   {
    "type": "course",
@@ -110,35 +124,40 @@
    "alts": [
     "CS 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › IT 2600 Data Communication Fundamentals | 3 or CS 2600 Computer Networks I"
   },
   {
    "type": "course",
    "area": "Cybersecurity Core Requirements",
    "code": "CYBR 2650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Cybersecurity Core Requirements (15 credits) › CYBR 2650 Cloud Computing and Security | 3"
   },
   {
    "type": "course",
    "area": "Cybersecurity Core Requirements",
    "code": "CYBR 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Cybersecurity Core Requirements (15 credits) › CYBR 2700 Information Security Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Cybersecurity Core Requirements",
    "code": "CYBR 2750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Cybersecurity Core Requirements (15 credits) › CYBR 2750 Scripting for Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Cybersecurity Core Requirements",
    "code": "CYBR 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Cybersecurity Core Requirements (15 credits) › CYBR 2800 Computer Forensic Fundamentals | 3"
   },
   {
    "type": "choice",
@@ -170,7 +189,8 @@
      "crMax": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Cybersecurity Core Requirements (15 credits) › Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -230,7 +250,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 12 credit hours from the following:"
+   "text": "Complete 12 credit hours from the following:",
+   "src": "Discipline Elective Requirements (12 credits) › Complete 12 credit hours from the following: | 12"
   }
  ],
  "gradPlan": [
@@ -408,7 +429,10 @@
    "creditsMax": 3,
    "prereqText": "Department Approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "CYBR 2850": {
    "title": "Cybersecurity Project",
@@ -427,21 +451,30 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "INFO 1120": {
    "title": "Information Systems and Technology Fundamentals",
@@ -470,7 +503,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -541,7 +575,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -553,7 +588,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -565,7 +601,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "NSS 2010": {
    "title": "Introduction to National Security",

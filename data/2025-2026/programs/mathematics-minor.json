@@ -3,7 +3,7 @@
  "name": "Mathematics, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/mathematics-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "MATH 1210H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › MATH 1210 Calculus I | 4 or MATH 1210H Calculus I"
   },
   {
    "type": "course",
@@ -22,7 +23,8 @@
    "alts": [
     "MATH 1220H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › MATH 1220 Calculus II | 4 or MATH 1220H Calculus II"
   },
   {
    "type": "course",
@@ -31,27 +33,31 @@
    "alts": [
     "MATH 2210H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › MATH 2210 Calculus III | 4 or MATH 2210H Calculus III"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MATH 2270 Linear Algebra | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2280",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MATH 2280 Ordinary Differential Equations | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Choose at least two mathematics courses from the mathematics courses numbered 3210 and above",
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (24 credits) › Choose at least two mathematics courses from the mathematics courses numbered 3210 and above | 6 (Note: Elective courses may NOT include MATH 4030, MATH 4040, or MATH 4810R.)"
   }
  ],
  "gradPlan": [
@@ -136,7 +142,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1210H": {
    "title": "Calculus I",
@@ -158,7 +168,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -169,7 +183,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 1220H": {
    "title": "Calculus II",
@@ -180,7 +195,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -191,7 +207,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210H": {
    "title": "Calculus III",
@@ -202,7 +219,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -213,7 +231,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -224,7 +243,13 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU",
+  "before": [],
+  "gated": []
  }
 }

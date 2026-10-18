@@ -3,7 +3,7 @@
  "name": "Collaborative Piano-Chamber Music, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/collaborative-piano-chamber-music-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 2450R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2450R Private Lessons II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3730R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3730R Advanced Small Ensembles | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2900R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2900R Independent Study | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3412",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3412 Music Career Development | 3"
   },
   {
    "type": "course",
@@ -41,7 +45,8 @@
    "alts": [
     "MUSC 3416"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3415 Instrumental Pedagogy and Literature I | 2 (Note: See advisor for course recommendation.) or MUSC 3416 Instrumental Pedagogy and Literature II"
   }
  ],
  "gradPlan": [
@@ -114,14 +119,22 @@
    "creditsMax": 3,
    "prereqText": "Instructor permission and advisor approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor permission and advisor approval"
+   ]
   },
   "MUSC 3412": {
    "title": "Music Career Development",
    "credits": 3,
    "prereqText": "MUSC 2110 and University Advanced Standing",
    "prereqs": "MUSC 2110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3415": {
    "title": "Instrumental Pedagogy and Literature I",
@@ -133,21 +146,39 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3416": {
    "title": "Instrumental Pedagogy and Literature II",
    "credits": 2,
    "prereqText": "MUSC 3415 and University Advanced Standing",
    "prereqs": "MUSC 3415",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3730R": {
    "title": "Advanced Small Ensembles",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   }
+ },
+ "admissionInfo": {
+  "text": "Complete entrance audition with music department faculty.",
+  "before": [],
+  "gated": []
  }
 }

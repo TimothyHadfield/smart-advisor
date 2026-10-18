@@ -3,7 +3,7 @@
  "name": "Latin American Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/latin-american-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "HIST 2050G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › HIST 2040G Colonial Latin America | 3 or HIST 2050G Modern Latin America"
   },
   {
    "type": "course",
@@ -22,7 +23,8 @@
    "alts": [
     "COMM 3500R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › ENGL 3770G Latina/o Literature in America | 3 or COMM 3500R Special Topics in Communication"
   },
   {
    "type": "choice",
@@ -47,6 +49,7 @@
     }
    ],
    "text": "Complete 3 credits from the following:",
+   "src": "Discipline Core Requirements (9 credits) › Complete 3 credits from the following: | 3",
    "notes": [
     "Any PORT 3000 level or higher",
     "Any SPAN 3000 level or higher"
@@ -203,6 +206,7 @@
     }
    ],
    "text": "Complete 9 credits from the following:",
+   "src": "Elective Requirements (9 credits) › Complete 9 credits from the following: | 9",
    "notes": [
     "Other advisor-approved course."
    ],
@@ -289,7 +293,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3350": {
    "title": "Andean Prehistory",
@@ -302,28 +311,49 @@
      "ANTH 1030G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3370": {
    "title": "History and Ethnography of Andean Societies",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3500R": {
    "title": "Special Topics in Communication",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3770G": {
    "title": "Latina/o Literature in America",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 2500": {
    "title": "Geography of Latin America and the Caribbean",
@@ -342,14 +372,24 @@
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3250R": {
    "title": "Topics in Area Studies",
    "credits": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -361,14 +401,24 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4200R": {
    "title": "Issues and Topics in Political Science",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 2020G": {
    "title": "Intermediate Portuguese II",
@@ -380,7 +430,9 @@
    "title": "Business Portuguese",
    "credits": 3,
    "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 3430": {
    "title": "Masterpieces of Brazillian Film",
@@ -389,31 +441,44 @@
    "prereqs": null,
    "prereqNonCourse": true,
    "precoreqText": "PORT 3050 recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 3520G": {
    "title": "Brazilian Culture and Civilization",
    "credits": 3,
    "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 3610": {
    "title": "Brazil through Literature and Film--1500-1900",
    "credits": 3,
    "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 3620": {
    "title": "Modern Brazil through Literature/Music/Film--1900-1964",
    "credits": 3,
    "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 3630": {
    "title": "Post-Modern Brazil through Literature/Music/Film--1945-today",
    "credits": 3,
    "prereqText": "( PORT 3050 recommended, or equivalent knowledge) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PORT 4900R": {
    "title": "Special Topics in Brazilian Studies",
@@ -425,7 +490,12 @@
    "precoreqs": "PORT 3050",
    "preco": [
     "PORT 3050"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 2020G": {
    "title": "Intermediate Spanish II",
@@ -439,7 +509,12 @@
    "credits": 3,
    "prereqText": "SPAN 3050 and University Advanced Standing",
    "prereqs": "SPAN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3520G": {
    "title": "Culture and Civilization--Spanish America",
@@ -457,7 +532,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3640": {
    "title": "Spanish American Literature",
@@ -475,7 +555,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3800R": {
    "title": "Community Engagement in Spanish",
@@ -493,21 +578,36 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4120R": {
    "title": "Spanish for the Professions",
    "credits": 3,
    "prereqText": "( SPAN 3050 or departmental approval) and University Advanced Standing",
    "prereqs": "SPAN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4200": {
    "title": "Advanced Business Spanish",
    "credits": 3,
    "prereqText": "SPAN 3200 and University Advanced Standing",
    "prereqs": "SPAN 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4600R": {
    "title": "Topics in Hispanic Literature",
@@ -520,14 +620,29 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4840R": {
    "title": "Special Topics in Hispanic Studies",
    "credits": 3,
    "prereqText": "( SPAN 3050 or departmental approval) and University Advanced Standing",
    "prereqs": "SPAN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

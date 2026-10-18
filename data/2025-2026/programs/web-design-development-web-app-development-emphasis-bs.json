@@ -3,7 +3,7 @@
  "name": "Web Design and Development - Web Application Development Emphasis, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/web-design-development-web-app-development-emphasis-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -76,6 +82,7 @@
     }
    ],
    "text": "Complete one of the following: (MATH 1050 recommended for App Dev Emphasis)",
+   "src": "Core Requirements › General Education Requirements (30 credits) › Complete one of the following: (MATH 1050 recommended for App Dev Emphasis) | 3",
    "ge": "math"
   },
   {
@@ -120,6 +127,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -129,37 +137,43 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Personal, Professional, and Civic Growth Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanties Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Humanties Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "course",
@@ -168,91 +182,108 @@
    "alts": [
     "DGM 1110"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 1400 Digital Design Essentials | 3 or DGM 1110 Digital Media Essentials I",
+   "creditsBy": {
+    "DWDD 1400": 3,
+    "DGM 1110": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 1410 Interaction Design Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 1420 Communicating Digital Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 1600 Web Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 1720 Scripting for Internet Technologies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 2410 Interaction Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2410R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 2410R Interaction Design Practicum | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 2610 Principles of Web Languages | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 2590",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 2590 Portfolio Workshop | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 3110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DGM 3110 Corporate Issues in Digital Media | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3690",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › MKTG 3690 Digital Marketing Analytics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 3120G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DGM 3120G Digital Media for Intercultural Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 3220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DGM 3220 Digital Media Project Management | 3"
   },
   {
    "type": "course",
@@ -260,6 +291,7 @@
    "code": "DGM 4810R",
    "alts": [],
    "credits": 1,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DGM 4810R Internship | 1",
    "crMax": 8
   },
   {
@@ -267,63 +299,72 @@
    "area": "Discipline Core Requirements",
    "code": "DWDD 4900R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Core Requirements › Discipline Core Requirements (45 credits) › DWDD 4900R Senior Capstone | 6"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › CS 1400 Fundamentals of Programming | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 2620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 2620 Web Tools and Frameworks I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 2720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 2720 Web Languages I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 3620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 3620 Web Tools and Frameworks II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 3720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 3720 Web Languages II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 3770",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 3770 Rich Internet Application Development I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 3780",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 3780 Rich Internet Application Development II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "DWDD 4630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (45 credits) › DWDD 4630 Web Content Management | 3"
   },
   {
    "type": "choice",
@@ -420,6 +461,7 @@
     }
    ],
    "text": "Complete 21 credits of electives (at least 6 upper-division)",
+   "src": "Emphasis Requirements (45 credits) › Emphasis Elective Requirements: › Complete 21 credits of electives (at least 6 upper-division) | 21",
    "notes": [
     "Or other advisor-approved electives"
    ],
@@ -642,7 +684,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -672,28 +717,49 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "DGM 3110": {
    "title": "Corporate Issues in Digital Media",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 3120G": {
    "title": "Digital Media for Intercultural Communication",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 3220": {
    "title": "Digital Media Project Management",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 4810R": {
    "title": "Internship",
@@ -701,7 +767,13 @@
    "creditsMax": 8,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 1400": {
    "title": "Digital Design Essentials",
@@ -785,7 +857,8 @@
    "preco": [
     "DWDD 2410",
     "DWDD 2610"
-   ]
+   ],
+   "prereqMinGrade": "B-"
   },
   "DWDD 2610": {
    "title": "Principles of Web Languages",
@@ -815,35 +888,64 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3410": {
    "title": "Interaction Design Colloquium",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3430": {
    "title": "Adaptive Media Experiences",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3520": {
    "title": "Digital Product Experiences II",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3620": {
    "title": "Web Tools and Frameworks II",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3700R": {
    "title": "Advanced Topics in Web Design and Development",
@@ -851,35 +953,64 @@
    "creditsMax": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3720": {
    "title": "Web Languages II",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3770": {
    "title": "Rich Internet Application Development I",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 3780": {
    "title": "Rich Internet Application Development II",
    "credits": 3,
    "prereqText": "DWDD 3770 , Portfolio Review Acceptance, and University Advanced Standing",
    "prereqs": "DWDD 3770",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 4430": {
    "title": "Adaptive Media II",
    "credits": 3,
    "prereqText": "DWDD 3430 and University Advanced Standing",
    "prereqs": "DWDD 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 4630": {
    "title": "Web Content Management",
@@ -891,14 +1022,23 @@
      "DWDD 2610"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 4900R": {
    "title": "Senior Capstone",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and Senior Class Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "Senior Class Standing"
+   ]
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -912,7 +1052,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -925,7 +1068,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -958,7 +1102,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -971,7 +1116,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -983,7 +1132,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -995,7 +1148,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1007,7 +1161,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1019,14 +1174,20 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MKTG 3690": {
    "title": "Digital Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1047,7 +1208,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1060,9 +1226,19 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  },
  "admission": true,
- "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree."
+ "admissionNote": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree.",
+ "admissionInfo": {
+  "note": "Completion of GE and specified departmental requirements, which includes a portfolio review and acceptance into the degree.",
+  "before": [],
+  "gated": []
+ }
 }

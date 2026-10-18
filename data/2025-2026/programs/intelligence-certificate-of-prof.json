@@ -3,7 +3,7 @@
  "name": "Intelligence, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/intelligence-certificate-of-prof/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 3850",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 3850 Ethics and Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 4300 Intelligence Cycle and Collections | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 4800 Intelligence Analysis and Tradecraft | 3"
   },
   {
    "type": "choice",
@@ -81,6 +85,7 @@
     }
    ],
    "text": "Complete 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following: | 6",
    "notes": [
     "any Intelligence Studies (INTS) courses",
     "or other course approved by department advisor or director."
@@ -161,21 +166,36 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3050": {
    "title": "US Intelligence Community",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3750": {
    "title": "Advanced Technologies in National Security",
    "credits": 3,
    "prereqText": "NSS 2010 and University Advanced Standing",
    "prereqs": "NSS 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3850": {
    "title": "Ethics and Intelligence",
@@ -187,7 +207,12 @@
    "precoreqs": "NSS 2010",
    "preco": [
     "NSS 2010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4300": {
    "title": "Intelligence Cycle and Collections",
@@ -199,7 +224,12 @@
      "NSS 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4750R": {
    "title": "Current Topics in National Security",
@@ -214,14 +244,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4800": {
    "title": "Intelligence Analysis and Tradecraft",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Biology, A.A.",
  "url": "https://catalog.uvu.edu/science/biology/biology-aa/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (29 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,52 +84,60 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (29 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › Complete the following: › Personal, Professional, and Civic Growth GE class | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › Complete the following: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › Complete the following: › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (29 credits) › Complete the following: › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (29 credits) › Complete the following: › CHEM 1210 Principles of Chemistry I (To be taken with CHEM 1215 ) | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › BIOL 1610 College Biology I (To be taken with BIOL 1615 ) | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › BIOL 1615 College Biology I Laboratory (To be taken with BIOL 1610 ) | 1"
   },
   {
    "type": "choice",
@@ -163,40 +182,46 @@
      "credits": 4
     }
    ],
-   "text": "Complete 1 of the following:"
+   "text": "Complete 1 of the following:",
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › Complete 1 of the following: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › CHEM 1215 Principles of Chemistry I Laboratory (To be taken with CHEM 1210 ) | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › CHEM 1220 Principles of Chemistry II (To be taken with CHEM 1225 ) | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › CHEM 1225 Principles of Chemistry II Laboratory (To be taken with CHEM 1220 ) | 1"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Minimum of 3 additional biology courses (BIOL, BOT, BTEC, MICR, or ZOOL prefixes).",
-   "credits": 9
+   "credits": 9,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following: › Minimum of 3 additional biology courses (BIOL, BOT, BTEC, MICR, or ZOOL prefixes). | 9 (Note: BIOL 1010 General Biology cannot be used to meet this requirement. See Biology Advisor.)"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Same Foreign Language.",
-   "credits": 8
+   "credits": 8,
+   "src": "Elective Requirements (8 credits) › Same Foreign Language. | 8"
   }
  ],
  "gradPlan": [
@@ -362,7 +387,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -392,7 +418,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -410,7 +440,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -421,21 +452,28 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -448,7 +486,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -476,7 +515,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -488,7 +528,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -534,7 +575,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",

@@ -3,7 +3,7 @@
  "name": "Family Science, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/family-science-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "FAMS 2400G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FAMS 2400G Contemporary Family Relation | 3"
   },
   {
    "type": "choice",
@@ -65,7 +66,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 15 credits from the following:"
+   "text": "Complete 15 credits from the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete 15 credits from the following: | 15"
   }
  ],
  "gradPlan": [
@@ -143,7 +145,13 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 3800": {
    "title": "Early Development in Families",
@@ -155,7 +163,13 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 3850": {
    "title": "Adult Development and Aging",
@@ -167,13 +181,21 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4660": {
    "title": "Family Resource Management",
    "credits": 3,
    "prereqText": "FAMS 2400G strongly recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4670": {
    "title": "Family Dynamics and Systems",
@@ -190,7 +212,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

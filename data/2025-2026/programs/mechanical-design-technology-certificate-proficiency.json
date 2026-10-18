@@ -3,7 +3,7 @@
  "name": "Mechanical Design Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/mechanical-design-technology-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "EGDT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1010 Electrical Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1050 Intro to 3D Printing and Fabrication | 3"
   },
   {
    "type": "course",
@@ -34,21 +37,24 @@
    "alts": [
     "EGDT 1071"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1070 3 Dimensional Modeling Inventor | 3 or EGDT 1071 3 Dimensional Modeling--Solidworks"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1200 Mechanical Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 2200 Advanced Mechanical | 3"
   }
  ],
  "gradPlan": [
@@ -100,7 +106,8 @@
    "title": "Electrical Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1040": {
    "title": "Fundamentals of Technical Engineering Drawing",
@@ -128,7 +135,8 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2200": {
    "title": "Advanced Mechanical",
@@ -144,7 +152,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   }
  }
 }

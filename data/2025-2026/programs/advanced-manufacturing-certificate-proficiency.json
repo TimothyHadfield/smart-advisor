@@ -3,7 +3,7 @@
  "name": "Advanced Manufacturing, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/technology-management/advanced-manufacturing-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "TECH 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › TECH 1050 Manufacturing Processes and Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 2050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › TECH 2050 Introduction to Quality Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › TECH 2010 Supervision in Technology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › IM 2010 Business Computer Proficiency | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › TECH 2020 Operational and Product Safety Management | 3"
   },
   {
    "type": "course",
@@ -48,7 +53,12 @@
    "alts": [
     "STAT 1045"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › STAT 1040 Introduction to Statistics | 3 or STAT 1045 Introduction to Statistics with Algebra",
+   "creditsBy": {
+    "STAT 1040": 3,
+    "STAT 1045": 5
+   }
   }
  ],
  "gradPlan": [
@@ -108,7 +118,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -121,7 +136,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "TECH 1050": {
    "title": "Manufacturing Processes and Systems",
@@ -145,7 +165,8 @@
      "STAT 1045",
      "EGDT 1600"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   }
  }
 }

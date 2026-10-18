@@ -3,7 +3,7 @@
  "name": "Leadership by Design, Minor",
  "url": "https://catalog.uvu.edu/education/student-leadership-success-studies/leadership-by-design-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 22,
  "requirements": [
   {
@@ -13,35 +13,40 @@
    "alts": [
     "SLSS 1200"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 1120G Leadership and Civic Engagement | 3 or SLSS 1200 The 7 Habits of Highly Effective People"
   },
   {
    "type": "course",
    "area": "",
    "code": "SLSS 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 2500 Leader--Strengths-Based Leader/Coach | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "SLSS 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 3200 Leader--Teacher and Mentor | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "SLSS 4050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 4050G Leader--Global Contributor | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "SLSS 4800",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "SLSS 4800 Leader Capstone--Lifelong Change Agent | 4"
   },
   {
    "type": "choice",
@@ -122,7 +127,8 @@
      "credits": 1
     }
    ],
-   "text": "Lower Division Elective (complete 3 credits)"
+   "text": "Lower Division Elective (complete 3 credits)",
+   "src": "Lower Division Elective (complete 3 credits) | 3"
   },
   {
    "type": "choice",
@@ -172,7 +178,8 @@
      "credits": 3
     }
    ],
-   "text": "Upper Division Elective (complete 3 credits)"
+   "text": "Upper Division Elective (complete 3 credits)",
+   "src": "Upper Division Elective (complete 3 credits) | 3"
   }
  ],
  "gradPlan": [
@@ -254,7 +261,10 @@
    "creditsMax": 4,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "SLSS 1100": {
    "title": "Stress Management",
@@ -302,6 +312,9 @@
    "coreqText": "SLSS 2100 recommended",
    "coreqs": [
     "SLSS 2100"
+   ],
+   "prereqWords": [
+    "Department Approval"
    ]
   },
   "SLSS 3200": {
@@ -321,7 +334,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SLSS 4050G": {
    "title": "Leader--Global Contributor",
@@ -352,14 +370,23 @@
    "creditsMax": 12,
    "prereqText": "Department approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "UVST 2890R": {
    "title": "Undergraduate Research",
    "credits": 1,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "UVST 2900R": {
    "title": "Community Engagement and Applied Service Learning",
@@ -374,14 +401,32 @@
    "creditsMax": 8,
    "prereqText": "University Advanced Standing and Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Departmental Approval"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "UVST 4930": {
    "title": "Capstone",
    "credits": 3,
    "prereqText": "Matriculation into the BA/BS University Studies and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the BA/BS University Studies",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the BA/BS University Studies and University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "UVST 4930"
+  ]
  }
 }

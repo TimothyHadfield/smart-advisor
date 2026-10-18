@@ -3,7 +3,7 @@
  "name": "Accounting, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/accounting/accounting-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Calculus AB or BC Test with a score of 3 or higher"
    ],
@@ -99,6 +106,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -108,128 +116,174 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › ACC 2110 Principles of Accounting I | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › ACC 2120 Principles of Accounting II | 3 (Note: Must be completed with a grade of B- or higher.)",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › ACC 2500 Data Analytics in Accounting | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › ECON 2010 Principles of Economics I | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › MGMT 2240 Business Quantitative Analysis | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › MGMT 2340 Business Statistics I | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › MGMT 2400 Data Analytics for Business | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › MKTG 2200G Written Business Communication | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Foundation Courses (required for matriculation) › MKTG 2390 Professional Business Presentations | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › FIN 3100 Principles of Finance | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › MGMT 3000 Organizational Behavior | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › MGMT 3450 Operations Management | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › MGMT 4860 Business Strategy Formulation and Implementation | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
@@ -238,77 +292,110 @@
    "alts": [
     "ENTR 2930R"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › MGMT 2950R Executive Lecture Series | 1 or ENTR 2930R Entrepreneurship Lecture Series",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › MKTG 3600 Principles of Marketing | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2125",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 2125 Introduction to the Accounting Profession | 1",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 2250 Business Accounting I | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 2600 Business Law and Ethics | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 3010 Intermediate Accounting I | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 3020 Intermediate Accounting II | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 3300 Cost Management | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 3400 Fundamentals of Taxation | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 3510 Accounting Information Systems | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 4110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › ACC 4110 Auditing | 3",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   },
   {
    "type": "choice",
@@ -381,6 +468,9 @@
     }
    ],
    "text": "Complete three of the following advanced accounting courses:",
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › Complete three of the following advanced accounting courses: | 9",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)",
    "notes": [
     "General Elective Requirements"
    ]
@@ -390,7 +480,10 @@
    "area": "Discipline Core Requirements",
    "label": "Complete 13 credits of any courses 1000-level or higher",
    "credits": 13,
-   "text": "Complete 13 credits of any courses 1000-level or higher"
+   "text": "Complete 13 credits of any courses 1000-level or higher",
+   "src": "Discipline Core Requirements (90 credits) › Business Core Courses: › Complete 13 credits of any courses 1000-level or higher | 13",
+   "gate": "admission",
+   "gateText": "Business Foundation Courses (required for matriculation)"
   }
  ],
  "gradPlan": [
@@ -698,7 +791,13 @@
    "precoreqs": "ACC 2125",
    "preco": [
     "ACC 2125"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "B-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
@@ -715,7 +814,12 @@
    "precoreqs": "ACC 3300",
    "preco": [
     "ACC 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3120G": {
    "title": "International Internal Auditing",
@@ -727,7 +831,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3300": {
    "title": "Cost Management",
@@ -739,7 +848,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3400": {
    "title": "Fundamentals of Taxation",
@@ -751,7 +865,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3510": {
    "title": "Accounting Information Systems",
@@ -763,7 +882,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4030": {
    "title": "Governmental and Not For Profit Accounting",
@@ -775,7 +899,12 @@
      "ACC 3030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4050": {
    "title": "Financial Statement Analysis",
@@ -787,7 +916,12 @@
      "ACC 3030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4110": {
    "title": "Auditing",
@@ -799,21 +933,36 @@
    "precoreqs": "ACC 3510",
    "preco": [
     "ACC 3510"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4310": {
    "title": "Advanced Management Accounting",
    "credits": 3,
    "prereqText": "ACC 3300 , University Advanced Standing",
    "prereqs": "ACC 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4400": {
    "title": "Advanced Fundamentals of Taxation",
    "credits": 3,
    "prereqText": "ACC 3400 , University Advanced Standing",
    "prereqs": "ACC 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4510": {
    "title": "Artificial Intelligence and Data Analytics in Accounting",
@@ -825,7 +974,12 @@
    "precoreqs": "ACC 3510",
    "preco": [
     "ACC 3510"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4700R": {
    "title": "Current Topics in Accounting",
@@ -833,7 +987,13 @@
    "creditsMax": 3,
    "prereqText": "ACC 3010 , Matriculation into the Woodbury School of Business, and University Advanced Standing",
    "prereqs": "ACC 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "ACC 4810R": {
    "title": "Internship",
@@ -841,21 +1001,39 @@
    "creditsMax": 8,
    "prereqText": "ACC 3010 , Matriculation into the Woodbury School of Business, Approval of Accounting Department Internship Coordinator and University Advanced Standing",
    "prereqs": "ACC 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "Approval of Accounting Department Internship Coordinator",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business, Approval of Accounting Department Internship Coordinator and University Advanced Standing"
   },
   "ACC 5020": {
    "title": "Advanced Financial Accounting",
    "credits": 3,
    "prereqText": "ACC 3020 , Matriculation into the BS Accounting degree program, and University Advanced Standing",
    "prereqs": "ACC 3020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the BS Accounting degree program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the BS Accounting degree program"
   },
   "ACC 5140": {
    "title": "Fraud Examination",
    "credits": 3,
    "prereqText": "ACC 3010 and University Advanced Standing",
    "prereqs": "ACC 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 2010": {
    "title": "Principles of Economics I",
@@ -882,7 +1060,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -895,7 +1076,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -922,7 +1104,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -950,7 +1137,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -962,7 +1150,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -974,7 +1163,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -987,7 +1177,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -1000,7 +1191,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -1021,14 +1215,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -1042,7 +1247,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1057,7 +1268,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1067,5 +1283,47 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours To be considered matriculated in the Accounting degree, a student must complete the following courses with at least a C- grade: ACC 2110 Principles of Accounting I 3 ACC 2120 Principles of Accounting II (Grade of B- or higher required) 3 ACC 2500 Data Analytics in Accounting 3 ECON 2010 Principles of Economics I 3 MGMT 2240 Business Quantitative Analysis 3 MGMT 2340 Business Statistics I 3 MGMT 2400 Data Analytics for Business 3 MKTG 2200G Written Business Communication 3 MKTG 2390 Professional Business Presentations 3",
+  "before": [],
+  "gated": [
+   "ACC 2110",
+   "ACC 2120",
+   "ACC 2125",
+   "ACC 2250",
+   "ACC 2500",
+   "ACC 2600",
+   "ACC 3010",
+   "ACC 3020",
+   "ACC 3120G",
+   "ACC 3300",
+   "ACC 3400",
+   "ACC 3510",
+   "ACC 4030",
+   "ACC 4050",
+   "ACC 4110",
+   "ACC 4310",
+   "ACC 4400",
+   "ACC 4510",
+   "ACC 4700R",
+   "ACC 4810R",
+   "ACC 5020",
+   "ACC 5140",
+   "ECON 2010",
+   "FIN 3100",
+   "MGMT 2240",
+   "MGMT 2340",
+   "MGMT 2400",
+   "MGMT 2950R",
+   "MGMT 3000",
+   "MGMT 3450",
+   "MGMT 4860",
+   "MKTG 2200G",
+   "MKTG 2390",
+   "MKTG 3600"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "B-"
  }
 }

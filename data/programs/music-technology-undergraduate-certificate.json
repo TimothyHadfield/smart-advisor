@@ -3,7 +3,7 @@
  "name": "Music Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/arts/music/music-technology-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -13,70 +13,80 @@
    "alts": [
     "MUSC 1110"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 1100 Fundamentals of Music | 3 or MUSC 1110 Music Theory I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 1400 Music Technology I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1402",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 1402 Music Technology II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1410",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 1410 Survey of Commercial Music Careers | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 1810 Contemporary Theory and Improvisation I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 2210 Contemporary Theory and Improvisation II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 2400 Music Technology III | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2402",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 2402 Music Technology IV | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3600R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 3600R Commercial Music Private Lessons ((Repeat twice)) | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3790R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (21 credits) › MUSC 3790R Studio Recording Workshop ( (Repeat twice)) | 2"
   }
  ],
  "gradPlan": [
@@ -156,6 +166,10 @@
    "coreqText": "MUSC 1130",
    "coreqs": [
     "MUSC 1130"
+   ],
+   "prereqWords": [
+    "Music majors only or department approval",
+    "Complete music theory diagnostic exam"
    ]
   },
   "MUSC 1400": {
@@ -205,7 +219,12 @@
    "credits": 1,
    "prereqText": "Admittance into Music Technology Certificate of Proficiency or MUSC 2500R and University Advanced Standing for bachelor's students",
    "prereqs": "MUSC 2500R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing for bachelor's students"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3790R": {
    "title": "Studio Recording Workshop",
@@ -217,7 +236,17 @@
    "precoreqs": "MUSC 1400",
    "preco": [
     "MUSC 1400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Interview with commercial music faculty.",
+  "before": [],
+  "gated": []
  }
 }

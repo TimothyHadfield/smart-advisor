@@ -3,7 +3,7 @@
  "name": "Aviation Science, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/aviation-science/aviation-science-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "choice",
@@ -62,13 +67,15 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (18 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
@@ -81,90 +88,103 @@
     "Personal, Professional, and Civic Growth",
     "Humanities Distribution",
     "Fine Arts Distribution"
-   ]
+   ],
+   "src": "General Education Requirements (18 credits) › Complete three courses with no more than one from any of the following GE distributions: | 9"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 1010 Survey of Aviation Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 1100 Ground I - Private | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 1110 Flight I - Private | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 1240 Ground II - Instrument | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 1250 Flight II - Instrument II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2070",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2070 Communications for Aviation Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2110 Aviation Weather | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2130 Aviation Safety | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2150 Air Transportation Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2300 Ground IV - Commercial | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › AVSC 2310 Flight IV - Commercial | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective Credits",
-   "credits": 12
+   "credits": 12,
+   "src": "Discipline Core Requirements (45 credits) › Elective Credits | 12"
   }
  ],
  "gradPlan": [
@@ -275,7 +295,10 @@
    "credits": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "AVSC 1110": {
    "title": "Flight I - Private",
@@ -287,6 +310,9 @@
    "precoreqs": "AVSC 1100",
    "preco": [
     "AVSC 1100"
+   ],
+   "prereqWords": [
+    "Department Approval"
    ]
   },
   "AVSC 1240": {
@@ -299,14 +325,20 @@
      "AVSC 1110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 1250": {
    "title": "Flight II - Instrument II",
    "credits": 3,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2070": {
    "title": "Communications for Aviation Professionals",
@@ -336,28 +368,40 @@
    "credits": 3,
    "prereqText": "AVSC 1250 and Department Approval",
    "prereqs": "AVSC 1250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2310": {
    "title": "Flight IV - Commercial",
    "credits": 3,
    "prereqText": "AVSC 1250 and Department Approval",
    "prereqs": "AVSC 1250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -370,7 +414,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -382,7 +430,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -394,7 +446,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -406,7 +459,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -419,7 +473,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -432,9 +491,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  },
  "admission": true,
- "admissionNote": "Due to limited availability of flight training resources, flight student admission into the on-campus AVSC 1100 Ground I - Private and AVSC 1110 Flight I - Private course, when necessary, may require selection through a competitive application process."
+ "admissionNote": "Due to limited availability of flight training resources, flight student admission into the on-campus AVSC 1100 Ground I - Private and AVSC 1110 Flight I - Private course, when necessary, may require selection through a competitive application process.",
+ "admissionInfo": {
+  "note": "Due to limited availability of flight training resources, flight student admission into the on-campus AVSC 1100 Ground I - Private and AVSC 1110 Flight I - Private course, when necessary, may require selection through a competitive application process.",
+  "text": "Students seeking admission to the program will be required to meet the following admissions requirements: Hold a second class FAA medical certificate from an Aviation Medical Examiner. An overall GPA of at least 2.5 Due to limited availability of flight training resources, flight student admission into the on-campus AVSC 1100 Ground I - Private and AVSC 1110 Flight I - Private course, when necessary, may require selection through a competitive application process.",
+  "before": [
+   "AVSC 1100",
+   "AVSC 1110"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
+ }
 }

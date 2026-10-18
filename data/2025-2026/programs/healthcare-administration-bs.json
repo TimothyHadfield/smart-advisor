@@ -3,7 +3,7 @@
  "name": "Healthcare Administration, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/healthcare-administration-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -95,6 +102,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -104,191 +112,219 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biological Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biological Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 1300 Medical Terminology and Functional Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 2200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 2200 Introduction to Health Professions | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › IM 2600 Spreadsheet Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › ACC 3000 Financial Managerial and Cost Accounting Concepts | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 3050 Healthcare Quality and Safety | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 3230 Professional Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 3400 Human Diseases | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HR 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HR 3430 Introduction to Human Resource Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 3550 Healthcare Project and Revenue Cycle Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 3660 Healthcare Economics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4250 Health Organization and Policy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4330 Healthcare financial management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4500 Healthcare Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4560G Introduction to Healthcare Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4640",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4640 Population Health and Strategic Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4780",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4780 Strategic Planning and Operations Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4840",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4840 Healthcare Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4810R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (62 credits) › HLSC 4810R Healthcare Administration Internship | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Courses:",
    "label": "Complete 28 credits of any course 1000 level or higher",
    "credits": 28,
-   "text": "Complete 28 credits of any course 1000 level or higher"
+   "text": "Complete 28 credits of any course 1000 level or higher",
+   "src": "Elective Courses: (28 credits) › Complete 28 credits of any course 1000 level or higher | 28"
   }
  ],
  "gradPlan": [
@@ -495,7 +531,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -509,7 +550,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -522,7 +566,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -553,77 +598,132 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3230": {
    "title": "Professional Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3400": {
    "title": "Human Diseases",
    "credits": 3,
    "prereqText": "HLSC 1300 and University Advanced Standing",
    "prereqs": "HLSC 1300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3550": {
    "title": "Healthcare Project and Revenue Cycle Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3660": {
    "title": "Healthcare Economics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4250": {
    "title": "Health Organization and Policy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4330": {
    "title": "Healthcare financial management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4500": {
    "title": "Healthcare Administration",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4560G": {
    "title": "Introduction to Healthcare Systems",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4640": {
    "title": "Population Health and Strategic Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4780": {
    "title": "Strategic Planning and Operations Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4810R": {
    "title": "Healthcare Administration Internship",
@@ -631,28 +731,46 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4840": {
    "title": "Healthcare Law",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 2600": {
    "title": "Spreadsheet Applications",
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -664,7 +782,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -676,7 +795,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -688,7 +808,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -701,7 +822,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 3000": {
    "title": "Organizational Behavior",
@@ -714,7 +838,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -728,5 +857,21 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "In order to be matriculated into the 'Healthcare Administration' program, students must: Complete: ENGL 1010 or ENGH 1005, ENGL 2010, BIOL 1010 OR BIOL 1610, and MATH 1050 or 1055 or MATH 1090 with a minimum grade of a C- or higher (with the exception of ENGH 1005 which requires a grade of C or higher) and a GPA of 3.0 in these courses Students will be required to complete the catalog requirements in effect for the semester in which matriculation is granted",
+  "before": [
+   "ENGL 1010",
+   "ENGH 1005",
+   "ENGL 2010",
+   "BIOL 1010",
+   "BIOL 1610",
+   "MATH 1050",
+   "MATH 1055",
+   "MATH 1090"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
  }
 }

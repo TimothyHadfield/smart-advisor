@@ -3,7 +3,7 @@
  "name": "Diesel Mechanics Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/transportation-technologies/diesel-mechanics-technology-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 32,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Discipline Core Requirements",
    "code": "DMT 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (32 credits) › DMT 1110 Diesel Engine Overhaul | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 1110L",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (32 credits) › DMT 1110L Diesel Engine Overhaul Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 1120",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (32 credits) › DMT 1120 Diesel Engine Operation Tune Up | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 1120L",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (32 credits) › DMT 1120L Diesel Engine Operation Tune up Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 2410",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (32 credits) › DMT 2410 Chassis Theory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 2410L",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (32 credits) › DMT 2410L Chassis Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 2420",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (32 credits) › DMT 2420 Power Train Theory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DMT 2420L",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (32 credits) › DMT 2420L Power Train Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (32 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "choice",
@@ -92,6 +101,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (32 credits) › Complete one of the following: | 3",
    "notes": [
     "Any higher MAT or MATH course"
    ],
@@ -101,7 +111,8 @@
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (32 credits) › Any approved Behavioral Science, Social, or Political Science Distribution Course | 2"
   }
  ],
  "gradPlan": [
@@ -257,7 +268,8 @@
    "credits": 5,
    "prereqText": "(within department time limits): MAT 0980 with a C- or higher or appropriate placement by a placement exam.",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",

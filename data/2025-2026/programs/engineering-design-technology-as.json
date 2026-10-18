@@ -3,7 +3,7 @@
  "name": "Engineering Design Technology, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/engineering-design-technology-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 61,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete the following: › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -119,6 +126,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete the following: › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
@@ -128,7 +136,12 @@
    "alts": [
     "PHYS 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › PHYS 1010 Elementary Physics | 3 or PHYS 2010 College Physics I",
+   "creditsBy": {
+    "PHYS 1010": 3,
+    "PHYS 2010": 4
+   }
   },
   {
    "type": "placeholder",
@@ -137,7 +150,8 @@
    "credits": 3,
    "recommended": [
     "BIOL 1010"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Complete the following distribution courses: › Biology (Recommend BIOL 1010 General Biology) | 3"
   },
   {
    "type": "placeholder",
@@ -146,7 +160,8 @@
    "credits": 3,
    "recommended": [
     "ENGL 2100"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Complete the following distribution courses: › Humanities (Recommend ENGL 2100 Technical Communication HH) | 3"
   },
   {
    "type": "placeholder",
@@ -155,7 +170,8 @@
    "credits": 3,
    "recommended": [
     "COMM 1050"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Complete the following distribution courses: › Social/Behavioral Science (Recommend COMM 1050 Introduction to Speech Communication) | 3"
   },
   {
    "type": "placeholder",
@@ -164,13 +180,15 @@
    "credits": 3,
    "recommended": [
     "EGDT 1720"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Complete the following distribution courses: › Fine Arts (Recommend EGDT 1720 Architectural Rendering) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following distribution courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -487,147 +505,168 @@
       "ARC 1010"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "ARC 2110"
      ],
      "credits": 4,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "ARC 2210"
      ],
      "credits": 4,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1010"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1050"
      ],
      "credits": 2,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1060"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1100"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1200"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1300"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1600"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1610"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 1720"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2020"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2040"
      ],
      "credits": 2,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2100"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2200"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2300"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2310"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2400"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2500"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2610"
      ],
      "credits": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
@@ -635,24 +674,28 @@
      ],
      "credits": 1,
      "crMax": 3,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2850R"
      ],
      "credits": 0.5,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     },
     {
      "codes": [
       "EGDT 2860"
      ],
      "credits": 0.5,
-     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "sub": 0
     }
    ],
    "text": "Complete a minimum of 26 credits from one the following tracks:",
+   "src": "Discipline Related Core (31 credits) › Complete a minimum of 26 credits from one the following tracks: | 26",
    "notes": [
     "Architectural Drafting and Design Track. (Students select this track if interested in a career in architectural drafting and design. Students also take these classes as part of the Bachelor of Architecture degree.)",
     "Architectural Drafting and Design Track. (Students select this track if interested in a career in architectural drafting and design. Students also take these classes as part of the Bachelor of Architecture degree.): Civil Drafting and Design Track. (Students select this track if interested in a career in civil drafting and design. Students may also apply these courses to several focus areas within the Surveying and Mapping B.S. degree.)",
@@ -668,6 +711,16 @@
     "Mechanical/Electrical Drafting and Design Track. (Students select this track if interested in a career in mechanical drafting and design.)",
     "Structural Drafting and Design Track. (Students select this track if interested in a career in structural drafting and design.)",
     "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)"
+   ],
+   "subs": [
+    {
+     "section": "General Drafting and Design Track. (Students select this track if interested in a career in general techniques and principles.)",
+     "label": "Choose 11 Credits of Electives from the following: (Some courses may have additional prereqs.)",
+     "pick": {
+      "credits": 11
+     },
+     "credits": 11
+    }
    ]
   },
   {
@@ -675,7 +728,8 @@
    "area": "Discipline Related Core",
    "label": "Elective",
    "credits": 5,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Related Core (31 credits) › Complete any 1000-level, or higher, courses | 5"
   }
  ],
  "gradPlan": [
@@ -868,7 +922,8 @@
      "EGDT 1020",
      "ARC 1010"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ARC 2210": {
    "title": "Architecture Studio II",
@@ -880,7 +935,8 @@
      "ARC 1010",
      "ARC 2110"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ARC 2220": {
    "title": "Construction Documents and Specifications",
@@ -891,13 +947,15 @@
      "EGDT 1020",
      "EGDT 1100"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 1010": {
    "title": "Electrical Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1020": {
    "title": "3D Architectural Modeling",
@@ -927,7 +985,8 @@
    "title": "Architectural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of B- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "B-"
   },
   "EGDT 1200": {
    "title": "Mechanical Drafting and Design",
@@ -939,13 +998,15 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 1300": {
    "title": "Structural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1400": {
    "title": "Surveying Applications and Field Techniques I",
@@ -956,14 +1017,16 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1610": {
    "title": "Technical Math Geometry Trig",
    "credits": 3,
    "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
    "prereqs": "EGDT 1600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1720": {
    "title": "Architectural Rendering",
@@ -973,19 +1036,22 @@
    "title": "Descriptive Geometry",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2040": {
    "title": "Piping Drafting",
    "credits": 2,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2100": {
    "title": "Architecture Materials and Methods",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of C- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2200": {
    "title": "Advanced Mechanical",
@@ -1001,7 +1067,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2300": {
    "title": "Advanced Structural CAD",
@@ -1017,7 +1084,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2310": {
    "title": "Structural Steel Modeling",
@@ -1028,7 +1096,8 @@
      "EGDT 1040",
      "EGDT 1300"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2400": {
    "title": "Surveying Applications and Field Techniques II",
@@ -1046,7 +1115,8 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2500": {
    "title": "3 Dimensional Modeling--Civil 3D",
@@ -1075,7 +1145,8 @@
    "title": "Applied Structures II - Strength of Materials",
    "credits": 3,
    "prereqText": "EGDT 2600 with a grade of B- or higher",
-   "prereqs": "EGDT 2600"
+   "prereqs": "EGDT 2600",
+   "prereqMinGrade": "B-"
   },
   "EGDT 2810R": {
    "title": "Internship",
@@ -1100,7 +1171,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "all with a C- or higher"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EGDT 2850R": {
    "title": "AEC Design Lecture Series",
@@ -1122,7 +1198,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1135,7 +1214,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1164,7 +1244,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1176,7 +1260,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1188,7 +1276,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1200,7 +1289,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -1212,7 +1302,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1224,7 +1315,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PHYS 1010": {
    "title": "Elementary Physics",
@@ -1259,7 +1351,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1272,7 +1369,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

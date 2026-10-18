@@ -3,7 +3,7 @@
  "name": "Forensic Science, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/forensic-science-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 61,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (34 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (34 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -46,6 +52,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (34 credits) › Complete one of the following: | 5",
    "ge": "math"
   },
   {
@@ -90,6 +97,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (34 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -99,27 +107,31 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (34 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (34 credits) › BIOL 1610 College Biology I | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (34 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
    "credits": 3,
+   "src": "General Education Requirements (34 credits) › Fine Arts Distribution | 3",
    "recommended": [
     "ART 1050"
    ]
@@ -129,6 +141,7 @@
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
    "credits": 3,
+   "src": "General Education Requirements (34 credits) › Humanities Distribution | 3",
    "recommended": [
     "COMM 1020"
    ]
@@ -138,70 +151,80 @@
    "area": "General Education Requirements",
    "code": "CJ 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (34 credits) › CJ 1010 Introduction to Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CJ 1330 Criminal Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CJ 1350 Introduction to Forensic Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CJ 2350 Laws of Evidence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › PHYS 2010 College Physics I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (21 credits) › Forensic Science Foundational Courses: › PHYS 2015 College Physics I Lab | 1"
   },
   {
    "type": "choice",
@@ -232,6 +255,7 @@
     }
    ],
    "text": "Complete 6 credits from one of the following",
+   "src": "Program Electives (6 credits) › Complete 6 credits from one of the following | 6",
    "notes": [
     "For Application to the BS Forensic Investigation Track",
     "For Application to the BS Forensic Laboratory Track",
@@ -426,7 +450,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -444,7 +472,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -455,7 +484,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CJ 1010": {
    "title": "Introduction to Criminal Justice",
@@ -499,7 +529,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -512,7 +545,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -540,7 +574,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -552,7 +587,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1080": {
    "title": "Precalculus",
@@ -564,7 +600,11 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "B"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -586,7 +626,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "PHYS 2010": {
    "title": "College Physics I",

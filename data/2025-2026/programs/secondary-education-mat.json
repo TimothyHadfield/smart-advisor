@@ -3,7 +3,7 @@
  "name": "Secondary Education, M.A.T.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/secondary-education-mat/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Master of Education Requirements",
    "code": "EDUC 6202",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6202 Creating and Managing a Learning Environment | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6311",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6311 Introduction to Special Education | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6203R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6203R Student Teaching Graduate Licensure | 6"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6663",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6663 Literacy in the Content Area | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6330 Strategies for Working with Diverse Learners | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6204R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6204R Capstone Project | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6321",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6321 Instruction Technology Assessment Planning | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6410 Contemporary Issues (Or a Content Methods Course ) | 3"
   },
   {
    "type": "course",
    "area": "Master of Education Requirements",
    "code": "EDUC 6415",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Master of Education Requirements (30 credits) › EDUC 6415 Global Issues in Teaching and Learning (Or a Content Method Course) | 3"
   }
  ],
  "gradPlan": [
@@ -129,7 +138,12 @@
    "credits": 3,
    "prereqText": "Admission to School of Education Graduate Program or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to School of Education Graduate Program or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to School of Education Graduate Program or permission of the Dean"
   },
   "EDUC 6203R": {
    "title": "Student Teaching Graduate Licensure",
@@ -137,7 +151,12 @@
    "creditsMax": 6,
    "prereqText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director"
   },
   "EDUC 6204R": {
    "title": "Capstone Project",
@@ -145,14 +164,24 @@
    "creditsMax": 3,
    "prereqText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program at UVU or an approval from a graduate program director"
   },
   "EDUC 6311": {
    "title": "Introduction to Special Education",
    "credits": 3,
    "prereqText": "Admission to School of Education Graduate Program or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to School of Education Graduate Program or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to School of Education Graduate Program or permission of the Dean"
   },
   "EDUC 6321": {
    "title": "Instruction Technology Assessment Planning",
@@ -163,30 +192,67 @@
    "credits": 3,
    "prereqText": "Acceptance into a graduate program at UVU or an approval from a graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program at UVU or an approval from a graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program at UVU or an approval from a graduate program director"
   },
   "EDUC 6410": {
    "title": "Contemporary Issues",
    "credits": 3,
    "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
   },
   "EDUC 6415": {
    "title": "Global Issues in Teaching and Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master's of Education program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master's of Education program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master's of Education program"
   },
   "EDUC 6663": {
    "title": "Literacy in the Content Area",
    "credits": 3,
    "prereqText": "Admission to Graduate Status, Admission to the School of Education Masters Degree Program, Or permission of the Program Director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Graduate Status",
+    "Admission to the School of Education Masters Degree Program",
+    "permission of the Program Director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Graduate Status, Admission to the School of Education Masters Degree Program, Or permission of the Program Director"
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "1. Application for admission to graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. 4. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. 5. For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score of 80 iBT (550 pBT) or higher, or an IELTS band score of 6.5 or higher within the past two years is required. 6. International students must also meet all US government requirements for international students. 7. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "before": [],
+  "gated": [
+   "EDUC 6202",
+   "EDUC 6203R",
+   "EDUC 6204R",
+   "EDUC 6311",
+   "EDUC 6330",
+   "EDUC 6410",
+   "EDUC 6415",
+   "EDUC 6663"
+  ]
+ }
 }

@@ -3,7 +3,7 @@
  "name": "Master of Education - Advancement in Teaching and Learning Emphasis, M.Ed.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/education-teacher-leadership-med/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,70 +11,80 @@
    "area": "Discipline Core Requirements",
    "code": "EDUC 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (12 credits) › EDUC 6100 Research Methodology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (12 credits) › EDUC 6110 Applied Statistics for Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (12 credits) › EDUC 6320 21st Century Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6490",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (12 credits) › EDUC 6490 Masters Project | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6300 Curriculum Design | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6330 Strategies for Working with Diverse Learners | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6415",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6415 Global Issues in Teaching and Learning | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6412",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6412 Adult Learning--Theory and Practice | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6400 Contemporary Issues in Teacher Leadership | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EDUC 6411",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (18 credits) › EDUC 6411 Instructional Coaching | 3"
   }
  ],
  "gradPlan": [
@@ -145,67 +155,135 @@
    "credits": 3,
    "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M"
   },
   "EDUC 6110": {
    "title": "Applied Statistics for Education",
    "credits": 3,
    "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M"
   },
   "EDUC 6300": {
    "title": "Curriculum Design",
    "credits": 3,
    "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
   },
   "EDUC 6320": {
    "title": "21st Century Instruction and Assessment",
    "credits": 3,
    "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M"
   },
   "EDUC 6330": {
    "title": "Strategies for Working with Diverse Learners",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program at UVU or an approval from a graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program at UVU or an approval from a graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program at UVU or an approval from a graduate program director"
   },
   "EDUC 6400": {
    "title": "Contemporary Issues in Teacher Leadership",
    "credits": 3,
    "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
   },
   "EDUC 6411": {
    "title": "Instructional Coaching",
    "credits": 3,
    "prereqText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed. program, or permission of the program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed",
+    "program",
+    "permission of the program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M"
   },
   "EDUC 6412": {
    "title": "Adult Learning--Theory and Practice",
    "credits": 3,
    "prereqText": "Acceptance into the UVU SOE master of education program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the UVU SOE master of education program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the UVU SOE master of education program"
   },
   "EDUC 6415": {
    "title": "Global Issues in Teaching and Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master's of Education program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master's of Education program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master's of Education program"
   },
   "EDUC 6490": {
    "title": "Masters Project",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Application for admission. Bachelor degree from an accredited institution. Overall grade point average in undergraduate work of 3.0 or higher or have a grade point average of 3.0 or higher for the last 60 semester hours of college or university credit. Interview with School of Education Graduate Committee. Three professional letters of recommendation. Preference will be given to individuals who have at least one year of successful teaching experience in grades K-12. A one-year internship will count as the preferred year of successful teaching. Preference will be given to practicing teachers who have access to an established classroom.",
+  "before": [],
+  "gated": [
+   "EDUC 6100",
+   "EDUC 6110",
+   "EDUC 6300",
+   "EDUC 6320",
+   "EDUC 6330",
+   "EDUC 6400",
+   "EDUC 6411",
+   "EDUC 6412",
+   "EDUC 6415"
+  ]
  }
 }

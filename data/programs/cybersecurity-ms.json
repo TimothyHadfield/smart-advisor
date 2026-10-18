@@ -3,7 +3,7 @@
  "name": "Cybersecurity, M.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/cybersecurity-ms/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "CYBR 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6300 Principles of Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6330 Cybersecurity Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6350 Law/Ethics/Privacy in Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6370 Penetration Testing and Vulnerability Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6740",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6740 Advanced Network Defense and Countermeasures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6770",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6770 Cybersecurity Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 6900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › Complete the following required courses: › CYBR 6900 Cybersecurity Capstone | 3"
   },
   {
    "type": "choice",
@@ -90,6 +97,7 @@
     }
    ],
    "text": "Complete 9 credits from the following:",
+   "src": "Elective Requirements (9 credits) › Complete 9 credits from the following: | 9",
    "notes": [
     "or other departmental approved electives."
    ],
@@ -169,21 +177,30 @@
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "CYBR 6330": {
    "title": "Cybersecurity Operations ",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "CYBR 6350": {
    "title": "Law/Ethics/Privacy in Cybersecurity",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Cybersecurity or Departmental Approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "CYBR 6370": {
    "title": "Penetration Testing and Vulnerability Assessment",

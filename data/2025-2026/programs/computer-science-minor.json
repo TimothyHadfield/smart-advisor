@@ -3,7 +3,7 @@
  "name": "Computer Science, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,27 +11,31 @@
    "area": "Discipline Core Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CS 1400 Fundamentals of Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CS 1410 Object Oriented Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete at least three CS courses numbered 3060 or above",
-   "credits": 9
+   "credits": 9,
+   "src": "Elective Requirements (9 credits) › Complete at least three CS courses numbered 3060 or above | 9"
   }
  ],
  "gradPlan": [
@@ -96,7 +100,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",

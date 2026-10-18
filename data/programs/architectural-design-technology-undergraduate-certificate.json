@@ -3,7 +3,7 @@
  "name": "Architectural Design Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/architectural-design-technology-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "EGDT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1020 3D Architectural Modeling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1050 Intro to 3D Printing and Fabrication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1100 Residential Architecture Documentation and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 1720 Architectural Rendering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EGDT 2100 Commercial Architecture Documentation and Design | 3"
   }
  ],
  "gradPlan": [
@@ -107,7 +113,8 @@
    "title": "Residential Architecture Documentation and Design",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of B- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "B-"
   },
   "EGDT 1720": {
    "title": "Architectural Rendering",
@@ -122,7 +129,8 @@
      "EGDT 1020",
      "EGDT 1100"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   }
  }
 }

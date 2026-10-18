@@ -3,7 +3,7 @@
  "name": "Mechatronics Engineering Technology, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/technology-management/mechatronics-engineering-technology-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -74,6 +85,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -86,7 +98,8 @@
    "credits": 3,
    "recommended": [
     "BIOL 1010"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Biology (BIOL 1010 Recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -95,7 +108,8 @@
    "credits": 3,
    "recommended": [
     "PHYS 1010"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Physical Science (PHYS 1010 Recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -104,305 +118,349 @@
    "credits": 3,
    "recommended": [
     "ENGL 2100"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Humanities (ENGL 2100 Recommended) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2010 & PHYS 2015 College Physics I and College Physics I Lab | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › PHYS 2010 & PHYS 2015 College Physics I and College Physics I Lab | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1071",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › EGDT 1071 3 Dimensional Modeling--Solidworks | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 1010 Fundamentals of Mechatronics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 1200 Electronics in Automation Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1205",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 1205 Electronics in Automation Design Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2200 Semiconductors in Mechatronic Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1300",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 1300 Industrial Wiring for Mechatronic Systems | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 1305",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 1305 Industrial Wiring for Mechatronic Systems Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2205",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2205 Semiconductors in Mechatronic Systems Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2300 Microcontroller Architecture and Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2305",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2305 Microcontroller Architecture and Programming Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2400 Mechanical Components | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2500",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2500 Introduction to PLCs in Mechatronic Design | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2505",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2505 Introduction to PLCs in Mechatronic Design Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2510",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2510 Fundamentals of Automation Controls | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2515",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2515 Fundamentals of Automation Controls Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2550",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2550 Advanced PLC Programming and Applications | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2555",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2555 Advanced PLC Programming and Applications Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2600",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2600 Introduction to Fluid Power Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2605",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2605 Introduction to Fluid Power Systems Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2700",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2700 Industrial Motor Control Mechatronic Systems | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 2705",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 2705 Industrial Motor Control Mechatronic Systems Laboratory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3220 Motion Control for Mechatronic Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3225 Motion Control for Mechatronic Systems Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3300 Industrial Networks | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3305",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3305 Industrial Networks Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3400 Statics and Material Properties for Mechatronics | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3405",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3405 Statics and Material Properties for Mechatronics Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3500",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3500 Industrial Robots | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3505",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3505 Industrial Robots Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3570",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3570 Design Analysis and Rapid Prototyping | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3700",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3700 CNC Machines in Mechatronic Design | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 3705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 3705 CNC Machines in Mechatronic Design Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4300 Capstone I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4305",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4305 Capstone I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4400 Polymers/Composites and Processes | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4500 Advanced Automation Controls | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4505",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4505 Advanced Automation Controls Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MECH 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › MECH 4800 Capstone II | 3"
   },
   {
    "type": "choice",
@@ -431,7 +489,8 @@
      ],
      "credits": 1
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (89 credits) › Elective Requirements | 5"
   }
  ],
  "gradPlan": [
@@ -720,7 +779,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -733,7 +795,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -761,7 +824,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -773,7 +837,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MECH 1010": {
    "title": "Fundamentals of Mechatronics",
@@ -1051,7 +1116,12 @@
    "coreqText": "MECH 3225",
    "coreqs": [
     "MECH 3225"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3225": {
    "title": "Motion Control for Mechatronic Systems Laboratory",
@@ -1067,7 +1137,12 @@
    "coreqText": "MECH 3220",
    "coreqs": [
     "MECH 3220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3300": {
    "title": "Industrial Networks",
@@ -1085,7 +1160,12 @@
    "coreqText": "MECH 3305",
    "coreqs": [
     "MECH 3305"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3305": {
    "title": "Industrial Networks Laboratory",
@@ -1118,7 +1198,12 @@
    "coreqText": "MECH 3300",
    "coreqs": [
     "MECH 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3400": {
    "title": "Statics and Material Properties for Mechatronics",
@@ -1129,7 +1214,12 @@
    "coreqText": "MECH 3405",
    "coreqs": [
     "MECH 3405"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3405": {
    "title": "Statics and Material Properties for Mechatronics Laboratory",
@@ -1140,7 +1230,12 @@
    "coreqText": "MECH 3400",
    "coreqs": [
     "MECH 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3500": {
    "title": "Industrial Robots",
@@ -1159,7 +1254,12 @@
    "coreqText": "MECH 3505",
    "coreqs": [
     "MECH 3505"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3505": {
    "title": "Industrial Robots Laboratory",
@@ -1178,14 +1278,24 @@
    "coreqText": "MECH 3500",
    "coreqs": [
     "MECH 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3570": {
    "title": "Design Analysis and Rapid Prototyping",
    "credits": 3,
    "prereqText": "MECH 3220 and University Advanced Standing",
    "prereqs": "MECH 3220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3700": {
    "title": "CNC Machines in Mechatronic Design",
@@ -1196,7 +1306,12 @@
    "coreqText": "MECH 3705",
    "coreqs": [
     "MECH 3705"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 3705": {
    "title": "CNC Machines in Mechatronic Design Laboratory",
@@ -1207,7 +1322,12 @@
    "coreqText": "MECH 3700",
    "coreqs": [
     "MECH 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4300": {
    "title": "Capstone I",
@@ -1218,7 +1338,12 @@
    "coreqText": "MECH 4305",
    "coreqs": [
     "MECH 4305"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4305": {
    "title": "Capstone I Laboratory",
@@ -1234,14 +1359,24 @@
    "coreqText": "MECH 4300",
    "coreqs": [
     "MECH 4300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4400": {
    "title": "Polymers/Composites and Processes",
    "credits": 3,
    "prereqText": "MECH 3400 , University Advanced Standing.",
    "prereqs": "MECH 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4500": {
    "title": "Advanced Automation Controls",
@@ -1252,7 +1387,12 @@
    "coreqText": "MECH 4505",
    "coreqs": [
     "MECH 4505"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4505": {
    "title": "Advanced Automation Controls Laboratory",
@@ -1263,7 +1403,12 @@
    "coreqText": "MECH 4500",
    "coreqs": [
     "MECH 4500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4800": {
    "title": "Capstone II",
@@ -1275,7 +1420,13 @@
      "MECH 4300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MECH 4810R": {
    "title": "Mechatronics Internship",
@@ -1283,14 +1434,26 @@
    "creditsMax": 3,
    "prereqText": "Matriculation into Mechatronics Engineering Technology, Instructor Approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Mechatronics Engineering Technology",
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Mechatronics Engineering Technology, Instructor Approval"
   },
   "MECH 4900R": {
    "title": "Topics in Mechatronics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2010": {
    "title": "College Physics I",
@@ -1323,7 +1486,22 @@
    "credits": 1,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Graduates of the Mechatronics Engineering Technology, Electrical Automation Robotic Technology (E.A.R.T) or Automation and Electrical Technology (A.E.T) A.A.S. degree programs at UVU may automatically matriculate into the Bachelor of Science degree program in Mechatronics Engineering Technology. E.A.R.T and A.E.T graduates that have not taken college algebra (MATH 1050) should enroll prior to or during their first semester in which they are enrolled in the Mechatronics B.S. program.",
+  "before": [
+   "MATH 1050"
+  ],
+  "gated": [
+   "MECH 4810R"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

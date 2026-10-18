@@ -3,7 +3,7 @@
  "name": "Advanced Substance Use Disorder Counseling, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/behavioral-science/advanced-substance-use-disorder-counseling-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 32,
  "requirements": [
   {
@@ -11,70 +11,80 @@
    "area": "",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "PSY 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PSY 1010 General Psychology | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "PSY 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PSY 1100 Human Development Life Span | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 4710",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 4710 Introduction to Professional Development | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 4300 Introduction to Substance Use Disorder Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 3470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 3470 Dynamics of Addiction | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 3430 Psychopharmacology for the Substance Use Disorder Counseling Field | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 4400 Advanced Substance Use Disorder Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 4720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 4720 Advanced Professional Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SUDC 4810R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (23 credits) › SUDC 4810R Internship | 6"
   }
  ],
  "gradPlan": [
@@ -155,7 +165,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 1010": {
    "title": "General Psychology",
@@ -170,42 +181,80 @@
    "credits": 3,
    "prereqText": "Admission to the UVU SUDC program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program and University Advanced Standing"
   },
   "SUDC 3470": {
    "title": "Dynamics of Addiction",
    "credits": 3,
    "prereqText": "Admission to the UVU SUDC program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program and University Advanced Standing"
   },
   "SUDC 4300": {
    "title": "Introduction to Substance Use Disorder Counseling",
    "credits": 3,
    "prereqText": "Admission to the UVU SUDC program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program and University Advanced Standing"
   },
   "SUDC 4400": {
    "title": "Advanced Substance Use Disorder Counseling",
    "credits": 3,
    "prereqText": "Admission to the UVU SUDC Program, completion of SUDC 4300 with a C- grade or higher, and University Advanced Standing",
    "prereqs": "SUDC 4300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC Program",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC Program, completion of SUDC 4300 with a C- grade or higher"
   },
   "SUDC 4710": {
    "title": "Introduction to Professional Development",
    "credits": 2,
    "prereqText": "Admission to the UVU SUDC program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program and University Advanced Standing"
   },
   "SUDC 4720": {
    "title": "Advanced Professional Development",
    "credits": 3,
    "prereqText": "Admission to the UVU SUDC program, completion of SUDC 4710 with a C- grade or higher, and University Advanced Standing",
    "prereqs": "SUDC 4710",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program, completion of SUDC 4710 with a C- grade or higher"
   },
   "SUDC 4810R": {
    "title": "Internship",
@@ -213,7 +262,32 @@
    "creditsMax": 8,
    "prereqText": "Admission to the UVU SUDC program, completion of SUDC 4710 with a C- grade or higher, instructor approval, and University Advanced Standing",
    "prereqs": "SUDC 4710",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the UVU SUDC program",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "admission",
+   "gateText": "Admission to the UVU SUDC program, completion of SUDC 4710 with a C- grade or higher, instructor approval"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "ENGL 2010",
+   "PSY 1010",
+   "PSY 1100"
+  ],
+  "gated": [
+   "SUDC 3430",
+   "SUDC 3470",
+   "SUDC 4300",
+   "SUDC 4400",
+   "SUDC 4710",
+   "SUDC 4720",
+   "SUDC 4810R"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Emergency Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/health-public-service/emergency-services/emergency-management-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 27,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Certificate Requirements",
    "code": "ESMG 3100G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 3100G Introduction to Homeland Security | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 3300 Emergency and Disaster Planning | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 3400 Critical Infrastructure Protection | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 3710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 3710 Comparative Approaches to Homeland Security | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 4200 Public Information and Disasters | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 4300 Disaster Recovery and Hazard Mitigation | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 4350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 4350 Disaster Planning and Business Continuity | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 4450G Human Factors in Emergency Management | 3"
   },
   {
    "type": "course",
    "area": "Certificate Requirements",
    "code": "ESMG 4550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Certificate Requirements (27 credits) › ESMG 4550 Emergency Preparedness and Disaster Response | 3"
   }
  ],
  "gradPlan": [
@@ -129,7 +138,12 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 3300": {
    "title": "Emergency and Disaster Planning",
@@ -141,21 +155,36 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 3400": {
    "title": "Critical Infrastructure Protection",
    "credits": 3,
    "prereqText": "ESMG 3100G and University Advanced Standing",
    "prereqs": "ESMG 3100G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 3710": {
    "title": "Comparative Approaches to Homeland Security",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4200": {
    "title": "Public Information and Disasters",
@@ -167,21 +196,36 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4300": {
    "title": "Disaster Recovery and Hazard Mitigation",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4350": {
    "title": "Disaster Planning and Business Continuity",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4450G": {
    "title": "Human Factors in Emergency Management",
@@ -193,7 +237,12 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4550": {
    "title": "Emergency Preparedness and Disaster Response",
@@ -205,7 +254,17 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "1. University Advanced Standing (UAS)",
+  "before": [],
+  "gated": []
  }
 }

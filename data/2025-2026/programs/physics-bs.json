@@ -3,7 +3,7 @@
  "name": "Physics, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/physics/physics-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -69,183 +76,210 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 1090",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 1090 Pathways to Physics | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 1100",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 1100 Introductory Math Techniques for Physics and Engineering | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3110 Modern Physics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3115",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3115 Introduction to Experimental Physics I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3120 Modern Physics II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3125",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3125 Introduction to Experimental Physics II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3230 Principles of Electronics for the Physical Sciences | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3300 Mathematical and Computational Physics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3330 Mathematical and Computational Physics II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3400 Classical Mechanics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3500 Thermodynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 3600 Optics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 4210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 4210 Advanced Experimental Techniques | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 4410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 4410 Electrostatics and Magnetism | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 4420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 4420 Electrodynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 4510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 4510 Quantum Mechanics I | 3"
   },
   {
    "type": "course",
@@ -254,6 +288,7 @@
    "alts": [],
    "credits": 2,
    "repeat": 4,
+   "src": "Discipline Core Requirements (68 credits) › PHYS 4900R Seminar (0.5 credits, taken 4 times) | 2",
    "creditsEach": 0.5
   },
   {
@@ -261,21 +296,24 @@
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (68 credits) › MATH 1220 Calculus II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (68 credits) › MATH 2210 Calculus III | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2280",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (68 credits) › MATH 2280 Ordinary Differential Equations | 3"
   },
   {
    "type": "choice",
@@ -392,13 +430,19 @@
      "codes": [
       "PHYS 4700"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Suggested elective option for the student intent on continuing physics studies in graduate school."
+     ]
     },
     {
      "codes": [
       "PHYS 4800"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Suggested elective option for the student intent on continuing physics studies in graduate school."
+     ]
     },
     {
      "codes": [
@@ -431,19 +475,28 @@
      "codes": [
       "PHYS 4990A"
      ],
-     "credits": 2
+     "credits": 2,
+     "notes": [
+      "Suggested elective option for the student intent on continuing physics studies in graduate school."
+     ]
     },
     {
      "codes": [
       "PHYS 4990B"
      ],
-     "credits": 1
+     "credits": 1,
+     "notes": [
+      "Suggested elective option for the student intent on continuing physics studies in graduate school."
+     ]
     },
     {
      "codes": [
       "CHEM 1210"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "Strongly recommended for inclusion in any elective option."
+     ]
     },
     {
      "codes": [
@@ -455,7 +508,10 @@
      "codes": [
       "CHEM 1220"
      ],
-     "credits": 4
+     "credits": 4,
+     "notes": [
+      "Strongly recommended for inclusion in any elective option."
+     ]
     },
     {
      "codes": [
@@ -477,6 +533,7 @@
     }
    ],
    "text": "Complete 21 credits from the following courses. The selection of elective coursework should present a coherent theme such as engineering physics, medical phyiscs, nuclear physics, geophysics, computational physics, etc. (Consult Advisor or Department Chair for assistance or to consider possible course substitutions.)",
+   "src": "Elective Requirements (21 credits) › Complete 21 credits from the following courses. The selection of elective coursework should present a coherent theme such as engineering physics, medical phyiscs, nuclear physics, geophysics, computational physics, etc. (Consult Advisor or Department Chair for assistance or to consider possible course substitutions.) | 21",
    "notes": [
     "See Physics Department academic advisor for possibly more complete and up to date list.",
     "Any CHEM course 2310 or higher except internship and independent study type courses.",
@@ -727,7 +784,12 @@
      "MATH 1220"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASTR 3060": {
    "title": "Astrophysics II",
@@ -740,7 +802,12 @@
      "ASTR 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASTR 4100": {
    "title": "Brown Dwarfs and Exoplanets",
@@ -757,14 +824,25 @@
    "precoreqs": "PHYS 3100",
    "preco": [
     "PHYS 3100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASTR 4350": {
    "title": "Research Methods in Astronomy",
    "credits": 3,
    "prereqText": "Instructor Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -782,7 +860,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -800,7 +882,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -811,7 +894,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -825,7 +909,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -838,7 +925,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -876,7 +964,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -887,7 +979,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -898,7 +991,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2250": {
    "title": "Differential Equations and Linear Algebra",
@@ -909,7 +1003,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -920,7 +1015,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -931,7 +1027,8 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "METO 3100": {
    "title": "Climate and the Earth System",
@@ -961,7 +1058,12 @@
      "GEO 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 1090": {
    "title": "Pathways to Physics",
@@ -1044,7 +1146,12 @@
    "coreqText": "PHYS 3115",
    "coreqs": [
     "PHYS 3115"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3115": {
    "title": "Introduction to Experimental Physics I",
@@ -1055,7 +1162,12 @@
    "coreqText": "PHYS 3110",
    "coreqs": [
     "PHYS 3110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3120": {
    "title": "Modern Physics II",
@@ -1066,7 +1178,12 @@
    "coreqText": "PHYS 3125",
    "coreqs": [
     "PHYS 3125"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3125": {
    "title": "Introduction to Experimental Physics II",
@@ -1083,14 +1200,24 @@
    "precoreqs": "PHYS 3120",
    "preco": [
     "PHYS 3120"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3230": {
    "title": "Principles of Electronics for the Physical Sciences",
    "credits": 3,
    "prereqText": "PHYS 2220 , and University Advanced Standing",
    "prereqs": "PHYS 2220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3300": {
    "title": "Mathematical and Computational Physics I",
@@ -1104,28 +1231,48 @@
      "MATH 2210",
      "MATH 2280"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3310": {
    "title": "Advanced Mathematical Physics",
    "credits": 3,
    "prereqText": "PHYS 3300 and University Advanced Standing",
    "prereqs": "PHYS 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3330": {
    "title": "Mathematical and Computational Physics II",
    "credits": 3,
    "prereqText": "PHYS 3300 and University Advanced Standing",
    "prereqs": "PHYS 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3350": {
    "title": "Applications of LabVIEW in Physics",
    "credits": 3,
    "prereqText": "PHYS 3230 and University Advanced Standing",
    "prereqs": "PHYS 3230",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3400": {
    "title": "Classical Mechanics",
@@ -1134,7 +1281,12 @@
    "prereqs": "PHYS 2220",
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3300 recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3500": {
    "title": "Thermodynamics",
@@ -1146,7 +1298,12 @@
      "MATH 2210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3600": {
    "title": "Optics",
@@ -1158,14 +1315,24 @@
      "PHYS 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3700": {
    "title": "Particle Physics",
    "credits": 3,
    "prereqText": "PHYS 3110 and University Advanced Standing",
    "prereqs": "PHYS 3110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3800": {
    "title": "Energy Use on Earth",
@@ -1191,7 +1358,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3830": {
    "title": "Biophysics",
@@ -1210,7 +1382,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4150": {
    "title": "Medical Physics",
@@ -1222,7 +1399,12 @@
      "PHYS 3115"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4210": {
    "title": "Advanced Experimental Techniques",
@@ -1234,7 +1416,13 @@
      "PHYS 3230"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "instructor approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4250": {
    "title": "Nuclear Physics",
@@ -1247,7 +1435,14 @@
    "credits": 3,
    "prereqText": "Instructor and Department approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor",
+    "Department approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4410": {
    "title": "Electrostatics and Magnetism",
@@ -1260,14 +1455,24 @@
      "PHYS 3300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4420": {
    "title": "Electrodynamics",
    "credits": 3,
    "prereqText": "PHYS 4410 and University Advanced Standing",
    "prereqs": "PHYS 4410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4510": {
    "title": "Quantum Mechanics I",
@@ -1280,14 +1485,24 @@
      "PHYS 3300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4520": {
    "title": "Quantum Mechanics II",
    "credits": 3,
    "prereqText": "PHYS 4510 and University Advanced Standing",
    "prereqs": "PHYS 4510",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4700": {
    "title": "Acoustics",
@@ -1300,7 +1515,12 @@
      "PHYS 3300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4800": {
    "title": "Solid State Physics",
@@ -1312,7 +1532,12 @@
      "PHYS 4510"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4810R": {
    "title": "Physics Internship",
@@ -1320,7 +1545,13 @@
    "creditsMax": 4,
    "prereqText": "PHYS 2220 , Departmental Approval, and University Advanced Standing",
    "prereqs": "PHYS 2220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4890R": {
    "title": "Undergraduate Research in Physics",
@@ -1328,21 +1559,38 @@
    "creditsMax": 3,
    "prereqText": "PHYS 2220 , Departmental Approval, and University Advanced Standing",
    "prereqs": "PHYS 2220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4900R": {
    "title": "Seminar",
    "credits": 0.5,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4920R": {
    "title": "Topics in Physics",
    "credits": 3,
    "prereqText": "Departmental approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4950R": {
    "title": "Independent Readings",
@@ -1350,21 +1598,41 @@
    "creditsMax": 3,
    "prereqText": "PHYS 2220 , Departmental Approval, and University Advanced Standing",
    "prereqs": "PHYS 2220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4990A": {
    "title": "Senior Project",
    "credits": 2,
    "prereqText": "Instructor approval, Departmental approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "Departmental approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4990B": {
    "title": "Senior Thesis",
    "credits": 1,
    "prereqText": "Instructor approval, Departmental approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "Departmental approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1374,5 +1642,17 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Advisor approval. Completion of PHYS 2210 and either PHYS 1100 or MATH 1210 with a C or higher. Completion of PHYS 1090 with a C or higher.",
+  "before": [
+   "PHYS 2210",
+   "PHYS 1100",
+   "MATH 1210",
+   "PHYS 1090"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

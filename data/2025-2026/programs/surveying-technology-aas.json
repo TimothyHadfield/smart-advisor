@@ -3,7 +3,7 @@
  "name": "Surveying Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/surveying-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "choice",
@@ -44,7 +50,8 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1600):"
+   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1600):",
+   "src": "General Education Requirements (18 credits) › Complete one of the following Mathematics courses (Recommend EGDT 1600): | 3"
   },
   {
    "type": "placeholder",
@@ -54,7 +61,8 @@
    "text": "Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020)",
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (18 credits) › Complete any approved Humanities, Fine Arts, or Foreign Language Distribution Course. (Recommend COMM 1020) | 3"
   },
   {
    "type": "placeholder",
@@ -63,7 +71,8 @@
    "credits": 3,
    "recommended": [
     "PHYS 1010"
-   ]
+   ],
+   "src": "General Education Requirements (18 credits) › Any approved Biology or Physical Science Course (Recommend PHYS 1010) | 3"
   },
   {
    "type": "placeholder",
@@ -72,28 +81,32 @@
    "credits": 3,
    "recommended": [
     "GEOG 1300G"
-   ]
+   ],
+   "src": "General Education Requirements (18 credits) › Any approved Behavioral Science, Social or Political Science Distribution Course (Recommend GEOG 1300G) | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 1020",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 1020 Introduction to Surveying and Mapping | 1"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "choice",
@@ -117,83 +130,95 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1610):"
+   "text": "Complete one of the following Mathematics courses (Recommend EGDT 1610):",
+   "src": "Surveying Technology Foundation (35 credits) › Complete one of the following Mathematics courses (Recommend EGDT 1610): | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 1030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 1030 Fundamentals of Geodesy and Control Surveys | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 1220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 1220 Remote Sensing and Photogrammetry | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 1340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 1340 Fundamentals of Boundary Law | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 2100 Mapping From Field to Finish | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 2240",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 2240 Fundamentals of Adjustments and Computations | 2"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 2310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 2310 Surveying US Public Lands | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 2320 Property Descriptions and Public Land Records | 3"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "SURV 2350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Surveying Technology Foundation (35 credits) › SURV 2350 Ethics and Liabilities for Surveyors | 2"
   },
   {
    "type": "course",
    "area": "Surveying Technology Foundation",
    "code": "GIS 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Surveying Technology Foundation (35 credits) › GIS 2800 Geographic Information Systems | 3"
   },
   {
    "type": "placeholder",
    "area": "Surveying and Mapping Electives",
    "label": "Elective courses must have a prefix of SURV or GIS or be approved by the Surveying and Mapping Program Coordinator",
-   "credits": 9
+   "credits": 9,
+   "src": "Surveying and Mapping Electives (10 credits) › Elective courses must have a prefix of SURV or GIS or be approved by the Surveying and Mapping Program Coordinator | 9"
   },
   {
    "type": "placeholder",
    "area": "Surveying and Mapping Electives",
    "label": "Elective",
    "credits": 1,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Surveying and Mapping Electives (10 credits) › Complete any 1000-level, or higher, courses | 1"
   }
  ],
  "gradPlan": [
@@ -361,14 +386,16 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1610": {
    "title": "Technical Math Geometry Trig",
    "credits": 3,
    "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
    "prereqs": "EGDT 1600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -382,7 +409,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "GEOG 1300G": {
    "title": "Survey of World Geography",
@@ -402,7 +432,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -414,7 +445,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -433,14 +465,24 @@
    "credits": 3,
    "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1220": {
    "title": "Remote Sensing and Photogrammetry",
    "credits": 3,
    "prereqText": "MAT 1010 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1340": {
    "title": "Fundamentals of Boundary Law",
@@ -463,7 +505,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2240": {
    "title": "Fundamentals of Adjustments and Computations",
@@ -481,7 +528,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2310": {
    "title": "Surveying US Public Lands",
@@ -499,7 +551,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2320": {
    "title": "Property Descriptions and Public Land Records",
@@ -516,14 +573,47 @@
      "EGDT 1400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2350": {
    "title": "Ethics and Liabilities for Surveyors",
    "credits": 2,
    "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "ENGL 1010",
+   "SURV 1020",
+   "COMM 1020",
+   "EGDT 1040",
+   "EGDT 1400"
+  ],
+  "gated": [
+   "SURV 1030",
+   "SURV 1220",
+   "SURV 2100",
+   "SURV 2240",
+   "SURV 2310",
+   "SURV 2320",
+   "SURV 2350"
+  ],
+  "beforeLabels": [
+   "Elective",
+   "Complete one of the following Mathematics courses (Recommend EGDT 1600):"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

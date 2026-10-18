@@ -3,7 +3,7 @@
  "name": "Outdoor Recreation, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/exercise-science-outdoor-recreation/outdoor-recreation-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 20,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "REC 1535",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › REC 1535 Backpacking | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › REC 2200 Foundations of Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › REC 2400 Principles of Experiential Education in Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › REC 3100 Recreation Program Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › REC 3400 Risk Management | 3"
   },
   {
    "type": "choice",
@@ -75,7 +80,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete 1 credit from the the following:"
+   "text": "Complete 1 credit from the the following:",
+   "src": "Discipline Core Requirements (20 credits) › Complete 1 credit from the the following: | 1"
   },
   {
    "type": "choice",
@@ -129,7 +135,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits from the following:"
+   "text": "Complete 6 credits from the following:",
+   "src": "Discipline Core Requirements (20 credits) › Complete 6 credits from the following: | 6"
   }
  ],
  "gradPlan": [
@@ -190,21 +197,30 @@
    "credits": 1,
    "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Ability to carry a 40 lbs pack for 15-25 miles"
+   ]
   },
   "REC 1550": {
    "title": "Mountain Biking",
    "credits": 1,
    "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Ability to carry a 40 lbs pack for 15-25 miles"
+   ]
   },
   "REC 1580": {
    "title": "Kayak Touring",
    "credits": 1,
    "prereqText": "Must be able to swim 100 yards without stopping",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Must be able to swim 100 yards without stopping"
+   ]
   },
   "REC 2200": {
    "title": "Foundations of Recreation",
@@ -250,7 +266,12 @@
    "precoreqs": "MATH 1000",
    "preco": [
     "MATH 1000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3200": {
    "title": "Inclusive Recreation",
@@ -262,7 +283,12 @@
      "REC 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3400": {
    "title": "Risk Management",
@@ -274,21 +300,36 @@
    "precoreqs": "MAT 1010",
    "preco": [
     "MAT 1010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3500": {
    "title": "Recreation Administration",
    "credits": 3,
    "prereqText": "REC 3100 and University Advanced Standing",
    "prereqs": "REC 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3700": {
    "title": "Natural Resource Interpretation",
    "credits": 3,
    "prereqText": "REC 2400 and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3850G": {
    "title": "Ethical Concerns in Recreation",
@@ -300,7 +341,12 @@
      "PHIL 2050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4000": {
    "title": "Outdoor Leadership",
@@ -314,21 +360,41 @@
      "REC 1542"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4400": {
    "title": "Natural Resource and Protected Area Management",
    "credits": 3,
    "prereqText": "REC 2200 and University Advanced Standing",
    "prereqs": "REC 2200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4500": {
    "title": "Wildland Recreation Behavior",
    "credits": 3,
    "prereqText": "REC 4400 and University Advanced Standing",
    "prereqs": "REC 4400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

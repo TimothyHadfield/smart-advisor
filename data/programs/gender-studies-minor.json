@@ -3,7 +3,7 @@
  "name": "Gender Studies, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/gender-studies-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "SOC 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › SOC 2370 Sociology of Gender | 3"
   },
   {
    "type": "course",
@@ -20,7 +21,8 @@
    "alts": [
     "PHIL 3160"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › PHIL 3150 Philosophical Issues in Feminism | 3 or PHIL 3160 Philosophy of Gender"
   },
   {
    "type": "choice",
@@ -157,7 +159,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Elective Requirements (12 credits) › Complete an additional 12 hours of electives. If a course that is not represented on the following list has sufficient gender related content, the student may seek approval from the Gender Studies Coordinator to have the course count toward the minor. 6 credits must be upper- division. | 12"
   }
  ],
  "gradPlan": [
@@ -215,14 +218,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 4310": {
    "title": "Kinship and the Family",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CINE 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -244,7 +257,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 2170G": {
    "title": "Race Class and Gender in U S Cinema",
@@ -262,28 +280,48 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3790": {
    "title": "Contemporary LGBTQ Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3200G": {
    "title": "Women in American History to 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3210G": {
    "title": "Women in American History since 1870",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 2800": {
    "title": "Human Sexuality",
@@ -312,7 +350,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3150": {
    "title": "Philosophical Issues in Feminism",
@@ -329,7 +372,12 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3160": {
    "title": "Philosophy of Gender",
@@ -346,7 +394,12 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3450": {
    "title": "Philosophy of Childhood",
@@ -363,14 +416,24 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4300": {
    "title": "Race Gender and Class in Peace and Justice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 2800": {
    "title": "Human Sexuality",
@@ -399,7 +462,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 2370": {
    "title": "Sociology of Gender",
@@ -411,14 +480,21 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   },
   "SOC 2630G": {
    "title": "Race and Minority Relations",
    "credits": 3,
    "prereqText": "ENGL 2010 with a C+ or higher",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C+"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit. Admitted to a bachelor degree program at UVU",
+  "before": [],
+  "gated": []
  }
 }

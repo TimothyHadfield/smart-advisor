@@ -3,7 +3,7 @@
  "name": "Cinema and Media Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/english-literature/cinema-media-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -13,7 +13,9 @@
    "alts": [
     "ENGL 2150"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › Complete the following: › CINE 2150 Critical Introduction to Cinema Studies | 3 or ENGL 2150 Critical Introduction to Cinema Studies",
+   "prefer": "ENGL 2150"
   },
   {
    "type": "course",
@@ -22,7 +24,9 @@
    "alts": [
     "ENGL 3150"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › Complete the following: › CINE 3150 Cinema and Television Theory | 3 or ENGL 3150 Cinema and Television Theory",
+   "prefer": "ENGL 3150"
   },
   {
    "type": "choice",
@@ -58,13 +62,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (9 credits) › Complete the following: › Complete one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "In addition to the 9 core requirements, students must complete an additional 9 hours of advisor-approved electives. Six (6) of the 9 hours must be upper-division (see coordinator for a list of approved electives).",
-   "credits": 9
+   "credits": 9,
+   "src": "Elective Requirements (9 credits) › In addition to the 9 core requirements, students must complete an additional 9 hours of advisor-approved electives. Six (6) of the 9 hours must be upper-division (see coordinator for a list of approved electives). | 9"
   }
  ],
  "gradPlan": [
@@ -164,7 +170,12 @@
      "ENGL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 2150": {
    "title": "Critical Introduction to Cinema Studies",
@@ -182,7 +193,12 @@
      "ENGL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 2311": {
    "title": "Film History I",
@@ -192,5 +208,10 @@
    "title": "Film History II",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit. Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

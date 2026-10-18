@@ -3,7 +3,7 @@
  "name": "Chinese Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/chinese-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "CHST 2000G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (7 credits) › CHST 2000G Introduction to Chinese Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHIN 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (7 credits) › CHIN 2010 Intermediate Chinese I | 4"
   },
   {
    "type": "choice",
@@ -103,6 +105,7 @@
     }
    ],
    "text": "Complete 12 hours of advisor-approved upper division electives from the following:",
+   "src": "Elective Requirements (12 credits) › Complete 12 hours of advisor-approved upper division electives from the following: | 12",
    "notes": [
     "Other advisor-approved course"
    ],
@@ -170,7 +173,12 @@
    "credits": 3,
    "prereqText": "( CHIN 3050 or equivalent) and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3650": {
    "title": "Modern Chinese Literature from 1900",
@@ -183,14 +191,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3690": {
    "title": "Modern China Through Film",
    "credits": 3,
    "prereqText": "CHIN 3050 and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4250": {
    "title": "Newspaper Readings",
@@ -203,7 +221,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 2000G": {
    "title": "Introduction to Chinese Studies",
@@ -221,49 +245,89 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3630G": {
    "title": "Modern Chinese History",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3650": {
    "title": "China Transformations from 1949",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3730G": {
    "title": "Classical Chinese Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3739": {
    "title": "Selected Readings from Pre-Qin Writings",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3750G": {
    "title": "Modern Chinese Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 4160G": {
    "title": "Chinese Culture and Film",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit.",
+  "before": [],
+  "gated": []
  }
 }

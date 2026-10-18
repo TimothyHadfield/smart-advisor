@@ -3,7 +3,7 @@
  "name": "Horticulture, Minor",
  "url": "https://catalog.uvu.edu/science/biology/horticulture-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 23,
  "requirements": [
   {
@@ -11,28 +11,36 @@
    "area": "Discipline Core Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following with a grade of C- or better: › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following with a grade of C- or better: › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BOT 1800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following with a grade of C- or better: › BOT 1800 Introduction to Horticulture | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BOT 4650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (23 credits) › Complete the following with a grade of C- or better: › BOT 4650 Greenhouse Management | 3",
+   "minGrade": "C-"
   },
   {
    "type": "choice",
@@ -122,7 +130,9 @@
      "credits": 1
     }
    ],
-   "text": "Complete 12 credits from the following courses with a grade of C- or higher in each."
+   "text": "Complete 12 credits from the following courses with a grade of C- or higher in each.",
+   "src": "Discipline Core Requirements (23 credits) › Complete the following with a grade of C- or better: › Complete 12 credits from the following courses with a grade of C- or higher in each. | 12 (Note: At least 9 credits must be upper division courses.)",
+   "minGrade": "C-"
   }
  ],
  "gradPlan": [
@@ -219,7 +229,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -242,7 +253,8 @@
      "BIOL 1010",
      "BIOL 1610"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "BOT 3200": {
    "title": "Integrated Pest Management",
@@ -255,7 +267,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3210": {
    "title": "Controlled Environment Experiments in Horticulture",
@@ -268,14 +285,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3710": {
    "title": "Plant Propagation",
    "credits": 3,
    "prereqText": "BIOL 1620 and University Advanced Standing. BOT 1800 recommended",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4100": {
    "title": "Plant Anatomy",
@@ -287,7 +314,13 @@
      "BIOL 1625"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4430": {
    "title": "Plant Pathology",
@@ -301,7 +334,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4505": {
    "title": "Applied Virological Methods",
@@ -321,13 +360,20 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4650": {
    "title": "Greenhouse Management",
    "credits": 3,
    "prereqText": "[ BOT 1800 , BOT 2050 , BOT 2100 , or BOT 2400 ] and University Advanced Standing; BOT 1800 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4700": {
    "title": "Plant Tissue Culture",
@@ -340,7 +386,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4600": {
    "title": "Arthropod-Borne Pathogens",
@@ -357,7 +409,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3430": {
    "title": "Entomology",
@@ -373,7 +430,13 @@
    "coreqText": "ZOOL 3435",
    "coreqs": [
     "ZOOL 3435"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3435": {
    "title": "Entomology Laboratory",
@@ -384,7 +447,12 @@
    "coreqText": "ZOOL 3430",
    "coreqs": [
     "ZOOL 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

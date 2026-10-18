@@ -3,7 +3,7 @@
  "name": "Advanced Technology and National Security, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/advanced-technology-and-national-security-cert/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core (6 credits) › NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core",
    "code": "NSS 3750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core (6 credits) › NSS 3750 Advanced Technologies in National Security | 3"
   },
   {
    "type": "choice",
@@ -60,7 +62,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits from the following:"
+   "text": "Complete 6 credits from the following:",
+   "src": "Discipline Electives (6 credits) › Complete 6 credits from the following: | 6"
   },
   {
    "type": "choice",
@@ -235,6 +238,7 @@
     }
    ],
    "text": "Complete 6 credits of any of the NSS classes from the discipline electives or from the following list:",
+   "src": "Electives (6 credits) › Complete 6 credits of any of the NSS classes from the discipline electives or from the following list: | 6",
    "notes": [
     "Any other course approved by the program director or advisor"
    ],
@@ -326,7 +330,12 @@
      "AERO 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BTEC 1010": {
    "title": "Fundamentals of Biotechnology I Career Survey",
@@ -341,14 +350,22 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 3100": {
    "title": "Data Privacy and Security",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4470": {
    "title": "Artificial Intelligence",
@@ -368,7 +385,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -394,7 +416,12 @@
    "credits": 3,
    "prereqText": "CYBR 2800 and University Advanced Standing",
    "prereqs": "CYBR 2800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 1600": {
    "title": "Principles of Geographical Information Science",
@@ -425,7 +452,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 3130": {
    "title": "Introduction to Applied Data Analytics",
@@ -441,7 +469,14 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 1400": {
    "title": "Introduction to Data Analytics",
@@ -457,7 +492,12 @@
      "MGMT 2340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MILS 1200": {
    "title": "Introduction to Leadership Excellence I",
@@ -487,6 +527,9 @@
    "coreqText": "MILS 4450R",
    "coreqs": [
     "MILS 4450R"
+   ],
+   "prereqWords": [
+    "Departmental Approval"
    ]
   },
   "MILS 4210": {
@@ -516,14 +559,24 @@
    "credits": 3,
    "prereqText": "NSS 2010 and University Advanced Standing",
    "prereqs": "NSS 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4150": {
    "title": "Cybersecurity Policy",
    "credits": 3,
    "prereqText": "NSS 2010 and University Advanced Standing",
    "prereqs": "NSS 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4200": {
    "title": "Intelligent Systems and Data Policy",
@@ -535,7 +588,12 @@
    "precoreqs": "NSS 3750",
    "preco": [
     "NSS 3750"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4260": {
    "title": "Hypersonic and Advanced Aeronautics",
@@ -547,7 +605,12 @@
    "precoreqs": "NSS 3750",
    "preco": [
     "NSS 3750"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4320": {
    "title": "Robotics and Autonomous Systems",
@@ -559,14 +622,25 @@
    "precoreqs": "NSS 3750",
    "preco": [
     "NSS 3750"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4650": {
    "title": "Emerging Tech Policy Lab",
    "credits": 3,
    "prereqText": "University Advanced Standing and departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "departmental approval"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4750R": {
    "title": "Current Topics in National Security",
@@ -581,21 +655,37 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3000": {
    "title": "Introduction to Technology Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 4050G": {
    "title": "Global Ethical and Professional Issues in Technology",
    "credits": 3,
    "prereqText": "PHIL 2050 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "PHIL 2050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

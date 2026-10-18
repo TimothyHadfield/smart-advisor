@@ -3,7 +3,7 @@
  "name": "Information Management, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/information-management-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,6 +84,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -83,191 +95,219 @@
    "area": "General Education Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ECON 2010 Principles of Economics I (fulfills Social/Behavioral Science) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 1010 Basic Computer Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 2100 Document Processing Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 2300 Information Management Principles | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 2500 Graphic Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 2600 Spreadsheet Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 3700 Database Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 4810R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › IM 4810R Internship | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 1200 Computer Programming I for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 2200 Computer Programming II for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 2420 Web Application Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 3430 Systems Analysis and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › INFO 4050G Global Ethical and Professional Perspectives in IS and IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › FIN 1060 Personal Finance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HR 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › HR 3430 Introduction to Human Resource Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › TECH 3400 Project Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › TECH 4400 Advanced Project Management | 3"
   },
   {
    "type": "choice",
@@ -462,6 +502,7 @@
      "section": "Web Systems Development Domain"
     }
    ],
+   "src": "Elective Requirements (23 credits) › Complete at least 9 upper-division credits from a selected domain: | 9 (Note: Four credits must be Upper Division)",
    "notes": [
     "Digital Marketing:",
     "Digital Marketing: Mobile Development Domain:",
@@ -554,6 +595,7 @@
     }
    ],
    "text": "Complete at least 9 credits from the following electives or from courses in above domains:",
+   "src": "Elective Requirements (23 credits) › Business Intelligence Domain: › Complete at least 9 credits from the following electives or from courses in above domains: | 9",
    "notes": [
     "Other department approved classes"
    ],
@@ -564,7 +606,8 @@
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 5,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Elective Requirements (23 credits) › Business Intelligence Domain: › Complete any 1000-level, or higher, courses | 5"
   }
  ],
  "gradPlan": [
@@ -811,7 +854,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4350": {
    "title": "Web and Application Security",
@@ -830,7 +878,12 @@
      "INFO 3300",
      "CS 3520"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 1110": {
    "title": "Digital Media Essentials I",
@@ -873,7 +926,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -886,7 +942,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "FIN 1060": {
    "title": "Personal Finance",
@@ -913,14 +970,24 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 1000": {
    "title": "E-Commerce Techniques for Small Business",
@@ -935,14 +1002,20 @@
    "credits": 3,
    "prereqText": "Basic keyboarding skill",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Basic keyboarding skill"
+   ]
   },
   "IM 2100": {
    "title": "Document Processing Applications",
    "credits": 3,
    "prereqText": "Basic keyboarding skills",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Basic keyboarding skills"
+   ]
   },
   "IM 2300": {
    "title": "Information Management Principles",
@@ -957,7 +1030,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "IM 2800": {
    "title": "Integrated Software Projects",
@@ -986,14 +1062,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 3700": {
    "title": "Database Applications",
    "credits": 3,
    "prereqText": "Basic keyboarding skill and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Basic keyboarding skill",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 4810R": {
    "title": "Internship",
@@ -1001,7 +1088,13 @@
    "creditsMax": 8,
    "prereqText": "Instructor approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 4900R": {
    "title": "Advanced Topics in Information Management",
@@ -1009,7 +1102,13 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 4960R": {
    "title": "Information Management Seminar",
@@ -1017,7 +1116,12 @@
    "creditsMax": 3,
    "prereqText": "IM 2300 and University Advanced Standing",
    "prereqs": "IM 2300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 1120": {
    "title": "Information Systems and Technology Fundamentals",
@@ -1046,7 +1150,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -1082,7 +1187,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3130": {
    "title": "Introduction to Applied Data Analytics",
@@ -1098,19 +1209,32 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3300": {
    "title": "Web Systems Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3330": {
    "title": "Client-Side Web Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3360": {
    "title": "Server-Side Web Frameworks",
@@ -1121,7 +1245,10 @@
    "precoreqs": "INFO 3300",
    "preco": [
     "INFO 3300"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -1133,7 +1260,13 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3430": {
    "title": "Systems Analysis and Design",
@@ -1159,40 +1292,65 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4050G": {
    "title": "Global Ethical and Professional Perspectives in IS and IT",
    "credits": 3,
    "prereqText": "INFO 3430 and University Advanced Standing",
    "prereqs": "INFO 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4120": {
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4130": {
    "title": "Data Science and Big Data Analytics",
    "credits": 3,
    "prereqText": "INFO 3130 and University Advanced Standing",
    "prereqs": "INFO 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4300": {
    "title": "Enterprise Web Development",
    "credits": 3,
    "prereqText": "INFO 3300 and University Advanced Standing",
    "prereqs": "INFO 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4420": {
    "title": "Mobile Application Development",
    "credits": 3,
    "prereqText": "( INFO 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) and University Advanced Standing; ( INFO 2200 recommended or CS 1410 recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 1200": {
    "title": "Scripting for Administrators",
@@ -1228,7 +1386,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1240,7 +1399,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2030": {
    "title": "Inclusive Leadership",
@@ -1264,7 +1424,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1275,25 +1440,36 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3660": {
    "title": "Digital Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3680": {
    "title": "Marketing with Social Media",
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3685": {
    "title": "Content Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1308,21 +1484,37 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3400": {
    "title": "Project Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 4400": {
    "title": "Advanced Project Management",
    "credits": 3,
    "prereqText": "TECH 3400 with a C- or higher; University Advanced Standing",
    "prereqs": "TECH 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

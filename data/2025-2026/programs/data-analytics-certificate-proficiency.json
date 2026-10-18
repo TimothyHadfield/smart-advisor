@@ -3,7 +3,7 @@
  "name": "Data Analytics, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/data-analytics-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 3130 Introduction to Applied Data Analytics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 3410 Database Systems and Warehousing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 4120 Data Visualization | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 4130 Data Science and Big Data Analytics | 3"
   },
   {
    "type": "choice",
@@ -105,7 +110,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 3 credits from the following courses:"
+   "text": "Choose 3 credits from the following courses:",
+   "src": "Elective Requirements (3 credits) › Choose 3 credits from the following courses: | 3"
   }
  ],
  "gradPlan": [
@@ -155,27 +161,45 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4620": {
    "title": "Data Mining",
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4150": {
    "title": "Data Security Analytics",
    "credits": 3,
    "prereqText": "CYBR 2700 and INFO 2410 and University Advanced Standing; ( INFO 3130 and INFO 3410 recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 3750": {
    "title": "Media Analytics",
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -197,7 +221,14 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -209,20 +240,33 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4120": {
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4130": {
    "title": "Data Science and Big Data Analytics",
    "credits": 3,
    "prereqText": "INFO 3130 and University Advanced Standing",
    "prereqs": "INFO 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4410": {
    "title": "Database Administration",
@@ -234,20 +278,32 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3690": {
    "title": "Digital Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4610": {
    "title": "Sales Operations",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4100": {
    "title": "Design of Experiment",
@@ -260,7 +316,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4200": {
    "title": "Survey Sampling",
@@ -273,7 +335,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

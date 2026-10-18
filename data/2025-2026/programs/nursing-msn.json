@@ -3,7 +3,7 @@
  "name": "Master of Science in Nursing, M.S.N.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/nursing/nursing-msn/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 33,
  "requirements": [
   {
@@ -11,98 +11,112 @@
    "area": "Discipline Core Requirements",
    "code": "NURS 6000",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6000 Leadership Development | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6050",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6050 Nursing Informatics | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6200 Advanced Nursing Theory | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6250 Research for Evidence-Based Practice and Outcome Improvement | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6300",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6300 Advanced Nursing in Health Systems/Policy and Advocacy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6350 Patho/Pharmacology for the Nurse Educator | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6450 Health Assessment for the Nurse Educator | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6500 Curriculum Design and Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6600",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6600 Teaching Nursing in the Classroom Setting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6605",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6605 Teaching Nursing in the Classroom Setting Practicum | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6650",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6650 Teaching Nursing in the Clinical Setting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6655",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6655 Teaching Nursing in the Clinical Setting Practicum | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6700 Evaluation of Learning Outcomes | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NURS 6795",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › NURS 6795 Synthesis of Teaching Practice Practicum | 3"
   }
  ],
  "gradPlan": [
@@ -189,56 +203,96 @@
    "credits": 2,
    "prereqText": "Admission into the Master of Science in Nursing (MSN) program or Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the Master of Science in Nursing (MSN) program or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the Master of Science in Nursing (MSN) program or Department approval"
   },
   "NURS 6050": {
    "title": "Nursing Informatics",
    "credits": 2,
    "prereqText": "Admission to a MSN program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a MSN program"
   },
   "NURS 6200": {
    "title": "Advanced Nursing Theory",
    "credits": 2,
    "prereqText": "Admission into the MSN program or Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the MSN program or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the MSN program or Department approval"
   },
   "NURS 6250": {
    "title": "Research for Evidence-Based Practice and Outcome Improvement",
    "credits": 2,
    "prereqText": "Admission to a MSN program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a MSN program"
   },
   "NURS 6300": {
    "title": "Advanced Nursing in Health Systems/Policy and Advocacy",
    "credits": 2,
    "prereqText": "Admission to a MSN program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a MSN program"
   },
   "NURS 6350": {
    "title": "Patho/Pharmacology for the Nurse Educator",
    "credits": 3,
    "prereqText": "Admission into the MSN program or Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the MSN program or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the MSN program or Department approval"
   },
   "NURS 6450": {
    "title": "Health Assessment for the Nurse Educator",
    "credits": 3,
    "prereqText": "Admission to the MSN program or departmental approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the MSN program or departmental approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the MSN program or departmental approval"
   },
   "NURS 6500": {
    "title": "Curriculum Design and Development",
    "credits": 3,
    "prereqText": "Admission to the MSN Program or Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the MSN Program or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the MSN Program or Department approval"
   },
   "NURS 6600": {
    "title": "Teaching Nursing in the Classroom Setting",
@@ -265,7 +319,12 @@
    "coreqText": "NURS 6655",
    "coreqs": [
     "NURS 6655"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to MSN program"
   },
   "NURS 6655": {
    "title": "Teaching Nursing in the Clinical Setting Practicum",
@@ -276,21 +335,54 @@
    "coreqText": "NURS 6650",
    "coreqs": [
     "NURS 6650"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to MSN program"
   },
   "NURS 6700": {
    "title": "Evaluation of Learning Outcomes",
    "credits": 3,
    "prereqText": "Admission to MSN program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to MSN program"
   },
   "NURS 6795": {
    "title": "Synthesis of Teaching Practice Practicum",
    "credits": 3,
    "prereqText": "Admission to MSN program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to MSN program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to MSN program"
   }
+ },
+ "admissionInfo": {
+  "text": "Baccalaureate degree in nursing from a program accredited by a recognized nursing accreditation agency. Current licensure as an RN in Utah or eligible for RN licensure in Utah. Completion of an undergraduate course in statistics to include descriptive and inferential statistics. Application for admission to MSN program. Overall undergraduate GPA of 3.2 or higher, or GPA of 3.2 or higher in last 60 semester hours of undergraduate coursework. Three professional letters of recommendation.",
+  "before": [],
+  "gated": [
+   "NURS 6000",
+   "NURS 6050",
+   "NURS 6200",
+   "NURS 6250",
+   "NURS 6300",
+   "NURS 6350",
+   "NURS 6450",
+   "NURS 6500",
+   "NURS 6650",
+   "NURS 6655",
+   "NURS 6700",
+   "NURS 6795"
+  ]
  }
 }

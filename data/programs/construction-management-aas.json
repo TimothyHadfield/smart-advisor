@@ -3,7 +3,7 @@
  "name": "Construction Management, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/construction-technologies/construction-management-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -74,67 +80,77 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "General Education Requirements (18 credits) › Choose one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Humanities Distribution | 3 (Note: See catalog for approved listings Recommended: COMM 1020 Public Speaking)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Sciences Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Social Sciences Distribution | 3 (Note: See catalog for approved listings Recommended: COMM 2110 Interpersonal Communication or FIN 1060 Personal Finance)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Physical Science Distribution | 3 (Note: See catalog for approved listings Recommended: PHYS 1010 Elementary Physics or PHSC 1000 Survey of Physical Science or ENVT 1110 Introduction to Environmental Science and Management)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › EGDT 1600 Technical Math Algebra | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › EGDT 1610 Technical Math Geometry Trig | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 1010 Introduction to Construction Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 1020 Construction Materials and Methods I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 1150",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 1150 Construction Safety | 2"
   },
   {
    "type": "choice",
@@ -165,14 +181,16 @@
      "crMax": 6
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Discipline Core Requirements (45 credits) › Choose one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 2010 Construction Materials and Methods II | 3"
   },
   {
    "type": "course",
@@ -182,21 +200,24 @@
     "IM 2010"
    ],
    "credits": 3,
-   "recommended": true
+   "recommended": true,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 2035 Construction Computer Applications (Recommended) | 3 or IM 2010 Business Computer Proficiency"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 2060 Construction Job Site Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CMGT 2080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 2080 Principles of Construction Scheduling | 3"
   },
   {
    "type": "course",
@@ -205,6 +226,7 @@
    "alts": [],
    "credits": 1,
    "repeat": 2,
+   "src": "Discipline Core Requirements (45 credits) › CMGT 2890R Construction Industry Seminar (Must be taken twice for a total of one credit.) | 1",
    "creditsEach": 0.5
   },
   {
@@ -245,6 +267,7 @@
     }
    ],
    "text": "Complete 6 credits from the following two specializations:",
+   "src": "Discipline Core Requirements (45 credits) › Complete 6 credits from the following two specializations: | 6",
    "notes": [
     "Heavy/Civil:",
     "Commercial/Residential:",
@@ -256,7 +279,8 @@
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 6,
-   "text": "Complete any course 1000 or higher"
+   "text": "Complete any course 1000 or higher",
+   "src": "Discipline Core Requirements (45 credits) › Complete any course 1000 or higher | 6"
   }
  ],
  "gradPlan": [
@@ -483,7 +507,10 @@
    "creditsMax": 6,
    "prereqText": "Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval"
+   ]
   },
   "CMGT 2890R": {
    "title": "Construction Industry Seminar",
@@ -506,14 +533,16 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1610": {
    "title": "Technical Math Geometry Trig",
    "credits": 3,
    "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
    "prereqs": "EGDT 1600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2400": {
    "title": "Surveying Applications and Field Techniques II",
@@ -531,21 +560,28 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -558,7 +594,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -575,7 +612,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -587,7 +628,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -599,7 +644,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -611,7 +657,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -623,7 +670,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -636,7 +684,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -649,7 +702,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

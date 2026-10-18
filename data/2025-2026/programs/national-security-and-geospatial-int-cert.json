@@ -3,7 +3,7 @@
  "name": "National Security and Geospatial Intelligence, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/national-security-and-geospatial-int-cert/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core",
    "code": "GEOG 3600",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core (13 credits) › GEOG 3600 Introduction to Geographic Information Systems | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core (13 credits) › NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core",
    "code": "GEOG 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core (13 credits) › GEOG 3400 Environmental Remote Sensing ( GEOG 3600 must be taken before GEOG 3400 ) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core",
    "code": "NSS 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core (13 credits) › NSS 3050 US Intelligence Community | 3"
   },
   {
    "type": "choice",
@@ -47,7 +51,8 @@
      "codes": [
       "GEOG 3650"
      ],
-     "credits": 4
+     "credits": 4,
+     "fromText": true
     },
     {
      "codes": [
@@ -81,6 +86,7 @@
     }
    ],
    "text": "Complete 3 credits from the following:",
+   "src": "Electives (6 credits) › Complete 3 credits from the following: | 3",
    "notes": [
     "GEOG 3650",
     "Or any other courses with the following prefix: GEOG, SURV, GIS, EGDT, subject to program approval"
@@ -121,6 +127,7 @@
      "credits": 3
     }
    ],
+   "src": "Electives (6 credits) › Complete 3 NSS credits from the following: | 3",
    "notes": [
     "Or any courses with the NSS or INTS prefixes, subject to program approval."
    ],
@@ -132,6 +139,7 @@
    "code": "GEOG 4890R",
    "alts": [],
    "credits": 1,
+   "src": "Discipline Research Requirements (2 credits) › GEOG 4890R Student Research in Geography | 1",
    "crMax": 4
   },
   {
@@ -140,6 +148,7 @@
    "code": "NSS 4910R",
    "alts": [],
    "credits": 1,
+   "src": "Discipline Research Requirements (2 credits) › NSS 4910R Directed Readings and Special Projects in National Security | 1",
    "crMax": 3
   }
  ],
@@ -193,7 +202,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "EGDT 2400": {
    "title": "Surveying Applications and Field Techniques II",
@@ -211,26 +223,36 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "GEOG 3400": {
    "title": "Environmental Remote Sensing",
    "credits": 3,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3600": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3650": {
    "title": "Advanced Geographic Information Systems",
    "credits": 4,
    "prereqText": "GEOG 3600 and University Advanced Standing",
    "prereqs": "GEOG 3600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4100": {
    "title": "Geospatial Field Methods",
@@ -242,7 +264,12 @@
      "MATH 1060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4890R": {
    "title": "Student Research in Geography",
@@ -250,14 +277,26 @@
    "creditsMax": 4,
    "prereqText": "Junior or Senior standing, instructor approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 3620": {
    "title": "Advanced Geographic Information Systems",
    "credits": 3,
    "prereqText": "GIS 2800 and University Advanced Standing",
    "prereqs": "GIS 2800",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 3630": {
    "title": "Geographic Information Systems Application Development",
@@ -270,7 +309,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 2010": {
    "title": "Introduction to National Security",
@@ -296,14 +340,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 3050": {
    "title": "US Intelligence Community",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4300": {
    "title": "Intelligence Cycle and Collections",
@@ -315,7 +369,12 @@
      "NSS 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4400": {
    "title": "Statecraft and Strategy",
@@ -328,7 +387,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4910R": {
    "title": "Directed Readings and Special Projects in National Security",
@@ -336,7 +400,12 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

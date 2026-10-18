@@ -3,7 +3,7 @@
  "name": "Business Management, Minor",
  "url": "https://catalog.uvu.edu/business/strategic-management-operations/business-management-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "choice",
@@ -62,7 +66,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete two of the following:"
+   "text": "Complete two of the following:",
+   "src": "Elective Requirements (6 credits) › Complete two of the following: | 6"
   }
  ],
  "gradPlan": [
@@ -131,7 +136,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -148,7 +158,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -165,14 +180,24 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

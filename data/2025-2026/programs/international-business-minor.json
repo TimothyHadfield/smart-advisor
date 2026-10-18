@@ -3,7 +3,7 @@
  "name": "International Business, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/international-business-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3300G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 3300G Survey of International Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3320G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 3320G Cross Cultural Communications for International Business | 3"
   },
   {
    "type": "choice",
@@ -86,6 +89,7 @@
     }
    ],
    "text": "Complete any three of the following courses (9 credit hours):",
+   "src": "Discipline Core Requirements (18 credits) › Complete any three of the following courses (9 credit hours): | 9",
    "notes": [
     "Foreign Language 3200",
     "Foreign Language 4200"
@@ -140,7 +144,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 2010": {
    "title": "Principles of Economics I",
@@ -160,21 +169,36 @@
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4180": {
    "title": "International Finance Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4185": {
    "title": "International Trade and Finance",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3200G": {
    "title": "Global Tourism",
@@ -186,14 +210,24 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4700G": {
    "title": "International Human Resource Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -210,7 +244,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -222,7 +261,12 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4870": {
    "title": "International Management",
@@ -234,13 +278,27 @@
      "MKTG 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "MKTG 3350G": {
    "title": "International Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "MGMT 4870"
+  ]
  }
 }

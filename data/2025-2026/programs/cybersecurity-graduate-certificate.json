@@ -3,7 +3,7 @@
  "name": "Cybersecurity, Graduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/cybersecurity-graduate-certificate/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "IT 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 6300 Principles of Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 6330 Cybersecurity Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 6350 Law/Ethics/Privacy in Cybersecurity | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 6370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › IT 6370 Penetration Testing and Vulnerability Assessment | 3"
   },
   {
    "type": "choice",
@@ -75,6 +79,7 @@
     }
    ],
    "text": "Complete 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following: | 6",
    "notes": [
     "or other departmental approved electives"
    ],
@@ -128,21 +133,30 @@
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6330": {
    "title": "Cybersecurity Operations",
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6350": {
    "title": "Law/Ethics/Privacy in Cybersecurity",
    "credits": 3,
    "prereqText": "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
+   ]
   },
   "IT 6370": {
    "title": "Penetration Testing and Vulnerability Assessment",
@@ -154,6 +168,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6660": {
@@ -166,6 +183,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6740": {
@@ -178,6 +198,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approval"
    ]
   },
   "IT 6760": {
@@ -190,6 +213,9 @@
    "precoreqs": "IT 6300",
    "preco": [
     "IT 6300"
+   ],
+   "prereqWords": [
+    "Acceptance into Graduate Certificate or Master of Science in Cybersecurity or Departmental Approvall"
    ]
   },
   "IT 6770": {
@@ -206,5 +232,10 @@
    "prereqs": "IT 6300",
    "prereqNonCourse": true
   }
+ },
+ "admissionInfo": {
+  "text": "Application for admission to the program. Bachelor's degree required, preferably in Information Systems, Information Security, Information Technology, or Computer Science. 2 years of IT or IT security industry experience (if Bachelor's degree in non-related field). Completion of undergraduate courses in data communication, programming and servers.",
+  "before": [],
+  "gated": []
  }
 }

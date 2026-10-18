@@ -3,7 +3,7 @@
  "name": "Automation and Electrical Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/transportation-technologies/automation-electrical-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 65,
  "requirements": [
   {
@@ -13,130 +13,153 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Humanities or Fine Art",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Any approved Humanities or Fine Art | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Behavioral Science, Social, or Political Science Distribution Course",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Any approved Behavioral Science, Social, or Political Science Distribution Course | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Biology or Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (12 credits) › Any approved Biology or Physical Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › AET 1050 Electrical Math I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › AET 1060 Electrical Math II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1130",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › AET 1130 Introduction to Automation | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1135",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › AET 1135 Introduction to Automation Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › AET 1140 Applied AC Theory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1145",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › AET 1145 Applied AC Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1150",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › AET 1150 Industrial Logic | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1155",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › AET 1155 Industrial Logic Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › AET 1250 Industrial Electrical Code | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1280",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (53 credits) › AET 1280 Electric Motor Control | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1285",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (53 credits) › AET 1285 Electric Motor Control Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 2110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (53 credits) › AET 2110 Industrial Electronics I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 2115",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › AET 2115 Industrial Electronics I Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 2250",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (53 credits) › AET 2250 Industrial Programmable Logic Controllers--PLCs | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 2255",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › AET 2255 Industrial Programmable Logic Controllers--PLCs Lab | 2"
   },
   {
    "type": "course",
@@ -145,7 +168,8 @@
    "alts": [
     "EGDT 1071"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3 or EGDT 1071 3 Dimensional Modeling--Solidworks"
   },
   {
    "type": "choice",
@@ -260,14 +284,16 @@
      "credits": 2
     }
    ],
-   "text": "Choose 12 Credits from the Following Options:"
+   "text": "Choose 12 Credits from the Following Options:",
+   "src": "Discipline Core Requirements (53 credits) › Choose 12 Credits from the Following Options: | 12"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 2,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Core Requirements (53 credits) › Complete any 1000-level, or higher, courses | 2"
   }
  ],
  "gradPlan": [
@@ -913,14 +939,20 @@
    "creditsMax": 8,
    "prereqText": "Approval of Department Chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Approval of Department Chair"
+   ]
   },
   "AET 2850R": {
    "title": "Cooperative Correlated Class",
    "credits": 1,
    "prereqText": "Approval of Department Chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Approval of Department Chair"
+   ]
   },
   "AET 2900": {
    "title": "Capstone Project",
@@ -964,7 +996,8 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -978,7 +1011,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MECH 2300": {
    "title": "Microcontroller Architecture and Programming",

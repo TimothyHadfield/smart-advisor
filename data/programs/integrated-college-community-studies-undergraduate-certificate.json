@@ -3,7 +3,7 @@
  "name": "Integrated College and Community Studies, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/education/student-leadership-success-studies/integrated-college-community-studies-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 33,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "",
    "code": "ICCS 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 1010 Self Determination | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 2010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 2010 Disability Advocacy and Leadership | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 1020",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 1020 Living and Working in the Community I | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 2020",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "ICCS 2020 Living and Working in the Community II | 1"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 1030",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 1030 Social Skills and Mature Relationships | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 2030",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 2030 Problem Solving for Adulthood | 2"
   },
   {
    "type": "course",
    "area": "",
    "code": "ICCS 1100R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 1100R Career Development I: Interviewing & Career Readiness | 2"
   },
   {
    "type": "course",
@@ -61,6 +68,7 @@
    "code": "ICCS 1200R",
    "alts": [],
    "credits": 1,
+   "src": "ICCS 1200R Career Development Practicum I | 1",
    "crMax": 3
   },
   {
@@ -69,6 +77,7 @@
    "code": "ICCS 2100R",
    "alts": [],
    "credits": 1,
+   "src": "ICCS 2100R Career Development II: Workplace Professionalism and Employment Success | 1",
    "crMax": 3
   },
   {
@@ -76,7 +85,8 @@
    "area": "",
    "code": "ICCS 2200R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "ICCS 2200R Career Development Practicum II | 2"
   },
   {
    "type": "course",
@@ -85,35 +95,40 @@
    "alts": [
     "SLSS 1000"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 2100 Major and Career Exploration | 3 or SLSS 1000 University Student Success"
   },
   {
    "type": "course",
    "area": "",
    "code": "SLSS 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "SLSS 1100 Stress Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HLTH 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HLTH 1100 Personal Health and Wellness | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "ENGL 1005",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "ENGL 1005 Foundations of Academic Writing | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "FIN 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "FIN 1060 Personal Finance | 3"
   }
  ],
  "gradPlan": [
@@ -217,7 +232,10 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "FIN 1060": {
    "title": "Personal Finance",
@@ -284,7 +302,10 @@
    "credits": 3,
    "prereqText": "Appropriate reading skills",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate reading skills"
+   ]
   },
   "SLSS 1100": {
    "title": "Stress Management",

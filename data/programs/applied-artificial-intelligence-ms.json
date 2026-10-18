@@ -3,7 +3,7 @@
  "name": "Applied Artificial Intelligence, M.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/technology-management/applied-artificial-intelligence-ms/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Discipline Core Requirements",
    "code": "TECH 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6100 Foundations of Applied Artificial Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6200 Artificial Intelligence in Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 6200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › INFO 6200 Python for Applied Artificial Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6250 Ethical Legal and Social Implications of Artificial Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › CS 6470 Machine Learning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6700 Data Driven Decision Making | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6730",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6730 Data Strategy and Management for Artificial Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6750 Strategic Implementation of AI Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 6910",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 6910 Applied AI Capstone Project | 3"
   },
   {
    "type": "choice",
@@ -133,7 +142,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete three credits from the following:"
+   "text": "Complete three credits from the following:",
+   "src": "Electives (3 credits) › Complete three credits from the following: | 3"
   }
  ],
  "gradPlan": [
@@ -209,128 +219,245 @@
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6470": {
    "title": "Machine Learning",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6480": {
    "title": "Deep Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "INFO 6200": {
    "title": "Python for Applied Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "INFO 6300": {
    "title": "Cloud Computing",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "MGMT 6300": {
    "title": "Healthcare Systems/Finance/Operations",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "TECH 6000": {
    "title": "Management of Technological Innovation",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6010": {
    "title": "Intellectual Property Fundamentals",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6100": {
    "title": "Foundations of Applied Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "TECH 6200": {
    "title": "Artificial Intelligence in Business",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "TECH 6250": {
    "title": "Ethical Legal and Social Implications of Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "TECH 6400": {
    "title": "Six Sigma Project Management",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6550": {
    "title": "People and Culture",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6700": {
    "title": "Data Driven Decision Making",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program or approval of graduate program director"
   },
   "TECH 6730": {
    "title": "Data Strategy and Management for Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "TECH 6750": {
    "title": "Strategic Implementation of AI Systems",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   },
   "TECH 6900R": {
    "title": "Independent Study",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6910": {
    "title": "Applied AI Capstone Project",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Applied AI program or approval of graduate program director"
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "Application for admission to graduate program with application fee by the established deadline. The university uses a selective admission process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or an international college or university recognized by a Ministry of Education Overall undergraduate GPA of 3.0 or higher on a 4.0 scale from an accredited institution, or GPA of 3.0 or higher on a 4.0 scale from an accredited institution in last 60 semester hours (90 quarter hours) of undergraduate coursework Three professional letters of recommendation Official transcripts from all attended institutions of higher education A personal statement",
+  "before": [],
+  "gated": [
+   "CS 6460",
+   "CS 6470",
+   "CS 6480",
+   "INFO 6200",
+   "INFO 6300",
+   "MGMT 6300",
+   "TECH 6000",
+   "TECH 6010",
+   "TECH 6100",
+   "TECH 6200",
+   "TECH 6250",
+   "TECH 6400",
+   "TECH 6550",
+   "TECH 6700",
+   "TECH 6730",
+   "TECH 6750",
+   "TECH 6900R",
+   "TECH 6910"
+  ]
+ }
 }

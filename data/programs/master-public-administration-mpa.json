@@ -3,7 +3,7 @@
  "name": "Master of Public Administration, M.P.A.",
  "url": "https://catalog.uvu.edu/health-public-service/public-service-graduate-programs/master-public-administration-mpa/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 36,
  "requirements": [
   {
@@ -11,70 +11,80 @@
    "area": "Discipline Core Requirements",
    "code": "PADM 6000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6000 Public Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6010 Public Administration Finance and Budgeting | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6020 Public Administration Policy and Evaluation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6030 Legal Issues for Public Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6040 Organizational Behavior in Public Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6050 Public Administration Leadership and Ethics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6060 Research Methods for Public Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6070",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6070 Human Resource Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6900 Public Administration Capstone Project | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PADM 6700R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › PADM 6700R Public Administration Internship | 3 (Note: Students with relevant professional experience may request an exemption from the internship requirement by submitting an Internship Waiver Form and obtaining approval from the Program Director. If approved, the waived 3 credits may be replaced with an additional elective course.)"
   },
   {
    "type": "choice",
@@ -231,6 +241,7 @@
     }
    ],
    "text": "Complete 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following: | 6",
    "notes": [
     "Graduate-level electives as approved by the MPA Director."
    ],
@@ -323,224 +334,384 @@
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "CJ 6210": {
    "title": "Information-based Decision Making for Criminal Justice Administrators",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "CJ 6220": {
    "title": "Contemporary Issues In Criminal Justice",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "CJ 6230": {
    "title": "Criminal Justice Policy",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6410": {
    "title": "Foundations and Contexts of Higher Education",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6420": {
    "title": "Humanizing Higher Education",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6430": {
    "title": "Student Success and Development",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6440": {
    "title": "Leadership in Higher Education",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "ESMG 6100": {
    "title": "Psychology and the Emergency Services Responder",
    "credits": 3,
    "prereqText": "Acceptance into the Masters of Public Administration Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Masters of Public Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Masters of Public Administration Program"
   },
   "ESMG 6110": {
    "title": "Disasters/Vulnerability/and Impacts",
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   },
   "ESMG 6120": {
    "title": "Emergency Planning and Response",
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   },
   "ESMG 6130": {
    "title": "Social Vulnerability in Emergencies",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Public Administration Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Public Administration Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Public Administration Program"
   },
   "ESMG 6140": {
    "title": "Homeland Security Fundamentals",
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   },
   "HLTH 6200": {
    "title": "Issues in Public Health",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "HLTH 6300": {
    "title": "Communication Campaigns",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "HR 6550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "Admission into any UVU Graduate Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU Graduate Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU Graduate Program"
   },
   "MGMT 6300": {
    "title": "Healthcare Systems/Finance/Operations",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "MGMT 6310": {
    "title": "Healthcare Policy and Law",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "MGMT 6320": {
    "title": "Healthcare Strategy",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "NSS 6500": {
    "title": "US National Security Policy and Strategy",
    "credits": 3,
    "prereqText": "Acceptance into the Masters of Public Services Program or department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Masters of Public Services Program or department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Masters of Public Services Program or department approval"
   },
   "NSS 6700": {
    "title": "Intelligence Analysis and Tradecraft",
    "credits": 3,
    "prereqText": "Acceptance into the Masters of Public Services Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Masters of Public Services Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Masters of Public Services Program"
   },
   "PADM 6000": {
    "title": "Public Administration",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6010": {
    "title": "Public Administration Finance and Budgeting",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6020": {
    "title": "Public Administration Policy and Evaluation",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6030": {
    "title": "Legal Issues for Public Administration",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6040": {
    "title": "Organizational Behavior in Public Administration",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6050": {
    "title": "Public Administration Leadership and Ethics",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6060": {
    "title": "Research Methods for Public Administration",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6070": {
    "title": "Human Resource Management",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6400": {
    "title": "Public Administration Program Development and Evaluation",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6410": {
    "title": "Non-Profit Management",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6700R": {
    "title": "Public Administration Internship",
    "credits": 3,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6790R": {
    "title": "Special Topics in Public Administration",
@@ -548,7 +719,12 @@
    "creditsMax": 6,
    "prereqText": "Admission into any graduate program at Utah Valley University",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   },
   "PADM 6900": {
    "title": "Public Administration Capstone Project",
@@ -560,7 +736,53 @@
    "precoreqs": "PADM 6060",
    "preco": [
     "PADM 6060"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into any graduate program at Utah Valley University"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program at Utah Valley University"
   }
+ },
+ "admissionInfo": {
+  "text": "A 3.0 cumulative GPA from the institution where the undergraduate degree was awarded or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) from the institution where the undergraduate degree was awarded. A bachelor's degree from a regionally-accredited college/university, a nationally accredited program, or an international college or university recognized by a Ministry of Education in one of the following or related fields:(Applicants with a bachelor's degrees in other fields may be admitted if they have at least two years of public services experience and completed undergraduate courses with a B grade or better. These applications are handled on a case-by-case basis.): Emergency Services Criminal Justice/Law Enforcement, Forensic Science Political Science Public and Community Health Aviation Science Emergency Management/Homeland Security Emergency Medical Services Business Administration, Organizational Management Environmental Science Public Admin/Public Management Social Science Technology Management 3. Graduate School Application. 4. Official transcripts from all attended institutions of higher education. 5. Two letters of recommendation. 6. Admissions Essay.",
+  "before": [],
+  "gated": [
+   "CJ 6200",
+   "CJ 6210",
+   "CJ 6220",
+   "CJ 6230",
+   "EDHE 6410",
+   "EDHE 6420",
+   "EDHE 6430",
+   "EDHE 6440",
+   "ESMG 6100",
+   "ESMG 6110",
+   "ESMG 6120",
+   "ESMG 6130",
+   "ESMG 6140",
+   "HLTH 6200",
+   "HLTH 6300",
+   "HR 6550",
+   "MGMT 6300",
+   "MGMT 6310",
+   "MGMT 6320",
+   "NSS 6500",
+   "NSS 6700",
+   "PADM 6000",
+   "PADM 6010",
+   "PADM 6020",
+   "PADM 6030",
+   "PADM 6040",
+   "PADM 6050",
+   "PADM 6060",
+   "PADM 6070",
+   "PADM 6400",
+   "PADM 6410",
+   "PADM 6700R",
+   "PADM 6790R",
+   "PADM 6900"
+  ],
+  "minGrade": "B"
  }
 }

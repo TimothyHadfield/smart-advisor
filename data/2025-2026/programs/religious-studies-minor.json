@@ -3,7 +3,7 @@
  "name": "Religious Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/religious-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -14,28 +14,32 @@
     "PHIL 1620",
     "ANTH 3450"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › PHIL 1610 Introduction to Western Religions | 3 or PHIL 1620 Introduction to Eastern Religions or ANTH 3450 Shamanism and Indigenous Religion"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RLST 3650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › RLST 3650 Approaches to Religious Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RLST 3660R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › RLST 3660R Issues in Religious Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHIL 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › PHIL 3600 Philosophy of Religion | 3"
   },
   {
    "type": "choice",
@@ -95,7 +99,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits of electives from the list below or as approved by advisor:"
+   "text": "Complete 9 credits of electives from the list below or as approved by advisor:",
+   "src": "Elective Requirements (9 credits) › Complete 9 credits of electives from the list below or as approved by advisor: | 9"
   }
  ],
  "gradPlan": [
@@ -176,42 +181,73 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3450": {
    "title": "Shamanism and Indigenous Religion",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3460": {
    "title": "Anthropology of Mormonism",
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3780": {
    "title": "Mormons Media and Culture",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3740G": {
    "title": "Literature of the Sacred",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3780": {
    "title": "Mormon Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 1610": {
    "title": "Introduction to Western Religions",
@@ -236,14 +272,24 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3610": {
    "title": "Introduction to Christian Theology",
    "credits": 3,
    "prereqText": "PHIL 1610 and University Advanced Standing",
    "prereqs": "PHIL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3650": {
    "title": "Approaches to Religious Studies",
@@ -256,7 +302,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3660R": {
    "title": "Issues in Religious Studies",
@@ -269,7 +320,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RLST 3650": {
    "title": "Approaches to Religious Studies",
@@ -282,7 +338,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RLST 3660R": {
    "title": "Issues in Religious Studies",
@@ -295,7 +356,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3400": {
    "title": "Sociology of Religion",
@@ -307,7 +373,18 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of 30 hours of credit Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

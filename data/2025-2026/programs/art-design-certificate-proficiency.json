@@ -3,7 +3,7 @@
  "name": "Design, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/art-design-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
@@ -22,35 +27,44 @@
    "alts": [
     "MATH 1050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "MAT 1030 Quantitative Reasoning | 3 or MATH 1050 College Algebra",
+   "creditsBy": {
+    "MAT 1030": 3,
+    "MATH 1050": 4
+   }
   },
   {
    "type": "course",
    "area": "",
    "code": "BIOL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "BIOL 1010 General Biology | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "BIOL 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "BIOL 1015 General Biology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "",
    "code": "ART 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ART 1120 2D Design | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "ART 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ART 1400 Graphic Computer Applications | 3"
   }
  ],
  "gradPlan": [
@@ -101,7 +115,10 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Entertainment Design or Art Education or Digital Media"
+   ]
   },
   "ART 1400": {
    "title": "Graphic Computer Applications",
@@ -132,7 +149,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -145,7 +165,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -157,7 +181,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   }
  }
 }

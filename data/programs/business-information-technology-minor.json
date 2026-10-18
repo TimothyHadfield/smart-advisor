@@ -3,7 +3,7 @@
  "name": "Business Information Technology, Minor",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/business-information-technology-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,56 +11,64 @@
    "area": "Discipline Core Requirements",
    "code": "IM 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › IM 2500 Graphic Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › IM 2600 Spreadsheet Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › IM 2800 Digital Business Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › INFO 2420 Web Application Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › IM 3500 Content Creation Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › IM 3600 Advanced Excel for Decision Making | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3020 Ethical Decision-Making in Organizations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3320G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3320G Cross Cultural Communications for International Business | 3"
   }
  ],
  "gradPlan": [
@@ -137,7 +145,13 @@
    "credits": 3,
    "prereqText": "University Advanced Standing. Basic Computer and online skills.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Basic Computer and online skills"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 3600": {
    "title": "Advanced Excel for Decision Making",
@@ -150,7 +164,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 2420": {
    "title": "Web Application Design",
@@ -163,7 +182,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -175,7 +199,17 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

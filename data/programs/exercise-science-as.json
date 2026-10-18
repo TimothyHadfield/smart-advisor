@@ -3,7 +3,7 @@
  "name": "Exercise Science, A.S.",
  "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/exercise-science-as/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -46,6 +52,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 4",
    "ge": "math"
   },
   {
@@ -90,6 +97,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:",
     "Distribution Courses: Biology"
@@ -101,7 +109,8 @@
    "area": "General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › BIOL 1610 College Biology I | 4"
   },
   {
    "type": "course",
@@ -110,7 +119,8 @@
    "alts": [
     "CHEM 1210"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › CHEM 1110 Elementary Chemistry for the Health Sciences | 4 or CHEM 1210 Principles of Chemistry I"
   },
   {
    "type": "placeholder",
@@ -119,7 +129,8 @@
    "credits": 3,
    "recommended": [
     "EXSC 1097"
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Personal, Professional, and Civic Growth | 3 (Note: EXSC 1097 recommended)"
   },
   {
    "type": "placeholder",
@@ -128,68 +139,78 @@
    "credits": 3,
    "recommended": [
     "PSY 1010"
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Humanities Distribution | 3 (Note: PSY 1010 recommended)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (15 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (15 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (15 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › EXSC 2500 Sports Medicine | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 2700G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › EXSC 2700G Foundations of Exercise Science | 3"
   },
   {
    "type": "choice",
@@ -205,9 +226,11 @@
       "CHEM 1215",
       "CHEM 1210"
      ],
-     "credits": 5
+     "credits": 5,
+     "fromText": true
     }
    ],
+   "src": "Elective Requirements (12 credits) › Any 1000-level course or higher | 12",
    "notes": [
     "Must include CHEM 1215 if taking CHEM 1210 for the Physical Science GE distribution"
    ]
@@ -399,7 +422,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -414,14 +441,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -434,7 +467,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EXSC 2500": {
    "title": "Sports Medicine",
@@ -476,7 +510,8 @@
     "EXSC 2700G",
     "PETE 2700",
     "REC 2200"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "EXSC 2700G": {
    "title": "Foundations of Exercise Science",
@@ -496,7 +531,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -524,7 +560,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -536,7 +573,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -582,7 +620,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",

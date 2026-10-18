@@ -3,7 +3,7 @@
  "name": "Applied Artificial Intelligence, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/applied-artificial-intelligence-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "INFO 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 1200 Computer Programming I for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
@@ -27,7 +29,8 @@
    "alts": [
     "MGMT 2340"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › STAT 1040 Introduction to Statistics | 3 or MGMT 2340 Business Statistics I"
   },
   {
    "type": "choice",
@@ -63,14 +66,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › INFO 2500 Applied Artificial Intelligence Concepts in Organizations | 3"
   },
   {
    "type": "choice",
@@ -100,7 +105,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 3 credits from the following courses:"
+   "text": "Choose 3 credits from the following courses:",
+   "src": "Elective Requirements (3 credits) › Choose 3 credits from the following courses: | 3"
   }
  ],
  "gradPlan": [
@@ -172,7 +178,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -200,7 +207,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -212,7 +220,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -224,7 +233,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 2000": {
    "title": "Algebraic Reasoning with Modeling",
@@ -236,7 +246,11 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -249,7 +263,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -262,7 +279,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

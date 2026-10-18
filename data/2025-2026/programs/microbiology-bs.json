@@ -3,7 +3,7 @@
  "name": "Microbiology, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/microbiology-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements:",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements: (33 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,6 +84,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements: (33 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -85,206 +97,236 @@
    "alts": [
     "BIOL 1610H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements: (33 credits) › BIOL 1610 College Biology I | 4 or BIOL 1610H College Biology I"
   },
   {
    "type": "course",
    "area": "General Education Requirements:",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements: (33 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Personal, Professional, and Civic Growth GE class",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › Personal, Professional, and Civic Growth GE class | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements:",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements: (33 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 1220 Principles of Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 1620 College Biology II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1625",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 1625 College Biology II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 3150",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › MICR 3150 Microbial Ecology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (56 credits) › MICR 3450 General Microbiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 3455",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › MICR 3455 General Microbiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 3550",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › MICR 3550 Microbial Physiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 3650",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › MICR 3650 Microbial Genetics | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 4700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (56 credits) › MICR 4700 Microbial Evolution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 4920R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 4920R Professional Development | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 4940",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 4940 Student Seminar | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 4970R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 4970R Biology Colloquium (0.5 cr, two required) | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 3600 Biological Chemistry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 3605",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › BIOL 3605 Biological Chemistry Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › PHYS 2010 College Physics I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › PHYS 2015 College Physics I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 1225 Principles of Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2310",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 2310 Organic Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2315",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 2315 Organic Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2320",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 2320 Organic Chemistry II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (56 credits) › CHEM 2325 Organic Chemistry II Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (56 credits) › MATH 1100 Survey of Calculus | 3"
   },
   {
    "type": "choice",
@@ -453,7 +495,8 @@
      "credits": 4
     }
    ],
-   "text": "Choose a minimum of 19 credits from: (Upper division courses are encouraged to meet upper division credit requirements)"
+   "text": "Choose a minimum of 19 credits from: (Upper division courses are encouraged to meet upper division credit requirements)",
+   "src": "Elective Requirements (31 credits) › Choose a minimum of 19 credits from: (Upper division courses are encouraged to meet upper division credit requirements) | 19"
   },
   {
    "type": "choice",
@@ -497,14 +540,16 @@
      "credits": 4
     }
    ],
-   "text": "Choose 6 credits from:"
+   "text": "Choose 6 credits from:",
+   "src": "Elective Requirements (31 credits) › Choose 6 credits from: | 6"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Choose 6 credits from BIOL, BOT, BTEC, ZOOL, or CHEM",
    "credits": 6,
-   "text": "Choose 6 credits from BIOL, BOT, BTEC, ZOOL, or CHEM"
+   "text": "Choose 6 credits from BIOL, BOT, BTEC, ZOOL, or CHEM",
+   "src": "Elective Requirements (31 credits) › Choose 6 credits from BIOL, BOT, BTEC, ZOOL, or CHEM | 6 (Note: Upper division is suggested to meet upper division requirements)"
   }
  ],
  "gradPlan": [
@@ -776,7 +821,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -791,7 +837,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3200": {
    "title": "Guided Research Experience",
@@ -825,7 +876,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3405": {
    "title": "Cell Biology Laboratory",
@@ -841,7 +898,13 @@
    "coreqText": "BIOL 3400",
    "coreqs": [
     "BIOL 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3550": {
    "title": "Molecular Biology",
@@ -859,7 +922,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3555": {
    "title": "Experiments in Molecular Biology",
@@ -871,7 +939,12 @@
    "precoreqs": "BIOL 3550",
    "preco": [
     "BIOL 3550"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3600": {
    "title": "Biological Chemistry",
@@ -883,7 +956,12 @@
    "precoreqs": "CHEM 2320",
    "preco": [
     "CHEM 2320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3605": {
    "title": "Biological Chemistry Lab",
@@ -894,20 +972,33 @@
    "coreqText": "BIOL 3600",
    "coreqs": [
     "BIOL 3600"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3690R": {
    "title": "Introduction to Undergraduate Research",
    "credits": 1,
    "prereqText": "BIOL 1610 ; ( MATH 1050 or STAT 2040 highly recommended) and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4300": {
    "title": "Bioinformatics and Genome Analysis",
    "credits": 4,
    "prereqText": "BIOL 3500 with a minimum grade C- and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4455": {
    "title": "Immunology Laboratory",
@@ -918,28 +1009,54 @@
    "coreqText": "BIOL 4450",
    "coreqs": [
     "BIOL 4450"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4550": {
    "title": "Molecular Evolution and Bioinformatics",
    "credits": 3,
    "prereqText": "BIOL 3500 with minimum grade of C-, and minimum of 6 additional credits upper division biology (BIOL, BOT, MICR, ZOOL, BTEC) courses, and University Advanced Standing",
    "prereqs": "BIOL 3500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "minimum of 6 additional credits upper division biology (BIOL",
+    "BOT",
+    "MICR",
+    "ZOOL",
+    "BTEC) courses",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4920R": {
    "title": "Professional Development",
    "credits": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4930R": {
    "title": "Biology Journal Club",
    "credits": 1,
    "prereqText": "( BIOL 1610 or BIOL 161H) and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4940": {
    "title": "Student Seminar",
@@ -951,7 +1068,14 @@
      "BIOL 1610H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "junior or senior standing",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4970R": {
    "title": "Biology Colloquium",
@@ -959,14 +1083,24 @@
    "creditsMax": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 3500": {
    "title": "Mycology",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4430": {
    "title": "Plant Pathology",
@@ -980,7 +1114,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BTEC 1010": {
    "title": "Fundamentals of Biotechnology I Career Survey",
@@ -997,26 +1137,30 @@
      "BIOL 1615"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "BTEC 2020": {
    "title": "Protein Purification and Analysis",
    "credits": 3,
    "prereqText": "BTEC 2010 with minimum grade of C",
-   "prereqs": "BTEC 2010"
+   "prereqs": "BTEC 2010",
+   "prereqMinGrade": "C"
   },
   "BTEC 2030": {
    "title": "Cell Culture Techniques",
    "credits": 2,
    "prereqText": "BIOL 1615 with a minimum grade of a \"C\"",
    "prereqs": "BIOL 1615",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "BTEC 2040": {
    "title": "Advanced Nucleic Acid Laboratory",
    "credits": 3,
    "prereqText": "BTEC 2010 with minimum grade of C",
-   "prereqs": "BTEC 2010"
+   "prereqs": "BTEC 2010",
+   "prereqMinGrade": "C"
   },
   "CHEM 1210": {
    "title": "Principles of Chemistry I",
@@ -1034,7 +1178,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -1052,7 +1200,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -1063,7 +1212,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -1073,7 +1223,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -1104,7 +1255,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -1121,14 +1273,24 @@
    "credits": 3,
    "prereqText": "CHEM 1225 and University Advanced Standing",
    "prereqs": "CHEM 1225",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 3025": {
    "title": "Environmental Chemistry Laboratory",
    "credits": 1,
    "prereqText": "CHEM 1225 and University Advanced Standing",
    "prereqs": "CHEM 1225",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -1142,7 +1304,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1155,7 +1320,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENVT 3270": {
    "title": "Environmental Microbiology",
@@ -1178,7 +1344,12 @@
    "precoreqs": "ENVT 3300",
    "preco": [
     "ENVT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1206,7 +1377,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1218,7 +1390,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1100": {
    "title": "Survey of Calculus",
@@ -1231,14 +1404,20 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MICR 3150": {
    "title": "Microbial Ecology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3200": {
    "title": "Emerging and Re Emerging Diseases and Zoonoses",
@@ -1251,7 +1430,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3450": {
    "title": "General Microbiology",
@@ -1268,7 +1453,13 @@
    "coreqText": "MICR 3455",
    "coreqs": [
     "MICR 3455"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3455": {
    "title": "General Microbiology Laboratory",
@@ -1279,21 +1470,33 @@
    "precoreqs": "MICR 3450",
    "preco": [
     "MICR 3450"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3550": {
    "title": "Microbial Physiology",
    "credits": 4,
    "prereqText": "MICR 3450 and University Advanced Standing",
    "prereqs": "MICR 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 3650": {
    "title": "Microbial Genetics",
    "credits": 4,
    "prereqText": "MICR 3450 and University Advanced Standing",
    "prereqs": "MICR 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4100": {
    "title": "Parasitology",
@@ -1305,7 +1508,13 @@
      "MICR 2060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4200": {
    "title": "Microbiomes",
@@ -1318,7 +1527,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4300": {
    "title": "Pathogenic Microbiology",
@@ -1331,7 +1545,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4450": {
    "title": "Immunology",
@@ -1344,7 +1563,12 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4500": {
    "title": "Virology",
@@ -1363,7 +1587,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4505": {
    "title": "Applied Virological Methods",
@@ -1376,7 +1605,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4600": {
    "title": "Arthropod-Borne Pathogens",
@@ -1393,14 +1627,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4700": {
    "title": "Microbial Evolution",
    "credits": 3,
    "prereqText": "MICR 3450 and University Advanced Standing",
    "prereqs": "MICR 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4890R": {
    "title": "Student Research",
@@ -1413,7 +1657,13 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "instructor permission",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MICR 4900R": {
    "title": "Special Topics in Microbiology",
@@ -1426,7 +1676,12 @@
      "BIOL 1610H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2010": {
    "title": "College Physics I",
@@ -1454,5 +1709,15 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "BIOL 1610 College Biology I or BIOL 1610H College Biology I with C- or higher and approval of Biology Department advisor.",
+  "before": [
+   "BIOL 1610",
+   "BIOL 1610H"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
  }
 }

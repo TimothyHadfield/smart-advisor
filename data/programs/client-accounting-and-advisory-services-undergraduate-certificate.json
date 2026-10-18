@@ -3,7 +3,7 @@
  "name": "Client Accounting and Advisory Services, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/business/accounting/client-accounting-and-advisory-services-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 12,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 2250 QuickBooks and Small Business Accounting | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 3250 Advanced QuickBooks and Industry Accounting | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 4250 Advisory and Controllership Practices | 3"
   }
  ],
  "gradPlan": [
@@ -102,14 +106,24 @@
    "credits": 3,
    "prereqText": "ACC 2250 and University Advanced Standing",
    "prereqs": "ACC 2250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4250": {
    "title": "Advisory and Controllership Practices",
    "credits": 3,
    "prereqText": "ACC 3250 and University Advanced Standing",
    "prereqs": "ACC 3250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

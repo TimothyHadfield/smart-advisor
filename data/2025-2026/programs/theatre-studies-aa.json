@@ -3,7 +3,7 @@
  "name": "Theatre Studies, A.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/theatrical-arts-stage-screen/theatre-studies-aa/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -46,6 +52,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -90,79 +97,91 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Distribution Courses: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution, filled by a level I foreign language course",
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (28 credits) › Distribution Courses: › Humanities Distribution, filled by a level I foreign language course | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth: Choose from Distribution List",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Distribution Courses: › Personal, Professional, and Civic Growth: Choose from Distribution List | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1013",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1013 Introduction to Theatre | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1033",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1033 Acting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1513",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1513 Stagecraft I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1514",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1514 Stagecraft I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1590R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1590R Production Practicum for Stage and Screen I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1713",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 1713 Script and Text Analysis I | 3"
   },
   {
    "type": "course",
@@ -171,42 +190,48 @@
    "alts": [
     "THEA 2741"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 2211 Theatre for Children and Youth | 3 or THEA 2741 Scriptwriting for Stage"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 2513",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 2513 Introduction to Design for Stage and Screen | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 2514",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › Complete the following: › THEA 2514 Introduction to Design for Stage and Screen Lab | 1"
   },
   {
    "type": "placeholder",
    "area": "Foreign Language Requirement",
    "label": "Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement",
    "credits": 4,
-   "text": "Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement"
+   "text": "Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement",
+   "src": "Foreign Language Requirement (4 credits) › Complete 4 credits in the same foreign language as the level I language course that meets the Humanities Distribution requirement | 4"
   },
   {
    "type": "placeholder",
    "area": "Theatre Elective",
    "label": "Complete 3 credits in any THEA course(s), 1000 level or higher",
    "credits": 3,
-   "text": "Complete 3 credits in any THEA course(s), 1000 level or higher"
+   "text": "Complete 3 credits in any THEA course(s), 1000 level or higher",
+   "src": "Theatre Elective (3 credits) › Complete 3 credits in any THEA course(s), 1000 level or higher | 3"
   },
   {
    "type": "placeholder",
    "area": "Free Elective",
    "label": "Complete 5 credits in any course(s), 1000 level or higher",
    "credits": 5,
-   "text": "Complete 5 credits in any course(s), 1000 level or higher"
+   "text": "Complete 5 credits in any course(s), 1000 level or higher",
+   "src": "Free Elective (5 credits) › Complete 5 credits in any course(s), 1000 level or higher | 5"
   }
  ],
  "gradPlan": [
@@ -345,7 +370,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -358,7 +386,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -387,7 +416,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -399,7 +432,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "POLS 1000": {
    "title": "American Heritage",

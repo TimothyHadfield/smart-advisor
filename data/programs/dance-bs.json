@@ -3,7 +3,7 @@
  "name": "Dance, B.S.",
  "url": "https://catalog.uvu.edu/arts/dance/dance-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requiremensts",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -44,7 +50,8 @@
      "credits": 6
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "General Education Requiremensts (27 credits) › Choose one of the following: | 3"
   },
   {
    "type": "choice",
@@ -88,6 +95,7 @@
     }
    ],
    "text": "Choose one of the following:",
+   "src": "General Education Requiremensts (27 credits) › Choose one of the following: | 3",
    "notes": [
     "Distribution Courses"
    ]
@@ -96,36 +104,41 @@
    "type": "placeholder",
    "area": "General Education Requiremensts",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requiremensts",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requiremensts",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requiremensts",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requiremensts",
    "label": "Personal, Professional, & Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requiremensts (27 credits) › Personal, Professional, & Civic Growth | 3"
   },
   {
    "type": "choice",
    "area": "Discipline Core Requirements",
-   "label": "Complete 3 credits from the following:",
+   "label": "Complete 6 credits from the following courses:",
    "pick": {
     "credits": 6
    },
@@ -168,56 +181,64 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits from the following courses:"
+   "text": "Complete 6 credits from the following courses:",
+   "src": "Discipline Core Requirements (24 credits) › Complete 6 credits from the following courses: | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 2110 Orientation to Dance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 1610R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 1610R Dance Conditioning | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 2560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 2560G  | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3630",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 3630 Dance as a Cultural Practice II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 3680",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 3680 Dance Kinesiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 4350 Senior Capstone I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DANC 4360",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DANC 4360 Senior Capstone II | 2"
   },
   {
    "type": "choice",
@@ -311,35 +332,40 @@
       "DANC 2760R"
      ],
      "credits": 1,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "sub": 0
     },
     {
      "codes": [
       "DANC 3760R"
      ],
      "credits": 2,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "sub": 0
     },
     {
      "codes": [
       "DANC 4760R"
      ],
      "credits": 3,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "sub": 0
     },
     {
      "codes": [
       "DANC 2330"
      ],
      "credits": 1,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 2340"
      ],
      "credits": 2,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
@@ -349,49 +375,56 @@
      "alts": [
       "DANC 2670"
      ],
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 3140"
      ],
      "credits": 2,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 3750"
      ],
      "credits": 2,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 3850"
      ],
      "credits": 2,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 4880"
      ],
      "credits": 3,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Ballroom Dance Track"
+     "section": "Ballroom Dance Track",
+     "recommended": true
     },
     {
      "codes": [
@@ -467,21 +500,24 @@
       "DANC 3600R"
      ],
      "credits": 3,
-     "section": "Commercial Dance Track"
+     "section": "Commercial Dance Track",
+     "sub": 2
     },
     {
      "codes": [
       "DANC 3460R"
      ],
      "credits": 3,
-     "section": "Commercial Dance Track"
+     "section": "Commercial Dance Track",
+     "sub": 2
     },
     {
      "codes": [
       "DANC 3800R"
      ],
      "credits": 2,
-     "section": "Commercial Dance Track"
+     "section": "Commercial Dance Track",
+     "sub": 2
     },
     {
      "codes": [
@@ -489,7 +525,8 @@
      ],
      "credits": 1,
      "crMax": 3,
-     "section": "Commercial Dance Track"
+     "section": "Commercial Dance Track",
+     "sub": 2
     },
     {
      "codes": [
@@ -499,28 +536,32 @@
      "alts": [
       "DANC 2670"
      ],
-     "section": "Commercial Dance Track DANC Electives"
+     "section": "Commercial Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "DANC 4880"
      ],
      "credits": 3,
-     "section": "Commercial Dance Track DANC Electives"
+     "section": "Commercial Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Commercial Dance Track DANC Electives"
+     "section": "Commercial Dance Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Commercial Dance Track DANC Electives"
+     "section": "Commercial Dance Track",
+     "recommended": true
     },
     {
      "codes": [
@@ -604,58 +645,59 @@
       "DANC 3140"
      ],
      "credits": 2,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1055"
      ],
      "credits": 1,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "HLSC 1057"
      ],
      "credits": 1,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "PSY 1100"
      ],
      "credits": 3,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "PSY 1250"
      ],
      "credits": 3,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "PSY 4300"
      ],
      "credits": 3,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     },
     {
      "codes": [
       "PSY 4400"
      ],
      "credits": 3,
-     "section": "Pre-Dance Therapy Electives",
-     "shared": true
+     "section": "Pre-Dance Therapy Track",
+     "recommended": true
     }
    ],
+   "src": "BS Dance Tracks (49 credits) › Complete the requirements from one of the following tracks | 49",
    "notes": [
     "Ballroom Dance Track",
     "Ballroom Dance Track: Complete the following courses:",
@@ -667,20 +709,65 @@
     "Commercial Dance Track: Complete 6 credits from the following courses:",
     "Commercial Dance Track: Other Department Approved Performing Company",
     "Commercial Dance Track: Commercial Dance Track DANC Electives",
-    "Commercial Dance Track DANC Electives: Complete 31 credits from any DANC or other Department approved course:",
-    "Commercial Dance Track DANC Electives: Strongly Recommended:",
-    "Commercial Dance Track DANC Electives: Pre-Dance Therapy Track",
+    "Commercial Dance Track: Complete 31 credits from any DANC or other Department approved course:",
+    "Commercial Dance Track: Strongly Recommended:",
+    "Commercial Dance Track: Pre-Dance Therapy Track",
     "Pre-Dance Therapy Track: Complete the following courses:",
     "Pre-Dance Therapy Track: Pre-Dance Therapy Electives",
-    "Pre-Dance Therapy Electives: Complete 25 credits from any DANC, HLSC, or PSY course",
-    "Pre-Dance Therapy Electives: Strongly Recommended:"
+    "Pre-Dance Therapy Track: Complete 25 credits from any DANC, HLSC, or PSY course",
+    "Pre-Dance Therapy Track: Strongly Recommended:"
    ],
    "open": true,
    "tracks": [
     "Ballroom Dance Track",
     "Commercial Dance Track",
-    "Commercial Dance Track DANC Electives",
     "Pre-Dance Therapy Track"
+   ],
+   "subs": [
+    {
+     "section": "Ballroom Dance Track",
+     "label": "Complete 6 credits total from the following courses",
+     "pick": {
+      "credits": 6
+     },
+     "credits": 6
+    },
+    {
+     "section": "Ballroom Dance Track",
+     "label": "Complete 26 credits from any DANC or other Department approved course",
+     "pick": {
+      "credits": 26
+     },
+     "open": true,
+     "credits": 26
+    },
+    {
+     "section": "Commercial Dance Track",
+     "label": "Complete 6 credits from the following courses",
+     "pick": {
+      "credits": 6
+     },
+     "open": true,
+     "credits": 6
+    },
+    {
+     "section": "Commercial Dance Track",
+     "label": "Complete 31 credits from any DANC or other Department approved course",
+     "pick": {
+      "credits": 31
+     },
+     "open": true,
+     "credits": 31
+    },
+    {
+     "section": "Pre-Dance Therapy Track",
+     "label": "Complete 25 credits from any DANC, HLSC, or PSY course",
+     "pick": {
+      "credits": 25
+     },
+     "open": true,
+     "credits": 25
+    }
    ]
   },
   {
@@ -688,7 +775,8 @@
    "area": "Free Electives",
    "label": "All Tracks complete 20 credits from any course 1000 or higher (students must complete a minimum of 40 upper-division credits)",
    "credits": 20,
-   "text": "All Tracks complete 20 credits from any course 1000 or higher (students must complete a minimum of 40 upper-division credits)"
+   "text": "All Tracks complete 20 credits from any course 1000 or higher (students must complete a minimum of 40 upper-division credits)",
+   "src": "Free Electives (20 credits) › All Tracks complete 20 credits from any course 1000 or higher (students must complete a minimum of 40 upper-division credits) | 20"
   }
  ],
  "gradPlan": [
@@ -763,7 +851,7 @@
      "text": "Biology Distribution"
     },
     {
-     "label": "Complete 3 credits from the following:",
+     "label": "Complete 6 credits from the following courses:",
      "credits": 3,
      "alts": [
       "DANC 1100R",
@@ -788,7 +876,8 @@
       [
        "DANC 1430R"
       ]
-     ]
+     ],
+     "text": "Complete 3 credits from the following:"
     },
     {
      "label": "Choose 1 track",
@@ -805,7 +894,7 @@
    "label": "Semester 4",
    "items": [
     {
-     "label": "Complete 3 credits from the following:",
+     "label": "Complete 6 credits from the following courses:",
      "credits": 3,
      "alts": [
       "DANC 1100R",
@@ -830,7 +919,8 @@
       [
        "DANC 1440R"
       ]
-     ]
+     ],
+     "text": "Complete 3 credits from the following:"
     },
     {
      "code": "DANC 2560G",
@@ -943,7 +1033,10 @@
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 1440R": {
    "title": "Modern/Contemporary Dance Technique and Theory I/Semester II",
@@ -1007,35 +1100,49 @@
    "credits": 2,
    "prereqText": "DANC 2650R or Matriculation in BS Dance Education Program",
    "prereqs": "DANC 2650R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "admission",
+   "gateText": "DANC 2650R or Matriculation in BS Dance Education Program"
   },
   "DANC 2700R": {
    "title": "American Social Dance II",
    "credits": 1,
    "prereqText": "Beginning-level Social Dance experience or Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Beginning-level Social Dance experience or Instructor Approval"
+   ]
   },
   "DANC 2710R": {
    "title": "International Ballroom Dance II",
    "credits": 1,
    "prereqText": "Beginning-level International Style Ballroom Dance experience or Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Beginning-level International Style Ballroom Dance experience or Instructor Approval"
+   ]
   },
   "DANC 2720R": {
    "title": "International Style Latin Ballroom Dance II",
    "credits": 1,
    "prereqText": "Beginning International Style Latin Dance experience or Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Beginning International Style Latin Dance experience or Instructor Approval"
+   ]
   },
   "DANC 2760R": {
    "title": "Ballroom Dance Company Back Up Team",
    "credits": 1,
    "prereqText": "By audition only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "By audition only"
+   ]
   },
   "DANC 2850": {
    "title": "Introduction to Dance/Movement Therapy",
@@ -1046,21 +1153,36 @@
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3160": {
    "title": "Dance Accompaniment",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3400": {
    "title": "Dance in the Elementary School",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3460R": {
    "title": "Synergy Dance Company",
@@ -1078,6 +1200,9 @@
     "DANC 3420R",
     "DANC 4410R",
     "DANC 4420R"
+   ],
+   "prereqWords": [
+    "Audition required"
    ]
   },
   "DANC 3480R": {
@@ -1086,14 +1211,23 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing and Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Department Approval"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3600R": {
    "title": "Esprit d c",
    "credits": 3,
    "prereqText": "Audition required",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition required"
+   ]
   },
   "DANC 3630": {
    "title": "Dance as a Cultural Practice II",
@@ -1106,7 +1240,12 @@
      "DANC 2630G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3650R": {
    "title": "Somatic Practices",
@@ -1118,35 +1257,54 @@
      "DANC 2670"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3680": {
    "title": "Dance Kinesiology",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3700R": {
    "title": "American Social Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3710R": {
    "title": "International Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3720R": {
    "title": "Latin Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3740": {
    "title": "Ballroom Dance Choreography",
@@ -1159,28 +1317,45 @@
      "DANC 2720R"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 3760R": {
    "title": "Ballroom Dance Ensemble",
    "credits": 2,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 3800R": {
    "title": "Capstone Performance Ensemble",
    "credits": 2,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 3850": {
    "title": "Arts Management for Dance",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4350": {
    "title": "Senior Capstone I",
@@ -1192,7 +1367,12 @@
      "DANC 3680"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4360": {
    "title": "Senior Capstone II",
@@ -1204,49 +1384,75 @@
      "DANC 4350"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4710R": {
    "title": "International Ballroom Dance IV",
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 4720R": {
    "title": "Latin Ballroom Dance IV",
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 4740": {
    "title": "Ballroom Dance Teaching Methods and Theory",
    "credits": 3,
    "prereqText": "Intermediate-level ballroom dance experience, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Intermediate-level ballroom dance experience",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DANC 4760R": {
    "title": "Ballroom Dance Company Tour Team",
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1259,7 +1465,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1296,7 +1503,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1308,7 +1519,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1341,7 +1556,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 2300": {
    "title": "Abnormal Psychology",
@@ -1358,7 +1574,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 4300": {
    "title": "Introduction to Counseling and Psychotherapy",
@@ -1376,7 +1593,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 4400": {
    "title": "Introduction to Group Psychotherapy",
@@ -1394,7 +1617,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "missingCourses": [
@@ -1406,5 +1635,12 @@
  ],
  "typos": [
   "ENGH 1005 -> ENGL 1005"
- ]
+ ],
+ "admissionInfo": {
+  "text": ": 1. Pass performance audition with Dance faculty.",
+  "before": [],
+  "gated": [
+   "DANC 2670"
+  ]
+ }
 }

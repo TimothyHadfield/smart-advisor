@@ -3,7 +3,7 @@
  "name": "Master of Education in K-12 Education Leadership, M.Ed.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/education-k-12-leadership-med/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,70 +11,80 @@
    "area": "Discipline Core Requirements",
    "code": "EDLE 6120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6120 Personal Leadership and Organizational Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6490",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6490 Masters Project | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6130 School Operations and Management-Finance/Law/Safety | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6140 Instructional Leadership | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6150 School Operations and Management-Communication/Planning/HR/Evaluation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6160 Developing Positive School and Community Culture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6170 Leading Change/Innovation/Educational Entrepreneurship | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDLE 6960R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDLE 6960R Clinical Portfolio | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6110 Applied Statistics for Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6100 Research Methodology | 3"
   }
  ],
  "gradPlan": [
@@ -153,42 +163,81 @@
    "credits": 3,
    "prereqText": "Admission to Master of Education in K-12 Education Leadership or Graduate Certificate leading to USBE K-12 Education Leadership License Area of Concentration, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master of Education in K-12 Education Leadership or Graduate Certificate leading to USBE K-12 Education Leadership License Area of Concentration",
+    "permission of the graduate program director"
+   ]
   },
   "EDLE 6130": {
    "title": "School Operations and Management-Finance/Law/Safety",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6140": {
    "title": "Instructional Leadership",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6150": {
    "title": "School Operations and Management-Communication/Planning/HR/Evaluation",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6160": {
    "title": "Developing Positive School and Community Culture",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6170": {
    "title": "Leading Change/Innovation/Educational Entrepreneurship",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDLE 6960R": {
    "title": "Clinical Portfolio",
@@ -196,21 +245,42 @@
    "creditsMax": 3,
    "prereqText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in K-12 Education Leadership program",
+    "the Graduate Certificate in Educational Leadership program",
+    "permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in K-12 Education Leadership program, the Graduate Certificate in Educational Leadership program, or permission of the graduate program director"
   },
   "EDUC 6100": {
    "title": "Research Methodology",
    "credits": 3,
    "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M"
   },
   "EDUC 6110": {
    "title": "Applied Statistics for Education",
    "credits": 3,
    "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M"
   },
   "EDUC 6490": {
    "title": "Masters Project",
@@ -218,5 +288,20 @@
   }
  },
  "admission": true,
- "admissionNote": "Application for admission to the graduate program with application fee by the established deadline."
+ "admissionNote": "Application for admission to the graduate program with application fee by the established deadline.",
+ "admissionInfo": {
+  "note": "Application for admission to the graduate program with application fee by the established deadline.",
+  "text": "1. Application for admission to the graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor’s degree from a regionally accredited college/university or the international equivalent. 4. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) or undergraduate work. 5. Letter of recommendation from supervising administrator. 6. For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score or 80 iBT (550 pBT) or higher, or an IELTS band score or 6.5 or higher within the past two years is required. 7. International students must also meet all US government requirements for international students. 8. Interview with graduate program committee. 9. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "before": [],
+  "gated": [
+   "EDLE 6130",
+   "EDLE 6140",
+   "EDLE 6150",
+   "EDLE 6160",
+   "EDLE 6170",
+   "EDLE 6960R",
+   "EDUC 6100",
+   "EDUC 6110"
+  ]
+ }
 }

@@ -3,7 +3,7 @@
  "name": "Spanish, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/spanish-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "SPAN 3050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › SPAN 3040 Spanish Conversation and Composition II | 3 or SPAN 3050 Advanced Spanish"
   },
   {
    "type": "course",
@@ -22,21 +23,24 @@
    "alts": [
     "SPAN 3520G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › SPAN 3510G Culture and Civilization--Spain | 3 or SPAN 3520G Culture and Civilization--Spanish America"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SPAN 4050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › SPAN 4050 Topics in Grammar Usage and Style | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 9 credits from any upper-division SPAN or LANG courses not previously taken.",
    "credits": 9,
-   "text": "Complete 9 credits from any upper-division SPAN or LANG courses not previously taken."
+   "text": "Complete 9 credits from any upper-division SPAN or LANG courses not previously taken.",
+   "src": "Discipline Core Requirements (18 credits) › Complete 9 credits from any upper-division SPAN or LANG courses not previously taken. | 9"
   }
  ],
  "gradPlan": [
@@ -97,7 +101,12 @@
    "credits": 3,
    "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3050": {
    "title": "Advanced Spanish",
@@ -110,7 +119,12 @@
    "credits": 3,
    "prereqText": "( SPAN 3050 or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3520G": {
    "title": "Culture and Civilization--Spanish America",
@@ -128,7 +142,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4050": {
    "title": "Topics in Grammar Usage and Style",
@@ -146,7 +165,23 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete ENGL 2010 Intermediate Academic Writing and 30 hours of college-level courses other than Spanish with a minimum GPA of 2.0 Complete lower division Spanish courses (1010, 1020, 2010, and 202G) or receive the equivalent through experiential credit (does not apply to native speakers). Admitted to a bachelor degree program at UVU.",
+  "before": [
+   "ENGL 2010",
+   "ENGL 1010",
+   "ENGL 1020"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

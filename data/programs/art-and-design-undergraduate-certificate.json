@@ -3,7 +3,7 @@
  "name": "Art and Design, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/arts/art-design/art-and-design-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "ART 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1120 2D Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1130 3D Design | 3"
   },
   {
    "type": "choice",
@@ -69,7 +71,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees):"
+   "text": "Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees):",
+   "src": "Discipline Core Requirements (18 credits) › Complete 9 credits from the following list (please note: ART 1110 is required for Painting/Drawing BFA degrees, ART 1400 is required for Graphic Design and Illustration BFA degrees, ART 1750 is required for Photography BFA degrees): | 9"
   },
   {
    "type": "course",
@@ -78,13 +81,15 @@
    "alts": [
     "ARTH 2720G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ARTH 2710 Prehistoric Through Gothic Art History | 3 or ARTH 2720G Renaissance Through Contemporary Art History"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any ART course not already taken (See Department Advisor).",
-   "credits": 12
+   "credits": 12,
+   "src": "Elective Requirements (12 credits) › Any ART course not already taken (See Department Advisor). | 12"
   }
  ],
  "gradPlan": [
@@ -157,14 +162,20 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ART 1120": {
    "title": "2D Design",
    "credits": 3,
    "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Entertainment Design or Art Education or Digital Media"
+   ]
   },
   "ART 1130": {
    "title": "3D Design",
@@ -210,7 +221,10 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ARTH 2710": {
    "title": "Prehistoric Through Gothic Art History",

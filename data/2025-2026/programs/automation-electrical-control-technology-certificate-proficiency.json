@@ -3,7 +3,7 @@
  "name": "Automation and Electrical Control Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/transportation-technologies/automation-electrical-control-technology-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 14,
  "requirements": [
   {
@@ -11,56 +11,64 @@
    "area": "Discipline Core Requirements",
    "code": "ENGL 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (14 credits) › ENGL 1010 Introduction to Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (14 credits) › AET 1050 Electrical Math I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1130",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (14 credits) › AET 1130 Introduction to Automation | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1135",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (14 credits) › AET 1135 Introduction to Automation Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (14 credits) › AET 1140 Applied AC Theory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1145",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (14 credits) › AET 1145 Applied AC Lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1150",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (14 credits) › AET 1150 Industrial Logic | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AET 1155",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (14 credits) › AET 1155 Industrial Logic Lab | 1"
   }
  ],
  "gradPlan": [
@@ -227,7 +235,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   }
  }
 }

@@ -3,7 +3,7 @@
  "name": "Clinical Mental Health Counseling, M.S.",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/psychology-and-counseling/clinical-mental-health-counseling-ms/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -11,133 +11,152 @@
    "area": "",
    "code": "CMHC 6000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6000 ACA Ethics and Professional Orientation | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6010 Theories of Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6020 Techniques of Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6160 Lifespan Development in Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6130 Multicultural Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6100 Crisis and Trauma Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6060 Psychological Assessment in Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6070",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6070 Group Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6030 Diagnosis in Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6710R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6710R Counseling Practicum (May need to be repeated until clinical hours are fulfilled.) | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6050 Career Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6110 Research and Program Evaluation | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6120 Counseling Strategies for Substance and Behavioral Addictions | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6090",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6090 Foundations of Psychopharmacology and Integrated Care for Counselors | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6163",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6163 Couples and Family Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6162",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6162 Counseling Children and Adolescents | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6150 Cognitive Therapies | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6081",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "CMHC 6081 Current Trends in Clinical Counseling | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "CMHC 6890R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "CMHC 6890R Counseling Internship (May need to be repeated until clinical hours are fulfilled.) | 6"
   }
  ],
  "gradPlan": [
@@ -253,42 +272,67 @@
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6010": {
    "title": "Theories of Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program or Master of Education in School Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program or Master of Education in School Counseling",
+    "program"
+   ]
   },
   "CMHC 6020": {
    "title": "Techniques of Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6030": {
    "title": "Diagnosis in Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6050": {
    "title": "Career Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6060": {
    "title": "Psychological Assessment in Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6070": {
    "title": "Group Counseling",
@@ -301,49 +345,79 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program or Master of Education in School Counseling",
+    "program"
+   ]
   },
   "CMHC 6081": {
    "title": "Current Trends in Clinical Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6090": {
    "title": "Foundations of Psychopharmacology and Integrated Care for Counselors",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6100": {
    "title": "Crisis and Trauma Counseling",
    "credits": 3,
    "prereqText": "Admission to the CMHC Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the CMHC Program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the CMHC Program"
   },
   "CMHC 6110": {
    "title": "Research and Program Evaluation",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6120": {
    "title": "Counseling Strategies for Substance and Behavioral Addictions",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6130": {
    "title": "Multicultural Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6150": {
    "title": "Cognitive Therapies",
@@ -357,28 +431,45 @@
      "CMHC 6030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6160": {
    "title": "Lifespan Development in Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6162": {
    "title": "Counseling Children and Adolescents",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6163": {
    "title": "Couples and Family Counseling",
    "credits": 3,
    "prereqText": "Admission to the CMHC program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the CMHC program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the CMHC program"
   },
   "CMHC 6710R": {
    "title": "Counseling Practicum",
@@ -392,7 +483,11 @@
      "CMHC 6030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6890R": {
    "title": "Counseling Internship",
@@ -400,9 +495,29 @@
    "creditsMax": 3,
    "prereqText": "CMHC 6710R and Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": "CMHC 6710R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "1. Application for admission to graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor's degree from a regionally accredited college or university, a nationally accredited program, or an international college or university recognized by a ministry of education. 4. A minimum 3.0 cumulative GPA on a 4.0 scale. 5. The bachelor’s degree can be in any discipline, provided the student meets the prerequisite coursework which includes: Abnormal Psychology Research Methods Statistics 6. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. 7. For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score of 79 iBT (550 pBT) or higher, or an IELTS band score of 6.0 or higher within the past two years is required. Complete the UVU Graduate School Application. Personal Interview All candidates will be screened and those deemed to meet or exceed basic application requirements may be invited for an interview. This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort. Three total letters of recommendation from academic and professional sources.",
+  "before": [
+   "CMHC 6000",
+   "CMHC 6010",
+   "CMHC 6020",
+   "CMHC 6030",
+   "CMHC 6130"
+  ],
+  "gated": [
+   "CMHC 6100",
+   "CMHC 6163"
+  ],
+  "beforeFrom": "graduation plan"
+ }
 }

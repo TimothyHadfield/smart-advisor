@@ -3,7 +3,7 @@
  "name": "Social Work, B.S.W.",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/social-work-bsw/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete One of the Following",
+   "src": "General Education Requirements (30 credits) › Complete One of the Following | 3",
    "ge": "math"
   },
   {
@@ -119,6 +126,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -128,149 +136,185 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Behavioral/Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Behavioral/Social Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PSY 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › PSY 1010 General Psychology (Social/Behavioral Sciences) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 4020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 4020 Statistics for Social Work | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 2200 Professional Skills for Social Work Majors | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 1010 Introduction to Social Work | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 2100 Human Behavior and the Social Environment I | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3000 Social Work Practice I Individuals | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3100 Social Work Practice II Groups | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3120 Social Work Practice III Families | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3200 Social Work Practice IV Macro | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3400 Human Behavior and the Social Environment II | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3500 Social Welfare Policies and Services | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Students must be formally admitted into the BSW program before they can register for this course",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3600 Ethics and Values in Social Work Practice | 3 (Note: Students must be formally admitted into the BSW program before they can register for this course.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3710G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3710G Diversity Issues in Social Work Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 4820",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 4820 Field I Practicum | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 4830",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 4830 Field II Practicum | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SW 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › SW 3020 Research Methods for Social Work | 3"
   },
   {
    "type": "choice",
@@ -344,13 +388,15 @@
      "crMax": 3
     }
    ],
-   "text": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:"
+   "text": "Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses:",
+   "src": "Discipline Core Requirements (66 credits) › Social Work Core - Complete the following courses: › Social Work Electives - Complete 12 credits of approved social work electives. Choose from the following courses: | 12"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 24 additional credits of any courses 1000 to 4000 level.",
-   "credits": 24
+   "credits": 24,
+   "src": "Elective Requirements (24 credits) › Complete 24 additional credits of any courses 1000 to 4000 level. | 24 (Note: Students must take at least two WE courses)"
   }
  ],
  "gradPlan": [
@@ -565,14 +611,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -585,7 +637,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -614,7 +667,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -626,7 +683,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -638,7 +699,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -650,7 +712,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -662,7 +725,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -691,14 +755,20 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "SOC 4020": {
    "title": "Survey Research Design in the Social Sciences",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -711,7 +781,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -724,7 +799,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "SW 1010": {
    "title": "Introduction to Social Work",
@@ -735,42 +815,76 @@
    "credits": 3,
    "prereqText": "Admission into the BSW program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program"
   },
   "SW 2200": {
    "title": "Professional Skills for Social Work Majors",
    "credits": 3,
    "prereqText": "Admission to the BSW program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program"
   },
   "SW 3000": {
    "title": "Social Work Practice I Individuals",
    "credits": 3,
    "prereqText": "Admission to the BSW program or declared major in Family Science and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program or declared major in Family Science",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program or declared major in Family Science and University Advanced Standing"
   },
   "SW 3020": {
    "title": "Research Methods for Social Work",
    "credits": 3,
    "prereqText": "Admission to the BSW program; University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program"
   },
   "SW 3100": {
    "title": "Social Work Practice II Groups",
    "credits": 3,
    "prereqText": "SW 3000 , Admission to the BSW program, and University Advanced Standing",
    "prereqs": "SW 3000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program"
   },
   "SW 3120": {
    "title": "Social Work Practice III Families",
    "credits": 3,
    "prereqText": "Admission to the BSW program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program and University Advanced Standing"
   },
   "SW 3200": {
    "title": "Social Work Practice IV Macro",
@@ -786,21 +900,39 @@
    "coreqText": "SW 4830",
    "coreqs": [
     "SW 4830"
-   ]
+   ],
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program"
   },
   "SW 3400": {
    "title": "Human Behavior and the Social Environment II",
    "credits": 3,
    "prereqText": "SW 2100 , Admission into the BSW program, and University Advanced Standing",
    "prereqs": "SW 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program"
   },
   "SW 3500": {
    "title": "Social Welfare Policies and Services",
    "credits": 3,
    "prereqText": "Admission into the BSW program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program and University Advanced Standing"
   },
   "SW 3510G": {
    "title": "Global Social Work",
@@ -812,41 +944,73 @@
      "SW 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 3600": {
    "title": "Ethics and Values in Social Work Practice",
    "credits": 3,
    "prereqText": "Admission into the BSW program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program and University Advanced Standing"
   },
   "SW 3710G": {
    "title": "Diversity Issues in Social Work Practice",
    "credits": 3,
    "prereqText": "Admission into the BSW program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program and University Advanced Standing"
   },
   "SW 3750": {
    "title": "Child Abuse Neglect and Domestic Violence",
    "credits": 3,
    "prereqText": "SW 1010 and University Advanced Standing",
    "prereqs": "SW 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 3860": {
    "title": "Interviewing Skills",
    "credits": 3,
    "prereqText": "ENGL 2010 with C+ or better and University Advanced Standing; PSY 2300 with a C- grade or higher recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4020": {
    "title": "Statistics for Social Work",
    "credits": 3,
    "prereqText": "SW 3020 ; Admission to the BSW Program; University Advanced Standing",
    "prereqs": "SW 3020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW Program"
   },
   "SW 4500": {
    "title": "Crisis Intervention",
@@ -859,14 +1023,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4700": {
    "title": "Case Management in Social Work Practice",
    "credits": 3,
    "prereqText": "SW 1010 and University Advanced Standing",
    "prereqs": "SW 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4750R": {
    "title": "Current Topics in Social Work",
@@ -878,7 +1053,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4820": {
    "title": "Field I Practicum",
@@ -893,7 +1073,13 @@
      "SW 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program"
   },
   "SW 4830": {
    "title": "Field II Practicum",
@@ -904,7 +1090,12 @@
    "coreqText": "SW 3200",
    "coreqs": [
     "SW 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "SW 4820 Admission to the BSW program"
   },
   "SW 4890R": {
    "title": "Advanced Research in Social Work",
@@ -917,7 +1108,14 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Instructor approval"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4900R": {
    "title": "Independent Studies",
@@ -925,9 +1123,44 @@
    "creditsMax": 3,
    "prereqText": "Instructor approval and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "admission": true,
- "admissionNote": "Admission to the BSW program includes the following requirements: ."
+ "admissionNote": "Admission to the BSW program includes the following requirements: .",
+ "admissionInfo": {
+  "note": "Admission to the BSW program includes the following requirements: .",
+  "text": "Admission to the BSW program includes the following requirements: Completion of all general education courses. Completion of SW 1010 Introduction to Social Work and PSY 1010 General Psychology with a B- grade or higher. Completion of ENGL 1010 Introduction to Academic Writing or ENGL 1005 Foundations of Academic Writing and ENGL 2010 Intermediate Academic Writing with a C+ grade or higher. Overall GPA of 2.5 or higher. Approval of the Social Work Admissions Committee.",
+  "before": [
+   "SW 1010",
+   "PSY 1010",
+   "ENGL 1010",
+   "ENGL 1005",
+   "ENGL 2010"
+  ],
+  "gated": [
+   "SW 2100",
+   "SW 2200",
+   "SW 3000",
+   "SW 3020",
+   "SW 3100",
+   "SW 3120",
+   "SW 3200",
+   "SW 3400",
+   "SW 3500",
+   "SW 3600",
+   "SW 3710G",
+   "SW 4020",
+   "SW 4820",
+   "SW 4830"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "B-"
+ }
 }

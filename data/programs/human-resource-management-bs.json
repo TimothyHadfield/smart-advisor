@@ -3,7 +3,7 @@
  "name": "Human Resource Management, B.S.",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/human-resource-management-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
    ],
@@ -99,6 +106,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -108,37 +116,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
    "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3",
    "notes": [
     "Discipline Core Requirements"
    ]
@@ -156,16 +170,25 @@
      "codes": [
       "IM 2010"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete My Educator with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications course with a grade of B- or higher."
+     ]
     },
     {
      "codes": [
       "IM 2600"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete My Educator with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications course with a grade of B- or higher."
+     ]
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Courses: (21 credits) › Complete one of the following:",
    "notes": [
     "My Educator"
    ],
@@ -176,7 +199,8 @@
    "area": "Matriculation Courses:",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
@@ -185,56 +209,65 @@
    "alts": [
     "MATH 1100"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › MGMT 2240 Business Quantitative Analysis | 3 or MATH 1100 Survey of Calculus"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Matriculation Courses: (21 credits) › MKTG 2200G Written Business Communication (Complete with B- grade or higher) | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: (21 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements:",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements:",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
@@ -246,28 +279,32 @@
     "ECON 3050G",
     "MKTG 3350G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › HR 4700G International Human Resource Management | 3 or MGMT 3300G Survey of International Business or MGMT 3320G Cross Cultural Communications for International Business or ECON 3050G International Economics or MKTG 3350G International Marketing"
   },
   {
    "type": "course",
    "area": "Business Core Requirements:",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › MGMT 3450 Operations Management | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements:",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements:",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements: (19 credits) › MGMT 4860 Business Strategy Formulation and Implementation | 3"
   },
   {
    "type": "course",
@@ -276,70 +313,80 @@
    "alts": [
     "ENTR 2930R"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Business Core Requirements: (19 credits) › MGMT 2950R Executive Lecture Series | 1 or ENTR 2930R Entrepreneurship Lecture Series"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 3430 Introduction to Human Resource Management | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 3530 Employment and Labor Law | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 3570",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 3570 Training and Development | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 4000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 4000 Total Rewards | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 4050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 4050 Human Resource Information Systems | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 4060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 4060 HR Analytics | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 4610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 4610 Talent Acquisition | 3"
   },
   {
    "type": "course",
    "area": "Human Resource Management Core Requirements:",
    "code": "HR 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Human Resource Management Core Requirements: (50 credits) › HR 4800 Strategic Human Resource Management | 3"
   },
   {
    "type": "placeholder",
    "area": "Human Resource Management Core Requirements:",
    "label": "Select 26 credits of any 1000 level course or higher (it is recommended that students complete a minor).",
    "credits": 26,
-   "text": "Select 26 credits of any 1000 level course or higher (it is recommended that students complete a minor)."
+   "text": "Select 26 credits of any 1000 level course or higher (it is recommended that students complete a minor).",
+   "src": "Human Resource Management Core Requirements: (50 credits) › Select 26 credits of any 1000 level course or higher (it is recommended that students complete a minor). | 26"
   }
  ],
  "gradPlan": [
@@ -626,21 +673,32 @@
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -653,7 +711,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -680,7 +739,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -703,34 +767,56 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3530": {
    "title": "Employment and Labor Law",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3570": {
    "title": "Training and Development",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4000": {
    "title": "Total Rewards",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4050": {
    "title": "Human Resource Information Systems",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4060": {
    "title": "HR Analytics",
@@ -742,21 +828,36 @@
      "HR 3430"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4610": {
    "title": "Talent Acquisition",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4700G": {
    "title": "International Human Resource Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4800": {
    "title": "Strategic Human Resource Management",
@@ -769,7 +870,13 @@
      "HR 4060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -789,7 +896,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -801,7 +909,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -813,7 +922,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1100": {
    "title": "Survey of Calculus",
@@ -826,7 +936,8 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -839,7 +950,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -852,7 +964,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -873,7 +988,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -890,7 +1010,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -902,14 +1027,25 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -923,7 +1059,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -937,14 +1079,21 @@
    "title": "International Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -954,5 +1103,28 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours Matriculation Requirements 21 Credits One of the following: My Educator IM 2010 Business Computer Proficiency (3) (Complete with B- grade or higher) IM 2600 Spreadsheet Applications (3) (Complete with B- grade or higher) MKTG 2200G Written Business Communication (Complete with B- grade or higher) 3 MKTG 2390 Professional Business Presentations 3 MGMT 2340 Business Statistics I 3 or STAT 2040 Principles of Statistics ECON 2010 Principles of Economics I 3 ACC 2110 Principles of Accounting I 3 MGMT 2240 Business Quantitative Analysis 3 or MATH 1100 Survey of Calculus MGMT 2400 Data Analytics for Business 3",
+  "before": [
+   "IM 2010",
+   "IM 2600",
+   "MKTG 2200G",
+   "MKTG 2390",
+   "MGMT 2340",
+   "STAT 2040",
+   "ECON 2010",
+   "ACC 2110",
+   "MGMT 2240",
+   "MATH 1100",
+   "MGMT 2400"
+  ],
+  "gated": [
+   "HR 4800",
+   "MGMT 3450",
+   "MGMT 4860"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "B-"
  }
 }

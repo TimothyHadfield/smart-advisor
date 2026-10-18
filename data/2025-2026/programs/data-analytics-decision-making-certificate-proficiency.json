@@ -3,7 +3,7 @@
  "name": "Data Analytics and Decision Making, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/data-analytics-decision-making-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -13,7 +13,8 @@
    "alts": [
     "MGMT 2400"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 1400 Introduction to Data Analytics | 3 or MGMT 2400 Data Analytics for Business"
   },
   {
    "type": "course",
@@ -22,14 +23,16 @@
    "alts": [
     "INFO 1200"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "CS 1400 Fundamentals of Programming | 3 or INFO 1200 Computer Programming I for IS IT"
   },
   {
    "type": "course",
    "area": "",
    "code": "MATH 1050",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "MATH 1050 College Algebra | 4"
   },
   {
    "type": "choice",
@@ -65,7 +68,8 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -92,7 +96,10 @@
      "codes": [
       "MATH 1100"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "If this course was used to fulfill the MATH 1050 requirement, a different course must be selected for this category."
+     ]
     },
     {
      "codes": [
@@ -131,6 +138,7 @@
      "credits": 3
     }
    ],
+   "src": "Elective Courses | 6",
    "notes": [
     "Choose six credits from the following:"
    ]
@@ -202,14 +210,22 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 1400": {
    "title": "Fundamentals of Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -244,14 +260,26 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4130": {
    "title": "Data Science and Big Data Analytics",
    "credits": 3,
    "prereqText": "INFO 3130 and University Advanced Standing",
    "prereqs": "INFO 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -263,7 +291,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1100": {
    "title": "Survey of Calculus",
@@ -276,7 +305,8 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 1400": {
    "title": "Introduction to Data Analytics",
@@ -293,7 +323,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -304,14 +337,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3110": {
    "title": "Statistics for the Behavioral Sciences",
    "credits": 4,
    "prereqText": "MAT 1010 or higher and University Advanced Standing",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -324,7 +367,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2050": {
    "title": "Introduction to Statistical Methods",
@@ -337,7 +384,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

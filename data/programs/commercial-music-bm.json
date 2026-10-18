@@ -3,7 +3,7 @@
  "name": "Commercial Music, B.M.",
  "url": "https://catalog.uvu.edu/arts/music/commercial-music-bm/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -45,7 +51,8 @@
      "credits": 6
     }
    ],
-   "text": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "src": "General Education Requirements (30 credits) › Choose one of the following: (Note: A higher level MATH course may substitute for this requirement) | 3"
   },
   {
    "type": "choice",
@@ -89,6 +96,7 @@
     }
    ],
    "text": "Choose one of the following:",
+   "src": "General Education Requirements (30 credits) › Choose one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ]
@@ -97,13 +105,15 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
    "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3",
    "recommended": [
     "PHYS 1750"
    ]
@@ -112,112 +122,129 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
    "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3",
    "recommended": [
-    "MUSC 1030"
+    "MUSC 1030",
+    "MUSC 1236"
    ]
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1110 Music Theory I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1115",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1115 Music Notation and Score Preparation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1120 Music Theory II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1130 Aural Skills I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1140 Aural Skills II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1150",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1150 Group Piano I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1160",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1160 Group Piano II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1350",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 1350 Studio Conducting | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2110 Music Theory III | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2125",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2125 Music Theory IV | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2130 Aural Skills III | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2140 Aural Skills IV | 1"
   },
   {
    "type": "course",
@@ -226,7 +253,8 @@
    "alts": [
     "MUSC 2150"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2170 Jazz and Contemporary Keyboard Skills I | 1 or MUSC 2150 Group Piano III"
   },
   {
    "type": "course",
@@ -235,28 +263,32 @@
    "alts": [
     "MUSC 2160"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 2180 Jazz and Contemporary Keyboard Skills II | 1 or MUSC 2160 Group Piano IV"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3490G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 3490G Global Musical Styles and Ideas | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 3450 Music History and Literature I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3451",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Musicianship Courses: › MUSC 3451 Music History and Literature II | 3"
   },
   {
    "type": "course",
@@ -265,6 +297,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (90 credits) › Individual Musicianship Studies: › MUSC 2500R Private Lessons for Music Majors (Repeated 4 times on major instrument or voice. Includes completion of sophomore review) | 4",
    "creditsEach": 1
   },
   {
@@ -274,6 +307,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (90 credits) › Individual Musicianship Studies: › MUSC 2510R Performance Class (Repeated 4 times on major instrument or voice. Includes completion of sophomore review) | 4",
    "creditsEach": 1
   },
   {
@@ -281,7 +315,8 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 3600R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (90 credits) › Individual Musicianship Studies: › MUSC 3600R Commercial Music Private Lessons | 4"
   },
   {
    "type": "choice",
@@ -329,7 +364,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete 4 credits from the following on your major instrument:"
+   "text": "Complete 4 credits from the following on your major instrument:",
+   "src": "Discipline Core Requirements (90 credits) › Large Ensembles: › Complete 4 credits from the following on your major instrument: | 4"
   },
   {
    "type": "choice",
@@ -377,70 +413,80 @@
      "credits": 1
     }
    ],
-   "text": "Complete 4 credits from the following on your major instrument(s):"
+   "text": "Complete 4 credits from the following on your major instrument(s):",
+   "src": "Discipline Core Requirements (90 credits) › Large Ensembles: › Complete 4 credits from the following on your major instrument(s): | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 1400 Music Technology I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1402",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 1402 Music Technology II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1410",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 1410 Survey of Commercial Music Careers | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 1810 Contemporary Theory and Improvisation I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2190",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 2190 Rhythm Section Workshop | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 2210 Contemporary Theory and Improvisation II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 2400 Music Technology III | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2402",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 2402 Music Technology IV | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3025",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 3025 Songwriting I | 2"
   },
   {
    "type": "course",
@@ -449,21 +495,24 @@
    "alts": [
     "MUSC 3031"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 3026 Songwriting II | 2 or MUSC 3031 Jazz and Contemporary Arranging II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3030",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 3030 Jazz and Contemporary Arranging I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3412",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 3412 Music Career Development | 3"
   },
   {
    "type": "course",
@@ -472,6 +521,7 @@
    "alts": [],
    "credits": 2,
    "repeat": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 3790R Studio Recording Workshop (Repeated 2 times) | 2",
    "creditsEach": 1
   },
   {
@@ -481,7 +531,8 @@
    "alts": [
     "MUSC 3415"
    ],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 4240 Vocal Pedagogy | 2 or MUSC 3415 Instrumental Pedagogy and Literature I"
   },
   {
    "type": "course",
@@ -490,6 +541,7 @@
    "alts": [],
    "credits": 6,
    "repeat": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 4700R Studio Arranging and Producing (Repeated 2 times) | 6",
    "creditsEach": 3
   },
   {
@@ -498,6 +550,7 @@
    "code": "MUSC 4810R",
    "alts": [],
    "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 4810R Internship in Music II | 1",
    "crMax": 8
   },
   {
@@ -507,6 +560,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 2,
+   "src": "Discipline Core Requirements (90 credits) › Complete the following: › MUSC 4920R Advanced Topics in Music (Repeated 2 times, 2 credits each) | 4",
    "creditsEach": 2
   }
  ],
@@ -880,14 +934,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -900,7 +960,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -929,7 +990,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -941,7 +1006,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MUSC 1110": {
    "title": "Music Theory I",
@@ -952,6 +1021,10 @@
    "coreqText": "MUSC 1130",
    "coreqs": [
     "MUSC 1130"
+   ],
+   "prereqWords": [
+    "Music majors only or department approval",
+    "Complete music theory diagnostic exam"
    ]
   },
   "MUSC 1115": {
@@ -959,7 +1032,10 @@
    "credits": 1,
    "prereqText": "Music major or minor only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music major or minor only"
+   ]
   },
   "MUSC 1120": {
    "title": "Music Theory II",
@@ -1013,7 +1089,10 @@
    "credits": 1,
    "prereqText": "BM Commercial Music students only",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "BM Commercial Music students only"
+   ]
   },
   "MUSC 1400": {
    "title": "Music Technology I",
@@ -1102,7 +1181,10 @@
    "credits": 1,
    "prereqText": "Music majors and minors only",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music majors and minors only"
+   ]
   },
   "MUSC 2210": {
    "title": "Contemporary Theory and Improvisation II",
@@ -1137,6 +1219,9 @@
    "coreqText": "MUSC 2510R",
    "coreqs": [
     "MUSC 2510R"
+   ],
+   "prereqWords": [
+    "Music major entrance audition required"
    ]
   },
   "MUSC 2510R": {
@@ -1152,14 +1237,24 @@
    "credits": 2,
    "prereqText": "MUSC 1400 and University Advanced Standing",
    "prereqs": "MUSC 1400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3026": {
    "title": "Songwriting II",
    "credits": 2,
    "prereqText": "MUSC 3025 and University Advanced Standing",
    "prereqs": "MUSC 3025",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3030": {
    "title": "Jazz and Contemporary Arranging I",
@@ -1171,70 +1266,106 @@
      "MUSC 2210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3031": {
    "title": "Jazz and Contemporary Arranging II",
    "credits": 2,
    "prereqText": "MUSC 3030 and University Advanced Standing",
    "prereqs": "MUSC 3030",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3220R": {
    "title": "Chamber Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3270R": {
    "title": "Deep Green-Tenor/Bass Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3280R": {
    "title": "Emerald Singers-Soprano/Alto Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3300R": {
    "title": "Wind Symphony",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3310R": {
    "title": "Percussion Ensemble",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3320R": {
    "title": "Jazz Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3330R": {
    "title": "Small Jazz and Commercial Ensembles",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3412": {
    "title": "Music Career Development",
    "credits": 3,
    "prereqText": "MUSC 2110 and University Advanced Standing",
    "prereqs": "MUSC 2110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3415": {
    "title": "Instrumental Pedagogy and Literature I",
@@ -1246,49 +1377,80 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3450": {
    "title": "Music History and Literature I",
    "credits": 3,
    "prereqText": "MUSC 2125 and University Advanced Standing",
    "prereqs": "MUSC 2125",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3451": {
    "title": "Music History and Literature II",
    "credits": 3,
    "prereqText": "MUSC 3450 and University Advanced Standing",
    "prereqs": "MUSC 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3490G": {
    "title": "Global Musical Styles and Ideas",
    "credits": 3,
    "prereqText": "MUSC 1110 and University Advanced Standing",
    "prereqs": "MUSC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3600R": {
    "title": "Commercial Music Private Lessons",
    "credits": 1,
    "prereqText": "Admittance into Music Technology Certificate of Proficiency or MUSC 2500R and University Advanced Standing for bachelor's students",
    "prereqs": "MUSC 2500R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing for bachelor's students"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3700R": {
    "title": "Symphony Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3730R": {
    "title": "Advanced Small Ensembles",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "MUSC 3790R": {
    "title": "Studio Recording Workshop",
@@ -1300,14 +1462,24 @@
    "precoreqs": "MUSC 1400",
    "preco": [
     "MUSC 1400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4240": {
    "title": "Vocal Pedagogy",
    "credits": 2,
    "prereqText": "MUSC 2002 and University Advanced Standing",
    "prereqs": "MUSC 2002",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4700R": {
    "title": "Studio Arranging and Producing",
@@ -1319,7 +1491,12 @@
      "MUSC 3120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4810R": {
    "title": "Internship in Music II",
@@ -1327,7 +1504,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4920R": {
    "title": "Advanced Topics in Music",
@@ -1335,7 +1518,12 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",

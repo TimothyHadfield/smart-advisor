@@ -3,7 +3,7 @@
  "name": "Humanities, B.S.",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/philosophy-humanities/humanities-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -79,6 +85,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -123,6 +130,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -132,37 +140,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, & Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, & Civic Growth | 3"
   },
   {
    "type": "course",
@@ -172,7 +186,8 @@
     "HUM 1010G",
     "HUM 1010H"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 1010 Humanities Through the Arts | 3 or HUM 1010G Humanities Through the Arts or HUM 1010H Humanities Through the Arts"
   },
   {
    "type": "course",
@@ -182,7 +197,8 @@
     "HUM 2010G",
     "HUM 2010H"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 2010 World History Through the Arts I | 3 or HUM 2010G World History Through the Arts I or HUM 2010H World History Through the Arts I"
   },
   {
    "type": "course",
@@ -192,42 +208,48 @@
     "HUM 2020G",
     "HUM 2020H"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 2020 World History Through the Arts II | 3 or HUM 2020G World History Through the Arts II or HUM 2020H World History Through the Arts II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HUM 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 3500 Approaches to Humanities | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HUM 4000R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 4000R Humanism and Posthumanism | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HUM 4810R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (41 credits) › HUM 4810R Internship | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HUM 4910",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 4910 Humanities Capstone I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HUM 4920",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (41 credits) › HUM 4920 Humanities Capstone II | 3"
   },
   {
    "type": "choice",
@@ -257,7 +279,8 @@
      ]
     }
    ],
-   "text": "Complete 3 credits of the following:"
+   "text": "Complete 3 credits of the following:",
+   "src": "Discipline Core Requirements (41 credits) › Complete 3 credits of the following: | 3"
   },
   {
    "type": "choice",
@@ -293,7 +316,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits from the following:"
+   "text": "Complete 9 credits from the following:",
+   "src": "Discipline Core Requirements (41 credits) › Complete 9 credits from the following: | 9"
   },
   {
    "type": "choice",
@@ -317,13 +341,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits of the following:"
+   "text": "Complete 6 credits of the following:",
+   "src": "Discipline Core Requirements (41 credits) › Complete 6 credits of the following: | 6"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any course 1000 or higher. No more than 6 total credit hours from HUM 2810R and HUM 4810R. 16 credits must be upper-division. Students advised to meet with advisor to discuss career-oriented pathways.",
-   "credits": 49
+   "credits": 49,
+   "src": "Elective Requirements (49 credits) › Any course 1000 or higher. No more than 6 total credit hours from HUM 2810R and HUM 4810R. 16 credits must be upper-division. Students advised to meet with advisor to discuss career-oriented pathways. | 49 (Note: For electives, please see advisor. SLSS 1050 recommended.)"
   }
  ],
  "gradPlan": [
@@ -623,14 +649,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -643,7 +675,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -706,7 +739,12 @@
    "credits": 3,
    "prereqText": "Enrollment in the UVU Honors program or approval by the instructor.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Enrollment in the UVU Honors program or approval by the instructor"
+   ],
+   "gate": "admission",
+   "gateText": "Enrollment in the UVU Honors program or approval by the instructor"
   },
   "HUM 2200": {
    "title": "Adventures of Ideas After 1500",
@@ -717,7 +755,12 @@
    "credits": 3,
    "prereqText": "Enrollment in the Honors Program or instructor's approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Enrollment in the Honors Program or instructor's approval"
+   ],
+   "gate": "admission",
+   "gateText": "Enrollment in the Honors Program or instructor's approval"
   },
   "HUM 3200R": {
    "title": "Topics in Humanities",
@@ -725,35 +768,60 @@
    "creditsMax": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3250R": {
    "title": "Topics in Area Studies",
    "credits": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3300R": {
    "title": "Topics in Period Studies",
    "credits": 3,
    "prereqText": "( ENGL 2010 or at least sophomore status) and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3500": {
    "title": "Approaches to Humanities",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 3800": {
    "title": "Aesthetics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4000R": {
    "title": "Humanism and Posthumanism",
@@ -765,7 +833,13 @@
    "precoreqs": "ENG 2010",
    "preco": [
     "ENG 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4010R": {
    "title": "Forms and Genres Across the Arts",
@@ -777,7 +851,13 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4140R": {
    "title": "Advanced Topics in Humanities",
@@ -789,7 +869,13 @@
    "precoreqs": "ENGL 2010",
    "preco": [
     "ENGL 2010"
-   ]
+   ],
+   "prereqWords": [
+    "At least junior standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4810R": {
    "title": "Internship",
@@ -797,7 +883,13 @@
    "creditsMax": 6,
    "prereqText": "Departmental chair approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental chair approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4910": {
    "title": "Humanities Capstone I",
@@ -809,14 +901,26 @@
    "precoreqs": "HUM 3500",
    "preco": [
     "HUM 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4920": {
    "title": "Humanities Capstone II",
    "credits": 3,
    "prereqText": "HUM 4910 , Senior Standing, and University Advanced Standing",
    "prereqs": "HUM 4910",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -829,7 +933,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -841,7 +949,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -853,7 +965,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -865,7 +978,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -877,7 +991,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -898,7 +1013,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -911,7 +1031,19 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "HUM 2100H",
+   "HUM 2200H"
+  ]
  }
 }

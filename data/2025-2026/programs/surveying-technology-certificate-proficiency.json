@@ -3,7 +3,7 @@
  "name": "Surveying Technology, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/surveying-technology-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 28,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Course Requirements",
    "code": "SURV 1020",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Course Requirements (25 credits) › SURV 1020 Introduction to Surveying and Mapping | 1"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 1030 Fundamentals of Geodesy and Control Surveys | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 1220 Remote Sensing and Photogrammetry | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 1340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 1340 Fundamentals of Boundary Law | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 2100 Mapping From Field to Finish | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 2310 Surveying US Public Lands | 3"
   },
   {
    "type": "course",
    "area": "Course Requirements",
    "code": "SURV 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Course Requirements (25 credits) › SURV 2320 Property Descriptions and Public Land Records | 3"
   },
   {
    "type": "choice",
@@ -97,7 +106,8 @@
      "credits": 2
     }
    ],
-   "text": "Select one of the following recommended elective courses or one with a SURV or GIS prefix:"
+   "text": "Select one of the following recommended elective courses or one with a SURV or GIS prefix:",
+   "src": "Elective (3 credits) › Select one of the following recommended elective courses or one with a SURV or GIS prefix: | 3"
   }
  ],
  "gradPlan": [
@@ -191,14 +201,24 @@
    "credits": 3,
    "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1220": {
    "title": "Remote Sensing and Photogrammetry",
    "credits": 3,
    "prereqText": "MAT 1010 or appropriate math placement score, Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 1340": {
    "title": "Fundamentals of Boundary Law",
@@ -221,7 +241,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2240": {
    "title": "Fundamentals of Adjustments and Computations",
@@ -239,7 +264,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2310": {
    "title": "Surveying US Public Lands",
@@ -257,7 +287,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2320": {
    "title": "Property Descriptions and Public Land Records",
@@ -274,14 +309,41 @@
      "EGDT 1400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   },
   "SURV 2350": {
    "title": "Ethics and Liabilities for Surveyors",
    "credits": 2,
    "prereqText": "Completed and Approved Matriculation into any Surveying and Mapping degree program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Completed and Approved Matriculation into any Surveying and Mapping degree program"
+   ],
+   "gate": "admission",
+   "gateText": "Completed and Approved Matriculation into any Surveying and Mapping degree program"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "SURV 1020",
+   "EGDT 1040",
+   "EGDT 1400"
+  ],
+  "gated": [
+   "SURV 1030",
+   "SURV 1220",
+   "SURV 2100",
+   "SURV 2240",
+   "SURV 2310",
+   "SURV 2320",
+   "SURV 2350"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

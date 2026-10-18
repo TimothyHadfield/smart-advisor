@@ -3,7 +3,7 @@
  "name": "Statistics, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/mathmatics/statistics-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,8 @@
    "alts": [
     "MATH 1210H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › MATH 1210 Calculus I | 4 or MATH 1210H Calculus I"
   },
   {
    "type": "choice",
@@ -73,6 +80,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -82,59 +90,68 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Biology | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › PHYS 2210 Physics for Scientists and Engineers I (co-requisite lab required) | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "General Education Requirements (33 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, & Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Personal, Professional, & Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › CS 1400 Fundamentals of Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › CS 1410 Object Oriented Programming | 3"
   },
   {
    "type": "course",
@@ -143,7 +160,8 @@
    "alts": [
     "MATH 1220H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (57 credits) › MATH 1220 Calculus II | 4 or MATH 1220H Calculus II"
   },
   {
    "type": "course",
@@ -152,70 +170,80 @@
    "alts": [
     "MATH 2210H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (57 credits) › MATH 2210 Calculus III | 4 or MATH 2210H Calculus III"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › MATH 2270 Linear Algebra | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2280",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › MATH 2280 Ordinary Differential Equations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › MATH 3250 Introduction to Advanced Calculus | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 2050",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (57 credits) › STAT 2050 Introduction to Statistical Methods | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 4000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › STAT 4000 Applied Regression and Time Series | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 4100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › STAT 4100 Design of Experiment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › STAT 4400 Multivariate Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 4710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › STAT 4710 Mathematical Statistics-Probability and Statistics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 4720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (57 credits) › STAT 4720 Mathematical Statistics-Statistical Inference | 3"
   },
   {
    "type": "choice",
@@ -257,28 +285,32 @@
      "credits": 3
     }
    ],
-   "text": "Complete three of the following:"
+   "text": "Complete three of the following:",
+   "src": "Discipline Core Requirements (57 credits) › Complete three of the following: | 9"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 6 credits of upper level MATH or STAT courses",
    "credits": 6,
-   "text": "Complete 6 credits of upper level MATH or STAT courses"
+   "text": "Complete 6 credits of upper level MATH or STAT courses",
+   "src": "Discipline Core Requirements (57 credits) › Complete 6 credits of upper level MATH or STAT courses | 6 (Note: Elective courses may NOT include MATH 3100 Foundations of Geometry , MATH 3200 Foundations of Analysis , MATH 3010 Methods of Secondary School Mathematics Teaching , MATH 3030 Algebra for Secondary Mathematics Teaching , MATH 4030 Geometry for Secondary Mathematics Teaching , MATH 4040 Statistics and Probability for Secondary Mathematics Teaching , STAT 3000 Applied Mathematics for Stat…"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 10 credits of upper division electives",
    "credits": 10,
-   "text": "Complete 10 credits of upper division electives"
+   "text": "Complete 10 credits of upper division electives",
+   "src": "Elective Requirements (30 credits) › Complete 10 credits of upper division electives | 10 (Note: Elective courses may NOT include MATH 3100 Foundations of Geometry , MATH 3200 Foundations of Analysis , MATH 3010 Methods of Secondary School Mathematics Teaching , MATH 3030 Algebra for Secondary Mathematics Teaching , MATH 4030 Geometry for Secondary Mathematics Teaching , MATH 4040 Statistics and Probability for Secondary Mathematics Teaching , STAT 3000 Applied Mathematics for Statistical Metho…"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 20 credits of upper or lower division electives",
    "credits": 20,
-   "text": "Complete 20 credits of upper or lower division electives"
+   "text": "Complete 20 credits of upper or lower division electives",
+   "src": "Elective Requirements (30 credits) › Complete 20 credits of upper or lower division electives | 20 (Note: Elective courses may NOT include MATH 3100 Foundations of Geometry , MATH 3200 Foundations of Analysis , MATH 3010 Methods of Secondary School Mathematics Teaching , MATH 3030 Algebra for Secondary Mathematics Teaching , MATH 4030 Geometry for Secondary Mathematics Teaching , MATH 4040 Statistics and Probability for Secondary Mathematics Teaching , STAT 3000 Applied Mathematics for Statisti…"
   }
  ],
  "gradPlan": [
@@ -511,7 +543,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -532,7 +567,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -545,7 +583,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -583,7 +622,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1210H": {
    "title": "Calculus I",
@@ -605,7 +648,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -616,7 +663,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 1220H": {
    "title": "Calculus II",
@@ -627,7 +675,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -638,7 +687,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210H": {
    "title": "Calculus III",
@@ -649,7 +699,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -660,7 +711,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -671,7 +723,8 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 3250": {
    "title": "Introduction to Advanced Calculus",
@@ -693,7 +746,13 @@
    "precoreqs": "MATH 2280",
    "preco": [
     "MATH 2280"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",
@@ -737,7 +796,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2060": {
    "title": "Introduction to Statistical Computing",
@@ -761,7 +824,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4100": {
    "title": "Design of Experiment",
@@ -774,7 +843,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4200": {
    "title": "Survey Sampling",
@@ -787,7 +862,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4300": {
    "title": "Stochastic Processes",
@@ -804,7 +885,13 @@
      "MATH 2270"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4400": {
    "title": "Multivariate Analysis",
@@ -827,7 +914,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4500": {
    "title": "Nonparametric Statistics",
@@ -840,7 +934,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4600": {
    "title": "Statistical Process Control",
@@ -853,7 +953,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4700": {
    "title": "Introduction to Biostatistics",
@@ -866,7 +972,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4710": {
    "title": "Mathematical Statistics-Probability and Statistics",
@@ -886,14 +998,35 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 4720": {
    "title": "Mathematical Statistics-Statistical Inference",
    "credits": 3,
    "prereqText": "STAT 4710 with a grade of C or higher and University Advanced Standing",
    "prereqs": "STAT 4710",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of MATH 1210 Calculus I and MATH 1220 Calculus II (or equivalent) with an overall GPA of 2.5 or better Student must meet with the math department advisor and declare an intent to major in statistics.",
+  "before": [
+   "MATH 1210",
+   "MATH 1220"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Piano Pedagogy, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/piano-pedagogy-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 2500R",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2500R Private Lessons for Music Majors | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2510R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2510R Performance Class | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2900R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 2900R Independent Study | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3060R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3060R Advanced Keyboard Skills | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3415",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3415 Instrumental Pedagogy and Literature I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3416",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3416 Instrumental Pedagogy and Literature II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3730R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › MUSC 3730R Advanced Small Ensembles | 2"
   }
  ],
  "gradPlan": [
@@ -126,6 +133,9 @@
    "coreqText": "MUSC 2510R",
    "coreqs": [
     "MUSC 2510R"
+   ],
+   "prereqWords": [
+    "Music major entrance audition required"
    ]
   },
   "MUSC 2510R": {
@@ -142,7 +152,10 @@
    "creditsMax": 3,
    "prereqText": "Instructor permission and advisor approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor permission and advisor approval"
+   ]
   },
   "MUSC 3060R": {
    "title": "Advanced Keyboard Skills",
@@ -164,21 +177,39 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3416": {
    "title": "Instrumental Pedagogy and Literature II",
    "credits": 2,
    "prereqText": "MUSC 3415 and University Advanced Standing",
    "prereqs": "MUSC 3415",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3730R": {
    "title": "Advanced Small Ensembles",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   }
+ },
+ "admissionInfo": {
+  "text": "Complete entrance audition with music department faculty.",
+  "before": [],
+  "gated": []
  }
 }

@@ -3,7 +3,7 @@
  "name": "Human Resource Management, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/human-resource-management-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "HR 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HR 3430 Introduction to Human Resource Management | 3"
   },
   {
    "type": "choice",
@@ -84,7 +85,8 @@
      "crMax": 3
     }
    ],
-   "text": "Complete 15 credits from the following courses"
+   "text": "Complete 15 credits from the following courses",
+   "src": "Discipline Core Requirements (18 credits) › Complete 15 credits from the following courses | 15"
   }
  ],
  "gradPlan": [
@@ -143,40 +145,64 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3530": {
    "title": "Employment and Labor Law",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3570": {
    "title": "Training and Development",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4000": {
    "title": "Total Rewards",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4050": {
    "title": "Human Resource Information Systems",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4060": {
    "title": "HR Analytics",
@@ -188,21 +214,36 @@
      "HR 3430"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4610": {
    "title": "Talent Acquisition",
    "credits": 3,
    "prereqText": "HR 3430 and University Advanced Standing",
    "prereqs": "HR 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4700G": {
    "title": "International Human Resource Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4800": {
    "title": "Strategic Human Resource Management",
@@ -215,7 +256,13 @@
      "HR 4060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "HR 4950R": {
    "title": "Advanced Topics in Strategic Human Resource Management",
@@ -223,7 +270,19 @@
    "creditsMax": 3,
    "prereqText": "Department chair approval and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department chair approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "HR 4800"
+  ]
  }
 }

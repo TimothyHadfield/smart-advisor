@@ -3,7 +3,7 @@
  "name": "Architecture, B.Arch",
  "url": "https://catalog.uvu.edu/engineering-technology/architecture-engineering-design/architecture-barch/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 150,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Complete the following: › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Complete the following: › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › Complete the following: › MATH 1050 College Algebra ( MATH 1050 is a prerequisite for many classes in the program core.) | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,6 +84,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete the following: › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
@@ -82,7 +94,12 @@
    "alts": [
     "PHYS 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Complete the following: › PHYS 1010 Elementary Physics | 3 or PHYS 2010 College Physics I",
+   "creditsBy": {
+    "PHYS 1010": 3,
+    "PHYS 2010": 4
+   }
   },
   {
    "type": "placeholder",
@@ -91,7 +108,8 @@
    "credits": 3,
    "recommended": [
     "BIOL 1010"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Complete the following: › Biology (Recommend BIOL 1010 General Biology) | 3"
   },
   {
    "type": "placeholder",
@@ -100,7 +118,8 @@
    "credits": 3,
    "recommended": [
     "ENGL 2030"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Complete the following: › Humanities (Recommend ENGL 2030 Writing for Social Change) | 3"
   },
   {
    "type": "placeholder",
@@ -109,13 +128,15 @@
    "credits": 3,
    "recommended": [
     "COMM 1050"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Complete the following: › Social/Behavorial Science (Recommend COMM 1050 Introduction to Speech Communication) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Complete the following: › Personal, Professional, Civic Growth | 3"
   },
   {
    "type": "placeholder",
@@ -124,203 +145,232 @@
    "credits": 3,
    "recommended": [
     "EGDT 1720"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Complete the following: › Fine Arts (Recommend EGDT 1720 Architectural Rendering) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2850R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 2850R AEC Design Lecture Series | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 1020 3D Architectural Modeling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 1100 Residential Architecture Documentation and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 2100 Commercial Architecture Documentation and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 2600 Applied Structures I - Statics ( MATH 1050 is a prerequisite for this course) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › EGDT 2610 Applied Structures II - Strength of Materials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 1010 Classical Architecture Workshop | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 2110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (103 credits) › ARC 2110 Architecture Studio I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (103 credits) › ARC 2210 Architecture Studio II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 2220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 2220 Building Materials and Methods | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3110",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3110 Architecture Studio III | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3120 Architectural Graphic Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3130 Codes and Construction Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3210",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3210 Architecture Studio IV | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3220 Passive Environmental Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 3230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 3230 Global History of Architecture to 1700 | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4110",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4110 Architecture Studio V | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4120 Active Environmental Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4130 Global History of Architecture Since 1700 | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4210",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4210 Architecture Studio VI | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4220 Building Envelope and Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4230 Capstone Project Research | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4510",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4510 Architecture Studio VII | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4520",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4520 Architectural Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4530 Culture and Behavior in Architecture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4540",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4540 Architecture Professional Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ARC 4610",
    "alts": [],
-   "credits": 7
+   "credits": 7,
+   "src": "Discipline Core Requirements (103 credits) › ARC 4610 Architecture Studio VIII | 7"
   },
   {
    "type": "choice",
@@ -614,7 +664,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 16 credits from the following: (Some courses may have additional prereqs.)"
+   "text": "Choose 16 credits from the following: (Some courses may have additional prereqs.)",
+   "src": "Architecture Elective Requirements (16 credits) › Choose 16 credits from the following: (Some courses may have additional prereqs.) | 16"
   }
  ],
  "gradPlan": [
@@ -869,7 +920,11 @@
      "ARC 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio acceptance"
+   ],
+   "prereqMinGrade": "C-"
   },
   "ARC 2210": {
    "title": "Architecture Studio II",
@@ -881,7 +936,8 @@
      "ARC 1010",
      "ARC 2110"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ARC 2220": {
    "title": "Building Materials and Methods",
@@ -892,21 +948,34 @@
      "EGDT 1020",
      "EGDT 1100"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ARC 3110": {
    "title": "Architecture Studio III",
    "credits": 6,
    "prereqText": "Matriculation to the B-Arch Program and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch Program and University Advanced Standing"
   },
   "ARC 3120": {
    "title": "Architectural Graphic Communication",
    "credits": 3,
    "prereqText": "Matriculation to the B-Arch Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch Program and University Advanced Standing"
   },
   "ARC 3130": {
    "title": "Codes and Construction Law",
@@ -918,35 +987,64 @@
      "EGDT 2610"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 3210": {
    "title": "Architecture Studio IV",
    "credits": 6,
    "prereqText": "ARC 3110 with a grade of C- or higher and University Advanced Standing.",
    "prereqs": "ARC 3110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 3220": {
    "title": "Passive Environmental Systems",
    "credits": 3,
    "prereqText": "Matriculation to the B-Arch degree program, University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch degree program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch degree program"
   },
   "ARC 3230": {
    "title": "Global History of Architecture to 1700",
    "credits": 3,
    "prereqText": "Matriculation to the B-Arch degree program, University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch degree program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch degree program"
   },
   "ARC 3300": {
    "title": "Geometry and Ornament in Architecture",
    "credits": 3,
    "prereqText": "ARC 1010 and University Advanced Standing",
    "prereqs": "ARC 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 3550R": {
    "title": "Architectural Explorations through Study Abroad",
@@ -954,42 +1052,77 @@
    "creditsMax": 6,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4110": {
    "title": "Architecture Studio V",
    "credits": 6,
    "prereqText": "ARC 3210 with a grade of C- or higher and University Advanced Standing.",
    "prereqs": "ARC 3210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4120": {
    "title": "Active Environmental Systems",
    "credits": 3,
    "prereqText": "ARC 3220 and University Advanced Standing",
    "prereqs": "ARC 3220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4130": {
    "title": "Global History of Architecture Since 1700",
    "credits": 3,
    "prereqText": "ARC 3230 with a grade of C- or higher. Matriculation to the B-Arch degree program, and University Advanced Standing",
    "prereqs": "ARC 3230",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch degree program",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch degree program"
   },
   "ARC 4210": {
    "title": "Architecture Studio VI",
    "credits": 6,
    "prereqText": "ARC 4110 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ARC 4110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4220": {
    "title": "Building Envelope and Science",
    "credits": 3,
    "prereqText": "ARC 4120 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ARC 4120",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4230": {
    "title": "Capstone Project Research",
@@ -1001,28 +1134,52 @@
    "coreqs": [
     "ARC 4510",
     "ARC 4540"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4510": {
    "title": "Architecture Studio VII",
    "credits": 6,
    "prereqText": "ARC 4210 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ARC 4210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4520": {
    "title": "Architectural Theory",
    "credits": 3,
    "prereqText": "ARC 3210 , with a grade of C- or better and University Advanced Standing",
    "prereqs": "ARC 3210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4530": {
    "title": "Culture and Behavior in Architecture",
    "credits": 3,
    "prereqText": "ARC 4110 with a grade of C- or better and University Advanced Standing",
    "prereqs": "ARC 4110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4540": {
    "title": "Architecture Professional Practice",
@@ -1040,21 +1197,39 @@
    "preco": [
     "ARC 4510",
     "ARC 4230"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4590R": {
    "title": "Special Topics in Architecture",
    "credits": 3,
    "prereqText": "Matriculation to the B-Arch degree program and University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to the B-Arch degree program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to the B-Arch degree program and University Advanced Standing"
   },
   "ARC 4610": {
    "title": "Architecture Studio VIII",
    "credits": 7,
    "prereqText": "ARC 4510 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ARC 4510",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARC 4810R": {
    "title": "Architecture Internship",
@@ -1062,7 +1237,13 @@
    "creditsMax": 6,
    "prereqText": "Matriculation into the Architecture B-Arch degree, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Architecture B-Arch degree",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Architecture B-Arch degree"
   },
   "ART 1810": {
    "title": "Introduction to Interior Design",
@@ -1115,43 +1296,61 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Art and Design Sophomore status)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3015": {
    "title": "Ancient Near Eastern Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ( ENGL 1010 or ENGL 1005 ), and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3020": {
    "title": "Ancient Greek Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3030": {
    "title": "Medieval Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3040": {
    "title": "Renaissance Art History",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3050": {
    "title": "Southern Baroque Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3060": {
    "title": "Nineteenth-Century Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3080": {
    "title": "History of Architecture",
@@ -1173,7 +1372,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ARTH 3100": {
    "title": "History of American Art and Architecture",
@@ -1195,7 +1399,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CAW 1100": {
    "title": "Artistic Wood Design",
@@ -1249,7 +1458,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 3140": {
    "title": "Construction Real Estate",
@@ -1263,7 +1477,12 @@
    "credits": 3,
    "prereqText": "EGDT 1020 or CMGT Instructor/Program approval for non-CMGT majors and University Advanced Standing",
    "prereqs": "EGDT 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 4010": {
    "title": "Construction Contracts",
@@ -1276,14 +1495,27 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing",
+    "CMGT Instructor/Program approval for non-CMGT majors"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CMGT 4050G": {
    "title": "Global Sustainability and the Built Environment",
    "credits": 3,
    "prereqText": "CMGT 2060 and Construction Management majors, or CMGT Instructor/Program approval for non-CMGT majors; and University Advanced Standing.",
    "prereqs": "CMGT 2060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "CMGT Instructor/Program approval for non-CMGT majors",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 1050": {
    "title": "Introduction to Communication",
@@ -1314,7 +1546,10 @@
    "credits": 3,
    "prereqText": "Portfolio Review Acceptance",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance"
+   ]
   },
   "DWDD 1400": {
    "title": "Digital Design Essentials",
@@ -1344,7 +1579,8 @@
    "title": "Residential Architecture Documentation and Design",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of B- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "B-"
   },
   "EGDT 1200": {
    "title": "Mechanical Drafting and Design",
@@ -1356,13 +1592,15 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 1300": {
    "title": "Structural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1400": {
    "title": "Surveying Applications and Field Techniques I",
@@ -1381,7 +1619,8 @@
      "EGDT 1020",
      "EGDT 1100"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2300": {
    "title": "Advanced Structural CAD",
@@ -1397,7 +1636,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2310": {
    "title": "Structural Steel Modeling",
@@ -1408,7 +1648,8 @@
      "EGDT 1040",
      "EGDT 1300"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2400": {
    "title": "Surveying Applications and Field Techniques II",
@@ -1426,7 +1667,8 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2600": {
    "title": "Applied Structures I - Statics",
@@ -1444,7 +1686,8 @@
    "title": "Applied Structures II - Strength of Materials",
    "credits": 3,
    "prereqText": "EGDT 2600 with a grade of B- or higher",
-   "prereqs": "EGDT 2600"
+   "prereqs": "EGDT 2600",
+   "prereqMinGrade": "B-"
   },
   "EGDT 2850R": {
    "title": "AEC Design Lecture Series",
@@ -1455,14 +1698,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1475,13 +1724,15 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2030": {
    "title": "Writing for Social Change",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher",
-   "prereqs": "ENGL 2010"
+   "prereqs": "ENGL 2010",
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1509,7 +1760,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1521,7 +1773,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PHYS 1010": {
    "title": "Elementary Physics",
@@ -1545,5 +1798,34 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Before being formally admitted into the Bachelor of Architecture (B-Arch) degree program, students must matriculate into the Architecture Cohort (the final 3 years of the program) by either completing the AS Engineering Design Technology (Architecture Design and Drafting Track) with a minimum grade of C or better in all courses, OR by completing matriculation requirements 2: Complete the following courses with a C grade or better: Course List Code Title Credit Hours PHYS 1010 Elementary Physics 3 or PHYS 2010 College Physics I EGDT 2850R AEC Design Lecture Series 1 EGDT 1020 3D Architectural Modeling 3 EGDT 1040 Fundamentals of Technical Engineering Drawing 3 EGDT 1100 Residential Architecture Documentation and Design 3 EGDT 2100 Commercial Architecture Documentation and Design 3 EGDT 2600 Applied Structures I - Statics ( MATH 1050 is a prerequisite for this course) 3 ARC 1010 Classical Architecture Workshop 3 ARC 2110 Architecture Studio I 4 ARC 2210 Architecture Studio II 4 ARC 2220 Building Materials and Methods 3 All Architecture students must complete a Matriculation Application and Portfolio by the appointed deadline during the Spring semester prior to the Fall Bachelor Degree cohort to which the student desires to gain entry. Subsequently an official acceptance letter must be obtained from the Architecture Program Coordinator prior to taking any further Architecture courses. Part-time students may be admitted into the Architecture cohort and may be allowed to proceed…",
+  "before": [
+   "PHYS 1010",
+   "PHYS 2010",
+   "EGDT 2850R",
+   "EGDT 1020",
+   "EGDT 1040",
+   "EGDT 1100",
+   "EGDT 2100",
+   "EGDT 2600",
+   "MATH 1050",
+   "ARC 1010",
+   "ARC 2110",
+   "ARC 2210",
+   "ARC 2220"
+  ],
+  "gated": [
+   "ARC 3110",
+   "ARC 3120",
+   "ARC 3220",
+   "ARC 3230",
+   "ARC 4130",
+   "ARC 4590R",
+   "ARC 4810R"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

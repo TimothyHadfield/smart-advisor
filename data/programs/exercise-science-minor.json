@@ -3,7 +3,7 @@
  "name": "Exercise Science, Minor",
  "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/exercise-science-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,63 +11,72 @@
    "area": "Discipline Core Requirements",
    "code": "EXSC 2700G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › EXSC 2700G Foundations of Exercise Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › EXSC 3270 Exercise Testing and Prescription | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › EXSC 3500 Kinesiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › EXSC 3700 Exercise Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › EXSC 3705 Exercise Physiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › ZOOL 2320 Human Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › ZOOL 2325 Human Anatomy Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › ZOOL 2420 Human Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › ZOOL 2425 Human Physiology Laboratory | 1"
   },
   {
    "type": "choice",
@@ -115,7 +124,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (24 credits) › Complete one of the following: | 3"
   }
  ],
  "gradPlan": [
@@ -227,7 +237,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EXSC 3270": {
    "title": "Exercise Testing and Prescription",
@@ -258,7 +269,14 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "all with a C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3500": {
    "title": "Kinesiology",
@@ -301,7 +319,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -343,7 +367,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -375,7 +405,13 @@
    "preco": [
     "ZOOL 2420",
     "ZOOL 2425"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -386,7 +422,12 @@
    "coreqText": "EXSC 3700",
    "coreqs": [
     "EXSC 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -409,7 +450,12 @@
    "uncertain": true,
    "preco": [
     "ZOOL 2325"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4000": {
    "title": "Clinical Exercise Physiology",
@@ -422,7 +468,13 @@
      "EXSC 3270"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4100": {
    "title": "Physiology of Aging",
@@ -444,7 +496,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4500": {
    "title": "Advanced Sports Nutrition",
@@ -467,7 +525,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4550": {
    "title": "Principles of Strength and Conditioning",
@@ -480,7 +544,13 @@
      "EXSC 3705"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -518,7 +588,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -536,5 +607,10 @@
    ]
   }
  },
- "totalFrom": "area headers"
+ "totalFrom": "area headers",
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
+ }
 }

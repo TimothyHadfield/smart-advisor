@@ -3,7 +3,7 @@
  "name": "Business Analysis, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/business/strategic-management-operations/business-analysis-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "MGMT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 1400 Introduction to Data Analytics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 4350 Business Intelligence and Data Visualization | 3"
   },
   {
    "type": "choice",
@@ -62,7 +66,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -128,7 +133,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following (or any other upper-division, advisor-approved course):"
+   "text": "Complete one of the following (or any other upper-division, advisor-approved course):",
+   "src": "Discipline Core Requirements (18 credits) › Complete one of the following (or any other upper-division, advisor-approved course): | 3"
   }
  ],
  "gradPlan": [
@@ -212,7 +218,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4060": {
    "title": "HR Analytics",
@@ -224,14 +235,25 @@
      "HR 3430"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 3500": {
    "title": "Content Creation Applications",
    "credits": 3,
    "prereqText": "University Advanced Standing. Basic Computer and online skills.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Basic Computer and online skills"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 3600": {
    "title": "Advanced Excel for Decision Making",
@@ -244,14 +266,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 4300": {
    "title": "Information Workflow Management",
    "credits": 3,
    "prereqText": "( TECH 3400 or Instructor approval) and University Advanced Standing",
    "prereqs": "TECH 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -273,7 +305,14 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 1400": {
    "title": "Introduction to Data Analytics",
@@ -290,7 +329,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -307,14 +349,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4350": {
    "title": "Business Intelligence and Data Visualization",
@@ -326,7 +379,12 @@
      "MGMT 2340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4480": {
    "title": "Management Science and Optimization",
@@ -344,21 +402,43 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4620": {
    "title": "Developing Business in China",
    "credits": 3,
    "prereqText": "ENGL 2010 , Junior Standing, and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3300": {
    "title": "Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "MGMT 3450"
+  ]
  }
 }

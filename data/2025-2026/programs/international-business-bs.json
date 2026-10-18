@@ -3,7 +3,7 @@
  "name": "International Business, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/international-business-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -95,6 +102,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses"
    ],
@@ -104,37 +112,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -159,6 +173,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Requirements (22 credits) › Complete one of the following:",
    "notes": [
     "MyEducator"
    ],
@@ -169,28 +184,32 @@
    "area": "Matriculation Requirements",
    "code": "MKTG 1890",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Matriculation Requirements (22 credits) › MKTG 1890 Introduction to Careers in Business | 1"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MGMT 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › MGMT 2240 Business Quantitative Analysis | 3"
   },
   {
    "type": "course",
@@ -199,28 +218,37 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Matriculation Requirements (22 credits) › MKTG 2200G Written Business Communication (B- or higher required) | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (22 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "choice",
@@ -251,83 +279,95 @@
      "credits": 1
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (61 credits) › Complete one of the following: | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3890",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (61 credits) › MKTG 3890 Business Career Strategy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MGMT 3450 Operations Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MGMT 4860 Business Strategy Formulation and Implementation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3320G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MGMT 3320G Cross Cultural Communications for International Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4180",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › FIN 4180 International Finance Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4870",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MGMT 4870 International Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3350G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › MKTG 3350G International Marketing | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Language Requirement",
    "credits": 25,
+   "src": "Discipline Core Requirements (61 credits) › Language Requirement | 25 (Note: Non-native English speakers should see academic advisor for a list of alternate courses, at least 5 credit hours of which must be upper-division courses.)",
    "notes": [
     "For any foreign language, complete the following courses:",
     "Foreign Language 1010 (4)",
@@ -385,13 +425,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits from the following list:"
+   "text": "Complete 6 credits from the following list:",
+   "src": "Discipline Core Requirements (61 credits) › Complete 6 credits from the following list: | 6"
   },
   {
    "type": "placeholder",
    "area": "Free Electives",
    "label": "Any course numbered 1000 or higher",
-   "credits": 7
+   "credits": 7,
+   "src": "Free Electives (7 credits) › Any course numbered 1000 or higher | 7"
   }
  ],
  "gradPlan": [
@@ -654,7 +696,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 2010": {
    "title": "Principles of Economics I",
@@ -674,7 +721,12 @@
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -688,7 +740,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -701,7 +756,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -728,14 +784,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4180": {
    "title": "International Finance Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -763,14 +829,24 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 4700G": {
    "title": "International Human Resource Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -783,7 +859,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -795,7 +874,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -807,7 +887,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -819,7 +900,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -832,7 +914,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -845,7 +928,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -866,7 +952,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -883,7 +974,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -895,14 +991,25 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4810R": {
    "title": "Internship",
@@ -910,7 +1017,14 @@
    "creditsMax": 6,
    "prereqText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Woodbury School of Business",
+    "approval from School of Business Career and Corporate Manager",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -924,7 +1038,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MGMT 4870": {
    "title": "International Management",
@@ -936,14 +1056,25 @@
      "MKTG 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "MGMT 4910R": {
    "title": "International Business Lecture Series",
    "credits": 1,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 1890": {
    "title": "Introduction to Careers in Business",
@@ -961,20 +1092,29 @@
    "title": "International Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3890": {
    "title": "Business Career Strategy",
    "credits": 2,
    "prereqText": "University Advanced Standing; MKTG 1890 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -995,7 +1135,33 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours Complete one of the following: My Educator IM 2010 Business Computer Proficiency IM 2600 Spreadsheet Applications ECON 2010 Principles of Economics I 3 ACC 2110 Principles of Accounting I 3 MKTG 2200G Written Business Communication 3 MGMT 2240 Business Quantitative Analysis 3 MGMT 2340 Business Statistics I 3 or STAT 2040 Principles of Statistics MGMT 2400 Data Analytics for Business 3 MKTG 2390 Professional Business Presentations 3 Note: C- and higher is allowed in other course work as long as overall 2.5 GPA is met",
+  "before": [
+   "IM 2010",
+   "IM 2600",
+   "ECON 2010",
+   "ACC 2110",
+   "MKTG 2200G",
+   "MGMT 2240",
+   "MGMT 2340",
+   "STAT 2040",
+   "MGMT 2400",
+   "MKTG 2390"
+  ],
+  "gated": [
+   "MGMT 3450",
+   "MGMT 4810R",
+   "MGMT 4860",
+   "MGMT 4870"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

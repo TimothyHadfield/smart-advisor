@@ -3,7 +3,7 @@
  "name": "Peace and Justice Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/peace-justice-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "PJST 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › PJST 2000 Introduction to Peace and Justice Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PJST 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › PJST 3400 Conflict Transformation Resolution and Sustainable Peace | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PJST 4900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › PJST 4900 Peace and Justice Studies Capstone | 3"
   },
   {
    "type": "choice",
@@ -234,6 +237,7 @@
     }
    ],
    "text": "Complete 12 credit hours selected from the following list",
+   "src": "Elective Requirements (12 credits) › Complete 12 credit hours selected from the following list | 12",
    "notes": [
     "Peace, War, and Conflict",
     "Peace, War, and Conflict: Justice:",
@@ -297,7 +301,12 @@
    "credits": 3,
    "prereqText": "ENGL 2010 or instructor approval and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AIST 4600": {
    "title": "Contemporary American Indian Political and Social Issues",
@@ -309,42 +318,72 @@
      "AIST 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4795": {
    "title": "Civil Rights and Civil Liberties",
    "credits": 3,
    "prereqText": "CNST 4790 and University Advanced Standing",
    "prereqs": "CNST 4790",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3540": {
    "title": "History of South Africa",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4130": {
    "title": "Anti-Semitism and the Holocaust",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4140": {
    "title": "Genocide in the Twentieth Century",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3150": {
    "title": "Philosophical Issues in Feminism",
@@ -361,7 +400,12 @@
      "PHIL 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3530": {
    "title": "Environmental Ethics",
@@ -374,7 +418,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3700": {
    "title": "Social and Political Philosophy",
@@ -387,7 +436,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 2000": {
    "title": "Introduction to Peace and Justice Studies",
@@ -398,21 +452,36 @@
    "credits": 3,
    "prereqText": "PHIL 2050 and University Advanced Standing",
    "prereqs": "PHIL 2050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3030": {
    "title": "The Scientific Study of War and Peace",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3040": {
    "title": "Peace in Historical Context",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3100": {
    "title": "Introduction to Human Security",
@@ -429,7 +498,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3200": {
    "title": "Global Poverty Facts Causes and Solutions",
@@ -443,28 +517,48 @@
      "PHIL 2050",
      "PHIL 2050G"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3300": {
    "title": "Community Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3400": {
    "title": "Conflict Transformation Resolution and Sustainable Peace",
    "credits": 3,
    "prereqText": "PJST 2000 and University Advanced Standing",
    "prereqs": "PJST 2000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3420": {
    "title": "Negotiation and Diplomacy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4200": {
    "title": "Advanced Poverty Studies:Global Problems and Policies",
@@ -476,63 +570,110 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4300": {
    "title": "Race Gender and Class in Peace and Justice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4750R": {
    "title": "Issues in Peace and Justice Studies",
    "credits": 3,
    "prereqText": "PHIL 2050 , Junior Standing, and University Advanced Standing",
    "prereqs": "PHIL 2050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4900": {
    "title": "Peace and Justice Studies Capstone",
    "credits": 3,
    "prereqText": "ENGL 2010 , Senior Standing, and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3100": {
    "title": "Survey of International Terrorism",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3500": {
    "title": "International Relations of the Middle East",
    "credits": 3,
    "prereqText": "( POLS 2100 or instructor approval) and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3600": {
    "title": "International Relations of East Asia",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3650": {
    "title": "Model United Nations",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4500": {
    "title": "International Conflict and Security",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3460": {
    "title": "Political Sociology",
@@ -544,7 +685,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3520": {
    "title": "Environmental Sociology",
@@ -556,7 +703,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3700": {
    "title": "Social Inequality",
@@ -568,7 +721,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

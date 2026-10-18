@@ -3,7 +3,7 @@
  "name": "Philosophy, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/philosophy-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -25,13 +25,15 @@
      ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete 15 additional credit hours of philosophy courses (9 credit hours must be 3000 level or above; no more than 6 credit hours may be at the 1000 level; Philosophy 2050 does not count for this requirement.)",
-   "credits": 15
+   "credits": 15,
+   "src": "Discipline Core Requirements (18 credits) › Complete 15 additional credit hours of philosophy courses (9 credit hours must be 3000 level or above; no more than 6 credit hours may be at the 1000 level; Philosophy 2050 does not count for this requirement.) | 15"
   }
  ],
  "gradPlan": [
@@ -137,5 +139,10 @@
    },
    "prereqNonCourse": true
   }
+ },
+ "admissionInfo": {
+  "text": "Enrollment at Utah Valley University Overall grade point average of a 2.0 (C) or better. Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

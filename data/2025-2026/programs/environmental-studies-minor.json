@@ -3,7 +3,7 @@
  "name": "Environmental Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/philosophy-humanities/environmental-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "ENST 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ENST 2000 Introduction to Environmental Studies | 3"
   },
   {
    "type": "choice",
@@ -99,6 +100,7 @@
     }
    ],
    "text": "Choose 6 credits from the following courses in the College of Humanities and Social Sciences or the Woodbury School of Business.",
+   "src": "Discipline Core Requirements (18 credits) › Choose 6 credits from the following courses in the College of Humanities and Social Sciences or the Woodbury School of Business. | 6",
    "notes": [
     "Any other advisor approved courses"
    ],
@@ -529,6 +531,7 @@
     }
    ],
    "text": "Choose 6 credits from the following courses in the College of Science. 3 of these credits must be at the 3000 or 4000 level.",
+   "src": "Discipline Core Requirements (18 credits) › Choose 6 credits from the following courses in the College of Science. 3 of these credits must be at the 3000 or 4000 level. | 6",
    "notes": [
     "Biology",
     "Biology: Botany",
@@ -547,7 +550,8 @@
    "area": "Discipline Core Requirements",
    "label": "Choose an additional 3 credits from any of the courses listed above – OR – complete 3 hours of research credits, service project credits, or internship credits",
    "credits": 3,
-   "text": "Choose an additional 3 credits from any of the courses listed above – OR – complete 3 hours of research credits, service project credits, or internship credits"
+   "text": "Choose an additional 3 credits from any of the courses listed above – OR – complete 3 hours of research credits, service project credits, or internship credits",
+   "src": "Discipline Core Requirements (18 credits) › Choose an additional 3 credits from any of the courses listed above – OR – complete 3 hours of research credits, service project credits, or internship credits | 3"
   }
  ],
  "gradPlan": [
@@ -604,7 +608,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ANTH 3830": {
    "title": "Biology and Culture",
@@ -621,7 +630,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 1010": {
    "title": "General Biology",
@@ -669,7 +684,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -690,20 +706,35 @@
    "credits": 3,
    "prereqText": "BIOL 1620 with a C- or higher, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3800": {
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4000": {
    "title": "Freshwater Ecology",
    "credits": 4,
    "prereqText": "BIOL 1620 with a C- or higher in each, and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 4260": {
    "title": "Ethical Issues in Biology",
@@ -716,7 +747,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 2050": {
    "title": "Field Botany",
@@ -735,7 +772,13 @@
    "credits": 4,
    "prereqText": "BIOL 1620 with a C- or higher and University Advanced Standing",
    "prereqs": "BIOL 1620",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4050": {
    "title": "Plant Ecology",
@@ -746,7 +789,13 @@
    "coreqText": "BOT 4055",
    "coreqs": [
     "BOT 4055"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4300": {
    "title": "Native Trees and Shrubs of Utah",
@@ -759,7 +808,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 4500": {
    "title": "Introduction to Grasses",
@@ -772,7 +826,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1120": {
    "title": "Elementary Organic Bio-Chemistry",
@@ -785,7 +845,12 @@
    "credits": 3,
    "prereqText": "CHEM 1225 and University Advanced Standing",
    "prereqs": "CHEM 1225",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 4030": {
    "title": "Radiochemistry",
@@ -797,35 +862,62 @@
      "MATH 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3115": {
    "title": "Communicating in Environments",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3130": {
    "title": "The Culture of Nature and Technology",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3040": {
    "title": "Environmental Economics",
    "credits": 3,
    "prereqText": "Instructor Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3460": {
    "title": "Wilderness and Environmental Writing",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENST 2000": {
    "title": "Introduction to Environmental Studies",
@@ -841,7 +933,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 1110": {
    "title": "Introduction to Environmental Management",
@@ -873,7 +971,12 @@
    "credits": 4,
    "prereqText": "CHEM 1210 and University Advanced Standing",
    "prereqs": "CHEM 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3270": {
    "title": "Environmental Microbiology",
@@ -896,39 +999,60 @@
    "precoreqs": "ENVT 3300",
    "preco": [
     "ENVT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3280": {
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGH 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3330": {
    "title": "Water Resources Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3630": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3750": {
    "title": "Land Use Planning",
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3770": {
    "title": "Natural Resources Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; BIOL 1010 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3800": {
    "title": "Energy Use on Earth",
@@ -954,7 +1078,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 1080": {
    "title": "Introduction to Oceanography",
@@ -989,7 +1118,12 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3200": {
    "title": "Geologic Hazards",
@@ -1012,7 +1146,12 @@
    "coreqText": "GEO 3205",
    "coreqs": [
     "GEO 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3500": {
    "title": "Geomorphology",
@@ -1032,7 +1171,12 @@
    "coreqText": "GEO 3505",
    "coreqs": [
     "GEO 3505"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3505": {
    "title": "Geomorphology Lab",
@@ -1052,13 +1196,20 @@
    "coreqText": "GEO 3500",
    "coreqs": [
     "GEO 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4510": {
    "title": "Paleontology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , ( BIOL 1010 or BIOL 1610 ), and University Advanced Standing; GEO 4500 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 1000": {
    "title": "Introduction to Physical Geography",
@@ -1068,20 +1219,29 @@
    "title": "Environmental Remote Sensing",
    "credits": 3,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3600": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3650": {
    "title": "Advanced Geographic Information Systems",
    "credits": 4,
    "prereqText": "GEOG 3600 and University Advanced Standing",
    "prereqs": "GEOG 3600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3700": {
    "title": "Wetland Studies",
@@ -1097,21 +1257,36 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3800": {
    "title": "Environmental History of the United States",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HUM 4300": {
    "title": "Environmental Aesthetics",
@@ -1130,7 +1305,12 @@
      "HUM 3500"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "METO 1010": {
    "title": "Introduction to Meteorology",
@@ -1164,7 +1344,12 @@
      "GEO 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3460": {
    "title": "The Ethics of Human/Animal Relationships",
@@ -1179,7 +1364,12 @@
      "PHIL 1000H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3530": {
    "title": "Environmental Ethics",
@@ -1192,7 +1382,12 @@
      "PHIL 2050G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 4300": {
    "title": "Environmental Aesthetics",
@@ -1211,7 +1406,12 @@
      "HUM 3500"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 1800": {
    "title": "Energy You and the Environment",
@@ -1243,7 +1443,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 2200": {
    "title": "Foundations of Recreation",
@@ -1272,21 +1477,37 @@
      "PHIL 2050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4200R": {
    "title": "Outdoor Leadership and Management Practicum",
    "credits": 2,
    "prereqText": "REC 2400 , Instructor approval, and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4400": {
    "title": "Natural Resource and Protected Area Management",
    "credits": 3,
    "prereqText": "REC 2200 and University Advanced Standing",
    "prereqs": "REC 2200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3520": {
    "title": "Environmental Sociology",
@@ -1298,7 +1519,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3800": {
    "title": "Animals and Society",
@@ -1310,7 +1537,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3100": {
    "title": "Vertebrate Zoology",
@@ -1321,7 +1554,13 @@
    "coreqText": "ZOOL 3105",
    "coreqs": [
     "ZOOL 3105"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3105": {
    "title": "Vertebrate Zoology Laboratory",
@@ -1332,7 +1571,12 @@
    "coreqText": "ZOOL 3100",
    "coreqs": [
     "ZOOL 3100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3200": {
    "title": "Invertebrate Zoology",
@@ -1343,7 +1587,13 @@
    "coreqText": "ZOOL 3205",
    "coreqs": [
     "ZOOL 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3205": {
    "title": "Invertebrate Zoology Laboratory",
@@ -1354,7 +1604,13 @@
    "coreqText": "ZOOL 3200 Invertebrate Zoology",
    "coreqs": [
     "ZOOL 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3300": {
    "title": "Herpetology",
@@ -1365,7 +1621,13 @@
    "coreqText": "ZOOL 3305 Herpetology Laboratory",
    "coreqs": [
     "ZOOL 3305"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3305": {
    "title": "Herpetology Laboratory",
@@ -1376,7 +1638,13 @@
    "coreqText": "ZOOL 3300 Herpetology",
    "coreqs": [
     "ZOOL 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3430": {
    "title": "Entomology",
@@ -1392,7 +1660,13 @@
    "coreqText": "ZOOL 3435",
    "coreqs": [
     "ZOOL 3435"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3435": {
    "title": "Entomology Laboratory",
@@ -1403,7 +1677,12 @@
    "coreqText": "ZOOL 3430",
    "coreqs": [
     "ZOOL 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3500": {
    "title": "Mammalogy",
@@ -1413,7 +1692,10 @@
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3505": {
    "title": "Mammalogy Laboratory",
@@ -1424,20 +1706,32 @@
    "coreqText": "ZOOL 3500",
    "coreqs": [
     "ZOOL 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4000": {
    "title": "Animal Behavior",
    "credits": 3,
    "prereqText": "BIOL 1610 and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4600": {
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

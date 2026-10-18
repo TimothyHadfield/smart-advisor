@@ -3,7 +3,7 @@
  "name": "Physics Education, B.S.",
  "url": "https://catalog.uvu.edu/science/physics/physics-education-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -71,6 +78,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -80,7 +88,8 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -104,220 +113,279 @@
      "credits": 4
     }
    ],
-   "text": "Biology: complete one of the following"
+   "text": "Biology: complete one of the following",
+   "src": "General Education Requirements (31 credits) › Biology: complete one of the following | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 1100",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 1100 Introductory Math Techniques for Physics and Engineering | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › CHEM 1210 Principles of Chemistry I | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › GEO 1010 Introduction to Geology | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › GEO 1015 Introduction to Geology Laboratory | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › MATH 1220 Calculus II | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › MATH 2210 Calculus III | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3010",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 3010 Physics Experiments for Secondary Education | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 3110 Modern Physics I | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 3115",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › PHYS 3115 Introduction to Experimental Physics I | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 1010 Introduction to Education | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 3000 Educational Psychology | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 3250G Equitable Technology Integration | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4200 Classroom Management I | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4250 Classroom Management II | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4440 Content Area Literacies | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4450G Multicultural and Multilingual Education | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4850 Student Teaching Secondary | 8",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSC 4990 Teacher Assessment Project | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Education Courses: › EDSP 3400G Exceptional Students | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following set: › SCIE 4210 Science Teaching Methods I | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SCIE 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following set: › SCIE 4220 Science Teaching Methods II | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
@@ -326,6 +394,8 @@
    "alts": [],
    "credits": 1,
    "repeat": 2,
+   "src": "Discipline Core Requirements (85 credits) › PHYSICS: › PHYS 4900R Seminar (must be repeated two times) | 1",
+   "minGrade": "B-",
    "creditsEach": 0.5
   },
   {
@@ -410,14 +480,17 @@
      "credits": 3
     }
    ],
-   "text": "Complete 9 credits from the following:"
+   "text": "Complete 9 credits from the following:",
+   "src": "Discipline Core Requirements (85 credits) › PHYSICS: › Complete 9 credits from the following: | 9",
+   "minGrade": "B-"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 4 credits of upper division electives.",
    "credits": 4,
-   "text": "Complete 4 credits of upper division electives."
+   "text": "Complete 4 credits of upper division electives.",
+   "src": "Elective Requirements (4 credits) › Complete 4 credits of upper division electives. | 4"
   }
  ],
  "gradPlan": [
@@ -646,7 +719,12 @@
      "MATH 1220"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASTR 3060": {
    "title": "Astrophysics II",
@@ -659,7 +737,12 @@
      "ASTR 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 1010": {
    "title": "General Biology",
@@ -701,7 +784,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -720,21 +807,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -749,28 +854,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -783,7 +912,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -795,7 +931,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -806,14 +949,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -826,7 +975,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -857,7 +1007,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -879,7 +1034,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -890,7 +1049,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -901,7 +1061,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "PHYS 1100": {
    "title": "Introductory Math Techniques for Physics and Engineering",
@@ -983,7 +1144,12 @@
      "MATH 1060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3110": {
    "title": "Modern Physics I",
@@ -994,7 +1160,12 @@
    "coreqText": "PHYS 3115",
    "coreqs": [
     "PHYS 3115"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3115": {
    "title": "Introduction to Experimental Physics I",
@@ -1005,7 +1176,12 @@
    "coreqText": "PHYS 3110",
    "coreqs": [
     "PHYS 3110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3120": {
    "title": "Modern Physics II",
@@ -1016,7 +1192,12 @@
    "coreqText": "PHYS 3125",
    "coreqs": [
     "PHYS 3125"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3125": {
    "title": "Introduction to Experimental Physics II",
@@ -1033,14 +1214,24 @@
    "precoreqs": "PHYS 3120",
    "preco": [
     "PHYS 3120"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3230": {
    "title": "Principles of Electronics for the Physical Sciences",
    "credits": 3,
    "prereqText": "PHYS 2220 , and University Advanced Standing",
    "prereqs": "PHYS 2220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3300": {
    "title": "Mathematical and Computational Physics I",
@@ -1054,7 +1245,12 @@
      "MATH 2210",
      "MATH 2280"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3400": {
    "title": "Classical Mechanics",
@@ -1063,7 +1259,12 @@
    "prereqs": "PHYS 2220",
    "prereqNonCourse": true,
    "precoreqText": "PHYS 3300 recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3500": {
    "title": "Thermodynamics",
@@ -1075,7 +1276,12 @@
      "MATH 2210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 3800": {
    "title": "Energy Use on Earth",
@@ -1101,7 +1307,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4700": {
    "title": "Acoustics",
@@ -1114,14 +1325,24 @@
      "PHYS 3300"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHYS 4900R": {
    "title": "Seminar",
    "credits": 0.5,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1136,14 +1357,69 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SCIE 4220": {
    "title": "Teaching Methods in Science II",
    "credits": 3,
    "prereqText": "SCIE 4210 and University Advanced Standing",
    "prereqs": "SCIE 4210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Students are admitted directly to the Baccalaureate degree program in Physics Education upon acceptance to the Secondary Education Program. Students must obtain the departmental Advisor's signature on an approved program plan prior to enrollment in their second semester of study.",
+  "before": [
+   "EDSC 1010",
+   "ENGL 1010",
+   "PHYS 1100",
+   "GEO 1010",
+   "GEO 1015",
+   "ENGL 2010",
+   "MATH 1210",
+   "PHYS 2210",
+   "PHYS 2215",
+   "MATH 1220",
+   "PHYS 2220",
+   "PHYS 2225",
+   "CHEM 1210",
+   "CHEM 1215",
+   "MATH 2210",
+   "PHYS 4900R",
+   "SCIE 4210",
+   "PHYS 3110",
+   "PHYS 3115"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeLabels": [
+   "American Institutions",
+   "Biology: complete one of the following",
+   "Humanities",
+   "Physics Electives",
+   "Fine Arts",
+   "Personal, Professional, and Civic Growth",
+   "Social/Behavioral Science"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

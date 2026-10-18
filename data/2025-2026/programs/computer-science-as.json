@@ -3,7 +3,7 @@
  "name": "Computer Science, A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-as/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -69,43 +76,50 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Life Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Life Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social & Behavioral Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social & Behavioral Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -160,56 +174,71 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following course/lab combinations:"
+   "text": "Complete one of the following course/lab combinations:",
+   "src": "Discipline Core Requirements (29 credits) › Complete one of the following course/lab combinations: | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 1400 Fundamentals of Programming | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 1410 Object Oriented Programming | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 2300 Discrete Mathematical Structures I | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 2370 C Plus Plus Programming | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 2550 Web Programming I | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Discipline Core Requirements (29 credits) › CS 2810 Computer Organization and Architecture | 3 (Note: Minimum grade of C- required)"
   },
   {
    "type": "choice",
@@ -251,7 +280,8 @@
      "credits": 4
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Discipline Core Requirements (29 credits) › Choose one of the following: | 3"
   }
  ],
  "gradPlan": [
@@ -433,7 +463,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -448,7 +482,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -563,7 +600,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -576,7 +616,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -626,7 +667,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "PHYS 2015": {
    "title": "College Physics I Lab",
@@ -706,7 +751,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

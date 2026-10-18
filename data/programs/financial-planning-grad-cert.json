@@ -3,7 +3,7 @@
  "name": "Financial Planning, Graduate Certificate",
  "url": "https://catalog.uvu.edu/business/finance-economics/financial-planning-grad-cert/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "FIN 6060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6060 Financial Planning for Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 6170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6170 Investment Analysis and Portfolio Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 6210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6210 Retirement Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 6260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6260 Estate Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6300 Income Tax Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 6800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 6800 Wealth Management and Financial Planning Capstone | 3"
   }
  ],
  "gradPlan": [
@@ -96,35 +102,60 @@
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6170": {
    "title": "Investment Analysis and Portfolio Analysis",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6210": {
    "title": "Retirement Planning",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6260": {
    "title": "Estate Planning",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6300": {
    "title": "Income Tax Planning",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "FIN 6800": {
    "title": "Wealth Management and Financial Planning Capstone",
@@ -146,5 +177,17 @@
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. The minimum admissions criteria include the following: 1. Acceptance of an application to the Graduate Certificate in Financial Planning, including payment of the application fee by the established deadline. 2. Official transcripts from all universities attended properly submitted. 3. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. 4. A 3.0 or higher cumulative undergraduate GPA or a 3.0 or higher GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate coursework. 5. For international students whose native language is not English, a TOEFL score of 80 iBT (550 pBT) or higher, or an IELTS band score of 6.5 or higher within the past two years. 6. For international students, all US government requirements for international students must be met.",
+  "before": [],
+  "gated": [
+   "FIN 6060",
+   "FIN 6170",
+   "FIN 6210",
+   "FIN 6260",
+   "FIN 6300"
+  ]
+ }
 }

@@ -3,7 +3,7 @@
  "name": "Public Health, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/public-health/public-health-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,26 +11,30 @@
    "area": "Discipline Core Requirements",
    "code": "HLTH 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › HLTH 1100 Personal Health and Wellness | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (6 credits) › HLTH 3200 Principles of Community Health | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any lower-division HLTH course",
-   "credits": 3
+   "credits": 3,
+   "src": "Elective Requirements (12 credits) › Any lower-division HLTH course | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any upper-division HLTH course",
-   "credits": 9
+   "credits": 9,
+   "src": "Elective Requirements (12 credits) › Any upper-division HLTH course | 9"
   }
  ],
  "gradPlan": [
@@ -88,7 +92,17 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

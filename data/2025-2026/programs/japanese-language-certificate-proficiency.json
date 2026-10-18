@@ -3,7 +3,7 @@
  "name": "Japanese Language, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/japanese-language-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "",
    "code": "JPNS 1020",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "JPNS 1020 Beginning Japanese II | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "JPNS 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "JPNS 2010 Intermediate Japanese I | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "JPNS 2020G",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "JPNS 2020G Intermediate Japanese II | 4"
   },
   {
    "type": "course",
    "area": "",
    "code": "JPNS 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "JPNS 3050 Advanced Japanese | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "JPNS 3510G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "JPNS 3510G Japanese Culture and Civilization | 3"
   }
  ],
  "gradPlan": [
@@ -122,7 +127,12 @@
    "credits": 3,
    "prereqText": "JPNS 3050 and University Advanced Standing",
    "prereqs": "JPNS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

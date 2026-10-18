@@ -3,7 +3,7 @@
  "name": "Mechatronics Engineering Technology - Mechatronics Emphasis, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/technology-management/mechatronics-engineering-technology-mechatronics-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -14,7 +14,11 @@
     "ENGL 1005"
    ],
    "credits": 3,
-   "fromPlan": true
+   "fromPlan": true,
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
@@ -188,28 +192,36 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (12 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "MECH 2400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (12 credits) › MECH 2400 Mechanical Components | 4"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "MECH 2700",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (12 credits) › MECH 2700 Industrial Motor Control Mechatronic Systems | 2"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "MECH 2705",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Emphasis Requirements (12 credits) › MECH 2705 Industrial Motor Control Mechatronic Systems Laboratory | 2"
   }
  ],
  "gradPlan": [
@@ -360,14 +372,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -379,7 +397,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -391,7 +410,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MECH 1010": {
    "title": "Fundamentals of Mechatronics",

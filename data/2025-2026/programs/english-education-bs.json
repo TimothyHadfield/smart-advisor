@@ -3,7 +3,7 @@
  "name": "English Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/english-literature/english-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 122,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -119,6 +126,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -128,44 +136,51 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 2800 Introduction to the English Major | 3"
   },
   {
    "type": "course",
@@ -174,35 +189,40 @@
    "alts": [
     "ENGL 2870"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 2850 Literary History I | 3 or ENGL 2870 Literary History II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 2600 Critical Introduction to Literature | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 2700G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 2700G Positionality and Interpretive Methods | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 3090",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 3090 Academic Writing for English Majors | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 2250 Introduction to Creative Writing | 3"
   },
   {
    "type": "choice",
@@ -238,7 +258,8 @@
      "credits": 3
     }
    ],
-   "text": "American Literature (complete ONE from the following):"
+   "text": "American Literature (complete ONE from the following):",
+   "src": "Discipline Core Requirements (74 credits) › American Literature (complete ONE from the following): | 3"
   },
   {
    "type": "choice",
@@ -280,69 +301,79 @@
      "credits": 3
     }
    ],
-   "text": "British Literature (complete ONE from the following):"
+   "text": "British Literature (complete ONE from the following):",
+   "src": "Discipline Core Requirements (74 credits) › British Literature (complete ONE from the following): | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4250 Young Adult Literature | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4650",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4650 Studies in Shakespeare | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4220 Teaching Reading and Literature | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4225 Teaching Reading Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4230 Teaching Writing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4235",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4235 Teaching Writing Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4240 Grammar and Unit Design in the English Classroom | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4245",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (74 credits) › ENGL 4245 Grammar and Unit Design Practicum | 1"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
    "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › Elective (Complete any ENGL course not already fulfilling a degree requirement) | 3",
    "notes": [
     "Secondary Education Licensure"
    ]
@@ -352,76 +383,87 @@
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4990 Teacher Assessment Project | 2"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any course 1000 or higher",
-   "credits": 18
+   "credits": 18,
+   "src": "Elective Requirements (18 credits) › Any course 1000 or higher | 18"
   }
  ],
  "gradPlan": [
@@ -669,21 +711,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -698,21 +758,39 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -725,7 +803,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -737,7 +822,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -755,7 +847,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -768,7 +863,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2250": {
    "title": "Introduction to Creative Writing",
@@ -779,14 +875,16 @@
      "ENGL 1010",
      "ENGH 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ENGL 2600": {
    "title": "Critical Introduction to Literature",
    "credits": 3,
    "prereqText": "Completion of ENGL 2010 with a grade of C- or higher.",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2700G": {
    "title": "Positionality and Interpretive Methods",
@@ -830,7 +928,13 @@
    "coreqText": "ENGL 3000 Recommended",
    "coreqs": [
     "ENGL 3000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3510": {
    "title": "Early American Literature",
@@ -847,7 +951,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3520": {
    "title": "Nineteenth Century American Literature",
@@ -864,7 +975,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3530": {
    "title": "Modern American Literature",
@@ -881,7 +999,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3540": {
    "title": "Contemporary American Literature",
@@ -898,7 +1023,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3610": {
    "title": "Medieval Literature",
@@ -915,7 +1047,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3620": {
    "title": "Tudor and Stuart Literature",
@@ -932,7 +1071,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3640": {
    "title": "British Literature of the Long Eighteenth Century",
@@ -949,7 +1095,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3650": {
    "title": "Victorian Literature",
@@ -966,7 +1119,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3660": {
    "title": "British Literature since 1900",
@@ -983,7 +1143,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4220": {
    "title": "Teaching Reading and Literature",
@@ -994,7 +1161,12 @@
    "coreqText": "ENGL 4225",
    "coreqs": [
     "ENGL 4225"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4225": {
    "title": "Teaching Reading Practicum",
@@ -1005,7 +1177,12 @@
    "coreqText": "ENGL 4220",
    "coreqs": [
     "ENGL 4220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4230": {
    "title": "Teaching Writing",
@@ -1021,7 +1198,12 @@
    "precoreqs": "ENGL 4220",
    "preco": [
     "ENGL 4220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4235": {
    "title": "Teaching Writing Practicum",
@@ -1032,7 +1214,12 @@
    "coreqText": "ENGL 4230",
    "coreqs": [
     "ENGL 4230"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4240": {
    "title": "Grammar and Unit Design in the English Classroom",
@@ -1043,7 +1230,12 @@
    "coreqText": "ENGL 4245",
    "coreqs": [
     "ENGL 4245"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4245": {
    "title": "Grammar and Unit Design Practicum",
@@ -1054,21 +1246,36 @@
    "coreqText": "ENGL 4240",
    "coreqs": [
     "ENGL 4240"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4250": {
    "title": "Adolescent Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4650": {
    "title": "Studies in Shakespeare",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1097,7 +1304,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1109,7 +1320,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1121,7 +1336,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1133,7 +1349,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1145,7 +1362,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1166,7 +1384,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1179,7 +1402,53 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Secondary Education Matriculation Requirements ENGL and MATH QL courses must have a grade C or higher. GPA of 3.0 or higher with no grade lower than a C in content area courses. Completion of all General Education requirements and 70% of content area courses. Pass LiveScan Criminal Background Check.",
+  "before": [
+   "ENGL 1010",
+   "ENGL 2010",
+   "ENGL 2850",
+   "ENGL 2800",
+   "ENGL 2700G",
+   "ENGL 2600",
+   "EDSC 1010",
+   "ENGL 3090",
+   "ENGL 3510",
+   "ENGL 4220",
+   "ENGL 4225",
+   "ENGL 3610",
+   "ENGL 4250",
+   "EDSP 3400G"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeLabels": [
+   "Quantitative Reasoning",
+   "Fine Arts",
+   "American Institutions",
+   "Social/Behavioral Science",
+   "Physical Science",
+   "Elective (Complete any ENGL course not already fulfilling a degree requirement)",
+   "Biology",
+   "Personal, Professional, and Civic Growth"
+  ],
+  "beforeFrom": "graduation plan",
+  "minGrade": "C"
  }
 }

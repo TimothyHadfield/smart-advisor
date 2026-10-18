@@ -3,7 +3,7 @@
  "name": "Sound Design, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/digital-media/sound-design-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 27,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "DAPR 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 2110 Production Sound for Cinema | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 3340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 3340 Spatial Audio I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 2170 Sound Design for Visual Media I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2171",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 2171 Sound Design for Visual Media II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 3170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 3170 Post-Production Sound for Cinema I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 3171",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › DAPR 3171 Post-Production Sound for Cinema II | 3"
   },
   {
    "type": "choice",
@@ -177,7 +183,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete at least 9 credits from the following:"
+   "text": "Complete at least 9 credits from the following:",
+   "src": "Elective Requirements (9 credits) › Complete at least 9 credits from the following: | 9"
   }
  ],
  "gradPlan": [
@@ -269,41 +276,68 @@
    "credits": 3,
    "prereqText": "DAPR 1031 and University Advanced Standing",
    "prereqs": "DAPR 1031",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3031": {
    "title": "Digital Audio Workstation Training IV",
    "credits": 3,
    "prereqText": "DAPR 3030 and University Advanced Standing",
    "prereqs": "DAPR 3030",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3060": {
    "title": "Producing Audio",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3170": {
    "title": "Post-Production Sound for Cinema I",
    "credits": 3,
    "prereqText": "DAPR 2170 and University Advanced Standing",
    "prereqs": "DAPR 2170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3171": {
    "title": "Post-Production Sound for Cinema II",
    "credits": 3,
    "prereqText": "DAPR 3170 , University Advanced Standing",
    "prereqs": "DAPR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3230": {
    "title": "Audio Plugin Development I",
    "credits": 3,
    "prereqText": "MAT 1030 or MAT 1035 or Higher, University Advanced Standing, MATH 1050 or MATH 1055 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3235": {
    "title": "Audio Plugin Development II",
@@ -315,35 +349,61 @@
      "DAPR 3230"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "B",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3240": {
    "title": "Advanced Audio Restoration and Forensics",
    "credits": 3,
    "prereqText": "DAPR 2240 and University Advanced Standing",
    "prereqs": "DAPR 2240",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3255": {
    "title": "Audio Hardware II",
    "credits": 3,
    "prereqText": "DAPR 2255 , University Advanced Standing",
    "prereqs": "DAPR 2255",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3300": {
    "title": "Sound for Games II",
    "credits": 3,
    "prereqText": "DAPR 2300 , University Advanced Standing",
    "prereqs": "DAPR 2300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3340": {
    "title": "Spatial Audio I",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3345": {
    "title": "Spatial Audio II",
@@ -355,21 +415,36 @@
      "DAPR 3340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3430": {
    "title": "Recording Studio Design Principles and Practices",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 3580": {
    "title": "Live Sound Reinforcement",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 1010": {
    "title": "Film Production Analysis I",
@@ -428,7 +503,13 @@
    "coreqText": "DCPR 3610L",
    "coreqs": [
     "DCPR 3610L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3610L": {
    "title": "Digital Cinema Editing II Lab",
@@ -439,7 +520,13 @@
    "coreqText": "DCPR 3610",
    "coreqs": [
     "DCPR 3610"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3660": {
    "title": "Professional NLE Certification",
@@ -455,7 +542,13 @@
    "coreqText": "DCPR 3660L",
    "coreqs": [
     "DCPR 3660L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3660L": {
    "title": "Professional NLE Certification Lab",
@@ -471,7 +564,13 @@
    "coreqText": "DCPR 3660",
    "coreqs": [
     "DCPR 3660"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

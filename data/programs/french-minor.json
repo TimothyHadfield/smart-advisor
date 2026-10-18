@@ -3,7 +3,7 @@
  "name": "French, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/french-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "FREN 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (3 credits) › FREN 3050 Advanced French | 3"
   },
   {
    "type": "choice",
@@ -88,7 +89,8 @@
      ]
     }
    ],
-   "text": "Complete 15 credits from among the following:"
+   "text": "Complete 15 credits from among the following:",
+   "src": "Elective Requirements (15 credits) › Complete 15 credits from among the following: | 15"
   }
  ],
  "gradPlan": [
@@ -153,70 +155,119 @@
    "credits": 3,
    "prereqText": "( FREN 2020G or instructor approval) and University Advanced Standing",
    "prereqs": "FREN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3040": {
    "title": "Introduction to Literary Genres in French",
    "credits": 3,
    "prereqText": "( FREN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "FREN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3050": {
    "title": "Advanced French",
    "credits": 3,
    "prereqText": "It is recommended that students take FR 2020G prior to enrolling in FR 3050. If you have advanced study of French, you may also contact the French Program Director for a placement test.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "If you have advanced study of French",
+    "you may also contact the French Program Director for a placement test"
+   ]
   },
   "FREN 3200": {
    "title": "Business French",
    "credits": 3,
    "prereqText": "( FREN 3050 or equivalent knowledge) and University Advanced Standing",
    "prereqs": "FREN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3510G": {
    "title": "Culture and Civilization to 1700",
    "credits": 3,
    "prereqText": "FREN 3050 and University Advanced Standing",
    "prereqs": "FREN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3520G": {
    "title": "Culture and Civilization from 1700",
    "credits": 3,
    "prereqText": "FREN 3050 and University Advanced Standing",
    "prereqs": "FREN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3610": {
    "title": "French Literature to 1700",
    "credits": 3,
    "prereqText": "( FREN 3050 or equivalent knowledge) and University Advanced Standing",
    "prereqs": "FREN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 3620": {
    "title": "French Literature from 1700",
    "credits": 3,
    "prereqText": "( FREN 3050 or equivalent knowledge) or department approval; University Advanced Standing",
    "prereqs": "FREN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 4200": {
    "title": "Advanced Business French",
    "credits": 3,
    "prereqText": "( FREN 3200 or equivalent knowledge) and University Advanced Standing",
    "prereqs": "FREN 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FREN 4900R": {
    "title": "Special Topics in French",
    "credits": 3,
    "prereqText": "( FREN 2020G or instructor approval) and University Advanced Standing",
    "prereqs": "FREN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 3000": {
    "title": "Language and Culture",
@@ -234,14 +285,26 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Sophomore status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 4200": {
    "title": "Methods of Teaching a Foreign Language",
    "credits": 3,
    "prereqText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Matriculation into any secondary education bachelor degree program or departmental approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing"
   },
   "LANG 4810R": {
    "title": "Language Internship",
@@ -249,7 +312,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LANG 4900R": {
    "title": "Special Topics in Languages",
@@ -257,7 +326,28 @@
    "creditsMax": 3,
    "prereqText": "Department Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete ENGL 2010 Intermediate Academic Writing and 30 hours of college-level courses other than French with a minimum GPA of 2.0 Complete lower division French courses ( FREN 1010 Beginning French I , FREN 1020 Beginning French II , FREN 2010 Intermediate French I , and FREN 2020G Intermediate French II or receive the equivalent through experiential credit (does not apply to native speakers). Students with significant residency abroad should register for FREN 3050 Advanced French as a first course toward the minor. Be admitted to a bachelor degree program at UVU.",
+  "before": [
+   "ENGL 2010",
+   "FREN 1010",
+   "FREN 1020",
+   "FREN 2010",
+   "FREN 2020G",
+   "FREN 3050"
+  ],
+  "gated": [
+   "LANG 4200"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

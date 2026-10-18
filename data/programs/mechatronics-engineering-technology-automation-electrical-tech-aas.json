@@ -3,7 +3,7 @@
  "name": "Mechatronics Engineering Technology - Automation and Electrical Technology Emphasis, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/technology-management/mechatronics-engineering-technology-automation-electrical-tech-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -14,7 +14,11 @@
     "ENGL 1005"
    ],
    "credits": 3,
-   "fromPlan": true
+   "fromPlan": true,
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
@@ -186,28 +190,32 @@
    "area": "Emphasis Requirements",
    "code": "AET 1050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (12 credits) › AET 1050 Electrical Math I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "AET 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (12 credits) › AET 1060 Electrical Math II | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "EGDT 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (12 credits) › EGDT 1200 Mechanical Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "AET 2910R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (12 credits) › AET 2910R Special Topics in Industrial Systems | 3"
   }
  ],
  "gradPlan": [
@@ -386,21 +394,28 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MECH 1010": {
    "title": "Fundamentals of Mechatronics",

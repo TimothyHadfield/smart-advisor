@@ -3,7 +3,7 @@
  "name": "Chinese Language, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/chinese-language-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "CHIN 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CHIN 3050 Advanced Chinese | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHIN 4050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CHIN 4050 Chinese Language and Culture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHIN 3510G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › CHIN 3510G Chinese Culture and Civilization | 3"
   },
   {
    "type": "choice",
@@ -151,7 +154,8 @@
      "credits": 3
     }
    ],
-   "text": "In addition to the 9 core requirements, students must complete 9 hours of upper division electives from the following:"
+   "text": "In addition to the 9 core requirements, students must complete 9 hours of upper division electives from the following:",
+   "src": "Elective Requirements (9 credits) › In addition to the 9 core requirements, students must complete 9 hours of upper division electives from the following: | 9"
   }
  ],
  "gradPlan": [
@@ -227,21 +231,37 @@
    "credits": 3,
    "prereqText": "Completion of CHIN 3050 with a grade of C or above; University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3200": {
    "title": "Business Chinese I",
    "credits": 3,
    "prereqText": "CHIN 3050 and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3510G": {
    "title": "Chinese Culture and Civilization",
    "credits": 3,
    "prereqText": "( CHIN 3050 or equivalent) and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3650": {
    "title": "Modern Chinese Literature from 1900",
@@ -254,21 +274,38 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3690": {
    "title": "Modern China Through Film",
    "credits": 3,
    "prereqText": "CHIN 3050 and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4050": {
    "title": "Chinese Language and Culture",
    "credits": 3,
    "prereqText": "CHIN 3050 , over one year residency in a Mandarin Chinese-speaking country, or instructor approval, and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "over one year residency in a Mandarin Chinese-speaking country",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4060": {
    "title": "Topics in Grammar Usage and Style",
@@ -281,28 +318,49 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4100": {
    "title": "Translation and Interpretation",
    "credits": 3,
    "prereqText": "CHIN 4050 and University Advanced Standing",
    "prereqs": "CHIN 4050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4120R": {
    "title": "Chinese for the Professions",
    "credits": 3,
    "prereqText": "CHIN 3050 and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4200": {
    "title": "Business Chinese II",
    "credits": 3,
    "prereqText": "CHIN 3200 and University Advanced Standing",
    "prereqs": "CHIN 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4250": {
    "title": "Newspaper Readings",
@@ -315,14 +373,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4300": {
    "title": "Selected Readings in Classical Chinese",
    "credits": 3,
    "prereqText": "CHIN 3100 and University Advanced Standing",
    "prereqs": "CHIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4500": {
    "title": "Advanced Writing in Chinese",
@@ -334,63 +403,119 @@
      "CHIN 4050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4900R": {
    "title": "Special Topics in Chinese Language and Literacy",
    "credits": 3,
    "prereqText": "CHIN 3050 , University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3620G": {
    "title": "Traditional Chinese History",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3630G": {
    "title": "Modern Chinese History",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3650": {
    "title": "China Transformations from 1949",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3730G": {
    "title": "Classical Chinese Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3739": {
    "title": "Selected Readings from Pre-Qin Writings",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3750G": {
    "title": "Modern Chinese Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 4160G": {
    "title": "Chinese Culture and Film",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete lower division Chinese courses [ CHIN 1010 Beginning Chinese I , CHIN 1020 Beginning Chinese II , CHIN 2010 Intermediate Chinese I , and CHIN 2020G Intermediate Chinese II ] or attain a similar level of language mastery through other means. Native speakers begin at the upper division level.",
+  "before": [
+   "CHIN 1010",
+   "CHIN 1020",
+   "CHIN 2010",
+   "CHIN 2020G"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

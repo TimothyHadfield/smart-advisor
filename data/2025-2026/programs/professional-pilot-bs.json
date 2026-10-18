@@ -3,7 +3,7 @@
  "name": "Professional Pilot, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/aviation-science/professional-pilot-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -71,6 +77,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -115,6 +122,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -124,37 +132,43 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
@@ -163,180 +177,206 @@
    "alts": [
     "AVSC 1050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 1010 Survey of Aviation Science | 3 or AVSC 1050 Introduction to Aviation Management"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 1100 Ground I - Private | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 1110 Flight I - Private | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 1240 Ground II - Instrument | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 1250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 1250 Flight II - Instrument II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2070",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2070 Communications for Aviation Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2110 Aviation Weather | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2130 Aviation Safety | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2150 Air Transportation Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2300 Ground IV - Commercial | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2310 Flight IV - Commercial | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2450",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2450 Flight III - Multi Engine | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2440",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 2440 Ground III - Multi Engine | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3090",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3090 Airline and Dispatch Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3030 Air Traffic Control I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3200 Flight Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3300 Jet Transport Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3400 International Flight Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3530 Flight Aerodynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 3600 Multi-piloted Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4100G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 4100G Global Ethical and Professional Issues in Aviation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 4700 Aviation Professional Seminars | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 4160 Aviation Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (90 credits) › AVSC 4800 Professional Pilot Capstone | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Upper division elective credits",
-   "credits": 9
+   "credits": 9,
+   "src": "Discipline Core Requirements (90 credits) › Upper division elective credits | 9"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "1000+ Electives",
-   "credits": 13
+   "credits": 13,
+   "src": "Discipline Core Requirements (90 credits) › 1000+ Electives | 13"
   }
  ],
  "gradPlan": [
@@ -604,7 +644,10 @@
    "credits": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "AVSC 1110": {
    "title": "Flight I - Private",
@@ -616,6 +659,9 @@
    "precoreqs": "AVSC 1100",
    "preco": [
     "AVSC 1100"
+   ],
+   "prereqWords": [
+    "Department Approval"
    ]
   },
   "AVSC 1240": {
@@ -628,14 +674,20 @@
      "AVSC 1110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 1250": {
    "title": "Flight II - Instrument II",
    "credits": 3,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2070": {
    "title": "Communications for Aviation Professionals",
@@ -665,35 +717,52 @@
    "credits": 3,
    "prereqText": "AVSC 1250 and Department Approval",
    "prereqs": "AVSC 1250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2310": {
    "title": "Flight IV - Commercial",
    "credits": 3,
    "prereqText": "AVSC 1250 and Department Approval",
    "prereqs": "AVSC 1250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2440": {
    "title": "Ground III - Multi Engine",
    "credits": 1,
    "prereqText": "AVSC 1110 and Department Approval",
    "prereqs": "AVSC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 2450": {
    "title": "Flight III - Multi Engine",
    "credits": 1,
    "prereqText": "AVSC 1110 and Department Approval",
    "prereqs": "AVSC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "AVSC 3030": {
    "title": "Air Traffic Control I",
    "credits": 3,
    "prereqText": "AVSC 1100 and University Advanced Standing",
    "prereqs": "AVSC 1100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3090": {
    "title": "Airline and Dispatch Operations",
@@ -705,35 +774,60 @@
      "AVSC 2110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3200": {
    "title": "Flight Physiology",
    "credits": 3,
    "prereqText": "AVSC 1240 and University Advanced Standing",
    "prereqs": "AVSC 1240",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3300": {
    "title": "Jet Transport Systems",
    "credits": 3,
    "prereqText": "AVSC 1240 and University Advanced Standing",
    "prereqs": "AVSC 1240",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3400": {
    "title": "International Flight Operations",
    "credits": 3,
    "prereqText": "AVSC 1240 and University Advanced Standing",
    "prereqs": "AVSC 1240",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3530": {
    "title": "Flight Aerodynamics",
    "credits": 3,
    "prereqText": "AVSC 1240 and University Advanced Standing",
    "prereqs": "AVSC 1240",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3600": {
    "title": "Multi-piloted Operations",
@@ -745,7 +839,12 @@
      "AVSC 2070"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4100G": {
    "title": "Global Ethical and Professional Issues in Aviation",
@@ -757,28 +856,49 @@
      "PHIL 2050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4160": {
    "title": "Aviation Law",
    "credits": 3,
    "prereqText": "AVSC 2150 , Senior Standing and University Advanced Standing.",
    "prereqs": "AVSC 2150",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4700": {
    "title": "Aviation Professional Seminars",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4800": {
    "title": "Professional Pilot Capstone",
    "credits": 3,
    "prereqText": "AVSC 3300 , 3600 and University Advanced Standing",
    "prereqs": "AVSC 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -792,7 +912,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -805,7 +928,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -834,7 +958,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -846,7 +974,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -858,7 +990,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -870,7 +1003,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -882,7 +1016,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -903,7 +1038,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -916,7 +1056,20 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Students seeking admission to the program will be required to meet the following admission requirements: Hold a second class FAA medical certificate from an FAA designated Medical. An overall GPA of at least 2.5. Due to limited availability of flight training resources, flight student admission into the on-campus AVSC 1110 Flight I - Private Pilot course, when necessary, may require selection through a competitive point based application.",
+  "before": [
+   "AVSC 1110"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

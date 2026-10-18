@@ -3,7 +3,7 @@
  "name": "National Security Studies, Minor",
  "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/national-security-studies-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -13,35 +13,40 @@
    "alts": [
     "POLS 1100"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "CJ 1010 Introduction to Criminal Justice | 3 or POLS 1100 American National Government"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 3010R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › NSS 3010R National Security Area Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 4750R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › NSS 4750R Current Topics in National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 4600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › NSS 4600 National Security Law | 3"
   },
   {
    "type": "choice",
@@ -204,6 +209,7 @@
     }
    ],
    "text": "Complete 9 credits from the following:",
+   "src": "Discipline Core Requirements (21 credits) › Complete 9 credits from the following: | 9",
    "notes": [
     "or other course approved by department advisor or director."
    ],
@@ -282,7 +288,9 @@
    "credits": 3,
    "prereqText": "University Advanced Standing and CJ 1010",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 4160": {
    "title": "Constitutional Criminal Rights",
@@ -294,14 +302,24 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4795": {
    "title": "Civil Rights and Civil Liberties",
    "credits": 3,
    "prereqText": "CNST 4790 and University Advanced Standing",
    "prereqs": "CNST 4790",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -319,35 +337,60 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3440": {
    "title": "The History of World War I",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 3450G": {
    "title": "The History of World War II",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4140": {
    "title": "Genocide in the Twentieth Century",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 4300G": {
    "title": "Violence and Social Conflict in Latin America",
    "credits": 3,
    "prereqText": "HIST 3010 or instructor approval; University Advanced Standing",
    "prereqs": "HIST 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MILS 2590R": {
    "title": "Current Topics in Military Science",
@@ -362,6 +405,9 @@
    "coreqText": "MILS 4450R",
    "coreqs": [
     "MILS 4450R"
+   ],
+   "prereqWords": [
+    "Departmental Approval"
    ]
   },
   "MILS 4210": {
@@ -399,7 +445,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4210": {
    "title": "Law of War",
@@ -413,7 +464,12 @@
      "CJ 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4600": {
    "title": "National Security Law",
@@ -428,7 +484,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4750R": {
    "title": "Current Topics in National Security",
@@ -443,14 +504,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3020": {
    "title": "The Ethics of War and Peace",
    "credits": 3,
    "prereqText": "PHIL 2050 and University Advanced Standing",
    "prereqs": "PHIL 2050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3100": {
    "title": "Introduction to Human Security",
@@ -467,14 +538,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 3400": {
    "title": "Conflict Transformation Resolution and Sustainable Peace",
    "credits": 3,
    "prereqText": "PJST 2000 and University Advanced Standing",
    "prereqs": "PJST 2000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1100": {
    "title": "American National Government",
@@ -489,14 +570,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3210": {
    "title": "World Diplomacy",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3400": {
    "title": "American Foreign Policy",
@@ -508,42 +599,81 @@
      "POLS 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3500": {
    "title": "International Relations of the Middle East",
    "credits": 3,
    "prereqText": "( POLS 2100 or instructor approval) and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3600": {
    "title": "International Relations of East Asia",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3610": {
    "title": "International Organization",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4500": {
    "title": "International Conflict and Security",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4610": {
    "title": "International Law",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to bachelor degree program at UVU Students must take either CJ 1010 Introduction to Criminal Justice or POLS 1100 American National Government for matriculation.",
+  "before": [
+   "CJ 1010",
+   "POLS 1100"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

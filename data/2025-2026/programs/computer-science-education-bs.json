@@ -3,7 +3,7 @@
  "name": "Computer Science Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 121,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -71,43 +82,50 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Life Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Life Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social & Behavioral Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social & Behavioral Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -129,45 +147,54 @@
      "codes": [
       "CS 1420"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "If students choose CS 1420, please see advisor."
+     ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Requirements (84 credits) › Complete one of the following: | 6"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2300 Discrete Mathematical Structures I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2370 C Plus Plus Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2450 Software Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2550 Web Programming I | 3"
   },
   {
    "type": "course",
@@ -176,35 +203,40 @@
    "alts": [
     "IT 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2600 Computer Networks I | 3 or IT 2600 Data Communication Fundamentals"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 2810 Computer Organization and Architecture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 3050G Global Social and Ethical Issues in Computing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 3100 Data Privacy and Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 3450 Principles and Patterns of Software Design | 3"
   },
   {
    "type": "course",
@@ -216,118 +248,135 @@
     "CS 3370",
     "CS 3380"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › CS 3250 Java Software Development | 3 or CS 3260 CsharpNET Software Development or CS 3270 Python Software Development or CS 3370 C Plus Plus Software Development or CS 3380 JavaScript Software Development"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "DGM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Requirements (84 credits) › DGM 1110 Digital Media Essentials I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "DWDD 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › DWDD 1400 Digital Design Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "DWDD 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › DWDD 1600 Web Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Requirements (84 credits) › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Requirements (84 credits) › EDSC 4990 Teacher Assessment Project | 2"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "BMED 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (84 credits) › BMED 4300 Methods of Teaching Computer Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Electives",
    "label": "Elective",
-   "credits": 6
+   "credits": 6,
+   "src": "Electives (6 credits) › Elective | 6"
   }
  ],
  "gradPlan": [
@@ -560,14 +609,22 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 1400": {
    "title": "Fundamentals of Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -581,7 +638,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to college algebra. Pass CS 1420 Entrance Exam.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to college algebra"
+   ]
   },
   "CS 2300": {
    "title": "Discrete Mathematical Structures I",
@@ -679,28 +739,50 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3100": {
    "title": "Data Privacy and Security",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3250": {
    "title": "Java Software Development",
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3260": {
    "title": "CsharpNET Software Development",
    "credits": 3,
    "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to computer science or software engineering and University Advanced Standing"
   },
   "CS 3270": {
    "title": "Python Software Development",
@@ -713,7 +795,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3370": {
    "title": "C Plus Plus Software Development",
@@ -731,7 +819,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering"
   },
   "CS 3380": {
    "title": "JavaScript Software Development",
@@ -743,7 +837,13 @@
      "CS 2550"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation into the CS program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation into the CS program"
   },
   "CS 3450": {
    "title": "Principles and Patterns of Software Design",
@@ -758,7 +858,12 @@
      "CS 3380"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DGM 1110": {
    "title": "Digital Media Essentials I",
@@ -781,21 +886,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -810,28 +933,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -844,7 +991,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -856,7 +1010,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -874,7 +1035,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -887,7 +1051,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -921,7 +1086,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -933,7 +1099,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -943,5 +1110,35 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Pass MATH 1050 and ENGL 1010 with a grade of “C” or better. Pass CS 1400, CS 1410, CS 2300, and CS 2420 with a grade of “C+” or better. GPA of 3.0 or higher with no grade lower than a C in content area courses. Completion of all General Education requirements and 70% of content area courses. Pass LiveScan Criminal Background Check. ENGL 2010 and MATH QL courses must have a grade C or higher",
+  "before": [
+   "MATH 1050",
+   "ENGL 1010",
+   "CS 1400",
+   "CS 1410",
+   "CS 2300",
+   "CS 2420",
+   "ENGL 2010"
+  ],
+  "gated": [
+   "CS 3250",
+   "CS 3260",
+   "CS 3270",
+   "CS 3370",
+   "CS 3380",
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

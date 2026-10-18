@@ -3,7 +3,7 @@
  "name": "Political Science - Global Politics Emphasis, B.A.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/political-science-global-politics-emphasis-ba/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -77,6 +83,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (31 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -115,6 +122,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -124,72 +132,83 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities (fulfilled by completing any foreign language 2020G/2020)",
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Humanities (fulfilled by completing any foreign language 2020G/2020) | 4"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 1100 American National Government | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 2100 Introduction to International Relations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 2200 Introduction to Comparative Politics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 2300 Introduction to Political Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 3000 Political Analysis | 3"
   },
   {
    "type": "course",
@@ -199,19 +218,28 @@
     "POLS 4800R",
     "PJST 4900"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (18 credits) › POLS 4990 Senior Seminar (3) | 3 or POLS 4800R Internship or PJST 4900 Peace and Justice Studies Capstone",
+   "creditsBy": {
+    "POLS 4990": 3,
+    "POLS 4800R": 2,
+    "PJST 4900": 3
+   },
+   "prefer": "POLS 4800R"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: Elective Requirements",
    "label": "Foreign Language Requirement: Complete 1010,1020, 2010, and 2020G (one language)",
-   "credits": 12
+   "credits": 12,
+   "src": "Core Requirements › Elective Requirements (41 credits) › Foreign Language Requirement: Complete 1010,1020, 2010, and 2020G (one language) | 12"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: Elective Requirements",
    "label": "Any courses numbered 1000 or higher. (9 credit hours must be upper division (3000-4000 level courses))",
-   "credits": 29
+   "credits": 29,
+   "src": "Core Requirements › Elective Requirements (41 credits) › Any courses numbered 1000 or higher. (9 credit hours must be upper division (3000-4000 level courses)) | 29"
   },
   {
    "type": "choice",
@@ -361,14 +389,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete 18 credits from the following courses (at least one course must be Writing Enriched):"
+   "text": "Complete 18 credits from the following courses (at least one course must be Writing Enriched):",
+   "src": "Political Science Requirements (120 credits) › Complete 18 credits from the following courses (at least one course must be Writing Enriched): | 18"
   },
   {
    "type": "placeholder",
    "area": "Political Science Requirements",
    "label": "Elective",
    "credits": 12,
-   "text": "Complete any 12 elective credits (at least 4 credits must be upper division)"
+   "text": "Complete any 12 elective credits (at least 4 credits must be upper division)",
+   "src": "Political Science Requirements (120 credits) › Complete any 12 elective credits (at least 4 credits must be upper division) | 12"
   }
  ],
  "gradPlan": [
@@ -595,7 +625,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -608,7 +641,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -641,7 +675,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -653,7 +691,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -665,7 +707,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -677,7 +720,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -689,14 +733,21 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PJST 4900": {
    "title": "Peace and Justice Studies Capstone",
    "credits": 3,
    "prereqText": "ENGL 2010 , Senior Standing, and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -723,21 +774,36 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3100": {
    "title": "Survey of International Terrorism",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3210": {
    "title": "World Diplomacy",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3400": {
    "title": "American Foreign Policy",
@@ -749,49 +815,84 @@
      "POLS 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3410": {
    "title": "Globalization and Sustainable Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3420": {
    "title": "Islam in World Affairs",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3500": {
    "title": "International Relations of the Middle East",
    "credits": 3,
    "prereqText": "( POLS 2100 or instructor approval) and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3510": {
    "title": "Post Soviet Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3520G": {
    "title": "Chinese Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3530G": {
    "title": "Asian Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3560G": {
    "title": "Comparative Politics of Central Asia",
@@ -803,56 +904,96 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3600": {
    "title": "International Relations of East Asia",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3610": {
    "title": "International Organization",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3620": {
    "title": "Latin American Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3620G": {
    "title": "Modern Chinese Political Economy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3630": {
    "title": "Sustainable Mountain Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3640": {
    "title": "United Nations Sustainable Development Goals",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3650": {
    "title": "Model United Nations",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3670": {
    "title": "International Development",
@@ -864,35 +1005,60 @@
      "POLS 2200"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3680": {
    "title": "International Political Economy",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4200R": {
    "title": "Issues and Topics in Political Science",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4500": {
    "title": "International Conflict and Security",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4610": {
    "title": "International Law",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4800R": {
    "title": "Internship",
@@ -900,14 +1066,25 @@
    "creditsMax": 9,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4990": {
    "title": "Senior Seminar",
    "credits": 3,
    "prereqText": "POLS 3000 , Senior standing in Political Science, and University Advanced Standing",
    "prereqs": "POLS 3000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior standing in Political Science",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -920,7 +1097,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -933,7 +1115,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  },
  "totalFrom": "area headers"

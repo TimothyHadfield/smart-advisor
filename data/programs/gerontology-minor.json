@@ -3,7 +3,7 @@
  "name": "Gerontology, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/behavioral-science/gerontology-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -45,12 +45,13 @@
      ]
     }
    ],
-   "text": "Complete 9 credits from this list of core classes:"
+   "text": "Complete 9 credits from this list of core classes:",
+   "src": "Discipline Core Requirements (9 credits) › Complete 9 credits from this list of core classes: | 9"
   },
   {
    "type": "choice",
    "area": "Elective Requirements",
-   "label": "Complete 3 credit hours from the elective course list",
+   "label": "Complete 6 credit hours from the elective course list:",
    "pick": {
     "credits": 6
    },
@@ -189,7 +190,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credit hours from the elective course list:"
+   "text": "Complete 6 credit hours from the elective course list:",
+   "src": "Elective Requirements (9 credits) › Complete 6 credit hours from the elective course list: | 6"
   },
   {
    "type": "choice",
@@ -275,7 +277,8 @@
      "credits": 6
     }
    ],
-   "text": "Complete any 3 credits from Internship/Research courses:"
+   "text": "Complete any 3 credits from Internship/Research courses:",
+   "src": "Elective Requirements (9 credits) › Complete any 3 credits from Internship/Research courses: | 3"
   }
  ],
  "gradPlan": [
@@ -298,8 +301,9 @@
      "credits": 3
     },
     {
-     "label": "Complete 3 credit hours from the elective course list",
-     "credits": 3
+     "label": "Complete 6 credit hours from the elective course list:",
+     "credits": 3,
+     "text": "Complete 3 credit hours from the elective course list"
     }
    ]
   },
@@ -315,8 +319,9 @@
      "credits": 3
     },
     {
-     "label": "Complete 3 credit hours from the elective course list",
-     "credits": 3
+     "label": "Complete 6 credit hours from the elective course list:",
+     "credits": 3,
+     "text": "Complete 3 credit hours from the elective course list"
     },
     {
      "label": "Complete any 3 credits from Internship/Research courses",
@@ -331,7 +336,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4100": {
    "title": "Physiology of Aging",
@@ -353,7 +363,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4810R": {
    "title": "Internship in Exercise Science",
@@ -375,7 +391,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 1500": {
    "title": "Human Development Life Span",
@@ -392,14 +414,20 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "FAMS 3500": {
    "title": "Family Demography",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 3850": {
    "title": "Adult Development and Aging",
@@ -411,7 +439,13 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4500": {
    "title": "Family Life Education Methodology",
@@ -428,13 +462,21 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4660": {
    "title": "Family Resource Management",
    "credits": 3,
    "prereqText": "FAMS 2400G strongly recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4810R": {
    "title": "Community Practicum",
@@ -442,7 +484,13 @@
    "creditsMax": 8,
    "prereqText": "Department approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 4820R": {
    "title": "Stronger Families Practicum",
@@ -455,7 +503,14 @@
      "FAMS 4500"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing in the Family Science program",
+    "permission of the instructor",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 2800": {
    "title": "Human Sexuality",
@@ -473,7 +528,12 @@
    "credits": 3,
    "prereqText": "HLSC 1300 and University Advanced Standing",
    "prereqs": "HLSC 1300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 2840": {
    "title": "Womens Health Issues",
@@ -491,35 +551,60 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3300": {
    "title": "Health Promotion for Older Adults",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3500G": {
    "title": "International Health",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3800": {
    "title": "Epidemiology",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4400G": {
    "title": "Health and Diversity",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4820R": {
    "title": "Health Internship",
@@ -527,7 +612,12 @@
    "creditsMax": 6,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4900R": {
    "title": "Special Topics in Public Health",
@@ -535,7 +625,13 @@
    "creditsMax": 3,
    "prereqText": "Department Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 2325": {
    "title": "Nursing Practice Simulation and Skills Lab I",
@@ -551,7 +647,12 @@
    "precoreqs": "NURS 2300",
    "preco": [
     "NURS 2300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into ASN/BS Nursing program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into ASN/BS Nursing program"
   },
   "NURS 2420": {
    "title": "Nursing Care of the Aging Population",
@@ -579,7 +680,12 @@
     "NURS 3330"
    ],
    "precoreqText": "ZOOL 4400 highly recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 3405": {
    "title": "Patient Care Coordination and Management Preceptorship",
@@ -595,14 +701,24 @@
    "coreqText": "NURS 3400",
    "coreqs": [
     "NURS 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4230": {
    "title": "Palliative Care in Nursing",
    "credits": 3,
    "prereqText": "NURS 2410 and University Advanced Standing",
    "prereqs": "NURS 2410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4240": {
    "title": "Promoting Active Senior Lifestyles",
@@ -622,7 +738,12 @@
     "NURS 2410",
     "NURS 2415",
     "NURS 2420"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4810R": {
    "title": "Internship in Nursing",
@@ -630,7 +751,13 @@
    "creditsMax": 3,
    "prereqText": "Department Chair approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Chair approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4890R": {
    "title": "Undergraduate Research in Nursing",
@@ -638,7 +765,13 @@
    "creditsMax": 4,
    "prereqText": "NURS 2410 , Department approval, and University Advanced Standing",
    "prereqs": "NURS 2410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4900R": {
    "title": "Special Topics in Nursing",
@@ -646,7 +779,12 @@
    "creditsMax": 4,
    "prereqText": "NURS 2410 and University Advanced Standing",
    "prereqs": "NURS 2410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NURS 4950R": {
    "title": "Independent Study in Nursing",
@@ -654,7 +792,13 @@
    "creditsMax": 3,
    "prereqText": "NURS 2410 , Departmental approval, and University Advanced Standing",
    "prereqs": "NURS 2410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 2020": {
    "title": "Nutrition Through the Life Cycle",
@@ -679,7 +823,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 2420": {
    "title": "Cognitive Psychology",
@@ -696,7 +841,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 2800": {
    "title": "Human Sexuality",
@@ -725,7 +871,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 4820R": {
    "title": "Internship Seminar",
@@ -736,14 +888,24 @@
    "coreqText": "PSY 4830R",
    "coreqs": [
     "PSY 4830R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3750G": {
    "title": "Sociology of Aging",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 1010": {
    "title": "Introduction to Social Work",
@@ -754,14 +916,25 @@
    "credits": 3,
    "prereqText": "Admission into the BSW program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program"
   },
   "SW 3400": {
    "title": "Human Behavior and the Social Environment II",
    "credits": 3,
    "prereqText": "SW 2100 , Admission into the BSW program, and University Advanced Standing",
    "prereqs": "SW 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into the BSW program"
   },
   "SW 3550G": {
    "title": "The Study of Death Dying and Grieving",
@@ -778,7 +951,13 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SW 4820": {
    "title": "Field I Practicum",
@@ -793,7 +972,22 @@
      "SW 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the BSW program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the BSW program"
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "NURS 2325",
+   "SW 2100",
+   "SW 3400",
+   "SW 4820"
+  ]
  }
 }

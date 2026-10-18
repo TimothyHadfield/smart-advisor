@@ -113,6 +113,24 @@ export function nameChoices(items, gradPlan, courses = {}) {
     if (hit) { it.label = take(hit); continue; }
     it.label = it.tracks ? `Choose ${it.pick.tracks || 1} track${(it.pick.tracks || 1) > 1 ? 's' : ''}` : it.pick.credits ? `Choose ${it.pick.credits} credits` : `Choose ${it.pick.count}`;
   }
+  // a borrowed plan label that states a different number than the list asks for ("Complete 3 credits ..."
+  // on a 6-credit list) would mislead: the list goes back to its own words, and the plan items that carried
+  // the old label follow it (their words stay in `text`)
+  const says = (l) => +((l || '').match(/\b(?:complete|choose|select|take)\s+(?:any\s+|a minimum of\s+|at least\s+)?(\d+)\s+(?:credits?|credit hours?|hours?)\b/i)?.[1] || 0) || null;
+  const used = new Set(items.filter((i) => i.type !== 'course').map((i) => i.label));
+  for (const it of items) {
+    if (it.type !== 'choice' || !it.pick.credits) continue;
+    const n = says(it.label);
+    if (!n || n === it.pick.credits) continue;
+    const old = it.label;
+    const own = it.text && (says(it.text) ?? it.pick.credits) === it.pick.credits && !used.has(it.text) ? it.text : null;
+    let label = own || `Choose ${it.pick.credits} credits`;
+    for (let k = 2; used.has(label); k++) label = `${own || `Choose ${it.pick.credits} credits`} (${k})`;
+    it.label = label;
+    used.add(label);
+    if (items.some((x) => x !== it && x.label === old)) continue;
+    for (const t of gradPlan) for (const x of t.items) if (x.label === old) { x.text = x.text || old; x.label = label; }
+  }
 }
 
 // Plan labels that name a requirement loosely ("HUMANITIES" for "Humanities Distribution") take the
@@ -222,6 +240,12 @@ export function fillCredits(items, courses) {
         if (known.length) it.credits = known.slice(0, it.pick.count || 1).reduce((a, b) => a + b, 0);
       }
     }
+    // a track's own "choose one course from the following" holds count x its cheapest option
+    for (const [k, s] of (it.subs || []).entries()) {
+      if (s.credits != null || !s.pick.count) continue;
+      const known = it.options.filter((o) => o.sub === k && o.credits != null).map((o) => o.credits).sort((a, b) => a - b);
+      if (known.length >= s.pick.count) s.credits = known.slice(0, s.pick.count).reduce((a, b) => a + b, 0);
+    }
     // a list with a few named courses plus "any CS 3000+ course" can be finished with an unlisted course
     if (it.open == null && (it.notes || []).some((n) => /\b(?:any|other)\b[^.]*(?:\d{4}|courses?|electives?|approved)|\bapproved\b|\d{4}\s*\+/i.test(n))) it.open = true;
   }
@@ -251,9 +275,56 @@ export function splitPlanPairs(gradPlan, courses) {
 // Programs a student must be formally accepted into (cohorts: nursing, dental hygiene, respiratory
 // therapy, PA, auditions ...). The planner may use it later; the note is the catalog's own sentence.
 const ADM = /formally (?:accepted|admitted)|formal (?:acceptance|admission)|accepted into the (?:[A-Z][\w/-]* )+program|acceptance into the [A-Z]|competitive,? (?:point-based |merit-based )?(?:application|admission)|merit-based,? competitive admission|admission is competitive|matriculation into a cohort|must be accepted into (?:the )?program|admission to the [A-Z][\w-]* program/i;
-export function admissionInfo(html, items, courses) {
+// Also `admissionInfo` = { note?, text?, before[], beforeFrom?, beforeLabels?, gated[], minGrade? }:
+// - gated: program courses the catalog says need program admission (course prerequisites, requirement
+//   notes such as "Must be accepted into Program to take these Courses")
+// - before: courses to finish before applying: the codes the page's Matriculation/Admission Requirements
+//   section names; with no such list, the sample plan's courses in the terms before the first gated course
+//   (beforeLabels = that plan's placeholder slots, e.g. "Quantitative Literacy")
+export function admissionInfo(html, items, courses, gradPlan = [], matric = null) {
   const main = html.slice(Math.max(0, html.indexOf('<main')), html.indexOf('</main>') > 0 ? html.indexOf('</main>') : undefined).replace(/<script[\s\S]*?<\/script>/g, '');
   const t = main.replace(/<(?:br|p|li|tr|div|h\d)[^>]*>/gi, '. ').replace(/<[^>]+>/g, ' ').replace(/&#160;|&nbsp;/g, ' ').replace(/&amp;/g, '&').replace(/&quot;/g, '"').replace(/&#39;|&rsquo;/g, "'").replace(/\s+/g, ' ');
   const sent = t.split(/(?<=[.!?])\s+/).map((s) => s.replace(/^[.\s]+/, '').trim()).find((s) => s.length < 300 && ADM.test(s));
-  return sent ? { admission: true, admissionNote: sent } : {};
+  const out = sent ? { admission: true, admissionNote: sent } : {};
+  const gated = new Set();
+  for (const [c, x] of Object.entries(courses)) if (x?.gate === 'admission') gated.add(c);
+  for (const it of items) {
+    if (it.gate !== 'admission') continue;
+    if (it.type === 'course') gated.add(it.code);
+    for (const o of it.options || []) o.codes.forEach((c) => gated.add(c));
+  }
+  if (!sent && !matric && !gated.size) return out;
+  const info = { ...(sent ? { note: sent } : {}), ...(matric?.text ? { text: matric.text } : {}), before: [], gated: [...gated].sort() };
+  if (matric?.codes?.length) {
+    info.before = matric.codes.filter((c) => !gated.has(c));
+    info.beforeFrom = 'matriculation section';
+  } else if (gated.size) {
+    const first = gradPlan.findIndex((term) => term.items.some((x) => x.code && [x.code, ...(x.alts || [])].some((c) => gated.has(c))));
+    if (first > 0) {
+      const early = gradPlan.slice(0, first).flatMap((term) => term.items);
+      info.before = [...new Set(early.filter((x) => x.code).map((x) => x.code))];
+      const labels = [...new Set(early.filter((x) => !x.code && x.label && x.credits).map((x) => x.label))]; // slots, not plan notes
+      if (labels.length) info.beforeLabels = labels;
+      info.beforeFrom = 'graduation plan';
+    }
+  }
+  if (matric?.minGrade) info.minGrade = matric.minGrade;
+  out.admissionInfo = info;
+  return out;
+}
+
+// ---------- alternatives with different credits ----------
+// "ZOOL 4400 (4) or ZOOL 2600 (3) | 3": the row counts one number, but the student earns the catalog
+// credits of the course they take. creditsBy = each alternative's catalog credits; prefer = the
+// alternative the sample plan uses (when it is not the first code).
+export function altCredits(items, gradPlan, courses) {
+  const planCodes = new Set(gradPlan.flatMap((t) => t.items.map((x) => x.code)).filter(Boolean));
+  for (const it of items) {
+    if (it.type !== 'course' || !it.alts?.length) continue;
+    const all = [it.code, ...it.alts];
+    const by = Object.fromEntries(all.map((c) => [c, courses[c]?.credits ?? null]).filter(([, v]) => v != null));
+    if (new Set(Object.values(by)).size > 1) it.creditsBy = by;
+    const inPlan = all.filter((c) => planCodes.has(c));
+    if (inPlan.length === 1 && inPlan[0] !== it.code) it.prefer = inPlan[0];
+  }
 }

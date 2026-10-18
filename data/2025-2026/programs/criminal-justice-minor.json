@@ -3,7 +3,7 @@
  "name": "Criminal Justice, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/criminal-justice-law-enforcement/criminal-justice-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "CJ 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CJ 1010 Introduction to Criminal Justice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CJ 1340 Criminal Investigations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 1330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CJ 1330 Criminal Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CJ 2350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CJ 2350 Laws of Evidence | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.)",
    "credits": 12,
-   "text": "Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.)"
+   "text": "Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.)",
+   "src": "Elective Requirements (12 credits) › Complete 12 credits from any Criminal Justice (CJ) or National Security Studies (NSS) upper-division courses. (At least one elective must be a CJ upper-division course.) | 12"
   }
  ],
  "gradPlan": [
@@ -120,5 +125,10 @@
    "prereqText": "CJ 1330",
    "prereqs": "CJ 1330"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

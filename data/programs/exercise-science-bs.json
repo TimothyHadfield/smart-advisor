@@ -3,7 +3,7 @@
  "name": "Exercise Science, B.S.",
  "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/exercise-science-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -73,6 +84,7 @@
     }
    ],
    "text": "American Institutions (complete one of the following for 3 credits):",
+   "src": "General Education Requirements (33 credits) › American Institutions (complete one of the following for 3 credits): | 3",
    "notes": [
     "Distribution Requirements"
    ]
@@ -92,7 +104,8 @@
      ],
      "credits": 4
     }
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Biology Distribution | 4"
   },
   {
    "type": "choice",
@@ -112,7 +125,8 @@
       "CHEM 1210"
      ]
     }
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Physical Science | 4"
   },
   {
    "type": "placeholder",
@@ -121,19 +135,22 @@
    "credits": 3,
    "recommended": [
     "PSY 1010"
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Humanities | 3 (Note: PSY 1010 recommended)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
@@ -142,112 +159,128 @@
    "credits": 3,
    "recommended": [
     "EXSC 1097"
-   ]
+   ],
+   "src": "General Education Requirements (33 credits) › Personal, Professional, and Civic Growth | 3 (Note: EXSC 1097 recommended)"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Exercise Science Requirements (87 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Exercise Science Requirements (87 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Exercise Science Requirements (87 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 2500 Sports Medicine | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 2700G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 2700G Foundations of Exercise Science | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3270 Exercise Testing and Prescription | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3500 Kinesiology | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3700 & EXSC 3705 Exercise Physiology and Exercise Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3700 & EXSC 3705 Exercise Physiology and Exercise Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3550 Motor Learning and Control | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3730",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3730 Biomechanics | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 3750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 3750 Psychosocial Aspects of Human Performance | 3"
   },
   {
    "type": "course",
    "area": "Exercise Science Requirements",
    "code": "EXSC 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Exercise Science Requirements (87 credits) › EXSC 4300 Research Methods in Exercise Science and Outdoor Recreation | 3"
   },
   {
    "type": "choice",
@@ -277,7 +310,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Exercise Science Requirements (87 credits) › Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -355,13 +389,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete at least 15 credits from the following (make sure selections will satisfy the requirements for upper-division course work):"
+   "text": "Complete at least 15 credits from the following (make sure selections will satisfy the requirements for upper-division course work):",
+   "src": "Exercise Science Requirements (87 credits) › Complete at least 15 credits from the following (make sure selections will satisfy the requirements for upper-division course work): | 15"
   },
   {
    "type": "placeholder",
    "area": "Exercise Science Requirements",
    "label": "General Elective Requirements (up to 32 credits)",
    "credits": 32,
+   "src": "Exercise Science Requirements (87 credits) › General Elective Requirements (up to 32 credits) | 32",
    "notes": [
     "Consult with your academic advisor for guidance on career applicable course options.",
     "Any 1000-level course(s) or higher"
@@ -654,7 +690,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -669,14 +709,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -689,7 +735,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EXSC 2500": {
    "title": "Sports Medicine",
@@ -731,7 +778,8 @@
     "EXSC 2700G",
     "PETE 2700",
     "REC 2200"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "EXSC 2700G": {
    "title": "Foundations of Exercise Science",
@@ -751,7 +799,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EXSC 3270": {
    "title": "Exercise Testing and Prescription",
@@ -782,14 +831,26 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "all with a C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3400": {
    "title": "Statistical Analysis in Exercise Science",
    "credits": 3,
    "prereqText": "( MATH 1050 or higher) and University Advanced Standing",
    "prereqs": "MATH 1050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3500": {
    "title": "Kinesiology",
@@ -832,7 +893,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -874,7 +941,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -906,7 +979,13 @@
    "preco": [
     "ZOOL 2420",
     "ZOOL 2425"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -917,7 +996,12 @@
    "coreqText": "EXSC 3700",
    "coreqs": [
     "EXSC 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3730": {
    "title": "Biomechanics",
@@ -962,7 +1046,13 @@
     "ZOOL 2425",
     "EXSC 2700G",
     "EXSC 3500"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -985,7 +1075,12 @@
    "uncertain": true,
    "preco": [
     "ZOOL 2325"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4000": {
    "title": "Clinical Exercise Physiology",
@@ -998,7 +1093,13 @@
      "EXSC 3270"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4050": {
    "title": "Obesity Physiology and Physical Activity",
@@ -1016,7 +1117,12 @@
    "preco": [
     "ZOOL 2420",
     "ZOOL 2425"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4100": {
    "title": "Physiology of Aging",
@@ -1038,7 +1144,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4200": {
    "title": "Exercise Metabolism",
@@ -1059,7 +1171,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4300": {
    "title": "Research Methods in Exercise Science and Outdoor Recreation",
@@ -1089,7 +1207,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4400": {
    "title": "Physical Activity Promotion in the Community",
@@ -1110,7 +1234,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4500": {
    "title": "Advanced Sports Nutrition",
@@ -1133,7 +1263,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4550": {
    "title": "Principles of Strength and Conditioning",
@@ -1146,7 +1282,13 @@
      "EXSC 3705"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4600": {
    "title": "Advanced Biomechanics",
@@ -1172,7 +1314,13 @@
    "precoreqs": "EXSC 3730",
    "preco": [
     "EXSC 3730"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4650": {
    "title": "Applied Sports Science",
@@ -1196,7 +1344,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "all with a C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4700": {
    "title": "Advanced Gross Motor Assessment",
@@ -1219,7 +1374,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1247,7 +1408,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1259,7 +1421,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1274,7 +1437,12 @@
    "credits": 4,
    "prereqText": "MAT 1010 or higher and University Advanced Standing",
    "prereqs": "MAT 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -1287,7 +1455,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1325,7 +1497,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",

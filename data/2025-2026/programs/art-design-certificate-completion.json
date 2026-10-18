@@ -3,7 +3,7 @@
  "name": "Art and Design, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/art-design/art-design-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "ART 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1120 2D Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1400 Graphic Computer Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1110 Drawing I | 3"
   },
   {
    "type": "course",
@@ -34,7 +37,8 @@
    "alts": [
     "ART 1750"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1050 Photography I | 3 or ART 1750 Intro to Digital Imaging"
   },
   {
    "type": "course",
@@ -43,20 +47,23 @@
    "alts": [
     "ARTH 2720"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ARTH 2710 Prehistoric Through Gothic Art History | 3 or ARTH 2720 Renaissance Through Contemporary Art History"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ART 1130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › ART 1130 3D Design | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any ART course not already taken (See Department Advisor).",
-   "credits": 12
+   "credits": 12,
+   "src": "Elective Requirements (12 credits) › Any ART course not already taken (See Department Advisor). | 12"
   }
  ],
  "gradPlan": [
@@ -129,14 +136,20 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ART 1120": {
    "title": "2D Design",
    "credits": 3,
    "prereqText": "Major in Art and Design or Entertainment Design or Art Education or Digital Media",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Entertainment Design or Art Education or Digital Media"
+   ]
   },
   "ART 1130": {
    "title": "3D Design",
@@ -153,7 +166,10 @@
    "credits": 3,
    "prereqText": "Major in Art and Design or Art Education",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Major in Art and Design or Art Education"
+   ]
   },
   "ARTH 2710": {
    "title": "Prehistoric Through Gothic Art History",

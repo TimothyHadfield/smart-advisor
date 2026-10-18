@@ -3,7 +3,7 @@
  "name": "Music Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/music/music-education-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 124,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -45,7 +51,8 @@
      "credits": 6
     }
    ],
-   "text": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)"
+   "text": "Choose one of the following: (Note: A higher level MATH course may substitute for this requirement)",
+   "src": "General Education Requirements (27 credits) › Choose one of the following: (Note: A higher level MATH course may substitute for this requirement) | 3"
   },
   {
    "type": "choice",
@@ -89,6 +96,7 @@
     }
    ],
    "text": "Choose one of the following:",
+   "src": "General Education Requirements (27 credits) › Choose one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ]
@@ -97,13 +105,15 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
    "credits": 3,
+   "src": "General Education Requirements (27 credits) › Physical Science | 3",
    "recommended": [
     "PHYS 1750"
    ]
@@ -112,13 +122,15 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
    "credits": 3,
+   "src": "General Education Requirements (27 credits) › Social/Behavioral Science | 3",
    "recommended": [
     "PSY 1100"
    ]
@@ -127,140 +139,160 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (27 credits) › Personal, Professional and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1110 Music Theory I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1115",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1115 Music Notation and Score Preparation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1120 Music Theory II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1130 Aural Skills I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1140 Aural Skills II | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1390",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1390 Survey of Recording Techniques | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2110 Music Theory III | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2125",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2125 Music Theory IV | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2130 Aural Skills III | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2140 Aural Skills IV | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 2350",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2350 Fundamentals of Conducting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3490G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 3490G Global Musical Styles and Ideas | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 3450 Music History and Literature I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3451",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 3451 Music History and Literature II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4130",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 4130 Scoring and Arranging | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 1800 Introduction to Music Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 3409",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 3409 Secondary General Music Methods | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4780",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 4780 Pre-Service Student Teaching | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 4785",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 4785 Student Teaching Seminar | 2"
   },
   {
    "type": "choice",
@@ -434,6 +466,7 @@
      "credits": 2
     }
    ],
+   "src": "Discipline Core Requirements (97 credits) › Complete one of these choral/instrumental tracks | 13",
    "notes": [
     "Choral students complete these 13 credits",
     "Complete 1 credit of MUSC courses not already required for the degree",
@@ -449,6 +482,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2500R Private Lessons for Music Majors (1) (Repeated 4 times on major instrument or voice) (Includes completion of sophomore review) | 4",
    "creditsEach": 1
   },
   {
@@ -458,6 +492,7 @@
    "alts": [],
    "credits": 4,
    "repeat": 4,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 2510R Performance Class (1) (Repeated 4 times on major instrument or voice) (Includes completion of sophomore review) | 4",
    "creditsEach": 1
   },
   {
@@ -467,6 +502,7 @@
    "alts": [],
    "credits": 2,
    "repeat": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 4500R Advanced Private Lessons for Music Majors (1) (Repeated 2 times on major instrument or voice) (Includes completion of 30-minute senior recital) | 2",
    "creditsEach": 1
   },
   {
@@ -476,6 +512,7 @@
    "alts": [],
    "credits": 2,
    "repeat": 2,
+   "src": "Discipline Core Requirements (97 credits) › MUSC 4510R Performance Class (1) (Repeated 2 times) | 2",
    "creditsEach": 1
   },
   {
@@ -525,6 +562,7 @@
     }
    ],
    "text": "Complete 6 credits from the following on your major instrument (as assigned):",
+   "src": "Discipline Core Requirements (97 credits) › Complete 6 credits from the following on your major instrument (as assigned): | 6",
    "notes": [
     "Secondary Education Courses"
    ]
@@ -534,63 +572,72 @@
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › EDSP 3400G Exceptional Students | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 4850 Student Teaching Secondary (4-10) | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (97 credits) › EDSC 4990 Teacher Assessment Project | 2"
   }
  ],
  "gradPlan": [
@@ -1060,35 +1107,65 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -1101,7 +1178,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -1113,7 +1197,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -1131,7 +1222,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1144,7 +1238,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1173,7 +1268,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1185,7 +1284,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MUSC 1110": {
    "title": "Music Theory I",
@@ -1196,6 +1299,10 @@
    "coreqText": "MUSC 1130",
    "coreqs": [
     "MUSC 1130"
+   ],
+   "prereqWords": [
+    "Music majors only or department approval",
+    "Complete music theory diagnostic exam"
    ]
   },
   "MUSC 1115": {
@@ -1203,7 +1310,10 @@
    "credits": 1,
    "prereqText": "Music major or minor only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music major or minor only"
+   ]
   },
   "MUSC 1120": {
    "title": "Music Theory II",
@@ -1238,7 +1348,11 @@
    "credits": 1,
    "prereqText": "Music majors or minors only. Not applicable for BM Commercial Music students.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music majors or minors only",
+    "Not applicable for BM Commercial Music students"
+   ]
   },
   "MUSC 1800": {
    "title": "Introduction to Music Education",
@@ -1295,6 +1409,9 @@
    "coreqText": "MUSC 2510R",
    "coreqs": [
     "MUSC 2510R"
+   ],
+   "prereqWords": [
+    "Music major entrance audition required"
    ]
   },
   "MUSC 2510R": {
@@ -1310,49 +1427,74 @@
    "credits": 2,
    "prereqText": "MUSC 2350 and University Advanced Standing",
    "prereqs": "MUSC 2350",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3220R": {
    "title": "Chamber Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3270R": {
    "title": "Deep Green-Tenor/Bass Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3280R": {
    "title": "Emerald Singers-Soprano/Alto Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3300R": {
    "title": "Wind Symphony",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3320R": {
    "title": "Jazz Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3409": {
    "title": "Secondary General Music Methods",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3415": {
    "title": "Instrumental Pedagogy and Literature I",
@@ -1364,28 +1506,48 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3450": {
    "title": "Music History and Literature I",
    "credits": 3,
    "prereqText": "MUSC 2125 and University Advanced Standing",
    "prereqs": "MUSC 2125",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3451": {
    "title": "Music History and Literature II",
    "credits": 3,
    "prereqText": "MUSC 3450 and University Advanced Standing",
    "prereqs": "MUSC 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3490G": {
    "title": "Global Musical Styles and Ideas",
    "credits": 3,
    "prereqText": "MUSC 1110 and University Advanced Standing",
    "prereqs": "MUSC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3620": {
    "title": "Percussion Techniques I",
@@ -1406,7 +1568,12 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3649": {
    "title": "String Techniques I",
@@ -1418,7 +1585,12 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3659": {
    "title": "Woodwind Techniques I",
@@ -1430,7 +1602,12 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3679": {
    "title": "Brass Techniques I",
@@ -1442,70 +1619,119 @@
    "precoreqs": "MUSC 2110",
    "preco": [
     "MUSC 2110"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3690": {
    "title": "Jazz Techniques",
    "credits": 1,
    "prereqText": "Music major and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Music major",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 3700R": {
    "title": "Symphony Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 4130": {
    "title": "Scoring and Arranging",
    "credits": 2,
    "prereqText": "MUSC 3120 and University Advanced Standing",
    "prereqs": "MUSC 3120",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4150": {
    "title": "Advanced Choral Conducting",
    "credits": 2,
    "prereqText": "MUSC 2350 and University Advanced Standing",
    "prereqs": "MUSC 2350",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4220": {
    "title": "Choral Literature and Methods",
    "credits": 2,
    "prereqText": "MUSC 2350 and University Advanced Standing",
    "prereqs": "MUSC 2350",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4221": {
    "title": "Advanced Choral Literature and Methods",
    "credits": 2,
    "prereqText": "MUSC 4220 and University Advanced Standing",
    "prereqs": "MUSC 4220",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4240": {
    "title": "Vocal Pedagogy",
    "credits": 2,
    "prereqText": "MUSC 2002 and University Advanced Standing",
    "prereqs": "MUSC 2002",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4340": {
    "title": "Marching Band Techniques",
    "credits": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4360": {
    "title": "Instrumental Literature and Methods",
    "credits": 2,
    "prereqText": "MUSC 2350 and University Advanced Standing",
    "prereqs": "MUSC 2350",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4370": {
    "title": "Advanced Instrumental Literature and Methods",
@@ -1517,7 +1743,12 @@
      "MUSC 4360"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4500R": {
    "title": "Advanced Private Lessons for Music Majors",
@@ -1528,7 +1759,13 @@
    "coreqText": "MUSC 4510R",
    "coreqs": [
     "MUSC 4510R"
-   ]
+   ],
+   "prereqWords": [
+    "Sophomore Review required",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4510R": {
    "title": "Performance Class",
@@ -1540,7 +1777,12 @@
    "coreqs": [
     "MUSC 4500R",
     "MUSC 4550R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4780": {
    "title": "Pre-Service Student Teaching",
@@ -1555,14 +1797,24 @@
      "MUSC 4360",
      "MUSC 4370"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MUSC 4785": {
    "title": "Student Teaching Seminar",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1574,5 +1826,23 @@
   }
  },
  "admission": true,
- "admissionNote": "Students will apply for formal admission to the Secondary Ed program in the semester prior to the beginning of their junior year."
+ "admissionNote": "Students will apply for formal admission to the Secondary Ed program in the semester prior to the beginning of their junior year.",
+ "admissionInfo": {
+  "note": "Students will apply for formal admission to the Secondary Ed program in the semester prior to the beginning of their junior year.",
+  "text": "For acceptance to the B.S. Music Education degree: Pass performance audition. Pass MUSC 1800 with a C or better. Students will apply for formal admission to the Secondary Ed program in the semester prior to the beginning of their junior year. Admission criteria include: 1. ENGL and MATH QL courses must have a grade C or higher. 2. GPA of 3.0 or higher with no grade lower than a C in content area courses. 3. Completion of all General Education requirements and 70% of content area courses. 4. Pass LiveScan Criminal Background Check.",
+  "before": [
+   "MUSC 1800"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
+ }
 }

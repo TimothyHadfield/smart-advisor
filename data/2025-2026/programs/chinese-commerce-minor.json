@@ -3,7 +3,7 @@
  "name": "Chinese Commerce, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/chinese-commerce-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "CHIN 2010",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (10 credits) › CHIN 2010 Intermediate Chinese I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 3620G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (10 credits) › POLS 3620G Modern Chinese Political Economy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 4610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (10 credits) › POLS 4610 International Law | 3"
   },
   {
    "type": "choice",
@@ -104,6 +107,7 @@
     }
    ],
    "text": "In addition to 10 credit core requirement, students need to take 9 credit electives",
+   "src": "Elective Requirements (9 credits) › In addition to 10 credit core requirement, students need to take 9 credit electives | 9",
    "notes": [
     "Other approved electives"
    ],
@@ -183,35 +187,60 @@
    "credits": 3,
    "prereqText": "CHIN 3050 and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 3510G": {
    "title": "Chinese Culture and Civilization",
    "credits": 3,
    "prereqText": "( CHIN 3050 or equivalent) and University Advanced Standing",
    "prereqs": "CHIN 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHIN 4200": {
    "title": "Business Chinese II",
    "credits": 3,
    "prereqText": "CHIN 3200 and University Advanced Standing",
    "prereqs": "CHIN 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3620G": {
    "title": "Traditional Chinese History",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHST 3630G": {
    "title": "Modern Chinese History",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -223,42 +252,78 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4620": {
    "title": "Developing Business in China",
    "credits": 3,
    "prereqText": "ENGL 2010 , Junior Standing, and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3520G": {
    "title": "Chinese Politics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3600": {
    "title": "International Relations of East Asia",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3620G": {
    "title": "Modern Chinese Political Economy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4610": {
    "title": "International Law",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Students need to be admitted into a bachelor degree program.",
+  "before": [],
+  "gated": []
  }
 }

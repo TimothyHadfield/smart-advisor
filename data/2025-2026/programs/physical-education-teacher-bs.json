@@ -3,7 +3,7 @@
  "name": "Physical Education Teacher Education, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/secondary-special-education/physical-education-teacher-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -42,6 +48,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 4",
    "ge": "math"
   },
   {
@@ -86,6 +93,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -95,190 +103,218 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology | 3 (Note: Highly recommend Biology 1010 as prerequisite for ZOOL 1090)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3 (Note: CHEM 1010 Introduction to Chemistry or CHEM 1110 Elementary Chemistry for the Health Sciences recommended.)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3 (Note: COMM 1020 Public Speaking recommended.)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3 (Note: PSY 1100 Human Development Life Span recommended.)"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "EXSC 1097",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › EXSC 1097 Fitness for Life | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "ZOOL 1090",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › ZOOL 1090 Introduction to Human Anatomy and Physiology | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "HLSC 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › HLSC 1200 First Aid | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2120",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2120 Fitness for Secondary Physical Educators | 1"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2140",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2140 Teaching Target Games | 2"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2240",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2240 Teaching Invasion and Net Games | 2"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2340",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2340 Teaching Recreational and Outdoor Pursuits | 2"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2500 Skill Analysis and Competency for PETE Majors | 3"
   },
   {
    "type": "course",
    "area": "Pre-Professional Core Requirements",
    "code": "PETE 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Pre-Professional Core Requirements (25 credits) › PETE 2700 Foundations of Physical Education K-12 Teacher Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EXSC 3500 Kinesiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EXSC 3550 Motor Learning and Control | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EXSC 3700 Exercise Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › EXSC 3705 Exercise Physiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EXSC 3750 Psychosocial Aspects of Human Performance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › PETE 3100 Introduction to Physical Education Pedagogy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › PETE 3450 Special Populations in Physical Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › PETE 4200 Methods of Teaching Elementary Physical Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › PETE 4250 Methods of Teaching Secondary Physical Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › PETE 4400 Assessment in Physical Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PETE 4900",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › PETE 4900 Student Teaching Seminar for Physical Education | 1"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Additional 3 credits of any courses",
    "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Additional 3 credits of any courses | 3",
    "notes": [
     "Secondary Education Courses:"
    ]
@@ -288,77 +324,88 @@
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 1010 Introduction to Education | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 3000 Educational Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 3250G Equitable Technology Integration | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4200 Classroom Management I | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4250 Classroom Management II | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4440 Content Area Literacies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4450G Multicultural and Multilingual Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4850 Student Teaching Secondary | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSC 4990 Teacher Assessment Project | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › EDSP 3400G Exceptional Students | 2"
   }
  ],
  "gradPlan": [
@@ -594,21 +641,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -623,28 +688,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -657,7 +746,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -669,7 +765,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -687,7 +790,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -700,7 +806,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EXSC 1097": {
    "title": "Fitness for Life",
@@ -747,7 +854,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3550": {
    "title": "Motor Learning and Control",
@@ -789,7 +902,13 @@
     "ZOOL 2420",
     "ZOOL 2425",
     "EXSC 2700G"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3700": {
    "title": "Exercise Physiology",
@@ -821,7 +940,13 @@
    "preco": [
     "ZOOL 2420",
     "ZOOL 2425"
-   ]
+   ],
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3705": {
    "title": "Exercise Physiology Laboratory",
@@ -832,7 +957,12 @@
    "coreqText": "EXSC 3700",
    "coreqs": [
     "EXSC 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -855,7 +985,12 @@
    "uncertain": true,
    "preco": [
     "ZOOL 2325"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -887,7 +1022,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -899,7 +1035,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "NUTR 1020": {
    "title": "Foundations of Human Nutrition",
@@ -936,7 +1073,12 @@
    "credits": 3,
    "prereqText": "PETE 2500 or permission of instructor, University Advanced Standing",
    "prereqs": "PETE 2500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PETE 3450": {
    "title": "Special Populations in Physical Education",
@@ -948,7 +1090,12 @@
      "EDSP 3400G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PETE 4200": {
    "title": "Methods of Teaching Elementary Physical Education",
@@ -970,7 +1117,12 @@
    "precoreqs": "PETE 2120",
    "preco": [
     "PETE 2120"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PETE 4250": {
    "title": "Methods of Teaching Secondary Physical Education",
@@ -983,7 +1135,13 @@
      "PETE 4400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "acceptance into UVU's Secondary Education program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "acceptance into UVU's Secondary Education program and University Advanced Standing"
   },
   "PETE 4400": {
    "title": "Assessment in Physical Education",
@@ -999,7 +1157,12 @@
    "coreqText": "PETE 4200",
    "coreqs": [
     "PETE 4200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PETE 4900": {
    "title": "Student Teaching Seminar for Physical Education",
@@ -1010,7 +1173,14 @@
    "coreqText": "EDSC 4850",
    "coreqs": [
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "successful completion of all professional education and content courses",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program, successful completion of all professional education and content courses"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1031,5 +1201,26 @@
     ]
    }
   }
+ },
+ "admissionInfo": {
+  "text": "Acceptance to the Secondary Education Program, which include the following requirements: (1) ENGL and MATH QL courses must have a grade C or higher. (2) GPA of 2.7 or higher with no grade lower than a C in content area courses. (3) Completion of all General Education requirements and 70% of content area courses. (4) Pass LiveScan Criminal Background Check. Complete PETE 3100 Introduction to Physical Education Pedagogy with a grade of C or better. Fitness requirement: Students must achieve and maintain a health-enhancing level of fitness. Standards will be set according to expert guidelines that take info effect age, gender, disability, and other contributing factors.",
+  "before": [
+   "PETE 3100"
+  ],
+  "gated": [
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990",
+   "PETE 4250",
+   "PETE 4900"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

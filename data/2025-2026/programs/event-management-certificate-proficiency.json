@@ -3,7 +3,7 @@
  "name": "Event Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/organizational-leadership/event-management-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HM 3000 Hospitality Industry Foundations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HM 3210 Event Venue and Convention Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HM 4200 Event Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HM 4250 Advanced Event Production | 3"
   },
   {
    "type": "choice",
@@ -88,7 +93,8 @@
      "credits": 3
     }
    ],
-   "text": "Elective Requirements: Choose 3 credits from the Following"
+   "text": "Elective Requirements: Choose 3 credits from the Following",
+   "src": "Discipline Core Requirements (18 credits) › Elective Requirements: Choose 3 credits from the Following | 3"
   }
  ],
  "gradPlan": [
@@ -142,21 +148,36 @@
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3000": {
    "title": "Hospitality Industry Foundations",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3210": {
    "title": "Event Venue and Convention Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4200": {
    "title": "Event Planning",
@@ -168,7 +189,12 @@
    "precoreqs": "HM 3210",
    "preco": [
     "HM 3210"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4250": {
    "title": "Advanced Event Production",
@@ -182,7 +208,13 @@
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MKTG 2390": {
    "title": "Professional Business Presentations",
@@ -192,7 +224,9 @@
    "title": "Professional Selling",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 1513": {
    "title": "Stagecraft I",
@@ -213,5 +247,11 @@
    ]
   }
  },
- "totalFrom": "area headers"
+ "totalFrom": "area headers",
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "MGMT 3450"
+  ]
+ }
 }

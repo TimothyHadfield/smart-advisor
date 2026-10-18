@@ -3,7 +3,7 @@
  "name": "Wildland Fire Management, A.A.S.",
  "url": "https://catalog.uvu.edu/health-public-service/emergency-services/wildland-fire-management-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -12,6 +12,7 @@
    "label": "Choose 9 credits from the following areas:",
    "credits": 9,
    "text": "Choose 9 credits from the following areas:",
+   "src": "General Education Requirements (9 credits) › Choose 9 credits from the following areas: | 9",
    "notes": [
     "English Composition GE",
     "Quantitative Literacy GE",
@@ -29,28 +30,32 @@
    "area": "Discipline Core Requirements",
    "code": "ESWF 1310",
    "alts": [],
-   "credits": 0.5
+   "credits": 0.5,
+   "src": "Discipline Core Requirements (6 credits) › ESWF 1310 S131 Wildland Firefighter Type I | 0.5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESWF 1330",
    "alts": [],
-   "credits": 0.5
+   "credits": 0.5,
+   "src": "Discipline Core Requirements (6 credits) › ESWF 1330 Look Up Look Down Look Around | 0.5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESWF 1400",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (6 credits) › ESWF 1400 Wildland Firefighting Fundamentals | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESWF 2010",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (6 credits) › ESWF 2010 Basic Incident Command System for Initial Response | 1"
   },
   {
    "type": "choice",
@@ -164,19 +169,22 @@
      "credits": 2
     }
    ],
-   "text": "Choose 12 credits from the following course list"
+   "text": "Choose 12 credits from the following course list",
+   "src": "Elective Requirements (45 credits) › Choose 12 credits from the following course list | 12"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Choose Any ESEC, ESMG, ES, ESFO, ESFF, ESWF, ESAF, CJ, NSS, MILS, AERO courses",
-   "credits": 23
+   "credits": 23,
+   "src": "Elective Requirements (45 credits) › Choose Any ESEC, ESMG, ES, ESFO, ESFF, ESWF, ESAF, CJ, NSS, MILS, AERO courses | 23"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Any Course 1000 Level or Higher",
-   "credits": 10
+   "credits": 10,
+   "src": "Elective Requirements (45 credits) › Any Course 1000 Level or Higher | 10"
   }
  ],
  "gradPlan": [
@@ -267,14 +275,20 @@
    "credits": 0.5,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 1330": {
    "title": "Look Up Look Down Look Around",
    "credits": 0.5,
    "prereqText": "Meet NWCG pre-qualifications or departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Meet NWCG pre-qualifications or departmental approval"
+   ]
   },
   "ESWF 1400": {
    "title": "Wildland Firefighting Fundamentals",
@@ -298,105 +312,150 @@
    "credits": 1,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2010": {
    "title": "Basic Incident Command System for Initial Response",
    "credits": 1,
    "prereqText": "Meet NWCG prequalifications or departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Meet NWCG prequalifications or departmental approval"
+   ]
   },
   "ESWF 2110": {
    "title": "S211 Portable Pumps and Water Use",
    "credits": 1.5,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2150": {
    "title": "S215 Fire Operations in the Wildland Urban Interface",
    "credits": 2,
    "prereqText": "Deparmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Deparmental approval"
+   ]
   },
   "ESWF 2212": {
    "title": "S212 Chain Saw Use in Wildland Fire Operations",
    "credits": 2,
    "prereqText": "Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval"
+   ]
   },
   "ESWF 2231": {
    "title": "S231 Wildland Fire Engine Boss",
    "credits": 1,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ESWF 2236": {
    "title": "S236 Heavy Equipment Boss",
    "credits": 2,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ESWF 2244": {
    "title": "S244 Field Observer",
    "credits": 2,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ESWF 2261": {
    "title": "S261 Applied Interagency Incident Business Management",
    "credits": 1,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ESWF 2301": {
    "title": "S230 Crew Boss Single Resource",
    "credits": 2,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2340": {
    "title": "Firing Operations",
    "credits": 2,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "ESWF 2430": {
    "title": "Wildland Firefighter Internship III",
    "credits": 5,
    "prereqText": "ESWF 1420 and departmental approval",
    "prereqs": "ESWF 1420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "departmental approval"
+   ]
   },
   "ESWF 2600": {
    "title": "S260 Interagency Incident Business Management",
    "credits": 1,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2700": {
    "title": "S270 Basic Air Operations",
    "credits": 1,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2800": {
    "title": "L280 Followership to Leadership",
    "credits": 1,
    "prereqText": "Departmental approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental approval"
+   ]
   },
   "ESWF 2900": {
    "title": "S290 Intermediate Wildland Fire Behavior",

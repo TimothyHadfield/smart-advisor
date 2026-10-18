@@ -3,7 +3,7 @@
  "name": "Healthcare Services, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/healthcare-services-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 63,
  "requirements": [
   {
@@ -28,14 +28,16 @@
      "credits": 5
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "General Education Requirements (19 credits) › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (19 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -84,6 +86,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (19 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -94,7 +97,8 @@
    "recommended": [
     "PSY 1010",
     "PSY 1100"
-   ]
+   ],
+   "src": "General Education Requirements (19 credits) › Any Social Science Distribution (PSY 1010 or PSY 1100 highly recommended) | 3"
   },
   {
    "type": "course",
@@ -103,13 +107,15 @@
    "alts": [
     "CHEM 1110"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (19 credits) › CHEM 1210 Principles of Chemistry I | 4 or CHEM 1110 Elementary Chemistry for the Health Sciences"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities/Art",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (19 credits) › Humanities/Art | 3"
   },
   {
    "type": "course",
@@ -119,14 +125,21 @@
     "BIOL 1610",
     "BIOL 1610H"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Healthcare Services Core (39 credits) › BIOL 1010 General Biology (Bi) | 3 or BIOL 1610 College Biology I or BIOL 1610H College Biology I",
+   "creditsBy": {
+    "BIOL 1010": 3,
+    "BIOL 1610": 4,
+    "BIOL 1610H": 4
+   }
   },
   {
    "type": "course",
    "area": "Healthcare Services Core",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Healthcare Services Core (39 credits) › NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "choice",
@@ -157,7 +170,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Healthcare Services Core (39 credits) › Choose one of the following: | 3"
   },
   {
    "type": "choice",
@@ -296,6 +310,7 @@
     }
    ],
    "text": "Choose one of the following options:",
+   "src": "Healthcare Services Core (39 credits) › Choose one of the following options: | 30",
    "notes": [
     "Certification program from MTECH as stated in AAS Healthcare Services articulation agreement OR",
     "30 credits from the following health-related courses (please see an advisor to plan a schedule)",
@@ -308,7 +323,8 @@
    "area": "General Electives",
    "label": "Choose 5 credits from any course 1000 or higher",
    "credits": 5,
-   "text": "Choose 5 credits from any course 1000 or higher"
+   "text": "Choose 5 credits from any course 1000 or higher",
+   "src": "General Electives (5 credits) › Choose 5 credits from any course 1000 or higher | 5"
   }
  ],
  "gradPlan": [
@@ -443,7 +459,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -483,7 +500,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -501,7 +522,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -512,7 +534,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -522,7 +545,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -553,7 +577,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -577,7 +602,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -590,7 +618,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HLSC 1300": {
    "title": "Medical Terminology and Functional Anatomy",
@@ -607,7 +636,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -619,7 +652,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -631,7 +668,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -643,7 +681,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -655,7 +694,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -677,7 +717,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -698,7 +742,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -788,7 +833,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -801,7 +851,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -814,7 +869,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 1090": {
    "title": "Introduction to Human Anatomy and Physiology",
@@ -862,7 +921,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",

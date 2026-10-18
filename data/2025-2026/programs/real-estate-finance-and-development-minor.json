@@ -3,7 +3,7 @@
  "name": "Real Estate Finance and Development, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/real-estate-finance-and-development-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,42 +11,48 @@
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4310 Real Estate Investment and Securities | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4330R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4330R Real Estate Fund | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4320 Real Estate Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4340 Real Estate Markets and Brokerage | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › FIN 4350 Real Estate Mortgage and Lending | 3"
   }
  ],
  "gradPlan": [
@@ -96,35 +102,60 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4320": {
    "title": "Real Estate Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4330R": {
    "title": "Real Estate Fund",
    "credits": 3,
    "prereqText": "FIN 4310 and University Advanced Standing",
    "prereqs": "FIN 4310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4340": {
    "title": "Real Estate Markets and Brokerage",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4350": {
    "title": "Real Estate Mortgage and Lending",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",

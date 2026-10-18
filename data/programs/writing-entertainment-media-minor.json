@@ -3,7 +3,7 @@
  "name": "Writing for Entertainment Media, Minor",
  "url": "https://catalog.uvu.edu/engineering-technology/digital-media/writing-entertainment-media-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1210 Writing for Entertainment Media I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 3210 Writing for Entertainment Media II | 3"
   },
   {
    "type": "course",
@@ -41,6 +45,7 @@
    "alts": [],
    "credits": 6,
    "repeat": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4210R Writing for Entertainment Media III (Take twice) | 6",
    "creditsEach": 3
   },
   {
@@ -48,14 +53,16 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 4230R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4230R & DCPR 4240R Story Editing for Digital Cinema and Story Editing for Digital Cinema Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 4240R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4230R & DCPR 4240R Story Editing for Digital Cinema and Story Editing for Digital Cinema Lab | 3"
   },
   {
    "type": "choice",
@@ -100,7 +107,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete six hours from the following electives."
+   "text": "Complete six hours from the following electives.",
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › Complete six hours from the following electives. | 6"
   }
  ],
  "gradPlan": [
@@ -266,7 +274,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4210R": {
    "title": "Writing for Entertainment Media III",
@@ -288,7 +302,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4230R": {
    "title": "Story Editing for Digital Cinema",
@@ -305,7 +324,12 @@
    "precoreqs": "DCPR 4240R",
    "preco": [
     "DCPR 4240R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4240R": {
    "title": "Story Editing for Digital Cinema Lab",
@@ -321,7 +345,12 @@
    "coreqText": "DCPR 4230R",
    "coreqs": [
     "DCPR 4230R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 1033": {
    "title": "Acting I",
@@ -330,5 +359,10 @@
  },
  "missingCourses": [
   "DCPR 2800L"
- ]
+ ],
+ "admissionInfo": {
+  "text": "Matriculation Requirements Admission to any Bachelor Program at UVU Cinema Portfolio Review acceptance OR Writing for Entertainment Minor acceptance and University Advanced Standing",
+  "before": [],
+  "gated": []
+ }
 }

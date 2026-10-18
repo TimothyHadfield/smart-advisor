@@ -3,7 +3,7 @@
  "name": "Curriculum and Instruction, M.Ed.",
  "url": "https://catalog.uvu.edu/education/education-graduate-programs/curriculum-and-instruction-med/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "EDUC 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6100 Research Methodology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6110 Applied Statistics for Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6320 21st Century Instruction and Assessment | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6300 Curriculum Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6330",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6330 Strategies for Working with Diverse Learners | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6412",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6412 Adult Learning--Theory and Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6410 Contemporary Issues in Education | 3"
   },
   {
    "type": "course",
@@ -62,21 +69,24 @@
    "alts": [
     "EDUC 6799R"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6415 Global Issues in Teaching and Learning | 3 or EDUC 6799R Special Topics in Education"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6411",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6411 Instructional Coaching | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6970",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › EDUC 6970 Masters Project | 3"
   }
  ],
  "gradPlan": [],
@@ -86,79 +96,157 @@
    "credits": 3,
    "prereqText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M.S., program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into a School of Education graduate program or matriculation into Master of Science-Mathematics, M"
   },
   "EDUC 6110": {
    "title": "Applied Statistics for Education",
    "credits": 3,
    "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M"
   },
   "EDUC 6300": {
    "title": "Curriculum Design",
    "credits": 3,
    "prereqText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Graduate Status Admission to the School of Education Masters Degree Program Or permission of the Dean"
   },
   "EDUC 6320": {
    "title": "21st Century Instruction and Assessment",
    "credits": 3,
    "prereqText": "Admission to a graduate program or a graduate program director's approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a graduate program or a graduate program director's approval"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a graduate program or a graduate program director's approval"
   },
   "EDUC 6330": {
    "title": "Strategies for Working with Diverse Learners",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program at UVU or an approval from a graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program at UVU or an approval from a graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program at UVU or an approval from a graduate program director"
   },
   "EDUC 6410": {
    "title": "Contemporary Issues in Education",
    "credits": 3,
    "prereqText": "Admission to a graduate program in the Department of Graduate Education or approval from a Graduate Program Director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a graduate program in the Department of Graduate Education or approval from a Graduate Program Director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a graduate program in the Department of Graduate Education or approval from a Graduate Program Director"
   },
   "EDUC 6411": {
    "title": "Instructional Coaching",
    "credits": 3,
    "prereqText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed. program, or permission of the program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M.Ed",
+    "program",
+    "permission of the program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Teacher Leader or Earned Endorsement emphasis in the M"
   },
   "EDUC 6412": {
    "title": "Adult Learning--Theory and Practice",
    "credits": 3,
    "prereqText": "Acceptance into the UVU SOE master of education program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the UVU SOE master of education program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the UVU SOE master of education program"
   },
   "EDUC 6415": {
    "title": "Global Issues in Teaching and Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master's of Education program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master's of Education program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master's of Education program"
   },
   "EDUC 6799R": {
    "title": "Special Topics in Education",
    "credits": 3,
    "prereqText": "Admission to a graduate program in the Graduate Education Department or permission of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to a graduate program in the Graduate Education Department or permission of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to a graduate program in the Graduate Education Department or permission of the graduate program director"
   },
   "EDUC 6970": {
    "title": "Masters Project",
    "credits": 3,
    "prereqText": "Admission to any graduate program or approval of the Program Director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to any graduate program or approval of the Program Director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to any graduate program or approval of the Program Director"
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "before": [],
+  "gated": [
+   "EDUC 6100",
+   "EDUC 6110",
+   "EDUC 6300",
+   "EDUC 6320",
+   "EDUC 6330",
+   "EDUC 6410",
+   "EDUC 6411",
+   "EDUC 6412",
+   "EDUC 6415",
+   "EDUC 6799R",
+   "EDUC 6970"
+  ]
+ }
 }

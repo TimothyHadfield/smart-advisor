@@ -3,7 +3,7 @@
  "name": "Outdoor Recreation Management, B.S.",
  "url": "https://catalog.uvu.edu/science/exercise-science-outdoor-recreation/outdoor-recreation-management-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -31,63 +37,79 @@
     "MATH 1050",
     "MATH 1055"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › STAT 1040 Introduction to Statistics | 3 or STAT 1045 Introduction to Statistics with Algebra or MATH 1050 College Algebra or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "STAT 1040": 3,
+    "STAT 1045": 5,
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "American Institutions",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › EXSC 3750 Psychosocial Aspects of Human Performance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › EXSC 4300 Research Methods in Exercise Science and Outdoor Recreation | 3"
   },
   {
    "type": "course",
@@ -96,140 +118,160 @@
    "alts": [
     "REC 1580"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 1500 Canoeing I | 1 or REC 1580 Kayak Touring"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 1527",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 1527 Rock Climbing I | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 1535",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 1535 Backpacking | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 1542",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (61 credits) › REC 1542 Wilderness First Responder | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 1600",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 1600 Winter Exploration | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 2200 Foundations of Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 2400 Principles of Experiential Education in Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 2600 Principles of Outdoor and Adventure Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 2700",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 2700 Leave No Trace Trainer | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 3100 Recreation Program Planning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 3200 Inclusive Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3300",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 3300 Wilderness Skills | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 3400 Risk Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 3500 Recreation Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 3850G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 3850G Ethical Concerns in Recreation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 4200R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (61 credits) › REC 4200R Outdoor Leadership and Management Practicum | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (61 credits) › REC 4400 Natural Resource and Protected Area Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 4800",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (61 credits) › REC 4800 Professional Preparation in Recreation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 4810R",
    "alts": [],
-   "credits": 7
+   "credits": 7,
+   "src": "Discipline Core Requirements (61 credits) › REC 4810R Senior Internship (1-7) | 7"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "REC 4950",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (61 credits) › REC 4950 Senior Seminar | 2"
   },
   {
    "type": "choice",
@@ -283,7 +325,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete 2 credits from the following:"
+   "text": "Complete 2 credits from the following:",
+   "src": "Discipline Core Requirements (61 credits) › Complete 2 credits from the following: | 2"
   },
   {
    "type": "choice",
@@ -329,7 +372,8 @@
      "crMax": 3
     }
    ],
-   "text": "Complete 6 credits from the following:"
+   "text": "Complete 6 credits from the following:",
+   "src": "Discipline Core Requirements (61 credits) › Complete 6 credits from the following: | 6"
   },
   {
    "type": "choice",
@@ -521,13 +565,15 @@
      "credits": 3
     }
    ],
-   "text": "Complete 18 credits from the courses below. 6 credits must be Upper Division"
+   "text": "Complete 18 credits from the courses below. 6 credits must be Upper Division",
+   "src": "Directed Electives (18 credits) › Complete 18 credits from the courses below. 6 credits must be Upper Division | 18 (Note: Students may complete any Minor in the UVU Catalog instead of the Directed Electives. If the minor is less than 18 credits, the student must add classes to meet the 18 credit requirement.)"
   },
   {
    "type": "placeholder",
    "area": "Electives",
    "label": "Electives",
-   "credits": 11
+   "credits": 11,
+   "src": "Electives (11 credits) › Electives | 11"
   }
  ],
  "gradPlan": [
@@ -872,13 +918,21 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3800": {
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BOT 2050": {
    "title": "Field Botany",
@@ -903,7 +957,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 1020": {
    "title": "Public Speaking",
@@ -926,14 +985,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -946,14 +1011,21 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 3320": {
    "title": "Grant and Proposal Writing",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENST 3520": {
    "title": "Environmental Sociology",
@@ -965,28 +1037,49 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 3170": {
    "title": "Entrepreneurship - Feasibility Analysis",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 3180R": {
    "title": "Launching a New Venture - For Non-Business Majors",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3630": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 3750": {
    "title": "Psychosocial Aspects of Human Performance",
@@ -1009,7 +1102,12 @@
    "uncertain": true,
    "preco": [
     "ZOOL 2325"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EXSC 4300": {
    "title": "Research Methods in Exercise Science and Outdoor Recreation",
@@ -1039,7 +1137,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "All: University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GIS 2800": {
    "title": "Geographic Information Systems",
@@ -1055,20 +1159,32 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1080,7 +1196,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1092,7 +1209,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 1250": {
    "title": "Principles of Leadership",
@@ -1120,14 +1238,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3500": {
    "title": "Leadership Theory and Application",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1138,7 +1266,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 1500": {
    "title": "Canoeing I",
@@ -1179,7 +1312,10 @@
    "credits": 1,
    "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Ability to carry a 40 lbs pack for 15-25 miles"
+   ]
   },
   "REC 1542": {
    "title": "Wilderness First Responder",
@@ -1190,14 +1326,20 @@
    "credits": 1,
    "prereqText": "Ability to carry a 40 lbs pack for 15-25 miles",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Ability to carry a 40 lbs pack for 15-25 miles"
+   ]
   },
   "REC 1580": {
    "title": "Kayak Touring",
    "credits": 1,
    "prereqText": "Must be able to swim 100 yards without stopping",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Must be able to swim 100 yards without stopping"
+   ]
   },
   "REC 1600": {
    "title": "Winter Exploration",
@@ -1292,7 +1434,12 @@
    "precoreqs": "MATH 1000",
    "preco": [
     "MATH 1000"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3200": {
    "title": "Inclusive Recreation",
@@ -1304,7 +1451,12 @@
      "REC 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3300": {
    "title": "Wilderness Skills",
@@ -1316,7 +1468,12 @@
    "precoreqs": "REC 2200",
    "preco": [
     "REC 2200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3400": {
    "title": "Risk Management",
@@ -1328,28 +1485,48 @@
    "precoreqs": "MAT 1010",
    "preco": [
     "MAT 1010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3500": {
    "title": "Recreation Administration",
    "credits": 3,
    "prereqText": "REC 3100 and University Advanced Standing",
    "prereqs": "REC 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3700": {
    "title": "Natural Resource Interpretation",
    "credits": 3,
    "prereqText": "REC 2400 and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 3850G": {
    "title": "Ethical Concerns in Recreation",
    "credits": 3,
    "prereqText": "REC 2400 and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4000": {
    "title": "Outdoor Leadership",
@@ -1363,28 +1540,49 @@
      "REC 1542"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4200R": {
    "title": "Outdoor Leadership and Management Practicum",
    "credits": 2,
    "prereqText": "REC 2400 , Instructor approval, and University Advanced Standing",
    "prereqs": "REC 2400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4400": {
    "title": "Natural Resource and Protected Area Management",
    "credits": 3,
    "prereqText": "REC 2200 and University Advanced Standing",
    "prereqs": "REC 2200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4500": {
    "title": "Wildland Recreation Behavior",
    "credits": 3,
    "prereqText": "REC 4400 and University Advanced Standing",
    "prereqs": "REC 4400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4800": {
    "title": "Professional Preparation in Recreation",
@@ -1396,7 +1594,12 @@
    "precoreqs": "REC 2400",
    "preco": [
     "REC 2400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4810R": {
    "title": "Senior Internship",
@@ -1409,7 +1612,15 @@
      "REC 4200R"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "80 credit hours completed",
+    "minimum 2.5 GPA",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4900R": {
    "title": "Topics in Recreation",
@@ -1417,7 +1628,12 @@
    "creditsMax": 3,
    "prereqText": "( REC 2200 or Instructor Approval) and University Advanced Standing",
    "prereqs": "REC 2200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "REC 4950": {
    "title": "Senior Seminar",
@@ -1431,7 +1647,12 @@
      "STAT 1040"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SLSS 3200": {
    "title": "Leader--Teacher and Mentor",
@@ -1448,7 +1669,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1461,7 +1687,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

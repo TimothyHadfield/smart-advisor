@@ -3,7 +3,7 @@
  "name": "Computer Science - Computer Engineering Emphasis, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-computer-engineering-emphasis-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 65,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements: (16 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements:",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements: (16 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "placeholder",
@@ -28,6 +34,7 @@
    "label": "Choose one of the following:",
    "credits": 3,
    "text": "Choose one of the following:",
+   "src": "Core Requirements › General Education Requirements: (16 credits) › Choose one of the following: | 3",
    "notes": [
     "Arts",
     "Humanities"
@@ -39,6 +46,7 @@
    "label": "Choose one of the following:",
    "credits": 3,
    "text": "Choose one of the following:",
+   "src": "Core Requirements › General Education Requirements: (16 credits) › Choose one of the following: | 3",
    "notes": [
     "Life Sciences",
     "Physical Sciences",
@@ -49,105 +57,134 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements:",
    "label": "Social & Behavioral Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements: (16 credits) › Social & Behavioral Sciences | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements:",
    "code": "CS 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Core Requirements › Discipline Core Requirements: (9 credits) › Complete the following: › CS 1400 Fundamentals of Programming (Minimum grade of C- required) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements:",
    "code": "CS 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Core Requirements › Discipline Core Requirements: (9 credits) › Complete the following: › CS 2600 Computer Networks I (Minimum grade of C- required) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements:",
    "code": "CS 2810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "C-",
+   "src": "Core Requirements › Discipline Core Requirements: (9 credits) › Complete the following: › CS 2810 Computer Organization and Architecture (Minimum grade of C- required) | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › ECE 1000 Introduction to Electrical and Computer Engineering | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › ECE 2250 Circuit Theory | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › ECE 2255 Circuit Theory Lab | 1",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › ECE 2700 & ECE 2705 Digital Design I and Digital Design I Lab | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › ECE 2700 & ECE 2705 Digital Design I and Digital Design I Lab | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › IT 1510 Introduction to System Administration--Linux/UNIX | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 1410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › CS 1410 Object Oriented Programming | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › CS 2370 C Plus Plus Programming | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › CS 2420 Introduction to Algorithms and Data Structures | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › PHYS 2210 & PHYS 2215 Physics for Scientists and Engineers I and Physics for Scientists and Engineers I Lab | 5",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › PHYS 2210 & PHYS 2215 Physics for Scientists and Engineers I and Physics for Scientists and Engineers I Lab | 5",
+   "minGrade": "C-"
   },
   {
    "type": "choice",
@@ -183,14 +220,18 @@
      "credits": 4
     }
    ],
-   "text": "Complete 6 credits from the following courses (minimum grade of C- required):"
+   "text": "Complete 6 credits from the following courses (minimum grade of C- required):",
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › Complete 6 credits from the following courses (minimum grade of C- required): | 6",
+   "minGrade": "C-"
   },
   {
    "type": "placeholder",
    "area": "Emphasis Requirements",
    "label": "Complete 6 credits of any CS or ECE course 1000 or higher.",
    "credits": 6,
-   "text": "Complete 6 credits of any CS or ECE course 1000 or higher."
+   "text": "Complete 6 credits of any CS or ECE course 1000 or higher.",
+   "src": "Emphasis Requirements (40 credits) › Complete the following (minimum grade of C- required) › Complete 6 credits of any CS or ECE course 1000 or higher. | 6",
+   "minGrade": "C-"
   }
  ],
  "gradPlan": [
@@ -317,7 +358,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -480,7 +524,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",
@@ -508,7 +555,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -519,7 +570,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",

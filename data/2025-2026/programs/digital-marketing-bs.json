@@ -3,7 +3,7 @@
  "name": "Digital Marketing, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/marketing/digital-marketing-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "An Advanced Placement (AP) Mathematics Test with a score of 3 or higher"
    ],
@@ -99,50 +106,58 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Complete the following: › Humanities | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "choice",
@@ -167,6 +182,8 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Courses: › Complete one of the following: (Note: Students are required to complete My Educator with a score of 80 percent or higher, or complete either IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications with a grade of B- or higher.)",
+   "minGrade": "B-",
    "notes": [
     "My Educator"
    ],
@@ -177,14 +194,17 @@
    "area": "Matriculation Courses:",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Matriculation Courses: › Complete the following: › MKTG 2200G Written Business Communication (Complete with B- grade or higher) | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: › Complete the following: › ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "course",
@@ -193,56 +213,72 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: › Complete the following: › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: › Complete the following: › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Courses:",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Courses: › Complete the following: › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (15 credits) › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (15 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Courses: (15 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Cannot be taken until student is matriculated",
+   "src": "Business Core Courses: (15 credits) › MGMT 3450 Operations Management | 3 (Note: Cannot be taken until student is matriculated.)"
   },
   {
    "type": "course",
    "area": "Business Core Courses:",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "gate": "admission",
+   "gateText": "Cannot be taken until student is matriculated",
+   "src": "Business Core Courses: (15 credits) › MGMT 4860 Business Strategy Formulation and Implementation | 3 (Note: Cannot be taken until student is matriculated.)"
   },
   {
    "type": "course",
@@ -251,63 +287,73 @@
    "alts": [
     "MGMT 2950R"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Digital Marketing Core: (28 credits) › ENTR 2930R Entrepreneurship Lecture Series | 1 or MGMT 2950R Executive Lecture Series",
+   "prefer": "MGMT 2950R"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 1890",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 1890 Introduction to Careers in Business | 1"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3890",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3890 Business Career Strategy | 2"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3300 Marketing Analytics | 3"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3660",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3660 Digital Marketing | 3"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3170 Digital Advertising | 3"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3680",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3680 Marketing with Social Media | 3"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3690",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3690 Digital Marketing Analytics | 3"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 3665",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 3665 Search Engine Optimization | 3"
   },
   {
    "type": "course",
@@ -316,20 +362,23 @@
    "alts": [
     "MKTG 4650"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 4150 Digital Marketing Capstone | 3 or MKTG 4650 Marketing Management Capstone"
   },
   {
    "type": "course",
    "area": "Digital Marketing Core:",
    "code": "MKTG 4830R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Digital Marketing Core: (28 credits) › MKTG 4830R Digital Marketing Internship (1-3 credits) | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Marketing Electives: Select from approved list; see advisors. Transfer students needing global/intercultural credit should take MKTG 3350G.",
    "credits": 12,
+   "src": "Elective Requirements (29 credits) › Marketing Electives: Select from approved list; see advisors. Transfer students needing global/intercultural credit should take MKTG 3350G. | 12",
    "notes": [
     "Six credits upper division marketing electives.",
     "Six credit upper or lower division electives from approved list."
@@ -339,7 +388,8 @@
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "General Electives: Any course numbered 1000 or higher. (17 credits needed)",
-   "credits": 17
+   "credits": 17,
+   "src": "Elective Requirements (29 credits) › General Electives: Any course numbered 1000 or higher. (17 credits needed) | 17"
   }
  ],
  "gradPlan": [
@@ -611,7 +661,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -624,7 +677,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 2930R": {
    "title": "Entrepreneurship Lecture Series",
@@ -651,7 +705,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -680,7 +739,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -692,7 +754,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -704,7 +767,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -716,7 +780,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -729,7 +794,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -750,14 +818,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -771,7 +850,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MKTG 1890": {
    "title": "Introduction to Careers in Business",
@@ -789,65 +874,97 @@
    "title": "Digital Advertising",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3300": {
    "title": "Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3660": {
    "title": "Digital Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3665": {
    "title": "Search Engine Optimization",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3680": {
    "title": "Marketing with Social Media",
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3690": {
    "title": "Digital Marketing Analytics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3890": {
    "title": "Business Career Strategy",
    "credits": 2,
    "prereqText": "University Advanced Standing; MKTG 1890 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4150": {
    "title": "Digital Marketing Capstone",
    "credits": 3,
    "prereqText": "MKTG 3170 , MKTG 3600 , MKTG 3660 , MKTG 3680 , MKTG 3690 , and University Advanced Standing; Senior Standing is recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4650": {
    "title": "Marketing Management Capstone",
    "credits": 3,
    "prereqText": "MKTG 3600 , MKTG 3650 , MKTG 3660 , MKTG 3700 , and University Advanced Standing; Senior Standing is recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 4830R": {
    "title": "Digital Marketing Internship",
@@ -855,7 +972,13 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -876,7 +999,30 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Students will be limited to 9 hours of upper-division credit until matriculation is completed. Course List Code Title Credit Hours ACC 2110 Principles of Accounting I 3 ECON 2010 Principles of Economics I 3 Complete one of the following: 2 My Educator IM 2010 Business Computer Proficiency IM 2600 Spreadsheet Applications MKTG 2200G Written Business Communication 3 MKTG 2390 Professional Business Presentations 3 MGMT 2340 Business Statistics I 3 or STAT 2040 Principles of Statistics MGMT 2400 Data Analytics for Business 3 Students cannot take the following courses until they have matriculated: , MGMT 3450 Operations Management and MGMT 4860 Business Strategy Formulation and Implementation",
+  "before": [
+   "ACC 2110",
+   "ECON 2010",
+   "IM 2010",
+   "IM 2600",
+   "MKTG 2200G",
+   "MKTG 2390",
+   "MGMT 2340",
+   "STAT 2040",
+   "MGMT 2400"
+  ],
+  "gated": [
+   "MGMT 3450",
+   "MGMT 4860"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

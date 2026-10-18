@@ -3,7 +3,7 @@
  "name": "Digital Communication Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/digital-communication-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › English: › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "choice",
@@ -36,13 +41,15 @@
      ],
      "credits": 6
     }
-   ]
+   ],
+   "src": "General Education Requirements (15 credits) › English: › Mathematics: | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities/Fine Arts/Foreign Language",
    "credits": 3,
+   "src": "General Education Requirements (15 credits) › English: › Humanities/Fine Arts/Foreign Language | 3",
    "notes": [
     "Social and Behavioral Science:"
    ]
@@ -52,6 +59,7 @@
    "area": "General Education Requirements",
    "label": "Any approved Behavioral Science, Social or Political Science Distribution Course",
    "credits": 3,
+   "src": "General Education Requirements (15 credits) › English: › Any approved Behavioral Science, Social or Political Science Distribution Course | 3",
    "notes": [
     "Biology or Physical Science:"
    ]
@@ -60,63 +68,72 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Biology or Physical Science Distribution Course",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › English: › Any approved Biology or Physical Science Distribution Course | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DGM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DGM 1110 Digital Media Essentials I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DWDD 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DWDD 1600 Web Essentials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DCPR 1800 & DCPR 1800L Filmmaking I and Filmmaking I Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1800L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DCPR 1800 & DCPR 1800L Filmmaking I and Filmmaking I Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DAPR 2000 & DAPR 2000L Digital Audio Essentials and Digital Audio Essentials Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DAPR 2000L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (15 credits) › Complete the following: › DAPR 2000 & DAPR 2000L Digital Audio Essentials and Digital Audio Essentials Lab | 4"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 29 credits from approved DGM electives (see advisor)",
    "credits": 29,
-   "text": "Complete 29 credits from approved DGM electives (see advisor)"
+   "text": "Complete 29 credits from approved DGM electives (see advisor)",
+   "src": "Elective Requirements (30 credits) › Complete 29 credits from approved DGM electives (see advisor) | 29"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 1,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Elective Requirements (30 credits) › Complete any 1000-level, or higher, courses | 1"
   }
  ],
  "gradPlan": [
@@ -307,7 +324,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -320,7 +340,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -332,7 +356,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   }
  }
 }

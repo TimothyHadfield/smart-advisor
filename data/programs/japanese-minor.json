@@ -3,7 +3,7 @@
  "name": "Japanese, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/japanese-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "JPNS 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › JPNS 3050 Advanced Japanese | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "JPNS 3055",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › JPNS 3055 Japanese Conversation and Composition | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "JPNS 3060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › JPNS 3060 Advanced Japanese II | 3"
   },
   {
    "type": "choice",
@@ -55,7 +58,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete two of the following"
+   "text": "Complete two of the following",
+   "src": "Discipline Core Requirements (18 credits) › Complete two of the following | 6"
   },
   {
    "type": "choice",
@@ -85,7 +89,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following"
+   "text": "Complete one of the following",
+   "src": "Discipline Core Requirements (18 credits) › Complete one of the following | 3"
   }
  ],
  "gradPlan": [
@@ -197,46 +202,69 @@
    "title": "Japanese Conversation and Composition",
    "credits": 3,
    "prereqText": "University Advanced Standing; JPNS 3050 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3060": {
    "title": "Advanced Japanese II",
    "credits": 3,
    "prereqText": "University Advanced Standing; JPNS 3050 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3200": {
    "title": "Business Japanese",
    "credits": 3,
    "prereqText": "JPNS 3050 and University Advanced Standing",
    "prereqs": "JPNS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3210": {
    "title": "Japanese for the Professions",
    "credits": 3,
    "prereqText": "University Advanced Standing; JPNS 3060 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3510G": {
    "title": "Japanese Culture and Civilization",
    "credits": 3,
    "prereqText": "JPNS 3050 and University Advanced Standing",
    "prereqs": "JPNS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3520": {
    "title": "Society and Business in Japan",
    "credits": 3,
    "prereqText": "JPNS 3050 and University Advanced Standing",
    "prereqs": "JPNS 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "JPNS 3710": {
    "title": "Japanese Culture and Film",
    "credits": 3,
    "prereqText": "University Advanced Standing; JPNS 3060 recommended, one year residency in a Japanese-speaking region, or instructor approval.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

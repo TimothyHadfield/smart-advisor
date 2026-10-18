@@ -3,7 +3,7 @@
  "name": "Enterprise Development and Entrepreneurship, Minor",
  "url": "https://catalog.uvu.edu/business/strategic-management-operations/enterprise-development-entrepreneurship-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "ENTR 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENTR 2500 Creativity and Entrepreneurial Thinking | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENTR 3170",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENTR 3170 Entrepreneurship - Feasibility Analysis | 3"
   },
   {
    "type": "course",
@@ -27,14 +29,16 @@
    "alts": [
     "ENTR 4450"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENTR 3180R Launching a New Venture - For Non-Business Majors | 3 or ENTR 4450 Entrepreneurship - Enterprise Formation"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENTR 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ENTR 4400 New Venture Financing | 3"
   },
   {
    "type": "choice",
@@ -143,7 +147,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 6 credits from the following:"
+   "text": "Choose 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Choose 6 credits from the following: | 6"
   }
  ],
  "gradPlan": [
@@ -227,21 +232,34 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3410": {
    "title": "Fundamentals of Mediation and Negotiation",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 1400": {
    "title": "Fundamentals of Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "DGM 1110": {
    "title": "Digital Media Essentials I",
@@ -262,14 +280,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 3180R": {
    "title": "Launching a New Venture - For Non-Business Majors",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 3220": {
    "title": "Entrepreneurship Law",
@@ -281,14 +309,24 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4200": {
    "title": "Innovative Opportunity Development",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4300": {
    "title": "The Art of the Pitch",
@@ -300,40 +338,64 @@
      "ENTR 3170"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4400": {
    "title": "New Venture Financing",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4450": {
    "title": "Entrepreneurship - Enterprise Formation",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENTR 4455": {
    "title": "New Venture Consulting",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3410": {
    "title": "Introduction to Venture Capital Skills",
    "credits": 3,
    "prereqText": "University Advanced Standing, FIN 3100 strongly recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3420R": {
    "title": "Wolverine Fund",
    "credits": 3,
    "prereqText": "FIN 3410 , Instructor Approval and University Advanced Standing, FIN 3100 strongly recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -349,20 +411,32 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3170": {
    "title": "Digital Advertising",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

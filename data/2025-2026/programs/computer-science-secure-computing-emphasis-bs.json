@@ -3,7 +3,7 @@
  "name": "Computer Science - Secure Computing Emphasis, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computer-science-secure-computing-emphasis-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Core Requirements › General Education Requirements (31 credits) › MATH 1210 Calculus I | 4 (Note: Minimum grade required (see Graduation Requirements).)"
   },
   {
    "type": "choice",
@@ -69,43 +76,50 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Core Requirements › General Education Requirements (31 credits) › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Life Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Life Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Physical Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social & Behavioral Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Social & Behavioral Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -161,6 +175,7 @@
     }
    ],
    "text": "Complete one of the following course/lab combinations:",
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › Complete one of the following course/lab combinations: | 5",
    "notes": [
     "Minimum grade of C- required in these courses."
    ]
@@ -185,94 +200,110 @@
      "codes": [
       "CS 1420"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "If students choose CS 1420, please see advisor."
+     ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › Complete one of the following: | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2300 Discrete Mathematical Structures I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2370 C Plus Plus Programming | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2420 Introduction to Algorithms and Data Structures | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2450 Software Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2550 Web Programming I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2600 Computer Networks I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 2810 Computer Organization and Architecture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 3050G Global Social and Ethical Issues in Computing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 3060 Operating Systems Theory | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 3100 Data Privacy and Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 3240 Discrete Mathematical Structures II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 3520",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › CS 3520 Database Theory | 3"
   },
   {
    "type": "course",
@@ -281,21 +312,28 @@
    "alts": [
     "STAT 2050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (50 credits) › ECE 3710 Applied Probability and Statistics for Engineers and Scientists | 3 or STAT 2050 Introduction to Statistical Methods",
+   "creditsBy": {
+    "ECE 3710": 3,
+    "STAT 2050": 4
+   }
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › IT 1510 Introduction to System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 2690",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 2690 Computer Networks II | 3"
   },
   {
    "type": "course",
@@ -307,28 +345,32 @@
     "CS 3370",
     "CS 3380"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 3250 Java Software Development | 3 or CS 3260 CsharpNET Software Development or CS 3270 Python Software Development or CS 3370 C Plus Plus Software Development or CS 3380 JavaScript Software Development"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "IT 3510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › IT 3510 Advanced System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 3110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 3110 Applied Cryptography | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 3120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 3120 Ethical Hacking Tools Dev | 3"
   },
   {
    "type": "course",
@@ -337,7 +379,8 @@
    "alts": [
     "CYBR 4350"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 3140 Network and Cloud Security | 3 or CYBR 4350 Web and Application Security"
   },
   {
    "type": "course",
@@ -346,21 +389,25 @@
    "alts": [
     "CYBR 3750"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 4120 Security Vulnerability Analysis | 3 or CYBR 3750 Malware Reverse Engineering"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "CS 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (39 credits) › CS 4200 Secure Computing Capstone | 3"
   },
   {
    "type": "placeholder",
    "area": "Emphasis Requirements",
    "label": "Complete 12 credits from any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.)",
    "credits": 12,
-   "text": "Complete 12 credits from any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.)"
+   "text": "Complete 12 credits from any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.)",
+   "src": "Emphasis Requirements (39 credits) › Complete 12 credits from any CS 3000 or 4000 level course not already required. (Minimum grade of C- required in these courses.) | 12",
+   "minGrade": "C-"
   }
  ],
  "gradPlan": [
@@ -646,7 +693,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -661,7 +712,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -675,7 +729,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to college algebra. Pass CS 1420 Entrance Exam.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to college algebra"
+   ]
   },
   "CS 2300": {
    "title": "Discrete Mathematical Structures I",
@@ -791,7 +848,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3060": {
    "title": "Operating Systems Theory",
@@ -807,14 +869,27 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "If a computer science or software engineering major",
+    "matriculation to computer science or software engineering",
+    "If a computer engineering major"
+   ],
+   "gate": "admission",
+   "gateText": "also CS 2810 and matriculation to computer science or software engineering"
   },
   "CS 3100": {
    "title": "Data Privacy and Security",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3110": {
    "title": "Applied Cryptography",
@@ -831,14 +906,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3120": {
    "title": "Ethical Hacking Tools Dev",
    "credits": 3,
    "prereqText": "CS 3100 and University Advanced Standing",
    "prereqs": "CS 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3140": {
    "title": "Network and Cloud Security",
@@ -850,7 +935,12 @@
      "CS 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3240": {
    "title": "Discrete Mathematical Structures II",
@@ -864,21 +954,39 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "computer engineering major or (matriculation to computer science or software engineering)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "computer engineering major or (matriculation to computer science or software engineering)"
   },
   "CS 3250": {
    "title": "Java Software Development",
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3260": {
    "title": "CsharpNET Software Development",
    "credits": 3,
    "prereqText": "Matriculation to computer science or software engineering and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation to computer science or software engineering and University Advanced Standing"
   },
   "CS 3270": {
    "title": "Python Software Development",
@@ -891,7 +999,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3370": {
    "title": "C Plus Plus Software Development",
@@ -909,7 +1023,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering"
   },
   "CS 3380": {
    "title": "JavaScript Software Development",
@@ -921,7 +1041,13 @@
      "CS 2550"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation into the CS program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation into the CS program"
   },
   "CS 3520": {
    "title": "Database Theory",
@@ -933,14 +1059,24 @@
      "CS 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4120": {
    "title": "Security Vulnerability Analysis",
    "credits": 3,
    "prereqText": "CS 3100 and University Advanced Standing",
    "prereqs": "CS 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4200": {
    "title": "Secure Computing Capstone",
@@ -958,7 +1094,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 3750": {
    "title": "Malware Reverse Engineering",
@@ -976,7 +1117,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4350": {
    "title": "Web and Application Security",
@@ -995,14 +1141,24 @@
      "INFO 3300",
      "CS 3520"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 3710": {
    "title": "Applied Probability and Statistics for Engineers and Scientists",
    "credits": 3,
    "prereqText": "MATH 1210 and University Advanced Standing",
    "prereqs": "MATH 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -1016,7 +1172,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1029,7 +1188,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -1086,7 +1246,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -1108,7 +1274,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "PHYS 2020": {
    "title": "College Physics II",
@@ -1188,7 +1358,35 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of CS 1400 Fundamentals of Programming , CS 1410 Object Oriented Programming , CS 2300 Discrete Mathematical Structures I , CS 2420 Introduction to Algorithms and Data Structures , CS 2450 Software Engineering I, with a grade of C+ better. Completion of MATH 1210 Calculus I and ENGL 1010 Introduction to Academic Writing or ENGH 1005 Literacies and Composition Across Contexts with a grade of C or better. Each of CS 1400, CS 1410, CS 2300, CS 2420, CS 2450, MATH 1210, and (ENGL 1010 or ENGH 1005) cannot be taken more than twice to obtain the required grade. Overall GPA of 2.5 or higher.",
+  "before": [
+   "CS 1400",
+   "CS 1410",
+   "CS 2300",
+   "CS 2420",
+   "CS 2450",
+   "MATH 1210",
+   "ENGL 1010",
+   "ENGH 1005"
+  ],
+  "gated": [
+   "CS 3060",
+   "CS 3240",
+   "CS 3250",
+   "CS 3260",
+   "CS 3270",
+   "CS 3370",
+   "CS 3380"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C+"
  }
 }

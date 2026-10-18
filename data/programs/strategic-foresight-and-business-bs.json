@@ -3,7 +3,7 @@
  "name": "Strategic Foresight and Business, B.S.",
  "url": "https://catalog.uvu.edu/business/strategic-management-operations/strategic-foresight-and-business-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -97,6 +104,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -107,37 +115,43 @@
    "area": "",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ECON 2010 Principles of Economics I | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Life Sciences Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Life Sciences Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Physical Sciences Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Physical Sciences Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "",
    "label": "Personal and Professional Growth Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Personal and Professional Growth Distribution | 3"
   },
   {
    "type": "choice",
@@ -162,6 +176,10 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Requirements (18 credits) › Complete one of the following: (Note: My Educator score of 80% or better; IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications with a grade of B- or higher.)",
+   "minGrade": "B-",
+   "gate": "admission",
+   "gateText": "A grade of C- or better is required in all matriculation courses (MKTG 2200G requires a grade of B- or better)",
    "notes": [
     "My Educator"
    ],
@@ -172,21 +190,24 @@
    "area": "Matriculation Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MGMT 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › MGMT 2240 Business Quantitative Analysis | 3"
   },
   {
    "type": "course",
@@ -195,133 +216,156 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › MGMT 2400 Data Analytics for Business | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (18 credits) › Complete the following: › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "LEGL 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › LEGL 3000 Business Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › FIN 3100 Principles of Finance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 1890",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › MKTG 1890 Introduction to Careers in Business | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3345",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3345 Business Statistics II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3450 Operations Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 3860 Generative AI and Strategic Innovation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3890",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › MKTG 3890 Business Career Strategy | 2"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 1300 Business Security and Resilience | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 1350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 1350 Futures and Strategic Foresight in Business | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 2370",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 2370 Strategic Applications of AI in Business Foresight | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 3870",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 3870 Advanced Research Methods in Strategic Foresight for Business | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 4860 Business Strategy Formulation and Implementation | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 4350",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 4350 Business Intelligence and Data Visualization | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 4900",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 4900 Business Strategy Capstone--Foresight Planning and AI | 3"
   },
   {
    "type": "choice",
@@ -357,14 +401,16 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Concentration Core Requirements (27 credits) › Choose one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Concentration Core Requirements",
    "code": "MGMT 4810R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Concentration Core Requirements (27 credits) › MGMT 4810R Internship | 3"
   },
   {
    "type": "placeholder",
@@ -373,7 +419,8 @@
    "credits": 18,
    "notes": [
     "Political Science, Constitutional Studies, Communications, Computing, Digital Media, Environmental Studies, Environmental Management, Chinese Studies, Criminal Justice, Computer Science, Civics, Military Science, Aerospace Studies, Exercise Science, Geography, National Security Studies, Behavioral Science, Biotechnology, Geographic Information Systems, Sociology, Anthropology, Information Systems, Emergency Management, Aviation Science, Humanities, Intelligence Studies, Legal Studies, Public Administration, Psychology, Philosophy"
-   ]
+   ],
+   "src": "Program Electives: (21 credits) › In consultation with their advisor, students will pick a broad number of courses from the following areas: | 18"
   },
   {
    "type": "placeholder",
@@ -382,7 +429,8 @@
    "credits": 3,
    "notes": [
     "Operation and Supply Chain, Marketing, Accounting, Finance, Leadership, Entrepreneurship, Human Resource Management, Technology Management"
-   ]
+   ],
+   "src": "Program Electives: (21 credits) › In consultation with an advisor, students may only take one elective course from the following areas: | 3"
   }
  ],
  "gradPlan": [
@@ -648,21 +696,32 @@
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -675,7 +734,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "FIN 3100": {
    "title": "Principles of Finance",
@@ -698,7 +758,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -734,7 +799,12 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -746,7 +816,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -758,7 +829,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -770,7 +842,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 1300": {
    "title": "Business Security and Resilience",
@@ -791,7 +864,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -804,7 +878,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2370": {
    "title": "Strategic Applications of AI in Business Foresight",
@@ -825,7 +902,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -842,7 +924,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -854,7 +941,12 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3345": {
    "title": "Business Statistics II",
@@ -867,28 +959,49 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 3860": {
    "title": "Generative AI and Strategic Innovation",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3870": {
    "title": "Advanced Research Methods in Strategic Foresight for Business",
    "credits": 3,
    "prereqText": "MGMT 2370 and University Advanced Standing",
    "prereqs": "MGMT 2370",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4350": {
    "title": "Business Intelligence and Data Visualization",
@@ -900,7 +1013,12 @@
      "MGMT 2340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4810R": {
    "title": "Internship",
@@ -908,7 +1026,14 @@
    "creditsMax": 6,
    "prereqText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Woodbury School of Business",
+    "approval from School of Business Career and Corporate Manager",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -922,7 +1047,13 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MGMT 4900": {
    "title": "Business Strategy Capstone--Foresight Planning and AI",
@@ -934,7 +1065,12 @@
      "MGMT 3870"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 1890": {
    "title": "Introduction to Careers in Business",
@@ -952,20 +1088,29 @@
    "title": "International Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3890": {
    "title": "Business Career Strategy",
    "credits": 2,
    "prereqText": "University Advanced Standing; MKTG 1890 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -986,7 +1131,32 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Complete the following: Course List Code Title Credit Hours MGMT 2240 Business Quantitative Analysis 3 ECON 2010 Principles of Economics I 3 ACC 2110 Principles of Accounting I 3 MKTG 2200G Written Business Communication 3 MGMT 2340 Business Statistics I 3 or STAT 2040 Principles of Statistics MGMT 2400 Data Analytics for Business 3 MKTG 2390 Professional Business Presentations 3 My Educator IM 2600 Spreadsheet Applications 3 IM 2010 Business Computer Proficiency 3",
+  "before": [
+   "MGMT 2240",
+   "ECON 2010",
+   "ACC 2110",
+   "MKTG 2200G",
+   "MGMT 2340",
+   "STAT 2040",
+   "MGMT 2400",
+   "MKTG 2390"
+  ],
+  "gated": [
+   "IM 2010",
+   "IM 2600",
+   "MGMT 3450",
+   "MGMT 4810R",
+   "MGMT 4860"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

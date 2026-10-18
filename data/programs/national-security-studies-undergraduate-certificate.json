@@ -3,7 +3,7 @@
  "name": "National Security Studies, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/health-public-service/criminal-justice-law-enforcement/national-security-studies-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "NSS 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 2010 Introduction to National Security | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 3010R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 3010R National Security Area Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NSS 4600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › NSS 4600 National Security Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "POLS 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › POLS 4500 International Conflict and Security | 3"
   },
   {
    "type": "choice",
@@ -87,6 +91,7 @@
     }
    ],
    "text": "Complete 6 credits from the following:",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following: | 6",
    "notes": [
     "or other course approved by department advisor or director."
    ],
@@ -135,7 +140,9 @@
    "credits": 3,
    "prereqText": "University Advanced Standing and CJ 1010",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -167,7 +174,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4210": {
    "title": "Law of War",
@@ -181,7 +193,12 @@
      "CJ 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4600": {
    "title": "National Security Law",
@@ -196,7 +213,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4750R": {
    "title": "Current Topics in National Security",
@@ -211,14 +233,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3100": {
    "title": "Survey of International Terrorism",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3400": {
    "title": "American Foreign Policy",
@@ -230,21 +262,41 @@
      "POLS 2100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4500": {
    "title": "International Conflict and Security",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4610": {
    "title": "International Law",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Students must have Advanced University Standing or have completed a baccalaureate degree",
+  "before": [],
+  "gated": []
  }
 }

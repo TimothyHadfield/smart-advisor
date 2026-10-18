@@ -3,7 +3,7 @@
  "name": "Associate in Pre-Engineering - Computer and Electrical Engineering Emphasis, A.P.E.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/mechanical-and-civil-engineering/pre-engineering-computer-electrical-engineering-emphasis-ape/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 69,
  "requirements": [
   {
@@ -14,7 +14,11 @@
     "ENGH 1005"
    ],
    "credits": 3,
-   "fromPlan": true
+   "fromPlan": true,
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "placeholder",
@@ -131,35 +135,40 @@
    "area": "Emphasis Requirements",
    "code": "ECE 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (25 credits) › ECE 1000 Introduction to Electrical and Computer Engineering | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (25 credits) › ECE 2250 Circuit Theory | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (25 credits) › ECE 2255 Circuit Theory Lab | 1"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Emphasis Requirements (25 credits) › ECE 2700 Digital Design I | 3"
   },
   {
    "type": "course",
    "area": "Emphasis Requirements",
    "code": "ECE 2705",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Emphasis Requirements (25 credits) › ECE 2705 Digital Design I Lab | 1"
   },
   {
    "type": "choice",
@@ -237,7 +246,8 @@
      ],
      "credits": 6
     }
-   ]
+   ],
+   "src": "Emphasis Requirements (25 credits) › Students should carefully select electives from the following list (or other advisor approved courses), based on the engineering discipline (Computer or Electrical) they are interested in and the college or university they want to attend to finish their BS degree. See your advisor. | 14"
   }
  ],
  "gradPlan": [
@@ -395,7 +405,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -410,7 +424,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -544,7 +561,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -557,7 +577,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGR 1000": {
    "title": "Introduction to Engineering",
@@ -605,7 +626,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -616,7 +641,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -627,7 +653,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2250": {
    "title": "Differential Equations and Linear Algebra",
@@ -638,7 +665,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -649,7 +677,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2280": {
    "title": "Ordinary Differential Equations",
@@ -660,7 +689,8 @@
      "MATH 2210",
      "MATH 2210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",

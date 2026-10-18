@@ -3,7 +3,7 @@
  "name": "American Sign Language Secondary Education, B.A.",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/languages-cultures/asl-secondary-education-ba/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 121,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -119,6 +126,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -131,79 +139,99 @@
    "credits": 4,
    "recommended": [
     "ASL 2020G"
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › Humanities Distribution (Fulfilled by completing Foreign Language Course 2020G/2020, ASL 2020G recommended) | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3000 Technology for Deaf Studies | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3050 Advanced American Sign Language | 3 (Note: Requires ASL skills equivalent to those expected at the completion of ASL 2020G Intermediate American Sign Language II . See advisor for more information.)",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3060",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "gate": "admission",
+   "gateText": "Required for Matriculation",
+   "src": "Discipline Core Requirements (74 credits) › ASL 3060 American Sign Language Proficiency | 1 (Note: Required for Matriculation.)",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3150R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3150R ASL Conversation III | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3400 ASL Visual-Spatial Production | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3410 American Sign Language Linguistics | 3",
+   "minGrade": "B-"
   },
   {
    "type": "choice",
@@ -224,49 +252,63 @@
      ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (74 credits) › Complete one of the following: | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3530 Modern Deaf Culture | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3870G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 3870G Disability/Audism/Oppression | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 4150R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (74 credits) › ASL 4150R ASL Conversation IV | 1",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 4620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 4620 American Sign Language Literature | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › ASL 4800 Recent Trends in Deaf Studies Theory | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "LANG 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › LANG 4200 Methods of Teaching a Foreign Language | 3",
+   "minGrade": "B-"
   },
   {
    "type": "placeholder",
@@ -274,6 +316,8 @@
    "label": "Complete 9 credits 3000+ class with an ASL or LANG prefix",
    "credits": 9,
    "text": "Complete 9 credits 3000+ class with an ASL or LANG prefix",
+   "src": "Discipline Core Requirements (74 credits) › Complete 9 credits 3000+ class with an ASL or LANG prefix | 9",
+   "minGrade": "B-",
    "notes": [
     "Education Courses:"
    ]
@@ -283,84 +327,107 @@
    "area": "Discipline Core Requirements",
    "code": "EDSC 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 1010 Introduction to Education | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 3000 Educational Psychology | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSP 3400G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSP 3400G Exceptional Students | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 3250G",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 3250G Equitable Technology Integration | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4200 Classroom Management I | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4250 Classroom Management II | 2",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4440 Content Area Literacies | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4450G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4450G Multicultural and Multilingual Education | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4550G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4550G Secondary Curriculum Instruction and Assessment | 3",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4850",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4850 Student Teaching Secondary | 8",
+   "minGrade": "B-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDSC 4990",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (74 credits) › EDSC 4990 Teacher Assessment Project | 2",
+   "minGrade": "B-"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended)",
    "credits": 16,
-   "text": "Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended)"
+   "text": "Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended)",
+   "src": "Elective Requirements (16 credits) › Complete 16 credits of any courses 1000-level or higher (ASL 2030 and ASL 2040 are strongly recommended) | 16"
   }
  ],
  "gradPlan": [
@@ -661,49 +728,84 @@
    "credits": 1,
    "prereqText": "ASL 2020G OR Department Approval; University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3150R": {
    "title": "ASL Conversation III",
    "credits": 1,
    "prereqText": "( ASL 2020G or equivalent knowledge) and University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3400": {
    "title": "ASL Visual-Spatial Production",
    "credits": 3,
    "prereqText": "ASL 3050 and University Advanced Standing",
    "prereqs": "ASL 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3410": {
    "title": "American Sign Language Linguistics",
    "credits": 3,
    "prereqText": "ASL 3050 and University Advanced Standing",
    "prereqs": "ASL 3050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3510": {
    "title": "History of Deaf People to 1817",
    "credits": 3,
    "prereqText": "ASL 2020G or equivalent knowledge and University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3520": {
    "title": "History of Deaf People after 1817",
    "credits": 3,
    "prereqText": "ASL 2020G or equivalent and University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3530": {
    "title": "Modern Deaf Culture",
    "credits": 3,
    "prereqText": "( ASL 2020G or department approval) and University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 3870G": {
    "title": "Disability/Audism/Oppression",
@@ -721,14 +823,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 4150R": {
    "title": "ASL Conversation IV",
    "credits": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 4620": {
    "title": "American Sign Language Literature",
@@ -746,14 +858,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ASL 4800": {
    "title": "Recent Trends in Deaf Studies Theory",
    "credits": 3,
    "prereqText": "( ASL 3510 or 3520 or 3530 ) and University Advanced Standing",
    "prereqs": "ASL 3510",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EDSC 1010": {
    "title": "Introduction to Education",
@@ -764,21 +886,39 @@
    "credits": 3,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 3250G": {
    "title": "Equitable Technology Integration",
    "credits": 2,
    "prereqText": "Admission to Professional Education Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Professional Education Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program and University Advanced Standing"
   },
   "EDSC 4200": {
    "title": "Classroom Management I",
    "credits": 2,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4250": {
    "title": "Classroom Management II",
@@ -793,28 +933,52 @@
     "EDSP 4990",
     "EDSP 4885",
     "EDSP 4895"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4440": {
    "title": "Content Area Literacies",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4450G": {
    "title": "Multicultural and Multilingual Education",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4550G": {
    "title": "Secondary Curriculum Instruction and Assessment",
    "credits": 3,
    "prereqText": "University Advanced Standing and admission to Professional Education Program or permission of department chair",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and admission to Professional Education Program or permission of department chair"
   },
   "EDSC 4850": {
    "title": "Student Teaching Secondary",
@@ -827,7 +991,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4990"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework"
+   ],
+   "gate": "admission",
+   "gateText": "admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSC 4990": {
    "title": "Teacher Assessment Project",
@@ -839,7 +1010,14 @@
    "coreqs": [
     "EDSC 4250",
     "EDSC 4850"
-   ]
+   ],
+   "prereqWords": [
+    "Admission to Professional Education Program or permission of department chair",
+    "successful completion of all other professional coursework",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Professional Education Program or permission of department chair, and successful completion of all other professional coursework"
   },
   "EDSP 3400G": {
    "title": "Exceptional Students",
@@ -850,14 +1028,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -870,7 +1054,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -893,7 +1078,13 @@
    "credits": 3,
    "prereqText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Matriculation into any secondary education bachelor degree program or departmental approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "(Matriculation into any secondary education bachelor degree program or departmental approval) and University Advanced Standing"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -906,7 +1097,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -918,7 +1113,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -930,7 +1129,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -942,7 +1142,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -954,7 +1155,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -975,7 +1177,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -988,7 +1195,33 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "ENGL 2010 and MATH QL courses must have a grade C or higher. Successful completion of ASL 3060 American Sign Language Proficiency. GPA of 3.0 or higher with no grade lower than a B- in content area courses. Completion of all General Education requirements and 70% of content area courses. Pass LiveScan Criminal Background Check.",
+  "before": [
+   "ENGL 2010"
+  ],
+  "gated": [
+   "ASL 3060",
+   "EDSC 3000",
+   "EDSC 3250G",
+   "EDSC 4200",
+   "EDSC 4250",
+   "EDSC 4440",
+   "EDSC 4450G",
+   "EDSC 4550G",
+   "EDSC 4850",
+   "EDSC 4990",
+   "LANG 4200"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

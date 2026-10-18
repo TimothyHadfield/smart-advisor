@@ -3,7 +3,7 @@
  "name": "Information Systems - Applied Artificial Intelligence Emphasis, B.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/information-systems-applied-artificial-intelligence-emphasis-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "Core Requirements: General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Complete one of the following: | 3",
    "notes": [
     "American Institutions:"
    ],
@@ -98,6 +105,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -107,51 +115,59 @@
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "Core Requirements: General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › General Education Requirements (30 credits) › Math Requirement (GE): › Social/Behavioral Science Distribution | 3 (Note: ECON 2010 Principles of Economics I recommended.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › Math Requirement: › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
@@ -160,181 +176,207 @@
    "alts": [
     "CS 1400"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 1200 Computer Programming I for IS IT | 3 or CS 1400 Fundamentals of Programming"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 2200 Computer Programming II for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 2420 Web Application Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › IM 2600 Spreadsheet Applications | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › IT 1510 Introduction to System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › IT 2600 Data Communication Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › CYBR 2700 Information Security Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3130",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 3130 Introduction to Applied Data Analytics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 3300 Web Systems Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 3410 Database Systems and Warehousing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 3430 Systems Analysis and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Core Requirements: › INFO 4050G Global Ethical and Professional Perspectives in IS and IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Environment/Business Foundation Requirements: › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Environment/Business Foundation Requirements: › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Environment/Business Foundation Requirements: › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Environment/Business Foundation Requirements: › MKTG 3600 Principles of Marketing | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Any 3-credit 1000 or 2000 level course from ACC, ECON, FIN, MGMT, HR, MKTG",
-   "credits": 3
+   "credits": 3,
+   "src": "Core Requirements › Discipline Core Requirements (60 credits) › IS Environment/Business Foundation Requirements: › Any 3-credit 1000 or 2000 level course from ACC, ECON, FIN, MGMT, HR, MKTG | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "INFO 2500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › INFO 2500 Applied Artificial Intelligence Concepts in Organizations | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "INFO 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › INFO 3500 AI in Learning and Communication | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "DWDD 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › DWDD 2420 Media Formats and Outputs | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "PHIL 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › PHIL 3250 Ethics of AI | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "MKTG 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › MKTG 3700 Fundamentals of Product Management | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "MGMT 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › MGMT 3410 AI Workflow Operations Automation | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "MGMT 3510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › MGMT 3510 AI Workflow Operations Automation II | 3"
   },
   {
    "type": "course",
    "area": "Applied AI Emphasis Required Courses",
    "code": "INFO 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Applied AI Emphasis Required Courses (24 credits) › INFO 4500 Applied AI Capstone Project | 3"
   },
   {
    "type": "choice",
@@ -449,6 +491,7 @@
     }
    ],
    "text": "Complete 6 credit hours from the following:",
+   "src": "Emphasis Elective Requirements (6 credits) › Complete 6 credit hours from the following: | 6",
    "notes": [
     "Other approved Information Systems or related courses"
    ],
@@ -694,7 +737,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 2550": {
    "title": "Web Programming I",
@@ -713,14 +759,25 @@
    "credits": 3,
    "prereqText": "CS 2420 , matriculation to computer science or software engineering if computer science or software engineering major, and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3410": {
    "title": "Human Factors in Software Development",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3660": {
    "title": "Web Programming II",
@@ -738,7 +795,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation into CS or Software Engineering if a CS or SE major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation into CS or Software Engineering if a CS or SE major"
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -762,7 +825,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4350": {
    "title": "Web and Application Security",
@@ -781,7 +849,12 @@
      "INFO 3300",
      "CS 3520"
     ]
-   }
+   },
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4450": {
    "title": "Internet of Things Security",
@@ -793,7 +866,12 @@
      "CYBR 2700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DWDD 2420": {
    "title": "Media Formats and Outputs",
@@ -812,14 +890,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -832,7 +916,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -881,7 +966,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -913,13 +999,23 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3300": {
    "title": "Web Systems Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3360": {
    "title": "Server-Side Web Frameworks",
@@ -930,7 +1026,10 @@
    "precoreqs": "INFO 3300",
    "preco": [
     "INFO 3300"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -942,7 +1041,13 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3430": {
    "title": "Systems Analysis and Design",
@@ -968,41 +1073,69 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3500": {
    "title": "AI in Learning and Communication",
    "credits": 3,
    "prereqText": "INFO 2500 and University Advanced Standing",
    "prereqs": "INFO 2500",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4050G": {
    "title": "Global Ethical and Professional Perspectives in IS and IT",
    "credits": 3,
    "prereqText": "INFO 3430 and University Advanced Standing",
    "prereqs": "INFO 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4120": {
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4130": {
    "title": "Data Science and Big Data Analytics",
    "credits": 3,
    "prereqText": "INFO 3130 and University Advanced Standing",
    "prereqs": "INFO 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4300": {
    "title": "Enterprise Web Development",
    "credits": 3,
    "prereqText": "INFO 3300 and University Advanced Standing",
    "prereqs": "INFO 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4410": {
    "title": "Database Administration",
@@ -1014,13 +1147,20 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4420": {
    "title": "Mobile Application Development",
    "credits": 3,
    "prereqText": "( INFO 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) and University Advanced Standing; ( INFO 2200 recommended or CS 1410 recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4500": {
    "title": "Applied AI Capstone Project",
@@ -1032,7 +1172,12 @@
      "INFO 3500"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4810R": {
    "title": "Internship",
@@ -1040,7 +1185,16 @@
    "creditsMax": 3,
    "prereqText": "One 3000 or 4000 level course in INFO, IT, MKTG, or MGMT; Department Approval; and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "One 3000 or 4000 level course in INFO",
+    "MKTG",
+    "MGMT",
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",
@@ -1064,7 +1218,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1076,7 +1231,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1088,7 +1244,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -1101,7 +1258,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -1114,7 +1272,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 3000": {
    "title": "Organizational Behavior",
@@ -1127,7 +1288,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3410": {
    "title": "AI Workflow Operations Automation",
@@ -1146,14 +1312,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3510": {
    "title": "AI Workflow Operations Automation II",
    "credits": 3,
    "prereqText": "MGMT 3410 and University Advanced Standing",
    "prereqs": "MGMT 3410",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1164,13 +1340,20 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3700": {
    "title": "Fundamentals of Product Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 2000": {
    "title": "Formal Logic I",
@@ -1181,14 +1364,24 @@
    "credits": 3,
    "prereqText": "PHIL 2000 and University Advanced Standing",
    "prereqs": "PHIL 2000",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PHIL 3250": {
    "title": "Ethics of AI",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1198,5 +1391,12 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "CS 3270",
+   "CS 3660"
+  ]
  }
 }

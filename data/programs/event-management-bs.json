@@ -3,7 +3,7 @@
  "name": "Event Management, B.S.",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/event-management-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -75,6 +81,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -119,6 +126,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -128,44 +136,51 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (15 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
@@ -174,7 +189,12 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (15 credits) › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
@@ -183,21 +203,24 @@
    "alts": [
     "ECON 2010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (15 credits) › ECON 1010 Economics as a Social Science | 3 or ECON 2010 Principles of Economics I"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (15 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Matriculation Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Matriculation Requirements (15 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "choice",
@@ -222,6 +245,8 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Matriculation Requirements (15 credits) › Complete one of the following: (Note: Students will be required to complete My Educator business computer proficiency exam with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications course with a grade of B- or higher.)",
+   "minGrade": "B-",
    "notes": [
     "My Educator"
    ],
@@ -232,70 +257,80 @@
    "area": "Business Core Requirements",
    "code": "HM 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3000 Hospitality Industry Foundations | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3020 Hospitality Managerial Accounting I | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3030 Hospitality Managerial Accounting II | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3100 Hospitality Law | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3150 Hospitality Finance | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3210 Event Venue and Convention Management | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3400",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Business Core Requirements (35 credits) › HM 3400 Hotel Industry Analytics | 2"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 3710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 3710 Marketing of Hospitality Services | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 4550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › HM 4550 Hospitality Strategic Management | 3"
   },
   {
    "type": "course",
    "area": "Business Core Requirements",
    "code": "HM 4810R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Business Core Requirements (35 credits) › HM 4810R Internship | 6"
   },
   {
    "type": "course",
@@ -304,7 +339,8 @@
    "alts": [
     "HR 3430"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Business Core Requirements (35 credits) › MGMT 3000 Organizational Behavior | 3 or HR 3430 Introduction to Human Resource Management"
   },
   {
    "type": "course",
@@ -313,35 +349,40 @@
    "alts": [
     "COMM 2510"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Event Management Core Requirements (27 credits) › ART 1400 Graphic Computer Applications | 3 or COMM 2510 Visual Strategies for Communication Majors"
   },
   {
    "type": "course",
    "area": "Event Management Core Requirements",
    "code": "COMM 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Event Management Core Requirements (27 credits) › COMM 2300 Introduction to Public Relations and Strategic Communication | 3"
   },
   {
    "type": "course",
    "area": "Event Management Core Requirements",
    "code": "COMM 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Event Management Core Requirements (27 credits) › COMM 3530 Public Relations and Strategic Communication Writing | 3"
   },
   {
    "type": "course",
    "area": "Event Management Core Requirements",
    "code": "HM 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Event Management Core Requirements (27 credits) › HM 4200 Event Planning | 3"
   },
   {
    "type": "course",
    "area": "Event Management Core Requirements",
    "code": "HM 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Event Management Core Requirements (27 credits) › HM 4250 Advanced Event Production | 3"
   },
   {
    "type": "choice",
@@ -368,13 +409,19 @@
      "codes": [
       "THEA 1513"
      ],
-     "credits": 2
+     "credits": 2,
+     "notes": [
+      "co-req THEA 1514"
+     ]
     },
     {
      "codes": [
       "THEA 1514"
      ],
-     "credits": 1
+     "credits": 1,
+     "notes": [
+      "co-req THEA 1513"
+     ]
     },
     {
      "codes": [
@@ -388,7 +435,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Event Management Core Requirements (27 credits) › Complete 6 elective credits from the following: | 6"
   },
   {
    "type": "choice",
@@ -447,13 +495,15 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Event Management Core Requirements (27 credits) › Complete 6 upper division elective credits from the following: | 6"
   },
   {
    "type": "placeholder",
    "area": "General Electives",
    "label": "Complete 13 General Electives",
-   "credits": 13
+   "credits": 13,
+   "src": "General Electives (13 credits) › Complete 13 General Electives | 13 (Note: 1000 level or higher)"
   }
  ],
  "gradPlan": [
@@ -747,14 +797,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3560": {
    "title": "Public Relations Event and Media Coordination",
    "credits": 3,
    "prereqText": "University Advanced Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 1010": {
    "title": "Economics as a Social Science",
@@ -778,14 +838,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -798,14 +864,20 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 3180R": {
    "title": "Launching a New Venture - For Non-Business Majors",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -828,14 +900,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3020": {
    "title": "Hospitality Managerial Accounting I",
    "credits": 3,
    "prereqText": "ACC 2110 and University Advanced Standing",
    "prereqs": "ACC 2110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3030": {
    "title": "Hospitality Managerial Accounting II",
@@ -847,14 +929,24 @@
    "precoreqs": "HM 3020",
    "preco": [
     "HM 3020"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3100": {
    "title": "Hospitality Law",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3150": {
    "title": "Hospitality Finance",
@@ -866,28 +958,48 @@
    "precoreqs": "HM 3400",
    "preco": [
     "HM 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3210": {
    "title": "Event Venue and Convention Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3400": {
    "title": "Hotel Industry Analytics",
    "credits": 2,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 3710": {
    "title": "Marketing of Hospitality Services",
    "credits": 3,
    "prereqText": "MKTG 2200G and University Advanced Standing",
    "prereqs": "MKTG 2200G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4200": {
    "title": "Event Planning",
@@ -899,7 +1011,12 @@
    "precoreqs": "HM 3210",
    "preco": [
     "HM 3210"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4250": {
    "title": "Advanced Event Production",
@@ -913,7 +1030,12 @@
    "credits": 3,
    "prereqText": "HM 3030 and University Advanced Standing",
    "prereqs": "HM 3030",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4810R": {
    "title": "Internship",
@@ -921,14 +1043,25 @@
    "creditsMax": 9,
    "prereqText": "Approval of WSB Internship Coordinator and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Approval of WSB Internship Coordinator",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -949,7 +1082,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -961,7 +1098,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -973,7 +1114,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -985,7 +1127,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -997,7 +1140,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 1500": {
    "title": "Introduction to Sport Management",
@@ -1014,7 +1158,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 3000": {
    "title": "Organizational Behavior",
@@ -1027,14 +1174,25 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1048,31 +1206,41 @@
    "title": "Professional Selling",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3660": {
    "title": "Digital Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3670": {
    "title": "Advertising and Promotion",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3680": {
    "title": "Marketing with Social Media",
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3685": {
    "title": "Content Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1093,7 +1261,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1106,7 +1279,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -1119,7 +1297,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "THEA 1513": {
    "title": "Stagecraft I",
@@ -1143,5 +1325,20 @@
    "title": "Introduction to Lighting and Sound",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours ACC 2110 Principles of Accounting I 3 Complete one of the following: 1 IM 2010 Business Computer Proficiency IM 2600 Spreadsheet Applications My Educator MGMT 2340 Business Statistics I 3 MKTG 2390 Professional Business Presentations 3 MKTG 2200G Written Business Communication 3",
+  "before": [
+   "ACC 2110",
+   "IM 2010",
+   "IM 2600",
+   "MGMT 2340",
+   "MKTG 2390",
+   "MKTG 2200G"
+  ],
+  "gated": [
+   "MGMT 3450"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

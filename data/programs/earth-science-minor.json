@@ -3,7 +3,7 @@
  "name": "Earth Science, Minor",
  "url": "https://catalog.uvu.edu/science/earth-science/earth-science-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 22,
  "requirements": [
   {
@@ -15,14 +15,16 @@
     "GEO 1040",
     "GEO 1050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (22 credits) › GEO 1010 Introduction to Geology | 3 or GEO 1030 Natural Disasters and the Environment or GEO 1040 The Dinosaurian World or GEO 1050 Geology of National Parks"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "GEO 1015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (22 credits) › GEO 1015 Introduction to Geology Laboratory | 1"
   },
   {
    "type": "choice",
@@ -125,7 +127,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete seven credits lower division electives from the following:"
+   "text": "Complete seven credits lower division electives from the following:",
+   "src": "Discipline Core Requirements (22 credits) › Complete seven credits lower division electives from the following: | 7"
   },
   {
    "type": "choice",
@@ -221,7 +224,10 @@
      "codes": [
       "GEO 4800R"
      ],
-     "credits": 0.5
+     "credits": 0.5,
+     "notes": [
+      "may be repeated once"
+     ]
     },
     {
      "codes": [
@@ -238,6 +244,9 @@
       "GEO 4820R",
       "GEO 4890R",
       "GEO 4950R"
+     ],
+     "notes": [
+      "Up to four credits can count toward the minor"
      ]
     },
     {
@@ -283,7 +292,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete eleven credits of upper division electives from the following:"
+   "text": "Complete eleven credits of upper division electives from the following:",
+   "src": "Discipline Core Requirements (22 credits) › Complete eleven credits of upper division electives from the following: | 11"
   }
  ],
  "gradPlan": [
@@ -427,7 +437,9 @@
    "title": "Applied Hydrology",
    "credits": 4,
    "prereqText": "( MATH 1050 or higher or PHYS 1100 ), ( GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050 ), GEOG 3600 and University Advanced Standing ( PHYS 2210 or PHYS 2010 highly recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 3800": {
    "title": "Energy Use on Earth",
@@ -453,7 +465,12 @@
      "CHEM 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 4820R": {
    "title": "Geologic Environmental Internship",
@@ -467,7 +484,16 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "12 credit hours of any GEO",
+    "GEOG",
+    "ENVT courses",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENVT 4950R": {
    "title": "Special Projects in Environmental Management",
@@ -475,7 +501,13 @@
    "creditsMax": 3,
    "prereqText": "Instructor Permission and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Permission",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 1010": {
    "title": "Introduction to Geology",
@@ -577,14 +609,24 @@
      "CHEM 1210"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3070": {
    "title": "Advanced Desert Natural History",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3080": {
    "title": "Earth Materials",
@@ -594,7 +636,9 @@
    "coreqText": "GEO 3085",
    "coreqs": [
     "GEO 3085"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3085": {
    "title": "Earth Materials Laboratory",
@@ -604,7 +648,9 @@
    "coreqText": "GEO 3080",
    "coreqs": [
     "GEO 3080"
-   ]
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3100": {
    "title": "Isotope Geochemistry",
@@ -630,7 +676,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3105": {
    "title": "Isotope Geochemistry Laboratory",
@@ -656,7 +707,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3200": {
    "title": "Geologic Hazards",
@@ -679,7 +735,12 @@
    "coreqText": "GEO 3205",
    "coreqs": [
     "GEO 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3205": {
    "title": "Geologic Hazards Laboratory",
@@ -702,7 +763,12 @@
    "coreqText": "GEO 3200",
    "coreqs": [
     "GEO 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3500": {
    "title": "Geomorphology",
@@ -718,7 +784,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3505": {
    "title": "Geomorphology Lab",
@@ -738,7 +809,12 @@
    "coreqText": "GEO 3500",
    "coreqs": [
     "GEO 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 3700": {
    "title": "Structure and Tectonics",
@@ -756,7 +832,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4080": {
    "title": "Petrology",
@@ -772,7 +853,12 @@
    "coreqText": "GEO 4085",
    "coreqs": [
     "GEO 4085"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4085": {
    "title": "Petrology Laboratory",
@@ -786,13 +872,17 @@
    "title": "Sedimentary Geology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , and University Advanced Standing; CHEM 1210 or other chemistry recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4510": {
    "title": "Paleontology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , ( BIOL 1010 or BIOL 1610 ), and University Advanced Standing; GEO 4500 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4790": {
    "title": "Hydrogeology",
@@ -819,14 +909,24 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "( PHYS 2210 OR PHYS 2010 ), and GEOG 3600 highly recommended",
-   "precoreqs": null
+   "precoreqs": null,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4800R": {
    "title": "Earth Science Seminar",
    "credits": 0.5,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4820R": {
    "title": "Geologic Environmental Internship",
@@ -840,7 +940,16 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "12 credit hours of any GEO",
+    "GEOG",
+    "ENVT courses",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4890R": {
    "title": "Student Research",
@@ -848,7 +957,14 @@
    "creditsMax": 4,
    "prereqText": "GEO 1015 , Junior or Senior standing, instructor approval, and University Advanced Standing",
    "prereqs": "GEO 1015",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4900R": {
    "title": "Special Topics in Geology",
@@ -862,7 +978,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEO 4950R": {
    "title": "Independent Study",
@@ -875,7 +998,12 @@
      "GEO 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 1000": {
    "title": "Introduction to Physical Geography",
@@ -894,7 +1022,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3500": {
    "title": "Geomorphology",
@@ -910,7 +1043,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3505": {
    "title": "Geomorphology Lab",
@@ -930,13 +1068,20 @@
    "coreqText": "GEO 3500",
    "coreqs": [
     "GEO 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3600": {
    "title": "Introduction to Geographic Information Systems",
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3700": {
    "title": "Wetland Studies",
@@ -952,7 +1097,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 3705": {
    "title": "Wetland Studies Laboratory",
@@ -971,7 +1121,12 @@
    "coreqText": "GEOG 3700",
    "coreqs": [
     "GEOG 3700"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4820R": {
    "title": "GIS Internship",
@@ -985,7 +1140,14 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "department approval",
+    "declared major in any Earth Science program",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4890R": {
    "title": "Student Research in Geography",
@@ -993,7 +1155,14 @@
    "creditsMax": 4,
    "prereqText": "Junior or Senior standing, instructor approval, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Junior or Senior standing",
+    "instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "GEOG 4900R": {
    "title": "Special Topics in Geography",
@@ -1001,7 +1170,13 @@
    "creditsMax": 4,
    "prereqText": "Instructor approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "METO 1010": {
    "title": "Introduction to Meteorology",

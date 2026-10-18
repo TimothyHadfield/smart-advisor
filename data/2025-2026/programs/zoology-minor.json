@@ -3,7 +3,7 @@
  "name": "Zoology, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/science/biology/zoology-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,28 +11,36 @@
    "area": "Discipline Core Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › BIOL 1610 College Biology I | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › BIOL 1615 College Biology I Laboratory | 1",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1620",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › BIOL 1620 College Biology II | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1625",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › BIOL 1625 College Biology II Laboratory | 1",
+   "minGrade": "C-"
   },
   {
    "type": "choice",
@@ -58,7 +66,9 @@
      "credits": 4
     }
    ],
-   "text": "Complete one of the following with a grade of C- or better:"
+   "text": "Complete one of the following with a grade of C- or better:",
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › Complete one of the following with a grade of C- or better: | 4",
+   "minGrade": "C-"
   },
   {
    "type": "choice",
@@ -141,7 +151,9 @@
      ],
      "credits": 4
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (24 credits) › Complete the following with a grade of C- or better: › Complete 11 upper-division credits from any of the following ZOOL courses with a grade of C- or higher in each: | 11",
+   "minGrade": "C-"
   }
  ],
  "gradPlan": [
@@ -237,7 +249,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -256,7 +269,13 @@
    "coreqText": "ZOOL 3105",
    "coreqs": [
     "ZOOL 3105"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3105": {
    "title": "Vertebrate Zoology Laboratory",
@@ -267,7 +286,12 @@
    "coreqText": "ZOOL 3100",
    "coreqs": [
     "ZOOL 3100"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3200": {
    "title": "Invertebrate Zoology",
@@ -278,7 +302,13 @@
    "coreqText": "ZOOL 3205",
    "coreqs": [
     "ZOOL 3205"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3205": {
    "title": "Invertebrate Zoology Laboratory",
@@ -289,7 +319,13 @@
    "coreqText": "ZOOL 3200 Invertebrate Zoology",
    "coreqs": [
     "ZOOL 3200"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3300": {
    "title": "Herpetology",
@@ -300,7 +336,13 @@
    "coreqText": "ZOOL 3305 Herpetology Laboratory",
    "coreqs": [
     "ZOOL 3305"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3305": {
    "title": "Herpetology Laboratory",
@@ -311,7 +353,13 @@
    "coreqText": "ZOOL 3300 Herpetology",
    "coreqs": [
     "ZOOL 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3430": {
    "title": "Entomology",
@@ -327,7 +375,13 @@
    "coreqText": "ZOOL 3435",
    "coreqs": [
     "ZOOL 3435"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3435": {
    "title": "Entomology Laboratory",
@@ -338,7 +392,12 @@
    "coreqText": "ZOOL 3430",
    "coreqs": [
     "ZOOL 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3500": {
    "title": "Mammalogy",
@@ -348,7 +407,10 @@
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 3505": {
    "title": "Mammalogy Laboratory",
@@ -359,14 +421,24 @@
    "coreqText": "ZOOL 3500",
    "coreqs": [
     "ZOOL 3500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4000": {
    "title": "Animal Behavior",
    "credits": 3,
    "prereqText": "BIOL 1610 and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4100": {
    "title": "Parasitology",
@@ -378,7 +450,13 @@
      "MICR 2060"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4300": {
    "title": "Histology",
@@ -391,7 +469,13 @@
      "ZOOL 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4400": {
    "title": "Pathophysiology",
@@ -410,7 +494,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4500": {
    "title": "Comparative Vertebrate Zoology",
@@ -432,7 +522,13 @@
    "coreqText": "ZOOL 4505",
    "coreqs": [
     "ZOOL 4505"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4505": {
    "title": "Comparative Vertebrate Zoology Laboratory",
@@ -454,13 +550,26 @@
    "coreqText": "ZOOL 4500",
    "coreqs": [
     "ZOOL 4500"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4600": {
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

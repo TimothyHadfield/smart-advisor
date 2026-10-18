@@ -3,7 +3,7 @@
  "name": "Health Science, BS",
  "url": "https://catalog.uvu.edu/health-public-service/health-science/health-science-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -33,7 +39,16 @@
     "STAT 1040",
     "STAT 1045"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › MATH 1050 College Algebra | 3 or MATH 1055 College Algebra with Preliminaries or MAT 1030 Quantitative Reasoning or MAT 1035 Quantitative Reasoning with Integrated Algebra or STAT 1040 Introduction to Statistics or STAT 1045 Introduction to Statistics with Algebra",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5,
+    "MAT 1030": 3,
+    "MAT 1035": 6,
+    "STAT 1040": 3,
+    "STAT 1045": 5
+   }
   },
   {
    "type": "choice",
@@ -71,6 +86,7 @@
     }
    ],
    "text": "Complete one of the following American Institution courses:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following American Institution courses: | 3",
    "ge": "ai"
   },
   {
@@ -80,7 +96,8 @@
    "alts": [
     "BIOL 1610H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › BIOL 1610 College Biology I | 4 or BIOL 1610H College Biology I"
   },
   {
    "type": "course",
@@ -89,19 +106,22 @@
    "alts": [
     "CHEM 1110"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › CHEM 1210 Principles of Chemistry I | 4 or CHEM 1110 Elementary Chemistry for the Health Sciences"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth Elective",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Personal, Professional, and Civic Growth Elective | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Art Elective",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Fine Art Elective | 3"
   },
   {
    "type": "placeholder",
@@ -110,7 +130,8 @@
    "credits": 3,
    "recommended": [
     "COMM 1020"
-   ]
+   ],
+   "src": "General Education Requirements (32 credits) › Humanities Elective (COMM 1020 highly recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -119,70 +140,80 @@
    "credits": 3,
    "recommended": [
     "PSY 1010"
-   ]
+   ],
+   "src": "General Education Requirements (32 credits) › Social Science Elective (PSY 1010 highly recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (19 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › ZOOL 2320 Human Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (19 credits) › ZOOL 2325 Human Anatomy Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › ZOOL 2420 Human Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (19 credits) › ZOOL 2425 Human Physiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › MICR 2060 Microbiology for Health Professions | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2065",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (19 credits) › MICR 2065 Microbiology for Health Professions Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4840",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › HLSC 4840 Healthcare Law | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (19 credits) › HLTH 4300 Ethics and Professional Practice | 3"
   },
   {
    "type": "choice",
@@ -331,6 +362,7 @@
     }
    ],
    "text": "Complete 20 credits of the following health-related courses",
+   "src": "Discipline Electives (20 credits) › Complete 20 credits of the following health-related courses | 20",
    "notes": [
     "Any course with the following health-related prefix: NURS, DENT, RESP, NUTR, HLSC, HLTH, HCA, PSY, ESEC, or any health-related department approved course."
    ],
@@ -341,7 +373,8 @@
    "area": "General Electives",
    "label": "Complete 49 credits of electives. Must have 40 upper-division electives for graduation. Please work with an advisor to ensure you meet this requirement.",
    "credits": 49,
-   "text": "Complete 49 credits of electives. Must have 40 upper-division electives for graduation. Please work with an advisor to ensure you meet this requirement."
+   "text": "Complete 49 credits of electives. Must have 40 upper-division electives for graduation. Please work with an advisor to ensure you meet this requirement.",
+   "src": "General Electives (49 credits) › Complete 49 credits of electives. Must have 40 upper-division electives for graduation. Please work with an advisor to ensure you meet this requirement. | 49"
   }
  ],
  "gradPlan": [
@@ -523,7 +556,8 @@
      "ENGL 1010",
      "ENGL 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C+"
   },
   "BIOL 1610": {
    "title": "College Biology I",
@@ -574,7 +608,8 @@
    "coreqText": "BIOL 1625",
    "coreqs": [
     "BIOL 1625"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "BIOL 1625": {
    "title": "College Biology II Laboratory",
@@ -604,7 +639,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3405": {
    "title": "Cell Biology Laboratory",
@@ -631,14 +672,26 @@
    "precoreqs": "BIOL 3400",
    "preco": [
     "BIOL 3400"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3500": {
    "title": "Genetics",
    "credits": 3,
    "prereqText": "BIOL 1610 with minimum grade of C- and University Advanced Standing",
    "prereqs": "BIOL 1610",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "BIOL 3600": {
    "title": "Biological Chemistry",
@@ -650,7 +703,12 @@
    "precoreqs": "CHEM 2320",
    "preco": [
     "CHEM 2320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",
@@ -682,7 +740,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -700,7 +762,8 @@
    "coreqText": "CHEM 1225",
    "coreqs": [
     "CHEM 1225"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1225": {
    "title": "Principles of Chemistry II Laboratory",
@@ -711,7 +774,8 @@
    "coreqText": "CHEM 1220",
    "coreqs": [
     "CHEM 1220"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2310": {
    "title": "Organic Chemistry I",
@@ -721,7 +785,8 @@
    "coreqText": "CHEM 2315",
    "coreqs": [
     "CHEM 2315"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2315": {
    "title": "Organic Chemistry I Laboratory",
@@ -752,7 +817,8 @@
    "coreqText": "CHEM 2325",
    "coreqs": [
     "CHEM 2325"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 2325": {
    "title": "Organic Chemistry II Laboratory",
@@ -774,7 +840,12 @@
    "precoreqs": "CHEM 2320",
    "preco": [
     "CHEM 2320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 1020": {
    "title": "Public Speaking",
@@ -785,14 +856,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -805,7 +882,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -824,14 +902,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4300": {
    "title": "Health Ethics",
    "credits": 3,
    "prereqText": "University advanced standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University advanced standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -844,7 +932,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -856,7 +948,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -868,7 +964,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -880,7 +977,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -892,7 +990,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1210": {
    "title": "Calculus I",
@@ -914,7 +1013,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -935,7 +1038,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -1015,7 +1119,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1028,7 +1137,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -1041,7 +1155,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1079,7 +1197,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1113,16 +1232,33 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ZOOL 4700": {
    "title": "Advanced Anatomy",
    "credits": 4,
    "prereqText": "ZOOL 2320 with a minimum grade of C- and University Advanced Standing",
    "prereqs": "ZOOL 2320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  },
  "admission": true,
- "admissionNote": "Additionally, the program provides a customizable bachelor-level degree option in health for those who are not accepted into the competitive and limited healthcare cohort programs at the university and allows for pathway development opportunities with other institutions."
+ "admissionNote": "Additionally, the program provides a customizable bachelor-level degree option in health for those who are not accepted into the competitive and limited healthcare cohort programs at the university and allows for pathway development opportunities with other institutions.",
+ "admissionInfo": {
+  "note": "Additionally, the program provides a customizable bachelor-level degree option in health for those who are not accepted into the competitive and limited healthcare cohort programs at the university and allows for pathway development opportunities with other institutions.",
+  "before": [],
+  "gated": []
+ }
 }

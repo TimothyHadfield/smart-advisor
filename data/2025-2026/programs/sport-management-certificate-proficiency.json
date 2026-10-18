@@ -3,7 +3,7 @@
  "name": "Sport Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/sport-management-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "MGMT 1500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 1500 Introduction to Sport Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EXSC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › EXSC 3400 Statistical Analysis in Exercise Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 3420 Strategic Team Management | 3"
   },
   {
    "type": "course",
@@ -41,14 +45,16 @@
    "alts": [
     "MKTG 3600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › HM 4200 Event Planning | 3 or MKTG 3600 Principles of Marketing"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4810R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › MGMT 4810R Internship | 3"
   }
  ],
  "gradPlan": [
@@ -106,7 +112,12 @@
    "credits": 3,
    "prereqText": "( MATH 1050 or higher) and University Advanced Standing",
    "prereqs": "MATH 1050",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HM 4200": {
    "title": "Event Planning",
@@ -118,7 +129,12 @@
    "precoreqs": "HM 3210",
    "preco": [
     "HM 3210"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 1500": {
    "title": "Introduction to Sport Management",
@@ -135,7 +151,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3420": {
    "title": "Strategic Team Management",
@@ -147,14 +168,39 @@
    "creditsMax": 6,
    "prereqText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Woodbury School of Business",
+    "approval from School of Business Career and Corporate Manager",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager"
   },
   "MKTG 3600": {
    "title": "Principles of Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "MGMT 1500",
+   "MGMT 3000",
+   "MGMT 3420",
+   "EXSC 3400",
+   "HM 4200"
+  ],
+  "gated": [
+   "MGMT 4810R"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

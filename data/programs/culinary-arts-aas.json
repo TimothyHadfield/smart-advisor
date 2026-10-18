@@ -3,7 +3,7 @@
  "name": "Culinary Arts, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/culinary-arts-institute/culinary-arts-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 62,
  "requirements": [
   {
@@ -13,124 +13,146 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (9 credits) › ENGLISH: › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "MATHEMATICS QL",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (9 credits) › ENGLISH: › MATHEMATICS QL | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "SOCIAL AND BEHAVIORAL SCIENCE",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (9 credits) › ENGLISH: › SOCIAL AND BEHAVIORAL SCIENCE | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1120",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 1120 Cooking Skills Development | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1140",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › CA 1140 Professional Dining Room Services | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › CA 1150 Nutrition and Food Service | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1160",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › CA 1160 Culinary Math | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1170",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 1170 Pastry and Baking Skills | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1180",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 1180 Professional Kitchen Garde Manger | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1230",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 1230 Professional Kitchen I Cooking | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › CA 1310 Purchasing and Storeroom Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › CA 1320 Culinary Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 1490",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (53 credits) › CA 1490 Food Service Sanitation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 2120",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 2120 Professional Kitchen II Restaurant | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 2130",
    "alts": [],
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (53 credits) › CA 2130 Advanced Pastry Baking | 5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 2450",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (53 credits) › CA 2450 Menu Design | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CA 2820R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (53 credits) › CA 2820R Culinary Arts Internship | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HM 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (53 credits) › HM 1010 Introduction to Hospitality Industry | 3"
   }
  ],
  "gradPlan": [
@@ -234,14 +256,25 @@
    "credits": 5,
    "prereqText": "CA 1490 , Food Handlers permit or ServSafe Certification. Acceptance into the Culinary Arts Institute.",
    "prereqs": "CA 1490",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Food Handlers permit or ServSafe Certification",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1140": {
    "title": "Professional Dining Room Services",
    "credits": 1,
    "prereqText": "Acceptance into the Culinary Arts Institute",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1150": {
    "title": "Nutrition and Food Service",
@@ -252,7 +285,13 @@
    "credits": 1,
    "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation and Acceptance into the Culinary Arts Institute"
   },
   "CA 1170": {
    "title": "Pastry and Baking Skills",
@@ -264,14 +303,23 @@
    "precoreqs": "CA 1490",
    "preco": [
     "CA 1490"
-   ]
+   ],
+   "prereqWords": [
+    "Food Handlers permit or ServSafe Certfication",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Culinary Arts Institute"
   },
   "CA 1180": {
    "title": "Professional Kitchen Garde Manger",
    "credits": 5,
    "prereqText": "CA 1120 , Food Handlers permit or ServSafe Certification",
    "prereqs": "CA 1120",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Food Handlers permit or ServSafe Certification"
+   ]
   },
   "CA 1230": {
    "title": "Professional Kitchen I Cooking",
@@ -293,7 +341,13 @@
    "credits": 3,
    "prereqText": "Matriculation and Acceptance into the Culinary Arts Institute",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation",
+    "Acceptance into the Culinary Arts Institute"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation and Acceptance into the Culinary Arts Institute"
   },
   "CA 1490": {
    "title": "Food Service Sanitation",
@@ -323,21 +377,30 @@
    "creditsMax": 8,
    "prereqText": "Culinary Arts Institute Director Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Culinary Arts Institute Director Approval"
+   ]
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "HM 1010": {
    "title": "Introduction to Hospitality Industry",
@@ -345,5 +408,21 @@
   }
  },
  "admission": true,
- "admissionNote": "Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details)."
+ "admissionNote": "Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details).",
+ "admissionInfo": {
+  "note": "Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details).",
+  "text": "Completion of the following courses with a grade of C- or better. CA 1160 Culinary Math ; CA 1490 Food Service Sanitation (including current ServSafe certification); Acceptance into the Culinary Arts Institute by completion of application process (see Advisor for specific details). Overall GPA: 2.0 or better.",
+  "before": [
+   "CA 1490"
+  ],
+  "gated": [
+   "CA 1120",
+   "CA 1140",
+   "CA 1160",
+   "CA 1170",
+   "CA 1320"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
+ }
 }

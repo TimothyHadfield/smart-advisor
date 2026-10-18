@@ -3,7 +3,7 @@
  "name": "Theatre Studies, B.A.",
  "url": "https://catalog.uvu.edu/arts/theatrical-arts-stage-screen/theatre-studies-ba/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -45,6 +51,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -89,79 +96,91 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (28 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Complete the following: › Biology Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Complete the following: › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution (2020G/2020 foreign language course)",
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (28 credits) › Complete the following: › Humanities Distribution (2020G/2020 foreign language course) | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Complete the following: › Personal, Professional, and Civic Growth Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (28 credits) › Complete the following: › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1013",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1013 Introduction to Theatre | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1033",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1033 Acting I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1513",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1513 Intro to Technical Theatre | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1514",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1514 Intro to Technical Theatre Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1590R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1590R Theatrical Production Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 1713",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 1713 Script and Text Analysis | 3"
   },
   {
    "type": "course",
@@ -170,56 +189,64 @@
    "alts": [
     "THEA 2741"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 2211 Theatre for Children and Youth | 3 or THEA 2741 Scriptwriting for Stage"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 2513",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 2513 Introduction to Theatrical Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 2514",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › THEA 2514 Introduction to Theatrical Design Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3561",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 3561 Stage Management I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3611",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 3611 Directing Actors for Stage and Screen | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3721",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 3721 Theatre History and Literature I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 3722",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (33 credits) › THEA 3722 Theatre History and Literature II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "THEA 4981",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (33 credits) › THEA 4981 Portfolio | 1"
   },
   {
    "type": "choice",
@@ -288,7 +315,10 @@
      "codes": [
       "THEA 3133"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "Requires additional pre-requisite courses not already included in the degree, but they could fill elective credits."
+     ]
     },
     {
      "codes": [
@@ -312,6 +342,7 @@
     }
    ],
    "text": "Complete 6 credits from the following courses. A minimum of 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above.",
+   "src": "Courselist A: (6 credits) › Complete 6 credits from the following courses. A minimum of 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above. | 6",
    "notes": [
     "DIRECTING COURSES:",
     "PERFORMANCE COURSES:",
@@ -346,7 +377,10 @@
       "THEA 3514"
      ],
      "credits": 3,
-     "section": "DESIGN COURSES"
+     "section": "DESIGN COURSES",
+     "notes": [
+      "Requires additional pre-requisite courses not already included in the degree, but they could fill elective credits."
+     ]
     },
     {
      "codes": [
@@ -527,6 +561,7 @@
     }
    ],
    "text": "Complete 15 credits from the following courses. A minimum of 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above.",
+   "src": "Courselist B: (15 credits) › Complete 15 credits from the following courses. A minimum of 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above. | 15",
    "notes": [
     "DESIGN COURSES:",
     "DESIGN COURSES: TECHNICAL PRODUCTION COURSES:",
@@ -750,6 +785,7 @@
     }
    ],
    "text": "Complete 15 credits from the following courses. At least 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above.",
+   "src": "Courselist C: (15 credits) › Complete 15 credits from the following courses. At least 27 of the 36 credits in Courselists A, B, and C must be at the 3000 level or above. | 15",
    "notes": [
     "DRAMATURGY COURSES:",
     "FILM STUDIES COURSES:",
@@ -763,13 +799,15 @@
    "type": "placeholder",
    "area": "Foreign Language Requirement",
    "label": "Three Foreign Language courses in the same language (Foreign Language 2020G/2020 course fulfills Humanities Distribution)",
-   "credits": 12
+   "credits": 12,
+   "src": "Foreign Language Requirement (12 credits) › Three Foreign Language courses in the same language (Foreign Language 2020G/2020 course fulfills Humanities Distribution) | 12 (Note: Requires additional pre-requisite courses not already included in the degree, but they could fill elective credits.)"
   },
   {
    "type": "placeholder",
    "area": "Free Elective Requirement",
    "label": "Any courses 1000 or higher",
-   "credits": 11
+   "credits": 11,
+   "src": "Free Elective Requirement (11 credits) › Any courses 1000 or higher | 11"
   }
  ],
  "gradPlan": [
@@ -1001,7 +1039,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ART 1020": {
    "title": "Basic Drawing for Non-Majors",
@@ -1012,7 +1055,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DAPR 2000": {
    "title": "Digital Audio Essentials",
@@ -1048,7 +1096,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 3210": {
    "title": "Writing for Entertainment Media II",
@@ -1061,21 +1114,33 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1088,7 +1153,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1117,7 +1183,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -1129,7 +1199,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1190,7 +1264,10 @@
    "credits": 1,
    "prereqText": "Theatre Major",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major"
+   ]
   },
   "THEA 2033": {
    "title": "Acting II",
@@ -1207,14 +1284,20 @@
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts"
+   ]
   },
   "THEA 2156": {
    "title": "Group Voice for Theatre",
    "credits": 3,
    "prereqText": "Theatre major in BFA Theatre Arts or BA Theatre Arts",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre major in BFA Theatre Arts or BA Theatre Arts"
+   ]
   },
   "THEA 2203": {
    "title": "Costume Construction I",
@@ -1259,7 +1342,10 @@
    "credits": 3,
    "prereqText": "Department Approval by Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval by Audition"
+   ]
   },
   "THEA 2311": {
    "title": "Film History I",
@@ -1335,21 +1421,38 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3116": {
    "title": "Auditioning - BA",
    "credits": 3,
    "prereqText": "Theatre Major in BA Theatre Arts; THEA 1033 ; University Advanced Standing",
    "prereqs": "THEA 1033",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BA Theatre Arts",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3133": {
    "title": "Stage Combat",
    "credits": 3,
    "prereqText": "Theatre Major in BFA Theatre Arts or BA Theatre Arts; University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Theatre Major in BFA Theatre Arts or BA Theatre Arts",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3150R": {
    "title": "Performance Workshop",
@@ -1357,7 +1460,13 @@
    "creditsMax": 2,
    "prereqText": "Audition, University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3190R": {
    "title": "Performance Practicum for Stage and Screen",
@@ -1365,21 +1474,38 @@
    "creditsMax": 2,
    "prereqText": "Audition, THEA 1590R , and University Advanced Standing",
    "prereqs": "THEA 1590R",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3211": {
    "title": "Applied Theatre",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3223": {
    "title": "Makeup II",
    "credits": 3,
    "prereqText": "THEA 1223 ; Instructor Approval; and University Advanced Standing",
    "prereqs": "THEA 1223",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3231": {
    "title": "Creative Drama",
@@ -1392,91 +1518,157 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3241": {
    "title": "Storytelling",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3251": {
    "title": "Puppetry",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3511": {
    "title": "Stagecraft II",
    "credits": 3,
    "prereqText": "THEA 1513 and University Advanced Standing",
    "prereqs": "THEA 1513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3514": {
    "title": "Period Styles for Theatre Design",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3521": {
    "title": "Sound Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3531": {
    "title": "Lighting Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3541": {
    "title": "Costume Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3542": {
    "title": "Costume Construction II",
    "credits": 3,
    "prereqText": "THEA 2203 and University Advanced Standing",
    "prereqs": "THEA 2203",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3561": {
    "title": "Stage Management I",
    "credits": 3,
    "prereqText": "THEA 1513 and University Advanced Standing",
    "prereqs": "THEA 1513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3565": {
    "title": "Technical Direction for the Stage",
    "credits": 3,
    "prereqText": "THEA 2574 and University Advanced Standing",
    "prereqs": "THEA 2574",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3571": {
    "title": "Scenic Design I",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3573": {
    "title": "Scenic Painting",
    "credits": 3,
    "prereqText": "THEA 2513 and University Advanced Standing",
    "prereqs": "THEA 2513",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3611": {
    "title": "Directing Actors for Stage and Screen",
@@ -1494,14 +1686,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3612": {
    "title": "Directing Actors for the Stage",
    "credits": 3,
    "prereqText": "THEA 3611 ; University Advanced Standing",
    "prereqs": "THEA 3611",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3614": {
    "title": "Directing Actors for the Screen",
@@ -1514,14 +1716,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3625": {
    "title": "Development and Fundraising for the Arts",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3721": {
    "title": "Theatre History and Literature I",
@@ -1534,7 +1746,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3722": {
    "title": "Theatre History and Literature II",
@@ -1547,7 +1764,12 @@
      "ENG 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3731": {
    "title": "Dramaturgy",
@@ -1567,7 +1789,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 3741": {
    "title": "Script Writing II",
@@ -1579,7 +1806,12 @@
      "THEA 2742"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4160R": {
    "title": "Special Topics in Film Studies",
@@ -1592,7 +1824,12 @@
      "THEA 1023"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4522": {
    "title": "Sound Design II",
@@ -1604,14 +1841,24 @@
    "precoreqs": "THEA 2574",
    "preco": [
     "THEA 2574"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4537": {
    "title": "Lighting Design II",
    "credits": 3,
    "prereqText": "THEA 3531 and University Advanced Standing",
    "prereqs": "THEA 3531",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4540R": {
    "title": "Special Topics in Costume Construction",
@@ -1619,42 +1866,73 @@
    "creditsMax": 3,
    "prereqText": "THEA 2203 and University Advanced Standing",
    "prereqs": "THEA 2203",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4547": {
    "title": "Costume Design II",
    "credits": 3,
    "prereqText": "THEA 3541 and University Advanced Standing",
    "prereqs": "THEA 3541",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4561": {
    "title": "Stage Management II",
    "credits": 3,
    "prereqText": "THEA 3561 and University Advanced Standing",
    "prereqs": "THEA 3561",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4570R": {
    "title": "Practical Design",
    "credits": 1,
    "prereqText": "Instructor Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4577": {
    "title": "Scenic Design II",
    "credits": 3,
    "prereqText": "THEA 3571 and University Advanced Standing",
    "prereqs": "THEA 3571",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4621": {
    "title": "Theatre Administration I",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4622": {
    "title": "Theatre Administration II",
@@ -1666,14 +1944,24 @@
      "THEA 4621"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4740R": {
    "title": "New Play Practicum",
    "credits": 1,
    "prereqText": "THEA 1013 or Permission of instructor, and University Advanced Standing",
    "prereqs": "THEA 1013",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4741": {
    "title": "Scriptwriting III",
@@ -1686,7 +1974,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4750R": {
    "title": "Special Projects in Dramatic Writing",
@@ -1694,7 +1987,12 @@
    "creditsMax": 9,
    "prereqText": "THEA 4741 and University Advanced Standing",
    "prereqs": "THEA 4741",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4810R": {
    "title": "Theatre Internship",
@@ -1702,7 +2000,13 @@
    "creditsMax": 4,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4900R": {
    "title": "Independent Study",
@@ -1710,35 +2014,63 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4981": {
    "title": "Portfolio",
    "credits": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4993": {
    "title": "Senior Project in Performance",
    "credits": 3,
    "prereqText": "THEA 3722 , Senior Status, and University Advanced Standing",
    "prereqs": "THEA 3722",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4994": {
    "title": "Senior Project in Theatre",
    "credits": 3,
    "prereqText": "THEA 3722 , Senior Status, and University Advanced Standing",
    "prereqs": "THEA 3722",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 4995": {
    "title": "Senior Project in Design",
    "credits": 3,
    "prereqText": "THEA 3722 , Senior Status, and University Advanced Standing",
    "prereqs": "THEA 3722",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

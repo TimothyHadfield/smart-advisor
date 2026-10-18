@@ -3,7 +3,7 @@
  "name": "Database Administration and Data Warehousing, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/database-administration-data-warehousing-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › INFO 3410 Database Systems and Warehousing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › INFO 4410 Database Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › Complete the following: › CYBR 4250 Database Security and Auditing | 3"
   },
   {
    "type": "choice",
@@ -62,7 +66,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose 6 credits from the following courses:"
+   "text": "Choose 6 credits from the following courses:",
+   "src": "Elective Requirements (6 credits) › Choose 6 credits from the following courses: | 6"
   }
  ],
  "gradPlan": [
@@ -117,7 +122,12 @@
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4250": {
    "title": "Database Security and Auditing",
@@ -129,7 +139,12 @@
      "CYBR 3700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -151,7 +166,14 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -163,13 +185,21 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4120": {
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4410": {
    "title": "Database Administration",
@@ -181,7 +211,12 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

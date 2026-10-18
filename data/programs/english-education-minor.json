@@ -3,7 +3,7 @@
  "name": "English Education, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/english-literature/english-education-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 20,
  "requirements": [
   {
@@ -13,42 +13,48 @@
    "alts": [
     "ENGL 2870"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 2850 Literary History I | 3 or ENGL 2870 Literary History II"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 4220 Teaching Reading and Literature | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 4225 Teaching Reading Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 4230 Teaching Writing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4235",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 4235 Teaching Writing Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (20 credits) › ENGL 4250 Young Adult Literature | 3"
   },
   {
    "type": "choice",
@@ -84,7 +90,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one from the following:"
+   "text": "Complete one from the following:",
+   "src": "Discipline Core Requirements (20 credits) › Complete one from the following: | 3"
   },
   {
    "type": "choice",
@@ -126,7 +133,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one from the following:"
+   "text": "Complete one from the following:",
+   "src": "Discipline Core Requirements (20 credits) › Complete one from the following: | 3"
   }
  ],
  "gradPlan": [
@@ -274,7 +282,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3520": {
    "title": "Nineteenth Century American Literature",
@@ -291,7 +306,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3530": {
    "title": "Modern American Literature",
@@ -308,7 +330,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3540": {
    "title": "Contemporary American Literature",
@@ -325,7 +354,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3610": {
    "title": "Medieval Literature",
@@ -342,7 +378,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3620": {
    "title": "Tudor and Stuart Literature",
@@ -359,7 +402,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3640": {
    "title": "British Literature of the Long Eighteenth Century",
@@ -376,7 +426,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3650": {
    "title": "Victorian Literature",
@@ -393,7 +450,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 3660": {
    "title": "British Literature since 1900",
@@ -410,7 +474,14 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "both with a grade of C- or higher",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4220": {
    "title": "Teaching Reading and Literature",
@@ -421,7 +492,12 @@
    "coreqText": "ENGL 4225",
    "coreqs": [
     "ENGL 4225"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4225": {
    "title": "Teaching Reading Practicum",
@@ -432,7 +508,12 @@
    "coreqText": "ENGL 4220",
    "coreqs": [
     "ENGL 4220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4230": {
    "title": "Teaching Writing",
@@ -448,7 +529,12 @@
    "precoreqs": "ENGL 4220",
    "preco": [
     "ENGL 4220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4235": {
    "title": "Teaching Writing Practicum",
@@ -459,14 +545,29 @@
    "coreqText": "ENGL 4230",
    "coreqs": [
     "ENGL 4230"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4250": {
    "title": "Young Adult Literature",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Must be accepted into a Secondary Education major",
+  "before": [],
+  "gated": []
  }
 }

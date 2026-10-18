@@ -3,7 +3,7 @@
  "name": "Business Management, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/strategic-management-operations/business-management-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "FIN 1060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › FIN 1060 Personal Finance | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 1010 Introduction to Business | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MKTG 2200G Written Business Communication | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MKTG 2390 Professional Business Presentations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › ACC 2110 Principles of Accounting I | 3"
   },
   {
    "type": "course",
@@ -48,14 +53,16 @@
    "alts": [
     "MGMT 1400"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › MGMT 2400 Data Analytics for Business | 3 or MGMT 1400 Introduction to Data Analytics"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ECON 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › ECON 1010 Economics as a Social Science | 3"
   },
   {
    "type": "choice",
@@ -79,14 +86,16 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Discipline Core Requirements (24 credits) › Choose one of the following: | 3"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience.",
    "credits": 6,
-   "text": "Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience."
+   "text": "Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience.",
+   "src": "Elective Requirements (6 credits) › Choose six credits of business electives from the ACC, ECON, FIN, HM, LEGL MKTG, or MGMT prefixes. A maximum of 3 credits may be cooperative work experience. | 6"
   }
  ],
  "gradPlan": [
@@ -172,7 +181,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MGMT 1010": {
    "title": "Introduction to Business",

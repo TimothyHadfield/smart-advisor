@@ -3,7 +3,7 @@
  "name": "Constitutional Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/history-political-science/constitutional-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "POLS 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › POLS 3250 Introduction to Law and Politics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CNST 4720",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CNST 4720 Foundations of American Constitutionalism | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CNST 4790",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CNST 4790 US Constitution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CNST 4795",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CNST 4795 Civil Rights and Civil Liberties | 3"
   },
   {
    "type": "choice",
@@ -111,6 +115,7 @@
     }
    ],
    "text": "Complete three of the following courses for 9 credits:",
+   "src": "Elective Requirements (9 credits) › Complete three of the following courses for 9 credits: | 9",
    "notes": [
     "or any other Coordinator or Chair approved courses."
    ],
@@ -168,7 +173,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 2600": {
    "title": "Comparative Constitutionalism",
@@ -186,14 +196,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 3880": {
    "title": "Constitutional History Since Plessy 1896",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4720": {
    "title": "Foundations of American Constitutionalism",
@@ -205,14 +225,24 @@
      "POLS 1100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4730": {
    "title": "Framing of the US Constitution",
    "credits": 3,
    "prereqText": "CNST 4720 and University Advanced Standing",
    "prereqs": "CNST 4720",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4790": {
    "title": "US Constitution",
@@ -224,28 +254,49 @@
      "POLS 1000"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CNST 4795": {
    "title": "Civil Rights and Civil Liberties",
    "credits": 3,
    "prereqText": "CNST 4790 and University Advanced Standing",
    "prereqs": "CNST 4790",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 4500": {
    "title": "US Economic Development and History",
    "credits": 3,
    "prereqText": "Matriculation in the Woodbury School of Business, University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation in the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation in the Woodbury School of Business"
   },
   "HIST 3320": {
    "title": "Modern Britain",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1020": {
    "title": "Political Ideologies",
@@ -256,28 +307,59 @@
    "credits": 3,
    "prereqText": "POLS 1100 and University Advanced Standing",
    "prereqs": "POLS 1100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3260": {
    "title": "American Federalism",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3300": {
    "title": "Introduction to Public Administration",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4610": {
    "title": "International Law",
    "credits": 3,
    "prereqText": "POLS 2100 and University Advanced Standing",
    "prereqs": "POLS 2100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "To be admitted into the program, students must: Possess a 3.0 grade point average Complete 30 credit hours Complete POLS 1000 American Heritage or POLS 1100 American National Government",
+  "before": [
+   "POLS 1000",
+   "POLS 1100"
+  ],
+  "gated": [
+   "ECON 4500"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

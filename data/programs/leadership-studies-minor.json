@@ -3,7 +3,7 @@
  "name": "Leadership Studies, Minor",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/leadership-studies-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "",
    "code": "MGMT 1250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 1250 Principles of Leadership | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 2030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 2030 Inclusive Leadership | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 3500 Leadership Theory and Application | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 4500R",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 4500R Leadership Practicum | 3"
   },
   {
    "type": "choice",
@@ -212,7 +216,8 @@
      "credits": 3
     }
    ],
-   "text": "Electives (Choose 6 credit hours from the following; 3 credits must be upper division.)"
+   "text": "Electives (Choose 6 credit hours from the following; 3 credits must be upper division.)",
+   "src": "Electives (Choose 6 credit hours from the following; 3 credits must be upper division.) | 6"
   }
  ],
  "gradPlan": [
@@ -275,7 +280,12 @@
      "AERO 2110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AERO 3110": {
    "title": "Leading People and Effective Communication B",
@@ -291,28 +301,48 @@
      "AERO 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AMST 3000R": {
    "title": "Topics in American Studies",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3410": {
    "title": "Fundamentals of Mediation and Negotiation",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 4250": {
    "title": "Communication and Leadership",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGL 4730R": {
    "title": "Topics in Gender Studies",
@@ -324,41 +354,68 @@
      "ENGL 2600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4000": {
    "title": "Advanced Emergency Services Leadership",
    "credits": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESWF 3380": {
    "title": "L380 Fireline/Fire Service Leadership",
    "credits": 3,
    "prereqText": "Department Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESWF 3381": {
    "title": "L381 Incident Leadership",
    "credits": 3,
    "prereqText": "Department Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESWF 4481": {
    "title": "L481 Advanced Leadership for Command and General Staff",
    "credits": 3,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "HR 3550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 1150R": {
    "title": "Leading in a Complex World - Developing Leadership Character",
@@ -394,14 +451,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3020": {
    "title": "Ethical Decision-Making in Organizations",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -413,14 +480,24 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3500": {
    "title": "Leadership Theory and Application",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4500R": {
    "title": "Leadership Practicum",
@@ -435,7 +512,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MILS 1200": {
    "title": "Introduction to Leadership Excellence I",
@@ -461,28 +543,46 @@
    "credits": 1,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "MKTG 3640": {
    "title": "Sales Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PJST 4300": {
    "title": "Race Gender and Class in Peace and Justice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3300": {
    "title": "Introduction to Public Administration",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 3370": {
    "title": "Leading Cities",
@@ -494,14 +594,24 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 4200R": {
    "title": "Issues and Topics in Political Science",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SLSS 3200": {
    "title": "Leader--Teacher and Mentor",
@@ -529,7 +639,13 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C+",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4400": {
    "title": "Social Change",
@@ -541,7 +657,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

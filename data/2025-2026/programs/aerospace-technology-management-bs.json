@@ -3,7 +3,7 @@
  "name": "Aerospace Technology Management, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/aviation-science/aerospace-technology-management-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 123,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -76,6 +82,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -120,13 +127,15 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "ai"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Biology | 3"
   },
   {
    "type": "placeholder",
@@ -135,7 +144,8 @@
    "credits": 3,
    "recommended": [
     "PHYS 1850"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Physical Science (PHYS 1850 recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -144,87 +154,100 @@
    "credits": 3,
    "recommended": [
     "ENGL 2100"
-   ]
+   ],
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Humanities (ENGL 2100 recommended) | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Social/Behavioral Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "Technical Core Requirement",
    "label": "Completion of a Technical Specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under rules of FAR Part 65 OR Completion of an Associates in Science or an Associates of Applied Science Degree from a regionally accredited institution of higher education with a designated technical specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under the rules of FAR Part 147 OR possess a license as an Aircraft Maintenance Engineer (AME) (Cat B1) issued under EASA Part 66 regulations. A total not to exceed 45 credit hours will be awarded for evidence of the possession of the A&P or AME certificate.",
-   "credits": 45
+   "credits": 45,
+   "src": "Technical Core Requirement (45 credits) › Completion of a Technical Specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under rules of FAR Part 65 OR Completion of an Associates in Science or an Associates of Applied Science Degree from a regionally accredited institution of higher education with a designated technical specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under the rules of FAR Part…"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › TECH 3400 Project Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 3850",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › TECH 3850 Quality Management in Technology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 2150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 2150 Air Transportation Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 3320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 3320 Aviation Managerial Accounting | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 4500 Aerospace Aftermarket Support Services | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 4550 Aerospace Vehicle Certification-Reliability-Maintainability Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4950",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 4950 Aerospace Technology Management Capstone Project | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "AVSC 4100G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (30 credits) › AVSC 4100G Global Ethical and Professional Issues in Aviation | 3"
   },
   {
    "type": "choice",
@@ -277,20 +300,23 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (30 credits) › Complete (2) of the following: | 6"
   },
   {
    "type": "placeholder",
    "area": "Electives",
    "label": "Complete 13 upper division credits",
-   "credits": 13
+   "credits": 13,
+   "src": "Electives (18 credits) › Complete 13 upper division credits | 13"
   },
   {
    "type": "placeholder",
    "area": "Electives",
    "label": "Elective",
    "credits": 5,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Electives (18 credits) › Complete any 1000-level, or higher, courses | 5"
   }
  ],
  "gradPlan": [
@@ -447,7 +473,12 @@
    "credits": 3,
    "prereqText": "AVSC 2130 and University Advanced Standing",
    "prereqs": "AVSC 2130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3090": {
    "title": "Airline and Dispatch Operations",
@@ -459,14 +490,24 @@
      "AVSC 2110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3100": {
    "title": "Corporate Aviation Management",
    "credits": 3,
    "prereqText": "AVSC 2150 and University Advanced Standing",
    "prereqs": "AVSC 2150",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3150": {
    "title": "Principles of Aviation Management",
@@ -478,7 +519,12 @@
      "AVSC 2150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3310": {
    "title": "Aviation Logistics Management",
@@ -490,14 +536,24 @@
      "AVSC 3150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3320": {
    "title": "Aviation Managerial Accounting",
    "credits": 3,
    "prereqText": "AVSC 2150 and University Advanced Standing",
    "prereqs": "AVSC 2150",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 3350": {
    "title": "Aviation Labor and Human Resource",
@@ -509,7 +565,12 @@
      "AVSC 3150"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4100G": {
    "title": "Global Ethical and Professional Issues in Aviation",
@@ -521,28 +582,49 @@
      "PHIL 2050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4160": {
    "title": "Aviation Law",
    "credits": 3,
    "prereqText": "AVSC 2150 , Senior Standing and University Advanced Standing.",
    "prereqs": "AVSC 2150",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Standing",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4500": {
    "title": "Aerospace Aftermarket Support Services",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4550": {
    "title": "Aerospace Vehicle Certification-Reliability-Maintainability Systems",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "AVSC 4950": {
    "title": "Aerospace Technology Management Capstone Project",
@@ -554,7 +636,12 @@
      "AVSC 4550"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -568,7 +655,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -581,7 +671,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2100": {
    "title": "Technical Communication",
@@ -621,7 +712,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -633,7 +728,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -645,7 +744,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -657,7 +757,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -669,7 +770,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "PHYS 1850": {
    "title": "The Physics of Aviation",
@@ -696,7 +798,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -709,14 +816,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "TECH 3400": {
    "title": "Project Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3850": {
    "title": "Quality Management in Technology",
@@ -734,7 +851,17 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Completion of a Technical Specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under rules of FAR Part 65 OR Completion of an Associates in Science or an Associates of Applied Science Degree from a regionally accredited institution of higher education with a designated technical specialty associated with FAA issued Airframe & Powerplant Maintenance Technician Certificate issued under the rules of FAR Part 147 OR possess a license as an Aircraft Maintenance Engineer (AME) (Cat B1) issued under EASA Part 66 regulations. A total not to exceed 45 credit hours will be awarded for evidence of the possession of the A&P or AME certificate.",
+  "before": [],
+  "gated": []
  }
 }

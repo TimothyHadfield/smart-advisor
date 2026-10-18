@@ -3,7 +3,7 @@
  "name": "Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/technology-management/technology-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 62,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
@@ -22,13 +27,19 @@
    "alts": [
     "STAT 1045"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › STAT 1040 Introduction to Statistics | 3 or STAT 1045 Introduction to Statistics with Algebra",
+   "creditsBy": {
+    "STAT 1040": 3,
+    "STAT 1045": 5
+   }
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities/Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (15 credits) › Humanities/Fine Arts | 3"
   },
   {
    "type": "placeholder",
@@ -37,7 +48,8 @@
    "credits": 3,
    "recommended": [
     "TECH 1010"
-   ]
+   ],
+   "src": "General Education Requirements (15 credits) › Physical Science (TECH 1010 Recommended) | 3"
   },
   {
    "type": "placeholder",
@@ -46,28 +58,32 @@
    "credits": 3,
    "recommended": [
     "TECH 2000G"
-   ]
+   ],
+   "src": "General Education Requirements (15 credits) › Social/Behavioral Science (TECH 2000G Recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 2850",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (8 credits) › TECH 2850 Applications of Generative AI | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (8 credits) › TECH 2010 Supervision in Technology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IM 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (8 credits) › IM 2010 Business Computer Proficiency | 3"
   },
   {
    "type": "placeholder",
@@ -75,6 +91,7 @@
    "label": "Complete 9 credits any course numbered 1000 or 2000",
    "credits": 9,
    "text": "Complete 9 credits any course numbered 1000 or 2000",
+   "src": "Discipline Elective Requirements (9 credits) › Complete 9 credits any course numbered 1000 or 2000 | 9",
    "notes": [
     "Recommended Courses: ENGR 1000 ; CS 1030 ; DGM 1110"
    ]
@@ -83,7 +100,8 @@
    "type": "placeholder",
    "area": "Approved or articulated technical credits",
    "label": "Complete 30 approved or articulated technical credits",
-   "credits": 30
+   "credits": 30,
+   "src": "Approved or articulated technical credits (30 credits) › Complete 30 approved or articulated technical credits | 30 (Note: This requirement may be satisfied by credit for prior learning (CPL), prior learning assessment (PLA) or Articulation Agreements. Up to thirty credits may be satisfied.)"
   }
  ],
  "gradPlan": [
@@ -240,14 +258,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "IM 2010": {
    "title": "Business Computer Proficiency",
@@ -264,7 +288,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -277,7 +306,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "TECH 2010": {
    "title": "Supervision in Technology",

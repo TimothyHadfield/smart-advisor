@@ -3,7 +3,7 @@
  "name": "Engineering and Technology Management, M.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/technology-management/engineering-technology-management-ms/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,56 +11,64 @@
    "area": "",
    "code": "TECH 6010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6010 Intellectual Property Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6400 Six Sigma Project Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6420 Finance for Technical Systems | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6430 Product Management Processes | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6450 Engineering Economics and Project Evaluation | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6700 Data Driven Decision Making | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6950",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6950 Engineering and Technology Projects I | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "TECH 6960",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "TECH 6960 Engineering and Technology Projects II | 3"
   },
   {
    "type": "choice",
@@ -114,7 +122,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete six credits from the following:"
+   "text": "Complete six credits from the following:",
+   "src": "Complete six credits from the following: | 6"
   }
  ],
  "gradPlan": [
@@ -190,107 +199,204 @@
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6010": {
    "title": "Intellectual Property Fundamentals",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6400": {
    "title": "Six Sigma Project Management",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6420": {
    "title": "Finance for Technical Systems",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6430": {
    "title": "Product Management Processes",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6440": {
    "title": "Artificial Intelligence and Society",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6450": {
    "title": "Engineering Economics and Project Evaluation",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6500": {
    "title": "Resource Management in Engineering and Technology",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6550": {
    "title": "People and Culture",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Science in Engineering and Technology Management or other UVU graduate programs"
   },
   "TECH 6700": {
    "title": "Data Driven Decision Making",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program or approval of graduate program director"
   },
   "TECH 6710": {
    "title": "Materials Management",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6790R": {
    "title": "Special Topics in Engineering",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6900R": {
    "title": "Independent Study",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6950": {
    "title": "Engineering and Technology Projects I",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   },
   "TECH 6960": {
    "title": "Engineering and Technology Projects II",
    "credits": 3,
    "prereqText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Master of Science in Engineering and Technology Management program or approval of graduate program director"
   }
  },
  "admission": true,
- "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student."
+ "admissionNote": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+ "admissionInfo": {
+  "note": "Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "text": "Application for admission to graduate program with application fee by the established deadline. The university uses a selective admission process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or an international college or university recognized by a Ministry of Education Overall undergraduate GPA of 3.0 or higher on a 4.0 scale from an accredited institution, or GPA of 3.0 or higher on a 4.0 scale from an accredited institution in last 60 semester hours (90 quarter hours) of undergraduate coursework Three professional letters of recommendation Official transcripts from all attended institutions of higher education A personal statement",
+  "before": [],
+  "gated": [
+   "TECH 6000",
+   "TECH 6010",
+   "TECH 6400",
+   "TECH 6420",
+   "TECH 6430",
+   "TECH 6440",
+   "TECH 6450",
+   "TECH 6500",
+   "TECH 6550",
+   "TECH 6700",
+   "TECH 6710",
+   "TECH 6790R",
+   "TECH 6900R",
+   "TECH 6950",
+   "TECH 6960"
+  ]
+ }
 }

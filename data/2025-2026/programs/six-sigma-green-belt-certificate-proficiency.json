@@ -3,7 +3,7 @@
  "name": "Six Sigma Green Belt, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/technology-management/six-sigma-green-belt-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 27,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core Requirements",
    "code": "TECH 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 3000 Introduction to Technology Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 3010 Creative Problem Solving | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 3400 Project Management | 3"
   },
   {
    "type": "course",
@@ -34,7 +37,9 @@
    "alts": [
     "MGMT 3470"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 3700 Materials Management | 3 or MGMT 3470 Lean Management Systems",
+   "prefer": "MGMT 3470"
   },
   {
    "type": "course",
@@ -43,14 +48,16 @@
    "alts": [
     "MGMT 3070"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 3850 Quality Management in Technology | 3 or MGMT 3070 Total Quality Management"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 4000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 4000 Reliability Management | 3"
   },
   {
    "type": "course",
@@ -59,14 +66,16 @@
    "alts": [
     "MGMT 3450"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 4400 Advanced Project Management | 3 or MGMT 3450 Operations Management"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "TECH 4910",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (27 credits) › TECH 4910 Senior Capstone Project | 3"
   },
   {
    "type": "choice",
@@ -120,7 +129,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following for 3 credits:"
+   "text": "Complete one of the following for 3 credits:",
+   "src": "Discipline Core Requirements (27 credits) › Complete one of the following for 3 credits: | 3"
   }
  ],
  "gradPlan": [
@@ -214,7 +224,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -227,7 +242,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -240,28 +256,47 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 3070": {
    "title": "Total Quality Management",
    "credits": 3,
    "prereqText": "MGMT 3450 and University Advanced Standing",
    "prereqs": "MGMT 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 3470": {
    "title": "Lean Management Systems",
    "credits": 3,
    "prereqText": "MGMT 3450 and University Advanced Standing",
    "prereqs": "MGMT 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -274,7 +309,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -287,7 +327,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -300,7 +345,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 3040": {
    "title": "Probability and Statistics for Engineering and the Sciences",
@@ -318,28 +367,49 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3000": {
    "title": "Introduction to Technology Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3010": {
    "title": "Creative Problem Solving",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3400": {
    "title": "Project Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3700": {
    "title": "Materials Management",
@@ -351,7 +421,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3850": {
    "title": "Quality Management in Technology",
@@ -369,7 +444,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 4000": {
    "title": "Reliability Management",
@@ -388,14 +468,26 @@
      "IM 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 4400": {
    "title": "Advanced Project Management",
    "credits": 3,
    "prereqText": "TECH 3400 with a C- or higher; University Advanced Standing",
    "prereqs": "TECH 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 4910": {
    "title": "Senior Capstone Project",
@@ -408,7 +500,28 @@
      "TECH 3850"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Senior Status",
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "TECH 3000",
+   "TECH 3010",
+   "MGMT 3470"
+  ],
+  "gated": [
+   "MGMT 3450"
+  ],
+  "beforeLabels": [
+   "Complete one of following:"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Mechanical Engineering, B.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/mechanical-and-civil-engineering/mechanical-engineering-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 128,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › MATH 1210 Calculus I | 4"
   },
   {
    "type": "choice",
@@ -71,6 +78,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (32 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -81,33 +89,38 @@
    "area": "General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (32 credits) › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › Fine Arts | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › ENGL 2100 Technical Communication | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PHIL 2050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (32 credits) › PHIL 2050G Ethics and Values | 3"
   },
   {
    "type": "placeholder",
@@ -116,28 +129,32 @@
    "credits": 3,
    "recommended": [
     "COMM 2110"
-   ]
+   ],
+   "src": "General Education Requirements (32 credits) › Social/Behavioral Science (COMM 2110 Recommended) | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (84 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 1000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 1000 Introduction to Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1071",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › EGDT 1071 3 Dimensional Modeling--Solidworks | 3"
   },
   {
    "type": "course",
@@ -146,189 +163,220 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › CS 1400 Fundamentals of Programming | 3 or STAT 2040 Principles of Statistics",
+   "creditsBy": {
+    "CS 1400": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (84 credits) › PHYS 2210 Physics for Scientists and Engineers I | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2010 Engineering Statics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2030 Engineering Dynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2140 Mechanics of Materials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2160 Introduction to Materials Science and Engineering | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2300 Engineering Thermodynamics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGR 2450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ENGR 2450 Computational Methods for Engineering Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (84 credits) › MATH 1220 Calculus II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (84 credits) › MATH 2210 Calculus III | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MATH 2250",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (84 credits) › MATH 2250 Differential Equations and Linear Algebra | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 2210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 2210 Manufacturing Processes for Engineers | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3010 System Dynamics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3050 Mechatronic Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3140 Machine Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3310 Fluid Mechanics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3320 Heat Transfer | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3335",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (84 credits) › ME 3335 Thermal/Fluid Experimentation | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 3410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 3410 Applied Finite Element Analysis | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 4010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 4010 System Dynamics II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 4015",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (84 credits) › ME 4015 Control and Vibration Experimentation | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 4510",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (84 credits) › ME 4510 Mechanical Engineering Seminar | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 4810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 4810 Mechanical Engineering Capstone I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ME 4820",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (84 credits) › ME 4820 Mechanical Engineering Capstone II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (84 credits) › PHYS 2215 Physics for Scientists and Engineers I Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (84 credits) › PHYS 2220 Physics for Scientists and Engineers II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PHYS 2225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (84 credits) › PHYS 2225 Physics for Scientists and Engineers II Lab | 1"
   },
   {
    "type": "choice",
@@ -475,6 +523,7 @@
     }
    ],
    "text": "Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level.",
+   "src": "Elective Requirements (12 credits) › Choose 12 credits from the following. Up to six credit-hours may be taken from Technical Elective list. At least six credit-hours must be ME Elective Courses at the 4000 level. | 12",
    "notes": [
     "ME Elective Courses",
     "ME Elective Courses: Technical Elective Courses",
@@ -727,7 +776,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -742,21 +795,34 @@
    "credits": 3,
    "prereqText": "EGDT 1040 , University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)",
    "prereqs": "EGDT 1040",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and (Formal Acceptance into the Civil Engineering Program or Departmental Approval)"
   },
   "CS 1400": {
    "title": "Fundamentals of Programming",
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "ECE 3710": {
    "title": "Applied Probability and Statistics for Engineers and Scientists",
    "credits": 3,
    "prereqText": "MATH 1210 and University Advanced Standing",
    "prereqs": "MATH 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "EGDT 1071": {
    "title": "3 Dimensional Modeling--Solidworks",
@@ -767,14 +833,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -787,7 +859,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2100": {
    "title": "Technical Communication",
@@ -890,7 +963,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -901,7 +978,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -912,7 +990,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2250": {
    "title": "Differential Equations and Linear Algebra",
@@ -923,7 +1002,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "ME 2210": {
    "title": "Manufacturing Processes for Engineers",
@@ -950,7 +1030,13 @@
      "MATH 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Mechanical Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering Program"
   },
   "ME 3050": {
    "title": "Mechatronic Systems",
@@ -963,14 +1049,26 @@
      "ENGR 2030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into the Mechanical Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering Program"
   },
   "ME 3130": {
    "title": "Kinematics",
    "credits": 3,
    "prereqText": "ENGR 2030 , University Advanced Standing, and (Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)",
    "prereqs": "ENGR 2030",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
   },
   "ME 3140": {
    "title": "Machine Design",
@@ -982,7 +1080,13 @@
      "ENGR 2160"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
   },
   "ME 3160": {
    "title": "Intermediate Materials",
@@ -994,7 +1098,13 @@
      "ENGR 2160"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
   },
   "ME 3170": {
    "title": "Introduction to Plastics and Composites",
@@ -1008,14 +1118,26 @@
      "MATH 2250"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
   },
   "ME 3300": {
    "title": "Applied Thermodynamics",
    "credits": 3,
    "prereqText": "ENGR 2300 , University Advanced Standing, and (Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)",
    "prereqs": "ENGR 2300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
+   ],
+   "gate": "admission",
+   "gateText": "(Formal Acceptance into the Mechanical Engineering Program or Departmental Approval)"
   },
   "ME 3310": {
    "title": "Fluid Mechanics",
@@ -1027,7 +1149,13 @@
      "ENGR 2450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into the Mechanical Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering Program"
   },
   "ME 3320": {
    "title": "Heat Transfer",
@@ -1039,7 +1167,13 @@
      "ME 3310"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 3335": {
    "title": "Thermal/Fluid Experimentation",
@@ -1051,7 +1185,12 @@
    "precoreqs": "ME 3320",
    "preco": [
     "ME 3320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 3410": {
    "title": "Applied Finite Element Analysis",
@@ -1068,7 +1207,13 @@
    "precoreqs": "ME 3320",
    "preco": [
     "ME 3320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into the Mechanical Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and Matriculation into the Mechanical Engineering Program"
   },
   "ME 3810R": {
    "title": "Mechanical Engineering Internship",
@@ -1076,14 +1221,26 @@
    "creditsMax": 3,
    "prereqText": "University advanced standing. Matriculation into the Mechanical Engineering program and instructor approval.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University advanced standing",
+    "Matriculation into the Mechanical Engineering program",
+    "instructor approval"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering program and instructor approval"
   },
   "ME 4010": {
    "title": "System Dynamics II",
    "credits": 3,
    "prereqText": "ME 3010 and University Advanced Standing",
    "prereqs": "ME 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4015": {
    "title": "Control and Vibration Experimentation",
@@ -1095,14 +1252,24 @@
    "precoreqs": "ME 4010",
    "preco": [
     "ME 4010"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4180": {
    "title": "Compliant Mechanisms",
    "credits": 3,
    "prereqText": "ME 3140 and University Advanced Standing",
    "prereqs": "ME 3140",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4310": {
    "title": "Computational Fluid Dynamics",
@@ -1114,7 +1281,12 @@
      "ME 3310"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4380": {
    "title": "Design of Thermal/Fluid Systems",
@@ -1126,7 +1298,12 @@
      "ME 3320"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4390": {
    "title": "Heating Ventilating and Air Conditioning Design",
@@ -1138,7 +1315,12 @@
      "ME 3320"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4420": {
    "title": "Finite Element Methods",
@@ -1150,14 +1332,21 @@
      "ME 3320"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4430": {
    "title": "Computer Aided Design and Manufacturing - Theory and Application",
    "credits": 3,
    "prereqText": "University Advanced Standing and ME 3210",
    "prereqs": "ME 3210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4440": {
    "title": "Materials Selection in Design",
@@ -1169,28 +1358,49 @@
      "ENGR 2140"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University advanced standing",
+    "Matriculation into the mechanical engineering program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the mechanical engineering program"
   },
   "ME 4510": {
    "title": "Mechanical Engineering Seminar",
    "credits": 1,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4550": {
    "title": "Global Engineering",
    "credits": 3,
    "prereqText": "University Advanced Standing and Formal Acceptance into the Mechanical Engineering Program or Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing and Formal Acceptance into the Mechanical Engineering Program or Department Approval"
+   ],
+   "gate": "admission",
+   "gateText": "University Advanced Standing and Formal Acceptance into the Mechanical Engineering Program or Department Approval"
   },
   "ME 4610": {
    "title": "Road Vehicle Dynamics",
    "credits": 3,
    "prereqText": "ENGR 2030 , University Advanced Standing",
    "prereqs": "ENGR 2030",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4810": {
    "title": "Mechanical Engineering Capstone I",
@@ -1208,14 +1418,25 @@
    "preco": [
     "ME 2210",
     "ME 3410"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "Matriculation into the Mechanical Engineering Program"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering Program"
   },
   "ME 4820": {
    "title": "Mechanical Engineering Capstone II",
    "credits": 3,
    "prereqText": "ME 4810 and University Advanced Standing",
    "prereqs": "ME 4810",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ME 4900R": {
    "title": "Advanced Current Topics in Mechanical Engineering",
@@ -1223,7 +1444,13 @@
    "creditsMax": 3,
    "prereqText": "Matriculation into the Mechanical Engineering Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Mechanical Engineering Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Mechanical Engineering Program and University Advanced Standing"
   },
   "PHIL 2050G": {
    "title": "Ethics and Values",
@@ -1236,7 +1463,8 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PHYS 2210": {
    "title": "Physics for Scientists and Engineers I",
@@ -1298,14 +1526,23 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "TECH 3400": {
    "title": "Project Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "TECH 3850": {
    "title": "Quality Management in Technology",
@@ -1323,7 +1560,56 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "To be admitted to the BSME program, a student must complete the foundation courses in Mathematics (MATH 1210, 1220, 2210, 2250); Physics (PHYS 2210, 2215, 2220, 2225); Chemistry (CHEM 1210, 1215); English (ENGL 1005 or ENGL 1010, 2010); and Engineering (EGDT 1071, ENGR 1000, 2010, 2030, 2140, 2160, 2450) with a minimum grade of C. Students need a grade point average of 2.5 or above. A student not meeting all of the admission requirements, may request in writing, a provisional admission status for a semester from the department. The provisional admission status must be approved by the mechanical engineering program coordinator.",
+  "before": [
+   "MATH 1210",
+   "MATH 1220",
+   "MATH 2210",
+   "MATH 2250",
+   "PHYS 2210",
+   "PHYS 2215",
+   "PHYS 2220",
+   "PHYS 2225",
+   "CHEM 1210",
+   "CHEM 1215",
+   "ENGL 1005",
+   "ENGL 1010",
+   "ENGL 2010",
+   "EGDT 1071",
+   "ENGR 1000",
+   "ENGR 2010",
+   "ENGR 2030",
+   "ENGR 2140",
+   "ENGR 2160",
+   "ENGR 2450"
+  ],
+  "gated": [
+   "CIVE 3010",
+   "ME 3010",
+   "ME 3050",
+   "ME 3130",
+   "ME 3140",
+   "ME 3160",
+   "ME 3170",
+   "ME 3300",
+   "ME 3310",
+   "ME 3410",
+   "ME 3810R",
+   "ME 4440",
+   "ME 4550",
+   "ME 4810",
+   "ME 4900R"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

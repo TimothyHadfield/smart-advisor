@@ -3,7 +3,7 @@
  "name": "Paramedic, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/health-public-service/emergency-services/paramedic-undergraduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 31,
  "requirements": [
   {
@@ -11,91 +11,104 @@
    "area": "Discipline Core Requirements",
    "code": "ESEC 3210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3210 Paramedic I-Operations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3220 Paramedic II-Cardiac and Respiratory Patient Care | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3225",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3225 Paramedic II Lab-Cardiac and Respiratory Emergencies | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3230 Paramedic III-Trauma Patient Care | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3235",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3235 Paramedic III Lab-Trauma Emergencies | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3240 Paramedic IV-Medical and Geriatric Patient Care | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3245",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3245 Paramedic IV Lab-Medical Emergencies | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3250 Paramedic V-Obstetric and Pediatric Patient Care | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 3255",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 3255 Paramedic V Lab-Obstetric and Pediatric Emergencies | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 4210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 4210 Paramedic VI-Research | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 4220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 4220 Paramedic VII-Clinical Internship Hospital and Field Phase I and II | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 4230",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 4230 Paramedic VIII-Practical Preparation and Testing | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 4240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (31 credits) › ESEC 4240 Paramedic Capstone | 3"
   }
  ],
  "gradPlan": [],
@@ -105,7 +118,13 @@
    "credits": 3,
    "prereqText": "Matriculated into Paramedic Program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculated into Paramedic Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into Paramedic Program and University Advanced Standing"
   },
   "ESEC 3220": {
    "title": "Paramedic II-Cardiac and Respiratory Patient Care",
@@ -121,7 +140,13 @@
    "precoreqs": "ESEC 3210",
    "preco": [
     "ESEC 3210"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into the paramedic program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the paramedic program and University Advanced Standing"
   },
   "ESEC 3225": {
    "title": "Paramedic II Lab-Cardiac and Respiratory Emergencies",
@@ -132,7 +157,12 @@
    "coreqText": "ESEC 3220",
    "coreqs": [
     "ESEC 3220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 3230": {
    "title": "Paramedic III-Trauma Patient Care",
@@ -148,7 +178,13 @@
    "precoreqs": "ESEC 3210",
    "preco": [
     "ESEC 3210"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into the paramedic program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the paramedic program and University Advanced Standing"
   },
   "ESEC 3235": {
    "title": "Paramedic III Lab-Trauma Emergencies",
@@ -159,7 +195,12 @@
    "coreqText": "ESEC 3230",
    "coreqs": [
     "ESEC 3230"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 3240": {
    "title": "Paramedic IV-Medical and Geriatric Patient Care",
@@ -175,7 +216,13 @@
    "precoreqs": "ESEC 3210",
    "preco": [
     "ESEC 3210"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into the paramedic program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the paramedic program and University Advanced Standing"
   },
   "ESEC 3245": {
    "title": "Paramedic IV Lab-Medical Emergencies",
@@ -186,7 +233,12 @@
    "coreqText": "ESEC 3240",
    "coreqs": [
     "ESEC 3240"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 3250": {
    "title": "Paramedic V-Obstetric and Pediatric Patient Care",
@@ -202,7 +254,13 @@
    "precoreqs": "ESEC 3210",
    "preco": [
     "ESEC 3210"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into the paramedic program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the paramedic program and University Advanced Standing"
   },
   "ESEC 3255": {
    "title": "Paramedic V Lab-Obstetric and Pediatric Emergencies",
@@ -213,7 +271,12 @@
    "coreqText": "ESEC 3250",
    "coreqs": [
     "ESEC 3250"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 4210": {
    "title": "Paramedic VI-Research",
@@ -225,7 +288,13 @@
    "precoreqs": "ESEC 3210",
    "preco": [
     "ESEC 3210"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into Paramedic Program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into Paramedic Program and University Advanced Standing"
   },
   "ESEC 4220": {
    "title": "Paramedic VII-Clinical Internship Hospital and Field Phase I and II",
@@ -237,7 +306,12 @@
      "ESEC 3255"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 4230": {
    "title": "Paramedic VIII-Practical Preparation and Testing",
@@ -267,7 +341,12 @@
    "preco": [
     "ESEC 4210",
     "ESEC 4220"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESEC 4240": {
    "title": "Paramedic Capstone",
@@ -299,7 +378,37 @@
     "ESEC 4210",
     "ESEC 4220",
     "ESEC 4230"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "1. Complete Anatomy and Physiology (transfer credit accepted) with a grade of C or higher: ZOOL 1090 (requires BIOL 1010 as a pre-req) or ZOOL 2320 and 2420 with labs (requires BIOL 1610 and CHEM 1110 as pre-req). 2. Meet the English requirement: Placement into ENGL 1010 or ENGH 1005 or higher with valid test scores, (Completion of ENGL 1010 or ENGH 1005 highly recommended). 3. Meet the Math requirement: Completion of MAT 0950 with a grade of C- or higher, or placement into MAT 1000 or higher valid test scores, (Completion of QL Requirement highly recommended). 4. Possess a current Utah EMT certification (MUST REMAIN VALID THROUGH THE COURSE) 5. Have current CPR certification. 6. Successful completion of criminal background requirements (UVU and State of Utah Bureau of Emergency Medical Services). 7. Be at least 18 years old and have a valid driver’s license. 8. Have current vaccinations as required by Utah Bureau of EMS. (Additional vaccinations may be required for clinical site internships) 9. Have current TB test results as required by Utah Bureau of EMS. 10. Obtain a current physical examination supporting entrance into the Paramedic Program. 11. Complete UVU paramedic application process, including written testing, oral interview, passing of background and drug screening \\testing, and be accepted to the program.",
+  "before": [
+   "ZOOL 1090",
+   "BIOL 1010",
+   "ZOOL 2320",
+   "ZOOL 2420",
+   "BIOL 1610",
+   "CHEM 1110",
+   "ENGL 1010",
+   "ENGL 1005",
+   "MAT 0950",
+   "MAT 1000"
+  ],
+  "gated": [
+   "ESEC 3210",
+   "ESEC 3220",
+   "ESEC 3230",
+   "ESEC 3240",
+   "ESEC 3250",
+   "ESEC 4210"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C"
  }
 }

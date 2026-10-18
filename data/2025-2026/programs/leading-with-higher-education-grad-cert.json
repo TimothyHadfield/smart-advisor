@@ -3,7 +3,7 @@
  "name": "Leading with Higher Education, Graduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/education-graduate-programs/leading-with-higher-education-grad-cert/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 9,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "EDHE 6410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › EDHE 6410 Foundations and Contexts of Higher Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDHE 6420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › EDHE 6420 Humanizing Higher Education | 3"
   },
   {
    "type": "course",
@@ -27,7 +29,9 @@
    "alts": [
     "EDHE 6440"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (9 credits) › EDHE 6430 Student Success and Development | 3 or EDHE 6440 Leadership in Higher Education",
+   "prefer": "EDHE 6440"
   }
  ],
  "gradPlan": [
@@ -68,30 +72,61 @@
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6420": {
    "title": "Diversity in Higher Education",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6430": {
    "title": "Student Success and Development",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   },
   "EDHE 6440": {
    "title": "Leadership in Higher Education",
    "credits": 3,
    "prereqText": "Admission into any UVU graduate program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any UVU graduate program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any UVU graduate program"
   }
  },
  "admission": true,
- "admissionNote": "Acceptance into a UVU Master's program or acceptance into the Graduate Certificate in Leading With Higher Education program by meeting the following minimum requirements: ."
+ "admissionNote": "Acceptance into a UVU Master's program or acceptance into the Graduate Certificate in Leading With Higher Education program by meeting the following minimum requirements: .",
+ "admissionInfo": {
+  "note": "Acceptance into a UVU Master's program or acceptance into the Graduate Certificate in Leading With Higher Education program by meeting the following minimum requirements: .",
+  "text": "Acceptance into a UVU Master's program or acceptance into the Graduate Certificate in Leading With Higher Education program by meeting the following minimum requirements: A bachelor's degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work.",
+  "before": [],
+  "gated": [
+   "EDHE 6410",
+   "EDHE 6420",
+   "EDHE 6430",
+   "EDHE 6440"
+  ]
+ }
 }

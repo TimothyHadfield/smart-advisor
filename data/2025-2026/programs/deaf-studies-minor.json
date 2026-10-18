@@ -3,7 +3,7 @@
  "name": "Deaf Studies, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/deaf-studies-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,20 +11,23 @@
    "area": "Discipline Core Requirements",
    "code": "ASL 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › ASL 3000 Technology for Deaf Studies | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ASL 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › ASL 3530 Modern Deaf Culture | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Complete additional 12 credits of 3000-4000 level ASL prefix courses.",
-   "credits": 12
+   "credits": 12,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › Complete additional 12 credits of 3000-4000 level ASL prefix courses. | 12"
   }
  ],
  "gradPlan": [
@@ -85,7 +88,20 @@
    "credits": 3,
    "prereqText": "( ASL 2020G or department approval) and University Advanced Standing",
    "prereqs": "ASL 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Declaration of a major in a bachelor degree program at UVU Completion of ASL 2020G Intermediate American Sign Language II or equivalent",
+  "before": [
+   "ASL 2020G"
+  ],
+  "gated": [],
+  "beforeFrom": "matriculation section"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Information Technology, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/information-systems-technology/information-technology-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
@@ -29,7 +35,12 @@
    "alts": [
     "MATH 1055"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1050 College Algebra | 4 or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "choice",
@@ -74,6 +85,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (31 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -84,6 +96,7 @@
    "area": "General Education Requirements",
    "label": "Biology Distribution",
    "credits": 3,
+   "src": "General Education Requirements (31 credits) › Biology Distribution | 3",
    "recommended": [
     "BIOL 1011"
    ]
@@ -92,95 +105,109 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Science Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2100 Technical Communication | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social/Behavioral Science Distribution | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › Math Requirement: › CS 2300 Discrete Mathematical Structures I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2340",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › MGMT 2340 Business Statistics I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 1200 Computer Programming I for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 1510 Introduction to System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 1600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 1600 Computer Architecture and Systems Software | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 2200 Computer Programming II for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 2530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 2530 Introduction to System Administration--WIndows Client | 3"
   },
   {
    "type": "course",
@@ -189,97 +216,111 @@
    "alts": [
     "CS 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 2600 Data Communication Fundamentals | 3 or CS 2600 Computer Networks I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › CYBR 2700 Information Security Fundamentals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 3300 Web Systems Development | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 3430 Systems Analysis and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 3200 Cloud Foundations | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 3510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 3510 Advanced System Administration--Linux/UNIX | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 3530 Advanced System Administration--Windows Server | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 3600 Internetworking and Router Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 4050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › INFO 4050G Global Ethical and Professional Perspectives in IS and IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 4300 IoT-Internet of Things | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 4600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 4600 Enterprise Network Architectures and Administration | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 4700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › CYBR 4700 Enterprise Cybersecurity Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "IT 4750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT 4750 Information Technology Operations Capstone | 3"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Lower Division Electives",
-   "credits": 5
+   "credits": 5,
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › Lower Division Electives | 5"
   },
   {
    "type": "placeholder",
@@ -301,7 +342,8 @@
     "Mulitimedia/Digital Media",
     "Physical Sciences",
     "Social Sciences"
-   ]
+   ],
+   "src": "Discipline Core Requirements (89 credits) › IT Core Requirements: › IT Application Domain Requirement: | 6"
   },
   {
    "type": "choice",
@@ -318,14 +360,16 @@
       "IT 3540"
      ],
      "credits": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
       "IT 4590R"
      ],
      "credits": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
@@ -333,28 +377,32 @@
      ],
      "credits": 1,
      "crMax": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
       "INFO 3410"
      ],
      "credits": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
       "INFO 4440"
      ],
      "credits": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
       "CS 3140"
      ],
      "credits": 3,
-     "section": "Enterprise IT Domain"
+     "section": "Enterprise IT Domain",
+     "sub": 0
     },
     {
      "codes": [
@@ -414,21 +462,24 @@
       "INFO 4300"
      ],
      "credits": 3,
-     "section": "Web/Mobile Development Domain"
+     "section": "Web/Mobile Development Domain",
+     "sub": 1
     },
     {
      "codes": [
       "INFO 4420"
      ],
      "credits": 3,
-     "section": "Web/Mobile Development Domain"
+     "section": "Web/Mobile Development Domain",
+     "sub": 1
     },
     {
      "codes": [
       "CS 3270"
      ],
      "credits": 3,
-     "section": "Web/Mobile Development Domain"
+     "section": "Web/Mobile Development Domain",
+     "sub": 1
     },
     {
      "codes": [
@@ -494,6 +545,7 @@
     }
    ],
    "text": "Select one of the following domains (12 Credit hours)",
+   "src": "Discipline Core Requirements (89 credits) › Some possible application domains are: › BS IT Elective Domain Requirements: | 12 › Select one of the following domains (12 Credit hours)",
    "notes": [
     "Enterprise IT Domain",
     "Enterprise IT Domain: Select 12 Credits Hours from the following:",
@@ -513,6 +565,24 @@
     "Web/Mobile Development Domain",
     "Cybersecurity Domain",
     "Business Intelligence and Big Data Domain"
+   ],
+   "subs": [
+    {
+     "section": "Enterprise IT Domain",
+     "label": "Select 12 Credits Hours from the following",
+     "pick": {
+      "credits": 12
+     },
+     "credits": 12
+    },
+    {
+     "section": "Web/Mobile Development Domain",
+     "label": "Elective (3 Credit Hours) - Select one course form the following",
+     "pick": {
+      "count": 1
+     },
+     "credits": 3
+    }
    ]
   }
  ],
@@ -782,7 +852,12 @@
      "CS 3100"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3270": {
    "title": "Python Software Development",
@@ -795,7 +870,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
@@ -832,7 +913,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 3700": {
    "title": "Ethical Hacking and Countermeasures",
@@ -849,7 +935,12 @@
    "precoreqs": "IT 3600",
    "preco": [
     "IT 3600"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4250": {
    "title": "Database Security and Auditing",
@@ -861,7 +952,12 @@
      "CYBR 3700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4450": {
    "title": "Internet of Things Security",
@@ -873,7 +969,12 @@
      "CYBR 2700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4700": {
    "title": "Enterprise Cybersecurity Management",
@@ -885,7 +986,12 @@
    "precoreqs": "INFO 3430",
    "preco": [
     "INFO 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -899,7 +1005,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -912,7 +1021,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2100": {
    "title": "Technical Communication",
@@ -968,7 +1078,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -996,19 +1107,32 @@
      "PSY 3110"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic knowledge of Microsoft Excel",
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3300": {
    "title": "Web Systems Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3330": {
    "title": "Client-Side Web Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3360": {
    "title": "Server-Side Web Frameworks",
@@ -1019,7 +1143,10 @@
    "precoreqs": "INFO 3300",
    "preco": [
     "INFO 3300"
-   ]
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3410": {
    "title": "Database Systems and Warehousing",
@@ -1031,7 +1158,13 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 3430": {
    "title": "Systems Analysis and Design",
@@ -1057,34 +1190,57 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4050G": {
    "title": "Global Ethical and Professional Perspectives in IS and IT",
    "credits": 3,
    "prereqText": "INFO 3430 and University Advanced Standing",
    "prereqs": "INFO 3430",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4120": {
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4130": {
    "title": "Data Science and Big Data Analytics",
    "credits": 3,
    "prereqText": "INFO 3130 and University Advanced Standing",
    "prereqs": "INFO 3130",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4300": {
    "title": "Enterprise Web Development",
    "credits": 3,
    "prereqText": "INFO 3300 and University Advanced Standing",
    "prereqs": "INFO 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4410": {
    "title": "Database Administration",
@@ -1096,13 +1252,20 @@
      "CS 3520"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4420": {
    "title": "Mobile Application Development",
    "credits": 3,
    "prereqText": "( INFO 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) and University Advanced Standing; ( INFO 2200 recommended or CS 1410 recommended)",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "INFO 4440": {
    "title": "Enterprise Computing Environments",
@@ -1115,7 +1278,12 @@
      "TECH 4420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",
@@ -1162,7 +1330,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 3510": {
    "title": "Advanced System Administration--Linux/UNIX",
@@ -1185,7 +1359,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 3530": {
    "title": "Advanced System Administration--Windows Server",
@@ -1203,7 +1383,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 3540": {
    "title": "Supporting Apple Technologies",
@@ -1221,7 +1407,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 3600": {
    "title": "Internetworking and Router Management",
@@ -1243,7 +1435,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 4300": {
    "title": "IoT-Internet of Things",
@@ -1256,21 +1454,38 @@
      "IT 3600"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 4590R": {
    "title": "Current Topics in Information Technology",
    "credits": 3,
    "prereqText": "(Junior Standing or Department Approval) and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "(Junior Standing or Department Approval)",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 4600": {
    "title": "Enterprise Network Architectures and Administration",
    "credits": 3,
    "prereqText": "IT 3600 and University Advanced Standing",
    "prereqs": "IT 3600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 4750": {
    "title": "Information Technology Operations Capstone",
@@ -1282,7 +1497,12 @@
      "CYBR 4700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "IT 4810R": {
    "title": "Internship",
@@ -1298,7 +1518,12 @@
      "CYBR 3700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1310,7 +1535,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1322,7 +1548,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -1335,7 +1562,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1345,5 +1575,11 @@
    "title": "American National Government",
    "credits": 3
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "CS 3270"
+  ]
  }
 }

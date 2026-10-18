@@ -3,7 +3,7 @@
  "name": "Homeland Security, Minor",
  "url": "https://catalog.uvu.edu/health-public-service/emergency-services/homeland-security-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "",
    "code": "ESMG 3100G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ESMG 3100G Introduction to Homeland Security | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "ESMG 3710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "ESMG 3710 Comparative Approaches to Homeland Security | 3"
   },
   {
    "type": "choice",
@@ -150,7 +152,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)"
+   "text": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division)",
+   "src": "Choose four (4) courses from the following electives (at least 3 credits must be upper-division) | 12 (Note: Some elective courses require additional prerequisite courses. Please see an advisor for more information.)"
   }
  ],
  "gradPlan": [
@@ -199,7 +202,9 @@
    "credits": 3,
    "prereqText": "University Advanced Standing and CJ 1010",
    "prereqs": "CJ 1010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CJ 3400": {
    "title": "Drugs and Crime",
@@ -211,7 +216,12 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 1700": {
    "title": "Cybersecurity Essentials",
@@ -246,7 +256,12 @@
      "CYBR 2700"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CYBR 4700": {
    "title": "Enterprise Cybersecurity Management",
@@ -258,7 +273,12 @@
    "precoreqs": "INFO 3430",
    "preco": [
     "INFO 3430"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ES 1150": {
    "title": "Introduction to Emergency and Disaster Management",
@@ -285,21 +305,36 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 3400": {
    "title": "Critical Infrastructure Protection",
    "credits": 3,
    "prereqText": "ESMG 3100G and University Advanced Standing",
    "prereqs": "ESMG 3100G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 3710": {
    "title": "Comparative Approaches to Homeland Security",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4150": {
    "title": "Humanitarian Services and Disaster Relief",
@@ -311,7 +346,12 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4200": {
    "title": "Public Information and Disasters",
@@ -323,14 +363,24 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4250G": {
    "title": "Humanitarian Management and Operations",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ESMG 4550": {
    "title": "Emergency Preparedness and Disaster Response",
@@ -342,7 +392,12 @@
    "precoreqs": "ESMG 3100G",
    "preco": [
     "ESMG 3100G"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 2010": {
    "title": "Introduction to National Security",
@@ -360,7 +415,12 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4300": {
    "title": "Intelligence Cycle and Collections",
@@ -372,7 +432,12 @@
      "NSS 3050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NSS 4400": {
    "title": "Statecraft and Strategy",
@@ -380,5 +445,10 @@
    "prereqText": "NSS 2010",
    "prereqs": "NSS 2010"
   }
+ },
+ "admissionInfo": {
+  "text": "1. Admitted to a bachelor's degree program at UVU",
+  "before": [],
+  "gated": []
  }
 }

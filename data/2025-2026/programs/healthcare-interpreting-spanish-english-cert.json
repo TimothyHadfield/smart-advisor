@@ -3,7 +3,7 @@
  "name": "Healthcare Interpreting Spanish-English, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/humanities-social-sciences/languages-cultures/healthcare-interpreting-spanish-english-cert/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 12,
  "requirements": [
   {
@@ -29,28 +29,32 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (12 credits) › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SPAN 3310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › SPAN 3310 Spanish for Healthcare Professionals | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SPAN 4110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › SPAN 4110 Introduction to Translation and Interpreting English-Spanish | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SPAN 4310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › SPAN 4310 Healthcare Interpreting English-Spanish | 3"
   }
  ],
  "gradPlan": [
@@ -110,14 +114,24 @@
    "credits": 3,
    "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3040": {
    "title": "Spanish Conversation and Composition II",
    "credits": 3,
    "prereqText": "( SPAN 2020G or equivalent) and University Advanced Standing",
    "prereqs": "SPAN 2020G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 3050": {
    "title": "Advanced Spanish",
@@ -141,7 +155,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SPAN 4110": {
    "title": "Introduction to Translation and Interpreting English-Spanish",
@@ -154,7 +173,12 @@
    "credits": 3,
    "prereqText": "SPAN 3310 and University Advanced Standing",
    "prereqs": "SPAN 3310",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

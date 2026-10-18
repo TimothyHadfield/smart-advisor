@@ -3,7 +3,7 @@
  "name": "Respiratory Therapy, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/allied-health/respiratory-therapy-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -34,14 +34,16 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -90,6 +92,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -141,6 +144,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (33 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses"
    ],
@@ -153,39 +157,45 @@
    "alts": [
     "CHEM 1210"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › CHEM 1110 Elementary Chemistry for the Health Sciences | 4 or CHEM 1210 Principles of Chemistry I"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "General Education Requirements (33 credits) › BIOL 1610 & BIOL 1615 College Biology I and College Biology I Laboratory | 5"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Fine Arts | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
@@ -194,231 +204,315 @@
    "alts": [
     "PSY 1010"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › PSY 1100 Human Development Life Span | 3 or PSY 1010 General Psychology",
+   "prefer": "PSY 1010"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › ZOOL 2320 Human Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › ZOOL 2325 Human Anatomy Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › ZOOL 2420 Human Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › ZOOL 2425 Human Physiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › MICR 2060 & MICR 2065 Microbiology for Health Professions and Microbiology for Health Professions Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2065",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › MICR 2060 & MICR 2065 Microbiology for Health Professions and Microbiology for Health Professions Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 1540",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Complete the following: › RESP 1540 Survey of Respiratory Therapy | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2145",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2145 Fundamentals of Respiratory Care Lab | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2165",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2165 Mechanical Ventilation Lab | 1",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2210 Cardiopulmonary and Renal Anatomy and Physiology I | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2230",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2230 Cardiopulmonary Pathophysiology I | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2250",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2250 Basic Patient Assessment | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2270 Application of Cardiopulmonary Diagnostics | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2300 Fundamentals of Respiratory Care | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2320 Mechanical Ventilation I | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2330",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2330 Entry Level Respiratory Therapy Review | 1",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2420",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2420 Critical Thinking in Respiratory Care | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2520",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2520 Principles of Pharmacology | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2705",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2705 Clinical Practice I | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2715",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2715 Specialty Clinical Experiences | 1",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 2725",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 2725 Clinical Practice II | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3210 Cardiopulmonary and Renal Anatomy and Physiology II | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3220",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3220 Cardiopulmonary Pathophysiology II | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3260 Neonatal/Pediatric Critical Care | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3265",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3265 Neonatal/Pediatric Critical Care Lab | 1",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3270",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3270 Adult Critical Care | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3280",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3280 Extended Care Roles for Respiratory Therapists | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3320 Mechanical Ventilation II | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3325 Mechanical Ventilation II Lab | 1",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3430 Principles of Healthcare Education and Disease Management | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3765",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3765 Clinical Practice III Neonatal/Pediatric Respiratory Care | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 3785",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 3785 Extended Roles in Respiratory Therapy Clinical | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
@@ -427,49 +521,68 @@
    "alts": [
     "RESP 4940"
    ],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › NURS 4120 Rapid Response Concepts Across the Lifespan | 1 or RESP 4940 Special Topics in Respiratory Therapy",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 4610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 4610 Advanced Patient Assessment | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 4640",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 4640 Respiratory Therapy Capstone | 2",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 4775",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 4775 Clinical Practice IV Adult Critical Care | 4",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 4800 Respiratory Therapy Seminar | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "RESP 4890",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (85 credits) › Must be accepted into The Respiratory Therapy Program to take the following courses. › RESP 4890 Principles of Respiratory Care Research and Management | 3",
+   "gate": "admission",
+   "gateText": "Must be accepted into The Respiratory Therapy Program to take the following courses"
   },
   {
    "type": "placeholder",
    "area": "General Electives",
    "label": "Choose 2 Credits from 1000 + Electives",
    "credits": 2,
-   "text": "Choose 2 Credits from 1000 + Electives"
+   "text": "Choose 2 Credits from 1000 + Electives",
+   "src": "General Electives (2 credits) › Choose 2 Credits from 1000 + Electives | 2"
   }
  ],
  "gradPlan": [
@@ -825,7 +938,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -839,14 +956,20 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 1010H": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -859,7 +982,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -896,7 +1020,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -908,7 +1036,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -920,7 +1052,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -932,7 +1065,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -953,7 +1087,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -1001,7 +1136,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1033,7 +1173,12 @@
    "coreqs": [
     "RESP 2300",
     "RESP 2520"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Respiratory Therapy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Respiratory Therapy Program"
   },
   "RESP 2165": {
    "title": "Mechanical Ventilation Lab",
@@ -1050,7 +1195,12 @@
    "credits": 3,
    "prereqText": "Acceptance into the Respiratory Therapy Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Respiratory Therapy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Respiratory Therapy Program"
   },
   "RESP 2230": {
    "title": "Cardiopulmonary Pathophysiology I",
@@ -1061,14 +1211,24 @@
    "coreqText": "RESP 2210",
    "coreqs": [
     "RESP 2210"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Respiratory Therapy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Respiratory Therapy Program"
   },
   "RESP 2250": {
    "title": "Basic Patient Assessment",
    "credits": 2,
    "prereqText": "Acceptance into Respiratory Therapy Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Respiratory Therapy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Respiratory Therapy Program"
   },
   "RESP 2270": {
    "title": "Application of Cardiopulmonary Diagnostics",
@@ -1086,7 +1246,12 @@
    "coreqs": [
     "RESP 2145",
     "RESP 2520"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Respiratory Therapy Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Respiratory Therapy Program"
   },
   "RESP 2320": {
    "title": "Mechanical Ventilation I",
@@ -1142,14 +1307,24 @@
    "credits": 2,
    "prereqText": "RESP 2210 and University Advanced Standing",
    "prereqs": "RESP 2210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3220": {
    "title": "Cardiopulmonary Pathophysiology II",
    "credits": 2,
    "prereqText": "RESP 2230 and University Advanced Standing",
    "prereqs": "RESP 2230",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3260": {
    "title": "Neonatal/Pediatric Critical Care",
@@ -1160,7 +1335,12 @@
    "coreqText": "RESP 3265",
    "coreqs": [
     "RESP 3265"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3265": {
    "title": "Neonatal/Pediatric Critical Care Lab",
@@ -1171,21 +1351,36 @@
    "coreqText": "RESP 3260",
    "coreqs": [
     "RESP 3260"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3270": {
    "title": "Adult Critical Care",
    "credits": 2,
    "prereqText": "RESP 2725 and University Advanced Standing",
    "prereqs": "RESP 2725",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3280": {
    "title": "Extended Care Roles for Respiratory Therapists",
    "credits": 2,
    "prereqText": "RESP 2270 and University Advanced Standing",
    "prereqs": "RESP 2270",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3320": {
    "title": "Mechanical Ventilation II",
@@ -1207,21 +1402,36 @@
    "coreqText": "RESP 3320",
    "coreqs": [
     "RESP 3320"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3430": {
    "title": "Principles of Healthcare Education and Disease Management",
    "credits": 3,
    "prereqText": "RESP 2330 and University Advanced Standing",
    "prereqs": "RESP 2330",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3765": {
    "title": "Clinical Practice III Neonatal/Pediatric Respiratory Care",
    "credits": 3,
    "prereqText": "RESP 3260 and University Advanced Standing",
    "prereqs": "RESP 3260",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 3785": {
    "title": "Extended Roles in Respiratory Therapy Clinical",
@@ -1233,14 +1443,24 @@
    "precoreqs": "RESP 3280",
    "preco": [
     "RESP 3280"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 4610": {
    "title": "Advanced Patient Assessment",
    "credits": 3,
    "prereqText": "RESP 3270 and University Advanced Standing",
    "prereqs": "RESP 3270",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 4640": {
    "title": "Respiratory Therapy Capstone",
@@ -1254,28 +1474,48 @@
    "credits": 4,
    "prereqText": "RESP 3270 and University Advanced Standing",
    "prereqs": "RESP 3270",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 4800": {
    "title": "Respiratory Therapy Seminar",
    "credits": 3,
    "prereqText": "RESP 3270 and University Advanced Standing",
    "prereqs": "RESP 3270",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 4890": {
    "title": "Principles of Respiratory Care Research and Management",
    "credits": 3,
    "prereqText": "RESP 3270 and University Advanced standing",
    "prereqs": "RESP 3270",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "RESP 4940": {
    "title": "Special Topics in Respiratory Therapy",
    "credits": 1,
    "prereqText": "RESP 2320 and University Advanced Standing",
    "prereqs": "RESP 2320",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 1040": {
    "title": "Introduction to Statistics",
@@ -1288,7 +1528,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -1301,7 +1546,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1338,7 +1588,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1357,5 +1608,67 @@
   }
  },
  "admission": true,
- "admissionNote": "This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort."
+ "admissionNote": "This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort.",
+ "admissionInfo": {
+  "note": "This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort.",
+  "text": "1. Complete the following coursework: College English (6 credits) Quantitative Literacy Microbiology with lab (4 credits) College Biology with lab (5 credits) Chemistry (4 credits) Human Anatomy with lab (4 credits) Human Physiology with lab (4 credits) Note: Must pass all general education and pre-requisite courses with a minimum of a “C” grade or higher 2. Complete the Test of Academic Skills (TEAS) 3. Submit Application Fee and Application by the third Friday in September 4. Personal Interview: All candidates will be screened and those deemed to meet or exceed basic application requirements will be invited for an interview. This interview does not guarantee acceptance into the program as students will compete with all other applicants for matriculation into a cohort. Applicants must bring a photo ID to the interview. 5. Other Determining Factors Prior healthcare experience (preferred, but not required) Discipline for academic performance Successful completion of a background check Drug Screen",
+  "before": [
+   "RESP 1540",
+   "PSY 1010",
+   "ENGL 1010",
+   "ENGL 2010",
+   "CHEM 1110",
+   "BIOL 1610",
+   "BIOL 1615",
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "ZOOL 2420",
+   "ZOOL 2425",
+   "MICR 2060",
+   "MICR 2065"
+  ],
+  "gated": [
+   "NURS 4120",
+   "RESP 2145",
+   "RESP 2165",
+   "RESP 2210",
+   "RESP 2230",
+   "RESP 2250",
+   "RESP 2270",
+   "RESP 2300",
+   "RESP 2320",
+   "RESP 2330",
+   "RESP 2420",
+   "RESP 2520",
+   "RESP 2705",
+   "RESP 2715",
+   "RESP 2725",
+   "RESP 3210",
+   "RESP 3220",
+   "RESP 3260",
+   "RESP 3265",
+   "RESP 3270",
+   "RESP 3280",
+   "RESP 3320",
+   "RESP 3325",
+   "RESP 3430",
+   "RESP 3765",
+   "RESP 3785",
+   "RESP 4610",
+   "RESP 4640",
+   "RESP 4775",
+   "RESP 4800",
+   "RESP 4890"
+  ],
+  "beforeLabels": [
+   "Complete one of the following: (or higher)",
+   "Choose 2 Credits from 1000 + Electives",
+   "Humanities",
+   "American Institutions",
+   "Fine Arts",
+   "Personal, Professional, and Civic Growth"
+  ],
+  "beforeFrom": "graduation plan",
+  "minGrade": "C"
+ }
 }

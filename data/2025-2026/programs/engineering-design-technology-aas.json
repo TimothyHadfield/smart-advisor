@@ -3,7 +3,7 @@
  "name": "Engineering Design Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/architecture-engineering-design/engineering-design-technology-aas/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 65,
  "requirements": [
   {
@@ -14,7 +14,13 @@
     "ENGH 1005",
     "MKTG 2200G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › English: › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts or MKTG 2200G Written Business Communication",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5,
+    "MKTG 2200G": 3
+   }
   },
   {
    "type": "course",
@@ -24,7 +30,13 @@
     "MATH 1050",
     "MATH 1055"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Mathematics: › EGDT 1600 Technical Math Algebra | 3 or MATH 1050 College Algebra or MATH 1055 College Algebra with Preliminaries",
+   "creditsBy": {
+    "EGDT 1600": 3,
+    "MATH 1050": 4,
+    "MATH 1055": 5
+   }
   },
   {
    "type": "course",
@@ -33,13 +45,15 @@
    "alts": [
     "MATH 1060"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Mathematics: › EGDT 1610 Technical Math Geometry Trig | 3 or MATH 1060 Trigonometry"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any approved Humanities, Fine Arts, or Foreign Language Distribution Course",
    "credits": 3,
+   "src": "General Education Requirements (18 credits) › Humanities/Fine Arts/Foreign Language: › Any approved Humanities, Fine Arts, or Foreign Language Distribution Course | 3",
    "notes": [
     "Social and Behavioral Science:"
    ]
@@ -49,6 +63,7 @@
    "area": "General Education Requirements",
    "label": "Any approved Social Science",
    "credits": 3,
+   "src": "General Education Requirements (18 credits) › Humanities/Fine Arts/Foreign Language: › Any approved Social Science | 3",
    "notes": [
     "Biology or Physical Science:"
    ]
@@ -58,28 +73,32 @@
    "area": "General Education Requirements",
    "code": "PHYS 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (18 credits) › Humanities/Fine Arts/Foreign Language: › PHYS 1010 Elementary Physics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1010 Electrical Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1020 3D Architectural Modeling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1040 Fundamentals of Technical Engineering Drawing | 3"
   },
   {
    "type": "course",
@@ -88,84 +107,96 @@
    "alts": [
     "EGDT 1071"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1070 3 Dimensional Modeling Inventor | 3 or EGDT 1071 3 Dimensional Modeling--Solidworks"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1100 Residential Architecture Documentation and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1200 Mechanical Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1300 Structural Drafting and Design | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 1400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 1400 Surveying Applications and Field Techniques I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2020 Descriptive Geometry | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2040",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2040 Piping Drafting | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2600 Applied Structures I - Statics | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2610",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2610 Applied Structures II - Strength of Materials | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2850R",
    "alts": [],
-   "credits": 0.5
+   "credits": 0.5,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2850R AEC Design Lecture Series | 0.5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2860",
    "alts": [],
-   "credits": 0.5
+   "credits": 0.5,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2860 Cooperative Correlated Instruction Skills USA | 0.5"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EGDT 2870",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (37 credits) › EGDT 2870 Portfolio and Career Preparation | 1"
   },
   {
    "type": "choice",
@@ -219,14 +250,16 @@
      "credits": 1,
      "crMax": 3
     }
-   ]
+   ],
+   "src": "Elective Requirements (10 credits) › Choose a minimum of three courses from the following list for a minimum of 9 credits: | 9"
   },
   {
    "type": "placeholder",
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 1,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Elective Requirements (10 credits) › Complete any 1000-level, or higher, courses | 1"
   }
  ],
  "gradPlan": [
@@ -398,7 +431,8 @@
    "title": "Electrical Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1020": {
    "title": "3D Architectural Modeling",
@@ -420,7 +454,8 @@
    "title": "Architectural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of B- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "B-"
   },
   "EGDT 1200": {
    "title": "Mechanical Drafting and Design",
@@ -432,13 +467,15 @@
      "EGDT 1071",
      "EGDT 1040"
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 1300": {
    "title": "Structural Drafting and Design",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 1400": {
    "title": "Surveying Applications and Field Techniques I",
@@ -449,14 +486,16 @@
    "credits": 3,
    "prereqText": "MAT 0920 or equivalent with \"C-\" grade or better or appropriate test scores",
    "prereqs": "MAT 0920",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 1610": {
    "title": "Technical Math Geometry Trig",
    "credits": 3,
    "prereqText": "EGDT 1600 or equivalent course with a grade of C- or higher",
    "prereqs": "EGDT 1600",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2010": {
    "title": "Advanced Electrical CAD",
@@ -468,25 +507,32 @@
      "EGDT 1040"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "with \"C-\" grade or higher"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EGDT 2020": {
    "title": "Descriptive Geometry",
    "credits": 3,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2040": {
    "title": "Piping Drafting",
    "credits": 2,
    "prereqText": "EGDT 1040 with a grade of C- or higher",
-   "prereqs": "EGDT 1040"
+   "prereqs": "EGDT 1040",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2100": {
    "title": "Architecture Materials and Methods",
    "credits": 3,
    "prereqText": "EGDT 1020 with a grade of C- or higher",
-   "prereqs": "EGDT 1020"
+   "prereqs": "EGDT 1020",
+   "prereqMinGrade": "C-"
   },
   "EGDT 2200": {
    "title": "Advanced Mechanical",
@@ -502,7 +548,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2300": {
    "title": "Advanced Structural CAD",
@@ -518,7 +565,8 @@
       ]
      }
     ]
-   }
+   },
+   "prereqMinGrade": "C-"
   },
   "EGDT 2400": {
    "title": "Surveying Applications and Field Techniques II",
@@ -536,7 +584,8 @@
      }
     ]
    },
-   "uncertain": true
+   "uncertain": true,
+   "prereqMinGrade": "C-"
   },
   "EGDT 2500": {
    "title": "3 Dimensional Modeling--Civil 3D",
@@ -565,7 +614,8 @@
    "title": "Applied Structures II - Strength of Materials",
    "credits": 3,
    "prereqText": "EGDT 2600 with a grade of B- or higher",
-   "prereqs": "EGDT 2600"
+   "prereqs": "EGDT 2600",
+   "prereqMinGrade": "B-"
   },
   "EGDT 2810R": {
    "title": "Internship",
@@ -590,7 +640,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "all with a C- or higher"
+   ],
+   "prereqMinGrade": "C-"
   },
   "EGDT 2850R": {
    "title": "AEC Design Lecture Series",
@@ -616,7 +671,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -628,7 +686,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -640,7 +699,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1060": {
    "title": "Trigonometry",
@@ -652,7 +712,8 @@
      "MATH 1055"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",

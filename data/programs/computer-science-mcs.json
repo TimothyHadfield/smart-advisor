@@ -3,7 +3,7 @@
  "name": "Master of Computer Science, M.C.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/computer-science/computer-science-mcs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 30,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "CS 6150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6150 Advanced Algorithms | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6300 Software Engineering Leadership | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6470 Machine Learning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6500 Software Architecture | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6510",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6510 Design and Simulation of Operating Systems | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › CS 6700 Advanced Mathematics for Computer Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6960R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (24 credits) › CS 6960R Advanced Software Development and Research Methods | 6"
   },
   {
    "type": "choice",
@@ -119,7 +126,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 2 courses from the following list:"
+   "text": "Complete 2 courses from the following list:",
+   "src": "Elective Requirements (6 credits) › Complete 2 courses from the following list: | 6"
   }
  ],
  "gradPlan": [
@@ -190,105 +198,184 @@
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
   },
   "CS 6150": {
    "title": "Advanced Algorithms",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6200": {
    "title": "Cyberphysical Security",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6300": {
    "title": "Software Engineering Leadership",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6400": {
    "title": "Modern Databases",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
   },
   "CS 6460": {
    "title": "Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6470": {
    "title": "Machine Learning",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6480": {
    "title": "Deep Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6500": {
    "title": "Software Architecture",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6510": {
    "title": "Design and Simulation of Operating Systems",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6530": {
    "title": "Computer Graphics and Mixed Realities",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6620": {
    "title": "Advanced Data Mining and Visualization",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6700": {
    "title": "Advanced Mathematics for Computer Science",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6730": {
    "title": "Advanced Embedded Systems Engineering",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6790R": {
    "title": "Special Topics in Computer Science",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6960R": {
    "title": "Advanced Software Development and Research Methods",
@@ -296,7 +383,30 @@
    "creditsMax": 4,
    "prereqText": "Have completed at least 15 hours of CS graduate coursework.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Have completed at least 15 hours of CS graduate coursework"
+   ]
   }
+ },
+ "admissionInfo": {
+  "before": [],
+  "gated": [
+   "CS 6100",
+   "CS 6150",
+   "CS 6200",
+   "CS 6300",
+   "CS 6400",
+   "CS 6460",
+   "CS 6470",
+   "CS 6480",
+   "CS 6500",
+   "CS 6510",
+   "CS 6530",
+   "CS 6620",
+   "CS 6700",
+   "CS 6730",
+   "CS 6790R"
+  ]
  }
 }

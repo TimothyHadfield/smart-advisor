@@ -3,7 +3,7 @@
  "name": "Cognitive Neuroscience, Minor",
  "url": "https://catalog.uvu.edu/humanities-social-sciences/psychology-and-counseling/cognitive-neuroscience-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 19,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "",
    "code": "PSY 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PSY 1010 General Psychology | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "PSY 2710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PSY 2710 Introduction to Brain and Behavior | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "PSY 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "PSY 2420 Cognitive Psychology | 3"
   },
   {
    "type": "choice",
@@ -48,7 +51,8 @@
      ],
      "credits": 4
     }
-   ]
+   ],
+   "src": "Choose one | 4"
   },
   {
    "type": "choice",
@@ -59,18 +63,6 @@
    },
    "credits": 6,
    "options": [
-    {
-     "codes": [
-      "PSY 3450"
-     ],
-     "credits": 4
-    },
-    {
-     "codes": [
-      "PSY 3490"
-     ],
-     "credits": 4
-    },
     {
      "codes": [
       "PSY 3425"
@@ -96,6 +88,7 @@
      "credits": 3
     }
    ],
+   "src": "Cognitive Neuroscience Electives (6 credits) | 6",
    "notes": [
     "PSY 3450 Behavioral Neuroscience (if not already taken as a requirement above)",
     "PSY 3490 Sensation and Perception (if not already taken as a requirement above)"
@@ -192,7 +185,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 2710": {
    "title": "Introduction to Brain and Behavior",
@@ -204,7 +198,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "PSY 3425": {
    "title": "Cognitive Psychology Lab",
@@ -227,7 +222,13 @@
    "precoreqs": "PSY 2420",
    "preco": [
     "PSY 2420"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3430": {
    "title": "Psychopharmacology",
@@ -251,7 +252,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3450": {
    "title": "Behavioral Neuroscience",
@@ -275,7 +282,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3480": {
    "title": "Principles of Learning",
@@ -288,7 +301,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3490": {
    "title": "Sensation and Perception",
@@ -301,14 +320,26 @@
      "ENGL 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3660": {
    "title": "Neuroscience of Emotion",
    "credits": 3,
    "prereqText": "PSY 2710 , University Advanced Standing and Instructor approval",
    "prereqs": "PSY 2710",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Instructor approval"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }

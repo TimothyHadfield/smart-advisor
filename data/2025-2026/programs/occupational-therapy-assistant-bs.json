@@ -3,7 +3,7 @@
  "name": "Occupational Therapy Assistant, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/allied-health/occupational-therapy-assistant-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 122,
  "requirements": [
   {
@@ -13,61 +13,74 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1050",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › MATH 1050 College Algebra | 4"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "BIOL 1610",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › BIOL 1610 College Biology I | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › CHEM 1210 Principles of Chemistry I | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "COMM 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › COMM 1020 Public Speaking | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PSY 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › PSY 1010 General Psychology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Complete one Fine Arts course",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › Complete one Fine Arts course | 3"
   },
   {
    "type": "choice",
@@ -111,6 +124,7 @@
     }
    ],
    "text": "Complete one of the following American Institution courses:",
+   "src": "General Education Requirements (33 credits) › Distribution Courses: › Complete one of the following American Institution courses: | 3",
    "ge": "ai"
   },
   {
@@ -118,252 +132,288 @@
    "area": "Discipline Core Requirements",
    "code": "BIOL 1615",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › BIOL 1615 College Biology I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ZOOL 2320 & ZOOL 2325 Human Anatomy and Human Anatomy Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › ZOOL 2420 & ZOOL 2425 Human Physiology and Human Physiology Laboratory | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SOC 1010G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › SOC 1010G Intro to Sociology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "STAT 2040",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (89 credits) › STAT 2040 Principles of Statistics | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PSY 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › PSY 2300 Abnormal Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "PSY 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › PSY 1100 Human Development Life Span | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CHEM 1215",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › CHEM 1215 Principles of Chemistry I Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ANTH 1010G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › ANTH 1010G Social Cultural Anthropology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 1300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › HLSC 1300 Medical Terminology and Functional Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 1010",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › OT 1010 Introduction to Occupational Therapy | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3000 Foundations of Occupational Therapy Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3100 & OT 3105 Applied Anatomy and Kinesiology and Applied Anatomy and Kinesiology Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3105",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3100 & OT 3105 Applied Anatomy and Kinesiology and Applied Anatomy and Kinesiology Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3200 & OT 3205 Occupational Therapy and Physical Dysfunction and Occupational Therapy and Physical Dysfunction Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3205",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3200 & OT 3205 Occupational Therapy and Physical Dysfunction and Occupational Therapy and Physical Dysfunction Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3300",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3300 Adult Physical Dysfunction Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3400 & OT 3405 Occupational Therapy in Pediatrics and Occupational Therapy in Pediatrics Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3405",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3400 & OT 3405 Occupational Therapy in Pediatrics and Occupational Therapy in Pediatrics Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3500",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3500 Pediatric Occupational Therapy Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3600 Patient Management Skills in Occupational Therapy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3700 Research Methods in Occupational Therapy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 3800 & OT 3805 Psychosocial Issues in Occupational Therapy and Psychosocial Issues in Occupational Therapy Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 3805",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 3800 & OT 3805 Psychosocial Issues in Occupational Therapy and Psychosocial Issues in Occupational Therapy Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 4000 & OT 4005 Occupational Therapy in Geriatrics and Occupational Therapy in Geriatrics Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4005",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 4000 & OT 4005 Occupational Therapy in Geriatrics and Occupational Therapy in Geriatrics Lab | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4100",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (89 credits) › OT 4100 Geriatric/Psychosocial OT Practicum | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4200",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (89 credits) › OT 4200 Professional Seminar | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 4300 Occupational Therapy Management and Leadership | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 4400 Baccalaureate Project I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4720",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (89 credits) › OT 4720 Fieldwork IIA | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (89 credits) › OT 4800 Baccalaureate Project II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "OT 4820",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (89 credits) › OT 4820 Fieldwork IIB | 6"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Elective",
    "credits": 3,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Discipline Core Requirements (89 credits) › Complete any 1000-level, or higher, courses | 3"
   }
  ],
  "gradPlan": [
@@ -603,7 +653,8 @@
      "ENGL 1010",
      "ENGH 1005"
     ]
-   }
+   },
+   "prereqMinGrade": "C+"
   },
   "BIOL 1610": {
    "title": "College Biology I",
@@ -649,7 +700,11 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ]
+   ],
+   "prereqWords": [
+    "Also"
+   ],
+   "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
    "title": "Principles of Chemistry I Laboratory",
@@ -675,7 +730,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -688,7 +746,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -720,7 +779,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "OT 1010": {
    "title": "Introduction to Occupational Therapy",
@@ -731,42 +791,78 @@
    "credits": 3,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3100": {
    "title": "Applied Anatomy and Kinesiology",
    "credits": 3,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3105": {
    "title": "Applied Anatomy and Kinesiology Lab",
    "credits": 1,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3200": {
    "title": "Occupational Therapy and Physical Dysfunction",
    "credits": 3,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3205": {
    "title": "Occupational Therapy and Physical Dysfunction Lab",
    "credits": 1,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3300": {
    "title": "Adult Physical Dysfunction Practicum",
    "credits": 1,
    "prereqText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3400": {
    "title": "Occupational Therapy in Pediatrics",
@@ -778,7 +874,13 @@
    "precoreqs": "OT 3300",
    "preco": [
     "OT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3405": {
    "title": "Occupational Therapy in Pediatrics Lab",
@@ -790,7 +892,13 @@
    "precoreqs": "OT 3300",
    "preco": [
     "OT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3500": {
    "title": "Pediatric Occupational Therapy Practicum",
@@ -802,7 +910,13 @@
    "precoreqs": "OT 3300",
    "preco": [
     "OT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3600": {
    "title": "Patient Management Skills in Occupational Therapy",
@@ -814,7 +928,13 @@
    "precoreqs": "OT 3300",
    "preco": [
     "OT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3700": {
    "title": "Research Methods in Occupational Therapy",
@@ -826,7 +946,13 @@
    "precoreqs": "OT 3300",
    "preco": [
     "OT 3300"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3800": {
    "title": "Psychosocial Issues in Occupational Therapy",
@@ -838,7 +964,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 3805": {
    "title": "Psychosocial Issues in Occupational Therapy Lab",
@@ -850,7 +982,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4000": {
    "title": "Occupational Therapy in Geriatrics",
@@ -862,7 +1000,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4005": {
    "title": "Occupational Therapy in Geriatrics Lab",
@@ -874,7 +1018,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4100": {
    "title": "Geriatric/Psychosocial OT Practicum",
@@ -886,7 +1036,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4200": {
    "title": "Professional Seminar",
@@ -898,7 +1054,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4300": {
    "title": "Occupational Therapy Management and Leadership",
@@ -910,7 +1072,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4400": {
    "title": "Baccalaureate Project I",
@@ -922,7 +1090,13 @@
    "precoreqs": "OT 3500",
    "preco": [
     "OT 3500"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4720": {
    "title": "Fieldwork IIA",
@@ -934,7 +1108,13 @@
    "precoreqs": "OT 4100",
    "preco": [
     "OT 4100"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4800": {
    "title": "Baccalaureate Project II",
@@ -946,7 +1126,13 @@
    "precoreqs": "OT 4400",
    "preco": [
     "OT 4400"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "OT 4820": {
    "title": "Fieldwork IIB",
@@ -958,7 +1144,13 @@
    "precoreqs": "OT 4100",
    "preco": [
     "OT 4100"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Occupational Therapy Assistant program",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Occupational Therapy Assistant program and University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -991,7 +1183,8 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "SOC 1010G": {
    "title": "Intro to Sociology",
@@ -1008,7 +1201,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -1045,7 +1242,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -1064,5 +1262,42 @@
   }
  },
  "admission": true,
- "admissionNote": "This program uses a merit-based, competitive admission process."
+ "admissionNote": "This program uses a merit-based, competitive admission process.",
+ "admissionInfo": {
+  "note": "This program uses a merit-based, competitive admission process.",
+  "text": "Matriculation requirements are designed to ensure applicants who are admitted into the OTA program can be successful and meet the rigor required of the technical classes. This program uses a merit-based, competitive admission process. Applications may be submitted prior to the completion of the prerequisite courses listed below, but the students must complete all prerequisite courses prior to starting the OTA program and have obtained a C (74%) or better in all the courses. Matriculation Requirements: Be admitted to Utah Valley University. Minimum GPA of 3.0 in prerequisite courses (no grades below C) General education coursework complete, in addition to the following courses: ZOOL 2320 , ZOOL 2325 , ZOOL 2420 , ZOOL 2425 , OT 1010 , and HLTH 1300 . Related observation, volunteer, or work experience (12 hours minimum in more than 1 practice setting) Upon acceptance into the program, students are required to obtain and maintain the following: Criminal background check Health/immunization requirements CPR certification Drug screening",
+  "before": [
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "ZOOL 2420",
+   "ZOOL 2425",
+   "OT 1010",
+   "HLTH 1300"
+  ],
+  "gated": [
+   "OT 3000",
+   "OT 3100",
+   "OT 3105",
+   "OT 3200",
+   "OT 3205",
+   "OT 3300",
+   "OT 3400",
+   "OT 3405",
+   "OT 3500",
+   "OT 3600",
+   "OT 3700",
+   "OT 3800",
+   "OT 3805",
+   "OT 4000",
+   "OT 4005",
+   "OT 4100",
+   "OT 4200",
+   "OT 4300",
+   "OT 4400",
+   "OT 4720",
+   "OT 4800",
+   "OT 4820"
+  ],
+  "beforeFrom": "matriculation section"
+ }
 }

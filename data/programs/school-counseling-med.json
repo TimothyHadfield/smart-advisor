@@ -3,7 +3,7 @@
  "name": "Master of Education in School Counseling, M.Ed.",
  "url": "https://catalog.uvu.edu/education/education-graduate-programs/school-counseling-med/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 48,
  "requirements": [
   {
@@ -11,7 +11,8 @@
    "area": "Discipline Core Requirements",
    "code": "EDCO 6080",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6080 Counseling Theories and Techniques | 3"
   },
   {
    "type": "course",
@@ -20,7 +21,9 @@
    "alts": [
     "EDCO 6170"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMHC 6060 Psychological Assessment in Counseling | 3 or EDCO 6170 Principles of Psychological Measurement and Assessment",
+   "prefer": "EDCO 6170"
   },
   {
    "type": "course",
@@ -29,7 +32,9 @@
    "alts": [
     "EDCO 6160"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMHC 6160 Lifespan Development in Counseling | 3 or EDCO 6160 Human Lifespan Development",
+   "prefer": "EDCO 6160"
   },
   {
    "type": "course",
@@ -38,84 +43,97 @@
    "alts": [
     "EDCO 6070"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › CMHC 6070 Group Counseling | 3 or EDCO 6070 Group Counseling in the Schools",
+   "prefer": "EDCO 6070"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6010 Foundational Principles of School Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6020 Ethics and Professional Competencies of School Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6030 Career Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6040 Multicultural Counseling | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6050",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6050 Interventions in Schools | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6060 College and Career Readiness | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6100 Research and Evaluation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6710 School Counseling Practicum | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDCO 6890R",
    "alts": [],
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (48 credits) › EDCO 6890R School Counseling Internship | 6"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDUC 6110 Applied Statistics for Education | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "EDUC 6311",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (48 credits) › EDUC 6311 Introduction to Special Education | 3"
   }
  ],
  "gradPlan": [
@@ -229,7 +247,11 @@
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "CMHC 6070": {
    "title": "Group Counseling",
@@ -242,121 +264,224 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program or Master of Education in School Counseling",
+    "program"
+   ]
   },
   "CMHC 6160": {
    "title": "Lifespan Development in Counseling",
    "credits": 3,
    "prereqText": "Admission to Clinical Mental Health Counseling, M.S. program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Clinical Mental Health Counseling",
+    "program"
+   ]
   },
   "EDCO 6010": {
    "title": "Foundational Principles of School Counseling",
    "credits": 3,
    "prereqText": "Admission to Master Education School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to Master Education School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to Master Education School Counseling program"
   },
   "EDCO 6020": {
    "title": "Ethics and Professional Competencies of School Counseling",
    "credits": 3,
    "prereqText": "Acceptance into the SOE Master of Education in School Counseling.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the SOE Master of Education in School Counseling"
+   ]
   },
   "EDCO 6030": {
    "title": "Career Counseling",
    "credits": 3,
    "prereqText": "Acceptance into School of Education graduate program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into School of Education graduate program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into School of Education graduate program or approval of graduate program director"
   },
   "EDCO 6040": {
    "title": "Multicultural Counseling",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in School Counseling program"
   },
   "EDCO 6050": {
    "title": "Interventions in Schools",
    "credits": 3,
    "prereqText": "Acceptance into School of Education graduate program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into School of Education graduate program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into School of Education graduate program or approval of graduate program director"
   },
   "EDCO 6060": {
    "title": "College and Career Readiness",
    "credits": 3,
    "prereqText": "Acceptance into School of Education graduate program or approval of graduate program director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into School of Education graduate program or approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into School of Education graduate program or approval of graduate program director"
   },
   "EDCO 6070": {
    "title": "Group Counseling in the Schools",
    "credits": 3,
    "prereqText": "EDCO 6080 and Admission to the Master of Education in School Counseling, M.S program.",
    "prereqs": "EDCO 6080",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling",
+    "M.S program"
+   ]
   },
   "EDCO 6080": {
    "title": "Counseling Theories and Techniques",
    "credits": 3,
    "prereqText": "Admission to the Master of Education School Counseling program or approval of the Program Director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education School Counseling program or approval of the Program Director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education School Counseling program or approval of the Program Director"
   },
   "EDCO 6100": {
    "title": "Research and Evaluation",
    "credits": 3,
    "prereqText": "Admission to the Master of Education School Counseling program or approval of the Program Director",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education School Counseling program or approval of the Program Director"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education School Counseling program or approval of the Program Director"
   },
   "EDCO 6160": {
    "title": "Human Lifespan Development",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in School Counseling program"
   },
   "EDCO 6170": {
    "title": "Principles of Psychological Measurement and Assessment",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in School Counseling program"
   },
   "EDCO 6710": {
    "title": "School Counseling Practicum",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in School Counseling program"
   },
   "EDCO 6890R": {
    "title": "School Counseling Internship",
    "credits": 3,
    "prereqText": "Admission to the Master of Education in School Counseling program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to the Master of Education in School Counseling program"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to the Master of Education in School Counseling program"
   },
   "EDUC 6110": {
    "title": "Applied Statistics for Education",
    "credits": 3,
    "prereqText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M.S. program, or approval of graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics",
+    "program",
+    "approval of graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a School of Education graduate program or acceptance into Master of Science-Mathematics, M"
   },
   "EDUC 6311": {
    "title": "Introduction to Special Education",
    "credits": 3,
    "prereqText": "Admission to School of Education Graduate Program or permission of the Dean",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission to School of Education Graduate Program or permission of the Dean"
+   ],
+   "gate": "admission",
+   "gateText": "Admission to School of Education Graduate Program or permission of the Dean"
   }
  },
  "admission": true,
- "admissionNote": "Application for admission to the graduate program with application fee by the established deadline."
+ "admissionNote": "Application for admission to the graduate program with application fee by the established deadline.",
+ "admissionInfo": {
+  "note": "Application for admission to the graduate program with application fee by the established deadline.",
+  "text": "1. Application for admission to the graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor’s degree from a regionally accredited college/university or the international equivalent. 4. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. 5. International applicants whose native language is not English must have a TOEFL score of 79 iBT or higher, or an IELTS band score of 6.0 or higher within the past two years. 6. International students must also meet all US government requirements for international students. 7. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student.",
+  "before": [],
+  "gated": [
+   "EDCO 6010",
+   "EDCO 6030",
+   "EDCO 6040",
+   "EDCO 6050",
+   "EDCO 6060",
+   "EDCO 6080",
+   "EDCO 6100",
+   "EDCO 6160",
+   "EDCO 6170",
+   "EDCO 6710",
+   "EDCO 6890R",
+   "EDUC 6110",
+   "EDUC 6311"
+  ]
+ }
 }

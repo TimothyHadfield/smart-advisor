@@ -3,7 +3,7 @@
  "name": "Writing for Entertainment Media, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/digital-media/writing-entertainment-media-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 24,
  "requirements": [
   {
@@ -11,44 +11,58 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 1010L",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1010 & DCPR 1010L Film Production Analysis I and Film Production Analysis I Lab | 3"
   },
   {
-   "type": "course",
+   "type": "choice",
    "area": "Discipline Core Requirements",
-   "code": "DCPR 1020",
-   "alts": [],
-   "credits": 2
-  },
-  {
-   "type": "course",
-   "area": "Discipline Core Requirements",
-   "code": "DCPR 1020L",
-   "alts": [
-    "THEA 2742"
+   "label": "DCPR 1020 & DCPR 1020L or THEA 2742",
+   "pick": {
+    "count": 1
+   },
+   "credits": 3,
+   "options": [
+    {
+     "codes": [
+      "DCPR 1020",
+      "DCPR 1020L"
+     ],
+     "credits": 3
+    },
+    {
+     "codes": [
+      "THEA 2742"
+     ],
+     "credits": 3
+    }
    ],
-   "credits": 1
+   "pairOr": true,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 1020 & DCPR 1020L Writing for Entertainment Media I and Writing for Entertainment Media I Lab | 3 or THEA 2742 Scriptwriting for the Screen"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3210",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 3210 & DCPR 3210L Writing for Entertainment Media II and Writing for Entertainment Media II Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 3210L",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 3210 & DCPR 3210L Writing for Entertainment Media II and Writing for Entertainment Media II Lab | 3"
   },
   {
    "type": "course",
@@ -56,6 +70,7 @@
    "code": "DCPR 4210R",
    "alts": [],
    "credits": 4,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4210R & DCPR 4220R Writing for Entertainment Media III and Writing for Entertainment Media III Lab (Take twice) | 6",
    "repeat": 2,
    "creditsEach": 2
   },
@@ -65,6 +80,7 @@
    "code": "DCPR 4220R",
    "alts": [],
    "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4210R & DCPR 4220R Writing for Entertainment Media III and Writing for Entertainment Media III Lab (Take twice) | 6",
    "repeat": 2,
    "creditsEach": 1
   },
@@ -73,14 +89,16 @@
    "area": "Discipline Core Requirements",
    "code": "DCPR 4230R",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4230R & DCPR 4240R Story Editing for Digital Cinema and Story Editing for Digital Cinema Lab | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DCPR 4240R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › DCPR 4230R & DCPR 4240R Story Editing for Digital Cinema and Story Editing for Digital Cinema Lab | 3"
   },
   {
    "type": "choice",
@@ -125,7 +143,8 @@
      "credits": 4
     }
    ],
-   "text": "Complete six hours from the following electives."
+   "text": "Complete six hours from the following electives.",
+   "src": "Discipline Core Requirements (24 credits) › Complete the following: › Complete six hours from the following electives. | 6"
   }
  ],
  "gradPlan": [
@@ -318,7 +337,13 @@
    "coreqText": "DCPR 3210L",
    "coreqs": [
     "DCPR 3210L"
-   ]
+   ],
+   "prereqWords": [
+    "Portfolio Review Acceptance",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4210R": {
    "title": "Writing for Entertainment Media III",
@@ -344,7 +369,12 @@
    "coreqText": "DCPR 4220R",
    "coreqs": [
     "DCPR 4220R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4220R": {
    "title": "Writing for Entertainment Media III Lab",
@@ -370,7 +400,12 @@
    "coreqText": "DCPR 4210R",
    "coreqs": [
     "DCPR 4210R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4230R": {
    "title": "Story Editing for Digital Cinema",
@@ -387,7 +422,12 @@
    "precoreqs": "DCPR 4240R",
    "preco": [
     "DCPR 4240R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "DCPR 4240R": {
    "title": "Story Editing for Digital Cinema Lab",
@@ -403,7 +443,12 @@
    "coreqText": "DCPR 4230R",
    "coreqs": [
     "DCPR 4230R"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "THEA 1033": {
    "title": "Acting I",
@@ -418,5 +463,10 @@
   "DCPR 1020L",
   "DCPR 2800L",
   "DCPR 3210L"
- ]
+ ],
+ "admissionInfo": {
+  "text": "Matriculation Requirements Admission to any Bachelor Program at UVU Cinema Portfolio Review acceptance OR Writing for Entertainment Minor acceptance and University Advanced Standing",
+  "before": [],
+  "gated": []
+ }
 }

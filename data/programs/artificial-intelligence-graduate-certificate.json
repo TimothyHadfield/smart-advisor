@@ -3,7 +3,7 @@
  "name": "Artificial Intelligence, Graduate Certificate",
  "url": "https://catalog.uvu.edu/engineering-technology/computer-science/artificial-intelligence-graduate-certificate/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,28 +11,32 @@
    "area": "Discipline Core Requirements",
    "code": "CS 6150",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CS 6150 Advanced Algorithms | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6460",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CS 6460 Artificial Intelligence | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CS 6470 Machine Learning | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CS 6480",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › CS 6480 Deep Learning | 3"
   },
   {
    "type": "choice",
@@ -97,7 +101,8 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Elective Requirements (6 credits) › Pick two of the following courses or other approved departmental electives: | 6"
   }
  ],
  "gradPlan": [
@@ -147,93 +152,186 @@
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
   },
   "CS 6150": {
    "title": "Advanced Algorithms",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6200": {
    "title": "Cyberphysical Security",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6300": {
    "title": "Software Engineering Leadership",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6400": {
    "title": "Modern Databases",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science Program or Graduate Certificate in Artificial Intelligence Program"
   },
   "CS 6460": {
    "title": "Artificial Intelligence",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6470": {
    "title": "Machine Learning",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6480": {
    "title": "Deep Learning",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6500": {
    "title": "Software Architecture",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6510": {
    "title": "Design and Simulation of Operating Systems",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6530": {
    "title": "Computer Graphics and Mixed Realities",
    "credits": 3,
    "prereqText": "Acceptance into a graduate program, or approval of the graduate program director.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into a graduate program",
+    "approval of the graduate program director"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into a graduate program, or approval of the graduate program director"
   },
   "CS 6620": {
    "title": "Advanced Data Mining and Visualization",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   },
   "CS 6730": {
    "title": "Advanced Embedded Systems Engineering",
    "credits": 3,
    "prereqText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Master of Computer Science program or Graduate Certificate in Artificial Intelligence program"
   }
  },
  "admission": true,
- "admissionNote": "Application for admission to the graduate program with application fee by the established deadline."
+ "admissionNote": "Application for admission to the graduate program with application fee by the established deadline.",
+ "admissionInfo": {
+  "note": "Application for admission to the graduate program with application fee by the established deadline.",
+  "text": "Application for admission to the graduate program with application fee by the established deadline. Submit official transcripts from all universities attended. A bachelor’s degree from a regionally accredited college/university or the international equivalent. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. Completion of Introduction to Algorithms and Data Structures (CS 2420 or the equivalent). For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score of 80 iBT (550 pBT) or higher, or an IELTS band score of 6.5 or higher within the past two years is required. International students must also meet all US government requirements for international students. The university uses a selective admissions process for admitting students to graduate programs. Meeting minimum admissions criteria does not guarantee admission to the graduate program or to the University as a graduate student. Recommended courses to take before the program begins are Linear Algebra (MAT 2270 or equivalent) and Statistics & Probability (STAT 2050 or equivalent).",
+  "before": [
+   "CS 2420",
+   "MAT 2270",
+   "STAT 2050"
+  ],
+  "gated": [
+   "CS 6100",
+   "CS 6150",
+   "CS 6200",
+   "CS 6300",
+   "CS 6400",
+   "CS 6460",
+   "CS 6470",
+   "CS 6480",
+   "CS 6500",
+   "CS 6510",
+   "CS 6530",
+   "CS 6620",
+   "CS 6730"
+  ],
+  "beforeFrom": "matriculation section"
+ }
 }

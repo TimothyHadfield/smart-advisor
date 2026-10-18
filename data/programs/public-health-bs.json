@@ -3,7 +3,7 @@
  "name": "Public Health, B.S.",
  "url": "https://catalog.uvu.edu/health-public-service/public-health/public-health-bs/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -57,6 +63,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -101,6 +108,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -110,72 +118,83 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biological Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biological Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts Distribution",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts Distribution | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social/Behavioral Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social/Behavioral Science | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 1100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 1100 Personal Health and Wellness | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3200 Introduction to Public Health | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3260 Health Behavior Theory and Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLSC 3400 Human Diseases | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3450 Public Health and the Environment | 3"
   },
   {
    "type": "course",
@@ -184,14 +203,16 @@
    "alts": [
     "HLTH 4400G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3500G International Health | 3 or HLTH 4400G Health and Diversity"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3600 Social Marketing | 3"
   },
   {
    "type": "course",
@@ -200,56 +221,64 @@
    "alts": [
     "HLTH 4600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3700 Grant Writing for Public Health | 3 or HLTH 4600 Research Methods for Public Health"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3750",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3750 Biostatistics for Public Health | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 3800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 3800 Epidemiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 4140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 4140 Program Planning and Evaluation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 4160",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 4160 Program Implementation and Evaluation | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 4300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 4300 Ethics and Professional Practice | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4250",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (49 credits) › HLSC 4250 Health Organization and Policy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLTH 4950",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (49 credits) › HLTH 4950 Senior Capstone | 1"
   },
   {
    "type": "choice",
@@ -275,7 +304,8 @@
      "crMax": 4
     }
    ],
-   "text": "Take 3 credits from one or a combination of the following"
+   "text": "Take 3 credits from one or a combination of the following",
+   "src": "Discipline Core Requirements (49 credits) › Take 3 credits from one or a combination of the following | 3"
   },
   {
    "type": "choice",
@@ -306,7 +336,8 @@
      "credits": 4
     }
    ],
-   "text": "Take one of the following:"
+   "text": "Take one of the following:",
+   "src": "Discipline Core Requirements (49 credits) › Take one of the following: | 3"
   },
   {
    "type": "choice",
@@ -348,7 +379,8 @@
      "credits": 3
     }
    ],
-   "text": "Public Health Lower Division Electives – Choose 6 credits"
+   "text": "Public Health Lower Division Electives – Choose 6 credits",
+   "src": "Core Electives (12 credits) › Public Health Lower Division Electives – Choose 6 credits | 6"
   },
   {
    "type": "choice",
@@ -391,13 +423,15 @@
      "credits": 3
     }
    ],
-   "text": "Public Health Upper Division Electives-Choose 6 credits"
+   "text": "Public Health Upper Division Electives-Choose 6 credits",
+   "src": "Core Electives (12 credits) › Public Health Upper Division Electives-Choose 6 credits | 6"
   },
   {
    "type": "placeholder",
    "area": "Additional Elective Courses",
    "label": "Any course 1000 or higher (may include courses counting toward a minor)",
-   "credits": 29
+   "credits": 29,
+   "src": "Additional Elective Courses (29 credits) › Any course 1000 or higher (may include courses counting toward a minor) | 29"
   }
  ],
  "gradPlan": [
@@ -643,14 +677,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -663,7 +703,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -690,14 +731,24 @@
    "credits": 3,
    "prereqText": "HLSC 1300 and University Advanced Standing",
    "prereqs": "HLSC 1300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4250": {
    "title": "Health Organization and Policy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 1100": {
    "title": "Personal Health and Wellness",
@@ -731,56 +782,96 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3200": {
    "title": "Principles of Community Health",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3260": {
    "title": "Health Behavior Theory and Practice",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3300": {
    "title": "Health Promotion for Older Adults",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3450": {
    "title": "Public Health and the Environment",
    "credits": 3,
    "prereqText": "HLTH 3200 , University Advanced Standing",
    "prereqs": "HLTH 3200",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3500G": {
    "title": "International Health",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3600": {
    "title": "Social Marketing",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3700": {
    "title": "Grant Writing for Public Health",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3750": {
    "title": "Biostatistics for Public Health",
@@ -793,14 +884,24 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 3800": {
    "title": "Epidemiology",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4140": {
    "title": "Assessment and Program Development",
@@ -812,42 +913,74 @@
    "precoreqs": "HLTH 3260",
    "preco": [
     "HLTH 3260"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4160": {
    "title": "Program Implementation and Evaluation",
    "credits": 3,
    "prereqText": "HLTH 4140 and University Advanced Standing",
    "prereqs": "HLTH 4140",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4300": {
    "title": "Health Ethics",
    "credits": 3,
    "prereqText": "University advanced standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University advanced standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4400G": {
    "title": "Health and Diversity",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4600": {
    "title": "Research Methods for Public Health",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4720": {
    "title": "CHES Preparation",
    "credits": 3,
    "prereqText": "Department approval; University Advanced Standing; Senior standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval",
+    "University Advanced Standing",
+    "Senior standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4820R": {
    "title": "Health Internship",
@@ -855,7 +988,12 @@
    "creditsMax": 6,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4850R": {
    "title": "Public Health Special Project",
@@ -863,7 +1001,12 @@
    "creditsMax": 4,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4900R": {
    "title": "Special Topics in Public Health",
@@ -871,14 +1014,26 @@
    "creditsMax": 3,
    "prereqText": "Department Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4950": {
    "title": "Senior Capstone",
    "credits": 1,
    "prereqText": "University Advanced Standing; Senior Standing.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Senior Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -890,7 +1045,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -902,7 +1058,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "NUTR 2000": {
    "title": "Body Image and Mindful Eating",
@@ -913,7 +1070,12 @@
    "credits": 3,
    "prereqText": "NUTR 1020 and University Advanced Standing",
    "prereqs": "NUTR 1020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -934,7 +1096,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -947,7 +1114,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 1090": {
    "title": "Introduction to Human Anatomy and Physiology",

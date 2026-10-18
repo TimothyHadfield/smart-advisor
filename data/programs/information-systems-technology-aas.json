@@ -3,7 +3,7 @@
  "name": "Information Systems and Technology, A.A.S.",
  "url": "https://catalog.uvu.edu/engineering-technology/information-systems-technology/information-systems-technology-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 60,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (9 credits) › English: › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "choice",
@@ -44,6 +49,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (9 credits) › Mathematics: › Complete one of the following: | 3",
    "notes": [
     "Any higher Mathematics Course"
    ],
@@ -54,14 +60,16 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Any 3-credit general education course..",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (9 credits) › Mathematics: › Any 3-credit general education course.. | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Written Communication Requirement: › ENGL 2010 Intermediate Academic Writing | 3 (Note: ENGL 2100 Technical Communication recommended for BS in Information Technology degree future students.)"
   },
   {
    "type": "course",
@@ -70,14 +78,21 @@
    "alts": [
     "MGMT 2340"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Math Requirement: › STAT 2050 Introduction to Statistical Methods | 3 or MGMT 2340 Business Statistics I",
+   "creditsBy": {
+    "STAT 2050": 4,
+    "MGMT 2340": 3
+   },
+   "prefer": "MGMT 2340"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › INFO 1120 Information Systems and Technology Fundamentals | 3"
   },
   {
    "type": "course",
@@ -86,21 +101,24 @@
    "alts": [
     "CS 1400"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › INFO 1200 Computer Programming I for IS IT | 3 or CS 1400 Fundamentals of Programming"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › INFO 2200 Computer Programming II for IS IT | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "INFO 2410",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › INFO 2410 Database Fundamentals | 3"
   },
   {
    "type": "course",
@@ -109,14 +127,16 @@
    "alts": [
     "CS 2600"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › IT 2600 Data Communication Fundamentals | 3 or CS 2600 Computer Networks I"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "CYBR 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (24 credits) › Core Requirements: › CYBR 2700 Information Security Fundamentals | 3"
   },
   {
    "type": "choice",
@@ -214,6 +234,7 @@
     }
    ],
    "text": "Choose 18 credits from either the Information Systems group or the Information Technology group. See department advisor to select classes if plan to obtain BS in IT degree in the future.",
+   "src": "Elective Requirements (27 credits) › Choose 18 credits from either the Information Systems group or the Information Technology group. See department advisor to select classes if plan to obtain BS in IT degree in the future. | 18",
    "notes": [
     "INFORMATION SYSTEMS:",
     "Any 3-credit 1000 or 2000 level course from ACC, ECON, FIN, MGMT, HR, MKTG",
@@ -227,7 +248,8 @@
    "area": "Elective Requirements",
    "label": "Elective",
    "credits": 9,
-   "text": "Complete any 1000-level, or higher, courses"
+   "text": "Complete any 1000-level, or higher, courses",
+   "src": "Elective Requirements (27 credits) › Complete any 1000-level, or higher, courses | 9"
   }
  ],
  "gradPlan": [
@@ -372,7 +394,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 2600": {
    "title": "Computer Networks I",
@@ -414,14 +439,20 @@
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -434,7 +465,8 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENGL 2100": {
    "title": "Technical Communication",
@@ -478,7 +510,8 @@
    "precoreqs": "MATH 1050",
    "preco": [
     "MATH 1050"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "INFO 2410": {
    "title": "Database Fundamentals",
@@ -545,7 +578,10 @@
    "creditsMax": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -557,7 +593,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -569,7 +606,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -581,7 +619,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -594,7 +633,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -611,7 +653,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
  }
 }

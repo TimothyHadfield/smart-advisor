@@ -3,7 +3,7 @@
  "name": "Music, Minor",
  "url": "https://catalog.uvu.edu/arts/music/music-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,14 +11,16 @@
    "area": "Discipline Core Requirements",
    "code": "MUSC 1110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › MUSC 1110 Music Theory I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MUSC 1130",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › MUSC 1130 Aural Skills I | 1"
   },
   {
    "type": "choice",
@@ -48,13 +50,15 @@
      "credits": 1
     }
    ],
-   "text": "Complete 4 credits from the following:"
+   "text": "Complete 4 credits from the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › Complete 4 credits from the following: | 4"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Six additional credit hours of music courses",
-   "credits": 6
+   "credits": 6,
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › Six additional credit hours of music courses | 6"
   },
   {
    "type": "choice",
@@ -156,7 +160,8 @@
      "credits": 1
     }
    ],
-   "text": "Complete 4 credits from the following:"
+   "text": "Complete 4 credits from the following:",
+   "src": "Discipline Core Requirements (18 credits) › Complete the following: › Complete 4 credits from the following: | 4"
   }
  ],
  "gradPlan": [
@@ -291,6 +296,10 @@
    "coreqText": "MUSC 1130",
    "coreqs": [
     "MUSC 1130"
+   ],
+   "prereqWords": [
+    "Music majors only or department approval",
+    "Complete music theory diagnostic exam"
    ]
   },
   "MUSC 1130": {
@@ -326,6 +335,9 @@
    "coreqText": "MUSC 2510R",
    "coreqs": [
     "MUSC 2510R"
+   ],
+   "prereqWords": [
+    "Music major entrance audition required"
    ]
   },
   "MUSC 3060R": {
@@ -343,77 +355,110 @@
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3270R": {
    "title": "Deep Green-Tenor/Bass Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3280R": {
    "title": "Emerald Singers-Soprano/Alto Choir",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3300R": {
    "title": "Wind Symphony",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3310R": {
    "title": "Percussion Ensemble",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3320R": {
    "title": "Jazz Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3330R": {
    "title": "Small Jazz and Commercial Ensembles",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3340R": {
    "title": "Pep Band",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3700R": {
    "title": "Symphony Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3720R": {
    "title": "Chamber Orchestra",
    "credits": 1,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "MUSC 3730R": {
    "title": "Advanced Small Ensembles",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "MUSC 4230R": {
    "title": "Opera Workshop",

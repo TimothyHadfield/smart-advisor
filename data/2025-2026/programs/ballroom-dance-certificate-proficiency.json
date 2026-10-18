@@ -3,7 +3,7 @@
  "name": "Ballroom Dance, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/arts/dance/ballroom-dance-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -27,7 +27,8 @@
      ],
      "credits": 1
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › One credit from the following classes | 1"
   },
   {
    "type": "choice",
@@ -59,7 +60,8 @@
      ],
      "credits": 2
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › Four credits from the following classes | 4"
   },
   {
    "type": "choice",
@@ -91,7 +93,8 @@
      ],
      "credits": 2
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › Four credits from the following classes | 4"
   },
   {
    "type": "choice",
@@ -120,13 +123,15 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "Discipline Core Requirements (16 credits) › Five credits from the following classes | 5"
   },
   {
    "type": "placeholder",
    "area": "Discipline Core Requirements",
    "label": "Dance Elective (any DANC course 1000 level or higher)",
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (16 credits) › Dance Elective (any DANC course 1000 level or higher) | 2 (Note: Strongly recommend DANC 3730, DANC 3740, or DANC 4740)"
   }
  ],
  "gradPlan": [
@@ -192,77 +197,110 @@
    "credits": 1,
    "prereqText": "Instructor Approvall",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approvall"
+   ]
   },
   "DANC 2710R": {
    "title": "International Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2720R": {
    "title": "Latin Ballroom Dance II",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 2760R": {
    "title": "Ballroom Dance Company Back Up Team",
    "credits": 1,
    "prereqText": "By audition only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "By audition only"
+   ]
   },
   "DANC 3700R": {
    "title": "American Social Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3710R": {
    "title": "International Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3720R": {
    "title": "Latin Ballroom Dance III",
    "credits": 1,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 3760R": {
    "title": "Ballroom Dance Ensemble",
    "credits": 2,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   },
   "DANC 4710R": {
    "title": "International Ballroom Dance IV",
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 4720R": {
    "title": "Latin Ballroom Dance IV",
    "credits": 2,
    "prereqText": "Instructor Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval"
+   ]
   },
   "DANC 4760R": {
    "title": "Ballroom Dance Company Tour Team",
    "credits": 3,
    "prereqText": "Audition",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Audition"
+   ]
   }
  }
 }

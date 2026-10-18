@@ -3,7 +3,7 @@
  "name": "Technology Management, Graduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/business-graduate-programs/technology-management-graduate-certificate/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 9,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Required Courses",
    "code": "MGMT 6440",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › MGMT 6440 Advanced Project Management | 3"
   },
   {
    "type": "course",
    "area": "Required Courses",
    "code": "MGMT 6470",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › MGMT 6470 Organization Information Technologies | 3"
   },
   {
    "type": "course",
    "area": "Required Courses",
    "code": "MKTG 6400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Required Courses (9 credits) › MKTG 6400 Technology Marketing and Customer Experience | 3"
   }
  ],
  "gradPlan": [
@@ -63,22 +66,46 @@
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "MGMT 6470": {
    "title": "Organization Information Technologies",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   },
   "MKTG 6400": {
    "title": "Technology Marketing and Customer Experience",
    "credits": 3,
    "prereqText": "Admission into any graduate program in the Woodbury School of Business",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Admission into any graduate program in the Woodbury School of Business"
+   ],
+   "gate": "admission",
+   "gateText": "Admission into any graduate program in the Woodbury School of Business"
   }
  },
- "totalFrom": "area headers"
+ "totalFrom": "area headers",
+ "admissionInfo": {
+  "text": "Application for admission to the Graduate Certificate Program in Technology Management with application fee. A bachelor's degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. Acceptance of graduate certificate program student status offers is valid only for the semester in the offer. Applicants who do not begin attendance during the semester in their admissions offers must reapply and pay the application fees before the applicable semester deadline. At the graduate certificate program's discretion, graduate certificate programs may defer enrollment if students apply for a deferment before the end of the semester for which they were admitted.",
+  "before": [],
+  "gated": [
+   "MGMT 6440",
+   "MGMT 6470",
+   "MKTG 6400"
+  ]
+ }
 }

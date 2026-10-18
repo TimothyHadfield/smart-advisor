@@ -3,7 +3,7 @@
  "name": "Personal Development for Professional Advancement, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/education/student-leadership-success-studies/personal-development-professional-advancement-certificate-proficiency/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -46,7 +46,8 @@
      "credits": 5
     }
    ],
-   "text": "Developing Academic Independence - Complete 3 credits from the following:"
+   "text": "Developing Academic Independence - Complete 3 credits from the following:",
+   "src": "Developing Academic Independence - Complete 3 credits from the following: | 3"
   },
   {
    "type": "choice",
@@ -106,7 +107,8 @@
      "credits": 3
     }
    ],
-   "text": "Building Self-Knowledge for Self-Leadership - Complete 9 credits from the following:"
+   "text": "Building Self-Knowledge for Self-Leadership - Complete 9 credits from the following:",
+   "src": "Building Self-Knowledge for Self-Leadership - Complete 9 credits from the following: | 9"
   },
   {
    "type": "choice",
@@ -155,7 +157,8 @@
      "credits": 1
     }
    ],
-   "text": "Learning Experientially - Complete 6 credits from the following:"
+   "text": "Learning Experientially - Complete 6 credits from the following:",
+   "src": "Learning Experientially - Complete 6 credits from the following: | 6"
   }
  ],
  "gradPlan": [
@@ -211,7 +214,10 @@
    "credits": 3,
    "prereqText": "Appropriate reading skills",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate reading skills"
+   ]
   },
   "SLSS 1010R": {
    "title": "Student Success Topics",
@@ -219,7 +225,10 @@
    "creditsMax": 3,
    "prereqText": "Appropriate reading skills",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate reading skills"
+   ]
   },
   "SLSS 1030R": {
    "title": "Student Leadership Development I",
@@ -232,7 +241,10 @@
    "creditsMax": 4,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "SLSS 1050": {
    "title": "Research Skills for Student Success",
@@ -284,6 +296,9 @@
    "coreqText": "SLSS 2100 recommended",
    "coreqs": [
     "SLSS 2100"
+   ],
+   "prereqWords": [
+    "Department Approval"
    ]
   },
   "UVST 1100": {
@@ -291,14 +306,20 @@
    "credits": 3,
    "prereqText": "Departmental Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval"
+   ]
   },
   "UVST 2890R": {
    "title": "Undergraduate Research",
    "credits": 1,
    "prereqText": "Department Approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department Approval"
+   ]
   },
   "UVST 2900R": {
    "title": "Community Engagement and Applied Service Learning",

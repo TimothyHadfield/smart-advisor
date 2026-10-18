@@ -3,7 +3,7 @@
  "name": "Personal Financial Planning, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/business/finance-economics/personal-financial-planning-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,14 +13,20 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "choice",
@@ -51,6 +57,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "ge": "math"
   },
   {
@@ -101,6 +108,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (30 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses:"
    ],
@@ -110,44 +118,53 @@
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Biology",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Biology | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Physical Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social Science",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Social Science | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Fine Arts",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (30 credits) › Fine Arts | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › ACC 2110 Principles of Accounting I | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "choice",
@@ -162,16 +179,27 @@
      "codes": [
       "IM 2010"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete My Educator with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications course with a grade of B- or higher."
+     ]
     },
     {
      "codes": [
       "IM 2600"
      ],
-     "credits": 3
+     "credits": 3,
+     "minGrade": "B-",
+     "notes": [
+      "Students will be required to complete My Educator with a score of 80 percent or higher or complete the IM 2010 Business Computer Proficiency or IM 2600 Spreadsheet Applications course with a grade of B- or higher."
+     ]
     }
    ],
    "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › Complete one of the following:",
+   "gate": "admission",
+   "gateText": "Matriculation Courses",
    "notes": [
     "My Educator"
    ],
@@ -182,21 +210,30 @@
    "area": "Discipline Core Requirements",
    "code": "ECON 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › ECON 2010 Principles of Economics I | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 2400 Data Analytics for Business | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 2240",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 2240 Business Quantitative Analysis | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
@@ -205,49 +242,75 @@
    "alts": [
     "STAT 2040"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 2340 Business Statistics I | 3 or STAT 2040 Principles of Statistics",
+   "gate": "admission",
+   "gateText": "Matriculation Courses",
+   "creditsBy": {
+    "MGMT 2340": 3,
+    "STAT 2040": 4
+   }
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2200G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MKTG 2200G Written Business Communication | 3 (Note: Must be completed with a grade of B- or better.)",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 3100 Principles of Finance | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 3600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MKTG 3600 Principles of Marketing | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 3000 Organizational Behavior | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 3450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 3450 Operations Management | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MGMT 4860",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MGMT 4860 Business Strategy Formulation and Implementation | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
@@ -257,91 +320,130 @@
     "MGMT 3300G",
     "MGMT 3320G"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › ECON 3050G International Economics | 3 or MGMT 3300G Survey of International Business or MGMT 3320G Cross Cultural Communications for International Business",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MKTG 2390",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › MKTG 2390 Professional Business Presentations | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 3060 Introduction to the PFP Profession | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 3200 Financial Counseling | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3220",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 3220 Risk Management and Insurance | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 3400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 3400 Investment Management | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 4270 Wealth Management Seminar | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4290",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 4290 Technological Applications in Personal Financial Planning | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 5210",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 5210 Retirement Planning | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 5260",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 5260 Estate Planning Fundamentals | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 5300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 5300 Tax Planning for Personal Financial Planners | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 5800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 5800 Wealth Management and Financial Planning Capstone | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "FIN 4830R",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › FIN 4830R Colloquium in PFP Professionalism | 1",
+   "gate": "admission",
+   "gateText": "Matriculation Courses"
   },
   {
    "type": "choice",
@@ -366,6 +468,9 @@
     }
    ],
    "text": "Complete 3 semester credit hours from the following courses:",
+   "src": "Discipline Core Requirements (73 credits) › Matriculation Courses › Complete 3 semester credit hours from the following courses: | 3",
+   "gate": "admission",
+   "gateText": "Matriculation Courses",
    "notes": [
     "Other upper division courses as approved by the Department Chair"
    ],
@@ -731,6 +836,7 @@
     }
    ],
    "text": "Complete 17 semester credit hours of any course numbered 1000 or higher",
+   "src": "Elective Requirements (17 credits) › Complete 17 semester credit hours of any course numbered 1000 or higher | 17",
    "notes": [
     "Students are strongly encouraged to select from the following courses:",
     "Students are also encouraged to consider the following business courses:",
@@ -1014,7 +1120,13 @@
    "precoreqs": "ACC 2125",
    "preco": [
     "ACC 2125"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "B-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
@@ -1031,7 +1143,12 @@
    "precoreqs": "ACC 3300",
    "preco": [
     "ACC 3300"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3510": {
    "title": "Accounting Information Systems",
@@ -1043,7 +1160,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 1020": {
    "title": "Public Speaking",
@@ -1074,14 +1196,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "COMM 3420": {
    "title": "Communication and Conflict",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 1030": {
    "title": "Foundations of Computer Science",
@@ -1092,7 +1224,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "ECON 2010": {
    "title": "Principles of Economics I",
@@ -1112,28 +1247,49 @@
    "credits": 3,
    "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "ECON 3050G": {
    "title": "International Economics",
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3060": {
    "title": "Money and Banking",
    "credits": 3,
    "prereqText": "ECON 2020 and University Advanced Standing",
    "prereqs": "ECON 2020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3070": {
    "title": "Behavioral Economics",
    "credits": 3,
    "prereqText": "ECON 2010 and University Advanced Standing",
    "prereqs": "ECON 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3370": {
    "title": "Economic Modeling and Data Analytics",
@@ -1145,21 +1301,38 @@
      "ECON 2020"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "B-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 3400": {
    "title": "Health Economics",
    "credits": 3,
    "prereqText": "ECON 3370 and University Advanced Standing",
    "prereqs": "ECON 3370",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECON 4100": {
    "title": "Analysis of Financial Institutions and Markets",
    "credits": 3,
    "prereqText": "Matriculation into the Woodbury School of Business and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -1173,7 +1346,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -1186,14 +1362,20 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "ENTR 4400": {
    "title": "New Venture Financing",
    "credits": 3,
    "prereqText": "ENTR 3170 and University Advanced Standing",
    "prereqs": "ENTR 3170",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FAMS 1150": {
    "title": "Marriage and Relationship Skills",
@@ -1218,7 +1400,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "FAMS 3850": {
    "title": "Adult Development and Aging",
@@ -1230,14 +1413,25 @@
      "ENGL 2010H"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3030": {
    "title": "Foundations of Risk Management and Insurance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3060": {
    "title": "Introduction to the PFP Profession",
@@ -1251,7 +1445,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3100": {
    "title": "Principles of Finance",
@@ -1274,21 +1473,37 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3170": {
    "title": "Financial Statement Analysis",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3200": {
    "title": "Financial Counseling",
    "credits": 3,
    "prereqText": "FIN 3060 and University Advanced Standing. For PFP Majors Only",
    "prereqs": "FIN 3060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "For PFP Majors Only"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3220": {
    "title": "Risk Management and Insurance",
@@ -1300,26 +1515,40 @@
    "precoreqs": "FIN 3060",
    "preco": [
     "FIN 3060"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3400": {
    "title": "Investment Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3410": {
    "title": "Introduction to Venture Capital Skills",
    "credits": 3,
    "prereqText": "University Advanced Standing, FIN 3100 strongly recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 3420R": {
    "title": "Wolverine Fund",
    "credits": 3,
    "prereqText": "FIN 3410 , Instructor Approval and University Advanced Standing, FIN 3100 strongly recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4020": {
    "title": "Enterprise Risk Management",
@@ -1331,28 +1560,48 @@
      "MGMT 2340"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4040": {
    "title": "Business Law for Insurance Professionals",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4050": {
    "title": "Commercial Property Risk Management and Insurance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4060": {
    "title": "Commercial Liability Risk Management and Insurance",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4160": {
    "title": "Portfolio Management",
@@ -1364,7 +1613,12 @@
    "precoreqs": "MGMT 3345",
    "preco": [
     "MGMT 3345"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4170": {
    "title": "Derivative Securities",
@@ -1376,21 +1630,36 @@
    "precoreqs": "MGMT 3345",
    "preco": [
     "MGMT 3345"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4180": {
    "title": "International Finance Management",
    "credits": 3,
    "prereqText": "FIN 3100 and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4190": {
    "title": "Applied Asset Diversification and Management",
    "credits": 3,
    "prereqText": "FIN 3400 and University Advanced Standing",
    "prereqs": "FIN 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4200": {
    "title": "Financial Counseling Practicum",
@@ -1402,7 +1671,14 @@
      "FIN 3200"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB"
   },
   "FIN 4270": {
    "title": "Wealth Management Seminar",
@@ -1415,28 +1691,52 @@
      "FIN 3400"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "FIN 4290": {
    "title": "Technological Applications in Personal Financial Planning",
    "credits": 3,
    "prereqText": "FIN 3060 , WSB matriculation, University Advanced Standing, and For PFP Majors Only.",
    "prereqs": "FIN 3060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "WSB matriculation",
+    "University Advanced Standing",
+    "For PFP Majors Only"
+   ],
+   "gate": "admission",
+   "gateText": "WSB matriculation"
   },
   "FIN 4310": {
    "title": "Real Estate Investment and Securities",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4570R": {
    "title": "Advanced Topics in Finance",
    "credits": 3,
    "prereqText": "FIN 3100 , Instructor Approval, and University Advanced Standing",
    "prereqs": "FIN 3100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4600": {
    "title": "AFC Examination Preparation",
@@ -1453,7 +1753,12 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4810R": {
    "title": "Personal Financial Planning Internship",
@@ -1461,14 +1766,25 @@
    "creditsMax": 8,
    "prereqText": "Departmental Approval and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Departmental Approval",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 4830R": {
    "title": "Colloquium in PFP Professionalism",
    "credits": 1,
    "prereqText": "University Advanced Standing and For PFP Majors Only.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing and For PFP Majors Only"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5130": {
    "title": "Financial Statement Analysis and Modeling",
@@ -1481,42 +1797,78 @@
    "credits": 3,
    "prereqText": "Permission of instructor or department chairr",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Permission of instructor or department chairr"
+   ]
   },
   "FIN 5210": {
    "title": "Retirement Planning",
    "credits": 3,
    "prereqText": "FIN 3060 , Matriculation into the Woodbury School of Business, University Advanced Standing, and For PFP Majors Only.",
    "prereqs": "FIN 3060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing",
+    "For PFP Majors Only"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "FIN 5260": {
    "title": "Estate Planning Fundamentals",
    "credits": 3,
    "prereqText": "FIN 3060 , Matriculation into the Woodbury School of Business, University Advanced Standing, and For PFP Majors Only.",
    "prereqs": "FIN 3060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing",
+    "For PFP Majors Only"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into the Woodbury School of Business"
   },
   "FIN 5300": {
    "title": "Tax Planning for Personal Financial Planners",
    "credits": 3,
    "prereqText": "FIN 3060 , Matriculation into WSB, University Advanced Standing, and for PFP majors only",
    "prereqs": "FIN 3060",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing",
+    "for PFP majors only"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB"
   },
   "FIN 5510": {
    "title": "Investment Products",
    "credits": 3,
    "prereqText": "Permission of instructor or department chair and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Permission of instructor or department chair",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5520": {
    "title": "Financial Markets",
    "credits": 3,
    "prereqText": "Permission of instructor or department chair and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Permission of instructor or department chair",
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5700": {
    "title": "CFP Examination Preparation",
@@ -1537,7 +1889,12 @@
    "precoreqs": "FIN 5800",
    "preco": [
     "FIN 5800"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "FIN 5800": {
    "title": "Wealth Management and Financial Planning Capstone",
@@ -1562,7 +1919,13 @@
    "preco": [
     "FIN 3220",
     "FIN 5260"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "For PFP Majors Only"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HIST 1700": {
    "title": "American History",
@@ -1591,7 +1954,10 @@
    "credits": 3,
    "prereqText": "MAT 0980 or equivalent business math knowledge; basic keyboarding skill",
    "prereqs": "MAT 0980",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "basic keyboarding skill"
+   ]
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -1603,7 +1969,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -1615,7 +1982,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1090": {
    "title": "College Algebra for Business",
@@ -1627,7 +1995,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MGMT 2240": {
    "title": "Business Quantitative Analysis",
@@ -1640,7 +2009,8 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "MGMT 2340": {
    "title": "Business Statistics I",
@@ -1653,7 +2023,10 @@
      "MATH 1090"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate test scores"
+   ]
   },
   "MGMT 2400": {
    "title": "Data Analytics for Business",
@@ -1670,7 +2043,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3300G": {
    "title": "Survey of International Business",
@@ -1687,7 +2065,12 @@
      "ECON 2010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3320G": {
    "title": "Cross Cultural Communications for International Business",
@@ -1699,14 +2082,25 @@
      "COMM 1050"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3450": {
    "title": "Operations Management",
    "credits": 3,
    "prereqText": "Matriculation into WSB and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into WSB",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into WSB and University Advanced Standing"
   },
   "MGMT 4860": {
    "title": "Business Strategy Formulation and Implementation",
@@ -1720,14 +2114,25 @@
      "MGMT 3450"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into the Woodbury School of Business",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "MGMT 3450 and Matriculation into the Woodbury School of Business and University Advanced Standing"
   },
   "MGMT 4940R": {
    "title": "Special Topics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 2200G": {
    "title": "Written Business Communication",
@@ -1742,13 +2147,20 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MKTG 3650": {
    "title": "Professional Selling",
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -1778,7 +2190,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3460": {
    "title": "Personality Theory",
@@ -1796,7 +2214,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 3530": {
    "title": "Psychology of Interpersonal Relationships",
@@ -1814,7 +2238,13 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "PSY 4300": {
    "title": "Introduction to Counseling and Psychotherapy",
@@ -1832,7 +2262,13 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "C-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 1010G": {
    "title": "Intro to Sociology",
@@ -1843,14 +2279,24 @@
    "credits": 3,
    "prereqText": "SOC 1010G and University Advanced Standing",
    "prereqs": "SOC 1010G",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 3750G": {
    "title": "Sociology of Aging",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "SOC 4400": {
    "title": "Social Change",
@@ -1862,7 +2308,12 @@
      "SOC 1010G"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "STAT 2040": {
    "title": "Principles of Statistics",
@@ -1875,7 +2326,50 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "text": "Course List Code Title Credit Hours Total Credit Hours 18 Business Foundation Matriculation Courses 18 Credits ACC 2110 Principles of Accounting I 3 Complete one of the following: My Educator 1 IM 2010 Business Computer Proficiency (3) 1 IM 2600 Spreadsheet Applications (3) 1 MGMT 2400 Data Analytics for Business 3 MGMT 2240 Business Quantitative Analysis 3 MGMT 2340 Business Statistics I 3 or STAT 2040 Principles of Statistics MKTG 2200G Written Business Communication 2 3 ECON 2010 Principles of Economics I 3",
+  "before": [
+   "STAT 2040"
+  ],
+  "gated": [
+   "ACC 2110",
+   "ECON 2010",
+   "ECON 3030",
+   "ECON 3050G",
+   "ECON 4100",
+   "FIN 3060",
+   "FIN 3100",
+   "FIN 3200",
+   "FIN 3220",
+   "FIN 3400",
+   "FIN 4200",
+   "FIN 4270",
+   "FIN 4290",
+   "FIN 4810R",
+   "FIN 4830R",
+   "FIN 5210",
+   "FIN 5260",
+   "FIN 5300",
+   "FIN 5800",
+   "IM 2010",
+   "IM 2600",
+   "MGMT 2240",
+   "MGMT 2340",
+   "MGMT 2400",
+   "MGMT 3000",
+   "MGMT 3450",
+   "MGMT 4860",
+   "MKTG 2200G",
+   "MKTG 2390",
+   "MKTG 3600"
+  ],
+  "beforeFrom": "matriculation section"
  }
 }

@@ -3,7 +3,7 @@
  "name": "Computational Data Science, B.S.",
  "url": "https://catalog.uvu.edu/archives/2025-2026/engineering-technology/computer-science/computational-data-science-bs/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 120,
  "requirements": [
   {
@@ -13,21 +13,28 @@
    "alts": [
     "ENGH 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGH 1005 Literacies and Composition Across Contexts",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGH 1005": 5
+   }
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "ENGL 2010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › ENGL 2010 Intermediate Academic Writing | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "MATH 1210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (31 credits) › MATH 1210 Calculus I | 4 (Note: *)"
   },
   {
    "type": "choice",
@@ -69,43 +76,50 @@
      ],
      "credits": 3
     }
-   ]
+   ],
+   "src": "General Education Requirements (31 credits) › American Institutions | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Art",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Art | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Humanities",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Humanities | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Life Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Life Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Physical Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Physical Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Social & Behavioral Sciences",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Social & Behavioral Sciences | 3"
   },
   {
    "type": "placeholder",
    "area": "General Education Requirements",
    "label": "Personal, Professional, and Civic Growth",
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (31 credits) › Personal, Professional, and Civic Growth | 3"
   },
   {
    "type": "choice",
@@ -127,143 +141,186 @@
      "codes": [
       "CS 1420"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "If students choose CS 1420, please see advisor."
+     ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › Complete one of the following: | 6",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 2420 Introduction to Algorithms and Data Structures | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 2300 Discrete Mathematical Structures I | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2450",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 2450 Software Engineering | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 2700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 2700 Causal Inference | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3100 Data Privacy and Security | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3520",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3520 Database Theory | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3270 Python Software Development | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3310",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3310 Analysis of Algorithms | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3530",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3530 Data Management For Data Sciences | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3810",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3810 Applied Data Science | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3820",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3820 Visualization Analytics for Data Science | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 3050G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 3050G Global Social and Ethical Issues in Computing | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 4700",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 4700 Machine Learning | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 4710",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 4710 Machine Learning II | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "CS 4800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › CS 4800 Data Science Capstone | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "MATH 1220",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › MATH 1220 Calculus II | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "MATH 2210",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › MATH 2210 Calculus III | 4",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "MATH 2270",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › MATH 2270 Linear Algebra | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
    "area": "Discipline Requirements",
    "code": "MATH 3640",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › MATH 3640 Introduction to Optimization | 3",
+   "minGrade": "C-"
   },
   {
    "type": "course",
@@ -272,7 +329,13 @@
    "alts": [
     "STAT 2050"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › ECE 3710 Applied Probability and Statistics for Engineers and Scientists | 3 or STAT 2050 Introduction to Statistical Methods",
+   "minGrade": "C-",
+   "creditsBy": {
+    "ECE 3710": 3,
+    "STAT 2050": 4
+   }
   },
   {
    "type": "placeholder",
@@ -280,6 +343,8 @@
    "label": "Complete 12 credits from any of the following (A minimum grade of C- is required):",
    "credits": 21,
    "text": "Complete 12 credits from any of the following (A minimum grade of C- is required):",
+   "src": "Discipline Requirements (89 credits) › Minimum grade of C- required in theses courses: › Complete 12 credits from any of the following (A minimum grade of C- is required): | 21",
+   "minGrade": "C-",
    "notes": [
     "4 courses from another discipline, at least 6 hours of which must be 3000 level or higher. Requires department head approval.",
     "Any CS 3000 or 4000 level course not already required"
@@ -499,7 +564,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to high school algebra and trigonometry. CS 1030 recommended.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to high school algebra and trigonometry"
+   ]
   },
   "CS 1410": {
    "title": "Object Oriented Programming",
@@ -513,7 +581,10 @@
    "credits": 3,
    "prereqText": "Math at least equivalent to college algebra. Pass CS 1420 Entrance Exam.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Math at least equivalent to college algebra"
+   ]
   },
   "CS 2300": {
    "title": "Discrete Mathematical Structures I",
@@ -577,14 +648,24 @@
      }
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3100": {
    "title": "Data Privacy and Security",
    "credits": 3,
    "prereqText": "CS 2420 and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3270": {
    "title": "Python Software Development",
@@ -597,14 +678,26 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "matriculation to computer science or software engineering if computer science or software engineering major",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "matriculation to computer science or software engineering if computer science or software engineering major"
   },
   "CS 3310": {
    "title": "Analysis of Algorithms",
    "credits": 3,
    "prereqText": "Matriculation into Computer Science or Software Engineering, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Computer Science or Software Engineering",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Computer Science or Software Engineering"
   },
   "CS 3520": {
    "title": "Database Theory",
@@ -616,14 +709,24 @@
      "CS 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3530": {
    "title": "Data Management For Data Sciences",
    "credits": 3,
    "prereqText": "CS 3520 and University Advanced Standing",
    "prereqs": "CS 3520",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3810": {
    "title": "Applied Data Science",
@@ -635,7 +738,12 @@
      "CS 3530"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 3820": {
    "title": "Visualization Analytics for Data Science",
@@ -653,35 +761,60 @@
      "CS 2420"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4700": {
    "title": "Machine Learning I",
    "credits": 3,
    "prereqText": "CS 2420 , and University Advanced Standing",
    "prereqs": "CS 2420",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4710": {
    "title": "Machine Learning II",
    "credits": 3,
    "prereqText": "CS 4700 and University Advanced Standing",
    "prereqs": "CS 4700",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "CS 4800": {
    "title": "Data Science Capstone",
    "credits": 3,
    "prereqText": "CS 3530 and University Advanced Standing",
    "prereqs": "CS 3530",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ECE 3710": {
    "title": "Applied Probability and Statistics for Engineers and Scientists",
    "credits": 3,
    "prereqText": "MATH 1210 and University Advanced Standing",
    "prereqs": "MATH 1210",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ENGH 1005": {
    "title": "Literacies and Composition Across Contexts",
@@ -695,7 +828,10 @@
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "ENGL 2010": {
    "title": "Intermediate Academic Writing",
@@ -708,7 +844,8 @@
      "ENGH 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C-"
   },
   "HIST 1700": {
    "title": "American History",
@@ -746,7 +883,11 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by math placement test"
+   ],
+   "prereqMinGrade": "C"
   },
   "MATH 1220": {
    "title": "Calculus II",
@@ -757,7 +898,8 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2210": {
    "title": "Calculus III",
@@ -768,7 +910,8 @@
      "MATH 1220",
      "MATH 1220H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 2270": {
    "title": "Linear Algebra",
@@ -779,13 +922,17 @@
      "MATH 1210",
      "MATH 1210H"
     ]
-   }
+   },
+   "prereqMinGrade": "C"
   },
   "MATH 3640": {
    "title": "Introduction to Optimization",
    "credits": 3,
    "prereqText": "( MATH 2210 or MATH 2210H ) and MATH 2270 with a grade of C or higher and University Advanced Standing; CS 1400 with a grade of C or higher is recommended.",
-   "prereqs": null
+   "prereqs": null,
+   "prereqMinGrade": "C",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "POLS 1000": {
    "title": "American Heritage",
@@ -806,7 +953,36 @@
      "MATH 1080"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Within the past two years"
+   ],
+   "prereqMinGrade": "C"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "MATH 1210",
+   "CS 1400",
+   "ENGL 1010",
+   "MATH 1220",
+   "CS 1410",
+   "ENGL 2010",
+   "CS 2300",
+   "CS 2420",
+   "MATH 2210",
+   "MATH 2270",
+   "CS 2450",
+   "CS 2700"
+  ],
+  "gated": [
+   "CS 3270",
+   "CS 3310"
+  ],
+  "beforeLabels": [
+   "GE",
+   "CDS Elective"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

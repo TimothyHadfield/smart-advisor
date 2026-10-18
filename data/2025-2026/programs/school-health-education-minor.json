@@ -3,7 +3,7 @@
  "name": "School Health Education, Minor",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/health-science/school-health-education-minor/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 21,
  "requirements": [
   {
@@ -11,49 +11,56 @@
    "area": "Discipline Core Requirements",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 1200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 1200 First Aid | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 2400",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 2400 Mental Health and Mindful Resilience | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 2600",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 2600 Drugs Behavior and Society | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 2800",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 2800 Human Sexuality | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4100",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 4100 Health Education Curriculum for Secondary Teachers | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "HLSC 4200",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (21 credits) › HLSC 4200 Health Education Teaching Methods | 3"
   }
  ],
  "gradPlan": [
@@ -125,14 +132,24 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4200": {
    "title": "Health Education Teaching Methods",
    "credits": 3,
    "prereqText": "HLSC 4100 and University Advanced Standing",
    "prereqs": "HLSC 4100",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "NUTR 1020": {
    "title": "Foundations of Human Nutrition",

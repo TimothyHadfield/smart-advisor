@@ -3,7 +3,7 @@
  "name": "Dental Hygiene, A.A.S.",
  "url": "https://catalog.uvu.edu/health-public-service/allied-health/dental-hygiene-aas/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 84,
  "requirements": [
   {
@@ -13,7 +13,12 @@
    "alts": [
     "ENGL 1005"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (20 credits) › ENGL 1010 Introduction to Academic Writing | 3 or ENGL 1005 Foundations of Academic Writing",
+   "creditsBy": {
+    "ENGL 1010": 3,
+    "ENGL 1005": 4
+   }
   },
   {
    "type": "choice",
@@ -62,6 +67,7 @@
     }
    ],
    "text": "Complete one of the following:",
+   "src": "General Education Requirements (20 credits) › Complete one of the following: | 3",
    "notes": [
     "Distribution Courses"
    ],
@@ -74,210 +80,240 @@
    "alts": [
     "BIOL 1610H"
    ],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (20 credits) › BIOL 1610 College Biology I | 4 or BIOL 1610H College Biology I"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "CHEM 1110",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "General Education Requirements (20 credits) › CHEM 1110 Elementary Chemistry for the Health Sciences | 4"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "COMM 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (20 credits) › COMM 1020 Public Speaking | 3"
   },
   {
    "type": "course",
    "area": "General Education Requirements",
    "code": "PSY 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "General Education Requirements (20 credits) › PSY 1010 General Psychology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2320",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › ZOOL 2320 Human Anatomy | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2325",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › ZOOL 2325 Human Anatomy Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2420",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › ZOOL 2420 Human Physiology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ZOOL 2425",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › ZOOL 2425 Human Physiology Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "SOC 1010G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › SOC 1010G Intro to Sociology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "NUTR 1020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › NUTR 1020 Foundations of Human Nutrition | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2060",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › MICR 2060 Microbiology for Health Professions | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "MICR 2065",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › MICR 2065 Microbiology for Health Professions Laboratory | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1010 Dental Hygiene I | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1015",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1015 Dental Hygiene I Preclinical lab | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1020",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1020 Oral Anatomy and Physiology | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1030",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1030 Dental Materials | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1040",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1040 Dental Hygiene II | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1045",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1045 Dental Hygiene II Clinical | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1050",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1050 Clinical Dental Radiography | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1055",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1055 Clinical Dental Radiography Lab | 1"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1060",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1060 General and Oral Pathology | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 1070",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 1070 Medical Emergencies in the Dental Office | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 2020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 2020 Dental Pharmacology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 2060G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 2060G Oral Public Health | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3010",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3010 Pain Management | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3015",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3015 Dental Hygiene III Clinical | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3030",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3030 Periodontology | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3040",
    "alts": [],
-   "credits": 2
+   "credits": 2,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3040 Dental Hygiene IV | 2"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3045",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3045 Dental Hygiene IV Clinical | 4"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "DENT 3050",
    "alts": [],
-   "credits": 1
+   "credits": 1,
+   "src": "Discipline Core Requirements (64 credits) › Complete the following: › DENT 3050 Ethics and Practice Management | 1"
   }
  ],
  "gradPlan": [
@@ -534,7 +570,12 @@
    "coreqText": "DENT 1015",
    "coreqs": [
     "DENT 1015"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1015": {
    "title": "Dental Hygiene I Preclinical lab",
@@ -545,21 +586,36 @@
    "coreqText": "DENT 1010",
    "coreqs": [
     "DENT 1010"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1020": {
    "title": "Oral Anatomy and Physiology",
    "credits": 4,
    "prereqText": "Acceptance into Dental Hygiene program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1030": {
    "title": "Dental Materials",
    "credits": 2,
    "prereqText": "Accepted into Dental Hygiene program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Accepted into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Accepted into Dental Hygiene program"
   },
   "DENT 1040": {
    "title": "Dental Hygiene II",
@@ -570,7 +626,12 @@
    "coreqText": "DENT 1045",
    "coreqs": [
     "DENT 1045"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1045": {
    "title": "Dental Hygiene II Clinical",
@@ -581,7 +642,12 @@
    "coreqText": "DENT 1040",
    "coreqs": [
     "DENT 1040"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1050": {
    "title": "Clinical Dental Radiography",
@@ -592,7 +658,12 @@
    "coreqText": "DENT 1055",
    "coreqs": [
     "DENT 1055"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance in Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in Dental Hygiene program"
   },
   "DENT 1055": {
    "title": "Clinical Dental Radiography Lab",
@@ -603,35 +674,60 @@
    "coreqText": "DENT 1050",
    "coreqs": [
     "DENT 1050"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1060": {
    "title": "General and Oral Pathology",
    "credits": 2,
    "prereqText": "Acceptance into Dental Hygiene program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 1070": {
    "title": "Medical Emergencies in the Dental Office",
    "credits": 2,
    "prereqText": "Acceptance into Dental Hygiene program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 2020": {
    "title": "Dental Pharmacology",
    "credits": 3,
    "prereqText": "Accepted into Dental Hygiene program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Accepted into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Accepted into Dental Hygiene program"
   },
   "DENT 2060G": {
    "title": "Oral Public Health",
    "credits": 3,
    "prereqText": "Acceptance into the Dental Hygiene Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Dental Hygiene Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Dental Hygiene Program"
   },
   "DENT 3010": {
    "title": "Pain Management",
@@ -642,7 +738,12 @@
    "coreqText": "DENT 3015",
    "coreqs": [
     "DENT 3015"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 3015": {
    "title": "Dental Hygiene III Clinical",
@@ -653,14 +754,24 @@
    "coreqText": "DENT 3010",
    "coreqs": [
     "DENT 3010"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 3030": {
    "title": "Periodontology",
    "credits": 3,
    "prereqText": "Acceptance into the Dental Hygiene Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Dental Hygiene Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Dental Hygiene Program"
   },
   "DENT 3040": {
    "title": "Dental Hygiene IV",
@@ -671,7 +782,12 @@
    "coreqText": "DENT 3045",
    "coreqs": [
     "DENT 3045"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into Dental Hygiene program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into Dental Hygiene program"
   },
   "DENT 3045": {
    "title": "Dental Hygiene IV Clinical",
@@ -682,28 +798,44 @@
    "coreqText": "DENT 3040",
    "coreqs": [
     "DENT 3040"
-   ]
+   ],
+   "prereqWords": [
+    "Acceptance into the Dental Hygiene Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Dental Hygiene Program"
   },
   "DENT 3050": {
    "title": "Ethics and Practice Management",
    "credits": 1,
    "prereqText": "Acceptance into the Dental Hygiene Program",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance into the Dental Hygiene Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance into the Dental Hygiene Program"
   },
   "ENGL 1005": {
    "title": "Foundations of Academic Writing",
    "credits": 4,
    "prereqText": "Appropriate placement scores",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate placement scores"
+   ]
   },
   "ENGL 1010": {
    "title": "Introduction to Academic Writing",
    "credits": 3,
    "prereqText": "Appropriate test scores taken within the last five years.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Appropriate test scores taken within the last five years"
+   ]
   },
   "MAT 1030": {
    "title": "Quantitative Reasoning",
@@ -716,7 +848,11 @@
      "MAT 1010"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C"
   },
   "MAT 1035": {
    "title": "Quantitative Reasoning with Integrated Algebra",
@@ -728,7 +864,11 @@
      "MAT 0980"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "appropriate placement by a placement exam"
+   ],
+   "prereqMinGrade": "C-"
   },
   "MATH 1050": {
    "title": "College Algebra",
@@ -740,7 +880,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MATH 1055": {
    "title": "College Algebra with Preliminaries",
@@ -752,7 +893,8 @@
      "MAT 1015"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqMinGrade": "C"
   },
   "MICR 2060": {
    "title": "Microbiology for Health Professions",
@@ -773,7 +915,8 @@
    "coreqText": "MICR 2065",
    "coreqs": [
     "MICR 2065"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "MICR 2065": {
    "title": "Microbiology for Health Professions Laboratory",
@@ -823,7 +966,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "STAT 1045": {
    "title": "Introduction to Statistics with Algebra",
@@ -836,7 +984,12 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "an ACT mathematics score of 23 (assuming the test has been taken within the last two years)",
+    "appropriate placement by the Accuplacer test score"
+   ],
+   "prereqMinGrade": "C"
   },
   "ZOOL 2320": {
    "title": "Human Anatomy",
@@ -874,7 +1027,8 @@
    "coreqText": "ZOOL 2425",
    "coreqs": [
     "ZOOL 2425"
-   ]
+   ],
+   "prereqMinGrade": "C-"
   },
   "ZOOL 2425": {
    "title": "Human Physiology Laboratory",
@@ -893,5 +1047,47 @@
   }
  },
  "admission": true,
- "admissionNote": "Complete interview process and be formally accepted into program."
+ "admissionNote": "Complete interview process and be formally accepted into program.",
+ "admissionInfo": {
+  "note": "Complete interview process and be formally accepted into program.",
+  "before": [
+   "ENGL 1010",
+   "COMM 1020",
+   "PSY 1010",
+   "SOC 1010G",
+   "BIOL 1610",
+   "NUTR 1020",
+   "CHEM 1110",
+   "ZOOL 2320",
+   "ZOOL 2325",
+   "ZOOL 2420",
+   "ZOOL 2425",
+   "MICR 2060",
+   "MICR 2065"
+  ],
+  "gated": [
+   "DENT 1010",
+   "DENT 1015",
+   "DENT 1020",
+   "DENT 1030",
+   "DENT 1040",
+   "DENT 1045",
+   "DENT 1050",
+   "DENT 1055",
+   "DENT 1060",
+   "DENT 1070",
+   "DENT 2020",
+   "DENT 2060G",
+   "DENT 3010",
+   "DENT 3015",
+   "DENT 3030",
+   "DENT 3040",
+   "DENT 3045",
+   "DENT 3050"
+  ],
+  "beforeLabels": [
+   "Complete one of the following:"
+  ],
+  "beforeFrom": "graduation plan"
+ }
 }

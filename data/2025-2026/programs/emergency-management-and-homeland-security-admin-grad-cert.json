@@ -3,7 +3,7 @@
  "name": "Emergency Management and Homeland Security Administration, Graduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/emergency-services/emergency-management-and-homeland-security-admin-grad-cert/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 9,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "Discipline Core:",
    "code": "ESMG 6110",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core: (9 credits) › ESMG 6110 Disasters/Vulnerability/and Impacts | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core:",
    "code": "ESMG 6120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core: (9 credits) › ESMG 6120 Emergency Planning and Response | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core:",
    "code": "ESMG 6140",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core: (9 credits) › ESMG 6140 Homeland Security Fundamentals | 3"
   }
  ],
  "gradPlan": [
@@ -58,21 +61,45 @@
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   },
   "ESMG 6120": {
    "title": "Emergency Planning and Response",
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   },
   "ESMG 6140": {
    "title": "Homeland Security Fundamentals",
    "credits": 3,
    "prereqText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program.",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
+   ],
+   "gate": "admission",
+   "gateText": "Acceptance in the Graduate Certificate in Emergency Management and Homeland Security Administration or the Master of Public Administration (MPA) Program"
   }
+ },
+ "admissionInfo": {
+  "text": "1. Application for admission to graduate program with application fee by the established deadline. 2. Submit official transcripts from all universities attended. 3. A bachelor’s degree from a regionally accredited college/university, a nationally accredited program, or the international equivalent. 4. A 3.0 cumulative undergraduate GPA or a 3.0 GPA calculated on the last 60 semester hours (90 quarter hours) of undergraduate work. 5. For international students whose native language is not English, submit official TOEFL or IELTS band scores. A TOEFL score of 80 iBT (550 pBT) or higher, or an IELTS band score of 6.5 or higher within the past two years is required. 6. International students must also meet all US government requirements for international students.",
+  "before": [],
+  "gated": [
+   "ESMG 6110",
+   "ESMG 6120",
+   "ESMG 6140"
+  ]
  }
 }

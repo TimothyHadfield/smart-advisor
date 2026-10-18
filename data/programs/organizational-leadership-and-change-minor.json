@@ -3,7 +3,7 @@
  "name": "Organizational Leadership and Change, Minor",
  "url": "https://catalog.uvu.edu/business/organizational-leadership/organizational-leadership-and-change-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 16,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "",
    "code": "MGMT 3000",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 3000 Organizational Behavior | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 3020",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 3020 Ethical Decision-Making in Organizations | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HR 3430",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HR 3430 Introduction to Human Resource Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "MGMT 3500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "MGMT 3500 Leadership Theory and Application | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HR 3550",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HR 3550 Organization Development and Change Management | 3"
   },
   {
    "type": "course",
@@ -47,6 +52,7 @@
    "code": "MGMT 4810R",
    "alts": [],
    "credits": 1,
+   "src": "MGMT 4810R Internship (See advisor) | 1",
    "crMax": 6
   }
  ],
@@ -92,13 +98,20 @@
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3550": {
    "title": "Organization Development and Change Management",
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
-   "prereqs": null
+   "prereqs": null,
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3000": {
    "title": "Organizational Behavior",
@@ -111,21 +124,36 @@
     ]
    },
    "uncertain": true,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3020": {
    "title": "Ethical Decision-Making in Organizations",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 3500": {
    "title": "Leadership Theory and Application",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4810R": {
    "title": "Internship",
@@ -133,7 +161,25 @@
    "creditsMax": 6,
    "prereqText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager, and University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculation into Woodbury School of Business",
+    "approval from School of Business Career and Corporate Manager",
+    "University Advanced Standing"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculation into Woodbury School of Business, approval from School of Business Career and Corporate Manager"
   }
+ },
+ "admissionInfo": {
+  "before": [
+   "MGMT 3000",
+   "MGMT 3020",
+   "HR 3430"
+  ],
+  "gated": [
+   "MGMT 4810R"
+  ],
+  "beforeFrom": "graduation plan"
  }
 }

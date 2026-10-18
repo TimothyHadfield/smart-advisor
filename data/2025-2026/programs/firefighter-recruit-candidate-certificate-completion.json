@@ -3,7 +3,7 @@
  "name": "Firefighter Recruit Candidate Academy, Undergraduate Certificate",
  "url": "https://catalog.uvu.edu/archives/2025-2026/health-public-service/emergency-services/firefighter-recruit-candidate-certificate-completion/",
  "catalogYear": "2025-2026",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 32,
  "requirements": [
   {
@@ -11,35 +11,40 @@
    "area": "Discipline Core Requirements",
    "code": "ESFF 1120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (32 credits) › ESFF 1120 Principles of Fire and Emergency Services Safety and Survival | 3"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESFF 2500A",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (32 credits) › ESFF 2500A Firefighter Recruit Candidate Academy I | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESFF 2500B",
    "alts": [],
-   "credits": 8
+   "credits": 8,
+   "src": "Discipline Core Requirements (32 credits) › ESFF 2500B Firefighter Recruit Candidate Academy II | 8"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESEC 1140",
    "alts": [],
-   "credits": 9
+   "credits": 9,
+   "src": "Discipline Core Requirements (32 credits) › ESEC 1140 Emergency Medical Technician Basic | 9"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ESFF 1000",
    "alts": [],
-   "credits": 4
+   "credits": 4,
+   "src": "Discipline Core Requirements (32 credits) › ESFF 1000 Introduction to Emergency Services | 4"
   }
  ],
  "gradPlan": [
@@ -92,7 +97,12 @@
    "credits": 8,
    "prereqText": "Matriculated into the Recruit Candidate Academy or Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Matriculated into the Recruit Candidate Academy or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the Recruit Candidate Academy or Department approval"
   },
   "ESFF 2500B": {
    "title": "Firefighter Recruit Candidate Academy II",
@@ -104,7 +114,25 @@
    "precoreqs": "ESFF 2500A",
    "preco": [
     "ESFF 2500A"
-   ]
+   ],
+   "prereqWords": [
+    "Matriculated into the Recruit Candidate Academy or Department approval"
+   ],
+   "gate": "admission",
+   "gateText": "Matriculated into the Recruit Candidate Academy or Department approval"
   }
+ },
+ "admissionInfo": {
+  "text": "1. Must be admitted to UVU 2. Complete pre-requisites of ESFF 1000 and ESFF 1120 with a grade of C- or higher 3. Be NREMT certified or complete an EMT course through UVU or another recognized agency/institution 4. Demonstrate competency in English and Math (by one of the following: ACT, SAT, High School Transcript, College Level courses, degrees, and/or RCA entrance exam.) 5. Be at least 18 years of age before class starts 6. Have any valid form of Government Issue Photo Identification (Driver’s license, State ID or Passport) 7. Complete online application found at https://www.uvu.edu/es/rca/",
+  "before": [
+   "ESFF 1000",
+   "ESFF 1120"
+  ],
+  "gated": [
+   "ESFF 2500A",
+   "ESFF 2500B"
+  ],
+  "beforeFrom": "matriculation section",
+  "minGrade": "C-"
  }
 }

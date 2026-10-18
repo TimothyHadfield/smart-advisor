@@ -3,7 +3,7 @@
  "name": "Healthcare Administration, Minor",
  "url": "https://catalog.uvu.edu/health-public-service/health-science/healthcare-administration-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -11,21 +11,24 @@
    "area": "",
    "code": "HLSC 4500",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HLSC 4500 Healthcare Administration | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HLSC 4640",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HLSC 4640 Population Health and Strategic Management | 3"
   },
   {
    "type": "course",
    "area": "",
    "code": "HLSC 4560G",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "HLSC 4560G Introduction to Healthcare Systems | 3"
   },
   {
    "type": "choice",
@@ -46,7 +49,10 @@
      "codes": [
       "HLTH 4140"
      ],
-     "credits": 3
+     "credits": 3,
+     "notes": [
+      "May have additional pre-requitsites not in this program that may be needed to take this course. Please see your advisor for help."
+     ]
     },
     {
      "codes": [
@@ -55,7 +61,8 @@
      "credits": 3
     }
    ],
-   "text": "Choose one of the following:"
+   "text": "Choose one of the following:",
+   "src": "Choose one of the following: | 3"
   },
   {
    "type": "choice",
@@ -76,7 +83,8 @@
      ]
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Complete one of the following: | 3"
   },
   {
    "type": "choice",
@@ -130,7 +138,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Complete one of the following: | 3"
   }
  ],
  "gradPlan": [
@@ -242,77 +251,130 @@
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3550": {
    "title": "Healthcare Project and Revenue Cycle Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 3660": {
    "title": "Healthcare Economics",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4000": {
    "title": "Introduction to Health Insurance Management",
    "credits": 3,
    "prereqText": "Advanced University Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Advanced University Standing"
+   ]
   },
   "HLSC 4250": {
    "title": "Health Organization and Policy",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4330": {
    "title": "Healthcare financial management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4500": {
    "title": "Healthcare Administration",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4560G": {
    "title": "Introduction to Healthcare Systems",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4640": {
    "title": "Population Health and Strategic Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4780": {
    "title": "Strategic Planning and Operations Management",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLSC 4840": {
    "title": "Healthcare Law",
    "credits": 3,
    "prereqText": "University Advanced Standing",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HLTH 4140": {
    "title": "Assessment and Program Development",
@@ -324,14 +386,24 @@
    "precoreqs": "HLTH 3260",
    "preco": [
     "HLTH 3260"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "HR 3430": {
    "title": "Introduction to Human Resource Management",
    "credits": 3,
    "prereqText": "ENGL 2010 and University Advanced Standing",
    "prereqs": "ENGL 2010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "LEGL 3000": {
    "title": "Business Law",
@@ -343,14 +415,29 @@
      "ENGL 1005"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "MGMT 4470": {
    "title": "Strategic Operational Planning",
    "credits": 3,
    "prereqText": "MGMT 3450 and University Advanced Standing",
    "prereqs": "MGMT 3450",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
+ },
+ "admissionInfo": {
+  "text": "Admitted to a bachelor's degree program at UVU.",
+  "before": [],
+  "gated": []
  }
 }

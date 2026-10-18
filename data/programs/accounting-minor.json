@@ -3,7 +3,7 @@
  "name": "Accounting, Minor",
  "url": "https://catalog.uvu.edu/business/accounting/accounting-minor/",
  "catalogYear": "2026-2027",
- "fetched": "2026-10-15",
+ "fetched": "2026-10-18",
  "totalCredits": 18,
  "requirements": [
   {
@@ -29,14 +29,17 @@
      "credits": 2
     }
    ],
-   "text": "Complete one of the following:"
+   "text": "Complete one of the following:",
+   "src": "Discipline Core Requirements (12 credits) › Complete one of the following: | 3 (Note: ACC 1110 and ACC 1120 are concurrent enrollment courses. To receive credit for ACC 2110, you must have completed both ACC 1110 and ACC 1120 in high school. If you took only one of these courses, you must take ACC 2110.)"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 2120",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "minGrade": "B-",
+   "src": "Discipline Core Requirements (12 credits) › ACC 2120 Principles of Accounting II | 3 (Note: This course must be completed with a grade of B- or higher.)"
   },
   {
    "type": "course",
@@ -45,14 +48,16 @@
    "alts": [
     "ACC 3030"
    ],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 3010 Intermediate Accounting I | 3 or ACC 3030 Intermediate Accounting for Non-Accounting Majors"
   },
   {
    "type": "course",
    "area": "Discipline Core Requirements",
    "code": "ACC 3300",
    "alts": [],
-   "credits": 3
+   "credits": 3,
+   "src": "Discipline Core Requirements (12 credits) › ACC 3300 Cost Management | 3"
   },
   {
    "type": "choice",
@@ -155,7 +160,8 @@
      "credits": 3
     }
    ],
-   "text": "Complete 6 credits from the following (3 credits must be upper division):"
+   "text": "Complete 6 credits from the following (3 credits must be upper division):",
+   "src": "Elective Requirements (6 credits) › Complete 6 credits from the following (3 credits must be upper division): | 6 (Note: Certain courses may not be available every semester. To confirm if a course is being offered, consult the academic catalog for the relevant semester. For further assistance, reach out to your academic advisor.)"
   }
  ],
  "gradPlan": [
@@ -213,14 +219,20 @@
    "credits": 1.5,
    "prereqText": "Department approval",
    "prereqs": null,
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Department approval"
+   ]
   },
   "ACC 1120": {
    "title": "Financial Accounting II",
    "credits": 1.5,
    "prereqText": "ACC 1110 and departmental approval",
    "prereqs": "ACC 1110",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "departmental approval"
+   ]
   },
   "ACC 2110": {
    "title": "Principles of Accounting I",
@@ -273,14 +285,25 @@
    "precoreqs": "ACC 2115",
    "preco": [
     "ACC 2115"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "prereqMinGrade": "B-",
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3020": {
    "title": "Intermediate Accounting II",
    "credits": 3,
    "prereqText": "ACC 3010 and University Advanced Standing",
    "prereqs": "ACC 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3030": {
    "title": "Intermediate Accounting for Non-Accounting Majors",
@@ -292,14 +315,24 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3250": {
    "title": "Advanced QuickBooks and Industry Accounting",
    "credits": 3,
    "prereqText": "ACC 2250 and University Advanced Standing",
    "prereqs": "ACC 2250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3300": {
    "title": "Cost Management",
@@ -311,7 +344,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3400": {
    "title": "Fundamentals of Taxation",
@@ -323,7 +361,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3510": {
    "title": "Accounting Information Systems",
@@ -335,7 +378,12 @@
      "ACC 2120"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 3710": {
    "title": "Auditing",
@@ -347,7 +395,12 @@
    "precoreqs": "ACC 3510",
    "preco": [
     "ACC 3510"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4030": {
    "title": "Governmental and Not For Profit Accounting",
@@ -359,7 +412,12 @@
      "ACC 3030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4050": {
    "title": "Financial Statement Analysis",
@@ -371,21 +429,36 @@
      "ACC 3030"
     ]
    },
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4250": {
    "title": "Advisory and Controllership Practices",
    "credits": 3,
    "prereqText": "ACC 3250 and University Advanced Standing",
    "prereqs": "ACC 3250",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4310": {
    "title": "Advanced Management Accounting",
    "credits": 3,
    "prereqText": "ACC 3300 , University Advanced Standing",
    "prereqs": "ACC 3300",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4510": {
    "title": "Artificial Intelligence and Data Analytics in Accounting",
@@ -397,7 +470,12 @@
    "precoreqs": "ACC 3510",
    "preco": [
     "ACC 3510"
-   ]
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 4700R": {
    "title": "Current Topics in Accounting",
@@ -405,28 +483,48 @@
    "creditsMax": 3,
    "prereqText": "ACC 3010 and University Advanced Standing",
    "prereqs": "ACC 3010",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 5020": {
    "title": "Advanced Financial Accounting",
    "credits": 3,
    "prereqText": "Undergraduate course: ACC 3020 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
    "prereqs": "ACC 3020",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 5400": {
    "title": "Advanced Principles of Taxation",
    "credits": 3,
    "prereqText": "Undergraduate course: ACC 3400 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
    "prereqs": "ACC 3400",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   },
   "ACC 5710": {
    "title": "Financial Auditing",
    "credits": 3,
    "prereqText": "Undergraduate course: ACC 3710 and University Advanced Standing. Graduate course: Admission to Master of Accountancy Program.",
    "prereqs": "ACC 3710",
-   "prereqNonCourse": true
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
+   "gate": "advanced-standing",
+   "gateText": "University Advanced Standing"
   }
  }
 }
