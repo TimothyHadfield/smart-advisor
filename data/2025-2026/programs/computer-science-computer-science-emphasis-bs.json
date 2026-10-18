@@ -649,9 +649,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1001,7 +998,11 @@
    "title": "Advanced High Performance Computer Architecture",
    "credits": 3,
    "prereqText": "CS 3060 , ( CS 3370 Recommended), and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": "CS 3060",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

@@ -1023,6 +1023,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1031,6 +1035,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1051,6 +1059,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1083,6 +1095,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1091,6 +1107,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1111,6 +1131,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1119,6 +1143,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1139,6 +1167,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1147,6 +1179,10 @@
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1155,6 +1191,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1175,6 +1215,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1183,6 +1227,10 @@
    "credits": 2,
    "prereqText": "University Advanced Standing; MKTG 1890 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1190,7 +1238,19 @@
    "title": "Digital Marketing Capstone",
    "credits": 3,
    "prereqText": "MKTG 3170 , MKTG 3600 , MKTG 3660 , MKTG 3680 , MKTG 3690 , and University Advanced Standing; Senior Standing is recommended.",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "MKTG 3170",
+     "MKTG 3600",
+     "MKTG 3660",
+     "MKTG 3680",
+     "MKTG 3690"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1224,6 +1284,10 @@
    "creditsMax": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1232,6 +1296,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1240,6 +1308,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1259,7 +1331,18 @@
    "title": "Marketing Management Capstone",
    "credits": 3,
    "prereqText": "MKTG 3600 , MKTG 3650 , MKTG 3660 , MKTG 3700 , and University Advanced Standing; Senior Standing is recommended.",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "MKTG 3600",
+     "MKTG 3650",
+     "MKTG 3660",
+     "MKTG 3700"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

@@ -598,7 +598,12 @@
    "title": "Digital Audio Essentials",
    "credits": 3,
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
-   "precoreqs": null
+   "precoreqs": {
+    "or": [
+     "MAT 1030",
+     "MAT 1035"
+    ]
+   }
   },
   "DAPR 2110": {
    "title": "Production Sound for Cinema",
@@ -978,7 +983,7 @@
    "title": "Acting II",
    "credits": 3,
    "prereqText": "THEA 1033 ; THEA 1113 recommended.",
-   "prereqs": null
+   "prereqs": "THEA 1033"
   },
   "THEA 2203": {
    "title": "Costume Construction I",

@@ -197,7 +197,11 @@
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null,
+   "prereqs": "INFO 2410",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

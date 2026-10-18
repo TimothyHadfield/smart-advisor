@@ -672,13 +672,25 @@
    "title": "Collision Damage Reporting",
    "credits": 2,
    "prereqText": "CRT 1120 , CRT 1130 , CRT 1230 , recommended",
-   "prereqs": null
+   "prereqs": {
+    "and": [
+     "CRT 1120",
+     "CRT 1130",
+     "CRT 1230"
+    ]
+   }
   },
   "CRT 2315": {
    "title": "Collision Damage Reporting Lab",
    "credits": 1,
    "prereqText": "CRT 1125 , CRT 1135 , CRT 1235 , all recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "CRT 1125",
+     "CRT 1135",
+     "CRT 1235"
+    ]
+   },
    "coreqText": "CRT 2310",
    "coreqs": [
     "CRT 2310"

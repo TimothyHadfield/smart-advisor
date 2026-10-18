@@ -929,7 +929,21 @@
    "title": "Introduction to Optimization",
    "credits": 3,
    "prereqText": "( MATH 2210 or MATH 2210H ) and MATH 2270 with a grade of C or higher and University Advanced Standing; CS 1400 with a grade of C or higher is recommended.",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MATH 2210",
+       "MATH 2210H"
+      ]
+     },
+     "MATH 2270"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

@@ -591,9 +591,45 @@ export function parseGradPlan(html) {
 
 // ---------- prerequisite expression parsing ----------
 // Returns { expr, uncertain } where expr is null | "CODE" | { and: [...] } | { or: [...] }
+// Remove only the advice in a prerequisite line, never the requirements next to it:
+// "( CS 3370 Recommended)", "[ ... recommended ]", a sentence that starts "Recommended:" / "It is (strongly)
+// recommended" / "Also, it is highly recommended", and the one ,/;/and part that says "recommend"
+// ("MKTG 3170 , ..., and University Advanced Standing; Senior Standing is recommended." keeps the MKTG courses).
+export function stripRecommended(raw) {
+  if (!raw || !/recommend/i.test(raw)) return raw;
+  let s = raw;
+  for (let k = 0; k < 3; k++) s = s.replace(/\([^()]*recommend[^()]*\)/gi, ' ').replace(/\[[^[\]]*recommend[^[\]]*\]/gi, ' ');
+  const sentences = s.split(/(?<=\.)\s+/);
+  const out = [];
+  for (const sen of sentences) {
+    if (!/recommend/i.test(sen)) { out.push(sen); continue; }
+    if (/^\s*(?:also,?\s*)?(?:it is\s+)?(?:also\s+)?(?:strongly\s+|highly\s+)?recommended\b/i.test(sen)) continue;
+    // split at ,/;/and outside parentheses, keeping the separators
+    const parts = []; // [sep, segment]
+    let depth = 0, seg = '', sep = '';
+    for (let i = 0; i < sen.length; i++) {
+      const ch = sen[i];
+      if (ch === '(' || ch === '[') depth++;
+      if (ch === ')' || ch === ']') depth = Math.max(0, depth - 1);
+      let m;
+      if (depth === 0 && (ch === ',' || ch === ';')) { parts.push([sep, seg]); sep = ch; seg = ''; continue; }
+      if (depth === 0 && (m = sen.slice(i).match(/^\s+and\s+/i)) && !/^\s+and\s*\//i.test(sen.slice(i))) { parts.push([sep, seg]); sep = ' and '; seg = ''; i += m[0].length - 1; continue; }
+      seg += ch;
+    }
+    parts.push([sep, seg]);
+    // "BIOL 1010 and CHEM 1110 recommended", "CS 3520 and CS 3380 recommended.": courses tied by "and" to the
+    // advice are advice too
+    const drop = parts.map(([, x]) => /recommend/i.test(x));
+    for (let k = parts.length - 1; k > 0; k--) if (drop[k] && parts[k][0] === ' and ' && /^\s*[A-Z]{2,5} ?\d{4}[A-Z]{0,2}(?:\s+or\s+[A-Z]{2,5} ?\d{4}[A-Z]{0,2})*\s*$/.test(parts[k - 1][1])) drop[k - 1] = true;
+    const kept = parts.filter((_, k) => !drop[k]);
+    // the first kept part loses the separator that tied it to a dropped part
+    out.push(kept.map(([p, x], k) => (k === 0 ? x : `${p} ${x}`)).join('').replace(/^\s*(?:,|;|and\b)\s*/i, ''));
+  }
+  return out.join(' ').replace(/\s+/g, ' ').trim();
+}
 export function parseReqExpr(raw) {
-  // drop advice sentences ("CS 1030 recommended.", "Also, it is highly recommended ...")
-  raw = raw.split(/(?<=\.)\s+/).filter((x) => !/recommend/i.test(x)).join(' ').replace(/\bAlso,[^.]*recommended[^.]*\.?/gi, ' ');
+  // drop advice ("CS 1030 recommended.", "( CS 3370 Recommended)"), keep the requirements around it
+  raw = stripRecommended(raw);
   raw = raw.replace(/\bOR\b/g, 'or').replace(/\bAND\b/g, 'and');
   // "ENGL1010" -> "ENGL 1010"
   raw = raw.replace(/\b([A-Z]{2,5})(\d{4}[A-Z]{0,2})\b/g, '$1 $2');
@@ -766,10 +802,10 @@ export function parseCourseXml(xml, self = null) {
     }
   }
   // worded prerequisites, their grade minimum, and an admission / Advanced Standing gate
-  if (out.prereqNonCourse) { const w = wordsIn(out.prereqText); if (w.length) out.prereqWords = w; }
+  if (out.prereqNonCourse) { const w = wordsIn(stripRecommended(out.prereqText)); if (w.length) out.prereqWords = w; }
   const g = gradeIn(out.prereqText);
   if (g) out.prereqMinGrade = g;
-  const gate = gateOf(out.prereqText) || gateOf(out.precoreqText);
+  const gate = gateOf(stripRecommended(out.prereqText)) || gateOf(stripRecommended(out.precoreqText));
   if (gate) { out.gate = gate.gate; out.gateText = gate.text; }
   return out;
 }

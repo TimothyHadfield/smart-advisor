@@ -382,7 +382,18 @@
    "title": "Introduction to Translation and Interpreting English-Spanish",
    "credits": 3,
    "prereqText": "( SPAN 3030 and SPAN 3040 ) or SPAN 3050 ; and it is highly recommended to take previously 6 credits from the Spanish for the Profession courses (Medical Spanish, Business Spanish, Legal Spanish, Spanish for Psychology, Spanish for Tourism, etc.)",
-   "prereqs": null
+   "prereqs": {
+    "or": [
+     {
+      "and": [
+       "SPAN 3030",
+       "SPAN 3040"
+      ]
+     },
+     "SPAN 3050"
+    ]
+   },
+   "uncertain": true
   },
   "SPAN 4120": {
    "title": "Advanced Translation English-Spanish",

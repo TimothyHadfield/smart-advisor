@@ -1156,6 +1156,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1164,6 +1168,10 @@
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

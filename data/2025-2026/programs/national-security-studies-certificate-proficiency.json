@@ -148,7 +148,13 @@
    "title": "Information Security Fundamentals",
    "credits": 3,
    "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
-   "prereqs": null
+   "prereqs": {
+    "or": [
+     "IT 2600",
+     "CS 2600"
+    ]
+   },
+   "uncertain": true
   },
   "NSS 2010": {
    "title": "Introduction to National Security",

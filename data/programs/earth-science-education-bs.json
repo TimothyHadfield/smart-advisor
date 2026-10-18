@@ -735,9 +735,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -984,7 +981,11 @@
    "title": "Natural Resources Management",
    "credits": 3,
    "prereqText": "BIOL 1010 and University Advanced Standing; ENVT 1110 recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1010",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1062,10 +1063,19 @@
    "title": "Earth Materials",
    "credits": 3,
    "prereqText": "GEO 1010 , GEO 1015 , and University Advanced Standing; CHEM 1210 or other chemistry course recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEO 1010",
+     "GEO 1015"
+    ]
+   },
+   "prereqNonCourse": true,
    "coreqText": "GEO 3085",
    "coreqs": [
     "GEO 3085"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1074,10 +1084,26 @@
    "title": "Earth Materials Laboratory",
    "credits": 1,
    "prereqText": "( GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050 ), GEO 1015 , and University Advanced Standing; CHEM 1210 or other chemistry course recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "GEO 1010",
+       "GEO 1030",
+       "GEO 1040",
+       "GEO 1050"
+      ]
+     },
+     "GEO 1015"
+    ]
+   },
+   "prereqNonCourse": true,
    "coreqText": "GEO 3080",
    "coreqs": [
     "GEO 3080"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1109,7 +1135,17 @@
    "title": "Sedimentary Geology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , and University Advanced Standing; CHEM 1210 or other chemistry recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEO 1220",
+     "GEO 1225",
+     "GEO 3080"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1130,6 +1166,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

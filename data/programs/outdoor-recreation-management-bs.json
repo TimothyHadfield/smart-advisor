@@ -929,7 +929,16 @@
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1183,6 +1192,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

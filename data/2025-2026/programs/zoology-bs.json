@@ -879,7 +879,21 @@
    "title": "College Biology I",
    "credits": 4,
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGH 1005 or ENGL1010 (or higher); BIOL 1615 ( BIOL 1615 is recommended, but not required for pre-nursing or pre-dental hygiene majors.)",
-   "precoreqs": null
+   "precoreqs": {
+    "and": [
+     {
+      "or": [
+       "ENGH 1005",
+       "ENGL 1010"
+      ]
+     },
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -996,7 +1010,11 @@
    "title": "Introduction to Undergraduate Research",
    "credits": 1,
    "prereqText": "BIOL 1610 ; ( MATH 1050 or STAT 2040 highly recommended) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": "BIOL 1610",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1033,7 +1051,16 @@
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1320,9 +1347,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1462,6 +1486,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1904,10 +1932,14 @@
    "title": "Mammalogy",
    "credits": 3,
    "prereqText": "BIOL 1620 with a minimum grade of C-, and University Advanced Standing; ZOOL 3100 and ZOOL 3105 strongly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
@@ -1994,7 +2026,11 @@
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

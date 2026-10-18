@@ -836,7 +836,13 @@
    "title": "Information Security Fundamentals",
    "credits": 3,
    "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
-   "prereqs": null
+   "prereqs": {
+    "or": [
+     "IT 2600",
+     "CS 2600"
+    ]
+   },
+   "uncertain": true
   },
   "CYBR 3350": {
    "title": "Intellectual Property and Cyber Law",
@@ -1091,6 +1097,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 highly recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1099,6 +1109,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; HR 3430 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1316,7 +1330,11 @@
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null,
+   "prereqs": "INFO 2410",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

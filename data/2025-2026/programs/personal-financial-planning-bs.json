@@ -1539,6 +1539,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing, FIN 3100 strongly recommended.",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1546,7 +1550,12 @@
    "title": "Wolverine Fund",
    "credits": 3,
    "prereqText": "FIN 3410 , Instructor Approval and University Advanced Standing, FIN 3100 strongly recommended.",
-   "prereqs": null,
+   "prereqs": "FIN 3410",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "Instructor Approval",
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -2159,6 +2168,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

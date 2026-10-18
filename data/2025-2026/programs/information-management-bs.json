@@ -1222,7 +1222,27 @@
    "title": "Web Systems Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "IT 1200",
+       "CS 1400"
+      ]
+     },
+     {
+      "or": [
+       "INFO 2410",
+       "CS 3520"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1231,7 +1251,27 @@
    "title": "Client-Side Web Development",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2420 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "IT 1200",
+       "CS 1400"
+      ]
+     },
+     {
+      "or": [
+       "INFO 2410",
+       "CS 3520"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1240,11 +1280,31 @@
    "title": "Server-Side Web Frameworks",
    "credits": 3,
    "prereqText": "[( INFO 1200 or IT 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) both with a grade of C- or higher within the past seven years] and University Advanced Standing; INFO 2200 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "IT 1200",
+       "CS 1400"
+      ]
+     },
+     {
+      "or": [
+       "INFO 2410",
+       "CS 3520"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
    "precoreqText": "INFO 3300",
    "precoreqs": "INFO 3300",
    "preco": [
     "INFO 3300"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
@@ -1316,7 +1376,11 @@
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null,
+   "prereqs": "INFO 2410",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1348,7 +1412,26 @@
    "title": "Mobile Application Development",
    "credits": 3,
    "prereqText": "( INFO 1200 or CS 1400 ) and ( INFO 2410 or CS 3520 ) and University Advanced Standing; ( INFO 2200 recommended or CS 1410 recommended)",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "INFO 1200",
+       "CS 1400"
+      ]
+     },
+     {
+      "or": [
+       "INFO 2410",
+       "CS 3520"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1356,7 +1439,7 @@
    "title": "Scripting for Administrators",
    "credits": 3,
    "prereqText": "MAT 1010 or higher; INFO 1120 recommended",
-   "prereqs": null
+   "prereqs": "MAT 1010"
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",
@@ -1452,6 +1535,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1460,6 +1547,10 @@
    "credits": 3,
    "prereqText": "MKTG 3600 and MKTG 3660 are recommended; University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1468,6 +1559,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3660 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

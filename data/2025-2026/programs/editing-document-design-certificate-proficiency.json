@@ -201,7 +201,11 @@
    "title": "Advanced Editing and Design for Print Media",
    "credits": 3,
    "prereqText": "ENGL 2010 with a grade of C- or higher and University Advanced Standing; ENGL 2050 recommended",
-   "prereqs": null,
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

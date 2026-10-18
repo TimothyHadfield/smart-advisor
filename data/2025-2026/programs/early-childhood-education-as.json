@@ -530,7 +530,16 @@
    "title": "Early Childhood Curriculum",
    "credits": 3,
    "prereqText": "ACT (or equivalent) composite score of 21+, or ( ENGL 1010 or ENGH 1005 or higher) with a minimum grade of C-, EDEC 2600 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "ACT (or equivalent) composite score of 21+"
+   ],
    "prereqMinGrade": "C-"
   },
   "EDEC 2630": {

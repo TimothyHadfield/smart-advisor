@@ -363,7 +363,19 @@
    "title": "Greenhouse Management",
    "credits": 3,
    "prereqText": "[ BOT 1800 , BOT 2050 , BOT 2100 , or BOT 2400 ] and University Advanced Standing; BOT 1800 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "BOT 1800",
+     "BOT 2050",
+     "BOT 2100",
+     "BOT 2400"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

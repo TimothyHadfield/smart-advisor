@@ -404,10 +404,14 @@
    "title": "Mammalogy",
    "credits": 3,
    "prereqText": "BIOL 1620 with a minimum grade of C-, and University Advanced Standing; ZOOL 3100 and ZOOL 3105 strongly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
@@ -563,7 +567,11 @@
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   }

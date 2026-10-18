@@ -896,7 +896,17 @@
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGL 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

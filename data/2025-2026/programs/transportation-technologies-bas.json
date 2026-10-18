@@ -657,12 +657,17 @@
    "credits": 3,
    "prereqText": "Matriculation and University Advanced Standing and AUT 2250 or AUT 2260 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
    "coreqText": "AUT 2240 recommended",
    "coreqs": [
     "AUT 2240"
    ],
+   "prereqWords": [
+    "Matriculation",
+    "University Advanced Standing"
+   ],
    "gate": "admission",
-   "gateText": "Matriculation and University Advanced Standing and AUT 2250 or AUT 2260 recommended"
+   "gateText": "Matriculation and University Advanced Standing"
   },
   "TT 3406": {
    "title": "High Performance Diesel Engines",

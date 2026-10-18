@@ -865,7 +865,21 @@
    "title": "College Biology I",
    "credits": 4,
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL 1010 (or higher); BIOL 1615 ( BIOL 1615 is recommended, but not required for pre-nursing or pre-dental hygiene majors.)",
-   "precoreqs": null
+   "precoreqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "BIOL 1615": {
    "title": "College Biology I Laboratory",
@@ -1068,7 +1082,11 @@
    "title": "Introduction to Undergraduate Research",
    "credits": 1,
    "prereqText": "BIOL 1610 ; ( MATH 1050 or STAT 2040 highly recommended) and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": "BIOL 1610",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1237,7 +1255,19 @@
    "title": "Greenhouse Management",
    "credits": 3,
    "prereqText": "[ BOT 1800 , BOT 2050 , BOT 2100 , or BOT 2400 ] and University Advanced Standing; BOT 1800 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "BOT 1800",
+     "BOT 2050",
+     "BOT 2100",
+     "BOT 2400"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1440,9 +1470,6 @@
    "coreqText": "CHEM 1215",
    "coreqs": [
     "CHEM 1215"
-   ],
-   "prereqWords": [
-    "Also"
    ],
    "prereqMinGrade": "C-"
   },
@@ -1753,11 +1780,21 @@
    "title": "General Microbiology Laboratory",
    "credits": 1,
    "prereqText": "BIOL 1610 or BIOL 1610H and University Advanced Standing; BIOL 3600 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1610",
+     "BIOL 1610H"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
    "precoreqText": "MICR 3450",
    "precoreqs": "MICR 3450",
    "preco": [
     "MICR 3450"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

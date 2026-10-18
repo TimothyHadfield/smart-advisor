@@ -994,9 +994,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1480,11 +1477,27 @@
    "title": "Construction Equipment/Planning and Logistics",
    "credits": 3,
    "prereqText": "CMGT 2080 , ACC 3000 (recommended) or ( ACC 2110 ), and University Advanced Standing, or CMGT Instructor/Program approval for non-CMGT majors",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "CMGT 2080",
+     {
+      "or": [
+       "ACC 3000",
+       "ACC 2110"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
    "precoreqText": "CMGT 3030",
    "precoreqs": "CMGT 3030",
    "preco": [
     "CMGT 3030"
+   ],
+   "prereqWords": [
+    "University Advanced Standing",
+    "CMGT Instructor/Program approval for non-CMGT majors"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1707,7 +1720,17 @@
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGH 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGH 1005"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1716,6 +1739,10 @@
    "credits": 3,
    "prereqText": "ENGL 1010 recommended, University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1736,6 +1763,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

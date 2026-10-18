@@ -804,7 +804,21 @@
    "title": "College Biology I",
    "credits": 4,
    "precoreqText": "ACT (or equivalent) composite score of 21+, or ENGL 1005 or ENGL 1010 (or higher); BIOL 1615 ( BIOL 1615 is recommended, but not required for pre-nursing or pre-dental hygiene majors.)",
-   "precoreqs": null
+   "precoreqs": {
+    "and": [
+     {
+      "or": [
+       "ENGL 1005",
+       "ENGL 1010"
+      ]
+     },
+     "BIOL 1615"
+    ]
+   },
+   "uncertain": true,
+   "preco": [
+    "BIOL 1615"
+   ]
   },
   "CHEM 1110": {
    "title": "Elementary Chemistry for the Health Sciences",

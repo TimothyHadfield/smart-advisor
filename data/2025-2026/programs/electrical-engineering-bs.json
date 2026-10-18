@@ -692,9 +692,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1168,8 +1165,13 @@
    "credits": 3,
    "prereqText": "University Advanced Standing, Formal Acceptance into the Electrical or Computer Engineering Programs, and Senior Standing recommended.",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing",
+    "Formal Acceptance into the Electrical or Computer Engineering Programs"
+   ],
    "gate": "admission",
-   "gateText": "Formal Acceptance into the Electrical or Computer Engineering Programs, and Senior Standing recommended"
+   "gateText": "Formal Acceptance into the Electrical or Computer Engineering Programs,"
   },
   "ECE 4950": {
    "title": "Electrical and Computer Engineering Capstone II",

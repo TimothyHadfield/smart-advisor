@@ -200,7 +200,16 @@
    "title": "Environmental Remote Sensing",
    "credits": 4,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEOG 3600",
+     "STAT 2040"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -226,6 +235,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

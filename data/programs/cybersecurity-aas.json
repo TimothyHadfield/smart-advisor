@@ -396,13 +396,25 @@
    "title": "Cloud Computing and Security",
    "credits": 3,
    "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
-   "prereqs": null
+   "prereqs": {
+    "or": [
+     "IT 2600",
+     "CS 2600"
+    ]
+   },
+   "uncertain": true
   },
   "CYBR 2700": {
    "title": "Information Security Fundamentals",
    "credits": 3,
    "prereqText": "IT 2600 or CS 2600 ; ( IT 1600 recommended)",
-   "prereqs": null
+   "prereqs": {
+    "or": [
+     "IT 2600",
+     "CS 2600"
+    ]
+   },
+   "uncertain": true
   },
   "CYBR 2750": {
    "title": "Scripting for Cybersecurity",
@@ -526,7 +538,7 @@
    "title": "Scripting for Administrators",
    "credits": 3,
    "prereqText": "MAT 1010 or higher; INFO 1120 recommended",
-   "prereqs": null
+   "prereqs": "MAT 1010"
   },
   "IT 1510": {
    "title": "Introduction to System Administration--Linux/UNIX",

@@ -284,7 +284,12 @@
    "title": "Audio Hardware Basics",
    "credits": 3,
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
-   "precoreqs": null
+   "precoreqs": {
+    "or": [
+     "MAT 1030",
+     "MAT 1035"
+    ]
+   }
   },
   "DAPR 2255": {
    "title": "Audio Hardware I",
@@ -360,7 +365,16 @@
    "title": "Audio Plugin Development I",
    "credits": 3,
    "prereqText": "MAT 1030 or MAT 1035 or Higher, University Advanced Standing, MATH 1050 or MATH 1055 highly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "MAT 1030",
+     "MAT 1035"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

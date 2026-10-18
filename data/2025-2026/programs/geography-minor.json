@@ -361,7 +361,16 @@
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -561,7 +570,16 @@
    "title": "Environmental Remote Sensing",
    "credits": 3,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEOG 3600",
+     "STAT 2040"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -649,6 +667,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

@@ -452,7 +452,16 @@
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -557,6 +566,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing ( BIOL 1010 and CHEM 1210 Recommended)",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -647,6 +660,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; CHEM 1110 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -655,6 +672,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -662,7 +683,11 @@
    "title": "Natural Resources Management",
    "credits": 3,
    "prereqText": "BIOL 1010 and University Advanced Standing; ENVT 1110 recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1010",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -670,7 +695,29 @@
    "title": "Applied Hydrology",
    "credits": 4,
    "prereqText": "( MATH 1050 or higher or PHYS 1100 ), ( GEO 1010 or GEO 1030 or GEO 1040 or GEO 1050 ), GEOG 3600 and University Advanced Standing ( PHYS 2210 or PHYS 2010 highly recommended)",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MATH 1050",
+       "PHYS 1100"
+      ]
+     },
+     {
+      "or": [
+       "GEO 1010",
+       "GEO 1030",
+       "GEO 1040",
+       "GEO 1050"
+      ]
+     },
+     "GEOG 3600"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1041,7 +1088,12 @@
    "uncertain": true,
    "prereqNonCourse": true,
    "precoreqText": "( PHYS 2210 OR PHYS 2010 ), and GEOG 3600 highly recommended",
-   "precoreqs": null,
+   "precoreqs": {
+    "or": [
+     "PHYS 2210",
+     "PHYS 2010"
+    ]
+   },
    "prereqWords": [
     "University Advanced Standing"
    ],
@@ -1056,7 +1108,16 @@
    "title": "Environmental Remote Sensing",
    "credits": 4,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEOG 3600",
+     "STAT 2040"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1082,6 +1143,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

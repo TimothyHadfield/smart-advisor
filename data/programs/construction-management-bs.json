@@ -1008,11 +1008,21 @@
    "title": "Construction Financial Management",
    "credits": 3,
    "prereqText": "ACC 3000 (Recommended) or ( ACC 2110 ), and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "ACC 3000",
+     "ACC 2110"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
    "precoreqText": "CMGT 3030",
    "precoreqs": "CMGT 3030",
    "preco": [
     "CMGT 3030"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

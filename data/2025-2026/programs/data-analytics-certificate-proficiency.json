@@ -184,7 +184,16 @@
    "title": "Data Security Analytics",
    "credits": 3,
    "prereqText": "CYBR 2700 and INFO 2410 and University Advanced Standing; ( INFO 3130 and INFO 3410 recommended)",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "CYBR 2700",
+     "INFO 2410"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -252,7 +261,11 @@
    "title": "Data Visualization",
    "credits": 3,
    "prereqText": "INFO 2410 and University Advanced Standing; INFO 3130 recommended",
-   "prereqs": null,
+   "prereqs": "INFO 2410",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -302,6 +315,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; MKTG 3600 Recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

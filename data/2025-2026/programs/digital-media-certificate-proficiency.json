@@ -242,7 +242,12 @@
     "DAPR 2000L"
    ],
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
-   "precoreqs": null
+   "precoreqs": {
+    "or": [
+     "MAT 1030",
+     "MAT 1035"
+    ]
+   }
   },
   "DAPR 2000L": {
    "title": "Digital Audio Essentials Lab",
@@ -252,7 +257,12 @@
     "DAPR 2000"
    ],
    "precoreqText": "MAT 1030 or MAT 1035 or Higher, MATH 1050 or MATH 1055 highly recommended",
-   "precoreqs": null
+   "precoreqs": {
+    "or": [
+     "MAT 1030",
+     "MAT 1035"
+    ]
+   }
   },
   "DAPR 2080": {
    "title": "Podcast and Radio Production",

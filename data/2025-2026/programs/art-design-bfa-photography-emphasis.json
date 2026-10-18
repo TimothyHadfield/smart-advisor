@@ -936,7 +936,22 @@
    "title": "Renaissance Art History",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2710",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -944,7 +959,22 @@
    "title": "Southern Baroque Art History",
    "credits": 3,
    "prereqText": "ARTH 2720 ( ARTH 2710 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2720",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -952,7 +982,22 @@
    "title": "Nineteenth-Century Art History",
    "credits": 3,
    "prereqText": "ARTH 2720 ( ARTH 2710 recommended), ENGL 1010 or ENGH 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2720",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGH 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

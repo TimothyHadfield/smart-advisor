@@ -891,9 +891,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1101,7 +1098,7 @@
    "title": "Criminal Investigations",
    "credits": 3,
    "prereqText": "CJ 1010 ; CJ 1390 is also strongly recommended as a pre- or co-requisite for Criminal Justice majors",
-   "prereqs": null
+   "prereqs": "CJ 1010"
   },
   "CJ 1350": {
    "title": "Introduction to Forensic Science",

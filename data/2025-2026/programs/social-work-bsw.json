@@ -1068,7 +1068,11 @@
    "title": "Interviewing Skills",
    "credits": 3,
    "prereqText": "ENGL 2010 with C+ or better and University Advanced Standing; PSY 2300 with a C- grade or higher recommended",
-   "prereqs": null,
+   "prereqs": "ENGL 2010",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C+",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

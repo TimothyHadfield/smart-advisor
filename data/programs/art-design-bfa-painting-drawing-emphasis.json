@@ -917,7 +917,7 @@
    "title": "Painting II",
    "credits": 3,
    "prereqText": "ART 2630 , ( ART 1120 and ART 2620 recommended)",
-   "prereqs": null
+   "prereqs": "ART 2630"
   },
   "ART 2680": {
    "title": "Printmaking I",
@@ -1165,7 +1165,22 @@
    "title": "Ancient Greek Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2710",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1173,7 +1188,22 @@
    "title": "Medieval Art and Architecture",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2710",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1181,7 +1211,22 @@
    "title": "Renaissance Art History",
    "credits": 3,
    "prereqText": "ARTH 2710 ( ARTH 2720G recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2710",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1189,7 +1234,22 @@
    "title": "Southern Baroque Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2720G",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1197,7 +1257,22 @@
    "title": "Nineteenth-Century Art History",
    "credits": 3,
    "prereqText": "ARTH 2720G ( ARTH 2710 recommended), ENGL 1010 or ENGL 1005 , and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "ARTH 2720G",
+     {
+      "or": [
+       "ENGL 1010",
+       "ENGL 1005"
+      ]
+     }
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },

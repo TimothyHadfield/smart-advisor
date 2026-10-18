@@ -1024,9 +1024,6 @@
    "coreqs": [
     "CHEM 1215"
    ],
-   "prereqWords": [
-    "Also"
-   ],
    "prereqMinGrade": "C-"
   },
   "CHEM 1215": {
@@ -1586,7 +1583,11 @@
    "title": "Advanced High Performance Computer Architecture",
    "credits": 3,
    "prereqText": "CS 3060 , ( CS 3370 Recommended), and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": "CS 3060",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1699,7 +1700,7 @@
     "University Advanced Standing",
     "Some experience with Python",
     "machine learning",
-    "probability and linear algebra is recommended"
+    "probability"
    ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1708,7 +1709,11 @@
    "title": "Software Development for Robotics",
    "credits": 3,
    "prereqText": "CS 3370 and University Advanced Standing; CS 4470 recommended",
-   "prereqs": null,
+   "prereqs": "CS 3370",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -2069,7 +2074,21 @@
    "title": "Introduction to Optimization",
    "credits": 3,
    "prereqText": "( MATH 2210 or MATH 2210H ) and MATH 2270 with a grade of C or higher and University Advanced Standing; CS 1400 with a grade of C or higher is recommended.",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     {
+      "or": [
+       "MATH 2210",
+       "MATH 2210H"
+      ]
+     },
+     "MATH 2270"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"

@@ -719,7 +719,16 @@
    "title": "Conservation Biology",
    "credits": 3,
    "prereqText": "( BIOL 1010 or BIOL 1620 with a minimum of C-) and University Advanced Standing; BIOL 3700 strongly recommended",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "BIOL 1010",
+     "BIOL 1620"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
@@ -1011,7 +1020,17 @@
    "title": "Environmental Law",
    "credits": 3,
    "prereqText": "ENGL 1010 or ENGL 1005 ( ENGL 2010 recommended), and University Advanced Standing.",
-   "prereqs": null,
+   "prereqs": {
+    "or": [
+     "ENGL 1010",
+     "ENGL 1005"
+    ]
+   },
+   "uncertain": true,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1044,6 +1063,10 @@
    "credits": 3,
    "prereqText": "University Advanced Standing; ENVT 3280 recommended",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1051,7 +1074,11 @@
    "title": "Natural Resources Management",
    "credits": 3,
    "prereqText": "BIOL 1010 and University Advanced Standing; ENVT 1110 recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1010",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1204,7 +1231,23 @@
    "title": "Paleontology",
    "credits": 4,
    "prereqText": "GEO 1220 , GEO 1225 , GEO 3080 , ( BIOL 1010 or BIOL 1610 ), and University Advanced Standing; GEO 4500 recommended",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEO 1220",
+     "GEO 1225",
+     "GEO 3080",
+     {
+      "or": [
+       "BIOL 1010",
+       "BIOL 1610"
+      ]
+     }
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1216,7 +1259,16 @@
    "title": "Environmental Remote Sensing",
    "credits": 4,
    "prereqText": "GEOG 3600 ; STAT 2040 ; an upper division course in natural science recommended; and University Advanced Standing",
-   "prereqs": null,
+   "prereqs": {
+    "and": [
+     "GEOG 3600",
+     "STAT 2040"
+    ]
+   },
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1225,6 +1277,10 @@
    "credits": 4,
    "prereqText": "[Completion of a course that meets the PP (Physical Science) or SS (Social Science) general education requirement is recommended] and University Advanced Standing",
    "prereqs": null,
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   },
@@ -1688,10 +1744,14 @@
    "title": "Mammalogy",
    "credits": 3,
    "prereqText": "BIOL 1620 with a minimum grade of C-, and University Advanced Standing; ZOOL 3100 and ZOOL 3105 strongly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
    "coreqText": "ZOOL 3505",
    "coreqs": [
     "ZOOL 3505"
+   ],
+   "prereqWords": [
+    "University Advanced Standing"
    ],
    "prereqMinGrade": "C-",
    "gate": "advanced-standing",
@@ -1729,7 +1789,11 @@
    "title": "Ornithology",
    "credits": 4,
    "prereqText": "BIOL 1620 and University Advanced Standing; ZOOL 3100 and ZOOL 3105 highly recommended",
-   "prereqs": null,
+   "prereqs": "BIOL 1620",
+   "prereqNonCourse": true,
+   "prereqWords": [
+    "University Advanced Standing"
+   ],
    "gate": "advanced-standing",
    "gateText": "University Advanced Standing"
   }
