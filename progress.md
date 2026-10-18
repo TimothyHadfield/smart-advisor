@@ -25,7 +25,8 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 | Auto-update | live (a010c3b) | `js/fresh.js`: phones pick up new builds without a hard refresh (one reload per build, never while typing); Settings opens without a focus ring |
 
 ## Authorized next steps
-- 2026-10-15 · Phase 1 + all majors + accounts + flowchart/import/grades/Gen Ed labels — all built. No open authorized items beyond fixing what Tim reports.
+- 2026-10-15 · Phase 1 + all majors + accounts + flowchart/import/grades/Gen Ed labels — all built.
+- **2026-10-17 · Full analysis + build, authorized in full (Tim, verbatim):** "Smart advisor is also something I just started and I think it has a lot of room to improve. I really care about how accurate the requirements for majors are, as the consequences can lead to someone taking a class they don't need to take, or making extreamly financially large decisions on the basis of this information. I asked my girlfriend if the schedule looked like the requirements for her nursing program and she said some of the classes weren't required and she thought it didn't actually maybe reflect the true requirements. Go ahead and do a full analysis on smart advisor and implement any features, improvements, calculation changes, custumization, and smart layout that you can think of." → 4 read-only analysts (nursing truth, all-program data accuracy, calculations, UX/features) → builder waves. Reports in the manager session scratchpad `sa-audit/`; plan to be written to `docs/accuracy-plan.md`. Tim also said (same day): "stop asking me questions if you already have recommended answers."
 
 ## Standing instructions (Tim's words / interview answers)
 - Public site for any UVU student, **with accounts (Google sign-in)**.
