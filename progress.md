@@ -23,6 +23,7 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 | Sections + schedule | live | Banner 9 data `data/sections/{202640,202720}.json` (weekly Action `refresh-data.yml`); Schedule tab (`js/schedule.js`): ranked conflict-free schedules, week grid, RMP badge, Copy CRNs, prefs in Settings › Schedule; saved in `settings.sched` |
 | RMP | live | `data/rmp.json` keyed by section `instr`; overall rating + link only |
 | Auto-update | live (a010c3b) | `js/fresh.js`: phones pick up new builds without a hard refresh (one reload per build, never while typing); Settings opens without a focus ring |
+| Site icon | live 2026-10-17 | `icon.svg` (tab) + `apple-touch-icon.png` 180px (iPhone home screen): white graduation cap with a gold tassel on UVU green |
 
 ## Authorized next steps
 - 2026-10-15 · Phase 1 + all majors + accounts + flowchart/import/grades/Gen Ed labels — all built.
