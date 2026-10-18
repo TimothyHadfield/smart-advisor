@@ -1,10 +1,11 @@
 # Smart Advisor — progress (handoff for Claude)
 
 ## START HERE
-_Last updated 2026-10-17 (manager batch 1, a010c3b). For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
+_Last updated 2026-10-17 (accuracy wave 1 integrated + live). For Claude only; Tim doesn't read this. Catch-up authorizes nothing: only "Authorized next steps" below is approved work._
 1. Read this file.
 2. Read `direction.md` (Tim's intent; overrules everything).
 3. Skim the last entries of `chat.md`. Previous long version of this file: `docs/archive/progress-2026-10-15.md`. Data endpoints: `docs/research.md`. Phase plan: `docs/phase1-plan.md`.
+4. Accuracy work: `docs/accuracy-plan.md` (decisions D-A1..A11, wave 2 list), new data fields: `docs/data-format.md`.
 
 ## Goal right now
 Public UVU advisor for any student: prereq flowchart + auto semester plan for all 541 majors/minors/certs, Wolverine Track audit import, Google accounts, section schedule builder with RMP ratings, Gen Ed class lists. All live; now polishing from Tim's field reports.
@@ -23,6 +24,7 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 | Sections + schedule | live | Banner 9 data `data/sections/{202640,202720}.json` (weekly Action `refresh-data.yml`); Schedule tab (`js/schedule.js`): ranked conflict-free schedules, week grid, RMP badge, Copy CRNs, prefs in Settings › Schedule; saved in `settings.sched` |
 | RMP | live | `data/rmp.json` keyed by section `instr`; overall rating + link only |
 | Auto-update | live (a010c3b) | `js/fresh.js`: phones pick up new builds without a hard refresh (one reload per build, never while typing); Settings opens without a focus ring |
+| Accuracy wave 1 | live 2026-10-17 | Data (`sa-data`): per-requirement `src`/`minGrade`/`gate`, track `subs`/`sub`/`recommended`, course `gate`/`gateText`/`prereqWords`, program `admissionInfo`; golden catalog fixtures. Planner (`sa-plan` + integration): admission phases (Before you apply → Apply → Program, cohort blocks in catalog order), University Advanced Standing step, sample-plan order first, one requirement per finished class, two-way coreqs, chosen tracks, only a track's required classes planned (28 → 0 not-required track classes planned). UI (`sa-ui`): class sheet (tap plan row / hold box: Before, Needs, Grade, Why, Catalog, Taken, catalog link, Report a mistake), Unofficial + Requires admission lines, Apply / Advanced Standing rows, track chip, ?p= keeps saved plan, first-visit picker, Clear taken undo, phone Fit + pinch, Back button history |
 | Site icon | live 2026-10-17 | `icon.svg` (tab) + `apple-touch-icon.png` 180px (iPhone home screen): white graduation cap with a gold tassel on UVU green |
 
 ## Authorized next steps
@@ -41,7 +43,7 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - "if the program fills in classes that the user is currently taking, the first semester ... is a future semester, not a current one."
 
 ## Traps / rules that bite
-- Builder worktrees spawn from the `Code Projects` root repo (Estimator_Quiz). Builders must clone smart-advisor into `<worktree>/sa`; merge with `git fetch "<worktree>/sa" <branch>`. `git worktree remove` often "Permission denied" (OneDrive) → weekly sweep handles it.
+- Never use `isolation: "worktree"` (it lands in the `Code Projects` root repo = Estimator_Quiz, under `.claude`). `git worktree remove` often "Permission denied" (OneDrive) → weekly sweep handles it.
 - Tim's real audit: `.claude/test/wolverine-track-audit.pdf` + `audit.txt` (gitignored; name, student ID, advisor email). Never commit, copy or screenshot it. Fixtures anonymized. Repro scripts use a fake audit (scratchpad `fakeaudit.txt`).
 - Catalog year matters: Tim is on 2025-2026 (EE 125 cr, ECE 4950). His audit → lastTerm Fall 2026 → plan starts Spring 2027; 4 semesters left (5 with ESM minor).
 - Regenerate program data offline: `node scripts/fetch-all.mjs --year current|2025-2026 --cache <scratchpad>/cache --offline` (cache ROOT, not the year dir). It rewrites every data file with LF line endings → commit only files whose `git diff -w` changed, then `git checkout -- data/`.
@@ -50,7 +52,8 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - RMP GraphQL (Basic dGVzdDp0ZXN0, school U2Nob29sLTE4NDU4) has no CORS → build-time only. Instructor names "Last, First M." need last name + dept matching.
 - Firebase: `firebase deploy --only auth` turned the project into Identity Platform (still no billing). Never call identityPlatform:initializeAuth (needs billing). Admin API token: scratch `gtoken.mjs`; serviceusage enable needs `-d '{}'`.
 - Rules test is `tests/rules.emulator.mjs` (not in plain suite; needs Java 21 + emulator).
-- Catalog prereqs ignore non-course gates, grade minimums, season-only offering; out-of-major prereqs (MATH 1050) assumed met.
+- Gates (admission, Advanced Standing) and grade minimums are now in the data + plan; season-only offering still ignored; out-of-major prereqs (MATH 1050) still assumed met (wave 2).
+- Builder worktrees now come from this repo: `git -C "<repo>" worktree add C:/Users/timha/AppData/Local/Temp/claude/wt/sa-<name> -b <branch>` (never under a `.claude` folder).
 - Guard blocks shell writes to .md files → Edit/Write only.
 - Pages live-check hook sometimes reports an older commit "NOT live" when a newer build already includes it → ignore.
 
@@ -64,6 +67,8 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - D7 · 2026-10-15 · Term boundaries: Spring Jan–Apr, Summer May–Aug 19, Fall Aug 20+. `settings.lastTerm` (synced) from audit; Clear taken resets it.
 - D8 · 2026-10-15 · Gen Ed lists (unconfirmed): ≡ on box bottom-right; picked class as 2nd line; pick-one boxes list only the program's own options; two-area boxes show both lists.
 - D9 · 2026-10-15 · Untaking a pick-one box also clears its option codes (else an audit class kept it on forever).
+- D11 · 2026-10-17 · Wave 1 builder choices (unconfirmed by Tim): plan may run ≤2 semesters ahead of the catalog sample plan (`EARLY_SLACK`); Advanced Standing = ENGL 2010 + Quantitative Literacy + 24 credits for 60+ credit programs (`STANDING_RULE`, js/phases.js); cohort programs (`admission: true`) run the catalog's semester blocks after Apply; track guessed by progress then fewest credits, chip says "Guessed — pick yours"; hold 480 ms or right-click a box = class sheet; Clear taken = tap twice + 6 s Undo; first visit opens the picker; phone chart starts fitted when that keeps ≥50% size; "Pick N" dashed frame around pick-list boxes; Report a mistake = prefilled GitHub issue.
+- D12 · 2026-10-17 · Integration choices (Claude): gates = parser's one `gate` ∪ gates read from the prereq text (parser keeps one, ECE 4900 2025-26 needs both; regex also catches grad "Admission to X program" the parser missed); `admissionInfo.gated` adds the admission gate; `admissionInfo.before` used only when it came from the page's matriculation section, and then those classes keep sample-plan order (Apply simply waits for them); class-sheet rows "Needs" (gateText + prereqWords) and "Catalog" (requirement `src`); plan row "Advanced Standing" uses the Apply row's look.
 - D10 · 2026-10-16 · Sweep (builder, branch claude/sweep-1016): imported `lastTerm` now saved locally (was lost on reload); Clear taken sets `lastTerm: null` so other devices clear it; `lastTerm` only from taken/IP rows (not Planned/Still needed); saved Summer start with summers off → that Fall (`planStart`); Gen Ed sheet long codes no longer overlap titles; new `CLAUDE.md`, `tests/import.e2e.mjs`. Report: laptop-ops `coding-and-claude/reports/sweep-2026-10-16/smart-advisor.md`.
 
 ## NOT verified
@@ -73,7 +78,11 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - Choice `rules` (e.g. "at least 6 ENVT credits") parsed but not enforced by planner.
 - Still-wrong data: 2025-26 bioinformatics-bs 118/120, collision-repair-technology-aas 67/64; ~28 small programs lost a plan-order link; missing catalog entries COMM 2010, ENVT 3300.
 - Course offering seasons (fall/spring-only) unknown; grad-plan order used as hint.
-- Cohort/admission programs flagged (`admission`) but planner doesn't model cohorts.
+- University Advanced Standing rule numbers (`STANDING_RULE`: 24 credits, ENGL 2010, QL) not checked against UVU policy text.
+- Gate detection from prereq text is a regex (js/phases.js); 1,435 course entries now carry two gates; false positives possible (e.g. "Current enrollment in Honors program").
+- Long-press on a real iPhone, pinch zoom on a real iPhone, dark mode of the new sheet/rows (all headless WebKit only).
+- Nursing ASN sample plan lists PHIL 2050 but the requirements list doesn't (data, not checked against the page).
+- Wave 2 of `docs/accuracy-plan.md` not built (seasons, out-of-program prereq boxes, audit grade minimums, double counting with minors, move-a-class).
 - 2024-2025 archive not fetched.
 
 ## Rejected / parked
@@ -86,5 +95,5 @@ Public UVU advisor for any student: prereq flowchart + auto semester plan for al
 - Live: https://timothyhadfield.github.io/smart-advisor/ (`?p=<program-id>` opens a program).
 - `index.html`, `css/app.css`, `js/app.js` (UI/state) · `js/planner.js` (model, plan, terms) · `js/layout.js` (chart) · `js/audit.js` · `js/pdftext.js` · `js/programs.js` (picker) · `js/schedule.js` · `js/gened.js` · `js/account.js` + `js/sync.js` · `firestore.rules`, `firebase.json`, `.firebaserc`.
 - Scripts: `scripts/fetch-program.mjs`, `scripts/lib/post.mjs`, `scripts/fetch-all.mjs`, `scripts/fetch-sections.mjs`, `scripts/fetch-rmp.mjs`, `scripts/fetch-gened.mjs`, `scripts/lib/{banner,names}.mjs`; weekly `.github/workflows/refresh-data.yml`.
-- Tests: `node --test tests/*.test.mjs` · 2026-10-15: 1032 pass, 0 fail, 1 skipped. Rules: `firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.emulator.mjs"` · 2026-10-15: 5/5. e2e: `python -m http.server 8137` + emulators + `node tests/accounts.e2e.mjs`.
+- Tests: `node --test tests/*.test.mjs` · 2026-10-17: 1103 pass, 0 fail, 1 skipped. UI e2e: serve on 8137, `node --test tests/ui.e2e.mjs tests/import.e2e.mjs` · 2026-10-17: 9/9. Rules: `firebase emulators:exec --only firestore --project smart-advisor-th "node tests/rules.emulator.mjs"` · 2026-10-15: 5/5. e2e: `python -m http.server 8137` + emulators + `node tests/accounts.e2e.mjs`.
 - Headless repro: `node ~/.claude/tools/phone-view.mjs "<url>?p=<id>" [--desktop] --out shot.png`; Playwright scripts in scratchpad (`gradesrepro2.mjs`, `longedges.mjs`, `spans.mjs`, `cmpstats.mjs`).
