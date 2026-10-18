@@ -1,4 +1,5 @@
-import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, planStart, nextTerm, termLabel, tapCheck, cascadeUntake } from './planner.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, planStart, nextTerm, termLabel, tapCheck, cascadeUntake, currentTerm } from './planner.js';
+import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
@@ -279,9 +280,7 @@ function buildBoxes() {
     const flex = n.kind === 'placeholder' || n.kind === 'choice';
     b.className = 'box' + (flex ? ' ph flex' : n.kind === 'option' ? ' flex' : '');
     b.dataset.id = n.id;
-    const credits = n.kind === 'choice' ? (n.pick?.credits ?? n.credits) : n.credits;
     const labs = n.labs || [];
-    b.title = [n.label, n.title, ...labs.map((l) => `${l.label} ${l.title}`), `${credits + labs.reduce((s, l) => s + l.credits, 0)} cr`].filter(Boolean).join(' · ');
     // course code and its name (Gen Ed / elective boxes: their name only)
     b.innerHTML = flex
       ? `<b>${esc(n.label)}</b>`
@@ -294,13 +293,18 @@ function buildBoxes() {
     // a Gen Ed box with a class list: the class taken (line 2) and a small list button on its bottom edge
     if (flex && listOf(n)) {
       b.classList.add('has-list');
-      b.insertAdjacentHTML('beforeend', '<i class="pk"></i><span class="gl" role="button" aria-label="Class list" title="Class list"><svg viewBox="0 0 12 10" width="11" height="9" aria-hidden="true"><path d="M1 1.5h10M1 5h10M1 8.5h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>');
+      b.insertAdjacentHTML('beforeend', '<i class="pk"></i><span class="gl" role="button" aria-label="Class list"><svg viewBox="0 0 12 10" width="11" height="9" aria-hidden="true"><path d="M1 1.5h10M1 5h10M1 8.5h10" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></svg></span>');
     }
     b.addEventListener('click', (e) => {
       if (pressed.fired) { pressed.fired = false; return; } // a long press opened the class sheet
       if (e.target.closest('.gl')) openGenEd(n); else toggle(n, b);
     });
-    longPress(b, () => openClass({ node: n }));
+    longPress(b, () => { setHover(null); openClass({ node: n }); });
+    // hover (mouse) or finger down (phone): its lines light up and a tiny label shows when
+    b.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') setHover(n.id); });
+    b.addEventListener('pointerleave', () => { if (hoverId === n.id) setHover(null); });
+    b.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') setHover(n.id); });
+    for (const ev of ['pointerup', 'pointercancel']) b.addEventListener(ev, (e) => { if (e.pointerType !== 'mouse' && hoverId === n.id) setHover(null); });
     host.appendChild(b);
   }
   // section headings (a minor's name, Gen Ed); placed by layout()
@@ -316,6 +320,55 @@ function buildBoxes() {
   note.className = 'note';
   note.id = 'note';
   host.appendChild(note);
+  const hint = document.createElement('div');
+  hint.className = 'hint';
+  hint.id = 'hint';
+  hint.hidden = true;
+  host.appendChild(hint);
+  hoverId = null;
+}
+
+// ---------- hover: a box's own lines in two colours (into it = its prerequisites, out of it = the
+// classes that need it), the rest dimmed, and a tiny when/grade label right above (or below) the box,
+// never wider than it so it covers no lines. js/hover.js has the pure parts.
+let hoverId = null;
+function setHover(id) { hoverId = id; drawHover(); }
+function drawHover() {
+  const svg = $('edges'), hint = $('hint');
+  svg.querySelector('g.hl')?.remove();
+  const el = hoverId && $('boxes').querySelector(`.box[data-id="${CSS.escape(hoverId)}"]`);
+  svg.classList.toggle('hov', !!el);
+  if (!hint) return;
+  if (!el || !graph) { hint.hidden = true; return; }
+  const paths = svg.querySelectorAll('path[data-from]');
+  const { pre, post } = edgeRoles(graph.edges, hoverId);
+  const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
+  g.setAttribute('class', 'hl');
+  for (const [list, kind] of [[pre, 'pre'], [post, 'post']]) {
+    for (const i of list) {
+      if (!paths[i]) continue;
+      const c = paths[i].cloneNode();
+      c.removeAttribute('data-from'); c.removeAttribute('data-to');
+      c.setAttribute('class', `${c.getAttribute('class') || ''} ${kind}`.trim());
+      c.setAttribute('marker-end', `url(#ah-${kind})`);
+      g.appendChild(c);
+    }
+  }
+  svg.appendChild(g);
+  const text = el.dataset.hint || '';
+  hint.hidden = !text;
+  if (!text) return;
+  hint.textContent = text;
+  const at = placeHint({ x: el.offsetLeft, y: el.offsetTop, w: el.offsetWidth, h: el.offsetHeight }, { h: 14, gap: 2, top: $('chart').scrollTop / zoom.k });
+  hint.style.cssText = `left:${at.left}px;top:${at.top}px;width:${at.width}px`;
+}
+// the semester a taken box's class was taken in (from the imported audit; '' unknown)
+function boxTerm(n, completed) {
+  const w = state.settings.when || {};
+  const codes = n.kind === 'course' || n.kind === 'option' ? [n, ...(n.labs || [])].flatMap((u) => u.codes || [u.code]).filter((c) => completed.has(c))
+    : n.kind === 'choice' ? (n.options || []).filter((o) => optionDone(o, completed)).flatMap((o) => [...o.codes, ...(o.alts || [])])
+    : [pickedOf(completed, n.id)];
+  return codes.map((c) => c && w[c]).find(Boolean) || '';
 }
 
 const TAG = { minor: 'Minor', cert: 'Cert', major: 'Major' };
@@ -377,8 +430,10 @@ function layout() {
     if (first.length) chart.scrollTop = Math.max(0, Math.min(...first) - 16) * k;
   }
   const d = (pts) => 'M' + pts.map(([x, y]) => `${+(x + dx).toFixed(1)},${+y.toFixed(1)}`).join('L');
-  svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker></defs>'
+  svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>'
+    + ['pre', 'post'].map((k) => `<marker id="ah-${k}" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>`).join('') + '</defs>'
     + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('');
+  drawHover();
 }
 
 // Fit button (shown when the chart is bigger than the screen) + two-finger pinch on the chart only
@@ -488,6 +543,7 @@ function refresh() {
   const semOf = new Map();
   plan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!semOf.has(it.unitId)) semOf.set(it.unitId, i); }));
   let anyIP = false;
+  const now = termLabel(currentTerm());
   for (const el of $('boxes').children) {
     if (!el.dataset.id) continue;
     const n = nodes.find((x) => x.id === el.dataset.id);
@@ -510,7 +566,10 @@ function refresh() {
     const pk = el.querySelector('.pk');
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
+    // the hover label: when taken (+ grade, when grades are on) / in progress / planned
+    el.dataset.hint = hintText({ done, grade: ip || showGrades ? g : '', term: done ? boxTerm(n, completed) : '', planned: sem !== undefined ? plan.semesters[sem].term : '', now });
   }
+  if (hoverId) drawHover();
   renderPlan(plan);
   renderLegend(plan, anyIP);
   lastPlan = plan;
@@ -1525,6 +1584,7 @@ function wireImport() {
     // the audit is actual data (never hypothetical)
     const s = actualSet(), src = srcMap(), grades = gradeMap();
     const ipOn = $('impIP').checked;
+    const when = (state.settings.when = { ...(state.settings.when || {}) }); // class code -> semester taken (hover label)
     // already-taken rows are disabled (can't be unticked) but still bring their grade from the audit
     for (const cb of $('impList').querySelectorAll('input:checked')) {
       const r = found.rows[+cb.dataset.i];
@@ -1532,6 +1592,7 @@ function wireImport() {
       s.add(r.key);
       src[r.key] ??= 'audit';
       if (r.grade || !cb.disabled) grades[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
+      if (r.term) when[r.code] = r.term;
       // a Gen Ed box filled by an outside class: remember which class (its sheet and Classes show it)
       if (r.key !== r.code && !pickKeysOf(s, r.key).length) {
         s.add(`${r.key}=${r.code}`); s.add(r.code); src[r.code] ??= 'audit';
@@ -1543,6 +1604,7 @@ function wireImport() {
       if (r.status === 'ip' && !ipOn) continue;
       if (!s.has(r.code)) { s.add(r.code); src[r.code] = 'audit'; }
       if (r.grade) grades[r.code] = r.grade;
+      if (r.term) when[r.code] = r.term;
     }
     // classes in progress (or already registered for next term): the plan starts after that semester
     // (set before setActual, which saves)

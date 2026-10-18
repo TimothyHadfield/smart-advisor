@@ -229,6 +229,28 @@ test('grades: letter grades, transfer/pass marks and IP come through to the matc
   assert.equal(w.rows.find((r) => r.key === 'MATH 1220').grade, 'TB');
 });
 
+test('terms: each row keeps the semester it was taken in (row term, or the transcript\'s Term: heading)', () => {
+  const p = parseAudit(DEGREE_WORKS);
+  const t = Object.fromEntries([...p.taken, ...p.inProgress].map((r) => [r.code, r.term]));
+  assert.equal(t['ENGL 2010'], 'Fall 2025');
+  assert.equal(t['MATH 1220'], 'Summer 2025');
+  assert.equal(t['PHYS 2210'], 'Spring 2026');
+  assert.equal(t['SLSS 101R'], 'Spring 2024');
+  assert.equal(t['ECE 2250'], 'Fall 2026', 'in progress row');
+  const w = Object.fromEntries(parseAudit(DEGREE_WORKS_WEB).taken.map((r) => [r.code, r.term]));
+  assert.equal(w['ECE 2250'], 'Fall 2025');
+  assert.equal(w['MATH 1220'], 'Fall 2023');
+  const tr = parseAudit(TRANSCRIPT);
+  const tt = Object.fromEntries([...tr.taken, ...tr.inProgress].map((r) => [r.code, r.term]));
+  assert.equal(tt['MATH 1210'], 'Fall 2024');
+  assert.equal(tt['MATH 1050'], 'Fall 2023');
+  assert.equal(tt['ECE 2250'], 'Spring 2026');
+  const m = matchAudit(p, model);
+  assert.equal(m.rows.find((r) => r.key === 'PHYS 2210').term, 'Spring 2026');
+  assert.equal(m.rows.find((r) => r.key === 'ph:7').term, 'Fall 2025', 'Gen Ed box row');
+  assert.equal(m.others.find((r) => r.code === 'STAT 1040').term, 'Summer 2025');
+});
+
 test('grade scale: A green ... C yellow ... D/E red; non-letter grades get a short tag', () => {
   assert.equal(gradeInfo('A').kind, 'letter');
   assert.ok(gradeInfo('A').hue > gradeInfo('B').hue && gradeInfo('B').hue > gradeInfo('C').hue && gradeInfo('C').hue > gradeInfo('D').hue);

@@ -8,6 +8,8 @@
   --line: #d7dcd8;
   --edge: #9aa59d;
   --edge-hot: #275d38;
+  --edge-pre: #2563eb;  /* hover: lines to a class's prerequisites */
+  --edge-post: #d97706; /* hover: lines to the classes that need it */
   --done-bg: #275d38;
   --done-fg: #ffffff;
   --ready-bg: #ffffff;
@@ -22,7 +24,7 @@
   :root:not([data-theme="light"]) {
     --green: #4f9a62; --green-2: #6db27f;
     --bg: #101311; --panel: #171b18; --fg: #e6ebe7; --muted: #8e978f; --line: #2b322d;
-    --edge: #4c5850; --edge-hot: #6db27f;
+    --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24;
     --done-bg: #3d8a52; --done-fg: #ffffff; --ready-bg: #171b18; --ready-line: #5ea872;
     --locked-bg: #1d221e; --locked-fg: #6a746c;
     color-scheme: dark;
@@ -31,7 +33,7 @@
 :root[data-theme="dark"] {
   --green: #4f9a62; --green-2: #6db27f;
   --bg: #101311; --panel: #171b18; --fg: #e6ebe7; --muted: #8e978f; --line: #2b322d;
-  --edge: #4c5850; --edge-hot: #6db27f;
+  --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24;
   --done-bg: #3d8a52; --done-fg: #ffffff; --ready-bg: #171b18; --ready-line: #5ea872;
   --locked-bg: #1d221e; --locked-fg: #6a746c;
   color-scheme: dark;
@@ -115,6 +117,16 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .edges path.or { stroke-dasharray: 3 3; }
 .edges marker path { fill: var(--edge); stroke: none; }
 .edges path.hot { stroke: var(--edge-hot); stroke-width: 2; }
+/* hover a box: its lines on top in two colours, the others dimmed */
+.edges.hov > path { opacity: .35; }
+.edges .hl path { stroke-width: 2; }
+.edges .hl path.pre { stroke: var(--edge-pre); }
+.edges .hl path.post { stroke: var(--edge-post); }
+.edges #ah-pre path { fill: var(--edge-pre); }
+.edges #ah-post path { fill: var(--edge-post); }
+/* the tiny when / grade label: exactly the box's width, right above (or below) it */
+.hint { position: absolute; z-index: 4; height: 14px; padding: 0 3px; border-radius: 4px; background: var(--fg); color: var(--panel); font-size: 10px; line-height: 14px; font-weight: 600; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; pointer-events: none; }
+.hint[hidden] { display: none; }
 .boxes { position: absolute; left: 0; top: 0; }
 .box {
   position: absolute; display: flex; flex-direction: column; justify-content: center;

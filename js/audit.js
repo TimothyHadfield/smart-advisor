@@ -13,7 +13,8 @@
 //                (that's the outside course, not the UVU one), Planned / Not started rows, the
 //                Insufficient and Not counted blocks, failing grades (F, W, ...)
 //
-// parseAudit(text) -> { catalogYear, majors, minors, programs, taken: [{code, grade, req, credits?}], inProgress: [{code, req}] }
+// parseAudit(text) -> { catalogYear, majors, minors, programs, taken: [{code, grade, req, credits?, term?}], inProgress: [{code, req, term?}] }
+//   term = the semester on the row ("Fall 2025"), or the transcript heading above it
 //   codes look like "ECE 2250", "ECE 4810R", "SLSS 101R"; req = the requirement label printed before
 //   the course on its row (used to fill Gen Ed boxes like "Fine Arts Distribution").
 
@@ -57,11 +58,14 @@ export function parseAudit(text) {
   let mode = 'normal';     // block mode from the last header: normal | ip | ignore
   let neededTail = false;  // the lines that continue a "Still needed" line
   let context = [];        // code-less lines just above a row (a requirement label split over lines)
+  let headTerm = null;     // a transcript's "Term: Fall 2024" / "Fall 2023: Salt Lake ..." heading
   for (let i = 0; i < lines.length; i++) {
     const line = lines[i];
     if (!line.trim()) { neededTail = false; context = []; continue; }
     const codes = codesIn(line);
     if (!codes.length) {
+      const ht = line.match(/^\s*(?:term\s*:\s*)?((?:Fall|Spring|Summer)\s+\d{4})\b/i);
+      if (ht) headTerm = latestTerm([ht[1]]);
       if (H_IP.test(line)) mode = 'ip';
       else if (H_IGNORE.test(line)) mode = 'ignore';
       else if (H_NORMAL.test(line)) mode = 'normal';
@@ -93,10 +97,12 @@ export function parseAudit(text) {
     const r = readRow(rec, mode);
     if (!r) continue;
     rowLines.push(rec);
+    const tm = latestTerm([rec]) || headTerm;
+    const term = tm ? { term: `${tm.season} ${tm.year}` } : {};
     const pre = rec.slice(0, codes.find((c) => c.code === r.code)?.at ?? 0).trim();
     const req = (pre && !/^(completed?|in[\s-]?progress|registered)$/i.test(pre) ? pre : ctx.join(' ')).replace(/\s+/g, ' ');
-    if (r.status === 'taken') { if (!taken.has(r.code)) taken.set(r.code, { code: r.code, grade: r.grade, req, ...(r.credits ? { credits: r.credits } : {}) }); }
-    else if (!ip.has(r.code)) ip.set(r.code, { code: r.code, req });
+    if (r.status === 'taken') { if (!taken.has(r.code)) taken.set(r.code, { code: r.code, grade: r.grade, req, ...(r.credits ? { credits: r.credits } : {}), ...term }); }
+    else if (!ip.has(r.code)) ip.set(r.code, { code: r.code, req, ...term });
   }
   for (const c of taken.keys()) ip.delete(c);
   return { catalogYear: cy ? cy[1].replace(/\s/g, '') : null, ...auditHeader(src), taken: [...taken.values()], inProgress: [...ip.values()], lastTerm: latestTerm(rowLines) };
@@ -226,7 +232,7 @@ export function gradeInfo(g) {
 }
 
 // Match parsed courses to a program model (planner.js buildModel).
-// Returns { rows: [{key, code, status: 'taken'|'ip', grade, label, title, min?, low?}], others, other } where
+// Returns { rows: [{key, code, status: 'taken'|'ip', grade, label, title, term?, min?, low?}], others, other } where
 // key is what goes in the taken set: a course code, or a Gen Ed box id (e.g. "ph:7") when the audit row's
 // requirement label names that box ("FINE ARTS THEA 1023 ..." -> "Fine Arts Distribution").
 // min = the requirement's minimum grade; low = the grade is below it (the class doesn't count, retaken).
@@ -243,7 +249,7 @@ export function matchAudit(parsed, model) {
   for (const [list, status] of [[parsed.taken, 'taken'], [parsed.inProgress, 'ip']]) {
     for (const r of list) {
       if (inProgram(r.code)) {
-        const row = { key: r.code, code: r.code, status, grade: gradeText(r, status), label: r.code, title: courses[r.code]?.title || '' };
+        const row = { key: r.code, code: r.code, status, grade: gradeText(r, status), label: r.code, title: courses[r.code]?.title || '', ...(r.term ? { term: r.term } : {}) };
         const min = status === 'taken' ? minGradeFor(model, r.code) : null;
         if (min) { row.min = min; if (!gradeMeets(row.grade, min)) row.low = true; }
         rows.push(row);
@@ -253,8 +259,8 @@ export function matchAudit(parsed, model) {
       // all the label's words; a long label may miss one (a PDF can print its last word on the next line)
       const hits = (b) => b.need.filter((w) => have.has(w)).length;
       const box = boxes.find((b) => !usedBox.has(b.u.id) && hits(b) >= (b.need.length >= 3 ? b.need.length - 1 : b.need.length));
-      if (box) { usedBox.add(box.u.id); rows.push({ key: box.u.id, code: r.code, status, grade: gradeText(r, status), label: box.u.label, title: r.code }); continue; }
-      others.push({ code: r.code, status, grade: gradeText(r, status), credits: r.credits ?? courses[r.code]?.credits ?? null });
+      if (box) { usedBox.add(box.u.id); rows.push({ key: box.u.id, code: r.code, status, grade: gradeText(r, status), label: box.u.label, title: r.code, ...(r.term ? { term: r.term } : {}) }); continue; }
+      others.push({ code: r.code, status, grade: gradeText(r, status), credits: r.credits ?? courses[r.code]?.credits ?? null, ...(r.term ? { term: r.term } : {}) });
     }
   }
   rows.sort((a, b) => (a.status === b.status ? 0 : a.status === 'taken' ? -1 : 1) || a.label.localeCompare(b.label));
