@@ -39,6 +39,12 @@ test('EE: admission line, Apply row and a gated class sheet link to the ECE advi
   await p.waitForSelector('#clsDlg[open]');
   const dd = await p.$$eval('#clsFacts dd', (ds) => ds.map((d) => [d.textContent, d.querySelector('a.adv')?.getAttribute('href') || null]));
   assert.ok(dd.some(([t, h]) => /Acceptance/i.test(t) && h === ECE), JSON.stringify(dd));
+  // "How to apply" next to it (sheet + Apply row), new tab, same line as the advisor link
+  const APPLY = 'https://www.uvu.edu/cet/ece/electrical-engineering/application.html';
+  const sheetApl = await p.$$eval('#clsFacts a.apl', (as) => as.map((a) => [a.textContent, a.getAttribute('href'), a.target, a.previousSibling?.textContent]));
+  assert.deepEqual(sheetApl, [['How to apply', APPLY, '_blank', ' · ']]);
+  const rowApl = await p.$$eval('#sems .apply[data-gate="admission"] a.apl', (as) => as.map((a) => [a.textContent, a.getAttribute('href'), a.target, a.previousSibling?.textContent]));
+  assert.deepEqual(rowApl, [['How to apply', APPLY, '_blank', ' · ']]);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
@@ -50,6 +56,7 @@ test('a class with no admission gate has no advisor link in its sheet', async ()
   await p.click('.box[data-id="MATH 1210"]', { button: 'right' });
   await p.waitForSelector('#clsDlg[open]');
   assert.equal(await p.$('#clsFacts a.adv'), null);
+  assert.equal(await p.$('#clsFacts a.apl'), null);
   await p.context().close();
 });
 

@@ -713,7 +713,7 @@ function renderPlan(plan) {
   const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
   if (!stones.length) { const at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone)); if (at > 0) stones.push({ at, gate: 'admission' }); }
   const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
-  const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) : ''}</div>`).join('');
+  const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
     <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
@@ -723,6 +723,11 @@ function renderPlan(plan) {
 function advA(id, text = 'Schedule with an advisor', elId = '') {
   const url = advisorLink(advisors, id);
   return url ? `<a class="adv" href="${esc(url)}" target="_blank" rel="noopener"${elId ? ` id="${elId}"` : ''}>${esc(text)}</a>` : '';
+}
+// " · How to apply": the program's apply / matriculate page (gated programs that have one); '' otherwise
+function aplA(id) {
+  const url = advisors && id ? advisors[id]?.admissionUrl : null;
+  return url ? ` · <a class="adv apl" href="${esc(url)}" target="_blank" rel="noopener">How to apply</a>` : '';
 }
 // the program-level "Report a mistake" issue
 function progIssue(extra = {}) {
@@ -1122,7 +1127,7 @@ function openClass({ node, item }) {
     // (not when the Before line already says exactly that and nothing else)
     const same = pb && needs.length === 1 && pb[1].replace(/[\s.,;()]+/g, ' ').trim() === needs[0].replace(/[\s.,;()]+/g, ' ').trim();
     // program acceptance / matriculation: the advisor who signs the student in
-    const adv = gatedNeed(c, gl) ? advA(part?.id) : '';
+    const adv = gatedNeed(c, gl) ? advA(part?.id) + aplA(part?.id) : '';
     if (needs.length && !same) rows.push(['Needs', needs.join(' · '), adv]);
     else if (adv) (pb || rows[rows.length - 1]).push(adv);
   }
