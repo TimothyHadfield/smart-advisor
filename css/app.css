@@ -187,6 +187,8 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 /* admission programs: the Apply step between the prerequisite semesters and the program */
 .apply { grid-column: 1 / -1; display: flex; align-items: center; gap: 8px; font-size: 11px; font-weight: 700; color: #9a5b00; text-transform: uppercase; letter-spacing: .03em; }
 .apply::before, .apply::after { content: ""; flex: 1; border-top: 1.5px dashed currentColor; opacity: .6; }
+/* advisor booking link (Apply row, class sheet): the app's link green, normal case */
+a.adv { color: var(--green); font-weight: 600; text-transform: none; letter-spacing: 0; white-space: nowrap; }
 .warn { grid-column: 1 / -1; color: #b3261e; font-size: 11px; }
 
 /* bottom tabs (phone) */

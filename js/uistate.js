@@ -161,3 +161,15 @@ export function needsOf(course = {}, gates = []) {
   }
   return out;
 }
+
+// Advisor booking (data/advisors.json): the program's one booking link, else its advising page
+export function advisorLink(advisors, id) {
+  const a = advisors && id ? advisors[id] : null;
+  return a ? a.scheduleUrl || a.advisingUrl || null : null;
+}
+// a class that waits on program acceptance / matriculation (an advisor signs the student in), not
+// University Advanced Standing (that one comes on its own)
+export function gatedNeed(course = {}, gates = []) {
+  if (course.gate === 'admission' || (gates || []).includes('admission')) return true;
+  return [course.gateText, ...(course.prereqWords || [])].some((w) => w && /accept|admi|matricul/i.test(w) && !/advanced standing/i.test(w));
+}

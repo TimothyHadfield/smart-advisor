@@ -9,7 +9,7 @@ import { filterPrograms, programGroup, catalogInfo, programYears, programPath, y
 import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
-import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf } from './uistate.js';
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 
 const $ = (id) => document.getElementById(id);
@@ -95,7 +95,7 @@ function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new S
 const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
 const gradeMap = () => (state.grades[major()] ??= {});
 
-let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [];
+let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null;
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -207,7 +207,9 @@ async function loadPlan() {
   const { parts } = built;
   // Gen Ed class lists of the major's catalog year (missing: the current catalog's)
   const y = parts[0].year;
+  const adv = getJSON(`${DATA}/advisors.json`);
   gened = (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/gened.json`)) || await getJSON(`${DATA}/gened.json`);
+  advisors = (await adv)?.programs || null;
   if (gen !== loadGen) return;
   $('progName').textContent = parts.map((p) => p.program.name).join(' + ');
   progParts = parts;
@@ -689,8 +691,8 @@ function renderPlan(plan) {
   $('sum').innerHTML = (plan.graduation
     ? `<b>Graduate ${plan.graduation}</b><span>${plan.creditsLeft} credits · ${n} semester${n === 1 ? '' : 's'}</span>`
     : `<b>All done</b>`)
-    + `<p class="caveat">Unofficial plan — confirm with your advisor. <a href="${esc(issueURL(progIssue()))}" target="_blank" rel="noopener" id="sumReport">Report a mistake</a></p>`
-    + (gated ? '<p class="adm">Requires admission — apply after these classes.</p>' : '')
+    + `<p class="caveat">Unofficial plan — confirm with ${advA(progParts[0]?.id, 'your advisor', 'sumAdvisor') || 'your advisor'}. <a href="${esc(issueURL(progIssue()))}" target="_blank" rel="noopener" id="sumReport">Report a mistake</a></p>`
+    + (gated ? `<p class="adm">Requires admission — apply after these classes. ${advA(progParts[0]?.id)}</p>` : '')
     // bachelor's totals (120 credits, 40 upper-division) and classes a major and minor share
     + (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
     + (() => {
@@ -711,11 +713,16 @@ function renderPlan(plan) {
   const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
   if (!stones.length) { const at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone)); if (at > 0) stones.push({ at, gate: 'admission' }); }
   const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
-  const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span></div>`).join('');
+  const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
     <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
+}
+// "Schedule with an advisor": the program's booking link, else its advising page (data/advisors.json); '' when unknown
+function advA(id, text = 'Schedule with an advisor', elId = '') {
+  const url = advisorLink(advisors, id);
+  return url ? `<a class="adv" href="${esc(url)}" target="_blank" rel="noopener"${elId ? ` id="${elId}"` : ''}>${esc(text)}</a>` : '';
 }
 // the program-level "Report a mistake" issue
 function progIssue(extra = {}) {
@@ -1114,7 +1121,10 @@ function openClass({ node, item }) {
     rows.push(...(pre.length ? pre : [['Before', needs.length ? 'No classes listed' : 'None listed']]));
     // (not when the Before line already says exactly that and nothing else)
     const same = pb && needs.length === 1 && pb[1].replace(/[\s.,;()]+/g, ' ').trim() === needs[0].replace(/[\s.,;()]+/g, ' ').trim();
-    if (needs.length && !same) rows.push(['Needs', needs.join(' · ')]);
+    // program acceptance / matriculation: the advisor who signs the student in
+    const adv = gatedNeed(c, gl) ? advA(part?.id) : '';
+    if (needs.length && !same) rows.push(['Needs', needs.join(' · '), adv]);
+    else if (adv) (pb || rows[rows.length - 1]).push(adv);
   }
   const min = opt?.minGrade ?? req?.minGrade ?? c.minGrade;
   if (min) rows.push(['Grade', `${min} or higher`]);
@@ -1130,7 +1140,7 @@ function openClass({ node, item }) {
   if (src && src !== whyText) rows.push(['Catalog', src]);
   if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
   else if (kind === 'placeholder' && u?.title) rows.push(['Note', u.title]);
-  $('clsFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+  $('clsFacts').innerHTML = rows.map(([k, v, html]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${html ? ' ' + html : ''}</dd>`).join('');
   $('clsCat').href = code ? courseURL(code) : part?.program.url || 'https://catalog.uvu.edu/';
   $('clsReport').href = issueURL(progIssue({ code: code || u?.label || '', title: code ? c.title || '' : '' }));
   // taken switch: for a class that is a box on the chart

@@ -153,7 +153,7 @@ test('EE 2025-26: Apply + Advanced Standing rows in the plan; ECE 4900\'s class 
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   await p.click('#tabs button[data-tab="plan"]');
-  assert.equal(await p.textContent('#sems .apply[data-gate="admission"]'), 'Apply');
+  assert.equal(await p.textContent('#sems .apply[data-gate="admission"] > span'), 'Apply');
   assert.ok(await p.$('#sems .apply[data-gate="advanced-standing"]'), 'Advanced Standing row');
   // the Apply row comes after ECE 2250's semester and before ECE 3740's
   const order = await p.$$eval('#sems > *', (els) => els.map((e) => (e.classList.contains('apply') ? e.dataset.gate : [...e.querySelectorAll('li')].map((l) => l.dataset.unit).join(','))));
