@@ -165,3 +165,13 @@ test('semColors (Settings › Semester colors) syncs both ways, off included', (
   applyDoc(s, d, 'ee-bs');
   assert.equal(s.settings.semColors, false);
 });
+
+test('Profile name and flowchart box labels sync both ways', () => {
+  const d = toDoc({ settings: { name: 'Tim Hadfield', labels: 'code' }, done: {}, grades: {} }, 'ee-bs');
+  assert.equal(d.settings.name, 'Tim Hadfield');
+  assert.equal(d.settings.labels, 'code');
+  const s = { settings: { labels: 'both' }, done: {}, grades: {} };
+  applyDoc(s, d, 'ee-bs');
+  assert.equal(s.settings.name, 'Tim Hadfield');
+  assert.equal(s.settings.labels, 'code');
+});

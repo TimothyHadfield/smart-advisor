@@ -1,4 +1,4 @@
-// End-to-end: Classes view, Hypothetical | Actual, grades (guest, Firebase blocked, headless WebKit as an
+// End-to-end: Classes view, Explore (taps are hypothetical), grades (guest, Firebase blocked, headless WebKit as an
 // iPhone 15 via Playwright from ~/.claude/tools). Not part of the plain suite. Made-up classes only.
 //   1. serve the repo:   python -m http.server 8137 --bind 127.0.0.1
 //   2. run:              node --test tests/classes.e2e.mjs        (APP_URL=... for another address)
@@ -29,7 +29,7 @@ async function page(saved) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   return p;
@@ -38,11 +38,11 @@ const stored = (p) => p.evaluate((k) => JSON.parse(localStorage.getItem(k) || '{
 const box = (p, id) => p.$(`.box[data-id="${id}"]`);
 const pressed = async (p, id) => (await (await box(p, id)).getAttribute('aria-pressed')) === 'true';
 
-test('a tap is hypothetical: the toggle appears, Actual shows the real classes, untapping an audit class keeps it and its grade', async () => {
+test('an Explore tap is hypothetical: Actual progress shows the real classes, untapping an audit class keeps it and its grade', async () => {
   const p = await page(SEED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  assert.equal(await p.isVisible('#hyp'), false, 'no toggle before a tap');
+  assert.equal(await p.isVisible('#hypClear'), false, 'no clear outside Explore');
   // in progress: its own look, an IP tag
   assert.match(await (await box(p, 'ECE 2250')).getAttribute('class'), /\bip\b/);
   assert.equal(await p.textContent('.box[data-id="ECE 2250"] .gr'), 'IP');
@@ -51,10 +51,11 @@ test('a tap is hypothetical: the toggle appears, Actual shows the real classes, 
   assert.equal(await p.textContent('.box[data-id="CHEM 1210"] .gr'), 'B');
   // the Gen Ed box shows its class's grade
   assert.equal(await p.textContent('.box[data-id="ph:7"] .gr'), 'B');
-  // untap an audit class (MATH 1220): hidden in Hypothetical only
+  // in Explore, untap an audit class (MATH 1220): hidden in Explore only
+  await p.click('#exploreBtn');
   await p.click('.box[data-id="MATH 1220"]');
   assert.equal(await pressed(p, 'MATH 1220'), false);
-  assert.equal(await p.isVisible('#hyp'), true, 'toggle appears');
+  assert.equal(await p.isVisible('#hypClear'), true, 'clear next to it while exploring');
   let s = await stored(p);
   assert.ok(s.done[EE].includes('MATH 1220'), 'actual list untouched');
   assert.equal(s.grades[EE]['MATH 1220'], 'B+', 'grade kept');
@@ -62,25 +63,25 @@ test('a tap is hypothetical: the toggle appears, Actual shows the real classes, 
   // tap a new class on
   await p.click('.box[data-id="PHYS 2210"]');
   assert.equal(await pressed(p, 'PHYS 2210'), true);
-  // Actual: no taps
-  await p.click('#hypSeg button[data-v="actual"]');
+  // Actual progress: no taps
+  await p.click('#exploreBtn');
   assert.equal(await pressed(p, 'MATH 1220'), true, 'Actual shows the audit class');
   assert.equal(await pressed(p, 'PHYS 2210'), false, 'Actual has no taps');
   assert.equal(await p.textContent('.box[data-id="MATH 1220"] .gr'), 'B+');
-  await p.click('#hypSeg button[data-v="hypo"]');
-  assert.equal(await pressed(p, 'PHYS 2210'), true);
-  // clear the hypotheticals, then Undo
+  await p.click('#exploreBtn');
+  assert.equal(await pressed(p, 'PHYS 2210'), true, 'the taps are still there in Explore');
+  // clear them, then Undo
   await p.click('#hypClear');
   assert.equal(await pressed(p, 'MATH 1220'), true);
-  assert.equal(await p.isVisible('#hyp'), false);
   await p.click('#toastUndo');
   assert.equal(await pressed(p, 'MATH 1220'), false);
-  assert.equal(await p.isVisible('#hyp'), true);
-  // survives a reload (saved with the account's settings)
+  // the taps survive a reload (saved with the account's settings); the site opens on actual progress
   await p.reload();
-  await p.waitForSelector('.box[data-id="MATH 1210"]');
+  await p.waitForSelector('#main[data-tab="flow"] .box[data-id="MATH 1210"]');
+  assert.equal(await p.textContent('#exploreBtn'), 'Explore');
+  assert.equal(await pressed(p, 'PHYS 2210'), false);
+  await p.click('#exploreBtn');
   assert.equal(await pressed(p, 'PHYS 2210'), true);
-  assert.equal(await p.isVisible('#hyp'), true);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
@@ -89,7 +90,7 @@ test('Classes: grouped, GPA, add a class (applies to the flowchart), edit its gr
   const p = await page(SEED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  await p.click('#tabs button[data-tab="plan"]');
+  await goTab(p, 'plan');
   await p.click('#planSeg button[data-v="classes"]');
   await p.waitForSelector('#clList .cl-row');
   const groups = await p.$$eval('#clList .cl-h', (els) => els.map((e) => e.firstChild.textContent));
@@ -117,7 +118,7 @@ test('Classes: grouped, GPA, add a class (applies to the flowchart), edit its gr
   assert.ok(s.done[EE].includes('MATH 2210'), 'added to the actual list');
   assert.equal(s.settings.src[EE]['MATH 2210'], 'added');
   assert.equal(s.grades[EE]['MATH 2210'], 'A-');
-  assert.equal(await p.isVisible('#hyp'), false, 'adding is not hypothetical');
+  assert.equal(await p.textContent('#exploreBtn'), 'Explore', 'adding is not Explore');
   assert.ok((await rowsOf('Taken')).includes('MATH 2210'));
   // edit: make it Current
   const row = await p.$('#clList .cl-row:has(b:text-is("MATH 2210"))');
@@ -133,13 +134,13 @@ test('Classes: grouped, GPA, add a class (applies to the flowchart), edit its gr
   await p.click('#toastUndo');
   assert.ok((await stored(p)).done[EE].includes('MATH 2210'));
   // the flowchart shows it
-  await p.click('#tabs button[data-tab="flow"]');
+  await goTab(p, 'flow');
   assert.equal(await pressed(p, 'MATH 2210'), true);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
 
-test('class sheet: pick a grade; it shows on the box and survives untapping (Hypothetical hides it)', async () => {
+test('class sheet: pick a grade; outside Explore its Taken switch marks the actual class; Explore hides grades', async () => {
   const p = await page(SEED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="ECE 1000"]');
@@ -150,8 +151,8 @@ test('class sheet: pick a grade; it shows on the box and survives untapping (Hyp
   await p.selectOption('#clsGrades select[data-code="ECE 1000"]', 'B-');
   await p.click('#clsDlg button.ok');
   assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), 'B-');
-  // a Still need row's sheet: the Taken switch is a tap -> Hypothetical, where no grade picker or grade shows
-  await p.click('#tabs button[data-tab="plan"]');
+  // a Still need row's sheet, outside Explore: the Taken switch adds the class to the actual ones (grade picker)
+  await goTab(p, 'plan');
   await p.click('#planSeg button[data-v="classes"]');
   await p.waitForSelector('#clList .cl-row');
   // (a selector click, not a held element: the list renders again once the course catalog arrives)
@@ -159,15 +160,20 @@ test('class sheet: pick a grade; it shows on the box and survives untapping (Hyp
   await p.waitForSelector('#clsDlg[open]');
   assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0);
   await p.click('#clsTaken');
-  assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0, 'Hypothetical: no grade picker');
+  assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 2, 'an actual class: grade pickers (lecture + its lab)');
+  const s = await stored(p);
+  assert.ok(s.done[EE].includes('PHYS 2210'));
+  assert.equal(s.settings.src[EE]['PHYS 2210'], 'added');
   await p.click('#clsDlg button.ok');
-  await p.click('#tabs button[data-tab="flow"]');
-  assert.equal(await p.isVisible('#hyp'), true, 'the Taken switch is a tap');
-  assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), '', 'Hypothetical: no grade');
+  await goTab(p, 'flow');
+  assert.equal(await pressed(p, 'PHYS 2210'), true);
+  // Explore: no grades; untap + tap there keeps the grade
+  await p.click('#exploreBtn');
+  assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), '', 'Explore: no grade');
   await p.click('.box[data-id="ECE 1000"]');
   await p.click('.box[data-id="ECE 1000"]');
   assert.equal((await stored(p)).grades[EE]['ECE 1000'], 'B-', 'grade kept through untap + tap');
-  await p.click('#hypSeg button[data-v="actual"]');
+  await p.click('#exploreBtn');
   assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), 'B-', 'Actual shows it');
   assert.deepEqual(p.errors, []);
   await p.context().close();
@@ -190,3 +196,16 @@ test('no audit loaded: one line on the flowchart and in Classes, linked to Uploa
   assert.equal(await q.isVisible('#flowPanel .noaud'), false);
   await q.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

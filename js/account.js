@@ -177,7 +177,6 @@ async function signOut() {
   setOwner(null);
   hooks.clear();
   await fb.A.signOut(fb.auth).catch(() => {});
-  $('acct').close();
 }
 
 // second tap of "Delete account": deletes the doc, then the sign-in. Google wants a recent sign-in to
@@ -202,7 +201,6 @@ function deleteAccount() {
     }
     setOwner(null);
     hooks.clear();
-    $('acct').close();
   }).catch((e) => {
     msg(e?.code === 'auth/user-mismatch' ? 'Pick the same Google account' : /popup-closed|cancelled-popup/.test(e?.code || '') ? '' : 'Not deleted. Try again.');
     armDelete(false);
@@ -226,7 +224,6 @@ function render() {
   const p = $('profile');
   p.classList.toggle('in', signedIn);
   p.classList.toggle('warn', signedIn && status === 'offline');
-  $('profileInitial').textContent = signedIn ? (user.displayName || user.email || '?').trim()[0].toUpperCase() : '';
   hooks.user?.(signedIn ? { name: user.displayName || '', email: user.email || '' } : null); // Home's greeting
   $('acctOut').hidden = signedIn;
   $('acctIn').hidden = !signedIn;
@@ -242,11 +239,11 @@ function render() {
   }
 }
 
+// the account part of the Profile screen (Home's Profile row opens it): fresh each time it opens
 function wireSheet() {
-  const dlg = $('acct');
   $('profile').addEventListener('click', () => {
     msg(''); armDelete(false); $('acctMore').setAttribute('aria-expanded', 'false'); $('acctSettings').hidden = true; $('acctTipText').hidden = true;
-    render(); dlg.showModal();
+    render();
   });
   $('acctGoogle').addEventListener('click', signIn);
   $('acctSignOut').addEventListener('click', signOut);
@@ -258,5 +255,4 @@ function wireSheet() {
   });
   $('acctDelete').addEventListener('click', () => { if ($('acctDelete').dataset.armed) deleteAccount(); else armDelete(true); });
   $('acctTip').addEventListener('click', () => { $('acctTipText').hidden = !$('acctTipText').hidden; });
-  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }

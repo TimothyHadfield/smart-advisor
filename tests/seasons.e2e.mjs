@@ -28,7 +28,7 @@ const EE = { plan: { programs: ['electrical-engineering-bs'], catalogYear: null 
 test('ECE 3780: planned in a Spring; its sheet has an "Offered" row linked to UVU class search', async () => {
   const p = await page(EE);
   await p.goto(APP + '?p=electrical-engineering-bs');
-  await p.click('#tabs button[data-tab="plan"]');
+  await goTab(p, 'plan');
   const row = await p.waitForSelector('#sems li[data-item="ECE 3780"]');
   assert.match(await row.evaluate((li) => li.closest('.sem').querySelector('h3').textContent), /^Spring \d{4}/);
   await row.click();
@@ -42,3 +42,16 @@ test('ECE 3780: planned in a Spring; its sheet has an "Offered" row linked to UV
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

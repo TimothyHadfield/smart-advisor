@@ -8,40 +8,31 @@
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <link rel="preconnect" href="https://www.gstatic.com" crossorigin>
 <link rel="stylesheet" href="css/app.css">
-</head><body>
-<header class="top">
-  <span class="brand">Smart Advisor</span>
-  <button class="prog" id="progName" aria-haspopup="dialog" title="Programs"></button>
-  <div class="hyp" id="hyp" hidden><div class="hyp-seg" id="hypSeg"><button type="button" data-v="hypo" class="on">Hypothetical</button><button type="button" data-v="actual">Actual</button></div><button type="button" class="hyp-x" id="hypClear" aria-label="Clear hypothetical" title="Clear hypothetical">×</button></div>
-  <div class="wtabs" id="wtabs"><button data-tab="home" class="on">Home</button><button data-tab="flow">Flowchart</button><button data-tab="sched">Schedule</button></div>
-  <button class="icon" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
-  <button class="icon profile" id="profile" aria-label="Account" title="Account"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2.2"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><span id="profileInitial" aria-hidden="true"></span></button>
+</head><body data-tab="home">
+<header class="top" id="top">
+  <button type="button" class="icon back" id="back" aria-label="Back" title="Back"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+  <h1 class="ttl" id="ttl"></h1>
 </header>
 <main id="main" data-tab="home">
   <section class="panel home" id="homePanel" aria-label="Home">
+    <button class="icon gear" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
     <div class="hm">
-      <div class="hm-main">
-        <div class="hm-id">
-          <h1 class="hm-name" id="hmName">Welcome</h1>
-          <div class="hm-progs" id="hmProgs"></div>
-        </div>
-        <div class="hm-cr" id="hmCredits"></div>
-        <dl class="hm-facts" id="hmFacts"></dl>
-        <div class="hm-notes" id="hmNotes"></div>
-        <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
-      </div>
+      <h1 class="hm-name" id="hmName">Welcome</h1>
+      <dl class="hm-list" id="hmFacts"></dl>
       <nav class="hm-go" id="hmGo" aria-label="Open">
-        <button type="button" data-go="flow"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="14.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="8.5" y="15.5" width="7" height="5" rx="1.2"/><path d="M6 8.5v3.5h6v3.5M18 8.5v3.5h-6"/></g></svg><b>Flowchart</b><span id="hmGoFlow"></span></button>
-        <button type="button" data-go="plan"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5.5h16M4 12h16M4 18.5h10"/><circle cx="19" cy="18.5" r="1.2" fill="currentColor" stroke="none"/></g></svg><b>Plan</b><span id="hmGoPlan"></span></button>
-        <button type="button" data-go="sched"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M7 13h4v3.5H7z" fill="currentColor" stroke="none"/></g></svg><b>Schedule</b><span id="hmGoSched"></span></button>
+        <button type="button" data-go="flow"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="14.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="8.5" y="15.5" width="7" height="5" rx="1.2"/><path d="M6 8.5v3.5h6v3.5M18 8.5v3.5h-6"/></g></svg><b>Flowchart</b><span id="hmGoFlow"></span></button>
+        <button type="button" data-go="sched"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M7 13h4v3.5H7z" fill="currentColor" stroke="none"/></g></svg><b>Schedule</b><span id="hmGoSched"></span></button>
+        <button type="button" data-go="plan"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5.5h16M4 12h16M4 18.5h10"/><circle cx="19" cy="18.5" r="1.2" fill="currentColor" stroke="none"/></g></svg><b>Plan</b><span id="hmGoPlan"></span></button>
+        <button type="button" data-go="profile" id="profile"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><b>Profile</b><span id="hmGoProfile"></span></button>
       </nav>
     </div>
   </section>
   <section class="panel flow" id="flowPanel" aria-label="Flowchart">
-    <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><button type="button" class="lg-fit" id="fitBtn" aria-label="Fit to screen" title="Fit to screen" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M1.5 5.5v-4h4M10.5 1.5h4v4M14.5 10.5v4h-4M5.5 14.5h-4v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
+    <div class="legend"><div class="lg-items" id="legendItems"><span class="sw done"></span>Taken</div><button type="button" class="lg-fit" id="fitBtn" aria-label="Fit to screen" title="Fit to screen" hidden><svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path d="M1.5 5.5v-4h4M10.5 1.5h4v4M14.5 10.5v4h-4M5.5 14.5h-4v-4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button><label class="lg-grades" title="Semester colors">Colors <input type="checkbox" id="setSemColors" role="switch" checked></label><label class="lg-grades">Grades <input type="checkbox" id="gradesOn" role="switch" checked></label></div>
     <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
     <p class="noaud" id="noDates" hidden><button type="button" data-upload>Re-upload your audit</button> to see dates</p>
     <p class="uvuchart" id="uvuChart" hidden><a target="_blank" rel="noopener"></a></p>
+    <div class="xbar" id="xbar"><button type="button" class="chip x-btn" id="exploreBtn" aria-pressed="false">Explore</button><button type="button" class="hyp-x" id="hypClear" aria-label="Clear explore" title="Clear explore" hidden>×</button><div class="seg lbl-seg" id="lblSeg" role="group" aria-label="Box labels"><button type="button" data-v="code">Code</button><button type="button" data-v="title">Title</button><button type="button" data-v="both" class="on">Both</button></div></div>
     <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
     <button type="button" class="ok empty-pick" data-pick>Pick your program</button>
   </section>
@@ -61,36 +52,50 @@
       <div class="sc-nav"><button type="button" id="scPrev" aria-label="Previous schedule">‹</button><span id="scRank"></span><button type="button" id="scNext" aria-label="Next schedule">›</button></div>
       <button type="button" class="sc-mine" id="scMine">Add my schedule</button>
       <button type="button" class="sc-copy" id="scCopy">Copy CRNs</button>
+      <button type="button" class="sc-ftog" id="scFilt" aria-label="Filters" title="Filters" aria-expanded="false" aria-controls="scFilters"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></g></svg></button>
+    </div>
+    <div class="sc-filt" id="scFilters">
+      <div class="seg days" id="setDays" role="group" aria-label="Days"><button type="button" data-d="M">M</button><button type="button" data-d="T">T</button><button type="button" data-d="W">W</button><button type="button" data-d="R">Th</button><button type="button" data-d="F">F</button></div>
+      <span class="hours"><select id="setAfter" aria-label="Start after"></select>–<select id="setBefore" aria-label="End by"></select></span>
+      <select id="setMode" aria-label="Classes"><option value="any">Any</option><option value="person">In person</option><option value="online">Online</option></select>
+      <label class="lg-grades">Avoid gaps <input type="checkbox" id="setGaps" role="switch"></label>
+      <label class="lg-grades">Top rated <input type="checkbox" id="setRmp" role="switch"></label>
+      <label class="lg-grades">Main campus <input type="checkbox" id="setMain" role="switch"></label>
+      <label class="lg-grades">Waitlist <input type="checkbox" id="setWait" role="switch"></label>
     </div>
     <div class="sc-body">
       <div class="sc-week" id="scWeek"></div>
       <ul class="sc-list" id="scList"></ul>
     </div>
   </section>
+  <section class="panel page" id="profilePanel" aria-label="Profile">
+    <div class="pg">
+      <label class="pg-row">Name <input type="text" id="pfName" autocomplete="name" autocapitalize="words" spellcheck="false" maxlength="60" placeholder="Your name"></label>
+      <button type="button" class="pg-row pg-btn" data-pick><span>Programs</span><b id="pfProgs"></b></button>
+      <div class="acct" id="acct">
+        <div class="imp-head"><b>Account</b><button type="button" class="tip" id="acctTip" aria-label="Why">?</button>
+          <p class="tiptext" id="acctTipText" hidden>Your classes and settings follow you to any device.</p></div>
+        <div id="acctOut">
+          <button type="button" id="acctGoogle" class="ok wide" disabled>Continue with Google</button>
+        </div>
+        <div id="acctIn" class="acct-in" hidden>
+          <div class="who"><b id="acctName"></b><span id="acctEmail"></span></div>
+          <div class="sync" id="acctSync"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg><span id="acctSyncText"></span></div>
+          <button type="button" id="acctMore" class="ghost wide" aria-expanded="false">Account settings</button>
+          <div id="acctSettings" hidden><button type="button" id="acctDelete" class="danger wide">Delete account</button></div>
+          <button type="button" id="acctSignOut" class="ghost wide" hidden>Sign out</button>
+        </div>
+        <p class="acct-msg" id="acctMsg"></p>
+      </div>
+    </div>
+  </section>
 </main>
-<nav class="tabs" id="tabs">
-  <button data-tab="home" class="on">Home</button>
-  <button data-tab="flow">Flowchart</button>
-  <button data-tab="plan">Plan</button>
-  <button data-tab="sched">Schedule</button>
-</nav>
 <dialog id="settings">
   <form method="dialog">
     <label>Start <select id="setStart"></select></label>
     <label>Max credits <select id="setMax"></select></label>
     <label class="sw-row">Summers <input type="checkbox" id="setSummer" role="switch"></label>
-    <label class="sw-row">Semester colors <input type="checkbox" id="setSemColors" role="switch"></label>
     <button type="button" id="importBtn" class="ghost wide">Import audit</button>
-    <div class="set-sec">Schedule</div>
-    <div class="set-line"><span>Days</span><div class="seg days" id="setDays"><button type="button" data-d="M">M</button><button type="button" data-d="T">T</button><button type="button" data-d="W">W</button><button type="button" data-d="R">Th</button><button type="button" data-d="F">F</button></div></div>
-    <div class="set-line"><span>Hours</span><span class="hours"><select id="setAfter" aria-label="Start after"></select>–<select id="setBefore" aria-label="End by"></select></span></div>
-    <label>Classes <select id="setMode"><option value="any">Any</option><option value="person">In person</option><option value="online">Online</option></select></label>
-    <div class="sw-grid">
-      <label class="sw-row">Avoid gaps <input type="checkbox" id="setGaps" role="switch"></label>
-      <label class="sw-row">Top rated <input type="checkbox" id="setRmp" role="switch"></label>
-      <label class="sw-row">Main campus <input type="checkbox" id="setMain" role="switch"></label>
-      <label class="sw-row">Waitlist <input type="checkbox" id="setWait" role="switch"></label>
-    </div>
     <div class="row"><button type="button" id="clearDone" class="ghost">Clear taken</button><button value="ok" class="ok">Done</button></div>
     <p class="ver" id="setVer"></p>
   </form>
@@ -216,23 +221,6 @@
     <div class="sec-head"><b>Your track</b><span id="trackName"></span></div>
     <ul class="pick-list" id="trackList"></ul>
     <div class="row"><span></span><button value="ok" class="ok">Done</button></div>
-  </form>
-</dialog>
-<dialog id="acct" class="acct">
-  <form method="dialog">
-    <div class="imp-head"><b>Account</b><button type="button" class="tip" id="acctTip" aria-label="Why">?</button>
-      <p class="tiptext" id="acctTipText" hidden>Your classes and settings follow you to any device.</p></div>
-    <div id="acctOut">
-      <button type="button" id="acctGoogle" class="ok wide" disabled>Continue with Google</button>
-    </div>
-    <div id="acctIn" class="acct-in" hidden>
-      <div class="who"><b id="acctName"></b><span id="acctEmail"></span></div>
-      <div class="sync" id="acctSync"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg><span id="acctSyncText"></span></div>
-      <button type="button" id="acctMore" class="ghost wide" aria-expanded="false">Account settings</button>
-      <div id="acctSettings" hidden><button type="button" id="acctDelete" class="danger wide">Delete account</button></div>
-    </div>
-    <p class="acct-msg" id="acctMsg"></p>
-    <div class="row"><button type="button" id="acctSignOut" class="ghost" hidden>Sign out</button><button value="ok" class="ok">Done</button></div>
   </form>
 </dialog>
 <div class="toast" id="toast" role="status"><span id="toastText"></span><button type="button" id="toastUndo">Undo</button></div>

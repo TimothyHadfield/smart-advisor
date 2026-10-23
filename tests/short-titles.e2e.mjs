@@ -30,7 +30,7 @@ async function open(id, { desktop = false } = {}) {
   p.on('pageerror', (e) => p.errors.push(String(e)));
   await p.goto(APP + '?p=' + id);
   // start on the flowchart (a saved plan opens on Home)
-  await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); });
+  await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); });
   await p.waitForSelector('.box');
   await p.waitForTimeout(400);
   return p;
@@ -68,7 +68,13 @@ for (const desktop of [false, true]) {
     for (const id of PROGRAMS) {
       const p = await open(id, { desktop });
       assert.deepEqual(await cutBoxes(p), [], id);
-      if (!desktop) await p.click('#tabs button[data-tab="plan"]');
+      // the box label modes next to the flowchart (Code only, Title only; 2026-10-23): still nothing cut
+      for (const mode of ['code', 'title']) {
+        await p.click(`#lblSeg button[data-v="${mode}"]`);
+        assert.deepEqual(await cutBoxes(p), [], `${id} (${mode})`);
+      }
+      await p.click('#lblSeg button[data-v="both"]');
+      if (!desktop) await goTab(p, 'plan');
       await p.waitForSelector('.sem li');
       assert.deepEqual(await cutRows(p), [], `${id} plan list`);
       assert.deepEqual(p.errors, []);
@@ -135,3 +141,16 @@ test('every short name and label in data/short-titles.json fits, measured with t
   assert.deepEqual(bad.out, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

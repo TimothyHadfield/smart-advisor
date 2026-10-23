@@ -35,59 +35,97 @@ async function page(saved, { laptop = false, firebase = false } = {}) {
 }
 const visible = (p, sel) => p.isVisible(sel);
 const tab = (p) => p.getAttribute('#main', 'data-tab');
+// fits the screen: no page scroll, nothing wider than the screen, Home's own list not scrolling either
+const fits = (p) => p.evaluate(() => ({ sh: document.scrollingElement.scrollHeight, h: innerHeight, sw: document.scrollingElement.scrollWidth, w: innerWidth,
+  ph: document.querySelector('#homePanel .hm').scrollHeight, pc: document.querySelector('#homePanel .hm').clientHeight }));
 
-test('the app opens on Home: major, credits, graduation, Now; flowchart hidden', async () => {
+// Tim, 2026-10-23: "the home page shouldn't have any top bar and all the info should be in a list ... The homepage
+// should have the user's name, their major/minor with graduation progress, catelog year, and current GPA, (no links
+// to UVU or anything in homepage) (also remove the long bar seperated by semester and whatnot, keep it simple)"
+for (const laptop of [false, true]) {
+  test(`Home (${laptop ? 'laptop' : 'iPhone'}): no top bar, a list: major + minor with progress, catalog, GPA, graduation; no links; fits`, async () => {
+    const p = await page({ ...ALEX, plan: { programs: [EE, 'mathematics-minor'], catalogYear: null } }, { laptop });
+    await p.goto(APP);
+    await p.waitForSelector('#hmFacts .hm-prog', { timeout: 8000 });
+    assert.equal(await tab(p), 'home');
+    assert.equal(await visible(p, '#top'), false, 'no top bar on Home');
+    assert.equal(await p.$('#tabs, #wtabs'), null, 'no Home / Flowchart / Schedule switch');
+    assert.equal(await visible(p, '#flowPanel'), false, 'flowchart not shown');
+    const rows = await p.$$eval('#hmFacts > div', (ds) => ds.map((d) => [d.querySelector('dt').textContent, d.querySelector('dd').textContent]));
+    const row = (k) => rows.find((r) => r[0] === k)?.[1] || '';
+    assert.match(row('Major'), /^Electrical Engineering, B\.S\.\d+% · \d+(\.\d)? of \d+(\.\d)? cr · \d+(\.\d)? now$/, JSON.stringify(rows));
+    assert.match(row('Minor'), /^Mathematics, Minor\d+% · \d+(\.\d)? of \d+(\.\d)? cr/);
+    assert.match(row('Catalog'), /^20\d\d-\d\d$/);
+    assert.match(row('GPA'), /^3\.\d\d$/);
+    assert.match(row('Graduation'), /^(May|Aug|Dec) 20\d\d$/);
+    // gone from Home: every link, the semester bar, Next / Now / Gen Ed / Admission, the 120 / 40 notes
+    assert.equal(await p.$$eval('#homePanel a', (as) => as.length), 0, 'no links');
+    assert.equal(await p.$('#homePanel .hm-bar, #hmCredits, #hmNotes'), null, 'no credits bar');
+    for (const k of ['Next', 'Now', 'Gen Ed', 'Admission']) assert.ok(!row(k), `no ${k}`);
+    // the ways in: Flowchart, Schedule, Plan, Profile rows, each in view; the gear in the top right
+    for (const go of ['flow', 'sched', 'plan', 'profile']) assert.ok(await visible(p, `#hmGo [data-go="${go}"]`), go);
+    assert.equal(await p.$('#hmGo [data-go="settings"]'), null, 'no Settings row (the gear)');
+    const g = await p.$eval('#gear', (e) => { const r = e.getBoundingClientRect(); return { x: r.right, y: r.top, w: innerWidth }; });
+    assert.ok(g.w - g.x < 24 && g.y < 70, `gear top right ${JSON.stringify(g)}`);
+    const m = await fits(p);
+    assert.ok(m.sh <= m.h && m.sw <= m.w && m.ph <= m.pc + 1, `Home fits without scrolling ${JSON.stringify(m)}`);
+    assert.deepEqual(p.errors, []);
+    await p.context().close();
+  });
+}
+
+test('each section is its own screen: back arrow (top left) returns Home; so does the browser / phone Back', async () => {
   const p = await page(ALEX);
   await p.goto(APP);
-  await p.waitForSelector('#homePanel .hm-bar .seg-done', { timeout: 8000 });
-  assert.equal(await tab(p), 'home');
-  assert.ok(await visible(p, '#homePanel'));
-  assert.equal(await visible(p, '#flowPanel'), false, 'flowchart not shown');
-  assert.equal(await p.getAttribute('#tabs button.on', 'data-tab'), 'home');
-  const home = await p.textContent('#homePanel');
-  assert.match(home, /Electrical Engineering, B\.S\./);
-  assert.match(home, /Welcome/, 'signed out: plain greeting');
-  assert.match(await p.textContent('#hmCredits'), /\d+ of \d+ cr/);
-  assert.match(await p.textContent('#hmFacts'), /Graduate\s*(Spring|Summer|Fall) 20\d\d/);
-  assert.match(await p.textContent('#hmFacts'), /Now\s*ECE 2700/);
-  assert.match(await p.textContent('#hmFacts'), /GPA\s*3\.\d\d/);
-  // every outside fact links to its source: the catalog pages, UVU's own flowchart, the Gen Ed lists
-  const src = await p.$$eval('#homePanel a.src', (as) => as.map((a) => a.href));
-  assert.ok(src.some((u) => /catalog\.uvu\.edu\/.*#requirementstextcontainer/.test(u)), JSON.stringify(src));
-  assert.ok(src.some((u) => /uvu\.edu/.test(u) && /\.pdf|flowchart/i.test(u)), 'UVU flowchart ' + JSON.stringify(src));
-  assert.ok(await p.$('#hmFacts a.src'), 'Gen Ed source arrow');
-  // fits the phone: no page scroll, nothing wider than the screen
-  const m = await p.evaluate(() => ({ sh: document.scrollingElement.scrollHeight, h: innerHeight, sw: document.scrollingElement.scrollWidth, w: innerWidth, ph: document.getElementById('homePanel').scrollHeight, pc: document.getElementById('homePanel').clientHeight }));
-  assert.ok(m.sh <= m.h && m.sw <= m.w, JSON.stringify(m));
-  assert.ok(m.ph <= m.pc + 1, `Home fits without scrolling ${JSON.stringify(m)}`);
-  assert.deepEqual(p.errors, []);
-  await p.context().close();
-});
-
-test('Home → Flowchart and Schedule; Back returns to Home', async () => {
-  const p = await page(ALEX);
-  await p.goto(APP);
-  await p.waitForSelector('#homePanel [data-go="flow"]');
-  await p.click('#homePanel [data-go="flow"]');
+  await p.waitForSelector('#hmGo [data-go="flow"]');
+  await p.click('#hmGo [data-go="flow"]');
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   assert.equal(await tab(p), 'flow');
   assert.equal(await visible(p, '#homePanel'), false);
-  await p.goBack();
-  await p.waitForTimeout(200);
-  assert.equal(await tab(p), 'home');
+  assert.equal(await p.textContent('#ttl'), 'Flowchart');
+  const b = await p.$eval('#back', (e) => e.getBoundingClientRect().toJSON());
+  assert.ok(b.left < 20 && b.top < 70, `back arrow top left ${JSON.stringify(b)}`);
+  await p.click('#back');
+  await p.waitForSelector('#main[data-tab="home"]');
   assert.ok(await visible(p, '#homePanel'));
-  await p.click('#homePanel [data-go="sched"]');
-  await p.waitForSelector('#schedPanel', { state: 'visible' });
-  assert.equal(await tab(p), 'sched');
+  for (const [go, title] of [['sched', 'Schedule'], ['plan', 'Plan'], ['profile', 'Profile']]) {
+    await p.click(`#hmGo [data-go="${go}"]`);
+    await p.waitForSelector(`#main[data-tab="${go}"]`);
+    assert.equal(await p.textContent('#ttl'), title);
+    // steps inside a section (the plan's Classes view): the arrow still goes straight Home
+    if (go === 'plan') await p.click('#planSeg button[data-v="classes"]');
+    await p.click('#back');
+    await p.waitForSelector('#main[data-tab="home"]');
+  }
+  // browser / phone Back
+  await p.click('#hmGo [data-go="sched"]');
+  await p.waitForSelector('#main[data-tab="sched"]');
   await p.goBack();
-  await p.waitForTimeout(200);
-  assert.equal(await tab(p), 'home');
+  await p.waitForSelector('#main[data-tab="home"]');
   assert.ok(p.url().startsWith(APP), 'still on the site');
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
 
-test('first visit, signed out: greeting + Pick your major, which opens the picker', async () => {
+test('a shared ?p= link opens its flowchart; Back (arrow or browser) lands on Home', async () => {
+  const p = await page(ALEX);
+  await p.goto(APP + '?p=nursing-bs');
+  await p.waitForSelector('#main[data-tab="flow"]');
+  await p.waitForFunction(() => /Nursing/.test(document.querySelector('#hmFacts').textContent));
+  await p.goBack();
+  await p.waitForSelector('#main[data-tab="home"]');
+  assert.ok(p.url().startsWith(APP), 'Back stays on the site');
+  const q = await page(null);
+  await q.goto(APP + `?p=${EE}`);
+  await q.waitForSelector('.box[data-id="MATH 1210"]');
+  assert.equal(await tab(q), 'flow', 'first visit from a link');
+  await q.click('#back');
+  await q.waitForSelector('#main[data-tab="home"]');
+  assert.deepEqual([...p.errors, ...q.errors], []);
+  await p.context().close(); await q.context().close();
+});
+
+test('first visit, signed out: greeting + Pick your major, which opens the picker; the major on Home opens it too', async () => {
   const p = await page(null);
   await p.goto(APP);
   await p.waitForSelector('#homePanel [data-pick]', { timeout: 8000 });
@@ -100,40 +138,37 @@ test('first visit, signed out: greeting + Pick your major, which opens the picke
   await p.click('#pick .ok');
   await p.waitForFunction(() => /Nursing/.test(document.querySelector('#homePanel').textContent));
   assert.equal(await tab(p), 'home');
+  await p.click('#hmFacts .hm-prog button');
+  await p.waitForSelector('#pick[open]');
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
 
-test('an old ?p= link to a program still opens its flowchart', async () => {
+// Tim, 2026-10-23: "allow the user to change their displayed name in the Profile section. Also automatically
+// capitalize their first/last name if given."
+test('Profile: the displayed name can be changed, each word capitalized (own capitals kept); Home shows it, saved', async () => {
   const p = await page(ALEX);
-  await p.goto(APP + '?p=nursing-bs');
-  await p.waitForFunction(() => /Nursing/.test(document.querySelector('#progName').textContent));
-  assert.equal(await tab(p), 'flow');
-  assert.ok(await visible(p, '#flowPanel'));
-  const q = await page(null);
-  await q.goto(APP + `?p=${EE}`);
-  await q.waitForSelector('.box[data-id="MATH 1210"]');
-  assert.equal(await tab(q), 'flow', 'first visit from a link');
-  assert.deepEqual([...p.errors, ...q.errors], []);
-  await p.context().close(); await q.context().close();
-});
-
-test('laptop: Home in the header switch, details and entries side by side, no page scroll', async () => {
-  const p = await page(ALEX, { laptop: true });
   await p.goto(APP);
-  await p.waitForSelector('#homePanel .hm-bar .seg-done');
-  assert.ok(await visible(p, '#wtabs button[data-tab="home"].on'));
-  assert.equal(await visible(p, '#planPanel'), false, 'plan stays with the flowchart');
-  const [a, b] = await Promise.all(['.hm-main', '.hm-go'].map((s) => p.$eval(`#homePanel ${s}`, (e) => e.getBoundingClientRect().toJSON())));
-  assert.ok(b.left >= a.right - 1, `side by side ${JSON.stringify([a, b])}`);
-  const m = await p.evaluate(() => ({ sh: document.scrollingElement.scrollHeight, h: innerHeight, ph: document.getElementById('homePanel').scrollHeight, pc: document.getElementById('homePanel').clientHeight }));
-  assert.ok(m.sh <= m.h && m.ph <= m.pc + 1, JSON.stringify(m));
-  await p.click('#wtabs button[data-tab="flow"]');
-  await p.waitForSelector('.box[data-id="MATH 1210"]');
-  assert.ok(await visible(p, '#planPanel'), 'flowchart + plan');
-  await p.goBack();
-  await p.waitForTimeout(200);
-  assert.equal(await tab(p), 'home');
+  await p.click('#hmGo [data-go="profile"]');
+  await p.waitForSelector('#pfName', { state: 'visible' });
+  await p.waitForFunction(() => /Electrical Engineering/.test(document.querySelector('#pfProgs').textContent));
+  await p.fill('#pfName', '  ronald  mcDonald-smith ');
+  await p.press('#pfName', 'Enter');
+  assert.equal(await p.inputValue('#pfName'), 'Ronald McDonald-Smith');
+  await p.click('#back');
+  await p.waitForSelector('#main[data-tab="home"]');
+  assert.equal(await p.textContent('#hmName'), 'Ronald McDonald-Smith');
+  assert.equal((await p.evaluate((k) => JSON.parse(localStorage.getItem(k)), KEY)).settings.name, 'Ronald McDonald-Smith');
+  await p.reload();
+  await p.waitForSelector('#hmFacts .hm-prog');
+  assert.equal(await p.textContent('#hmName'), 'Ronald McDonald-Smith', 'kept after a reload');
+  // emptied: back to the account's name (signed out: none, so Welcome)
+  await p.click('#hmGo [data-go="profile"]');
+  await p.fill('#pfName', '');
+  await p.press('#pfName', 'Enter');
+  await p.click('#back');
+  await p.waitForSelector('#main[data-tab="home"]');
+  assert.equal(await p.textContent('#hmName'), 'Welcome');
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });

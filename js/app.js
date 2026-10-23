@@ -14,10 +14,10 @@ import { initMine } from './mineui.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
 import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
-import { viewSet, hypoFrom, normHypo, hypoShown, sandboxOn, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
+import { viewSet, hypoFrom, normHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
-import { startTab, creditBar, admissionFact, nextFact, displayName, catalogLabel } from './home.js';
+import { startTab, programProgress, gradMonth, capName, displayName, catalogShort } from './home.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -45,7 +45,8 @@ const state = load();
 function defaults() {
   state.settings ??= { max: 16, summers: false, start: null };
   state.settings.grades ??= true;
-  state.settings.semColors ??= true; // Settings › Semester colors: off = one neutral look for planned boxes
+  state.settings.semColors ??= true; // flowchart's Colors switch (semester colors): off = one neutral look for planned boxes
+  state.settings.labels ??= 'both'; // flowchart box labels: 'code' (MATH 2210), 'title' (Calc 3) or 'both'
   // schedule builder: prefs (js/schedule.js DEFAULT_PREFS) + per term {add, drop, pin: {code: crn}, crns}
   state.settings.sched ??= {};
   state.settings.sched.prefs ??= {};
@@ -65,7 +66,7 @@ const NAV0 = history.state;
 let who = null;
 // accounts (js/account.js): the account's copy replaces this device's; signing out clears it
 const account = initAccount({
-  user: (u) => { who = u; queueMicrotask(() => renderHome()); },
+  user: (u) => { who = u; queueMicrotask(() => { renderHome(); if ($('main').dataset.tab === 'profile') fillProfile(); }); },
   local: () => toDoc(state, major()),
   apply: (doc) => {
     const was = planSig();
@@ -86,25 +87,38 @@ const account = initAccount({
 function redraw() {
   if (!model) return;
   $('gradesOn').checked = !!state.settings.grades;
+  $('setSemColors').checked = state.settings.semColors !== false;
+  renderLabels();
   refresh();
 }
 const major = () => state.plan.programs[0];
 const planSig = () => JSON.stringify([state.plan.programs, state.plan.catalogYear]);
-// view: 'hypo' (actual + taps) or 'actual' (audit + added only); not saved
-const ui = { view: 'hypo', sub: 'plan' };
+// view: 'actual' (audit + added classes: the student's real progress) or 'hypo' (Explore: actual + the taps
+// tried there, a sandbox). Not saved: the site opens on real progress; the Explore taps themselves are saved.
+// Tim, 2026-10-23: "put a "explore" right above the flowchart and when you click on it, it tells you to click
+// classes to change possibilities. It also switches the button to say "Actual Progress""
+const ui = { view: 'actual', sub: 'plan' };
+const exploring = () => ui.view === 'hypo';
 const actualSet = () => new Set(state.done[major()] || []);
 const hypoOf = () => normHypo(actualSet(), state.settings.hypo?.[major()]);
 // the classes counted on screen (flowchart, plan, Classes, schedule)
 const doneSet = () => viewSet(actualSet(), state.settings.hypo?.[major()], ui.view);
 function setHypo(h) { state.settings.hypo = { ...(state.settings.hypo || {}), [major()]: h }; }
-// a tap (flowchart box, its class sheet's Taken switch, a Gen Ed list): hypothetical, never the actual classes
-function setDone(set) { setHypo(hypoFrom(actualSet(), set)); ui.view = 'hypo'; ui.tapped = major(); save(); }
-// Hypothetical (toggle shown, Hypothetical picked) = a sandbox: nothing personal shows (js/classes.js sandboxOn)
-const sandbox = () => !!model && sandboxOn(hypoOf(), ui.tapped === major(), ui.view);
+// marking a class (Explore tap, the class sheet's Taken switch, a Gen Ed list pick): in Explore it is a
+// possibility, never the actual classes; outside Explore it changes the actual classes (as added by hand)
+function setDone(set) {
+  if (exploring()) { setHypo(hypoFrom(actualSet(), set)); save(); return; }
+  const before = actualSet(), src = srcMap();
+  for (const k of set) if (!before.has(k)) src[k] = 'added';
+  for (const k of before) if (!set.has(k)) delete src[k];
+  setActual(set);
+}
+// Explore = a sandbox: nothing personal shows (D24)
+const sandbox = () => !!model && exploring();
 // the grades shown and planned with: none in the sandbox (every selected class counts as plain Taken, passed)
 const viewGrades = () => (sandbox() ? {} : gradeMap());
-// taps start from what Hypothetical shows (a tap while viewing Actual switches back)
-function tapSet() { ui.view = 'hypo'; return doneSet(); }
+// what a mark starts from: what the screen shows
+const tapSet = () => doneSet();
 // the actual classes (audit import, Classes); taps that now change nothing drop out
 function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new Set(set), state.settings.hypo?.[major()])); save(); }
 const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
@@ -164,22 +178,24 @@ function tidyPlan() {
 // ---------- boot ----------
 async function boot() {
   showTab(startTab(NAV0, state.plan.programs, LINK));
-  wireTabs();
   wireHome();
+  wireProfile();
   wireSettings();
+  wireFlowBar();
+  renderLabels();
   wireImport();
   wirePicker();
   wireSched();
   wireGenEd();
   wireNav();
   wireClassSheet();
-  wireHypo();
   wireClasses();
   wireNoAudit();
   wireZoom();
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
   $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
+  if (tabNow() === 'profile') fillProfile();
   await loadCatalog();
   if (LINK) {
     const ids = programsFromLink(state.plan.programs, LINK, (id) => (entry(id) ? programGroup(entry(id)) : ''));
@@ -234,7 +250,7 @@ async function loadPlan() {
   $('main').classList.remove('empty');
   const built = await buildFor([...state.plan.programs], state.plan.catalogYear);
   if (gen !== loadGen) return;
-  if (!built) { $('progName').textContent = 'Program not found'; return; }
+  if (!built) return;
   const { parts } = built;
   // Gen Ed class lists of the major's catalog year (missing: the current catalog's)
   const y = parts[0].year;
@@ -251,8 +267,8 @@ async function loadPlan() {
   // Set before the chart is laid out, so the chart never jumps when it appears.
   $('uvuChart').hidden = !official;
   if (official) { const a = $('uvuChart').firstElementChild; a.href = official.url; a.textContent = `${official.label} ↗`; }
-  $('progName').textContent = parts.map((p) => p.program.name).join(' + ');
   progParts = parts;
+  if (tabNow() === 'profile') fillProfile();
   syncURL();
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
@@ -278,7 +294,6 @@ async function loadPlan() {
 function showEmpty() {
   model = null; nodes = null; lastPlan = null; progParts = [];
   $('main').classList.add('empty');
-  $('progName').textContent = 'Pick your program';
   $('noDates').hidden = true;
   $('uvuChart').hidden = true;
   $('boxes').innerHTML = '';
@@ -286,7 +301,7 @@ function showEmpty() {
   $('legendItems').innerHTML = '';
   $('sems').innerHTML = '';
   $('sum').innerHTML = '<button type="button" class="ok" data-pick>Pick your program</button>';
-  renderHypo();
+  renderExplore();
   renderNoAudit();
   renderClasses();
   renderHome();
@@ -391,7 +406,8 @@ function buildBoxes() {
     }
     b.addEventListener('click', (e) => {
       if (pressed.fired) { pressed.fired = false; return; } // a long press opened the class sheet
-      if (e.target.closest('.gl')) openGenEd(n); else toggle(n, b);
+      // Explore: a tap tries the class as taken (or not); otherwise a tap opens its details
+      if (e.target.closest('.gl')) openGenEd(n); else if (exploring()) toggle(n, b); else { setHover(null); openClass({ node: n }); }
     });
     longPress(b, () => { setHover(null); openClass({ node: n }); });
     // hover (mouse) or finger down (phone): its lines light up and a tiny label shows when
@@ -704,7 +720,7 @@ function refresh() {
   renderPlan(plan);
   renderLegend(plan, anyIP);
   lastPlan = plan;
-  renderHypo();
+  renderExplore();
   renderNoAudit();
   if (ui.sub === 'classes') renderClasses();
   renderHome();
@@ -833,7 +849,9 @@ function renderPlan(plan) {
     + `<p class="src">${programSources(progParts)}</p>`
     // (its source = the catalog link on the line above, and the Matriculation sheet's ↗ links)
     + (gated ? `<p class="adm">Requires admission — apply after these classes. ${advA(progParts[0]?.id)}</p>` : '')
-    // (the bachelor's 120 / 40 totals and "Counted once for both" moved to Home, 2026-10-22)
+    // the bachelor's 120 / 40 totals and classes a major and minor share (back from Home, 2026-10-23)
+    + (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
+    + (sharedCodes(plan).length ? `<p class="src">Counted once for both: ${esc(sharedCodes(plan).join(', '))}</p>` : '')
     + tracks.map((g) => {
       const mine = chosenTracks()[g.id];
       const t = mine && tracksOf(g).includes(mine) ? mine : (P.pickTrack ? P.pickTrack(g, completed) : null) || tracksOf(g)[0];
@@ -865,63 +883,55 @@ function sharedCodes(plan) {
   return [...new Set([...(model.program.shared || []).map((x) => x.code), ...plan.semesters.flatMap((s) => s.items.filter((it) => it.shared).map((it) => it.code))])];
 }
 
-// ---------- Home: who the student is, where they stand, and the ways into the flowchart / plan / schedule ----------
-// Tim, 2026-10-22: "make a home page with the user's name and major and any core details about them in the
-// home page and then allow them to go into their flowchart or class schedule seperately. Put any of the
-// other main detials in the home section." Only facts the site already has; an unknown one is left out.
+// ---------- Home ----------
+// Tim, 2026-10-23: "all the info should be in a list, like an ordinary cite ... The homepage should have the
+// user's name, their major/minor with graduation progress, catelog year, and current GPA, (no links to UVU or
+// anything in homepage) ... Put their graduation month/year and then the schedule and flowchart boxes"
+// Home always shows the student's real progress, also while the flowchart is in Explore.
 function renderHome() {
-  const name = displayName(who);
+  const name = displayName(who, state.settings.name);
   $('hmName').textContent = name || 'Welcome';
   const panel = $('homePanel');
   panel.classList.toggle('named', !!name);
   const none = !state.plan.programs.length;
   panel.classList.toggle('none', none);
+  $('hmGoProfile').textContent = who?.email || '';
   if (none || !model || !lastPlan || !progParts.length) {
-    $('hmProgs').innerHTML = none ? '<button type="button" class="hm-pick" data-pick>Pick your major</button>'
-      + (who ? '' : '<p class="hm-or">or <button type="button" data-signin-btn>Sign in</button></p>') : '';
-    for (const id of ['hmCredits', 'hmFacts', 'hmNotes']) $(id).innerHTML = '';
+    $('hmFacts').innerHTML = none ? '<div class="hm-first"><button type="button" class="ok hm-pick" data-pick>Pick your major</button>'
+      + (who ? '' : '<p class="hm-or">or <button type="button" data-signin-btn>Sign in</button></p>') + '</div>' : '';
+    for (const id of ['hmGoFlow', 'hmGoSched', 'hmGoPlan']) $(id).textContent = '';
     return;
   }
-  const plan = lastPlan, [m, ...rest] = progParts;
-  $('hmProgs').innerHTML = `<button type="button" class="hm-major" data-pick>${esc(m.program.name)}</button>`
-    + `<p class="hm-sub">${[...rest.map((p) => p.program.name), catalogLabel(m.year || m.program.catalogYear)].filter(Boolean).map(esc).join(' · ')}</p>`
-    // where it comes from (Tim, 2026-10-22: every outside fact links to its source): the catalog pages, UVU's flowchart
-    + `<p class="src hm-src">${[uvuOfficial ? linkHTML(sourceLink('url', uvuOfficial)) : '', programSources(progParts)].filter(Boolean).join(' · ')}</p>`;
-  // classes now + GPA: the Classes view's own groups (js/classes.js), so both screens show the same numbers
-  const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: gradeMap(), src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
-  const now = groups.find((g) => g.key === 'ip')?.rows || [];
+  const actual = actualSet();
+  const grades = gradeMap();
+  const plan = exploring() ? makePlan(model, actual, { ...planOpts(), grades }) : lastPlan;
+  const finished = new Set([...actual].filter((k) => statusOf(grades[k]) !== 'ip'));
+  const ids = progParts.map((p) => p.id);
+  const prog = programProgress(model, actual, finished, plan, ids);
+  const [m] = progParts;
+  // GPA: the Classes view's own groups (js/classes.js), so both screens show the same number
+  const groups = classGroups({ model, completed: actual, actual, grades, src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
   const graded = groups.filter((g) => g.key !== 'need').flatMap((g) => g.rows);
   // a class from outside the program needs the catalog for its credits: load it once, then draw again
   if (!courseCat.ready && graded.some((r) => r.credits == null)) loadCourses().then(renderHome);
-  const nowCr = Math.round(now.reduce((s, r) => s + (r.credits || 0), 0) * 10) / 10;
-  const b = creditBar(plan, nowCr);
-  const segTitle = (s) => `${s.k === 'done' ? 'Taken' : s.k === 'ip' ? 'Now' : s.term}: ${s.cr} cr`;
-  $('hmCredits').innerHTML = `<div class="hm-pct"><b>${b.pct}<small>%</small></b><span id="hmCr"><em>${b.taken} of ${b.total} cr</em>${b.ip ? ` · ${b.ip} now` : ''} · ${b.left} left</span></div>`
-    + `<div class="hm-bar" role="img" aria-label="${esc(b.segs.map(segTitle).join(', '))}">${b.segs.map((s) => `<i class="${s.k === 'sem' ? `seg s${s.i % 10}` : `seg seg-${s.k}`}" style="flex-grow:${s.cr}" title="${esc(segTitle(s))}"></i>`).join('')}</div>`;
   const g = gpa(graded);
-  const ge = nodes.filter((n) => /general\s+education/i.test(n.area || ''));
-  const geDone = ge.filter((n) => nodeDone(n, doneSet())).length;
-  const n = plan.semesters.length;
-  const adm = admissionFact(plan, m.program, planStones(plan).find((x) => x.gate === 'admission')?.at ?? -1);
-  const cells = [
-    ['Graduate', plan.graduation || 'All done', plan.graduation ? `${n} semester${n === 1 ? '' : 's'}` : ''],
-    n ? ['Next', nextFact(plan), ''] : null,
-    now.length ? ['Now', now.map((r) => r.label).join(', '), `${now.length} class${now.length === 1 ? '' : 'es'}${nowCr ? ` · ${nowCr} cr` : ''}`] : null,
-    g.gpa != null ? ['GPA', g.gpa.toFixed(2), `${g.credits} graded cr`] : null,
-    ge.length ? ['Gen Ed', `${geDone} of ${ge.length}`, '', linkHTML(sourceLink('gened', { gened }), '')] : null,
-    adm ? ['Admission', adm, '', advA(m.id) + aplA(m.id), 'wide'] : advisorLink(advisors, m.id) ? ['Advisor', '', '', advA(m.id)] : null,
-  ].filter(Boolean);
-  // links (advisor, how to apply) go on the small line under the value, or are the value
-  $('hmFacts').innerHTML = cells.map(([k, v, sub, html = '', cls = '']) => `<div${cls ? ` class="${cls}"` : ''}><dt>${esc(k)}</dt>`
-    + (v ? `<dd>${esc(v)}${html && k !== 'Admission' ? ' ' + html : ''}</dd>` : `<dd class="hm-links">${html}</dd>`)
-    + (sub ? `<small>${esc(sub)}</small>` : v && html && k === 'Admission' ? `<small class="hm-links">${html}</small>` : '') + '</div>').join('');
-  // moved here from the plan's summary: the bachelor's 120 / 40 totals, classes a major and minor share
-  const both = sharedCodes(plan);
-  $('hmNotes').innerHTML = (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
-    + (both.length ? `<p>Counted once for both: ${esc(both.join(', '))}</p>` : '');
+  const progRow = (p, i) => {
+    const part = progParts[i];
+    const kind = i === 0 ? 'Major' : programGroup(entry(part.id) || {}) === 'cert' ? 'Certificate' : /minor/i.test(part.program.name) ? 'Minor' : 'Program';
+    const cr = `${p.pct}% · ${p.taken} of ${p.total} cr${p.ip ? ` · ${p.ip} now` : ''}`;
+    return `<div class="hm-prog"><dt>${kind}</dt><dd><button type="button" data-pick><b>${esc(part.program.name)}</b><small data-prog="${esc(p.id)}">${cr}</small></button></dd></div>`;
+  };
+  const rows = [
+    ...prog.map(progRow),
+    `<div><dt>Catalog</dt><dd>${esc(catalogShort(m.year || m.program.catalogYear) || '—')}</dd></div>`,
+    g.gpa != null ? `<div><dt>GPA</dt><dd id="hmGpa">${g.gpa.toFixed(2)}</dd></div>` : '',
+    `<div><dt>Graduation</dt><dd id="hmGrad">${esc(plan.graduation ? gradMonth(plan.graduation) || plan.graduation : 'All done')}</dd></div>`,
+  ];
+  $('hmFacts').innerHTML = rows.join('');
   $('hmGoFlow').textContent = `${nodes.length} classes`;
-  $('hmGoPlan').textContent = plan.graduation || 'All done';
-  $('hmGoSched').textContent = plan.semesters[0]?.term || '';
+  const ns = lastPlan.semesters.length;
+  $('hmGoPlan').textContent = ns ? `${ns} semester${ns === 1 ? '' : 's'} · ${lastPlan.creditsLeft} cr left` : 'All done';
+  $('hmGoSched').textContent = lastPlan.semesters[0]?.term || '';
 }
 function wireHome() {
   $('hmGo').addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (b) setTab(b.dataset.go); });
@@ -943,30 +953,50 @@ function progIssue(extra = {}) {
   return { program: progParts.map((x) => x.program.name).join(' + '), programId: progParts.map((x) => x.id).join('+'), year: p?.year || p?.program.catalogYear || '', ...extra };
 }
 
-// ---------- Hypothetical | Actual (header): shown once a tap changed anything ----------
-function renderHypo() {
-  const on = !!model && hypoShown(hypoOf(), ui.tapped === major());
-  if (!on) ui.view = 'hypo';
-  $('hyp').hidden = !on;
-  document.querySelector('.top').classList.toggle('hyp-on', on);
-  for (const b of $('hypSeg').children) b.classList.toggle('on', b.dataset.v === ui.view);
+// ---------- Explore (right above the flowchart) ----------
+// Tim, 2026-10-23: "put a "explore" right above the flowchart and when you click on it, it tells you to click
+// classes to change possibilities. It also switches the button to say "Actual Progress"". In Explore a tap
+// tries a class as taken (a sandbox, D24: nothing personal shows); outside it a tap opens the class's details.
+function renderExplore() {
+  const on = exploring();
+  const b = $('exploreBtn');
+  b.textContent = on ? 'Actual progress' : 'Explore';
+  b.setAttribute('aria-pressed', on);
+  b.classList.toggle('on', on);
+  $('hypClear').hidden = !on;
+  $('flowPanel').classList.toggle('exploring', on);
 }
-function wireHypo() {
-  $('hypSeg').addEventListener('click', (e) => {
-    const b = e.target.closest('button[data-v]');
-    if (!b || b.dataset.v === ui.view) return;
-    ui.view = b.dataset.v;
+// the flowchart's own controls, out in the open next to it: Explore, its clear, the box labels, semester colors
+function wireFlowBar() {
+  $('exploreBtn').addEventListener('click', () => {
+    ui.view = exploring() ? 'actual' : 'hypo';
     refresh();
+    renderExplore();
+    if (exploring()) toast('Tap classes to try possibilities');
   });
-  // clear every tap (the actual classes stay), with Undo
+  // clear every try (the actual classes stay), with Undo
   $('hypClear').addEventListener('click', () => {
     const snap = hypoOf();
-    const tapped = ui.tapped;
     setHypo({ add: [], del: [] });
-    ui.tapped = null;
     save(); refresh();
-    toast('Hypothetical cleared', () => { setHypo(snap); ui.tapped = tapped; save(); refresh(); });
+    toast('Explore cleared', () => { setHypo(snap); save(); refresh(); });
   });
+  $('lblSeg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-v]');
+    if (!b || b.dataset.v === state.settings.labels) return;
+    state.settings.labels = b.dataset.v;
+    save();
+    renderLabels();
+  });
+  $('setSemColors').checked = state.settings.semColors !== false;
+  $('setSemColors').addEventListener('change', (e) => { state.settings.semColors = e.target.checked; save(); refresh(); });
+}
+// Code (MATH 2210) / Title (Calc 3) / Both: a look on the boxes only, so nothing moves (Gen Ed boxes keep theirs)
+const LABELS = ['code', 'title', 'both'];
+function renderLabels() {
+  const v = LABELS.includes(state.settings.labels) ? state.settings.labels : 'both';
+  $('boxes').dataset.lbl = v;
+  for (const b of $('lblSeg').children) { b.classList.toggle('on', b.dataset.v === v); b.setAttribute('aria-pressed', b.dataset.v === v); }
 }
 
 // ---------- "No audit loaded — Upload or Sign in": so missing grades never look like a bug ----------
@@ -1175,47 +1205,71 @@ function wireClasses() {
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
 }
 
-// ---------- tabs + settings ----------
-// phone: bottom tabs Home / Flowchart / Plan / Schedule; laptop: Home / Flowchart / Schedule in the header
-// (the plan stays beside the flowchart)
+// ---------- sections + settings ----------
+// Tim, 2026-10-23: "If you click on a sectoin in the list, it brings you into a part of the cite that is
+// seperated from anything else and to go back to the home page you click a back arrow in the top left ...
+// There should be no "home/flowchart/Schedule", it should be controlled all through the home bars."
+// Home opens each section (Flowchart, Schedule, Plan, Profile) full screen; its header is a back arrow and the
+// section's name. On a laptop the Flowchart keeps the plan beside it (class details open there).
+const TITLE = { flow: 'Flowchart', plan: 'Plan', sched: 'Schedule', profile: 'Profile', settings: 'Settings' };
+const tabNow = () => $('main').dataset.tab;
+const wide = () => matchMedia('(min-width: 900px)').matches;
 function showTab(tab) {
+  if (tab === 'settings') tab = 'home'; // (Settings is the gear's sheet now)
   const main = $('main');
   const was = main.dataset.tab;
   main.dataset.tab = tab;
-  for (const x of $('tabs').children) x.classList.toggle('on', x.dataset.tab === tab);
-  for (const x of $('wtabs').children) x.classList.toggle('on', x.dataset.tab === (tab === 'plan' ? 'flow' : tab));
+  document.body.dataset.tab = tab;
+  $('ttl').textContent = TITLE[tab] || '';
+  // the class details beside the flowchart belong to it
+  if (was === 'flow' && tab !== 'flow' && $('clsDlg').classList.contains('side') && $('clsDlg').open) $('clsDlg').close();
   // entering a screen: a short slide-in instead of a jump (css .enter)
   if (was !== tab) { main.classList.remove('enter'); void main.offsetWidth; main.classList.add('enter'); }
+  // a hint belongs to the screen it was shown on (an Undo stays until it times out)
+  if (was !== tab && $('toastUndo').hidden) $('toast').classList.remove('on');
 }
 function setTab(tab, push = true) {
-  if (push && tab !== $('main').dataset.tab) pushNav({ tab });
+  if (push && tab !== tabNow()) pushNav({ tab });
   showTab(tab);
   if (tab === 'flow' || tab === 'plan') layout();
   if (tab === 'sched') renderSched();
-}
-function wireTabs() {
-  for (const b of [...$('tabs').children, ...$('wtabs').children]) b.addEventListener('click', () => setTab(b.dataset.tab));
+  if (tab === 'profile') fillProfile();
 }
 
-// ---------- back button: tabs and sheets are history entries, so Back goes where you just were ----------
-// Each entry is { tab, dlg? }. Opening a sheet pushes one; closing it (Done, Esc, outside tap) steps back
-// over it; Back closes the sheet or returns to the previous tab. A sheet opened right as another closes
-// (Settings -> Import audit) takes over that one's entry.
+// ---------- back: sections and sheets are history entries, so Back goes where you just were ----------
+// Each entry is { tab, sub, dlg?, depth } (depth = entries above Home). Opening a sheet pushes one; closing it
+// (Done, Esc, outside tap) steps back over it; Back closes the sheet or returns to the previous screen. The
+// back arrow goes straight to Home. A sheet opened right as another closes (Settings -> Import audit) takes
+// over that one's entry.
 const NAV = { pending: 0, queued: null, kbd: false };
+const depthNow = () => history.state?.depth || 0;
 function pushNav(st) {
-  const entry = { sa: 1, tab: $('main').dataset.tab, sub: ui.sub, ...st };
-  if (NAV.pending) NAV.queued = entry; else history.pushState(entry, '', location.href);
+  const entry = { sa: 1, tab: tabNow(), sub: ui.sub, ...st };
+  if (NAV.pending) NAV.queued = entry; else history.pushState({ ...entry, depth: depthNow() + 1 }, '', location.href);
 }
 function openDlg(dlg) {
-  if (!dlg.open) dlg.showModal();
+  if (!dlg.open) { if (dlg.classList.contains('side')) dlg.show(); else dlg.showModal(); }
   if (!NAV.kbd) document.activeElement?.blur(); // a focus ring only for keyboard users (:focus-visible)
   const cur = history.state?.dlg;
   if (cur === dlg.id) return;
-  if (cur && !NAV.pending) history.replaceState({ sa: 1, tab: $('main').dataset.tab, sub: ui.sub, dlg: dlg.id }, '', location.href);
+  if (cur && !NAV.pending) history.replaceState({ ...history.state, dlg: dlg.id }, '', location.href);
   else pushNav({ dlg: dlg.id });
 }
+function goHome() {
+  const d = depthNow();
+  if (d > 0) { history.go(-d); return; }
+  for (const dl of document.querySelectorAll('dialog[open]')) dl.close();
+  history.replaceState({ sa: 1, tab: 'home', sub: ui.sub, depth: 0 }, '', location.href);
+  setTab('home', false);
+}
 function wireNav() {
-  history.replaceState({ sa: 1, tab: $('main').dataset.tab }, '', location.href);
+  const st0 = history.state;
+  if (st0?.sa) history.replaceState({ ...st0, tab: tabNow(), depth: st0.depth || 0 }, '', location.href);
+  else if (tabNow() !== 'home') {
+    // opened straight into a section (a shared ?p= link): Home sits under it, so Back lands there
+    history.replaceState({ sa: 1, tab: 'home', depth: 0 }, '', location.href);
+    history.pushState({ sa: 1, tab: tabNow(), depth: 1 }, '', location.href);
+  } else history.replaceState({ sa: 1, tab: 'home', depth: 0 }, '', location.href);
   addEventListener('keydown', () => { NAV.kbd = true; }, true);
   addEventListener('pointerdown', () => { NAV.kbd = false; }, true);
   for (const d of document.querySelectorAll('dialog')) {
@@ -1225,46 +1279,61 @@ function wireNav() {
       history.back();
     });
   }
+  // the class details beside the flowchart (not a modal): Esc closes them too
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('clsDlg').open && $('clsDlg').classList.contains('side')) $('clsDlg').close(); });
   addEventListener('popstate', (e) => {
     if (NAV.pending) {
       NAV.pending--;
-      if (!NAV.pending && NAV.queued) { history.pushState(NAV.queued, '', location.href); NAV.queued = null; }
+      if (!NAV.pending && NAV.queued) { history.pushState({ ...NAV.queued, depth: depthNow() + 1 }, '', location.href); NAV.queued = null; }
       return;
     }
     const st = e.state || {};
     for (const d of document.querySelectorAll('dialog[open]')) if (d.id !== st.dlg) d.close();
     const tab = st.tab || 'home';
-    if (tab !== $('main').dataset.tab) setTab(tab, false);
+    if (tab !== tabNow()) setTab(tab, false);
     if ((st.sub || 'plan') !== ui.sub) setSub(st.sub || 'plan', false);
-    if (st.dlg && !$(st.dlg)?.open) history.replaceState({ sa: 1, tab, sub: ui.sub }, '', location.href); // forward into a closed sheet
+    if (st.dlg && !$(st.dlg)?.open) history.replaceState({ ...st, dlg: undefined }, '', location.href); // forward into a closed sheet
     if (model) syncURL();
   });
-  // the account sheet (js/account.js opens it): an entry too
-  $('profile').addEventListener('click', () => setTimeout(() => { if ($('acct').open) openDlg($('acct')); }));
-  // "Pick your program" buttons (first visit)
-  document.addEventListener('click', (e) => { if (e.target.closest('[data-pick]')) $('progName').click(); });
+  $('back').addEventListener('click', goHome);
+  // the major on Home, "Programs" in Profile, "Pick your program": the program picker
+  document.addEventListener('click', (e) => { if (e.target.closest('[data-pick]')) openPicker(); });
 }
-function wireSettings() {
-  const dlg = $('settings');
-  const fill = () => {
-    let t = earliest();
-    const terms = [t];
-    for (let i = 0; i < 8; i++) { t = nextTerm(t, state.settings.summers); terms.push(t); }
-    const cur = termLabel(startTerm());
-    $('setStart').innerHTML = terms.map(termLabel).map((l) => `<option${l === cur ? ' selected' : ''}>${l}</option>`).join('');
-    $('setMax').innerHTML = Array.from({ length: 16 }, (_, i) => i + 6).map((v) => `<option${v === state.settings.max ? ' selected' : ''}>${v}</option>`).join('');
-    $('setSummer').checked = !!state.settings.summers;
-    $('setSemColors').checked = state.settings.semColors !== false;
-    // schedule preferences
-    const p = prefs();
-    for (const b of $('setDays').children) b.classList.toggle('on', p.days.includes(b.dataset.d));
-    const hour = (h) => `${((h + 11) % 12) + 1} ${h < 12 ? 'am' : 'pm'}`;
-    const opts = (hours, cur, any) => `<option value="">${any}</option>` + hours.map((h) => { const v = String(h * 100).padStart(4, '0'); return `<option value="${v}"${v === cur ? ' selected' : ''}>${hour(h)}</option>`; }).join('');
-    $('setAfter').innerHTML = opts([7, 8, 9, 10, 11, 12, 13], p.after, 'Any');
-    $('setBefore').innerHTML = opts([12, 13, 14, 15, 16, 17, 18, 19, 20, 21], p.before, 'Any');
-    $('setMode').value = p.mode;
-    $('setGaps').checked = !!p.gaps; $('setRmp').checked = !!p.rmp; $('setMain').checked = !!p.main; $('setWait').checked = !!p.wait;
-  };
+
+// ---------- Profile: the name shown on Home, the programs, the account ----------
+// Tim, 2026-10-23: "allow the user to change their displayed name in the Profile section. Also automatically
+// capitalize their first/last name if given." Saved with the settings (this device + the account).
+function fillProfile() {
+  const own = state.settings.name;
+  if (document.activeElement !== $('pfName')) $('pfName').value = own ? capName(own) : displayName(who) || '';
+  $('pfProgs').textContent = progParts.length ? progParts.map((p) => p.program.name).join(' + ') : 'Pick your program';
+}
+function wireProfile() {
+  $('pfName').addEventListener('change', (e) => {
+    const v = capName(e.target.value);
+    state.settings.name = !v || v === displayName(who) ? null : v;
+    e.target.value = v || displayName(who) || '';
+    save();
+    renderHome();
+  });
+  $('pfName').addEventListener('keydown', (e) => { if (e.key === 'Enter') e.target.blur(); });
+}
+
+// the schedule's own filters, next to it (Tim, 2026-10-23: "Anything that is directly related to the flowchart
+// should be right next to the flowchart out in the open, same with the schedule"); a phone folds them away
+// behind the Filters button
+function fillSchedPrefs() {
+  const p = prefs();
+  for (const b of $('setDays').children) b.classList.toggle('on', p.days.includes(b.dataset.d));
+  const hour = (h) => `${((h + 11) % 12) + 1} ${h < 12 ? 'am' : 'pm'}`;
+  const opts = (hours, cur, any) => `<option value="">${any}</option>` + hours.map((h) => { const v = String(h * 100).padStart(4, '0'); return `<option value="${v}"${v === cur ? ' selected' : ''}>${hour(h)}</option>`; }).join('');
+  $('setAfter').innerHTML = opts([7, 8, 9, 10, 11, 12, 13], p.after, 'Any');
+  $('setBefore').innerHTML = opts([12, 13, 14, 15, 16, 17, 18, 19, 20, 21], p.before, 'Any');
+  $('setMode').value = p.mode;
+  $('setGaps').checked = !!p.gaps; $('setRmp').checked = !!p.rmp; $('setMain').checked = !!p.main; $('setWait').checked = !!p.wait;
+}
+function wireSchedPrefs() {
+  fillSchedPrefs();
   const setPref = (k, v) => { state.settings.sched.prefs = { ...prefs(), [k]: v }; save(); renderSchedIfOpen(); };
   $('setDays').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-d]');
@@ -1276,11 +1345,28 @@ function wireSettings() {
   $('setBefore').addEventListener('change', (e) => setPref('before', e.target.value || null));
   $('setMode').addEventListener('change', (e) => setPref('mode', e.target.value));
   for (const [id, k] of [['setGaps', 'gaps'], ['setRmp', 'rmp'], ['setMain', 'main'], ['setWait', 'wait']]) $(id).addEventListener('change', (e) => setPref(k, e.target.checked));
+  $('scFilt').addEventListener('click', () => {
+    const open = $('schedPanel').classList.toggle('filt-open');
+    $('scFilt').setAttribute('aria-expanded', open);
+  });
+}
+// the gear (Home's top right): settings for the whole site
+function wireSettings() {
+  const dlg = $('settings');
+  const fill = () => {
+    let t = earliest();
+    const terms = [t];
+    for (let i = 0; i < 8; i++) { t = nextTerm(t, state.settings.summers); terms.push(t); }
+    const cur = termLabel(startTerm());
+    $('setStart').innerHTML = terms.map(termLabel).map((l) => `<option${l === cur ? ' selected' : ''}>${l}</option>`).join('');
+    $('setMax').innerHTML = Array.from({ length: 16 }, (_, i) => i + 6).map((v) => `<option${v === state.settings.max ? ' selected' : ''}>${v}</option>`).join('');
+    $('setSummer').checked = !!state.settings.summers;
+  };
+  wireSchedPrefs();
   $('gear').addEventListener('click', () => { fill(); openDlg(dlg); }); // no focus ring on Start
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
-  $('setSemColors').addEventListener('change', (e) => { state.settings.semColors = e.target.checked; save(); refresh(); });
   // Clear taken: a second tap clears (the button asks first), then "Cleared · Undo" for a few seconds.
   // lastTerm becomes null, not deleted, so the account's copy (and other devices) clear it too
   const clr = $('clearDone');
@@ -1390,7 +1476,11 @@ function openClass({ node, item }) {
   $('clsTakenRow').hidden = !clsNode;
   if (clsNode) $('clsTaken').checked = nodeDone(clsNode, doneSet());
   drawClsGrades();
-  openDlg($('clsDlg'));
+  // laptop, on the Flowchart: the details open in the right-side section (over the plan), the chart stays usable
+  const d = $('clsDlg');
+  if (!d.open) d.classList.toggle('side', wide() && tabNow() === 'flow');
+  openDlg(d);
+  if (d.classList.contains('side')) d.scrollTop = 0;
 }
 // ---------- matriculation sheet: tap the label on the dotted line -> everything the data knows ----------
 // Catalog words, GPA / grade minimums (only when the catalog states them), the classes to finish first with
@@ -1776,7 +1866,8 @@ function wireSched() {
   $('addDlg').addEventListener('click', (e) => { if (e.target === $('addDlg')) $('addDlg').close(); });
 }
 
-// ---------- the program picker (tap the program name in the header) ----------
+// ---------- the program picker (tap the major on Home, or Programs in Profile) ----------
+let openPicker = () => {};
 // Major: one (tapping another replaces it). Minors / certificates: tap to add or remove. Kept as
 // state.plan.programs = [major, ...others], so a second major can be added the same way later.
 function wirePicker() {
@@ -1810,14 +1901,14 @@ function wirePicker() {
     chosen(); list();
     loadPlan();
   };
-  $('progName').addEventListener('click', async () => {
+  openPicker = async () => {
     $('pickQ').value = '';
     openDlg(dlg);
     await loadCatalog();
     chosen(); list();
     $('pickList').scrollTop = 0;
     if (matchMedia('(hover: hover)').matches) $('pickQ').focus();
-  });
+  };
   $('pickQ').addEventListener('input', () => { list(); $('pickList').scrollTop = 0; });
   $('pickSeg').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-g]');

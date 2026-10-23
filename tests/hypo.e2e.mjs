@@ -35,7 +35,7 @@ async function page(saved) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   return p;
@@ -48,7 +48,7 @@ const grade = (p, id) => p.textContent(`${sel(id)} .gr`);
 // the hover label's text (shown while the box is hovered / held; tests/hover.e2e.mjs checks the showing)
 const hintOf = (p, id) => p.getAttribute(sel(id), 'data-hint');
 
-test('re-selecting an in-progress class in Hypothetical is plain green (no IP), and nothing personal shows', async () => {
+test('re-selecting an in-progress class in Explore is plain green (no IP), and nothing personal shows', async () => {
   const p = await page(SEED);
   await p.goto(APP);
   await p.waitForSelector(sel('ECE 2250'), { state: 'attached' });
@@ -56,15 +56,16 @@ test('re-selecting an in-progress class in Hypothetical is plain green (no IP), 
   assert.equal(await isIP(p, 'ECE 2250'), true);
   assert.equal(await grade(p, 'ECE 2250'), 'IP');
   assert.equal(await grade(p, 'MATH 1210'), 'A');
-  // Tim's case: tap the class he is taking (off), then select it again
+  // Tim's case, in Explore: tap the class he is taking (off), then select it again
+  await p.click('#exploreBtn');
   await p.click(sel('ECE 2250'));
   assert.equal(await pressed(p, 'ECE 2250'), false);
   await p.click(sel('ECE 2250'));
   assert.equal(await pressed(p, 'ECE 2250'), true);
   assert.equal(await isIP(p, 'ECE 2250'), false, 'no in-progress look');
   assert.equal(await grade(p, 'ECE 2250'), '', 'no IP tag');
-  assert.equal(await p.isVisible('#hyp'), true, 'still in Hypothetical');
-  assert.equal(await p.getAttribute('#hypSeg button[data-v="hypo"]', 'class'), 'on');
+  assert.equal(await p.textContent('#exploreBtn'), 'Actual progress', 'still in Explore');
+  assert.equal(await p.getAttribute('#exploreBtn', 'aria-pressed'), 'true');
   // no grades, no in-progress anywhere, no audit dates in hover labels, no Current legend
   assert.equal(await p.$$eval('#boxes .box.ip', (x) => x.length), 0);
   assert.deepEqual(await p.$$eval('#boxes .box .gr', (x) => x.map((e) => e.textContent).filter(Boolean)), []);
@@ -72,7 +73,7 @@ test('re-selecting an in-progress class in Hypothetical is plain green (no IP), 
   assert.equal(await hintOf(p, 'MATH 1210'), 'Taken');
   assert.equal(await hintOf(p, 'ECE 2250'), 'Taken');
   // Classes: no GPA, no Current group, no grade badges
-  await p.click('#tabs button[data-tab="plan"]');
+  await goTab(p, 'plan');
   await p.click('#planSeg button[data-v="classes"]');
   await p.waitForSelector('#clList .cl-row');
   assert.equal(await p.isVisible('#clGpa'), false, 'no GPA line');
@@ -85,16 +86,19 @@ test('re-selecting an in-progress class in Hypothetical is plain green (no IP), 
   assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0, 'no grade picker');
   assert.equal(await p.isVisible('#editDlg[open]'), false, 'not the grade editor');
   await p.click('#clsDlg button.ok');
-  // Actual: everything personal is back
-  await p.click('#hypSeg button[data-v="actual"]');
-  assert.equal(await p.isVisible('#clGpa'), true);
-  assert.match(await p.textContent('#clGpa'), /GPA \d\.\d\d/);
-  await p.click('#tabs button[data-tab="flow"]');
+  // Actual progress: everything personal is back
+  await goTab(p, 'flow');
+  await p.click('#exploreBtn');
+  assert.equal(await p.textContent('#exploreBtn'), 'Explore');
   assert.equal(await isIP(p, 'ECE 2250'), true);
   assert.equal(await grade(p, 'ECE 2250'), 'IP');
   assert.equal(await grade(p, 'MATH 1210'), 'A');
   assert.equal(await hintOf(p, 'MATH 1210'), 'Aug 2025 · A');
   assert.match(await p.textContent('#legendItems'), /Current/);
+  await goTab(p, 'plan');
+  await p.click('#planSeg button[data-v="classes"]');
+  assert.equal(await p.isVisible('#clGpa'), true);
+  assert.match(await p.textContent('#clGpa'), /GPA \d\.\d\d/);
   // nothing saved changed
   const s = await stored(p);
   assert.deepEqual(s.grades[EE], SEED.grades[EE]);
@@ -103,7 +107,7 @@ test('re-selecting an in-progress class in Hypothetical is plain green (no IP), 
   await p.context().close();
 });
 
-test('Hypothetical: the plan treats selected classes as passed (no low-grade retake); Actual keeps the retake', async () => {
+test('Explore: the plan treats selected classes as passed (no low-grade retake); Actual keeps the retake', async () => {
   const p = await page({
     plan: { programs: [CS], catalogYear: null },
     done: { [CS]: ['CS 3450'] }, grades: { [CS]: { 'CS 3450': 'D' } },
@@ -111,14 +115,30 @@ test('Hypothetical: the plan treats selected classes as passed (no low-grade ret
   });
   await p.goto(APP);
   await p.waitForSelector(sel('ENGL 1010'), { state: 'attached' });
-  await p.click('#tabs button[data-tab="plan"]');
+  await goTab(p, 'plan');
   assert.match(await p.textContent('#sems'), /CS 3450: a D is below/);
-  await p.click('#tabs button[data-tab="flow"]');
+  await goTab(p, 'flow');
+  await p.click('#exploreBtn');
   await p.click(sel('ENGL 1010'));
-  await p.click('#tabs button[data-tab="plan"]');
+  await goTab(p, 'plan');
   assert.doesNotMatch(await p.textContent('#sems'), /is below the/);
-  await p.click('#hypSeg button[data-v="actual"]');
+  await goTab(p, 'flow');
+  await p.click('#exploreBtn');
+  await goTab(p, 'plan');
   assert.match(await p.textContent('#sems'), /CS 3450: a D is below/);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

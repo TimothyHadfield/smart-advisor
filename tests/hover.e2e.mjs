@@ -28,7 +28,7 @@ async function page(opts, saved = SAVED) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   await p.goto(APP + '?p=' + EE);
@@ -83,8 +83,9 @@ test('hover: prereq lines + needed-by lines in two colours, others dimmed, label
   await p.context().close();
 });
 
-test('phone: label + lines while the finger is down; a tap still marks the class taken', async () => {
+test('phone: label + lines while the finger is down; in Explore a tap still marks the class taken', async () => {
   const p = await page({ ...devices['iPhone 15'] });
+  await p.click('#exploreBtn');
   const sel = box('MATH 1220');
   await p.$eval(sel, (el) => el.scrollIntoView({ block: 'center', inline: 'center' }));
   await p.dispatchEvent(sel, 'pointerdown', { pointerType: 'touch', isPrimary: true, button: 0 });
@@ -114,13 +115,14 @@ Calculus I MATH 1210 Calculus I A 4 2025 FALL
 Calculus II MATH 1220 Calculus II B+ 4 2026 SPRING
 Intro to ECE ECE 1000 Intro to ECE IP (3) 2026 FALL`;
 async function importAudit(p) {
-  await p.click('#gear');
+  await openGear(p);
   await p.click('#importBtn');
   await p.fill('#impText', AUDIT);
   await p.click('#impGo');
   await p.waitForSelector('#impStep2:not([hidden])');
   await p.click('#impGo');
   await p.waitForTimeout(500);
+  if (await p.getAttribute('#main', 'data-tab') === 'home') await goTab(p, 'flow'); // (the gear is on Home)
 }
 const hintOf = async (p, id) => { await p.hover(box(id)); await p.waitForTimeout(100); return p.textContent('#hint'); };
 
@@ -129,7 +131,7 @@ test('fresh import: every taken class shows its month and year (transfer / AP ro
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   await p.goto(APP + '?p=' + EE);
@@ -163,3 +165,16 @@ test('imported before terms were kept: "Taken · A" + a re-upload line that goes
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

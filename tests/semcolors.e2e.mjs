@@ -20,7 +20,7 @@ async function page(saved) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   return p;
@@ -55,12 +55,12 @@ test('Semester colors: on by default, off removes semester colours, persists acr
   assert.ok(on.chips > 3 && /Sp \d\d|Fa \d\d/.test(on.legend), on.legend);
   assert.equal(on.semS, on.sems);
 
-  await p.click('#gear');
-  await p.waitForSelector('#settings[open]');
-  const sw = p.locator('#setSemColors');
+  // the switch sits next to the flowchart, out in the open (2026-10-23), not in the gear's settings
+  const sw = p.locator('#flowPanel #setSemColors');
+  assert.ok(await sw.isVisible());
   assert.equal(await sw.isChecked(), true);
   await sw.click();
-  await p.click('#settings button.ok');
+  await p.waitForTimeout(400); // the boxes' .15s colour fade
   const off = await look(p);
   assert.equal(off.saved, false);
   assert.equal(off.planned, on.planned, 'same boxes planned');
@@ -76,11 +76,9 @@ test('Semester colors: on by default, off removes semester colours, persists acr
   const again = await look(p);
   assert.equal(again.boxS, 0);
   assert.equal(again.chips, 1);
-  await p.click('#gear');
-  await p.waitForSelector('#settings[open]');
   assert.equal(await p.locator('#setSemColors').isChecked(), false);
   await p.locator('#setSemColors').click();
-  await p.click('#settings button.ok');
+  await p.waitForTimeout(400);
   const back = await look(p);
   assert.equal(back.boxS, back.planned);
   assert.equal(back.chips, on.chips);
@@ -88,3 +86,16 @@ test('Semester colors: on by default, off removes semester colours, persists acr
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

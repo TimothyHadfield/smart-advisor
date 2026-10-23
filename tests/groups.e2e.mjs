@@ -20,7 +20,7 @@ async function open(id, opts = {}) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   await p.goto(APP + '?p=' + id);
@@ -49,7 +49,8 @@ test('a "choose N" requirement is a group titled with its count, holding its cla
   assert.equal(f.met, false);
   assert.equal(f.inside.length, 7);
   const before = f.bg;
-  // tap three of its classes (hypothetical taps, like any box)
+  // tap three of its classes in Explore (hypothetical taps, like any box)
+  await p.click('#exploreBtn');
   for (const id of f.inside.slice(0, 3)) {
     await p.evaluate((id) => { const b = document.querySelector(`.box[data-id="${CSS.escape(id)}"]`); b.scrollIntoView({ block: 'center', inline: 'center' }); }, id);
     await p.click(`.box[data-id="${id}"]`);

@@ -21,7 +21,7 @@ async function page({ blockFirebase = false } = {}) {
   if (blockFirebase) await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   p.on('console', (m) => { if (m.type() === 'error') p.errors.push(m.text()); });
@@ -47,7 +47,7 @@ test('Firebase blocked: guest works, saves locally, sheet says sign-in unavailab
   await tap(p, 'MATH 1210');
   assert.deepEqual(await taken(p), ['MATH 1210']);
   await p.waitForTimeout(2000);
-  await p.click('#profile');
+  await goTab(p, 'profile');
   assert.equal(await p.textContent('#acctGoogle'), 'Sign-in unavailable offline');
   assert.ok(await p.isDisabled('#acctGoogle'));
   assert.deepEqual(p.errors, []);
@@ -80,14 +80,14 @@ test('first sign-in merges guest classes into the account; a second device sees 
   assert.ok(await a.evaluate(() => document.querySelector('.box[data-id="MATH 1210"]').classList.contains('done')));
 
   // a settings change on A reaches B
-  await a.click('#gear');
+  await openGear(a);
   await a.selectOption('#setMax', '12');
   await a.keyboard.press('Escape');
   assert.ok(await until(async () => (await remote(uid))?.max === 12));
   assert.ok(await until(() => b.evaluate(() => JSON.parse(localStorage.getItem('smart-advisor:v1')).settings.max === 12)));
 
   // the sheet shows who and "Saved"
-  await b.click('#profile');
+  await goTab(b, 'profile');
   assert.equal(await b.textContent('#acctEmail'), 'claude-test@example.com');
   assert.equal(await until(() => b.textContent('#acctSyncText').then((t) => t === 'Saved' && t)), 'Saved');
 
@@ -114,7 +114,7 @@ test('first sign-in merges guest classes into the account; a second device sees 
   assert.ok(await until(async () => (await taken(b)).includes('CS 1400')));
 
   // delete the account from B (signed in just now, so no re-auth popup): doc gone, B empty
-  await b.click('#profile');
+  await goTab(b, 'profile');
   await b.click('#acctMore');
   await b.click('#acctDelete');
   assert.equal(await b.textContent('#acctDelete'), 'Delete forever');
@@ -131,3 +131,16 @@ test('first sign-in merges guest classes into the account; a second device sees 
   await a.context().close();
   await b.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

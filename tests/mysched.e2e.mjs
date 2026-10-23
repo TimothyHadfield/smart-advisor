@@ -30,7 +30,7 @@ async function page(saved, opts = {}) {
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   return p;
@@ -42,7 +42,7 @@ test('current term prefills from the audit; pick a section; paste replaces; Undo
   const p = await page(SAVED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  await p.click('#tabs button[data-tab="sched"]');
+  await goTab(p, 'sched');
   await p.click('#scTerms button[data-term="202640"]');
   await p.waitForSelector('#schedPanel.mine #scList .sc-row');
   let r = await rows(p);
@@ -82,7 +82,7 @@ test('unmatched class added by hand shows on the grid', async () => {
   const p = await page(SAVED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  await p.click('#tabs button[data-tab="sched"]');
+  await goTab(p, 'sched');
   await p.click('#scTerms button[data-term="202640"]');
   await p.waitForSelector('#schedPanel.mine #scList .sc-row');
   await p.click('#scMine');
@@ -107,7 +107,7 @@ test('the next term still builds schedules from the plan', async () => {
   const p = await page(SAVED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  await p.click('#tabs button[data-tab="sched"]');
+  await goTab(p, 'sched');
   await p.waitForSelector('#scTerms button.on');
   await p.waitForSelector('#scList [data-mine]');
   assert.equal(await p.getAttribute('#scTerms button.on', 'data-term'), '202720');
@@ -117,3 +117,16 @@ test('the next term still builds schedules from the plan', async () => {
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

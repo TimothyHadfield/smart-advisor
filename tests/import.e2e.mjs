@@ -33,12 +33,12 @@ test('audit import: the later start is saved and still there after a reload; Cle
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   await p.goto(APP + '?p=electrical-engineering-bs');
   await p.waitForSelector('.box[data-id="MATH 1210"]');
-  await p.click('#gear');
+  await openGear(p);
   // Settings opens without a focus ring on Start, like the other sheets
   assert.equal(await p.evaluate(() => document.activeElement?.id || document.activeElement?.tagName), 'BODY');
   await p.click('#importBtn');
@@ -55,7 +55,7 @@ test('audit import: the later start is saved and still there after a reload; Cle
   assert.equal((await saved(p)).lastTerm, `Spring ${NEXT}`, 'kept after a reload');
   assert.equal(await firstSem(p, `Fall ${NEXT}`), `Fall ${NEXT}`);
   // Clear taken: lastTerm is null (not missing), so the account doc carries the reset to other devices
-  await p.click('#gear');
+  await openGear(p);
   await p.click('#clearDone');
   await p.click('#clearDone'); // the first tap asks, the second clears
   const s = await saved(p);
@@ -63,3 +63,16 @@ test('audit import: the later start is saved and still there after a reload; Cle
   assert.deepEqual(errors, []);
   await ctx.close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}

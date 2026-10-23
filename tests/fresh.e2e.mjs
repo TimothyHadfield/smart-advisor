@@ -33,7 +33,7 @@ const server = createServer(async (req, res) => {
   if (!file.startsWith(ROOT + sep) || file.slice(ROOT.length).includes(`${sep}.claude${sep}`)) { res.writeHead(404); return res.end(); }
   let body;
   try { body = await readFile(file); } catch { res.writeHead(404); return res.end(); }
-  if (file.endsWith('index.html')) body = Buffer.from(body.toString('utf8').replace('<span class="brand">Smart Advisor</span>', `<span class="brand">${brand}</span>`));
+  if (file.endsWith('index.html')) body = Buffer.from(body.toString('utf8').replace('<title>Smart Advisor</title>', `<title>${brand}</title>`));
   const etag = `"${deploy.getTime().toString(16)}-${createHash('md5').update(body).digest('hex').slice(0, 12)}"`;
   const head = { 'Content-Type': TYPES[extname(file)] || 'application/octet-stream', 'Cache-Control': 'max-age=600',
     'Last-Modified': deploy.toUTCString(), ETag: etag };
@@ -51,12 +51,12 @@ test('a new deploy reaches a phone that has the old build cached, with one reloa
   const ctx = await browser.newContext({ ...devices['iPhone 15'], serviceWorkers: 'block' });
   const p = await ctx.newPage();
   // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
-  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   let loads = 0;
   p.on('load', () => loads++);
-  const brandText = () => p.$eval('.brand', (b) => b.textContent);
+  const brandText = () => p.evaluate(() => document.title);
 
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="MATH 1210"]');
@@ -71,18 +71,18 @@ test('a new deploy reaches a phone that has the old build cached, with one reloa
   await p.goto('about:blank');
   loads = 0;
   await p.goto(APP); // the browser serves the old page from its cache (max-age=600)
-  const got = await p.waitForFunction((w) => document.querySelector('.brand')?.textContent === w, NEW, { timeout: 8000 })
+  const got = await p.waitForFunction((w) => document.title === w, NEW, { timeout: 8000 })
     .then(() => NEW, async () => brandText());
   assert.equal(got, NEW, `new build shown without a hard refresh (requests: ${log.join(', ')})`);
   // the reload landed on Home (their own saved major): go to the flowchart again
   await p.waitForFunction(() => document.querySelector('#main')?.dataset.tab).catch(() => {});
-  await p.evaluate(() => { if (document.querySelector('#main').dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]').click(); });
+  await p.evaluate(() => { if (document.querySelector('#main').dataset.tab === 'home') document.querySelector('#hmGo [data-go="flow"]').click(); });
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   await p.waitForTimeout(1500);
   assert.equal(loads, 2, 'exactly one reload (stale copy, then the new one)');
 
   // the version line in Settings shows the deploy time
-  await p.click('#gear');
+  await openGear(p);
   const ver = await p.$eval('#setVer', (v) => v.textContent);
   const want = 'Version ' + await p.evaluate((ms) => new Date(ms).toLocaleString('en-US',
     { month: 'short', day: 'numeric', year: 'numeric', hour: 'numeric', minute: '2-digit' }), deploy.getTime());
@@ -91,3 +91,16 @@ test('a new deploy reaches a phone that has the old build cached, with one reloa
   assert.deepEqual(errors.filter((e) => !/Fetch API cannot load .*\/data\/[\w/.-]+\.json due to access control checks/.test(e)), []);
   await ctx.close();
 });
+
+// sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+async function goTab(p, tab) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click(`#hmGo [data-go="${tab}"]`);
+  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+}
+// the gear (site settings) lives on Home
+async function openGear(p) {
+  if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
+  await p.click('#gear');
+  await p.waitForSelector('#settings[open]');
+}
