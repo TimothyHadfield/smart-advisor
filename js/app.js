@@ -16,6 +16,7 @@ import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } fr
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
+import { auditExtras, answerSheet, sheetText, splitName, niceDate } from './application.js';
 import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
 import { startTab, programProgress, gradMonth, capName, displayName, catalogShort } from './home.js';
 import { needTree, gatePhrases, isAlternative, unlocksOf, statusText, offeredText } from './clsinfo.js';
@@ -204,6 +205,7 @@ async function boot() {
   wireGenEd();
   wireNav();
   wireClassSheet();
+  wireApply();
   wireClasses();
   wireNoAudit();
   wireZoom();
@@ -1757,8 +1759,111 @@ function openMatric() {
   $('matSrc').innerHTML = progSrc ? `${linkHTML(progSrc, part.program.name)} · ${esc(progSrc.label)}${progSrc.date ? ` · <span class="src-d">${checked(progSrc.date)}</span>` : ''}` : '';
   $('matCat').href = f.url || progSrc?.url || `${CATALOG}/`;
   $('matReport').href = issueURL(progIssue({ code: 'Matriculation' }));
+  // "Fill my application": programs with an application page (data/advisors.json); none in Explore (D24)
+  $('matApply').hidden = !(advisors?.[part?.id]?.admissionUrl) || sandbox();
   openDlg(dlg);
   $('matFacts').scrollTop = 0;
+}
+
+// ---------- "Fill my application": the answers for the program's matriculation form, from the audit ----------
+// Tim, 2026-10-23: "what if the Cite automatically filled in your applicatoin based on the wolverine track that
+// the student uploaded and then gave them links to where to submit it and whatnot?" The real form is UVU's
+// (Adobe Sign, a PDF, a Qualtrics survey...): the site never fills or sends it, it shows the answers to copy,
+// whether the student is ready, and the steps with links. js/application.js builds it; on this device only.
+const COPY_ICON = '⧉';
+async function openApply() {
+  const part = progParts.find((p) => p.program.admissionInfo) || progParts[0];
+  if (!part) return;
+  const apps = await getJSON(`${DATA}/applications.json`);
+  const app = apps?.programs?.[part.id] || { url: advisors?.[part.id]?.admissionUrl, kind: 'none' };
+  const f = matricFacts(part.program);
+  const info = state.applyInfo || {};
+  const prof = splitName(capName(state.settings.name) || (who?.name ? displayName(who) : ''));
+  const student = { ...info, first: prof.first || info.first || '', last: prof.last || info.last || '' };
+  const grades = gradeMap();
+  const groups = classGroups({ model, completed: actualSet(), actual: actualSet(), grades, src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
+  const g = gpa(groups.filter((x) => x.key !== 'need').flatMap((x) => x.rows));
+  const sheet = answerSheet({
+    app, typical: apps?.fields || [], before: f.before, student, done: actualSet(), grades, when: state.settings.when || {},
+    catalogYear: state.plan.catalogYear || state.audit?.[major()]?.catalogYear || part.program.catalogYear || '',
+    gpa: g.gpa, minGrade: f.minGrade, minGpa: f.gpa, terms: apps?.terms, today: new Date(),
+  });
+  const dlg = $('appDlg');
+  dlg._text = sheetText(sheet, `${part.program.name} application`);
+  $('appProg').textContent = part.program.name;
+  $('appTypical').hidden = sheet.known;
+  // Ready? each class green (done, C or better) / amber (in progress) / red (missing or below the minimum)
+  const TAG = { ok: ' ✓', ip: ' · Now', low: (c) => ` · ${grades[c] || 'Low'}`, missing: ' · Needed' };
+  const chip = (c) => `<span class="mt ${c.status}">${esc(c.code)}${esc(typeof TAG[c.status] === 'function' ? TAG[c.status](c.code) : TAG[c.status])}</span>`;
+  const r = sheet.ready, ready = [];
+  const okN = r.courses.filter((c) => c.status === 'ok').length;
+  ready.push(['Classes', `${okN} of ${r.courses.length} done<span class="mts">${r.courses.map(chip).join('')}</span>`
+    + (sheet.also.length ? `<span class="sub">${esc(sheet.also.map((c) => c.code).join(', '))}: on the program page, not the form</span>` : '')]);
+  if (r.minGpa || r.gpa) ready.push(['GPA', r.gpa ? `<span class="${r.gpaOk === false ? 'app-bad' : r.gpaOk ? 'st-done' : ''}">${esc(r.gpa)}${r.minGpa ? ` · needs ${esc(r.minGpa)}${r.gpaOk ? ' ✓' : ''}` : ''}</span>` : `Needs ${esc(r.minGpa)}`]);
+  const page = sourceLink('url', { url: app.url, label: app.title || 'Application page', date: apps?.checked });
+  const dl = r.deadline ? `${niceDate(r.deadline.date)} (for ${r.deadline.term})` : r.deadlineText || f.deadline || 'See the application page';
+  ready.push(['Deadline', `${esc(dl)} ${linkHTML(page, '')}`]);
+  $('appReady').innerHTML = ready.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
+  // Answers: each value is its own copy button; blanks are the student's to type (never guessed)
+  const val = (v, label) => (v ? `<button type="button" class="cpv" data-copy="${esc(v)}" aria-label="Copy ${esc(label)}: ${esc(v)}">${esc(v)}<i aria-hidden="true">${COPY_ICON}</i></button>` : '');
+  $('appFields').innerHTML = sheet.fields.map((x) => `<dt>${esc(x.label)}</dt><dd>${x.own ? '<span class="cw">Type yourself</span>' : val(x.value, x.label)}</dd>`).join('');
+  $('appCols').textContent = sheet.columns.join(' · ');
+  $('appRows').innerHTML = sheet.rows.map((x) => {
+    const cells = [x.term, x.grade, x.course, x.inst].map((v, i) => val(v, `${x.code} ${sheet.columns[i]}`)).join('');
+    return `<li><b>${esc(x.code)}</b><span>${cells || '<span class="cw">Not taken</span>'}</span></li>`;
+  }).join('');
+  $('appRowNote').textContent = sheet.rowNote;
+  $('appRowNote').hidden = !sheet.rowNote;
+  // Steps: advisor -> the official page (Start Application) -> paste -> sign -> faculty mentor -> decision
+  const form = sourceLink('url', { url: app.link, label: app.kind === 'pdf' ? 'Application PDF' : 'Application form' });
+  const adv = sheet.advisor;
+  const steps = [
+    `Meet your advisor${adv?.name ? `: ${esc(adv.name)} (last names ${esc(adv.band)})` : ''}. ${advA(part.id)}${advA(part.id) ? '. ' : ''}Bring this sheet (Print).`,
+    `Open the ${linkHTML(page, 'application page')}${app.kind === 'adobesign' ? ` and press ${esc(app.form?.button || 'Start Application')} with your name and UVID` : form ? ` · ${linkHTML(form)}` : ''}.`,
+    `Paste your answers${app.kind === 'adobesign' ? ' into the Adobe Sign form' : ''}.`,
+    app.kind === 'adobesign' ? `Sign it. Then ${esc((app.form?.signers || []).slice(1).map((s) => s.toLowerCase()).join(', ') || 'your advisor and the department')} sign.` : 'Submit it.',
+  ];
+  if ((app.form?.signers || []).some((s) => /mentor/i.test(s))) steps.push(`Meet your faculty mentor${sheet.mentor?.name ? `: ${esc(sheet.mentor.name)}` : ''}.`);
+  steps.push('Watch your myUVU email for the decision.');
+  $('appSteps').innerHTML = steps.map((s) => `<li>${s}</li>`).join('');
+  $('appSrc').innerHTML = page ? `${linkHTML(page)}${apps?.checked ? ` · <span class="src-d">${checked(apps.checked)}</span>` : ''}` : '';
+  if ($('matDlg').open) $('matDlg').close();
+  openDlg(dlg);
+  dlg.querySelector('form').scrollTop = 0;
+}
+async function copyText(text) {
+  try { await navigator.clipboard.writeText(text); return true; } catch {
+    const ta = document.createElement('textarea');
+    ta.value = text; document.body.appendChild(ta); ta.select();
+    let ok = false;
+    try { ok = document.execCommand('copy'); } catch {}
+    ta.remove();
+    return ok;
+  }
+}
+function wireApply() {
+  const dlg = $('appDlg');
+  $('matApply').addEventListener('click', openApply);
+  // a value's copy button: its icon turns into a check for a moment (nothing moves)
+  dlg.addEventListener('click', async (e) => {
+    if (e.target === dlg) { dlg.close(); return; }
+    const b = e.target.closest('button[data-copy]');
+    if (!b) return;
+    await copyText(b.dataset.copy);
+    b.classList.add('copied');
+    clearTimeout(b._t);
+    b._t = setTimeout(() => b.classList.remove('copied'), 1200);
+  });
+  $('appAll').addEventListener('click', async () => {
+    await copyText(dlg._text || '');
+    $('appAll').classList.add('copied');
+    clearTimeout(wireApply.t);
+    wireApply.t = setTimeout(() => $('appAll').classList.remove('copied'), 1200);
+  });
+  $('appPrint').addEventListener('click', () => print());
+  $('appBack').addEventListener('click', () => { dlg.close(); openMatric(); });
+  const h = dlg.querySelector('.grab');
+  if (h) sheetDrag(dlg, h, { close: () => dlg.close() });
 }
 
 // the classes a taken box stands for, each with its own grade (lecture + its folded lab; a pick-one box's
@@ -2315,8 +2420,12 @@ function wireImport() {
     dlg.dataset.step = n;
   };
   // the audit header's programs + catalog year, ticked; one already chosen shows ticked and greyed
+  let extras = null;
   const read = async (text) => {
     parsed = parseAudit(text);
+    // name, UVID, overall GPA, where AP / transfer credit came from: for "Fill my application" (this device only:
+    // state.applyInfo is never synced, js/sync.js)
+    extras = auditExtras(text);
     await loadCatalog();
     const curYear = state.plan.catalogYear ?? catalog.info.current;
     progRows = auditPrograms(parsed, catalog.list).map((p) => ({ ...p, same: p.role === 'major' ? major() === p.id : state.plan.programs.includes(p.id) }));
@@ -2397,6 +2506,7 @@ function wireImport() {
     // classes in progress (or already registered for next term): the plan starts after that semester
     // (set before setActual, which saves)
     if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);
+    if (extras) state.applyInfo = extras;
     // in-progress classes fill this term's "my schedule" (Schedule tab) until the student changes it
     if (ipOn && parsed?.inProgress?.length) termState(currentTermCode()).ip = parsed.inProgress.map((r) => r.code);
     setActual(s);

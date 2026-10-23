@@ -11,6 +11,8 @@ export const CLASS_SEARCH = 'https://userve.uvu.edu/StudentRegistrationSsb/ssb/t
 export const RMP_PROF = 'https://www.ratemyprofessors.com/professor/';
 export const RMP_SCHOOL = 'https://www.ratemyprofessors.com/school/18458';
 export const ADVISING = 'https://www.uvu.edu/advising/advisors/';
+// a student's UVU e-mail (UVID@uvu.edu: the address UVU's matriculation forms send to); '' without a UVID
+export const uvuEmail = (uvid) => (/^\d{8}$/.test(String(uvid || '')) ? `${uvid}@uvu.edu` : '');
 // CourseLeaf program page tabs
 const TAB = { requirements: '#requirementstextcontainer', plan: '#graduationplantextcontainer' };
 
@@ -126,6 +128,9 @@ export const DATA_SOURCES = [
   // the hover glossary (js/glossary.js): each term's definition links the UVU page it came from
   { match: /^glossary\.json$/, url: (d) => d.source, date: (d) => d.checked,
     records: (d) => (d.terms || []).map((t) => [t.id, t]), link: (t) => sourceLink('url', { url: t.url, label: t.label }) },
+  // each program's application page and what kind of form it uses (scripts/build-applications.mjs)
+  { match: /^applications\.json$/, url: (d) => d.source, date: (d) => d.checked,
+    records: (d) => Object.entries(d.programs || {}), link: (a) => sourceLink('url', { url: a.url, label: a.title || 'Application' }) },
   // short class names / requirement labels (scripts/build-short-titles.mjs), made from the catalog's own titles
   { match: /^short-titles\.json$/, url: () => `${CATALOG}/search/`, date: (d) => d.generated },
 ];

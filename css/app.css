@@ -603,6 +603,42 @@ dialog.cl-edit[data-step="form"] form { height: auto; }
 .mt { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; white-space: nowrap; }
 .mt.ok { border-color: var(--green); color: var(--green); font-weight: 600; }
 dialog.mat .cls-facts { max-height: 60dvh; }
+/* (a chip named "ok" inside a dialog also matched the dialog's green Done button style: green text on green) */
+dialog .mt.ok { background: none; border: 1px solid var(--green); padding: 1px 6px; border-radius: 6px; cursor: default; }
+dialog .mt.ok::after { content: none; }
+.mt.ip { border-color: var(--warn); color: var(--warn); font-weight: 600; }
+.mt.low, .mt.missing { border-color: var(--bad); color: var(--bad); font-weight: 600; }
+
+/* "Fill my application" (Matriculation sheet -> #appDlg): answers to copy, readiness, steps (js/application.js) */
+dialog .mat-apply { align-self: flex-start; border-color: var(--green); color: var(--green); font-weight: 600; }
+dialog.app .cls-facts { max-height: none; overflow: visible; }
+.app-typ { margin: 0; color: var(--warn); font-size: 13px; font-weight: 600; }
+.app-bad { color: var(--bad); font-weight: 700; }
+.app-h { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-top: 4px; border-top: 1px solid var(--line); padding-top: 10px; }
+.app-h b { font-size: 15px; }
+.cpv, dialog .cpall { display: inline-flex; align-items: center; gap: 6px; min-height: 32px; padding: 4px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); color: var(--fg); font: inherit; font-size: 14px; font-weight: 600; text-align: left; cursor: pointer; overflow-wrap: anywhere; }
+dialog .cpall { color: var(--green); border-color: var(--green); }
+.cpv i, .cpall i { flex: none; width: 14px; font-style: normal; color: var(--muted); text-align: center; }
+.cpv.copied i, .cpall.copied i { color: var(--green); font-size: 0; }
+.cpv.copied i::before, .cpall.copied i::before { content: "✓"; font-size: 14px; }
+.app-cols { margin: 0; color: var(--muted); font-size: 12px; }
+.app-rows { list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column; gap: 6px; }
+.app-rows li { display: grid; grid-template-columns: 82px 1fr; gap: 8px; align-items: baseline; }
+.app-rows li > span { display: flex; flex-wrap: wrap; gap: 4px; min-width: 0; }
+.app-rows b { font-size: 14px; }
+.app-rows .cw, .app-fields .cw { color: var(--muted); font-size: 13px; }
+.app-note { margin: 0; color: var(--muted); font-size: 12px; }
+.app-steps { margin: 0; padding-left: 20px; display: flex; flex-direction: column; gap: 6px; font-size: 14px; line-height: 1.4; }
+.app-steps a.src { font-size: inherit; }
+@media print {
+  body > *:not(#appDlg) { display: none !important; }
+  #appDlg { position: static !important; display: block !important; max-height: none !important; width: auto !important; box-shadow: none !important; border: 0 !important; overflow: visible !important; transform: none !important; }
+  #appDlg::backdrop { display: none; }
+  #appDlg form { overflow: visible !important; }
+  #appDlg .grab, #appDlg .row, #appDlg .cpall { display: none !important; }
+  .cpv { border: 0; padding: 0; min-height: 0; }
+  .cpv i { display: none; }
+}
 
 /* source links (js/sources.js): small grey line, green "↗" links, new tab. Tim 2026-10-22: link everything we get information from */
 .src { margin: 0; font-size: 12px; color: var(--muted); line-height: 1.5; }
@@ -866,3 +902,4 @@ body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-ins
   dialog select, .sc-filt select, .pick input[type="search"], .imp .file { min-height: 40px; }
 }
 @media (pointer: coarse) { .legend .lg-fit::after, .legend .lg-grades::after { transform: translate(-50%, calc(-50% + 3px)); } }
+@media (pointer: coarse) { .cpv { min-height: 40px; } }

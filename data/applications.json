@@ -1,0 +1,859 @@
+{
+ "checked": "2026-10-23",
+ "source": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+ "terms": {
+  "202640": "2026-08-19",
+  "202720": "2027-01-11"
+ },
+ "fields": [
+  "Last Name",
+  "First Name",
+  "Date",
+  "UVID",
+  "Email",
+  "Phone",
+  "Cumulative GPA",
+  "Catalog Year"
+ ],
+ "programs": {
+  "accounting-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "architecture-barch": {
+   "url": "https://www.uvu.edu/aed/architecture/admissions.html",
+   "status": 200,
+   "kind": "pdf",
+   "title": "Admissions",
+   "link": "https://www.uvu.edu/aed/architecture/docs/uvu_as-edt-arch-degree_application-portfolio-requirements.pdf",
+   "minGrade": "C",
+   "deadlineText": "The deadline for applications is March 16th ."
+  },
+  "business-analysis-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "civil-engineering-bs": {
+   "url": "https://www.uvu.edu/cet/mce/civil-engineering/application.html",
+   "status": 200,
+   "kind": "adobesign",
+   "title": "Civil Engineering Application",
+   "form": {
+    "name": "Civil Engineering Matriculation Form",
+    "inputs": [
+     "First Name",
+     "Last Name",
+     "UVID"
+    ],
+    "signers": [
+     "Student",
+     "Advisor",
+     "Faculty Mentor",
+     "Program Coordinator",
+     "Associate Department Chair",
+     "Department Chair"
+    ],
+    "button": "Start Application"
+   },
+   "minGpa": "2.5",
+   "minGrade": "C",
+   "deadlineText": "Applications for admission to the civil engineering program are accepted until two weeks prior to the start of a new semester.",
+   "weeksBefore": 2,
+   "provisional": true,
+   "pageCourses": [
+    "MATH 1210",
+    "MATH 1220",
+    "MATH 2210",
+    "MATH 2250",
+    "CHEM 1210",
+    "CHEM 1215",
+    "PHYS 2210",
+    "PHYS 2215",
+    "PHYS 2220",
+    "PHYS 2225",
+    "ENGL 1010",
+    "ENGL 2010",
+    "ENGR 1000",
+    "ENGR 2010",
+    "ENGR 2030",
+    "ENGR 2140",
+    "ENGR 2160",
+    "EGDT 1040",
+    "EGDT 1400"
+   ],
+   "advisorByLetter": [
+    {
+     "from": "A",
+     "to": "H",
+     "name": "Emmery Leach"
+    },
+    {
+     "from": "I",
+     "to": "O",
+     "name": "Brittany Rogers"
+    },
+    {
+     "from": "P",
+     "to": "Z",
+     "name": null
+    }
+   ],
+   "mentorByLetter": [
+    {
+     "from": "A",
+     "to": "E",
+     "name": "Amanda Bordelon"
+    },
+    {
+     "from": "F",
+     "to": "J",
+     "name": "Masrur Mahedi"
+    },
+    {
+     "from": "K",
+     "to": "O",
+     "name": null
+    },
+    {
+     "from": "P",
+     "to": "S",
+     "name": "Ben Willardson"
+    },
+    {
+     "from": "T",
+     "to": "Z",
+     "name": "Quinn Packer"
+    }
+   ]
+  },
+  "collaborative-piano-chamber-music-certificate-proficiency": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "collaborative-piano-vocal-coaching-certificate-proficiency": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "computer-engineering-bs": {
+   "url": "https://www.uvu.edu/cet/ece/computer-engineering/application.html",
+   "status": 200,
+   "kind": "adobesign",
+   "title": "Computer Engineering Application",
+   "form": {
+    "name": "Computer Engineering Matriculation Form",
+    "inputs": [
+     "First Name",
+     "Last Name",
+     "UVID"
+    ],
+    "signers": [
+     "Student",
+     "Advisor",
+     "Faculty Mentor",
+     "Program Coordinator",
+     "Department Chair"
+    ],
+    "button": "Start Application"
+   },
+   "minGpa": "2.5",
+   "minGrade": "C",
+   "deadlineText": "Applications for admission to the computer engineering program are accepted until two weeks prior to the start of a new semester.",
+   "weeksBefore": 2,
+   "provisional": true,
+   "pageCourses": [
+    "MATH 1210",
+    "MATH 1220",
+    "PHYS 2210",
+    "PHYS 2215",
+    "PHYS 2220",
+    "PHYS 2225",
+    "CS 1400",
+    "CS 1410",
+    "ECE 1000",
+    "ECE 2700",
+    "ECE 2705",
+    "ECE 2250",
+    "ECE 2255"
+   ],
+   "advisorByLetter": [
+    {
+     "from": "A",
+     "to": "H",
+     "name": "Emmery Leach"
+    },
+    {
+     "from": "I",
+     "to": "O",
+     "name": "Brittany Rogers"
+    },
+    {
+     "from": "P",
+     "to": "Z",
+     "name": null
+    }
+   ],
+   "mentorByLetter": [
+    {
+     "from": "A",
+     "to": "B",
+     "name": null
+    },
+    {
+     "from": "C",
+     "to": "E",
+     "name": "Waseem Sheikh"
+    },
+    {
+     "from": "F",
+     "to": "H",
+     "name": null
+    },
+    {
+     "from": "I",
+     "to": "K",
+     "name": "Ehsan Rohani"
+    },
+    {
+     "from": "L",
+     "to": "O",
+     "name": "Amin Zollanvari"
+    },
+    {
+     "from": "P",
+     "to": "S",
+     "name": null
+    },
+    {
+     "from": "T",
+     "to": "Z",
+     "name": null
+    }
+   ]
+  },
+  "computer-science-mcs": {
+   "url": "https://www.uvu.edu/cet/master-of-computer-science/apply/index.html",
+   "status": 200,
+   "kind": "other",
+   "title": "Apply to the Master of Computer Science",
+   "link": "https://uvu-15675.app451.sites.451.io/"
+  },
+  "dance-as": {
+   "url": "https://www.uvu.edu/dance/students/application.php",
+   "status": 200,
+   "kind": "none",
+   "title": "Dance Degree and Scholarship Applications"
+  },
+  "dance-ballet-emphasis-bfa": {
+   "url": "https://www.uvu.edu/dance/students/application.php",
+   "status": 200,
+   "kind": "none",
+   "title": "Dance Degree and Scholarship Applications"
+  },
+  "dance-bfa-modern-dance-emphasis": {
+   "url": "https://www.uvu.edu/dance/students/application.php",
+   "status": 200,
+   "kind": "none",
+   "title": "Dance Degree and Scholarship Applications"
+  },
+  "dance-bs": {
+   "url": "https://www.uvu.edu/dance/students/application.php",
+   "status": 200,
+   "kind": "none",
+   "title": "Dance Degree and Scholarship Applications"
+  },
+  "dance-education-bs": {
+   "url": "https://www.uvu.edu/dance/students/application.php",
+   "status": 200,
+   "kind": "none",
+   "title": "Dance Degree and Scholarship Applications"
+  },
+  "dental-hygiene-aas": {
+   "url": "https://www.uvu.edu/dental/how_to_apply.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Application Process",
+   "link": "https://qualtrics.uvu.edu/student/SV_235jXabCF1V3oTI",
+   "deadlineText": "Application Review Process After the application deadline of February 1, top applicants will be selected to advance to the next stage of the review process."
+  },
+  "dental-hygiene-bs": {
+   "url": "https://www.uvu.edu/dental/how_to_apply.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Application Process",
+   "link": "https://qualtrics.uvu.edu/student/SV_235jXabCF1V3oTI",
+   "deadlineText": "Application Review Process After the application deadline of February 1, top applicants will be selected to advance to the next stage of the review process."
+  },
+  "digital-marketing-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "electrical-engineering-bs": {
+   "url": "https://www.uvu.edu/cet/ece/electrical-engineering/application.html",
+   "status": 200,
+   "kind": "adobesign",
+   "title": "Electrical Engineering Application",
+   "form": {
+    "name": "Electrical Engineering Matriculation Form",
+    "inputs": [
+     "First Name",
+     "Last Name",
+     "UVID"
+    ],
+    "signers": [
+     "Student",
+     "Advisor",
+     "Faculty Mentor",
+     "Program Coordinator",
+     "Department Chair"
+    ],
+    "button": "Start Application"
+   },
+   "minGpa": "2.5",
+   "minGrade": "C",
+   "deadlineText": "Applications for admission to the electrical engineering program are accepted until two weeks prior to the start of a new semester.",
+   "weeksBefore": 2,
+   "provisional": true,
+   "pageCourses": [
+    "MATH 1210",
+    "MATH 1220",
+    "MATH 2210",
+    "PHYS 2210",
+    "PHYS 2215",
+    "PHYS 2220",
+    "PHYS 2225",
+    "CS 1400",
+    "ECE 1000",
+    "ECE 2700",
+    "ECE 2705",
+    "ECE 2250",
+    "ECE 2255"
+   ],
+   "advisorByLetter": [
+    {
+     "from": "A",
+     "to": "H",
+     "name": "Emmery Leach"
+    },
+    {
+     "from": "I",
+     "to": "O",
+     "name": "Brittany Rogers"
+    },
+    {
+     "from": "P",
+     "to": "Z",
+     "name": null
+    }
+   ],
+   "mentorByLetter": [
+    {
+     "from": "A",
+     "to": "B",
+     "name": null
+    },
+    {
+     "from": "C",
+     "to": "E",
+     "name": "Waseem Sheikh"
+    },
+    {
+     "from": "F",
+     "to": "H",
+     "name": null
+    },
+    {
+     "from": "I",
+     "to": "K",
+     "name": "Ehsan Rohani"
+    },
+    {
+     "from": "L",
+     "to": "O",
+     "name": "Amin Zollanvari"
+    },
+    {
+     "from": "P",
+     "to": "S",
+     "name": null
+    },
+    {
+     "from": "T",
+     "to": "Z",
+     "name": null
+    }
+   ],
+   "known": true,
+   "fields": [
+    "Last Name",
+    "First Name",
+    "Date",
+    "UVID",
+    "Email",
+    "Phone",
+    "Address",
+    "Cumulative GPA",
+    "Catalog Year",
+    "Advisor Name"
+   ],
+   "rows": [
+    "MATH 1210",
+    "MATH 1220",
+    "PHYS 2210",
+    "PHYS 2215",
+    "PHYS 2220",
+    "PHYS 2225",
+    "ECE 1000",
+    "CS 1400",
+    "ECE 2250",
+    "ECE 2255",
+    "ECE 2700",
+    "ECE 2705"
+   ],
+   "columns": [
+    "Completed Sem/YR",
+    "Grade",
+    "Transfer Course & Number",
+    "Transfer Institution"
+   ],
+   "rowNote": "For in progress courses, enter the semester you are taking the course for Completed Sem/YR. Enter IP (in progress) for Grade."
+  },
+  "event-management-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "finance-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "financial-planning-and-wealth-management-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "firefighter-recruit-candidate-certificate-completion": {
+   "url": "https://www.uvu.edu/es/rca/application.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Application Process",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_6Xqu97JcGvscyPA"
+  },
+  "firefighter-recruit-candidate-undergraduate-certificate": {
+   "url": "https://www.uvu.edu/es/rca/application.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Application Process",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_6Xqu97JcGvscyPA"
+  },
+  "hospitality-management-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "human-resource-management-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "international-business-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "marketing-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "master-public-administration-mpa": {
+   "url": "https://www.uvu.edu/mpa/application.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Application Information",
+   "minGpa": "3.0"
+  },
+  "master-social-work-advanced-standing-msw": {
+   "url": "https://www.uvu.edu/besc/msw/admissions.html",
+   "status": 200,
+   "kind": "other",
+   "title": "Application Information",
+   "link": "https://uvu-15675.app451.sites.451.io/?ReturnUrl=%2FApply",
+   "minGpa": "3.0",
+   "deadlineText": "Application for 2027 Open Application for Two-Year Fall 2027 and Advanced Standing Summer 2027: open August 15th, 2026 - November 2nd, 2026.* Apply Now *Application requirements, essay prompts, and deadlines may be subject to change prior to application opening."
+  },
+  "mechanical-engineering-bs": {
+   "url": "https://www.uvu.edu/cet/mce/mechanical-engineering/application.html",
+   "status": 200,
+   "kind": "adobesign",
+   "title": "Mechanical Engineering Application",
+   "form": {
+    "name": "Mechanical Engineering Matriculation Form",
+    "inputs": [
+     "First Name",
+     "Last Name",
+     "UVID"
+    ],
+    "signers": [
+     "Student",
+     "Advisor",
+     "Faculty Mentor",
+     "Program Coordinator",
+     "Associate Department Chair",
+     "Department Chair"
+    ],
+    "button": "Start Application"
+   },
+   "minGpa": "2.5",
+   "minGrade": "C",
+   "deadlineText": "Applications for admission to the mechanical engineering program are accepted until two weeks prior to the start of a new semester.",
+   "weeksBefore": 2,
+   "provisional": true,
+   "pageCourses": [
+    "MATH 1210",
+    "MATH 1220",
+    "MATH 2210",
+    "MATH 2250",
+    "CHEM 1210",
+    "CHEM 1215",
+    "PHYS 2210",
+    "PHYS 2215",
+    "PHYS 2220",
+    "PHYS 2225",
+    "ENGL 1010",
+    "ENGL 2010",
+    "ENGR 1000",
+    "EGDT 1071",
+    "ENGR 2010",
+    "ENGR 2030",
+    "ENGR 2140",
+    "ENGR 2160",
+    "ENGR 2450"
+   ],
+   "advisorByLetter": [
+    {
+     "from": "A",
+     "to": "H",
+     "name": "Emmery Leach"
+    },
+    {
+     "from": "I",
+     "to": "O",
+     "name": "Brittany Rogers"
+    },
+    {
+     "from": "P",
+     "to": "Z",
+     "name": null
+    }
+   ],
+   "mentorByLetter": [
+    {
+     "from": "A",
+     "to": "B",
+     "name": null
+    },
+    {
+     "from": "C",
+     "to": "D",
+     "name": null
+    },
+    {
+     "from": "E",
+     "to": "F",
+     "name": "Matt Jensen"
+    },
+    {
+     "from": "G",
+     "to": "H",
+     "name": "Brett Stone"
+    },
+    {
+     "from": "I",
+     "to": "J",
+     "name": null
+    },
+    {
+     "from": "K",
+     "to": "L",
+     "name": "Matthew Ballard"
+    },
+    {
+     "from": "M",
+     "to": "N",
+     "name": null
+    },
+    {
+     "from": "O",
+     "to": "P",
+     "name": "Israd Jaafar"
+    },
+    {
+     "from": "Q",
+     "to": "S",
+     "name": "Nick Posselli"
+    },
+    {
+     "from": "T",
+     "to": "V",
+     "name": null
+    },
+    {
+     "from": "W",
+     "to": "Z",
+     "name": "Xiaopeng Li"
+    }
+   ]
+  },
+  "msw": {
+   "url": "https://www.uvu.edu/besc/msw/admissions.html",
+   "status": 200,
+   "kind": "other",
+   "title": "Application Information",
+   "link": "https://uvu-15675.app451.sites.451.io/?ReturnUrl=%2FApply",
+   "minGpa": "3.0",
+   "deadlineText": "Application for 2027 Open Application for Two-Year Fall 2027 and Advanced Standing Summer 2027: open August 15th, 2026 - November 2nd, 2026.* Apply Now *Application requirements, essay prompts, and deadlines may be subject to change prior to application opening."
+  },
+  "music-ba": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "music-education-bs": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "music-technology-certificate-proficiency": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "music-technology-undergraduate-certificate": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "nursing-asn": {
+   "url": "https://www.uvu.edu/nursing/asn_app_info.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "ASN Application Information",
+   "link": "https://uvudx.ca1.qualtrics.com/jfe/form/SV_3F7akd9LAiIFVfo?applicationType=ASN",
+   "pageCourses": [
+    "CHEM 1110",
+    "PSY 1100",
+    "ENGH 1005",
+    "ENGL 1010",
+    "ZOOL 2320",
+    "ZOOL 2325",
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "BIOL 1610"
+   ]
+  },
+  "nursing-bs": {
+   "url": "https://www.uvu.edu/nursing/asn_app_info.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "ASN Application Information",
+   "link": "https://uvudx.ca1.qualtrics.com/jfe/form/SV_3F7akd9LAiIFVfo?applicationType=ASN",
+   "pageCourses": [
+    "CHEM 1110",
+    "PSY 1100",
+    "ENGH 1005",
+    "ENGL 1010",
+    "ZOOL 2320",
+    "ZOOL 2325",
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "BIOL 1610"
+   ]
+  },
+  "operations-supply-chain-management-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "paramedic-certificate-completion": {
+   "url": "https://www.uvu.edu/es/paramedic/admissions.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Admissions",
+   "link": "https://qualtrics.uvu.edu/student/SV_237l8vm1sA73mL4",
+   "minGrade": "C"
+  },
+  "paramedic-undergraduate-certificate": {
+   "url": "https://www.uvu.edu/es/paramedic/admissions.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Admissions",
+   "link": "https://qualtrics.uvu.edu/student/SV_237l8vm1sA73mL4",
+   "minGrade": "C"
+  },
+  "personal-financial-planning-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "piano-pedagogy-certificate-proficiency": {
+   "url": "https://www.uvu.edu/music/students/applications.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Auditions / Applications",
+   "minGpa": "2.5"
+  },
+  "professional-sales-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "respiratory-therapy-aas": {
+   "url": "https://www.uvu.edu/respiratory/admissions.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Admissions",
+   "pageCourses": [
+    "BIOL 1610",
+    "BIOL 1615",
+    "CHEM 1110",
+    "ZOOL 2320",
+    "ZOOL 2325",
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "MICR 2060",
+    "MICR 2065",
+    "RESP 1540"
+   ]
+  },
+  "respiratory-therapy-bs": {
+   "url": "https://www.uvu.edu/respiratory/admissions.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Admissions",
+   "pageCourses": [
+    "BIOL 1610",
+    "BIOL 1615",
+    "CHEM 1110",
+    "ZOOL 2320",
+    "ZOOL 2325",
+    "ZOOL 2420",
+    "ZOOL 2425",
+    "MICR 2060",
+    "MICR 2065",
+    "RESP 1540"
+   ]
+  },
+  "social-work-bsw": {
+   "url": "https://www.uvu.edu/besc/socialwork/",
+   "status": 200,
+   "kind": "none",
+   "title": "Social Work",
+   "minGpa": "2.5"
+  },
+  "strategic-foresight-and-business-bs": {
+   "url": "https://www.uvu.edu/woodbury/advising/matriculationbymajor.html",
+   "status": 200,
+   "kind": "none",
+   "title": "Matriculation by Major"
+  },
+  "theatre-arts-bfa-acting-emphasis": {
+   "url": "https://www.uvu.edu/theatre/students/applications.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Auditions/Applications",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_42cFw6qPyJznaaq",
+   "minGpa": "2.5",
+   "deadlineText": "Application for BFA Design & Production Programs Applications are due by March 1, 2027 Admission to the BFA programs is determined though application and portfolio review.",
+   "pageCourses": [
+    "THEA 1033",
+    "MATH 1030",
+    "ENGL 1010",
+    "THEA 1113",
+    "THEA 2156",
+    "ENGL 2010"
+   ]
+  },
+  "theatre-arts-bfa-theatre-design-production-emphasis": {
+   "url": "https://www.uvu.edu/theatre/students/applications.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Auditions/Applications",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_42cFw6qPyJznaaq",
+   "minGpa": "2.5",
+   "deadlineText": "Application for BFA Design & Production Programs Applications are due by March 1, 2027 Admission to the BFA programs is determined though application and portfolio review.",
+   "pageCourses": [
+    "THEA 1033",
+    "MATH 1030",
+    "ENGL 1010",
+    "THEA 1113",
+    "THEA 2156",
+    "ENGL 2010"
+   ]
+  },
+  "theatre-arts-musical-theatre-bfa": {
+   "url": "https://www.uvu.edu/theatre/students/applications.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Auditions/Applications",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_42cFw6qPyJznaaq",
+   "minGpa": "2.5",
+   "deadlineText": "Application for BFA Design & Production Programs Applications are due by March 1, 2027 Admission to the BFA programs is determined though application and portfolio review.",
+   "pageCourses": [
+    "THEA 1033",
+    "MATH 1030",
+    "ENGL 1010",
+    "THEA 1113",
+    "THEA 2156",
+    "ENGL 2010"
+   ]
+  },
+  "theatre-education-bs": {
+   "url": "https://www.uvu.edu/theatre/students/applications.html",
+   "status": 200,
+   "kind": "qualtrics",
+   "title": "Auditions/Applications",
+   "link": "https://uvu.qualtrics.com/jfe/form/SV_42cFw6qPyJznaaq",
+   "minGpa": "2.5",
+   "deadlineText": "Application for BFA Design & Production Programs Applications are due by March 1, 2027 Admission to the BFA programs is determined though application and portfolio review.",
+   "pageCourses": [
+    "THEA 1033",
+    "MATH 1030",
+    "ENGL 1010",
+    "THEA 1113",
+    "THEA 2156",
+    "ENGL 2010"
+   ]
+  }
+ }
+}

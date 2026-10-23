@@ -143,3 +143,10 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** see D34. Files: js/touch.js (new), js/app.js, js/fresh.js (STARTUP list), index.html (grab handles), css/app.css; tests touch.test.mjs, iphone.e2e.mjs.
 - **Verified:** unit 1256 tests, 1255 pass / 0 fail; e2e all but accounts 86 pass / 0 fail / 1 skipped (emulators). New tests on the old build (d2c4930, served separately): unit fails (no module), 6 of 7 e2e fail; one-finger drag passes on both. Screen sweep (18 screens, light + dark at 393×659, laptop 1440×900): 0 page overflow, 0 page scroll, 0 console errors, all phone touch areas ≥ 39 px except a half-scrolled term chip; screenshots in the manager session scratchpad `iphone/final/`.
 - **Open:** real iPhone (Safari pinch, sheet vs home indicator, swipe-back); Tim to judge the 0.41× start zoom and the bottom sheet.
+
+## 2026-10-23 · Fill my application (builder `apply`, D35)
+- **Asked (Tim):** "what if the Cite automatically filled in your applicatoin based on the wolverine track that the student uploaded and then gave them links to where to submit it and whatnot?"
+- **Found:** UVU's EE page starts an Adobe Sign agreement (name + UVID, then Start Application); signers Student → Advisor → Faculty Mentor → Coordinator → Chair; advisor/mentor picked by last-name letter in the page's script. Of 50 gated programs with an admission page: adobesign 4, qualtrics 12, pdf 1, other portal 3, none 30.
+- **Built:** see D35. Files: js/application.js (new), scripts/build-applications.mjs (new), data/applications.json (new), js/app.js, js/sources.js (uvuEmail + data source), js/fresh.js (STARTUP), index.html, css/app.css; tests application.test.mjs, application.e2e.mjs, fixtures/apply-audit.txt (made up).
+- **Verified:** unit 1264 tests, 1263 pass / 0 fail / 1 skipped; e2e all but accounts 89 pass / 0 fail / 1 skipped. Screenshots at 393×659 (light + dark) and 1440×900: no overflow, no console errors.
+- **Open:** real iPhone clipboard + print; Adobe fields for CE/civil/mechanical; Tim to judge the wording and layout.

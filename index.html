@@ -203,8 +203,26 @@
   <form method="dialog">
     <div class="sec-head"><b>Matriculation</b><span id="matProg"></span></div>
     <dl class="cls-facts" id="matFacts"></dl>
+    <button type="button" id="matApply" class="ghost mat-apply" hidden>Fill my application</button>
     <p class="src" id="matSrc"></p>
     <div class="row"><a id="matReport" class="ghost" target="_blank" rel="noopener">Report a mistake</a><span class="cls-r"><a id="matCat" class="cls-cat" target="_blank" rel="noopener">Catalog ↗</a><button value="ok" class="ok">Done</button></span></div>
+  </form>
+</dialog>
+<dialog id="appDlg" class="cls mat app">
+  <div class="grab" aria-hidden="true"></div>
+  <form method="dialog">
+    <div class="sec-head"><b>Your application</b><span id="appProg"></span></div>
+    <p class="app-typ" id="appTypical" hidden>Typical fields — check against the real form</p>
+    <dl class="cls-facts" id="appReady"></dl>
+    <div class="app-h"><b>Answers</b><button type="button" id="appAll" class="ghost cpall">Copy all<i aria-hidden="true">⧉</i></button></div>
+    <dl class="cls-facts app-fields" id="appFields"></dl>
+    <p class="app-cols" id="appCols"></p>
+    <ul class="app-rows" id="appRows"></ul>
+    <p class="app-note" id="appRowNote" hidden></p>
+    <div class="app-h"><b>Steps</b></div>
+    <ol class="app-steps" id="appSteps"></ol>
+    <p class="src" id="appSrc"></p>
+    <div class="row"><button type="button" id="appBack" class="ghost">Back</button><span class="cls-r"><button type="button" id="appPrint" class="ghost">Print</button><button value="ok" class="ok">Done</button></span></div>
   </form>
 </dialog>
 <dialog id="editDlg" class="pick cl-edit" data-step="find">
