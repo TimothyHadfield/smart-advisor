@@ -13,7 +13,7 @@ import { initMine } from './mineui.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
 import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
-import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
+import { viewSet, hypoFrom, normHypo, hypoShown, sandboxOn, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 
 const $ = (id) => document.getElementById(id);
@@ -92,7 +92,11 @@ const hypoOf = () => normHypo(actualSet(), state.settings.hypo?.[major()]);
 const doneSet = () => viewSet(actualSet(), state.settings.hypo?.[major()], ui.view);
 function setHypo(h) { state.settings.hypo = { ...(state.settings.hypo || {}), [major()]: h }; }
 // a tap (flowchart box, its class sheet's Taken switch, a Gen Ed list): hypothetical, never the actual classes
-function setDone(set) { setHypo(hypoFrom(actualSet(), set)); ui.view = 'hypo'; save(); }
+function setDone(set) { setHypo(hypoFrom(actualSet(), set)); ui.view = 'hypo'; ui.tapped = major(); save(); }
+// Hypothetical (toggle shown, Hypothetical picked) = a sandbox: nothing personal shows (js/classes.js sandboxOn)
+const sandbox = () => !!model && sandboxOn(hypoOf(), ui.tapped === major(), ui.view);
+// the grades shown and planned with: none in the sandbox (every selected class counts as plain Taken, passed)
+const viewGrades = () => (sandbox() ? {} : gradeMap());
 // taps start from what Hypothetical shows (a tap while viewing Actual switches back)
 function tapSet() { ui.view = 'hypo'; return doneSet(); }
 // the actual classes (audit import, Classes); taps that now change nothing drop out
@@ -611,7 +615,8 @@ function blocked(el, missing) {
 function refresh() {
   if (!model) return;
   const completed = doneSet();
-  const grades = gradeMap();
+  const own = !sandbox(); // the student's own info (in progress, grades, audit dates): not in Hypothetical
+  const grades = viewGrades();
   const showGrades = !!state.settings.grades;
   const plan = makePlan(model, completed, planOpts());
   // which semester each unit is planned in (a choice group: its first chunk)
@@ -642,8 +647,8 @@ function refresh() {
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
     // the hover label: when taken (+ grade, when grades are on) / in progress / planned
-    const term = done ? boxTerm(n, completed) : '';
-    if (done && !ip && !term) undated = true;
+    const term = done && own ? boxTerm(n, completed) : '';
+    if (done && own && !ip && !term) undated = true;
     el.dataset.hint = hintText({ done, grade: ip || showGrades ? g : '', term, planned: sem !== undefined ? plan.semesters[sem].term : '', now });
   }
   // requirement groups: progress in the title ("1 of 3"), light green once the requirement is met
@@ -754,7 +759,7 @@ function wireGenEd() {
 
 // the student's chosen tracks for this major ({ group id: track }); the planner uses them when it can
 const chosenTracks = () => state.settings.tracks?.[major()] || {};
-const planOpts = () => ({ maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm(), track: chosenTracks(), tracks: chosenTracks(), grades: gradeMap() });
+const planOpts = () => ({ maxCredits: state.settings.max, summers: state.settings.summers, start: startTerm(), track: chosenTracks(), tracks: chosenTracks(), grades: viewGrades() });
 const parseTerm = (s) => { const [season, year] = String(s || '').split(' '); return year ? { season, year: +year } : null; };
 // first planned semester: the chosen Start, but never the semester in session (or one the imported audit
 // already shows classes in); a saved Start that has slipped into the past moves up on its own
@@ -834,7 +839,7 @@ function progIssue(extra = {}) {
 
 // ---------- Hypothetical | Actual (header): shown once a tap changed anything ----------
 function renderHypo() {
-  const on = !!model && hasHypo(hypoOf());
+  const on = !!model && hypoShown(hypoOf(), ui.tapped === major());
   if (!on) ui.view = 'hypo';
   $('hyp').hidden = !on;
   document.querySelector('.top').classList.toggle('hyp-on', on);
@@ -850,9 +855,11 @@ function wireHypo() {
   // clear every tap (the actual classes stay), with Undo
   $('hypClear').addEventListener('click', () => {
     const snap = hypoOf();
+    const tapped = ui.tapped;
     setHypo({ add: [], del: [] });
+    ui.tapped = null;
     save(); refresh();
-    toast('Hypothetical cleared', () => { setHypo(snap); save(); refresh(); });
+    toast('Hypothetical cleared', () => { setHypo(snap); ui.tapped = tapped; save(); refresh(); });
   });
 }
 
@@ -866,7 +873,7 @@ function hasAudit() {
   return !src && Object.keys(state.grades[major()] || {}).length > 0;
 }
 function renderNoAudit() {
-  const show = !!model && !hasAudit();
+  const show = !!model && !hasAudit() && !sandbox(); // Hypothetical: no nags about the student's audit
   const signedIn = $('profile').classList.contains('in');
   for (const el of document.querySelectorAll('[data-noaud]')) {
     el.hidden = !show;
@@ -915,9 +922,11 @@ function renderClasses() {
   if (!courseCat.ready) loadCourses().then(() => { if (ui.sub === 'classes') renderClasses(); });
   const order = new Map();
   lastPlan.semesters.forEach((s, i) => s.items.forEach((it) => { if (!order.has(it.unitId)) order.set(it.unitId, i); }));
-  const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: gradeMap(), src: state.settings.src?.[major()] || {},
+  // Hypothetical: no grades, so no GPA line and no Current / AP/CE groups (all selected classes are Taken)
+  const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: viewGrades(), src: state.settings.src?.[major()] || {},
     catalog: courseCat.map, order, when: (i) => shortTerm(lastPlan.semesters[i].term) });
   const g = gpa(groups.filter((x) => x.key !== 'need').flatMap((x) => x.rows));
+  $('clGpa').style.visibility = sandbox() ? 'hidden' : ''; // (keeps + Add class where it is)
   $('clGpa').innerHTML = g.gpa == null ? '<b>GPA —</b><span>No grades yet</span>' : `<b>GPA ${g.gpa.toFixed(2)}</b><span>${g.credits} graded cr</span>`;
   clRows = [];
   $('clList').innerHTML = groups.filter((x) => x.rows.length).map((x) => `<li class="cl-h">${esc(x.label)}<span>${x.rows.length}</span></li>`
@@ -1023,7 +1032,8 @@ function wireClasses() {
     const b = e.target.closest('button[data-r]');
     const r = b && clRows[+b.dataset.r];
     if (!r) return;
-    if (r.group === 'need') openNeed(r); else openEditClass(r);
+    // Hypothetical: a class opens its class sheet (Taken switch, no grades), not the grade editor
+    if (r.group === 'need' || (sandbox() && r.unit)) openNeed(r); else if (!sandbox()) openEditClass(r);
   });
   const dlg = $('editDlg');
   $('edQ').addEventListener('input', () => { edList(); $('edList').scrollTop = 0; });
@@ -1280,7 +1290,7 @@ function openMatric() {
   // the program the gated classes belong to (the major, unless only a minor has a matriculation section)
   const part = progParts.find((p) => p.program.admissionInfo) || progParts[0];
   const f = matricFacts(part?.program || model.program);
-  const done = doneSet(), grades = gradeMap();
+  const done = doneSet(), grades = viewGrades(); // Hypothetical: an in-progress class is plain done
   const planned = new Map();
   (lastPlan?.semesters || []).forEach((s) => s.items.forEach((it) => [it.code, ...(it.codes || [])].filter(Boolean).forEach((c) => { if (!planned.has(c)) planned.set(c, shortTerm(s.term)); })));
   const mark = (code) => {
@@ -1331,7 +1341,8 @@ const gradeOptions = (cur) => [['', '—'], ['IP', 'In progress'], ...GRADES.map
   .map(([v, t]) => `<option value="${v}"${v === (cur || '') ? ' selected' : ''}>${t}</option>`).join('');
 // the class sheet's grade pickers: one per class the box stands for, only once it counts as taken
 function drawClsGrades() {
-  const codes = gradeCodes(clsNode, doneSet()), grades = gradeMap();
+  // (none in Hypothetical: no personal info there)
+  const codes = sandbox() ? [] : gradeCodes(clsNode, doneSet()), grades = gradeMap();
   $('clsGrades').innerHTML = codes.map((c) => `<label>Grade${codes.length > 1 ? ` <small>${esc(c)}</small>` : ''}<select data-code="${esc(c)}">${gradeOptions(grades[c] ?? (codes.length === 1 && clsNode ? grades[clsNode.id] : ''))}</select></label>`).join('');
 }
 function wireClassSheet() {

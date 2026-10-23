@@ -5,7 +5,7 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
-import { viewSet, hypoFrom, normHypo, hasHypo, statusOf, boxGrade, gpa, classGroups, GRADES, srcOf, geBoxFor } from '../js/classes.js';
+import { viewSet, hypoFrom, normHypo, hasHypo, hypoShown, sandboxOn, statusOf, boxGrade, gpa, classGroups, GRADES, srcOf, geBoxFor } from '../js/classes.js';
 import { toDoc, applyDoc } from '../js/sync.js';
 import { clearTaken, undoClear } from '../js/uistate.js';
 import { parseAudit, matchAudit } from '../js/audit.js';
@@ -166,4 +166,15 @@ test('audit match keeps the classes outside the program (for AP/CE and "Not used
   assert.equal(box?.code, 'DANC 1010');
   assert.deepEqual(m.others.map((r) => [r.code, r.status, r.grade]).sort(), [['ACC 2010', 'ip', 'IP'], ['PSY 1010', 'taken', 'TCR']]);
   assert.equal(m.other, 2);
+});
+
+test('Hypothetical sandbox: on once a tap was made (even when taps cancel out), off on Actual or with no taps', () => {
+  const none = { add: [], del: [] }, some = { add: ['PHYS 2210'], del: [] };
+  assert.equal(sandboxOn(none, false, 'hypo'), false, 'no taps: the student\'s own view');
+  assert.equal(sandboxOn(some, false, 'hypo'), true);
+  // Tim's case: untap an in-progress class, select it again -> no change left, still Hypothetical
+  assert.equal(sandboxOn(none, true, 'hypo'), true);
+  assert.equal(hypoShown(none, true), true);
+  assert.equal(sandboxOn(some, true, 'actual'), false, 'Actual shows everything');
+  assert.equal(sandboxOn(null, false, 'hypo'), false);
 });

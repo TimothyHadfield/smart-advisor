@@ -137,28 +137,36 @@ test('Classes: grouped, GPA, add a class (applies to the flowchart), edit its gr
   await p.context().close();
 });
 
-test('class sheet: pick a grade; it shows on the box and survives untapping', async () => {
+test('class sheet: pick a grade; it shows on the box and survives untapping (Hypothetical hides it)', async () => {
   const p = await page(SEED);
   await p.goto(APP);
   await p.waitForSelector('.box[data-id="ECE 1000"]');
+  // no taps: the class sheet of a taken class (right-click = hold) has its grade picker
+  await p.click('.box[data-id="ECE 1000"]', { button: 'right' });
+  await p.waitForSelector('#clsDlg[open]');
+  assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 1);
+  await p.selectOption('#clsGrades select[data-code="ECE 1000"]', 'B-');
+  await p.click('#clsDlg button.ok');
+  assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), 'B-');
+  // a Still need row's sheet: the Taken switch is a tap -> Hypothetical, where no grade picker or grade shows
   await p.click('#tabs button[data-tab="plan"]');
   await p.click('#planSeg button[data-v="classes"]');
   await p.waitForSelector('#clList .cl-row');
-  // a Still need row opens the class sheet (Taken switch off, no grade picker yet)
   // (a selector click, not a held element: the list renders again once the course catalog arrives)
   await p.click('#clList .cl-row:has(b:text-is("PHYS 2210"))');
   await p.waitForSelector('#clsDlg[open]');
   assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0);
   await p.click('#clsTaken');
-  assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 2, 'lecture + lab');
-  await p.selectOption('#clsGrades select[data-code="PHYS 2210"]', 'B-');
+  assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0, 'Hypothetical: no grade picker');
   await p.click('#clsDlg button.ok');
   await p.click('#tabs button[data-tab="flow"]');
-  assert.equal(await p.textContent('.box[data-id="PHYS 2210"] .gr'), 'B-');
   assert.equal(await p.isVisible('#hyp'), true, 'the Taken switch is a tap');
-  await p.click('.box[data-id="PHYS 2210"]');
-  await p.click('.box[data-id="PHYS 2210"]');
-  assert.equal(await p.textContent('.box[data-id="PHYS 2210"] .gr'), 'B-', 'grade survives untap + tap');
+  assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), '', 'Hypothetical: no grade');
+  await p.click('.box[data-id="ECE 1000"]');
+  await p.click('.box[data-id="ECE 1000"]');
+  assert.equal((await stored(p)).grades[EE]['ECE 1000'], 'B-', 'grade kept through untap + tap');
+  await p.click('#hypSeg button[data-v="actual"]');
+  assert.equal(await p.textContent('.box[data-id="ECE 1000"] .gr'), 'B-', 'Actual shows it');
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });

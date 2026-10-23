@@ -27,6 +27,14 @@ export function normHypo(actual, hypo) {
   return { add: [...new Set(list(hypo?.add))].filter((k) => !actual.has(k)), del: [...new Set(list(hypo?.del))].filter((k) => actual.has(k)) };
 }
 export const hasHypo = (hypo) => !!hypo && (list(hypo.add).length > 0 || list(hypo.del).length > 0);
+/**
+ * The Hypothetical | Actual toggle shows once a tap changed something, or once the student tapped this visit
+ * (so re-selecting a class, which leaves no change, stays in Hypothetical). On Hypothetical the chart is a
+ * sandbox (Tim, 2026-10-22: "if it's hypothetical, none of your personal info should be shown"): no
+ * in-progress look, grades, audit dates, GPA or audit nags; every selected class is plain Taken.
+ */
+export const hypoShown = (hypo, tapped) => hasHypo(hypo) || !!tapped;
+export const sandboxOn = (hypo, tapped, view) => view !== 'actual' && hypoShown(hypo, tapped);
 /** The classes counted in a view: 'actual' = actual only; 'hypo' = actual minus hidden plus tapped. */
 export function viewSet(actual, hypo, view) {
   if (view === 'actual') return new Set(actual);
