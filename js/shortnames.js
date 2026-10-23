@@ -9,7 +9,22 @@ export const shortTitle = (map, title) => (title && map?.[title]) || title || ''
 export function shortJoin(names) {
   const [first, ...rest] = names.filter(Boolean);
   if (!first) return '';
+  // a series: "US History 1" + "US History 2" -> "US History 1 + 2"
+  const stem = (n) => n.replace(/\s+\S+$/, '');
+  if (rest.length && first.includes(' ') && rest.every((n) => stem(n) === stem(first))) {
+    return [first, ...rest.map((n) => n.slice(stem(first).length + 1))].join(' + ');
+  }
   return [first, ...rest.map((n) => (n.startsWith(first + ' ') ? n.slice(first.length + 1) : n))].join(' + ');
+}
+
+// a requirement row's short label (its box and its plan row): data.labels maps the catalog wording
+// ("Complete 24 credits from any ART/ARTH courses ...") to "ART/ARTH elective"; '' there means the wording
+// only says "pick from the list", so the requirement group's name shows instead (data.names shortens it)
+export const NO_NAME = 'Pick from list';
+export function reqName(data, label, groupName = '') {
+  const s = data?.labels?.[label];
+  if (s === '') return groupName ? (data?.names?.[groupName] ?? groupName) : NO_NAME;
+  return s ?? label ?? '';
 }
 
 // the short name a box shows: course box = its title's; option box = a hand name for the whole option

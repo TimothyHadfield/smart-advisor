@@ -1,7 +1,8 @@
 // Builds data/short-titles.json: the short class names the flowchart boxes show ("Calculus III" -> "Calc 3").
 // Run after every program data refresh (fetch-all / build-prereq-courses):  node scripts/build-short-titles.mjs
 //   - collects every class title a flowchart box can show (course + option boxes of every program, both
-//     catalog years, "Needed first" boxes included) exactly as the site builds them
+//     catalog years, "Needed first" boxes and requirement groups' classes included) exactly as the site
+//     builds them; and every requirement row's wording (Gen Ed / elective / "Complete one of the following:")
 //   - hand names in scripts/short-titles-hand.json win; every other title gets the rule-based name
 //     (scripts/lib/short-titles.mjs)
 //   - stores only titles whose short name differs (the box shows the full title otherwise)
@@ -10,7 +11,8 @@ import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
-import { ruleShort, fitsBox } from './lib/short-titles.mjs';
+import { groupNodes, shortName as groupName } from '../js/groups.js';
+import { ruleShort, fitsBox, reqShort, fitsReq } from './lib/short-titles.mjs';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const read = (p) => { try { return JSON.parse(readFileSync(ROOT + p, 'utf8')); } catch { return null; } };
@@ -27,7 +29,9 @@ export function boxTitles() {
       if (!program) continue;
       const model = buildModel(program, extra);
       const courses = { ...(extra.extraCourses || {}), ...(program.courses || {}) };
-      const { nodes } = foldLabs(flowNodes(model), flowEdges(model));
+      const folded = foldLabs(flowNodes(model), flowEdges(model));
+      // the boxes the page draws: chart boxes + the option classes a requirement group shows (js/groups.js)
+      const nodes = groupNodes(model, folded.nodes, folded.edges, []).boxes;
       const list = [];
       for (const n of nodes) {
         if (n.kind === 'course') list.push({ code: n.code, title: n.title || '' });
@@ -41,6 +45,61 @@ export function boxTitles() {
     }
   }
   return out;
+}
+
+// every requirement wording a box or plan row can show (Gen Ed / elective / "Complete one of the following:"
+// rows, a track's own pick lists, a wide group box's catalog line), per program, with the requirement
+// group's name the app shows for a generic one
+export function reqLabels() {
+  const seasons = read('data/seasons.json');
+  const out = new Map(); // program key -> [{ label, name }]
+  for (const [dir, y] of [['data/programs', 'data/'], ['data/2025-2026/programs', 'data/2025-2026/']]) {
+    const extra = { extraCourses: read(y + 'prereq-courses.json'), gened: read(y + 'gened.json'), seasons };
+    for (const f of readdirSync(ROOT + dir)) {
+      if (!f.endsWith('.json') || f.startsWith('_') || f === 'index.json') continue;
+      const program = read(`${dir}/${f}`);
+      if (!program) continue;
+      const model = buildModel(program, extra);
+      const { nodes, edges } = foldLabs(flowNodes(model), flowEdges(model));
+      const grp = groupNodes(model, nodes, edges, []);
+      const nameOf = new Map(grp.groups.filter((g) => g.unit).map((g) => [g.unit.id, g.name]));
+      const list = [];
+      for (const u of model.units) {
+        if (u.kind === 'course') continue;
+        const name = nameOf.get(u.id) ?? groupName(u, program.requirements?.[u.order]?.src);
+        if (u.label) list.push({ label: u.label, name });
+        for (const sb of u.subs || []) if (sb.label) list.push({ label: sb.label, name });
+      }
+      for (const g of grp.groups) if (g.kind === 'wide' && g.text) list.push({ label: g.text, name: g.name });
+      out.set(`${y.replace('data/', '') || 'current/'}${f.replace('.json', '')}`, list);
+    }
+  }
+  return out;
+}
+
+// requirement wording -> short label ('' = the app shows the group's name, itself shortened by names{});
+// hand labels / names win
+export function buildReqLabels(perProgram = reqLabels(), handAll = read('scripts/short-titles-hand.json') || {}) {
+  const hand = handAll.labels || {}, handNames = handAll.names || {};
+  const labels = {}, names = {}, bad = [];
+  let nHand = 0;
+  const flat = [...perProgram.values()].flat();
+  const all = new Set(flat.map((x) => x.label));
+  for (const l of [...all].sort()) {
+    const s = hand[l] ?? reqShort(l);
+    if (hand[l] !== undefined) nHand++;
+    if (s === null || (s !== '' && !fitsReq(s))) { bad.push(`label: ${l} -> ${s}`); continue; }
+    if (s !== l) labels[l] = s;
+  }
+  // the group names a generic label shows
+  const shown = new Set(flat.filter((x) => labels[x.label] === '' && x.name).map((x) => x.name));
+  for (const n of [...shown].sort()) {
+    let s = handNames[n];
+    if (s === undefined) { const r = reqShort(n); s = r || n; }
+    if (!fitsReq(s)) { bad.push(`name: ${n} -> ${s}`); continue; }
+    if (s !== n) names[n] = s;
+  }
+  return { labels, names, bad, counts: { labels: all.size, labelHand: nHand } };
 }
 
 export function buildShortTitles(perProgram = boxTitles(), hand = read('scripts/short-titles-hand.json')?.titles || {}) {
@@ -60,13 +119,18 @@ export function buildShortTitles(perProgram = boxTitles(), hand = read('scripts/
 
 if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const { titles, bad, counts } = buildShortTitles();
+  const req = buildReqLabels();
   const doc = {
     generated: new Date().toISOString().slice(0, 10),
-    about: 'Short class names for the flowchart boxes: full catalog title -> short name (titles not listed are shown in full). Built by scripts/build-short-titles.mjs from the catalog course titles in data/; hand names in scripts/short-titles-hand.json.',
+    about: 'Short names. titles: full catalog class title -> the short name its flowchart box shows. labels: a requirement row\'s catalog wording -> the short label its box and plan row show ("" = the requirement group\'s name). Anything not listed is shown as it is. The class sheet keeps the full wording. Built by scripts/build-short-titles.mjs from data/; hand names in scripts/short-titles-hand.json.',
     ...counts,
+    ...req.counts,
     titles,
+    labels: req.labels,
+    names: req.names,
   };
   writeFileSync(ROOT + 'data/short-titles.json', JSON.stringify(doc, null, 1) + '\n');
-  console.log(`data/short-titles.json: ${counts.titles} box titles (${counts.hand} hand, ${counts.rule} rule, ${counts.unchanged} already short)`);
-  if (bad.length) { console.error(`${bad.length} short names don't fit the box; add hand names:\n` + bad.join('\n')); process.exit(1); }
+  console.log(`data/short-titles.json: ${counts.titles} box titles (${counts.hand} hand, ${counts.rule} rule, ${counts.unchanged} already short); ${req.counts.labels} requirement labels (${req.counts.labelHand} hand)`);
+  const all = [...bad, ...req.bad];
+  if (all.length) { console.error(`${all.length} short names don't fit; add hand names in scripts/short-titles-hand.json:\n` + all.join('\n')); process.exit(1); }
 }

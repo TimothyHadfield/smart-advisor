@@ -8,15 +8,18 @@
 //     measures in WebKit)
 //   - no two different classes in one program get the same short name
 //   - data/short-titles.json is up to date with the program data and the hand names
+//   - requirement rows (Gen Ed / elective / "Complete one of the following:") get short labels that fit
+//     their box and their one-line plan row
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
-import { boxTitles, buildShortTitles } from '../scripts/build-short-titles.mjs';
-import { fitsBox, BOX, ruleShort } from '../scripts/lib/short-titles.mjs';
-import { shortTitle, boxName, shortJoin } from '../js/shortnames.js';
+import { boxTitles, buildShortTitles, reqLabels, buildReqLabels } from '../scripts/build-short-titles.mjs';
+import { fitsBox, BOX, ruleShort, fitsReq, PLAN } from '../scripts/lib/short-titles.mjs';
+import { shortTitle, boxName, shortJoin, reqName, NO_NAME } from '../js/shortnames.js';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
+import { groupNodes } from '../js/groups.js';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const read = (p) => JSON.parse(readFileSync(ROOT + p, 'utf8'));
@@ -73,7 +76,9 @@ test('option boxes with several classes ("A + B") fit too', () => {
     for (const f of readdirSync(ROOT + dir)) {
       if (!f.endsWith('.json') || f.startsWith('_') || f === 'index.json') continue;
       const program = read(`${dir}/${f}`);
-      const { nodes } = foldLabs(flowNodes(buildModel(program, extra)), []);
+      const model = buildModel(program, extra);
+      const fo = foldLabs(flowNodes(model), flowEdges(model));
+      const nodes = groupNodes(model, fo.nodes, fo.edges, []).boxes;
       for (const node of nodes) {
         if (node.kind !== 'option' || (node.codes || []).length < 2) continue;
         n++;
@@ -111,4 +116,50 @@ test('data/short-titles.json is up to date (rerun node scripts/build-short-title
   assert.deepEqual(DATA.titles, titles);
   assert.equal(DATA.hand, counts.hand);
   assert.ok(counts.hand >= 600, `${counts.hand} hand names`);
+  const req = buildReqLabels(REQ);
+  assert.deepEqual(DATA.labels, req.labels);
+  assert.deepEqual(DATA.names, req.names);
+});
+
+// ---------- requirement rows (manager, 2026-10-22: the plan list still cut "Complete 24 credits from any
+// ART/ARTH…", "Complete 12 Credits of Upper…", "Complete one of the following:" with "…") ----------
+const REQ = reqLabels();
+const artRow = (label) => {
+  const x = REQ.get('current/art-design-bs').find((r) => r.label === label);
+  assert.ok(x, `Art and Design BS has "${label}"`);
+  return reqName(DATA, x.label, x.name);
+};
+
+test('requirement rows get short clear labels (Art and Design BS examples)', () => {
+  assert.equal(artRow('Complete 24 credits from any ART/ARTH courses not already taken (see Graduation Requirement 1).'), 'ART/ARTH elective');
+  assert.equal(artRow('Complete 12 Credits of Upper Division ARTH'), 'Upper-div ARTH');
+  assert.equal(artRow('ART Upper Division'), 'Upper-div ART');
+  assert.equal(artRow('Personal, Professional, and Civic Growth'), 'Personal & Civic Growth');
+  assert.equal(artRow('Social/Behavioral Science'), 'Social Science');
+  // a generic "Complete one of the following:" shows its requirement group's name, never the generic words
+  assert.notEqual(artRow('Complete one of the following:'), 'Complete one of the following:');
+  assert.equal(reqName(DATA, 'Complete one of the following:', ''), NO_NAME);
+  assert.equal(reqName(DATA, 'Choose 6 credits', 'Event Management Core'), 'Event Mgmt Core');
+  // wording it doesn't list shows as it is
+  assert.equal(reqName(DATA, 'Elective', ''), 'Elective');
+});
+
+test('every requirement row label fits its box (2 lines) and its plan row (1 line), all programs, both years', () => {
+  const bad = new Set();
+  let n = 0;
+  for (const [prog, list] of REQ) for (const { label, name } of list) {
+    n++;
+    const s = reqName(DATA, label, name);
+    if (!fitsReq(s)) bad.add(`${prog}: ${label.slice(0, 60)} -> ${s}`);
+  }
+  assert.ok(n > 5000, `only ${n} requirement rows found`);
+  assert.deepEqual([...bad], [], 'add hand labels in scripts/short-titles-hand.json (labels / names), then node scripts/build-short-titles.mjs');
+});
+
+test('the plan-row width the label check assumes matches the CSS (12px, one line)', () => {
+  const css = readFileSync(ROOT + 'css/app.css', 'utf8');
+  assert.match(css, /^\.sem li \{[^}]*font-size:\s*12px/m);
+  assert.match(css, /^\.box\.ph b \{[^}]*-webkit-line-clamp:\s*2[^}]*font-size:\s*12\.5px/m);
+  assert.equal(PLAN.fontPx, 12);
+  assert.ok(PLAN.width <= 154, 'the narrowest plan column (393px phone, 2 columns) has about 154px of label');
 });

@@ -123,5 +123,7 @@ export const DATA_SOURCES = [
   // UVU's own flowchart PDFs (shown as their own link under the legend: the PDF is the source)
   { match: /^uvu-flowcharts\.json$/, url: (d) => Object.values(d.programs || {})[0]?.[0]?.source, date: (d) => d.checked,
     records: (d) => Object.entries(d.programs || {}).flatMap(([id, l]) => l.map((c, i) => [`${id}#${i}`, c])), link: (c) => sourceLink('url', { url: c.url, label: c.title }) },
+  // short class names / requirement labels (scripts/build-short-titles.mjs), made from the catalog's own titles
+  { match: /^short-titles\.json$/, url: () => `${CATALOG}/search/`, date: (d) => d.generated },
 ];
 export const sourceFor = (path) => DATA_SOURCES.find((s) => s.match.test(path)) || null;

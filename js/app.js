@@ -2,7 +2,8 @@ import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earli
 import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
-import { groupNodes, placeGroups, groupProgress, groupList } from './groups.js';
+import { groupNodes, placeGroups, groupProgress, groupList, shortName as groupName } from './groups.js';
+import { boxName, reqName } from './shortnames.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
@@ -112,6 +113,7 @@ let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, pr
 let seasonsData = null; // data/seasons.json as loaded (its build date goes on the class sheet's "Offered" link)
 let matric = null; // js/matric.js matricSides: the boxes right of the dotted matriculation line
 let grp = { chart: [], boxes: [], groups: [], grouped: new Set() }; // requirement groups (js/groups.js)
+let shortData = null; // data/short-titles.json: the short names boxes and plan rows show (js/shortnames.js)
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -228,8 +230,10 @@ async function loadPlan() {
   const y = parts[0].year;
   const adv = getJSON(`${DATA}/advisors.json`);
   const ofc = getJSON(`${DATA}/uvu-flowcharts.json`);
+  const sht = shortData ? null : getJSON(`${DATA}/short-titles.json`);
   gened = (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/gened.json`)) || await getJSON(`${DATA}/gened.json`);
   advisors = (await adv)?.programs || null;
+  if (sht) shortData = (await sht) || null;
   const official = officialChart((await ofc)?.programs, parts[0].id, y || catalog.info.current);
   if (gen !== loadGen) return;
   uvuOfficial = official; // Home links it too
@@ -304,6 +308,11 @@ function pickChart(W) {
   graph = chartFor(k, W);
 }
 
+// a requirement row's short label (its box, its plan row); a generic "Complete one of the following:"
+// shows its group's name. The catalog's full wording stays on the class sheet.
+function reqLabel(label, u) {
+  return reqName(shortData, label, u ? groupName(u, model?.program?.requirements?.[u.order]?.src) : '');
+}
 function buildBoxes() {
   const host = $('boxes');
   host.innerHTML = '';
@@ -349,10 +358,15 @@ function buildBoxes() {
     b.className = 'box' + (flex ? ' ph flex' : n.kind === 'option' ? ' flex' : '') + (grp.grouped.has(n.id) ? ' gchip' : '') + (wideText.has(n.id) ? ' gwide' : '');
     b.dataset.id = n.id;
     const labs = n.labs || [];
-    // course code and its name (Gen Ed / elective boxes: their name only; in a group: the full wording)
+    // course code and its short name ("Calc 3"); Gen Ed / elective boxes: their short label ("ART/ARTH
+    // elective"). The full catalog wording stays on the class sheet and is what a screen reader reads.
+    const full = flex ? (wideText.get(n.id) ?? n.label) : n.title;
+    const short = flex ? reqLabel(full, n) : boxName(shortData?.titles, n, model.program.courses);
+    const hidden = short !== full ? `<span class="vh">${esc(full)}</span>` : '';
+    const shown = (t) => (hidden ? ` aria-hidden="true"` : '') + `>${esc(t)}`;
     b.innerHTML = flex
-      ? `<b>${esc(wideText.get(n.id) ?? n.label)}</b>`
-      : `<b>${esc(n.label)}${labs.length ? '<small>+Lab</small>' : ''}</b><i>${esc(n.title)}</i>`;
+      ? `<b${shown(short)}</b>${hidden}`
+      : `<b>${esc(n.label)}${labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
     b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);
@@ -820,7 +834,7 @@ function renderPlan(plan) {
   const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
     <div class="sem${semCls(i)}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
-      `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title, it.offered].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
+      `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title, it.offered].filter(Boolean).join(' · '))}"><span>${esc(it.kind === 'course' ? it.label : reqLabel(it.label, unitOf(it.unitId) || it.unit))}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
 // the plan's milestone rows [{ at, gate }] (Apply, Advanced Standing): the plan screen draws them, Home
