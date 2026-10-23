@@ -318,7 +318,7 @@ function syncURL() {
 // Narrow boxes, wide gaps (about a box wide), more room between rows (Tim, 2026-10-23). A smaller fit
 // only narrows the gaps; lanes stay at least 8 px apart.
 const BASE = { boxH: 48, rowH: 66, near: 8, pad: 12 };
-const FITS = [{ boxW: 100, gapMin: 96, track: 12 }, { boxW: 100, gapMin: 80, track: 12 }, { boxW: 100, gapMin: 64, track: 10 }, { boxW: 100, gapMin: 52, track: 9 }, { boxW: 100, gapMin: 44, track: 8 }];
+const FITS = [{ boxW: 108, gapMin: 96, track: 12 }, { boxW: 108, gapMin: 80, track: 12 }, { boxW: 108, gapMin: 64, track: 10 }, { boxW: 108, gapMin: 52, track: 9 }, { boxW: 108, gapMin: 44, track: 8 }];
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
 const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)
@@ -395,7 +395,7 @@ function buildBoxes() {
     const shown = (t) => (hidden ? ` aria-hidden="true"` : '') + `>${esc(t)}`;
     b.innerHTML = flex
       ? `<b${shown(short)}</b>${hidden}`
-      : `<b>${esc(oc ? oc.code : n.label)}${oc?.more ? `<small>${esc(oc.more)}</small>` : labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
+      : `<b${oc && !oc.more ? ' class="oc"' : ''}>${esc(oc ? oc.code : n.label)}${oc?.more ? `<small>${esc(oc.more)}</small>` : labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
     b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);

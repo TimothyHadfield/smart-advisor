@@ -1,8 +1,8 @@
 // Flowchart line stats for every program, drawn the way the site draws them (labs folded, laptop box size).
-// The site's own pipeline: buildModel with the extra data, foldLabs, matriculation split, flowChart.
+// The site's own pipeline: older catalog years with current prereqs (D28), buildModel with the extra data, foldLabs, matriculation split, flowChart.
 // Run: node scripts/chart-stats.mjs [--no-split] [--out stats.json] [--only ee-bs,ce-bs] [--top 10]
 // Per program: crossings (drawn lines), bends (corners), overlaps (lines on top of each other or < 7 px apart;
-// foreign = of lines that share no box), boxHits,
+// foreign = of lines that share no box; stacked = drawn on top of each other), boxHits,
 // vrows (upright line length in rows), closeV (upright pieces of different lines < 8 px apart sharing height; closeV12 < 12 px),
 // sharedIn / sharedOut (boxes where 2+ arrows end / start at one point),
 // length (px of line), width / height (px), ms (layout time, no cache); with the matriculation line:
@@ -13,9 +13,10 @@ import { fileURLToPath } from 'node:url';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { flowChart, foldLabs, chartStats } from '../js/layout.js';
 import { matricSides } from '../js/matric.js';
+import { forCatalogYear } from '../js/curprereqs.js';
 
 const ROOT = fileURLToPath(new URL('../data/', import.meta.url));
-const SIZES = { boxH: 48, rowH: 66, near: 8, pad: 12, boxW: 100, gapMin: 96, track: 12 }; // js/app.js BASE + FITS[0]
+const SIZES = { boxH: 48, rowH: 66, near: 8, pad: 12, boxW: 108, gapMin: 96, track: 12 }; // js/app.js BASE + FITS[0]
 const NO_SPLIT = process.argv.includes('--no-split'); // the chart without the matriculation line
 const readJSON = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 const SEASONS = readJSON(ROOT + 'seasons.json');
@@ -23,6 +24,15 @@ const EXTRA = {
   current: { extraCourses: readJSON(ROOT + 'prereq-courses.json'), gened: readJSON(ROOT + 'gened.json'), seasons: SEASONS },
   '2025-2026': { extraCourses: readJSON(ROOT + '2025-2026/prereq-courses.json'), gened: readJSON(ROOT + '2025-2026/gened.json'), seasons: SEASONS },
 };
+
+// an older catalog year loads the way the site loads it (D28, js/app.js buildFor): prereqs from the current catalog
+let CUR = null;
+function loadProgram(file) {
+  const program = readJSON(file.path);
+  if (file.year === 'current') return { program, extraCourses: EXTRA.current.extraCourses };
+  CUR ??= { current: readJSON(ROOT + 'courses.json'), currentPC: EXTRA.current.extraCourses };
+  return forCatalogYear(program, { ...CUR, yearPC: EXTRA[file.year].extraCourses });
+}
 
 export function programFiles() {
   const out = [];
@@ -34,8 +44,8 @@ export function programFiles() {
 }
 
 export function statsFor(file, { warm = true } = {}) {
-  const program = readJSON(file.path);
-  const model = buildModel(program, EXTRA[file.year]);
+  const { program, extraCourses } = loadProgram(file);
+  const model = buildModel(program, { ...EXTRA[file.year], extraCourses });
   const F = foldLabs(flowNodes(model), flowEdges(model));
   const sz = { ...SIZES, split: NO_SPLIT ? null : matricSides(F.nodes, F.edges)?.after }; // the dotted matriculation line, as js/app.js
   let t0 = performance.now();
@@ -60,7 +70,7 @@ export function statsFor(file, { warm = true } = {}) {
       if (ay === by && cx === dx && cx > ax && cx < bx && ay > cy && ay < dy) sepCross++;
     }
   }
-  return { crossings: st.crossings, bends: st.bends, edges: st.edges, straight: st.straight, overlaps: st.overlaps.length, foreign: st.foreign, boxHits: st.boxHits.length,
+  return { crossings: st.crossings, bends: st.bends, edges: st.edges, straight: st.straight, overlaps: st.overlaps.length, foreign: st.foreign, stacked: st.stacked, boxHits: st.boxHits.length,
     vrows: +(st.vlen / SIZES.rowH).toFixed(2), closeV: st.closeV, closeV12: st.closeV12, sharedIn: st.sharedIn, sharedOut: st.sharedOut,
     length: Math.round(length), width: Math.round(C.width), height: Math.round(C.height), ms: +ms.toFixed(1), msCold: +msCold.toFixed(1),
     matric: C.split ? 1 : 0, strays: C.split?.strays?.length ?? 0, sepBox, sepCross };
@@ -71,7 +81,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const only = arg('--only')?.split(',');
   const files = programFiles().filter((f) => !only || only.some((o) => f.key.endsWith('/' + o) || f.key === o));
   const per = {};
-  const tot = { crossings: 0, bends: 0, edges: 0, straight: 0, overlaps: 0, foreign: 0, boxHits: 0, vrows: 0, closeV: 0, closeV12: 0, sharedIn: 0, sharedOut: 0, length: 0, ms: 0, matric: 0, strays: 0, sepBox: 0, sepCross: 0 };
+  const tot = { crossings: 0, bends: 0, edges: 0, straight: 0, overlaps: 0, foreign: 0, stacked: 0, boxHits: 0, vrows: 0, closeV: 0, closeV12: 0, sharedIn: 0, sharedOut: 0, length: 0, ms: 0, matric: 0, strays: 0, sepBox: 0, sepCross: 0 };
   let maxMs = 0, maxMsKey = '';
   for (const f of files) {
     const s = statsFor(f);

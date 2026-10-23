@@ -23,9 +23,9 @@ const SEP_DUMMY = 0.34;  // arrow to arrow
 
 // The drawn check: the laptop box size (js/app.js BASE + FITS[0]) and what a drawing costs. A crossing
 // is the worst thing, then lines on top of each other, then corners, then total line length.
-const EVAL = { boxW: 100, boxH: 48, rowH: 66, gapMin: 96, near: 8, pad: 12, track: 12 };
+const EVAL = { boxW: 108, boxH: 48, rowH: 66, gapMin: 96, near: 8, pad: 12, track: 12 };
 // crossings first, then total upright line length, then corners, then uprights that run close together
-const drawnScore = (st, L) => st.crossings * 100 + st.boxHits.length * 200 + st.foreign * 30 + st.overlaps.length * 3 + (st.vlen / EVAL.rowH) * 4 + st.bends * 2 + st.closeV12 * 1 + L.height * 0.1;
+const drawnScore = (st, L) => st.crossings * 100 + st.boxHits.length * 200 + st.foreign * 30 + st.stacked * 100 + st.overlaps.length * 3 + (st.vlen / EVAL.rowH) * 4 + st.bends * 2 + st.closeV12 * 1 + L.height * 0.1;
 
 const GAP = 0.7;      // rows between separate clusters
 const GAP_ROW = 0.9;  // rows between the graph and the row of boxes with no arrows
@@ -602,7 +602,7 @@ export function routeChart(L, o = {}) {
   const roomOf = (n) => Math.max(0, boxH / 2 - inset - ((n - 1) / 2) * spOf(n));
 
   // ---- one full drawing for a given idea of where each line runs (first guess, then the routes found) ----
-  function draw(guess) {
+  function draw(guess, swap = false) {
     // exit order (top to bottom): lines going up (the one that jogs first on top), then level lines, then
     // lines going down (the one that jogs last on top); same jog gap -> by where they end
     const exitKey = (e) => {
@@ -782,6 +782,35 @@ export function routeChart(L, o = {}) {
       }
       if (!again) break;
     }
+    // still too close: swap its point on a box with the next line's there and draw both again (two lines
+    // whose points come in the wrong order can only run on top of each other); kept only if it helps
+    const clashes = (e) => runs.reduce((n, r) => n + (r.g === e.i ? runsClash(r.y, r.x1, r.x2, e.i) : 0), 0);
+    const take = (e) => {
+      const r = [], j = [];
+      for (let k = runs.length - 1; k >= 0; k--) if (runs[k].g === e.i) r.push(...runs.splice(k, 1));
+      for (let k = jogs.length - 1; k >= 0; k--) if (jogs[k].g === e.i) j.push(...jogs.splice(k, 1));
+      return { r, j, route: e.route, ps: e.ps, pt: e.pt };
+    };
+    const give = (e, s) => { runs.push(...s.r); jogs.push(...s.j); e.route = s.route; e.ps = s.ps; e.pt = s.pt; };
+    if (swap) for (const e of seq) {
+      if (!clashes(e)) continue;
+      for (const [k, end] of [['>' + e.to, 'pt'], [e.from + '>', 'ps']]) {
+        const list = order.get(k).slice().sort((p, q) => p[end] - q[end]);
+        const at = list.indexOf(e);
+        let done = false;
+        for (const f of [list[at - 1], list[at + 1]]) {
+          if (!f) continue;
+          const cost = () => clashes(e) * 100 + clashes(f) * 100 + e.route.c + f.route.c; // (clashes counted from both sides)
+          const before = cost();
+          const se = take(e), sf = take(f);
+          [e[end], f[end]] = [f[end], e[end]];
+          plan(e); plan(f);
+          if (cost() < before - 1e-9) { done = true; break; }
+          take(e); take(f); give(e, se); give(f, sf);
+        }
+        if (done) break;
+      }
+    }
     return { jogs, lo, hi };
   }
 
@@ -800,7 +829,9 @@ export function routeChart(L, o = {}) {
       const inside = (v, j) => v > lo(j) && v < hi(j);
       // cost[i][j]: crossings when i's lane is left of j's (j's line from the left crosses i's upright,
       // i's line to the right crosses j's)
-      const cost = list.map((p) => list.map((q) => (p === q ? 0 : (inside(q.y1, p) ? 1 : 0) + (inside(p.y2, q) ? 1 : 0))));
+      // (+5 when p's line leaves at the height q's line came in at: left of q, the two would be drawn on top
+      // of each other between the lanes)
+      const cost = list.map((p) => list.map((q) => (p === q ? 0 : (inside(q.y1, p) ? 1 : 0) + (inside(p.y2, q) ? 1 : 0) + (Math.abs(p.y2 - q.y1) < 1 ? 5 : 0))));
       // groups of uprights whose heights touch (directly or through others): each is ordered on its own
       const comp = new Int32Array(n).fill(-1);
       let nc = 0;
@@ -886,8 +917,8 @@ export function routeChart(L, o = {}) {
     for (const [id, p] of L.pos) m.set(id, { x: colX[p.col], y: Y(p.y) - boxH / 2, w: boxW, h: boxH });
     return m;
   };
-  const score = (s) => s.st.crossings * 100 + s.st.overlaps.length * 60 + s.st.foreign * 60 + s.st.boxHits.length * 200 + (s.st.vlen / rowH) * 4 + s.st.bends * 2 + s.st.closeV12;
-  let best = snap(draw(guess0)), bestS = score(best);
+  const score = (s) => s.st.crossings * 100 + s.st.overlaps.length * 60 + s.st.foreign * 60 + s.st.stacked * 400 + s.st.boxHits.length * 200 + (s.st.vlen / rowH) * 4 + s.st.bends * 2 + s.st.closeV12;
+  let best = snap(draw(guess0)), bestS = score(best), bestG = guess0;
   // more tries: order the points by the routes the last try found; keep the best drawing
   for (let t = 0; t < (o.tries ?? 3); t++) {
     const guess = new Map(E.map((e) => {
@@ -896,6 +927,10 @@ export function routeChart(L, o = {}) {
       return [e.i, { start: e.ps, end: last ? last[2] : e.pt, jog: first ? first[0] : e.b - 1, arrive: last ? last[1] : e.ps }];
     }));
     const next = snap(draw(guess)), sc = score(next);
+    if (sc < bestS - 1e-9) { best = next; bestS = sc; bestG = guess; }
+  }
+  { // the best try once more, now swapping points where lines still run on top of each other
+    const next = snap(draw(bestG, true)), sc = score(next);
     if (sc < bestS - 1e-9) { best = next; bestS = sc; }
   }
   const { edges, colX, gapW, byGap, lanesIn, lo, hi } = best.F;
@@ -1049,13 +1084,13 @@ export function chartStats(chart, near = 7) {
   const list = [...groups.values()];
   let bends = 0, crossings = 0;
   const overlaps = [], boxHits = [];
-  let length = 0, foreign = 0; // foreign: overlaps of lines that share no box (they could be misread)
+  let length = 0, foreign = 0, stacked = 0; // foreign: overlaps of lines that share no box (they could be misread); stacked: drawn on top of each other (read as one line)
   for (const G of list) { bends += G.corners.size; for (const s of G.segs) length += s.b - s.a; }
   for (let i = 0; i < list.length; i++) for (let j = i + 1; j < list.length; j++) {
     const kin = [...list[i].ends].some((x) => list[j].ends.has(x));
     for (const p of list[i].segs) for (const q of list[j].segs) {
       if (p.h === q.h) {
-        if (Math.abs(p.c - q.c) < near && Math.min(p.b, q.b) - Math.max(p.a, q.a) > 1) { overlaps.push(`${list[i].name} / ${list[j].name} at ${p.h ? 'y' : 'x'}=${Math.round(p.c)}`); if (!kin) foreign++; }
+        if (Math.abs(p.c - q.c) < near && Math.min(p.b, q.b) - Math.max(p.a, q.a) > 1) { overlaps.push(`${list[i].name} / ${list[j].name} at ${p.h ? 'y' : 'x'}=${Math.round(p.c)}`); if (!kin) foreign++; if (Math.abs(p.c - q.c) < 1) stacked++; }
       } else {
         const [hz, vt] = p.h ? [p, q] : [q, p];
         if (vt.c > hz.a + 0.5 && vt.c < hz.b - 0.5 && hz.c > vt.a + 0.5 && hz.c < vt.b - 0.5) crossings++;
@@ -1085,7 +1120,7 @@ export function chartStats(chart, near = 7) {
     return new Set([...m].filter(([, n]) => n > 1).map(([k]) => k.split('@')[0])).size;
   };
   const sharedIn = ends((p) => p[p.length - 1], (e) => e.to), sharedOut = ends((p) => p[0], (e) => e.from);
-  return { edges: chart.edges.length, lines: list.length, bends, pathBends, straight, crossings, overlaps, foreign, boxHits, length: Math.round(length), vlen: Math.round(vlen), closeV, closeV12, sharedIn, sharedOut };
+  return { edges: chart.edges.length, lines: list.length, bends, pathBends, straight, crossings, overlaps, foreign, stacked, boxHits, length: Math.round(length), vlen: Math.round(vlen), closeV, closeV12, sharedIn, sharedOut };
 }
 
 // Straight arrows (Brandes-Koepf style). Between each pair of neighbouring columns pick the largest set of

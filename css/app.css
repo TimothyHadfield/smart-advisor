@@ -142,7 +142,7 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .box i { max-width: 100%; font-style: normal; font-size: 12px; line-height: 14px; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
 /* the narrowest boxes (laptop fits the chart with 100-104 px boxes): code + "+Lab" still fit on one line */
 .box { container-type: inline-size; }
-@container (max-width: 104px) { .box b:has(small) { font-size: 12px; letter-spacing: -.02em; } .box b small { font-size: 10px; margin-left: 2px; } }
+@container (max-width: 104px) { .box b:has(small), .box b.oc { font-size: 12px; letter-spacing: -.02em; } .box b small { font-size: 10px; margin-left: 2px; } }
 /* the full class name for screen readers (the box shows the short one) */
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .box.ph b { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 12.5px; line-height: 1.15; }
