@@ -62,11 +62,24 @@ for (const laptop of [false, true]) {
     assert.equal(await p.$$eval('#homePanel a', (as) => as.length), 0, 'no links');
     assert.equal(await p.$('#homePanel .hm-bar, #hmCredits, #hmNotes'), null, 'no credits bar');
     for (const k of ['Next', 'Now', 'Gen Ed', 'Admission']) assert.ok(!row(k), `no ${k}`);
-    // the ways in: Flowchart, Schedule, Plan, Profile rows, each in view; the gear in the top right
-    for (const go of ['flow', 'sched', 'plan', 'profile']) assert.ok(await visible(p, `#hmGo [data-go="${go}"]`), go);
+    // Tim, 2026-10-23: "Make the actual sections large clickable boxes with big font ... plan is in the flowchart
+    // section, so remove that as a section box ... Instead of having a profile box, just put a little profile
+    // circle in the top right": two big boxes (Flowchart, Schedule), each in view; the gear and the circle top right
+    assert.deepEqual(await p.$$eval('#hmGo [data-go]', (bs) => bs.map((b) => b.dataset.go)), ['flow', 'sched']);
+    for (const go of ['flow', 'sched']) assert.ok(await visible(p, `#hmGo [data-go="${go}"]`), go);
+    const box = await p.$eval('#hmGo [data-go="flow"]', (b) => ({ h: b.getBoundingClientRect().height, f: parseFloat(getComputedStyle(b.querySelector('b')).fontSize), ta: getComputedStyle(b).textAlign }));
+    assert.ok(box.h >= 120 && box.f >= 22 && box.ta === 'center', `large box, big centered text ${JSON.stringify(box)}`);
+    // the facts: centered, not boxes
+    const fact = await p.$eval('#hmGpa', (d) => { const cs = getComputedStyle(d.parentElement); return { ta: cs.textAlign, bg: cs.backgroundColor, sh: cs.boxShadow }; });
+    assert.ok(fact.ta === 'center' && /rgba\(0, 0, 0, 0\)|transparent/.test(fact.bg) && fact.sh === 'none', JSON.stringify(fact));
     assert.equal(await p.$('#hmGo [data-go="settings"]'), null, 'no Settings row (the gear)');
     const g = await p.$eval('#gear', (e) => { const r = e.getBoundingClientRect(); return { x: r.right, y: r.top, w: innerWidth }; });
     assert.ok(g.w - g.x < 24 && g.y < 70, `gear top right ${JSON.stringify(g)}`);
+    const c = await p.$eval('#profile', (e) => { const r = e.getBoundingClientRect(); return { x: r.right, y: r.top, w: r.width, W: innerWidth }; });
+    assert.ok(c.W - c.x < 80 && c.y < 70 && c.w <= 44, `profile circle top right, small ${JSON.stringify(c)}`);
+    // Tim, 2026-10-23: "people don't even know it's for UVU only": what the site is, in view
+    assert.match(await p.textContent('#hmBrand'), /Smart Advisor.*Unofficial.*Utah Valley University/);
+    assert.ok(await visible(p, '#hmBrand'));
     const m = await fits(p);
     assert.ok(m.sh <= m.h && m.sw <= m.w && m.ph <= m.pc + 1, `Home fits without scrolling ${JSON.stringify(m)}`);
     assert.deepEqual(p.errors, []);
@@ -88,8 +101,10 @@ test('each section is its own screen: back arrow (top left) returns Home; so doe
   await p.click('#back');
   await p.waitForSelector('#main[data-tab="home"]');
   assert.ok(await visible(p, '#homePanel'));
-  for (const [go, title] of [['sched', 'Schedule'], ['plan', 'Plan'], ['profile', 'Profile']]) {
-    await p.click(`#hmGo [data-go="${go}"]`);
+  for (const [go, title] of [['sched', 'Schedule'], ['plan', 'Flowchart']]) {
+    // the plan: the Flowchart's Plan view on a phone (Chart | Plan in the header)
+    if (go === 'plan') { await p.click('#hmGo [data-go="flow"]'); await p.waitForSelector('#main[data-tab="flow"]'); await p.click('#fpSeg [data-v="plan"]'); }
+    else await p.click(`#hmGo [data-go="${go}"]`);
     await p.waitForSelector(`#main[data-tab="${go}"]`);
     assert.equal(await p.textContent('#ttl'), title);
     // steps inside a section (the plan's Classes view): the arrow still goes straight Home
@@ -144,33 +159,30 @@ test('first visit, signed out: greeting + Pick your major, which opens the picke
   await p.context().close();
 });
 
-// Tim, 2026-10-23: "allow the user to change their displayed name in the Profile section. Also automatically
-// capitalize their first/last name if given."
-test('Profile: the displayed name can be changed, each word capitalized (own capitals kept); Home shows it, saved', async () => {
-  const p = await page(ALEX);
-  await p.goto(APP);
-  await p.click('#hmGo [data-go="profile"]');
-  await p.waitForSelector('#pfName', { state: 'visible' });
-  await p.waitForFunction(() => /Electrical Engineering/.test(document.querySelector('#pfProgs').textContent));
-  await p.fill('#pfName', '  ronald  mcDonald-smith ');
-  await p.press('#pfName', 'Enter');
-  assert.equal(await p.inputValue('#pfName'), 'Ronald McDonald-Smith');
-  await p.click('#back');
-  await p.waitForSelector('#main[data-tab="home"]');
-  assert.equal(await p.textContent('#hmName'), 'Ronald McDonald-Smith');
-  assert.equal((await p.evaluate((k) => JSON.parse(localStorage.getItem(k)), KEY)).settings.name, 'Ronald McDonald-Smith');
-  await p.reload();
-  await p.waitForSelector('#hmFacts .hm-prog');
-  assert.equal(await p.textContent('#hmName'), 'Ronald McDonald-Smith', 'kept after a reload');
-  // emptied: back to the account's name (signed out: none, so Welcome)
-  await p.click('#hmGo [data-go="profile"]');
-  await p.fill('#pfName', '');
-  await p.press('#pfName', 'Enter');
-  await p.click('#back');
-  await p.waitForSelector('#main[data-tab="home"]');
-  assert.equal(await p.textContent('#hmName'), 'Welcome');
-  assert.deepEqual(p.errors, []);
-  await p.context().close();
+// Tim, 2026-10-23: "just put a little profile circle in the top right that says "sign in" and "create an account""
+test('signed out: the profile circle opens a small menu with Sign in and Create an account; outside tap / Esc closes it', async () => {
+  for (const laptop of [false, true]) {
+    const p = await page(ALEX, { laptop });
+    await p.goto(APP);
+    await p.waitForSelector('#hmFacts .hm-prog');
+    await p.click('#profile');
+    await p.waitForSelector('#pfDlg[open]');
+    assert.ok(await visible(p, '#acctGoogle') && await visible(p, '#acctCreate'));
+    assert.match(await p.textContent('#acctOut'), /Sign[- ]in[\s\S]*Create an account/); // (Firebase is blocked here: "Sign-in unavailable offline")
+    assert.equal(await visible(p, '#acctIn'), false);
+    // under the circle, inside the screen
+    const r = await p.$eval('#pfDlg', (d) => { const b = d.getBoundingClientRect(); return { l: b.left, r: b.right, t: b.top, w: innerWidth }; });
+    assert.ok(r.l >= 0 && r.r <= r.w && r.t < 80, JSON.stringify(r));
+    await p.keyboard.press('Escape');
+    await p.waitForSelector('#pfDlg:not([open])', { state: 'attached' });
+    await p.click('#profile');
+    await p.waitForSelector('#pfDlg[open]');
+    await p.mouse.click(20, 600);
+    await p.waitForSelector('#pfDlg:not([open])', { state: 'attached' });
+    assert.equal(await tab(p), 'home');
+    assert.deepEqual(p.errors, []);
+    await p.context().close();
+  }
 });
 
 // signed in (emulator only): the account's name is the big line on Home
@@ -184,5 +196,16 @@ test('signed in: Home shows the account name', { skip: !emu && 'emulators not ru
   assert.equal(await tab(p), 'home');
   assert.match(await p.textContent('#homePanel'), /Electrical Engineering, B\.S\./);
   assert.doesNotMatch(await p.textContent('#hmName'), /Welcome/);
+  // the circle shows the initial; its menu changes the displayed name, each word capitalized (own capitals kept)
+  // (Tim, 2026-10-23: "allow the user to change their displayed name ... automatically capitalize")
+  assert.equal(await p.textContent('#pfInit'), 'A');
+  await p.click('#profile');
+  await p.waitForSelector('#pfName', { state: 'visible' });
+  await p.fill('#pfName', '  ronald  mcDonald-smith ');
+  await p.press('#pfName', 'Enter');
+  assert.equal(await p.inputValue('#pfName'), 'Ronald McDonald-Smith');
+  await p.keyboard.press('Escape');
+  await p.waitForFunction(() => document.querySelector('#hmName').textContent === 'Ronald McDonald-Smith');
+  assert.equal(await p.textContent('#pfInit'), 'R');
   await p.context().close();
 });

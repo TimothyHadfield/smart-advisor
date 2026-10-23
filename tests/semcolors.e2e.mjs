@@ -88,10 +88,15 @@ test('Semester colors: on by default, off removes semester colours, persists acr
 });
 
 // sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+// (2026-10-23: no Plan or Profile box on Home. The plan is the Flowchart's "Plan" view on a phone (the Chart | Plan
+// switch) and sits beside the chart on a laptop; the profile is the circle's menu, top right)
 async function goTab(p, tab) {
   if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
-  await p.click(`#hmGo [data-go="${tab}"]`);
-  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+  if (tab === 'profile') { await p.click('#profile'); await p.waitForSelector('#pfDlg[open]'); return; }
+  const go = tab === 'plan' ? 'flow' : tab;
+  await p.click(`#hmGo [data-go="${go}"]`);
+  await p.waitForSelector(`#main[data-tab="${go}"]`);
+  if (tab === 'plan' && await p.isVisible('#fpSeg')) { await p.click('#fpSeg [data-v="plan"]'); await p.waitForSelector('#main[data-tab="plan"]'); }
 }
 // the gear (site settings) lives on Home
 async function openGear(p) {

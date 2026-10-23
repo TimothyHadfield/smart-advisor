@@ -228,8 +228,9 @@ function render() {
   $('acctOut').hidden = signedIn;
   $('acctIn').hidden = !signedIn;
   $('acctSignOut').hidden = !signedIn;
-  $('acctGoogle').disabled = !fb;
-  $('acctGoogle').textContent = fb || !failed ? 'Continue with Google' : 'Sign-in unavailable offline';
+  // Sign in and Create an account are the same Google sign-in (a new Google sign-in makes the account)
+  $('acctGoogle').disabled = $('acctCreate').disabled = !fb;
+  $('acctGoogle').textContent = fb || !failed ? 'Sign in' : 'Sign-in unavailable offline';
   if (signedIn) {
     $('acctName').textContent = user.displayName || '';
     $('acctEmail').textContent = user.email || '';
@@ -239,13 +240,14 @@ function render() {
   }
 }
 
-// the account part of the Profile screen (Home's Profile row opens it): fresh each time it opens
+// the account part of the profile circle's menu (Home, top right): fresh each time it opens
 function wireSheet() {
   $('profile').addEventListener('click', () => {
-    msg(''); armDelete(false); $('acctMore').setAttribute('aria-expanded', 'false'); $('acctSettings').hidden = true; $('acctTipText').hidden = true;
+    msg(''); armDelete(false); $('acctMore').setAttribute('aria-expanded', 'false'); $('acctSettings').hidden = true;
     render();
   });
   $('acctGoogle').addEventListener('click', signIn);
+  $('acctCreate').addEventListener('click', signIn);
   $('acctSignOut').addEventListener('click', signOut);
   $('acctMore').addEventListener('click', () => {
     const open = $('acctSettings').hidden;
@@ -254,5 +256,4 @@ function wireSheet() {
     armDelete(false);
   });
   $('acctDelete').addEventListener('click', () => { if ($('acctDelete').dataset.armed) deleteAccount(); else armDelete(true); });
-  $('acctTip').addEventListener('click', () => { $('acctTipText').hidden = !$('acctTipText').hidden; });
 }

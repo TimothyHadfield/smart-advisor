@@ -54,7 +54,7 @@ for (const year of ['2025-2026', null]) {
   });
 }
 
-test('EE BS 2025-26: the class sheet\'s Before line for ECE 4900 names ECE 4730 and links the current catalog', async () => {
+test('EE BS 2025-26: the class sheet\'s Needs row for ECE 4900 names ECE 4730 and links the current catalog', async () => {
   const p = await open('electrical-engineering-bs', '2025-2026');
   const r = await p.evaluate(async () => {
     const box = document.querySelector('#boxes .box[data-id="ECE 4900"]');
@@ -62,10 +62,13 @@ test('EE BS 2025-26: the class sheet\'s Before line for ECE 4900 names ECE 4730 
     document.querySelector('li[data-unit="ECE 4900"]')?.click();
     await new Promise((res) => setTimeout(res, 300));
     const facts = [...document.querySelectorAll('#clsFacts dt')].map((dt) => [dt.textContent, dt.nextElementSibling?.textContent || '', dt.nextElementSibling?.querySelector('a')?.getAttribute('href') || '']);
-    return { box: !!box, facts };
+    // (2026-10-23: the sources are one small line under the rows; prerequisites link today's catalog)
+    const src = [...document.querySelectorAll('#clsSrc a')].map((a) => [a.textContent, a.getAttribute('href')]);
+    return { box: !!box, facts, src };
   });
-  const before = r.facts.find(([k]) => k === 'Before');
-  assert.ok(before && /ECE 4730/.test(before[1]), JSON.stringify(r.facts));
-  assert.ok(before[2] && !/archives/.test(before[2]), `Before links ${before[2]}`);
+  const needs = r.facts.find(([k]) => k === 'Needs');
+  assert.ok(needs && /ECE 4730/.test(needs[1]), JSON.stringify(r.facts));
+  const pre = r.src.find(([t]) => /Prerequisites/.test(t));
+  assert.ok(pre && !/archives/.test(pre[1]), `prerequisites link ${JSON.stringify(r.src)}`);
   await p.context().close();
 });

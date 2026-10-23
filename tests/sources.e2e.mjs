@@ -42,7 +42,7 @@ test('plan: catalog requirements + sample plan links with the checked date', asy
   await p.context().close();
 });
 
-test('class sheet: catalog course entry on Before, requirement links on Why, a dated source line', async () => {
+test('class sheet: one dated source line with the catalog course entry and the program requirements', async () => {
   const p = await page(EE);
   await p.goto(APP + '?p=electrical-engineering-bs');
   await p.waitForSelector('.box[data-id="ECE 2250"]');
@@ -50,10 +50,9 @@ test('class sheet: catalog course entry on Before, requirement links on Why, a d
   await p.waitForSelector('#clsDlg[open]');
   const COURSE = 'https://catalog.uvu.edu/search/?P=ECE%202250';
   assert.equal(await p.getAttribute('#clsCat', 'href'), COURSE);
-  const rows = await p.$$eval('#clsFacts dt', (ds) => ds.map((d) => [d.textContent, d.nextElementSibling.querySelector('a.src')?.getAttribute('href') || null]));
-  assert.ok(rows.some(([k, h]) => k === 'Before' && h === COURSE), JSON.stringify(rows));
-  assert.ok(rows.some(([k, h]) => k === 'Why' && h === EE_URL + '#requirementstextcontainer'), JSON.stringify(rows));
+  // (2026-10-23: the links are grouped in one small line at the bottom, not on each row)
   const src = await links(p, '#clsSrc a');
+  assert.ok(src.some((l) => l.href === COURSE && l.target === '_blank'), JSON.stringify(src));
   assert.ok(src.some((l) => l.href === EE_URL + '#requirementstextcontainer' && l.target === '_blank'), JSON.stringify(src));
   assert.match(await p.textContent('#clsSrc'), /checked Oct \d+/);
   assert.deepEqual(p.errors, []);
@@ -114,10 +113,15 @@ test('Gen Ed list: links to the catalog Gen Ed page', async () => {
 });
 
 // sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+// (2026-10-23: no Plan or Profile box on Home. The plan is the Flowchart's "Plan" view on a phone (the Chart | Plan
+// switch) and sits beside the chart on a laptop; the profile is the circle's menu, top right)
 async function goTab(p, tab) {
   if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
-  await p.click(`#hmGo [data-go="${tab}"]`);
-  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+  if (tab === 'profile') { await p.click('#profile'); await p.waitForSelector('#pfDlg[open]'); return; }
+  const go = tab === 'plan' ? 'flow' : tab;
+  await p.click(`#hmGo [data-go="${go}"]`);
+  await p.waitForSelector(`#main[data-tab="${go}"]`);
+  if (tab === 'plan' && await p.isVisible('#fpSeg')) { await p.click('#fpSeg [data-v="plan"]'); await p.waitForSelector('#main[data-tab="plan"]'); }
 }
 // the gear (site settings) lives on Home
 async function openGear(p) {

@@ -12,18 +12,19 @@
 <header class="top" id="top">
   <button type="button" class="icon back" id="back" aria-label="Back" title="Back"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 4.5 7.5 12l7.5 7.5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
   <h1 class="ttl" id="ttl"></h1>
+  <div class="seg fp-seg" id="fpSeg" role="group" aria-label="Show"><button type="button" data-v="flow" class="on">Chart</button><button type="button" data-v="plan">Plan</button></div>
 </header>
 <main id="main" data-tab="home">
   <section class="panel home" id="homePanel" aria-label="Home">
+    <button type="button" class="pf-circle" id="profile" aria-label="Account" title="Account" aria-haspopup="dialog"><svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8.4" r="3.9"/><path d="M4.6 20.4c.9-3.9 3.8-5.9 7.4-5.9s6.5 2 7.4 5.9"/></g></svg><b id="pfInit"></b></button>
     <button class="icon gear" id="gear" aria-label="Settings" title="Settings"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor"><circle cx="12" cy="12" r="5.6" stroke-width="2.6"/><path stroke-width="3.4" d="M12 2.6v4M12 17.4v4M2.6 12h4M17.4 12h4M5.35 5.35l2.8 2.8M15.85 15.85l2.8 2.8M5.35 18.65l2.8-2.8M15.85 8.15l2.8-2.8"/></g></svg></button>
     <div class="hm">
+      <p class="hm-brand" id="hmBrand" data-nogloss><b>Smart Advisor</b><span>Unofficial degree-planning helper for Utah Valley University students</span></p>
       <h1 class="hm-name" id="hmName">Welcome</h1>
       <dl class="hm-list" id="hmFacts"></dl>
       <nav class="hm-go" id="hmGo" aria-label="Open">
-        <button type="button" data-go="flow"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="14.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="8.5" y="15.5" width="7" height="5" rx="1.2"/><path d="M6 8.5v3.5h6v3.5M18 8.5v3.5h-6"/></g></svg><b>Flowchart</b><span id="hmGoFlow"></span></button>
-        <button type="button" data-go="sched"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M7 13h4v3.5H7z" fill="currentColor" stroke="none"/></g></svg><b>Schedule</b><span id="hmGoSched"></span></button>
-        <button type="button" data-go="plan"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M4 5.5h16M4 12h16M4 18.5h10"/><circle cx="19" cy="18.5" r="1.2" fill="currentColor" stroke="none"/></g></svg><b>Plan</b><span id="hmGoPlan"></span></button>
-        <button type="button" data-go="profile" id="profile"><svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.9"><circle cx="12" cy="8.2" r="4.2"/><path d="M3.8 21c.9-4.4 4.2-6.6 8.2-6.6s7.3 2.2 8.2 6.6"/></g></svg><b>Profile</b><span id="hmGoProfile"></span></button>
+        <button type="button" data-go="flow"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="2.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="14.5" y="3.5" width="7" height="5" rx="1.2"/><rect x="8.5" y="15.5" width="7" height="5" rx="1.2"/><path d="M6 8.5v3.5h6v3.5M18 8.5v3.5h-6"/></g></svg><b>Flowchart</b><span id="hmGoFlow"></span></button>
+        <button type="button" data-go="sched"><svg viewBox="0 0 24 24" width="30" height="30" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"><rect x="3" y="4.5" width="18" height="16" rx="2"/><path d="M3 9.5h18M8 2.5v4M16 2.5v4"/><path d="M7 13h4v3.5H7z" fill="currentColor" stroke="none"/></g></svg><b>Schedule</b><span id="hmGoSched"></span></button>
       </nav>
     </div>
   </section>
@@ -69,28 +70,28 @@
       <ul class="sc-list" id="scList"></ul>
     </div>
   </section>
-  <section class="panel page" id="profilePanel" aria-label="Profile">
-    <div class="pg">
+</main>
+<!-- the profile circle's menu (Home, top right): signed out = Sign in / Create an account (both Google);
+     signed in = name, programs, account -->
+<dialog id="pfDlg" class="pf-menu" aria-label="Account">
+  <div class="acct" id="acct">
+    <div id="acctOut" class="acct-out">
+      <button type="button" id="acctGoogle" class="ok wide" disabled>Sign in</button>
+      <button type="button" id="acctCreate" class="ghost wide" disabled>Create an account</button>
+      <p class="pf-note">With your Google account</p>
+    </div>
+    <div id="acctIn" class="acct-in" hidden>
+      <div class="who"><b id="acctName"></b><span id="acctEmail"></span></div>
       <label class="pg-row">Name <input type="text" id="pfName" autocomplete="name" autocapitalize="words" spellcheck="false" maxlength="60" placeholder="Your name"></label>
       <button type="button" class="pg-row pg-btn" data-pick><span>Programs</span><b id="pfProgs"></b></button>
-      <div class="acct" id="acct">
-        <div class="imp-head"><b>Account</b><button type="button" class="tip" id="acctTip" aria-label="Why">?</button>
-          <p class="tiptext" id="acctTipText" hidden>Your classes and settings follow you to any device.</p></div>
-        <div id="acctOut">
-          <button type="button" id="acctGoogle" class="ok wide" disabled>Continue with Google</button>
-        </div>
-        <div id="acctIn" class="acct-in" hidden>
-          <div class="who"><b id="acctName"></b><span id="acctEmail"></span></div>
-          <div class="sync" id="acctSync"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg><span id="acctSyncText"></span></div>
-          <button type="button" id="acctMore" class="ghost wide" aria-expanded="false">Account settings</button>
-          <div id="acctSettings" hidden><button type="button" id="acctDelete" class="danger wide">Delete account</button></div>
-          <button type="button" id="acctSignOut" class="ghost wide" hidden>Sign out</button>
-        </div>
-        <p class="acct-msg" id="acctMsg"></p>
-      </div>
+      <div class="sync" id="acctSync"><svg viewBox="0 0 24 24" width="16" height="16" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M7 18.5h10.5a4 4 0 0 0 .6-7.95A6 6 0 0 0 6.6 9.1 4.7 4.7 0 0 0 7 18.5z"/></svg><span id="acctSyncText"></span></div>
+      <button type="button" id="acctMore" class="ghost wide" aria-expanded="false">Account settings</button>
+      <div id="acctSettings" hidden><button type="button" id="acctDelete" class="danger wide">Delete account</button></div>
+      <button type="button" id="acctSignOut" class="ghost wide" hidden>Sign out</button>
     </div>
-  </section>
-</main>
+    <p class="acct-msg" id="acctMsg"></p>
+  </div>
+</dialog>
 <dialog id="settings">
   <form method="dialog">
     <label>Start <select id="setStart"></select></label>
@@ -187,11 +188,12 @@
 </dialog>
 <dialog id="clsDlg" class="cls">
   <form method="dialog">
-    <div class="sec-head"><b id="clsCode"></b><span id="clsTitle"></span></div>
+    <div class="cls-head"><p><b id="clsCode"></b><span id="clsShort"></span></p><span id="clsTitle"></span></div>
     <dl class="cls-facts" id="clsFacts"></dl>
-    <p class="src" id="clsSrc"></p>
     <label class="sw-row" id="clsTakenRow">Taken <input type="checkbox" id="clsTaken" role="switch"></label>
     <div class="cls-grades" id="clsGrades"></div>
+    <details class="cls-raw" id="clsRaw"><summary>Catalog text</summary><dl id="clsRawList"></dl></details>
+    <p class="src" id="clsSrc"></p>
     <div class="row"><a id="clsReport" class="ghost" target="_blank" rel="noopener">Report a mistake</a><span class="cls-r"><a id="clsCat" class="cls-cat" target="_blank" rel="noopener">Catalog ↗</a><button value="ok" class="ok">Done</button></span></div>
   </form>
 </dialog>
@@ -212,7 +214,7 @@
     <div class="ed-form" id="edForm" hidden>
       <div class="sec-head"><b id="edCode"></b><span id="edTitle"></span></div>
       <div class="seg" id="edSeg"><button type="button" data-s="taken" class="on">Taken</button><button type="button" data-s="ip">Current</button></div>
-      <label id="edGradeRow">Grade <select id="edGrade"></select></label>
+      <label id="edGradeRow">Grade <select id="edGrade"></select><span id="edLock" hidden></span></label>
     </div>
     <div class="row"><button type="button" id="edRemove" class="ghost" hidden>Remove</button><span></span><button type="button" id="edSave" class="ok">Done</button></div>
   </form>

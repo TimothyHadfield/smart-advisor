@@ -18,6 +18,9 @@ import { viewSet, hypoFrom, normHypo, boxGrade, gpa, classGroups, geBoxFor, stat
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
 import { startTab, programProgress, gradMonth, capName, displayName, catalogShort } from './home.js';
+import { needTree, gatePhrases, isAlternative, unlocksOf, statusText, offeredText } from './clsinfo.js';
+import { initGlossary } from './glossary.js';
+import { seasonTable } from './rules.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -68,7 +71,7 @@ const NAV0 = history.state;
 let who = null;
 // accounts (js/account.js): the account's copy replaces this device's; signing out clears it
 const account = initAccount({
-  user: (u) => { who = u; queueMicrotask(() => { renderHome(); if ($('main').dataset.tab === 'profile') fillProfile(); }); },
+  user: (u) => { who = u; queueMicrotask(() => { renderHome(); fillProfile(); }); },
   local: () => toDoc(state, major()),
   apply: (doc) => {
     const was = planSig();
@@ -125,6 +128,15 @@ const tapSet = () => doneSet();
 function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new Set(set), state.settings.hypo?.[major()])); save(); }
 const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
 const gradeMap = () => (state.grades[major()] ??= {});
+// a grade that came from the imported audit is locked (Tim, 2026-10-23: "If their transcript says they got a grade in
+// a class they've taken, make sure it keeps that grade locked for that class so the user can't change it at all").
+// '' = not locked: no grade, in progress, or set by the student. A newer audit replaces it (the import sets it).
+function lockedGrade(key) {
+  const g = key ? state.grades[major()]?.[key] : '';
+  return g && g !== 'IP' && state.settings.src?.[major()]?.[key] === 'audit' ? g : '';
+}
+const LOCK_SVG = '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="7" width="10" height="7.5" rx="1.5" fill="currentColor"/></svg>';
+const lockHTML = (g) => ` <span class="glock"><b>${esc(g)}</b> ${LOCK_SVG} <small>from audit</small></span>`;
 
 let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null, uvuOfficial = null;
 let seasonsData = null; // data/seasons.json as loaded (its build date goes on the class sheet's "Offered" link)
@@ -197,7 +209,8 @@ async function boot() {
   new ResizeObserver(() => layout()).observe($('chart'));
   $('gradesOn').checked = !!state.settings.grades;
   $('gradesOn').addEventListener('change', (e) => { state.settings.grades = e.target.checked; save(); refresh(); });
-  if (tabNow() === 'profile') fillProfile();
+  fillProfile();
+  wireGlossary();
   await loadCatalog();
   if (LINK) {
     const ids = programsFromLink(state.plan.programs, LINK, (id) => (entry(id) ? programGroup(entry(id)) : ''));
@@ -270,7 +283,7 @@ async function loadPlan() {
   $('uvuChart').hidden = !official;
   if (official) { const a = $('uvuChart').firstElementChild; a.href = official.url; a.textContent = `${official.label} ↗`; }
   progParts = parts;
-  if (tabNow() === 'profile') fillProfile();
+  fillProfile();
   syncURL();
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
@@ -413,6 +426,7 @@ function buildBoxes() {
     b.addEventListener('click', (e) => {
       if (pressed.fired) { pressed.fired = false; return; } // a long press opened the class sheet
       // Explore: a tap tries the class as taken (or not); otherwise a tap opens its details
+      // (the class stays picked out, its lines lit, while its details are open: setSel in openClass)
       if (e.target.closest('.gl')) openGenEd(n); else if (exploring()) toggle(n, b); else { setHover(null); openClass({ node: n }); }
     });
     longPress(b, () => { setHover(null); openClass({ node: n }); });
@@ -451,6 +465,7 @@ function buildBoxes() {
   mat.addEventListener('click', openMatric);
   host.appendChild(mat);
   hoverId = null;
+  selId = null;
 }
 
 // ---------- hover: a box's own lines in two colours (into it = its prerequisites, out of it = the
@@ -458,15 +473,26 @@ function buildBoxes() {
 // never wider than it so it covers no lines. js/hover.js has the pure parts.
 let hoverId = null;
 function setHover(id) { hoverId = id; drawHover(); }
+// the class whose details are open (Tim, 2026-10-23: "Make sure it stays highlighted even after clicking on
+// it"): drawn like a hover until another class opens, the details close, or a tap lands on empty chart.
+// A hover on another box still previews that one; leaving it brings the selection back.
+let selId = null;
+function setSel(id) {
+  selId = id || null;
+  for (const b of $('boxes').querySelectorAll('.box.sel')) b.classList.remove('sel');
+  if (selId) $('boxes').querySelector(`.box[data-id="${CSS.escape(selId)}"]`)?.classList.add('sel');
+  drawHover();
+}
 function drawHover() {
   const svg = $('edges'), hint = $('hint');
   svg.querySelector('g.hl')?.remove();
-  const el = hoverId && $('boxes').querySelector(`.box[data-id="${CSS.escape(hoverId)}"]`);
+  const showId = hoverId || selId;
+  const el = showId && $('boxes').querySelector(`.box[data-id="${CSS.escape(showId)}"]`);
   svg.classList.toggle('hov', !!el);
   if (!hint) return;
   if (!el || !graph) { hint.hidden = true; return; }
   const paths = svg.querySelectorAll('path[data-from]');
-  const { pre, post } = edgeRoles(graph.edges, hoverId);
+  const { pre, post } = edgeRoles(graph.edges, showId);
   const g = document.createElementNS('http://www.w3.org/2000/svg', 'g');
   g.setAttribute('class', 'hl');
   for (const [list, kind] of [[pre, 'pre'], [post, 'post']]) {
@@ -753,7 +779,7 @@ function refresh() {
   // audits imported before 2026-10-18 kept no semesters (nothing saved holds them): ask for a re-upload.
   // An import since then always leaves settings.when (even {}), so this line never comes back after it.
   $('noDates').hidden = !(undated && !state.settings.when && hasAudit());
-  if (hoverId) drawHover();
+  if (hoverId || selId) drawHover();
   renderPlan(plan);
   renderLegend(plan, anyIP);
   lastPlan = plan;
@@ -932,11 +958,12 @@ function renderHome() {
   panel.classList.toggle('named', !!name);
   const none = !state.plan.programs.length;
   panel.classList.toggle('none', none);
-  $('hmGoProfile').textContent = who?.email || '';
+  // the profile circle (top right): the name's first letter once signed in
+  $('pfInit').textContent = who ? (name || '').trim().charAt(0).toUpperCase() : '';
   if (none || !model || !lastPlan || !progParts.length) {
     $('hmFacts').innerHTML = none ? '<div class="hm-first"><button type="button" class="ok hm-pick" data-pick>Pick your major</button>'
       + (who ? '' : '<p class="hm-or">or <button type="button" data-signin-btn>Sign in</button></p>') + '</div>' : '';
-    for (const id of ['hmGoFlow', 'hmGoSched', 'hmGoPlan']) $(id).textContent = '';
+    for (const id of ['hmGoFlow', 'hmGoSched']) $(id).textContent = '';
     return;
   }
   const actual = actualSet();
@@ -966,8 +993,6 @@ function renderHome() {
   ];
   $('hmFacts').innerHTML = rows.join('');
   $('hmGoFlow').textContent = `${nodes.length} classes`;
-  const ns = lastPlan.semesters.length;
-  $('hmGoPlan').textContent = ns ? `${ns} semester${ns === 1 ? '' : 's'} · ${lastPlan.creditsLeft} cr left` : 'All done';
   $('hmGoSched').textContent = lastPlan.semesters[0]?.term || '';
 }
 function wireHome() {
@@ -1167,8 +1192,13 @@ function edForm(code, title, status, grade) {
   $('edCode').textContent = code;
   $('edTitle').textContent = title || '';
   ed.status = status;
-  for (const b of $('edSeg').children) b.classList.toggle('on', b.dataset.s === status);
+  // an audit grade: plain text, and Taken | Current can't change it
+  const lock = ed.mode === 'edit' ? lockedGrade(ed.code) : '';
+  for (const b of $('edSeg').children) { b.classList.toggle('on', b.dataset.s === status); b.disabled = !!lock; }
   $('edGrade').innerHTML = gradeOptions(status === 'ip' ? '' : grade).replace(/<option value="IP"[^>]*>[^<]*<\/option>/, '');
+  $('edGrade').hidden = !!lock;
+  $('edLock').innerHTML = lock ? lockHTML(lock) : '';
+  $('edLock').hidden = !lock;
   $('edGradeRow').hidden = status === 'ip';
 }
 function edList() {
@@ -1223,13 +1253,13 @@ function wireClasses() {
   });
   // Taken | Current, and the grade: an edit saves at once; an add waits for Add
   const apply = () => {
-    if (ed.mode !== 'edit') return;
+    if (ed.mode !== 'edit' || lockedGrade(ed.code)) return;
     gradeMap()[ed.code] = ed.status === 'ip' ? 'IP' : $('edGrade').value;
     save(); refresh();
   };
   $('edSeg').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-s]');
-    if (!b) return;
+    if (!b || (ed.mode === 'edit' && lockedGrade(ed.code))) return;
     edForm($('edCode').textContent, $('edTitle').textContent, b.dataset.s, ed.mode === 'edit' ? gradeMap()[ed.code] : $('edGrade').value);
     apply();
   });
@@ -1252,16 +1282,20 @@ function wireClasses() {
 // There should be no "home/flowchart/Schedule", it should be controlled all through the home bars."
 // Home opens each section (Flowchart, Schedule, Plan, Profile) full screen; its header is a back arrow and the
 // section's name. On a laptop the Flowchart keeps the plan beside it (class details open there).
-const TITLE = { flow: 'Flowchart', plan: 'Plan', sched: 'Schedule', profile: 'Profile', settings: 'Settings' };
+// (the plan belongs to the Flowchart since 2026-10-23: a laptop shows it beside the chart, a phone switches
+// Chart | Plan in the header; Profile became the circle's menu on Home)
+const TITLE = { flow: 'Flowchart', plan: 'Flowchart', sched: 'Schedule', settings: 'Settings' };
 const tabNow = () => $('main').dataset.tab;
 const wide = () => matchMedia('(min-width: 900px)').matches;
 function showTab(tab) {
-  if (tab === 'settings') tab = 'home'; // (Settings is the gear's sheet now)
+  if (tab === 'settings' || tab === 'profile') tab = 'home'; // (Settings is the gear's sheet, Profile the circle's menu)
+  if (tab === 'plan' && wide()) tab = 'flow'; // (a laptop's Flowchart has the plan beside it)
   const main = $('main');
   const was = main.dataset.tab;
   main.dataset.tab = tab;
   document.body.dataset.tab = tab;
   $('ttl').textContent = TITLE[tab] || '';
+  for (const b of $('fpSeg').children) { b.classList.toggle('on', b.dataset.v === tab); b.setAttribute('aria-pressed', b.dataset.v === tab); }
   // the class details beside the flowchart belong to it
   if (was === 'flow' && tab !== 'flow' && $('clsDlg').classList.contains('side') && $('clsDlg').open) $('clsDlg').close();
   // entering a screen: a short slide-in instead of a jump (css .enter)
@@ -1274,7 +1308,6 @@ function setTab(tab, push = true) {
   showTab(tab);
   if (tab === 'flow' || tab === 'plan') layout();
   if (tab === 'sched') renderSched();
-  if (tab === 'profile') fillProfile();
 }
 
 // ---------- back: sections and sheets are history entries, so Back goes where you just were ----------
@@ -1341,19 +1374,36 @@ function wireNav() {
   $('back').addEventListener('click', () => {
     if (history.state?.from && !history.state?.dlg && depthNow() > 1) history.back(); else goHome();
   });
+  // phone: Chart | Plan switch the Flowchart section's view in place (Back and the arrow still go Home)
+  $('fpSeg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-v]');
+    if (!b || b.dataset.v === tabNow()) return;
+    history.replaceState({ ...history.state, tab: b.dataset.v }, '', location.href);
+    setTab(b.dataset.v, false);
+  });
   // the major on Home, "Programs" in Profile, "Pick your program": the program picker
-  document.addEventListener('click', (e) => { if (e.target.closest('[data-pick]')) openPicker(); });
+  document.addEventListener('click', (e) => {
+    if (!e.target.closest('[data-pick]')) return;
+    if ($('pfDlg').open) $('pfDlg').close(); // (Programs in the account menu: the picker takes its place)
+    openPicker();
+  });
 }
 
-// ---------- Profile: the name shown on Home, the programs, the account ----------
-// Tim, 2026-10-23: "allow the user to change their displayed name in the Profile section. Also automatically
-// capitalize their first/last name if given." Saved with the settings (this device + the account).
+// ---------- the profile circle (Home, top right): its menu = Sign in / Create an account, or (signed in) the
+// name shown on Home, the programs, the account ----------
+// Tim, 2026-10-23: "Instead of having a profile box, just put a little profile circle in the top right that says
+// "sign in" and "create an account"." Earlier (10-23): "allow the user to change their displayed name in the
+// Profile section. Also automatically capitalize their first/last name if given." Saved with the settings.
 function fillProfile() {
   const own = state.settings.name;
   if (document.activeElement !== $('pfName')) $('pfName').value = own ? capName(own) : displayName(who) || '';
   $('pfProgs').textContent = progParts.length ? progParts.map((p) => p.program.name).join(' + ') : 'Pick your program';
 }
 function wireProfile() {
+  const dlg = $('pfDlg');
+  // (account.js resets the menu on the same click)
+  $('profile').addEventListener('click', () => { fillProfile(); openDlg(dlg); });
+  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
   $('pfName').addEventListener('change', (e) => {
     const v = capName(e.target.value);
     state.settings.name = !v || v === displayName(who) ? null : v;
@@ -1444,7 +1494,6 @@ function toast(text, undo) {
 // Uses whatever the data has: title, credits, prereq text, grade minimum (minGrade), the requirement it
 // fills (planner requirementFor, or the requirement's src / name), the catalog page.
 let clsNode = null;
-const PRE = { prereqText: 'Before', precoreqText: 'Before or with', coreqText: 'With' };
 function reqOf(u) {
   if (!u) return null;
   const g = u.kind === 'option' ? unitOf(u.group) : u;
@@ -1461,71 +1510,153 @@ function openClass({ node, item }) {
   const req = reqOf(u);
   const opt = code && req?.options ? req.options.find((o) => o.codes?.includes(code)) : null;
   const part = progParts.find((p) => p.id === (u?.prog || progParts[0]?.id)) || progParts[0];
-  $('clsCode').textContent = code || item?.label || u.label;
-  $('clsTitle').textContent = code ? (c.title || u?.title || item?.title || '') : (item?.title || u?.title || '');
-  const rows = [];
+  // the box this is (its Taken switch, its selection on the chart)
+  clsNode = node || nodes.find((x) => x.id === u?.id || x.id === item?.unitId) || null;
+  // head: code + short name big, the full catalog title under it
+  const full = code ? (c.title || u?.title || item?.title || '') : (item?.title || u?.title || '');
+  const label = code || item?.label || u.label;
+  const short = code ? (clsNode ? boxName(shortData?.titles, clsNode, model.program.courses) : '') : reqLabel(label, u);
+  $('clsCode').textContent = code || short || label;
+  $('clsShort').textContent = code && short && short !== full ? short : '';
+  $('clsTitle').textContent = code ? full : (label !== (short || label) ? label : full);
+  const rows = []; // [label, html]
+  const chip = (k, st) => {
+    const n = boxOf(k);
+    const tag = st === 'done' ? ' is-done' : '';
+    return n || model.program.courses?.[k] ? `<button type="button" class="ck${tag}" data-open="${esc(k)}">${esc(k)}</button>` : `<span class="ck${tag}">${esc(k)}</span>`;
+  };
+  const done = doneSet(), grades = viewGrades();
+  const stOf = (k) => codeStatus(k, { done, grades });
+  // 1. credits (+ its folded lab)
   const credits = item?.credits ?? (u?.kind === 'choice' ? (u.pick?.credits ?? u.credits) : u?.credits);
-  if (credits != null) rows.push(['Credits', String(credits)]);
   const labs = (node?.labs || u?.labs || []).map((l) => l.label);
-  if (labs.length) rows.push(['Lab', labs.join(', ')]);
+  if (credits != null) rows.push(['Credits', `${esc(String(credits))}${labs.length ? ` <span class="cw">+ lab ${esc(labs.join(', '))}</span>` : ''}`]);
+  // 2. status: taken (+ grade), in progress, planned for a term, or not yet
+  const isDone = clsNode ? nodeDone(clsNode, done) : !!code && done.has(code);
+  const grade = isDone && clsNode && !sandbox() ? boxGrade(clsNode, done, grades) : isDone && code ? grades[code] || '' : '';
+  const planned = !isDone ? plannedTerm(clsNode?.id || u?.id || item?.unitId, code) : '';
+  const st = statusText({ done: isDone, grade: state.settings.grades || /^IP$/i.test(grade) ? grade : '', planned });
+  rows.push(['Status', `<span class="${isDone ? 'st-done' : planned ? 'st-plan' : ''}">${esc(st)}</span>`]);
+  // 3. needs: the classes (chips; tap one to open it), a take-with partner, gates as one short phrase each
   if (code) {
-    const pre = Object.entries(PRE).filter(([k]) => c[k]).map(([k, label]) => [label, c[k]]);
-    if (!pre.length && c.coreqs?.length) pre.push(['With', c.coreqs.join(', ')]);
-    // the grade the prerequisites need, when the catalog line states one somewhere the text doesn't show
-    const pb = pre.find(([l]) => l === 'Before');
-    if (pb && c.prereqMinGrade && !/grade|or higher|or better/i.test(pb[1])) pb[1] += ` (${c.prereqMinGrade} or higher)`;
-    // gates (program acceptance, University Advanced Standing): the catalog's own words
+    const parts = needTree(c.prereqs);
+    const html = parts.map((p) => (p.code ? chip(p.code, stOf(p.code)) : p.word ? `<span class="cw">${p.word}</span>` : `<span class="cw">${p.open ? '(' : ')'}</span>`)).join('');
+    const co = (c.coreqs || []).filter((k) => !labs.includes(k));
+    const pre = needCodes(c.precoreqs).filter((k) => !co.includes(k));
     const gl = u?.gates?.[code] || (item?.gate ? [item.gate] : []);
-    const needs = needsOf(c, gl);
-    rows.push(...(pre.length ? pre : [['Before', needs.length ? 'No classes listed' : 'None listed']]));
-    // (not when the Before line already says exactly that and nothing else)
-    const same = pb && needs.length === 1 && pb[1].replace(/[\s.,;()]+/g, ' ').trim() === needs[0].replace(/[\s.,;()]+/g, ' ').trim();
-    // program acceptance / matriculation: the advisor who signs the student in
+    const phrases = gatePhrases(c, gl);
+    const alt = phrases.filter(isAlternative), must = phrases.filter((x) => !isAlternative(x));
     const adv = gatedNeed(c, gl) ? advA(part?.id) + aplA(part?.id) : '';
-    if (needs.length && !same) rows.push(['Needs', needs.join(' · '), adv]);
-    else if (adv) (pb || rows[rows.length - 1]).push(adv);
+    const bits = [];
+    if (html) bits.push(`<span class="chips">${html}</span>`);
+    if (pre.length) bits.push(`<span class="chips"><span class="cw">before or with</span>${pre.map((k) => chip(k, stOf(k))).join('')}</span>`);
+    if (co.length) bits.push(`<span class="chips"><span class="cw">with</span>${co.map((k) => chip(k, stOf(k))).join('')}</span>`);
+    if (must.length) bits.push(`<span class="gate">${esc(must.join(' · '))}</span>`);
+    if (alt.length) bits.push(`<span class="sub">${html ? 'or ' : ''}${esc(alt.join(' / '))}</span>`);
+    if (c.prereqMinGrade && html) bits.push(`<span class="sub">${esc(c.prereqMinGrade)} or higher</span>`);
+    if (adv) bits.push(`<span class="sub">${adv}</span>`);
+    rows.push(['Needs', bits.length ? bits.join('') : 'Nothing']);
+    // 4. unlocks: the program's classes that need this one
+    const un = unlocksOf(code, model.program.courses).filter((k) => boxOf(k));
+    if (un.length) rows.push(['Unlocks', `<span class="chips">${un.slice(0, 10).map((k) => chip(k, stOf(k))).join('')}${un.length > 10 ? `<span class="cw">+${un.length - 10}</span>` : ''}</span>`]);
+    // 5. the semesters it runs in (data/seasons.json, from UVU's class search over the last 3 years)
+    const off = offeredText(seasonTable(seasonsData), [code]);
+    if (off) rows.push(['Offered', esc(off)]);
   }
+  // what it counts for (the requirement, short) + the grade it needs to count
   const min = opt?.minGrade ?? req?.minGrade ?? c.minGrade;
-  if (min) rows.push(['Grade', `${min} or higher`]);
-  // why it's here: the planner's answer, else the catalog text, else the requirement's name
+  if (min) rows.push(['Min grade', `${esc(min)} or higher`]);
   let why = null;
   try { why = P.requirementFor ? P.requirementFor(model, code || u?.id) : null; } catch { why = null; }
   const src = opt?.src || req?.src || null;
   const whyText = typeof why === 'string' ? why : why?.why || why?.name || why?.label
     || src
     || [g ? `${g.label} · ${pickLabel(g.pick)}` : kind === 'placeholder' ? u?.label : null, req?.area].filter(Boolean).join(' — ');
-  if (whyText) rows.push(['Why', whyText + (part && progParts.length > 1 ? ` (${part.program.name})` : '')]);
-  // the semesters it runs in (data/seasons.json, from UVU's class search over the last 3 years)
-  if (why?.offered) rows.push(['Offered', why.offered]);
-  // the catalog lines this requirement came from
-  if (src && src !== whyText) rows.push(['Catalog', src]);
-  if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
-  else if (kind === 'placeholder' && u?.title) rows.push(['Note', u.title]);
-  // each fact links to where it came from: the class's catalog entry (prerequisites, its own grade rule) or the
-  // program's catalog requirements (why it's here, the requirement's lines, a requirement's grade rule)
+  // the part of the degree it counts toward, short ("Discipline Core Requirements"; a pick-one: its group)
+  const countsFor = g ? `${reqLabel(g.label, g)} · ${pickLabel(g.pick)}` : req?.area || '';
+  if (countsFor && countsFor.trim() && countsFor !== short) rows.push(['Counts for', esc(countsFor) + (part && progParts.length > 1 ? ` <span class="cw">${esc(shortName(part.program.name, 30))}</span>` : '')]);
+  if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', `<span class="chips">${g.options.slice(0, 12).map((o) => (o.code ? chip(o.code, stOf(o.code)) : `<span class="ck">${esc(o.label)}</span>`)).join('')}${g.options.length > 12 ? `<span class="cw">+${g.options.length - 12} more</span>` : ''}</span>`]);
+  // 6. this term's sections and professors (filled in once the class list has loaded)
+  if (code) rows.push(['Sections', '<span class="secs" id="clsSecs"><span class="cw">…</span></span>']);
+  $('clsFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
+  // the catalog's own words, kept behind "Catalog text" (nothing is lost)
+  const raw = [];
+  if (full && code) raw.push(['Title', full]);
+  for (const [k, l] of [['prereqText', 'Prerequisites'], ['precoreqText', 'Pre- or corequisites'], ['coreqText', 'Corequisites']]) if (c[k]) raw.push([l, c[k]]);
+  if (c.gateText && !raw.some(([, v]) => v.includes(c.gateText))) raw.push(['Gate', c.gateText]);
+  const gl = code ? (u?.gates?.[code] || (item?.gate ? [item.gate] : [])) : [];
+  const needs = code ? needsOf(c, gl) : [];
+  if (needs.length && !raw.some(([, v]) => needs.every((x) => v.includes(x)))) raw.push(['Also needs', needs.join(' · ')]);
+  if (whyText) raw.push(['Requirement', whyText]);
+  if (src && src !== whyText) raw.push(['Catalog', src]);
+  if (why?.offered) raw.push(['Seasons', why.offered]);
+  if (kind === 'placeholder' && u?.title && u.title !== label) raw.push(['Note', u.title]);
+  $('clsRawList').innerHTML = raw.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${esc(v)}</dd>`).join('');
+  $('clsRaw').hidden = !raw.length;
+  $('clsRaw').open = false;
+  // where it all comes from, one small line: the class's catalog entry (prerequisites: today's catalog for an
+  // older catalog year, js/curprereqs.js), the program's requirements, the class search (seasons, sections)
   const courseSrc = code ? sourceLink('course', { code, year: part?.year, current: catalog.info.current }) : null;
-  // prerequisites come from the current catalog for an older catalog year (js/curprereqs.js): link there
-  const preSrc = code && c.prereqsCurrent ? sourceLink('course', { code, year: catalog.info.current, current: catalog.info.current }) : courseSrc;
+  const preSrc = code && c.prereqsCurrent ? sourceLink('course', { code, year: catalog.info.current, current: catalog.info.current }) : null;
   const progSrc = sourceLink('program', { program: part?.program, tab: 'requirements' });
-  const fromCourse = new Set(['Before', 'Before or with', 'With', 'Needs']);
-  const srcOf = (k) => (fromCourse.has(k) ? preSrc : k === 'Offered' ? sourceLink('seasons', { seasons: seasonsData }) : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
-  $('clsFacts').innerHTML = rows.map(([k, v, html]) => {
-    const s = linkHTML(srcOf(k), '');
-    return `<dt>${esc(k)}</dt><dd>${esc(v)}${s ? ' ' + s : ''}${html ? ' ' + html : ''}</dd>`;
-  }).join('');
-  $('clsSrc').innerHTML = progSrc ? `${linkHTML(progSrc, part.program.name)} · ${esc(progSrc.label)}${progSrc.date ? ` · <span class="src-d">${checked(progSrc.date)}</span>` : ''}` : '';
+  const links = [
+    courseSrc && { ...courseSrc, text: 'Class' },
+    preSrc && { ...preSrc, label: 'Catalog (prerequisites)', text: 'Prerequisites' },
+    progSrc && { ...progSrc, text: shortName(part.program.name, 30) },
+    code && seasonsData && { ...sourceLink('seasons', { seasons: seasonsData }), text: 'Class search' },
+  ].filter(Boolean);
+  $('clsSrc').innerHTML = sourceLine(links);
   $('clsCat').href = courseSrc?.url || progSrc?.url || `${CATALOG}/`;
   $('clsReport').href = issueURL(progIssue({ code: code || u?.label || '', title: code ? c.title || '' : '' }));
-  // taken switch: for a class that is a box on the chart
-  clsNode = node || nodes.find((x) => x.id === u?.id || x.id === item?.unitId) || null;
   $('clsTakenRow').hidden = !clsNode;
   if (clsNode) $('clsTaken').checked = nodeDone(clsNode, doneSet());
   drawClsGrades();
+  $('clsDlg').dataset.code = code || '';
+  if (code) fillSections(code);
+  // on the chart: this class stays picked out while its details are open
+  setSel(clsNode?.id || null);
   // laptop, on the Flowchart: the details open in the right-side section (over the plan), the chart stays usable
   const d = $('clsDlg');
   if (!d.open) d.classList.toggle('side', wide() && tabNow() === 'flow');
   openDlg(d);
-  if (d.classList.contains('side')) d.scrollTop = 0;
+  d.scrollTop = 0;
+}
+// the box on the chart that stands for a class code (its own box, an option, or a folded lab's lecture)
+function boxOf(code) {
+  return nodes?.find((n) => (n.codes || [n.code]).includes(code) || n.labs?.some((l) => (l.codes || [l.code]).includes(code))) || null;
+}
+const needCodes = (t) => (!t ? [] : typeof t === 'string' ? [t] : (t.and || t.or || []).flatMap(needCodes));
+// the plan's term for a unit (or class code), '' when not planned
+function plannedTerm(id, code) {
+  for (const s of lastPlan?.semesters || []) if (s.items.some((it) => it.unitId === id || (code && (it.code === code || it.codes?.includes(code))))) return s.term;
+  return '';
+}
+// the class sheet's Sections row: the next term's sections + professors with their ratings (compact)
+async function fillSections(code) {
+  await loadSchedIndex();
+  const term = sched.term;
+  const groups = term ? await termGroups(term) : new Map();
+  const el = $('clsSecs');
+  if (!el || $('clsDlg').dataset.code !== code) return; // another class opened meanwhile
+  const secs = groups.get(code) || [];
+  const name = term ? termInfo(term).label : '';
+  if (!secs.length) { el.innerHTML = `<span class="cw">None in ${esc(name || 'the class list')}</span>`; return; }
+  const profs = [...new Set(secs.map((x) => x.instr).filter(Boolean))];
+  const list = profs.slice(0, 4).map((p) => `<span class="ck">${esc(lastName(p))}${ratingBadge(p, true)}</span>`).join('');
+  el.innerHTML = `<span class="sub" style="display:inline">${esc(name)}: ${secs.length} section${secs.length === 1 ? '' : 's'}</span>`
+    + (list ? `<span class="chips" style="margin-top:4px">${list}${profs.length > 4 ? `<span class="cw">+${profs.length - 4}</span>` : ''}</span>` : '');
+}
+// ---------- glossary: a dotted underline on terms; hover (laptop) or tap (phone) shows what it means ----------
+// data/glossary.json (each definition from a UVU page, linked under it). Never inside flowchart boxes.
+function wireGlossary() {
+  getJSON(`${DATA}/glossary.json`).then((data) => {
+    if (!data?.terms?.length) return;
+    initGlossary({
+      data,
+      roots: () => [$('clsDlg')?.querySelector('form'), $('matFacts'), $('sum'), $('homePanel')?.querySelector('.hm'), $('settings')?.querySelector('form'), $('clView'), $('pfDlg')].filter(Boolean),
+      sourceHTML: (e) => linkHTML(sourceLink('url', { url: e.url, label: e.label }), e.label),
+    });
+  }).catch(() => {});
 }
 // ---------- matriculation sheet: tap the label on the dotted line -> everything the data knows ----------
 // Catalog words, GPA / grade minimums (only when the catalog states them), the classes to finish first with
@@ -1588,13 +1719,19 @@ function gradeCodes(n, s) {
   if (n.kind === 'choice') { const o = (n.options || []).find((x) => optionDone(x, s)); return o ? [...o.codes, ...(o.alts || [])].filter((c) => s.has(c)) : [n.id]; }
   return [pickedOf(s, n.id) || n.id];
 }
-const gradeOptions = (cur) => [['', '—'], ['IP', 'In progress'], ...GRADES.map((g) => [g, g])]
+const gradeOptions = (cur) => [['', 'No grade'], ['IP', 'In progress'], ...GRADES.map((g) => [g, g])]
   .map(([v, t]) => `<option value="${v}"${v === (cur || '') ? ' selected' : ''}>${t}</option>`).join('');
 // the class sheet's grade pickers: one per class the box stands for, only once it counts as taken
 function drawClsGrades() {
   // (none in Hypothetical: no personal info there)
   const codes = sandbox() ? [] : gradeCodes(clsNode, doneSet()), grades = gradeMap();
-  $('clsGrades').innerHTML = codes.map((c) => `<label>Grade${codes.length > 1 ? ` <small>${esc(c)}</small>` : ''}<select data-code="${esc(c)}">${gradeOptions(grades[c] ?? (codes.length === 1 && clsNode ? grades[clsNode.id] : ''))}</select></label>`).join('');
+  $('clsGrades').innerHTML = codes.map((c) => {
+    const key = grades[c] == null && codes.length === 1 && clsNode ? clsNode.id : c;
+    const name = `Grade${codes.length > 1 ? ` <small>${esc(c)}</small>` : ''}`;
+    const lock = lockedGrade(key);
+    return lock ? `<div class="cls-glock">${name}${lockHTML(lock)}</div>`
+      : `<label>${name}<select data-code="${esc(c)}">${gradeOptions(grades[key])}</select></label>`;
+  }).join('');
 }
 function wireClassSheet() {
   const dlg = $('clsDlg');
@@ -1617,11 +1754,25 @@ function wireClassSheet() {
   // a grade (or In progress): saved for that class whatever view it is taken in; never removed by a tap
   $('clsGrades').addEventListener('change', (e) => {
     const sel = e.target.closest('select[data-code]');
-    if (!sel) return;
+    if (!sel || lockedGrade(sel.dataset.code)) return;
     gradeMap()[sel.dataset.code] = sel.value;
     save(); refresh();
   });
-  dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  dlg.addEventListener('click', (e) => {
+    if (e.target === dlg) { dlg.close(); return; }
+    // a class chip (Needs, Unlocks, Options): open that class
+    const b = e.target.closest('button[data-open]');
+    if (!b) return;
+    const n = boxOf(b.dataset.open);
+    if (n) openClass({ node: n });
+  });
+  // the details closing: the chart lets go of the class
+  dlg.addEventListener('close', () => setSel(null));
+  // a tap on empty chart space: let go of the class (and close its side details on laptop)
+  $('chart').addEventListener('click', (e) => {
+    if (!selId || e.target.closest('.box, .gframe, .gmore, .matric-lbl, .pickgrp em, button, a')) return;
+    if (dlg.open) dlg.close(); else setSel(null);
+  });
   // tracks: the chip under the plan summary -> the program's tracks
   $('sum').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-track]');
@@ -2165,18 +2316,19 @@ function wireImport() {
       s.add(r.key);
       src[r.key] ??= 'audit';
       if (r.grade || !cb.disabled) grades[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
+      if (r.grade) src[r.key] = 'audit'; // the audit's grade wins (and is locked), also over one set by hand
       if (r.term) when[r.code] = r.term;
       // a Gen Ed box filled by an outside class: remember which class (its sheet and Classes show it)
       if (r.key !== r.code && !pickKeysOf(s, r.key).length) {
         s.add(`${r.key}=${r.code}`); s.add(r.code); src[r.code] ??= 'audit';
-        if (r.grade) grades[r.code] ??= r.grade;
+        if (r.grade) { grades[r.code] = r.grade; src[r.code] = 'audit'; }
       }
     }
     // classes outside the program (AP/transfer credit, classes the plan doesn't use): kept for Classes
     for (const r of found.others || []) {
       if (r.status === 'ip' && !ipOn) continue;
       if (!s.has(r.code)) { s.add(r.code); src[r.code] = 'audit'; }
-      if (r.grade) grades[r.code] = r.grade;
+      if (r.grade) { grades[r.code] = r.grade; src[r.code] = 'audit'; }
       if (r.term) when[r.code] = r.term;
     }
     // classes in progress (or already registered for next term): the plan starts after that semester

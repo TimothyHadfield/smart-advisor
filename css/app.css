@@ -302,7 +302,7 @@ input[role="switch"]:checked::after { transform: translateX(16px); }
 .ver { margin: -4px 0 0; font-size: 12px; color: var(--muted); text-align: center; }
 
 /* schedule: term, which schedule, copy CRNs · week grid · the classes */
-main[data-tab="sched"] .sched, main[data-tab="profile"] .page { display: flex; }
+main[data-tab="sched"] .sched { display: flex; }
 .sc-bar { flex: none; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 8px 0 16px; }
 /* the term bar: Past | Current | Future (left, middle, right); a phone scrolls the strip, never the page */
 .sc-terms { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 16px 2px; overflow-x: auto; scrollbar-width: none; }
@@ -552,6 +552,14 @@ dialog.tracks form { height: auto; }
 .cls-grades small { font-weight: 400; color: var(--muted); margin-left: 4px; }
 .cls-grades label { justify-content: flex-start; }
 .cls-grades select { margin-left: auto; }
+/* a grade from the imported audit: text with a lock, no picker */
+.cls-glock { display: flex; align-items: center; gap: 8px; font-weight: 600; }
+.glock { margin-left: auto; display: inline-flex; align-items: center; gap: 5px; color: var(--fg); }
+.glock b { font-size: 16px; }
+.glock svg { color: var(--muted); }
+.glock small { color: var(--muted); font-size: 12px; font-weight: 600; margin: 0; }
+#edGrade[hidden], #edLock[hidden] { display: none; }
+#edSeg button:disabled { opacity: .5; cursor: default; }
 
 /* Add class / edit a class */
 dialog.cl-edit[data-step="form"] { height: fit-content; }
@@ -612,54 +620,89 @@ main[data-tab="home"] .home { display: flex; }
 .home { position: relative; overflow: hidden; background: var(--bg); }
 .home .gear { position: absolute; z-index: 1; top: calc(8px + env(safe-area-inset-top)); right: 8px; display: grid; place-items: center; color: var(--muted); }
 .home .gear:active { background: var(--line); }
-.hm { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 14px; width: 100%; max-width: 560px; margin: 0 auto; padding: calc(16px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom)); }
-.hm-name { margin: 0; padding: 4px 44px 0 2px; font-size: 28px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hm-list, .hm-go { margin: 0; display: flex; flex-direction: column; background: var(--panel); border-radius: 12px; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+/* the profile circle, left of the gear: a person (signed out) or the name's first letter (signed in) */
+.pf-circle { position: absolute; z-index: 1; top: calc(10px + env(safe-area-inset-top)); right: 54px; display: grid; place-items: center; width: 36px; height: 36px; padding: 0; border: 1.5px solid var(--green); border-radius: 50%; background: var(--panel); color: var(--green); cursor: pointer; }
+.pf-circle b { display: none; font-size: 16px; font-weight: 800; line-height: 1; }
+.pf-circle.in { background: var(--brand); border-color: var(--brand); color: #fff; }
+.pf-circle.in:has(b:not(:empty)) svg { display: none; }
+.pf-circle.in b:not(:empty) { display: block; }
+.pf-circle.warn { box-shadow: 0 0 0 2px var(--warn); }
+.pf-circle:active { transform: scale(.94); }
+.hm { flex: 1; min-height: 0; overflow: auto; display: flex; flex-direction: column; gap: 18px; width: 100%; max-width: 560px; margin: 0 auto; padding: calc(16px + env(safe-area-inset-top)) 16px calc(16px + env(safe-area-inset-bottom)); }
+/* what the site is, for anyone landing here (Tim, 2026-10-23: "people don't even know it's for UVU only") */
+.hm-brand { margin: 0; display: flex; flex-direction: column; align-items: center; gap: 10px; text-align: center; }
+.hm-brand b { padding: 4px 92px 0; color: var(--green); font-size: 17px; font-weight: 800; letter-spacing: -.01em; }
+.hm-brand span { max-width: 340px; color: var(--muted); font-size: 13px; font-weight: 600; line-height: 1.35; }
+.hm-name { margin: 0; padding: 4px 8px 0; font-size: 32px; line-height: 1.15; font-weight: 800; letter-spacing: -.02em; text-align: center; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* the facts: centered, a small label over a bigger value; programs one per line, the rest side by side,
+   separated by thin rules (no boxes) */
+.hm-list { margin: 0; display: flex; flex-wrap: wrap; justify-content: center; }
 .hm-list:empty { display: none; }
-.hm-list > div:not(.hm-first) { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; min-height: 44px; padding: 8px 14px; }
-.hm-list > div + div, .hm-go button + button { border-top: 1px solid var(--line); }
-.hm-list dt { flex: none; color: var(--muted); font-size: 13px; font-weight: 600; }
-.hm-list dd { margin: 0; min-width: 0; font-size: 15px; font-weight: 700; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
-.hm-prog dd { display: flex; justify-content: flex-end; }
-.hm-prog button { min-width: 0; max-width: 100%; display: flex; flex-direction: column; align-items: flex-end; gap: 1px; padding: 0; border: 0; background: none; color: var(--fg); text-align: right; cursor: pointer; }
-.hm-prog b { max-width: 100%; font-size: 15px; color: var(--green); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hm-prog b::after { content: " ▾"; font-size: 11px; }
-.hm-prog small { max-width: 100%; color: var(--muted); font-size: 12px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-list > div:not(.hm-first) { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 10px 6px; text-align: center; }
+.hm-list > div.hm-prog { flex: 1 1 100%; border-bottom: 1px solid var(--line); }
+.hm-list > div:not(.hm-prog):not(.hm-first) + div:not(.hm-prog) { border-left: 1px solid var(--line); }
+.hm-list dt { color: var(--muted); font-size: 13px; font-weight: 600; }
+.hm-list dd { margin: 0; max-width: 100%; min-width: 0; font-size: 20px; font-weight: 800; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; font-variant-numeric: tabular-nums; }
+.hm-prog dd { display: flex; justify-content: center; }
+.hm-prog button { min-width: 0; max-width: 100%; display: flex; flex-direction: column; align-items: center; gap: 2px; padding: 0; border: 0; background: none; color: var(--fg); text-align: center; cursor: pointer; }
+.hm-prog b { max-width: 100%; font-size: 20px; color: var(--green); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-prog b::after { content: " ▾"; font-size: 12px; }
+.hm-prog small { max-width: 100%; color: var(--muted); font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hm-prog button:active { opacity: .6; }
-.hm-first { padding: 18px 14px; text-align: center; }
-.hm-pick { padding: 12px 22px; border: 0; border-radius: 10px; background: var(--brand); color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; }
+.hm-first { flex-basis: 100%; padding: 18px 14px; text-align: center; }
+.hm-pick { padding: 14px 26px; border: 0; border-radius: 12px; background: var(--brand); color: #fff; font-size: 17px; font-weight: 700; cursor: pointer; }
 .hm-pick:active { transform: scale(.97); }
-.hm-or { margin: 10px 0 0; color: var(--muted); }
+.hm-or { margin: 12px 0 0; color: var(--muted); font-size: 15px; }
 .hm-or button { padding: 0; border: 0; background: none; color: var(--green); font-weight: 700; text-decoration: underline; cursor: pointer; }
-/* the rows into each section: icon, name, a small fact, a chevron */
-.hm-go button { min-width: 0; display: flex; align-items: center; gap: 12px; min-height: 50px; padding: 0 14px; border: 0; background: none; color: var(--fg); text-align: left; cursor: pointer; }
-.hm-go button:first-child { border-radius: 12px 12px 0 0; }
-.hm-go button:last-child { border-radius: 0 0 12px 12px; }
-.hm-go button:active { background: var(--bg); }
+/* the sections: large boxes, big centered name, a small fact under it */
+.hm-go { margin: 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(0, 1fr)); gap: 12px; }
+.hm-go button { min-width: 0; min-height: 128px; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 6px; padding: 14px 10px; border: 0; border-radius: 16px; background: var(--panel); color: var(--fg); text-align: center; box-shadow: 0 1px 3px rgba(0,0,0,.08), 0 0 0 1px var(--line); cursor: pointer; transition: transform .12s; }
+.hm-go button:active { transform: scale(.97); background: var(--bg); }
 .hm-go svg { flex: none; color: var(--green); }
-.hm-go b { flex: none; font-size: 15px; }
-.hm-go span { flex: 1; min-width: 0; color: var(--muted); font-size: 12px; text-align: right; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.hm-go button::after { content: ""; flex: none; width: 7px; height: 7px; margin: 0 2px 0 -2px; border: solid var(--muted); border-width: 2px 2px 0 0; transform: rotate(45deg); }
-.home.none .hm-go button:not([data-go="profile"]) { display: none; }
+.hm-go b { font-size: 22px; font-weight: 800; }
+.hm-go span { max-width: 100%; color: var(--muted); font-size: 13px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-go span:empty { display: none; }
+.home.none .hm-go { display: none; }
 @media (min-width: 900px) {
-  .hm { justify-content: center; padding-top: 40px; padding-bottom: 40px; }
-  .hm-name { font-size: 36px; }
+  .hm { justify-content: center; max-width: 640px; gap: 24px; padding-top: 40px; padding-bottom: 40px; }
+  .hm-name { font-size: 44px; padding-top: 0; }
+  .hm-brand b { font-size: 20px; }
+  .hm-brand span { max-width: none; font-size: 15px; }
+  .hm-list dd, .hm-prog b { font-size: 24px; }
+  .hm-go button { min-height: 168px; }
+  .hm-go b { font-size: 26px; }
   .hm-go button:hover { background: var(--bg); }
+  .pf-circle:hover { background: color-mix(in srgb, var(--green) 10%, var(--panel)); }
+  .pf-circle.in:hover { background: var(--green-2); }
 }
+/* the profile circle's menu: a small sheet under the circle (top right) */
+dialog.pf-menu { position: fixed; inset: calc(52px + env(safe-area-inset-top)) 8px auto auto; margin: 0; width: min(320px, calc(100vw - 16px)); max-height: calc(100dvh - 68px); overflow: auto; padding: 14px; }
+dialog.pf-menu::backdrop { background: rgba(0,0,0,.18); }
+.pf-menu .acct { display: flex; flex-direction: column; gap: 10px; }
+.pf-menu .acct-out { display: flex; flex-direction: column; gap: 8px; }
+.pf-menu .acct-out[hidden] { display: none; }
+.pf-menu .acct-out button { padding: 11px 14px; font-size: 15px; font-weight: 700; }
+.pf-menu .ghost { background: none; border: 1px solid var(--line); border-radius: 8px; padding: 8px 12px; color: var(--fg); font-weight: 600; cursor: pointer; }
+.pf-menu .acct-out .ghost { border-color: var(--green); color: var(--green); }
+.pf-menu .ok { background: var(--brand); color: #fff; border: 0; border-radius: 8px; font-weight: 600; cursor: pointer; }
+.pf-menu .wide { width: 100%; }
+.pf-menu button:disabled { opacity: .5; cursor: default; }
+.pf-note { margin: 0; color: var(--muted); font-size: 12px; text-align: center; }
+.pf-menu .pg-row { padding: 0; min-height: 44px; border-radius: 0; background: none; font-size: 14px; }
+.pf-menu .pg-row + .pg-row { border-top: 1px solid var(--line); }
+.pf-menu .pg-row input { max-width: 190px; }
+.pf-menu .acct-in > .who { padding-bottom: 6px; border-bottom: 1px solid var(--line); }
 /* a section's header: back arrow (top left) and its name */
 .top { gap: 4px; padding-left: 4px; padding-right: 16px; }
 .back { flex: none; display: grid; place-items: center; }
 .ttl { margin: 0; min-width: 0; font-size: 16px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-/* Profile: the name, the programs, the account (rows like Home's) */
-.page { background: var(--bg); overflow: auto; }
-.pg { width: 100%; max-width: 560px; margin: 0 auto; padding: 16px; display: flex; flex-direction: column; gap: 14px; }
-.pg-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; min-height: 50px; padding: 0 14px; border: 0; border-radius: 12px; background: var(--panel); color: var(--fg); font-size: 13px; font-weight: 600; box-shadow: 0 1px 2px rgba(0,0,0,.06); }
+/* account menu rows (the profile circle's menu) */
+.pg-row { display: flex; align-items: center; justify-content: space-between; gap: 12px; min-width: 0; min-height: 50px; padding: 0 14px; border: 0; border-radius: 12px; background: var(--panel); color: var(--fg); font-size: 13px; font-weight: 600; }
 .pg-row input { flex: 1; min-width: 0; max-width: 280px; font: inherit; font-size: 16px; font-weight: 600; text-align: right; padding: 6px 8px; border: 1px solid var(--line); border-radius: 8px; background: var(--bg); color: var(--fg); }
 .pg-btn { cursor: pointer; text-align: left; }
 .pg-btn:active { background: var(--bg); }
 .pg-btn b { min-width: 0; color: var(--green); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .pg-btn b::after { content: " ▾"; font-size: 11px; }
-.pg .acct { position: relative; display: flex; flex-direction: column; gap: 12px; padding: 14px; border-radius: 12px; background: var(--panel); box-shadow: 0 1px 2px rgba(0,0,0,.06); }
 /* entering a screen: a short slide-in */
 @keyframes enter { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: none; } }
 main.enter .panel { animation: enter .18s ease-out; }
@@ -710,3 +753,56 @@ main.empty .xbar { visibility: hidden; }
   dialog.cls.side { position: fixed; inset: calc(var(--head-h) + env(safe-area-inset-top)) 0 0 auto; z-index: 10; width: 400px; max-width: none; height: auto; max-height: none; margin: 0; border-radius: 0; overflow: auto; box-shadow: -1px 0 0 var(--line), -8px 0 24px rgba(0,0,0,.08); }
   dialog.cls.side .cls-facts { max-height: none; }
 }
+
+/* phone, Flowchart: Chart | Plan in the header (the plan lives in this section; a laptop shows it beside the chart) */
+.fp-seg { display: none; margin-left: auto; border-color: rgba(255,255,255,.55); }
+.fp-seg button { flex: none; min-width: 58px; padding: 6px 10px; font-size: 13px; color: #fff; }
+.fp-seg button + button { border-left-color: rgba(255,255,255,.55); }
+.fp-seg button.on { background: #fff; color: var(--green); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .fp-seg button.on { color: #1d4a2c; } }
+:root[data-theme="dark"] .fp-seg button.on { color: #1d4a2c; }
+@media (max-width: 899px) { body[data-tab="flow"] .fp-seg, body[data-tab="plan"] .fp-seg { display: flex; } }
+
+/* a clicked class stays picked out (its lines stay lit) while its details are open */
+.box.sel { outline: 2.5px solid var(--edge-pre); outline-offset: 2px; z-index: 1; }
+
+/* class details: big code + short name, the full title under it, short rows, chips to other classes */
+dialog.cls { width: min(400px, calc(100vw - 24px)); }
+.cls-head { display: flex; flex-direction: column; gap: 3px; min-width: 0; }
+.cls-head p { margin: 0; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; }
+.cls-head b { font-size: 22px; font-weight: 800; letter-spacing: -.01em; }
+.cls-head p span { font-size: 18px; font-weight: 700; color: var(--green); }
+.cls-head p span:empty { display: none; }
+.cls-head > span { color: var(--muted); font-size: 14px; }
+.cls-head > span:empty { display: none; }
+.cls-facts { grid-template-columns: 76px 1fr; gap: 10px 12px; font-size: 15px; line-height: 1.4; align-items: baseline; }
+.cls-facts dt { font-size: 13px; }
+.cls-facts dd .chips { display: flex; flex-wrap: wrap; align-items: center; gap: 5px; }
+.cls-facts .ck { display: inline-block; padding: 2px 8px; border: 1px solid var(--line); border-radius: 7px; background: var(--panel); color: var(--fg); font: inherit; font-size: 14px; font-weight: 600; white-space: nowrap; }
+button.ck { cursor: pointer; border-color: var(--green); color: var(--green); }
+button.ck:active { background: var(--brand); color: #fff; }
+.cls-facts .ck.is-done { background: color-mix(in srgb, var(--done-bg) 14%, var(--panel)); border-color: var(--done-bg); }
+.cls-facts .cw { color: var(--muted); font-size: 13px; }
+.cls-facts .gate { font-weight: 700; color: var(--warn); }
+.cls-facts .st-done { color: var(--green); font-weight: 700; }
+.cls-facts .st-plan { font-weight: 700; }
+.cls-facts .sub { display: block; color: var(--muted); font-size: 13px; }
+.cls-facts .secs .rt { margin-left: 3px; }
+.cls-raw { font-size: 13px; color: var(--muted); }
+.cls-raw summary { cursor: pointer; font-weight: 600; color: var(--green); padding: 4px 0; }
+.cls-raw dl { margin: 6px 0 0; display: grid; grid-template-columns: auto 1fr; gap: 6px 10px; }
+.cls-raw dt { font-weight: 600; }
+.cls-raw dd { margin: 0; color: var(--fg); overflow-wrap: anywhere; }
+#clsSrc { font-size: 12px; }
+@media (min-width: 900px) { dialog.cls.side form { gap: 14px; } }
+
+/* hover glossary (js/glossary.js): a dotted underline; the card says what it means and where that's from */
+.gt { text-decoration: underline dotted; text-decoration-thickness: 1.5px; text-underline-offset: 3px; text-decoration-color: color-mix(in srgb, currentColor 60%, transparent); cursor: help; border-radius: 3px; }
+.gt:focus-visible { outline: 2px solid var(--green); outline-offset: 1px; }
+.gt[aria-expanded="true"] { background: color-mix(in srgb, var(--green) 14%, transparent); }
+.gloss { position: fixed; z-index: 50; max-width: calc(100vw - 16px); padding: 9px 12px; border-radius: 10px; background: var(--panel); color: var(--fg); border: 1px solid var(--line); box-shadow: 0 8px 28px rgba(0,0,0,.22); font-size: 14px; line-height: 1.35; text-align: left; text-transform: none; letter-spacing: 0; font-weight: 400; white-space: normal; }
+.gloss[hidden] { display: none; }
+.gloss b { display: block; margin-bottom: 2px; font-size: 13px; font-weight: 700; color: var(--green); }
+.gloss p { margin: 0; }
+.gloss .gl-src { margin-top: 5px; font-size: 12px; }
+.gloss a { color: var(--green); font-weight: 600; text-decoration: none; }

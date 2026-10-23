@@ -37,17 +37,24 @@ test('ECE 3780: planned in a Spring; its sheet has an "Offered" row linked to UV
   const off = facts.find((f) => f.k === 'Offered');
   assert.ok(off, JSON.stringify(facts));
   assert.match(off.v, /Spring only/);
-  assert.ok(off.a.some((h) => /userve\.uvu\.edu\/StudentRegistrationSsb/.test(h)), JSON.stringify(off));
-  assert.doesNotMatch(facts.find((f) => f.k === 'Why')?.v || '', /Usually/);
+  // (2026-10-23: the sheet's sources are one small line under the rows; the class search is one of them)
+  const src = await p.$$eval('#clsSrc a', (as) => as.map((a) => a.getAttribute('href')));
+  assert.ok(src.some((h) => /userve\.uvu\.edu\/StudentRegistrationSsb/.test(h)), JSON.stringify(src));
+  assert.doesNotMatch(facts.find((f) => f.k === 'Counts for')?.v || '', /Usually/);
   assert.deepEqual(p.errors, []);
   await p.context().close();
 });
 
 // sections open from Home's rows (2026-10-23: no tab bar): back to Home, then the section's row
+// (2026-10-23: no Plan or Profile box on Home. The plan is the Flowchart's "Plan" view on a phone (the Chart | Plan
+// switch) and sits beside the chart on a laptop; the profile is the circle's menu, top right)
 async function goTab(p, tab) {
   if (await p.getAttribute('#main', 'data-tab') !== 'home') { await p.click('#back'); await p.waitForSelector('#main[data-tab="home"]'); }
-  await p.click(`#hmGo [data-go="${tab}"]`);
-  await p.waitForSelector(`#main[data-tab="${tab}"]`);
+  if (tab === 'profile') { await p.click('#profile'); await p.waitForSelector('#pfDlg[open]'); return; }
+  const go = tab === 'plan' ? 'flow' : tab;
+  await p.click(`#hmGo [data-go="${go}"]`);
+  await p.waitForSelector(`#main[data-tab="${go}"]`);
+  if (tab === 'plan' && await p.isVisible('#fpSeg')) { await p.click('#fpSeg [data-v="plan"]'); await p.waitForSelector('#main[data-tab="plan"]'); }
 }
 // the gear (site settings) lives on Home
 async function openGear(p) {

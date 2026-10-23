@@ -123,6 +123,9 @@ export const DATA_SOURCES = [
   // UVU's own flowchart PDFs (shown as their own link under the legend: the PDF is the source)
   { match: /^uvu-flowcharts\.json$/, url: (d) => Object.values(d.programs || {})[0]?.[0]?.source, date: (d) => d.checked,
     records: (d) => Object.entries(d.programs || {}).flatMap(([id, l]) => l.map((c, i) => [`${id}#${i}`, c])), link: (c) => sourceLink('url', { url: c.url, label: c.title }) },
+  // the hover glossary (js/glossary.js): each term's definition links the UVU page it came from
+  { match: /^glossary\.json$/, url: (d) => d.source, date: (d) => d.checked,
+    records: (d) => (d.terms || []).map((t) => [t.id, t]), link: (t) => sourceLink('url', { url: t.url, label: t.label }) },
   // short class names / requirement labels (scripts/build-short-titles.mjs), made from the catalog's own titles
   { match: /^short-titles\.json$/, url: () => `${CATALOG}/search/`, date: (d) => d.generated },
 ];
