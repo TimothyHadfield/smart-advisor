@@ -27,6 +27,8 @@ async function page(opts, saved = SAVED) {
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   await p.goto(APP + '?p=' + EE);
@@ -126,6 +128,8 @@ test('fresh import: every taken class shows its month and year (transfer / AP ro
   const ctx = await browser.newContext({ viewport: { width: 1280, height: 800 }, serviceWorkers: 'block' });
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   await p.goto(APP + '?p=' + EE);

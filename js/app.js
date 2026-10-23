@@ -15,6 +15,7 @@ import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } fr
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hypoShown, sandboxOn, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
+import { startTab, creditBar, admissionFact, nextFact, displayName, catalogLabel } from './home.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -56,10 +57,13 @@ function defaults() {
 defaults();
 // ?p=major,minor opens those programs like picking them; it never wipes the saved plan (js/uistate.js)
 const LINK = urlPrograms(location.search);
-// a new student (nothing saved, no link) gets the program picker, not EE
-const FIRST = isFirstVisit(state, LINK);
+// the screen to open on (js/home.js): Home, or a ?p= link's flowchart, or (reload) where it was
+const NAV0 = history.state;
+// the signed-in account ({ name, email }) for Home's greeting; null = signed out
+let who = null;
 // accounts (js/account.js): the account's copy replaces this device's; signing out clears it
 const account = initAccount({
+  user: (u) => { who = u; queueMicrotask(() => renderHome()); },
   local: () => toDoc(state, major()),
   apply: (doc) => {
     const was = planSig();
@@ -156,7 +160,9 @@ function tidyPlan() {
 
 // ---------- boot ----------
 async function boot() {
+  showTab(startTab(NAV0, state.plan.programs, LINK));
   wireTabs();
+  wireHome();
   wireSettings();
   wireImport();
   wirePicker();
@@ -177,7 +183,7 @@ async function boot() {
     if (JSON.stringify(ids) !== JSON.stringify(state.plan.programs)) setPlan(ids, state.plan.catalogYear);
   }
   tidyPlan();
-  if (FIRST && !state.plan.programs.length) $('progName').click();
+  // a first visit lands on Home, whose "Pick your major" opens the picker (it used to open by itself)
   await loadPlan();
 }
 
@@ -268,6 +274,7 @@ function showEmpty() {
   renderHypo();
   renderNoAudit();
   renderClasses();
+  renderHome();
   syncURL();
 }
 // the address bar names the chosen programs (?p=major,minor), so a bookmark or shared link keeps them
@@ -670,6 +677,7 @@ function refresh() {
   renderHypo();
   renderNoAudit();
   if (ui.sub === 'classes') renderClasses();
+  renderHome();
   if ($('main').dataset.tab === 'sched') renderSched();
 }
 
@@ -795,13 +803,7 @@ function renderPlan(plan) {
     + `<p class="src">${programSources(progParts)}</p>`
     // (its source = the catalog link on the line above, and the Matriculation sheet's ↗ links)
     + (gated ? `<p class="adm">Requires admission — apply after these classes. ${advA(progParts[0]?.id)}</p>` : '')
-    // bachelor's totals (120 credits, 40 upper-division) and classes a major and minor share
-    + (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
-    + (() => {
-      if (progParts.length < 2) return '';
-      const both = [...new Set([...(model.program.shared || []).map((x) => x.code), ...plan.semesters.flatMap((s) => s.items.filter((it) => it.shared).map((it) => it.code))])];
-      return both.length ? `<p>Counted once for both: ${esc(both.join(', '))}</p>` : '';
-    })()
+    // (the bachelor's 120 / 40 totals and "Counted once for both" moved to Home, 2026-10-22)
     + tracks.map((g) => {
       const mine = chosenTracks()[g.id];
       const t = mine && tracksOf(g).includes(mine) ? mine : (P.pickTrack ? P.pickTrack(g, completed) : null) || tracksOf(g)[0];
@@ -809,11 +811,7 @@ function renderPlan(plan) {
     }).join('');
   // admission programs: an "Apply" row before the program's semesters; an "Advanced Standing" row before the
   // first term the planner counts University Advanced Standing as reached (js/phases.js planPhases)
-  let phases = null;
-  try { phases = P.planPhases ? P.planPhases(plan) : null; } catch { phases = null; }
-  const stones = milestonesOf(plan, phases);
-  const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
-  if (!stones.length) { const at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone)); if (at > 0) stones.push({ at, gate: 'admission' }); }
+  const stones = planStones(plan);
   const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
   const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
@@ -821,6 +819,82 @@ function renderPlan(plan) {
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title, it.offered].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
+// the plan's milestone rows [{ at, gate }] (Apply, Advanced Standing): the plan screen draws them, Home
+// names the Apply one
+const milestone = (it) => it.kind === 'apply' || it.kind === 'milestone';
+function planStones(plan) {
+  let phases = null;
+  try { phases = P.planPhases ? P.planPhases(plan) : null; } catch { phases = null; }
+  const stones = milestonesOf(plan, phases);
+  if (!stones.length) { const at = plan.semesters.findIndex((s, i) => i > 0 && s.items.some(milestone)); if (at > 0) stones.push({ at, gate: 'admission' }); }
+  return stones;
+}
+// classes a major and its minor share (each counted once)
+function sharedCodes(plan) {
+  if (progParts.length < 2) return [];
+  return [...new Set([...(model.program.shared || []).map((x) => x.code), ...plan.semesters.flatMap((s) => s.items.filter((it) => it.shared).map((it) => it.code))])];
+}
+
+// ---------- Home: who the student is, where they stand, and the ways into the flowchart / plan / schedule ----------
+// Tim, 2026-10-22: "make a home page with the user's name and major and any core details about them in the
+// home page and then allow them to go into their flowchart or class schedule seperately. Put any of the
+// other main detials in the home section." Only facts the site already has; an unknown one is left out.
+function renderHome() {
+  const name = displayName(who);
+  $('hmName').textContent = name || 'Welcome';
+  const panel = $('homePanel');
+  panel.classList.toggle('named', !!name);
+  const none = !state.plan.programs.length;
+  panel.classList.toggle('none', none);
+  if (none || !model || !lastPlan || !progParts.length) {
+    $('hmProgs').innerHTML = none ? '<button type="button" class="hm-pick" data-pick>Pick your major</button>'
+      + (who ? '' : '<p class="hm-or">or <button type="button" data-signin-btn>Sign in</button></p>') : '';
+    for (const id of ['hmCredits', 'hmFacts', 'hmNotes']) $(id).innerHTML = '';
+    return;
+  }
+  const plan = lastPlan, [m, ...rest] = progParts;
+  $('hmProgs').innerHTML = `<button type="button" class="hm-major" data-pick>${esc(m.program.name)}</button>`
+    + `<p class="hm-sub">${[...rest.map((p) => p.program.name), catalogLabel(m.year || m.program.catalogYear)].filter(Boolean).map(esc).join(' · ')}</p>`;
+  // classes now + GPA: the Classes view's own groups (js/classes.js), so both screens show the same numbers
+  const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: gradeMap(), src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
+  const now = groups.find((g) => g.key === 'ip')?.rows || [];
+  const graded = groups.filter((g) => g.key !== 'need').flatMap((g) => g.rows);
+  // a class from outside the program needs the catalog for its credits: load it once, then draw again
+  if (!courseCat.ready && graded.some((r) => r.credits == null)) loadCourses().then(renderHome);
+  const nowCr = Math.round(now.reduce((s, r) => s + (r.credits || 0), 0) * 10) / 10;
+  const b = creditBar(plan, nowCr);
+  const segTitle = (s) => `${s.k === 'done' ? 'Taken' : s.k === 'ip' ? 'Now' : s.term}: ${s.cr} cr`;
+  $('hmCredits').innerHTML = `<div class="hm-pct"><b>${b.pct}<small>%</small></b><span id="hmCr"><em>${b.taken} of ${b.total} cr</em>${b.ip ? ` · ${b.ip} now` : ''} · ${b.left} left</span></div>`
+    + `<div class="hm-bar" role="img" aria-label="${esc(b.segs.map(segTitle).join(', '))}">${b.segs.map((s) => `<i class="${s.k === 'sem' ? `seg s${s.i % 10}` : `seg seg-${s.k}`}" style="flex-grow:${s.cr}" title="${esc(segTitle(s))}"></i>`).join('')}</div>`;
+  const g = gpa(graded);
+  const ge = nodes.filter((n) => /general\s+education/i.test(n.area || ''));
+  const geDone = ge.filter((n) => nodeDone(n, doneSet())).length;
+  const n = plan.semesters.length;
+  const adm = admissionFact(plan, m.program, planStones(plan).find((x) => x.gate === 'admission')?.at ?? -1);
+  const cells = [
+    ['Graduate', plan.graduation || 'All done', plan.graduation ? `${n} semester${n === 1 ? '' : 's'}` : ''],
+    n ? ['Next', nextFact(plan), ''] : null,
+    now.length ? ['Now', now.map((r) => r.label).join(', '), `${now.length} class${now.length === 1 ? '' : 'es'}${nowCr ? ` · ${nowCr} cr` : ''}`] : null,
+    g.gpa != null ? ['GPA', g.gpa.toFixed(2), `${g.credits} graded cr`] : null,
+    ge.length ? ['Gen Ed', `${geDone} of ${ge.length}`, ''] : null,
+    adm ? ['Admission', adm, '', advA(m.id) + aplA(m.id), 'wide'] : advisorLink(advisors, m.id) ? ['Advisor', '', '', advA(m.id)] : null,
+  ].filter(Boolean);
+  // links (advisor, how to apply) go on the small line under the value, or are the value
+  $('hmFacts').innerHTML = cells.map(([k, v, sub, html = '', cls = '']) => `<div${cls ? ` class="${cls}"` : ''}><dt>${esc(k)}</dt>`
+    + (v ? `<dd>${esc(v)}</dd>` : `<dd class="hm-links">${html}</dd>`)
+    + (sub ? `<small>${esc(sub)}</small>` : v && html ? `<small class="hm-links">${html}</small>` : '') + '</div>').join('');
+  // moved here from the plan's summary: the bachelor's 120 / 40 totals, classes a major and minor share
+  const both = sharedCodes(plan);
+  $('hmNotes').innerHTML = (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
+    + (both.length ? `<p>Counted once for both: ${esc(both.join(', '))}</p>` : '');
+  $('hmGoFlow').textContent = `${nodes.length} classes`;
+  $('hmGoPlan').textContent = plan.graduation || 'All done';
+  $('hmGoSched').textContent = plan.semesters[0]?.term || '';
+}
+function wireHome() {
+  $('hmGo').addEventListener('click', (e) => { const b = e.target.closest('[data-go]'); if (b) setTab(b.dataset.go); });
+}
+
 // "Schedule with an advisor": the program's booking link, else its advising page (data/advisors.json); '' when unknown
 function advA(id, text = 'Schedule with an advisor', elId = '') {
   const url = advisorLink(advisors, id);
@@ -1070,12 +1144,20 @@ function wireClasses() {
 }
 
 // ---------- tabs + settings ----------
-// phone: bottom tabs Flowchart / Plan / Schedule; laptop: Flowchart / Schedule in the header (the plan stays beside it)
+// phone: bottom tabs Home / Flowchart / Plan / Schedule; laptop: Home / Flowchart / Schedule in the header
+// (the plan stays beside the flowchart)
+function showTab(tab) {
+  const main = $('main');
+  const was = main.dataset.tab;
+  main.dataset.tab = tab;
+  for (const x of $('tabs').children) x.classList.toggle('on', x.dataset.tab === tab);
+  for (const x of $('wtabs').children) x.classList.toggle('on', x.dataset.tab === (tab === 'plan' ? 'flow' : tab));
+  // entering a screen: a short slide-in instead of a jump (css .enter)
+  if (was !== tab) { main.classList.remove('enter'); void main.offsetWidth; main.classList.add('enter'); }
+}
 function setTab(tab, push = true) {
   if (push && tab !== $('main').dataset.tab) pushNav({ tab });
-  $('main').dataset.tab = tab;
-  for (const x of $('tabs').children) x.classList.toggle('on', x.dataset.tab === tab);
-  for (const x of $('wtabs').children) x.classList.toggle('on', x.dataset.tab === (tab === 'sched' ? 'sched' : 'flow'));
+  showTab(tab);
   if (tab === 'flow' || tab === 'plan') layout();
   if (tab === 'sched') renderSched();
 }
@@ -1119,7 +1201,7 @@ function wireNav() {
     }
     const st = e.state || {};
     for (const d of document.querySelectorAll('dialog[open]')) if (d.id !== st.dlg) d.close();
-    const tab = st.tab || 'flow';
+    const tab = st.tab || 'home';
     if (tab !== $('main').dataset.tab) setTab(tab, false);
     if ((st.sub || 'plan') !== ui.sub) setSub(st.sub || 'plan', false);
     if (st.dlg && !$(st.dlg)?.open) history.replaceState({ sa: 1, tab, sub: ui.sub }, '', location.href); // forward into a closed sheet

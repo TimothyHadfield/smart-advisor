@@ -428,6 +428,9 @@ dialog.hand input { font: inherit; font-size: 16px; width: 150px; padding: 6px 8
   main[data-tab] .sched { display: none; }
   main[data-tab="sched"] .sched { display: flex; }
   main[data-tab="sched"] .flow { display: none; }
+  main[data-tab] .home { display: none; }
+  main[data-tab="home"] .home { display: flex; }
+  main[data-tab="home"] .flow, main[data-tab="home"] .plan, main[data-tab="home"] .sched { display: none; }
   .plan { order: 1; }
   .sc-bar { padding: 0 16px; height: 44px; }
   .sc-body { flex-direction: row; }
@@ -583,3 +586,87 @@ dialog.mat .cls-facts { max-height: 60dvh; }
 dialog p.src { flex: none; }
 .cls-facts a.src { font-weight: 700; }
 .sc-list li.src { padding: 6px 8px; }
+
+/* Home (js/app.js renderHome): name, programs, credits bar in the semester colours, key facts, the ways in.
+   Phone: one column, the three ways in along the bottom; laptop: details left, ways in right. No boxes. */
+main[data-tab="home"] .home { display: flex; }
+.home { overflow: hidden; background: var(--bg); }
+.hm { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 14px; padding: 18px 16px 12px; }
+.hm-main { flex: 1; min-height: 0; display: flex; flex-direction: column; gap: 14px; }
+.hm-name { margin: 0; font-size: 28px; line-height: 1.1; font-weight: 800; letter-spacing: -.02em; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-progs { margin-top: 4px; min-width: 0; }
+.hm-major { display: block; max-width: 100%; padding: 2px 0; border: 0; background: none; color: var(--green); font-size: 17px; font-weight: 700; text-align: left; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; cursor: pointer; }
+.hm-major::after { content: " ▾"; font-size: 11px; }
+.hm-major:active { opacity: .6; }
+.hm-sub { margin: 1px 0 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-sub:empty { display: none; }
+.hm-pick { margin-top: 14px; padding: 12px 22px; border: 0; border-radius: 10px; background: var(--green); color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; }
+.hm-pick:active, .hm-go button:active { transform: scale(.97); }
+.hm-or { margin: 10px 0 0; color: var(--muted); }
+.hm-or button { padding: 0; border: 0; background: none; color: var(--green); font-weight: 700; text-decoration: underline; cursor: pointer; }
+.home.none .hm-go, .home.none .hm-cr, .home.none .hm-facts { display: none; }
+/* credits: a big percent, one line of numbers, and the bar (taken · now · each planned semester) */
+.hm-cr:empty { display: none; }
+.hm-pct { display: flex; align-items: baseline; gap: 10px; }
+.hm-pct b { font-size: 34px; line-height: 1; font-weight: 800; color: var(--green); font-variant-numeric: tabular-nums; }
+.hm-pct b small { font-size: 18px; margin-left: 1px; }
+.hm-pct span { min-width: 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-pct em { font-style: normal; font-weight: 700; color: var(--fg); }
+.hm-bar { display: flex; gap: 2px; height: 12px; margin-top: 8px; border-radius: 6px; overflow: hidden; background: var(--line); transform-origin: left; }
+.hm-bar .seg { flex-basis: 0; min-width: 3px; background: var(--sb); }
+.hm-bar .seg-done { background: var(--done-bg); }
+.hm-bar .seg-ip { background: color-mix(in srgb, var(--done-bg) 30%, var(--panel)); box-shadow: inset 0 0 0 1.5px var(--done-bg); }
+/* facts: two columns of label / value (/ small note), no borders */
+.hm-facts { margin: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px 16px; }
+.hm-facts:empty { display: none; }
+.hm-facts > div { min-width: 0; }
+.hm-facts .wide { grid-column: 1 / -1; }
+.hm-facts dt { font-size: 10.5px; font-weight: 700; color: var(--muted); text-transform: uppercase; letter-spacing: .05em; }
+.hm-facts dd { margin: 1px 0 0; font-size: 15px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-facts small { display: block; color: var(--muted); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-links { font-size: 12.5px; font-weight: 600; }
+.hm-facts dd.hm-links { font-size: 13px; }
+.hm-notes { display: flex; flex-direction: column; gap: 3px; font-size: 11px; color: var(--muted); }
+.hm-notes:empty { display: none; }
+.hm-notes p { margin: 0; }
+.hm-notes .adm { color: #9a5b00; font-weight: 600; }
+.home .noaud { padding: 0; }
+/* the ways in: big, one word each, a small fact under it */
+.hm-go { flex: none; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px; }
+.hm-go button { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 2px; padding: 12px 12px 11px; border: 0; border-radius: 12px; background: var(--panel); color: var(--fg); text-align: left; cursor: pointer; box-shadow: 0 1px 2px rgba(0,0,0,.06); transition: transform .12s; }
+.hm-go svg { color: var(--green); margin-bottom: 6px; }
+.hm-go b { font-size: 14px; }
+.hm-go span { max-width: 100%; color: var(--muted); font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.hm-go span:empty::before { content: "\00a0"; }
+@media (min-width: 900px) {
+  .hm { flex-direction: row; align-items: center; gap: 56px; width: 100%; max-width: 1080px; margin: 0 auto; padding: 32px 48px; }
+  .hm-main { flex: 1; justify-content: center; gap: 22px; }
+  .hm-name { font-size: 44px; }
+  .hm-major { font-size: 22px; }
+  .hm-sub { font-size: 13px; }
+  .hm-pct b { font-size: 52px; }
+  .hm-pct b small { font-size: 26px; }
+  .hm-pct span { font-size: 14px; }
+  .hm-bar { height: 16px; border-radius: 8px; }
+  .hm-facts { grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px 24px; }
+  .hm-facts dd { font-size: 18px; }
+  .hm-facts small { font-size: 12.5px; }
+  .hm-notes { font-size: 12px; }
+  .hm-go { width: 300px; grid-template-columns: 1fr; gap: 12px; }
+  .hm-go [data-go="plan"] { display: none; } /* the plan sits beside the flowchart on a laptop */
+  .hm-go button { flex-direction: row; align-items: center; gap: 14px; padding: 22px 20px; border-radius: 14px; }
+  .hm-go svg { width: 30px; height: 30px; margin: 0; flex: none; }
+  .hm-go b { font-size: 18px; }
+  .hm-go span { margin-left: auto; font-size: 13px; }
+  .hm-go button:hover { box-shadow: 0 2px 10px rgba(0,0,0,.1); }
+}
+/* entering a screen: a short slide-in (Home: its parts one after another, the bar fills) */
+@keyframes enter { from { opacity: .4; transform: translateY(6px); } to { opacity: 1; transform: none; } }
+@keyframes fill { from { transform: scaleX(0); } to { transform: none; } }
+main.enter .panel:not(.home) { animation: enter .18s ease-out; }
+main.enter .home .hm-id, main.enter .home .hm-cr, main.enter .home .hm-facts, main.enter .home .hm-go { animation: enter .26s ease-out both; }
+main.enter .home .hm-cr { animation-delay: .04s; }
+main.enter .home .hm-facts { animation-delay: .08s; }
+main.enter .home .hm-go { animation-delay: .12s; }
+main.enter .home .hm-bar { animation: fill .5s .1s cubic-bezier(.2,.7,.2,1) both; }
+@media (prefers-reduced-motion: reduce) { main.enter .panel, main.enter .home * { animation: none !important; } }

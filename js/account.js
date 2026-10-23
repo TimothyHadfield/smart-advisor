@@ -227,6 +227,7 @@ function render() {
   p.classList.toggle('in', signedIn);
   p.classList.toggle('warn', signedIn && status === 'offline');
   $('profileInitial').textContent = signedIn ? (user.displayName || user.email || '?').trim()[0].toUpperCase() : '';
+  hooks.user?.(signedIn ? { name: user.displayName || '', email: user.email || '' } : null); // Home's greeting
   $('acctOut').hidden = signedIn;
   $('acctIn').hidden = !signedIn;
   $('acctSignOut').hidden = !signedIn;

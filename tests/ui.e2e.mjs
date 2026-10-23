@@ -19,6 +19,8 @@ async function page(saved) {
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   if (saved) await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   return p;
@@ -70,9 +72,11 @@ test('Clear taken asks first, then can be undone', async () => {
   await p.context().close();
 });
 
-test('first visit: the program picker opens instead of landing on EE', async () => {
+test('first visit: not EE; "Pick your program" opens the picker', async () => {
   const p = await page(null);
   await p.goto(APP);
+  // (since 2026-10-22 the picker no longer opens by itself: Home and the empty flowchart ask instead)
+  await p.click('#flowPanel [data-pick]', { timeout: 8000 });
   await p.waitForSelector('#pick[open]', { timeout: 8000 });
   assert.doesNotMatch(await p.textContent('#progName'), /Electrical/);
   assert.deepEqual((await stored(p)).plan?.programs || [], [], 'nothing saved for the student');

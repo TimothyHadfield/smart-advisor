@@ -32,6 +32,8 @@ test('audit import: the later start is saved and still there after a reload; Cle
   const ctx = await browser.newContext({ ...devices['iPhone 15'], serviceWorkers: 'block' });
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   await p.goto(APP + '?p=electrical-engineering-bs');

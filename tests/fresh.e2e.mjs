@@ -50,6 +50,8 @@ after(() => Promise.all([browser.close(), new Promise((r) => server.close(r))]))
 test('a new deploy reaches a phone that has the old build cached, with one reload and no loop', async () => {
   const ctx = await browser.newContext({ ...devices['iPhone 15'], serviceWorkers: 'block' });
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   const errors = [];
   p.on('pageerror', (e) => errors.push(String(e)));
   let loads = 0;

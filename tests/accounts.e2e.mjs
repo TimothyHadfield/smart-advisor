@@ -20,6 +20,8 @@ async function page({ blockFirebase = false } = {}) {
   const ctx = await browser.newContext({ ...devices['iPhone 15'], serviceWorkers: 'block' });
   if (blockFirebase) await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
   const p = await ctx.newPage();
+  // the app opens on Home (2026-10-22); these checks start on the flowchart, as they did before Home
+  { const go = p.goto.bind(p); p.goto = async (...a) => { const r = await go(...a); await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); }); return r; }; }
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   p.on('console', (m) => { if (m.type() === 'error') p.errors.push(m.text()); });
