@@ -21,6 +21,7 @@ import { startTab, programProgress, gradMonth, capName, displayName, catalogShor
 import { needTree, gatePhrases, isAlternative, unlocksOf, statusText, offeredText } from './clsinfo.js';
 import { initGlossary } from './glossary.js';
 import { seasonTable } from './rules.js';
+import { ZOOM, clamp, pinchStart, pinchStep, widthZoom, dragGuard, sheetDrag } from './touch.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -379,13 +380,13 @@ function buildBoxes() {
     f.dataset.gf = g.id;
     f.innerHTML = `<b>${esc(g.title)}</b><span class="gp"></span>`;
     const listed = g.kind === 'pick' && g.unit.kind === 'choice';
-    if (listed) f.addEventListener('click', (e) => { if (!e.target.closest('.box')) openGroupList(g); });
+    if (listed) f.addEventListener('click', (e) => { if (!e.target.closest('.box') && !chartDragged(e)) openGroupList(g); });
     host.appendChild(f);
     if (g.more.length) {
       const m = document.createElement('button');
       m.type = 'button'; m.className = 'gmore'; m.dataset.gm = g.id;
       m.textContent = `+${g.more.length} more`;
-      m.addEventListener('click', () => openGroupList(g));
+      m.addEventListener('click', (e) => { if (!chartDragged(e)) openGroupList(g); });
       host.appendChild(m);
     }
     if (g.inChart) {
@@ -425,6 +426,7 @@ function buildBoxes() {
     }
     b.addEventListener('click', (e) => {
       if (pressed.fired) { pressed.fired = false; return; } // a long press opened the class sheet
+      if (chartDragged(e)) return; // a finger that dragged the chart (or pinched) isn't a tap
       // Explore: a tap tries the class as taken (or not); otherwise a tap opens its details
       // (the class stays picked out, its lines lit, while its details are open: setSel in openClass)
       if (e.target.closest('.gl')) openGenEd(n); else if (exploring()) toggle(n, b); else { setHover(null); openClass({ node: n }); }
@@ -525,23 +527,28 @@ function boxTerm(n, completed) {
 const TAG = { minor: 'Minor', cert: 'Cert', major: 'Major' };
 const unitOf = (id) => model?.units.find((u) => u.id === id);
 
-// zoom (phone): the chart can be shrunk to fit the screen (Fit button or pinch); 1 = full size
-const zoom = { mode: null, k: 1, fitK: 1 };
+// zoom: the chart can be shrunk to fit the screen (Fit button) or pinched (phone); 1 = full size
+const zoom = { mode: null, k: 1, fitK: 1, minK: ZOOM.min };
+// a phone or tablet (finger, no mouse): starts with the chart's whole width on screen, pinch zooms
+const touchUI = () => matchMedia('(pointer: coarse)').matches;
 function layout() {
   const chart = $('chart');
   const W = chart.clientWidth, H = chart.clientHeight;
   if (!W || !H || !nodes) return;
   pickChart(W);
   const g = graph;
-  // fitK: the whole chart on screen (Fit button); widthK: the chart's width on screen, no smaller than
-  // MIN_K (the usual view: no sideways scrolling, scroll down only)
+  // fitK: the whole chart on screen (Fit button); widthK: the chart's width on screen (the usual view: no
+  // sideways scrolling, scroll down only), no smaller than MIN_K on a laptop; a phone shows the whole width
+  // down to ZOOM.min and pinches in to read (Tim, 2026-10-23: "2 finger to zoom in/out")
   zoom.fitK = Math.min(1, (W - 8) / g.width, (H - 8) / g.height);
-  zoom.widthK = Math.min(1, Math.max(MIN_K, (W - 2) / g.width));
+  zoom.widthK = widthZoom(W, g.width, touchUI() ? ZOOM.min : MIN_K);
+  zoom.minK = Math.max(ZOOM.floor, Math.min(ZOOM.min, zoom.fitK, zoom.widthK));
   if (zoom.mode === null) zoom.mode = 'width';
-  const k = zoom.mode === 'fit' ? zoom.fitK : zoom.mode === 'free' ? Math.max(zoom.fitK, Math.min(1.5, zoom.k)) : zoom.widthK;
+  const k = zoom.mode === 'fit' ? zoom.fitK : zoom.mode === 'free' ? clamp(zoom.k, zoom.minK, ZOOM.max) : zoom.widthK;
   zoom.k = k;
   const fitBtn = $('fitBtn');
-  fitBtn.hidden = zoom.fitK >= zoom.widthK - 0.001;
+  // (after a pinch it's the way back to the usual view)
+  fitBtn.hidden = zoom.mode !== 'free' && zoom.fitK >= zoom.widthK - 0.001;
   fitBtn.setAttribute('aria-pressed', zoom.mode === 'fit');
   const dx = Math.max(0, Math.round((W / k - g.width) / 2));
   const totalW = Math.max(W / k, Math.ceil(g.width)), totalH = Math.max(H / k, Math.ceil(g.height));
@@ -631,37 +638,58 @@ function layout() {
   drawHover();
 }
 
-// Fit button (shown when the chart is bigger than the screen) + two-finger pinch on the chart only
+// Fit button (shown when the chart is bigger than the screen, or after a pinch) + two-finger pinch on the
+// chart only. One finger pans: the chart's own scrolling (momentum included); the page never moves or zooms.
+let chartDragged = () => false;
 function wireZoom() {
   const chart = $('chart');
+  chartDragged = dragGuard(chart);
   $('fitBtn').addEventListener('click', () => {
     const was = zoom.k;
-    zoom.mode = zoom.mode === 'fit' ? 'width' : 'fit';
+    // whole chart <-> its width; after a pinch: back to the width
+    zoom.mode = zoom.mode === 'width' ? 'fit' : 'width';
     layout();
     // keep the middle of the view in the middle
     chart.scrollLeft = Math.max(0, (chart.scrollLeft + chart.clientWidth / 2) * (zoom.k / was) - chart.clientWidth / 2);
     chart.scrollTop = Math.max(0, (chart.scrollTop + chart.clientHeight / 2) * (zoom.k / was) - chart.clientHeight / 2);
   });
-  let pinch = null;
+  let pinch = null, frame = 0, last = null;
   const dist = (t) => Math.hypot(t[0].clientX - t[1].clientX, t[0].clientY - t[1].clientY);
+  const mid = (t) => { const r = chart.getBoundingClientRect(); return [(t[0].clientX + t[1].clientX) / 2 - r.left, (t[0].clientY + t[1].clientY) / 2 - r.top]; };
+  // one redraw per frame, the chart point under the fingers stays under them
+  const draw = () => {
+    frame = 0;
+    if (!pinch || !last) return;
+    const s = pinchStep(pinch, last.d, last.mx, last.my, zoom.minK, ZOOM.max);
+    zoom.mode = 'free';
+    zoom.k = s.k;
+    layout();
+    chart.scrollLeft = s.left;
+    chart.scrollTop = s.top;
+  };
   chart.addEventListener('touchstart', (e) => {
     if (e.touches.length !== 2) return;
     pressed.cancel();
-    const r = chart.getBoundingClientRect();
-    const mx = (e.touches[0].clientX + e.touches[1].clientX) / 2 - r.left, my = (e.touches[0].clientY + e.touches[1].clientY) / 2 - r.top;
-    pinch = { d0: dist(e.touches), k0: zoom.k, mx, my, cx: (chart.scrollLeft + mx) / zoom.k, cy: (chart.scrollTop + my) / zoom.k };
+    setHover(null);
+    const [mx, my] = mid(e.touches);
+    pinch = pinchStart(dist(e.touches), zoom.k, mx, my, chart.scrollLeft, chart.scrollTop);
+    last = null;
   }, { passive: true });
   chart.addEventListener('touchmove', (e) => {
     if (!pinch || e.touches.length !== 2) return;
-    e.preventDefault();
-    zoom.mode = 'free';
-    zoom.k = pinch.k0 * dist(e.touches) / pinch.d0;
-    layout();
-    chart.scrollLeft = pinch.cx * zoom.k - pinch.mx;
-    chart.scrollTop = pinch.cy * zoom.k - pinch.my;
+    e.preventDefault(); // the page doesn't scroll or zoom; the chart does
+    const [mx, my] = mid(e.touches);
+    last = { d: dist(e.touches), mx, my };
+    if (!frame) frame = requestAnimationFrame(draw);
   }, { passive: false });
-  chart.addEventListener('touchend', (e) => { if (e.touches.length < 2) pinch = null; });
-  for (const ev of ['gesturestart', 'gesturechange']) chart.addEventListener(ev, (e) => e.preventDefault()); // iOS: no page zoom from the chart
+  const end = (e) => {
+    if (!pinch || e.touches.length >= 2) return;
+    if (frame) { cancelAnimationFrame(frame); draw(); }
+    pinch = null; last = null;
+  };
+  chart.addEventListener('touchend', end);
+  chart.addEventListener('touchcancel', end);
+  for (const ev of ['gesturestart', 'gesturechange', 'gestureend']) chart.addEventListener(ev, (e) => e.preventDefault()); // iOS: no page zoom from the chart
 }
 
 // press and hold (or right-click) a box: its class sheet; the tap that ends a hold doesn't toggle it
@@ -1035,6 +1063,7 @@ function wireFlowBar() {
     refresh();
     renderExplore();
     if (exploring()) toast('Tap classes to try possibilities');
+    else if ($('toastUndo').hidden) $('toast').classList.remove('on'); // (its hint goes with it; an Undo stays)
   });
   // clear every try (the actual classes stay), with Undo
   $('hypClear').addEventListener('click', () => {
@@ -1297,7 +1326,7 @@ function showTab(tab) {
   $('ttl').textContent = TITLE[tab] || '';
   for (const b of $('fpSeg').children) { b.classList.toggle('on', b.dataset.v === tab); b.setAttribute('aria-pressed', b.dataset.v === tab); }
   // the class details beside the flowchart belong to it
-  if (was === 'flow' && tab !== 'flow' && $('clsDlg').classList.contains('side') && $('clsDlg').open) $('clsDlg').close();
+  if (was === 'flow' && tab !== 'flow' && panelDlg($('clsDlg')) && $('clsDlg').open) $('clsDlg').close();
   // entering a screen: a short slide-in instead of a jump (css .enter)
   if (was !== tab) { main.classList.remove('enter'); void main.offsetWidth; main.classList.add('enter'); }
   // a hint belongs to the screen it was shown on (an Undo stays until it times out)
@@ -1321,8 +1350,10 @@ function pushNav(st) {
   const entry = { sa: 1, tab: tabNow(), sub: ui.sub, ...st };
   if (NAV.pending) NAV.queued = entry; else history.pushState({ ...entry, depth: depthNow() + 1 }, '', location.href);
 }
+// the class details on the Flowchart aren't a modal: beside the chart (laptop) or a bottom sheet under it (phone)
+const panelDlg = (d) => d.classList.contains('side') || d.classList.contains('bsheet');
 function openDlg(dlg) {
-  if (!dlg.open) { if (dlg.classList.contains('side')) dlg.show(); else dlg.showModal(); }
+  if (!dlg.open) { if (panelDlg(dlg)) dlg.show(); else dlg.showModal(); }
   if (!NAV.kbd) document.activeElement?.blur(); // a focus ring only for keyboard users (:focus-visible)
   const cur = history.state?.dlg;
   if (cur === dlg.id) return;
@@ -1354,7 +1385,7 @@ function wireNav() {
     });
   }
   // the class details beside the flowchart (not a modal): Esc closes them too
-  addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('clsDlg').open && $('clsDlg').classList.contains('side')) $('clsDlg').close(); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('clsDlg').open && panelDlg($('clsDlg'))) $('clsDlg').close(); });
   addEventListener('popstate', (e) => {
     if (NAV.pending) {
       NAV.pending--;
@@ -1617,9 +1648,28 @@ function openClass({ node, item }) {
   setSel(clsNode?.id || null);
   // laptop, on the Flowchart: the details open in the right-side section (over the plan), the chart stays usable
   const d = $('clsDlg');
-  if (!d.open) d.classList.toggle('side', wide() && tabNow() === 'flow');
+  if (!d.open) { d.classList.toggle('side', wide() && tabNow() === 'flow'); d.classList.toggle('bsheet', !wide() && tabNow() === 'flow'); }
   openDlg(d);
   d.scrollTop = 0;
+  if (d.classList.contains('bsheet')) keepAboveSheet(clsNode?.id, d);
+}
+// phone: the picked box stays in sight above the class details sheet (the chart scrolls, never the page; a
+// spacer under the chart gives it room to scroll the last row up)
+function keepAboveSheet(id, sheet) {
+  const chart = $('chart');
+  let pad = $('chartPad');
+  if (!pad) { pad = document.createElement('div'); pad.id = 'chartPad'; pad.className = 'chart-pad'; chart.appendChild(pad); }
+  // (where the sheet rests: it may still be sliding in)
+  const top = document.documentElement.clientHeight - sheet.offsetHeight, cr = chart.getBoundingClientRect();
+  pad.style.cssText = `top:${$('boxes').offsetHeight * zoom.k}px;height:${Math.max(0, cr.bottom - top)}px`;
+  const el = id && $('boxes').querySelector(`.box[data-id="${CSS.escape(id)}"]`);
+  if (!el) return;
+  const r = el.getBoundingClientRect();
+  const room = top - cr.top; // the chart's part still in sight
+  let dy = 0;
+  if (r.bottom > top - 10) dy = r.bottom - (top - 10);
+  if (r.top - dy < cr.top + 6 || r.height > room) dy = r.top - (cr.top + Math.max(6, (room - r.height) / 2));
+  if (Math.abs(dy) > 1) chart.scrollBy({ top: dy, behavior: matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth' });
 }
 // the box on the chart that stands for a class code (its own box, an option, or a folded lab's lecture)
 function boxOf(code) {
@@ -1766,10 +1816,14 @@ function wireClassSheet() {
     const n = boxOf(b.dataset.open);
     if (n) openClass({ node: n });
   });
-  // the details closing: the chart lets go of the class
-  dlg.addEventListener('close', () => setSel(null));
-  // a tap on empty chart space: let go of the class (and close its side details on laptop)
+  // the details closing: the chart lets go of the class (and the phone's sheet gives back its room)
+  dlg.addEventListener('close', () => { setSel(null); dlg.classList.remove('tall'); $('chartPad')?.style.setProperty('height', '0px'); });
+  // phone: drag the sheet's handle down to close it, up to make it taller; when it grows, the box stays in sight
+  new ResizeObserver(() => { if (dlg.open && dlg.classList.contains('bsheet')) keepAboveSheet(selId, dlg); }).observe(dlg);
+  for (const d of [dlg, $('matDlg')]) { const h = d.querySelector('.grab'); if (h) sheetDrag(d, h, { close: () => d.close() }); }
+  // a tap on empty chart space: let go of the class (and close its side details / sheet)
   $('chart').addEventListener('click', (e) => {
+    if (chartDragged(e)) return;
     if (!selId || e.target.closest('.box, .gframe, .gmore, .matric-lbl, .pickgrp em, button, a')) return;
     if (dlg.open) dlg.close(); else setSel(null);
   });
@@ -1931,9 +1985,18 @@ function drawWeek(s) {
         + `<b class="wt">${esc(name || code)}</b><span class="wtm">${timeRange(b.m.s, b.m.e)}</span><b class="wc">${esc(code)}</b></div>`;
     }).join('')
     + '</div></div>';
-  // a short block keeps one line of title + the time; a tiny one keeps the time only (the time always wins)
+  fitBlocks();
+  // (again whenever the grid changes size: the phone's Filters opening, turning the phone)
+  if (!fitBlocks.watch) { fitBlocks.watch = new ResizeObserver(() => fitBlocks()); fitBlocks.watch.observe($('scWeek')); }
+}
+// a short block keeps one line of title + the time; a tiny one keeps the time only (the time always wins)
+function fitBlocks() {
   const cut = (el) => { const t = el.querySelector('.wtm'); return t.offsetTop + t.offsetHeight > el.clientHeight + 1; };
   for (const el of $('scWeek').querySelectorAll('.wk-b')) {
+    el.classList.remove('short', 'tiny', 'snug');
+    // a long time ("10:30–11:45") in a narrow phone column: slightly smaller digits so it's never cut off
+    const t = el.querySelector('.wtm');
+    if (t.scrollWidth > t.clientWidth + 0.5) el.classList.add('snug');
     if (cut(el)) el.classList.add('short');
     if (cut(el)) el.classList.add('tiny');
   }

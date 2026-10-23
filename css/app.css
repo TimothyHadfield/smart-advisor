@@ -334,7 +334,7 @@ main[data-tab="sched"] .sched { display: flex; }
 .wk-hl { position: absolute; left: 0; right: 0; height: 1px; background: var(--line); }
 /* a block: short title (or code, per Labels), the full time range in bright numbers, the code under it (Both) */
 .wk-b { position: absolute; width: calc(100% / var(--n) - 3px); margin-left: 1.5px; padding: 2px 4px; overflow: hidden; border-radius: 4px; background: var(--sf); border-left: 3px solid var(--sb); color: var(--fg); display: flex; flex-direction: column; }
-.wk-b .wt { order: 1; font-size: 14px; line-height: 16px; font-weight: 700; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow-wrap: anywhere; }
+.wk-b .wt { order: 1; flex: none; font-size: 14px; line-height: 16px; font-weight: 700; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow-wrap: anywhere; }
 .wk-b .wtm { order: 2; flex: none; font-size: 13px; line-height: 16px; font-weight: 700; color: var(--fg); white-space: nowrap; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
 .wk-b .wc { order: 3; font-size: 12px; line-height: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 #scWeek:not([data-lbl="both"]) .wk-b .wc { display: none; }
@@ -352,6 +352,7 @@ main[data-tab="sched"] .sched { display: flex; }
   .wk-b .wt, #scWeek[data-lbl="code"] .wk-b .wc { font-size: 13px; line-height: 15px; }
   .wk-b .wtm { font-size: 12px; line-height: 14px; letter-spacing: -.03em; }
   .wk-b .wc { font-size: 11px; line-height: 13px; }
+  .wk-b.snug .wtm { font-size: 11px; letter-spacing: -.04em; } /* a time too long for the column */
 }
 .sc-list { flex: 1; min-height: 0; overflow: auto; list-style: none; margin: 0; padding: 0 8px 8px; border-top: 1px solid var(--line); overscroll-behavior: contain; }
 .sc-list .none { padding: 10px 8px; color: var(--muted); }
@@ -806,3 +807,62 @@ button.ck:active { background: var(--brand); color: #fff; }
 .gloss p { margin: 0; }
 .gloss .gl-src { margin-top: 5px; font-size: 12px; }
 .gloss a { color: var(--green); font-weight: 600; text-decoration: none; }
+
+/* ---------- iPhone pass (2026-10-23; Tim: "All of the organization and everything has been specifically for the
+   laptop use ... I figure the 1 finger drage around and the 2 finger to zoom in/out should probably be applied") */
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; }
+/* safe areas: the notch's sides (landscape) and the home bar under every section */
+body { padding-left: env(safe-area-inset-left); padding-right: env(safe-area-inset-right); }
+.panel:not(.home) { padding-bottom: env(safe-area-inset-bottom); }
+/* room under the chart so the picked box can scroll up above the class details sheet (js keepAboveSheet) */
+.chart-pad { position: absolute; left: 0; width: 1px; height: 0; pointer-events: none; }
+.grab { display: none; }
+/* phone: class details (and Matriculation) = a bottom sheet; on the Flowchart it's not a modal, so the chart above
+   stays in sight and a tap on another box switches to it. Its handle: drag down = close, up (or tap) = taller */
+@media (max-width: 899px) {
+  dialog.cls[open] { position: fixed; inset: auto 0 0 0; margin: 0; width: 100%; max-width: none; max-height: 58dvh; padding: 0 16px; display: flex; flex-direction: column; overflow: hidden; border-radius: 16px 16px 0 0; box-shadow: 0 -1px 0 var(--line), 0 -8px 28px rgba(0,0,0,.2); z-index: 10; animation: sheet-up .2s ease-out; transition: transform .18s ease-out; }
+  dialog.cls.tall[open] { max-height: calc(100dvh - 52px - env(safe-area-inset-top)); }
+  dialog.cls[open] > .grab { display: block; position: relative; flex: none; height: 28px; margin: 0 -16px; touch-action: none; cursor: grab; }
+  .grab::before { content: ""; position: absolute; left: 50%; top: 10px; width: 40px; height: 5px; border-radius: 3px; background: var(--edge); transform: translateX(-50%); }
+  dialog.cls[open] > form { flex: 1; min-height: 0; overflow: auto; overscroll-behavior: contain; }
+  dialog.cls .cls-facts, dialog.mat .cls-facts { max-height: none; overflow: visible; }
+  /* Done always in reach */
+  dialog.cls form > .row { position: sticky; bottom: 0; z-index: 1; margin-top: 0; padding: 8px 0 calc(10px + env(safe-area-inset-bottom)); background: var(--panel); }
+  @keyframes sheet-up { from { transform: translateY(48px); opacity: .5; } to { transform: none; opacity: 1; } }
+}
+@media (max-width: 899px) and (prefers-reduced-motion: reduce) { dialog.cls[open] { animation: none; transition: none; } }
+
+/* a finger needs about 40 px: small controls keep their look and get a bigger invisible touch area; list rows
+   get a real 40 px; form fields use 16 px text so iOS doesn't zoom in when one is tapped */
+@media (pointer: coarse) {
+  .flow { overflow: hidden; }
+  .seg { overflow: visible; }
+  .seg button:first-child { border-radius: 7px 0 0 7px; }
+  .seg button:last-child { border-radius: 0 7px 7px 0; }
+  .seg button, .chip, .lg-fit, .xbar .hyp-x, .lg-grades, .sc-copy, .sc-mine, .sc-ftog, .tip, .hm-or button,
+  dialog .ok, dialog .ghost, .pf-menu .ghost, .pf-menu .ok, .cls-cat, .toast button, .chosen .x, dialog label.sw-row,
+  #clsTakenRow, .sem-go, .sc-add { position: relative; }
+  .seg button::after, .chip::after, .lg-fit::after, .xbar .hyp-x::after, .lg-grades::after, .sc-copy::after, .sc-mine::after,
+  .sc-ftog::after, .pf-circle::after, .tip::after, .hm-or button::after, dialog .ok::after, dialog .ghost:not(.file)::after,
+  .pf-menu .ghost::after, .pf-menu .ok::after, .cls-cat::after, .toast button::after, .chosen .x::after,
+  dialog label.sw-row::after, .sc-add::after {
+    content: ""; position: absolute; left: 50%; top: 50%; width: max(100%, 40px); height: max(100%, 40px); transform: translate(-50%, -50%);
+  }
+  /* a plan semester's heading (opens Schedule): its touch area grows up into the heading's own height */
+  .sem h3 { min-height: 40px; align-items: flex-end; }
+  .sem-go::after { content: ""; position: absolute; left: 0; right: 0; bottom: -3px; height: 40px; }
+  .xbar { position: relative; z-index: 2; }
+  label > input[role="switch"] { z-index: 1; } /* the switch itself stays on top of its label's touch area */
+  .sem li { min-height: 40px; align-items: center; }
+  .pick-list button, .cl-row, .imp-list label, .sc-add { min-height: 40px; }
+  .cls-facts button.ck { min-height: 40px; display: inline-flex; align-items: center; }
+  .cls-raw summary { padding: 10px 0; }
+  .sc-terms { padding-top: 3px; padding-bottom: 0; }
+  .sc-tg button { min-height: 40px; }
+  .sc-nav button { width: 40px; height: 40px; }
+  .sc-filt .seg button { min-height: 40px; }
+  .seg.days button { width: 40px; }
+  select, textarea, input:not([type="checkbox"]):not([type="radio"]):not([type="file"]) { font-size: 16px !important; }
+  dialog select, .sc-filt select, .pick input[type="search"], .imp .file { min-height: 40px; }
+}
+@media (pointer: coarse) { .legend .lg-fit::after, .legend .lg-grades::after { transform: translate(-50%, calc(-50% + 3px)); } }

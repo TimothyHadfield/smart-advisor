@@ -13,7 +13,7 @@
 export const STARTUP = ['css/app.css', 'js/fresh.js', 'js/app.js', 'js/planner.js', 'js/phases.js', 'js/rules.js', 'js/gened.js', 'js/home.js', 'js/layout.js',
   'js/audit.js', 'js/sync.js', 'js/account.js', 'js/programs.js', 'js/schedule.js', 'js/uistate.js',
   'js/mysched.js', 'js/mineui.js', 'js/classes.js', 'js/hover.js', 'js/matric.js', 'js/sources.js', 'js/clsinfo.js', 'js/glossary.js',
-  'js/groups.js', 'js/shortnames.js', 'js/curprereqs.js'];
+  'js/groups.js', 'js/shortnames.js', 'js/curprereqs.js', 'js/touch.js'];
 
 const KEY = 'smart-advisor:fresh'; // sessionStorage: the live Last-Modified we already reloaded for
 const EVERY_MS = 60_000;
