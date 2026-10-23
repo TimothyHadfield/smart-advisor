@@ -125,7 +125,7 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .edges marker path { fill: var(--edge); stroke: none; }
 .edges path.hot { stroke: var(--edge-hot); stroke-width: 2; }
 /* hover a box: its lines on top in two colours, the others dimmed */
-.edges.hov > path { opacity: .35; }
+.edges.hov > path, .edges.hov > g.lines { opacity: .35; }
 .edges .hl path { stroke-width: 2; }
 .edges .hl path.pre { stroke: var(--edge-pre); }
 .edges .hl path.post { stroke: var(--edge-post); }

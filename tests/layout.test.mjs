@@ -47,7 +47,9 @@ function oldColumns() {
 const oldAt = oldColumns();
 const oldPaths = edges.map((e) => [oldAt.get(e.from), oldAt.get(e.to)]);
 const L = layoutGraph(nodes, edges, { pairs: labPairs(nodes) });
-const newPaths = L.paths.map((p) => p.pts);
+// the order itself, without bundled lines (a bundle's legs share a bar, so they don't count as separate paths)
+const LP = layoutGraph(nodes, edges, { pairs: labPairs(nodes), bundle: false });
+const newPaths = LP.paths.map((p) => p.pts);
 const before = countCrossings(oldPaths);
 const after = countCrossings(newPaths);
 console.log(`EE flowchart arrow crossings: old layout ${before}, new layout ${after}`);
@@ -63,7 +65,7 @@ test('countCrossings counts a simple X and ignores touching ends', () => {
 test('new layout has far fewer arrow crossings than the old one on the real EE data', () => {
   assert.ok(before >= 20, `old layout should have plenty of crossings (got ${before})`);
   assert.ok(after <= before / 2, `new ${after} should be at most half of old ${before}`);
-  assert.equal(after, L.crossings, 'geometric count matches the order-based count');
+  assert.equal(after, LP.crossings, 'geometric count matches the order-based count');
 });
 
 test('every box is placed once, no two boxes overlap, arrows only go rightward', () => {

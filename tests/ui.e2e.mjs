@@ -129,6 +129,7 @@ test('hold a box: the class sheet opens and the box is not marked taken; a chose
   await p.goto(APP + '?p=computer-science-bs');
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   const b = await p.$('.box[data-id="MATH 1210"]');
+  await b.scrollIntoViewIfNeeded(); // (where it sits depends on the layout)
   const r = await b.boundingBox();
   await p.mouse.move(r.x + r.width / 2, r.y + r.height / 2);
   await p.mouse.down();

@@ -512,9 +512,12 @@ function layout() {
   const d = (pts) => 'M' + pts.map(([x, y]) => `${+(x + dx).toFixed(1)},${+y.toFixed(1)}`).join('L');
   svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>'
     + ['pre', 'post'].map((k) => `<marker id="ah-${k}" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>`).join('') + '</defs>'
-    + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('')
-    // the matriculation line: left = classes that don't need it, right = classes that do
-    + (g.split ? `<path class="matric" d="${d([[g.split.x, g.split.top], [g.split.x, g.split.bottom]])}"/>` : '');
+    // (one group, so lines that share a trunk fade as one when a box is hovered)
+    + '<g class="lines">' + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('') + '</g>'
+    // the matriculation line: left = classes that don't need it, right = classes that do; it bends through
+    // the gaps around the boxes; a box no line can put on its side gets its own dotted outline
+    + (g.split ? `<path class="matric" d="${d(g.split.pts)}"/>`
+      + g.split.strays.map((r) => `<path class="matric" d="${d([[r.x - 5, r.y - 5], [r.x + r.w + 5, r.y - 5], [r.x + r.w + 5, r.y + r.h + 5], [r.x - 5, r.y + r.h + 5], [r.x - 5, r.y - 5]])}"/>`).join('') : '');
   const mat = $('matricBtn');
   if (mat) {
     mat.hidden = !g.split;

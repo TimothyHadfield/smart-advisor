@@ -32,13 +32,17 @@ test('EE (laptop): dotted line between MATH 1210 and ECE 3250; the label is a bu
   await p.waitForSelector('.box[data-id="ECE 3250"]');
   await p.waitForSelector('path.matric', { state: 'attached' });
   const g = await p.evaluate(() => {
-    const x = +document.querySelector('path.matric').getAttribute('d').match(/^M([\d.]+)/)[1];
-    const box = (id) => { const b = document.querySelector(`.box[data-id="${id}"]`); return { l: b.offsetLeft, r: b.offsetLeft + b.offsetWidth }; };
+    // the line bends: read its upright run at each box's height (same coordinates as the boxes)
+    const pts = document.querySelector('path.matric').getAttribute('d').slice(1).split('L').map((s) => s.split(',').map(Number));
+    const xAt = (y) => { for (let k = 1; k < pts.length; k++) if (pts[k - 1][0] === pts[k][0] && y >= Math.min(pts[k - 1][1], pts[k][1]) && y <= Math.max(pts[k - 1][1], pts[k][1])) return pts[k][0]; return null; };
+    const box = (id) => { const b = document.querySelector(`.box[data-id="${id}"]`); return { l: b.offsetLeft, r: b.offsetLeft + b.offsetWidth, x: xAt(b.offsetTop + b.offsetHeight / 2) }; };
     const lbl = document.getElementById('matricBtn'), lr = lbl.getBoundingClientRect(), cr = document.getElementById('chart').getBoundingClientRect();
-    return { x, math: box('MATH 1210'), ece: box('ECE 3250'), tag: lbl.tagName, type: lbl.type, text: lbl.textContent, h: lr.height, inView: lr.top >= cr.top && lr.bottom <= cr.bottom && lr.left >= cr.left && lr.right <= cr.right,
+    return { top: pts[0], lbl: [lbl.offsetLeft, lbl.offsetTop], math: box('MATH 1210'), ece: box('ECE 3250'), tag: lbl.tagName, type: lbl.type, text: lbl.textContent, h: lr.height, inView: lr.top >= cr.top && lr.bottom <= cr.bottom && lr.left >= cr.left && lr.right <= cr.right,
       dash: getComputedStyle(document.querySelector('path.matric')).strokeDasharray };
   });
-  assert.ok(g.math.r < g.x && g.x < g.ece.l, JSON.stringify(g));
+  assert.ok(g.math.r < g.math.x, `MATH 1210 left of the line: ${JSON.stringify(g)}`);
+  assert.ok(g.ece.x < g.ece.l, `ECE 3250 right of the line: ${JSON.stringify(g)}`);
+  assert.ok(Math.abs(g.lbl[0] - g.top[0]) < 1.5 && Math.abs(g.lbl[1] - g.top[1]) < 1.5, `label on the line's top end ${JSON.stringify(g)}`);
   assert.equal(g.tag, 'BUTTON'); assert.equal(g.type, 'button'); assert.equal(g.text, 'Matriculation');
   assert.ok(g.inView, 'label visible without scrolling');
   assert.notEqual(g.dash, 'none', 'dotted');
