@@ -9,7 +9,9 @@ import { filterPrograms, programGroup, catalogInfo, programYears, programPath, y
 import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
-import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
+// every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
+import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 
@@ -633,6 +635,8 @@ function openGenEd(n) {
   const cr = n.kind === 'choice' ? (n.pick?.credits ?? n.credits) : n.credits;
   $('geSub').textContent = [list.groups.filter((g) => g.name).map((g) => g.name).join(' · '), cr ? `${cr} cr` : ''].filter(Boolean).join(' · ');
   $('geQ').value = '';
+  // the lists come from the catalog's General Education page (that catalog year)
+  $('geSrc').innerHTML = sourceLine([{ ...sourceLink('gened', { gened }), text: 'Gen Ed lists' }]);
   drawGenEd();
   openDlg($('geDlg'));
   $('geList').scrollTop = 0;
@@ -720,6 +724,9 @@ function renderPlan(plan) {
     ? `<b>Graduate ${plan.graduation}</b><span>${plan.creditsLeft} credits · ${n} semester${n === 1 ? '' : 's'}</span>`
     : `<b>All done</b>`)
     + `<p class="caveat">Unofficial plan — confirm with ${advA(progParts[0]?.id, 'your advisor', 'sumAdvisor') || 'your advisor'}. <a href="${esc(issueURL(progIssue()))}" target="_blank" rel="noopener" id="sumReport">Report a mistake</a></p>`
+    // where the requirements come from: each program's catalog page (requirements tab), the sample plan, the date read
+    + `<p class="src">${programSources(progParts)}</p>`
+    // (its source = the catalog link on the line above, and the Matriculation sheet's ↗ links)
     + (gated ? `<p class="adm">Requires admission — apply after these classes. ${advA(progParts[0]?.id)}</p>` : '')
     // bachelor's totals (120 credits, 40 upper-division) and classes a major and minor share
     + (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')
@@ -1173,8 +1180,18 @@ function openClass({ node, item }) {
   if (src && src !== whyText) rows.push(['Catalog', src]);
   if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
   else if (kind === 'placeholder' && u?.title) rows.push(['Note', u.title]);
-  $('clsFacts').innerHTML = rows.map(([k, v, html]) => `<dt>${esc(k)}</dt><dd>${esc(v)}${html ? ' ' + html : ''}</dd>`).join('');
-  $('clsCat').href = code ? courseURL(code) : part?.program.url || 'https://catalog.uvu.edu/';
+  // each fact links to where it came from: the class's catalog entry (prerequisites, its own grade rule) or the
+  // program's catalog requirements (why it's here, the requirement's lines, a requirement's grade rule)
+  const courseSrc = code ? sourceLink('course', { code, year: part?.year, current: catalog.info.current }) : null;
+  const progSrc = sourceLink('program', { program: part?.program, tab: 'requirements' });
+  const fromCourse = new Set(['Before', 'Before or with', 'With', 'Needs']);
+  const srcOf = (k) => (fromCourse.has(k) ? courseSrc : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
+  $('clsFacts').innerHTML = rows.map(([k, v, html]) => {
+    const s = linkHTML(srcOf(k), '');
+    return `<dt>${esc(k)}</dt><dd>${esc(v)}${s ? ' ' + s : ''}${html ? ' ' + html : ''}</dd>`;
+  }).join('');
+  $('clsSrc').innerHTML = progSrc ? `${linkHTML(progSrc, part.program.name)} · ${esc(progSrc.label)}${progSrc.date ? ` · <span class="src-d">${checked(progSrc.date)}</span>` : ''}` : '';
+  $('clsCat').href = courseSrc?.url || progSrc?.url || `${CATALOG}/`;
   $('clsReport').href = issueURL(progIssue({ code: code || u?.label || '', title: code ? c.title || '' : '' }));
   // taken switch: for a class that is a box on the chart
   clsNode = node || nodes.find((x) => x.id === u?.id || x.id === item?.unitId) || null;
@@ -1224,8 +1241,13 @@ function openMatric() {
   const adv = advA(part?.id) + aplA(part?.id);
   if (adv) rows.push(['Advisor', adv]);
   $('matProg').textContent = part?.program.name || '';
-  $('matFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
-  $('matCat').href = f.url || part?.program.url || 'https://catalog.uvu.edu/';
+  // each catalog fact links to the catalog page (its own words highlighted when the browser can); source line below
+  const progSrc = sourceLink('program', { program: part?.program, tab: 'requirements' });
+  const factSrc = sourceLink('url', { url: f.url || progSrc?.url, label: progSrc?.label || 'Catalog' });
+  const fromCat = new Set(['Catalog', 'GPA', 'Grade', 'Before', 'Needs it', 'Deadline']);
+  $('matFacts').innerHTML = rows.map(([k, v]) => { const s = fromCat.has(k) ? linkHTML(factSrc, '') : ''; return `<dt>${esc(k)}</dt><dd>${v}${s ? ' ' + s : ''}</dd>`; }).join('');
+  $('matSrc').innerHTML = progSrc ? `${linkHTML(progSrc, part.program.name)} · ${esc(progSrc.label)}${progSrc.date ? ` · <span class="src-d">${checked(progSrc.date)}</span>` : ''}` : '';
+  $('matCat').href = f.url || progSrc?.url || `${CATALOG}/`;
   $('matReport').href = issueURL(progIssue({ code: 'Matriculation' }));
   openDlg(dlg);
   $('matFacts').scrollTop = 0;
@@ -1307,6 +1329,8 @@ const DAY_NAME = { M: 'Mon', T: 'Tue', W: 'Wed', R: 'Thu', F: 'Fri', S: 'Sat', U
 function loadSchedIndex() {
   sched.ready ??= Promise.all([getJSON(`${DATA}/sections/index.json`), getJSON(`${DATA}/rmp.json`)]).then(([idx, rmp]) => {
     sched.terms = (idx?.terms || []).map((t) => String(t.term)).sort();
+    sched.info = Object.fromEntries((idx?.terms || []).map((t) => [String(t.term), t]));
+    sched.rmpFile = rmp;
     sched.rmp = rmp?.profs || {};
     sched.term ??= defaultTerm(sched.terms);
     if (!sched.terms.length) sched.ready = null; // try again next time
@@ -1380,9 +1404,20 @@ function ratingBadge(instr, link) {
   const p = sched.rmp[instr];
   if (!p) return '<em class="rt unrated" title="No rating">–</em>';
   const style = `style="--rh:${rmpHue(p.r)}"`;
-  return link && p.id
-    ? `<a class="rt" ${style} href="https://www.ratemyprofessors.com/professor/${encodeURIComponent(p.id)}" target="_blank" rel="noopener" title="Rate My Professors">${p.r.toFixed(1)}</a>`
+  const src = link ? sourceLink('rmp', { prof: p }) : null;
+  return src
+    ? `<a class="rt" ${style} href="${esc(src.url)}" target="_blank" rel="noopener" title="Rate My Professors">${p.r.toFixed(1)}</a>`
     : `<em class="rt" ${style}>${p.r.toFixed(1)}</em>`;
+}
+// where a term's sections and ratings come from: "UVU class search · 2027 Spring ↗ · Rate My Professors ↗ · checked Oct 19"
+function schedSrc(term) {
+  const line = sourceLine([sourceLink('sections', { term: sched.info?.[term] }), sourceLink('ratings', { rmp: sched.rmpFile })]);
+  return line ? `<li class="src">${line}</li>` : '';
+}
+// a class's section sheet: its catalog entry + the class search the sections came from
+function secSrc(code) {
+  const y = progParts[0]?.year;
+  return sourceLine([{ ...sourceLink('course', { code, year: y, current: catalog.info.current }), text: 'Catalog' }, sourceLink('sections', { term: sched.info?.[sched.term] })]);
 }
 const seatText = (sec) => (sec.seats > 0 ? `${sec.seats} open` : `Full${sec.wait ? ` +${sec.wait}` : ''}`);
 // Mon-Fri (+Sat when needed), 8 am-5 pm at least; one colour per class (the plan's semester palette)
@@ -1420,7 +1455,7 @@ function drawList(s) {
     return `<li><button type="button" class="sc-row" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="when">${esc(whenOf(sec))}</span>`
       + `<span class="who">${esc(lastName(sec.instr))}</span>${ratingBadge(sec.instr)}<span class="seat${sec.seats > 0 ? '' : ' full'}">${seatText(sec)}</span>`
       + `<span class="crn${t.pin[c.code] ? ' pin' : ''}">${o.secs.map((x) => x.crn).join('+')}</span></button></li>`;
-  }).join('') + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-mine>Add my schedule</button></li>';
+  }).join('') + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-mine>Add my schedule</button></li>' + schedSrc(sched.term);
 }
 function openCourse(i) {
   const c = sched.courses[i], t = termState(sched.term), s = sched.list[sched.idx];
@@ -1430,6 +1465,7 @@ function openCourse(i) {
   const secs = c.sections.slice().sort((a, b) => (a.start || '9999').localeCompare(b.start || '9999') || a.days.localeCompare(b.days) || a.sec.localeCompare(b.sec));
   $('secCode').textContent = c.code;
   $('secTitle').textContent = c.sections[0]?.title || '';
+  $('secSrc').innerHTML = secSrc(c.code);
   $('secDlg').dataset.i = i;
   const MODE = { online: 'Online', hybrid: 'Hybrid', livestream: 'Live' };
   $('secList').innerHTML = `<li><button type="button" data-crn=""${pin ? '' : ' class="on"'}><b>Best fit</b></button></li>`
@@ -1446,7 +1482,7 @@ function openCourse(i) {
 let mine = null;
 function wireSched() {
   mine = initMine({
-    $, esc, openDlg, save, toast, termState, termGroups, sched, drawWeek, ratingBadge, lastName,
+    $, esc, openDlg, save, toast, termState, termGroups, sched, drawWeek, ratingBadge, lastName, schedSrc, secSrc,
     render: () => renderSched(),
     lastTerm: () => state.settings.lastTerm || null,
     planHas: (code) => !!lastPlan?.semesters.find((s) => s.term === termInfo(code).label)?.items.some((it) => it.kind === 'course'),

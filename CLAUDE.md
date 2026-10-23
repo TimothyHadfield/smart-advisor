@@ -15,6 +15,7 @@ Gen Ed class lists. Optional Google sign-in syncs one doc per student. iPhone fi
 - `js/layout.js` — flowchart layout + arrow routing (pure) · `js/programs.js` — picker, catalog years, major+minor merge
 - `js/audit.js` — audit text parser · `js/pdftext.js` — PDF → text (pdf.js from cdnjs, lazy, on device only)
 - `js/gened.js` — Gen Ed lists · `js/schedule.js` — sections → ranked schedules
+- `js/sources.js` — every outside link (catalog program/course, class search, RMP, Gen Ed, advisors) + `DATA_SOURCES` registry of every data file's source
 - `js/account.js` (Firebase SDK from gstatic, Google popup sign-in) + `js/sync.js` (pure merge/doc logic)
 - `firestore.rules`, `firebase.json`, `.firebaserc` — Firebase project `smart-advisor-th` (Spark, $0)
 - `data/` — prebuilt JSON: `programs/` (current catalog), `<year>/programs/`, `gened.json`, `sections/<term>.json`, `rmp.json`
@@ -45,4 +46,5 @@ Gen Ed class lists. Optional Google sign-in syncs one doc per student. iPhone fi
 - "don't allow the user to select a class that still needs prerequisites filled."
 - "if the program fills in classes that the user is currently taking, the first semester ... is a future semester, not a current one."
 - Flowchart: "minimize how much the lines turn ... make the lines seperated from each other enough where you'll never be confused which line goes where".
+- Every fact from an outside source links to it (Tim, 2026-10-22: "could you also have automatic links to everything you are reffering to or getting your informatoin from? This includes anything UVU, as well as Rate my professor, and anything we develope later in the cite."). Build each link with `sourceLink()` in `js/sources.js` (small "↗", new tab, "checked <date>"), register every new `data/` file in its `DATA_SOURCES`; `tests/sources.test.mjs` fails on an unregistered data file or a UVU/RMP address typed outside `js/sources.js`.
 - More in `progress.md` → Standing instructions. Tim decides visuals, wording, names and money.

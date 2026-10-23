@@ -46,7 +46,7 @@ test('EE (laptop): dotted line between MATH 1210 and ECE 3250; the label is a bu
   await p.click('#matricBtn');
   await p.waitForSelector('#matDlg[open]');
   const rows = await p.$$eval('#matFacts dt', (ds) => ds.map((d) => [d.textContent, d.nextElementSibling.textContent]));
-  const row = (k) => rows.find(([t]) => t === k)?.[1] || '';
+  const row = (k) => (rows.find(([t]) => t === k)?.[1] || '').replace(/ ↗$/, ''); // ↗ = the catalog source link (js/sources.js)
   assert.match(row('Catalog'), /To be admitted to the BSEE program/);
   assert.equal(row('GPA'), '2.5 or higher');
   assert.equal(row('Grade'), 'C or higher in these classes');

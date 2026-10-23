@@ -7,7 +7,7 @@ import { termInfo, currentTermCode, whenOf, optionsConflict } from './schedule.j
 
 /**
  * ctx: { $, esc, openDlg, save, toast, termState, termGroups, sched (app's schedule state), render (renderSched),
- *        drawWeek, ratingBadge, lastName, lastTerm () -> "Fall 2026" | null, planHas (code) -> bool,
+ *        drawWeek, ratingBadge, lastName, schedSrc (term) -> source <li>, secSrc (code) -> source line, lastTerm () -> "Fall 2026" | null, planHas (code) -> bool,
  *        ipCodes () -> in-progress course codes from the imported audit, subjects () -> promise of {SUBJ: name} }
  */
 export function initMine(ctx) {
@@ -56,7 +56,7 @@ export function initMine(ctx) {
         + `<span class="who">${esc(s.hand ? '' : ctx.lastName(s.instr))}</span>${s.hand ? '' : ctx.ratingBadge(s.instr)}<span class="seat">${esc(room(s))}</span>`
         + `<span class="crn">${esc(s.crn || '')}</span></button></li>`;
     }).join('') : '<li class="none">No classes yet</li>')
-      + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-hand>By hand</button></li>';
+      + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-hand>By hand</button></li>' + (ctx.schedSrc?.(code) || '');
   }
 
   // ---------- tap a row: pick / change its section, or edit a hand-added class ----------
@@ -76,6 +76,7 @@ export function initMine(ctx) {
     const others = rows.filter((x, k) => k !== i && x.sec && !x.pick).map((x) => ({ secs: [x.sec] }));
     $('mySecCode').textContent = r.code;
     $('mySecTitle').textContent = secs[0]?.title || '';
+    $('mySecSrc').innerHTML = ctx.secSrc?.(r.code) || ''; // its catalog entry + the class search (js/sources.js)
     $('mySecDlg').dataset.i = i;
     $('mySecList').innerHTML = secs.length ? secs.map((x) => {
       const clash = others.some((o) => optionsConflict(o, { secs: [x] }));

@@ -1,5 +1,7 @@
 // Smart Advisor UI helpers: pure functions used by js/app.js and Node tests (no DOM).
 
+import { sourceLink } from './sources.js';
+
 export const REPO = 'TimothyHadfield/smart-advisor';
 
 // ---------- programs in the URL (?p=major,minor) ----------
@@ -78,7 +80,7 @@ export function pickLabel(pick) {
   return `Pick ${pick.count ?? 1}`;
 }
 
-export const courseURL = (code) => `https://catalog.uvu.edu/search/?P=${encodeURIComponent(code)}`;
+export const courseURL = (code) => sourceLink('course', { code })?.url || null; // js/sources.js builds every outside link
 
 // a prefilled GitHub issue on the public repo (no email shown anywhere)
 export function issueURL({ program = '', programId = '', year = '', code = '', title = '' } = {}) {

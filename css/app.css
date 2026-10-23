@@ -545,3 +545,12 @@ dialog.cl-edit[data-step="form"] form { height: auto; }
 .mt { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-size: 11.5px; white-space: nowrap; }
 .mt.ok { border-color: var(--green); color: var(--green); font-weight: 600; }
 dialog.mat .cls-facts { max-height: 60dvh; }
+
+/* source links (js/sources.js): small grey line, green "↗" links, new tab. Tim 2026-10-22: link everything we get information from */
+.src { margin: 0; font-size: 11px; color: var(--muted); line-height: 1.5; }
+.src-d { white-space: nowrap; }
+.src a, a.src { color: var(--green); font-weight: 600; text-decoration: none; white-space: nowrap; }
+.sum p.src { color: var(--muted); }
+dialog p.src { flex: none; }
+.cls-facts a.src { font-weight: 700; }
+.sc-list li.src { padding: 6px 8px; }
