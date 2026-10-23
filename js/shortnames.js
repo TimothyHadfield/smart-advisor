@@ -17,6 +17,22 @@ export function shortJoin(names) {
   return [first, ...rest.map((n) => (n.startsWith(first + ' ') ? n.slice(first.length + 1) : n))].join(' + ');
 }
 
+// an option box's code line: "ACC 1110 + ACC 1120" -> "ACC 1110 + 1120" (a repeated subject is dropped)
+export function shortCodes(label) {
+  const parts = String(label || '').split(' + ');
+  const subj = (c) => /^([A-Z]{2,5}) /.exec(c)?.[1];
+  return parts.map((c, i) => (i && subj(c) && subj(c) === subj(parts[i - 1]) ? c.slice(subj(c).length + 1) : c)).join(' + ');
+}
+
+// an option box's code line as { code, more }: a lecture + its lab -> "BIOL 1610" + "+Lab" (the small tag a
+// folded lab box already shows); 3+ classes -> the first + "+2"; else "ACC 1110 + 1120"
+export function optionCode(node, courses = {}) {
+  const codes = node?.codes || [];
+  if (codes.length === 2 && /\blab(oratory)?\b/i.test(courses[codes[1]]?.title || '') && codes[1].split(' ')[0] === codes[0].split(' ')[0]) return { code: codes[0], more: '+Lab' };
+  if (codes.length > 2) return { code: codes[0], more: `+${codes.length - 1}` };
+  return { code: shortCodes(node?.label || codes.join(' + ')), more: '' };
+}
+
 // a requirement row's short label (its box and its plan row): data.labels maps the catalog wording
 // ("Complete 24 credits from any ART/ARTH courses ...") to "ART/ARTH elective"; '' there means the wording
 // only says "pick from the list", so the requirement group's name shows instead (data.names shortens it)

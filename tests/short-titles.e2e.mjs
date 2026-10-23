@@ -4,7 +4,7 @@
 //   2. run:              node --test tests/short-titles.e2e.mjs        (APP_URL=... for another address)
 // Checks, measured with the page's own CSS (not estimated):
 //   - no class-name line (.box i) or requirement box (.box.ph b) is cut: each fits its line clamp unclamped,
-//     and no word is wider than its box
+//     and no word is wider than its box; no code line ("ACC 1110 + 1120") is cut
 //   - no requirement row in the plan list ends in "…"
 //   - every short name in data/short-titles.json fits the narrowest box (100 px), and every label one plan row
 //   - a screen reader still gets the full name (hidden span), the class sheet shows the full title
@@ -29,6 +29,8 @@ async function open(id, { desktop = false } = {}) {
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
   await p.goto(APP + '?p=' + id);
+  // start on the flowchart (a saved plan opens on Home)
+  await p.evaluate(() => { if (document.querySelector('#main')?.dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]')?.click(); });
   await p.waitForSelector('.box');
   await p.waitForTimeout(400);
   return p;
@@ -48,6 +50,10 @@ const cutBoxes = (p) => p.evaluate(() => {
     const wide = el.scrollWidth > el.clientWidth + 0.5;
     el.setAttribute('style', keep);
     if (lines > clamp || wide) out.push(`${el.closest('.box').dataset.id}: "${el.textContent}" (${lines} lines${wide ? ', word too wide' : ''})`);
+  }
+  // the code line of a class / option box (one line, "…" when cut)
+  for (const el of document.querySelectorAll('.box:not(.ph) > b')) {
+    if (!el.closest('.box').hidden && el.scrollWidth > el.clientWidth + 0.5) out.push(`${el.closest('.box').dataset.id}: code "${el.textContent}" cut`);
   }
   return out;
 });

@@ -169,7 +169,9 @@ export function reqShort(label) {
   // "Weather - Complete one of the following", "Psychology Foundations-Complete 9 Credits": the name before it
   const head = s.split(/\s*(?:--|\s-\s|-(?=(?:complete|choose|select|take)\b)|\s–\s|:\s*|\.\s+)(?=(?:please\s+)?(?:complete|choose|select|take|pick|students|any)\b)/i)[0];
   if (head && head !== s && head.length >= 3) s = head;
-  for (const [re, to] of GENED) if (re.test(s)) return to;
+  // "Any approved Humanities Distribution", "Complete one Fine Arts course": the Gen Ed area's name
+  const area = s.replace(/^(?:complete one|any approved|any)\s+/i, '').replace(/\s+(?:distribution\s+)?(?:course|class)$/i, '').replace(/\s+distribution$/i, '');
+  for (const [re, to] of GENED) if (re.test(s) || re.test(area)) return to;
   // "ART Upper Division" -> "Upper-div ART" (like "Complete 12 Credits of Upper Division ARTH")
   const lvl = /^([A-Z][A-Z/ ]{1,12}?) (upper|lower)[- ]division(?: electives?)?$/i.exec(s);
   if (lvl && /^[A-Z/ ]+$/.test(lvl[1])) return `${lvl[2][0].toUpperCase()}${lvl[2].slice(1).toLowerCase()}-div ${lvl[1]}`;
@@ -182,7 +184,7 @@ export function reqShort(label) {
     const t = upper ? `Upper-div ${subj.join('/')}` : lower ? `Lower-div ${subj.join('/')}` : `${subj.join('/')} elective`;
     if (fitsReq(t)) return t;
   }
-  if (/^(?:any|all other|general electives?|select \d+ (?:elective )?credits? of any|students may complete any|successful completion|additional credits|take \w+ elective credits|open elective|complete \d+ (?:hours|credits) of (?:upper or lower division )?electives?)\b|\b(?:1000|2000)[- ]?(?:level )?(?:or (?:higher|above)|\+)|free elective/i.test(raw) && !subj.length && !/distribution|humanities|science|literature|anthropology|spanish|history/i.test(raw)) {
+  if (/^(?:any|all other|general electives?|select \d+ (?:elective )?credits? of any|students may complete any|successful completion|additional credits|take \w+ elective credits|open elective|complete \d+ (?:hours|credits) of (?:upper or lower division )?electives?|complete any (?:\d{4}|courses?))\b|\b(?:1000|2000)[- ]?(?:level)?,? (?:or (?:higher|above)|\+)|\b(?:1000|2000)\+|free elective/i.test(raw) && !subj.length && !/distribution|humanities|science|literature|anthropology|spanish|history/i.test(raw)) {
     return upper ? 'Upper-div elective' : lower ? 'Lower-div elective' : 'Free elective';
   }
   if (/^(?:complete|select|take) \d+ credits? of (?:upper|lower)[- ]division electives?$/i.test(s) || /^(?:upper|lower)[- ]division electives?(?: credits)?$/i.test(s)) return upper ? 'Upper-div elective' : 'Lower-div elective';
@@ -193,7 +195,7 @@ export function reqShort(label) {
   for (const [re, to] of NEEDED) { t = t.replace(re, to).replace(/\s+/g, ' ').trim(); if (fitsReq(t)) return t; }
   // the part before the first comma / dash
   const first = t.split(/\s*(?:,|\s-\s|\s–\s|;)\s*/)[0];
-  if (fitsReq(first) && first.length >= 4) return first;
+  if (fitsReq(first) && first.length >= 4 && !/^(?:complete|choose|select|take|any)\b/i.test(first)) return first;
   return null;
 }
 

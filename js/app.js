@@ -3,7 +3,7 @@ import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
 import { groupNodes, placeGroups, groupProgress, groupList, shortName as groupName } from './groups.js';
-import { boxName, reqName } from './shortnames.js';
+import { boxName, reqName, optionCode } from './shortnames.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
@@ -363,10 +363,12 @@ function buildBoxes() {
     const full = flex ? (wideText.get(n.id) ?? n.label) : n.title;
     const short = flex ? reqLabel(full, n) : boxName(shortData?.titles, n, model.program.courses);
     const hidden = short !== full ? `<span class="vh">${esc(full)}</span>` : '';
+    // an option of several classes: "ACC 1110 + 1120", or "BIOL 1610 +Lab" (js/shortnames.js optionCode)
+    const oc = n.kind === 'option' && (n.codes || []).length > 1 ? optionCode(n, model.program.courses) : null;
     const shown = (t) => (hidden ? ` aria-hidden="true"` : '') + `>${esc(t)}`;
     b.innerHTML = flex
       ? `<b${shown(short)}</b>${hidden}`
-      : `<b>${esc(n.label)}${labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
+      : `<b>${esc(oc ? oc.code : n.label)}${oc?.more ? `<small>${esc(oc.more)}</small>` : labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
     b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);

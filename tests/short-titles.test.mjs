@@ -16,7 +16,7 @@ import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { boxTitles, buildShortTitles, reqLabels, buildReqLabels } from '../scripts/build-short-titles.mjs';
 import { fitsBox, BOX, ruleShort, fitsReq, PLAN } from '../scripts/lib/short-titles.mjs';
-import { shortTitle, boxName, shortJoin, reqName, NO_NAME } from '../js/shortnames.js';
+import { shortTitle, boxName, shortJoin, reqName, NO_NAME, shortCodes, optionCode } from '../js/shortnames.js';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
 import { groupNodes } from '../js/groups.js';
@@ -89,6 +89,18 @@ test('option boxes with several classes ("A + B") fit too', () => {
   }
   assert.ok(n > 50, `only ${n} multi-class options`);
   assert.deepEqual([...bad], []);
+});
+
+test('an option box drops a repeated subject from its code line', () => {
+  assert.equal(shortCodes('ACC 1110 + ACC 1120'), 'ACC 1110 + 1120');
+  assert.equal(shortCodes('PHYS 2210 + PHYS 2015'), 'PHYS 2210 + 2015');
+  assert.equal(shortCodes('GEO 1030 + GEO 1015 + GEO 1040'), 'GEO 1030 + 1015 + 1040');
+  assert.equal(shortCodes('CHEM 1210 + MATH 1050'), 'CHEM 1210 + MATH 1050');
+  assert.equal(shortCodes('ECE 2250'), 'ECE 2250');
+  const C = { 'BIOL 1610': { title: 'College Biology I' }, 'BIOL 1615': { title: 'College Biology I Laboratory' }, 'ACC 1110': { title: 'Financial Accounting I' }, 'ACC 1120': { title: 'Financial Accounting II' } };
+  assert.deepEqual(optionCode({ codes: ['BIOL 1610', 'BIOL 1615'], label: 'BIOL 1610 + BIOL 1615' }, C), { code: 'BIOL 1610', more: '+Lab' });
+  assert.deepEqual(optionCode({ codes: ['ACC 1110', 'ACC 1120'], label: 'ACC 1110 + ACC 1120' }, C), { code: 'ACC 1110 + 1120', more: '' });
+  assert.deepEqual(optionCode({ codes: ['GEO 1010', 'GEO 1015', 'GEO 2020R'], label: 'GEO 1010 + GEO 1015 + GEO 2020R' }, C), { code: 'GEO 1010', more: '+2' });
 });
 
 test('lecture + lab option reads "Chem 1 + Lab"', () => {
