@@ -50,3 +50,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** `js/sources.js` (`sourceLink` for program/tabs, course incl. archive years, class search term, RMP professor + school, Gen Ed, advisors, seasons, any url; `DATA_SOURCES` registry of every data file). Links on: plan source line, class sheet facts + source line, Matriculation sheet facts + source line, both section sheets, schedule list footer, Gen Ed sheet. Standing rule added to CLAUDE.md + progress.md.
 - **Verified how:** `tests/sources.test.mjs` (9) failed first (module missing; then the no-hand-typed-URL check flagged app.js ×2 + uistate.js), `tests/sources.e2e.mjs` (5) failed on the old page; suite 1174 pass / 1 skipped after rebase on matric + uvucharts; e2e 36/36; link check 43/43 HTTP 200 with expected page text; WebKit screenshots 393 px + 1366 px (plan line, class sheet, schedule, section sheet with RMP, Gen Ed, Matriculation): no errors, no overflow.
 - **Open:** wording/placement Tim's; seasons tags + Home page not merged at build time → no ↗ on them yet.
+
+## 2026-10-22 · Semester colors switch (builder `semcolor`)
+- **Asked (Tim):** "could we also add a setting to colorize semesters or not?"
+- **Built:** Settings › "Semester colors" switch (under Summers, default on, `settings.semColors`, synced). Off: planned boxes one neutral look (panel + grey border; locked faded), no semester legend chips, plain plan headings; Taken/IP/grades unchanged.
+- **Verified how:** `tests/semcolors.e2e.mjs` (on → off → reload → on) failed on the unfixed build (no switch), passes now; `tests/sync.test.mjs` +1 (semColors false round-trips) failed first. Suite 1175 pass / 1 skipped after rebase on sources; e2e 33/33. WebKit screenshots 393 px + 1280 px, on/off, light/dark, EE BS: no console errors, no overflow, switch visible without scrolling.
+- **Open:** label, placement and neutral look are Tim's calls.
