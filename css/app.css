@@ -93,6 +93,8 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
   --s9f: #2a3039; --s9b: #94a3b8;
   --grade-l: 36%; --grade-t: 68%;
 }
+/* Semester colors off (no s0..s9 class): planned boxes get one neutral look */
+.box { --sf: var(--panel); --sb: var(--muted); }
 .s0 { --sf: var(--s0f); --sb: var(--s0b); } .s1 { --sf: var(--s1f); --sb: var(--s1b); }
 .s2 { --sf: var(--s2f); --sb: var(--s2b); } .s3 { --sf: var(--s3f); --sb: var(--s3b); }
 .s4 { --sf: var(--s4f); --sb: var(--s4b); } .s5 { --sf: var(--s5f); --sb: var(--s5b); }

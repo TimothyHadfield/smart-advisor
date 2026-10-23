@@ -157,3 +157,11 @@ test('schedule preferences + chosen sections (settings.sched) go to the account 
   applyDoc(s, d, 'ee-bs');
   assert.deepEqual(s.settings.sched, sched);
 });
+
+test('semColors (Settings › Semester colors) syncs both ways, off included', () => {
+  const d = toDoc({ settings: { max: 16, summers: false, start: null, grades: true, semColors: false }, done: {}, grades: {} }, 'ee-bs');
+  assert.equal(d.settings.semColors, false);
+  const s = { settings: { semColors: true }, done: {}, grades: {} };
+  applyDoc(s, d, 'ee-bs');
+  assert.equal(s.settings.semColors, false);
+});

@@ -41,6 +41,7 @@ const state = load();
 function defaults() {
   state.settings ??= { max: 16, summers: false, start: null };
   state.settings.grades ??= true;
+  state.settings.semColors ??= true; // Settings › Semester colors: off = one neutral look for planned boxes
   // schedule builder: prefs (js/schedule.js DEFAULT_PREFS) + per term {add, drop, pin: {code: crn}, crns}
   state.settings.sched ??= {};
   state.settings.sched.prefs ??= {};
@@ -583,7 +584,7 @@ function refresh() {
     const done = nodeDone(n, completed);
     const sem = done ? undefined : semOf.get(n.id) ?? semOf.get(n.labs?.[0]?.id);
     el.className = el.className.replace(/\s?\bs\d+\b/g, '');
-    if (sem !== undefined) el.classList.add(`s${sem % 10}`);
+    if (sem !== undefined && semCls(sem)) el.classList.add(semCls(sem).trim());
     el.classList.toggle('planned', sem !== undefined);
     el.classList.toggle('done', done);
     el.classList.toggle('locked', !done && !tapCheck(model, n, completed).ok);
@@ -706,10 +707,12 @@ function startTerm() {
   return planStart(parseTerm(state.settings.start), { summers: state.settings.summers, lastTerm: parseTerm(state.settings.lastTerm) });
 }
 
+// semester colour class (s0..s9) for semester i, '' when Semester colors is off
+const semCls = (i) => (state.settings.semColors === false ? '' : ` s${i % 10}`);
 const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
 function renderLegend(plan, anyIP) {
   $('legendItems').innerHTML = '<span class="sw done"></span>Taken' + (anyIP ? '<span class="sw ip"></span>Current' : '')
-    + plan.semesters.map((s, i) => `<span class="sw s${i % 10}"></span>${shortTerm(s.term)}`).join('');
+    + (semCls(0) ? plan.semesters.map((s, i) => `<span class="sw${semCls(i)}"></span>${shortTerm(s.term)}`).join('') : '');
 }
 
 function renderPlan(plan) {
@@ -750,7 +753,7 @@ function renderPlan(plan) {
   const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
   const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
-    <div class="sem s${i % 10}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
+    <div class="sem${semCls(i)}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
@@ -1068,6 +1071,7 @@ function wireSettings() {
     $('setStart').innerHTML = terms.map(termLabel).map((l) => `<option${l === cur ? ' selected' : ''}>${l}</option>`).join('');
     $('setMax').innerHTML = Array.from({ length: 16 }, (_, i) => i + 6).map((v) => `<option${v === state.settings.max ? ' selected' : ''}>${v}</option>`).join('');
     $('setSummer').checked = !!state.settings.summers;
+    $('setSemColors').checked = state.settings.semColors !== false;
     // schedule preferences
     const p = prefs();
     for (const b of $('setDays').children) b.classList.toggle('on', p.days.includes(b.dataset.d));
@@ -1093,6 +1097,7 @@ function wireSettings() {
   $('setStart').addEventListener('change', (e) => { state.settings.start = e.target.value; save(); refresh(); });
   $('setMax').addEventListener('change', (e) => { state.settings.max = +e.target.value; save(); refresh(); });
   $('setSummer').addEventListener('change', (e) => { state.settings.summers = e.target.checked; save(); fill(); refresh(); });
+  $('setSemColors').addEventListener('change', (e) => { state.settings.semColors = e.target.checked; save(); refresh(); });
   // Clear taken: a second tap clears (the button asks first), then "Cleared · Undo" for a few seconds.
   // lastTerm becomes null, not deleted, so the account's copy (and other devices) clear it too
   const clr = $('clearDone');

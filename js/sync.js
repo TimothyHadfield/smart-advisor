@@ -10,7 +10,7 @@
 // sched = schedule builder: { prefs, terms: {[term code]: {add, drop, pin, crns}} } (js/app.js)
 // hypo = flowchart taps {[program]: {add, del}}, src = where actual classes came from {[program]: {key: 'audit'|'added'}}
 // (js/classes.js) · when = {[class code]: "Fall 2025"}, the semester each audit class was taken (hover label)
-const SETTINGS = ['max', 'summers', 'start', 'grades', 'sched', 'lastTerm', 'tracks', 'hypo', 'src', 'when'];
+const SETTINGS = ['max', 'summers', 'start', 'grades', 'sched', 'lastTerm', 'tracks', 'hypo', 'src', 'when', 'semColors'];
 const isObj = (v) => !!v && typeof v === 'object' && !Array.isArray(v);
 const strList = (v) => (Array.isArray(v) ? v.filter((x) => typeof x === 'string') : []);
 const strMap = (v) => (isObj(v) ? Object.fromEntries(Object.entries(v).filter(([, g]) => typeof g === 'string')) : {});
