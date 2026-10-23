@@ -66,7 +66,7 @@ test('current term prefills from the audit; pick a section; paste replaces; Undo
   await p.click('#myGo');
   await p.waitForFunction(() => /36452/.test(document.querySelector('#scList').innerText));
   r = await rows(p);
-  assert.deepEqual(r.map((x) => x.split(' ').slice(0, 2).join(' ')), ['ECE 2250', 'PHYS 2220', 'HIST 2700']);
+  assert.deepEqual(await p.$$eval('#scList .sc-name small', (els) => els.map((e) => e.textContent)), ['ECE 2250', 'PHYS 2220', 'HIST 2700']);
   assert.match(r[2], /CB 214/, 'room shown');
   // Undo puts the picked schedule back
   await p.click('#toastUndo');
