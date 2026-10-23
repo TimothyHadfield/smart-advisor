@@ -20,7 +20,7 @@ const HELV_B = [278, 333, 474, 556, 556, 889, 722, 238, 333, 333, 389, 584, 278,
   667, 778, 722, 667, 611, 722, 667, 944, 667, 667, 611, 333, 278, 333, 584, 556,
   333, 556, 611, 556, 611, 556, 333, 611, 611, 278, 278, 556, 278, 889, 611, 611,
   611, 611, 389, 556, 333, 611, 556, 778, 556, 556, 500, 389, 280, 389, 584];
-export const BOX = { width: 89, fontPx: 12, lines: 2, safety: 1.05 };
+export const BOX = { width: 85, fontPx: 12, lines: 2, safety: 1.05 };
 
 export function textWidth(s, fontPx = BOX.fontPx, safety = BOX.safety, bold = false) {
   const t = bold ? HELV_B : HELV;
