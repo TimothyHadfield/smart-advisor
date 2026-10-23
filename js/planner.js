@@ -1175,8 +1175,8 @@ export function requirementFor(model, code, completed = new Set()) {
   const partName = (id) => (model.program.parts || []).find((p) => p.id === id)?.name;
   for (const g of crossList) { const n = partName(g.prog) || (g.prog ? null : partName((model.program.parts || [])[0]?.id)); if (n && !shared.includes(n)) shared.push(n); }
   if (shared.length) why += `. Counts once for both: also fills ${shared.join(', ')}`;
+  // (the class sheet shows this in its own "Offered" row, linked to UVU's class search)
   const offered = offeredLabel(model.seasons, [code]);
-  if (offered) why += `. ${offered} (UVU's class schedules, ${model.seasons.covered.size === 3 ? 'recent Fall, Spring and Summer terms' : 'recent terms'})`;
   const alsoIn = [...new Set(hits.slice(1).map((h) => h.u.label))].filter((l) => l !== u.label);
   return {
     unitId: u.id, kind: u.kind, label: u.label, area, credits: o ? o.credits : u.credits, why, alsoIn,
