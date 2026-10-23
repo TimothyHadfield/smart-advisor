@@ -1326,7 +1326,7 @@ function drawWeek(s) {
       + `<b>${esc(codeLabel(b.sec))}</b><span>${fmtTime(b.m.s)}</span></div>`).join('')
     + '</div></div>';
   // a block too short for two lines shows the course only
-  for (const el of $('scWeek').querySelectorAll('.wk-b')) el.classList.toggle('short', el.offsetHeight < 25);
+  for (const el of $('scWeek').querySelectorAll('.wk-b')) el.classList.toggle('short', el.offsetHeight < 30);
 }
 const codeLabel = (sec) => `${sec.subj} ${sec.num}`;
 function whyUnplaced(c) {
