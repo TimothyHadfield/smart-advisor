@@ -108,7 +108,7 @@ function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new S
 const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
 const gradeMap = () => (state.grades[major()] ??= {});
 
-let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null;
+let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null, uvuOfficial = null;
 let seasonsData = null; // data/seasons.json as loaded (its build date goes on the class sheet's "Offered" link)
 let matric = null; // js/matric.js matricSides: the boxes right of the dotted matriculation line
 let grp = { chart: [], boxes: [], groups: [], grouped: new Set() }; // requirement groups (js/groups.js)
@@ -232,6 +232,7 @@ async function loadPlan() {
   advisors = (await adv)?.programs || null;
   const official = officialChart((await ofc)?.programs, parts[0].id, y || catalog.info.current);
   if (gen !== loadGen) return;
+  uvuOfficial = official; // Home links it too
   // UVU's own flowchart for this major (opens UVU's PDF in a new tab); hidden when the department has none.
   // Set before the chart is laid out, so the chart never jumps when it appears.
   $('uvuChart').hidden = !official;
@@ -854,7 +855,9 @@ function renderHome() {
   }
   const plan = lastPlan, [m, ...rest] = progParts;
   $('hmProgs').innerHTML = `<button type="button" class="hm-major" data-pick>${esc(m.program.name)}</button>`
-    + `<p class="hm-sub">${[...rest.map((p) => p.program.name), catalogLabel(m.year || m.program.catalogYear)].filter(Boolean).map(esc).join(' · ')}</p>`;
+    + `<p class="hm-sub">${[...rest.map((p) => p.program.name), catalogLabel(m.year || m.program.catalogYear)].filter(Boolean).map(esc).join(' · ')}</p>`
+    // where it comes from (Tim, 2026-10-22: every outside fact links to its source): the catalog pages, UVU's flowchart
+    + `<p class="src hm-src">${[uvuOfficial ? linkHTML(sourceLink('url', uvuOfficial)) : '', programSources(progParts)].filter(Boolean).join(' · ')}</p>`;
   // classes now + GPA: the Classes view's own groups (js/classes.js), so both screens show the same numbers
   const groups = classGroups({ model, completed: doneSet(), actual: actualSet(), grades: gradeMap(), src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
   const now = groups.find((g) => g.key === 'ip')?.rows || [];
@@ -876,13 +879,13 @@ function renderHome() {
     n ? ['Next', nextFact(plan), ''] : null,
     now.length ? ['Now', now.map((r) => r.label).join(', '), `${now.length} class${now.length === 1 ? '' : 'es'}${nowCr ? ` · ${nowCr} cr` : ''}`] : null,
     g.gpa != null ? ['GPA', g.gpa.toFixed(2), `${g.credits} graded cr`] : null,
-    ge.length ? ['Gen Ed', `${geDone} of ${ge.length}`, ''] : null,
+    ge.length ? ['Gen Ed', `${geDone} of ${ge.length}`, '', linkHTML(sourceLink('gened', { gened }), '')] : null,
     adm ? ['Admission', adm, '', advA(m.id) + aplA(m.id), 'wide'] : advisorLink(advisors, m.id) ? ['Advisor', '', '', advA(m.id)] : null,
   ].filter(Boolean);
   // links (advisor, how to apply) go on the small line under the value, or are the value
   $('hmFacts').innerHTML = cells.map(([k, v, sub, html = '', cls = '']) => `<div${cls ? ` class="${cls}"` : ''}><dt>${esc(k)}</dt>`
-    + (v ? `<dd>${esc(v)}</dd>` : `<dd class="hm-links">${html}</dd>`)
-    + (sub ? `<small>${esc(sub)}</small>` : v && html ? `<small class="hm-links">${html}</small>` : '') + '</div>').join('');
+    + (v ? `<dd>${esc(v)}${html && k !== 'Admission' ? ' ' + html : ''}</dd>` : `<dd class="hm-links">${html}</dd>`)
+    + (sub ? `<small>${esc(sub)}</small>` : v && html && k === 'Admission' ? `<small class="hm-links">${html}</small>` : '') + '</div>').join('');
   // moved here from the plan's summary: the bachelor's 120 / 40 totals, classes a major and minor share
   const both = sharedCodes(plan);
   $('hmNotes').innerHTML = (plan.checks || []).map((c) => `<p class="adm">${esc(c)}</p>`).join('')

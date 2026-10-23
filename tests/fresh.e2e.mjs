@@ -74,6 +74,9 @@ test('a new deploy reaches a phone that has the old build cached, with one reloa
   const got = await p.waitForFunction((w) => document.querySelector('.brand')?.textContent === w, NEW, { timeout: 8000 })
     .then(() => NEW, async () => brandText());
   assert.equal(got, NEW, `new build shown without a hard refresh (requests: ${log.join(', ')})`);
+  // the reload landed on Home (their own saved major): go to the flowchart again
+  await p.waitForFunction(() => document.querySelector('#main')?.dataset.tab).catch(() => {});
+  await p.evaluate(() => { if (document.querySelector('#main').dataset.tab === 'home') document.querySelector('#tabs button[data-tab="flow"]').click(); });
   await p.waitForSelector('.box[data-id="MATH 1210"]');
   await p.waitForTimeout(1500);
   assert.equal(loads, 2, 'exactly one reload (stale copy, then the new one)');

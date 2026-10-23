@@ -51,6 +51,11 @@ test('the app opens on Home: major, credits, graduation, Now; flowchart hidden',
   assert.match(await p.textContent('#hmFacts'), /Graduate\s*(Spring|Summer|Fall) 20\d\d/);
   assert.match(await p.textContent('#hmFacts'), /Now\s*ECE 2700/);
   assert.match(await p.textContent('#hmFacts'), /GPA\s*3\.\d\d/);
+  // every outside fact links to its source: the catalog pages, UVU's own flowchart, the Gen Ed lists
+  const src = await p.$$eval('#homePanel a.src', (as) => as.map((a) => a.href));
+  assert.ok(src.some((u) => /catalog\.uvu\.edu\/.*#requirementstextcontainer/.test(u)), JSON.stringify(src));
+  assert.ok(src.some((u) => /uvu\.edu/.test(u) && /\.pdf|flowchart/i.test(u)), 'UVU flowchart ' + JSON.stringify(src));
+  assert.ok(await p.$('#hmFacts a.src'), 'Gen Ed source arrow');
   // fits the phone: no page scroll, nothing wider than the screen
   const m = await p.evaluate(() => ({ sh: document.scrollingElement.scrollHeight, h: innerHeight, sw: document.scrollingElement.scrollWidth, w: innerWidth, ph: document.getElementById('homePanel').scrollHeight, pc: document.getElementById('homePanel').clientHeight }));
   assert.ok(m.sh <= m.h && m.sw <= m.w, JSON.stringify(m));

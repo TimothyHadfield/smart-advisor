@@ -600,6 +600,8 @@ main[data-tab="home"] .home { display: flex; }
 .hm-major:active { opacity: .6; }
 .hm-sub { margin: 1px 0 0; color: var(--muted); font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .hm-sub:empty { display: none; }
+.hm-src { margin: 3px 0 0; }
+.hm-src:empty { display: none; }
 .hm-pick { margin-top: 14px; padding: 12px 22px; border: 0; border-radius: 10px; background: var(--green); color: #fff; font-size: 15px; font-weight: 700; cursor: pointer; }
 .hm-pick:active, .hm-go button:active { transform: scale(.97); }
 .hm-or { margin: 10px 0 0; color: var(--muted); }
