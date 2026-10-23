@@ -16,6 +16,7 @@ import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } fr
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hypoShown, sandboxOn, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
+import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
 import { startTab, creditBar, admissionFact, nextFact, displayName, catalogLabel } from './home.js';
 
 const $ = (id) => document.getElementById(id);
@@ -193,15 +194,24 @@ async function boot() {
 // programs (major first) + catalog year -> { parts, model }, or null when the major can't be loaded
 async function buildFor(ids, year) {
   const got = await Promise.all(ids.map((id) => loadProgram(id, year)));
-  const parts = ids.map((id, i) => got[i] && { id, program: got[i].program, year: got[i].year }).filter(Boolean);
+  let parts = ids.map((id, i) => got[i] && { id, program: got[i].program, year: got[i].year }).filter(Boolean);
   if (!parts.length || parts[0].id !== ids[0]) return null;
   // the planner's extra data for the major's catalog year: prerequisites from outside the program ("Needed
   // first" boxes), Gen Ed lists, and the semesters each class usually runs in (missing: plan without it)
   const y = parts[0].year;
-  const ofYear = async (f) => (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/${f}`)) || getJSON(`${DATA}/${f}`);
-  const [extraCourses, ge, seasons] = await Promise.all([ofYear('prereq-courses.json'), ofYear('gened.json'), getJSON(`${DATA}/seasons.json`)]);
+  const isOld = (yr) => !!yr && yr !== catalog.info.current;
+  const ofYear = async (f) => (isOld(y) && await getJSON(`${DATA}/${y}/${f}`)) || getJSON(`${DATA}/${f}`);
+  // an older catalog year: its requirements, but every class's prerequisites from the current catalog
+  // (what registration enforces; js/curprereqs.js) — needs the full current course list
+  const anyOld = parts.some((p) => isOld(p.year));
+  const [currentPC, yearPC, ge, seasons, current] = await Promise.all([getJSON(`${DATA}/prereq-courses.json`),
+    isOld(y) ? getJSON(`${DATA}/${y}/prereq-courses.json`) : null, ofYear('gened.json'), getJSON(`${DATA}/seasons.json`),
+    anyOld ? getJSON(`${DATA}/courses.json`) : null]);
   seasonsData = seasons;
-  return { parts, model: buildModel(combinePrograms(parts), { extraCourses, gened: ge, seasons }) };
+  if (current) parts = parts.map((p) => (isOld(p.year) ? { ...p, program: programWithCurrentPrereqs(p.program, current) } : p));
+  const combined = combinePrograms(parts);
+  const extraCourses = anyOld ? forCatalogYear(combined, { current, currentPC, yearPC }).extraCourses : currentPC;
+  return { parts, model: buildModel(combined, { extraCourses, gened: ge, seasons }) };
 }
 // change the chosen programs / catalog year; a new major brings the classes taken (not its Gen Ed boxes)
 function setPlan(ids, year) {
@@ -1363,9 +1373,11 @@ function openClass({ node, item }) {
   // each fact links to where it came from: the class's catalog entry (prerequisites, its own grade rule) or the
   // program's catalog requirements (why it's here, the requirement's lines, a requirement's grade rule)
   const courseSrc = code ? sourceLink('course', { code, year: part?.year, current: catalog.info.current }) : null;
+  // prerequisites come from the current catalog for an older catalog year (js/curprereqs.js): link there
+  const preSrc = code && c.prereqsCurrent ? sourceLink('course', { code, year: catalog.info.current, current: catalog.info.current }) : courseSrc;
   const progSrc = sourceLink('program', { program: part?.program, tab: 'requirements' });
   const fromCourse = new Set(['Before', 'Before or with', 'With', 'Needs']);
-  const srcOf = (k) => (fromCourse.has(k) ? courseSrc : k === 'Offered' ? sourceLink('seasons', { seasons: seasonsData }) : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
+  const srcOf = (k) => (fromCourse.has(k) ? preSrc : k === 'Offered' ? sourceLink('seasons', { seasons: seasonsData }) : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
   $('clsFacts').innerHTML = rows.map(([k, v, html]) => {
     const s = linkHTML(srcOf(k), '');
     return `<dt>${esc(k)}</dt><dd>${esc(v)}${s ? ' ' + s : ''}${html ? ' ' + html : ''}</dd>`;

@@ -168,7 +168,10 @@ test('EE 2025-26: Apply + Advanced Standing rows in the plan; ECE 4900\'s class 
   await p.click('#sems li[data-unit="ECE 4900"]');
   await p.waitForSelector('#clsDlg[open]');
   const facts = await p.textContent('#clsFacts');
-  assert.match(facts, /Needs.*Formal Acceptance into the Electrical or Computer Engineering Programs/);
+  // prerequisites come from the current catalog (js/curprereqs.js): ECE 4730 + Advanced Standing; the
+  // program's own admission gate still applies
+  assert.match(facts, /Before.*ECE 4730/);
+  assert.match(facts, /Needs.*Acceptance into the program/);
   assert.match(facts, /University Advanced Standing/);
   assert.match(facts, /Catalog.*Discipline Core Requirements/);
   assert.deepEqual(p.errors, []);

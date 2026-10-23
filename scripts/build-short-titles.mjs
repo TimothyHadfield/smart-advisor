@@ -13,9 +13,18 @@ import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
 import { groupNodes, shortName as groupName } from '../js/groups.js';
 import { ruleShort, fitsBox, reqShort, fitsReq } from './lib/short-titles.mjs';
+import { forCatalogYear } from '../js/curprereqs.js';
 
 const ROOT = fileURLToPath(new URL('../', import.meta.url));
 const read = (p) => { try { return JSON.parse(readFileSync(ROOT + p, 'utf8')); } catch { return null; } };
+// a program as the site loads it: an older catalog year takes its prereqs from the current catalog
+let CUR = null;
+function loadProgram(dir, y, f, extra) {
+  const program = read(`${dir}/${f}`);
+  if (!program || y === 'data/') return { program, extraCourses: extra.extraCourses };
+  CUR ??= { current: read('data/courses.json'), currentPC: read('data/prereq-courses.json') };
+  return forCatalogYear(program, { ...CUR, yearPC: extra.extraCourses });
+}
 
 // every single-course title a box can show, per program (the uniqueness test reads the same list)
 export function boxTitles() {
@@ -25,10 +34,10 @@ export function boxTitles() {
     const extra = { extraCourses: read(y + 'prereq-courses.json'), gened: read(y + 'gened.json'), seasons };
     for (const f of readdirSync(ROOT + dir)) {
       if (!f.endsWith('.json') || f.startsWith('_') || f === 'index.json') continue;
-      const program = read(`${dir}/${f}`);
+      const { program, extraCourses } = loadProgram(dir, y, f, extra);
       if (!program) continue;
-      const model = buildModel(program, extra);
-      const courses = { ...(extra.extraCourses || {}), ...(program.courses || {}) };
+      const model = buildModel(program, { ...extra, extraCourses });
+      const courses = { ...(extraCourses || {}), ...(program.courses || {}) };
       const folded = foldLabs(flowNodes(model), flowEdges(model));
       // the boxes the page draws: chart boxes + the option classes a requirement group shows (js/groups.js)
       const nodes = groupNodes(model, folded.nodes, folded.edges, []).boxes;
@@ -57,9 +66,9 @@ export function reqLabels() {
     const extra = { extraCourses: read(y + 'prereq-courses.json'), gened: read(y + 'gened.json'), seasons };
     for (const f of readdirSync(ROOT + dir)) {
       if (!f.endsWith('.json') || f.startsWith('_') || f === 'index.json') continue;
-      const program = read(`${dir}/${f}`);
+      const { program, extraCourses } = loadProgram(dir, y, f, extra);
       if (!program) continue;
-      const model = buildModel(program, extra);
+      const model = buildModel(program, { ...extra, extraCourses });
       const { nodes, edges } = foldLabs(flowNodes(model), flowEdges(model));
       const grp = groupNodes(model, nodes, edges, []);
       const nameOf = new Map(grp.groups.filter((g) => g.unit).map((g) => [g.unit.id, g.name]));

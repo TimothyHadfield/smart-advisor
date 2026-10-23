@@ -12,6 +12,7 @@ import assert from 'node:assert/strict';
 import { readFileSync, readdirSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildModel, makePlan, evalReq } from '../js/planner.js';
+import { forCatalogYear } from '../js/curprereqs.js';
 
 const ROOT = fileURLToPath(new URL('../data/', import.meta.url));
 const DIRS = ['programs', '2025-2026/programs'];
@@ -38,6 +39,7 @@ const ALLOW = {
 
 const readJSON = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 const SEASONS = readJSON(ROOT + 'seasons.json');
+const CURRENT = readJSON(ROOT + 'courses.json');
 const EXTRA = { current: { extraCourses: readJSON(ROOT + 'prereq-courses.json'), gened: readJSON(ROOT + 'gened.json'), seasons: SEASONS },
   '2025-2026': { extraCourses: readJSON(ROOT + '2025-2026/prereq-courses.json'), gened: readJSON(ROOT + '2025-2026/gened.json'), seasons: SEASONS } };
 
@@ -128,8 +130,12 @@ export function checkPlan(model, plan, cap = CAP) {
 const results = [];
 for (const f of programFiles()) {
   test(`plan: ${f.key}`, () => {
-    const program = JSON.parse(readFileSync(f.path, 'utf8'));
-    const model = buildModel(program, EXTRA[f.key.split('/')[0]]);
+    // an older catalog year takes its prereqs from the current catalog, as the site loads it
+    const yr = f.key.split('/')[0];
+    const raw = JSON.parse(readFileSync(f.path, 'utf8'));
+    const { program, extraCourses } = yr === 'current' ? { program: raw, extraCourses: EXTRA.current.extraCourses }
+      : forCatalogYear(raw, { current: CURRENT, currentPC: EXTRA.current.extraCourses, yearPC: EXTRA[yr].extraCourses });
+    const model = buildModel(program, { ...EXTRA[yr], extraCourses });
     const plan = makePlan(model, new Set(), { start: START, maxCredits: CAP });
     const total = plan.creditsLeft;
     const bound = Math.ceil(total / 12) + 2;
