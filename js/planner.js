@@ -22,7 +22,7 @@ const SUMMER_MAX = 9;
 //                 "Needed first" boxes instead of being assumed done
 //   gened         data/gened.json: an outside prereq on a Gen Ed list the program has a box for (MATH 1050 ->
 //                 Quantitative Literacy) is planned in that box instead of as an extra class
-//   seasons       data/seasons.json: which semesters each course is usually offered (a plan preference)
+//   seasons       data/seasons.json: which semesters each course is offered (the plan keeps to them)
 export function buildModel(program, opts = {}) {
   const units = [];
   const byCode = {};
@@ -648,8 +648,8 @@ export const termLabel = (t) => `${t.season} ${t.year}`;
 //   creditsDone credits finished in total (all classes, for University Advanced Standing); default: the
 //              finished classes of this program
 //   grades     {code: grade} from an audit: a class below its requirement's minimum grade is planned again
-//   seasons    data/seasons.json (default: the model's): a class is kept out of a semester it is never
-//              offered in (when the history has that season); a preference, never a reason to leave a class out
+//   seasons    data/seasons.json (default: the model's): a class goes only in a semester of a season UVU
+//              ran it in (last 3 years); the plan waits for that season. Unknown / seen-once classes go anywhere.
 //   summerMax  credits in a summer semester (default min(maxCredits, 9))
 // Order of placement: the catalog's sample-plan semester first, then the longest prereq chain.
 // Admission programs: "Before you apply" semesters -> Apply -> program semesters (plan.admission, planPhases).
@@ -785,17 +785,29 @@ export function makePlan(model, completed = new Set(), opts = {}) {
   // a page's own matriculation list can name classes its sample plan puts late: those keep the sample-plan
   // order (the Apply step simply waits for them) instead of jumping ahead of earlier classes
   const listedGate = gate.listed;
-  // seasons: a course/option is kept out of a term it was never offered in, unless it is never offered in any
-  // season this plan uses (then the history can't help)
-  let inSeason = false, skipped = 0;
-  const planSeasons = summers ? ['Fall', 'Spring', 'Summer'] : ['Fall', 'Spring'];
+  // seasons (a rule, Tim 2026-10-22): a course/option goes only in a term of a season UVU ran it in
+  // (js/rules.js offeredIn: a class with no history, or seen once, may go anywhere). A class that runs only
+  // in Summer gets that Summer even with summers off (summerFor). Empty terms are skipped (no semester).
+  let skipped = 0;
   const seasonMemo = new Map();
+  const seasonCodes = (it) => (it.kind === 'course' ? it.codes : it.codeList || it.codes) || [];
   const seasonOk = (it, season) => {
-    if (!(it.kind === 'course' || it.kind === 'option')) return true;
-    const codes = it.kind === 'course' ? it.codes : it.codeList || it.codes;
+    if (!seasons || !(it.kind === 'course' || it.kind === 'option')) return true;
+    const codes = seasonCodes(it);
     const k = `${codes.join('|')}@${season}`;
-    if (!seasonMemo.has(k)) seasonMemo.set(k, offeredIn(seasons, codes, season) || !planSeasons.some((x) => offeredIn(seasons, codes, x)));
+    if (!seasonMemo.has(k)) seasonMemo.set(k, offeredIn(seasons, codes, season));
     return seasonMemo.get(k);
+  };
+  const summerOnly = (it) => !!seasons && (it.kind === 'course' || it.kind === 'option') && seasonOk(it, 'Summer') && !seasonOk(it, 'Fall') && !seasonOk(it, 'Spring');
+  let forcedSummer = false, anySeason = false;
+  // coreqs that never run in the same season (SPAN 4100 Spring only, its coreq LANG 4200 Fall only) can't
+  // share a term: each goes in its own season instead
+  const together = (it, c) => !seasons || ['Fall', 'Spring', 'Summer'].some((s) => seasonOk(it, s) && offeredIn(seasons, [c], s));
+  // the term after t: with summers off, a Summer only when a class left can be taken in no other season
+  const after = (t) => {
+    if (!summers && t.season === 'Spring' && todo.some(summerOnly)) { forcedSummer = true; return { season: 'Summer', year: t.year }; }
+    forcedSummer = false;
+    return nextTerm(t, summers);
   };
   const sortKey = listedGate
     ? (a, b) => (rank(b) === 0) - (rank(a) === 0) || (a.planSem - b.planSem) || rank(a) - rank(b) || (height.get(b.id) - height.get(a.id)) || (a.order - b.order)
@@ -815,7 +827,10 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     const cap = term.season === 'Summer' ? summerMax : maxCredits;
     const avail = (it) => {
       if (it.after && !placed.has(it.after)) return false;
-      if (inSeason && !seasonOk(it, term.season)) return false;
+      if (!anySeason && !seasonOk(it, term.season)) return false;
+      // "A or B": one that runs this season must also have its own prereqs met (MUSC 3415 or 3416, 3416 needs 3415)
+      if (!anySeason && seasons && it.kind === 'course' && it.codes.length > 1 && it.altPrereqs && !it.after && !(it.repeat > 1)
+        && !it.codes.some((c) => offeredIn(seasons, [c], term.season) && evalReq(it.altPrereqs[c], before, inProgram))) return false;
       if (early && it.cohort == null && it.planSem < 99 && it.planSem - planBase > semesters.length + EARLY_SLACK) return false;
       if (isAdm(it) && !open) return false;
       if (isStd(it) && !hasStanding) return false;
@@ -825,7 +840,7 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       if (it.kind === 'choice') return !it.options.length || it.options.some((o) => evalReq(o.prereqs, before, inProgram));
       return true;
     };
-    const coreqOk = (it, now) => (it.coreqs || []).every((c) => !inProgram(c) || now.has(c)) && evalReq(it.precoreqs, now, inProgram);
+    const coreqOk = (it, now) => (it.coreqs || []).every((c) => !inProgram(c) || now.has(c) || !together(it, c)) && evalReq(it.precoreqs, now, inProgram);
     // a not-yet-planned course that is c (a coreq, or a "prereq or concurrent" course)
     const partnerOf = (c, bundle) => todo.find((x) => (x.kind === 'course' || x.kind === 'option') && !x.after && (x.codes || []).includes(c) && !sem.items.includes(x) && !bundle.includes(x));
     // codes still missing for a "prereq or concurrent" expression, given what is already this semester
@@ -841,7 +856,7 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     const grow = (bundle) => {
       for (let i = 0; i < bundle.length && bundle.length < 16; i++) {
         const x = bundle[i];
-        for (const c of x.coreqs || []) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
+        for (const c of x.coreqs || []) { const p = together(x, c) && partnerOf(c, bundle); if (p) bundle.push(p); }
         const have = new Set(before);
         for (const y of [...sem.items, ...bundle]) (y.codes || []).forEach((c) => have.add(c));
         for (const c of missing(x.precoreqs, have)) { const p = partnerOf(c, bundle); if (p) bundle.push(p); }
@@ -860,7 +875,8 @@ export function makePlan(model, completed = new Set(), opts = {}) {
       let added = true;
       while (added) {
         added = false;
-        const cands = todo.filter((it) => !sem.items.includes(it) && avail(it)).sort(sortKey);
+        // (a Summer added only for Summer-only classes takes just those, plus their coreqs)
+        const cands = todo.filter((it) => !sem.items.includes(it) && avail(it) && (!forcedSummer || summerOnly(it))).sort(sortKey);
         for (const it of cands) {
           // a cohort block goes in whole when it fits
           const tries = [];
@@ -875,33 +891,33 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     };
     // first: nothing more than EARLY_SLACK semesters ahead of the catalog's sample plan; a term left empty
     // that way takes anything that can go
-    early = sequenced; inSeason = !!seasons; fill();
+    early = sequenced; fill();
     if (!sem.items.length && early) { early = false; fill(); }
-    // nothing that is left is offered this term: skip it (the plan waits for the term the class runs in), at
-    // most twice in a row; after that a class goes in anyway (the history is a preference, not a rule)
-    if (!sem.items.length && inSeason && term.season !== 'Summer') {
-      inSeason = false; fill();
-      if (sem.items.length && skipped < 2 && sem.items.every((it) => !seasonOk(it, term.season))) {
-        sem.items.length = 0; sem.credits = 0; skipped++;
-        term = nextTerm(term, summers);
-        continue;
-      }
-    }
-    if (sem.items.length) skipped = 0;
     // a summer with nothing to take (nothing offered then, or nothing left that can go) is skipped
-    if (!sem.items.length && term.season === 'Summer') { term = nextTerm(term, summers); continue; }
+    if (!sem.items.length && term.season === 'Summer') { term = after(term); continue; }
+    // empty only because what is left doesn't run this season: wait for the next term (no semester)
+    if (!sem.items.length && seasons && skipped < 6) {
+      anySeason = true; fill(); anySeason = false;
+      if (sem.items.length) { sem.items.length = 0; sem.credits = 0; skipped++; term = after(term); continue; }
+    }
     if (!sem.items.length) {
       // nothing fits (credit cap smaller than a bundle, or a prereq loop): force the best one in (never a gated one
-      // while something else is left)
-      const free = todo.filter((x) => !x.after || placed.has(x.after));
+      // while something else is left), but only one offered this term; when nothing left runs this term, the
+      // plan waits for the next one. Two years of empty terms in a row (a class that can't fit any term it
+      // runs in): it goes in anyway, with a warning, rather than being left out.
+      const free = todo.filter((x) => (!x.after || placed.has(x.after)) && (skipped >= 6 || seasonOk(x, term.season)));
+      if (!free.length && skipped < 6) { skipped++; term = after(term); continue; }
       const it = free.filter((x) => !isAdm(x) && !isStd(x)).sort(sortKey)[0] || free.sort(sortKey)[0] || todo[0];
-      warnings.push(`${it.label}: placed without its prerequisites or over the credit limit`);
+      warnings.push(seasonOk(it, term.season) ? `${it.label}: placed without its prerequisites or over the credit limit` : `${it.label}: placed in ${termLabel(term)}, a semester it is not usually offered`);
       sem.items.push(it); sem.credits += it.credits;
     }
+    skipped = 0;
     for (const it of sem.items) {
-      // "A or B" where A needs B: name the one that can be taken now
-      if (it.kind === 'course' && it.altPrereqs && it.codes.length > 1 && !it.after && !(it.repeat > 1) && !evalReq(it.altPrereqs[it.code], before, inProgram)) {
-        const ok = it.codes.find((c) => evalReq(it.altPrereqs[c], before, inProgram));
+      // "A or B" where A needs B, or A doesn't run this season: name the one that can be taken now
+      const preOk = (c) => !it.altPrereqs || evalReq(it.altPrereqs[c], before, inProgram);
+      const runs = (c) => !seasons || offeredIn(seasons, [c], term.season);
+      if (it.kind === 'course' && it.codes.length > 1 && !it.after && !(it.repeat > 1) && !(preOk(it.code) && runs(it.code))) {
+        const ok = it.codes.find((c) => preOk(c) && runs(c)) || (preOk(it.code) ? null : it.codes.find(preOk));
         if (ok) {
           sem.credits -= it.credits;
           it.code = ok; it.label = ok; it.title = courses[ok]?.title || it.title;
@@ -914,7 +930,7 @@ export function makePlan(model, completed = new Set(), opts = {}) {
     for (const it of sem.items) { todo.splice(todo.indexOf(it), 1); placed.add(it.id); (it.codes || []).forEach((c) => done.add(c)); }
     sem.items.sort((a, b) => (a.kind === 'course' ? 0 : 1) - (b.kind === 'course' ? 0 : 1) || String(a.label).localeCompare(String(b.label)));
     semesters.push(sem);
-    term = nextTerm(term, summers);
+    term = after(term);
   }
   if (todo.length) warnings.push(`${todo.length} requirement(s) could not be placed within 40 semesters`);
   if (admission && admission.at == null) admission.at = semesters.length;
@@ -1159,8 +1175,8 @@ export function requirementFor(model, code, completed = new Set()) {
   const partName = (id) => (model.program.parts || []).find((p) => p.id === id)?.name;
   for (const g of crossList) { const n = partName(g.prog) || (g.prog ? null : partName((model.program.parts || [])[0]?.id)); if (n && !shared.includes(n)) shared.push(n); }
   if (shared.length) why += `. Counts once for both: also fills ${shared.join(', ')}`;
+  // (the class sheet shows this in its own "Offered" row, linked to UVU's class search)
   const offered = offeredLabel(model.seasons, [code]);
-  if (offered) why += `. ${offered} (UVU's class schedules, ${model.seasons.covered.size === 3 ? 'recent Fall, Spring and Summer terms' : 'recent terms'})`;
   const alsoIn = [...new Set(hits.slice(1).map((h) => h.u.label))].filter((l) => l !== u.label);
   return {
     unitId: u.id, kind: u.kind, label: u.label, area, credits: o ? o.credits : u.credits, why, alsoIn,

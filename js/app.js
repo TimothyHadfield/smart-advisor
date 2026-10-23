@@ -100,6 +100,7 @@ const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; r
 const gradeMap = () => (state.grades[major()] ??= {});
 
 let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null;
+let seasonsData = null; // data/seasons.json as loaded (its build date goes on the class sheet's "Offered" link)
 let matric = null; // js/matric.js matricSides: the boxes right of the dotted matriculation line
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
@@ -185,6 +186,7 @@ async function buildFor(ids, year) {
   const y = parts[0].year;
   const ofYear = async (f) => (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/${f}`)) || getJSON(`${DATA}/${f}`);
   const [extraCourses, ge, seasons] = await Promise.all([ofYear('prereq-courses.json'), ofYear('gened.json'), getJSON(`${DATA}/seasons.json`)]);
+  seasonsData = seasons;
   return { parts, model: buildModel(combinePrograms(parts), { extraCourses, gened: ge, seasons }) };
 }
 // change the chosen programs / catalog year; a new major brings the classes taken (not its Gen Ed boxes)
@@ -754,7 +756,7 @@ function renderPlan(plan) {
   const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
     <div class="sem${semCls(i)}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
-      `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
+      `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title, it.offered].filter(Boolean).join(' · '))}"><span>${esc(it.label)}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
 // "Schedule with an advisor": the program's booking link, else its advising page (data/advisors.json); '' when unknown
@@ -1181,6 +1183,8 @@ function openClass({ node, item }) {
     || src
     || [g ? `${g.label} · ${pickLabel(g.pick)}` : kind === 'placeholder' ? u?.label : null, req?.area].filter(Boolean).join(' — ');
   if (whyText) rows.push(['Why', whyText + (part && progParts.length > 1 ? ` (${part.program.name})` : '')]);
+  // the semesters it runs in (data/seasons.json, from UVU's class search over the last 3 years)
+  if (why?.offered) rows.push(['Offered', why.offered]);
   // the catalog lines this requirement came from
   if (src && src !== whyText) rows.push(['Catalog', src]);
   if (kind !== 'course' && kind !== 'option' && g?.options?.length) rows.push(['Options', g.options.slice(0, 12).map((o) => o.label).join(', ') + (g.options.length > 12 ? ` +${g.options.length - 12} more` : '')]);
@@ -1190,7 +1194,7 @@ function openClass({ node, item }) {
   const courseSrc = code ? sourceLink('course', { code, year: part?.year, current: catalog.info.current }) : null;
   const progSrc = sourceLink('program', { program: part?.program, tab: 'requirements' });
   const fromCourse = new Set(['Before', 'Before or with', 'With', 'Needs']);
-  const srcOf = (k) => (fromCourse.has(k) ? courseSrc : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
+  const srcOf = (k) => (fromCourse.has(k) ? courseSrc : k === 'Offered' ? sourceLink('seasons', { seasons: seasonsData }) : k === 'Grade' ? (opt?.minGrade ?? req?.minGrade ? progSrc : courseSrc) : k === 'Credits' || k === 'Lab' ? null : progSrc);
   $('clsFacts').innerHTML = rows.map(([k, v, html]) => {
     const s = linkHTML(srcOf(k), '');
     return `<dt>${esc(k)}</dt><dd>${esc(v)}${s ? ' ' + s : ''}${html ? ' ' + html : ''}</dd>`;

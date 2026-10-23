@@ -20,6 +20,12 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Verified how:** cmpcols/cmpstats over all programs (EE unchanged 8 crossings); headless desktop + 393px screenshots; Playwright repro with fake audit (old code fails, new passes); suite 1032 pass; rules 5/5.
 - **Open:** see progress.md NOT verified.
 
+## 2026-10-22 · Seasons as a rule (builder `seasons`)
+- **Asked (Tim, via manager):** "a bunch of the classes in certain majors ... are sometimes only offered specific semesters (fall or spring)"; "could you also fix the cite so it only allows classes that are offered those semesters to be taken in the stated semesters?"
+- **Built:** `docs/seasons-plan.md`; `scripts/build-seasons.mjs` rewritten (per-subject Banner fetch, 3 newest terms per season, section counts, reuses finished terms, 25-row fallback); `data/seasons.json` 9 terms / 4,214 courses; `js/planner.js` hard season rule ("A or B" season-aware, coreqs with no common season split, forced Summer for Summer-only classes); plan row hover title shows "Usually … only"; weekly `refresh-data.yml` rebuilds seasons; `docs/research.md` "login-only" claim corrected.
+- **Verified how (2026-10-22):** `tests/seasons.test.mjs` 22/22 on new code, 3 fail on old code with the same data (Summer-only, "A or B", all-programs sweep: 445 off-season placements in 144 plans → 0); EE flowchart vs Banner 23/24 on Fall/Spring; full suite 1175 pass / 0 fail / 1 skipped; phone-view 393 px + desktop of EE plan, ECE 3780 class sheet, Schedule "+ Add class" search "ECE 3780" in Fall 2026 = No match.
+- **Open:** see progress.md NOT verified (posted-term gap, ECE 4900 disagreement, forced Summer has no note, Action not yet run on GitHub).
+
 ## 2026-10-17 · Manager batch 1 (sweep leftovers)
 - **Asked (via manager, Tim's standing go):** "any fixes or improvements you feel confident about go ahead and do."
 - **Built:** 20c1a30 (CLAUDE.md, sweep notes), e2ef6cc (head meta, favicon 404, rules comment only), a010c3b (`js/fresh.js` auto-update + Settings focus ring).

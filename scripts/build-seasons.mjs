@@ -1,34 +1,60 @@
 #!/usr/bin/env node
-// Which semesters (Fall / Spring / Summer) each UVU course has been offered in -> data/seasons.json.
-// Usage: node scripts/build-seasons.mjs [--history N] [--fetch 202530,202540] [--delay ms]
-//   Always reads every data/sections/<term>.json present and the terms already in data/seasons.json (the
-//   history only grows: a weekly run adds the new terms, older terms are kept).
-//   --history N  also fetches the N most recent past regular terms from public Banner 9 that are not
-//                known yet (only the course codes are kept, nothing about sections or people).
-//   --fetch a,b  fetches exactly these term codes.
-// Source: https://userve.uvu.edu/StudentRegistrationSsb/ssb/ (no login). Polite: one request at a time.
+// Which semesters (Fall / Spring / Summer) each UVU course ran in over the last 3 years -> data/seasons.json.
+// Usage: node scripts/build-seasons.mjs [--per 3] [--delay 500] [--cache <dir>] [--only 202640,202720]
+//   Run it once a semester (after the next term's schedule is posted). It picks the window itself:
+//   the --per (3) most recent terms of each season that have sections, i.e. about the last 3 academic years,
+//   including a future term that is already posted (Spring 2027 in Oct 2026). A term that is only partly
+//   posted (fewer than 60% of the biggest same-season term's sections) is kept as extra evidence but does
+//   not push an older full term out of the window.
+//   Every term is fetched subject by subject (the all-subject listing tops out at 8,192 rows), one request at
+//   a time, --delay ms apart (500 = 2 requests/s). Only course codes are kept: nothing about sections or people.
+//   --cache dir  keeps each fetched term in dir/<term>.json, so a stopped run picks up where it was
+//   --only a,b   fetch these terms again (others come from the file / cache)
+//   --full       fetch every term again (default: terms that ended before today's term are reused from
+//                data/seasons.json, so the weekly GitHub Action only fetches the current + posted future terms)
+// Source: https://userve.uvu.edu/StudentRegistrationSsb/ssb/ (public class search, no login).
 //
 // data/seasons.json:
-//   { built: ISO, terms: [{ term: "202540", name: "2025 Fall", season: "Fall" }, ...] (oldest first),
-//     courses: { "ECE 2250": [0, 2, 3], ... } }   (indexes into terms: the terms it had a section in)
-// The planner (js/planner.js seasonInfo) treats this as a preference: a course is kept out of a season it
-// was never offered in, but only when the history has at least one term of that season.
+//   { built: ISO, rule: "...", terms: [{ term: "202540", name: "2025 Fall", season: "Fall", sections: 2911 }, ...]
+//     (oldest first), courses: { "ECE 2250": [0, 2, 3], ... } }   (indexes into terms: the terms it had a section in)
+// The planner (js/rules.js seasonTable / offeredIn) reads it: a class is planned only in a season it ran in
+// (classes seen in fewer than 2 terms, or not at all, may go in any season).
 
-import { readFile, writeFile, readdir } from 'node:fs/promises';
+import { readFile, writeFile, mkdir } from 'node:fs/promises';
 import { join, resolve, dirname } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { BannerSession } from './lib/banner.mjs';
 
 const ROOT = resolve(dirname(fileURLToPath(import.meta.url)), '..');
-const SECTIONS = join(ROOT, 'data', 'sections');
 const OUT = join(ROOT, 'data', 'seasons.json');
 const sleep = (ms) => new Promise((r) => setTimeout(r, ms));
+export const RULE = 'A class is offered in a season when it had a section in at least one sampled term of that season (3 most recent terms per season). Classes seen in fewer than 2 sampled terms are not limited.';
 
 export const seasonOfTerm = (code) => ({ 20: 'Spring', 30: 'Summer', 40: 'Fall' }[String(code).slice(4)] || null);
 
 /**
- * Merge term -> course-code sets into the seasons file shape.
- * known: { term: { name, codes: Set } }
+ * Which terms make the window. probes: [{ term, sections }] (any order; terms with 0 sections are ignored).
+ * Per season: the `per` newest terms with at least 60% of that season's biggest term, plus any newer
+ * (partly posted) ones. -> sorted term codes
+ */
+export function pickWindow(probes, per = 3) {
+  const out = [];
+  for (const season of ['Spring', 'Summer', 'Fall']) {
+    const mine = probes.filter((p) => seasonOfTerm(p.term) === season && p.sections > 0).sort((a, b) => b.term.localeCompare(a.term));
+    const big = Math.max(0, ...mine.map((p) => p.sections));
+    let full = 0;
+    for (const p of mine) {
+      if (full >= per) break;
+      out.push(p.term);
+      if (p.sections >= 0.6 * big) full++;
+    }
+  }
+  return out.sort();
+}
+
+/**
+ * Term -> course-code sets into the seasons file shape.
+ * known: { term: { name, codes: Set|Array, sections } }
  */
 export function buildSeasons(known, built = new Date().toISOString()) {
   const terms = Object.keys(known).filter((t) => seasonOfTerm(t)).sort();
@@ -37,91 +63,140 @@ export function buildSeasons(known, built = new Date().toISOString()) {
     for (const c of known[t].codes) (courses[c] ??= []).push(i);
   });
   const sorted = Object.fromEntries(Object.entries(courses).sort(([a], [b]) => a.localeCompare(b)));
-  return { built, terms: terms.map((t) => ({ term: t, name: known[t].name, season: seasonOfTerm(t) })), courses: sorted };
+  return {
+    built, rule: RULE,
+    terms: terms.map((t) => ({ term: t, name: known[t].name, season: seasonOfTerm(t), sections: known[t].sections ?? null })),
+    courses: sorted,
+  };
 }
 
-/** The seasons file back into term -> codes sets (to add new terms to it). */
+/** The seasons file back into term -> { name, codes, sections } (to reuse finished terms). */
 export function knownFrom(file) {
   const known = {};
   if (!file?.terms) return known;
-  file.terms.forEach((t) => { known[t.term] = { name: t.name, codes: new Set() }; });
+  file.terms.forEach((t) => { known[t.term] = { name: t.name, codes: new Set(), sections: t.sections ?? null }; });
   for (const [c, idx] of Object.entries(file.courses || {})) for (const i of idx) known[file.terms[i]?.term]?.codes.add(c);
   return known;
 }
 
-const codesOfSections = (sections) => new Set(sections.map((s) => `${s.subj} ${s.num}`));
+/** The Banner code of the term a date falls in (Spring Jan-Apr, Summer May-Aug 19, Fall Aug 20+; D7). */
+export function termOfDate(d = new Date()) {
+  const m = d.getMonth() + 1, y = d.getFullYear();
+  return `${y}${m <= 4 ? 20 : m < 8 || (m === 8 && d.getDate() < 20) ? 30 : 40}`;
+}
 
 function args(argv) {
-  const o = { history: 0, fetch: [], delay: 1000 };
+  const o = { per: 3, delay: 500, cache: null, only: null, full: false };
   for (let i = 0; i < argv.length; i++) {
-    if (argv[i] === '--history') o.history = +argv[++i];
-    else if (argv[i] === '--fetch') o.fetch = argv[++i].split(',').filter(Boolean);
-    else if (argv[i] === '--delay') o.delay = +argv[++i];
+    if (argv[i] === '--per') o.per = +argv[++i];
+    else if (argv[i] === '--delay') o.delay = Math.max(500, +argv[++i]);
+    else if (argv[i] === '--cache') o.cache = argv[++i];
+    else if (argv[i] === '--only') o.only = argv[++i].split(',').filter(Boolean);
+    else if (argv[i] === '--full') o.full = true;
   }
   return o;
 }
 
-async function fetchCodes(s, term, delay) {
+// one search: reset Banner's form (it otherwise repeats the last search), then read the rows
+async function search(s, term, subject, offset, delay, size = 500) {
+  await s.req('/classSearch/resetDataForm', { method: 'POST' }).catch(() => {});
+  await sleep(delay);
+  const q = `txt_subject=${encodeURIComponent(subject)}&txt_term=${term}&uniqueSessionId=${s.sid}&pageOffset=${offset}&pageMaxSize=${size}&sortColumn=courseNumber&sortDirection=asc`;
+  const j = await (await s.req(`/searchResults/searchResults?${q}`)).json();
+  await sleep(delay);
+  if (!j.success) throw new Error(`Banner search failed: ${term} ${subject} @${offset}`);
+  return j;
+}
+
+async function fetchTerm(s, term, delay) {
   await s.bindTerm(term);
-  const codes = new Set();
-  let total = Infinity, got = 0;
-  const take = (j) => { got += j.data.length; for (const r of j.data) if (r.subject && r.courseNumber) codes.add(`${r.subject} ${r.courseNumber}`); };
-  for (let off = 0; off < total; off += 500) {
-    if (off) await sleep(delay);
-    let j = null;
-    // Banner sometimes fails a page ("success": false), some old terms always at the same rows: try once
-    // more, then read that block 50 rows at a time and skip only the small pages that still fail
-    try { j = await s.page(term, off); } catch {
-      await sleep(delay * 3);
-      await s.bindTerm(term);
-      try { j = await s.page(term, off); } catch {}
-    }
-    if (!j) {
-      for (let o = off; o < Math.min(off + 500, total); o += 50) {
-        await sleep(delay);
-        try { const p = await s.page(term, o, 50); total = p.totalCount ?? total; if (p.data?.length) take(p); } catch { console.warn(`\n  ${term}: rows ${o}-${o + 49} skipped (Banner error)`); await s.bindTerm(term); }
+  await sleep(delay);
+  const subjects = await (await s.req(`/classSearch/get_subject?searchTerm=&term=${term}&offset=1&max=500`)).json();
+  await sleep(delay);
+  const codes = new Set(), crns = new Set(), failed = [];
+  for (const [k, sub] of subjects.entries()) {
+    let total = Infinity;
+    for (let off = 0; off < total; off += 500) {
+      let j = null;
+      for (let tryNo = 0; tryNo < 3 && !j; tryNo++) {
+        try { j = await search(s, term, sub.code, off, delay); } catch {
+          await sleep(delay * 4);
+          await s.bindTerm(term).catch(() => {});
+        }
       }
-      if (!Number.isFinite(total)) break; // not one row came back
-      continue;
+      if (!j) {
+        // Banner fails some blocks every time (one bad row): read it 25 rows at a time, skip only what still fails
+        let any = false;
+        for (let o = off; o < off + 500; o += 25) {
+          let p = null;
+          try { p = await search(s, term, sub.code, o, delay, 25); } catch { failed.push(`${sub.code}@${o}`); await s.bindTerm(term).catch(() => {}); continue; }
+          any = true;
+          for (const r of p.data || []) {
+            if (r.subject && r.courseNumber) codes.add(`${r.subject} ${r.courseNumber}`);
+            if (r.courseReferenceNumber) crns.add(r.courseReferenceNumber);
+          }
+          if (o + 25 >= (p.totalCount || 0)) break;
+        }
+        if (!any) failed.push(`${sub.code}@${off}`);
+        break;
+      }
+      total = j.totalCount || 0;
+      for (const r of j.data || []) {
+        if (r.subject && r.courseNumber) codes.add(`${r.subject} ${r.courseNumber}`);
+        if (r.courseReferenceNumber) crns.add(r.courseReferenceNumber);
+      }
+      if (!j.data?.length) break;
     }
-    total = j.totalCount;
-    if (!j.data || !j.data.length) break;
-    take(j);
-    process.stdout.write(`  ${term}: ${got}/${total}\r`);
+    process.stdout.write(`  ${term}: ${k + 1}/${subjects.length} subjects, ${crns.size} sections\r`);
   }
   process.stdout.write('\n');
-  return codes;
+  if (failed.length) console.warn(`  ${term}: not read (Banner errors, 3 tries): ${failed.join(' ')}`);
+  return { codes: [...codes].sort(), sections: crns.size, subjects: subjects.length, failed };
 }
 
 async function main() {
   const opt = args(process.argv.slice(2));
-  let old = null;
-  try { old = JSON.parse(await readFile(OUT, 'utf8')); } catch {}
-  const known = knownFrom(old);
-  for (const f of (await readdir(SECTIONS)).filter((f) => /^\d{6}\.json$/.test(f))) {
-    const j = JSON.parse(await readFile(join(SECTIONS, f), 'utf8'));
-    if (j.sections?.length) known[j.term] = { name: j.termName, codes: codesOfSections(j.sections) };
+  if (opt.cache) await mkdir(opt.cache, { recursive: true });
+  const s = new BannerSession();
+  await s.open();
+  const all = await (await s.req('/classSearch/getTerms?searchTerm=&offset=1&max=200')).json();
+  const names = Object.fromEntries(all.map((t) => [t.code, t.description.replace(/\s*\(View Only\)\s*/i, '').trim()]));
+  // newest regular terms first; probe each one's size (one row) until every season has enough
+  const regular = all.map((t) => t.code).filter((c) => /^\d{4}[234]0$/.test(c)).sort().reverse();
+  const probes = [];
+  for (const t of regular) {
+    const counts = ['Spring', 'Summer', 'Fall'].map((x) => probes.filter((p) => seasonOfTerm(p.term) === x && p.sections > 0).length);
+    if (counts.every((n) => n >= opt.per + 1)) break;
+    if (probes.filter((p) => seasonOfTerm(p.term) === seasonOfTerm(t) && p.sections > 0).length >= opt.per + 1) continue;
+    await s.bindTerm(t); await sleep(opt.delay);
+    const j = await (await s.req(`/searchResults/searchResults?txt_term=${t}&uniqueSessionId=${s.sid}&pageOffset=0&pageMaxSize=1`)).json();
+    await sleep(opt.delay);
+    probes.push({ term: t, sections: j.totalCount || 0 });
+    console.log(`  probe ${t} ${names[t]}: ${j.totalCount || 0} sections listed`);
   }
-  let want = [...opt.fetch];
-  if (opt.history > 0 || want.length) {
-    const s = new BannerSession();
-    await s.open();
-    const all = await s.terms();
-    const names = Object.fromEntries(all.map((t) => [t.code, t.description.replace(/\s*\(View Only\)\s*/i, '').trim()]));
-    if (opt.history > 0) {
-      const top = Object.keys(known).sort().pop() || '999999';
-      const past = all.map((t) => t.code).filter((c) => /^\d{4}[234]0$/.test(c) && c < top && !known[c]).sort().reverse();
-      want.push(...past.slice(0, opt.history));
+  const window = pickWindow(probes, opt.per);
+  console.log('window:', window.map((t) => `${t} (${names[t]})`).join(', '));
+  // terms that ended before today's term don't change any more: reuse them from the current file (fetched
+  // subject by subject, so they carry a section count) unless --full
+  let old = {};
+  try { old = knownFrom(JSON.parse(await readFile(OUT, 'utf8'))); } catch {}
+  const now = termOfDate();
+  const known = {};
+  for (const t of window) {
+    const file = opt.cache && join(opt.cache, `${t}.json`);
+    let got = null;
+    const forced = opt.only && opt.only.includes(t);
+    if (!opt.full && !forced && t < now && old[t]?.sections && old[t].codes.size) got = { codes: [...old[t].codes], sections: old[t].sections, failed: [] };
+    if (!got && file && !forced) { try { got = JSON.parse(await readFile(file, 'utf8')); } catch {} }
+    if (!got || got.failed?.length) {
+      got = await fetchTerm(s, t, opt.delay);
+      if (file) await writeFile(file, JSON.stringify(got));
     }
-    want = [...new Set(want)];
-    console.log('fetching:', want.join(', ') || '(nothing new)');
-    for (const t of want) {
-      const codes = await fetchCodes(s, t, opt.delay);
-      if (codes.size) known[t] = { name: names[t] || t, codes };
-      else console.log(`  ${t}: no sections; skipped`);
-      await writeFile(OUT, JSON.stringify(buildSeasons(known)) + '\n'); // keep each fetched term
-      await sleep(opt.delay);
-    }
+    // some subjects failed: keep what the old file knew about this term too (never lose classes to an outage)
+    if (got.failed?.length && old[t]) got = { ...got, codes: [...new Set([...got.codes, ...old[t].codes])].sort() };
+    const listed = probes.find((p) => p.term === t)?.sections;
+    console.log(`  ${t}: ${got.codes.length} courses, ${got.sections} sections (all-subject listing: ${listed})`);
+    known[t] = { name: names[t] || t, codes: got.codes, sections: got.sections };
   }
   const out = buildSeasons(known);
   await writeFile(OUT, JSON.stringify(out) + '\n');
