@@ -544,7 +544,7 @@ dialog.cl-edit[data-step="form"] form { height: auto; }
 .noaud[hidden], .noaud span[hidden] { display: none; }
 .noaud button { padding: 0; border: 0; background: none; color: var(--green); font-weight: 700; text-decoration: underline; cursor: pointer; }
 /* "UVU's official flowchart (2026-27) ↗" (flowchart, under the legend; majors whose department publishes one) */
-.uvuchart { flex: none; margin: 0; padding: 0 16px 4px; font-size: 11.5px; }
+.uvuchart { flex: none; margin: 0; padding: 0 16px 4px; font-size: 12px; }
 .uvuchart[hidden] { display: none; }
 .uvuchart a { color: var(--green); font-weight: 700; }
 
@@ -552,16 +552,16 @@ dialog.cl-edit[data-step="form"] form { height: auto; }
    its label (top of the line) opens the matriculation sheet */
 .edges path.matric { stroke: var(--muted); stroke-width: 1.8; stroke-dasharray: 0 5; stroke-linecap: round; }
 .edges.hov > path.matric { opacity: 1; }
-.matric-lbl { position: absolute; z-index: 2; transform: translate(-50%, -50%); height: 22px; padding: 0 9px; border: 1px solid var(--line); border-radius: 11px; background: var(--panel); color: var(--green); font: inherit; font-size: 11px; font-weight: 700; line-height: 20px; white-space: nowrap; cursor: pointer; }
+.matric-lbl { position: absolute; z-index: 2; transform: translate(-50%, -50%); height: 22px; padding: 0 9px; border: 1px solid var(--line); border-radius: 11px; background: var(--panel); color: var(--green); font: inherit; font-size: 12px; font-weight: 700; line-height: 20px; white-space: nowrap; cursor: pointer; }
 .matric-lbl::before { content: ''; position: absolute; inset: -11px -4px; } /* 44px tall touch target */
 .matric-lbl[hidden] { display: none; }
 .mts { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px; }
-.mt { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-size: 11.5px; white-space: nowrap; }
+.mt { padding: 1px 6px; border: 1px solid var(--line); border-radius: 6px; font-size: 12px; white-space: nowrap; }
 .mt.ok { border-color: var(--green); color: var(--green); font-weight: 600; }
 dialog.mat .cls-facts { max-height: 60dvh; }
 
 /* source links (js/sources.js): small grey line, green "↗" links, new tab. Tim 2026-10-22: link everything we get information from */
-.src { margin: 0; font-size: 11px; color: var(--muted); line-height: 1.5; }
+.src { margin: 0; font-size: 12px; color: var(--muted); line-height: 1.5; }
 .src-d { white-space: nowrap; }
 .src a, a.src { color: var(--green); font-weight: 600; text-decoration: none; white-space: nowrap; }
 .sum p.src { color: var(--muted); }
