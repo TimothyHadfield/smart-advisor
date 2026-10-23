@@ -46,7 +46,9 @@ function defaults() {
   state.settings ??= { max: 16, summers: false, start: null };
   state.settings.grades ??= true;
   state.settings.semColors ??= true; // flowchart's Colors switch (semester colors): off = one neutral look for planned boxes
-  state.settings.labels ??= 'both'; // flowchart box labels: 'code' (MATH 2210), 'title' (Calc 3) or 'both'
+  // flowchart box labels: 'code' (MATH 2210), 'title' (Calc 3, the default) or 'both'; labelsHand = the student
+  // picked it (the old default 'both' was saved for everyone, so a 'both' nobody picked shows as Title)
+  state.settings.labels ??= 'title';
   // schedule builder: prefs (js/schedule.js DEFAULT_PREFS) + per term {add, drop, pin: {code: crn}, crns}
   state.settings.sched ??= {};
   state.settings.sched.prefs ??= {};
@@ -313,12 +315,14 @@ function syncURL() {
 }
 
 // ---------- flowchart ----------
-// Box positions and arrow routes come from js/layout.js (flowChart) in pixels. A laptop gets the widest
-// boxes that still fit the chart's width; a phone gets the widest and scrolls inside the chart area.
-// Narrow boxes, wide gaps (about a box wide), more room between rows (Tim, 2026-10-23). A smaller fit
-// only narrows the gaps; lanes stay at least 8 px apart.
+// Box positions and arrow routes come from js/layout.js (flowChart) in pixels. Every screen gets the widest
+// gaps that still fit the chart area's width; when even the narrowest gaps don't fit, the chart is scaled to
+// the width (never below 0.7, see layout()). Narrow boxes, wide gaps, more room between rows (Tim,
+// 2026-10-23: "Really try to make it so there is no horizontal scrolling in the flowchart area"). A smaller
+// fit only narrows the gaps; lanes stay at least 8 px apart.
 const BASE = { boxH: 48, rowH: 66, near: 8, pad: 12 };
-const FITS = [{ boxW: 108, gapMin: 96, track: 12 }, { boxW: 108, gapMin: 80, track: 12 }, { boxW: 108, gapMin: 64, track: 10 }, { boxW: 108, gapMin: 52, track: 9 }, { boxW: 108, gapMin: 44, track: 8 }];
+const FITS = [{ boxW: 92, gapMin: 88, track: 12 }, { boxW: 92, gapMin: 72, track: 12 }, { boxW: 92, gapMin: 60, track: 10 }, { boxW: 92, gapMin: 48, track: 9 }, { boxW: 92, gapMin: 40, track: 8 }, { boxW: 92, gapMin: 32, track: 8 }, { boxW: 92, gapMin: 26, track: 8 }];
+const MIN_K = 0.7; // the smallest the chart is scaled to fit the width (smaller is hard to read)
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
 const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)
@@ -330,7 +334,7 @@ const chartFor = (k, W) => {
 };
 function pickChart(W) {
   let k = FITS.findIndex((_, i) => chartFor(i, W).width <= W - 16);
-  if (k < 0) k = W >= 700 ? FITS.length - 1 : 0;
+  if (k < 0) k = FITS.length - 1; // the narrowest: layout() scales it to the width
   SIZES = { ...BASE, ...FITS[k] };
   graph = chartFor(k, W);
 }
@@ -503,14 +507,16 @@ function layout() {
   if (!W || !H || !nodes) return;
   pickChart(W);
   const g = graph;
-  // whole chart on screen; a phone starts there when that still leaves boxes readable (>= 50%)
+  // fitK: the whole chart on screen (Fit button); widthK: the chart's width on screen, no smaller than
+  // MIN_K (the usual view: no sideways scrolling, scroll down only)
   zoom.fitK = Math.min(1, (W - 8) / g.width, (H - 8) / g.height);
-  if (zoom.mode === null) zoom.mode = W < 700 && zoom.fitK < 1 && zoom.fitK >= 0.5 ? 'fit' : 'full';
-  const k = zoom.mode === 'fit' ? zoom.fitK : zoom.mode === 'free' ? Math.max(zoom.fitK, Math.min(1.5, zoom.k)) : 1;
+  zoom.widthK = Math.min(1, Math.max(MIN_K, (W - 2) / g.width));
+  if (zoom.mode === null) zoom.mode = 'width';
+  const k = zoom.mode === 'fit' ? zoom.fitK : zoom.mode === 'free' ? Math.max(zoom.fitK, Math.min(1.5, zoom.k)) : zoom.widthK;
   zoom.k = k;
   const fitBtn = $('fitBtn');
-  fitBtn.hidden = zoom.fitK >= 0.999;
-  fitBtn.setAttribute('aria-pressed', k < 0.999);
+  fitBtn.hidden = zoom.fitK >= zoom.widthK - 0.001;
+  fitBtn.setAttribute('aria-pressed', zoom.mode === 'fit');
   const dx = Math.max(0, Math.round((W / k - g.width) / 2));
   const totalW = Math.max(W / k, Math.ceil(g.width)), totalH = Math.max(H / k, Math.ceil(g.height));
   const frames = [];
@@ -557,6 +563,10 @@ function layout() {
   svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>'
     + ['pre', 'post'].map((k) => `<marker id="ah-${k}" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>`).join('') + '</defs>'
     // (one group, so lines that share a trunk fade as one when a box is hovered)
+    // the two sides of the matriculation line, tinted only while it's hovered (or tapped on a phone)
+    + (g.split ? `<g class="mreg"><path class="mb" d="${d([[-dx, g.split.top], ...g.split.pts, [-dx, g.split.bottom]])}Z"/>`
+      + `<path class="ma" d="${d([[totalW - dx, g.split.top], ...g.split.pts, [totalW - dx, g.split.bottom]])}Z"/>`
+      + g.split.strays.map((r) => `<path class="ma" d="${d([[r.x - 5, r.y - 5], [r.x + r.w + 5, r.y - 5], [r.x + r.w + 5, r.y + r.h + 5], [r.x - 5, r.y + r.h + 5]])}Z"/>`).join('') + '</g>' : '')
     + '<g class="lines">' + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('') + '</g>'
     // the matriculation line: left = classes that don't need it, right = classes that do; it bends through
     // the gaps around the boxes; a box no line can put on its side gets its own dotted outline
@@ -567,6 +577,31 @@ function layout() {
     mat.hidden = !g.split;
     if (g.split) mat.style.cssText = `left:${(g.split.x + dx).toFixed(1)}px;top:${g.split.top.toFixed(1)}px`;
   }
+  // an invisible wide copy of the matriculation line under the boxes: hover (or tap) it to light it up
+  let hit = $('matHit');
+  if (!hit && g.split) {
+    hit = document.createElementNS('http://www.w3.org/2000/svg', 'svg');
+    hit.id = 'matHit';
+    hit.setAttribute('class', 'mhit');
+    $('boxes').prepend(hit);
+    const on = (v) => $('edges').classList.toggle('mhov', v);
+    hit.addEventListener('pointerdown', (e) => { layout.matTouch = e.pointerType !== 'mouse'; });
+    hit.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') on(true); });
+    hit.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') on(false); });
+    hit.addEventListener('click', () => { if (layout.matTouch) on(!$('edges').classList.contains('mhov')); });
+    if (!layout.matWired) { // a tap anywhere else in the chart turns it off again
+      layout.matWired = true;
+      $('chart').addEventListener('click', (e) => { if (!e.target.closest?.('#matHit')) $('edges').classList.remove('mhov'); });
+    }
+    mat.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') on(true); });
+    mat.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') on(false); });
+  }
+  if (hit) {
+    hit.hidden = !g.split;
+    if (!g.split) $('edges').classList.remove('mhov');
+    hit.setAttribute('width', totalW); hit.setAttribute('height', totalH);
+    hit.innerHTML = g.split ? `<path d="${d(g.split.pts)}"/>` : '';
+  }
   drawHover();
 }
 
@@ -575,7 +610,7 @@ function wireZoom() {
   const chart = $('chart');
   $('fitBtn').addEventListener('click', () => {
     const was = zoom.k;
-    zoom.mode = zoom.k < 0.999 ? 'full' : 'fit';
+    zoom.mode = zoom.mode === 'fit' ? 'width' : 'fit';
     layout();
     // keep the middle of the view in the middle
     chart.scrollLeft = Math.max(0, (chart.scrollLeft + chart.clientWidth / 2) * (zoom.k / was) - chart.clientWidth / 2);
@@ -985,8 +1020,9 @@ function wireFlowBar() {
   });
   $('lblSeg').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-v]');
-    if (!b || b.dataset.v === state.settings.labels) return;
+    if (!b || b.dataset.v === labelView()) return;
     state.settings.labels = b.dataset.v;
+    state.settings.labelsHand = true;
     save();
     renderLabels();
   });
@@ -995,8 +1031,9 @@ function wireFlowBar() {
 }
 // Code (MATH 2210) / Title (Calc 3) / Both: a look on the boxes only, so nothing moves (Gen Ed boxes keep theirs)
 const LABELS = ['code', 'title', 'both'];
+const labelView = () => { const s = state.settings; return s.labels === 'both' && !s.labelsHand ? 'title' : LABELS.includes(s.labels) ? s.labels : 'title'; };
 function renderLabels() {
-  const v = LABELS.includes(state.settings.labels) ? state.settings.labels : 'both';
+  const v = labelView();
   $('boxes').dataset.lbl = v;
   for (const b of $('lblSeg').children) { b.classList.toggle('on', b.dataset.v === v); b.setAttribute('aria-pressed', b.dataset.v === v); }
 }

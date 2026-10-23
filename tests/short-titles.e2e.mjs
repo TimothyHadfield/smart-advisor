@@ -4,9 +4,9 @@
 //   2. run:              node --test tests/short-titles.e2e.mjs        (APP_URL=... for another address)
 // Checks, measured with the page's own CSS (not estimated):
 //   - no class-name line (.box i) or requirement box (.box.ph b) is cut: each fits its line clamp unclamped,
-//     and no word is wider than its box; no code line ("ACC 1110 + 1120") is cut
+//     and no word is wider than its box; no code line ("ACC 1110 +1120") is cut
 //   - no requirement row in the plan list ends in "…"
-//   - every short name in data/short-titles.json fits the narrowest box (100 px), and every label one plan row
+//   - every short name in data/short-titles.json fits the box (92 px), and every label one plan row
 //   - a screen reader still gets the full name (hidden span), the class sheet shows the full title
 import { test, after } from 'node:test';
 import assert from 'node:assert/strict';
@@ -108,14 +108,16 @@ test('every short name and label in data/short-titles.json fits, measured with t
     host.style.cssText = 'position:absolute;left:0;top:0;visibility:hidden';
     document.body.appendChild(host);
     const out = [];
-    // a box at the narrowest laptop size (100 px wide), as js/app.js builds it
+    // a box at the chart's box size (92 px wide), as js/app.js builds it
     const fits = (html, sel) => {
-      host.innerHTML = `<button class="box" style="position:static;width:100px;height:48px">${html}</button>`;
+      host.innerHTML = `<button class="box" style="position:static;width:92px;height:48px">${html}</button>`;
       const el = host.querySelector(sel);
       el.style.webkitLineClamp = 'unset'; el.style.display = 'block'; el.style.overflowWrap = 'normal';
       const lh = parseFloat(getComputedStyle(el).lineHeight) || 14;
       return Math.round(el.getBoundingClientRect().height / lh) <= 2 && el.scrollWidth <= el.clientWidth + 0.5;
     };
+    // in Title mode (the default since 2026-10-23) the name is semibold: the widest it gets
+    host.className = 'boxes'; host.dataset.lbl = 'title';
     for (const s of new Set(Object.values(d.titles))) if (!fits(`<b>ABCD 1234</b><i>${s.replace(/</g, '&lt;')}</i>`, 'i')) out.push(`title: ${s}`);
     host.innerHTML = '';
     const rowHost = document.createElement('div');
@@ -126,7 +128,7 @@ test('every short name and label in data/short-titles.json fits, measured with t
     const labels = new Set([...Object.values(d.labels), ...Object.values(d.names), 'Pick from list'].filter(Boolean));
     // requirement box labels as the page draws them (.box.ph b)
     for (const s of labels) {
-      host.innerHTML = `<button class="box ph flex" style="position:static;width:100px;height:48px"><b>${s}</b></button>`;
+      host.innerHTML = `<button class="box ph flex" style="position:static;width:92px;height:48px"><b>${s}</b></button>`;
       const el = host.querySelector('b');
       el.style.webkitLineClamp = 'unset'; el.style.display = 'block'; el.style.overflowWrap = 'normal';
       const lh = parseFloat(getComputedStyle(el).lineHeight);

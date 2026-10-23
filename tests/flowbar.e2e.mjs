@@ -123,11 +123,11 @@ const MODES = {
   both: { m: { code: 'MATH 2210', title: 'Calc 3' }, lab: { code: 'ECE 2250+Lab', title: 'Circuits' } },
 };
 for (const [mode, want] of Object.entries(MODES)) {
-  test(`box labels: ${mode === 'both' ? 'Both (default)' : mode === 'code' ? 'Code (MATH 2210)' : 'Title (Calc 3)'}: shown instantly, nothing moves, saved`, async () => {
+  test(`box labels: ${mode === 'title' ? 'Title (Calc 3, default)' : mode === 'code' ? 'Code (MATH 2210)' : 'Both'}: shown instantly, nothing moves, saved`, async () => {
     const p = await page();
     const before = await shows(p);
-    assert.equal(await p.getAttribute('#lblSeg button.on', 'data-v'), 'both', 'Both is the default');
-    if (mode === 'both') await p.click('#lblSeg button[data-v="title"]'); // (away and back)
+    assert.equal(await p.getAttribute('#lblSeg button.on', 'data-v'), 'title', 'Title is the default');
+    if (mode === 'title') await p.click('#lblSeg button[data-v="both"]'); // (away and back)
     await p.click(`#lblSeg button[data-v="${mode}"]`);
     const now = await shows(p);
     assert.equal(now.m.code, want.m.code);
@@ -142,6 +142,18 @@ for (const [mode, want] of Object.entries(MODES)) {
     await p.reload();
     await p.waitForSelector('#main[data-tab="flow"] .box[data-id="MATH 1210"]');
     assert.deepEqual((await shows(p)).m, now.m, 'kept after a reload');
+    assert.deepEqual(p.errors, []);
+    await p.context().close();
+  });
+}
+
+// Tim, 2026-10-23: "make it so that the course title is the default display on the class boxes". The old default
+// 'both' was saved for everyone, so a saved 'both' nobody picked shows Title; a hand-picked Both or Code stays.
+for (const [saved, hand, want] of [['both', undefined, 'title'], ['both', true, 'both'], ['code', undefined, 'code']]) {
+  test(`box labels: saved '${saved}'${hand ? ' picked by hand' : ''} -> ${want}`, async () => {
+    const p = await page({ ...SEED, settings: { ...SEED.settings, labels: saved, ...(hand ? { labelsHand: true } : {}) } });
+    assert.equal(await p.getAttribute('#lblSeg button.on', 'data-v'), want);
+    assert.equal(await p.getAttribute('#boxes', 'data-lbl'), want);
     assert.deepEqual(p.errors, []);
     await p.context().close();
   });

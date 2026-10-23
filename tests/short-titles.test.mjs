@@ -99,7 +99,8 @@ test('an option box drops a repeated subject from its code line', () => {
   assert.equal(shortCodes('ECE 2250'), 'ECE 2250');
   const C = { 'BIOL 1610': { title: 'College Biology I' }, 'BIOL 1615': { title: 'College Biology I Laboratory' }, 'ACC 1110': { title: 'Financial Accounting I' }, 'ACC 1120': { title: 'Financial Accounting II' } };
   assert.deepEqual(optionCode({ codes: ['BIOL 1610', 'BIOL 1615'], label: 'BIOL 1610 + BIOL 1615' }, C), { code: 'BIOL 1610', more: '+Lab' });
-  assert.deepEqual(optionCode({ codes: ['ACC 1110', 'ACC 1120'], label: 'ACC 1110 + ACC 1120' }, C), { code: 'ACC 1110 + 1120', more: '' });
+  assert.deepEqual(optionCode({ codes: ['ACC 1110', 'ACC 1120'], label: 'ACC 1110 + ACC 1120' }, C), { code: 'ACC 1110', more: '+1120' });
+  assert.deepEqual(optionCode({ codes: ['MATH 1050', 'STAT 1040'], label: 'MATH 1050 + STAT 1040' }, C), { code: 'MATH 1050', more: '+1' });
   assert.deepEqual(optionCode({ codes: ['GEO 1010', 'GEO 1015', 'GEO 2020R'], label: 'GEO 1010 + GEO 1015 + GEO 2020R' }, C), { code: 'GEO 1010', more: '+2' });
 });
 

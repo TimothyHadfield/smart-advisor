@@ -248,7 +248,7 @@ test('a course with no prereqs sits just before its only course instead of far l
 test('flowChart: a shared layout cache gives identical charts for every size and lays out each section once', () => {
   const folded = foldLabs(nodes, edges);
   const BASE = { boxH: 48, rowH: 66, near: 8, pad: 12 }; // js/app.js
-  const FITS = [{ boxW: 108, gapMin: 96, track: 12 }, { boxW: 108, gapMin: 80, track: 12 }, { boxW: 108, gapMin: 64, track: 10 }, { boxW: 108, gapMin: 52, track: 9 }, { boxW: 108, gapMin: 44, track: 8 }];
+  const FITS = [{ boxW: 92, gapMin: 88, track: 12 }, { boxW: 92, gapMin: 72, track: 12 }, { boxW: 92, gapMin: 60, track: 10 }, { boxW: 92, gapMin: 48, track: 9 }, { boxW: 92, gapMin: 40, track: 8 }, { boxW: 92, gapMin: 32, track: 8 }, { boxW: 92, gapMin: 26, track: 8 }];
   const cache = new Map();
   const plain = (c) => JSON.stringify({ w: c.width, h: c.height, boxes: [...c.boxes], edges: c.edges, heads: c.heads });
   for (const f of FITS) {

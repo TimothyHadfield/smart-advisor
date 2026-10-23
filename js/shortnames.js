@@ -25,10 +25,13 @@ export function shortCodes(label) {
 }
 
 // an option box's code line as { code, more }: a lecture + its lab -> "BIOL 1610" + "+Lab" (the small tag a
-// folded lab box already shows); 3+ classes -> the first + "+2"; else "ACC 1110 + 1120"
+// folded lab box already shows); two classes of one subject -> "ACC 1110" + "+1120"; of two subjects or 3+
+// classes -> the first + "+1" / "+2" (a 92 px box has no room for "ACC 1110 + 1120" on one line)
 export function optionCode(node, courses = {}) {
   const codes = node?.codes || [];
+  const subj = (c) => c.split(' ')[0];
   if (codes.length === 2 && /\blab(oratory)?\b/i.test(courses[codes[1]]?.title || '') && codes[1].split(' ')[0] === codes[0].split(' ')[0]) return { code: codes[0], more: '+Lab' };
+  if (codes.length === 2) return { code: codes[0], more: subj(codes[1]) === subj(codes[0]) ? `+${codes[1].split(' ').slice(1).join(' ')}` : '+1' };
   if (codes.length > 2) return { code: codes[0], more: `+${codes.length - 1}` };
   return { code: shortCodes(node?.label || codes.join(' + ')), more: '' };
 }

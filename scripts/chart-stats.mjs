@@ -7,16 +7,17 @@
 // sharedIn / sharedOut (boxes where 2+ arrows end / start at one point),
 // length (px of line), width / height (px), ms (layout time, no cache); with the matriculation line:
 // matric (1 if drawn), strays (boxes it can't put on their side), sepBox (its pieces through a box),
-// sepCross (edge pieces it crosses).
+// sepCross (edge pieces it crosses); empty = % of the phone's first screen of the chart (393 x 508 px, top left)
+// with no box or line within 24 px; floor = crossings of the box order itself (what one line per arrow can't avoid).
 import { readFileSync, readdirSync, writeFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
-import { flowChart, foldLabs, chartStats } from '../js/layout.js';
+import { flowChart, foldLabs, chartStats, viewEmpty } from '../js/layout.js';
 import { matricSides } from '../js/matric.js';
 import { forCatalogYear } from '../js/curprereqs.js';
 
 const ROOT = fileURLToPath(new URL('../data/', import.meta.url));
-const SIZES = { boxH: 48, rowH: 66, near: 8, pad: 12, boxW: 108, gapMin: 96, track: 12 }; // js/app.js BASE + FITS[0]
+const SIZES = { boxH: 48, rowH: 66, near: 8, pad: 12, boxW: 92, gapMin: 88, track: 12 }; // js/app.js BASE + FITS[0]
 const NO_SPLIT = process.argv.includes('--no-split'); // the chart without the matriculation line
 const readJSON = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
 const SEASONS = readJSON(ROOT + 'seasons.json');
@@ -73,6 +74,7 @@ export function statsFor(file, { warm = true } = {}) {
   return { crossings: st.crossings, bends: st.bends, edges: st.edges, straight: st.straight, overlaps: st.overlaps.length, foreign: st.foreign, stacked: st.stacked, boxHits: st.boxHits.length,
     vrows: +(st.vlen / SIZES.rowH).toFixed(2), closeV: st.closeV, closeV12: st.closeV12, sharedIn: st.sharedIn, sharedOut: st.sharedOut,
     length: Math.round(length), width: Math.round(C.width), height: Math.round(C.height), ms: +ms.toFixed(1), msCold: +msCold.toFixed(1),
+    empty: Math.round(viewEmpty(C) * 100), floor: C.layout.crossings,
     matric: C.split ? 1 : 0, strays: C.split?.strays?.length ?? 0, sepBox, sepCross };
 }
 
@@ -81,7 +83,7 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
   const only = arg('--only')?.split(',');
   const files = programFiles().filter((f) => !only || only.some((o) => f.key.endsWith('/' + o) || f.key === o));
   const per = {};
-  const tot = { crossings: 0, bends: 0, edges: 0, straight: 0, overlaps: 0, foreign: 0, stacked: 0, boxHits: 0, vrows: 0, closeV: 0, closeV12: 0, sharedIn: 0, sharedOut: 0, length: 0, ms: 0, matric: 0, strays: 0, sepBox: 0, sepCross: 0 };
+  const tot = { crossings: 0, bends: 0, edges: 0, straight: 0, overlaps: 0, foreign: 0, stacked: 0, boxHits: 0, vrows: 0, closeV: 0, closeV12: 0, sharedIn: 0, sharedOut: 0, length: 0, ms: 0, empty: 0, floor: 0, matric: 0, strays: 0, sepBox: 0, sepCross: 0 };
   let maxMs = 0, maxMsKey = '';
   for (const f of files) {
     const s = statsFor(f);
@@ -89,11 +91,11 @@ if (process.argv[1] && fileURLToPath(import.meta.url) === process.argv[1]) {
     for (const k of Object.keys(tot)) tot[k] += s[k];
     if (s.ms > maxMs) { maxMs = s.ms; maxMsKey = f.key; }
   }
-  tot.ms = Math.round(tot.ms); tot.vrows = Math.round(tot.vrows);
+  tot.ms = Math.round(tot.ms); tot.empty = Math.round(tot.empty / files.length); tot.vrows = Math.round(tot.vrows);
   const out = { sizes: SIZES, programs: files.length, totals: tot, maxMs: { key: maxMsKey, ms: maxMs }, per };
   if (arg('--out')) writeFileSync(arg('--out'), JSON.stringify(out, null, 1));
   console.log(`programs ${files.length}`, JSON.stringify(tot), `slowest ${maxMsKey} ${maxMs} ms`);
-  for (const k of ['electrical-engineering-bs', 'computer-engineering-bs', 'nursing-bs', 'mechanical-engineering-bs', 'computer-science-bs', 'software-engineering-bs']) {
+  for (const k of ['electrical-engineering-bs', 'computer-engineering-bs', 'nursing-bs', 'mechanical-engineering-bs', 'computer-science-bs', 'software-engineering-bs', 'exercise-science-bs']) {
     for (const y of ['current', '2025-2026']) if (per[`${y}/${k}`]) console.log(`${y}/${k}`, JSON.stringify(per[`${y}/${k}`]));
   }
   const top = +(arg('--top') ?? 10);

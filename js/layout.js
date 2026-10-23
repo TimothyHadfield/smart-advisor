@@ -23,7 +23,7 @@ const SEP_DUMMY = 0.34;  // arrow to arrow
 
 // The drawn check: the laptop box size (js/app.js BASE + FITS[0]) and what a drawing costs. A crossing
 // is the worst thing, then lines on top of each other, then corners, then total line length.
-const EVAL = { boxW: 108, boxH: 48, rowH: 66, gapMin: 96, near: 8, pad: 12, track: 12 };
+const EVAL = { boxW: 92, boxH: 48, rowH: 66, gapMin: 88, near: 8, pad: 12, track: 12 };
 // crossings first, then total upright line length, then corners, then uprights that run close together
 const drawnScore = (st, L) => st.crossings * 100 + st.boxHits.length * 200 + st.foreign * 30 + st.stacked * 100 + st.overlaps.length * 3 + (st.vlen / EVAL.rowH) * 4 + st.bends * 2 + st.closeV12 * 1 + L.height * 0.1;
 
@@ -64,7 +64,7 @@ export function layoutGraph(nodes, edges, opts = {}) {
       const sig = [...L.pos].map(([id, q]) => `${id}@${q.col},${q.y}`).sort().join('|');
       if (seen.has(sig)) continue;
       seen.add(sig);
-      const st = chartStats(routeChart(L, { ...EVAL, tries: 1 }));
+      const st = chartStats(routeChart(L, { ...EVAL, tries: 1, polish: false }));
       const score = drawnScore(st, L);
       if (!best || score < best.score - 1e-9) best = { L, score };
     }
@@ -579,7 +579,7 @@ export function flowChart(nodes, edges, sizes = {}, sections = [], cache = null)
 export function routeChart(L, o = {}) {
   const boxW = o.boxW ?? 100, boxH = o.boxH ?? 48, rowH = o.rowH ?? 66, pad = o.pad ?? 12;
   const gapMin = o.gapMin ?? 80, track = o.track ?? 12, margin = o.margin ?? 6, near = o.near ?? 8;
-  const inset = o.inset ?? 5; // exit/entry points stay this far inside a box's top and bottom
+  const inset = o.inset ?? 4; // exit/entry points stay this far inside a box's top and bottom
   const nCols = L.columns;
   // the matriculation line's course (which gap, row band by row band); a band above the chart for its label
   const SEP = o.split?.size ? sepPlan(L, o.split, (boxH / 2 + 2) / rowH) : null; // it may pass 2 px from a box
@@ -598,11 +598,15 @@ export function routeChart(L, o = {}) {
   const sides = new Map(); // `${id}>` (exit side) / `>${id}` (entry side) -> arrows
   const add = (k, e) => (sides.get(k) ?? sides.set(k, []).get(k)).push(e);
   for (const e of E) { add(e.from + '>', e); add('>' + e.to, e); }
-  const spOf = (n) => boxH / (n + 1);
+  // a side's points: evenly spaced, at least 10 px apart while they fit (8 px for 6 lines), else over the
+  // box's full height (Tim's chart: lines leave a box well apart, never as a tight bundle)
+  const spOf = (n) => (n < 2 ? 0 : Math.max(Math.min(16, boxH / (n + 1)), Math.min(n > 5 ? 8 : 10, (boxH - 2 * inset) / (n - 1))));
   const roomOf = (n) => Math.max(0, boxH / 2 - inset - ((n - 1) / 2) * spOf(n));
 
   // ---- one full drawing for a given idea of where each line runs (first guess, then the routes found) ----
-  function draw(guess, swap = false) {
+  // strict: also keep lines from being drawn on top of each other (extra tries, kept only when they score better):
+  // 1 = no exit point exactly facing another line's entry point across a gap, 2 = no level run on top of another
+  function draw(guess, swap = false, strict = 0) {
     // exit order (top to bottom): lines going up (the one that jogs first on top), then level lines, then
     // lines going down (the one that jogs last on top); same jog gap -> by where they end
     const exitKey = (e) => {
@@ -646,7 +650,8 @@ export function routeChart(L, o = {}) {
         if (Math.abs(ps - pt) < 0.5 && levelOk(ps, e.a + 1, e.b - 1)) s += 1;
         else s -= Math.min(Math.abs(ps - pt), rowH) * 0.002 + (Math.abs(ps - pt) < 10 ? 0.5 : 0); // (short jogs over long ones, but no tiny steps)
       }
-      for (const [j, k2, j2] of facing.get(k) || []) if (Math.abs(portAt(k, j) - portAt(k2, j2)) < near) s -= 0.75;
+      // (exactly facing: the two lines' level runs would be drawn on top of each other and read as one)
+      for (const [j, k2, j2] of facing.get(k) || []) { const d = Math.abs(portAt(k, j) - portAt(k2, j2)); if (d < near) s -= d < 1 && strict & 1 ? 3 : 0.75; }
       return s - Math.abs(off.get(k)) * 0.001;
     };
     for (let round = 0; round < 4; round++) {
@@ -670,7 +675,8 @@ export function routeChart(L, o = {}) {
       }
       if (!changed) break;
     }
-    for (const e of E) { [e.ps, e.pt] = portsOf(e); e.ps = Math.round(e.ps * 2) / 2; e.pt = Math.round(e.pt * 2) / 2; }
+    // (ends less than 1 px apart run level: no hairline step)
+    for (const e of E) { [e.ps, e.pt] = portsOf(e); e.ps = Math.round(e.ps * 2) / 2; e.pt = Math.round(e.pt * 2) / 2; if (strict & 1 && Math.abs(e.ps - e.pt) < 1) e.pt = e.ps; }
 
     // ---- routes: level runs between jogs; runs live on a half-column grid (column c's boxes span
     // [2c, 2c+1], the gap after it [2c+1, 2c+2]; a jog in gap k sits at 2k+1.5) ----
@@ -686,7 +692,7 @@ export function routeChart(L, o = {}) {
       for (const r of runs) {
         if (r.g === g || Math.min(r.x2, x2) < Math.max(r.x1, x1)) continue;
         const f = E[r.g], kin = (s && r.x1 === 2 * f.a + 1 && f.from === e.from) || (t && r.x2 === 2 * f.b && f.to === e.to);
-        if (Math.abs(r.y - y) < (kin ? 3 : near)) n++;
+        if (Math.abs(r.y - y) < (kin ? 3 : near)) n += strict & 2 && Math.abs(r.y - y) < 1 && Math.min(r.x2, x2) > Math.max(r.x1, x1) ? 4 : 1; // (on top of each other: worst)
       }
       return n;
     };
@@ -933,9 +939,24 @@ export function routeChart(L, o = {}) {
     const next = snap(draw(bestG, true)), sc = score(next);
     if (sc < bestS - 1e-9) { best = next; bestS = sc; }
   }
-  const { edges, colX, gapW, byGap, lanesIn, lo, hi } = best.F;
-
+  if (best.st.stacked && o.polish !== false) { // lines still drawn on top of each other (read as one): try keeping them apart
+    for (const [g, m] of [[bestG, 2], [bestG, 3], [guess0, 3]]) { const next = snap(draw(g, true, m)), sc = score(next); if (sc < bestS - 1e-9) { best = next; bestS = sc; } }
+  }
+  const { edges, colX, gapW, lanesIn } = best.F;
   const boxes = boxesAt(colX);
+  if (o.polish !== false) { polish(edges, boxes, { rowH, near }); unstack(edges, boxes, near); }
+  // the uprights as drawn, per gap and lane (for the matriculation line below)
+  const byGap = new Map();
+  const lo = (j) => Math.min(j.y1, j.y2), hi = (j) => Math.max(j.y1, j.y2);
+  for (const e of edges) for (let k = 1; k < e.pts.length; k++) {
+    const [[x1, y1], [x2, y2]] = [e.pts[k - 1], e.pts[k]];
+    if (Math.abs(x1 - x2) > 0.01 || Math.abs(y1 - y2) < 0.01) continue;
+    const g = colX.findIndex((x, c) => c + 1 < nCols && x1 > x + boxW && x1 < colX[c + 1]);
+    if (g < 0) continue;
+    const lane = Math.round((x1 - colX[g] - boxW) * ((lanesIn.get(g) ?? 0) + 1) / gapW[g]) - 1;
+    (byGap.get(g) ?? byGap.set(g, []).get(g)).push({ k: g, lane: Math.max(0, lane), y1, y2 });
+  }
+
   const width = colX[nCols - 1] + boxW + pad;
   const height = Y(L.height) + pad;
   // the matriculation line: down the gaps, stepping across between rows. It takes no room of its own (the
@@ -972,6 +993,162 @@ export function routeChart(L, o = {}) {
     split = { x: pts[0][0], top, bottom, pts, strays: SEP.strays.map((id) => boxes.get(id)) };
   }
   return { width, height, boxes, edges, split };
+}
+
+// Last tidy-up of a routed chart, on the pixels: swap two lines' points on one box side, or two uprights'
+// lanes in one gap, whenever that lowers the drawn cost (crossings most, then lines on top of or close
+// alongside each other, then corners and upright length). The set of points on each side and the set of
+// lanes in each gap stay the same, so ends stay separate and lanes stay apart. edges are changed in place.
+function polish(edges, boxes, { rowH, near }) {
+  const n = edges.length;
+  if (n < 2) return;
+  const S = edges.map((e) => segsOf(e.pts));
+  const ends = edges.map((e) => [e.from, e.to]);
+  const kin = (i, j) => ends[i][0] === ends[j][0] || ends[i][1] === ends[j][1];
+  const BOX = [...boxes.values()];
+  // what one line costs on its own: corners and upright length (a swap only moves pieces inside a gap,
+  // so it can't put a line through a box)
+  const self = (s) => {
+    let c = Math.max(0, s.length - 1) * 2;
+    for (const p of s) if (!p.h) c += ((p.b - p.a) / rowH) * 4;
+    return c;
+  };
+  // what two lines cost together (as routeChart's score: crossings, overlaps, stacked, close uprights)
+  const pair = (s, t, k) => {
+    let c = 0;
+    for (const p of s) for (const q of t) {
+      if (p.h === q.h) {
+        const d = Math.abs(p.c - q.c), sh = Math.min(p.b, q.b) - Math.max(p.a, q.a);
+        if (sh <= 1) continue;
+        if (d < 7) c += 60 + (k ? 0 : 60) + (d < 1 ? 400 : 0);
+        if (!p.h && d < 8) c += 1000;
+        else if (!p.h && d < 12) c += 1;
+        if (p.h && d < near && d >= 7) c += 20; // level runs closer than `near`
+      } else {
+        const [hz, vt] = p.h ? [p, q] : [q, p];
+        if (vt.c > hz.a + 0.5 && vt.c < hz.b - 0.5 && hz.c > vt.a + 0.5 && hz.c < vt.b - 0.5) { c += 100; X++; }
+      }
+    }
+    return c;
+  };
+  let X = 0; // crossings counted by the last costOf
+  // bounding boxes (grown by 12 px): lines whose boxes don't meet can't cost anything together
+  const bbOf = (s) => { const b = [Infinity, Infinity, -Infinity, -Infinity]; for (const p of s) { const [x1, x2, y1, y2] = p.h ? [p.a, p.b, p.c, p.c] : [p.c, p.c, p.a, p.b]; b[0] = Math.min(b[0], x1 - 12); b[1] = Math.min(b[1], y1 - 12); b[2] = Math.max(b[2], x2 + 12); b[3] = Math.max(b[3], y2 + 12); } return b; };
+  const meet = (p, q) => p[0] < q[2] && q[0] < p[2] && p[1] < q[3] && q[1] < p[3];
+  const BB = S.map(bbOf);
+  const selfC = S.map(self);
+  const costOf = (i, si, j, sj, bi, bj, fresh) => { // i's and j's cost with every line (i, j given as segment lists)
+    X = 0;
+    let c = (fresh ? self(si) + self(sj) : selfC[i] + selfC[j]) + (meet(bi, bj) ? pair(si, sj, kin(i, j)) : 0);
+    for (let g = 0; g < n; g++) if (g !== i && g !== j) {
+      if (meet(bi, BB[g])) c += pair(si, S[g], kin(i, g));
+      if (meet(bj, BB[g])) c += pair(sj, S[g], kin(j, g));
+    }
+    return c;
+  };
+  const tryChange = (i, j, mi, mj) => { // mi/mj: new point lists
+    const before = costOf(i, S[i], j, S[j], BB[i], BB[j], false), x0 = X;
+    const si = segsOf(mi), sj = segsOf(mj), bi = bbOf(si), bj = bbOf(sj);
+    // (never more crossings: the routing already weighed them against lines running close)
+    if (costOf(i, si, j, sj, bi, bj, true) < before - 1e-6 && X <= x0) {
+      edges[i].pts = mi; edges[j].pts = mj; S[i] = si; S[j] = sj; BB[i] = bi; BB[j] = bj; selfC[i] = self(si); selfC[j] = self(sj);
+      return true;
+    }
+    return false;
+  };
+  const tidy = (pts) => {
+    const out = [];
+    for (const q of pts) {
+      const l = out[out.length - 1];
+      if (l && Math.abs(l[0] - q[0]) < 0.01 && Math.abs(l[1] - q[1]) < 0.01) continue;
+      out.push(q);
+      while (out.length >= 3) { // drop a middle point on a straight piece
+        const [a, b, c] = out.slice(-3);
+        if ((Math.abs(a[0] - b[0]) < 0.01 && Math.abs(b[0] - c[0]) < 0.01) || (Math.abs(a[1] - b[1]) < 0.01 && Math.abs(b[1] - c[1]) < 0.01)) out.splice(out.length - 2, 1); else break;
+      }
+    }
+    return out;
+  };
+  // a line's end moved to height y: the level piece next to it moves with it (needs a corner there)
+  const moveEnd = (pts, start, y) => {
+    const p = pts.map((q) => q.slice());
+    if (p.length < 3) return null; // a straight level line would tilt
+    if (start) { p[0][1] = y; p[1][1] = y; } else { p[p.length - 1][1] = y; p[p.length - 2][1] = y; }
+    return tidy(p);
+  };
+  const colStarts = [...new Set(BOX.map((r) => r.x))];
+  const sides = new Map();
+  edges.forEach((e, i) => { for (const k of [e.from + '>', '>' + e.to]) (sides.get(k) ?? sides.set(k, []).get(k)).push(i); });
+  for (let round = 0; round < 4; round++) {
+    let changed = false;
+    for (const [k, list] of sides) {
+      if (list.length < 2) continue;
+      const start = k.endsWith('>');
+      for (let a = 0; a < list.length; a++) for (let b = a + 1; b < list.length; b++) {
+        const i = list[a], j = list[b];
+        const P = edges[i].pts, Q = edges[j].pts;
+        const yi = start ? P[0][1] : P[P.length - 1][1], yj = start ? Q[0][1] : Q[Q.length - 1][1];
+        const mi = moveEnd(P, start, yj), mj = moveEnd(Q, start, yi);
+        if (mi && mj && tryChange(i, j, mi, mj)) changed = true;
+      }
+    }
+    // uprights in one gap trade lanes (x)
+    const gapOf = (x) => { let g = 0; for (const c of colStarts) if (c <= x) g++; return g; };
+    const ups = []; // {i, k, x, g}
+    edges.forEach((e, i) => { for (let k = 1; k < e.pts.length; k++) if (Math.abs(e.pts[k][0] - e.pts[k - 1][0]) < 0.01 && Math.abs(e.pts[k][1] - e.pts[k - 1][1]) > 0.01) ups.push({ i, k, x: e.pts[k][0], g: gapOf(e.pts[k][0]) }); });
+    ups.sort((p, q) => p.g - q.g);
+    for (let a = 0; a < ups.length; a++) for (let b = a + 1; b < ups.length && ups[b].g === ups[a].g; b++) {
+      const u = ups[a], v = ups[b];
+      if (u.i === v.i || Math.abs(u.x - v.x) < 0.01) continue;
+      const P = edges[u.i].pts, Q = edges[v.i].pts;
+      const [ua, ub] = [Math.min(P[u.k][1], P[u.k - 1][1]), Math.max(P[u.k][1], P[u.k - 1][1])];
+      const [va, vb] = [Math.min(Q[v.k][1], Q[v.k - 1][1]), Math.max(Q[v.k][1], Q[v.k - 1][1])];
+      if (Math.min(ub, vb) + 12 < Math.max(ua, va)) continue; // heights far apart: the order doesn't matter
+      // same gap: nothing but empty gap between the two x's on both lines' neighbouring points
+      const lo = Math.min(u.x, v.x), hi = Math.max(u.x, v.x);
+      const okIn = (pts, k) => pts[k - 2]?.[0] < lo - 0.01 && (pts[k + 1]?.[0] ?? Infinity) > hi + 0.01;
+      if (!okIn(P, u.k) || !okIn(Q, v.k)) continue;
+      const mi = P.map((q) => q.slice()), mj = Q.map((q) => q.slice());
+      mi[u.k - 1][0] = mi[u.k][0] = v.x; mj[v.k - 1][0] = mj[v.k][0] = u.x;
+      if (tryChange(u.i, v.i, mi, mj)) { changed = true; [u.x, v.x] = [v.x, u.x]; }
+    }
+    if (!changed) break;
+  }
+}
+
+// a level piece in the middle of a line that still lies on top of another line's (two lines read as one):
+// slide it a few px up or down, the first spot that adds no crossing, overlap or box hit
+function unstack(edges, boxes, near) {
+  const cost = () => { const st = chartStats({ boxes, edges }); return [st.stacked, st.crossings * 100 + st.boxHits.length * 200 + st.overlaps.length]; };
+  let [stk, c0] = cost();
+  for (let round = 0; round < 4 && stk; round++) {
+    let moved = false;
+    for (const e of edges) for (let k = 1; k + 2 < e.pts.length && stk; k++) {
+      const [p, q] = [e.pts[k], e.pts[k + 1]];
+      if (Math.abs(p[1] - q[1]) > 0.01) continue;
+      const y0 = p[1];
+      for (const d of [near / 2 + 1, -(near / 2 + 1), near + 1, -(near + 1)]) {
+        p[1] = q[1] = y0 + d;
+        const [s2, c2] = cost();
+        if (s2 < stk && c2 <= c0) { stk = s2; c0 = c2; moved = true; break; }
+        p[1] = q[1] = y0;
+      }
+    }
+    if (!moved) break;
+  }
+}
+
+function segsOf(pts) {
+  const out = [];
+  for (let k = 0; k + 1 < pts.length; k++) {
+    const [x1, y1] = pts[k], [x2, y2] = pts[k + 1];
+    if (Math.abs(x1 - x2) < 0.01 && Math.abs(y1 - y2) < 0.01) continue;
+    const h = Math.abs(y1 - y2) < 0.01;
+    const s = h ? { h, c: y1, a: Math.min(x1, x2), b: Math.max(x1, x2) } : { h, c: x1, a: Math.min(y1, y2), b: Math.max(y1, y2) };
+    const last = out[out.length - 1];
+    if (last && last.h === s.h && Math.abs(last.c - s.c) < 0.01) { last.a = Math.min(last.a, s.a); last.b = Math.max(last.b, s.b); } else out.push(s);
+  }
+  return out;
 }
 
 // The matriculation line's course on the layout grid. ids = boxes that need matriculation. The line runs
@@ -1121,6 +1298,24 @@ export function chartStats(chart, near = 7) {
   };
   const sharedIn = ends((p) => p[p.length - 1], (e) => e.to), sharedOut = ends((p) => p[0], (e) => e.from);
   return { edges: chart.edges.length, lines: list.length, bends, pathBends, straight, crossings, overlaps, foreign, stacked, boxHits, length: Math.round(length), vlen: Math.round(vlen), closeV, closeV12, sharedIn, sharedOut };
+}
+
+// How empty the phone's first screen of the chart is: the share (0..1) of the top-left w x h px of the chart
+// (393 px wide; the chart starts about 151 px down a 659 px tall iPhone screen) with no box or line within
+// `near` px. 12 px cells.
+export function viewEmpty(chart, w = 393, h = 508, near = 24) {
+  const cell = 12, nx = Math.ceil(w / cell), ny = Math.ceil(h / cell);
+  const used = new Uint8Array(nx * ny);
+  const mark = (x1, y1, x2, y2) => { // a rectangle grown by `near`
+    const a = Math.max(0, Math.floor((Math.min(x1, x2) - near) / cell)), b = Math.min(nx - 1, Math.floor((Math.max(x1, x2) + near) / cell));
+    const c = Math.max(0, Math.floor((Math.min(y1, y2) - near) / cell)), d = Math.min(ny - 1, Math.floor((Math.max(y1, y2) + near) / cell));
+    for (let j = c; j <= d; j++) for (let i = a; i <= b; i++) used[j * nx + i] = 1;
+  };
+  for (const r of chart.boxes.values()) mark(r.x, r.y, r.x + r.w, r.y + r.h);
+  for (const e of chart.edges) for (let k = 1; k < e.pts.length; k++) mark(e.pts[k - 1][0], e.pts[k - 1][1], e.pts[k][0], e.pts[k][1]);
+  let n = 0;
+  for (const u of used) if (!u) n++;
+  return n / used.length;
 }
 
 // Straight arrows (Brandes-Koepf style). Between each pair of neighbouring columns pick the largest set of

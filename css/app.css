@@ -13,12 +13,15 @@
   --edge-hot: #275d38;
   --edge-pre: #2563eb;  /* hover: lines to a class's prerequisites */
   --edge-post: #d97706; /* hover: lines to the classes that need it */
+  --matric: #a21caf;    /* the matriculation line (fuchsia: not UVU green, not a semester colour) */
   --done-bg: #275d38;
   --done-fg: #ffffff;
   --ready-bg: #ffffff;
   --ready-line: #275d38;
   --locked-bg: #eef0ee;
   --locked-fg: #5a625c;
+  --box-faded: #434a45;       /* a box's text while it can't be taken yet: faded but >= 4.5:1 on every fill */
+  --box-done: #275d38;        /* a taken box: white text >= 7:1 */
   --tab-h: 52px;
   --head-h: 44px;
   color-scheme: light;
@@ -28,9 +31,9 @@
     --green: #4f9a62; --green-2: #6db27f;
     --bg: #101311; --panel: #171b18; --fg: #e6ebe7; --muted: #a3aba4; --line: #2b322d;
     --brand: #2e7341; --warn: #e6a23c; --bad: #f28b82;
-    --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24;
+    --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24; --matric: #e879f9;
     --done-bg: #2e7341; --done-fg: #ffffff; --ready-bg: #171b18; --ready-line: #5ea872;
-    --locked-bg: #1d221e; --locked-fg: #9aa29b;
+    --locked-bg: #1d221e; --locked-fg: #9aa29b; --box-faded: #c9d0ca; --box-done: #275d38;
     color-scheme: dark;
   }
 }
@@ -38,9 +41,9 @@
   --green: #4f9a62; --green-2: #6db27f;
   --bg: #101311; --panel: #171b18; --fg: #e6ebe7; --muted: #a3aba4; --line: #2b322d;
   --brand: #2e7341; --warn: #e6a23c; --bad: #f28b82;
-  --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24;
+  --edge: #4c5850; --edge-hot: #6db27f; --edge-pre: #60a5fa; --edge-post: #fbbf24; --matric: #e879f9;
   --done-bg: #2e7341; --done-fg: #ffffff; --ready-bg: #171b18; --ready-line: #5ea872;
-  --locked-bg: #1d221e; --locked-fg: #9aa29b;
+  --locked-bg: #1d221e; --locked-fg: #9aa29b; --box-faded: #c9d0ca; --box-done: #275d38;
   color-scheme: dark;
 }
 
@@ -132,26 +135,27 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .boxes { position: absolute; left: 0; top: 0; }
 .box {
   position: absolute; display: flex; flex-direction: column; justify-content: center;
-  padding: 0 4px; border-radius: 6px; border: 1.5px solid var(--line);
-  background: var(--locked-bg); color: var(--locked-fg); text-align: center; align-items: center; cursor: pointer;
+  padding: 0 2px; border-radius: 6px; border: 1.5px solid var(--line);
+  background: var(--locked-bg); color: var(--fg); text-align: center; align-items: center; cursor: pointer;
   overflow: visible; transition: background-color .15s, border-color .15s, color .15s;
   touch-action: manipulation;
 }
 .box b { max-width: 100%; font-size: 13px; line-height: 16px; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
 .box b small { font-size: 12px; font-weight: 600; margin-left: 3px; }
-.box i { max-width: 100%; font-style: normal; font-size: 12px; line-height: 14px; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
-/* the narrowest boxes (laptop fits the chart with 100-104 px boxes): code + "+Lab" still fit on one line */
+.box i { max-width: 100%; font-style: normal; font-size: 12px; line-height: 14px; font-weight: 500; white-space: normal; overflow: hidden; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow-wrap: anywhere; }
+/* narrow boxes (92 px): code + "+Lab" / "+1120" still fit on one line */
 .box { container-type: inline-size; }
-@container (max-width: 104px) { .box b:has(small), .box b.oc { font-size: 12px; letter-spacing: -.02em; } .box b small { font-size: 10px; margin-left: 2px; } }
+@container (max-width: 104px) { .box b:has(small), .box b.oc { font-size: 12px; letter-spacing: -.03em; } .box b small { font-size: 10px; margin-left: 1px; } }
 /* the full class name for screen readers (the box shows the short one) */
 .vh { position: absolute; width: 1px; height: 1px; overflow: hidden; clip-path: inset(50%); white-space: nowrap; }
 .box.ph b { white-space: normal; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; font-size: 12.5px; line-height: 1.15; }
 /* planned: the colour of its semester; can't be taken yet: the same colour, faded */
 .box.planned { background: var(--sf); border-color: var(--sb); color: var(--fg); }
-.box.locked { color: var(--muted); }
+.box.locked { color: var(--box-faded); }
 .box.locked.planned { background: color-mix(in srgb, var(--sf) 45%, var(--panel)); border-color: color-mix(in srgb, var(--sb) 45%, var(--panel)); }
-.box.done { background: var(--done-bg); border-color: var(--done-bg); color: var(--done-fg); }
-.box.done.graded { background: hsl(var(--gh) 58% var(--grade-l)); border-color: hsl(var(--gh) 58% var(--grade-l)); }
+.box.done { background: var(--box-done); border-color: var(--box-done); color: var(--done-fg); }
+/* a graded box: darker than the grade chips (22%, not 30%) so its white text stays >= 7:1 on yellow */
+.box.done.graded { background: hsl(var(--gh) 58% 22%); border-color: hsl(var(--gh) 58% 22%); }
 .box .gr { position: absolute; top: -10px; right: 4px; padding: 0 4px; border-radius: 4px; font-style: normal; font-size: 11px; font-weight: 700; line-height: 13px; background: var(--panel); color: var(--green); border: 1px solid currentColor; }
 .box .gr:empty { display: none; }
 .box.graded .gr { color: hsl(var(--gh) 60% var(--grade-t)); }
@@ -532,8 +536,18 @@ dialog.cl-edit[data-step="form"] form { height: auto; }
 
 /* Matriculation: a dotted line between the classes that don't need it (left) and the ones that do (right);
    its label (top of the line) opens the matriculation sheet */
-.edges path.matric { stroke: var(--muted); stroke-width: 1.8; stroke-dasharray: 0 5; stroke-linecap: round; }
+.edges path.matric { stroke: var(--matric); stroke-width: 1.8; stroke-dasharray: 0 5; stroke-linecap: round; transition: stroke-width .12s; }
 .edges.hov > path.matric { opacity: 1; }
+/* hover (laptop) or tap (phone) on the line: it gets thicker, its two sides get faint tints
+   (before = green, needs matriculation = the line's own colour) */
+.edges .mreg path { stroke: none; opacity: 0; transition: opacity .12s; }
+.edges .mreg .mb { fill: color-mix(in srgb, var(--green) 9%, transparent); }
+.edges .mreg .ma { fill: color-mix(in srgb, var(--matric) 9%, transparent); }
+.edges.mhov .mreg path { opacity: 1; }
+.edges.mhov path.matric { stroke-width: 3; stroke-dasharray: 0 6; }
+.mhit { position: absolute; left: 0; top: 0; overflow: visible; pointer-events: none; }
+.mhit[hidden] { display: none; }
+.mhit path { fill: none; stroke: transparent; stroke-width: 26; stroke-linejoin: round; pointer-events: stroke; cursor: pointer; }
 .matric-lbl { position: absolute; z-index: 2; transform: translate(-50%, -50%); height: 22px; padding: 0 9px; border: 1px solid var(--line); border-radius: 11px; background: var(--panel); color: var(--green); font: inherit; font-size: 12px; font-weight: 700; line-height: 20px; white-space: nowrap; cursor: pointer; }
 .matric-lbl::before { content: ''; position: absolute; inset: -11px -4px; } /* 44px tall touch target */
 .matric-lbl[hidden] { display: none; }
@@ -628,6 +642,7 @@ main.empty .xbar { visibility: hidden; }
 .boxes[data-lbl="title"] .box:not(.ph):not(:has(> i:empty)) > b:not(:has(small)) { display: none; }
 .boxes[data-lbl="title"] .box:not(.ph):not(:has(> i:empty)) > b:has(small) { order: 2; font-size: 0; line-height: 14px; }
 .boxes[data-lbl="title"] .box:not(.ph) > b small { margin: 0; font-size: 12px; }
+.boxes[data-lbl="title"] .box:not(.ph) > i { font-weight: 600; }
 
 /* the schedule's filters, next to it: a laptop always shows them; a phone opens them with Filters */
 .sc-ftog { flex: none; display: grid; place-items: center; width: 32px; height: 30px; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--muted); cursor: pointer; }
