@@ -1,16 +1,18 @@
 // Run: node --test tests/home.test.mjs
-// Home screen (js/home.js): which screen the app opens on, the credits bar, the admission fact, the name.
-// Plans come from the real EE B.S. data through the real planner, like the site.
+// Home screen (js/home.js): which screen the app opens on, each program's progress, graduation month, the name.
+// Plans come from the real EE B.S. (+ Mathematics minor) data through the real planner, like the site.
 import { test } from 'node:test';
 import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { fileURLToPath } from 'node:url';
 import * as P from '../js/planner.js';
-import { startTab, creditBar, admissionFact, nextFact, displayName, catalogLabel } from '../js/home.js';
+import { combinePrograms } from '../js/programs.js';
+import { startTab, programProgress, gradMonth, capName, displayName, catalogLabel, catalogShort } from '../js/home.js';
 
 const ROOT = fileURLToPath(new URL('../data/', import.meta.url));
 const json = (p) => JSON.parse(readFileSync(ROOT + p, 'utf8'));
 const EE = 'electrical-engineering-bs';
+const MINOR = 'mathematics-minor';
 const ex = { extraCourses: json('prereq-courses.json'), gened: json('gened.json'), seasons: json('seasons.json') };
 const model = P.buildModel(json(`programs/${EE}.json`), ex);
 const OPTS = { start: { season: 'Fall', year: 2026 }, maxCredits: 16, seasons: ex.seasons };
@@ -25,48 +27,75 @@ test('opens on Home; a link to another program opens its flowchart; a reload kee
   assert.equal(startTab(null, [], [EE]), 'flow', 'first visit from a link');
   assert.equal(startTab(null, [EE], [EE, 'mathematics-minor']), 'flow', 'a link adding a minor');
   assert.equal(startTab({ sa: 1, tab: 'sched' }, [EE], null), 'sched', 'reload on Schedule');
+  assert.equal(startTab({ sa: 1, tab: 'profile' }, [EE], null), 'profile', 'reload on Profile');
+  assert.equal(startTab({ sa: 1, tab: 'settings' }, [EE], null), 'settings', 'reload on Settings');
   assert.equal(startTab({ sa: 1, tab: 'nope' }, [EE], null), 'home');
   assert.equal(startTab({ tab: 'plan' }, [EE], null), 'home', 'only our own history entries');
 });
 
-test('credits bar: taken + current + each planned semester add up to the plan total', () => {
+test('progress, major only: finished + in progress + planned = the plan total', () => {
   const plan = P.makePlan(model, DONE, OPTS);
-  const b = creditBar(plan, 4);
-  assert.ok(b.total >= 120, `bachelor total ${b.total}`);
-  assert.equal(b.left, plan.creditsLeft);
-  const sum = Math.round(b.segs.reduce((s, x) => s + x.cr, 0) * 10) / 10;
-  assert.equal(sum, b.total, 'parts add up');
-  assert.equal(b.ip, 4);
-  assert.equal(Math.round((b.taken + b.ip + b.left) * 10) / 10, b.total);
-  assert.equal(b.pct, Math.floor((b.taken / b.total) * 100));
-  assert.ok(b.taken + b.ip >= 20 && b.taken + b.ip < 35, `first-year classes ≈ 20-30 cr, got ${b.taken + b.ip}`);
-  assert.deepEqual(b.segs.filter((s) => s.k === 'sem').map((s) => s.term), plan.semesters.map((s) => s.term));
-});
-
-test('credits bar: nothing taken = 0%; all done = 100%', () => {
-  const none = creditBar(P.makePlan(model, new Set(), OPTS));
+  const finished = new Set([...DONE].filter((k) => k !== 'ECE 1000')); // ECE 1000 in progress
+  const [m] = programProgress(model, DONE, finished, plan, [EE]);
+  assert.equal(m.id, EE);
+  assert.equal(m.total, plan.totals.credits, 'same total as the plan');
+  assert.equal(m.left, plan.creditsLeft);
+  assert.ok(m.ip > 0 && m.ip <= 4, `ECE 1000 in progress: ${m.ip}`);
+  assert.equal(Math.round((m.taken + m.ip + m.left) * 10) / 10, m.total);
+  assert.equal(m.pct, Math.floor((m.taken / m.total) * 100));
+  assert.ok(m.taken + m.ip >= 20 && m.taken + m.ip < 35, `first-year classes ≈ 20-30 cr, got ${m.taken + m.ip}`);
+  const none = programProgress(model, new Set(), new Set(), P.makePlan(model, new Set(), OPTS), [EE])[0];
   assert.equal(none.taken, 0);
   assert.equal(none.pct, 0);
-  assert.equal(none.segs[0].k, 'sem');
-  assert.deepEqual(creditBar({ semesters: [], creditsLeft: 0, totals: { credits: 124 } }), { taken: 124, ip: 0, left: 0, total: 124, pct: 100, segs: [{ k: 'done', cr: 124 }] });
-  assert.equal(creditBar(null).pct, 0);
 });
 
-test('admission: apply after the semester before the Apply row; admitted; none', () => {
-  const plan = { semesters: [{ term: 'Fall 2026' }, { term: 'Spring 2027' }, { term: 'Fall 2027' }], admission: { at: 2, admitted: false } };
-  assert.equal(admissionFact(plan, {}, 2), 'Apply after Spring 2027');
-  assert.equal(admissionFact(plan, {}, 0), 'Apply now');
-  assert.equal(admissionFact({ ...plan, admission: { admitted: true } }, {}, 1), 'Admitted');
-  assert.equal(admissionFact({ semesters: [] }, { admission: true }, -1), 'Required');
-  assert.equal(admissionFact({ semesters: [] }, {}, -1), null);
+test('progress, major + minor: each program its own numbers, together the plan total', () => {
+  const parts = [EE, MINOR].map((id) => ({ id, program: json(`programs/${id}.json`) }));
+  const both = P.buildModel(combinePrograms(parts), ex);
+  const done = new Set([...DONE, 'MATH 2210']);
+  const plan = P.makePlan(both, done, OPTS);
+  const [m, n] = programProgress(both, done, done, plan, [EE, MINOR]);
+  assert.equal(n.id, MINOR);
+  assert.ok(n.total >= 6 && n.total < 40, `minor total ${n.total}`);
+  assert.ok(m.total > 100, `major total ${m.total}`);
+  assert.equal(Math.round((m.total + n.total) * 10) / 10, plan.totals.credits, 'the two add up to the plan');
+  assert.equal(Math.round((m.left + n.left) * 10) / 10, plan.creditsLeft);
+  assert.ok(n.pct >= 0 && n.pct <= 100);
 });
 
-test('next semester, name, catalog year', () => {
-  assert.equal(nextFact({ semesters: [{ term: 'Fall 2026', credits: 15 }] }), 'Fall 2026 · 15 cr');
-  assert.equal(nextFact({ semesters: [] }), '');
+test('graduation month: the month the last semester ends', () => {
+  assert.equal(gradMonth('Spring 2028'), 'May 2028');
+  assert.equal(gradMonth('Summer 2027'), 'Aug 2027');
+  assert.equal(gradMonth('Fall 2029'), 'Dec 2029');
+  assert.equal(gradMonth(null), '');
+  assert.equal(gradMonth('Winter 2028'), '');
+});
+
+test('names: each word capitalized, the student\'s own capitals kept', () => {
+  assert.equal(capName('tim hadfield'), 'Tim Hadfield');
+  assert.equal(capName('  tim   hadfield '), 'Tim Hadfield');
+  assert.equal(capName('McDonald'), 'McDonald');
+  assert.equal(capName('ronald mcDonald'), 'Ronald McDonald');
+  assert.equal(capName("o'neil"), "O'Neil");
+  assert.equal(capName('mary-jane watson'), 'Mary-Jane Watson');
+  assert.equal(capName('ÉLODIE émond'), 'ÉLODIE Émond');
+  assert.equal(capName(''), '');
+  assert.equal(capName(null), '');
+});
+
+test('display name: Profile name first, then the Google name (lowercase fixed), then the email', () => {
   assert.equal(displayName({ name: ' Alex Student ', email: 'a@x.com' }), 'Alex Student');
+  assert.equal(displayName({ name: 'tim hadfield', email: 'a@x.com' }), 'Tim Hadfield', 'all-lowercase Google name');
+  assert.equal(displayName({ name: 'Ludwig van Beethoven' }), 'Ludwig van Beethoven', 'mixed case left as Google has it');
+  assert.equal(displayName({ name: 'Alex Student' }, 'al'), 'Al', 'Profile name wins');
+  assert.equal(displayName(null, 'sam lee'), 'Sam Lee', 'a guest can set one too');
+  assert.equal(displayName({ name: 'Alex' }, '   '), 'Alex', 'blank Profile name = the Google name');
   assert.equal(displayName({ name: '', email: 'alex.s@x.com' }), 'alex.s');
   assert.equal(displayName(null), null);
+});
+
+test('catalog year labels', () => {
   assert.equal(catalogLabel('2025-2026'), 'Catalog 2025-26');
+  assert.equal(catalogShort('2026-2027'), '2026-27');
   assert.equal(catalogLabel(null), '');
 });
