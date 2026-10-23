@@ -315,8 +315,10 @@ function syncURL() {
 // ---------- flowchart ----------
 // Box positions and arrow routes come from js/layout.js (flowChart) in pixels. A laptop gets the widest
 // boxes that still fit the chart's width; a phone gets the widest and scrolls inside the chart area.
-const BASE = { boxH: 48, rowH: 58, gapMin: 26, port: 10, near: 8, pad: 12 };
-const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, track: 8 }, { boxW: 104, track: 8 }, { boxW: 100, track: 8 }];
+// Narrow boxes, wide gaps (about a box wide), more room between rows (Tim, 2026-10-23). A smaller fit
+// only narrows the gaps; lanes stay at least 8 px apart.
+const BASE = { boxH: 48, rowH: 66, near: 8, pad: 12 };
+const FITS = [{ boxW: 100, gapMin: 96, track: 12 }, { boxW: 100, gapMin: 80, track: 12 }, { boxW: 100, gapMin: 64, track: 10 }, { boxW: 100, gapMin: 52, track: 9 }, { boxW: 100, gapMin: 44, track: 8 }];
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
 const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)

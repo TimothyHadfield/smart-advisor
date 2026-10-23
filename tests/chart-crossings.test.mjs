@@ -34,3 +34,14 @@ test('EE BS: no more crossings than the stored number, and well under Tim\'s han
     assert.ok(crossings <= 6, `${key}: ${crossings}`);
   }
 });
+
+// Tim (2026-10-23): "Class lines are combineing so only one line gose into a class." Every arrow enters its
+// class at its own point and leaves its prereq at its own point: no merged lines, in any program.
+test('no two arrows share an entry point or an exit point (all programs)', () => {
+  const merged = [];
+  for (const f of programFiles()) {
+    const s = statsFor(f, { warm: false });
+    if (s.sharedIn || s.sharedOut) merged.push(`${f.key}: ${s.sharedIn} in, ${s.sharedOut} out`);
+  }
+  assert.deepEqual(merged, [], 'arrows merged at a box');
+});

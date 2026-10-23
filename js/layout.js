@@ -14,8 +14,7 @@
 //
 // layoutGraph(nodes, edges, { pairs }) ->
 //   { columns, height, pos: Map(id -> {col, y}), paths: [{from, to, or, pts: [{col, y}]}], crossings,
-//     isolated, clusters, bundles: [{id, from: [ids], to: [ids], or, col, y}] }
-//   A path in a bundle carries `bundle` (its id); its pts end at the bundle's target.
+//     isolated, clusters }
 //   y is a box centre in row units (a box is 1 row tall incl. its gap); height is the total in rows.
 
 const SEP_REAL = 1;      // box to box
@@ -24,8 +23,9 @@ const SEP_DUMMY = 0.34;  // arrow to arrow
 
 // The drawn check: the laptop box size (js/app.js BASE + FITS[0]) and what a drawing costs. A crossing
 // is the worst thing, then lines on top of each other, then corners, then total line length.
-const EVAL = { boxW: 116, boxH: 48, rowH: 58, gapMin: 26, port: 10, near: 8, pad: 12, track: 9 };
-const drawnScore = (st, L) => st.crossings * 100 + st.foreign * 30 + st.overlaps.length * 3 + st.boxHits.length * 50 + st.bends * 2 + (st.length ?? 0) / EVAL.rowH * 0.3 + L.height * 0.1;
+const EVAL = { boxW: 100, boxH: 48, rowH: 66, gapMin: 96, near: 8, pad: 12, track: 12 };
+// crossings first, then total upright line length, then corners, then uprights that run close together
+const drawnScore = (st, L) => st.crossings * 100 + st.boxHits.length * 200 + st.foreign * 30 + st.overlaps.length * 3 + (st.vlen / EVAL.rowH) * 4 + st.bends * 2 + st.closeV12 * 1 + L.height * 0.1;
 
 const GAP = 0.7;      // rows between separate clusters
 const GAP_ROW = 0.9;  // rows between the graph and the row of boxes with no arrows
@@ -50,23 +50,21 @@ export function layoutGraph(nodes, edges, opts = {}) {
   }
   isolated.sort((a, b) => nodes.findIndex((n) => n.id === a) - nodes.findIndex((n) => n.id === b));
   comps.sort((a, b) => b.length - a.length);
-  // Each cluster: the best few orders with bundles and the best few without, each drawn (routeChart at
-  // the laptop box size) and scored as the eye sees it; the simplest drawing wins (opts.bundle true/false
-  // forces one kind, opts.alts: false skips the drawn check).
+  // Each cluster: the best few orders, each drawn (routeChart at the laptop box size) and scored as the
+  // eye sees it; the simplest drawing wins (opts.alts: false skips the drawn check). Every arrow is its
+  // own line (no shared trunks: Tim, 2026-10-23, "Class lines are combineing so only one line gose into a class").
   const parts = comps.map((g) => {
     const ids = new Set(g.map((n) => n.id));
     const es = edges.filter((e) => ids.has(e.from)), o = { ...opts, pairs: pairs.filter(([a]) => ids.has(a)) };
     if (opts.alts === false) return layered(g, es, o);
-    const alts = [];
-    if (opts.bundle !== false) alts.push(...layered(g, es, { ...o, bundle: true, alts: opts.altsB ?? 3 }));
-    if (opts.bundle !== true) alts.push(...layered(g, es, { ...o, bundle: false, alts: opts.altsP ?? 3 }));
+    const alts = layered(g, es, { ...o, alts: opts.altsP ?? 5 });
     let best = null;
     const seen = new Set();
     for (const L of alts) {
-      const sig = [...L.pos].map(([id, q]) => `${id}@${q.col},${q.y}`).sort().join('|') + '#' + (L.bundles || []).map((B) => B.id).sort().join('|');
+      const sig = [...L.pos].map(([id, q]) => `${id}@${q.col},${q.y}`).sort().join('|');
       if (seen.has(sig)) continue;
       seen.add(sig);
-      const st = chartStats(routeChart(L, EVAL));
+      const st = chartStats(routeChart(L, { ...EVAL, tries: 1 }));
       const score = drawnScore(st, L);
       if (!best || score < best.score - 1e-9) best = { L, score };
     }
@@ -75,7 +73,7 @@ export function layoutGraph(nodes, edges, opts = {}) {
 
   // Pack: the biggest cluster first; each smaller one goes just above or below what's already in its
   // columns, whichever keeps the chart shortest (it can tuck under a short column).
-  const pos = new Map(), paths = [], bundles = [];
+  const pos = new Map(), paths = [];
   const span = new Map(); // col -> [top, bottom] in rows
   let top = 0, bottom = 0, columns = 0, crossings = 0;
   parts.forEach((p, k) => {
@@ -100,9 +98,8 @@ export function layoutGraph(nodes, edges, opts = {}) {
     crossings += p.crossings;
     for (const [id, q] of p.pos) pos.set(id, { col: q.col, y: q.y + off });
     for (const e of p.paths) paths.push({ ...e, pts: e.pts.map((q) => ({ col: q.col, y: q.y + off })) });
-    for (const b of p.bundles) bundles.push({ ...b, y: b.y + off });
   });
-  for (const q of [...pos.values(), ...paths.flatMap((e) => e.pts), ...bundles]) q.y -= top;
+  for (const q of [...pos.values(), ...paths.flatMap((e) => e.pts)]) q.y -= top;
   let height = bottom - top;
   // boxes with no arrows: their own row(s) under the graph
   if (isolated.length) {
@@ -122,7 +119,7 @@ export function layoutGraph(nodes, edges, opts = {}) {
       height = y0 + Math.ceil(isolated.length / perRow);
     }
   }
-  return { columns, height, pos, paths, bundles, crossings, isolated, clusters: parts.length };
+  return { columns, height, pos, paths, crossings, isolated, clusters: parts.length };
 }
 
 // One connected cluster -> { columns, height, pos, paths, crossings }, y from 0.5 at the top.
@@ -147,22 +144,10 @@ function layered(nodes, edges, opts = {}) {
   const fwd = edges.filter((e) => layer.get(e.to) > layer.get(e.from)); // drop anything a loop left backwards
   const nLayers = graphIds.length ? Math.max(...graphIds.map((id) => layer.get(id))) + 1 : 0;
 
-  // ---- 2. bundles, then dummy points for long arrows ----
-  // A bundle = every class in S needs every class in T (T all in one column): drawn as one shared line
-  // (a bar just before T's column; S's lines join it, T's lines leave it). In the ordering it is one
-  // "joint" point in a half column right before T's column, so its lines count as few crossings as drawn.
-  const bundles = opts.bundle === false ? [] : findBundles(fwd, layer);
-  const bundleOf = new Map();
-  bundles.forEach((b) => b.edges.forEach((e) => bundleOf.set(e, b)));
-  // slots: column L = key 2L; a joint before column L = key 2L-1 (only where a bundle needs one)
-  const keySet = new Set();
-  for (let l = 0; l < nLayers; l++) keySet.add(2 * l);
-  for (const b of bundles) keySet.add(2 * b.col - 1);
-  const keyList = [...keySet].sort((p, q) => p - q);
-  const slotOf = new Map(keyList.map((k, i) => [k, i]));
-  const nSlots = keyList.length;
-  const slot = new Map(graphIds.map((id) => [id, slotOf.get(2 * layer.get(id))]));
-  const isDummy = new Set(), isJoint = new Set();
+  // ---- 2. dummy points for long arrows ----
+  const nSlots = nLayers;
+  const slot = new Map(graphIds.map((id) => [id, layer.get(id)]));
+  const isDummy = new Set();
   let nd = 0;
   const chainTo = (from, to) => {
     const ch = [from];
@@ -170,18 +155,12 @@ function layered(nodes, edges, opts = {}) {
     ch.push(to);
     return ch;
   };
-  bundles.forEach((b, k) => { b.joint = `\u0000j${k}`; isJoint.add(b.joint); slot.set(b.joint, slotOf.get(2 * b.col - 1)); });
   const chains = [];
   const edgeChain = new Map();
-  for (const e of fwd) if (!bundleOf.has(e)) { const ch = chainTo(e.from, e.to); chains.push(ch); edgeChain.set(e, ch); }
-  for (const b of bundles) {
-    b.legs = new Map();
-    for (const s of b.S) { const ch = chainTo(s, b.joint); chains.push(ch); b.legs.set(s, ch); }
-    for (const t of b.T) chains.push([b.joint, t]);
-  }
-  const virt = (v) => isDummy.has(v) || isJoint.has(v);
+  for (const e of fwd) { const ch = chainTo(e.from, e.to); chains.push(ch); edgeChain.set(e, ch); }
+  const virt = (v) => isDummy.has(v);
   const up = new Map(), down = new Map(); // neighbours in the slot above / below, with weights
-  const all = [...graphIds, ...isDummy, ...isJoint];
+  const all = [...graphIds, ...isDummy];
   for (const v of all) { up.set(v, []); down.set(v, []); }
   for (const ch of chains) for (let k = 0; k + 1 < ch.length; k++) {
     const a = ch[k], b = ch[k + 1];
@@ -271,7 +250,7 @@ function layered(nodes, edges, opts = {}) {
   }
 
   // ---- 4. vertical positions ----
-  function placeY(layers) {
+  function placeY(layers, straight = opts.straighten !== false) {
     // index arrays (this runs for every candidate order, so it is kept tight)
     const rows = layers.map((row) => row.map((v) => vid.get(v)));
     const nb = all.map((v) => [...up.get(v), ...down.get(v)].map((n) => vid.get(n.v)));
@@ -304,11 +283,15 @@ function layered(nodes, edges, opts = {}) {
       if (!moved) break;
     }
     const y = new Map(all.map((v, i) => [v, yy[i]]));
-    if (opts.straighten !== false) straighten(layers, up, down, y, sep, isDummy);
+    if (straight) straighten(layers, up, down, y, sep, isDummy);
     return y;
   }
   // the chosen candidates as results (opts.alts: how many, best first)
-  const outs = (short.length ? short.slice(0, opts.alts || 1) : [null]).map(build);
+  // (for the drawn check, each order also without the straightening step: boxes at the weighted middle
+  // of their neighbours, which sometimes draws simpler)
+  const picks = short.length ? short.slice(0, opts.alts || 1) : [null];
+  if (opts.alts && opts.straighten !== false) for (const r of picks.slice(0, opts.altsFlat ?? 2)) if (r) picks.push({ ...r, y: placeY(r.layers, false) });
+  const outs = picks.map(build);
   return opts.alts ? outs : outs[0];
 
   function build(best) {
@@ -323,25 +306,17 @@ function layered(nodes, edges, opts = {}) {
     const shift = 0.5 - minY + (height - graphH) / 2;
     const isoCol = isolated.length ? 1 : 0;
     const pos = new Map();
-    const colOf = (v) => keyList[slot.get(v)] / 2; // a joint's half column: x.5
-    for (const v of all) pos.set(v, { col: colOf(v) + isoCol, y: y.get(v) + shift });
+    for (const v of all) pos.set(v, { col: slot.get(v) + isoCol, y: y.get(v) + shift });
     const isoTop = (height - isolated.length) / 2 + 0.5;
     isolated.forEach((id, i) => pos.set(id, { col: 0, y: isoTop + i }));
 
-    const whole = (ch) => ch.filter((v) => !isJoint.has(v) && Number.isInteger(colOf(v))).map((v) => pos.get(v));
-    const paths = fwd.map((e) => {
-      const b = bundleOf.get(e);
-      if (!b) return { from: e.from, to: e.to, or: !!e.or, pts: whole(edgeChain.get(e)) };
-      return { from: e.from, to: e.to, or: !!e.or, bundle: b.id, pts: [...whole(b.legs.get(e.from)), pos.get(e.to)] };
-    });
-    const bundlesOut = bundles.map((b) => ({ id: b.id, from: b.S, to: b.T, or: b.or, col: b.col + isoCol, y: y.get(b.joint) + shift }));
-    for (const v of [...isDummy, ...isJoint]) pos.delete(v);
-    return { columns: nLayers + isoCol, height, pos, paths, bundles: bundlesOut, crossings, isolated, layers: layers.map((r) => r.filter((v) => !virt(v))) };
+    const paths = fwd.map((e) => ({ from: e.from, to: e.to, or: !!e.or, pts: edgeChain.get(e).map((v) => pos.get(v)) }));
+    for (const v of isDummy) pos.delete(v);
+    return { columns: nLayers + isoCol, height, pos, paths, crossings, isolated, layers: layers.map((r) => r.filter((v) => !virt(v))) };
   }
 
   function sep(a, b) {
     const da = isDummy.has(a), db = isDummy.has(b);
-    if (isJoint.has(a) || isJoint.has(b)) return SEP_MIXED;
     return da && db ? SEP_DUMMY : da || db ? SEP_MIXED : SEP_REAL;
   }
 }
@@ -387,47 +362,6 @@ function layerAll(graphIds, edges, pairs, partnerOf) {
     if (t - layer.get(id) >= 2) layer.set(id, t);
   }
   return { layer, edges };
-}
-
-// Bundles (edge concentration, Newbery 1989): a group of arrows where every class in S needs every class
-// in T, all of T in one column, so they can be drawn as one shared line without saying anything untrue.
-// Greedy: repeatedly take the group that saves the most lines (|S|·|T| arrows drawn as |S|+|T| pieces),
-// at least 2 arrows. A fan-out (one class needed by several in one column) or fan-in counts too: a
-// trunk that splits right before its targets. "Or" arrows (dashed) bundle only as a fan-out (one source),
-// so their dashes stay in step. -> [{ id, S, T, or, col, edges }]
-export function findBundles(edges, layer) {
-  const out = [];
-  const left = new Set(edges);
-  const groups = new Map();
-  for (const e of edges) { const k = `${layer.get(e.to)}${e.or ? 'o' : ''}`; (groups.get(k) ?? groups.set(k, []).get(k)).push(e); }
-  for (const [k, list] of groups) {
-    const or = k.endsWith('o');
-    for (;;) {
-      const tOf = new Map();
-      for (const e of list) if (left.has(e)) (tOf.get(e.from) ?? tOf.set(e.from, new Set()).get(e.from)).add(e.to);
-      const srcs = [...tOf.keys()];
-      const cands = srcs.map((s) => tOf.get(s));
-      if (!or) for (let i = 0; i < srcs.length; i++) for (let j = i + 1; j < srcs.length; j++) {
-        const both = new Set([...tOf.get(srcs[i])].filter((t) => tOf.get(srcs[j]).has(t)));
-        if (both.size) cands.push(both);
-      }
-      let best = null;
-      cands.forEach((T, ci) => {
-        const S = or ? [srcs[ci]] : srcs.filter((s) => [...T].every((t) => tOf.get(s).has(t)));
-        if (!S.length) return;
-        const n = S.length * T.size;
-        if (n < 2) return;
-        const score = n - S.length - T.size;
-        if (!best || score > best.score || (score === best.score && n > best.n)) best = { S, T: [...T], n, score };
-      });
-      if (!best) break;
-      const T = new Set(best.T), S = new Set(best.S);
-      const mine = list.filter((e) => left.has(e) && S.has(e.from) && T.has(e.to));
-      mine.forEach((e) => left.delete(e));
-      out.push({ id: `B:${best.S[0]}>${best.T[0]}`, S: best.S, T: best.T, or, col: layer.get(best.T[0]), edges: mine });
-    }
-  }
-  return out;
 }
 
 // [lecture, lab] pairs from flowchart nodes: coreqs that are both drawn; the lab is the one with fewer
@@ -628,21 +562,24 @@ export function flowChart(nodes, edges, sizes = {}, sections = [], cache = null)
 
 // ---- drawing the arrows (pixels) ----
 // routeChart(L, sizes) turns a layoutGraph result into pixels:
-//   { width, height, boxes: Map(id -> {x, y, w, h}), edges: [{from, to, or, pts: [[x, y], ...], bundle?}], split }
-// Every arrow leaves its box's right side from its own exit point and enters the target's left side at
-// its own entry point (several arrows on one side are spread along it, ordered by where they go, so
-// they don't cross at the box). An arrow is one level line when it can be; otherwise it makes ONE
-// upright jog in a gap between columns; only when no single jog fits does it follow the layout's points.
-// Each jog gets its own track in its gap (gaps widen to fit them, `track` px apart), ordered to cross
-// as little as possible. Level pieces of different arrows never run closer than `track` px.
-// A bundle (L.bundles) is drawn as one upright bar in the gap right before its targets: each source's
-// line runs to the bar, each target's line leaves it. Its arrows' pts share those pieces (bundle = id).
+//   { width, height, boxes: Map(id -> {x, y, w, h}), edges: [{from, to, or, pts: [[x, y], ...]}], split }
+// Drawn like Tim's hand-made EE chart (2026-10-23):
+//  - every arrow is its own line: it leaves its prereq's right side at its own exit point and enters the
+//    class's left side at its own entry point. A side's points are evenly spaced (box height / (n+1)) and
+//    ordered so lines don't cross at the box; the whole set may slide up or down a little so a line that
+//    can run level does.
+//  - a line runs right from its exit, makes ONE upright jog in the column gap just before its class, then
+//    runs right into it; when a box is in the way it jogs earlier (or, for a long line, drops into the
+//    open channel between rows first and jogs again before its class). Lines never pass through a box.
+//  - each upright piece in a gap gets its own lane; lanes are spread evenly across the gap, at least
+//    `track` px apart (the gap widens to fit them), ordered to cross as little as possible. Uprights whose
+//    heights don't come near each other may share a lane.
 // sizes.split (Set of ids, matriculation): a dotted line from top to bottom through the gaps, with every
 // box in the set right of it and every other box left of it (see sepPlan); the boxes don't move for it.
 export function routeChart(L, o = {}) {
-  const boxW = o.boxW ?? 120, boxH = o.boxH ?? 48, rowH = o.rowH ?? 58, pad = o.pad ?? 12;
-  const gapMin = o.gapMin ?? 30, track = o.track ?? 10, port = o.port ?? 10, margin = o.margin ?? 6, near = o.near ?? 8;
-  const R = boxH / 2 - 4; // exit/entry points stay this close to the box middle
+  const boxW = o.boxW ?? 100, boxH = o.boxH ?? 48, rowH = o.rowH ?? 66, pad = o.pad ?? 12;
+  const gapMin = o.gapMin ?? 80, track = o.track ?? 12, margin = o.margin ?? 6, near = o.near ?? 8;
+  const inset = o.inset ?? 5; // exit/entry points stay this far inside a box's top and bottom
   const nCols = L.columns;
   // the matriculation line's course (which gap, row band by row band); a band above the chart for its label
   const SEP = o.split?.size ? sepPlan(L, o.split, (boxH / 2 + 2) / rowH) : null; // it may pass 2 px from a box
@@ -652,286 +589,323 @@ export function routeChart(L, o = {}) {
   for (const [id, p] of L.pos) colBoxes[p.col].push({ id, cy: Y(p.y) });
   const center = (id) => Y(L.pos.get(id).y);
   const clear = (c, yy) => colBoxes[c].every((b) => Math.abs(yy - b.cy) >= boxH / 2 + margin);
-
-  // ---- pieces: plain arrows; for a bundle, one piece per source (to the bar) and per target (from it) ----
-  const E = [];
-  const bundles = new Map((L.bundles || []).map((b) => [b.id, { ...b, ins: [], outs: [] }]));
-  L.paths.forEach((p, k) => {
-    if (p.bundle) return;
-    const ys = p.pts.map((q) => Y(q.y));
-    E.push({ i: E.length, k, g: 'e' + k, from: p.from, to: p.to, or: p.or, a: p.pts[0].col, b: p.pts[p.pts.length - 1].col, ys, cs: ys[0], ct: ys[ys.length - 1] });
-  });
-  for (const B of bundles.values()) {
-    const jy = Y(B.y);
-    for (const s of B.from) {
-      const path = L.paths.find((p) => p.bundle === B.id && p.from === s);
-      const ys = [...path.pts.slice(0, -1).map((q) => Y(q.y)), jy];
-      const e = { i: E.length, g: B.id, B, kind: 'in', from: s, to: null, or: B.or, a: path.pts[0].col, b: B.col, ys, cs: ys[0], ct: jy };
-      E.push(e); B.ins.push(e);
-    }
-    for (const t of B.to) {
-      const ys = [jy, center(t)];
-      const e = { i: E.length, g: B.id, B, kind: 'out', from: null, to: t, or: B.or, a: B.col - 1, b: B.col, ys, cs: jy, ct: ys[1] };
-      E.push(e); B.outs.push(e);
-    }
-  }
-  // an arrow "wants" to be level when its layout points are (nearly) level and every column it passes is clear
-  for (const e of E) {
-    e.want = null;
-    if (e.B) continue;
-    const lo = Math.max(...e.ys) - R, hi = Math.min(...e.ys) + R;
-    if (lo <= hi + 1e-9) {
-      const mid = e.ys.slice(1, -1);
-      const t = mid.length ? mid.reduce((s, v) => s + v, 0) / mid.length : (e.cs + e.ct) / 2;
-      const yy = Math.min(hi, Math.max(lo, t));
-      let ok = true;
-      for (let c = e.a + 1; c < e.b; c++) if (!clear(c, yy)) ok = false;
-      if (ok) e.want = yy;
-    }
-  }
-  const sides = new Map(); // `${id}>` (exit side) / `>${id}` (entry side) -> pieces
-  const add = (k, e) => (sides.get(k) ?? sides.set(k, []).get(k)).push(e);
-  for (const e of E) { if (e.from) add(e.from + '>', e); if (e.to) add('>' + e.to, e); }
-  const portY = new Map(); // `${i}s` / `${i}t` -> y
-  const solveSide = (k, list, round) => {
-    const out = k.endsWith('>');
-    const cy = out ? center(list[0].from) : center(list[0].to);
-    // order along the side by where each arrow heads next (then by its far end)
-    const dir = (e) => (out ? e.ys[1] : e.ys[e.ys.length - 2]);
-    const far = (e) => (out ? e.ct : e.cs);
-    const key = (e) => (e.want !== null ? e.want : dir(e));
-    list.sort((p, q) => key(p) - key(q) || far(p) - far(q) || p.i - q.i);
-    const n = list.length, sp = n > 1 ? Math.min(port, (2 * R) / (n - 1)) : port;
-    const targets = list.map((e, j) => {
-      const other = portY.get(e.i + (out ? 't' : 's'));
-      const t = e.want !== null ? (round && other !== undefined ? other : e.want) : Math.min(cy + R, Math.max(cy - R, dir(e)));
-      return [{ t: t - j * sp, w: e.want !== null ? 10 : 1 }, { t: cy - ((n - 1) / 2) * sp, w: 0.5 }];
-    });
-    const z = isoL1(targets).map((v, j) => v + j * sp);
-    // keep inside the box: shift up/down as needed
-    for (let j = 0; j < n; j++) z[j] = Math.max(z[j], cy - R + j * sp);
-    for (let j = n - 1; j >= 0; j--) z[j] = Math.min(z[j], cy + R - (n - 1 - j) * sp);
-    list.forEach((e, j) => portY.set(e.i + (out ? 's' : 't'), Math.round(z[j] * 2) / 2));
-  };
-  for (let round = 0; round < 4; round++) for (const [k, list] of sides) solveSide(k, list, round);
-  for (const e of E) {
-    e.ps = portY.get(e.i + 's'); e.pt = portY.get(e.i + 't');
-    if (e.kind === 'in') e.pt = e.ps; // the bar end is free: level by default
-    if (e.kind === 'out') e.ps = e.pt;
-  }
-  // An exit point level with a different arrow's entry point across the same gap would make two lines
-  // meet end to end there. Nudge one of them (within its box side, keeping the order) until none do.
-  // (A fan-out's source line may run straight on into one of its targets: that's the trunk.)
-  const level = (e) => Math.abs(e.ps - e.pt) < 0.5;
-  const fan = (B) => B.from.length === 1 || B.to.length === 1;
-  const meets = (p, q) => p !== q && p.from && q.to && q.b === p.a + 1 && !(p.g === q.g && p.B && fan(p.B));
-  const M = []; // the pairs that could meet (fixed: it depends only on columns)
-  for (const p of E) for (const q of E) if (meets(p, q)) M.push([p, q]);
-  const clashes = () => {
-    let n = 0;
-    for (const [p, q] of M) if (Math.abs(p.ps - q.pt) < near) n++;
-    return n;
-  };
-  // A move pushes its neighbours along the side to keep the spacing, and a level arrow moves both ends
-  // together so it stays level.
-  const sideAt = (e, out) => {
-    const list = sides.get(out ? e.from + '>' : '>' + e.to);
-    const n = list.length;
-    return { list, cy: out ? center(e.from) : center(e.to), sp: n > 1 ? Math.min(port, (2 * R) / (n - 1)) : port };
-  };
-  const get = (e, out) => (out ? e.ps : e.pt);
-  const put = (e, out, v) => { if (out) e.ps = v; else e.pt = v; };
-  const tryMove = (e0, out0, v0, snap = E.map((x) => [x.ps, x.pt]), wasLevel = new Set(E.filter(level))) => {
-    const moved = new Set();
-    const undo = () => moved.forEach((x) => { [x.ps, x.pt] = snap[x.i]; });
-    const queue = [[e0, out0, v0]];
-    for (let steps = 0; queue.length; steps++) {
-      const [x, o, v] = queue.shift();
-      const s = sideAt(x, o), j = s.list.indexOf(x);
-      if (steps > 300 || v < s.cy - R - 1e-9 || v > s.cy + R + 1e-9) { undo(); return false; }
-      if (Math.abs(get(x, o) - v) < 1e-9) continue;
-      put(x, o, v); moved.add(x);
-      if (wasLevel.has(x)) { if (o ? x.to : x.from) queue.push([x, !o, v]); else put(x, !o, v); }
-      if (j > 0 && get(s.list[j - 1], o) > v - s.sp + 1e-9) queue.push([s.list[j - 1], o, v - s.sp]);
-      if (j < s.list.length - 1 && get(s.list[j + 1], o) < v + s.sp - 1e-9) queue.push([s.list[j + 1], o, v + s.sp]);
-    }
-    for (const x of moved) if (wasLevel.has(x)) for (let c = x.a + 1; c < x.b; c++) if (!clear(c, x.ps)) { undo(); return false; }
-    return moved;
-  };
-  let bad = clashes();
-  for (let pass = 0; pass < 60 && bad; pass++) {
-    let best = null;
-    const base = E.map((x) => [x.ps, x.pt]), lv = new Set(E.filter(level));
-
-    for (const [p, q] of M) {
-      if (Math.abs(p.ps - q.pt) >= near) continue;
-      for (const [e, out] of [[p, true], [q, false]]) {
-        const from = get(e, out), other = out ? q.pt : p.ps;
-        for (let d = 1; d <= 2 * R && !(best && best.c === 0 && d > best.d); d++) for (const v of [from + d, from - d]) {
-          if (Math.abs(v - other) < near) continue; // must at least part this pair
-          const moved = tryMove(e, out, v, base, lv);
-          if (!moved) continue;
-          const c = clashes();
-          if (c < bad && (!best || c < best.c || (c === best.c && d < best.d))) best = { c, d, after: [...moved].map((x) => [x, x.ps, x.pt]) };
-          moved.forEach((x) => { [x.ps, x.pt] = base[x.i]; });
-        }
-      }
-    }
-    if (!best) break;
-    for (const [x, ps, pt] of best.after) { x.ps = ps; x.pt = pt; }
-    bad = best.c;
-  }
-
-  // ---- routes ----
-  // A route is level runs between jogs. Runs live on a half-column grid: column c's boxes span [2c, 2c+1],
-  // the gap after it [2c+1, 2c+2]; a jog in gap k sits at 2k+1.5. A bundle's bar is a jog in gap col-1
-  // with several lines joining from the left (ins) and leaving to the right (outs).
-  const runs = []; // {g, y, x1, x2}
-  const jogs = []; // {g, e, k, y1, y2, ins, outs}
-  const runsClash = (y, x1, x2, g) => runs.some((r) => r.g !== g && Math.abs(r.y - y) < near && Math.min(r.x2, x2) >= Math.max(r.x1, x1));
-  const lo = (j) => Math.min(j.y1, j.y2), hi = (j) => Math.max(j.y1, j.y2);
   const levelOk = (yy, c1, c2) => { for (let c = c1; c <= c2; c++) if (!clear(c, yy)) return false; return true; };
-  const plan = (e) => {
-    const options = [];
-    const endX = e.kind === 'in' ? 2 * e.b - 0.5 : 2 * e.b; // a source's line ends at its bar
-    const lastGap = e.kind === 'in' ? e.b - 2 : e.b - 1;     // (and jogs before the bar's gap)
-    if (e.kind === 'out') options.push({ cost: 0, runs: [[e.pt, 2 * e.b - 0.5, 2 * e.b]], jogs: [] });
-    else if (e.kind === 'in') {
-      if (levelOk(e.ps, e.a + 1, e.b - 1)) options.push({ cost: 0, runs: [[e.ps, 2 * e.a + 1, endX]], jogs: [], end: e.ps });
-      const cands = [...new Set([e.ct, ...e.ys.slice(1, -1)])];
-      for (let d = 1; d <= 30; d++) for (const s of [1, -1]) cands.push(e.ct + s * d * (track / 2));
-      for (let k = e.a; k <= lastGap; k++) {
-        if (!levelOk(e.ps, e.a + 1, k)) continue;
-        for (const yd of cands) {
-          if (!levelOk(yd, k + 1, e.b - 1)) continue;
-          options.push({ cost: 10 + Math.abs(yd - e.ct) * 0.01 + (lastGap - k) * 0.1, runs: [[e.ps, 2 * e.a + 1, 2 * k + 1.5], [yd, 2 * k + 1.5, endX]], jogs: [[k, e.ps, yd]], end: yd });
-          break;
-        }
-      }
-    } else {
-      if (Math.abs(e.ps - e.pt) < 0.5 && levelOk(e.ps, e.a + 1, e.b - 1)) options.push({ cost: 0, runs: [[e.ps, 2 * e.a + 1, 2 * e.b]], jogs: [] });
-      for (let k = e.a; k < e.b; k++) {
-        if (!levelOk(e.ps, e.a + 1, k) || !levelOk(e.pt, k + 1, e.b - 1)) continue;
-        // prefer the jog next to the target for a long arrow (then it reads "comes in from the side")
-        options.push({ cost: 10 + (e.b - 1 - k) * 0.1, runs: [[e.ps, 2 * e.a + 1, 2 * k + 1.5], [e.pt, 2 * k + 1.5, 2 * e.b]], jogs: [[k, e.ps, e.pt]] });
-      }
-      // two jogs through a clear level line (the layout's own one first, then any clear one nearby)
-      if (e.b - e.a > 1) {
-        const cands = [...new Set([...e.ys.slice(1, -1)])];
-        for (let d = 0; d <= 40; d++) for (const s of [1, -1]) cands.push(e.ys[1] + s * d * (track / 2));
-        for (const yd of cands) {
-          if (!levelOk(yd, e.a + 1, e.b - 1)) continue;
-          options.push({ cost: 20 + Math.abs(yd - e.ys[1]) * 0.01, runs: [[e.ps, 2 * e.a + 1, 2 * e.a + 1.5], [yd, 2 * e.a + 1.5, 2 * e.b - 0.5], [e.pt, 2 * e.b - 0.5, 2 * e.b]], jogs: [[e.a, e.ps, yd], [e.b - 1, yd, e.pt]] });
-        }
+
+  const E = L.paths.map((p, k) => {
+    const ys = p.pts.map((q) => Y(q.y));
+    return { i: k, from: p.from, to: p.to, or: p.or, a: p.pts[0].col, b: p.pts[p.pts.length - 1].col, ys, cs: ys[0], ct: ys[ys.length - 1] };
+  });
+  const sides = new Map(); // `${id}>` (exit side) / `>${id}` (entry side) -> arrows
+  const add = (k, e) => (sides.get(k) ?? sides.set(k, []).get(k)).push(e);
+  for (const e of E) { add(e.from + '>', e); add('>' + e.to, e); }
+  const spOf = (n) => boxH / (n + 1);
+  const roomOf = (n) => Math.max(0, boxH / 2 - inset - ((n - 1) / 2) * spOf(n));
+
+  // ---- one full drawing for a given idea of where each line runs (first guess, then the routes found) ----
+  function draw(guess) {
+    // exit order (top to bottom): lines going up (the one that jogs first on top), then level lines, then
+    // lines going down (the one that jogs last on top); same jog gap -> by where they end
+    const exitKey = (e) => {
+      const g = guess.get(e.i);
+      const d = g.end - g.start;
+      return Math.abs(d) < 1 ? [1, 0, g.end] : d < 0 ? [0, g.jog, g.end] : [2, -g.jog, g.end];
+    };
+    // entry order: by the height each line arrives at before its last jog (then where it started)
+    const entryKey = (e) => { const g = guess.get(e.i); return [g.arrive, g.start, 0]; };
+    const cmp = (p, q) => { for (let k = 0; k < 3; k++) if (Math.abs(p[k] - q[k]) > 1e-6) return p[k] - q[k]; return 0; };
+    const order = new Map();
+    for (const [k, list] of sides) {
+      const out = k.endsWith('>'), key = out ? exitKey : entryKey;
+      order.set(k, list.slice().sort((p, q) => cmp(key(p), key(q)) || p.i - q.i));
+    }
+    const off = new Map([...sides.keys()].map((k) => [k, 0]));
+    const portAt = (k, j) => {
+      const list = order.get(k), n = list.length, cy = k.endsWith('>') ? center(list[0].from) : center(list[0].to);
+      return cy + off.get(k) + (j - (n - 1) / 2) * spOf(n);
+    };
+    const portsOf = (e) => {
+      const s = e.from + '>', t = '>' + e.to;
+      return [portAt(s, order.get(s).indexOf(e)), portAt(t, order.get(t).indexOf(e))];
+    };
+    // slide a side's points (keeping their even spacing) so as many of its lines as possible run level,
+    // without making an exit point face another line's entry point across a gap
+    const facing = new Map(); // side -> [[myIndex, otherSide, otherIndex]] pairs of different lines across one gap
+    for (const [k, list] of order) {
+      if (!k.endsWith('>')) continue;
+      const id = list[0].from, c = L.pos.get(id).col;
+      for (const [k2, l2] of order) {
+        if (k2.endsWith('>') || L.pos.get(l2[0].to).col !== c + 1) continue;
+        if (Math.abs(center(l2[0].to) - center(id)) > boxH) continue;
+        list.forEach((e, j) => l2.forEach((f, j2) => { if (e !== f) { (facing.get(k) ?? facing.set(k, []).get(k)).push([j, k2, j2]); (facing.get(k2) ?? facing.set(k2, []).get(k2)).push([j2, k, j]); } }));
       }
     }
-    // crossings with what's already drawn: a level run through a gap with someone's jog there
-    const xCost = (op) => {
+    const levelScore = (k) => {
+      let s = 0;
+      for (const e of order.get(k)) {
+        const [ps, pt] = portsOf(e);
+        if (Math.abs(ps - pt) < 0.5 && levelOk(ps, e.a + 1, e.b - 1)) s += 1;
+        else s -= Math.min(Math.abs(ps - pt), rowH) * 0.002 + (Math.abs(ps - pt) < 10 ? 0.5 : 0); // (short jogs over long ones, but no tiny steps)
+      }
+      for (const [j, k2, j2] of facing.get(k) || []) if (Math.abs(portAt(k, j) - portAt(k2, j2)) < near) s -= 0.75;
+      return s - Math.abs(off.get(k)) * 0.001;
+    };
+    for (let round = 0; round < 4; round++) {
+      let changed = false;
+      for (const [k, list] of order) {
+        const n = list.length, room = roomOf(n);
+        if (room <= 0) continue;
+        const cands = new Set([0, off.get(k)]);
+        const out = k.endsWith('>');
+        for (const e of list) {
+          const [ps, pt] = portsOf(e);
+          const want = out ? pt : ps, mine = out ? ps : pt;
+          const d = off.get(k) + want - mine; // (as far as the box allows: the other end may do the rest)
+          cands.add(Math.round(Math.max(-room, Math.min(room, d)) * 2) / 2);
+        }
+        const was = off.get(k);
+        let best = was, bestS = levelScore(k);
+        for (const c of cands) { off.set(k, c); const sc = levelScore(k); if (sc > bestS + 1e-9) { bestS = sc; best = c; } }
+        off.set(k, best);
+        if (best !== was) changed = true;
+      }
+      if (!changed) break;
+    }
+    for (const e of E) { [e.ps, e.pt] = portsOf(e); e.ps = Math.round(e.ps * 2) / 2; e.pt = Math.round(e.pt * 2) / 2; }
+
+    // ---- routes: level runs between jogs; runs live on a half-column grid (column c's boxes span
+    // [2c, 2c+1], the gap after it [2c+1, 2c+2]; a jog in gap k sits at 2k+1.5) ----
+    const runs = []; // {g, y, x1, x2}
+    const jogs = []; // {g, k, y1, y2}
+    const lo = (j) => Math.min(j.y1, j.y2), hi = (j) => Math.max(j.y1, j.y2);
+    // (runs that meet in one gap clash too: their jogs' lanes would make them overlap or look joined).
+    // Two lines leaving one box (or entering one box) may run closer while both still touch it (a box
+    // with many lines spreads them over its height), but never on top of each other.
+    const runsClash = (y, x1, x2, g) => {
+      const e = E[g], s = x1 === 2 * e.a + 1, t = x2 === 2 * e.b;
+      let n = 0;
+      for (const r of runs) {
+        if (r.g === g || Math.min(r.x2, x2) < Math.max(r.x1, x1)) continue;
+        const f = E[r.g], kin = (s && r.x1 === 2 * f.a + 1 && f.from === e.from) || (t && r.x2 === 2 * f.b && f.to === e.to);
+        if (Math.abs(r.y - y) < (kin ? 3 : near)) n++;
+      }
+      return n;
+    };
+    const xCost = (e, op) => {
       let x = 0;
       for (const [y, x1, x2] of op.runs) for (const j of jogs) {
-        if (j.g === e.g) continue;
         const g = 2 * j.k + 1.5;
         if (x1 <= g && g <= x2 && y > lo(j) && y < hi(j)) x += x1 === g || x2 === g ? 0.5 : 1;
       }
       for (const [k, y1, y2] of op.jogs) for (const r of runs) {
-        if (r.g === e.g) continue;
         const g = 2 * k + 1.5;
         if (r.x1 <= g && g <= r.x2 && r.y > Math.min(y1, y2) && r.y < Math.max(y1, y2)) x += r.x1 === g || r.x2 === g ? 0.5 : 1;
       }
       return x;
     };
-    let pick = null;
-    for (const op of options) {
-      if (op.runs.some(([y, x1, x2]) => runsClash(y, x1, x2, e.g))) continue;
-      const c = op.cost + xCost(op) * 4;
-      if (!pick || c < pick.c) pick = { ...op, c };
-    }
-    if (!pick) { // nothing clean: follow the layout's points (a jog per change)
-      const r = [], j = [];
-      let x0 = 2 * e.a + 1, yy = e.ps;
-      const ys = e.kind === 'in' ? [e.ps, ...e.ys.slice(1, -1)] : e.kind === 'out' ? [e.pt] : [e.ps, ...e.ys.slice(1, -1), e.pt];
-      for (let k = 1; k < ys.length; k++) {
-        if (Math.abs(ys[k] - yy) < 0.5) continue;
-        const g = 2 * (e.a + k - 1) + 1.5;
-        r.push([yy, x0, g]); j.push([e.a + k - 1, yy, ys[k]]); x0 = g; yy = ys[k];
+    const plan = (e) => {
+      const { ps, pt, a, b } = e;
+      const options = [];
+      const vcost = (v) => (v / rowH) * 4;
+      if (Math.abs(ps - pt) < 0.5 && levelOk(ps, a + 1, b - 1)) options.push({ cost: 0, runs: [[ps, 2 * a + 1, 2 * b]], jogs: [] });
+      // one jog, as late as the boxes allow (just before the class)
+      for (let k = b - 1; k >= a; k--) {
+        if (!levelOk(ps, a + 1, k) || !levelOk(pt, k + 1, b - 1)) continue;
+        options.push({ cost: 10 + vcost(Math.abs(ps - pt)) + (b - 1 - k) * 2, runs: [[ps, 2 * a + 1, 2 * k + 1.5], [pt, 2 * k + 1.5, 2 * b]], jogs: [[k, ps, pt]] });
       }
-      if (e.kind === 'out') r.push([e.pt, 2 * e.b - 0.5, 2 * e.b]); else r.push([yy, x0, endX]);
-      pick = { runs: r, jogs: j, end: yy };
-    }
-    for (const [y, x1, x2] of pick.runs) runs.push({ g: e.g, y, x1, x2 });
-    for (const [k, y1, y2] of pick.jogs) jogs.push({ g: e.g, e: e.i, k, y1, y2, ins: [y1], outs: [y2] });
-    e.route = pick;
-    if (e.kind === 'in') e.end = pick.end;
-    // a bundle's bar, once all its source lines are in
-    if (e.B && e.B.ins.every((x) => x.route) && e.B.outs.every((x) => x.route)) {
-      const ins = e.B.ins.map((x) => x.end), outs = e.B.outs.map((x) => x.pt), all = [...ins, ...outs];
-      e.B.bar = { g: e.g, e: -1, k: e.B.col - 1, y1: Math.min(...all), y2: Math.max(...all), ins, outs };
-      jogs.push(e.B.bar);
-    }
-  };
-  // bundles' fixed pieces first, then straight-looking ones, then short ones (they have no choice), long last
-  const rank = (p) => (p.kind === 'out' || (p.kind === 'in' && p.b === p.a + 1) ? 0 : !p.B && Math.abs(p.ps - p.pt) < 0.5 ? 1 : 2);
-  const order = E.slice().sort((p, q) => rank(p) - rank(q) || (p.b - p.a) - (q.b - q.a) || p.i - q.i);
-  order.forEach(plan);
-
-  // ---- tracks: order the jogs in each gap to cross least (exact for up to 12, else greedy) ----
-  const byGap = new Map();
-  for (const j of jogs) (byGap.get(j.k) ?? byGap.set(j.k, []).get(j.k)).push(j);
-  const gapW = Array.from({ length: Math.max(0, nCols - 1) }, (_, k) => Math.max(gapMin, ((byGap.get(k)?.length ?? 0) + 1) * track));
-  for (const [, list] of byGap) {
-    const n = list.length;
-    const inside = (v, j) => v > lo(j) && v < hi(j);
-    // cost[i][j]: crossings when i's track is left of j's (j's lines from the left cross i's upright, i's
-    // lines to the right cross j's)
-    const cost = list.map((p) => list.map((q) => (p === q ? 0 : q.ins.filter((v) => inside(v, p)).length + p.outs.filter((v) => inside(v, q)).length)));
-    let perm;
-    if (n <= 12) {
-      const full = (1 << n) - 1, dp = new Float64Array(1 << n).fill(Infinity), from = new Int32Array(1 << n);
-      dp[0] = 0;
-      for (let S = 0; S < full; S++) {
-        if (dp[S] === Infinity) continue;
-        for (let v = 0; v < n; v++) {
-          if (S & (1 << v)) continue;
-          let c = dp[S];
-          for (let u = 0; u < n; u++) if (S & (1 << u)) c += cost[u][v];
-          const T = S | (1 << v);
-          if (c < dp[T]) { dp[T] = c; from[T] = v; }
+      // two jogs: drop into an open channel between rows as late as the source's row allows, run along
+      // it, jog again before the class
+      if (b - a > 1) {
+        let K1 = a;
+        while (K1 + 1 < b && levelOk(ps, a + 1, K1 + 1)) K1++;
+        // channel heights: the layout's own points, the middles between boxes near the line, a little either side
+        const cands = new Set(e.ys.slice(1, -1).map((v) => Math.round(v * 2) / 2));
+        const yLo = Math.min(ps, pt) - 2 * rowH, yHi = Math.max(ps, pt) + 2 * rowH;
+        for (let c = a + 1; c < b; c++) {
+          const ys = colBoxes[c].map((x) => x.cy).sort((p, q) => p - q);
+          const mids = ys.slice(1).map((v, i) => (v + ys[i]) / 2);
+          if (ys.length) mids.push(ys[0] - boxH / 2 - margin - track, ys[ys.length - 1] + boxH / 2 + margin + track);
+          for (const m of mids) if (m >= yLo && m <= yHi) cands.add(Math.round(m * 2) / 2);
+        }
+        for (const y0 of [...cands]) for (let d = 1; d <= 2; d++) { cands.add(y0 + d * (near + 1)); cands.add(y0 - d * (near + 1)); }
+        for (const yd of cands) {
+          if (Math.abs(yd - ps) < 0.5 || Math.abs(yd - pt) < 0.5) continue;
+          for (let k2 = b - 1; k2 > a; k2--) {
+            if (!levelOk(pt, k2 + 1, b - 1)) break;
+            const k1 = Math.min(K1, k2 - 1);
+            if (!levelOk(yd, k1 + 1, k2)) continue;
+            options.push({ cost: 20 + vcost(Math.abs(ps - yd) + Math.abs(yd - pt)) + (b - 1 - k2) * 2, runs: [[ps, 2 * a + 1, 2 * k1 + 1.5], [yd, 2 * k1 + 1.5, 2 * k2 + 1.5], [pt, 2 * k2 + 1.5, 2 * b]], jogs: [[k1, ps, yd], [k2, yd, pt]] });
+            break;
+          }
         }
       }
-      perm = [];
-      for (let S = full; S; S &= ~(1 << from[S])) perm.unshift(from[S]);
-    } else {
-      perm = list.map((_, i) => i).sort((a, b) => cost[a][b] - cost[b][a]);
+      { // last resort: follow the layout's points (a jog per change)
+        const r = [], j = [];
+        let x0 = 2 * a + 1, yy = ps, v = 0;
+        const ys = [ps, ...e.ys.slice(1, -1), pt];
+        for (let k = 1; k < ys.length; k++) {
+          if (Math.abs(ys[k] - yy) < 0.5) continue;
+          const g = 2 * (a + k - 1) + 1.5;
+          r.push([yy, x0, g]); j.push([a + k - 1, yy, ys[k]]); v += Math.abs(ys[k] - yy); x0 = g; yy = ys[k];
+        }
+        r.push([yy, x0, 2 * b]);
+        options.push({ cost: 10 * (j.length + 2) + vcost(v), runs: r, jogs: j });
+      }
+      // the cheapest: crossings with lines already drawn and lines running too close cost most
+      let pick = null;
+      options.sort((p, q) => p.cost - q.cost);
+      for (const op of options) {
+        if (pick && op.cost >= pick.c) break; // (crossings only add to the cost)
+        let c = op.cost;
+        for (const [y, x1, x2] of op.runs) c += runsClash(y, x1, x2, e.i) * 100;
+        if (pick && c >= pick.c) continue;
+        c += xCost(e, op) * 30;
+        if (!pick || c < pick.c) pick = { ...op, c };
+      }
+      for (const [y, x1, x2] of pick.runs) runs.push({ g: e.i, y, x1, x2 });
+      for (const [k, y1, y2] of pick.jogs) jogs.push({ g: e.i, k, y1, y2 });
+      e.route = pick;
+    };
+    // level lines first, then short ones (they have the least choice), long last
+    const rank = (p) => (Math.abs(p.ps - p.pt) < 0.5 ? 0 : 1);
+    const seq = E.slice().sort((p, q) => rank(p) - rank(q) || (p.b - p.a) - (q.b - q.a) || p.i - q.i);
+    seq.forEach(plan);
+    // repair: a line that still runs too close to another is drawn again, now that every line is known
+    for (let round = 0; round < 2; round++) {
+      let again = 0;
+      for (const e of seq) {
+        const mine = runs.filter((r) => r.g === e.i);
+        if (!mine.some((r) => runsClash(r.y, r.x1, r.x2, e.i))) continue;
+        for (let k = runs.length - 1; k >= 0; k--) if (runs[k].g === e.i) runs.splice(k, 1);
+        for (let k = jogs.length - 1; k >= 0; k--) if (jogs[k].g === e.i) jogs.splice(k, 1);
+        plan(e);
+        again++;
+      }
+      if (!again) break;
     }
-    perm.forEach((v, slot) => { list[v].slot = slot; list[v].of = n; });
+    return { jogs, lo, hi };
   }
-  const colX = [pad];
-  for (let c = 1; c < nCols; c++) colX.push(colX[c - 1] + boxW + gapW[c - 1]);
-  const gx = (k, slot, of) => colX[k] + boxW + (gapW[k] * (slot + 1)) / (of + 1);
-  const tidy = (pts) => pts.filter((q, i) => i === 0 || Math.abs(q[0] - pts[i - 1][0]) > 1e-6 || Math.abs(q[1] - pts[i - 1][1]) > 1e-6);
-  const ptsOf = (e) => {
-    const pts = e.kind === 'out' ? [] : [[colX[e.a] + boxW, e.ps]];
-    const js = jogs.filter((j) => j.e === e.i).sort((p, q) => p.k - q.k);
-    for (const j of js) { const x = gx(j.k, j.slot, j.of); pts.push([x, j.y1], [x, j.y2]); }
-    if (e.kind === 'in') { const x = gx(e.B.bar.k, e.B.bar.slot, e.B.bar.of); pts.push([x, e.end]); }
-    if (e.kind === 'out') { const x = gx(e.B.bar.k, e.B.bar.slot, e.B.bar.of); pts.push([x, e.pt]); }
-    if (e.kind !== 'in') pts.push([colX[e.b], e.pt]);
-    return pts;
+
+  // first guess: each line jogs just before its class; then again with the routes actually found
+  const guess0 = new Map(E.map((e) => [e.i, { start: e.cs, end: e.ct, jog: e.b - 1, arrive: e.cs }]));
+  const finish = (R) => {
+    // ---- lanes: order the uprights in each gap to cross least, then pack them into lanes ----
+    const { jogs, lo, hi } = R;
+    const byGap = new Map();
+    for (const j of jogs) (byGap.get(j.k) ?? byGap.set(j.k, []).get(j.k)).push(j);
+    const lanesIn = new Map(); // gap -> number of lanes
+    const gapMinPx = (n) => (n + 1) * track;
+    const touch = (p, q) => Math.min(hi(p), hi(q)) + near > Math.max(lo(p), lo(q)); // heights come near each other
+    for (const [k, list] of byGap) {
+      const n = list.length;
+      const inside = (v, j) => v > lo(j) && v < hi(j);
+      // cost[i][j]: crossings when i's lane is left of j's (j's line from the left crosses i's upright,
+      // i's line to the right crosses j's)
+      const cost = list.map((p) => list.map((q) => (p === q ? 0 : (inside(q.y1, p) ? 1 : 0) + (inside(p.y2, q) ? 1 : 0))));
+      // groups of uprights whose heights touch (directly or through others): each is ordered on its own
+      const comp = new Int32Array(n).fill(-1);
+      let nc = 0;
+      for (let s = 0; s < n; s++) {
+        if (comp[s] >= 0) continue;
+        const st = [s]; comp[s] = nc;
+        while (st.length) { const u = st.pop(); for (let v = 0; v < n; v++) if (comp[v] < 0 && touch(list[u], list[v])) { comp[v] = nc; st.push(v); } }
+        nc++;
+      }
+      const rank = new Float64Array(n);
+      for (let c = 0; c < nc; c++) {
+        const ids = [];
+        for (let v = 0; v < n; v++) if (comp[v] === c) ids.push(v);
+        const m = ids.length;
+        let perm;
+        if (m <= 12) {
+          const full = (1 << m) - 1, dp = new Float64Array(1 << m).fill(Infinity), from = new Int32Array(1 << m);
+          dp[0] = 0;
+          for (let S = 0; S < full; S++) {
+            if (dp[S] === Infinity) continue;
+            for (let v = 0; v < m; v++) {
+              if (S & (1 << v)) continue;
+              let cc = dp[S];
+              for (let u = 0; u < m; u++) if (S & (1 << u)) cc += cost[ids[u]][ids[v]];
+              // tie-break: a line going down sits right of one going up (fewer near-misses)
+              const T = S | (1 << v);
+              if (cc < dp[T] - 1e-9) { dp[T] = cc; from[T] = v; }
+            }
+          }
+          perm = [];
+          for (let S = full; S; S &= ~(1 << from[S])) perm.unshift(ids[from[S]]);
+        } else {
+          // insertion, then neighbour swaps while they help
+          perm = [];
+          for (const v of ids) {
+            let bestAt = 0, bestC = Infinity;
+            for (let at = 0; at <= perm.length; at++) {
+              let cc = 0;
+              for (let t = 0; t < perm.length; t++) cc += t < at ? cost[perm[t]][v] : cost[v][perm[t]];
+              if (cc < bestC) { bestC = cc; bestAt = at; }
+            }
+            perm.splice(bestAt, 0, v);
+          }
+          for (let pass = 0, better = true; better && pass < 50; pass++) {
+            better = false;
+            for (let t = 0; t + 1 < perm.length; t++) {
+              const u = perm[t], v = perm[t + 1];
+              if (cost[v][u] < cost[u][v]) { perm[t] = v; perm[t + 1] = u; better = true; }
+            }
+          }
+        }
+        perm.forEach((v, r) => { rank[v] = r; });
+      }
+      // lanes: each upright goes one lane right of every upright before it (in the order) whose height it touches
+      const idx = list.map((_, v) => v).sort((p, q) => comp[p] - comp[q] || rank[p] - rank[q]);
+      let nl = 0;
+      for (let t = 0; t < idx.length; t++) {
+        const v = idx[t];
+        let lane = 0;
+        for (let s = 0; s < t; s++) { const u = idx[s]; if (comp[u] === comp[v] && touch(list[u], list[v])) lane = Math.max(lane, list[u].lane + 1); }
+        list[v].lane = lane;
+        nl = Math.max(nl, lane + 1);
+      }
+      lanesIn.set(k, nl);
+    }
+    const gapW = Array.from({ length: Math.max(0, nCols - 1) }, (_, k) => Math.max(gapMin, gapMinPx(lanesIn.get(k) ?? 0)));
+    const colX = [pad];
+    for (let c = 1; c < nCols; c++) colX.push(colX[c - 1] + boxW + gapW[c - 1]);
+    const laneX = (k, lane) => colX[k] + boxW + (gapW[k] * (lane + 1)) / ((lanesIn.get(k) ?? 0) + 1);
+    const tidy = (pts) => pts.filter((q, i) => i === 0 || Math.abs(q[0] - pts[i - 1][0]) > 1e-6 || Math.abs(q[1] - pts[i - 1][1]) > 1e-6);
+    const edges = E.map((e) => {
+      const pts = [[colX[e.a] + boxW, e.ps]];
+      const mine = jogs.filter((j) => j.g === e.i).sort((p, q) => p.k - q.k);
+      for (const j of mine) { const x = laneX(j.k, j.lane); pts.push([x, j.y1], [x, j.y2]); }
+      pts.push([colX[e.b], e.pt]);
+      return { from: e.from, to: e.to, or: e.or, pts: tidy(pts) };
+    });
+    return { edges, colX, gapW, byGap, lanesIn, lo, hi };
   };
-  const plain = new Map(E.filter((e) => !e.B).map((e) => [e.k, e]));
-  const edges = L.paths.map((p, k) => {
-    if (!p.bundle) return { from: p.from, to: p.to, or: p.or, pts: ptsOf(plain.get(k)) };
-    const B = bundles.get(p.bundle);
-    const a = ptsOf(B.ins.find((e) => e.from === p.from)), b = ptsOf(B.outs.find((e) => e.to === p.to));
-    return { from: p.from, to: p.to, or: p.or, bundle: p.bundle, pts: tidy([...a, ...b]) };
-  });
-  const boxes = new Map();
-  for (const [id, p] of L.pos) boxes.set(id, { x: colX[p.col], y: Y(p.y) - boxH / 2, w: boxW, h: boxH });
+  const snap = (R) => { const F = finish(R); return { R, F, st: chartStats({ boxes: boxesAt(F.colX), edges: F.edges }) }; };
+  const boxesAt = (colX) => {
+    const m = new Map();
+    for (const [id, p] of L.pos) m.set(id, { x: colX[p.col], y: Y(p.y) - boxH / 2, w: boxW, h: boxH });
+    return m;
+  };
+  const score = (s) => s.st.crossings * 100 + s.st.overlaps.length * 60 + s.st.foreign * 60 + s.st.boxHits.length * 200 + (s.st.vlen / rowH) * 4 + s.st.bends * 2 + s.st.closeV12;
+  let best = snap(draw(guess0)), bestS = score(best);
+  // more tries: order the points by the routes the last try found; keep the best drawing
+  for (let t = 0; t < (o.tries ?? 3); t++) {
+    const guess = new Map(E.map((e) => {
+      const js = e.route.jogs;
+      const first = js[0], last = js[js.length - 1];
+      return [e.i, { start: e.ps, end: last ? last[2] : e.pt, jog: first ? first[0] : e.b - 1, arrive: last ? last[1] : e.ps }];
+    }));
+    const next = snap(draw(guess)), sc = score(next);
+    if (sc < bestS - 1e-9) { best = next; bestS = sc; }
+  }
+  const { edges, colX, gapW, byGap, lanesIn, lo, hi } = best.F;
+
+  const boxes = boxesAt(colX);
   const width = colX[nCols - 1] + boxW + pad;
   const height = Y(L.height) + pad;
   // the matriculation line: down the gaps, stepping across between rows. It takes no room of its own (the
-  // chart is the same with or without it): in each gap it runs halfway between two neighbouring tracks (or
-  // a track and the boxes), where those tracks' uprights share the least height with it.
+  // chart is the same with or without it): in each gap it runs halfway between two neighbouring lanes (or
+  // a lane and the boxes), where those lanes' uprights share the least height with it.
   let split = null;
   if (SEP) {
     const xAt = new Map();
@@ -939,15 +913,17 @@ export function routeChart(L, o = {}) {
       if (g < 0) return pad / 2;
       if (g >= nCols - 1) return colX[nCols - 1] + boxW + pad / 2;
       if (xAt.has(g)) return xAt.get(g);
-      const list = (byGap.get(g) || []).slice().sort((p, q) => p.slot - q.slot), n = list.length;
+      const n = lanesIn.get(g) ?? 0;
+      const lanes = Array.from({ length: n }, () => []);
+      for (const j of byGap.get(g) || []) lanes[j.lane].push(j);
       const mine = SEP.runs.filter((r) => r.g === g).map((r) => [Y(r.y0), Y(r.y1)]);
-      const shared = (j) => (j ? mine.reduce((a, [y0, y1]) => a + Math.max(0, Math.min(y1, hi(j)) - Math.max(y0, lo(j))), 0) : 0);
-      let best = 0, bestC = Infinity;
+      const shared = (lane) => (lane ? lane.reduce((s, j) => s + mine.reduce((a, [y0, y1]) => a + Math.max(0, Math.min(y1, hi(j)) - Math.max(y0, lo(j))), 0), 0) : 0);
+      let bestQ = 0, bestC = Infinity;
       for (let q = 0; q <= n; q++) {
-        const c = shared(list[q - 1]) + shared(list[q]) + (n && (q === 0 || q === n) ? rowH : 0) + Math.abs(q - n / 2) * 0.01; // (not hugging the boxes)
-        if (c < bestC) { bestC = c; best = q; }
+        const c = shared(lanes[q - 1]) + shared(lanes[q]) + (n && (q === 0 || q === n) ? rowH : 0) + Math.abs(q - n / 2) * 0.01; // (not hugging the boxes)
+        if (c < bestC) { bestC = c; bestQ = q; }
       }
-      const x = colX[g] + boxW + (gapW[g] * (best + 0.5)) / (n + 1);
+      const x = colX[g] + boxW + (gapW[g] * (bestQ + 0.5)) / (n + 1);
       xAt.set(g, x);
       return x;
     };
@@ -1023,30 +999,6 @@ export function sepPlan(L, ids, half) {
   return { runs, strays };
 }
 
-// z non-decreasing minimising sum w*|z_i - t| over each element's targets [[{t, w}], ...] (pooled blocks
-// sit at the weighted median of their targets).
-function isoL1(targets) {
-  const med = (list) => {
-    const s = list.slice().sort((a, b) => a.t - b.t);
-    const half = s.reduce((a, x) => a + x.w, 0) / 2;
-    let acc = 0;
-    for (const x of s) { acc += x.w; if (acc >= half - 1e-9) return x.t; }
-    return s[s.length - 1].t;
-  };
-  const blocks = [];
-  for (const list of targets) {
-    blocks.push({ list, n: 1, v: med(list) });
-    while (blocks.length > 1) {
-      const b = blocks[blocks.length - 1], a = blocks[blocks.length - 2];
-      if (a.v <= b.v) break;
-      a.list = a.list.concat(b.list); a.n += b.n; a.v = med(a.list); blocks.pop();
-    }
-  }
-  const z = [];
-  for (const b of blocks) for (let k = 0; k < b.n; k++) z.push(b.v);
-  return z;
-}
-
 // ---- drawn-chart checks (pixels) ----
 // chart = { boxes: Map(id -> {x, y, w, h}) (top-left corner), edges: [{from, to, pts: [[x, y], ...]}] } with
 // level/upright segments. Returns counts plus every problem found:
@@ -1114,7 +1066,26 @@ export function chartStats(chart, near = 7) {
     const [lo, hi, a, b] = s.h ? [r.y, r.y + r.h, r.x, r.x + r.w] : [r.x, r.x + r.w, r.y, r.y + r.h];
     if (s.c > lo + 1 && s.c < hi - 1 && Math.min(s.b, b - 1) > Math.max(s.a, a + 1)) boxHits.push(`${G.name} through ${id}`);
   }
-  return { edges: chart.edges.length, lines: list.length, bends, pathBends, straight, crossings, overlaps, foreign, boxHits, length: Math.round(length) };
+  // vlen: total upright line length (a shared trunk once); closeV: pairs of upright pieces of different
+  // lines closer than `minGap` px side by side that share some height (hard to tell apart);
+  // sharedIn / sharedOut: boxes where two or more arrows end (start) at the same point (lines merged)
+  // (closeV12: the same within 12 px)
+  let vlen = 0, closeV = 0, closeV12 = 0;
+  const vs = list.map((G) => G.segs.filter((s) => !s.h));
+  for (const v of vs) for (const s of v) vlen += s.b - s.a;
+  for (let i = 0; i < vs.length; i++) for (let j = i + 1; j < vs.length; j++) for (const p of vs[i]) for (const q of vs[j]) {
+    if (Math.min(p.b, q.b) - Math.max(p.a, q.a) <= 1) continue;
+    const dx = Math.abs(p.c - q.c);
+    if (dx < 8) closeV++;
+    if (dx < 12) closeV12++;
+  }
+  const ends = (pick, key) => {
+    const m = new Map();
+    for (const e of chart.edges) { if (!e.pts?.length) continue; const [x, y] = pick(e.pts); const k = `${key(e)}@${Math.round(x)},${Math.round(y * 2)}`; m.set(k, (m.get(k) || 0) + 1); }
+    return new Set([...m].filter(([, n]) => n > 1).map(([k]) => k.split('@')[0])).size;
+  };
+  const sharedIn = ends((p) => p[p.length - 1], (e) => e.to), sharedOut = ends((p) => p[0], (e) => e.from);
+  return { edges: chart.edges.length, lines: list.length, bends, pathBends, straight, crossings, overlaps, foreign, boxHits, length: Math.round(length), vlen: Math.round(vlen), closeV, closeV12, sharedIn, sharedOut };
 }
 
 // Straight arrows (Brandes-Koepf style). Between each pair of neighbouring columns pick the largest set of
