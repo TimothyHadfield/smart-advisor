@@ -14,7 +14,9 @@
 //
 // layoutGraph(nodes, edges, { pairs }) ->
 //   { columns, height, pos: Map(id -> {col, y}), paths: [{from, to, or, pts: [{col, y}]}], crossings,
-//     isolated, clusters }
+//     isolated, clusters, split }
+//   opts.split (Set of ids, matriculation): those boxes sit right of column `split`, all others left of it;
+//   split = that column, or null when no clean line exists (or none was asked for).
 //   y is a box centre in row units (a box is 1 row tall incl. its gap); height is the total in rows.
 
 const SEP_REAL = 1;      // box to box
@@ -44,9 +46,33 @@ export function layoutGraph(nodes, edges, opts = {}) {
   }
   isolated.sort((a, b) => nodes.findIndex((n) => n.id === a) - nodes.findIndex((n) => n.id === b));
   comps.sort((a, b) => b.length - a.length);
+  // Matriculation (opts.split = boxes that need it): those go right of one upright line at column K, every
+  // other box left of it. K = one past the furthest-right column any other box naturally sits in.
+  let split = null, K = null;
+  if (opts.split?.size) {
+    split = new Set([...opts.split].filter((id) => known.has(id)));
+    for (const [a, b] of pairs) if (split.has(a) || split.has(b)) { split.add(a); split.add(b); }
+    let maxPre = -1;
+    for (const g of comps) {
+      const ids = new Set(g.map((n) => n.id));
+      const cPairs = pairs.filter(([a]) => ids.has(a));
+      const partnerOf = new Map();
+      for (const [lec, lab] of cPairs) { if (!partnerOf.has(lab)) partnerOf.set(lab, lec); if (!partnerOf.has(lec)) partnerOf.set(lec, lab); }
+      const { layer } = layerAll([...ids], edges.filter((e) => ids.has(e.from)), cPairs, partnerOf, { shift: false });
+      for (const [id, l] of layer) if (!split.has(id)) maxPre = Math.max(maxPre, l);
+    }
+    K = maxPre + 1;
+    if (!split.size) split = null;
+    else if (!comps.length) K = null; // no arrows at all: the row of boxes below decides K
+    else if (K < 1) {
+      // every box with arrows needs it: the ones without arrows that don't take the first column(s)
+      const left = isolated.filter((id) => !split.has(id)).length;
+      if (left) K = Math.ceil(left / 2); else split = null; // nothing on one side of the line
+    }
+  }
   const parts = comps.map((g) => {
     const ids = new Set(g.map((n) => n.id));
-    return layered(g, edges.filter((e) => ids.has(e.from)), { ...opts, pairs: pairs.filter(([a]) => ids.has(a)) });
+    return layered(g, edges.filter((e) => ids.has(e.from)), { ...opts, pairs: pairs.filter(([a]) => ids.has(a)), split: split || undefined, splitK: split ? K : undefined });
   });
 
   // Pack: the biggest cluster first; each smaller one goes just above or below what's already in its
@@ -79,8 +105,33 @@ export function layoutGraph(nodes, edges, opts = {}) {
   });
   for (const q of [...pos.values(), ...paths.flatMap((e) => e.pts)]) q.y -= top;
   let height = bottom - top;
-  // boxes with no arrows: their own row(s) under the graph
-  if (isolated.length) {
+  // the line only when it truly separates: every box on its own side, and at least one box right of it
+  if (split) {
+    for (const [id, q] of pos) if (split.has(id) !== q.col >= K) { split = null; break; }
+    if (split && ![...pos.keys(), ...isolated].some((id) => split.has(id))) split = null;
+  }
+  // no arrows at all: as many rows as before, the boxes that don't need matriculation in the first columns
+  if (split && K == null && !opts.inline) {
+    const left = isolated.filter((id) => !split.has(id)).length, right = isolated.length - left;
+    const rows = Math.max(1, Math.ceil(isolated.length / Math.max(columns, Math.ceil(isolated.length / 2))));
+    K = Math.ceil(left / rows);
+    if (K < 1 || !right) split = null;
+    else columns = K + Math.ceil(right / rows);
+  }
+  if (opts.inline) split = null;
+  // boxes with no arrows: their own row(s) under the graph (with a line: the ones that need
+  // matriculation from column K on, the others before it)
+  if (isolated.length && split) {
+    const left = isolated.filter((id) => !split.has(id)), right = isolated.filter((id) => split.has(id));
+    const C = right.length ? Math.max(columns, K + 1) : Math.max(columns, K);
+    const lw = K, rw = C - K;
+    const rows = Math.max(Math.ceil(left.length / lw), rw ? Math.ceil(right.length / rw) : 0);
+    const y0 = parts.length ? height + GAP_ROW : 0;
+    left.forEach((id, i) => pos.set(id, { col: i % lw, y: y0 + 0.5 + Math.floor(i / lw) }));
+    right.forEach((id, i) => pos.set(id, { col: K + (i % rw), y: y0 + 0.5 + Math.floor(i / rw) }));
+    columns = C;
+    height = y0 + rows;
+  } else if (isolated.length) {
     const perRow = opts.perRow ?? Math.max(columns, Math.ceil(isolated.length / 2));
     if (opts.inline && height <= 1 + 1e-9 && columns < perRow) {
       // a one-row graph: carry on along its row, then wrap
@@ -97,7 +148,7 @@ export function layoutGraph(nodes, edges, opts = {}) {
       height = y0 + Math.ceil(isolated.length / perRow);
     }
   }
-  return { columns, height, pos, paths, crossings, isolated, clusters: parts.length };
+  return { columns, height, pos, paths, crossings, isolated, clusters: parts.length, split: split ? K : null };
 }
 
 // One connected cluster -> { columns, height, pos, paths, crossings }, y from 0.5 at the top.
@@ -115,44 +166,10 @@ function layered(nodes, edges, opts = {}) {
   const isolated = ids.filter(isIso);
   const graphIds = ids.filter((id) => !isIso(id));
 
-  // ---- 0. break prereq loops ----
-  // Mutual "prereq or coreq" pairs (NURS 2300 <-> 2320) and catalog slips make loops; longest-path
-  // layering would push a loop right on every pass (nursing ended up 63 columns wide). Drop each edge
-  // that closes a loop (depth-first, in box order) so the earlier course stays left of its partner.
-  {
-    const out = new Map(graphIds.map((id) => [id, []]));
-    edges.forEach((e) => out.get(e.from)?.push(e));
-    const state = new Map(), back = new Set();
-    const visit = (id) => {
-      state.set(id, 1);
-      for (const e of out.get(id) || []) { const s = state.get(e.to); if (s === 1) back.add(e); else if (!s) visit(e.to); }
-      state.set(id, 2);
-    };
-    graphIds.forEach((id) => { if (!state.get(id)) visit(id); });
-    if (back.size) edges = edges.filter((e) => !back.has(e));
-  }
-
-  // ---- 1. layers (longest path, labs share their lecture's layer) ----
-  const layer = new Map(graphIds.map((id) => [id, 0]));
-  for (let pass = 0; pass <= graphIds.length + 2; pass++) {
-    let changed = false;
-    for (const e of edges) if (layer.get(e.to) < layer.get(e.from) + 1) { layer.set(e.to, layer.get(e.from) + 1); changed = true; }
-    for (const [a, b] of pairs) {
-      if (!layer.has(a) || !layer.has(b)) continue;
-      const m = Math.max(layer.get(a), layer.get(b));
-      if (layer.get(a) !== m || layer.get(b) !== m) { layer.set(a, m); layer.set(b, m); changed = true; }
-    }
-    if (!changed) break; // (a prereq loop would keep changing; the pass limit stops it)
-  }
-  // a course with no prereqs here whose arrows would all cross 3+ columns (CIVE 3310 -> 3335) moves
-  // right to sit just before its first course, so its arrows stay short
-  for (const id of graphIds) {
-    if (partnerOf.has(id) || edges.some((e) => e.to === id)) continue;
-    const kids = edges.filter((e) => e.from === id).map((e) => layer.get(e.to));
-    if (!kids.length) continue;
-    const t = Math.min(...kids) - 1;
-    if (t - layer.get(id) >= 2) layer.set(id, t);
-  }
+  // ---- 0 + 1. loops broken, layers (layerAll) ----
+  const LA = layerAll(graphIds, edges, pairs, partnerOf, { split: opts.split, splitK: opts.splitK });
+  edges = LA.edges;
+  const layer = LA.layer;
   const fwd = edges.filter((e) => layer.get(e.to) > layer.get(e.from)); // drop anything a loop left backwards
   const nLayers = graphIds.length ? Math.max(...graphIds.map((id) => layer.get(id))) + 1 : 0;
 
@@ -298,6 +315,54 @@ function layered(nodes, edges, opts = {}) {
     const da = isDummy.has(a), db = isDummy.has(b);
     return da && db ? SEP_DUMMY : da || db ? SEP_MIXED : SEP_REAL;
   }
+}
+
+// Steps 0 and 1 of one cluster: prereq loops broken, then each box's column (layer).
+// split + splitK (matriculation): boxes in `split` start at column splitK or later, and a box outside it
+// never moves right past splitK - 1 (so one upright line between columns splitK-1 and splitK separates them).
+// shift: false skips the "short arrows" move (used to measure the natural columns).
+function layerAll(graphIds, edges, pairs, partnerOf, { split = null, splitK = null, shift = true } = {}) {
+  // ---- 0. break prereq loops ----
+  // Mutual "prereq or coreq" pairs (NURS 2300 <-> 2320) and catalog slips make loops; longest-path
+  // layering would push a loop right on every pass (nursing ended up 63 columns wide). Drop each edge
+  // that closes a loop (depth-first, in box order) so the earlier course stays left of its partner.
+  {
+    const out = new Map(graphIds.map((id) => [id, []]));
+    edges.forEach((e) => out.get(e.from)?.push(e));
+    const state = new Map(), back = new Set();
+    const visit = (id) => {
+      state.set(id, 1);
+      for (const e of out.get(id) || []) { const s = state.get(e.to); if (s === 1) back.add(e); else if (!s) visit(e.to); }
+      state.set(id, 2);
+    };
+    graphIds.forEach((id) => { if (!state.get(id)) visit(id); });
+    if (back.size) edges = edges.filter((e) => !back.has(e));
+  }
+
+  // ---- 1. layers (longest path, labs share their lecture's layer) ----
+  const cut = split && splitK != null;
+  const layer = new Map(graphIds.map((id) => [id, cut && split.has(id) ? splitK : 0]));
+  for (let pass = 0; pass <= graphIds.length + 2; pass++) {
+    let changed = false;
+    for (const e of edges) if (layer.get(e.to) < layer.get(e.from) + 1) { layer.set(e.to, layer.get(e.from) + 1); changed = true; }
+    for (const [a, b] of pairs) {
+      if (!layer.has(a) || !layer.has(b)) continue;
+      const m = Math.max(layer.get(a), layer.get(b));
+      if (layer.get(a) !== m || layer.get(b) !== m) { layer.set(a, m); layer.set(b, m); changed = true; }
+    }
+    if (!changed) break; // (a prereq loop would keep changing; the pass limit stops it)
+  }
+  // a course with no prereqs here whose arrows would all cross 3+ columns (CIVE 3310 -> 3335) moves
+  // right to sit just before its first course, so its arrows stay short
+  if (shift) for (const id of graphIds) {
+    if (partnerOf.has(id) || edges.some((e) => e.to === id)) continue;
+    const kids = edges.filter((e) => e.from === id).map((e) => layer.get(e.to));
+    if (!kids.length) continue;
+    let t = Math.min(...kids) - 1;
+    if (cut) t = split.has(id) ? Math.max(t, splitK) : Math.min(t, splitK - 1);
+    if (t - layer.get(id) >= 2) layer.set(id, t);
+  }
+  return { layer, edges };
 }
 
 // [lecture, lab] pairs from flowchart nodes: coreqs that are both drawn; the lab is the one with fewer
@@ -473,7 +538,8 @@ export function flowChart(nodes, edges, sizes = {}, sections = [], cache = null)
   }
   const part = (key) => ({ nodes: nodes.filter((n) => sec.get(n.id) === key), edges: edges.filter((e) => sec.get(e.from) === key && sec.get(e.to) === key) });
   const main = part('');
-  const LM = lay('', main.nodes, main.edges);
+  // sizes.split (Set of ids): the main chart's boxes that need matriculation, right of a dotted line
+  const LM = lay('', main.nodes, main.edges, sizes.split ? { split: sizes.split } : {});
   const C = routeChart(LM, sizes);
   const out = { ...C, boxes: new Map(C.boxes), edges: C.edges.slice(), genTop: null, heads: [], layout: LM };
   const head = sizes.head ?? 28;
@@ -507,7 +573,10 @@ export function routeChart(L, o = {}) {
   const boxW = o.boxW ?? 120, boxH = o.boxH ?? 48, rowH = o.rowH ?? 58, pad = o.pad ?? 12;
   const gapMin = o.gapMin ?? 30, track = o.track ?? 10, port = o.port ?? 10, margin = o.margin ?? 6, near = o.near ?? 8;
   const R = boxH / 2 - 4; // exit/entry points stay this close to the box middle
-  const Y = (y) => pad + y * rowH;
+  // a matriculation line (L.split) gets a band above the chart for its label
+  const SK = L.split ?? null;
+  const band = SK ? (o.splitBand ?? 34) : 0;
+  const Y = (y) => pad + band + y * rowH;
   const nCols = L.columns;
   const colBoxes = Array.from({ length: nCols }, () => []);
   for (const [id, p] of L.pos) colBoxes[p.col].push({ id, cy: Y(p.y) });
@@ -681,7 +750,8 @@ export function routeChart(L, o = {}) {
   // ---- tracks: order the jogs in each gap to cross least (exact for up to 12, else greedy) ----
   const byGap = new Map();
   for (const j of jogs) (byGap.get(j.k) ?? byGap.set(j.k, []).get(j.k)).push(j);
-  const gapW = Array.from({ length: Math.max(0, nCols - 1) }, (_, k) => Math.max(gapMin, ((byGap.get(k)?.length ?? 0) + 1) * track));
+  // the matriculation line's gap keeps one extra track free in its middle for the line
+  const gapW = Array.from({ length: Math.max(0, nCols - 1) }, (_, k) => Math.max(gapMin, ((byGap.get(k)?.length ?? 0) + (SK && k === SK - 1 ? 2 : 1)) * track));
   for (const [, list] of byGap) {
     const n = list.length;
     const inside = (v, j) => v > Math.min(j.y1, j.y2) && v < Math.max(j.y1, j.y2);
@@ -710,7 +780,12 @@ export function routeChart(L, o = {}) {
   }
   const colX = [pad];
   for (let c = 1; c < nCols; c++) colX.push(colX[c - 1] + boxW + gapW[c - 1]);
-  const gx = (k, slot, of) => colX[k] + boxW + (gapW[k] * (slot + 1)) / (of + 1);
+  const lineSlot = (of) => Math.floor(of / 2) + 1; // the free track's place (1-based) among of + 1
+  const gx = (k, slot, of) => {
+    if (!(SK && k === SK - 1)) return colX[k] + boxW + (gapW[k] * (slot + 1)) / (of + 1);
+    const p = slot + 1 >= lineSlot(of) ? slot + 2 : slot + 1;
+    return colX[k] + boxW + (gapW[k] * p) / (of + 2);
+  };
 
   const edges = E.map((e) => {
     const pts = [[colX[e.a] + boxW, e.ps]];
@@ -723,7 +798,13 @@ export function routeChart(L, o = {}) {
   for (const [id, p] of L.pos) boxes.set(id, { x: colX[p.col], y: Y(p.y) - boxH / 2, w: boxW, h: boxH });
   const width = colX[nCols - 1] + boxW + pad;
   const height = Y(L.height) + pad;
-  return { width, height, boxes, edges };
+  // the line: x in the middle of its free track; from the label band down to the chart's last row
+  let split = null;
+  if (SK && SK < nCols) {
+    const of = byGap.get(SK - 1)?.length ?? 0;
+    split = { col: SK, x: colX[SK - 1] + boxW + (gapW[SK - 1] * lineSlot(of)) / (of + 2), top: pad + band / 2, bottom: Y(L.height) };
+  }
+  return { width, height, boxes, edges, split };
 }
 
 // z non-decreasing minimising sum w*|z_i - t| over each element's targets [[{t, w}], ...] (pooled blocks

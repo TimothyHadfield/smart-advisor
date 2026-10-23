@@ -11,6 +11,7 @@ import * as P from './planner.js'; // optional planner extras (planPhases, requi
 import { initMine } from './mineui.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
+import { matricSides, matricFacts, codeStatus } from './matric.js';
 
 const $ = (id) => document.getElementById(id);
 const PARAMS = new URLSearchParams(location.search);
@@ -96,6 +97,7 @@ const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; r
 const gradeMap = () => (state.grades[major()] ??= {});
 
 let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null;
+let matric = null; // js/matric.js matricSides: the boxes right of the dotted matriculation line
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -223,6 +225,8 @@ async function loadPlan() {
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
   ({ nodes, edges } = foldLabs(flowNodes(model), flowEdges(model)));
+  // classes that need matriculation (catalog admission gate, and what waits on them): right of a dotted line
+  matric = matricSides(nodes, edges);
   // a minor (or second major, certificate) gets its own section under the major's chart
   sections = parts.slice(1).map((p) => ({ key: p.id, label: p.program.name, group: programGroup(entry(p.id) || { type: /minor/i.test(p.program.name) ? 'minor' : '' }), test: (n) => n.prog === p.id }));
   charts.clear();
@@ -264,7 +268,7 @@ const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, tra
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
 const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)
-const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k] }, sections, layouts)).get(k);
+const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k], split: matric?.after }, sections, layouts)).get(k);
 function pickChart(W) {
   let k = FITS.findIndex((_, i) => chartFor(i).width <= W - 16);
   if (k < 0) k = W >= 700 ? FITS.length - 1 : 0;
@@ -335,6 +339,15 @@ function buildBoxes() {
   hint.id = 'hint';
   hint.hidden = true;
   host.appendChild(hint);
+  // the dotted matriculation line's label (placed by layout()): opens what the catalog says about it
+  const mat = document.createElement('button');
+  mat.type = 'button';
+  mat.className = 'matric-lbl';
+  mat.id = 'matricBtn';
+  mat.textContent = 'Matriculation';
+  mat.hidden = true;
+  mat.addEventListener('click', openMatric);
+  host.appendChild(mat);
   hoverId = null;
 }
 
@@ -437,12 +450,20 @@ function layout() {
   if (!layout.scrolled && g.width * k > W) {
     layout.scrolled = true;
     const first = [...g.boxes.values()].filter((r) => r.x <= SIZES.pad + 1).map((r) => r.y);
-    if (first.length) chart.scrollTop = Math.max(0, Math.min(...first) - 16) * k;
+    // (never past the matriculation label at the top)
+    if (first.length) chart.scrollTop = Math.max(0, Math.min(Math.min(...first) - 16, g.split ? g.split.top - 14 : Infinity)) * k;
   }
   const d = (pts) => 'M' + pts.map(([x, y]) => `${+(x + dx).toFixed(1)},${+y.toFixed(1)}`).join('L');
   svg.innerHTML = '<defs><marker id="ah" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="6" markerHeight="6" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>'
     + ['pre', 'post'].map((k) => `<marker id="ah-${k}" viewBox="0 0 6 6" refX="6" refY="3" markerWidth="7" markerHeight="7" markerUnits="userSpaceOnUse" orient="auto"><path d="M0,0L6,3L0,6z"/></marker>`).join('') + '</defs>'
-    + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('');
+    + g.edges.map((e) => `<path data-from="${esc(e.from)}" data-to="${esc(e.to)}"${e.or ? ' class="or"' : ''} marker-end="url(#ah)" d="${d(e.pts)}"/>`).join('')
+    // the matriculation line: left = classes that don't need it, right = classes that do
+    + (g.split ? `<path class="matric" d="${d([[g.split.x, g.split.top], [g.split.x, g.split.bottom]])}"/>` : '');
+  const mat = $('matricBtn');
+  if (mat) {
+    mat.hidden = !g.split;
+    if (g.split) mat.style.cssText = `left:${(g.split.x + dx).toFixed(1)}px;top:${g.split.top.toFixed(1)}px`;
+  }
   drawHover();
 }
 
@@ -1162,6 +1183,54 @@ function openClass({ node, item }) {
   drawClsGrades();
   openDlg($('clsDlg'));
 }
+// ---------- matriculation sheet: tap the label on the dotted line -> everything the data knows ----------
+// Catalog words, GPA / grade minimums (only when the catalog states them), the classes to finish first with
+// the student's progress, the classes that need it, the advisor + how-to-apply links, the catalog page.
+const NOT_IN = 'Not in the catalog';
+function openMatric() {
+  if (!model || !matric) return;
+  const dlg = $('matDlg');
+  if (!dlg.dataset.wired) {
+    dlg.dataset.wired = '1';
+    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+  }
+  // the program the gated classes belong to (the major, unless only a minor has a matriculation section)
+  const part = progParts.find((p) => p.program.admissionInfo) || progParts[0];
+  const f = matricFacts(part?.program || model.program);
+  const done = doneSet(), grades = gradeMap();
+  const planned = new Map();
+  (lastPlan?.semesters || []).forEach((s) => s.items.forEach((it) => [it.code, ...(it.codes || [])].filter(Boolean).forEach((c) => { if (!planned.has(c)) planned.set(c, shortTerm(s.term)); })));
+  const mark = (code) => {
+    const st = codeStatus(code, { done, grades, planned });
+    const tag = st === 'done' ? ' ✓' : st === 'ip' ? ' · Now' : st ? ` · ${st}` : '';
+    return `<span class="mt${st === 'done' ? ' ok' : ''}">${esc(code)}${esc(tag)}</span>`;
+  };
+  const list = (codes) => `<span class="mts">${codes.map(mark).join('')}</span>`;
+  const label = (id) => { const n = nodes.find((x) => x.id === id); return n?.code || n?.label || id; };
+  const rows = [];
+  rows.push(['Catalog', esc(f.text || NOT_IN)]);
+  rows.push(['GPA', esc(f.gpa ? `${f.gpa} or higher` : NOT_IN)]);
+  rows.push(['Grade', esc(f.minGrade ? `${f.minGrade} or higher in these classes` : NOT_IN)]);
+  if (f.before.length) {
+    const n = f.before.filter((c) => codeStatus(c, { done, grades }) === 'done').length;
+    rows.push(['Before', `${n} of ${f.before.length} done${f.beforeFrom === 'graduation plan' ? ' (from the sample plan)' : ''}${list(f.before)}`]);
+  } else rows.push(['Before', esc(NOT_IN)]);
+  // catalog-marked classes (chart boxes, plus listed ones not drawn), then the ones that wait on them
+  const gated = [...new Set([...[...matric.gated].map(label), ...f.gated])];
+  rows.push(['Needs it', list(gated)]);
+  const after = [...matric.after].filter((id) => !matric.gated.has(id)).map(label);
+  if (after.length) rows.push(['After it', list(after)]);
+  rows.push(['Deadline', esc(f.deadline || NOT_IN)]);
+  const adv = advA(part?.id) + aplA(part?.id);
+  if (adv) rows.push(['Advisor', adv]);
+  $('matProg').textContent = part?.program.name || '';
+  $('matFacts').innerHTML = rows.map(([k, v]) => `<dt>${esc(k)}</dt><dd>${v}</dd>`).join('');
+  $('matCat').href = f.url || part?.program.url || 'https://catalog.uvu.edu/';
+  $('matReport').href = issueURL(progIssue({ code: 'Matriculation' }));
+  openDlg(dlg);
+  $('matFacts').scrollTop = 0;
+}
+
 // the classes a taken box stands for, each with its own grade (lecture + its folded lab; a pick-one box's
 // option; the class picked for a Gen Ed box, else the box)
 function gradeCodes(n, s) {
