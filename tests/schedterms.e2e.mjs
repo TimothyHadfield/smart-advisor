@@ -148,7 +148,8 @@ test('a plan semester heading opens the Schedule on that term; Back returns to t
     const p = await page(SAVED, { desktop });
     const from = desktop ? 'flow' : 'plan';
     await p.waitForFunction(() => /\d/.test(document.querySelector('#hmGoSched')?.textContent || ''));
-    await p.click(`#hmGo [data-go="${from}"]`);
+    await p.click('#hmGo [data-go="flow"]'); // the plan sits in the Flowchart section (phone: its Chart | Plan switch)
+    if (!desktop) await p.click('#fpSeg button[data-v="plan"]');
     await p.waitForSelector('#sems .sem-go');
     const h = await p.$$eval('#sems .sem-go', (els) => els.map((e) => e.dataset.term));
     const label = h[2]; // a later semester (no sections yet)
