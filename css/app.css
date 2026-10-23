@@ -450,6 +450,21 @@ dialog.hand input { font: inherit; font-size: 16px; width: 150px; padding: 6px 8
 .box .ptag { position: absolute; top: -10px; left: 5px; padding: 0 3px; border-radius: 4px; font-style: normal; font-size: 11px; font-weight: 700; line-height: 12px; background: var(--panel); color: var(--muted); border: 1px dashed var(--edge); }
 .box.extra .ptag { left: auto; right: 5px; }
 .box.in-grp .ptag, .box.done .ptag { display: none; }
+/* requirement groups under the chart (js/groups.js): titled frame, progress on the right, light green when met */
+.gframe { position: absolute; display: flex; align-items: flex-start; gap: 6px; padding: 4px 9px 0; border: 1.5px solid var(--line); border-radius: 9px; transition: background-color .15s, border-color .15s; }
+.gframe.listed { cursor: pointer; }
+.gframe > b { min-width: 0; font-size: 11px; line-height: 14px; font-weight: 700; color: var(--fg); white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.gframe .gp { flex: none; font-size: 10.5px; line-height: 14px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.gframe.met { background: color-mix(in srgb, var(--done-bg) 14%, var(--panel)); border-color: var(--done-bg); }
+.gframe.met .gp { color: var(--green); }
+.gmore, .ginc { position: absolute; display: flex; align-items: center; justify-content: center; border: 1.5px dashed var(--line); border-radius: 6px; background: none; font-size: 11px; font-weight: 700; }
+.gmore { color: var(--green); cursor: pointer; }
+.ginc { color: var(--muted); font-weight: 600; pointer-events: none; }
+.gframe[hidden], .gmore[hidden], .ginc[hidden] { display: none; }
+.box.gchip .ptag { display: none; }
+.box.gwide b { -webkit-line-clamp: 3; }
+.lg-items .sw-or { flex: none; margin-left: 8px; }
+.lg-items .sw-or path { stroke: var(--edge); stroke-width: 1.6; stroke-dasharray: 3 3; }
 
 /* first visit: no program yet */
 .empty-pick { display: none; }

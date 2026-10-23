@@ -2,6 +2,7 @@ import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earli
 import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
+import { groupNodes, placeGroups, groupProgress, groupList } from './groups.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
@@ -102,6 +103,7 @@ const gradeMap = () => (state.grades[major()] ??= {});
 let model, nodes, edges, graph, sections = [], lastPlan = null, gened = null, progParts = [], advisors = null;
 let seasonsData = null; // data/seasons.json as loaded (its build date goes on the class sheet's "Offered" link)
 let matric = null; // js/matric.js matricSides: the boxes right of the dotted matriculation line
+let grp = { chart: [], boxes: [], groups: [], grouped: new Set() }; // requirement groups (js/groups.js)
 
 // ---------- the catalog's program list + program files (fetched once each, on demand) ----------
 const cache = new Map();
@@ -229,11 +231,15 @@ async function loadPlan() {
   syncURL();
   model = built.model;
   // labs are folded into their lecture's box (ECE 2250 + 2255 = one box); the planner still has both
-  ({ nodes, edges } = foldLabs(flowNodes(model), flowEdges(model)));
+  const folded = foldLabs(flowNodes(model), flowEdges(model));
+  edges = folded.edges;
   // classes that need matriculation (catalog admission gate, and what waits on them): right of a dotted line
-  matric = matricSides(nodes, edges);
+  matric = matricSides(folded.nodes, edges);
   // a minor (or second major, certificate) gets its own section under the major's chart
   sections = parts.slice(1).map((p) => ({ key: p.id, label: p.program.name, group: programGroup(entry(p.id) || { type: /minor/i.test(p.program.name) ? 'minor' : '' }), test: (n) => n.prog === p.id }));
+  // boxes with no prerequisite lines go in labelled requirement groups under their section (js/groups.js)
+  grp = groupNodes(model, folded.nodes, edges, sections);
+  nodes = grp.boxes;
   charts.clear();
   layouts.clear();
   layout.scrolled = false;
@@ -273,12 +279,17 @@ const FITS = [{ boxW: 116, track: 9 }, { boxW: 112, track: 9 }, { boxW: 108, tra
 let SIZES = { ...BASE, ...FITS[0] };
 const charts = new Map();
 const layouts = new Map(); // one layout per program, shared by every box size (js/layout.js flowChart)
-const chartFor = (k) => charts.get(k) ?? charts.set(k, flowChart(nodes, edges, { ...BASE, ...FITS[k], split: matric?.after }, sections, layouts)).get(k);
+// the chart at box size k, then its requirement groups placed under it for a chart area W px wide
+const baseFor = (k) => charts.get(k) ?? charts.set(k, flowChart(grp.chart, edges, { ...BASE, ...FITS[k], split: matric?.after }, sections, layouts)).get(k);
+const chartFor = (k, W) => {
+  const key = `${k}|${Math.round(W || 0)}`;
+  return charts.get(key) ?? charts.set(key, placeGroups(baseFor(k), grp.groups, { ...BASE, ...FITS[k], fitW: (W || 0) - 16 }, sections)).get(key);
+};
 function pickChart(W) {
-  let k = FITS.findIndex((_, i) => chartFor(i).width <= W - 16);
+  let k = FITS.findIndex((_, i) => chartFor(i, W).width <= W - 16);
   if (k < 0) k = W >= 700 ? FITS.length - 1 : 0;
   SIZES = { ...BASE, ...FITS[k] };
-  graph = chartFor(k);
+  graph = chartFor(k, W);
 }
 
 function buildBoxes() {
@@ -294,15 +305,41 @@ function buildBoxes() {
     f.innerHTML = `<em>${esc(pickLabel(g.pick))}</em>`;
     host.appendChild(f);
   }
+  // requirement groups (js/groups.js): a titled frame under its boxes ("Pick 2 · Math electives", progress on
+  // the right, light green once met); a long list's "+N more" opens its class list; tapping the frame does too
+  const wideText = new Map();
+  for (const g of grp.groups) {
+    const f = document.createElement('div');
+    f.className = 'gframe' + (g.kind === 'pick' && g.unit.kind === 'choice' ? ' listed' : '');
+    f.dataset.gf = g.id;
+    f.innerHTML = `<b>${esc(g.title)}</b><span class="gp"></span>`;
+    const listed = g.kind === 'pick' && g.unit.kind === 'choice';
+    if (listed) f.addEventListener('click', (e) => { if (!e.target.closest('.box')) openGroupList(g); });
+    host.appendChild(f);
+    if (g.more.length) {
+      const m = document.createElement('button');
+      m.type = 'button'; m.className = 'gmore'; m.dataset.gm = g.id;
+      m.textContent = `+${g.more.length} more`;
+      m.addEventListener('click', () => openGroupList(g));
+      host.appendChild(m);
+    }
+    if (g.inChart) {
+      const c = document.createElement('div');
+      c.className = 'ginc'; c.dataset.gi = g.id;
+      c.textContent = `+${g.inChart} in chart`;
+      host.appendChild(c);
+    }
+    if (g.kind === 'wide') wideText.set(g.items[0], g.text);
+  }
   for (const n of nodes) {
     const b = document.createElement('button');
     const flex = n.kind === 'placeholder' || n.kind === 'choice';
-    b.className = 'box' + (flex ? ' ph flex' : n.kind === 'option' ? ' flex' : '');
+    b.className = 'box' + (flex ? ' ph flex' : n.kind === 'option' ? ' flex' : '') + (grp.grouped.has(n.id) ? ' gchip' : '') + (wideText.has(n.id) ? ' gwide' : '');
     b.dataset.id = n.id;
     const labs = n.labs || [];
-    // course code and its name (Gen Ed / elective boxes: their name only)
+    // course code and its name (Gen Ed / elective boxes: their name only; in a group: the full wording)
     b.innerHTML = flex
-      ? `<b>${esc(n.label)}</b>`
+      ? `<b>${esc(wideText.get(n.id) ?? n.label)}</b>`
       : `<b>${esc(n.label)}${labs.length ? '<small>+Lab</small>' : ''}</b><i>${esc(n.title)}</i>`;
     b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
@@ -429,6 +466,8 @@ function layout() {
       continue;
     }
     if (el.dataset.grp) { frames.push(el); continue; }
+    const gr = el.dataset.gf ? g.frames : el.dataset.gm ? g.more : el.dataset.gi ? g.inChart : null;
+    if (gr) { const r = gr.get(el.dataset.gf || el.dataset.gm || el.dataset.gi); el.hidden = !r; if (r) el.style.cssText = `left:${r.x + dx}px;top:${r.y}px;width:${r.w}px;height:${r.h}px`; continue; }
     if (!el.dataset.id) continue;
     const r = g.boxes.get(el.dataset.id);
     Object.assign(el.style, { left: `${r.x + dx}px`, top: `${r.y}px`, width: `${r.w}px`, height: `${r.h}px` }); // (keeps --gh)
@@ -436,7 +475,7 @@ function layout() {
   // a "pick N" group gets one frame when its boxes sit one under another with nothing else between
   const others = [...g.boxes.entries()];
   for (const f of frames) {
-    const ids = nodes.filter((n) => n.group === f.dataset.grp).map((n) => n.id);
+    const ids = nodes.filter((n) => n.group === f.dataset.grp && !grp.grouped.has(n.id)).map((n) => n.id);
     const rs = ids.map((id) => g.boxes.get(id)).filter(Boolean).sort((a, b) => a.y - b.y);
     let ok = rs.length > 1 && rs.every((r) => Math.abs(r.x - rs[0].x) < 1);
     for (let i = 1; ok && i < rs.length; i++) ok = rs[i].y - (rs[i - 1].y + rs[i - 1].h) <= SIZES.rowH - SIZES.boxH + 2;
@@ -607,6 +646,15 @@ function refresh() {
     if (done && !ip && !term) undated = true;
     el.dataset.hint = hintText({ done, grade: ip || showGrades ? g : '', term, planned: sem !== undefined ? plan.semesters[sem].term : '', now });
   }
+  // requirement groups: progress in the title ("1 of 3"), light green once the requirement is met
+  const byId = new Map(nodes.map((n) => [n.id, n]));
+  for (const g of grp.groups) {
+    const f = $('boxes').querySelector(`.gframe[data-gf="${CSS.escape(g.id)}"]`);
+    if (!f) continue;
+    const p = groupProgress(g, completed, (id) => byId.has(id) && nodeDone(byId.get(id), completed));
+    f.querySelector('.gp').textContent = p.text;
+    f.classList.toggle('met', p.met);
+  }
   // audits imported before 2026-10-18 kept no semesters (nothing saved holds them): ask for a re-upload.
   // An import since then always leaves settings.when (even {}), so this line never comes back after it.
   $('noDates').hidden = !(undated && !state.settings.when && hasAudit());
@@ -623,7 +671,13 @@ function refresh() {
 // ---------- Gen Ed class lists (js/gened.js): a sheet with the classes that fill a Gen Ed box ----------
 // Placeholder box: tapping a class marks the box taken and remembers the class ("ph:8=DANC 1010").
 // Pick-one box with its own options (American Institutions): tapping one takes that option's classes.
-const listOf = (n) => genEdList(n, gened, { aas: /-aas$/.test(major() || ''), courses: model?.program.courses || {} });
+const listOf = (n) => genEdList(n, gened, { aas: /-aas$/.test(major() || ''), courses: model?.program.courses || {} })
+  || (n && grp.groups.some((g) => g.kind === 'pick' && g.unit === n) ? groupList(n, model?.program.courses || {}) : null);
+// a requirement group's class list: the Gen Ed list sheet, titled like the group ("Pick 2 · Math electives")
+function openGroupList(g) {
+  openGenEd(g.unit);
+  if (geNode === g.unit) $('geName').textContent = g.title;
+}
 const shortCode = (codes) => codes.map((c, i) => (i ? c.split(' ').pop() : c)).join(' + '); // "HIST 2700 + 2710"
 function classOfBox(n, completed) {
   if (n.kind === 'choice') { const o = (n.options || []).find((x) => optionDone(x, completed)); return o ? shortCode(o.codes) : null; }
@@ -691,7 +745,7 @@ function wireGenEd() {
     if (nodeDone(n, doneSet())) dlg.close(); else drawGenEd();
   });
   $('geUntake').addEventListener('click', () => {
-    const n = geNode, el = $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`);
+    const n = geNode, el = $('boxes').querySelector(`.box[data-id="${CSS.escape(n.id)}"]`) || $('boxes').querySelector(`.gframe[data-gf="${CSS.escape('g:' + n.id)}"]`);
     if (n && el && nodeDone(n, doneSet())) toggle(n, el);
     dlg.close();
   });
@@ -713,7 +767,10 @@ function startTerm() {
 const semCls = (i) => (state.settings.semColors === false ? '' : ` s${i % 10}`);
 const shortTerm = (t) => { const [season, year] = t.split(' '); return `${season.slice(0, 2)} ${String(year).slice(2)}`; };
 function renderLegend(plan, anyIP) {
+  // a dotted line = one of several prerequisites is enough (shown when the chart has one)
+  const anyOr = !!graph?.edges.some((e) => e.or);
   $('legendItems').innerHTML = '<span class="sw done"></span>Taken' + (anyIP ? '<span class="sw ip"></span>Current' : '')
+    + (anyOr ? '<svg class="sw-or" viewBox="0 0 16 4" width="16" height="4" aria-hidden="true"><path d="M0 2H16"/></svg>Any one' : '')
     + (semCls(0) ? plan.semesters.map((s, i) => `<span class="sw${semCls(i)}"></span>${shortTerm(s.term)}`).join('') : '');
 }
 
