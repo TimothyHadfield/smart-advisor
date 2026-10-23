@@ -1,0 +1,114 @@
+// Run: node --test tests/short-titles.test.mjs
+// Short class names on the flowchart boxes (data/short-titles.json, scripts/build-short-titles.mjs).
+// Tim, 2026-10-22: "Calculus 3 -> Calc 3" "Physics for Scientists and Engineers II --> Phys 2"
+// "introduction to Electrical Engineering --> Intro to EE" ... "the full name fits in the label".
+//   - Tim's three examples
+//   - every class title any box of any program can show (both catalog years) has a short name that fits
+//     the box's 2 name lines at the box's real CSS size (estimate errs wide; tests/short-titles.e2e.mjs
+//     measures in WebKit)
+//   - no two different classes in one program get the same short name
+//   - data/short-titles.json is up to date with the program data and the hand names
+import { test } from 'node:test';
+import assert from 'node:assert/strict';
+import { readFileSync, readdirSync } from 'node:fs';
+import { fileURLToPath } from 'node:url';
+import { boxTitles, buildShortTitles } from '../scripts/build-short-titles.mjs';
+import { fitsBox, BOX, ruleShort } from '../scripts/lib/short-titles.mjs';
+import { shortTitle, boxName, shortJoin } from '../js/shortnames.js';
+import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
+import { foldLabs } from '../js/layout.js';
+
+const ROOT = fileURLToPath(new URL('../', import.meta.url));
+const read = (p) => JSON.parse(readFileSync(ROOT + p, 'utf8'));
+const DATA = read('data/short-titles.json');
+const MAP = DATA.titles;
+const PER = boxTitles();
+
+test("Tim's examples", () => {
+  assert.equal(shortTitle(MAP, 'Calculus III'), 'Calc 3');
+  assert.equal(shortTitle(MAP, 'Physics for Scientists and Engineers II'), 'Phys 2');
+  // UVU's intro course is ECE 1000 "Introduction to Electrical and Computer Engineering"
+  const ece = read('data/programs/electrical-engineering-bs.json').courses['ECE 1000'].title;
+  assert.equal(ece, 'Introduction to Electrical and Computer Engineering');
+  assert.equal(shortTitle(MAP, ece), 'Intro to ECE');
+  // a few more of the same kind
+  assert.equal(shortTitle(MAP, 'Calculus I'), 'Calc 1');
+  assert.equal(shortTitle(MAP, 'Principles of Chemistry I'), 'Chem 1');
+  assert.equal(shortTitle(MAP, 'Circuit Theory'), 'Circuits');
+  assert.equal(ruleShort('Introduction to Electrical Engineering').short, 'Intro to EE');
+  // a title it doesn't list is shown as it is
+  assert.equal(shortTitle(MAP, 'Genetics'), 'Genetics');
+  assert.equal(shortTitle(MAP, ''), '');
+});
+
+test('the box size the fit check assumes matches the real CSS (narrowest box, name font)', () => {
+  const css = readFileSync(ROOT + 'css/app.css', 'utf8');
+  const app = readFileSync(ROOT + 'js/app.js', 'utf8');
+  const rule = (sel) => css.match(new RegExp(`^${sel.replace(/[.*]/g, '\\$&')}\\s*\\{([^}]*)\\}`, 'm'))?.[1] || '';
+  const fontPx = parseFloat(rule('.box i').match(/font-size:\s*([\d.]+)px/)[1]);
+  const lines = parseInt(rule('.box i').match(/-webkit-line-clamp:\s*(\d+)/)[1], 10);
+  const box = [...css.matchAll(/^\.box \{([^}]*)\}/gm)].map((m) => m[1]).find((b) => /padding:/.test(b));
+  const padX = parseFloat(box.match(/padding:\s*[\d.]+(?:px)?\s+([\d.]+)px/)[1]);
+  const border = parseFloat(box.match(/border:\s*([\d.]+)px/)[1]);
+  const minW = Math.min(...[...app.match(/const FITS = \[([^\]]*)\]/)[1].matchAll(/boxW:\s*(\d+)/g)].map((m) => +m[1]));
+  assert.ok(BOX.fontPx >= fontPx, `box name font is ${fontPx}px; scripts/lib/short-titles.mjs BOX.fontPx is ${BOX.fontPx}`);
+  assert.ok(BOX.lines <= lines, `box shows ${lines} name lines`);
+  assert.ok(BOX.width <= minW - 2 * padX - 2 * border, `narrowest box text width ${minW - 2 * padX - 2 * border}px < BOX.width ${BOX.width}`);
+});
+
+test('every class name a box shows fits the box (all programs, both catalog years)', () => {
+  const bad = new Set();
+  let n = 0;
+  for (const list of PER.values()) for (const { title, joined } of list) { if (joined) continue; n++; const s = shortTitle(MAP, title); if (!fitsBox(s)) bad.add(`${title} -> ${s}`); }
+  assert.ok(n > 10000, `only ${n} box titles found`);
+  assert.deepEqual([...bad], [], 'write hand names in scripts/short-titles-hand.json, then node scripts/build-short-titles.mjs');
+});
+
+test('option boxes with several classes ("A + B") fit too', () => {
+  const seasons = read('data/seasons.json');
+  const bad = new Set();
+  let n = 0;
+  for (const [dir, y] of [['data/programs', 'data/'], ['data/2025-2026/programs', 'data/2025-2026/']]) {
+    const extra = { extraCourses: read(y + 'prereq-courses.json'), gened: read(y + 'gened.json'), seasons };
+    for (const f of readdirSync(ROOT + dir)) {
+      if (!f.endsWith('.json') || f.startsWith('_') || f === 'index.json') continue;
+      const program = read(`${dir}/${f}`);
+      const { nodes } = foldLabs(flowNodes(buildModel(program, extra)), []);
+      for (const node of nodes) {
+        if (node.kind !== 'option' || (node.codes || []).length < 2) continue;
+        n++;
+        const s = boxName(MAP, node, { ...(extra.extraCourses || {}), ...program.courses });
+        if (!fitsBox(s)) bad.add(`${f} ${node.codes.join(' + ')}: ${s}`);
+      }
+    }
+  }
+  assert.ok(n > 50, `only ${n} multi-class options`);
+  assert.deepEqual([...bad], []);
+});
+
+test('lecture + lab option reads "Chem 1 + Lab"', () => {
+  assert.equal(shortJoin(['Chem 1', 'Chem 1 Lab']), 'Chem 1 + Lab');
+  assert.equal(shortJoin(['US History', 'Am. Government']), 'US History + Am. Government');
+});
+
+test('no two different classes in one program share a short name', () => {
+  const clash = [];
+  for (const [prog, list] of PER) {
+    const seen = new Map(); // short -> full title
+    for (const { title, joined } of list) {
+      if (joined) continue;
+      const s = shortTitle(MAP, title).toLowerCase();
+      const had = seen.get(s);
+      if (had !== undefined && had !== title) clash.push(`${prog}: "${had}" and "${title}" -> ${shortTitle(MAP, title)}`);
+      else seen.set(s, title);
+    }
+  }
+  assert.deepEqual(clash, []);
+});
+
+test('data/short-titles.json is up to date (rerun node scripts/build-short-titles.mjs after a data refresh)', () => {
+  const { titles, counts } = buildShortTitles(PER);
+  assert.deepEqual(DATA.titles, titles);
+  assert.equal(DATA.hand, counts.hand);
+  assert.ok(counts.hand >= 600, `${counts.hand} hand names`);
+});
