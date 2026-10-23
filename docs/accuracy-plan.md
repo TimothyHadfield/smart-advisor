@@ -25,7 +25,7 @@ Evidence: `docs/audit-2026-10-17/` (nursing-report, data-accuracy-report, calc-r
 - D-A4 Coreqs are two-way and must be the SAME term.
 - D-A5 Track chooser: show the guessed track with a clear "Guessed — pick yours" chip; never block the plan.
 - D-A6 Out-of-program prereqs: shown as "Needed before" boxes (not assumed met), with a "Already have it / placed out" tap.
-- D-A7 Seasons from Banner are a preference (one year of data), shown as "Usually Fall only".
+- D-A7 Seasons from Banner are a preference (one year of data), shown as "Usually Fall only". **Superseded 2026-10-22:** a rule over 3 years of data (`docs/seasons-plan.md`, progress.md D21).
 - D-A8 Grade minimums shown on the class sheet + D/D- from the audit don't satisfy a C- minimum.
 - D-A9 One plain line on plan screens: "Unofficial plan — confirm with your advisor." Admission programs add: "Requires admission — apply after these classes."
 - D-A10 "Report a mistake" link → GitHub issue on the public repo (no email shown).

@@ -1,5 +1,5 @@
 # Weekly refresh of class sections (UVU Banner) and Rate My Professors ratings.
-# Runs scripts/fetch-sections.mjs then scripts/fetch-rmp.mjs and commits changed data back to main.
+# Runs scripts/fetch-sections.mjs, scripts/fetch-rmp.mjs and scripts/build-seasons.mjs, and commits changed data back to main.
 # Free on public repos. Manual run: Actions tab → "Refresh class data" → Run workflow.
 name: Refresh class data
 
@@ -18,7 +18,7 @@ concurrency:
 jobs:
   refresh:
     runs-on: ubuntu-latest
-    timeout-minutes: 30
+    timeout-minutes: 55
     steps:
       - uses: actions/checkout@v4
         with:
@@ -36,6 +36,14 @@ jobs:
         continue-on-error: true
         run: node scripts/fetch-rmp.mjs
 
+      - name: Rebuild course seasons (which semesters each class runs)
+        # Refetches only the current and posted future terms (finished terms are reused from data/seasons.json),
+        # subject by subject at 2 requests/s; a failed fetch or a failed seasons test keeps the old file.
+        continue-on-error: true
+        timeout-minutes: 25
+        run: |
+          node scripts/build-seasons.mjs && node --test tests/seasons.test.mjs || git checkout -- data/seasons.json
+
       - name: Test data shape
         run: |
           node tests/sections.test.mjs
@@ -43,7 +51,7 @@ jobs:
 
       - name: Commit changed data
         run: |
-          git add data/sections data/rmp.json
+          git add data/sections data/rmp.json data/seasons.json
           if git diff --cached --quiet; then
             echo "No data changes."
             exit 0

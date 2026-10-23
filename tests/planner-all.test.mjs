@@ -30,6 +30,10 @@ const ALLOW = {
   'education-applied-behavioral-analysis-med': 'EDAB cohort classes run in fixed semesters (6030/6100 Fall, 6040/6050 Spring, 6070/6220 Fall)',
   'school-counseling-med': 'EDCO classes run in fixed semesters (6080/6100/6050/6060 Fall, 6030/6070/6710 Spring)',
   'dance-ballet-emphasis-bfa': 'DANC 3630 (Fall) -> 4350 (Fall only) -> 4360 (Spring only), then the DANC 3270R coreq block',
+  // seasons as a rule (2026-10-22): Summer-only classes get their Summer, chains wait for their season
+  'marketing-graduate-certificate': 'MKTG 6600 -> 6620 -> 6640 (Summer only) -> 6660: a four-course chain, one per term',
+  'marriage-family-therapy-ma': 'MFT 6220/6500, 6400 run in Summer only; MFT 6900R-6940R practicum one per term',
+  'master-social-work-advanced-standing-msw': 'SW 6490 -> SW 6491 both run in Summer only (two Summers)',
 };
 
 const readJSON = (p) => { try { return JSON.parse(readFileSync(p, 'utf8')); } catch { return null; } };
@@ -54,6 +58,13 @@ function stripCodes(e, codes) {
   const v = e[k].map((x) => stripCodes(x, codes)).filter(Boolean);
   return v.length === 0 ? null : v.length === 1 ? v[0] : { [k]: v };
 }
+
+// seasons a class ran in (seasons.json, 2+ terms), or null (not limited)
+function ranIn(code) {
+  const idx = SEASONS?.courses?.[code];
+  return idx && idx.length >= 2 ? new Set(idx.map((i) => SEASONS.terms[i].season)) : null;
+}
+const shareSeason = (a, b) => { const x = ranIn(a), y = ranIn(b); return !x || !y || [...x].some((s) => y.has(s)); };
 
 export function checkPlan(model, plan, cap = CAP) {
   const out = [];
@@ -87,7 +98,8 @@ export function checkPlan(model, plan, cap = CAP) {
         if (!evalReq(pre, done, inProgram)) out.push(`${code} in ${s.term} before its prereqs ${JSON.stringify(pre)}`);
         const pc = stripCodes(c.precoreqs ?? null, own);
         if (!evalReq(pc, now, inProgram)) out.push(`${code} in ${s.term} before its prereq-or-coreqs ${JSON.stringify(pc)}`);
-        const cq = (c.coreqs || []).filter((k) => !own.includes(k) && inProgram(k));
+        // (coreqs that never run in the same season, SPAN 4100 Spring / LANG 4200 Fall, are taken in their own seasons)
+        const cq = (c.coreqs || []).filter((k) => !own.includes(k) && inProgram(k) && shareSeason(code, k));
         // "A or B" coreqs (catalog text with "or", no "and"/brackets): one of them is enough
         const anyOne = cq.length > 1 && /\bor\b/i.test(c.coreqText || '') && !/\band\b|[()]/i.test(c.coreqText || '');
         const ok = repeatTake ? (k) => now.has(k) : (k) => here.has(k);
