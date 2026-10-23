@@ -47,14 +47,15 @@
     </div>
   </section>
   <section class="panel sched" id="schedPanel" aria-label="Schedule">
+    <div class="sc-terms" id="scTerms" role="group" aria-label="Semesters"></div>
     <div class="sc-bar">
-      <div class="seg sc-terms" id="scTerms"></div>
       <div class="sc-nav"><button type="button" id="scPrev" aria-label="Previous schedule">‹</button><span id="scRank"></span><button type="button" id="scNext" aria-label="Next schedule">›</button></div>
       <button type="button" class="sc-mine" id="scMine">Add my schedule</button>
       <button type="button" class="sc-copy" id="scCopy">Copy CRNs</button>
       <button type="button" class="sc-ftog" id="scFilt" aria-label="Filters" title="Filters" aria-expanded="false" aria-controls="scFilters"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M4 7h16M7 12h10M10 17h4"/></g></svg></button>
     </div>
     <div class="sc-filt" id="scFilters">
+      <div class="seg lbl-seg sc-lbl" id="scLbl" role="group" aria-label="Class labels"><button type="button" data-v="code">Code</button><button type="button" data-v="title" class="on">Title</button><button type="button" data-v="both">Both</button></div>
       <div class="seg days" id="setDays" role="group" aria-label="Days"><button type="button" data-d="M">M</button><button type="button" data-d="T">T</button><button type="button" data-d="W">W</button><button type="button" data-d="R">Th</button><button type="button" data-d="F">F</button></div>
       <span class="hours"><select id="setAfter" aria-label="Start after"></select>–<select id="setBefore" aria-label="End by"></select></span>
       <select id="setMode" aria-label="Classes"><option value="any">Any</option><option value="person">In person</option><option value="online">Online</option></select>

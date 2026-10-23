@@ -186,6 +186,10 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .sem[class*=" s"] h3 { border-bottom: 3px solid var(--sb); }
 .sem[class*=" s"] h3::before { content: ""; flex: none; width: 10px; height: 10px; margin: 2px 6px 0 0; border-radius: 3px; background: var(--sf); border: 1.5px solid var(--sb); }
 .sem h3 span { margin-left: auto; }
+/* a semester heading opens the Schedule on that term: a link-like button */
+.sem-go { padding: 0; border: 0; background: none; font: inherit; color: var(--green); cursor: pointer; text-align: left; }
+.sem-go:hover { text-decoration: underline; }
+.sc-lbl { margin-left: 0; }
 .sem h3 span { color: var(--muted); font-weight: 600; }
 .sem ul { list-style: none; margin: 0; padding: 0; }
 .sem li { display: flex; justify-content: space-between; gap: 6px; font-size: 12px; line-height: 17px; }
@@ -300,8 +304,13 @@ input[role="switch"]:checked::after { transform: translateX(16px); }
 /* schedule: term, which schedule, copy CRNs · week grid · the classes */
 main[data-tab="sched"] .sched, main[data-tab="profile"] .page { display: flex; }
 .sc-bar { flex: none; display: flex; align-items: center; gap: 8px; height: 40px; padding: 0 8px 0 16px; }
-.sc-terms { flex: none; }
-.sc-terms button { flex: none; padding: 5px 10px; }
+/* the term bar: Past | Current | Future (left, middle, right); a phone scrolls the strip, never the page */
+.sc-terms { flex: none; display: flex; align-items: center; gap: 14px; padding: 6px 16px 2px; overflow-x: auto; scrollbar-width: none; }
+.sc-terms::-webkit-scrollbar { display: none; }
+.sc-tg { flex: none; display: flex; align-items: center; gap: 6px; }
+.sc-tg[hidden] { display: none; }
+.sc-tl { font-size: 12px; font-weight: 600; color: var(--muted); }
+.sc-tg button { flex: none; padding: 5px 10px; }
 .sc-nav { display: flex; align-items: center; margin-left: auto; font-size: 12px; font-weight: 600; color: var(--muted); }
 .sc-nav button { width: 30px; height: 30px; border: 0; border-radius: 8px; background: none; color: var(--green); font-size: 20px; line-height: 1; cursor: pointer; }
 .sc-nav button:active { background: var(--bg); }
@@ -318,30 +327,52 @@ main[data-tab="sched"] .sched, main[data-tab="profile"] .page { display: flex; }
 .wk-times span { position: absolute; right: 4px; line-height: 1; transform: translateY(-4px); }
 .wk-times span:first-child { transform: none; }
 .wk-cols {
-  flex: 1; position: relative; border: 1px solid var(--line); border-width: 0 1px 1px 0;
-  background-image: linear-gradient(var(--line) 1px, transparent 1px), linear-gradient(90deg, var(--line) 1px, transparent 1px);
-  background-size: 100% calc(100% / var(--rows)), calc(100% / var(--n)) 100%;
+  flex: 1; position: relative; border: 1px solid var(--line); border-width: 1px 1px 1px 0;
+  background-image: linear-gradient(90deg, var(--line) 1px, transparent 1px);
+  background-size: calc(100% / var(--n)) 100%;
 }
-.wk-b { position: absolute; width: calc(100% / var(--n) - 3px); margin-left: 1.5px; padding: 1px 3px; overflow: hidden; border-radius: 4px; background: var(--sf); border-left: 3px solid var(--sb); color: var(--fg); line-height: 14px; }
-.wk-b b { display: block; font-size: 12px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.wk-b span { display: block; font-size: 12px; color: var(--muted); white-space: nowrap; }
-.wk-b.short span { display: none; }
-/* phone: five 61 px day columns; 11 px keeps a whole class code on one line */
-@media (max-width: 899px) { .wk-b { padding: 1px 2px; } .wk-b b, .wk-b span { font-size: 11px; } }
-.wk-b.short { display: flex; align-items: center; }
+.wk-hl { position: absolute; left: 0; right: 0; height: 1px; background: var(--line); }
+/* a block: short title (or code, per Labels), the full time range in bright numbers, the code under it (Both) */
+.wk-b { position: absolute; width: calc(100% / var(--n) - 3px); margin-left: 1.5px; padding: 2px 4px; overflow: hidden; border-radius: 4px; background: var(--sf); border-left: 3px solid var(--sb); color: var(--fg); display: flex; flex-direction: column; }
+.wk-b .wt { order: 1; font-size: 14px; line-height: 16px; font-weight: 700; overflow: hidden; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow-wrap: anywhere; }
+.wk-b .wtm { order: 2; flex: none; font-size: 13px; line-height: 16px; font-weight: 700; color: var(--fg); white-space: nowrap; font-variant-numeric: tabular-nums; letter-spacing: -.02em; }
+.wk-b .wc { order: 3; font-size: 12px; line-height: 15px; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+#scWeek:not([data-lbl="both"]) .wk-b .wc { display: none; }
+#scWeek[data-lbl="code"] .wk-b .wt { display: none; }
+#scWeek[data-lbl="code"] .wk-b .wc { display: block; order: 1; font-size: 14px; line-height: 16px; font-weight: 700; }
+.wk-b.short { padding-top: 1px; padding-bottom: 0; }
+.wk-b.short .wt { -webkit-line-clamp: 1; white-space: nowrap; text-overflow: ellipsis; display: block; flex: none; }
+.wk-b.short .wc { display: none; }
+#scWeek[data-lbl="code"] .wk-b.short .wc { display: block; }
+.wk-b.tiny .wt, .wk-b.tiny .wc, #scWeek[data-lbl="code"] .wk-b.tiny .wc { display: none; }
+.wk-b.tiny { justify-content: center; padding-top: 0; }
+/* phone: five ~70 px day columns */
+@media (max-width: 899px) {
+  .wk-b { padding: 1px 3px; }
+  .wk-b .wt, #scWeek[data-lbl="code"] .wk-b .wc { font-size: 13px; line-height: 15px; }
+  .wk-b .wtm { font-size: 12px; line-height: 14px; letter-spacing: -.03em; }
+  .wk-b .wc { font-size: 11px; line-height: 13px; }
+}
 .sc-list { flex: 1; min-height: 0; overflow: auto; list-style: none; margin: 0; padding: 0 8px 8px; border-top: 1px solid var(--line); overscroll-behavior: contain; }
 .sc-list .none { padding: 10px 8px; color: var(--muted); }
-.sc-row { width: 100%; display: flex; align-items: center; gap: 6px; padding: 8px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; font-size: 12px; cursor: pointer; }
+.sc-row { width: 100%; display: flex; align-items: flex-start; gap: 10px; padding: 10px 8px; border: 0; border-bottom: 1px solid var(--line); background: none; text-align: left; font-size: 14px; color: var(--fg); cursor: pointer; }
 .sc-row:active { background: var(--bg); }
-.sc-row .sw { flex: none; width: 10px; height: 10px; border-radius: 3px; background: var(--sf); border: 1.5px solid var(--sb); }
-.sc-row b { flex: none; width: 64px; white-space: nowrap; }
-.sc-row .when { flex: none; width: 84px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.sc-row .who { flex: 1; min-width: 0; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; color: var(--muted); }
-.sc-row .seat { flex: none; width: 50px; text-align: right; font-size: 12px; color: var(--muted); }
+.sc-row.lt { cursor: default; }
+.sc-row.lt:active { background: none; }
+.sc-row .sw { flex: none; width: 12px; height: 12px; margin-top: 5px; border-radius: 3px; background: var(--sf); border: 1.5px solid var(--sb); }
+/* a class block: the title big, the code small beside it, then one readable line per fact */
+.sc-main { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 2px; }
+.sc-name { display: flex; align-items: baseline; gap: 8px; min-width: 0; }
+.sc-name b { font-size: 17px; line-height: 22px; font-weight: 700; overflow-wrap: anywhere; }
+.sc-name small { flex: none; font-size: 13px; font-weight: 600; color: var(--muted); white-space: nowrap; }
+.sc-ln { font-size: 14px; line-height: 19px; color: var(--fg); overflow-wrap: anywhere; }
+.sc-ln.when { font-weight: 700; font-variant-numeric: tabular-nums; }
+.sc-ln .rt { margin-left: 4px; vertical-align: 1px; }
 .seat.full { color: var(--bad); }
-.sc-row .crn { flex: none; min-width: 40px; text-align: right; font-size: 12px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.crn { font-variant-numeric: tabular-nums; }
 .crn.pin { color: var(--green); font-weight: 700; }
-.sc-row.off .why { flex: 1; color: var(--muted); font-style: italic; }
+.sc-row .why { color: var(--muted); font-style: italic; }
+.sc-ln .gb { display: inline-block; min-width: 28px; margin-left: 4px; padding: 0 4px; text-align: center; font-style: normal; }
 .rt { flex: none; display: inline-block; min-width: 26px; padding: 1px 0; border-radius: 4px; background: hsl(var(--rh) 58% var(--grade-l)); color: #fff; font-style: normal; font-size: 12px; font-weight: 700; text-align: center; text-decoration: none; }
 .rt.unrated { background: none; color: var(--muted); font-weight: 400; }
 .sc-add { width: 100%; padding: 9px 8px; border: 0; background: none; color: var(--green); font-weight: 600; text-align: left; cursor: pointer; }
@@ -355,7 +386,10 @@ dialog.secs { width: min(460px, calc(100vw - 32px)); }
 .sc-adds { display: flex; }
 .sc-adds .sc-add { width: auto; }
 .sc-adds .sc-add + .sc-add { margin-left: auto; }
-.sc-row .pick-sec { flex: 1; color: var(--green); font-weight: 600; }
+.sc-row .pick-sec { color: var(--green); font-weight: 600; font-style: normal; }
+/* a term with no section times: no week grid, its classes as a list across the whole section */
+.sched.list-term .sc-week { display: none !important; }
+.sched.list-term .sc-list { border-top: 0; }
 #myTipText { white-space: normal; width: 240px; }
 .my-list li { display: flex; align-items: center; gap: 8px; padding: 4px 0; }
 .my-list li.miss span { color: var(--muted); }
@@ -413,8 +447,13 @@ dialog.hand input { font: inherit; font-size: 16px; width: 150px; padding: 6px 8
   .plan { order: 1; }
   .sc-bar { padding: 0 16px; height: 44px; }
   .sc-body { flex-direction: row; }
-  .sc-week { flex: 1; height: auto; padding: 0 16px 16px 6px; }
-  .sc-list { flex: none; width: 420px; border-top: 0; border-left: 1px solid var(--line); }
+  .sc-week { flex: 1; min-width: 0; height: auto; padding: 0 12px 12px 4px; }
+  /* the class list gets a third of the width (Tim, 2026-10-23: "Give it more like a third") */
+  .sc-list { flex: none; width: 33.4%; border-top: 0; border-left: 1px solid var(--line); padding: 0 12px 12px; }
+  .sc-terms { display: grid; grid-template-columns: 1fr auto 1fr; padding: 8px 16px 2px; }
+  .tg-past { justify-self: start; } .tg-current { grid-column: 2; justify-self: center; } .tg-future { grid-column: 3; justify-self: end; }
+  .sched.list-term .sc-list { width: auto; flex: 1; border-left: 0; display: grid; grid-template-columns: repeat(auto-fill, minmax(320px, 1fr)); column-gap: 24px; align-content: start; }
+  .sched.list-term .sc-list > li.none { grid-column: 1 / -1; }
 }
 
 /* keyboard users keep a focus ring; a tap or click doesn't leave one */
@@ -654,7 +693,17 @@ main.empty .xbar { visibility: hidden; }
 @media (min-width: 900px) {
   .sc-ftog { display: none; }
   .sc-filt { display: flex; padding: 0 16px 8px; }
+  /* one row under the term bar: the filters (left) + which schedule / Copy CRNs (right) */
+  main[data-tab="sched"] .sched { display: grid; grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: auto auto minmax(0, 1fr); }
+  .sched > .sc-terms, .sched > .sc-body { grid-column: 1 / -1; }
+  .sched > .sc-filt { grid-column: 1; grid-row: 2; align-self: center; padding: 6px 16px; }
+  .sched > .sc-bar { grid-column: 2; grid-row: 2; height: auto; padding: 6px 16px 6px 0; }
+  .sched > .sc-body { grid-row: 3; }
 }
+/* phone: the week grid gets more height so a 50-minute class keeps its title and time */
+@media (max-width: 899px) { .sc-week { height: 57%; } }
+/* a term shown as a list has no schedule controls */
+.sched.list-term .sc-bar, .sched.list-term .sc-filt { display: none !important; }
 
 /* laptop, on the Flowchart: a class's details in the right-side section, over the plan (not a modal) */
 @media (min-width: 900px) {

@@ -24,6 +24,70 @@ export function defaultTerm(codes, date = new Date()) {
   return sorted.find((c) => c > cur) ?? sorted[sorted.length - 1] ?? null;
 }
 
+/** "Fall 2025" / "2025 Fall" -> "202540" (null when it names no term). */
+const SEASON_CODE = { spring: 20, summer: 30, fall: 40 };
+export function codeOfLabel(label) {
+  const s = String(label || '');
+  const m = s.match(/\b(spring|summer|fall)\s+(\d{4})\b/i) || s.match(/\b(\d{4})\s+(spring|summer|fall)\b/i);
+  if (!m) return null;
+  const [season, year] = /^\d/.test(m[1]) ? [m[2], m[1]] : [m[1], m[2]];
+  return `${year}${SEASON_CODE[season.toLowerCase()]}`;
+}
+
+/**
+ * The Schedule's term bar in three groups (Tim, 2026-10-23: "Seperate Past, Current, and Future semesters in
+ * the top bar ... (If the next semester's courses are open, put that in the current category)").
+ *   sections: term codes that have section data · current: the term in session ("202640")
+ *   past: term labels/codes from the imported audit · planned: term labels/codes of the plan's semesters
+ * -> { past: [...], current: [...], future: [...] } codes, oldest first. Current = the term in session plus every
+ * later term whose sections are published; past = audit terms before it; future = plan terms after Current.
+ */
+export function splitTerms({ sections = [], current, past = [], planned = [] }) {
+  const code = (x) => (/^\d{6}$/.test(String(x)) ? String(x) : codeOfLabel(x));
+  const cur = String(current);
+  const uniq = (xs) => [...new Set(xs.map(code).filter(Boolean))].sort();
+  const now = uniq([cur, ...sections.filter((c) => String(c) > cur)]);
+  const last = now[now.length - 1];
+  return {
+    past: uniq(past).filter((c) => c < cur),
+    current: now,
+    future: uniq(planned).filter((c) => c > last),
+  };
+}
+
+/** The classes the audit shows for a past term: [{ code, grade }] ("when" = class code -> "Fall 2025"). */
+export function classesInTerm(when = {}, grades = {}, term) {
+  return Object.entries(when || {})
+    .filter(([, t]) => codeOfLabel(t) === String(term))
+    .map(([c]) => ({ code: c, grade: grades?.[c] || '' }))
+    .sort((a, b) => a.code.localeCompare(b.code, 'en', { numeric: true }));
+}
+
+/** "10–11:15", "9:30–10:45", "1–2" (en dash; ":00" dropped). */
+export const timeRange = (s, e) => `${fmtTime(s, true)}–${fmtTime(e, true)}`;
+/** A section's days + full time range: "MWF 10–10:50", "TR 2:30–3:45" ("+" when another meeting differs), "Online" / "TBA". */
+export function whenFull(sec) {
+  const parts = (sec.meetings?.length ? sec.meetings : [sec]).filter((m) => m.days && m.start && m.end);
+  if (!parts.length) return sec.mode === 'online' ? 'Online' : 'TBA';
+  const p = parts[0];
+  const extra = parts.slice(1).some((m) => m.start !== p.start || m.end !== p.end) ? ' +' : '';
+  const days = [...new Set(parts.filter((m) => m.start === p.start && m.end === p.end).map((m) => m.days).join(''))].join('');
+  return `${days} ${timeRange(toMin(p.start), toMin(p.end))}${extra}`;
+}
+/**
+ * The week grid's hours: only the ones the classes use, plus a small margin (Tim, 2026-10-23: "condense the
+ * timing of the classes part"). Minutes from midnight { lo, hi }: 15 min of margin, snapped to the half hour,
+ * at least 3 hours tall; no classes = 8 am-5 pm.
+ */
+export function hourWindow(meetings = [], minSpan = 180) {
+  if (!meetings.length) return { lo: 480, hi: 1020 };
+  let lo = Math.min(...meetings.map((m) => m.s)), hi = Math.max(...meetings.map((m) => m.e));
+  lo = Math.floor((lo - 15) / 30) * 30;
+  hi = Math.ceil((hi + 15) / 30) * 30;
+  if (hi - lo < minSpan) { lo -= Math.floor((minSpan - (hi - lo)) / 60) * 30; hi = lo + Math.max(minSpan, hi - lo); }
+  return { lo: Math.max(0, lo), hi: Math.min(1440, hi) };
+}
+
 // ---------- sections ----------
 export const toMin = (t) => (t && /^\d{4}$/.test(t) ? +t.slice(0, 2) * 60 + +t.slice(2) : null);
 export function fmtTime(min, short = false) {

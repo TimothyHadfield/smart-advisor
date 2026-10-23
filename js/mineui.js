@@ -47,14 +47,21 @@ export function initMine(ctx) {
     ctx.sched.idx = 0;
     $('scCopy').disabled = !crns.length;
     ctx.drawWeek({ picks });
-    const room = (s) => [s.bldg, s.room].filter((x) => x && !/^(ONLINE|LIVE|STREAM|TBA)$/i.test(x)).join(' ');
+    // one block per class: title first, then time / instructor / room / CRN + credits on their own lines
+    const line = (x) => (x ? `<span class="sc-ln">${x}</span>` : '');
     $('scList').innerHTML = (rows.length ? rows.map((r, i) => {
       const sw = `<span class="sw s${i % 10}"></span>`;
-      if (r.pick) return `<li><button type="button" class="sc-row" data-mi="${i}">${sw}<b>${esc(r.code)}</b><span class="why pick-sec">Pick your section</span></button></li>`;
+      const g = groups.get(r.code) || [];
+      const name = ctx.nameLine(r.code, ctx.schedName(r.code, g[0]?.title || ''));
+      if (r.pick) return `<li><button type="button" class="sc-row" data-mi="${i}">${sw}<span class="sc-main">${name}<span class="sc-ln why pick-sec">Pick your section</span></span></button></li>`;
       const s = r.sec;
-      return `<li><button type="button" class="sc-row" data-mi="${i}">${sw}<b>${esc(r.code)}</b><span class="when">${esc(whenOf(s))}</span>`
-        + `<span class="who">${esc(s.hand ? '' : ctx.lastName(s.instr))}</span>${s.hand ? '' : ctx.ratingBadge(s.instr)}<span class="seat">${esc(room(s))}</span>`
-        + `<span class="crn">${esc(s.crn || '')}</span></button></li>`;
+      const cr = ctx.crLine(ctx.schedCredits(r.code, s.hand ? null : s));
+      return `<li><button type="button" class="sc-row" data-mi="${i}">${sw}<span class="sc-main">${name}`
+        + line(esc(ctx.whenFull(s)))
+        + (s.hand ? '' : line(`${esc(ctx.lastName(s.instr))} ${ctx.ratingBadge(s.instr)}`))
+        + line(esc(ctx.roomOf(s)))
+        + line([s.crn ? `<span class="crn">CRN ${esc(s.crn)}</span>` : '', cr].filter(Boolean).join(' · '))
+        + '</span></button></li>';
     }).join('') : '<li class="none">No classes yet</li>')
       + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-hand>By hand</button></li>' + (ctx.schedSrc?.(code) || '');
   }

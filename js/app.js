@@ -3,12 +3,12 @@ import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
 import { groupNodes, placeGroups, groupProgress, groupList, shortName as groupName } from './groups.js';
-import { boxName, reqName, optionCode } from './shortnames.js';
+import { boxName, reqName, optionCode, shortTitle } from './shortnames.js';
 import { parseAudit, matchAudit, gradeInfo } from './audit.js';
 import { toDoc, applyDoc } from './sync.js';
 import { initAccount } from './account.js';
 import { filterPrograms, programGroup, catalogInfo, programYears, programPath, yearFor, combinePrograms, auditPrograms, shortName } from './programs.js';
-import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
+import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS, splitTerms, classesInTerm, timeRange, whenFull, hourWindow, codeOfLabel } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
@@ -900,7 +900,7 @@ function renderPlan(plan) {
   const STONE = { admission: 'Apply', 'advanced-standing': 'Advanced Standing' };
   const rowsAt = (i) => stones.filter((m) => m.at === i).map((m) => `<div class="apply" data-gate="${esc(m.gate)}"><span>${STONE[m.gate] || esc(m.gate)}</span>${m.gate === 'admission' ? advA(progParts[0]?.id) + aplA(progParts[0]?.id) : ''}</div>`).join('');
   $('sems').innerHTML = plan.semesters.map((s, i) => rowsAt(i) + `
-    <div class="sem${semCls(i)}"><h3>${s.term}<span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
+    <div class="sem${semCls(i)}"><h3><button type="button" class="sem-go" data-term="${esc(s.term)}" title="Open in Schedule">${s.term}</button><span>${s.credits}</span></h3><ul>${s.items.filter((it) => !milestone(it)).map((it) =>
       `<li class="${it.kind === 'course' ? '' : 'ph'}" data-unit="${esc(it.unitId)}" data-sem="${i}" data-item="${esc(it.id)}" title="${esc([it.label, it.title, it.offered].filter(Boolean).join(' · '))}"><span>${esc(it.kind === 'course' ? it.label : reqLabel(it.label, unitOf(it.unitId) || it.unit))}</span><span>${it.credits}</span></li>`).join('')}</ul></div>`).join('')
     + plan.warnings.map((w) => `<div class="warn">${esc(w)}</div>`).join('');
 }
@@ -1035,8 +1035,10 @@ const labelView = () => { const s = state.settings; return s.labels === 'both' &
 function renderLabels() {
   const v = labelView();
   $('boxes').dataset.lbl = v;
-  for (const b of $('lblSeg').children) { b.classList.toggle('on', b.dataset.v === v); b.setAttribute('aria-pressed', b.dataset.v === v); }
+  $('scWeek').dataset.lbl = v; // the schedule's week blocks + class list use the same setting
+  for (const b of [...$('lblSeg').children, ...$('scLbl').children]) { b.classList.toggle('on', b.dataset.v === v); b.setAttribute('aria-pressed', b.dataset.v === v); }
 }
+const labelsNow = () => labelView();
 
 // ---------- "No audit loaded — Upload or Sign in": so missing grades never look like a bug ----------
 // An audit counts as loaded when a class came from one (settings.src), the import saved its catalog year,
@@ -1334,7 +1336,11 @@ function wireNav() {
     if (st.dlg && !$(st.dlg)?.open) history.replaceState({ ...st, dlg: undefined }, '', location.href); // forward into a closed sheet
     if (model) syncURL();
   });
-  $('back').addEventListener('click', goHome);
+  // the back arrow goes Home, except on a screen opened from another one (a plan semester heading -> Schedule):
+  // then it steps back to that screen
+  $('back').addEventListener('click', () => {
+    if (history.state?.from && !history.state?.dlg && depthNow() > 1) history.back(); else goHome();
+  });
   // the major on Home, "Programs" in Profile, "Pick your program": the program picker
   document.addEventListener('click', (e) => { if (e.target.closest('[data-pick]')) openPicker(); });
 }
@@ -1693,7 +1699,14 @@ async function renderSched() {
   await loadSchedIndex();
   if (gen !== schedGen) return;
   if (!sched.terms.length) { $('scList').innerHTML = '<li class="none">Class list not loaded</li>'; return; }
-  $('scTerms').innerHTML = sched.terms.map((c) => `<button type="button" data-term="${c}"${c === sched.term ? ' class="on"' : ''}>${termInfo(c).short}</button>`).join('');
+  const bar = schedTerms();
+  const all = [...bar.past, ...bar.current, ...bar.future];
+  if (!all.includes(sched.term)) sched.term = defaultTerm(sched.terms);
+  drawTermBar(bar);
+  // a term with no section times (past terms, plan terms after the published ones): its classes as a list
+  const listOnly = !sched.terms.includes(sched.term);
+  $('schedPanel').classList.toggle('list-term', listOnly);
+  if (listOnly) { $('schedPanel').classList.remove('mine'); drawTermList(sched.term, bar.past.includes(sched.term)); return; }
   if (!sched.groups.has(sched.term)) $('scList').innerHTML = '<li class="none">Loading…</li>';
   const code = sched.term;
   const groups = await termGroups(code);
@@ -1747,19 +1760,94 @@ function drawWeek(s) {
   const blocks = [];
   (s?.picks || []).forEach((o, i) => { if (o) for (const sec of o.secs) for (const m of meetingsOf(sec)) blocks.push({ i, m, sec }); });
   const days = ['M', 'T', 'W', 'R', 'F', ...['S', 'U'].filter((d) => blocks.some((b) => b.m.day === d))];
-  let lo = 480, hi = 1020;
-  for (const b of blocks) { lo = Math.min(lo, Math.floor(b.m.s / 60) * 60); hi = Math.max(hi, Math.ceil(b.m.e / 60) * 60); }
+  // only the hours the classes use, plus a small margin (Tim, 2026-10-23: "condense the timing of the classes part")
+  const { lo, hi } = hourWindow(blocks.map((b) => b.m));
   const span = hi - lo, pct = (v) => +(v * 100).toFixed(3);
   const hours = [];
-  for (let h = lo; h < hi; h += 60) hours.push(`<span style="top:${pct((h - lo) / span)}%">${((h / 60 + 11) % 12) + 1}</span>`);
+  const lines = [];
+  for (let h = Math.ceil(lo / 60) * 60; h < hi; h += 60) {
+    hours.push(`<span style="top:${pct((h - lo) / span)}%">${((h / 60 + 11) % 12) + 1}</span>`);
+    lines.push(`<i class="wk-hl" style="top:${pct((h - lo) / span)}%"></i>`);
+  }
   $('scWeek').style.setProperty('--n', days.length);
+  // each block: the class's short title (or code, per Labels), then its full time range in bright numbers
+  // (Tim, 2026-10-23: "Show the full time "10 - 11:15" or whatever in bright numbers")
   $('scWeek').innerHTML = `<div class="wk-head"><span></span>${days.map((d) => `<span>${DAY_NAME[d]}</span>`).join('')}</div>`
-    + `<div class="wk-body" style="--rows:${span / 60}"><div class="wk-times">${hours.join('')}</div><div class="wk-cols">`
-    + blocks.map((b) => `<div class="wk-b s${b.i % 10}" style="left:calc(${days.indexOf(b.m.day)} * 100% / var(--n));top:${pct((b.m.s - lo) / span)}%;height:${pct((b.m.e - b.m.s) / span)}%" title="${esc(`${codeLabel(b.sec)} ${whenOf(b.sec)} ${b.sec.bldg || ''} ${b.sec.room || ''}`)}">`
-      + `<b>${esc(codeLabel(b.sec))}</b><span>${fmtTime(b.m.s)}</span></div>`).join('')
+    + `<div class="wk-body"><div class="wk-times">${hours.join('')}</div><div class="wk-cols">${lines.join('')}`
+    + blocks.map((b) => {
+      const code = codeLabel(b.sec), name = schedName(code, b.sec.title);
+      return `<div class="wk-b s${b.i % 10}" style="left:calc(${days.indexOf(b.m.day)} * 100% / var(--n));top:${pct((b.m.s - lo) / span)}%;height:${pct((b.m.e - b.m.s) / span)}%" title="${esc(`${name} · ${code} ${whenFull(b.sec)} ${b.sec.bldg || ''} ${b.sec.room || ''}`)}">`
+        + `<b class="wt">${esc(name || code)}</b><span class="wtm">${timeRange(b.m.s, b.m.e)}</span><b class="wc">${esc(code)}</b></div>`;
+    }).join('')
     + '</div></div>';
-  // a block too short for two lines shows the course only
-  for (const el of $('scWeek').querySelectorAll('.wk-b')) el.classList.toggle('short', el.offsetHeight < 30);
+  // a short block keeps one line of title + the time; a tiny one keeps the time only (the time always wins)
+  const cut = (el) => { const t = el.querySelector('.wtm'); return t.offsetTop + t.offsetHeight > el.clientHeight + 1; };
+  for (const el of $('scWeek').querySelectorAll('.wk-b')) {
+    if (cut(el)) el.classList.add('short');
+    if (cut(el)) el.classList.add('tiny');
+  }
+}
+// a class's short name ("Calc 3"): from its catalog title (the program's, else the full course list), else the
+// section's own title; data/short-titles.json shortens it like the flowchart boxes (js/shortnames.js)
+function schedName(code, fallback = '') {
+  const full = model?.program.courses?.[code]?.title || courseCat.map[code]?.title || fallback || '';
+  return shortTitle(shortData?.titles, full) || shortTitle(shortData?.titles, fallback);
+}
+const schedCredits = (code, sec) => model?.program.courses?.[code]?.credits ?? courseCat.map[code]?.credits ?? sec?.cr ?? null;
+// a class block's first line: the short title big, the code small beside it (Labels "Code": the other way round)
+function nameLine(code, title) {
+  const big = labelsNow() === 'code' || !title ? code : title;
+  const small = big === code ? title : code;
+  return `<span class="sc-name"><b>${esc(big)}</b>${small ? `<small>${esc(small)}</small>` : ''}</span>`;
+}
+const crLine = (cr) => (cr != null && cr !== '' ? `${cr} cr` : '');
+const infoLine = (...parts) => { const p = parts.filter(Boolean); return p.length ? `<span class="sc-ln">${p.join(' · ')}</span>` : ''; };
+const roomOf = (s) => (s.mode === 'online' ? 'Online' : [s.bldg, s.room].filter((x) => x && !/^(ONLINE|LIVE|STREAM|TBA)$/i.test(x)).join(' ') || (s.mode === 'livestream' ? 'Live stream' : ''));
+
+// ---------- the term bar: Past | Current | Future ----------
+// Tim, 2026-10-23: "make past and future semesters be able to be selected at the top based on the user's
+// wolverine track they uploaded ... Seperate Past, Current, and Future semesters in the top bar as the left,
+// middle, and right sides of the page. (If the next semester's courses are open, put that in the current category)."
+function schedTerms() {
+  return splitTerms({
+    sections: sched.terms,
+    current: currentTermCode(),
+    past: hasAudit() ? Object.values(state.settings.when || {}) : [],
+    planned: (lastPlan?.semesters || []).map((s) => s.term),
+  });
+}
+function drawTermBar(bar) {
+  const btn = (c) => `<button type="button" data-term="${c}"${c === sched.term ? ' class="on" aria-pressed="true"' : ''}>${termInfo(c).short}</button>`;
+  const group = (k, label) => `<div class="sc-tg tg-${k}"${bar[k].length ? '' : ' hidden'}><span class="sc-tl">${label}</span><div class="seg">${bar[k].map(btn).join('')}</div></div>`;
+  $('scTerms').innerHTML = group('past', 'Past') + group('current', 'Current') + group('future', 'Future');
+  // a phone scrolls the strip itself (never the page): keep the chosen term in view
+  const strip = $('scTerms'), on = strip.querySelector('button.on');
+  if (on && strip.scrollWidth > strip.clientWidth) {
+    const r = on.getBoundingClientRect(), sr = strip.getBoundingClientRect();
+    strip.scrollLeft += r.left + r.width / 2 - (sr.left + sr.width / 2);
+  }
+}
+// a past or later term (no section times): its classes as a list, full width.
+// Past = the audit's classes that term with their grades; later = the plan's semester with its status.
+function drawTermList(code, past) {
+  const label = termInfo(code).label;
+  let rows = [];
+  if (past) {
+    const list = classesInTerm(state.settings.when, gradeMap(), code);
+    if (!courseCat.ready && list.some((r) => !model?.program.courses?.[r.code])) loadCourses().then(() => { if (sched.term === code) drawTermList(code, past); });
+    rows = list.map((r, i) => `<li><div class="sc-row lt" data-code="${esc(r.code)}"><span class="sw s${i % 10}"></span><span class="sc-main">${nameLine(r.code, schedName(r.code))}`
+      + infoLine(r.grade ? `Grade ${gradeBadge(r.grade)}` : 'Taken', crLine(schedCredits(r.code))) + '</span></div></li>');
+  } else {
+    const sem = lastPlan?.semesters.find((s) => s.term === label);
+    rows = (sem?.items || []).filter((it) => !milestone(it)).map((it, i) => {
+      const course = it.kind === 'course' && it.code;
+      const name = course ? nameLine(it.code, schedName(it.code, it.title)) : `<span class="sc-name"><b>${esc(reqLabel(it.label, unitOf(it.unitId) || it.unit))}</b></span>`;
+      return `<li><div class="sc-row lt"${course ? ` data-code="${esc(it.code)}"` : ''}><span class="sw s${i % 10}"></span><span class="sc-main">${name}`
+        + infoLine('Planned', crLine(it.credits)) + infoLine(esc(it.offered || '')) + '</span></div></li>';
+    });
+  }
+  $('scWeek').innerHTML = '';
+  $('scList').innerHTML = rows.length ? rows.join('') : `<li class="none">${past ? 'No classes from your audit this term' : 'Nothing planned this term'}</li>`;
 }
 const codeLabel = (sec) => `${sec.subj} ${sec.num}`;
 function whyUnplaced(c) {
@@ -1769,14 +1857,20 @@ function whyUnplaced(c) {
 }
 function drawList(s) {
   const t = termState(sched.term);
+  // one block per class: the title first, then each fact on its own readable line, a line between classes
+  // (Tim, 2026-10-23: "just put the class title and any relevant info below it and seperate the classes with lines")
   $('scList').innerHTML = sched.courses.map((c, i) => {
     const o = s?.picks[i];
     const sw = `<span class="sw s${i % 10}"></span>`;
-    if (!o) return `<li><button type="button" class="sc-row off" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="why">${whyUnplaced(c)}</span></button></li>`;
+    const name = nameLine(c.code, schedName(c.code, c.sections[0]?.title));
+    if (!o) return `<li><button type="button" class="sc-row off" data-i="${i}">${sw}<span class="sc-main">${name}<span class="sc-ln why">${whyUnplaced(c)}</span></span></button></li>`;
     const sec = o.secs[0];
-    return `<li><button type="button" class="sc-row" data-i="${i}">${sw}<b>${esc(c.code)}</b><span class="when">${esc(whenOf(sec))}</span>`
-      + `<span class="who">${esc(lastName(sec.instr))}</span>${ratingBadge(sec.instr)}<span class="seat${sec.seats > 0 ? '' : ' full'}">${seatText(sec)}</span>`
-      + `<span class="crn${t.pin[c.code] ? ' pin' : ''}">${o.secs.map((x) => x.crn).join('+')}</span></button></li>`;
+    return `<li><button type="button" class="sc-row" data-i="${i}">${sw}<span class="sc-main">${name}`
+      + `<span class="sc-ln when">${esc(whenFull(sec))}</span>`
+      + `<span class="sc-ln who">${esc(lastName(sec.instr))} ${ratingBadge(sec.instr)}</span>`
+      + infoLine(esc(roomOf(sec)))
+      + `<span class="sc-ln"><span class="crn${t.pin[c.code] ? ' pin' : ''}">CRN ${o.secs.map((x) => x.crn).join('+')}</span> · <span class="seat${sec.seats > 0 ? '' : ' full'}">${seatText(sec)}</span>${crLine(schedCredits(c.code, sec)) ? ` · ${crLine(schedCredits(c.code, sec))}` : ''}</span>`
+      + '</span></button></li>';
   }).join('') + '<li class="sc-adds"><button type="button" class="sc-add" id="scAdd">+ Add class</button><button type="button" class="sc-add" data-mine>Add my schedule</button></li>' + schedSrc(sched.term);
 }
 function openCourse(i) {
@@ -1805,6 +1899,7 @@ let mine = null;
 function wireSched() {
   mine = initMine({
     $, esc, openDlg, save, toast, termState, termGroups, sched, drawWeek, ratingBadge, lastName, schedSrc, secSrc,
+    nameLine, schedName, schedCredits, crLine, whenFull, roomOf,
     render: () => renderSched(),
     lastTerm: () => state.settings.lastTerm || null,
     planHas: (code) => !!lastPlan?.semesters.find((s) => s.term === termInfo(code).label)?.items.some((it) => it.kind === 'course'),
@@ -1824,6 +1919,28 @@ function wireSched() {
     if (!b || b.dataset.term === sched.term) return;
     sched.term = b.dataset.term;
     renderSched();
+  });
+  // Labels (Code / Title / Both) in the schedule's own controls: the same setting as the flowchart's
+  $('scLbl').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-v]');
+    if (!b || b.dataset.v === labelsNow()) return;
+    state.settings.labels = b.dataset.v;
+    state.settings.labelsHand = true;
+    save();
+    renderLabels();
+    renderSched();
+  });
+  // a semester heading in the plan opens the Schedule on that term (Tim, 2026-10-23: "if you click on the
+  // semester title on the right side, bring the user straight to the schedule section with that specific
+  // semester selected"). Back (and the back arrow) return to where it was tapped.
+  $('sems').addEventListener('click', (e) => {
+    const b = e.target.closest('button.sem-go');
+    if (!b) return;
+    const code = codeOfLabel(b.dataset.term);
+    if (!code) return;
+    sched.term = code;
+    pushNav({ tab: 'sched', from: tabNow() });
+    setTab('sched', false);
   });
   $('scPrev').addEventListener('click', () => { if (sched.idx > 0) { sched.idx--; drawSched(); } });
   $('scNext').addEventListener('click', () => { if (sched.idx < sched.list.length - 1) { sched.idx++; drawSched(); } });
