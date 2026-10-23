@@ -145,7 +145,8 @@ test('class sheet: pick a grade; it shows on the box and survives untapping', as
   await p.click('#planSeg button[data-v="classes"]');
   await p.waitForSelector('#clList .cl-row');
   // a Still need row opens the class sheet (Taken switch off, no grade picker yet)
-  await (await p.$('#clList .cl-row:has(b:text-is("PHYS 2210"))')).click();
+  // (a selector click, not a held element: the list renders again once the course catalog arrives)
+  await p.click('#clList .cl-row:has(b:text-is("PHYS 2210"))');
   await p.waitForSelector('#clsDlg[open]');
   assert.equal(await p.$$eval('#clsGrades select', (x) => x.length), 0);
   await p.click('#clsTaken');

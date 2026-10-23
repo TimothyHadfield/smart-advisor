@@ -167,6 +167,18 @@ export function advisorLink(advisors, id) {
   const a = advisors && id ? advisors[id] : null;
   return a ? a.scheduleUrl || a.advisingUrl || null : null;
 }
+// UVU's own flowchart / degree map for a program (data/uvu-flowcharts.json): the edition of the program's
+// catalog year, else the newest; { url, label } or null. Label: "UVU's official flowchart (2026-27)".
+export function officialChart(charts, id, year) {
+  const list = charts && id ? charts[id] : null;
+  if (!list?.length) return null;
+  const newest = [...list].sort((a, b) => String(b.year || '9999').localeCompare(String(a.year || '9999')))[0];
+  const c = list.find((x) => x.year && x.year === year) || newest;
+  const kind = c.page ? `${c.kind}s` : c.kind;
+  const y = c.year ? ` (${c.year.slice(0, 5)}${c.year.slice(7)})` : '';
+  return { url: c.url, label: `UVU's official ${kind}${y}` };
+}
+
 // a class that waits on program acceptance / matriculation (an advisor signs the student in), not
 // University Advanced Standing (that one comes on its own)
 export function gatedNeed(course = {}, gates = []) {

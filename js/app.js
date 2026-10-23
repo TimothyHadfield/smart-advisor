@@ -9,7 +9,7 @@ import { filterPrograms, programGroup, catalogInfo, programYears, programPath, y
 import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
-import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed } from './uistate.js';
+import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, courseURL, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
 import { viewSet, hypoFrom, normHypo, hasHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
 
 const $ = (id) => document.getElementById(id);
@@ -208,9 +208,15 @@ async function loadPlan() {
   // Gen Ed class lists of the major's catalog year (missing: the current catalog's)
   const y = parts[0].year;
   const adv = getJSON(`${DATA}/advisors.json`);
+  const ofc = getJSON(`${DATA}/uvu-flowcharts.json`);
   gened = (y && y !== catalog.info.current && await getJSON(`${DATA}/${y}/gened.json`)) || await getJSON(`${DATA}/gened.json`);
   advisors = (await adv)?.programs || null;
+  const official = officialChart((await ofc)?.programs, parts[0].id, y || catalog.info.current);
   if (gen !== loadGen) return;
+  // UVU's own flowchart for this major (opens UVU's PDF in a new tab); hidden when the department has none.
+  // Set before the chart is laid out, so the chart never jumps when it appears.
+  $('uvuChart').hidden = !official;
+  if (official) { const a = $('uvuChart').firstElementChild; a.href = official.url; a.textContent = `${official.label} ↗`; }
   $('progName').textContent = parts.map((p) => p.program.name).join(' + ');
   progParts = parts;
   syncURL();
@@ -234,6 +240,7 @@ function showEmpty() {
   $('main').classList.add('empty');
   $('progName').textContent = 'Pick your program';
   $('noDates').hidden = true;
+  $('uvuChart').hidden = true;
   $('boxes').innerHTML = '';
   $('edges').innerHTML = '';
   $('legendItems').innerHTML = '';
