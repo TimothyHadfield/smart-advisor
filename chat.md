@@ -38,3 +38,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** "UVU's official flowchart (2026-27) ↗" line under the flowchart legend (catalog-year edition, else newest; new tab; hidden when none). `officialChart` in `js/uistate.js`.
 - **Verified how:** `tests/uvucharts.test.mjs` (6) + `tests/uvucharts.e2e.mjs` (4) failed on the old code first, pass now; suite 1159 pass / 1 skipped; e2e 28/28; phone-view 393 px + 1440 px, light + dark. `classes.e2e` grade test made race-proof (selector click).
 - **Open:** wording/placement are Tim's; course-sequence / advising-sheet PDFs not included.
+
+## 2026-10-22 · Matriculation line + sheet (builder `matric`)
+- **Asked (Tim):** "could you also add a dotted line in the flowchart that seperates the classes that need matriculation from the classes that don't? Also allow the matriculation label to be clicked on and have it tell you everything it knows about matriculatoin?"
+- **Built:** `js/matric.js` (sides from admission gates + everything downstream; catalog facts), `layoutGraph`/`routeChart` split (line column + label band), "Matriculation" button on the line → `#matDlg` sheet (Catalog, GPA, Grade, Before with done/planned chips, Needs it, After it, Deadline, Advisor, Report a mistake, Catalog ↗). 94 programs get a line.
+- **Verified how:** `tests/matric.test.mjs` (6, 4 failed on old code) + `tests/matric.e2e.mjs` (3, all failed on old code) pass; suite 1165 pass / 0 fail after rebase on uvucharts; e2e ui/hover/classes/advisors/import/mysched/fresh all pass (accounts needs emulators, not run). WebKit screenshots 393 px + 1440 px, light + dark, EE + Finance: no console errors, no overflow.
+- **Open:** label wording, row names, line colour, "downstream counts as needing it" are Tim's; phone shows the line after scrolling right or Fit.
