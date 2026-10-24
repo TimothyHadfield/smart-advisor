@@ -42,7 +42,7 @@ test('audit extras: name, UVID, overall GPA, AP and transfer sources', () => {
   assert.deepEqual(x.sources['MATH 1220'], { course: 'MATH 1220 Calculus II', inst: 'Salt Lake Community College' });
   assert.equal(x.sources['PHYS 2210'], undefined);
   // no ID in the audit: blank (the student types it), never made up
-  assert.equal(auditExtras(AUDIT.replace(/Student ID \d+\n/, '').replace(/ - 10000001/g, '')).uvid, undefined);
+  assert.equal(auditExtras(AUDIT.replace(/Student ID \d+\r?\n/, '').replace(/ - 10000001/g, '')).uvid, undefined);
 });
 
 test('EE answer sheet: the real form order, values from the audit, AP / transfer / in-progress / missing / below-C rows', () => {
