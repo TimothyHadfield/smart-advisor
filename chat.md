@@ -150,3 +150,10 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** see D35. Files: js/application.js (new), scripts/build-applications.mjs (new), data/applications.json (new), js/app.js, js/sources.js (uvuEmail + data source), js/fresh.js (STARTUP), index.html, css/app.css; tests application.test.mjs, application.e2e.mjs, fixtures/apply-audit.txt (made up).
 - **Verified:** unit 1264 tests, 1263 pass / 0 fail / 1 skipped; e2e all but accounts 89 pass / 0 fail / 1 skipped. Screenshots at 393×659 (light + dark) and 1440×900: no overflow, no console errors.
 - **Open:** real iPhone clipboard + print; Adobe fields for CE/civil/mechanical; Tim to judge the wording and layout.
+
+## 2026-10-23 · Manager session wrap-up (checkpoint)
+- **Asked (Tim):** "are you still working? I don't think any of my recent requests are actually changed to the cite." (the previous session ran out mid-wave; 3 builders resumed) · UVU research: "research online extensively about everything students have said about UVU that they might not be able to find officially and organize them all into a single file with links" · "prepare md files for chat reset."
+- **Decided:** ship each builder as soon as its tests pass; application helper = copy-ready answer sheet, not auto-fill (Adobe Sign, see D35).
+- **Built:** `docs/uvu-student-knowledge.md` (9e26efe, 8 research agents' sections merged, 343 links); chart3 (D31), sched (D32), polish (D33), iPhone (D34), apply (D35) all live; test fix 251fdde (CRLF fixture regex).
+- **Verified:** manager viewed builders' headless screenshots (EE flowchart laptop + phone, Home, class panel, schedule laptop + phone, application sheet laptop + phone). Unit suite on main checkout: 1264 / 1262 pass / 1 fail (CRLF) → fixed, application.test 8/8. e2e not rerun by the manager (builders: 89/0/1 at 760cc45).
+- **Open:** Tim's iPhone feedback; queued 10-22 features (difficulty balance, close to a minor, move/lock semesters, registration + calendar, outside credit); later research pass on UVU classes/professors when Tim asks.
