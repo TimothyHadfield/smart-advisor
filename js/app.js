@@ -435,8 +435,8 @@ function buildBoxes() {
     });
     longPress(b, () => { setHover(null); openClass({ node: n }); });
     // hover (mouse) or finger down (phone): its lines light up and a tiny label shows when
-    b.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') setHover(n.id); });
-    b.addEventListener('pointerleave', () => { if (hoverId === n.id) setHover(null); });
+    b.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') { setHover(n.id); peekClass(n); } });
+    b.addEventListener('pointerleave', () => { if (hoverId === n.id) setHover(null); unpeekClass(); });
     b.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') setHover(n.id); });
     for (const ev of ['pointerup', 'pointercancel']) b.addEventListener(ev, (e) => { if (e.pointerType !== 'mouse' && hoverId === n.id) setHover(null); });
     host.appendChild(b);
@@ -1532,8 +1532,9 @@ function reqOf(u) {
   const g = u.kind === 'option' ? unitOf(u.group) : u;
   return model.program.requirements[Math.floor(g?.order ?? -1)] || null;
 }
-function openClass({ node, item }) {
+function openClass({ node, item, peek = false }) {
   if (!model) return;
+  if (!peek) { clearTimeout(peekT); peeking = false; }
   const u = node ? (node.kind === 'option' ? node : unitOf(node.id) || node) : unitOf(item.unitId) || model.units.flatMap((x) => x.options || []).find((o) => o.id === item.unitId);
   if (!u && !item) return;
   const kind = item?.kind || u.kind;
@@ -1646,14 +1647,48 @@ function openClass({ node, item }) {
   drawClsGrades();
   $('clsDlg').dataset.code = code || '';
   if (code) fillSections(code);
+  const d = $('clsDlg');
+  // a hover preview (laptop): shown beside the chart without picking the class or adding a Back step
+  if (peek) {
+    if (!d.open) { d.classList.add('side'); d.classList.remove('bsheet'); d.show(); }
+    d.scrollTop = 0;
+    return;
+  }
   // on the chart: this class stays picked out while its details are open
   setSel(clsNode?.id || null);
   // laptop, on the Flowchart: the details open in the right-side section (over the plan), the chart stays usable
-  const d = $('clsDlg');
   if (!d.open) { d.classList.toggle('side', wide() && tabNow() === 'flow'); d.classList.toggle('bsheet', !wide() && tabNow() === 'flow'); }
   openDlg(d);
   d.scrollTop = 0;
   if (d.classList.contains('bsheet')) keepAboveSheet(clsNode?.id, d);
+}
+// hover a box on a laptop's Flowchart (Tim, 2026-10-23: "make it so the class info on the right also is shown
+// when a user is hovering over the class, not only when they click on it"): its details show in the right-side
+// section after a short pause; leaving the box brings back the clicked class (or closes the preview). Moving
+// the mouse into the details keeps them, as if the box was clicked. Not in Explore (taps try classes there).
+let peekT = 0, peeking = false;
+function peekClass(n) {
+  clearTimeout(peekT);
+  if (!wide() || tabNow() !== 'flow' || exploring() || (n.id === selId && $('clsDlg').open)) return;
+  peekT = setTimeout(() => { peeking = true; openClass({ node: n, peek: true }); }, 120);
+}
+function unpeekClass() {
+  clearTimeout(peekT);
+  if (!peeking) return;
+  peekT = setTimeout(() => {
+    if (!peeking) return;
+    peeking = false;
+    const d = $('clsDlg'), sel = selId && nodes.find((x) => x.id === selId);
+    if (sel) openClass({ node: sel });
+    else if (d.open) d.close();
+  }, 200);
+}
+function keepPeek() {
+  if (!peeking) return;
+  clearTimeout(peekT);
+  peeking = false;
+  setSel(clsNode?.id || null);
+  openDlg($('clsDlg'));
 }
 // phone: the picked box stays in sight above the class details sheet (the chart scrolls, never the page; a
 // spacer under the chart gives it room to scroll the last row up)
@@ -1922,7 +1957,8 @@ function wireClassSheet() {
     if (n) openClass({ node: n });
   });
   // the details closing: the chart lets go of the class (and the phone's sheet gives back its room)
-  dlg.addEventListener('close', () => { setSel(null); dlg.classList.remove('tall'); $('chartPad')?.style.setProperty('height', '0px'); });
+  dlg.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') keepPeek(); });
+  dlg.addEventListener('close', () => { clearTimeout(peekT); peeking = false; setSel(null); dlg.classList.remove('tall'); $('chartPad')?.style.setProperty('height', '0px'); });
   // phone: drag the sheet's handle down to close it, up to make it taller; when it grows, the box stays in sight
   new ResizeObserver(() => { if (dlg.open && dlg.classList.contains('bsheet')) keepAboveSheet(selId, dlg); }).observe(dlg);
   for (const d of [dlg, $('matDlg')]) { const h = d.querySelector('.grab'); if (h) sheetDrag(d, h, { close: () => d.close() }); }

@@ -83,6 +83,43 @@ test('hover: prereq lines + needed-by lines in two colours, others dimmed, label
   await p.context().close();
 });
 
+test('laptop hover shows the class details on the right; leaving brings back the clicked class or closes them', async () => {
+  const p = await page({ viewport: { width: 1280, height: 800 } });
+  const code = () => p.$eval('#clsDlg', (d) => (d.open ? d.dataset.code : ''));
+  await p.hover(box('ECE 2250'));
+  await p.waitForTimeout(300);
+  assert.equal(await code(), 'ECE 2250', 'hover opens the details');
+  assert.ok(await p.$eval('#clsDlg', (d) => d.classList.contains('side')), 'in the right-side section');
+  assert.equal(await p.$$eval('.box.sel', (b) => b.length), 0, 'a hover picks nothing');
+  await p.mouse.move(5, 5);
+  await p.waitForTimeout(400);
+  assert.equal(await code(), '', 'leaving closes a preview');
+  // a clicked class comes back after hovering another
+  await p.click(box('MATH 1210'));
+  await p.waitForTimeout(200);
+  await p.hover(box('ECE 2250'));
+  await p.waitForTimeout(300);
+  assert.equal(await code(), 'ECE 2250');
+  await p.mouse.move(5, 5);
+  await p.waitForTimeout(400);
+  assert.equal(await code(), 'MATH 1210', 'the clicked class is back');
+  // moving into the details keeps the hovered class
+  await p.hover(box('ECE 2250'));
+  await p.waitForTimeout(300);
+  await p.hover('#clsDlg #clsCode');
+  await p.waitForTimeout(400);
+  assert.equal(await code(), 'ECE 2250', 'kept once the mouse is on the details');
+  assert.equal(await p.$eval('.box.sel', (b) => b.dataset.id), 'ECE 2250');
+  // Explore: no preview (a tap tries the class there)
+  await p.keyboard.press('Escape');
+  await p.click('#exploreBtn');
+  await p.hover(box('ECE 2250'));
+  await p.waitForTimeout(300);
+  assert.equal(await code(), '');
+  assert.deepEqual(p.errors, []);
+  await p.context().close();
+});
+
 test('phone: label + lines while the finger is down; in Explore a tap still marks the class taken', async () => {
   const p = await page({ ...devices['iPhone 15'] });
   await p.click('#exploreBtn');
