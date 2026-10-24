@@ -436,7 +436,7 @@ function buildBoxes() {
     longPress(b, () => { setHover(null); openClass({ node: n }); });
     // hover (mouse) or finger down (phone): its lines light up and a tiny label shows when
     b.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') { setHover(n.id); peekClass(n); } });
-    b.addEventListener('pointerleave', () => { if (hoverId === n.id) setHover(null); unpeekClass(); });
+    b.addEventListener('pointerleave', () => { if (hoverId === n.id) setHover(null); unpeek(); });
     b.addEventListener('pointerdown', (e) => { if (e.pointerType !== 'mouse') setHover(n.id); });
     for (const ev of ['pointerup', 'pointercancel']) b.addEventListener(ev, (e) => { if (e.pointerType !== 'mouse' && hoverId === n.id) setHover(null); });
     host.appendChild(b);
@@ -466,7 +466,7 @@ function buildBoxes() {
   mat.id = 'matricBtn';
   mat.textContent = 'Matriculation';
   mat.hidden = true;
-  mat.addEventListener('click', openMatric);
+  mat.addEventListener('click', () => openMatric());
   host.appendChild(mat);
   hoverId = null;
   selId = null;
@@ -621,15 +621,16 @@ function layout() {
     $('boxes').prepend(hit);
     const on = (v) => $('edges').classList.toggle('mhov', v);
     hit.addEventListener('pointerdown', (e) => { layout.matTouch = e.pointerType !== 'mouse'; });
-    hit.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') on(true); });
-    hit.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') on(false); });
+    // (a laptop hover also shows the matriculation details on the right, like a class's: peekMatric)
+    hit.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') { on(true); peekMatric(); } });
+    hit.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') { on(false); unpeek(); } });
     hit.addEventListener('click', () => { if (layout.matTouch) on(!$('edges').classList.contains('mhov')); });
     if (!layout.matWired) { // a tap anywhere else in the chart turns it off again
       layout.matWired = true;
       $('chart').addEventListener('click', (e) => { if (!e.target.closest?.('#matHit')) $('edges').classList.remove('mhov'); });
     }
-    mat.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') on(true); });
-    mat.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') on(false); });
+    mat.addEventListener('pointerover', (e) => { if (e.pointerType === 'mouse') { on(true); peekMatric(); } });
+    mat.addEventListener('pointerout', (e) => { if (e.pointerType === 'mouse') { on(false); unpeek(); } });
   }
   if (hit) {
     hit.hidden = !g.split;
@@ -1328,7 +1329,7 @@ function showTab(tab) {
   $('ttl').textContent = TITLE[tab] || '';
   for (const b of $('fpSeg').children) { b.classList.toggle('on', b.dataset.v === tab); b.setAttribute('aria-pressed', b.dataset.v === tab); }
   // the class details beside the flowchart belong to it
-  if (was === 'flow' && tab !== 'flow' && panelDlg($('clsDlg')) && $('clsDlg').open) $('clsDlg').close();
+  if (was === 'flow' && tab !== 'flow') for (const d of [$('clsDlg'), $('matDlg')]) if (panelDlg(d) && d.open) d.close();
   // entering a screen: a short slide-in instead of a jump (css .enter)
   if (was !== tab) { main.classList.remove('enter'); void main.offsetWidth; main.classList.add('enter'); }
   // a hint belongs to the screen it was shown on (an Undo stays until it times out)
@@ -1387,7 +1388,7 @@ function wireNav() {
     });
   }
   // the class details beside the flowchart (not a modal): Esc closes them too
-  addEventListener('keydown', (e) => { if (e.key === 'Escape' && $('clsDlg').open && panelDlg($('clsDlg'))) $('clsDlg').close(); });
+  addEventListener('keydown', (e) => { if (e.key === 'Escape') for (const d of [$('clsDlg'), $('matDlg')]) if (d.open && panelDlg(d)) d.close(); });
   addEventListener('popstate', (e) => {
     if (NAV.pending) {
       NAV.pending--;
@@ -1534,7 +1535,11 @@ function reqOf(u) {
 }
 function openClass({ node, item, peek = false }) {
   if (!model) return;
-  if (!peek) { clearTimeout(peekT); peeking = false; }
+  if (!peek) {
+    clearTimeout(peekT); peeking = null;
+    lastCls = { node, item };
+    const m = $('matDlg'); if (m.open && panelDlg(m)) m.close(); // one panel on the right at a time
+  }
   const u = node ? (node.kind === 'option' ? node : unitOf(node.id) || node) : unitOf(item.unitId) || model.units.flatMap((x) => x.options || []).find((o) => o.id === item.unitId);
   if (!u && !item) return;
   const kind = item?.kind || u.kind;
@@ -1650,10 +1655,13 @@ function openClass({ node, item, peek = false }) {
   const d = $('clsDlg');
   // a hover preview (laptop): shown beside the chart without picking the class or adding a Back step
   if (peek) {
-    if (!d.open) { d.classList.add('side'); d.classList.remove('bsheet'); d.show(); }
+    if (peeking && peeking !== d) peeking.close(); // the matriculation preview gives way
+    peeking = d; peekNode = clsNode;
+    if (!d.open) { d.classList.add('side', 'peek'); d.classList.remove('bsheet'); d.show(); document.activeElement?.blur(); }
     d.scrollTop = 0;
     return;
   }
+  d.classList.remove('peek');
   // on the chart: this class stays picked out while its details are open
   setSel(clsNode?.id || null);
   // laptop, on the Flowchart: the details open in the right-side section (over the plan), the chart stays usable
@@ -1664,31 +1672,39 @@ function openClass({ node, item, peek = false }) {
 }
 // hover a box on a laptop's Flowchart (Tim, 2026-10-23: "make it so the class info on the right also is shown
 // when a user is hovering over the class, not only when they click on it"): its details show in the right-side
-// section after a short pause; leaving the box brings back the clicked class (or closes the preview). Moving
+// section after a short pause; leaving the box brings back what was clicked (or closes the preview). Moving
 // the mouse into the details keeps them, as if the box was clicked. Not in Explore (taps try classes there).
-let peekT = 0, peeking = false;
-function peekClass(n) {
+// The matriculation label and line do the same with the matriculation details (Tim, 2026-10-24: "do the same
+// class overview thing on the right side but also with matriculation when you hover over it").
+// A preview sits on top of a clicked panel (.peek) and adds no Back step.
+let peekT = 0, peeking = null, peekNode = null, lastCls = null;
+const pinnedDlg = () => history.state?.dlg;
+function peekAt(open) {
   clearTimeout(peekT);
-  if (!wide() || tabNow() !== 'flow' || exploring() || (n.id === selId && $('clsDlg').open)) return;
-  peekT = setTimeout(() => { peeking = true; openClass({ node: n, peek: true }); }, 120);
+  if (wide() && tabNow() === 'flow') peekT = setTimeout(open, 120);
 }
-function unpeekClass() {
+function peekClass(n) {
+  if (exploring() || (n.id === selId && $('clsDlg').open && !peeking)) { unpeek(); return; }
+  peekAt(() => openClass({ node: n, peek: true }));
+}
+function peekMatric() {
+  if (pinnedDlg() === 'matDlg') { unpeek(); return; }
+  peekAt(() => openMatric({ peek: true }));
+}
+function unpeek() {
   clearTimeout(peekT);
   if (!peeking) return;
   peekT = setTimeout(() => {
-    if (!peeking) return;
-    peeking = false;
-    const d = $('clsDlg'), sel = selId && nodes.find((x) => x.id === selId);
-    if (sel) openClass({ node: sel });
-    else if (d.open) d.close();
+    const d = peeking;
+    if (!d) return;
+    peeking = null;
+    if (pinnedDlg() !== d.id) d.close(); // only the hover had it open
+    else if (d.id === 'clsDlg' && lastCls) openClass(lastCls); // back to the clicked class
   }, 200);
 }
-function keepPeek() {
-  if (!peeking) return;
-  clearTimeout(peekT);
-  peeking = false;
-  setSel(clsNode?.id || null);
-  openDlg($('clsDlg'));
+function keepPeek(d) {
+  if (peeking !== d) return;
+  if (d.id === 'clsDlg') openClass({ node: peekNode }); else openMatric();
 }
 // phone: the picked box stays in sight above the class details sheet (the chart scrolls, never the page; a
 // spacer under the chart gives it room to scroll the last row up)
@@ -1749,12 +1765,12 @@ function wireGlossary() {
 // Catalog words, GPA / grade minimums (only when the catalog states them), the classes to finish first with
 // the student's progress, the classes that need it, the advisor + how-to-apply links, the catalog page.
 const NOT_IN = 'Not in the catalog';
-function openMatric() {
+function openMatric({ peek = false } = {}) {
   if (!model || !matric) return;
   const dlg = $('matDlg');
   if (!dlg.dataset.wired) {
     dlg.dataset.wired = '1';
-    dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
+    dlg.addEventListener('click', (e) => { if (e.target === dlg && !panelDlg(dlg)) dlg.close(); });
   }
   // the program the gated classes belong to (the major, unless only a minor has a matriculation section)
   const part = progParts.find((p) => p.program.admissionInfo) || progParts[0];
@@ -1796,7 +1812,21 @@ function openMatric() {
   $('matReport').href = issueURL(progIssue({ code: 'Matriculation' }));
   // "Fill my application": programs with an application page (data/advisors.json); none in Explore (D24)
   $('matApply').hidden = !(advisors?.[part?.id]?.admissionUrl) || sandbox();
+  // laptop, on the Flowchart: in the right-side section like a class's details (a hover previews it there)
+  if (!dlg.open) dlg.classList.toggle('side', wide() && tabNow() === 'flow');
+  if (peek) {
+    // a class preview gives way (a clicked class's panel shows that class again, under this one)
+    if (peeking && peeking !== dlg) { if (pinnedDlg() === peeking.id && lastCls) openClass(lastCls); else peeking.close(); }
+    peeking = dlg;
+    if (!dlg.open) { dlg.classList.add('peek'); dlg.show(); document.activeElement?.blur(); }
+    dlg.scrollTop = 0;
+    return;
+  }
+  clearTimeout(peekT); peeking = null;
+  dlg.classList.remove('peek');
+  const c = $('clsDlg'); if (c.open && panelDlg(c)) c.close(); // one panel on the right at a time
   openDlg(dlg);
+  dlg.scrollTop = 0;
   $('matFacts').scrollTop = 0;
 }
 
@@ -1957,8 +1987,11 @@ function wireClassSheet() {
     if (n) openClass({ node: n });
   });
   // the details closing: the chart lets go of the class (and the phone's sheet gives back its room)
-  dlg.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') keepPeek(); });
-  dlg.addEventListener('close', () => { clearTimeout(peekT); peeking = false; setSel(null); dlg.classList.remove('tall'); $('chartPad')?.style.setProperty('height', '0px'); });
+  for (const d of [dlg, $('matDlg')]) {
+    d.addEventListener('pointerenter', (e) => { if (e.pointerType === 'mouse') keepPeek(d); });
+    d.addEventListener('close', () => { if (peeking === d) { clearTimeout(peekT); peeking = null; } d.classList.remove('peek'); });
+  }
+  dlg.addEventListener('close', () => { setSel(null); dlg.classList.remove('tall'); $('chartPad')?.style.setProperty('height', '0px'); });
   // phone: drag the sheet's handle down to close it, up to make it taller; when it grows, the box stays in sight
   new ResizeObserver(() => { if (dlg.open && dlg.classList.contains('bsheet')) keepAboveSheet(selId, dlg); }).observe(dlg);
   for (const d of [dlg, $('matDlg')]) { const h = d.querySelector('.grab'); if (h) sheetDrag(d, h, { close: () => d.close() }); }

@@ -70,6 +70,47 @@ test('EE (laptop): dotted line between MATH 1210 and ECE 3250; the label is a bu
   await p.context().close();
 });
 
+test('EE (laptop): hovering the label shows the matriculation details on the right; leaving puts back what was there', async () => {
+  const p = await page(EE, false);
+  await p.goto(APP + '?p=electrical-engineering-bs');
+  await p.waitForSelector('#matricBtn:not([hidden])');
+  await p.waitForTimeout(300);
+  const open = () => p.evaluate(() => ['clsDlg', 'matDlg'].filter((id) => document.getElementById(id).open));
+  const away = async () => { await p.mouse.move(5, 5); await p.waitForTimeout(400); };
+  await p.hover('#matricBtn');
+  await p.waitForTimeout(300);
+  assert.deepEqual(await open(), ['matDlg'], 'hover opens it');
+  assert.ok(await p.$eval('#matDlg', (d) => d.classList.contains('side')), 'in the right-side section');
+  assert.match(await p.textContent('#matFacts'), /To be admitted to the BSEE program/);
+  await away();
+  assert.deepEqual(await open(), [], 'leaving closes the preview');
+  // a clicked class stays under the preview and comes back
+  await p.click('.box[data-id="ECE 2250"]');
+  await p.waitForTimeout(200);
+  await p.hover('#matricBtn');
+  await p.waitForTimeout(300);
+  assert.ok(await p.$eval('#matDlg', (d) => d.open && getComputedStyle(d).zIndex > getComputedStyle(document.getElementById('clsDlg')).zIndex), 'on top of the class');
+  await away();
+  assert.deepEqual(await open(), ['clsDlg']);
+  assert.equal(await p.$eval('#clsDlg', (d) => d.dataset.code), 'ECE 2250');
+  // into the details: kept, the class panel gives way
+  await p.hover('#matricBtn');
+  await p.waitForTimeout(300);
+  await p.hover('#matDlg .sec-head');
+  await p.waitForTimeout(400);
+  assert.deepEqual(await open(), ['matDlg']);
+  // a click opens it there too; Esc closes it
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(200);
+  await p.click('#matricBtn');
+  await p.waitForSelector('#matDlg[open].side');
+  await p.keyboard.press('Escape');
+  await p.waitForTimeout(200);
+  assert.deepEqual(await open(), []);
+  assert.deepEqual(p.errors, []);
+  await p.context().close();
+});
+
 test('EE (phone): keyboard / Enter on the label opens the sheet; Back closes it', async () => {
   const p = await page(EE);
   await p.goto(APP + '?p=electrical-engineering-bs');

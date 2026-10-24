@@ -789,6 +789,7 @@ main.empty .xbar { visibility: hidden; }
 @media (min-width: 900px) {
   dialog.cls.side { position: fixed; inset: calc(var(--head-h) + env(safe-area-inset-top)) 0 0 auto; z-index: 10; width: 400px; max-width: none; height: auto; max-height: none; margin: 0; border-radius: 0; overflow: auto; box-shadow: -1px 0 0 var(--line), -8px 0 24px rgba(0,0,0,.08); }
   dialog.cls.side .cls-facts { max-height: none; }
+  dialog.cls.side.peek { z-index: 11; } /* a hover preview sits over a clicked panel */
 }
 
 /* phone, Flowchart: Chart | Plan in the header (the plan lives in this section; a laptop shows it beside the chart) */
