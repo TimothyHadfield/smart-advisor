@@ -157,3 +157,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** `docs/uvu-student-knowledge.md` (9e26efe, 8 research agents' sections merged, 343 links); chart3 (D31), sched (D32), polish (D33), iPhone (D34), apply (D35) all live; test fix 251fdde (CRLF fixture regex).
 - **Verified:** manager viewed builders' headless screenshots (EE flowchart laptop + phone, Home, class panel, schedule laptop + phone, application sheet laptop + phone). Unit suite on main checkout: 1264 / 1262 pass / 1 fail (CRLF) → fixed, application.test 8/8. e2e not rerun by the manager (builders: 89/0/1 at 760cc45).
 - **Open:** Tim's iPhone feedback; queued 10-22 features (difficulty balance, close to a minor, move/lock semesters, registration + calendar, outside credit); later research pass on UVU classes/professors when Tim asks.
+
+## 2026-10-23 · Project-lead sync with the manager's notes
+- **Asked (Tim):** "I made some changes to the cite with the coding manager, there might be some notes about the cite in the more general progress md in the large code projects folder, do you wanna make sure everything you have in this progress.md is updated fully?"
+- **Found:** the manager had already kept this progress.md current through 1c93914 (83 commits since the lead's 56c0aee checkpoint). Root notes added here: polish before spring 2027 registration (date unchecked), the 10-17 standing go, GitHub-profile screenshot, stale `.claude/worktrees/sa/` copies at the root. Also added: `SETTINGS`/`null` trap, module + script + local-flag map; fixed a merged Status table row.
+- **Verified:** `node --test tests/*.test.mjs` on main at 1c93914: 1264 / 1263 pass / 0 fail / 1 skipped. e2e not rerun.
+- **Open:** same as above.
