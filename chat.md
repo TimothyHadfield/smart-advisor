@@ -163,3 +163,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Found:** the manager had already kept this progress.md current through 1c93914 (83 commits since the lead's 56c0aee checkpoint). Root notes added here: polish before spring 2027 registration (date unchecked), the 10-17 standing go, GitHub-profile screenshot, stale `.claude/worktrees/sa/` copies at the root. Also added: `SETTINGS`/`null` trap, module + script + local-flag map; fixed a merged Status table row.
 - **Verified:** `node --test tests/*.test.mjs` on main at 1c93914: 1264 / 1263 pass / 0 fail / 1 skipped. e2e not rerun.
 - **Open:** same as above.
+
+## 2026-11-19 · Hypothetical grades + GPA on the flowchart
+- **Asked (Tim):** "show somewhere in the flowchart section the user's current GPA, and also hypothetical GPA if they put in hypothetical grades in future classes (which you can if you click on that class and then select a specific grade (show the normal % that correlate with each grade aswell, and the GP that corelates with that letter. Make a button next to the "explore" where you can reset the hypothetical grades aswell."
+- **Built:** flowchart bar "Reset grades" + "GPA now → with hypothetical"; class sheet picker (letter, typical %, UVU points); dashed grade tag on the box; `settings.hgrade` synced. Found + fixed UVU's plus grades (.4, not .3) from UVU Academic Standards' GPA PDF.
+- **Verified:** `node --test tests/*.test.mjs` 1265 / 1264 pass / 0 fail / 1 skip; e2e hgrade + flowbar + hypo + home + classes + iphone + hover: 38 / 37 pass / 1 skip (WebKit 393 + 1280, light + dark screenshots looked at).
+- **Open:** Tim's call on placement/wording (GPA sits right of Code/Title/Both, wraps under on phone when Reset shows).

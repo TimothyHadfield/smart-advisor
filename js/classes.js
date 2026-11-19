@@ -17,8 +17,21 @@ import { pickLabel } from './uistate.js';
 
 // grades the class sheet / Classes offer (IP is a status, not a grade). TR = transfer, AP or test credit.
 export const GRADES = ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'E', 'P', 'TR'];
-// UVU's 4.0 scale (catalog "Grading"); E (and F, UW from older records) count 0
-export const POINTS = { A: 4, 'A-': 3.7, 'B+': 3.3, B: 3, 'B-': 2.7, 'C+': 2.3, C: 2, 'C-': 1.7, 'D+': 1.3, D: 1, 'D-': 0.7, E: 0, F: 0, UW: 0 };
+// UVU's 4.0 scale (Office of Academic Standards "GPA Calculation", js/sources.js GPA_SCALE, read 2026-11-19):
+// UVU's pluses are .4 (B+ 3.4, C+ 2.4, D+ 1.4), not the 3.3 / 2.3 / 1.3 other schools use. E (and F, UW) count 0.
+export const POINTS = { A: 4, 'A-': 3.7, 'B+': 3.4, B: 3, 'B-': 2.7, 'C+': 2.4, C: 2, 'C-': 1.7, 'D+': 1.4, D: 1, 'D-': 0.7, E: 0, F: 0, UW: 0 };
+// The hypothetical-grade picker (Tim, 2026-11-19: "show the normal % that correlate with each grade aswell, and
+// the GP that corelates with that letter"): [letter, usual % range]. UVU sets no % scale (each syllabus does);
+// these are the common 93 / 90 / 87 cut-offs.
+export const HYPO_GRADES = [['A', '93–100'], ['A-', '90–92'], ['B+', '87–89'], ['B', '83–86'], ['B-', '80–82'], ['C+', '77–79'],
+  ['C', '73–76'], ['C-', '70–72'], ['D+', '67–69'], ['D', '63–66'], ['D-', '60–62'], ['E', '0–59']];
+/**
+ * Current GPA and the GPA with hypothetical grades. graded = the actual rows ({grade, credits}); extra = one
+ * {grade, credits} per unfinished class given a hypothetical grade. hypo is null when there are none.
+ */
+export function gpaPair(graded, extra = []) {
+  return { now: gpa(graded), hypo: extra.length ? gpa([...graded, ...extra]) : null };
+}
 
 // ---------- Hypothetical | Actual ----------
 const list = (v) => (Array.isArray(v) ? v.filter((x) => typeof x === 'string') : []);
@@ -93,10 +106,10 @@ export function boxGrade(n, completed, grades) {
 export function gpa(rows) {
   let pts = 0, cr = 0;
   for (const r of rows) {
-    const g = up(r.grade);
-    if (!(g in POINTS) || !(r.credits > 0)) continue;
-    pts += POINTS[g] * r.credits;
-    cr += r.credits;
+    const g = up(r.grade), c = Number(r.credits);
+    if (!(g in POINTS) || !(c > 0)) continue;
+    pts += POINTS[g] * c;
+    cr += c;
   }
   return { gpa: cr ? Math.round((pts / cr) * 100) / 100 : null, credits: Math.round(cr * 10) / 10 };
 }

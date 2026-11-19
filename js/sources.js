@@ -11,6 +11,8 @@ export const CLASS_SEARCH = 'https://userve.uvu.edu/StudentRegistrationSsb/ssb/t
 export const RMP_PROF = 'https://www.ratemyprofessors.com/professor/';
 export const RMP_SCHOOL = 'https://www.ratemyprofessors.com/school/18458';
 export const ADVISING = 'https://www.uvu.edu/advising/advisors/';
+// UVU Office of Academic Standards "GPA Calculation" (the letter -> grade point table; read 2026-11-19)
+export const GPA_SCALE = 'https://www.uvu.edu/academic-standards/docs/gpa_calculation_accessible.pdf';
 // a student's UVU e-mail (UVID@uvu.edu: the address UVU's matriculation forms send to); '' without a UVID
 export const uvuEmail = (uvid) => (/^\d{8}$/.test(String(uvid || '')) ? `${uvid}@uvu.edu` : '');
 // CourseLeaf program page tabs
@@ -51,6 +53,8 @@ export function sourceLink(kind, d = {}) {
       return { url: d.advisors?.source || ADVISING, label: 'UVU advisors', date: d.advisors?.generated || null };
     case 'seasons':
       return { url: CLASS_SEARCH, label: 'UVU class search', date: d.seasons?.built || null };
+    case 'gpa':
+      return { url: GPA_SCALE, label: 'UVU grade points', date: '2026-11-19' };
     case 'url':
       return d.url ? { url: d.url, label: d.label || 'Source', date: d.date || null } : null;
     default:

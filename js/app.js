@@ -14,7 +14,7 @@ import { initMine } from './mineui.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
 import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
-import { viewSet, hypoFrom, normHypo, boxGrade, gpa, classGroups, geBoxFor, statusOf, GRADES } from './classes.js';
+import { viewSet, hypoFrom, normHypo, boxGrade, gpa, gpaPair, classGroups, geBoxFor, statusOf, GRADES, HYPO_GRADES, POINTS } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 import { auditExtras, answerSheet, sheetText, splitName, niceDate } from './application.js';
 import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
@@ -130,6 +130,35 @@ const tapSet = () => doneSet();
 function setActual(set) { state.done[major()] = [...set]; setHypo(normHypo(new Set(set), state.settings.hypo?.[major()])); save(); }
 const srcMap = () => { state.settings.src = { ...(state.settings.src || {}) }; return (state.settings.src[major()] = { ...(state.settings.src[major()] || {}) }); };
 const gradeMap = () => (state.grades[major()] ??= {});
+// hypothetical grades (Tim, 2026-11-19: "hypothetical GPA if they put in hypothetical grades in future classes (which
+// you can if you click on that class and then select a specific grade"): settings.hgrade[major] = { box id: letter }
+// on a box not finished in the student's real progress (planned, not yet, or in progress). Synced (js/sync.js).
+const hgradeOf = (n) => (n && state.settings.hgrade?.[major()]?.[n.id]) || '';
+function setHgrade(id, g) {
+  const all = { ...(state.settings.hgrade || {}) }, m = { ...(all[major()] || {}) };
+  if (g) m[id] = g; else delete m[id];
+  all[major()] = m;
+  state.settings.hgrade = all;
+}
+// not finished for real: not taken, or in progress (Explore taps don't count)
+function unfinished(n) {
+  const a = actualSet();
+  return !nodeDone(n, a) || statusOf(boxGrade(n, a, gradeMap())) === 'ip';
+}
+// a class box (or Gen Ed box) can take one outside Explore (Explore shows nothing personal, D24)
+const hgradeOk = (n) => !!n && !sandbox() && ['course', 'option', 'placeholder'].includes(n.kind) && unfinished(n);
+const boxCredits = (n) => [n.credits, ...(n.labs || []).map((l) => l.credits)].reduce((s, x) => s + (Number(x) || 0), 0);
+// GPA now (the Classes view's rows, like Home) and with the hypothetical grades
+function gpaNow() {
+  const actual = actualSet(), grades = gradeMap();
+  const groups = classGroups({ model, completed: actual, actual, grades, src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
+  const graded = groups.filter((g) => g.key !== 'need').flatMap((g) => g.rows);
+  if (!courseCat.ready && graded.some((r) => r.credits == null)) loadCourses().then(renderGpa);
+  const extra = nodes.filter((n) => hgradeOf(n) && ['course', 'option', 'placeholder'].includes(n.kind) && unfinished(n))
+    .map((n) => ({ grade: hgradeOf(n), credits: boxCredits(n) }));
+  return gpaPair(graded, extra);
+}
+const gpaText = (x) => (x?.gpa == null ? '—' : x.gpa.toFixed(2));
 // a grade that came from the imported audit is locked (Tim, 2026-10-23: "If their transcript says they got a grade in
 // a class they've taken, make sure it keeps that grade locked for that class so the user can't change it at all").
 // '' = not locked: no grade, in progress, or set by the student. A newer audit replaces it (the import sets it).
@@ -790,6 +819,10 @@ function refresh() {
     el.classList.toggle('graded', gi.kind === 'letter');
     el.style.setProperty('--gh', gi.hue ?? 0);
     el.querySelector('.gr').textContent = gi.text;
+    // a hypothetical grade on a class not taken yet: its letter in a dashed tag (not in Explore)
+    const hg = own && !done ? hgradeOf(n) : '';
+    el.classList.toggle('hg', !!hg);
+    if (hg) { el.style.setProperty('--gh', gradeInfo(hg).hue ?? 0); el.querySelector('.gr').textContent = hg; }
     const pk = el.querySelector('.pk');
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
@@ -815,6 +848,7 @@ function refresh() {
   renderLegend(plan, anyIP);
   lastPlan = plan;
   renderExplore();
+  renderGpa();
   renderNoAudit();
   if (ui.sub === 'classes') renderClasses();
   renderHome();
@@ -1059,6 +1093,16 @@ function renderExplore() {
   $('hypClear').hidden = !on;
   $('flowPanel').classList.toggle('exploring', on);
 }
+// GPA beside Explore: "GPA 3.42 → 3.61" (now → with the hypothetical grades) + Reset grades. Hidden in Explore.
+function renderGpa() {
+  const el = $('xGpa'), rb = $('hgReset');
+  if (!model || sandbox()) { el.hidden = true; rb.hidden = true; return; }
+  const { now, hypo } = gpaNow();
+  rb.hidden = !hypo;
+  el.hidden = now.gpa == null && !hypo;
+  el.innerHTML = `GPA <b>${gpaText(now)}</b>${hypo ? ` <span aria-hidden="true">→</span> <b class="hgv">${gpaText(hypo)}</b>` : ''}`;
+  el.setAttribute('aria-label', hypo ? `GPA now ${gpaText(now)}, with hypothetical grades ${gpaText(hypo)}` : `GPA ${gpaText(now)}`);
+}
 // the flowchart's own controls, out in the open next to it: Explore, its clear, the box labels, semester colors
 function wireFlowBar() {
   $('exploreBtn').addEventListener('click', () => {
@@ -1074,6 +1118,13 @@ function wireFlowBar() {
     setHypo({ add: [], del: [] });
     save(); refresh();
     toast('Explore cleared', () => { setHypo(snap); save(); refresh(); });
+  });
+  // Reset grades: every hypothetical grade of this program goes, with Undo
+  $('hgReset').addEventListener('click', () => {
+    const snap = { ...(state.settings.hgrade?.[major()] || {}) };
+    state.settings.hgrade = { ...(state.settings.hgrade || {}), [major()]: {} };
+    save(); refresh(); drawClsHg();
+    toast('Hypothetical grades reset', () => { state.settings.hgrade = { ...(state.settings.hgrade || {}), [major()]: snap }; save(); refresh(); drawClsHg(); });
   });
   $('lblSeg').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-v]');
@@ -1650,6 +1701,7 @@ function openClass({ node, item, peek = false }) {
   $('clsTakenRow').hidden = !clsNode;
   if (clsNode) $('clsTaken').checked = nodeDone(clsNode, doneSet());
   drawClsGrades();
+  drawClsHg();
   $('clsDlg').dataset.code = code || '';
   if (code) fillSections(code);
   const d = $('clsDlg');
@@ -1953,6 +2005,18 @@ function drawClsGrades() {
       : `<label>${name}<select data-code="${esc(c)}">${gradeOptions(grades[key])}</select></label>`;
   }).join('');
 }
+// the class sheet's hypothetical-grade picker: each letter with its usual % and UVU grade points; tap again = none
+function drawClsHg() {
+  const el = $('clsHg'), n = clsNode;
+  const ok = !!model && hgradeOk(n);
+  el.hidden = !ok;
+  if (!ok) { el.innerHTML = ''; return; }
+  const cur = hgradeOf(n), { now, hypo } = gpaNow();
+  el.innerHTML = `<div class="hg-h"><b>Hypothetical grade</b><span>GPA ${gpaText(now)}${hypo ? ` → <b>${gpaText(hypo)}</b>` : ''}</span></div>`
+    + `<div class="hg-grid" role="group" aria-label="Hypothetical grade">${HYPO_GRADES.map(([g, pct]) => `<button type="button" data-hg="${g}" aria-pressed="${g === cur}"${g === cur ? ' class="on"' : ''} style="--gh:${gradeInfo(g).hue}">`
+      + `<b>${g}</b><span>${pct}%</span><small>${POINTS[g].toFixed(1)}</small></button>`).join('')}</div>`
+    + `<p class="hg-note">% is typical; each syllabus sets its own · ${linkHTML(sourceLink('gpa'), 'Grade points')}</p>`;
+}
 function wireClassSheet() {
   const dlg = $('clsDlg');
   $('sems').addEventListener('click', (e) => {
@@ -1970,6 +2034,14 @@ function wireClassSheet() {
     $('clsTaken').checked = nodeDone(n, doneSet());
     if ($('clsTaken').checked !== want) { dlg.close(); return; } // blocked: the box shows what it needs
     drawClsGrades();
+    drawClsHg();
+  });
+  // a hypothetical grade: tap a letter to try it, tap it again for none
+  $('clsHg').addEventListener('click', (e) => {
+    const b = e.target.closest('button[data-hg]');
+    if (!b || !hgradeOk(clsNode)) return;
+    setHgrade(clsNode.id, hgradeOf(clsNode) === b.dataset.hg ? '' : b.dataset.hg);
+    save(); refresh(); drawClsHg();
   });
   // a grade (or In progress): saved for that class whatever view it is taken in; never removed by a tap
   $('clsGrades').addEventListener('change', (e) => {

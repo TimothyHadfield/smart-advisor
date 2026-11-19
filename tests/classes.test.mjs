@@ -5,7 +5,17 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
-import { viewSet, hypoFrom, normHypo, hasHypo, hypoShown, sandboxOn, statusOf, boxGrade, gpa, classGroups, GRADES, srcOf, geBoxFor } from '../js/classes.js';
+import { viewSet, hypoFrom, normHypo, hasHypo, hypoShown, sandboxOn, statusOf, boxGrade, gpa, gpaPair, HYPO_GRADES, POINTS, classGroups, GRADES, srcOf, geBoxFor } from '../js/classes.js';
+
+test('hypothetical grades: GPA now and with them; the picker lists every letter with a % range and its points', () => {
+  const real = [{ grade: 'A', credits: 3 }, { grade: 'B', credits: 3 }];
+  assert.deepEqual(gpaPair(real), { now: { gpa: 3.5, credits: 6 }, hypo: null });
+  assert.deepEqual(gpaPair(real, [{ grade: 'E', credits: 6 }]).hypo, { gpa: 1.75, credits: 12 });
+  // no real grades yet: the hypothetical one still shows
+  assert.deepEqual(gpaPair([], [{ grade: 'B+', credits: 4 }]), { now: { gpa: null, credits: 0 }, hypo: { gpa: 3.4, credits: 4 } });
+  assert.deepEqual(HYPO_GRADES.map(([g]) => g), ['A', 'A-', 'B+', 'B', 'B-', 'C+', 'C', 'C-', 'D+', 'D', 'D-', 'E']);
+  for (const [g, pct] of HYPO_GRADES) { assert.ok(g in POINTS, g); assert.match(pct, /^\d+–\d+$/); }
+});
 import { toDoc, applyDoc } from '../js/sync.js';
 import { clearTaken, undoClear } from '../js/uistate.js';
 import { parseAudit, matchAudit } from '../js/audit.js';
@@ -75,7 +85,9 @@ test('box grade: a Gen Ed box shows the picked class\'s grade, else its own (old
 test('GPA on the UVU 4.0 scale, credit weighted; P, TR, IP and ungraded rows left out; E counts 0', () => {
   assert.deepEqual(gpa([{ grade: 'A', credits: 3 }, { grade: 'B', credits: 4 }]), { gpa: 3.43, credits: 7 });
   assert.deepEqual(gpa([{ grade: 'A-', credits: 3 }, { grade: 'E', credits: 3 }, { grade: 'P', credits: 1 }, { grade: 'TCR', credits: 3 }, { grade: 'IP', credits: 4 }, { grade: '', credits: 3 }]), { gpa: 1.85, credits: 6 });
-  assert.deepEqual(gpa([{ grade: 'C+', credits: 3 }, { grade: 'D-', credits: 1.5 }]), { gpa: 1.77, credits: 4.5 });
+  // UVU's pluses are .4 (C+ 2.4): (7.2 + 1.05) / 4.5
+  assert.deepEqual(gpa([{ grade: 'C+', credits: 3 }, { grade: 'D-', credits: 1.5 }]), { gpa: 1.83, credits: 4.5 });
+  assert.deepEqual(gpa([{ grade: 'B+', credits: 3 }, { grade: 'D+', credits: '3' }]), { gpa: 2.4, credits: 6 });
   assert.equal(gpa([{ grade: 'P', credits: 3 }]).gpa, null);
 });
 

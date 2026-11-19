@@ -755,6 +755,27 @@ main.enter .panel { animation: enter .18s ease-out; }
 .lbl-seg { margin-left: auto; }
 .lbl-seg button { flex: none; padding: 5px 10px; }
 main.empty .xbar { visibility: hidden; }
+/* GPA now -> with hypothetical grades, and their Reset (beside Explore). Wraps under on a narrow phone. */
+.xbar { flex-wrap: wrap; row-gap: 6px; }
+.hg-reset { flex: none; }
+.xbar .hg-reset[hidden], .xbar .x-gpa[hidden], .cls-hg[hidden] { display: none; }
+.x-gpa { flex: none; order: 3; font-size: 13px; color: var(--muted); white-space: nowrap; }
+.x-gpa b { color: var(--fg); font-weight: 700; }
+.x-gpa .hgv { text-decoration: underline dashed 1px; text-underline-offset: 3px; }
+/* a hypothetical grade on a box: its letter in a dashed tag */
+.box.hg .gr { color: hsl(var(--gh) 60% var(--grade-t)); border-style: dashed; }
+/* class sheet: the hypothetical-grade picker (letter, usual %, grade points) */
+.cls-hg { display: flex; flex-direction: column; gap: 8px; }
+.hg-h { display: flex; align-items: baseline; gap: 8px; }
+.hg-h span { margin-left: auto; font-size: 13px; color: var(--muted); }
+.hg-h span b { color: var(--fg); }
+.hg-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 6px; }
+.hg-grid button { display: grid; grid-template-columns: 1fr auto; column-gap: 4px; row-gap: 1px; align-items: baseline; min-height: 44px; padding: 5px 8px; text-align: left; border: 1px solid var(--line); border-radius: 8px; background: none; color: var(--fg); font: inherit; cursor: pointer; }
+.hg-grid button b { font-size: 16px; color: hsl(var(--gh) 60% var(--grade-t)); }
+.hg-grid button small { font-size: 12px; color: var(--muted); }
+.hg-grid button span { grid-column: 1 / -1; grid-row: 2; font-size: 12px; color: var(--fg); white-space: nowrap; }
+.hg-grid button.on { border: 2px solid var(--brand); padding: 4px 7px; background: var(--bg); }
+.hg-note { margin: 0; font-size: 12px; color: var(--muted); }
 /* Code (MATH 2210) / Title (Calc 3) / Both: only what a box shows changes (requirement boxes keep theirs);
    Title keeps a lecture + lab box's "+Lab" under the name */
 .boxes[data-lbl="code"] .box:not(.ph) > i:not(.pk) { display: none; }

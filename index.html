@@ -33,7 +33,7 @@
     <p class="noaud" data-noaud hidden>No audit loaded — <button type="button" data-upload>Upload</button><span data-signin> or <button type="button" data-signin-btn>Sign in</button></span></p>
     <p class="noaud" id="noDates" hidden><button type="button" data-upload>Re-upload your audit</button> to see dates</p>
     <p class="uvuchart" id="uvuChart" hidden><a target="_blank" rel="noopener"></a></p>
-    <div class="xbar" id="xbar"><button type="button" class="chip x-btn" id="exploreBtn" aria-pressed="false">Explore</button><button type="button" class="hyp-x" id="hypClear" aria-label="Clear explore" title="Clear explore" hidden>×</button><div class="seg lbl-seg" id="lblSeg" role="group" aria-label="Box labels"><button type="button" data-v="code">Code</button><button type="button" data-v="title">Title</button><button type="button" data-v="both" class="on">Both</button></div></div>
+    <div class="xbar" id="xbar"><button type="button" class="chip x-btn" id="exploreBtn" aria-pressed="false">Explore</button><button type="button" class="hyp-x" id="hypClear" aria-label="Clear explore" title="Clear explore" hidden>×</button><button type="button" class="chip hg-reset" id="hgReset" hidden>Reset grades</button><span class="x-gpa" id="xGpa" hidden></span><div class="seg lbl-seg" id="lblSeg" role="group" aria-label="Box labels"><button type="button" data-v="code">Code</button><button type="button" data-v="title">Title</button><button type="button" data-v="both" class="on">Both</button></div></div>
     <div class="chart" id="chart"><svg class="edges" id="edges"></svg><div class="boxes" id="boxes"></div></div>
     <button type="button" class="ok empty-pick" data-pick>Pick your program</button>
   </section>
@@ -193,6 +193,7 @@
     <dl class="cls-facts" id="clsFacts"></dl>
     <label class="sw-row" id="clsTakenRow">Taken <input type="checkbox" id="clsTaken" role="switch"></label>
     <div class="cls-grades" id="clsGrades"></div>
+    <div class="cls-hg" id="clsHg" hidden></div>
     <details class="cls-raw" id="clsRaw"><summary>Catalog text</summary><dl id="clsRawList"></dl></details>
     <p class="src" id="clsSrc"></p>
     <div class="row"><a id="clsReport" class="ghost" target="_blank" rel="noopener">Report a mistake</a><span class="cls-r"><a id="clsCat" class="cls-cat" target="_blank" rel="noopener">Catalog ↗</a><button value="ok" class="ok">Done</button></span></div>
