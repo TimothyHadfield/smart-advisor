@@ -11,6 +11,7 @@ import { filterPrograms, programGroup, catalogInfo, programYears, programPath, y
 import { termInfo, defaultTerm, currentTermCode, groupSections, buildSchedules, courseOptions, optionsConflict, meetingsOf, whenOf, fmtTime, rmpHue, DEFAULT_PREFS, splitTerms, classesInTerm, timeRange, whenFull, hourWindow, codeOfLabel } from './schedule.js';
 import * as P from './planner.js'; // optional planner extras (planPhases, requirementFor, pickTrack): used only when present
 import { initMine } from './mineui.js';
+import { saveAudit, loadAudit, auditURL } from './auditfile.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
 import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
@@ -147,15 +148,35 @@ function unfinished(n) {
 }
 // a class box (or Gen Ed box) can take one outside Explore (Explore shows nothing personal, D24)
 const hgradeOk = (n) => !!n && !sandbox() && ['course', 'option', 'placeholder'].includes(n.kind) && unfinished(n);
-const boxCredits = (n) => [n.credits, ...(n.labs || []).map((l) => l.credits)].reduce((s, x) => s + (Number(x) || 0), 0);
-// GPA now (the Classes view's rows, like Home) and with the hypothetical grades
+// the graded parts of a box: the class itself, then each folded lab (its own grade, credits, hypothetical grade)
+const gradeParts = (n) => (n.labs?.length && (n.kind === 'course' || n.kind === 'option') ? [{ ...n, labs: [] }, ...n.labs] : [n]);
+// one part's grade tag: { ip, html, cls, hue }. A hypothetical grade (not in Explore): a dashed tag on a class not
+// taken yet; next to its IP on one in progress (Tim, 2026-11-19: "put that selected grade by the IP for that class")
+function partTag(u, d, completed, grades, own, showGrades) {
+  const g = d ? boxGrade(u, completed, grades) : '';
+  const ip = statusOf(g) === 'ip';
+  const gi = gradeInfo(ip || showGrades ? g : '');
+  const hg = own && (!d || ip) ? hgradeOf(u) : '';
+  const hue = (x) => gradeInfo(x).hue ?? 0;
+  if (hg && ip) return { ip, html: `IP <i class="hgl" style="--gh:${hue(hg)}">${esc(hg)}</i>`, cls: '', hue: 0 };
+  if (hg) return { ip, html: esc(hg), cls: 'lt hgd', hue: hue(hg) };
+  return { ip, html: esc(gi.text), cls: gi.kind === 'letter' ? 'lt' : '', hue: gi.hue ?? 0 };
+}
+function setTag(em, t) {
+  if (!em) return;
+  em.innerHTML = t.html;
+  em.classList.toggle('lt', t.cls.includes('lt'));
+  em.classList.toggle('hgd', t.cls.includes('hgd'));
+  em.style.setProperty('--gh', t.hue);
+}
+// GPA now (the Classes view's rows, like Home) and with the hypothetical grades (class and lab each count their own credits)
 function gpaNow() {
   const actual = actualSet(), grades = gradeMap();
   const groups = classGroups({ model, completed: actual, actual, grades, src: state.settings.src?.[major()] || {}, catalog: courseCat.map });
   const graded = groups.filter((g) => g.key !== 'need').flatMap((g) => g.rows);
   if (!courseCat.ready && graded.some((r) => r.credits == null)) loadCourses().then(renderGpa);
-  const extra = nodes.filter((n) => hgradeOf(n) && ['course', 'option', 'placeholder'].includes(n.kind) && unfinished(n))
-    .map((n) => ({ grade: hgradeOf(n), credits: boxCredits(n) }));
+  const extra = nodes.filter((n) => ['course', 'option', 'placeholder'].includes(n.kind)).flatMap(gradeParts)
+    .filter((u) => hgradeOf(u) && unfinished(u)).map((u) => ({ grade: hgradeOf(u), credits: Number(u.credits) || 0 }));
   return gpaPair(graded, extra);
 }
 const gpaText = (x) => (x?.gpa == null ? '—' : x.gpa.toFixed(2));
@@ -448,7 +469,7 @@ function buildBoxes() {
     b.innerHTML = flex
       ? `<b${shown(short)}</b>${hidden}`
       : `<b${oc && !oc.more ? ' class="oc"' : ''}>${esc(oc ? oc.code : n.label)}${oc?.more ? `<small>${esc(oc.more)}</small>` : labs.length ? '<small>+Lab</small>' : ''}</b><i${shown(short)}</i>${hidden}`;
-    b.insertAdjacentHTML('beforeend', '<em class="gr"></em>');
+    b.insertAdjacentHTML('beforeend', `<em class="gr"></em>${labs.length ? '<em class="gr lgr"></em>' : ''}`);
     // a minor's box (also when an arrow keeps it in the major's chart) carries a small tag
     const sec = sections.find((s) => s.key === n.prog);
     if (sec) { b.classList.add('extra'); b.insertAdjacentHTML('beforeend', `<em class="tag">${TAG[sec.group] || 'Minor'}</em>`); }
@@ -814,20 +835,20 @@ function refresh() {
     el.classList.toggle('done', done);
     el.classList.toggle('locked', !done && !tapCheck(model, n, completed).ok);
     // in progress: its own look (and an IP tag even with grades off); otherwise the grade, when on
+    // the box's color: the lower grade of class + lab (js/classes.js boxGrade)
     const g = done ? boxGrade(n, completed, grades) : '';
-    const ip = statusOf(g) === 'ip';
-    anyIP ||= ip;
-    el.classList.toggle('ip', ip);
-    const gi = gradeInfo(ip || showGrades ? g : '');
+    const gi = gradeInfo(statusOf(g) === 'ip' || showGrades ? g : '');
     el.classList.toggle('graded', gi.kind === 'letter');
     el.style.setProperty('--gh', gi.hue ?? 0);
-    el.querySelector('.gr').textContent = gi.text;
-    // a hypothetical grade on a class not taken yet: its letter in a dashed tag (not in Explore)
-    // (in progress: next to its IP, Tim 2026-11-19: "put that selected grade by the IP for that class in the flowchart")
-    const hg = own && (!done || ip) ? hgradeOf(n) : '';
-    el.classList.toggle('hg', !!hg && !ip);
-    el.querySelector('.gr').innerHTML = hg && ip ? `IP <i class="hgl" style="--gh:${gradeInfo(hg).hue ?? 0}">${esc(hg)}</i>` : esc(hg || gi.text);
-    if (hg && !ip) el.style.setProperty('--gh', gradeInfo(hg).hue ?? 0);
+    // the tags: the class's grade on top, a folded lab's at the bottom (Tim, 2026-11-19: "If a class has a lab in it,
+    // put the lab grade on the bottom of the class block instead of at the top of it"), each with its hypothetical one
+    const parts = gradeParts(n);
+    const tags = parts.map((u, i) => partTag(u, i === 0 && !n.labs?.length ? done : unitDone(u, completed), completed, grades, own, showGrades));
+    const ip = tags.some((t) => t.ip);
+    anyIP ||= ip;
+    el.classList.toggle('ip', ip);
+    setTag(el.querySelector('.gr'), tags[0]);
+    if (tags[1]) setTag(el.querySelector('.lgr'), tags[1]);
     const pk = el.querySelector('.pk');
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
@@ -1489,8 +1510,20 @@ function fillProfile() {
   if (document.activeElement !== $('pfName')) $('pfName').value = own ? capName(own) : displayName(who) || '';
   $('pfProgs').textContent = progParts.length ? progParts.map((p) => p.program.name).join(' + ') : 'Pick your program';
 }
+// "View submitted audit" (account menu): the exact file last applied from Import audit, kept on this device
+// (js/auditfile.js). Loaded ahead of time so the tap opens it straight away (a new tab: the PDF or the pasted text).
+let auditHref = '';
+async function refreshAuditLink() {
+  const rec = await loadAudit();
+  if (auditHref) URL.revokeObjectURL(auditHref);
+  auditHref = auditURL(rec);
+  const a = $('pfAudit');
+  a.hidden = !auditHref;
+  if (auditHref) { a.href = auditHref; a.title = `${rec.name} · ${new Date(rec.saved).toLocaleDateString()}`; } else a.removeAttribute('href');
+}
 function wireProfile() {
   const dlg = $('pfDlg');
+  refreshAuditLink();
   // (account.js resets the menu on the same click)
   $('profile').addEventListener('click', () => { fillProfile(); openDlg(dlg); });
   dlg.addEventListener('click', (e) => { if (e.target === dlg) dlg.close(); });
@@ -2011,15 +2044,24 @@ function drawClsGrades() {
   }).join('');
 }
 // the class sheet's hypothetical-grade picker: each letter with its usual % and UVU grade points; tap again = none
+// A box with a folded lab: one picker for the class, one for the lab (Tim, 2026-11-19: "be able to choose a
+// hypothetical grade for the lab in the side menu aswell")
+let hgParts = [];
 function drawClsHg() {
   const el = $('clsHg'), n = clsNode;
-  const ok = !!model && hgradeOk(n);
-  el.hidden = !ok;
-  if (!ok) { el.innerHTML = ''; return; }
-  const cur = hgradeOf(n), { now, hypo } = gpaNow();
+  hgParts = model && n ? gradeParts(n).filter(hgradeOk) : [];
+  el.hidden = !hgParts.length;
+  if (!hgParts.length) { el.innerHTML = ''; return; }
+  const { now, hypo } = gpaNow();
+  const many = gradeParts(n).length > 1;
+  const grid = (u, i) => {
+    const cur = hgradeOf(u);
+    const name = many ? (n.labs?.includes(u) ? `Lab <small>${esc(u.code || u.label)}</small>` : `Class <small>${esc(u.code || u.label)}</small>`) : '';
+    return `${name ? `<div class="hg-part">${name}</div>` : ''}<div class="hg-grid" role="group" aria-label="Hypothetical grade${name ? ` ${esc(u.code || '')}` : ''}">${HYPO_GRADES.map(([g, pct]) => `<button type="button" data-p="${i}" data-hg="${g}" aria-pressed="${g === cur}"${g === cur ? ' class="on"' : ''} style="--gh:${gradeInfo(g).hue}">`
+      + `<b>${g}</b><span>${pct}%</span><small>${POINTS[g].toFixed(1)}</small></button>`).join('')}</div>`;
+  };
   el.innerHTML = `<div class="hg-h"><b>Hypothetical grade</b><span>GPA ${gpaText(now)}${hypo ? ` → <b>${gpaText(hypo)}</b>` : ''}</span></div>`
-    + `<div class="hg-grid" role="group" aria-label="Hypothetical grade">${HYPO_GRADES.map(([g, pct]) => `<button type="button" data-hg="${g}" aria-pressed="${g === cur}"${g === cur ? ' class="on"' : ''} style="--gh:${gradeInfo(g).hue}">`
-      + `<b>${g}</b><span>${pct}%</span><small>${POINTS[g].toFixed(1)}</small></button>`).join('')}</div>`
+    + hgParts.map(grid).join('')
     + `<p class="hg-note">% is typical; each syllabus sets its own · ${linkHTML(sourceLink('gpa'), 'Grade points')}</p>`;
 }
 function wireClassSheet() {
@@ -2044,8 +2086,9 @@ function wireClassSheet() {
   // a hypothetical grade: tap a letter to try it, tap it again for none
   $('clsHg').addEventListener('click', (e) => {
     const b = e.target.closest('button[data-hg]');
-    if (!b || !hgradeOk(clsNode)) return;
-    setHgrade(clsNode.id, hgradeOf(clsNode) === b.dataset.hg ? '' : b.dataset.hg);
+    const u = b && hgParts[+b.dataset.p];
+    if (!u || !hgradeOk(u)) return;
+    setHgrade(u.id, hgradeOf(u) === b.dataset.hg ? '' : b.dataset.hg);
     save(); refresh(); drawClsHg();
   });
   // a grade (or In progress): saved for that class whatever view it is taken in; never removed by a tap
@@ -2615,7 +2658,7 @@ function wireImport() {
     const on = $('impIP').checked;
     for (const cb of $('impList').querySelectorAll('input[data-ip="1"]')) { if (!on) cb.checked = false; else if (!cb.disabled) cb.checked = true; cb.closest('li').classList.toggle('off', !on); }
   };
-  $('importBtn').addEventListener('click', () => { $('settings').close(); $('impText').value = ''; $('impFile').value = ''; step(1); openDlg(dlg); });
+  $('importBtn').addEventListener('click', () => { $('settings').close(); $('impText').value = ''; $('impFile').value = ''; pdfFile = null; step(1); openDlg(dlg); });
   $('impIP').addEventListener('change', syncIP);
   $('impBack').addEventListener('click', () => (dlg.dataset.step === '2' ? step(1) : dlg.close()));
   $('impGo').addEventListener('click', () => {
@@ -2664,16 +2707,21 @@ function wireImport() {
     if (ipOn && parsed?.inProgress?.length) termState(currentTermCode()).ip = parsed.inProgress.map((r) => r.code);
     setActual(s);
     if (switching) loadPlan(); else refresh();
+    // the exact file applied (the PDF, or the pasted text): "View submitted audit" in the account menu
+    saveAudit(pdfFile && $('impText').value === pdfText ? pdfFile : $('impText').value).then(refreshAuditLink);
     dlg.close();
   });
+  let pdfFile = null, pdfText = '';
   $('impFile').addEventListener('change', async () => {
     const f = $('impFile').files[0];
     if (!f) return;
+    pdfFile = f; pdfText = '';
     $('impGo').disabled = true; $('impGo').textContent = 'Reading…';
     try {
       const { pdfToText } = await import('./pdftext.js');
       const text = await pdfToText(await f.arrayBuffer());
       $('impText').value = text;
+      pdfText = text;
       await read(text);
     } catch (err) {
       $('impGo').disabled = false; $('impGo').textContent = 'Read';

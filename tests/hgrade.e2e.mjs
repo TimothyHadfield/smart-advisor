@@ -67,6 +67,24 @@ test('a grade typed on a class the audit had in progress is not locked; a past a
   await p.context().close();
 });
 
+// Tim, 2026-11-19: "I think somehow the cite doesn't count or show lab grades, which shouldn't be the case. If a class
+// has a lab in it, put the lab grade on the bottom of the class block instead of at the top of it."
+test('a class with a lab: the class grade on top, the lab grade at the bottom; both count in the GPA', async () => {
+  const saved = { ...SEED,
+    done: { [EE]: [...SEED.done[EE], 'PHYS 2210', 'PHYS 2215'] },
+    grades: { [EE]: { ...SEED.grades[EE], 'PHYS 2210': 'B', 'PHYS 2215': 'A' } } };
+  const p = await page({ saved });
+  assert.equal(await p.textContent(`${box('PHYS 2210')} .gr:not(.lgr)`), 'B');
+  assert.equal(await p.textContent(`${box('PHYS 2210')} .lgr`), 'A');
+  // GPA: ENGL 1010 A, MATH 1210 B+, MATH 1220 A-, PHYS 2210 B (4 cr), PHYS 2215 A (1 cr) -> the lab counts
+  const withLab = num(await p.textContent('#xGpa'))[0];
+  const noLab = { ...saved, grades: { [EE]: { ...saved.grades[EE], 'PHYS 2215': '' } } };
+  const q = await page({ saved: noLab });
+  assert.ok(withLab > num(await q.textContent('#xGpa'))[0], 'the lab A raises the GPA');
+  assert.deepEqual(p.errors, []);
+  await p.context().close(); await q.context().close();
+});
+
 for (const laptop of [false, true]) {
   test(`${laptop ? 'laptop' : 'iPhone'}: GPA beside Explore; a future class takes a hypothetical grade (letter, %, points); Reset grades`, async () => {
     const p = await page({ laptop });
@@ -80,7 +98,16 @@ for (const laptop of [false, true]) {
     // a class not taken: the picker lists every letter with its usual % and UVU's points (B+ = 3.4)
     await openBox(p, 'PHYS 2210');
     assert.ok(await p.isVisible('#clsHg'));
-    assert.equal(await p.$$eval('#clsHg [data-hg]', (b) => b.length), 12);
+    // Phys 1 + its lab: one grid for the class, one for the lab (Tim, 2026-11-19)
+    assert.deepEqual(await p.$$eval('#clsHg .hg-grid', (g) => g.map((x) => x.querySelectorAll('[data-hg]').length)), [12, 12]);
+    assert.deepEqual(await p.$$eval('#clsHg .hg-part', (g) => g.map((x) => x.textContent.replace(/\s+/g, ' '))), ['Class PHYS 2210', 'Lab PHYS 2215']);
+    await p.click('#clsHg [data-p="1"][data-hg="B"]');
+    assert.equal(await p.textContent(`${box('PHYS 2210')} .lgr`), 'B', 'the lab grade at the bottom of the box');
+    assert.equal(await p.textContent(`${box('PHYS 2210')} .gr:not(.lgr)`), '');
+    const lb = await rect(p, `${box('PHYS 2210')} .lgr`), bx = await rect(p, box('PHYS 2210'));
+    assert.ok(lb.top > bx.top + bx.height / 2, 'on the bottom edge');
+    await p.click('#clsHg [data-p="1"][data-hg="B"]');
+    assert.equal(await p.textContent(`${box('PHYS 2210')} .lgr`), '');
     assert.equal((await p.textContent('#clsHg [data-hg="B+"]')).replace(/\s+/g, ''), 'B+87–89%3.4');
     assert.equal((await p.textContent('#clsHg [data-hg="A"]')).replace(/\s+/g, ''), 'A93–100%4.0');
     await p.click('#clsHg [data-hg="E"]');

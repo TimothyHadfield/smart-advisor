@@ -158,7 +158,10 @@ main[data-tab="flow"] .flow, main[data-tab="plan"] .plan { display: flex; }
 .box.done.graded { background: hsl(var(--gh) 58% 22%); border-color: hsl(var(--gh) 58% 22%); }
 .box .gr { position: absolute; top: -10px; right: 4px; padding: 0 4px; border-radius: 4px; font-style: normal; font-size: 11px; font-weight: 700; line-height: 13px; background: var(--panel); color: var(--green); border: 1px solid currentColor; }
 .box .gr:empty { display: none; }
-.box.graded .gr { color: hsl(var(--gh) 60% var(--grade-t)); }
+.box .gr.lt { color: hsl(var(--gh) 60% var(--grade-t)); }
+.box .gr.hgd { border-style: dashed; }
+/* a folded lab's grade: on the bottom edge of the box */
+.box .lgr { top: auto; bottom: -10px; }
 .box.flex { border-style: dashed; }
 .box.done.flex { border-style: solid; }
 .box:active { transform: scale(.97); }
@@ -723,6 +726,9 @@ dialog.pf-menu::backdrop { background: rgba(0,0,0,.18); }
 .pf-menu .acct-out .ghost { border-color: var(--green); color: var(--green); }
 .pf-menu .ok { background: var(--brand); color: #fff; border: 0; border-radius: 8px; font-weight: 600; cursor: pointer; }
 .pf-menu .wide { width: 100%; }
+/* "View submitted audit": a link (opens the file in a new tab) that looks like the menu's buttons */
+.pf-menu .pf-audit { display: block; box-sizing: border-box; margin-top: 8px; text-align: center; text-decoration: none; font-size: 14px; }
+.pf-menu .pf-audit[hidden] { display: none; }
 .pf-menu button:disabled { opacity: .5; cursor: default; }
 .pf-note { margin: 0; color: var(--muted); font-size: 12px; text-align: center; }
 .pf-menu .pg-row { padding: 0; min-height: 44px; border-radius: 0; background: none; font-size: 14px; }
@@ -763,7 +769,6 @@ main.empty .xbar { visibility: hidden; }
 .x-gpa b { color: var(--fg); font-weight: 700; }
 .x-gpa .hgv { text-decoration: underline dashed 1px; text-underline-offset: 3px; }
 /* a hypothetical grade on a box: its letter in a dashed tag */
-.box.hg .gr { color: hsl(var(--gh) 60% var(--grade-t)); border-style: dashed; }
 .box .gr .hgl { font-style: normal; margin-left: 2px; padding-left: 4px; border-left: 1px dashed currentColor; color: hsl(var(--gh) 60% var(--grade-t)); }
 /* class sheet: the hypothetical-grade picker (letter, usual %, grade points) */
 .cls-hg { display: flex; flex-direction: column; gap: 8px; }
@@ -776,6 +781,8 @@ main.empty .xbar { visibility: hidden; }
 .hg-grid button small { font-size: 12px; color: var(--muted); }
 .hg-grid button span { grid-column: 1 / -1; grid-row: 2; font-size: 12px; color: var(--fg); white-space: nowrap; }
 .hg-grid button.on { border: 2px solid var(--brand); padding: 4px 7px; background: var(--bg); }
+.hg-part { font-size: 13px; font-weight: 600; margin-top: 2px; }
+.hg-part small { font-weight: 400; color: var(--muted); margin-left: 4px; }
 .hg-note { margin: 0; font-size: 12px; color: var(--muted); }
 /* Code (MATH 2210) / Title (Calc 3) / Both: only what a box shows changes (requirement boxes keep theirs);
    Title keeps a lecture + lab box's "+Lab" under the name */
