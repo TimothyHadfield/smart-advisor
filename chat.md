@@ -169,3 +169,9 @@ _One entry per session, newest at the bottom, capped at 60 KB. Older entries are
 - **Built:** flowchart bar "Reset grades" + "GPA now → with hypothetical"; class sheet picker (letter, typical %, UVU points); dashed grade tag on the box; `settings.hgrade` synced. Found + fixed UVU's plus grades (.4, not .3) from UVU Academic Standards' GPA PDF.
 - **Verified:** `node --test tests/*.test.mjs` 1265 / 1264 pass / 0 fail / 1 skip; e2e hgrade + flowbar + hypo + home + classes + iphone + hover: 38 / 37 pass / 1 skip (WebKit 393 + 1280, light + dark screenshots looked at).
 - **Open:** Tim's call on placement/wording (GPA sits right of Code/Title/Both, wraps under on phone when Reset shows).
+
+## 2026-11-19 · IP grade lock, lab grades, View submitted audit
+- **Asked (Tim):** "I have a IP Class that apparently has a grade that is locked from audit. This shouldn't be the case for IP classes" · "if you select one, put that selected grade by the IP for that class in the flowchart" · "add somewhere in the account menu that says "view submitted audit" and that pulls up the exact file that you submitted" · "If a class has a lab in it, put the lab grade on the bottom of the class block ... choose a hypothetical grade for the lab in the side menu aswell."
+- **Built:** `settings.agrade` (audit's official letters) + `auditLock()` (7eff87b); "IP B" tag; lab tag `.lgr` at the box bottom + Class/Lab grids in the sheet; `js/auditfile.js` + `#pfAudit` in the account menu (1eb80c8).
+- **Verified:** unit 1266 / 1265 pass / 0 fail / 1 skip; e2e auditfile 2, hgrade 4, import, hypo, flowbar 10, home 6, iphone 7, hover 6, gradelock 2, classes 4, fresh, ui 8, polish 5: all pass (WebKit 393 + 1280, made-up data; screenshots looked at). PDF test failed first (WebKit refused a Blob in IndexedDB) → store bytes.
+- **Open:** real-iPhone check of the PDF opening; old imports need one re-import for the link.
