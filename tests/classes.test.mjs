@@ -5,7 +5,26 @@ import assert from 'node:assert/strict';
 import { readFileSync } from 'node:fs';
 import { buildModel, flowNodes, flowEdges } from '../js/planner.js';
 import { foldLabs } from '../js/layout.js';
-import { viewSet, hypoFrom, normHypo, hasHypo, hypoShown, sandboxOn, statusOf, boxGrade, gpa, gpaPair, HYPO_GRADES, POINTS, classGroups, GRADES, srcOf, geBoxFor } from '../js/classes.js';
+import { viewSet, hypoFrom, normHypo, hasHypo, hypoShown, sandboxOn, statusOf, boxGrade, gpa, gpaPair, HYPO_GRADES, POINTS, classGroups, GRADES, srcOf, geBoxFor, auditLock } from '../js/classes.js';
+
+// Tim, 2026-11-19: "I have a IP Class that apparently has a grade that is locked from audit. This shouldn't be the case
+// for IP classes, because the grade isn't official yet."
+test('audit lock: only the letters the audit itself showed; an in-progress class is never locked', () => {
+  const now = 2026 * 3 + 2; // Fall 2026
+  // imports since 11-19 keep the audit's letters
+  const audit = { 'MATH 1210': 'B+' };
+  assert.equal(auditLock({ key: 'MATH 1210', grade: 'B+', src: 'audit', audit }), 'B+');
+  assert.equal(auditLock({ key: 'MATH 2210', grade: 'A', src: 'audit', audit }), '', 'IP on the audit, grade typed by the student');
+  assert.equal(auditLock({ key: 'MATH 1210', grade: 'A', src: 'audit', audit }), '', 'changed since: not the audit letter');
+  assert.equal(auditLock({ key: 'MATH 2210', grade: 'IP', src: 'audit', audit }), '');
+  assert.equal(auditLock({ key: 'ENGL 1010', grade: 'A', src: 'added', audit: { 'ENGL 1010': 'A' } }), '');
+  // older imports (no letters kept): in progress per the audit, or its term is now or later -> not locked
+  assert.equal(auditLock({ key: 'MATH 2210', grade: 'A', src: 'audit', ip: true, term: 'Fall 2026', now }), '');
+  assert.equal(auditLock({ key: 'MATH 2210', grade: 'A', src: 'audit', term: 'Fall 2026', now }), '');
+  assert.equal(auditLock({ key: 'MATH 2210', grade: 'A', src: 'audit', term: 'Spring 2027', now }), '');
+  assert.equal(auditLock({ key: 'MATH 1210', grade: 'B+', src: 'audit', term: 'Spring 2026', now }), 'B+');
+  assert.equal(auditLock({ key: 'MATH 1210', grade: 'B+', src: 'audit', now }), 'B+', 'no term known: as before');
+});
 
 test('hypothetical grades: GPA now and with them; the picker lists every letter with a % range and its points', () => {
   const real = [{ grade: 'A', credits: 3 }, { grade: 'B', credits: 3 }];

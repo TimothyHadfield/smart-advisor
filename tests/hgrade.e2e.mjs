@@ -25,10 +25,10 @@ const SEED = {
   grades: { [EE]: { 'ENGL 1010': 'A', 'MATH 1210': 'B+', 'MATH 1220': 'A-', 'ECE 1000': 'IP' } },
   settings: { max: 16, summers: false, start: null, grades: true, src: { [EE]: { 'MATH 1210': 'audit' } } },
 };
-async function page({ laptop = false } = {}) {
+async function page({ laptop = false, saved = SEED } = {}) {
   const ctx = await browser.newContext(laptop ? { viewport: { width: 1280, height: 800 }, serviceWorkers: 'block' } : { ...devices['iPhone 15'], serviceWorkers: 'block' });
   await ctx.route(/gstatic\.com\/firebasejs/, (r) => r.abort());
-  await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(SEED)]);
+  await ctx.addInitScript(([k, v]) => { if (!sessionStorage.getItem('seeded')) { localStorage.setItem(k, v); sessionStorage.setItem('seeded', '1'); } }, [KEY, JSON.stringify(saved)]);
   const p = await ctx.newPage();
   p.errors = [];
   p.on('pageerror', (e) => p.errors.push(String(e)));
@@ -47,6 +47,25 @@ async function openBox(p, id) {
   await p.click(box(id));
   await p.waitForSelector('#clsDlg[open]');
 }
+
+// Tim, 2026-11-19: "I have a IP Class that apparently has a grade that is locked from audit. This shouldn't be the
+// case for IP classes, because the grade isn't official yet." An older import (no settings.agrade) where the student
+// typed a grade on a class the audit had in progress this term: not locked. A past class's audit grade stays locked.
+test('a grade typed on a class the audit had in progress is not locked; a past audit grade is', async () => {
+  const d = new Date(), m = d.getMonth();
+  const now = `${m <= 3 ? 'Spring' : m <= 6 || (m === 7 && d.getDate() < 20) ? 'Summer' : 'Fall'} ${d.getFullYear()}`;
+  const saved = { ...SEED,
+    grades: { [EE]: { ...SEED.grades[EE], 'ECE 1000': 'A' } },
+    settings: { ...SEED.settings, src: { [EE]: { 'MATH 1210': 'audit', 'ECE 1000': 'audit' } }, when: { 'ECE 1000': now, 'MATH 1210': 'Fall 2024' } } };
+  const p = await page({ saved });
+  await openBox(p, 'ECE 1000');
+  assert.equal(await p.$('#clsGrades .cls-glock'), null, 'not locked');
+  assert.ok(await p.$('#clsGrades select'));
+  await openBox(p, 'MATH 1210');
+  assert.ok(await p.$('#clsGrades .cls-glock'), 'past audit grade locked');
+  assert.deepEqual(p.errors, []);
+  await p.context().close();
+});
 
 for (const laptop of [false, true]) {
   test(`${laptop ? 'laptop' : 'iPhone'}: GPA beside Explore; a future class takes a hypothetical grade (letter, %, points); Reset grades`, async () => {
@@ -81,6 +100,11 @@ for (const laptop of [false, true]) {
     assert.equal(await p.isVisible('#clsHg'), false);
     await openBox(p, 'ECE 1000');
     assert.ok(await p.isVisible('#clsHg'));
+    // in progress: the tried grade sits next to its IP on the chart (Tim, 2026-11-19)
+    await p.click('#clsHg [data-hg="B"]');
+    assert.equal((await p.textContent(`${box('ECE 1000')} .gr`)).replace(/\s+/g, ' '), 'IP B');
+    await p.click('#clsHg [data-hg="B"]');
+    assert.equal(await p.textContent(`${box('ECE 1000')} .gr`), 'IP');
     await p.keyboard.press('Escape');
     await p.waitForTimeout(300);
     // Reset grades, next to Explore: back to the current GPA only, with Undo

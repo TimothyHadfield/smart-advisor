@@ -1,4 +1,4 @@
-import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, planStart, nextTerm, termLabel, tapCheck, cascadeUntake, currentTerm } from './planner.js';
+import { buildModel, makePlan, flowNodes, flowEdges, unitDone, optionDone, earliestStart, planStart, nextTerm, termLabel, tapCheck, cascadeUntake, currentTerm, termIndex } from './planner.js';
 import { edgeRoles, hintText, placeHint } from './hover.js';
 import { genEdList, filterList, pickedOf, withPick, pickKeysOf } from './gened.js';
 import { flowChart, foldLabs } from './layout.js';
@@ -14,7 +14,7 @@ import { initMine } from './mineui.js';
 // every outside fact links to its source (Tim, 2026-10-22): build each link with sourceLink(), never by hand
 import { sourceLink, linkHTML, sourceLine, programSources, checked, CATALOG } from './sources.js';
 import { urlPrograms, programsFromLink, urlWithPrograms, isFirstVisit, clearTaken, undoClear, pickLabel, issueURL, tracksOf, milestonesOf, needsOf, advisorLink, gatedNeed, officialChart } from './uistate.js';
-import { viewSet, hypoFrom, normHypo, boxGrade, gpa, gpaPair, classGroups, geBoxFor, statusOf, GRADES, HYPO_GRADES, POINTS } from './classes.js';
+import { viewSet, hypoFrom, normHypo, boxGrade, gpa, gpaPair, classGroups, geBoxFor, statusOf, auditLock, GRADES, HYPO_GRADES, POINTS } from './classes.js';
 import { matricSides, matricFacts, codeStatus } from './matric.js';
 import { auditExtras, answerSheet, sheetText, splitName, niceDate } from './application.js';
 import { programWithCurrentPrereqs, forCatalogYear } from './curprereqs.js';
@@ -162,9 +162,12 @@ const gpaText = (x) => (x?.gpa == null ? '—' : x.gpa.toFixed(2));
 // a grade that came from the imported audit is locked (Tim, 2026-10-23: "If their transcript says they got a grade in
 // a class they've taken, make sure it keeps that grade locked for that class so the user can't change it at all").
 // '' = not locked: no grade, in progress, or set by the student. A newer audit replaces it (the import sets it).
+// Only the audit's own letters (settings.agrade): an in-progress class has no official grade yet (js/classes.js auditLock).
 function lockedGrade(key) {
-  const g = key ? state.grades[major()]?.[key] : '';
-  return g && g !== 'IP' && state.settings.src?.[major()]?.[key] === 'audit' ? g : '';
+  if (!key) return '';
+  const m = major(), s = state.settings;
+  return auditLock({ key, grade: state.grades[m]?.[key], src: s.src?.[m]?.[key], audit: s.agrade?.[m] || null,
+    ip: !!s.sched?.terms?.[currentTermCode()]?.ip?.includes(key), term: s.when?.[key] || '', now: termIndex(currentTerm()) });
 }
 const LOCK_SVG = '<svg viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="M4.5 7V5a3.5 3.5 0 0 1 7 0v2" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="3" y="7" width="10" height="7.5" rx="1.5" fill="currentColor"/></svg>';
 const lockHTML = (g) => ` <span class="glock"><b>${esc(g)}</b> ${LOCK_SVG} <small>from audit</small></span>`;
@@ -820,9 +823,11 @@ function refresh() {
     el.style.setProperty('--gh', gi.hue ?? 0);
     el.querySelector('.gr').textContent = gi.text;
     // a hypothetical grade on a class not taken yet: its letter in a dashed tag (not in Explore)
-    const hg = own && !done ? hgradeOf(n) : '';
-    el.classList.toggle('hg', !!hg);
-    if (hg) { el.style.setProperty('--gh', gradeInfo(hg).hue ?? 0); el.querySelector('.gr').textContent = hg; }
+    // (in progress: next to its IP, Tim 2026-11-19: "put that selected grade by the IP for that class in the flowchart")
+    const hg = own && (!done || ip) ? hgradeOf(n) : '';
+    el.classList.toggle('hg', !!hg && !ip);
+    el.querySelector('.gr').innerHTML = hg && ip ? `IP <i class="hgl" style="--gh:${gradeInfo(hg).hue ?? 0}">${esc(hg)}</i>` : esc(hg || gi.text);
+    if (hg && !ip) el.style.setProperty('--gh', gradeInfo(hg).hue ?? 0);
     const pk = el.querySelector('.pk');
     if (pk) pk.textContent = done ? classOfBox(n, completed) || '' : '';
     el.setAttribute('aria-pressed', done);
@@ -2622,6 +2627,9 @@ function wireImport() {
     const s = actualSet(), src = srcMap(), grades = gradeMap();
     const ipOn = $('impIP').checked;
     const when = (state.settings.when = { ...(state.settings.when || {}) }); // class code -> semester taken (hover label)
+    // the letters this audit itself shows (the only grades locked; an in-progress class has none): replaces the last audit's
+    const ag = {};
+    const official = (g) => g && g !== 'IP';
     // already-taken rows are disabled (can't be unticked) but still bring their grade from the audit
     for (const cb of $('impList').querySelectorAll('input:checked')) {
       const r = found.rows[+cb.dataset.i];
@@ -2630,11 +2638,13 @@ function wireImport() {
       src[r.key] ??= 'audit';
       if (r.grade || !cb.disabled) grades[r.key] = r.grade || ''; // imported: kept even if its prereqs look unmet
       if (r.grade) src[r.key] = 'audit'; // the audit's grade wins (and is locked), also over one set by hand
+      if (official(r.grade)) ag[r.key] = r.grade;
       if (r.term) when[r.code] = r.term;
       // a Gen Ed box filled by an outside class: remember which class (its sheet and Classes show it)
       if (r.key !== r.code && !pickKeysOf(s, r.key).length) {
         s.add(`${r.key}=${r.code}`); s.add(r.code); src[r.code] ??= 'audit';
         if (r.grade) { grades[r.code] = r.grade; src[r.code] = 'audit'; }
+        if (official(r.grade)) ag[r.code] = r.grade;
       }
     }
     // classes outside the program (AP/transfer credit, classes the plan doesn't use): kept for Classes
@@ -2642,8 +2652,10 @@ function wireImport() {
       if (r.status === 'ip' && !ipOn) continue;
       if (!s.has(r.code)) { s.add(r.code); src[r.code] = 'audit'; }
       if (r.grade) { grades[r.code] = r.grade; src[r.code] = 'audit'; }
+      if (official(r.grade)) ag[r.code] = r.grade;
       if (r.term) when[r.code] = r.term;
     }
+    state.settings.agrade = { ...(state.settings.agrade || {}), [major()]: ag };
     // classes in progress (or already registered for next term): the plan starts after that semester
     // (set before setActual, which saves)
     if (parsed?.lastTerm) state.settings.lastTerm = termLabel(parsed.lastTerm);

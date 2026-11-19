@@ -114,6 +114,26 @@ export function gpa(rows) {
   return { gpa: cr ? Math.round((pts / cr) * 100) / 100 : null, credits: Math.round(cr * 10) / 10 };
 }
 
+/**
+ * The grade shown locked "from audit" ('' = not locked). Tim, 2026-10-23: "If their transcript says they got a grade
+ * in a class they've taken, make sure it keeps that grade locked"; 2026-11-19: "I have a IP Class that apparently has
+ * a grade that is locked from audit. This shouldn't be the case for IP classes, because the grade isn't official yet."
+ * audit = settings.agrade[major] ({ key: letter the audit itself showed }), saved by every import since 2026-11-19:
+ * locked only while the stored grade IS that letter. Older imports (audit null) only marked where a class came from,
+ * so a grade the student typed on an audit class in progress looked official: there the class is unlocked when the
+ * audit had it in progress (ip) or its audit term is the current one or later (term "Fall 2026", now = termIndex).
+ */
+const SEAS = { Spring: 0, Summer: 1, Fall: 2 };
+const termIdx = (s) => { const m = /^(Spring|Summer|Fall)\s+(\d{4})$/.exec(s || ''); return m ? +m[2] * 3 + SEAS[m[1]] : null; };
+export function auditLock({ key, grade, src, audit = null, ip = false, term = '', now = null }) {
+  const g = String(grade || '');
+  if (!g || up(g) === 'IP' || src !== 'audit') return '';
+  if (audit) return audit[key] === g ? g : '';
+  if (ip) return '';
+  const t = termIdx(term);
+  return t != null && now != null && t >= now ? '' : g;
+}
+
 // ---------- the Classes section ----------
 export const GROUPS = [['taken', 'Taken'], ['apce', 'AP/CE'], ['ip', 'Current'], ['need', 'Still need'], ['other', 'Not used by your plan']];
 const byCode = (a, b) => String(a.code || a.label).localeCompare(String(b.code || b.label), 'en', { numeric: true });

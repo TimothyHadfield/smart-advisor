@@ -764,6 +764,7 @@ main.empty .xbar { visibility: hidden; }
 .x-gpa .hgv { text-decoration: underline dashed 1px; text-underline-offset: 3px; }
 /* a hypothetical grade on a box: its letter in a dashed tag */
 .box.hg .gr { color: hsl(var(--gh) 60% var(--grade-t)); border-style: dashed; }
+.box .gr .hgl { font-style: normal; margin-left: 2px; padding-left: 4px; border-left: 1px dashed currentColor; color: hsl(var(--gh) 60% var(--grade-t)); }
 /* class sheet: the hypothetical-grade picker (letter, usual %, grade points) */
 .cls-hg { display: flex; flex-direction: column; gap: 8px; }
 .hg-h { display: flex; align-items: baseline; gap: 8px; }
